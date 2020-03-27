@@ -6,7 +6,7 @@
 _______
 #### Работа с [RedWAVE/DiveNET GPS](https://ucnl.github.io/Docs/EN/RedWAVE/RedWAVE_LBL_Deployment_maintenance_RedNAV_en.pdf) underwater GPS
 Place: [Залив Монтерей, Калифорния, США](https://goo.gl/maps/SZ3tC49dcVGnequB7)  
-Время: Март 2020
+Время: Март 2020  
 Трек погружения: [RedNAV track 03 MAR 2020](https://ucnl.github.io/Docs/EN/RedWAVE/rednav_track_03-03-2020.kml)
 
 <a href="https://youtu.be/_2PoVsB1wEY" 
