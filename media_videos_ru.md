@@ -71,7 +71,7 @@ ______
 
 #### Дайверы тестируют подводный GPS [RedWAVE](https://ucnl.github.io/Docs/EN/RedWAVE/RedWAVE_LBL_Deployment_maintenance_RedNAV_en.pdf)  
 Место: [Casino Point Underwater Park, Avalon, Калифорния, США](https://goo.gl/maps/Qv7d9sCtDehMiVtg9)  
-Время: Октябрь 2018
+Время: Октябрь 2018  
 Треки погружения: [RedNAV track 1, 30 OCT 2018](https://ucnl.github.io/Docs/EN/RedWAVE/rednav_track_30-10-2018_13-40.kml), [RedNAV track 2, 30 OCT 2018](https://ucnl.github.io/Docs/EN/RedWAVE/rednav_track_30-10-2018_21-42.kml)  
 
 <a href="https://youtu.be/nqmbPgxIonM" 
