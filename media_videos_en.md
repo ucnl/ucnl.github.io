@@ -15,7 +15,8 @@ alt="Testing of uWAVE acoustic modems in Oslo Norway" width="240" height="180" b
 _______
 #### Palying with a small ROV equipped with [RedWAVE](https://ucnl.github.io/Docs/EN/RedWAVE/RedWAVE_LBL_Deployment_maintenance_RedNAV_en.pdf) underwater GPS
 Place: [Pichuga river, Volgograd Oblast, RU](https://goo.gl/maps/Qix3nK84i7inM3FGA)  
-Time: April 2019
+Time: April 2019  
+Track available: [RedNODE track 18-APR-2019](https://ucnl.github.io/Docs/RU/RedWAVE/rednode_track_18042019.kml)  
 
 <a href="https://youtu.be/xaVfjhPIURc" 
 target="_blank"><img src="http://img.youtube.com/vi/xaVfjhPIURc/0.jpg" 
