@@ -74,8 +74,6 @@ Place: [Casino Point Underwater Park, Avalon, California, US](https://goo.gl/map
 Time: October 2018  
 Tracks available: [RedNAV track 1, 30 OCT 2018](https://ucnl.github.io/Docs/EN/RedWAVE/rednav_track_30-10-2018_13-40.kml), [RedNAV track 2, 30 OCT 2018](https://ucnl.github.io/Docs/EN/RedWAVE/rednav_track_30-10-2018_21-42.kml)  
 
-https://github.com/ucnl/Docs/blob/master/EN/RedWAVE/rednav_track_30-10-2018_21-42.kml
-
 <a href="https://youtu.be/nqmbPgxIonM" 
 target="_blank"><img src="http://img.youtube.com/vi/nqmbPgxIonM/0.jpg" 
 alt="RedWAVE Underwater GPS Casino Point Underwater Park, Avalon, California, US" width="240" height="180" border="10" /></a>  
