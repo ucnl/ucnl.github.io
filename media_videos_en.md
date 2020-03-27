@@ -4,6 +4,15 @@
 
 ### Videos
 _______
+#### Working with [RedWAVE/DiveNET GPS](https://ucnl.github.io/Docs/EN/RedWAVE/RedWAVE_LBL_Deployment_maintenance_RedNAV_en.pdf) underwater GPS
+Place: [Monterey Bay, California, US](https://goo.gl/maps/SZ3tC49dcVGnequB7)  
+Time: March 2020
+Track available: [RedNAV track 03 MAR 2020](https://ucnl.github.io/Docs/EN/RedWAVE/rednav_track_03-03-2020.kml)
+
+<a href="https://youtu.be/_2PoVsB1wEY" 
+target="_blank"><img src="http://img.youtube.com/vi/_2PoVsB1wEY/0.jpg" 
+alt="RedWAVE Underwater GPS Monterey, California, US" width="240" height="180" border="10" /></a>
+_______
 #### Bachelor project at [OsloMET](https://www.oslomet.no/) 2019. 
 Testing of [uWAVE](https://ucnl.github.io/Docs/EN/Modems/uWAVE/uWAVE_Specification_en.pdf) acoustic modems in Oslo Norway. Range only localization algorithms, NMEA communication.  
 Place: Oslo, Norway  
@@ -46,7 +55,6 @@ Time: January 2019
 target="_blank"><img src="http://img.youtube.com/vi/fy9CjD4cgak/0.jpg" 
 alt="uWAVE Modem range test 1092 m" width="240" height="180" border="10" /></a>
 _______
-
 #### Working with [RedWAVE](https://ucnl.github.io/Docs/EN/RedWAVE/RedWAVE_LBL_Deployment_maintenance_RedNAV_en.pdf) underwater GPS
 Place: [Casino Point Underwater Park, Avalon, California, US](https://goo.gl/maps/Qv7d9sCtDehMiVtg9)  
 Time: June 2018
