@@ -10,6 +10,9 @@
 * [Беспроводная голосовая подводная связь (подводная телефония)](underwater_wireless_voice_systems_ru.md)
 * [Гидроакустические преобразователи и гидрофоны](underwater_acoustic_antennas_ru.md)
 
+# Медиа
+* [Видео](media_videos_ru.md)
+
 # Наши образовательные проекты
 * [Online утилиты: Расчет глубины, скорости звука, работа с NMEA0183 etc.](online_utilities_ru.md)
 * [UCNLNav - Библиотека для решения геодезических и навигационных задач (C#/Rust/Matlab/GNU Octave)](https://github.com/ucnl/UCNLNav)
