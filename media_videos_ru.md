@@ -16,6 +16,7 @@ _______
 #### Первый опыт применения подводного GPS [RedWAVE](https://ucnl.github.io/Docs/EN/RedWAVE/RedWAVE_LBL_Deployment_maintenance_RedNAV_en.pdf) на малом ТНПА  
 Место: [Река Пичуга, Волгоградская облась, Россия](https://goo.gl/maps/Qix3nK84i7inM3FGA)  
 Время: Апрель 2019
+Трек погружения: [RedNODE Track 18-04-2019](https://ucnl.github.io/Docs/RU/RedWAVE/rednode_track_18042019.kml)
 
 <a href="https://youtu.be/xaVfjhPIURc" 
 target="_blank"><img src="http://img.youtube.com/vi/xaVfjhPIURc/0.jpg" 
