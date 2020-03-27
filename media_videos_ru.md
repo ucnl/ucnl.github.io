@@ -24,7 +24,7 @@ alt="Testing of uWAVE acoustic modems in Oslo Norway" width="240" height="180" b
 _______
 #### Первый опыт применения подводного GPS [RedWAVE](https://ucnl.github.io/Docs/EN/RedWAVE/RedWAVE_LBL_Deployment_maintenance_RedNAV_en.pdf) на малом ТНПА  
 Место: [Река Пичуга, Волгоградская облась, Россия](https://goo.gl/maps/Qix3nK84i7inM3FGA)  
-Время: Апрель 2019
+Время: Апрель 2019  
 Трек погружения: [RedNODE Track 18-04-2019](https://ucnl.github.io/Docs/RU/RedWAVE/rednode_track_18042019.kml)
 
 <a href="https://youtu.be/xaVfjhPIURc" 
