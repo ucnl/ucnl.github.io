@@ -11,7 +11,7 @@ Place: [Залив Монтерей, Калифорния, США](https://goo.g
 
 <a href="https://youtu.be/_2PoVsB1wEY" 
 target="_blank"><img src="http://img.youtube.com/vi/_2PoVsB1wEY/0.jpg" 
-alt="RedWAVE Underwater GPS Monterey, California, US" width="240" height="180" border="10" /></a>
+alt="RedWAVE Underwater GPS Monterey, California, US" width="240" height="180" border="10" /></a>  
 _______
 #### Выпускная бакалаврская работа в университете г. Осло [OsloMET](https://www.oslomet.no/), 2019. 
 Тестирование модемов [uWAVE](https://ucnl.github.io/Docs/EN/Modems/uWAVE/uWAVE_Specification_en.pdf) в Осло, Норвегия. Решение навигационных задач на основе измерения дальностей, обработка протокола NMEA.  
@@ -20,7 +20,7 @@ _______
 
 <a href="https://youtu.be/smN9p9jNdFo" 
 target="_blank"><img src="http://img.youtube.com/vi/smN9p9jNdFo/0.jpg" 
-alt="Testing of uWAVE acoustic modems in Oslo Norway" width="240" height="180" border="10" /></a>
+alt="Testing of uWAVE acoustic modems in Oslo Norway" width="240" height="180" border="10" /></a>  
 _______
 #### Первый опыт применения подводного GPS [RedWAVE](https://ucnl.github.io/Docs/EN/RedWAVE/RedWAVE_LBL_Deployment_maintenance_RedNAV_en.pdf) на малом ТНПА  
 Место: [Река Пичуга, Волгоградская облась, Россия](https://goo.gl/maps/Qix3nK84i7inM3FGA)  
@@ -29,7 +29,7 @@ _______
 
 <a href="https://youtu.be/xaVfjhPIURc" 
 target="_blank"><img src="http://img.youtube.com/vi/xaVfjhPIURc/0.jpg" 
-alt="RedWAVE Underwater GPS on ROV" width="240" height="180" border="10" /></a>
+alt="RedWAVE Underwater GPS on ROV" width="240" height="180" border="10" /></a>  
 _______
 #### Тестирование новой длиннобазисной подводной трекинговой системы на основе модемов [uWAVE](https://ucnl.github.io/Docs/EN/Modems/uWAVE/uWAVE_Specification_en.pdf)  
 Место: [Волгодонской судоходный канал, Волгоградская облась, Россия](https://goo.gl/maps/CjX8y9tyPrKtrrA47)  
@@ -37,7 +37,7 @@ _______
 
 <a href="https://youtu.be/UHfTv7TtABU" 
 target="_blank"><img src="http://img.youtube.com/vi/UHfTv7TtABU/0.jpg" 
-alt="Testing a new uWAVE-based LBL underwater tracking system" width="240" height="180" border="10" /></a>
+alt="Testing a new uWAVE-based LBL underwater tracking system" width="240" height="180" border="10" /></a>  
 _______
 #### Проверка максимальной дальности связи гидроакустических модемов [uWAVE](https://ucnl.github.io/Docs/EN/Modems/uWAVE/uWAVE_Specification_en.pdf) (связь подо льдом на дистанции 1092 м), 
 Место: [Волгодонской судоходный канал, Волгоградская облась, Россия](https://goo.gl/maps/CjX8y9tyPrKtrrA47)  
@@ -45,7 +45,7 @@ _______
 
 <a href="https://youtu.be/Z1bVerVecY0"
 target="_blank"><img src="http://img.youtube.com/vi/Z1bVerVecY0/0.jpg" 
-alt="uWAVE Modem range test 1092 m" width="240" height="180" border="10" /></a>
+alt="uWAVE Modem range test 1092 m" width="240" height="180" border="10" /></a>  
 _______
 #### Работы по осмотру трубопровода при помощи малого ТНПА, оборудованного трекинговой USBL системой [Zima](https://ucnl.github.io/Docs/EN/Modems/uWAVE/uWAVE_Specification_en.pdf)  
 Место:   
@@ -53,7 +53,7 @@ Time: Январь 2019
 
 <a href="https://youtu.be/fy9CjD4cgak"
 target="_blank"><img src="http://img.youtube.com/vi/fy9CjD4cgak/0.jpg" 
-alt="uWAVE Modem range test 1092 m" width="240" height="180" border="10" /></a>
+alt="uWAVE Modem range test 1092 m" width="240" height="180" border="10" /></a>  
 _______
 
 #### Дайверы тестируют подводный GPS [RedWAVE](https://ucnl.github.io/Docs/EN/RedWAVE/RedWAVE_LBL_Deployment_maintenance_RedNAV_en.pdf)  
@@ -62,7 +62,7 @@ _______
 
 <a href="https://youtu.be/nqmbPgxIonM" 
 target="_blank"><img src="http://img.youtube.com/vi/nqmbPgxIonM/0.jpg" 
-alt="RedWAVE Underwater GPS Casino Point Underwater Park, Avalon, California, US" width="240" height="180" border="10" /></a>
+alt="RedWAVE Underwater GPS Casino Point Underwater Park, Avalon, California, US" width="240" height="180" border="10" /></a>  
 _______
 
 
