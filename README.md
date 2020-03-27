@@ -11,7 +11,7 @@
 * [Underwater acoustic antennas](underwater_acoustic_antennas_en.md)
 
 # Media
-* [Videos](media_videos.md)
+* [Videos](media_videos_en.md)
 
 # Our educational projects
 * [Online utilities: Depth, Speed of sound, NMEA0183 etc.](online_utilities_en.md)
