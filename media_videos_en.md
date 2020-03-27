@@ -6,7 +6,7 @@
 _______
 #### Bachelor project at [OsloMET](https://www.oslomet.no/) 2019. 
 Testing of [uWAVE](https://ucnl.github.io/Docs/EN/Modems/uWAVE/uWAVE_Specification_en.pdf) acoustic modems in Oslo Norway. Range only localization algorithms, NMEA communication.  
-Place: Oslo, Norway
+Place: Oslo, Norway  
 Time: May 2019
 
 <a href="https://youtu.be/smN9p9jNdFo" 
