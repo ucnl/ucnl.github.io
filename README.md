@@ -10,7 +10,7 @@
 * [Underwater Wireless voice systems (Underwater telephone)](underwater_wireless_voice_systems_en.md)
 * [Underwater acoustic antennas](underwater_acoustic_antennas_en.md)
 
-# Media
+# Media & Demos
 * [Videos](media_videos_en.md)
 
 # Our educational projects
