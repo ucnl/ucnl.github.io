@@ -1,6 +1,6 @@
 ![logo](https://avatars3.githubusercontent.com/u/25752083?s=200&v=4)
 
-# Underwater communication & navigation laboratory
+# Underwater Communication & Navigation Laboratory
 
 ### [RU](README_RU.md) | [EN](README.md)
 
