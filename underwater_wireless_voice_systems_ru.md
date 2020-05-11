@@ -1,7 +1,7 @@
 | ![logo](https://ucnl.github.io/documentation/sm_logo.png) |
 | :---: |
 | [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) |
-| [EN](README.md) \| [RU](README_RU.md) |
+| [EN](underwater_wireless_voice_systems_en.md) \| [RU](underwater_wireless_voice_systems_ru.md) |
 
 ## Подводные беспроводные системы передачи голоса
 ### RedPhone - Подводная телефония
