@@ -2,7 +2,7 @@
 | ![logo](https://ucnl.github.io/documentation/sm_logo.png) |
 | :---: |
 | [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) |
-| [EN](README.md) \| [RU](README_RU.md) |
+| [EN](navigation_and_tracking_systems_en.md) \| [RU](navigation_and_tracking_systems_ru.md) |
 
 ## Navigation & tracking systems
 ### Zima - Ultrashort baseline (USBL) system
