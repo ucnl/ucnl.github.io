@@ -1,4 +1,4 @@
-| ![logo](https://github.com/ucnl/Docs/blob/master/_misc/sm_logo.png) | ![logo](https://github.com/ucnl/Docs/blob/master/_misc/def_modem_yellow.png) |
+| ![logo](https://github.com/ucnl/ucnl.github.io/blob/master/Docs/sm_logo.png) | ![logo](https://github.com/ucnl/ucnl.github.io/blob/master/Docs/def_modem_yellow.png) |
 | :--: | --: |
 | [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | uWAVE underwater acoustic modem specifications |
 
