@@ -21,27 +21,27 @@ Extremely small size, low power consumption and simplicity of usage make uWAVE a
 transmission, where dimensions and wight are the bottleneck.
 
 ## TECHNICAL SPECIFICATIONS
-| PARAMETER | VALUE |
+| PARAMETER                              | VALUE |
 | :--- | :--- |
-| DIMENSIONS (Ф х h) | 40 x 45 mm |
-| WEIGHT (dry) | 0.16 kg |
-| DEPTH RATING |	300 m |
-| MAX OPERATING RANGE |	1000 m |
-| PAYLOAD DATA RATE | 78 bit/s |
-| POWER CONSUMPTION Rx//Tx | 0.33//6 W |
-| POWER SUPPLY<sup>[2](#footnote2)</sup> | 	5..12 V |
-| DATA LINES VOLTAGE | 	0 .. 3.3 V |
-| FREQUENCY BAND | 10 .. 30 kHz |
-| BIT ERROR RATE | 10<sup>-6</sup> |
-| SNR<sup>[3](#footnote3)</sup> |	-2 dB |
-| MAX RELATIVE VELOCITY | +/- 1 m/s |
-| RATED START-UP TIME | 100 ms |
-| OPERATING TEMPERATURE RANGE | -5 .. 50 °C |
-| INTERFACE<sup>[4](#footnote4)</sup> | UART 9600 bit/s |
-| CONFIGURATION PROTOCOL | NMEA 0183 PUWV |
+| DIMENSIONS (Ф х h)                     | 40 x 45 mm |
+| WEIGHT (dry)                           | 0.16 kg |
+| DEPTH RATING                           | 300 m |
+| MAX OPERATING RANGE                    | 1000 m |
+| PAYLOAD DATA RATE                      | 78 bit/s |
+| POWER CONSUMPTION Rx/Tx                | 0.33/6 W |
+| POWER SUPPLY<sup>[2](#footnote2)</sup> | 5..12 V |
+| DATA LINES VOLTAGE                     | 0 .. 3.3 V |
+| FREQUENCY BAND                         | 10 .. 30 kHz |
+| BIT ERROR RATE                         | 10<sup>-6</sup> |
+| SNR<sup>[3](#footnote3)</sup>          | -2 dB |
+| MAX RELATIVE VELOCITY                  | +/- 1 m/s |
+| RATED START-UP TIME                    | 100 ms |
+| OPERATING TEMPERATURE RANGE            | -5 .. 50 °C |
+| INTERFACE<sup>[4](#footnote4)</sup>    | UART 9600 bit/s |
+| CONFIGURATION PROTOCOL                 | NMEA 0183 PUWV |
 | CABLE LENGTH<sup>[5](#footnote5)</sup> | 0.5 m |
-| SUBSCRIBERS CODE DIVISION | 20 code channels |
-| COMMAND MODE | 16 predefined messages (9 for user applications) |
+| SUBSCRIBERS CODE DIVISION              | 20 code channels |
+| COMMAND MODE                           | 16 predefined messages (9 for user applications) |
   
 ________________
 <a name="footnote1"><sup>1</sup></a> According to open sources, July 2018  
