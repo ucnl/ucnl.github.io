@@ -4,30 +4,30 @@
 
 ## KEY FEATURES
 
-* Extremely small size and weight
-* Simultaneous data transmission & USBL navigation
-* Reliable data transmission with 78 bit/s
-* Operating range up to 3000<sup>[1](#footnote1)</sup> m
-* Subscribers code division
-* Propagation time measurement
-* Reliable and noise-immune technology of digital broadband acoustic communication
-* Low power consumption (Rx/Tx) 0.33/6 W
-* Open & easy interfacing protocol
-* Built-in depth/temperature sensor
+* **Extremely small size and weight**
+* **Simultaneous data transmission & USBL navigation**
+* **Reliable data transmission with 78 bit/s**
+* **Operating range up to 3000<sup>[1](#footnote1)</sup> m**
+* **Subscribers code division**
+* **Propagation time measurement**
+* **Reliable and noise-immune technology of digital broadband acoustic communication**
+* **Low power consumption (Rx/Tx) 0.33/6 W**
+* **Open & easy interfacing protocol**
+* **Built-in depth/temperature sensor**
 
 ## DESCRIPTION
 
-uWAVE USBL Modem - a device that combines the functions of transmitting data through a underwater acoustic channel and a navigation 
+**uWAVE USBL Modem** - a device that combines the functions of transmitting data through a underwater acoustic channel and a navigation 
 system on an ultra-short base.
 
-Using uWAVE USBL Modems, the user can:
-* transfer arbitrary user data between uWAVE USBL Modem, uWAVE Max and uWAVE modems in any combination with the simultaneous estimation of the horizontal angle of arrival;
-* estimate the location of the uWAVE USBL Modem, uWAVE Max and uWAVE modems in command mode by slant range and horizontal angle of arrival;
+Using **uWAVE USBL Modems**, the user can:
+* transfer arbitrary user data between **uWAVE USBL Modem**, **uWAVE Max** and **uWAVE modems** in any combination with the simultaneous estimation of the horizontal angle of arrival;
+* estimate the location of the **uWAVE USBL Modem**, **uWAVE Max** and **uWAVE modems** in command mode by slant range and horizontal angle of arrival;
 * transmit up to 9 short code telecontrol user commands;
-* request from remote modems uWAVE USBL Modem, uWAVE Max and uWAVE their depth, temperature and voltage;
+* request from remote modems **uWAVE USBL Modem**, **uWAVE Max** and **uWAVE** their depth, temperature and voltage;
 * measure own depth, temperature and voltage;
 
-uWAVE family devices use a simple open NMEA-like configuration protocol, and the supplied open-source uWAVELib library allows for the fastest and easiest integration of devices into user solutions.
+**uWAVE** family devices use a simple open NMEA-like configuration protocol, and the supplied open-source [**uWAVELib**](https://github.com/ucnl/uWAVELib) library allows for the fastest and easiest integration of devices into user solutions.
 
 ## TECHNICAL SPECIFICATIONS
 
