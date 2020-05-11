@@ -1,7 +1,7 @@
 | ![logo](https://ucnl.github.io/documentation/sm_logo.png) |
 | :---: |
 | [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) |
-| [EN](README.md) \| [RU](README_RU.md) |
+| [EN](online_utilities_en.md) \| [RU](online_utilities_ru.md) |
 
 ## Online утилиты
 ### Толковые калькуляторы свойств воды
