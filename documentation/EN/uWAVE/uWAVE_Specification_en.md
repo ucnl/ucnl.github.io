@@ -1,4 +1,4 @@
-| ![logo](https://github.com/ucnl/ucnl.github.io/blob/master/documentation/sm_logo.png) | ![logo](https://github.com/ucnl/ucnl.github.io/blob/master/documentation/def_modem_yellow.png) |
+| ![logo](https://ucnl.github.io/documentation/sm_logo.png) | ![logo](https://ucnl.github.io/documentation/def_modem_yellow.png) |
 | :--: | --: |
 | [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | uWAVE underwater acoustic modem specifications |
 
@@ -37,9 +37,9 @@ transmission, where dimensions and wight are the bottleneck.
 | MAX RELATIVE VELOCITY | +/- 1 m/s |
 | RATED START-UP TIME | 100 ms |
 | OPERATING TEMPERATURE RANGE | -5 .. 50 °C |
-| INTERFACE<sup>[4](#footnote4)</sup> | 	UART 9600 bit/s |
+| INTERFACE<sup>[4](#footnote4)</sup> | UART 9600 bit/s |
 | CONFIGURATION PROTOCOL | NMEA 0183 PUWV |
-| CABLE LENGTH<sup>[5](#footnote5)</sup> | 	0.5 m |
+| CABLE LENGTH<sup>[5](#footnote5)</sup> | 0.5 m |
 | SUBSCRIBERS CODE DIVISION | 20 code channels |
 | COMMAND MODE | 16 predefined messages (9 for user applications) |
 
