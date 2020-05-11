@@ -1,6 +1,8 @@
-![logo](https://avatars3.githubusercontent.com/u/25752083?s=200&v=4)
 
-# Underwater communication & navigation laboratory
+| ![logo](https://ucnl.github.io/documentation/sm_logo.png) |
+| :---: |
+| [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) |
+| [EN](README.md) \| [RU](README_RU.md) |
 
 ### Underwater acoustic modems
 #### uWAVE - underwater acoustic modem
@@ -24,4 +26,4 @@
 #### RedGTR -  underwater acoustic code modem
 * [Device specification: RedGTR](https://ucnl.github.io/Docs/EN/Modems/RedGTR/RedGTR_Specification_en.pdf)
 
-# [Home](README.md)
+## [Home](README.md)
