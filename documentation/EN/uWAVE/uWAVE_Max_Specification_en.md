@@ -4,26 +4,26 @@
 
 ## KEY FEATURES
 
-* Extremely small size and weight
-* Reliable data transmission with 78 bit/s
-* Operating range up to 3000<sup>[1](#footnote1)</sup> m
-* Subscribers code division
-* Propagation time measurement
-* Reliable and noise-immune technology of digital broadband acoustic communication
-* Low power consumption (Rx/Tx) 0.33/25 W
-* Open & easy interfacing protocol
-* Built-in depth/temperature sensor
+* **Extremely small size and weight**
+* **Reliable data transmission with 78 bit/s**
+* **Operating range up to 3000<sup>[1](#footnote1)</sup> m**
+* **Subscribers code division**
+* **Propagation time measurement**
+* **Reliable and noise-immune technology of digital broadband acoustic communication**
+* **Low power consumption (Rx/Tx) 0.33/25 W**
+* **Open & easy interfacing protocol**
+* **Built-in depth/temperature sensor**
 
 ## DESCRIPTION
 
-Using uWAVE Max, the user can:
+Using **uWAVE Max**, the user can:
 
-* transfer arbitrary user data between uWAVE USBL Modem, uWAVE Max and uWAVE modems in any combination;
+* transfer arbitrary user data between **uWAVE USBL Modem**, **uWAVE Max** and **uWAVE modems** in any combination;
 * transmit up to 9 short code telecontrol user commands;
-* request from remote modems uWAVE USBL Modem, uWAVE Max and uWAVE their depth, temperature and voltage;
+* request from remote modems **uWAVE USBL Modem**, **uWAVE Max** and **uWAVE** their depth, temperature and voltage;
 * measure own depth, temperature and voltage;
 
-uWAVE family devices use a simple open NMEA-like configuration protocol, and the supplied open-source uWAVELib library allows 
+**uWAVE** family devices use a simple open NMEA-like configuration protocol, and the supplied open-source [uWAVELib](https://github.com/ucnl/uWAVELib) library allows 
 the fastest and easiest integration of devices into user solutions.
 
 ## TECHNICAL SPECIFICATIONS
