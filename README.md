@@ -1,19 +1,20 @@
-![logo](https://avatars3.githubusercontent.com/u/25752083?s=200&v=4)
+![logo](https://ucnl.github.io/documentation/sm_logo.png)
 
-# Underwater Communication & Navigation Laboratory
+[www.unavlab.com](https://www.unavlab.com/)  
+[support@unavlab.com](mailto:support@unavlab.com)
 
 ### [EN](README.md) | [RU](README_RU.md)
 
-# Documentation
+## Products documentation
 * [Navigation & tracking systems](navigation_and_tracking_systems_en.md)
 * [Underwater acoustic modems](underwater_acoustic_modems_en.md)
 * [Underwater Wireless voice systems (Underwater telephone)](underwater_wireless_voice_systems_en.md)
 * [Underwater acoustic antennas](underwater_acoustic_antennas_en.md)
 
-# Media & Demos
+## Media & Demos
 * [Videos](media_videos_en.md)
 
-# Our educational projects
+## Our educational projects
 * [Online utilities: Depth, Speed of sound, NMEA0183 etc.](online_utilities_en.md)
 * [UCNLNav - a library for solving geodetic and navigation problems (C#/Rust/Matlab/GNU Octave)](https://github.com/ucnl/UCNLNav)
 * [UCNLPhysics - a library for estimation of fundamental properties of seawater (C#/Rust/C/Matlab/GNU Octave/JavaScript)](https://github.com/ucnl/UCNLPhysics)
@@ -21,4 +22,4 @@
 * [UCNLNMEA - a library for parsing/building NMEA sentences](https://github.com/ucnl/UCNLNMEA)
 * [Glossary (under construction)](README.md)
 
-# [Home](README.md)
+## [Home](README.md)
