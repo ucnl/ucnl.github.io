@@ -1,6 +1,8 @@
-![logo](https://avatars3.githubusercontent.com/u/25752083?s=200&v=4)
 
-# Underwater communication & navigation laboratory
+| ![logo](https://ucnl.github.io/documentation/sm_logo.png) |
+| :---: |
+| [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) |
+| [EN](README.md) \| [RU](README_RU.md) |
 
 # Гидроакустические модемы
 ## uWAVE - гидроакустический модем
@@ -25,4 +27,4 @@
 * [Спецификация протокола сопряжения: RedGTR](https://ucnl.github.io/Docs/RU/Modems/RedGTR/RedGTR_Protocol_Specification_ru.pdf)
 * [Схема подключения: RedGTR](https://ucnl.github.io/Docs/RU/Modems/RedGTR/RedGTR_drawings_ru.png)
 
-# [Домой](README_RU.md)
+## [Домой](README_RU.md)
