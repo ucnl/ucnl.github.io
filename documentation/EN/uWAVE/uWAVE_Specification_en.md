@@ -42,7 +42,7 @@ transmission, where dimensions and wight are the bottleneck.
 | CABLE LENGTH<sup>[5](#footnote5)</sup> | 0.5 m |
 | SUBSCRIBERS CODE DIVISION | 20 code channels |
 | COMMAND MODE | 16 predefined messages (9 for user applications) |
-
+  
 _________
 <a name="footnote1"><sup>1</sup></a> According to open sources, July 2018  
 <a name="footnote2"><sup>2</sup></a> Maximum output power can be achieved with 12V power supply  
