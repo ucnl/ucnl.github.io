@@ -4,8 +4,8 @@
 | [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) |
 | [EN](README.md) \| [RU](README_RU.md) |
 
-### Navigation & tracking systems
-#### Zima - Ultrashort baseline (USBL) system
+## Navigation & tracking systems
+### Zima - Ultrashort baseline (USBL) system
 * [Data brief](https://ucnl.github.io/Docs/EN/Zima/Zima_DataBrief_en.pdf)
 * [Zima USBL User's manual](https://ucnl.github.io/Docs/EN/Zima/ZIMA_USBL_Deployment_maintenance_en.pdf)
 * [Device specification: Zima-Base - direction finding antenna](https://ucnl.github.io/Docs/EN/Zima/ZimaBase_Specification_en.pdf)
@@ -17,7 +17,7 @@
 * [Host application (Repository)](https://github.com/ucnl/ZHost)
 * [Host application (Download release)](https://github.com/ucnl/ZHost/releases/download/1.2/ZHost.zip)
 
-#### RedWAVE - Underwater GPS (LBL)
+### RedWAVE - Underwater GPS (LBL)
 * [Device specification: RedBASE - GNSS-equipped sonobuoy](https://ucnl.github.io/Docs/EN/RedWAVE/RedBase_Specification_en.pdf)
 * [Device specification: RedNODE - navigation receiver for ROVs and AUVs](https://ucnl.github.io/Docs/EN/RedWAVE/RedNODE_Specification_en.pdf)
 * [Device specification: RedNAV - navigation receiver for divers](https://ucnl.github.io/Docs/EN/RedWAVE/RedNAV_Specification_en.pdf)
@@ -29,7 +29,7 @@
 * [RedNAV host application (Repository)](https://github.com/ucnl/RedNavHost)
 * [RedNAV host application (Download release)](https://github.com/ucnl/RedNavHost/releases/download/2.0/RedNAVHost.zip)
 
-#### VOSTOK - diver's homing system
+### VOSTOK - diver's homing system
 * [Device specification: VOSTOK-ACS - diver's acoustic compass](https://ucnl.github.io/Docs/EN/Vostok/Vostok-ACS_Specification_en.pdf)
 * [Device specification: VOSTOK-BASE - homing beacon](https://ucnl.github.io/Docs/EN/Vostok/Vostok-BASE_Specification_en.pdf)
 
