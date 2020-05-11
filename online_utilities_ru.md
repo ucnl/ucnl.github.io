@@ -1,6 +1,8 @@
-![logo](https://avatars3.githubusercontent.com/u/25752083?s=200&v=4)
 
-# Underwater communication & navigation laboratory
+| ![logo](https://ucnl.github.io/documentation/sm_logo.png) |
+| :---: |
+| [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) |
+| [EN](README.md) \| [RU](README_RU.md) |
 
 ### Online утилиты
 #### Толковые калькуляторы свойств воды
@@ -17,4 +19,4 @@
 * [Online NMEA0183 калькулятор контрольной суммы](https://alekunderwater.github.io/nmea0183_checksum_calculator.html)
 * [Online NMEA0183 парсер/билдер (under construction)](https://ucnl.github.io/Docs/)
 
-# [Home](README.md)
+## [Home](README.md)
