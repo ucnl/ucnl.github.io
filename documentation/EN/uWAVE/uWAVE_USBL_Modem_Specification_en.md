@@ -31,28 +31,28 @@ uWAVE family devices use a simple open NMEA-like configuration protocol, and the
 
 ## TECHNICAL SPECIFICATIONS
 
-| PARAMETER                              | VALUE |
+| PARAMETER | VALUE |
 | :--- | :--- |
-DIMENSIONS (Ф х h)	64 х 128 mm
-WEIGHT (dry)	0.44 kg
-DEPTH RATING	300 m
-MAX OPERATING RANGE	3000<sup>[1](#footnote1)</sup> m
-PAYLOAD DATA RATE	78 bit/s
-POWER CONSUMPTION Rx/Tx	0.33/25 W
-HORIZONTAL ANGLE OF ARRIVAL ESTIMATION ACCURACY (typ.)	1°
-SUPPLY VOLTAGE	12 V
-DATA LINES VOLTAGE	0 .. 3.3 V
-FREQUENCY BAND	10 .. 30 kHz
-BIT ERROR RATE	10-6
-SNR<sup>[2](#footnote2)</sup>	-2 dB
-MAX RELATIVE VELOCITY	+/- 1 m/s
-RATED STARTUP TIME	100 msec
-WORKING TEMPERATURE RANGE	-5 .. 50 °C
-INTERFACE<sup>[3](#footnote3)</sup>	UART 9600 bit/s
-INTERFACING PROTOCOL	NMEA 0183 PUWV
-WIRE LENGTH<sup>[3](#footnote3)</sup>	1 m
-SUBSCRIBERS CODE DIVISION	20 code channels
-COMMAND MODE	16 predefined code messages (9 for user applications)
+| DIMENSIONS (Ф х h) | 64 х 128 mm |
+| WEIGHT (dry) | 0.44 kg |
+| DEPTH RATING | 300 m |
+| MAX OPERATING RANGE |	3000<sup>[1](#footnote1)</sup> m |
+| PAYLOAD DATA RATE |	78 bit/s |
+| POWER CONSUMPTION Rx/Tx |	0.33/25 W |
+| HORIZONTAL ANGLE OF ARRIVAL ESTIMATION ACCURACY (typ.) |	1° |
+| SUPPLY VOLTAGE | 12 V |
+| DATA LINES VOLTAGE | 0 .. 3.3 V |
+| FREQUENCY BAND | 10 .. 30 kHz |
+| BIT ERROR RATE | 10<sup>-6</sup> |
+| SNR<sup>[2](#footnote2)</sup> | -2 dB |
+| MAX RELATIVE VELOCITY | +/- 1 m/s |
+| RATED STARTUP TIME | 100 msec |
+| WORKING TEMPERATURE RANGE | -5 .. 50 °C |
+| INTERFACE<sup>[3](#footnote3)</sup> | UART 9600 bit/s |
+| INTERFACING PROTOCOL | NMEA 0183 PUWV |
+| WIRE LENGTH<sup>[3](#footnote3)</sup> | 1 m |
+| SUBSCRIBERS CODE DIVISION | 20 code channels |
+| COMMAND MODE | 16 predefined code messages (9 for user applications) |
   
 ________________
 <a name="footnote1"><sup>1</sup></a> While working with uWAVE USBL Modem or uWAVE Max. Max operating range with uWAVE modems is 1000 m.  
