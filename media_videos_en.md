@@ -83,4 +83,4 @@ alt="RedWAVE Underwater GPS Casino Point Underwater Park, Avalon, California, US
 ______  
 
 
-# [Home](README.md)
+## [Home](README.md)
