@@ -4,22 +4,22 @@
 
 ## KEY FEATURES
 
-* Extremely small size and weight
-* Can be applied in underwater wireless sensor networks
-* Reliable data transmission with 78 bit/s
-* Operating range up to 1000 m
-* Subscribers code division
-* Propagation time measurement
-* Reliable and noise-immune technology of digital broadband acoustic communication
-* Low power consumption (Rx/Tx) 0.33/6 W
-* Open configuration protocol
-* Built-in depth/temperature sensor
+* **Extremely small size and weight**
+* **Can be applied in underwater wireless sensor networks**
+* **Reliable data transmission with 78 bit/s**
+* **Operating range up to 1000 m**
+* **Subscribers code division**
+* **Propagation time measurement**
+* **Reliable and noise-immune technology of digital broadband acoustic communication**
+* **Low power consumption (Rx/Tx) 0.33/6 W**
+* **Open configuration protocol**
+* **Built-in depth/temperature sensor**
 
 ## DESCRIPTION
 
-uWAVE is the world smallest<sup>[1](#footnote1)</sup> underwater acoustic digital modem, which allows to communicate 
+**uWAVE** is the world smallest<sup>[1](#footnote1)</sup> underwater acoustic digital modem, which allows to communicate 
 up to 20 subscribers in area 1000 x 1000 meters with both transparent channel and predefined code messages/telemetry transmission.
-Extremely small size, low power consumption and simplicity of usage make uWAVE an ideal solution for AUV control as well as data 
+Extremely small size, low power consumption and simplicity of usage make **uWAVE** an ideal solution for AUV control as well as data 
 transmission, where dimensions and weight are the bottleneck.
 
 ## TECHNICAL SPECIFICATIONS
