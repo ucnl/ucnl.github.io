@@ -3,6 +3,7 @@
 | [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | uWAVE underwater acoustic modem specifications |
 
 ## KEY FEATURES
+
 * Extremely small size and weight
 * Can be applied in underwater wireless sensor networks
 * Reliable data transmission with 78 bit/s
@@ -15,12 +16,14 @@
 * Built-in depth/temperature sensor
 
 ## DESCRIPTION
+
 uWAVE is the world smallest<sup>[1](#footnote1)</sup> underwater acoustic digital modem, which allows to communicate 
 up to 20 subscribers in area 1000 x 1000 meters with both transparent channel and predefined code messages/telemetry transmission.
 Extremely small size, low power consumption and simplicity of usage make uWAVE an ideal solution for AUV control as well as data 
 transmission, where dimensions and weight are the bottleneck.
 
 ## TECHNICAL SPECIFICATIONS
+
 | PARAMETER                              | VALUE |
 | :--- | :--- |
 | DIMENSIONS (Ф х h)                     | 40 x 45 mm |
