@@ -1,5 +1,5 @@
 | ![logo](https://ucnl.github.io/documentation/sm_logo.png) | ![logo](https://ucnl.github.io/documentation/def_modem_yellow.png) |
-| :--: | --: |
+| :---: | ---: |
 | [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | uWAVE underwater acoustic modem specifications |
 
 ## KEY FEATURES
@@ -22,13 +22,13 @@ transmission, where dimensions and wight are the bottleneck.
 
 ## TECHNICAL SPECIFICATIONS
 | PARAMETER | VALUE |
-| :-- | :-- |
+| :--- | :--- |
 | DIMENSIONS (Ф х h) | 40 x 45 mm |
 | WEIGHT (dry) | 0.16 kg |
 | DEPTH RATING |	300 m |
 | MAX OPERATING RANGE |	1000 m |
 | PAYLOAD DATA RATE | 78 bit/s |
-| POWER CONSUMPTION Rx/Tx | 0.33/6 W |
+| POWER CONSUMPTION Rx//Tx | 0.33//6 W |
 | POWER SUPPLY<sup>[2](#footnote2)</sup> | 	5..12 V |
 | DATA LINES VOLTAGE | 	0 .. 3.3 V |
 | FREQUENCY BAND | 10 .. 30 kHz |
@@ -43,7 +43,7 @@ transmission, where dimensions and wight are the bottleneck.
 | SUBSCRIBERS CODE DIVISION | 20 code channels |
 | COMMAND MODE | 16 predefined messages (9 for user applications) |
   
-_________
+________________
 <a name="footnote1"><sup>1</sup></a> According to open sources, July 2018  
 <a name="footnote2"><sup>2</sup></a> Maximum output power can be achieved with 12V power supply  
 <a name="footnote3"><sup>3</sup></a> This value is obtained without the presence of the multipath effect   
