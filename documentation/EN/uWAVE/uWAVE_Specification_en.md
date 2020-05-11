@@ -18,7 +18,7 @@
 uWAVE is the world smallest<sup>[1](#footnote1)</sup> underwater acoustic digital modem, which allows to communicate 
 up to 20 subscribers in area 1000 x 1000 meters with both transparent channel and predefined code messages/telemetry transmission.
 Extremely small size, low power consumption and simplicity of usage make uWAVE an ideal solution for AUV control as well as data 
-transmission, where dimensions and wight are the bottleneck.
+transmission, where dimensions and weight are the bottleneck.
 
 ## TECHNICAL SPECIFICATIONS
 | PARAMETER                              | VALUE |
@@ -29,7 +29,7 @@ transmission, where dimensions and wight are the bottleneck.
 | MAX OPERATING RANGE                    | 1000 m |
 | PAYLOAD DATA RATE                      | 78 bit/s |
 | POWER CONSUMPTION Rx/Tx                | 0.33/6 W |
-| POWER SUPPLY<sup>[2](#footnote2)</sup> | 5..12 V |
+| POWER SUPPLY<sup>[2](#footnote2)</sup> | 5 .. 12 V |
 | DATA LINES VOLTAGE                     | 0 .. 3.3 V |
 | FREQUENCY BAND                         | 10 .. 30 kHz |
 | BIT ERROR RATE                         | 10<sup>-6</sup> |
