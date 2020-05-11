@@ -6,7 +6,8 @@
 #### uWAVE - underwater acoustic modem
 * [Device specification: uWAVE (pdf)](https://ucnl.github.io/Docs/EN/Modems/uWAVE/uWAVE_Specification_en.pdf)
 * [Device specification: uWAVE](documentation/EN/uWAVE/uWAVE_Specification_en.md)
-* [Device specification: uWAVE USBL Modem](https://ucnl.github.io/Docs/EN/Modems/uWAVE/uWAVE_USBL_Modem_Specification_en.pdf)
+* [Device specification: uWAVE USBL Modem (pdf)](https://ucnl.github.io/Docs/EN/Modems/uWAVE/uWAVE_USBL_Modem_Specification_en.pdf)
+* [Device specification: uWAVE USBL Modem](documentation/EN/uWAVE/uWAVE_USBL_Modem_Specification_en.md)
 * [Device specification: uWAVE Max](https://ucnl.github.io/Docs/EN/Modems/uWAVE/uWAVE_Max_Specification_en.pdf)
 * [Communication protocol specification: uWAVE](https://ucnl.github.io/Docs/EN/Modems/uWAVE/uWAVE_Protocol_Specification_en.pdf)
 * [Device wiring diagram: uWAVE](https://ucnl.github.io/Docs/EN/Modems/uWAVE/uWAVE_wiring_diagram_en.pdf)
