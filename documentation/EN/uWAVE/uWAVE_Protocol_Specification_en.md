@@ -30,7 +30,7 @@
 - [5. Appendix](#5-appendix)
    - [5.1 Command mode interfacing examples](#51-command-mode-interfacing-examples)
    - [5.2 Example 1 - requesting device information](#52-example-1---requesting-device-information)
-   - [5.3 Example 2 - requesting remote data from a remote subscribers](#53-example-2---requesting-remote-data-from-a-remote-subscribers)
+   - [5.3 Example 2 - requesting remote data from a remote subscriber](#53-example-2---requesting-remote-data-from-a-remote-subscribers)
    - [5.4 Example 3 - setting up the ambient data configuration](#54-example-3---setting-up-the-ambient-data-configuration)  
    
 <div style="page-break-after: always;"></div>
@@ -343,7 +343,7 @@ uWAVE \[JULY\] = core moniker,
 0 = command mode by default is disabled  
 
 
-### 5.3. Example 2 - requesting remote data from a remote subscribers
+### 5.3. Example 2 - requesting remote data from a remote subscriber
 ```
 << $PUWV2,0,0,2*28
 ```
