@@ -4,9 +4,8 @@
 
 # uWAVE underwater communication system interfacing protocol specification
 
-<a name="item1"></a>
 ## 1. Introduction
-   ### 1.1. Physical layer
+### 1.1. Physical layer
    
 **uWAVE** underwater acoustic modems support data pairing using the RS-232 physical layer standard for asynchronous interface (UART) 
 with a 3.3V data line voltage. The connection is made using a four-wire cable with Tx (transmitter), Rx (receiver), Vcc (power) 
@@ -23,8 +22,7 @@ _Hardware flow control: No_
 >**WARNING!**
 >_The modems are powered by a 5 or 12 Volt DC source, while the data line voltage is 3.3 V._
 
-<a name="item1_2"></a>
-   ### 1.2. NMEA0183 Protocol standard
+### 1.2. NMEA0183 Protocol standard
 The NMEA0183 standard describes the format of text (ASCII) messages at the interactive level.
 
 Sentence example: **`$PUWV0,1,0*hh<СR><LF>`**  
@@ -41,13 +39,11 @@ Parts of a message (sentence) NMEА0183:
 ________
 <a name="footnote1"><sup>1</sup> Specified parameters can be changed by a request</a>
 
-<a name="item2"></a>
 ## 2. UWV Sentences
 The prefix **D2H** in the name of the message means that it is transmitted from the device (D) to the host system (H).
 The **H2D** prefix in the message name means that it is transmitted from the host system (H) to the device (D).
 
-<a name="item2_1"></a>
-   ### 2.1. IC_D2H_ACK
+### 2.1. IC_D2H_ACK
 Dvice reaction  
 
 Sentence format: **`$PUWV0,x,x*hh<CR><LF>`**  
@@ -63,8 +59,7 @@ Sentence format: **`$PUWV0,x,x*hh<CR><LF>`**
 | hh	| Checksum NMEA |
 | \<CR\>\<LF\> | Sentence end |
 
-<a name="item2_2"></a>
-   ### 2.2. IC_H2D_SETTINGS_WRITE
+### 2.2. IC_H2D_SETTINGS_WRITE
  Witing new settings
  
 Sentence format: **`$PUWV1,x,x,x.x*hh<CR><LF>`**
@@ -82,8 +77,7 @@ Sentence format: **`$PUWV1,x,x,x.x*hh<CR><LF>`**
 | hh	| Checksum NMEA |
 | \<CR\>\<LF\> | Sentence end |
 
-<a name="item2_3"></a>
-   ### 2.3. IC_H2D_RC_REQUEST
+### 2.3. IC_H2D_RC_REQUEST
 Code request to a remote subscriber
 
 Sentence format: **`$PUWV2,x,x,x*hh <CR><LF>`**
@@ -100,8 +94,7 @@ Sentence format: **`$PUWV2,x,x,x*hh <CR><LF>`**
 | hh	| Checksum NMEA |
 | \<CR\>\<LF\> | Sentence end |
 
-<a name="item2_4"></a>
-   ### 2.4. IC_D2H_RC_RESPONSE
+### 2.4. IC_D2H_RC_RESPONSE
 Answer of remote subscriber  
 
 Sentence format: **`$PUWV3,x,x.x,x.x,x.x,x.x,x.x*hh <CR><LF>`**
@@ -120,8 +113,7 @@ Azimuth | Horizontal angle of arrival[ For uWAVE USBL devices only, otherwise em
 | hh	| Checksum NMEA |
 | \<CR\>\<LF\> | Sentence end |
 
-<a name="item2_5"></a>
-   ### 2.5. IC_D2H_RC_TIMEOUT
+### 2.5. IC_D2H_RC_TIMEOUT
 Remote subscriber timeout  
 
 Sentence format: **`$PUWV4,x*hh <CR><LF>`**
@@ -136,8 +128,7 @@ rcCmdID | Command ID \([see 4.2](#item4_2)\) |
 | hh	| Checksum NMEA |
 | \<CR\>\<LF\> | Sentence end |
 
-<a name="item2_6"></a>
-   ### 2.6. IC_D2H_RC_ASYNC_IN
+### 2.6. IC_D2H_RC_ASYNC_IN
 Incoming message from a remote subscriber  
 
 Sentence format: **`$PUWV5,x,x.x,x*hh <CR><LF>`**
@@ -154,8 +145,7 @@ Sentence format: **`$PUWV5,x,x.x,x*hh <CR><LF>`**
 | hh	| Checksum NMEA |
 | \<CR\>\<LF\> | Sentence end |
 
-<a name="item2_7"></a>
-   ### 2.7. IC_H2D_AMB_DTA_CFG
+### 2.7. IC_H2D_AMB_DTA_CFG
 Ambient parameters and supply voltage configuration.  
 This mesage configures the modem's output of the readings of the built-in pressure/temperature sensor and supply voltage. After configuration, the modem can transmit these readings using the IC_D2H_AMB_DTA message (Section 2.8)
 
@@ -176,8 +166,7 @@ Sentence format: **`$PUWV6,x,x,x,x,x,x*hh <CR><LF>`**
 | hh	| Checksum NMEA |
 | \<CR\>\<LF\> | Sentence end |
 
-<a name="item2_8"></a>
-   ### 2.8. IC_H2D_AMB_DTA
+### 2.8. IC_H2D_AMB_DTA
 Ambient parameters and supply voltage.  
 
 Sentence format: **`$PUWV7,x.x,x.x,x.x,x.x*hh <CR><LF>`**
@@ -195,8 +184,7 @@ VCC_V | Supply voltage in Volts |
 | hh	| Checksum NMEA |
 | \<CR\>\<LF\> | Sentence end |
 
-<a name="item2_9"></a>
-   ### 2.9. IC_H2D_DINFO_GET
+### 2.9. IC_H2D_DINFO_GET
 Request device information  
 
 Sentence format: **`$PUWV?,x*hh <CR><LF>`**
@@ -211,8 +199,7 @@ Reserved | Reserved |
 | hh	| Checksum NMEA |
 | \<CR\>\<LF\> | Sentence end |
 
-<a name="item2_10"></a>
-   ### 2.10. IC_D2H_DINFO
+### 2.10. IC_D2H_DINFO
 Device information  
 
 Sentence format: **`$PUWV!,c--c,с--с,x,c--c,x,x.x,x,x,x*hh <CR><LF>`**
@@ -238,7 +225,6 @@ isCmdMode | ‘1’ - command mode by default, ‘0’ - command mode by command
 | hh	| Checksum NMEA |
 | \<CR\>\<LF\> | Sentence end |
 
-<a name="item3"></a>
 ## 3. Command mode
 **uWAVE** modems provide the user with a so-called "transparent channel" when all data supplied to the input without changes and 
 analysis are transmitted to the hydroacoustic channel, after which they are received by another modem and in the unchanged form are 
@@ -252,11 +238,8 @@ to 1. To return to control by “service” core, [IC_H2D_SETTINGS_WRITE](#item2
 
 > **WARNING!** Before switching on the device, the "service" core should be pulled to the ground, otherwise, the device will enter the software update mode.
 
-<a name="item4"></a>
 ## 4. Identifiers
-<a name="item4_1"></a>
-   ### 4.1. Error codes
-   
+### 4.1. Error codes
 | Error | Value | Description |
 | :--- | :--- | :--- |
 | LOC_ERR_NO_ERROR | 0 | Request accepted |
@@ -271,9 +254,7 @@ to 1. To return to control by “service” core, [IC_H2D_SETTINGS_WRITE](#item2
 | LOC_ERR_TX_BUFFER_OVERRUN | 9 | Transmitter buffer is full |
 | LOC_ERR_CHKSUM_ERROR | 10 | Checksum error |
 
-<a name="item4_2"></a>
-   ### 4.2 Remote commands
-   
+### 4.2 Remote commands   
 | Command | Value | Description |
 | :--- | :--- | :--- |
 | RC_PING | 0 | Ping |
