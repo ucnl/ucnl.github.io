@@ -276,8 +276,8 @@ to 1. To return to control by “service” core, [IC_H2D_SETTINGS_WRITE](#item2
    
 | Command | Value | Description |
 | :--- | :--- | :--- |
-| RC_PING | 0	Ping |
-| RC_PONG | 1	Pong |
+| RC_PING | 0 | Ping |
+| RC_PONG | 1 | Pong |
 | RC_DPT_GET | 2 | Request a depth value of a remote subscriber |
 | RC_TMP_GET | 3 | Request a temp. Value of a remote subscriber |
 | RC_BAT_V_GET | 4 | Request a battery voltage of a remote subscriber |
