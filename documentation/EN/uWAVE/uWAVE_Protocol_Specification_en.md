@@ -68,6 +68,8 @@ Parts of a message (sentence) NMEА0183:
 ________
 <a name="footnote1"><sup>1</sup> Specified parameters can be changed by a request</a>
 
+<div style="page-break-after: always;"></div>
+
 ## 2. UWV Sentences
 The prefix **D2H** in the name of the message means that it is transmitted from the device (D) to the host system (H).
 The **H2D** prefix in the message name means that it is transmitted from the host system (H) to the device (D).
@@ -254,6 +256,8 @@ Sentence format: **`$PUWV!,c--c,с--с,x,c--c,x,x.x,x,x,x*hh <CR><LF>`**
 | hh	| Checksum NMEA |
 | \<CR\>\<LF\> | Sentence end |
 
+<div style="page-break-after: always;"></div>
+
 ## 3. Command mode
 **uWAVE** modems provide the user with a so-called "transparent channel" when all data supplied to the input without changes and 
 analysis are transmitted to the hydroacoustic channel, after which they are received by another modem and in the unchanged form are 
@@ -265,6 +269,8 @@ Also, the command mode can be enabled by default using the [IC_H2D_SETTINGS_WRIT
 > **WARNING!** The core "service" is pulled __**ONLY**__ to 3-5 V or ground, connecting it to a higher voltage will cause a __**FATAL**__ and __**NON-GUARANTEE**__ failure of the device.
 
 > **WARNING!** Before switching on the device, the "service" core should be pulled to the ground, otherwise, the device will enter the software update mode.
+
+<div style="page-break-after: always;"></div>
 
 ## 4. Identifiers
 ### 4.1. Error codes
@@ -303,6 +309,8 @@ Also, the command mode can be enabled by default using the [IC_H2D_SETTINGS_WRIT
 | RC_USR_CMD_006 | 13 | User command |
 | RC_USR_CMD_007 | 14 | User command |
 | RC_USR_CMD_008 | 15 | User command |
+
+<div style="page-break-after: always;"></div>
 
 ## 5. Appendix
 ### 5.1. Command mode interfacing examples
