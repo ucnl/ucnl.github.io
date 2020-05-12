@@ -22,6 +22,8 @@ up to 20 subscribers in area 1000 x 1000 meters with both transparent channel an
 Extremely small size, low power consumption and simplicity of usage make **uWAVE** an ideal solution for AUV control as well as data 
 transmission, where dimensions and weight are the bottleneck.
 
+<div style="page-break-after: always;"></div>
+
 ## TECHNICAL SPECIFICATIONS
 
 | PARAMETER                              | VALUE |
