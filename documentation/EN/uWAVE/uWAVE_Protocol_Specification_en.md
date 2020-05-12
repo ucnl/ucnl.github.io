@@ -13,7 +13,7 @@
   - [1.1. Physical layer](#11-physical-layer)
   - [1.2. NMEA0183 Protocol standard](#12-nmea0183-protocol-standard)
 - [2. UWV Sentences](#2-uwv-sentences)  
-   - [2.1. IC_D2H_ACK - device reaction	5](#21-ic_d2h_ack)
+   - [2.1. IC_D2H_ACK - device reaction](#21-ic_d2h_ack)
    - [2.2. IC_H2D_SETTINGS_WRITE - writing new settings](#22-ic_h2d_settings_write)
    - [2.3. IC_H2D_RC_REQUEST - code request to a remote subscriber](#23-ic_h2d_rc_request)
    - [2.4. IC_D2H_RC_RESPONSE - answer of remote subscriber](#24-ic_d2h_rc_response)
