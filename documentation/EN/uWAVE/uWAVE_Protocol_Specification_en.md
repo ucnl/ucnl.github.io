@@ -5,7 +5,6 @@
 # uWAVE underwater communication system interfacing protocol specification
 
 ## Content
-
 - [1. Introduction](#1-introduction)  
   - [1.1. Physical layer](#11-physical-layer)
   - [1.2. NMEA0183 Protocol standard](#12-nmea0183-protocol-standard)
@@ -27,16 +26,8 @@
 - [5. Appendix](#5-appendix)
    - [5.1 Command mode interfacing examples](#51-command-mode-interfacing-examples)
    - [5.2 Example 1 - requesting device information](#52-example-1---requesting-device-information)
-   - [5.3 Example 2 - requesting remote data from a remote subscribers]()
-   - [5.4 Example 3 - setting up the ambient data configuration]()
-   
-   
-   
-   
-   
-   
-   
-   
+   - [5.3 Example 2 - requesting remote data from a remote subscribers](#53-example-2---requesting-remote-data-from-a-remote-subscribers)
+   - [5.4 Example 3 - setting up the ambient data configuration](#54-example-3---setting-up-the-ambient-data-configuration)  
 
 ## 1. Introduction
 ### 1.1. Physical layer
