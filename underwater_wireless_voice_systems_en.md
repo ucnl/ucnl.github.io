@@ -5,7 +5,7 @@
 
 ## Underwater Wireless voice systems (Underwater telephone)
 ### RedPhone - Underwater telephone
-* [Device specification: RedPhone-OS](https://ucnl.github.io/Docs/EN/RedPhone/RedPhone-OS_specification_en.pdf)
-* [Device specification: RedPhone-D](https://ucnl.github.io/Docs/EN/RedPhone/RedPhone-D_specification_en.pdf)  
+* [Device specification: RedPhone-OS](/Docs/EN/RedPhone/RedPhone-OS_specification_en.pdf)
+* [Device specification: RedPhone-D](/Docs/EN/RedPhone/RedPhone-D_specification_en.pdf)  
 
 ## [Home](README.md)
