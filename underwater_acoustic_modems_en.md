@@ -11,7 +11,7 @@
 * [Device specification: uWAVE USBL Modem (pdf)](https://ucnl.github.io/Docs/EN/Modems/uWAVE/uWAVE_USBL_Modem_Specification_en.pdf)
 * [Device specification: uWAVE Max](documentation/EN/uWAVE/uWAVE_Max_Specification_en.md)
 * [Device specification: uWAVE Max (pdf)](https://ucnl.github.io/Docs/EN/Modems/uWAVE/uWAVE_Max_Specification_en.pdf)
-* [Communication protocol specification: uWAVE](documentation/EN/uWAVE/uWAVE_USBL_Modem_Specification_en.md)
+* [Communication protocol specification: uWAVE](documentation/EN/uWAVE/uWAVE_Protocol_Specification_en.md)
 * [Communication protocol specification: uWAVE (pdf)](https://ucnl.github.io/Docs/EN/Modems/uWAVE/uWAVE_Protocol_Specification_en.pdf)
 * [Device wiring diagram: uWAVE](https://ucnl.github.io/Docs/EN/Modems/uWAVE/uWAVE_wiring_diagram_en.pdf)
 * [Demo host application (Repository)](https://github.com/ucnl/uWAVE_Host)
