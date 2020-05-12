@@ -4,6 +4,40 @@
 
 # uWAVE underwater communication system interfacing protocol specification
 
+## Content
+
+- [1. Introduction](#1-introduction)  
+  - [1.1. Physical layer](#11-physical-layer)
+  - [1.2. NMEA0183 Protocol standard](#12-nmea0183-protocol-standard)
+- [2. UWV Sentences](#2-uwv-sentences)  
+   - [2.1. IC_D2H_ACK - device reaction	5](#21-ic_d2h_ack)
+   - [2.2. IC_H2D_SETTINGS_WRITE - writing new settings](#22-ic_h2d_settings_write)
+   - [2.3. IC_H2D_RC_REQUEST - code request to a remote subscriber](#23-ic_h2d_rc_request)
+   - [2.4. IC_D2H_RC_RESPONSE - answer of remote subscriber](#24-ic_d2h_rc_response)
+   - [2.5. IC_D2H_RC_TIMEOUT - remote subscriber timeout](#25-ic_d2h_rc_timeout)
+   - [2.6. IC_D2H_RC_ASYNC_IN - incoming message from a remote subscriber](#26-ic_d2h_rc_async_in)
+   - [2.7. IC_H2D_AMB_DTA_CFG - ambient parameters and supply voltage configuration](#27-ic_h2d_amb_dta_cfg)
+   - [2.8. IC_H2D_AMB_DTA - ambient parameters and supply voltage](#28-ic_h2d_amb_dta)
+   - [2.9. IC_H2D_DINFO_GET - request device information](#29-ic_h2d_dinfo_get)
+   - [2.10. IC_D2H_DINFO - device information](#210-ic_d2h_dinfo)
+- [3. Command mode](#3-command-mode)
+- [4. Identifiers](#4-identifiers)
+   - [4.1. Error codes](#41-error-codes)
+   - [4.2. Remote commands](#42-remote-commands)
+- [5. Appendix](#5-appendix)
+   - [5.1 Command mode interfacing examples](#51-command-mode-interfacing-examples)
+   - [5.2 Example 1 - requesting device information](#52-example-1---requesting-device-information)
+   - [5.3 Example 2 - requesting remote data from a remote subscribers]()
+   - [5.4 Example 3 - setting up the ambient data configuration]()
+   
+   
+   
+   
+   
+   
+   
+   
+
 ## 1. Introduction
 ### 1.1. Physical layer
    
@@ -208,19 +242,19 @@ Sentence format: **`$PUWV!,c--c,с--с,x,c--c,x,x.x,x,x,x*hh <CR><LF>`**
 | :--- | :--- |
 | $	| Sentence start '$' |
 | PUWV | UWV |
-!	Sentence ID
-Serial number | Device serial number |
-System moniker | System name |
-System version | System version |
-Core moniker | Communication subsystem |
-Core version | Communication subsystem version |
-acBaudrate | Data transmission speed, baud |
-rxChID | Rx code channel ID |
-txChID | Tx code channel ID |
-maxChannels | Total number of possible code channel IDs |
-styPSU | Water salinity, PSU (can be set by the user) |
-isPTS | ‘1’ - device has a pressure/temperature sensor, ‘0’ - otherwise |
-isCmdMode | ‘1’ - command mode by default, ‘0’ - command mode by command pin. |
+| ! | Sentence ID |
+| Serial number | Device serial number |
+| System moniker | System name |
+| System version | System version |
+| Core moniker | Communication subsystem |
+| Core version | Communication subsystem version |
+| acBaudrate | Data transmission speed, baud |
+| rxChID | Rx code channel ID |
+| txChID | Tx code channel ID |
+| maxChannels | Total number of possible code channel IDs |
+| styPSU | Water salinity, PSU (can be set by the user) |
+| isPTS | ‘1’ - device has a pressure/temperature sensor, ‘0’ - otherwise |
+| isCmdMode | ‘1’ - command mode by default, ‘0’ - command mode by command pin. |
 | *	| Checksum separator NMEA |
 | hh	| Checksum NMEA |
 | \<CR\>\<LF\> | Sentence end |
@@ -277,13 +311,11 @@ Also, the command mode can be enabled by default using the [IC_H2D_SETTINGS_WRIT
 
 ## 5. Appendix
 ### 5.1. Command mode interfacing examples
-
 In the following examples, the messages that come __**to**__ a modem are prefixed with `<<`, and the messages that come __**from**__
 the modem are prefixed with `>>`.     
 It is assumed that the modem is connected to a host system, and the command mode is enabled.  
 
 ### 5.2. Example 1 - requesting device information
-
 ```
 << $PUWV?,0*27<CR><LF>
 ```
@@ -306,8 +338,7 @@ uWAVE \[JULY\] = core moniker,
 0 = command mode by default is disabled  
 
 
- ### 5.3. Example 2 - requesting remote data from a remote subscribers
-
+### 5.3. Example 2 - requesting remote data from a remote subscribers
 ```
 << $PUWV2,0,0,2*28
 ```
@@ -353,8 +384,7 @@ PUWV3 = [IC_D2H_RC_RESPONSE](#24-ic_d2h_rc_response)
 26.31 = MSR (Main lobe to side-peak ratio), dB  
 27.300 = received value (in this case remote modem’s temperature in °C)  
 
- ### 5.4. Example 3 - setting up the ambient data configuration
-
+### 5.4. Example 3 - setting up the ambient data configuration
 ```
 << $PUWV6,0,1000,1,1,1,1*03<CR><LF>
 ```
