@@ -1,6 +1,6 @@
 | ![logo](https://ucnl.github.io/documentation/sm_logo.png) | ![logo](https://ucnl.github.io/documentation/def_zima_b_ant.png) |
 | :---: | ---: |
-| [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | uWAVE USBL underwater acoustic modem specifications |
+| [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **uWAVE USBL Modem** underwater acoustic modem specifications |
 
 ## KEY FEATURES
 
