@@ -6,6 +6,6 @@
 ## Подводные беспроводные системы передачи голоса
 ### RedPhone - Подводная телефония
 * [Спецификация устройства: RedPhone-OS](/documentation/RU/RedPhone/RedPhone_OS_Specification_ru.md)
-* [Спецификация устройства: RedPhone-D](/Docs/RU/RedPhone/RedPhone_Specification_ru.pdf)  
+* [Спецификация устройства: RedPhone-D (информация обновляется)]()  
 
 ## [Домой](README_RU.md)
