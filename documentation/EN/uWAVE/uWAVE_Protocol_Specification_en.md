@@ -30,7 +30,7 @@
 - [5. Appendix](#5-appendix)
    - [5.1 Command mode interfacing examples](#51-command-mode-interfacing-examples)
    - [5.1.2 Example 1 - requesting device information](#512-example-1---requesting-device-information)
-   - [5.1.3 Example 2 - requesting remote data from a remote subscriber](#513-example-2---requesting-remote-data-from-a-remote-subscribers)
+   - [5.1.3 Example 2 - requesting remote data from a remote subscriber](#513-example-2---requesting-remote-data-from-a-remote-subscriber)
    - [5.1.4 Example 3 - setting up the ambient data configuration](#514-example-3---setting-up-the-ambient-data-configuration)  
    
 <div style="page-break-after: always;"></div>
@@ -43,12 +43,12 @@ with a 3.3V data line voltage. The connection is made using a four-wire cable wi
 and GND (ground) wires. Without the use of additional repeaters and interface converters, the maximum cable length, for which 
 the correct operation of the interface is guaranteed, is no more than 2 meters.
 
-Default port settings<sup>[1](#footnote1)</sup>: 
-_Baudrate: 9600 bit/s_  
-_Data bits: 8_  
-_Stop bits: 1_  
-_Parity: No_  
-_Hardware flow control: No_  
+Default port settings<sup>[1](#footnote1)</sup>:  
+> _Baudrate: 9600 bit/s_  
+> _Data bits: 8_  
+> _Stop bits: 1_  
+> _Parity: No_  
+> _Hardware flow control: No_  
 
 >**WARNING!**
 >_The modems are powered by a 5 or 12 Volt DC source, while the data line voltage is 3.3 V._
