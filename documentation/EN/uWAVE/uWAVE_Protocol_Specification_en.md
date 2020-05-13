@@ -268,7 +268,7 @@ to remote subscribers, there is a command mode. Modems analyze input data only i
 “service” core should be pulled to +3.3 V. After that, the “service” core should be pulled to the ground to exit the service mode.
 Also, the command mode can be enabled by default using the [IC_H2D_SETTINGS_WRITE](#22-ic_h2d_settings_write) sentence, when isCmdMode parameter equals to 1. To return to control by “service” core, [IC_H2D_SETTINGS_WRITE](#22-ic_h2d_settings_write) sentence can be used with isCmdMode parameter equals to 0.
 
-> **WARNING!** The core "service" is pulled __**ONLY**__ to 3-5 V or ground, connecting it to a higher voltage will cause a __**FATAL**__ and __**NON-GUARANTEE**__ failure of the device.
+> **WARNING!** The core "service" is pulled **ONLY** to 3-5 V or ground, connecting it to a higher voltage will cause a **FATAL** and **NON-GUARANTEE** failure of the device.
 
 > **WARNING!** Before switching on the device, the "service" core should be pulled to the ground, otherwise, the device will enter the software update mode.
 
