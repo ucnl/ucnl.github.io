@@ -11,7 +11,7 @@
 * **Subscribers code division**
 * **Propagation time measurement**
 * **Reliable and noise-immune technology of digital broadband acoustic communication**
-* **Low power consumption (Rx/Tx) 0.33/6 W**
+* **Low power consumption (Rx/Tx) 0.33/25 W**
 * **Open & easy interfacing protocol**
 * **Built-in depth/temperature sensor**
 
