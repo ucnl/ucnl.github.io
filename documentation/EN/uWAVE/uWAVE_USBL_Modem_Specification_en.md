@@ -29,6 +29,8 @@ Using **uWAVE USBL Modems**, the user can:
 
 **uWAVE** family devices use a simple open NMEA-like configuration protocol, and the supplied open-source [**uWAVELib**](https://github.com/ucnl/uWAVELib) library allows for the fastest and easiest integration of devices into user solutions.
 
+<div style="page-break-after: always;"></div>
+
 ## TECHNICAL SPECIFICATIONS
 
 | PARAMETER | VALUE |
