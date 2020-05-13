@@ -316,7 +316,7 @@ Also, the command mode can be enabled by default using the [IC_H2D_SETTINGS_WRIT
 
 ## 5. Appendix
 ### 5.1. Command mode interfacing examples
-In the following examples, the messages that come __**to**__ a modem are prefixed with `<<`, and the messages that come __**from**__
+In the following examples, the messages that come **to** a modem are prefixed with `<<`, and the messages that come **from**
 the modem are prefixed with `>>`.     
 It is assumed that the modem is connected to a host system, and the command mode is enabled.  
 
