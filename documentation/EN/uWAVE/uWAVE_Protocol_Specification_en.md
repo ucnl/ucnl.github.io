@@ -29,9 +29,9 @@
    - [4.2. Remote commands](#42-remote-commands)
 - [5. Appendix](#5-appendix)
    - [5.1 Command mode interfacing examples](#51-command-mode-interfacing-examples)
-   - [5.2 Example 1 - requesting device information](#52-example-1---requesting-device-information)
-   - [5.3 Example 2 - requesting remote data from a remote subscriber](#53-example-2---requesting-remote-data-from-a-remote-subscribers)
-   - [5.4 Example 3 - setting up the ambient data configuration](#54-example-3---setting-up-the-ambient-data-configuration)  
+   - [5.1.2 Example 1 - requesting device information](#512-example-1---requesting-device-information)
+   - [5.1.3 Example 2 - requesting remote data from a remote subscriber](#513-example-2---requesting-remote-data-from-a-remote-subscribers)
+   - [5.1.4 Example 3 - setting up the ambient data configuration](#514-example-3---setting-up-the-ambient-data-configuration)  
    
 <div style="page-break-after: always;"></div>
 
@@ -320,7 +320,7 @@ In the following examples, the messages that come __**to**__ a modem are prefixe
 the modem are prefixed with `>>`.     
 It is assumed that the modem is connected to a host system, and the command mode is enabled.  
 
-### 5.2. Example 1 - requesting device information
+#### 5.1.2. Example 1 - requesting device information
 ```
 << $PUWV?,0*27<CR><LF>
 ```
@@ -343,7 +343,7 @@ uWAVE \[JULY\] = core moniker,
 0 = command mode by default is disabled  
 
 
-### 5.3. Example 2 - requesting remote data from a remote subscriber
+#### 5.1.3. Example 2 - requesting remote data from a remote subscriber
 ```
 << $PUWV2,0,0,2*28
 ```
@@ -389,7 +389,7 @@ PUWV3 = [IC_D2H_RC_RESPONSE](#24-ic_d2h_rc_response)
 26.31 = MSR (Main lobe to side-peak ratio), dB  
 27.300 = received value (in this case remote modem’s temperature in °C)  
 
-### 5.4. Example 3 - setting up the ambient data configuration
+#### 5.1.4. Example 3 - setting up the ambient data configuration
 ```
 << $PUWV6,0,1000,1,1,1,1*03<CR><LF>
 ```
