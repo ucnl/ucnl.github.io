@@ -1,0 +1,139 @@
+<head>
+<title>World ocean salinity database</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+<script language="javascript" type="text/javascript">
+
+var wosDB;
+
+var getJSON = function(url, callback) {
+    var xhr = new XMLHttpRequest();
+    xhr.open('GET', url, true);
+    xhr.responseType = 'json';
+    xhr.onload = function() {
+      var status = xhr.status;
+      if (status === 200) {
+        callback(null, xhr.response);
+      } else {
+        callback(status, xhr.response);
+      }
+    };
+    xhr.send();
+};
+
+getJSON('https://alekunderwater.github.io/wosdb_lon_lat_sty.json',
+function(err, data) {
+  if (err !== null) {
+    console.log(err);
+  } else {
+    wosDB = data;
+    onSearch();
+  }
+});
+
+function getDiv05(val, max) {
+  var result = Math.trunc(val);
+  result += 0.5;
+  if (result > max) {
+      result -= 1;
+  }
+
+  return result;
+}
+
+function getNearestKey(key, minKey, maxKey, step, db) {
+
+  var t_key = key;
+  while ((t_key < maxKey) && (!(t_key.toString() in db))) {
+    t_key += step;
+  }
+
+  if (!(t_key.toString() in db)) {
+
+    t_key = key;
+    while ((t_key > minKey) && (!(t_key.toString() in db))) {
+      t_key -= step;
+    }
+  }
+
+  return t_key;
+}
+
+function onSearch() {
+
+  t_lt = getDiv05(document.getElementById("lat_deg_input").value, 89.5);
+  t_ln = getDiv05(document.getElementById("lon_deg_input").value, 179.5);
+
+  ln_key = getNearestKey(t_ln, -179.5, 179.5, 1, wosDB);
+  lt_key = getNearestKey(t_lt, -89.5, 89.5, 1, wosDB[ln_key.toString()]);
+
+  ln_key_s = ln_key.toString();
+  lt_key_s = lt_key.toString();
+
+  document.getElementById("s_PSU_out").innerText = wosDB[ln_key_s][lt_key_s].toFixed(3);
+  document.getElementById("npoint_out").innerText = "(" + ln_key_s + ", " + lt_key_s + ")";
+}
+
+
+</script>
+
+</head>
+
+<body>
+<h1>World ocean salinity database</h1>
+<hr>
+
+<i>Warning! All the salinity data presented in this demo are taken from the NOAA World
+ ocean database<a href="#footnote1">[1]</a> for educational purposes only!<br>
+Here are presented only salinity on the water surface</i>
+<br>
+<br>
+
+<table id="in_values_tbl">
+ <tr>
+   <th>Parameter</th>
+   <th>Value</th>
+   <th>Range</th>
+   <th>Units</th>
+ </tr>
+ <tr>
+   <td>Geographic longitude</td>
+   <td><input type="number" step="0.5" value="48.5" min="-175" max="175" name="lon_deg" id="lon_deg_input"></td>
+   <td>-180 .. 180</td>
+   <td>°</td>
+ </tr>
+ <tr>
+   <td>Geographic latitude</td>
+   <td><input type="number" step="0.5" value="44.5" min="-85" max="85" name="lat_deg" id="lat_deg_input"></td>
+   <td>-90 .. 90</td>
+   <td>°</td>
+ </tr>
+ <tr>
+   <td>Nearest point (lon, lat)</td>
+   <td><b><a id="npoint_out"></a></b></td>
+   <td></td>
+   <td></td>
+ </tr>
+ <tr>
+   <td>Salinity</td>
+   <td><b><a id="s_PSU_out"></a></b></td>
+   <td>0 .. 42</td>
+   <td>PSU</td>
+ </tr>
+</table>
+<br>
+<hr>
+
+<div>
+    <button id="search" onclick="onSearch()">Search</button>
+</div>
+
+<ol>
+<li id="footnote1"><a href="https://www.nodc.noaa.gov/OC5/indprod.html">NOAA World Ocean Database and World Ocean Atlas Series</a>.
+</ol>
+
+<hr>
+(C) Alek Dikarev, 2020<br>
+For bug reports, suggestions and questions, please feel free to <a href="https://github.com/AlekUnderwater">reach me</a><br>
+
+</body>
+</html>
