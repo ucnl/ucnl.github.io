@@ -1,0 +1,355 @@
+<head>
+<title>Proper vertical distance travelled by sound calculator</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+<script src="https://ucnl.github.io/UCNLPhysics/JS/ucnlphysics.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+
+  var arrHead = new Array();
+  arrHead = ['Point index', 'Z coordinate', 'Temperature, °C', 'Salinity, PSU'];
+
+  function createTable(tableCaption) {
+      var empTable = document.createElement('table');
+      var caption = empTable.createCaption();
+      caption.innerHTML = tableCaption;
+
+      empTable.setAttribute('id', 'tsProfileTable');
+      var tr = empTable.insertRow(-1);
+      for (var h = 0; h < arrHead.length; h++) {
+          var th = document.createElement('th');
+          th.innerHTML = arrHead[h];
+          tr.appendChild(th);
+      }
+      var div = document.getElementById('cont');
+      div.appendChild(empTable);
+  }
+
+  function updateTable() {
+    var Ntsp = parseFloat(document.getElementById('Ntsp_input').value);
+    var z_step = parseFloat(document.getElementById('z_step_input').value);
+    var tspTable = document.getElementById('tsProfileTable');
+
+    for (var n = tspTable.rows.length - 1; n > 0; n--) {
+      tspTable.deleteRow(n);
+    }
+
+    var z = 0;
+
+    for (var x = 0; x < Ntsp; x++) {
+      var tr = tspTable.insertRow(x+1);
+      for (var c = 0; c < arrHead.length; c++) {
+        var td = document.createElement('td');
+        td = tr.insertCell(c);
+
+        if (c == 0) {
+          td.innerText = x + 1;
+        }
+        else if (c == 1) {
+          td.innerText = (z + z_step * x).toFixed(3);
+        }
+        else if ((c == 2) || (c == 3)) {
+          var ele = document.createElement('input');
+          ele.setAttribute('type', 'number');
+          ele.setAttribute('step', '0.01');
+          ele.setAttribute('value', '0.0');
+          td.appendChild(ele);
+        }
+      }
+    }
+  }
+
+  function updateTable_And_Set_TS_Const() {
+    updateTable();
+    t   = 0.0;
+    s   = 35.0;
+    set_TS_Profile_Const(t, s);
+  }
+
+  function getProfile() {
+    var profile = [];
+    var tspTable = document.getElementById('tsProfileTable');
+    var rowCnt = tspTable.rows.length;
+
+    for (var n = 1; n < rowCnt; n++) {
+      var z = parseFloat(tspTable.rows.item(n).cells[1].childNodes[0].textContent);
+      var t = parseFloat(tspTable.rows.item(n).cells[2].childNodes[0].value);
+      var s = parseFloat(tspTable.rows.item(n).cells[3].childNodes[0].value);
+      profile.push({z: z, t: t, s: s });
+    }
+
+    return profile;
+  }
+
+  function set_TS_Profile_Const(t, s) {
+
+    var tspTable = document.getElementById('tsProfileTable');
+    var rowCnt = tspTable.rows.length;
+
+    for (var n = 1; n < rowCnt; n++) {
+      tspTable.rows.item(n).cells[2].childNodes[0].value = t;
+      tspTable.rows.item(n).cells[3].childNodes[0].value = s;
+    }
+  }
+
+  function set_TS_Profile(phi, z_step, ts_profile) {
+    var p_length = ts_profile.length;
+    document.getElementById('phi_deg_input').value = phi;
+    document.getElementById('Ntsp_input').value = p_length;
+    document.getElementById('z_step_input').value = z_step;
+    updateTable();
+
+    var tspTable = document.getElementById('tsProfileTable');
+    var rowCnt = tspTable.rows.length;
+
+    for (var n = 1; n < rowCnt; n++) {
+      tspTable.rows.item(n).cells[2].childNodes[0].value = ts_profile[n - 1].t;
+      tspTable.rows.item(n).cells[3].childNodes[0].value = ts_profile[n - 1].s;
+    }
+  }
+
+  function set_Example_Northern_pacific_TS_profile() {
+    set_TS_Profile(EXAMPLE_N_PACIFIC_TS_PROFILE.latitude,
+                   EXAMPLE_N_PACIFIC_TS_PROFILE.zStep,
+                   EXAMPLE_N_PACIFIC_TS_PROFILE.tsProfile);
+
+    run();
+  }
+
+  function set_Example_Southern_Atlantic_TS_profile() {
+    set_TS_Profile(EXAMPLE_S_ATLANTIC_TS_PROFILE.latitude,
+                   EXAMPLE_S_ATLANTIC_TS_PROFILE.zStep,
+                   EXAMPLE_S_ATLANTIC_TS_PROFILE.tsProfile);
+    run();
+  }
+
+  function set_Example_Arctic_TS_profile() {
+    set_TS_Profile(EXAMPLE_ARCTIC_TS_PROFILE.latitude,
+                   EXAMPLE_ARCTIC_TS_PROFILE.zStep,
+                   EXAMPLE_ARCTIC_TS_PROFILE.tsProfile);
+    run();
+  }
+
+
+  function setFloat(elementID, value, dec) {
+    document.getElementById(elementID).innerText = value.toFixed(dec);
+  }
+
+  function run() {
+
+    tof = (document.getElementById("tau_s_input").value) / 2.0;
+    n_t = document.getElementById("Ntsp_input").value;
+    phi = document.getElementById("phi_deg_input").value;
+
+    g = PHX_gravity_constant_WGS84_calc(phi);
+    ts_profile = getProfile();
+
+    s_nu_1500 = tof * PHX_FWTR_SOUND_SPEED_MPS;
+    s_nu_surf = tof * PHX_speed_of_sound_UNESCO_calc(ts_profile[0].t, PHX_ATM_PRESSURE_MBAR, ts_profile[0].s);
+
+    s_sum = PHX_vertical_sound_path_ts_profile(tof, n_t, g, ts_profile);
+
+    var t_mean = 0.0;
+    var s_mean = 0.0;
+    for (var idx = 0; idx < ts_profile.length; idx++) {
+      t_mean += ts_profile[idx].t;
+      s_mean += ts_profile[idx].s;
+    }
+    t_mean /= ts_profile.length;
+    s_mean /= ts_profile.length;
+
+    s_nu_mean = tof * PHX_speed_of_sound_UNESCO_calc(t_mean, PHX_ATM_PRESSURE_MBAR, s_mean);
+
+    setFloat("s_nu_1500", s_nu_1500, 3);
+    setFloat("s_nu_mean", s_nu_mean, 3);
+    setFloat("s_nu_surf", s_nu_surf, 3);
+    setFloat("s_sum", s_sum, 3);
+  }
+
+</script>
+
+</head>
+
+<body>
+<h1>Proper water properties calculator: vertical distance travelled by sound</h1>
+<hr>
+
+<h2>0. Brief description. Very basic theory.</h2>
+
+The speed of sound propagation in water depends on three parameters: temperature
+<b><i>t</i></b>, hydrostatic pressure <b><i>P</i></b> and salinity <b><i>s</i></b>.
+And almost every water body on the Earth never has a homogenous distribution of
+all of them. For example, when we use echosounder to estimate the depth of a water
+body, sound travels down and backwards through layers of water with different
+speed.
+As we know from elementary school, the distance travelled, in this case, can be
+calculated as a sum of velocities <b><i>&nu;</i></b>, multiplied by equal time
+intervals <b><i>&Delta;t</i></b>:
+<br>
+<br>
+<b><i>s = &Sum;&nu;(t<sub>i</sub>) &middot; &Delta;t</i></b>
+<br>
+<br>
+Where every next time interval <b><i>t<sub>i+1</sub></i></b> is calculated according to
+<b><i>t<sub>i+1</sub> = t<sub>i</sub> + &Delta;t</i></b>.<br>
+To make measurement more precise we have to decrease the time interval <b><i>&Delta;t</i></b>
+ as small as possible, coming to the following idea:
+ <br>
+ <br>
+ <b><i>s = lim &Sum;&nu;(t<sub>i</sub>) &middot; &Delta;t, &Delta;t&rarr;0</i></b>
+ <br>
+ <br>
+Which can be rewritten in a more common way:
+<br>
+<br>
+<b><i>s = &int;&nu;(t) dt</i></b>
+<br>
+<br>
+It means that to estimate actual distance travelled by sound in the vertical direction
+we need to know the speed of sound in every point from the water surface to the
+bottom. Which is quite unrealistic. The best that we can have is a temperature/
+salinity profile - a few measurements of water salinity and temperature taken
+in some points on different depths. So, the best we can do is to interpolate
+TS-profile and calculate the sum mentioned above.
+Corresponding speed of sound in a point with specified <b><i>t</i></b> and
+<b><i>s</i></b> (and implicitly, <b><i>P</i></b>) calculates according to
+the UNESCO Equation, that can be found in a work of Chen and Millero<a href="#footnote1">[1]</a>.
+
+<h2>1. Calculation</h2>
+
+To estimate the distance travelled by sound in the vertical direction (i.e. the
+depth of a water body, and more precisely, the distance between echosounder's
+transducer and the bottom), we need to measure propagation time <b><i>&tau;</i></b>
+and should have the TS-profile for the current point in the water body.
+
+<table id="in_values_tbl1">
+<caption><b>Table 1. Input values</b></caption>
+ <tr>
+   <th>Parameter</th>
+   <th>Notation</th>
+   <th>Value</th>
+   <th>Range</th>
+   <th>Units</th>
+ </tr>
+ <tr>
+   <td>Measured propagation time</td>
+   <td><b><i>&tau;</i></b></td>
+   <td><input type="number" step="0.001" value="1" min="0.001" max="16" name="tau_s" id="tau_s_input"></td>
+   <td>0.001 .. 16</td>
+   <td>s</td>
+ </tr>
+ <tr>
+   <td>Number of time intervals</td>
+   <td><b><i>N<sub>t</sub></i></b></td>
+   <td><input type="number" step="1" value="1000" min="2" max="99999" name="N_t" id="N_t_input"></td>
+   <td>2 .. 99999</td>
+   <td></td>
+ </tr>
+ <tr>
+   <td>Geographic latitude</td>
+   <td><b><i>&phi;</i></b></td>
+   <td><input type="number" step="0.1" value="48" min="-90" max="90" name="phi_deg" id="phi_deg_input"></td>
+   <td>-90 .. 90</td>
+   <td>°</td>
+ </tr>
+ </table>
+
+<br>
+ <table id="in_values_tbl2">
+ <caption><b>Table 2. TS-profile parameters</b></caption>
+  <tr>
+    <th>Parameter</th>
+    <th>Notation</th>
+    <th>Value</th>
+    <th>Units</th>
+  </tr>
+  <tr>
+    <td>Number of points</td>
+    <td><b><i>N<sub>tsp</sub></i></b></td>
+    <td><input type="number" step="1" value="12" min="1" max="100" name="c3_Nt" id="Ntsp_input"></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Z coordinate step</td>
+    <td><b><i>Z<sub>s</sub></i></b></td>
+    <td><input type="number" step="1" value="100" min="1" max="1000" name="z_step" id="z_step_input"></td>
+    <td>m</td>
+  </tr>
+ </table>
+
+ <p><input type="button" id="update_table_btn" value="RESET TABLE" onclick="updateTable_And_Set_TS_Const()"/></p>
+ <hr>
+ <p><input type="button" id="set_northern_ocean" value="Set typical northern pacific profile (39°N, 152°W)" onclick="set_Example_Northern_pacific_TS_profile()"/></p>
+ <p><input type="button" id="set_southern_atlantic_ocean" value="Set typical southern atlantic profile (20°S)" onclick="set_Example_Southern_Atlantic_TS_profile()"/></p>
+ <p><input type="button" id="set_arctic_ocean" value="Set typical arctic profile (85°N)" onclick="set_Example_Arctic_TS_profile()"/></p>
+ <hr>
+ <div id="cont"></div>
+
+ <p><input type="button" id="run" value="CALCULATE" onclick="run()"/></p>
+ <br>
+
+ <br>
+  <table id="out_values_tbl">
+  <caption><b>Table 4. Calculated distance travelled by sound in the vertical direction</b></caption>
+   <tr>
+     <th>Notation</th>
+     <th>Value</th>
+     <th>Units</th>
+     <th>Description</th>
+   </tr>
+
+   <tr>
+     <td><b><i>s<sub>&nu;=1500</sub></i></b></td>
+     <td><a id="s_nu_1500"></a></td>
+     <td>m</td>
+     <td><b><i>s = 1500 &middot; &tau;</i></b></td>
+   </tr>
+
+   <tr>
+     <td><b><i>s<sub>&nu;<sub>mean</sub></sub></i></b></td>
+     <td><a id="s_nu_mean"></a></td>
+     <td>m</td>
+     <td><b><i>s = &nu;<sub>mean</sub> &middot; &tau;</i></b></td>
+   </tr>
+
+   <tr>
+     <td><b><i>s<sub>&nu;<sub>surf</sub></sub></i></b></td>
+     <td><a id="s_nu_surf"></a></td>
+     <td>m</td>
+     <td><b><i>s = &nu;<sub>surf</sub> &middot; &tau;</i></b></td>
+   </tr>
+
+   <tr>
+     <td><b><i>s<sub>&sum;</sub></i></b></td>
+     <td><a id="s_sum"></a></td>
+     <td>m</td>
+     <td><b><i>s = &Sum;&nu;(t<sub>i</sub>) &middot; &Delta;t</i></b></td>
+   </tr>
+  </table>
+<br>
+<br>
+
+First three values in the table 4 are given for comparison.<br>
+- <b><i>s<sub>&nu;=1500</sub></i></b> - is the distance, estimated assuming that speed of sound is constant and equals 1500 m/s.<br>
+- <b><i>s<sub>&nu;<sub>mean</sub></sub></i></b> - is the distance, estimated assuming constant speed of sound, calculated for mean <b><i>t</i></b> and <b><i>s</i></b>.<br>
+- <b><i>s<sub>&nu;<sub>surf</sub></sub></i></b> - is the distance, estimated assuming constant speed of sound, calculated for <b><i>t</i></b> and <b><i>s</i></b> on the water surface.<br>
+- <b><i>s<sub>&sum;</sub></i></b> - is the distance, estimated by interpolating TS-profile and calculated the sum, discussed in the top of this document.<br>
+
+<ol>
+<li id="footnote1"><a href="https://asa.scitation.org/doi/10.1121/1.381646">C-T. Chen and F.J. Millero, Speed of sound in seawater at high pressures (1977) J. Acoust. Soc. Am. 62(5)</a>.
+</ol>
+
+<p>This calculator is made with <a href="https://github.com/ucnl/UCNLPhysics">UCNLPhysics</a> free and open source library.</p>
+
+<hr>
+(C) Alek Dikarev, 2020<br>
+For bug reports, suggestions and questions, please feel free to <a href="https://github.com/AlekUnderwater">reach me</a><br>
+
+<script type="text/javascript">
+
+createTable("<b>Table 3. TS-Profile</b>");
+set_Example_Northern_pacific_TS_profile();
+
+</script>
+
+</body>
+</html>
