@@ -16,6 +16,8 @@
 
 ### Online утилиты для протокола NMEA0183
 * [Online NMEA0183 калькулятор контрольной суммы](/online_utils/nmea0183_checksum_calculator.html)
+<!---
 * [Online NMEA0183 парсер/билдер (under construction)](https://ucnl.github.io/Docs/)
+--->
 
 ## [Home](README.md)
