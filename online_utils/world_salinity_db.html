@@ -20,7 +20,7 @@ var getJSON = function(url, callback) {
     xhr.send();
 };
 
-getJSON('https://alekunderwater.github.io/wosdb_lon_lat_sty.json',
+getJSON('/online_utils/wosdb_lon_lat_sty.json',
 function(err, data) {
   if (err !== null) {
     console.log(err);
