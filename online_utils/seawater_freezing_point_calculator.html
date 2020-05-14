@@ -1,0 +1,88 @@
+<head>
+<title>Seawater freezing point calculator</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+<script src="https://ucnl.github.io/UCNLPhysics/JS/ucnlphysics.js" type="text/javascript"></script>
+<script type="text/javascript">
+
+function onInput() {
+  var p_in = document.getElementById("P_mBar_input");
+  var s_in = document.getElementById("s_PSU_input");
+  var res;
+
+  if ((p_in.validity.valid) && (!p_in.validity.valueMissing) &&
+      (s_in.validity.valid) && (!s_in.validity.valueMissing)) {
+    res = PHX_water_fpoint_calc(p_in.value, s_in.value).toFixed(3);
+  }
+  else {
+    res = "error"
+  }
+
+  document.getElementById("t_f_C_out").innerText = res;
+}
+</script>
+
+</head>
+
+<body>
+<h1>Seawater freezing point calculator</h1>
+<hr>
+
+<h2>0. Brief description</h2>
+
+This online calculator for freezing point of seawater is based on known formula,
+described in <a href="#footnote1">[1]</a> (p. 30). Freezing point temperature of
+ seawater is a function of hydrostatic pressure <b><i>P</i></b> and salinity <b><i>s</i></b>of water.<br>
+ <br>
+
+<h2>1. Calculation</h2>
+
+<table id="in_values_tbl">
+ <tr>
+   <th>Parameter</th>
+   <th>Notation</th>
+   <th>Value</th>
+   <th>Range</th>
+   <th>Units</th>
+ </tr>
+ <tr>
+   <td>Hydrostatic pressure</td>
+   <td><b><i>P</i></b></td>
+   <td><input type="number" step="0.01" value="100000" min="1000" max="1200000" name="P_mBar" id="P_mBar_input" oninput="onInput()"></td>
+   <td>10<sup>3</sup> .. 10<sup>6</sup></td>
+   <td>mBar</td>
+ </tr>
+ <tr>
+   <td>Water salinity</td>
+   <td><b><i>s</i></b></td>
+   <td><input type="number" step="0.1" value="38" min="0" max="42" name="s_PSU" id="s_PSU_input" oninput="onInput()"></td>
+   <td>0 .. 42</td>
+   <td>PSU</td>
+ </tr>
+ <tr>
+   <td>Freezing point</td>
+   <td><b><i>t</i></b></td>
+   <td><b><a id="t_f_C_out"></a></b></td>
+   <td></td>
+   <td>°C</td>
+ </tr>
+</table>
+<br>
+<hr>
+
+<ol>
+<li id="footnote1"><a href="https://darchive.mblwhoilibrary.org/bitstream/handle/1912/2470/059832eb.pdf">Algorithms for computation of fundamental properties of seawater.
+Unesco technical papers in marine science vol. 44, 1983</a>.
+</ol>
+
+<p>This calculator is made with <a href="https://github.com/ucnl/UCNLPhysics">UCNLPhysics</a> free and open source library.</p>
+
+<hr>
+(C) Alek Dikarev, 2020<br>
+For bug reports, suggestions and questions, please feel free to <a href="https://github.com/AlekUnderwater">reach me</a><br>
+
+<script type="text/javascript">
+onInput();
+</script>
+
+</body>
+</html>
