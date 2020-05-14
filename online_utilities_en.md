@@ -5,17 +5,17 @@
 
 ## Online utilities
 ### Proper seawater properties calculators
-* [Proper depth calculator](https://alekunderwater.github.io/proper_depth_calculator.html)
-* [Proper sound speed calculator ](https://alekunderwater.github.io/proper_speed_of_sound_calculator.html)
-* [Seawater freezing point calculator](https://alekunderwater.github.io/seawater_freezing_point_calculator.html)
-* [Online world ocean salinity database](https://alekunderwater.github.io/world_salinity_db.html)
+* [Proper depth calculator](/online_utils/proper_depth_calculator.html)
+* [Proper sound speed calculator ](/online_utils/proper_speed_of_sound_calculator.html)
+* [Seawater freezing point calculator](/online_utils/seawater_freezing_point_calculator.html)
+* [Online world ocean salinity database](/online_utils/world_salinity_db.html)
 
 ### Underwater acoustic communication
-* [Proper vertical sound path calculator](https://alekunderwater.github.io/proper_vsound_distance_calculator.html)
-* [Simple propagation distance estimation by tx sensitivity and sound absorption](https://alekunderwater.github.io/simple_prop_distance_estimation.html)
+* [Proper vertical sound path calculator](/online_utils/proper_vsound_distance_calculator.html)
+* [Simple propagation distance estimation by tx sensitivity and sound absorption](/online_utils/simple_prop_distance_estimation.html)
 
 ### Online NMEA0183 utilities
-* [Online NMEA0183 checksum calculator](https://alekunderwater.github.io/nmea0183_checksum_calculator.html)
+* [Online NMEA0183 checksum calculator](/online_utils/nmea0183_checksum_calculator.html)
 * [Online NMEA0183 sentences parser/builder (under construction)](https://ucnl.github.io/Docs/)
 
 
