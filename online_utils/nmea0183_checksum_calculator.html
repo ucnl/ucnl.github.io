@@ -1,0 +1,52 @@
+<head>
+<title>NMEA0183 Checksum calculator</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+<script type="text/javascript">
+
+function NMEA0183_getChecksum(sentence) {
+  var result = 0;
+  for( var idx = 0; idx < sentence.length; idx++) {
+      result = result ^ sentence.charCodeAt(idx);
+  }
+  return result;
+}
+
+function nmeaSnt_onKey() {
+  el = document.getElementById("snt_input");
+  el.style.width = ((el.value.length + 1) * 8);
+  chk_sum = NMEA0183_getChecksum(el.value);
+  document.getElementById("chk_sum").innerText = Number(chk_sum).toString(16).padStart(2, "0").toUpperCase();
+}
+
+</script>
+
+</head>
+
+<body>
+<h1>NMEA0183 Checksum calculator</h1>
+<hr>
+<p>
+<tt>
+<big>
+<b>$</b><input id="snt_input" type="text" maxlength="128" oninput="nmeaSnt_onKey()" value="GNGLL,4443.1365,N,03749.8815,E,071803.000,A,A"><b>*<a id="chk_sum"></a></b>
+</big>
+</tt>
+</p>
+<br>
+<i>
+<b>Brief description:</b> NMEA0183 checksum is just a simple byte-by-byte XOR of
+all the bytes between <b>$</b> and <b>*</b> signs exclusively.
+</i>
+
+<hr>
+(C) Alek Dikarev, 2020<br>
+For bug reports, suggestions and questions, please feel free to <a href="https://github.com/AlekUnderwater">reach me</a><br>
+
+<script type="text/javascript">
+
+nmeaSnt_onKey();
+
+</script>
+
+</body>
+</html>
