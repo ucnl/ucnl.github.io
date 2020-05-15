@@ -68,9 +68,13 @@ function onSearch() {
 
   ln_key_s = ln_key.toString();
   lt_key_s = lt_key.toString();
-
+       
   document.getElementById("s_PSU_out").innerText = wosDB[ln_key_s][lt_key_s].toFixed(3);
-  document.getElementById("npoint_out").innerText = "(" + ln_key_s + ", " + lt_key_s + ")";
+  
+  linkText = "(" + ln_key_s + ", " + lt_key_s + ")";
+  linkLink = "https://www.google.com/maps/search/?api=1&query=" + ln_key_s + "," + lt_key_s;
+    
+  document.getElementById("npoint_out").innerHTML = += '<a href="' + desiredLink + '">' + desiredText + '</a>';
 }
 
 
