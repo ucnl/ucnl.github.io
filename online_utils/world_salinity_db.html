@@ -74,7 +74,7 @@ function onSearch() {
   linkText = "LAT: " + lt_key_s + ", LON: " + ln_key_s;
   linkLink = "https://www.google.com/maps/search/?api=1&query=" + lt_key_s + "," + ln_key_s;
     
-  document.getElementById("npoint_out").innerHTML += '<a href="' + linkLink + '">' + linkText + '</a>';
+  document.getElementById("npoint_out").innerHTML = '<a href="' + linkLink + '">' + linkText + '</a>';
 }
 
 
