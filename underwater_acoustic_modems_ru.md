@@ -12,7 +12,7 @@
 * [Описание протокола сопряжения: uWAVE](/documentation/RU/uWAVE/uWAVE_Protocol_Specification_ru.md)
 * [Схема подключения: uWAVE](/Docs/EN/Modems/uWAVE/uWAVE_wiring_diagram_en.pdf)
 * [Демонстрационное приложение: uWAVE_Host (Репозиторий)](https://github.com/ucnl/uWAVE_Host)
-* [Демонстрационное приложение: uWAVE_Host (Скачать релиз)](https://github.com/ucnl/uWAVE_Host/releases/download/1.0/uWAVE_Host.zip)
+* [Демонстрационное приложение: uWAVE_Host (Скачать релиз)](https://api.github.com/repos/ucnl/uWAVE_Host/zipball)
 * [Примеры для Arduino](https://github.com/ucnl/uWAVE_Arduino)
 
 <!---
@@ -27,7 +27,7 @@
 * [Спецификация протокола сопряжения: RedLINE](/Docs/RU/Modems/RedLINE/RedLINE_Protocol_Specification_ru.pdf)
 * [Схема подключения: RedLINE](/Docs/RU/Modems/RedLINE/RedLINE_drawings_ru.png)
 * [Демонстрационное приложение: RedLINE Host (Репозиторий)](https://github.com/ucnl/RedLINE_Host)
-* [Демонстрационное приложение: RedLINE Host (Скачать релиз)](https://github.com/ucnl/RedLINE_Host/releases/download/1.0/RedLINE_Host.zip)
+* [Демонстрационное приложение: RedLINE Host (Скачать релиз)](https://api.github.com/repos/ucnl/RedLINE_Host/zipball)
 
 ### RedGTR -  гидроакустический модем
 * [Спецификация устройства: RedGTR](/Docs/RU/Modems/RedGTR/RedGTR_Specification_ru.pdf)
