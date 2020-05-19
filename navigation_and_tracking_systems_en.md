@@ -25,7 +25,7 @@
 * [RedWAVE User's manual](/Docs/EN/RedWAVE/RedWAVE_LBL_Deployment_maintenance_RedNAV_en.pdf)
 * [Demo track (Google KML)](/Docs/RU/RedWAVE/rednode_track_18042019.kml)
 * [RedNODE demo application (Repository)](https://github.com/ucnl/RedNodeHost)
-* [RedNODE demo application (Download release)](https://api.github.com/repos/ucnl/RedNODEHost/zipball)
+* [RedNODE demo application (Download release)](https://api.github.com/repos/ucnl/RedNodeHost/zipball)
 * [RedNAV host application (Repository)](https://github.com/ucnl/RedNavHost)
 * [RedNAV host application (Download release)](https://api.github.com/repos/ucnl/RedNavHost/zipball)
 
