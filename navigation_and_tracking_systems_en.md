@@ -15,7 +15,7 @@
 * [Device 3D-model (STEP): Zima-Responder](/Docs/EN/Zima/ZIMA_Responder_3D.step)
 * [Device wiring: Zima-Responder](/Docs/EN/Zima/Zima-R_drawings_wiring.pdf)
 * [Host application (Repository)](https://github.com/ucnl/ZHost)
-* [Host application (Download release)](https://github.com/ucnl/ZHost/releases/download/1.2/ZHost.zip)
+* [Host application (Download release)](https://api.github.com/repos/ucnl/ZHost/zipball)
 
 ### RedWAVE - Underwater GPS (LBL)
 * [Device specification: RedBASE - GNSS-equipped sonobuoy](/Docs/EN/RedWAVE/RedBase_Specification_en.pdf)
@@ -25,9 +25,9 @@
 * [RedWAVE User's manual](/Docs/EN/RedWAVE/RedWAVE_LBL_Deployment_maintenance_RedNAV_en.pdf)
 * [Demo track (Google KML)](/Docs/RU/RedWAVE/rednode_track_18042019.kml)
 * [RedNODE demo application (Repository)](https://github.com/ucnl/RedNodeHost)
-* [RedNODE demo application (Download release)](https://github.com/ucnl/RedNodeHost/releases/download/2.0/RedNODEHost.zip)
+* [RedNODE demo application (Download release)](https://api.github.com/repos/ucnl/RedNODEHost/zipball)
 * [RedNAV host application (Repository)](https://github.com/ucnl/RedNavHost)
-* [RedNAV host application (Download release)](https://github.com/ucnl/RedNavHost/releases/download/2.0/RedNAVHost.zip)
+* [RedNAV host application (Download release)](https://api.github.com/repos/ucnl/RedNavHost/zipball)
 
 ### VOSTOK - diver's homing system
 * [Device specification: VOSTOK-ACS - diver's acoustic compass](/Docs/EN/Vostok/Vostok-ACS_Specification_en.pdf)
