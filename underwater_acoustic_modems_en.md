@@ -11,7 +11,7 @@
 * [Communication protocol specification: uWAVE](documentation/EN/uWAVE/uWAVE_Protocol_Specification_en.md)
 * [Device wiring diagram: uWAVE](/Docs/EN/Modems/uWAVE/uWAVE_wiring_diagram_en.pdf)
 * [Demo host application (Repository)](https://github.com/ucnl/uWAVE_Host)
-* [Demo host application (Download release)](https://github.com/ucnl/uWAVE_Host/releases/download/1.0/uWAVE_Host.zip)
+* [Demo host application (Download release)](https://api.github.com/repos/ucnl/uWAVE_Host/zipball)
 * [Examples for Arduino](https://github.com/ucnl/uWAVE_Arduino)
 
 <!---
@@ -24,7 +24,7 @@
 ### RedLINE -  underwater acoustic modem
 * [Device specification: RedLINE](/Docs/EN/Modems/RedLINE/RedLINE_Specification_en.pdf)
 * [Demo host application (Repository)](https://github.com/ucnl/RedLINE_Host)
-* [Demo host application (Download release)](https://github.com/ucnl/RedLINE_Host/releases/download/1.0/RedLINE_Host.zip)
+* [Demo host application (Download release)](https://api.github.com/repos/ucnl/RedLINE_Host/zipball)
 
 ### RedGTR -  underwater acoustic code modem
 * [Device specification: RedGTR](/Docs/EN/Modems/RedGTR/RedGTR_Specification_en.pdf)
