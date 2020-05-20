@@ -20,15 +20,15 @@
 **uWAVE USBL Modem** - Устройство, сочетающее в себе функции передачи данных по гидроакустическому каналу и навигационной системы на 
 ультракороткой базе.  
 При помощи модемов **uWAVE USBL Modem** пользователь может:
-- передавать произвольные пользовательские данные между модемами **uWAVE USBL Modem**, **uWAVE Max** и **uWAVE** в любой комбинации 
+- передавать произвольные пользовательские данные между модемами **uWAVE USBL Modem**, [uWAVE Max](/documentation/RU/uWAVE/uWAVE_Max_Specification_ru.md) и [uWAVE](/documentation/RU/uWAVE/uWAVE_Specification_ru.md) в любой комбинации 
 с одновременным определением горизонтального угла прихода сигнала;
-- определять местоположение модемов **uWAVE USBL Modem**, **uWAVE Max** и **uWAVE** в командном режиме по дистанции и горизонтальному 
+- определять местоположение модемов **uWAVE USBL Modem**, [uWAVE Max](/documentation/RU/uWAVE/uWAVE_Max_Specification_ru.md) и [uWAVE](/documentation/RU/uWAVE/uWAVE_Specification_ru.md) в командном режиме по дистанции и горизонтальному 
 углу прихода сигнала;
 - передавать до 9 коротких кодовых пользовательских команд телеуправления;
-- запрашивать у удаленных модемов **uWAVE USBL Modem**, **uWAVE Max** и **uWAVE** их глубину, температуру и напряжение питания;
+- запрашивать у удаленных модемов **uWAVE USBL Modem**, [uWAVE Max](/documentation/RU/uWAVE/uWAVE_Max_Specification_ru.md) и [uWAVE](/documentation/RU/uWAVE/uWAVE_Specification_ru.md) их глубину, температуру и напряжение питания;
 - измерять собственную глубину, температуру и напряжение питания;  
 
-Устройства семейства **uWAVE** используют простой открытый NMEA-подобный протокол настройки, а поставляемая библиотека 
+Устройства [семейства uWAVE]([uWAVE](/documentation/RU/uWAVE/uWAVE_Family_ru.md)) используют простой открытый [NMEA-подобный протокол настройки](/documentation/RU/uWAVE/uWAVE_Protocol_Specification_ru.md), а поставляемая библиотека 
 [**uWAVELib**](https://github.com/ucnl/uWAVELib) с открытым исходным кодом позволяет осуществлять максимально быструю и простую 
 интеграцию устройств в пользовательские решения.
 
@@ -54,13 +54,13 @@
 | ВРЕМЯ СТАРТА | 100 мсек |
 | ДИАПАЗОН РАБОЧИХ ТЕМПЕРАТУР | -5 .. 50 °C |
 | ИНТЕРФЕЙС СОПРЯЖЕНИЕ<sup>[3](#footnote3)</sup> | UART 9600 бит/с |
-| ПРОТОКОЛ СОПРЯЖЕНИЯ | NMEA 0183 PUWV |
+| ПРОТОКОЛ СОПРЯЖЕНИЯ | NMEA 0183 [PUWV](/documentation/RU/uWAVE/uWAVE_Protocol_Specification_ru.md) |
 | ДЛИНА КАБЕЛЯ<sup>[3](#footnote3)</sup> | 0.5 м |
 | СХЕМА РАЗДЕЛЕНИЯ АБОНЕНТОВ | 20 кодовых каналов |
 | КОМАНДНЫЙ РЕЖИМ | 16 предустановленных кодовых сообщений (9 для пользовательских приложений) |
   
 ________________
-<a name="footnote1"><sup>1</sup></a> При работе с другим uWAVE USBL Modem или при работе с модемами uWAVE Max. Максимальная дальность связи со стандартными модемами uWAVE составляет 1000 метров  
+<a name="footnote1"><sup>1</sup></a> При работе с другим **uWAVE USBL Modem** или при работе с модемами [uWAVE Max](/documentation/RU/uWAVE/uWAVE_Max_Specification_ru.md). Максимальная дальность связи со стандартными модемами [uWAVE](/documentation/RU/uWAVE/uWAVE_Specification_ru.md) составляет 1000 метров  
 <a name="footnote2"><sup>2</sup></a> Значение получено без учета эффекта многолучевого распространения    
 <a name="footnote3"><sup>3</sup></a> Значение может быть изменено по запросу  
 
