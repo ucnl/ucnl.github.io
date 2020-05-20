@@ -9,7 +9,7 @@
 * [Рукводство пользователя](/Docs/RU/Zima/ZIMA_Users_manual_ru.pdf)
 * [Спецификация устройства: Zima-Base - пеленгационная антенна](/documentation/RU/Zima/Zima_B_Specification_ru.md)
 * [Спецификация устройства: Zima-Responder - маяк-ответчик](/documentation/RU/Zima/Zima_R_Specification_ru.md)
-* [Спецификация устройства: Zima-Responder 1000 (OEM) - маяк ответчик](/Docs/RU/Zima/ZIMA_R1000_OEM_Specification_ru.pdf)
+* [Спецификация устройства: Zima-Responder 1000 (OEM) - маяк ответчик](/documentation/RU/Zima/Zima_R_OEM_Specification_ru.md)
 * [Спецификация устройства: BAT&LINK Box - блок питания и коммутации](/documentation/RU/Zima/Bat_n_link_box_Specification_ru.md)
 * [Информационный лист по совместимости с системами определения положения и курса](/Docs/RU/Zima/GNSS_and_heading_system_compatibility_ru.pdf)
 * [Протокол информационного сопряжения: Zima USBL](/documentation/RU/Zima/Zima_Protocol_Specification_ru.md)
