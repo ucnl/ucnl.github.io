@@ -28,7 +28,7 @@
 - запрашивать у удаленных модемов **uWAVE USBL Modem**, [uWAVE Max](/documentation/RU/uWAVE/uWAVE_Max_Specification_ru.md) и [uWAVE](/documentation/RU/uWAVE/uWAVE_Specification_ru.md) их глубину, температуру и напряжение питания;
 - измерять собственную глубину, температуру и напряжение питания;  
 
-Устройства [семейства uWAVE]([uWAVE](/documentation/RU/uWAVE/uWAVE_Family_ru.md)) используют простой открытый [NMEA-подобный протокол настройки](/documentation/RU/uWAVE/uWAVE_Protocol_Specification_ru.md), а поставляемая библиотека 
+Устройства [семейства uWAVE](/documentation/RU/uWAVE/uWAVE_Family_ru.md) используют простой открытый [NMEA-подобный протокол настройки](/documentation/RU/uWAVE/uWAVE_Protocol_Specification_ru.md), а поставляемая библиотека 
 [**uWAVELib**](https://github.com/ucnl/uWAVELib) с открытым исходным кодом позволяет осуществлять максимально быструю и простую 
 интеграцию устройств в пользовательские решения.
 
