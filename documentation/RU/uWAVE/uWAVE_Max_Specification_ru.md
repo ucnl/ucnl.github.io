@@ -1,6 +1,6 @@
 | ![logo](https://ucnl.github.io/documentation/sm_logo.png) | ![logo](https://ucnl.github.io/documentation/def_modem_black.png) |
 | :---: | ---: |
-| [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **uWAVE Max** underwater acoustic modem specifications |
+| [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **uWAVE Max** - Гидроакустический модем <br/> Спецификация устройства |
 
 ## КЛЮЧЕВЫЕ ОСОБЕННОСТИ
 
