@@ -85,4 +85,5 @@
 | [Станция пеленгования **Zima-B**: спецификация устройства](Zima_B_Specification_ru.md) |
 | [Блок питания и коммутации **Bat&Link Box**: спецификация устройства](Bat_n_link_box_Specification_ru.md) |
 | [Протокол информационного сопряжения устройств системы **Zima USBL**](Zima_Protocol_Specification_ru.md) |
+| [Требования по совместимости для систем определения курса и положения](Zima_GNSS_requirements_ru.md) |
 
