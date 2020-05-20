@@ -9,14 +9,11 @@
 
 ## Состав системы
 
-|  |
-| :---: |
-| [Zima-B](Zima_B_Specification_ru.md) - базовая станция пеленгования |
-| ![Zima-B](https://ucnl.github.io/documentation/def_zima_b_ant.png) |
-| [Zima-R](Zima_R_Specification_ru.md) - маяки-ответчики (одня базовая станция может последовательно работать максимум с 23 ответчиками) |
-| ![Zima-R](https://ucnl.github.io/documentation/zima_r.png) |
-| [Bat&Link Box](Bat_n_link_box_Specification_ru.md) - автономный блок питания и коммутации базовой станции |
-| ![Bat&Link Box](https://ucnl.github.io/documentation/batnlinkbox.png) |
+|  |  |
+| :---: | :--- |
+| ![Zima-B](https://ucnl.github.io/documentation/def_zima_b_ant.png) | [Zima-B](Zima_B_Specification_ru.md) <br/> Базовая станция пеленгования |
+| ![Zima-R](https://ucnl.github.io/documentation/zima_r.png) | [Zima-R](Zima_R_Specification_ru.md) <br/> Маяки-ответчики (одня базовая станция может последовательно работать максимум с 23 ответчиками) |
+| ![Bat&Link Box](https://ucnl.github.io/documentation/batnlinkbox.png) | [Bat&Link Box](Bat_n_link_box_Specification_ru.md) <br/> Автономный блок питания и коммутации базовой станции |
 
 
 ## Решаемые задачи
