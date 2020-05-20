@@ -48,7 +48,7 @@
 | МАКСИМАЛЬНАЯ ОТНОСИТЕЛЬНАЯ СКОРОСТЬ | +/- 2 м/с |
 | ВРЕМЯ СТАРТА | 100 мсек |
 | ДИАПАЗОН РАБОЧИХ ТЕМПЕРАТУР | -5 .. 50 °C |
-| ВРЕМЯ АВТОНОМНОЙ РАБОТЫ<sup>[3](#footnote3)</sup> ПРИ ПИТАНИИ ОТ [Bat&Link Box](Bat_n_link_box_Specification_ru.md) | 6 ч |
+| ВРЕМЯ АВТОНОМНОЙ РАБОТЫ<sup>[3](#footnote3)</sup> ПРИ ПИТАНИИ ОТ [BAT&LINK BOX](Bat_n_link_box_Specification_ru.md) | 6 ч |
 | ИНТЕРФЕЙС СОПРЯЖЕНИЯ | USB (COM) 9600 бит/с |
 | ПРОТОКОЛ СОПРЯЖЕНИЯ | NMEA 0183 [PZMA](Zima_Protocol_Specification_ru.md) |
 | ДЛИНА КАБЕЛЯ<sup>[4](#footnote4)</sup> | 10 м |
