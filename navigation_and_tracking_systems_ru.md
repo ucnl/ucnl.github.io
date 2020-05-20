@@ -11,7 +11,7 @@
 * [Спецификация устройства: Zima-Responder - маяк-ответчик](/documentation/RU/Zima/Zima_R_Specification_ru.md)
 * [Спецификация устройства: Zima-Responder 1000 (OEM) - маяк ответчик](/documentation/RU/Zima/Zima_R_OEM_Specification_ru.md)
 * [Спецификация устройства: BAT&LINK Box - блок питания и коммутации](/documentation/RU/Zima/Bat_n_link_box_Specification_ru.md)
-* [Информационный лист по совместимости с системами определения положения и курса](/Docs/RU/Zima/GNSS_and_heading_system_compatibility_ru.pdf)
+* [Информационный лист по совместимости для систем определения положения и курса](/documentation/RU/Zima/Zima_GNSS_requirements_ru.md)
 * [Протокол информационного сопряжения: Zima USBL](/documentation/RU/Zima/Zima_Protocol_Specification_ru.md)
 * [3D-модель устройства (STEP): Zima-Base](/Docs/EN/Zima/Zima_Base_3D.step)
 * [3D-модель устройства (STEP): Zima-Responder](/Docs/RU/Zima/ZIMA_Responder_3D.step)
