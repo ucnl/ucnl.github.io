@@ -8,6 +8,7 @@
 приемо-передающей антенны [Zima-B](Zima_B_Specification_ru.md).
 
 ## Состав системы
+
 |  |
 | :---: |
 | [Zima-B](Zima_B_Specification_ru.md) - базовая станция пеленгования |
