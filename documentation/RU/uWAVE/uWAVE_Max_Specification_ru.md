@@ -17,12 +17,12 @@
 ## ОПИСАНИЕ
 
 При помощи модемов **uWAVE Max** пользователь может:
-* передавать произвольные цифровые данные между устройствами [uWAVE USBL Modem](/documentation/RU/uWAVE/uWAVE_USBL_Modem_Specification_ru.md), **uWAVE Max** и [uWAVE](/documentation/RU/uWAVE/uWAVE_Specification_ru.md) в любой комбинации;
+* передавать произвольные цифровые данные между устройствами [uWAVE USBL Modem](uWAVE_USBL_Modem_Specification_ru.md), **uWAVE Max** и [uWAVE](uWAVE_Specification_ru.md) в любой комбинации;
 * передавать до 9 кодовых пользовательских команд телеуправления;
-* запрашивать у удаленных устройств [uWAVE USBL Modem](/documentation/RU/uWAVE/uWAVE_USBL_Modem_Specification_ru.md), **uWAVE Max** и [uWAVE](/documentation/RU/uWAVE/uWAVE_Specification_ru.md) их глубину, температуру и напряжение питания;
+* запрашивать у удаленных устройств [uWAVE USBL Modem](uWAVE_USBL_Modem_Specification_ru.md), **uWAVE Max** и [uWAVE](uWAVE_Specification_ru.md) их глубину, температуру и напряжение питания;
 * измерять собственную глубину, температуру и напряжение питания;
 
-Устройства [семейства uWAVE](/documentation/RU/uWAVE/uWAVE_Family_ru.md) используют простой открытый [NMEA-подобный протокол настройки](/documentation/RU/uWAVE/uWAVE_Protocol_Specification_ru.md), а поставляемая библиотека 
+Устройства [семейства uWAVE](uWAVE_Family_ru.md) используют простой открытый [NMEA-подобный протокол настройки](uWAVE_Protocol_Specification_ru.md), а поставляемая библиотека 
 [**uWAVELib**](https://github.com/ucnl/uWAVELib) с открытым исходным кодом позволяет осуществлять максимально быструю и простую 
 интеграцию устройств в пользовательские решения.
 
@@ -45,13 +45,13 @@
 | ВРЕМЯ СТАРТА | 100 мсек |
 | ДИАПАЗОН РАБОЧИХ ТЕМПЕРАТУР | -5 .. 50 °C |
 | ИНТЕРФЕЙС СОПРЯЖЕНИЯ<sup>[3](#footnote3)</sup> | UART 9600 бит/с |
-| ПРОТОКОЛ СОПРЯЖЕНИЯ | NMEA 0183 [PUWV](/documentation/RU/uWAVE/uWAVE_Protocol_Specification_ru.md) |
+| ПРОТОКОЛ СОПРЯЖЕНИЯ | NMEA 0183 [PUWV](uWAVE_Protocol_Specification_ru.md) |
 | ДЛИНА КАБЕЛЯ<sup>[3](#footnote3)</sup> | 0.5 м |
 | СХЕМА РАЗДЕЛЕНИЯ АБОНЕНТОВ | 20 кодовых каналов |
 | КОМАНДНЫЙ РЕЖИМ | 16 предустановленных кодовых сообщений (9 для пользовательских приложений) |
   
 ________________
-<a name="footnote1"><sup>1</sup></a> При работе с другим **uWAVE Max** или при работе с модемами [uWAVE USBL Modem](/documentation/RU/uWAVE/uWAVE_USBL_Modem_Specification_ru.md). Максимальная дальность связи 
-со стандартными модемами [uWAVE](/documentation/RU/uWAVE/uWAVE_Specification_ru.md) составляет 1000 метров.  
+<a name="footnote1"><sup>1</sup></a> При работе с другим **uWAVE Max** или при работе с модемами [uWAVE USBL Modem](uWAVE_USBL_Modem_Specification_ru.md). Максимальная дальность связи 
+со стандартными модемами [uWAVE](uWAVE_Specification_ru.md) составляет 1000 метров.  
 <a name="footnote2"><sup>2</sup></a> Значение получено без учета эффекта многолучевого распространения  
 <a name="footnote3"><sup>3</sup></a> Значение может быть изменено по запросу  
