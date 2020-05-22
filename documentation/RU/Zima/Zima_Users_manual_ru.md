@@ -3,6 +3,9 @@
 | [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **Zima USBL** - гидроакустическая навигационная система <br/> Руководство пользователя |
 
 
+# Данные документ находится в разработке. Воспользуйтесь [старой версией инструкции](https://github.com/ucnl/Docs/blob/master/RU/Zima/ZIMA_Users_manual_ru.pdf)
+
+
   
 # Zima USBL <br/> Руководство пользователя
 
