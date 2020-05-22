@@ -6,7 +6,7 @@
 ## Гидроакустические навигационные и трекинговые системы
 ### Zima - Ультракороткобазисная (USBL) система
 * [Краткое описание](/documentation/RU/Zima/Zima_DataBrief_ru.md)
-* [Рукводство пользователя](/Docs/RU/Zima/ZIMA_Users_manual_ru.pdf)
+* [Рукводство пользователя](/documentation/RU/Zima/Zima_Users_manual_ru.md)
 * [Спецификация устройства: Zima-Base - пеленгационная антенна](/documentation/RU/Zima/Zima_B_Specification_ru.md)
 * [Спецификация устройства: Zima-Responder - маяк-ответчик](/documentation/RU/Zima/Zima_R_Specification_ru.md)
 * [Спецификация устройства: Zima-Responder 1000 (OEM) - маяк ответчик](/documentation/RU/Zima/Zima_R_OEM_Specification_ru.md)
