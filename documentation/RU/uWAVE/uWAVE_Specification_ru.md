@@ -28,7 +28,7 @@
 
 <div style="page-break-after: always;"></div>
 
-## TECHNICAL SPECIFICATIONS
+## ТЕХНИЧЕСКИЕ ХАРАКТЕРИСТИКИ
 
 | ПАРАМЕТР | ЗНАЧЕНИЕ |
 | :--- | :--- |
