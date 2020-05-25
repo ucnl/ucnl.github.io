@@ -18,7 +18,7 @@
    - [2.3. IC_D2H_LOC_DATA_VAL](#23-ic_d2h_loc_data_val)
    - [2.4. IC_H2D_SETTINGS_WRITE](#24-ic_h2d_settings_write)
    - [2.5. IC_H2D_SETTINGS_READ](#25-ic_h2d_settings_read)
-   - [2.6. IC_D2H_SETTINGS]#26-ic_d2h_settings)
+   - [2.6. IC_D2H_SETTINGS](#26-ic_d2h_settings)
    - [2.7. IC_D2H_DEV_INFO](#27ic_d2h_dev_info)
 - [3. Сервисный режим](#3-%D1%81%D0%B5%D1%80%D0%B2%D0%B8%D1%81%D0%BD%D1%8B%D0%B9-%D1%80%D0%B5%D0%B6%D0%B8%D0%BC)
 - [4. Таблицы идентификаторов](#4-%D1%82%D0%B0%D0%B1%D0%BB%D0%B8%D1%86%D1%8B-%D0%B8%D0%B4%D0%B5%D0%BD%D1%82%D0%B8%D1%84%D0%B8%D0%BA%D0%B0%D1%82%D0%BE%D1%80%D0%BE%D0%B2)
