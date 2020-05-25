@@ -1,6 +1,6 @@
 | ![logo](https://ucnl.github.io/documentation/sm_logo.png) |  |
 | :---: | ---: |
-| [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **uWAVE** underwater communication system interfacing protocol specification |
+| [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **uWAVE** - семейство устройств гидроакустической связи <br/> Протокол информационного сопряжения |
   
   
   
