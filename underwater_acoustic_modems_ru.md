@@ -16,15 +16,8 @@
 * [Демонстрационное приложение: uWAVE_Host (Скачать релиз)](https://api.github.com/repos/ucnl/uWAVE_Host/zipball)
 * [Примеры для Arduino](https://github.com/ucnl/uWAVE_Arduino)
 
-<!---
-* [Спецификация устройства: uWAVE (pdf)](/Docs/RU/Modems/uWAVE/uWAVE_Specification_ru.pdf)
-* [Спецификация устройства: uWAVE USBL Modem (pdf)](/Docs/RU/Modems/uWAVE/uWAVE_USBL_Modem_Specification_ru.pdf)
-* [Спецификация устройства: uWAVE Max (pdf)](/Docs/RU/Modems/uWAVE/uWAVE_Max_Specification_ru.pdf)
-* [Описание протокола сопряжения: uWAVE (pdf)](/Docs/RU/Modems/uWAVE/uWAVE_Protocol_Specification_ru.pdf) 
--->
-
 ### RedLINE -  гидроакустический модем
-* [Спецификация устройства: RedLINE](/Docs/RU/Modems/RedLINE/RedLINE_Specification_ru.pdf)
+* [Спецификация устройства: RedLINE](/documentation/RU/RedLINE/RedLine_Specification_ru.md)
 * [Спецификация протокола сопряжения: RedLINE](/Docs/RU/Modems/RedLINE/RedLINE_Protocol_Specification_ru.pdf)
 * [Схема подключения: RedLINE](/Docs/RU/Modems/RedLINE/RedLINE_drawings_ru.png)
 * [Демонстрационное приложение: RedLINE Host (Репозиторий)](https://github.com/ucnl/RedLINE_Host)
