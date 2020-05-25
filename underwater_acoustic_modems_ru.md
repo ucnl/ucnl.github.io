@@ -18,7 +18,7 @@
 
 ### RedLINE -  гидроакустический модем
 * [Спецификация устройства: RedLINE](/documentation/RU/RedLINE/RedLine_Specification_ru.md)
-* [Спецификация протокола сопряжения: RedLINE](/Docs/RU/Modems/RedLINE/RedLINE_Protocol_Specification_ru.pdf)
+* [Спецификация протокола сопряжения: RedLINE](/documentation/RU/RedLINE/RedLINE_Protocol_Specifications_ru.md)
 * [Схема подключения: RedLINE](/Docs/RU/Modems/RedLINE/RedLINE_drawings_ru.png)
 * [Демонстрационное приложение: RedLINE Host (Репозиторий)](https://github.com/ucnl/RedLINE_Host)
 * [Демонстрационное приложение: RedLINE Host (Скачать релиз)](https://api.github.com/repos/ucnl/RedLINE_Host/zipball)
