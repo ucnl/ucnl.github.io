@@ -24,8 +24,8 @@
 * [Демонстрационное приложение: RedLINE Host (Скачать релиз)](https://api.github.com/repos/ucnl/RedLINE_Host/zipball)
 
 ### RedGTR -  гидроакустический модем
-* [Спецификация устройства: RedGTR](/Docs/RU/Modems/RedGTR/RedGTR_Specification_ru.pdf)
-* [Спецификация протокола сопряжения: RedGTR](/Docs/RU/Modems/RedGTR/RedGTR_Protocol_Specification_ru.pdf)
-* [Схема подключения: RedGTR](/Docs/RU/Modems/RedGTR/RedGTR_drawings_ru.png)
+* [Спецификация устройства: RedGTR](/documentation/RU/RedGTR/RedGTR_Specifications_ru.md)
+* [Спецификация протокола сопряжения: RedGTR](/documentation/RU/RedGTR/RedGTR_Protocol_Specifications_ru.md)
+* [Схема подключения: RedGTR](/documentation/redgtr_drawings_ru.png)
 
 ## [Домой](README_RU.md)
