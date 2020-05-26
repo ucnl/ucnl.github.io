@@ -5,6 +5,7 @@
 
 ## Underwater acoustic modems
 ### uWAVE - underwater acoustic modem
+* [Data brief: uWAVE devices family]
 * [Device specification: uWAVE](documentation/EN/uWAVE/uWAVE_Specification_en.md)
 * [Device specification: uWAVE USBL Modem](documentation/EN/uWAVE/uWAVE_USBL_Modem_Specification_en.md)
 * [Device specification: uWAVE Max](documentation/EN/uWAVE/uWAVE_Max_Specification_en.md)
@@ -13,13 +14,6 @@
 * [Demo host application (Repository)](https://github.com/ucnl/uWAVE_Host)
 * [Demo host application (Download release)](https://api.github.com/repos/ucnl/uWAVE_Host/zipball)
 * [Examples for Arduino](https://github.com/ucnl/uWAVE_Arduino)
-
-<!---
-* [Device specification: uWAVE (pdf)](/Docs/EN/Modems/uWAVE/uWAVE_Specification_en.pdf)
-* [Device specification: uWAVE USBL Modem (pdf)](/Docs/EN/Modems/uWAVE/uWAVE_USBL_Modem_Specification_en.pdf)
-* [Device specification: uWAVE Max (pdf)](/Docs/EN/Modems/uWAVE/uWAVE_Max_Specification_en.pdf)
-* [Communication protocol specification: uWAVE (pdf)](/Docs/EN/Modems/uWAVE/uWAVE_Protocol_Specification_en.pdf)
--->
 
 ### RedLINE -  underwater acoustic modem
 * [Device specification: RedLINE](/Docs/EN/Modems/RedLINE/RedLINE_Specification_en.pdf)
