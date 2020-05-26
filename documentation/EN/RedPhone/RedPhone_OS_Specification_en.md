@@ -13,8 +13,7 @@
 
 ## DESCRIPTION
 
-The RedPhone-OS underwater wireless telephone station provides voice messages over the water surface and divers. The device supports 
-standard frequency bands and is compatible with most similar systems. 
+The RedPhone-OS Wireless underwater telephone provides voice transmission between the surface station and the divers. The device supports standard frequency bands and is compatible with most other systems. The device is made in a shockproof plastic case, the dashboard is made of high-grade 3 mm stainless steel with inscriptions applied by laser engraving. The built-in power supply consists of lithium-iron-phosphate batteries, which operate at low temperatures and more than 1000 charge-discharge cycles.
   
 <div style="page-break-after: always;"></div>
 
