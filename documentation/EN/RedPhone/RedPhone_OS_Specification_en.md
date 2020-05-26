@@ -24,7 +24,7 @@ The RedPhone-OS Wireless underwater telephone provides voice transmission betwee
 | DIMENSIONS (length х width х height)      | 259 x 202 x 115 mm |
 | WIGHT (dry)                               | 2 kg |
 | MAX. OPERATING RANGE                      | 1000 m |
-| ANTENNA'S CABLE LENGTH                    | 7 m |
+| TRANSDUCER'S CABLE LENGTH                 | 7 m |
 | NUMBER OF SUPPORTED CHANNELS              | 8 |
 | BATTERY LIFE (RX MODE)                    | up to 8 hours |
 | WORKING TEMPERATURE RANGE                 | -10 .. 50 °С |
