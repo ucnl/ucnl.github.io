@@ -1,6 +1,6 @@
 | ![logo](https://ucnl.github.io/documentation/sm_logo.png) | ![logo](https://ucnl.github.io/documentation/redphone_os.png) |
 | :---: | ---: |
-| [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | RedPhone водолазная беспроводная голосовая связь |
+| [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | RedPhone-OS станция водолазной беспроводной голосовой связи <br/> специцикация устройства |
 
 
 ## ОСОБЕННОСТИ
