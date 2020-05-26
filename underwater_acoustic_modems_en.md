@@ -5,7 +5,7 @@
 
 ## Underwater acoustic modems
 ### uWAVE - underwater acoustic modem
-* [Data brief: uWAVE devices family]
+* [Data brief: uWAVE devices family](/documentation/EN/uWAVE/uWAVE_Family_en.md)
 * [Device specification: uWAVE](documentation/EN/uWAVE/uWAVE_Specification_en.md)
 * [Device specification: uWAVE USBL Modem](documentation/EN/uWAVE/uWAVE_USBL_Modem_Specification_en.md)
 * [Device specification: uWAVE Max](documentation/EN/uWAVE/uWAVE_Max_Specification_en.md)
