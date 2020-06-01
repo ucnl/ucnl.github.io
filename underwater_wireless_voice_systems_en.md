@@ -7,5 +7,6 @@
 ### RedPhone - Underwater telephone
 * [Device specification: RedPhone-OS](/documentation/EN/RedPhone/RedPhone_OS_Specification_en.md)
 * [Device specification: RedPhone-D (info is updating)]()  
+* [Media: tests videos, tutorials etc.](/documentation/EN/RedPhone/media.md)
 
 ## [Home](README.md)
