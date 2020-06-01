@@ -1,7 +1,7 @@
 | ![logo](/documentation/sm_logo.png) |
 | :---: |
 | [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) |
-| [EN](/documentation/EN/RedPhone/media.md) \| [RU](/documentation/RU/RedPhone/media.md) |
+| [EN](/documentation/EN/RedPhone/media) \| [RU](/documentation/RU/RedPhone/media) |
 
 ## RedPhone media: tests videos, tutorials etc.
 
@@ -46,4 +46,4 @@ alt="RedPhone-OS tests Jan 2018" width="240" height="180" border="10" /></a>
 ______  
 
 
-## [Back](media_video_en.md)
+## [Back](/../../media_video_en.md)
