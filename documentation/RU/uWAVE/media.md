@@ -1,7 +1,7 @@
 | ![logo](https://ucnl.github.io/documentation/sm_logo.png) |
 | :---: |
 | [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) |
-| [EN](/documentation/EN/uWAVE/media.md) \| [RU](/documentation/RU/uWAVE/media.md) |
+| [EN](/documentation/EN/uWAVE/media) \| [RU](/documentation/RU/uWAVE/media) |
 
 ## uWAVE медиаматериалы: видео с испытаний, видеоинструкции и т.п.
 
@@ -38,3 +38,6 @@ target="_blank"><img src="http://img.youtube.com/vi/Z1bVerVecY0/0.jpg"
 alt="uWAVE Modem range test 1092 m" width="240" height="180" border="10" /></a>  
 
 ______  
+
+
+## [Назад](/../../media_videos_ru)
