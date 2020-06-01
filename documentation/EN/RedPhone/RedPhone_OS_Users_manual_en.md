@@ -115,169 +115,166 @@ By a separate agreement with the manufacturer, it is possible to supply a transd
 | 7 | Adapter with Jack 3.5 mm jack for connecting headphones (earphones) | 1 PC. | |
 <div style="page-break-after: always;"></div>
 
-## 2. Работа с устройством
-### 2.1. Подготовка к работе
-* Расположить станцию на устойчивом нескользком горизонтальном основании;
-* Привязать станцию за ручку кейса при помощи страховочного шнура к леерному ограждению, перилам и т.п. для предотвращения опрокидывания станции в воду;
-* Открыть крышку станции, нажав на предохранители закмков вниз (см. **риcунок 3**):
+## 2. Work with the device
+### 2.1. Preparation for work
+* Place the station on a stable non-slip horizontal base;
+* Bind the station by the handle of the case with the help of a safety cord to the guard rail, railing, etc. to prevent the station from tipping over into the water;
+* Open the station cover by pushing the locks down (see **Figure 3**):
 
-| ![RedPhone-OS case lock](/documentation/smallcase_lock1.png) |
-| :---: |
-| **Рисунок 3 - Предохранитель замка** |
+| ! [RedPhone-OS case lock] (/ documentation / smallcase_lock1.png) |
+| : ---: |
+| **Figure 3 - Lock** |
 
-* Зафиксировать кабель гидроакустической антенны при помощи карабина, как показано на **рисунке 4**, для разгрузки разъема антенны от возможных рывков и натяжений. Допускается фиксация кабеля за грузонесущую проушину при помощи полимерного шнура, толщиной не менее 4 мм.
+* Fix the cable of the hydroacoustic antenna with a carabiner, as shown in **Figure 4**, to unload the antenna connector from possible jerking and tension. It is allowed to fix the cable to the load-carrying eye using a polymer cord with a thickness of at least 4 mm.
 
-| ![RedPhone-OS cable fix](/documentation/redphone_os_cable_fix.png) |
-| :---: |
-| **Рисунок 4 - Фиксация кабеля гидракустической антенны** |
+### 2.2. Testing routines
+#### 2.2.1. External visual check
+It is carried out with the station cover open. During this check, it is controlled that:
 
-### 2.2. Проверочные мероприятия
-#### 2.2.1. Внешняя визуальная проверка
-Выполняется при открытой крышке станции. В ходе этой проверки контролируются, что:
+* The integrity of the protective caps on the toggle switches **"Speaker"** and **"Power"** of the front panel of the station is not broken;
+* Water, salt and other contaminants are absent inside the connectors on the front panel of the station and mating connectors (transducer, microphone, headphones (when using));
+* The integrity of the insulation of the cables of the transducer and microphone is not broken;
 
-* Целостность защитных колпачков на тумблерах **"Динамик"** и **"Питание"** передней панели станции не нарушена;
-* Вода, высолы и прочие загрязнения отсутствуют внутри разъемов на передней панели станции и ответных разъемах (гидроакустическая антенна, микрофон, наушники (при использовании));
-* Целостность изоляции кабелей гидроакустической антенны и микрофона не нарушена;
+> **If the expected conditions do not coincide with those observed, the operation of the station is prohibited!**.
 
-> **При несовпадении ожидаемых состояний от наблюдающихся эксплуатация станции запрещается!**.
+#### 2.2.2. Checking device performance
+It is carried out after a successful visual inspection, according to [p. 2.2.1]().
 
-#### 2.2.2. Проверка работоспособности устройства
-Выполняется после успешной визуальной проверки, согласно [п. 2.2.1](#221-%D0%B2%D0%BD%D0%B5%D1%88%D0%BD%D1%8F%D1%8F-%D0%B2%D0%B8%D0%B7%D1%83%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F-%D0%BF%D1%80%D0%BE%D0%B2%D0%B5%D1%80%D0%BA%D0%B0).
+Additional verification conditions:
+* toggle switch **"Power"** is installed in the position **"Off"**;
+* Toggle switch **"Speaker"** is installed in the position **"On"**;
+* regulator **"Volume"**, set for 12 hours (50% of the scale);
 
-Дополнительные условия проверки:
-* тумблер **"Питание"** установлен в положении **"Выкл"**;
-* тумблер **"Динамик"** установлен в положении **"Вкл"**; 
-* регулятор **"Громкость"**, установленном на 12 часов (50% шкалы);
+During the inspection, it is controlled that:
 
-В ходе проверки контролируется, что:
+* When translating the toggle switch **"Power"** to the position **"On"** the station emits a short beep, indicating the presence of power and that the device is working;
 
-* При переводе тумблера **"Питание"** в положение **"Вкл"** станция издает короткий звуковой сигнал, свидетельстующий о наличии питания и работоспособности устройства;
+[Sound example](/documentation/redphone_pwon.wav)
 
-[Пример звука](/documentation/redphone_pwon.wav)  
+After the check the toggle switch **"Power"** should be moved to the position **"Off"**
 
-После проверки тумблер **"Питание"** перевести в положение **"Выкл"**
+> **If the expected conditions do not coincide with those observed, the operation of the station is prohibited!**.
 
-> **При несовпадении ожидаемых состояний от наблюдающихся эксплуатация станции запрещается!**.
+#### 2.2.3. Checking the transducer and microphone
+It is carried out after successful checks in accordance with [p. 2.2.1]() and [p. 2.2.2]().
 
-#### 2.2.3. Проверка гидроакустической антенны и микрофона
-Выполняется после успешных проверок согласно [п. 2.2.1](#221-%D0%B2%D0%BD%D0%B5%D1%88%D0%BD%D1%8F%D1%8F-%D0%B2%D0%B8%D0%B7%D1%83%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F-%D0%BF%D1%80%D0%BE%D0%B2%D0%B5%D1%80%D0%BA%D0%B0) и [п. 2.2.2](#222-%D0%BF%D1%80%D0%BE%D0%B2%D0%B5%D1%80%D0%BA%D0%B0-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BE%D1%81%D0%BF%D0%BE%D1%81%D0%BE%D0%B1%D0%BD%D0%BE%D1%81%D1%82%D0%B8-%D1%83%D1%81%D1%82%D1%80%D0%BE%D0%B9%D1%81%D1%82%D0%B2%D0%B0).
+Additional verification conditions:
+* Toggle switch **"Power"** is installed in the position **"Off"**;
+* Toggle switch **"Speaker"** is installed in the position **"On"**;
+* Regulator **"Volume"**, set to **12 hours (50% of the scale)**;
+* Complete **transducer** connected to the connector **"Antenna"** on the front panel of the station;
+* Complete **microphone** is connected to the connector **"Microphone"**;
+* **Tangent** (_PTT, Push-to-talk_) on the microphone **not pressed**;
 
-Дополнительные условия проверки:
-* тумблер **"Питание"** установлен в положении **"Выкл"**;
-* тумблер **"Динамик"** установлен в положении **"Вкл"**; 
-* регулятор **"Громкость"**, установленном на **12 часов (50% шкалы)**;
-* комплектная **гидроакустическая антенна** подключена к разъему **"Антенна"** на передней панели станции;
-* комплектный **микрофон** подключен к разъему **"Микрофон"**;
-* **тангента** (_PTT, Push-to-talk_) на микрофоне **не нажата**;
+During the inspection, it is controlled that:
 
-В ходе проверки контролируется, что:
+* When translating the toggle switch **"Power"** to the position **"On"** the station emits a short beep, indicating the presence of power and that the device is working;
+* A constant noise background is heard from the station speaker, the intensity of which can vary;
+* When you touch the transducer, the station reacts with a change in noise (for example, when you lightly tap the sonar antenna from the speaker of the station, these clicks should be heard;
+* When **the tangent is pressed** the noise from the speakers completely stops (transmission is in progress), and when **is released** the station emits a short beep, after which the background noise can be heard again;
 
-* При переводе тумблера **"Питание"** в положение **"Вкл"** станция издает короткий звуковой сигнал, свидетельстующий о наличии питания и работоспособности устройства;
-* Из громкоговорителя станции слышен постоянный шумовой фон, интенсивность которого может меняться;
-* При прикосновении к гидроакустической антенне станция реагирует изменением шума (например, при легком постукивании по гидроакустической антенне из динамика станции должны быть слышны эти щелчки;
-* При **нажатой тангенте** шум из динамиков полностью прекращается (идет передача), а при **отпускании** станция издает короткий звуковой сигнал, после чего может быть слышен шумофой фон;
+After the check the toggle switch **"Power"** should be moved to the position **"Off"**
 
-После проверки тумблер **"Питание"** перевести в положение **"Выкл"**
+[Sound sample] (/documentation/redphone_pwon_rx_check.wav)
 
-[Пример звука](/documentation/redphone_pwon_rx_check.wav)  
+> **If the expected conditions do not coincide with those observed, the operation of the station is prohibited!**.
 
-> **При несовпадении ожидаемых состояний от наблюдающихся эксплуатация станции запрещается!**.
+> To check the operability of the headphones, the toggle switch **“Speaker”** must be in the state **“Off”** and all sound signals, including the background noise, should be controlled using the headphones according to the method described above.  
 
-> Для проверки работоспособности головных телефонов (наушников) тумблер **"Динамик"** должен быть в состоянии **"Выкл"** и все звуковые сигналы, включая шумофой фон, должны контролироваться при помощи головных телефонов по указаноой выше методике.
+#### 2.2.4. Before work
+It is carried out after successful checks according to paragraphs. [2.2.1] () .. [2.2.3] ().
 
-#### 2.2.4. Непосредственно перед работой
-Выполняется после успешных проверок согласно пп. [2.2.1](#221-%D0%B2%D0%BD%D0%B5%D1%88%D0%BD%D1%8F%D1%8F-%D0%B2%D0%B8%D0%B7%D1%83%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F-%D0%BF%D1%80%D0%BE%D0%B2%D0%B5%D1%80%D0%BA%D0%B0) .. [2.2.3](#223-%D0%BF%D1%80%D0%BE%D0%B2%D0%B5%D1%80%D0%BA%D0%B0-%D0%B3%D0%B8%D0%B4%D1%80%D0%BE%D0%B0%D0%BA%D1%83%D1%81%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%BE%D0%B9-%D0%B0%D0%BD%D1%82%D0%B5%D0%BD%D0%BD%D1%8B-%D0%B8-%D0%BC%D0%B8%D0%BA%D1%80%D0%BE%D1%84%D0%BE%D0%BD%D0%B0).
+Make sure that:
+* The station is installed on a stable non-slip horizontal base and tied by the handle to the rail, railings, etc. to prevent the station from tipping over into the water;
+* The device cover is open;
+* **Transducer** is connected to the connector **"Antenna"**;
+* **Microphone** is connected to the connector **"Microphone"**;
+* If the station is used without headphones:
+  * Toggle switch **"Speaker"** is in the position **"On"**;
+* If the station is used with headphones:
+  * Toggle switch **"Speaker"** is in the position **"Off"**;
+  * Headphones are connected to the connector **Headphones**;
+* The covers of all unused connectors are screwed with a light effort;
+* Nuts on all connected cable connectors are screwed with light effort;
+* Toggle switch **"Power" ** is installed in the position **"On"**;
+* Toggle Switch **"Channel"** is set to the position corresponding to the communication channel installed on diving devices;
+* The transducer is lowered into the water to such a depth that it is at least 2 meters from the bottom of the vessel and at least 1.5 meters from the bottom;
+* There is direct visibility between the transducer of the station and the transducers of diving stations (not obscured by elements of the underwater landscape, parts of various structures, ships, etc.).
 
-Убедиться в том, что:
-* Станция установлена на устойчивое нескользкое горизонтальное основание и привязана за ручку к леерному ограждению, перилам и т.п. для предотвращения опрокидывания станции в воду;
-* Крышка устройства открыта;
-* **Гидроакустическая антенна** подсоединена к разъему **"Антенна"**;
-* **Микрофон** подключен к разъему **"Микрофон"**;
-* Если станция используется без головных телефонов (наушников):
-  * Тумблер **"Динамик"** находится в положении **"Вкл"**;
-* Если станция используется с головными телефонами (наушниками);
-  * Тумблер **"Динамик"** находится в положении **"Выкл"**;
-  * Головные телефоны (наушники) подключены к разъему **"Наушники"**;
-* Крышки всех незадействованных разъемов завинчены с легким усилием;
-* Гайки на всех подключенных кабельных разъемах завинчены с легким усилием;
-* Тумблер **"Питание"** установлен в положени **"Вкл"**;
-* Переключатель **"Канал"** установлен в положение, соответствующие каналу связи, установленному на водолазных приборах;
-* Гидроакустическая антенна опущена в воду на такую глубину, чтобы находится как минимум в 2 метрах от нижней точки судна и как минимум в 1.5 метрах от дна водоема;
-* Имеется прямая видимость между гидроакустической антенной станции и гидроакустическими антеннами водолазных станций (не затенена элементами подводного ландшафта, частями различных конструкций, судами и т.п.).
+### 2.3. Working with the station
+Before work, all preparations and checks provided in [p. 2.2] ().
 
+The underwater telephone works in half-duplex mode: transmission and reception alternate; if the device is in transmission mode, it cannot receive incoming messages.
 
-### 2.3. Работа
-Перед работой должны быть выполнены все подготовки и проверки, предусмотренные [п. 2.2](#22-%D0%BF%D1%80%D0%BE%D0%B2%D0%B5%D1%80%D0%BE%D1%87%D0%BD%D1%8B%D0%B5-%D0%BC%D0%B5%D1%80%D0%BE%D0%BF%D1%80%D0%B8%D1%8F%D1%82%D0%B8%D1%8F).
+#### 2.3.1. Sound signals
+Possible sound alerts are summarized in **table 4**.
 
-Водолазная гидроакустическая голосовая связь работает по полудуплексной схеме: передача и прием чередуются, если устройство находится в режиме передачи, оно не может принимать входящие сообщения.
+### **Table 4** - Sound alerts
 
-#### 2.3.1. Звуковые сигналы
-Возможные звуковые оповещения сведены в **таблицу 4**.
+| Alert Description | What signals | Example |
+| : --- | : --- | : --- |
+| Short rising and then lowering tone | The station power-on and switch to receive mode | [Sound sample](/documentation/redphone_pwon.wav) |
+| Short rising tone | Switching to receive mode after completion of transmission (releasing tangents **PTT**) | [Sample sound](/documentation/redphone_switch_to_rx.wav) |
+| Long trill | Low charge internal power supply | |
 
-### **Таблица 4** - Звуковые оповещения
+#### 2.3.2. Receiving voice messages
+To receive voice messages from divers, the **PTT** button on the microphone must be released. In this case, incoming messages will be played by the device’s speaker (or headphones, if the latter are connected and the toggle switch **“Speaker”** is in the state **“Off”**).
 
-| Описание оповещения | О чем сигнализирует | Пример |
-| :--- | :--- | :--- |
-| Короткий повышающийся а потом понижающийся тон | Включение станции и переход в режим приема  | [Пример звука](/documentation/redphone_pwon.wav) |
-| Короткий повышающийся тон | Переход в режим приема после завершения передачи (отпускании тангенты **PTT**) | [Пример звука](/documentation/redphone_switch_to_rx.wav) |
-| Длительная трель | Низкий заряд встроенного источника питания |   |
+The volume of reproduced incoming voice messages depends on the slant range between the antenna station and the diver, as well as on hydrological conditions. It may decrease when a diver enters the acoustic shadow zone (when elements of the underwater landscape, parts of structures, ships, algae, etc. are on the signal path).
 
-#### 2.3.2. Прием голосовых сообщений
-Для приема голосовых сообщений от водолазов тангента **PTT** на микрофоне должна быть отпущена. При этом входящие сообщения будут воспроизводится громкоговорителем устройства (или наушниками, если последние подключены а тумблер **"Динамик"** находится в состоянии **"Выкл"**). 
+The user must independently set a comfortable volume level using the **Volume** control depending on the current communication conditions.
 
-Громкость воспроизводимых входящих голосовых сообщений зависит от расстояния между антенной станцией и водолазом, от гидрологических условий. Может снижаться при попадании водолаза в зону акустической тени (когда на пути следования сигнала находятся элементы подводного ландшафта, части конструкций, суда, водоросли и т.п.). 
+#### 2.3.3 Sending voice messages
+To send voice messages, the following sequence of actions is performed:
+* Bring the microphone to the mouth with at a distance of **0.5 - 2** cm;
+* Press the tangent **PTT**;
+* Hold a short pause (~ **0.5** seconds) so that the station switches to transmission mode;
+* Pronounce voice messages with pronounced articulation; It is recommended to end the voice message with the word **"Reception!"**, signalling to the addressee that the message is over;
+* Maintain a short pause (~**0.5** seconds);
+* Release the tangent **PTT**;
+* The station emits a short beep, indicating that the device has switched to receive mode.
 
-Пользователь должен самостоятельно устанавливать комфортный уровень громкости при помощи регулятора **"Громкость"** в зависимости от текущих условий связи.
-
-#### 2.3.3 Передача голосовых сообщений
-Для передачи голосовых сообщений выполняется следующая последовательность действий:
-* Поднести микрофон решеткой ко рту на расстояние **0.5 - 2** см;
-* Нажать тангенту **PTT**;
-* Выждержать короткую паузу (~**0.5** секунды) для того, чтобы станция перешла в режим передачи;
-* Произнести голосовое сообщений с выраженной артикуляцией; Рекомендуется завершать голосовое сообщение словом **"Прием!"**, сигнализирующем адресату о том, что сообщение окончено;
-* Выдержать короткую паузу (~**0.5** секунды);
-* Отпустить тангенту **PTT**;
-* Станция издает короткий звуковой сигнал, говорящий о том, что устройство перешло в режим приема.
-
-### 2.4. Завершение работы
-По завершении работы действия должны выполнятся по следующей последовательности:
-* Тумблер **"Питание"** перевести в положение **"Выкл"**;
-* Выбрать кабель гидроакустической антенны;
-* Дальнейшие действия выполняются только при отсутствии риска попадания воды в открытые разъемы:
-  * Отключаются все подключенные разъемы;
-  * Завинчиваются защитные крышки всех разъемов;
-  * Карабин грузонесущей проушины отсоединяется от крышки устройства;
-  * Крышка устройства закрывается.
-
+### 2.4. Shutdown
+Upon completion of the work, the actions should be performed in the following sequence:
+* Toggle switch **"Power"** translate into position **"Off"**;
+* Pull the transducer cable out of the water;
+* Further actions are performed only if there is no risk of water entering the open connectors:
+  * Disconnect all connected connectors;
+  * Screw protective covers of all connectors;
+  * Disconnect the carabine of the load-carrying eye from the device cover;
+  * Close the device cover.
+  
+  
 <div style="page-break-after: always;"></div>
 
-## 3. Хранение и обслуживание
-### 3.1. Условия хранения и обслужвания
-К станции и комплектному оборудованию: антенне, микрофону и зарядному устройству не предъявляются особых условий хранения, кроме следующих:
-- Хранение при температуре от -20° до 60°С;
-- Все разъемы отсоединены, защитные крышки закручены с легким усилием, станция выключена (тумблер **"Питание"** в положении **"Выкл"** крышка прибора закрыта;
-- При длительном хранении (более месяца) рекомендуется производить подзарядку встроенного источника питания станции;
-- При попадании влаги на диффузор громкоговорителя ее стоит удалить перевернув станцию решеткой громкоговорителя вниз, остатки влаги должны удаляся естественным испарением;
-- Допускается краткая промывка слабой струей воды при закрытых крышках разъемов;
-- Не допускается механическое воздействие на диффузор громкоговорителя;
-- Для удаления загрязнений с корпуса устройства допускается применение слабого раствора бытовых моющих средств при закрытых крышках разъемов и крышке устройства;
-- Не допускается попадание влаги в разъемы гидроакустической антенны, микрофона, наушников, зарядного устройства и переходника для подключения головных телефонов;
-- Не допускается перегибание кабеля гидроакустической антенны, радиусом менее 5 см;
-- Не допускается воздействие влаги на микрофон, попавшая влага должна удалятся сухой впитывающей тканью, после чего устройство должно высохнуть в течение как минимум 8 часов в сухом помещении при температуре от 15°С до 50°С и отнсительной влажности воздуха не более 50%;
-- Хранение и транспортировка антенны и микрофона производится в комплектном гермомешке;
-- Перед помещением антенны и микрофона в комплектный транспортировочный мешок с них **полностью должна быть удалена влага**.
+## 3. Storage and maintenance
+### 3.1. Storage and Maintenance conditions
+The station and the complete equipment: transducer, microphone and charger do not have special storage conditions, except for the following:
+- Storage at temperatures from -20° to 60° C;
+- All connectors are disconnected, the protective covers are screwed with a slight effort, the station is turned off (toggle switch 
+**"Power"** in position **"Off"** the device cover is closed;
+- For long-term storage (more than a month), it is recommended to recharge the built-in power supply of the station;
+- If moisture gets on the loudspeaker diffuser, it should be removed by turning the station upside down, the remaining moisture should be removed by natural evaporation;
+- A brief rinse with a weak stream of water is allowed with the connector covers closed;
+- No mechanical impact on the speaker cone;
+- To remove contaminants from the device’s case, it is allowed to use a weak solution of household detergents with the connector covers and device cover closed;
+- Do not allow moisture to enter the connectors of the transducer, microphone, headphones, charger and adapter for connecting headphones;
+- Do not bend the cable of the transducer with a radius of less than 5 cm;
+- Moisture is not allowed on the microphone, moisture that has gotten must be removed with a dry absorbent cloth, after which the device must dry for at least 8 hours in a dry room at a temperature of 15° C to 50° C and relative humidity not more than 50%;
+- Storage and transportation of the antenna and the microphone is carried out in a waterproof bag;
+- Before placing the antenna and microphone in the shipping bag, **they must be completely freed from moisture**.
 
-> **ЗАПРЕЩАЕТСЯ:**
+> ** FORBIDDEN: **
 >
-> **- ВСКРЫТИЕ ОБОРУДОВАНИЯ ИЗ КОМПЛЕКТА ПОСТАВКИ СОГЛАСНО [п. 1.4.](#14-%D0%BA%D0%BE%D0%BC%D0%BF%D0%BB%D0%B5%D0%BA%D1%82-%D0%BF%D0%BE%D1%81%D1%82%D0%B0%D0%B2%D0%BA%D0%B8)**  
-> **- ДОПУСК К ПОЛЬЗОВАНИЮ ОБОРУДОВАНИЕМ ИЗ КОМПЛЕКТА ПОСТАВКИ СОГЛАСНО [п. 1.4.](#14-%D0%BA%D0%BE%D0%BC%D0%BF%D0%BB%D0%B5%D0%BA%D1%82-%D0%BF%D0%BE%D1%81%D1%82%D0%B0%D0%B2%D0%BA%D0%B8) ЛИЦ, НЕ ОЗНАКОМИВШИХСЯ С НАСТОЯЩЕЙ ИНСТРУКЦИЕЙ**  
-> **- ДОПУСК К ПОЛЬЗОВАНИЮ ОБОРУДОВАНИЕМ ИЗ КОМПЛЕКТА ПОСТАВКИ СОГЛАСНО [п. 1.4.](#14-%D0%BA%D0%BE%D0%BC%D0%BF%D0%BB%D0%B5%D0%BA%D1%82-%D0%BF%D0%BE%D1%81%D1%82%D0%B0%D0%B2%D0%BA%D0%B8) ЛИЦ, НЕ ДОСТИГШИХ СОВЕРШЕННОЛЕТИЯ**  
-> **- ВКЛЮЧЕНИЕ РЕЖИМА ПЕРЕДАЧИ (НАЖАТИЕ ТАНГЕНТЫ НА МИКРОФОНЕ) ПРИ НЕПОДКЛЮЧЕННОЙ ГИДРОАКУСТЧИЕСКОЙ АНТЕННЕ**
+> ** - OPENING OF EQUIPMENT FROM THE DELIVERY SET ACCORDING TO [par. 1.4.] () **
+> ** - ACCESS TO USE OF EQUIPMENT FROM THE DELIVERY SET ACCORDING TO [par. 1.4.] () PERSONS WHO ARE NOT FAMILIAR TO THESE INSTRUCTIONS **
+> ** - ACCESS TO USE OF EQUIPMENT FROM THE DELIVERY SET ACCORDING TO [par. 1.4.] () PERSONS WHO ARE NOT ADULTS**
+> ** - ENABLING TRANSMISSION MODE (PRESSING THE PTT BUTTON ON THE MICROPHONE) WITH UNCONNECTED TRANSDUCER **
 
 
-### 3.2. Заряд встроенного источника питания
-Заряд встроенного источника питания станции допускается только комплектным зарядным устройством, при выключенной станции (тумблер **"Питание"** в положении **"Выкл"**) и отсоединенных всех остальных разъемах.
-Перед применением зарядного устройства необходимо ознакомиться с инструкцией по эксплуатации зарядного устройства.
+### 3.2. Built-in Power Supply Charge
+The charge of the station’s built-in power supply is allowed only with the original charger when the station is off (toggle switch ** “Power” ** in position ** “Off” **) and all other connectors are disconnected.
+Before using the charger, you must read the operating instructions for the charger.
 
 <div style="page-break-after: always;"></div>
 
@@ -288,10 +285,10 @@ By a separate agreement with the manufacturer, it is possible to supply a transd
 Производитель гарантирует бесплатный ремонт или замену неисправного оборудования из комплекта поставки, вышедшего из строя по причине заводского дефекта.  
 
 К поводам для отказа от бесплатного гарантийного обслуживания, бесплатного ремонта и замены относятся:
-- любые **механические повреждения** оборудования из комплекта поставки [п. 1.4.](#14-%D0%BA%D0%BE%D0%BC%D0%BF%D0%BB%D0%B5%D0%BA%D1%82-%D0%BF%D0%BE%D1%81%D1%82%D0%B0%D0%B2%D0%BA%D0%B8), в т.ч. нарушение изоляции проводов и кабелей;
-- любые **повреждения, вызванные воздействием влаги и загрязнейний**, вследствие неправильной эксплуатации оборудования из комплекта поставки [п. 1.4.](#14-%D0%BA%D0%BE%D0%BC%D0%BF%D0%BB%D0%B5%D0%BA%D1%82-%D0%BF%D0%BE%D1%81%D1%82%D0%B0%D0%B2%D0%BA%D0%B8): попадания влаги в разъемы, внутрь микрофона, переходника для подключения головных телефонов и т.п.
+- любые **механические повреждения** оборудования из комплекта поставки [п. 1.4.](), в т.ч. нарушение изоляции проводов и кабелей;
+- любые **повреждения, вызванные воздействием влаги и загрязнейний**, вследствие неправильной эксплуатации оборудования из комплекта поставки [п. 1.4.](): попадания влаги в разъемы, внутрь микрофона, переходника для подключения головных телефонов и т.п.
 - любые **электрические повреждения**, вызванные **использованием некомплектных аксессуаров** (гидроакустической антенны, микрофона, переходника для подключения головных телефонов, головных телефонов с сопротивлением менее того, которое указано в спецификации устройства, зарядного устройства); к некомплектным не отностятся аксессуары, поставленные производителем или его представителем в замен неисправных или утраченых;
-- любые **следы самостоятельного ремонта и/или вскрытия** оборудования из комплекта поставки [п. 1.4.](#14-%D0%BA%D0%BE%D0%BC%D0%BF%D0%BB%D0%B5%D0%BA%D1%82-%D0%BF%D0%BE%D1%81%D1%82%D0%B0%D0%B2%D0%BA%D0%B8).
+- любые **следы самостоятельного ремонта и/или вскрытия** оборудования из комплекта поставки [п. 1.4.]().
 
 <div style="page-break-after: always;"></div>
 
@@ -299,7 +296,7 @@ By a separate agreement with the manufacturer, it is possible to supply a transd
 
 _____________
 
-_**ЛЮБАЯ ИЗ ЧАСТЕЙ КОМПЛЕКТА ПОСТАВКИ СОГЛАСНО [п. 1.4.](#14-%D0%BA%D0%BE%D0%BC%D0%BF%D0%BB%D0%B5%D0%BA%D1%82-%D0%BF%D0%BE%D1%81%D1%82%D0%B0%D0%B2%D0%BA%D0%B8) В ОТДЕЛЬНОСТИ И В СОСТАВЕ СИСТЕМЫ, ИМЕНУЕМЫЕ ДАЛЕЕ "ПОСТАВЛЯЕМОЕ ОБОРУДОВАНИЕ":**_
+_**ЛЮБАЯ ИЗ ЧАСТЕЙ КОМПЛЕКТА ПОСТАВКИ СОГЛАСНО [п. 1.4.]() В ОТДЕЛЬНОСТИ И В СОСТАВЕ СИСТЕМЫ, ИМЕНУЕМЫЕ ДАЛЕЕ "ПОСТАВЛЯЕМОЕ ОБОРУДОВАНИЕ":**_
 
 _**- НЕ РАЗРАБАТЫВАЛОСЬ КАК СРЕДСТВО СПАСЕНИЯ**_  
 _**- НЕ ТЕСТИРОВАЛОСЬ, КАК СРЕДСТВО СПАСЕНИЯ**_  
