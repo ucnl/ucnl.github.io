@@ -18,7 +18,7 @@
 * [Схема включения устройства: Zima-Responder](/Docs/EN/Zima/Zima-R_drawings_wiring.pdf)
 * [Пультовое приложение (Репозиторий)](https://github.com/ucnl/ZHost)
 * [Пультовое приложение (Скачать релиз)](https://api.github.com/repos/ucnl/ZHost/zipball)
-* [Zima USBL: медиаматериалы, видео с испытаний и т.п.)(/documentation/RU/Zima/media)
+* [Zima USBL: медиаматериалы, видео с испытаний и т.п.](/documentation/RU/Zima/media)
 
 ### RedWAVE - Подводный GPS (LBL)
 * [Спецификация устройства: RedBASE - Буй-ретранслятор](/Docs/RU/RedWAVE/RedBASE_Specification_ru.pdf)
@@ -31,7 +31,7 @@
 * [Демонстрационное приложение RedNODE Host (Скачать релиз)](https://api.github.com/repos/ucnl/RedNodeHost/zipball)
 * [Приложение для RedNAV (Репозиторий)](https://github.com/ucnl/RedNavHost)
 * [Приложение для RedNAV (Скачать релиз)](https://api.github.com/repos/ucnl/RedNavHost/zipball)
-* [RedWAVE: медиаматериалы, видео с испытаний и т.п.)(/documentation/RU/RedWAVE/media)
+* [RedWAVE: медиаматериалы, видео с испытаний и т.п.](/documentation/RU/RedWAVE/media)
 
 ### Система привода водолазов VOSTOK
 * [Спецификация устройства: VOSTOK-ACS - водолазный акустический компас](/Docs/RU/Vostok/Vostok-ACS_Specification_ru.pdf)
