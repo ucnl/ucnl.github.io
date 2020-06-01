@@ -264,44 +264,43 @@ The station and the complete equipment: transducer, microphone and charger do no
 - Storage and transportation of the antenna and the microphone is carried out in a waterproof bag;
 - Before placing the antenna and microphone in the shipping bag, **they must be completely freed from moisture**.
 
-> ** FORBIDDEN: **
+> **FORBIDDEN:**
 >
-> ** - OPENING OF EQUIPMENT FROM THE DELIVERY SET ACCORDING TO [par. 1.4.] () **
-> ** - ACCESS TO USE OF EQUIPMENT FROM THE DELIVERY SET ACCORDING TO [par. 1.4.] () PERSONS WHO ARE NOT FAMILIAR TO THESE INSTRUCTIONS **
-> ** - ACCESS TO USE OF EQUIPMENT FROM THE DELIVERY SET ACCORDING TO [par. 1.4.] () PERSONS WHO ARE NOT ADULTS**
-> ** - ENABLING TRANSMISSION MODE (PRESSING THE PTT BUTTON ON THE MICROPHONE) WITH UNCONNECTED TRANSDUCER **
+> **- OPENING OF EQUIPMENT FROM THE DELIVERY SET ACCORDING TO [par. 1.4.]()**
+> **- ACCESS TO USE OF EQUIPMENT FROM THE DELIVERY SET ACCORDING TO [par. 1.4.]() PERSONS WHO ARE NOT FAMILIAR TO THESE INSTRUCTIONS**
+> **- ACCESS TO USE OF EQUIPMENT FROM THE DELIVERY SET ACCORDING TO [par. 1.4.]() PERSONS WHO ARE NOT ADULTS**
+> **- ENABLING TRANSMISSION MODE (PRESSING THE PTT BUTTON ON THE MICROPHONE) WHILE TRANSDUCER IS UNCONNECTED**
 
 
 ### 3.2. Built-in Power Supply Charge
-The charge of the station’s built-in power supply is allowed only with the original charger when the station is off (toggle switch ** “Power” ** in position ** “Off” **) and all other connectors are disconnected.
+The charge of the station’s built-in power supply is allowed only with the original charger when the station is off (toggle switch **“Power”** in position **“Off”**) and all other connectors are disconnected.
 Before using the charger, you must read the operating instructions for the charger.
 
 <div style="page-break-after: always;"></div>
 
-## 4. Обязательства и отказ от ответственности
-### 4.1 Условия замены и бесплатного гарантийного обслуживания
-Гарантия производителя распространяется только на заводские дефекты, выявивщиеся при эксплуатации устройства в соответствие с настоящим руководством в течении гарантийного срока (2 года с момента покупки).  
+## 4. Liability and disclaimer
+### 4.1 Terms of replacement and free warranty service
+The manufacturer’s warranty applies only to factory defects that were discovered during the operation of the device in accordance with this manual during the warranty period (2 years from the date of purchase).
 
-Производитель гарантирует бесплатный ремонт или замену неисправного оборудования из комплекта поставки, вышедшего из строя по причине заводского дефекта.  
+The manufacturer guarantees free repair or replacement of faulty equipment from the delivery set that has failed due to a factory defect.
 
-К поводам для отказа от бесплатного гарантийного обслуживания, бесплатного ремонта и замены относятся:
-- любые **механические повреждения** оборудования из комплекта поставки [п. 1.4.](), в т.ч. нарушение изоляции проводов и кабелей;
-- любые **повреждения, вызванные воздействием влаги и загрязнейний**, вследствие неправильной эксплуатации оборудования из комплекта поставки [п. 1.4.](): попадания влаги в разъемы, внутрь микрофона, переходника для подключения головных телефонов и т.п.
-- любые **электрические повреждения**, вызванные **использованием некомплектных аксессуаров** (гидроакустической антенны, микрофона, переходника для подключения головных телефонов, головных телефонов с сопротивлением менее того, которое указано в спецификации устройства, зарядного устройства); к некомплектным не отностятся аксессуары, поставленные производителем или его представителем в замен неисправных или утраченых;
-- любые **следы самостоятельного ремонта и/или вскрытия** оборудования из комплекта поставки [п. 1.4.]().
+The reasons for refusing free warranty service, free repair and replacement include:
+- any **mechanical damage** of the equipment supplied according to [p. 1.4.](), Including violation of insulation of wires and cables;
+- any **damage caused by exposure to moisture and pollution** due to improper use of the equipment from the delivery set according to [p. 1.4.](): Moisture in the connectors, inside the microphone, adapter for connecting headphones, etc.
+- any **electrical damage** caused by **use of not original accessories** (transducer, microphone, adapter for connecting headphones, headphones with resistance less than that specified in the specification of the device, charger);  
+- any **signs of self-repair and/or opening** of the equipment from the delivery set according to [p. 1.4.]().
 
-<div style="page-break-after: always;"></div>
+<div style = "page-break-after: always;"> </div>
 
-### 4.2 Ограничение ответственности производителя
-
+### 4.2 Disclaimer of the manufacturer
 _____________
 
-_**ЛЮБАЯ ИЗ ЧАСТЕЙ КОМПЛЕКТА ПОСТАВКИ СОГЛАСНО [п. 1.4.]() В ОТДЕЛЬНОСТИ И В СОСТАВЕ СИСТЕМЫ, ИМЕНУЕМЫЕ ДАЛЕЕ "ПОСТАВЛЯЕМОЕ ОБОРУДОВАНИЕ":**_
+_**ANY OF THE PARTS OF THE DELIVERY SET ACCORDING TO [par. 1.4.]() SEPARATELY AND IN THE COMPOSITION OF THE SYSTEM, NAME FURTHER "DELIVERED EQUIPMENT":**_
 
-_**- НЕ РАЗРАБАТЫВАЛОСЬ КАК СРЕДСТВО СПАСЕНИЯ**_  
-_**- НЕ ТЕСТИРОВАЛОСЬ, КАК СРЕДСТВО СПАСЕНИЯ**_  
-_**- НЕ ЯВЛЯЕТСЯ СРЕДСТВОМ СПАСЕНИЯ**_  
-_**- ПРОИЗВОДИТЕЛЬ ЗАЯВЛЯЕТ, ЧТО ПОСТАВЛЯЕМОЕ ОБОРУДОВАНИЕ БЕЗОПАСНО ПРИ ЭКСПЛУАТАЦИИ СОГЛАСНО НАСТОЯЩЕЙ ИНСТРУКЦИИ И НЕ ОТВЕЧАЕТ ЗА ЛЮБЫЕ ПОСЛЕДСТВИЯ ИСПОЛЬЗОВАНИЯ ПОСТАВЛЯЕМОГО ОБОРУДОВАНИЯ**_
+_**- NOT DEVELOPED AS A RESCUE MEANS**_
+_**- NOT TESTED AS A RESCUE MEANS**_
+_**- NOT A RESCUE EQUIPMENT**_
+_**- THE MANUFACTURER DECLARES THAT THE SUPPLIED EQUIPMENT IS SAFE WHEN OPERATING ACCORDING TO THESE INSTRUCTIONS AND IS NOT RESPONSIBLE FOR ANY CONSEQUENCES OF USE OF THE SUPPLIED EQUIPMENT**_
 
 ______________
 _____________
