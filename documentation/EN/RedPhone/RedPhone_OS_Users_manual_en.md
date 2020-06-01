@@ -82,38 +82,37 @@ General technical characteristics of the device are given in **table 2**:
 ### **Table 2** - Specifications
 
 | Parameter | Value |
-| : --- | : --- |
+| :--- | :--- |
 | Dimensions (L x W x H) | 259 x 202 x 115 mm |
 | Weight (dry) | 2 kg |
 | Maximum range | 1000 m |
-| Transducer Cable Length[<sup>2</sup>](#footnote2) | 7 m |
-| Number of Channels Supported | 8 |
+| Transducer cable Length[<sup>2</sup>](#footnote2) | 7 m |
+| Number of channels supported | 8 |
 | Maximum battery life | up to 8 hours |
-| Operating Temperature Range | -10 .. 50 ° C |
+| Operating temperature range | -10° .. 50° C |
 | Resistance of connected headphones (not less) | 8 ohms |
-| Execution | IP67[<sup>1</sup>](#footnote1) |
-
+| Execution | IP67[<sup>1</sup>](#footnote1) |  
+  
 ________________
 <a name="footnote1"><sup>1</sup></a> With the device cover closed  
 <a name="footnote2"><sup>2</sup></a> By agreement, it is possible to supply an antenna with an increased cable length  
 
 
 ### 1.4. Contents of delivery
-
 This paragraph describes the standard delivery set (see **table 3**).
 By a separate agreement with the manufacturer, it is possible to supply a transducer with an extended cable.
 
 ### **Table 3** - RedPhone-OS Standard delivery set
-
+  
 | No. | Name | Quantity | Notes |
-| : --- | : --- | : --- | : --- |
-| 1 | Station RedPhone-OS | 1 PC. |  |
+| :--- | :--- | :--- | :--- |
+| 1 | Station RedPhone-OS | 1 PC. |   |
 | 2 | Transducer | 1 PC. | cable 7 m |
-| 3 | Tangent Microphone | 1 PC. |  |
-| 4 | AC Charger | 1 PC. |  |
-| 5 | Carabiner for attaching antenna cable | 1 PC. |  |
-| 6 | Hermetic bag for transportation and storage of transducer and microphone | 1 PC. |  |
-| 7 | Adapter with Jack 3.5 mm jack for connecting headphones (earphones) | 1 PC. |  |
+| 3 | Tangent Microphone | 1 PC. |   |
+| 4 | AC Charger | 1 PC. |   |
+| 5 | Carabiner for attaching antenna cable | 1 PC. |   |
+| 6 | Waterproof bag for transportation and storage of transducer and microphone | 1 PC. |   |
+| 7 | Adapter with Jack 3.5 mm jack for connecting headphones (earphones) | 1 PC. |   |
 
 <div style="page-break-after: always;"></div>
 
@@ -123,8 +122,8 @@ By a separate agreement with the manufacturer, it is possible to supply a transd
 * Bind the station by the handle of the case with the help of a safety cord to the guard rail, railing, etc. to prevent the station from tipping over into the water;
 * Open the station cover by pushing the locks down (see **Figure 3**):
 
-| ! [RedPhone-OS case lock](/documentation/smallcase_lock1.png) |
-| : ---: |
+| ![RedPhone-OS case lock](/documentation/smallcase_lock1.png) |
+| :---: |
 | **Figure 3 - Lock** |
 
 * Fix the cable of the hydroacoustic antenna with a carabiner, as shown in **Figure 4**, to unload the antenna connector from possible jerking and tension. It is allowed to fix the cable to the load-carrying eye using a polymer cord with a thickness of at least 4 mm.
@@ -214,10 +213,10 @@ Possible sound alerts are summarized in **table 4**.
 ### **Table 4** - Sound alerts
 
 | Alert Description | Cause of alert | Example |
-| : --- | : --- | : --- |
+| :--- | :--- | :--- |
 | Short rising and then lowering tone | The station power-on and switch to receive mode | [Sound sample](/documentation/redphone_pwon.wav) |
 | Short rising tone | Switching to receive mode after completion of transmission (releasing tangents **PTT**) | [Sample sound](/documentation/redphone_switch_to_rx.wav) |
-| Long trill | Low charge internal power supply | |
+| Long trill | Low charge internal power supply |   |
 
 #### 2.3.2. Receiving voice messages
 To receive voice messages from divers, the **PTT** button on the microphone must be released. In this case, incoming messages will be played by the device’s speaker (or headphones, if the latter are connected and the toggle switch **“Speaker”** is in the state **“Off”**).
