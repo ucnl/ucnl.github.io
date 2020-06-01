@@ -1,7 +1,7 @@
 | ![logo](https://ucnl.github.io/documentation/sm_logo.png) |
 | :---: |
 | [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) |
-| [EN](\documentation\EN\RedWAVE\media.md) \| [RU](\documentation\RU\RedWAVE\media.md) |
+| [EN](\documentation\EN\RedWAVE\media) \| [RU](\documentation\RU\RedWAVE\media) |
 
 ## RedWAVE медиаматериалы: видео с испытаний, видеоинструкции и т.п.
 
@@ -41,3 +41,6 @@ target="_blank"><img src="http://img.youtube.com/vi/nqmbPgxIonM/0.jpg"
 alt="RedWAVE Underwater GPS Casino Point Underwater Park, Avalon, California, US" width="240" height="180" border="10" /></a>  
 
 ______  
+
+
+## [Назад](/../../media_videos_ru)
