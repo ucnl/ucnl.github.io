@@ -98,9 +98,9 @@ ________________
 <a name="footnote2"><sup>2</sup></a> By agreement, it is possible to supply an antenna with an increased cable length  
 
 
-### 1.4. Contents of delivery
+### 1.4. Contents of the standard delivery set
 This paragraph describes the standard delivery set (see **table 3**).
-By a separate agreement with the manufacturer, it is possible to supply a transducer with an extended cable.
+By an additional agreement with the manufacturer, it is possible to supply a transducer with an extended cable.
 
 ### **Table 3** - RedPhone-OS Standard delivery set
   
@@ -298,9 +298,9 @@ _____________
 
 _**ANY OF THE PARTS OF THE DELIVERY SET ACCORDING TO [par. 1.4.]() SEPARATELY AND IN THE COMPOSITION OF THE SYSTEM, NAME FURTHER "DELIVERED EQUIPMENT":**_  
 
-_**- NOT DEVELOPED AS A RESCUE MEANS**_  
-_**- NOT TESTED AS A RESCUE MEANS**_  
-_**- NOT A RESCUE EQUIPMENT**_  
+_**- ARE NOT DESIGNED FOR WATER RESCUE USE**_  
+_**- NOT TESTED AS RESCUE EQUIPMENT**_  
+_**- NOT RESCUE EQUIPMENT**_  
 _**- THE MANUFACTURER DECLARES THAT THE SUPPLIED EQUIPMENT IS SAFE WHEN OPERATING ACCORDING TO THESE INSTRUCTIONS AND IS NOT RESPONSIBLE FOR ANY CONSEQUENCES OF USE OF THE SUPPLIED EQUIPMENT**_  
 
 _____________
