@@ -8,7 +8,7 @@
 ______
 
 ### Bachelor project at [OsloMET](https://www.oslomet.no/) 2019. 
-Testing of [uWAVE](/documentation/EN/uWAVE/uWAVE_Family_en.md) acoustic modems in Oslo Norway. Range only localization algorithms, NMEA communication.  
+Testing of [uWAVE](uWAVE_Family_en.md) acoustic modems in Oslo Norway. Range only localization algorithms, NMEA communication.  
 Place: Oslo, Norway  
 Time: May 2019
 
@@ -18,7 +18,7 @@ alt="Testing of uWAVE acoustic modems in Oslo Norway" width="240" height="180" b
 
 ______
 
-### Testing a new LBL Underwater acoustic tracking system based on [uWAVE](/documentation/EN/uWAVE/uWAVE_Family_en.md) underwater acoustic modems
+### Testing a new LBL Underwater acoustic tracking system based on [uWAVE](uWAVE_Family_en.md) underwater acoustic modems
 Place: [Volga-Don channel, Volgograd, RU](https://goo.gl/maps/CjX8y9tyPrKtrrA47)  
 Time: March 2019
 
@@ -28,7 +28,7 @@ alt="Testing a new uWAVE-based LBL underwater tracking system" width="240" heigh
 
 ______  
 
-### Testing [uWAVE](/documentation/EN/uWAVE/uWAVE_Specification_en.md) underwater acoustic modems for maximal range (1092 m), 
+### Testing [uWAVE](uWAVE_Family_en.md) underwater acoustic modems for maximal range (1092 m), 
 Place: [Volga-Don channel, Volgograd, RU](https://goo.gl/maps/CjX8y9tyPrKtrrA47)  
 Time: February 2019
 
