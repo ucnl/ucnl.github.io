@@ -65,6 +65,7 @@ which ensures compatibility with almost all analogues.
 **Table 1** shows the correspondence of station channel numbers and frequency bands.
 
 ### **Table 1** - Correspondence of the channel number and signal parameters
+
 | Channel number | Carrier, Hz | Side band | Bandwidth, Hz |
 | :---: | :--- | :--- | :--- |
 | 1 | 32768 | Low | 28468 .. 32468 |
