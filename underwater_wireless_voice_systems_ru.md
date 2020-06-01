@@ -8,5 +8,6 @@
 * [Спецификация устройства: RedPhone-OS](/documentation/RU/RedPhone/RedPhone_OS_Specification_ru.md)
 * [Инструкция по эксплуатации RedPhone-OS](/documentation/RU/RedPhone/RedPhone_OS_Users_manual_ru.md)
 * [Спецификация устройства: RedPhone-D (информация обновляется)]()  
+* [Медиа материалы: видео испытаний, видеоинструкции и т.п.](/documentation/RU/RedPhone/media.md)
 
 ## [Домой](README_RU.md)
