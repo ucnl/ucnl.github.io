@@ -3,7 +3,7 @@
 | [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) |
 | [EN](/documentation/EN/RedPhone/media.md) \| [RU](/documentation/RU/RedPhone/media.md) |
 
-## RedPhone: Медиаматериалы, видеоинструкции и т.п.
+## RedPhone медиаматериалы: видео с испытаний, видеоинструкции и т.п.
 
 _______
 
