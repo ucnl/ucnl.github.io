@@ -20,5 +20,4 @@
 * [UCNLNMEA](https://github.com/ucnl/UCNLNMEA) - библиотека для парсигна и формирования NMEA-сообщений
 * [Глоссарий (under construction)](README_RU.md)
 
-## [Домой](README_RU.md)
   
