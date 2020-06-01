@@ -20,4 +20,3 @@
 * [UCNLNMEA](https://github.com/ucnl/UCNLNMEA) - a library for parsing/building NMEA sentences
 * [Glossary (under construction)](README.md)
 
-## [Home](README.md)
