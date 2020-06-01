@@ -10,4 +10,4 @@
 * [Zima USBL - трекинговая УКБ система](/documentation/RU/Zima/media.md)
 * [RedPhone - подводная беспроводная голосовая водолазная связь](/documentation/RU/RedPhone/media.md)
 
-## [Home](README.md)
+## [Домой](README_RU.md)
