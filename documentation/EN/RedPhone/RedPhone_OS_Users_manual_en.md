@@ -53,7 +53,7 @@ The built-in power supply made of **LiFePO4** batteries that operate at low temp
 The dashboard of the device is made of high-quality stainless steel, on which, using laser engraving, are applied informational inscriptions.
 **Figure 2** shows the location of the controls and connectors.
 
-| ![RedPhone-OS top panel scheme](/documentation/redphone_os_top_panel_scheme_ru.png) |
+| ![RedPhone-OS top panel scheme](/documentation/redphone_os_top_panel_scheme_en.png) |
 | :---: |
 | **Figure 2 - Location of controls and connectors** |
 | _1 - charger connector, 2 - speaker grill, 3 - transducer connector, 4 - volume control, 5 - channel switch, 6 - device toggle switch, 7 - speaker switch, 8 - microphone and PTT connector, 9 - headphone connector_ |
@@ -99,10 +99,10 @@ ________________
 
 ### 1.4. Contents of delivery
 
-This paragraph describes the standard package (see **table 3**).
+This paragraph describes the standard delivery set (see **table 3**).
 By a separate agreement with the manufacturer, it is possible to supply a transducer with an extended cable.
 
-### **Table 3** - RedPhone-OS Standard Package
+### **Table 3** - RedPhone-OS Standard delivery set
 
 | No. | Name | Quantity | Notes |
 | : --- | : --- | : --- | : --- |
