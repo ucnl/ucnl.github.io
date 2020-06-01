@@ -1,7 +1,7 @@
 | ![logo](/documentation/sm_logo.png) |
 | :---: |
 | [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) |
-| [EN](/documentation/EN/RedPhone/media.md) \| [RU](/documentation/RU/RedPhone/media.md) |
+| [EN](/documentation/EN/RedPhone/media) \| [RU](/documentation/RU/RedPhone/media) |
 
 ## RedPhone медиаматериалы: видео с испытаний, видеоинструкции и т.п.
 
