@@ -9,17 +9,17 @@ _______
 
 ### [RedPhone-OS](RedPhone_OS_Specification_ru.md): Фиксация гидроакустической антенны при помощи карабина  
 
-<a href="https://youtu.be/_2PoVsB1wEY" 
-target="_blank"><img src="http://img.youtube.com/vi/_2PoVsB1wEY/0.jpg" 
-alt="RedWAVE Underwater GPS Monterey, California, US" width="240" height="180" border="10" /></a>  
+<a href="https://youtu.be/43qBwj5g8jI" 
+target="_blank"><img src="http://img.youtube.com/vi/43qBwj5g8jI/0.jpg" 
+alt="RedPhone: securing a transducer connector with carabine" width="240" height="180" border="10" /></a>  
 
 _______
 
 ### [RedPhone-OS](RedPhone_OS_Specification_ru.md): Проверка исправности, гидроакустической антенны и микрофона перед использованием  
 
-<a href="https://youtu.be/_2PoVsB1wEY" 
-target="_blank"><img src="http://img.youtube.com/vi/_2PoVsB1wEY/0.jpg" 
-alt="RedWAVE Underwater GPS Monterey, California, US" width="240" height="180" border="10" /></a>  
+<a href="https://youtu.be/j6Sgx4F4Q8E" 
+target="_blank"><img src="http://img.youtube.com/vi/j6Sgx4F4Q8E/0.jpg" 
+alt="RedPhone: check before usage" width="240" height="180" border="10" /></a>  
 
 _______
 
