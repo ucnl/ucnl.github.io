@@ -28,17 +28,6 @@ Track available: [RedNODE track 18-APR-2019](/Docs/RU/RedWAVE/rednode_track_1804
 target="_blank"><img src="http://img.youtube.com/vi/xaVfjhPIURc/0.jpg" 
 alt="RedWAVE Underwater GPS on ROV" width="240" height="180" border="10" /></a>  
 
-______
-
-
-### Testing [uWAVE](/Docs/EN/Modems/uWAVE/uWAVE_Specification_en.pdf) underwater acoustic modems for maximal range (1092 m), 
-Place: [Volga-Don channel, Volgograd, RU](https://goo.gl/maps/CjX8y9tyPrKtrrA47)  
-Time: February 2019
-
-<a href="https://youtu.be/Z1bVerVecY0"
-target="_blank"><img src="http://img.youtube.com/vi/Z1bVerVecY0/0.jpg" 
-alt="uWAVE Modem range test 1092 m" width="240" height="180" border="10" /></a>  
-
 ______  
 
 ### Working with [RedWAVE](/Docs/EN/RedWAVE/RedWAVE_LBL_Deployment_maintenance_RedNAV_en.pdf) underwater GPS
