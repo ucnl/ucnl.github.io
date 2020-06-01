@@ -60,7 +60,7 @@ alt="uWAVE Modem range test 1092 m" width="240" height="180" border="10" /></a>
 
 ______  
 
-### Работы по осмотру трубопровода при помощи малого ТНПА, оборудованного трекинговой USBL системой [Zima](/Docs/EN/Modems/uWAVE/uWAVE_Specification_en.pdf)  
+### Работы по осмотру трубопровода при помощи малого ТНПА, оборудованного трекинговой USBL системой [Zima](https://github.com/ucnl/ucnl.github.io/blob/master/documentation/RU/Zima/Zima_DataBrief_ru.md)  
 Место:   
 Time: Январь 2019
 
