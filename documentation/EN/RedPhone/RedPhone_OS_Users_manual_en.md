@@ -86,16 +86,16 @@ General technical characteristics of the device are given in **table 2**:
 | Dimensions (L x W x H) | 259 x 202 x 115 mm |
 | Weight (dry) | 2 kg |
 | Maximum range | 1000 m |
-| Transducer Cable Length [<sup> 2 </sup>] (# footnote2) | 7 m |
+| Transducer Cable Length[<sup>2</sup>](#footnote2) | 7 m |
 | Number of Channels Supported | 8 |
 | Maximum battery life | up to 8 hours |
 | Operating Temperature Range | -10 .. 50 ° C |
 | Resistance of connected headphones (not less) | 8 ohms |
-| Execution | IP67 [<sup> 1 </sup>] (# footnote1) |
+| Execution | IP67[<sup>1</sup>](#footnote1) |
 
 ________________
-<a name="footnote1"> <sup> 1 </sup> </a> With the device cover closed  
-<a name="footnote2"> <sup> 2 </sup> </a> By agreement, it is possible to supply an antenna with an increased cable length  
+<a name="footnote1"><sup>1</sup></a> With the device cover closed  
+<a name="footnote2"><sup>2</sup></a> By agreement, it is possible to supply an antenna with an increased cable length  
 
 
 ### 1.4. Contents of delivery
@@ -114,6 +114,7 @@ By a separate agreement with the manufacturer, it is possible to supply a transd
 | 5 | Carabiner for attaching antenna cable | 1 PC. | |
 | 6 | Hermetic bag for transportation and storage of transducer and microphone | 1 PC. | |
 | 7 | Adapter with Jack 3.5 mm jack for connecting headphones (earphones) | 1 PC. | |
+
 <div style="page-break-after: always;"></div>
 
 ## 2. Work with the device
@@ -122,7 +123,7 @@ By a separate agreement with the manufacturer, it is possible to supply a transd
 * Bind the station by the handle of the case with the help of a safety cord to the guard rail, railing, etc. to prevent the station from tipping over into the water;
 * Open the station cover by pushing the locks down (see **Figure 3**):
 
-| ! [RedPhone-OS case lock] (/ documentation / smallcase_lock1.png) |
+| ! [RedPhone-OS case lock](/documentation/smallcase_lock1.png) |
 | : ---: |
 | **Figure 3 - Lock** |
 
@@ -176,7 +177,7 @@ During the inspection, it is controlled that:
 
 After the check the toggle switch **"Power"** should be moved to the position **"Off"**
 
-[Sound sample] (/documentation/redphone_pwon_rx_check.wav)
+[Sound sample](/documentation/redphone_pwon_rx_check.wav)
 
 > **If the expected conditions do not coincide with those observed, the operation of the station is prohibited!**.
 
