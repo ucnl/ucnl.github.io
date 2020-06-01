@@ -9,16 +9,16 @@ _______
 
 ### [RedPhone-OS](RedPhone_OS_Specification_en.md): Securing an underwater transducer connector by carabine  
 
-<a href="https://youtu.be/_2PoVsB1wEY" 
-target="_blank"><img src="http://img.youtube.com/vi/_2PoVsB1wEY/0.jpg" 
+<a href="https://youtu.be/43qBwj5g8jI" 
+target="_blank"><img src="http://img.youtube.com/vi/43qBwj5g8jI.jpg" 
 alt="RedPhone: Securing an underwater transducer connector by carabine" width="240" height="180" border="10" /></a>  
 
 _______
 
 ### [RedPhone-OS](RedPhone_OS_Specification_en.md): Checking before usage  
 
-<a href="https://youtu.be/_2PoVsB1wEY" 
-target="_blank"><img src="http://img.youtube.com/vi/_2PoVsB1wEY/0.jpg" 
+<a href="https://youtu.be/j6Sgx4F4Q8E" 
+target="_blank"><img src="http://img.youtube.com/vi/j6Sgx4F4Q8E/0.jpg" 
 alt="RedPhone: checking before usage" width="240" height="180" border="10" /></a>  
 
 _______
