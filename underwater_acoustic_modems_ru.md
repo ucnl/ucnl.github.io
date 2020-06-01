@@ -15,6 +15,7 @@
 * [Демонстрационное приложение: uWAVE_Host (Репозиторий)](https://github.com/ucnl/uWAVE_Host)
 * [Демонстрационное приложение: uWAVE_Host (Скачать релиз)](https://api.github.com/repos/ucnl/uWAVE_Host/zipball)
 * [Примеры для Arduino](https://github.com/ucnl/uWAVE_Arduino)
+* [uWAVE: медиаматериалы, видео и т.п.](/documentation/RU/uWAVE/media)
 
 ### RedLINE -  гидроакустический модем
 * [Спецификация устройства: RedLINE](/documentation/RU/RedLINE/RedLine_Specification_ru.md)
