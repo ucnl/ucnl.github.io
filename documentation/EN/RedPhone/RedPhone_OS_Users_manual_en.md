@@ -107,13 +107,13 @@ By a separate agreement with the manufacturer, it is possible to supply a transd
 
 | No. | Name | Quantity | Notes |
 | : --- | : --- | : --- | : --- |
-| 1 | Station RedPhone-OS | 1 PC. | |
+| 1 | Station RedPhone-OS | 1 PC. |  |
 | 2 | Transducer | 1 PC. | cable 7 m |
-| 3 | Tangent Microphone | 1 PC. | |
-| 4 | AC Charger | 1 PC. | |
-| 5 | Carabiner for attaching antenna cable | 1 PC. | |
-| 6 | Hermetic bag for transportation and storage of transducer and microphone | 1 PC. | |
-| 7 | Adapter with Jack 3.5 mm jack for connecting headphones (earphones) | 1 PC. | |
+| 3 | Tangent Microphone | 1 PC. |  |
+| 4 | AC Charger | 1 PC. |  |
+| 5 | Carabiner for attaching antenna cable | 1 PC. |  |
+| 6 | Hermetic bag for transportation and storage of transducer and microphone | 1 PC. |  |
+| 7 | Adapter with Jack 3.5 mm jack for connecting headphones (earphones) | 1 PC. |  |
 
 <div style="page-break-after: always;"></div>
 
@@ -213,7 +213,7 @@ Possible sound alerts are summarized in **table 4**.
 
 ### **Table 4** - Sound alerts
 
-| Alert Description | What signals | Example |
+| Alert Description | Cause of alert | Example |
 | : --- | : --- | : --- |
 | Short rising and then lowering tone | The station power-on and switch to receive mode | [Sound sample](/documentation/redphone_pwon.wav) |
 | Short rising tone | Switching to receive mode after completion of transmission (releasing tangents **PTT**) | [Sample sound](/documentation/redphone_switch_to_rx.wav) |
