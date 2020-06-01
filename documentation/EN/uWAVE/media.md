@@ -1,7 +1,7 @@
 | ![logo](/documentation/sm_logo.png) |
 | :---: |
 | [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) |
-| [EN](/documentation/EN/uWAVE/media.md) \| [RU](/documentation/RU/uWAVE/media.md) |
+| [EN](/documentation/EN/uWAVE/media) \| [RU](/documentation/RU/uWAVE/media) |
 
 ## uWAVE media: tests videos, tutorials, etc.
 
