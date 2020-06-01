@@ -139,7 +139,7 @@ It is carried out with the station cover open. During this check, it is controll
 > **If the expected conditions do not coincide with those observed, the operation of the station is prohibited!**.
 
 #### 2.2.2. Checking device performance
-It is carried out after a successful visual inspection, according to [p. 2.2.1]().
+It is carried out after a successful visual inspection, according to [p. 2.2.1](#221-external-visual-check).
 
 Additional verification conditions:
 * toggle switch **"Power"** is installed in the position **"Off"**;
@@ -157,7 +157,7 @@ After the check the toggle switch **"Power"** should be moved to the position **
 > **If the expected conditions do not coincide with those observed, the operation of the station is prohibited!**.
 
 #### 2.2.3. Checking the transducer and microphone
-It is carried out after successful checks in accordance with [p. 2.2.1]() and [p. 2.2.2]().
+It is carried out after successful checks in accordance with [p. 2.2.1](#221-external-visual-check) and [p. 2.2.2](#222-checking-device-performance).
 
 Additional verification conditions:
 * Toggle switch **"Power"** is installed in the position **"Off"**;
@@ -183,7 +183,7 @@ After the check the toggle switch **"Power"** should be moved to the position **
 > To check the operability of the headphones, the toggle switch **“Speaker”** must be in the state **“Off”** and all sound signals, including the background noise, should be controlled using the headphones according to the method described above.  
 
 #### 2.2.4. Before work
-It is carried out after successful checks according to paragraphs. [2.2.1] () .. [2.2.3] ().
+It is carried out after successful checks according to paragraphs. [2.2.1](#221-external-visual-check) .. [2.2.3](#223-checking-the-transducer-and-microphone).
 
 Make sure that:
 * The station is installed on a stable non-slip horizontal base and tied by the handle to the rail, railings, etc. to prevent the station from tipping over into the water;
@@ -203,7 +203,7 @@ Make sure that:
 * There is direct visibility between the transducer of the station and the transducers of diving stations (not obscured by elements of the underwater landscape, parts of various structures, ships, etc.).
 
 ### 2.3. Working with the station
-Before work, all preparations and checks provided in [p. 2.2] ().
+Before work, all preparations and checks provided in [p. 2.2](#22-testing-routines).
 
 The underwater telephone works in half-duplex mode: transmission and reception alternate; if the device is in transmission mode, it cannot receive incoming messages.
 
@@ -245,7 +245,6 @@ Upon completion of the work, the actions should be performed in the following se
   * Disconnect the carabine of the load-carrying eye from the device cover;
   * Close the device cover.
   
-  
 <div style="page-break-after: always;"></div>
 
 ## 3. Storage and maintenance
@@ -267,9 +266,9 @@ The station and the complete equipment: transducer, microphone and charger do no
 
 > **FORBIDDEN:**  
 >
-> **- OPENING OF EQUIPMENT FROM THE DELIVERY SET ACCORDING TO [par. 1.4.]()**  
-> **- ACCESS TO USE OF EQUIPMENT FROM THE DELIVERY SET ACCORDING TO [par. 1.4.]() PERSONS WHO ARE NOT FAMILIAR TO THESE INSTRUCTIONS**  
-> **- ACCESS TO USE OF EQUIPMENT FROM THE DELIVERY SET ACCORDING TO [par. 1.4.]() PERSONS WHO ARE NOT ADULTS**  
+> **- OPENING OF EQUIPMENT FROM THE DELIVERY SET ACCORDING TO [par. 1.4.](#14-contents-of-the-standard-delivery-set)**  
+> **- ACCESS TO USE OF EQUIPMENT FROM THE DELIVERY SET ACCORDING TO [par. 1.4.](#14-contents-of-the-standard-delivery-set) PERSONS WHO ARE NOT FAMILIAR TO THESE INSTRUCTIONS**  
+> **- ACCESS TO USE OF EQUIPMENT FROM THE DELIVERY SET ACCORDING TO [par. 1.4.](#14-contents-of-the-standard-delivery-set) PERSONS WHO ARE NOT ADULTS**  
 > **- ENABLING TRANSMISSION MODE (PRESSING THE PTT BUTTON ON THE MICROPHONE) WHILE TRANSDUCER IS UNCONNECTED**  
 
 
@@ -286,17 +285,17 @@ The manufacturer’s warranty applies only to factory defects that were discover
 The manufacturer guarantees free repair or replacement of faulty equipment from the delivery set that has failed due to a factory defect.
 
 The reasons for refusing free warranty service, free repair and replacement include:
-- any **mechanical damage** of the equipment supplied according to [p. 1.4.](), Including violation of insulation of wires and cables;
+- any **mechanical damage** of the equipment supplied according to [p. 1.4.](#14-contents-of-the-standard-delivery-set), Including violation of insulation of wires and cables;
 - any **damage caused by exposure to moisture and pollution** due to improper use of the equipment from the delivery set according to [p. 1.4.](): Moisture in the connectors, inside the microphone, adapter for connecting headphones, etc.
 - any **electrical damage** caused by **use of not original accessories** (transducer, microphone, adapter for connecting headphones, headphones with resistance less than that specified in the specification of the device, charger);  
-- any **signs of self-repair and/or opening** of the equipment from the delivery set according to [p. 1.4.]().
+- any **signs of self-repair and/or opening** of the equipment from the delivery set according to [p. 1.4.](#14-contents-of-the-standard-delivery-set).
 
 <div style = "page-break-after: always;"> </div>
 
 ### 4.2 Disclaimer of the manufacturer
 _____________
 
-_**ANY OF THE PARTS OF THE DELIVERY SET ACCORDING TO [par. 1.4.]() SEPARATELY AND IN THE COMPOSITION OF THE SYSTEM, NAME FURTHER "DELIVERED EQUIPMENT":**_  
+_**ANY OF THE PARTS OF THE DELIVERY SET ACCORDING TO [par. 1.4.](#14-contents-of-the-standard-delivery-set) SEPARATELY AND IN THE COMPOSITION OF THE SYSTEM, NAME FURTHER "DELIVERED EQUIPMENT":**_  
 
 _**- ARE NOT DESIGNED FOR WATER RESCUE USE**_  
 _**- NOT TESTED AS RESCUE EQUIPMENT**_  
