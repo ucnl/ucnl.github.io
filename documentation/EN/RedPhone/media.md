@@ -7,7 +7,7 @@
 
 _______
 
-### [RedPhone-OS](/documentation/EN/RedPhone/RedPhone_OS_Specification_en.md): Securing an underwater transducer connector by carabine  
+### [RedPhone-OS](RedPhone_OS_Specification_en.md): Securing an underwater transducer connector by carabine  
 
 <a href="https://youtu.be/_2PoVsB1wEY" 
 target="_blank"><img src="http://img.youtube.com/vi/_2PoVsB1wEY/0.jpg" 
@@ -15,7 +15,7 @@ alt="RedPhone: Securing an underwater transducer connector by carabine" width="2
 
 _______
 
-### [RedPhone-OS](/documentation/EN/RedPhone/RedPhone_OS_Specification_en.md): Checking before usage  
+### [RedPhone-OS](RedPhone_OS_Specification_en.md): Checking before usage  
 
 <a href="https://youtu.be/_2PoVsB1wEY" 
 target="_blank"><img src="http://img.youtube.com/vi/_2PoVsB1wEY/0.jpg" 
@@ -23,7 +23,7 @@ alt="RedPhone: checking before usage" width="240" height="180" border="10" /></a
 
 _______
 
-### [RedPhone-OS](/documentation/EN/RedPhone/RedPhone_OS_Specification_en.md): Shallow water tests (including non-line-of-sight communication)
+### [RedPhone-OS](RedPhone_OS_Specification_en.md): Shallow water tests (including non-line-of-sight communication)
 
 Place: [Sarpa lake](https://goo.gl/maps/Gh1CoB7WbeRyds6T8)  
 Time: January 2019
@@ -34,7 +34,7 @@ alt="RedPhone-OS tests Jan 2019" width="240" height="180" border="10" /></a>
 
 ______  
 
-### [RedPhone-OS](/documentation/EN/RedPhone/RedPhone_OS_Specification_en.md): Shallow water tests at a distance 900 meters
+### [RedPhone-OS](RedPhone_OS_Specification_en.md): Shallow water tests at a distance 900 meters
 
 Place: [Shipping channel named after V.I. Lenin](https://goo.gl/maps/ccKqmdcb5jeUcaEZ9)  
 Time: January 2018
