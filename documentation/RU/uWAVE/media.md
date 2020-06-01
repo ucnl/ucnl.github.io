@@ -1,7 +1,7 @@
 | ![logo](https://ucnl.github.io/documentation/sm_logo.png) |
 | :---: |
 | [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) |
-| [EN](media_videos.md) \| [RU](media_videos_ru.md) |
+| [EN](\documentation\EN\uWAVE\media.md) \| [RU](\documentation\RU\uWAVE\media.md) |
 
 ## uWAVE медиаматериалы: видео с испытаний, видеоинструкции и т.п.
 
