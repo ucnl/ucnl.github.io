@@ -60,13 +60,13 @@ alt="uWAVE Modem range test 1092 m" width="240" height="180" border="10" /></a>
 
 ______  
 
-### Работы по осмотру трубопровода при помощи малого ТНПА, оборудованного трекинговой USBL системой [Zima](https://github.com/ucnl/ucnl.github.io/blob/master/documentation/RU/Zima/Zima_DataBrief_ru.md)  
+### Работы по осмотру трубопровода при помощи малого ТНПА, оборудованного трекинговой USBL системой [Zima USBL](https://github.com/ucnl/ucnl.github.io/blob/master/documentation/RU/Zima/Zima_DataBrief_ru.md)  
 Место:   
 Time: Январь 2019
 
 <a href="https://youtu.be/fy9CjD4cgak"
 target="_blank"><img src="http://img.youtube.com/vi/fy9CjD4cgak/0.jpg" 
-alt="uWAVE Modem range test 1092 m" width="240" height="180" border="10" /></a>  
+alt="A pipeline inspection by an ROV equipped with Zima USBL" width="240" height="180" border="10" /></a>  
 
 ______  
 
