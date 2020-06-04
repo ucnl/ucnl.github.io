@@ -23,7 +23,7 @@
 ### RedWAVE - Подводный GPS (LBL)
 * [Спецификация устройства: RedBASE - Буй-ретранслятор](/documentation/RU/RedWAVE/RedBASE_Specification_ru.md)
 * [Спецификация устройства: RedNODE - Навигационный приемник для ТНПА/АНПА](/Docs/RU/RedWAVE/RedNODE_Specification.pdf)
-* [Спецификация устройства: RedNAV - Навигационный приемник для водолазов](/Docs/RU/RedWAVE/RedNAV_Specification_ru.pdf)
+* [Спецификация устройства: RedNAV - Навигационный приемник для водолазов](/documentation/RU/RedWAVE/RedNAV_Specification_ru.md)
 * [Описание протокола сопряжения: RedNODE](/Docs/RU/RedWAVE/RedNODE_Protocol_specification.pdf)
 * [Рукводство пользователя](/Docs/RU/RedWAVE/RedWAVE_LBL_Deployment_maintenance_RedNAV_ru.pdf)
 * [Демонстрационый трек (Google KML)](/Docs/RU/RedWAVE/rednode_track_18042019.kml)
