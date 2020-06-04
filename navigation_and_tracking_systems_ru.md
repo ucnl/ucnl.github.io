@@ -21,7 +21,7 @@
 * [Zima USBL: медиаматериалы, видео с испытаний и т.п.](/documentation/RU/Zima/media)
 
 ### RedWAVE - Подводный GPS (LBL)
-* [Спецификация устройства: RedBASE - Буй-ретранслятор](/Docs/RU/RedWAVE/RedBASE_Specification_ru.pdf)
+* [Спецификация устройства: RedBASE - Буй-ретранслятор](/documentation/RU/RedWAVE/RedBASE_Specification_ru.md)
 * [Спецификация устройства: RedNODE - Навигационный приемник для ТНПА/АНПА](/Docs/RU/RedWAVE/RedNODE_Specification.pdf)
 * [Спецификация устройства: RedNAV - Навигационный приемник для водолазов](/Docs/RU/RedWAVE/RedNAV_Specification_ru.pdf)
 * [Описание протокола сопряжения: RedNODE](/Docs/RU/RedWAVE/RedNODE_Protocol_specification.pdf)
