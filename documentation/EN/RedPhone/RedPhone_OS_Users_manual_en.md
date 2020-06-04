@@ -182,6 +182,12 @@ After the check the toggle switch **"Power"** should be moved to the position **
 
 > To check the operability of the headphones, the toggle switch **“Speaker”** must be in the state **“Off”** and all sound signals, including the background noise, should be controlled using the headphones according to the method described above.  
 
+#### Video tutorial: RedPhone-OS check before usage
+
+<a href="https://youtu.be/j6Sgx4F4Q8E" 
+target="_blank"><img src="http://img.youtube.com/vi/j6Sgx4F4Q8E/0.jpg" 
+alt="RedPhone: check before usage" width="240" height="180" border="10" /></a>
+
 #### 2.2.4. Before work
 It is carried out after successful checks according to paragraphs. [2.2.1](#221-external-visual-check) .. [2.2.3](#223-checking-the-transducer-and-microphone).
 
@@ -215,7 +221,7 @@ Possible sound alerts are summarized in **table 4**.
 | Alert Description | Cause of alert | Example |
 | :--- | :--- | :--- |
 | Short rising and then lowering tone | The station power-on and switch to receive mode | [Sound sample](/documentation/redphone_pwon.wav) |
-| Short rising tone | Switching to receive mode after completion of transmission (releasing tangents **PTT**) | [Sample sound](/documentation/redphone_switch_to_rx.wav) |
+| Short rising tone | Switching to receive mode after completion of transmission (releasing tangents **PTT**) | [Sound sample](/documentation/redphone_switch_to_rx.wav) |
 | Long trill | Low charge internal power supply |   |
 
 #### 2.3.2. Receiving voice messages
