@@ -6,6 +6,7 @@
 ## Гидроакустические навигационные и трекинговые системы
 ### Zima - Ультракороткобазисная (USBL) система
 * [Краткое описание](/documentation/RU/Zima/Zima_DataBrief_ru.md)
+* [Zima USBL: медиаматериалы, видео с испытаний и т.п.](/documentation/RU/Zima/media)
 * [Рукводство пользователя](/documentation/RU/Zima/Zima_Users_manual_ru.md)
 * [Спецификация устройства: Zima-Base - пеленгационная антенна](/documentation/RU/Zima/Zima_B_Specification_ru.md)
 * [Спецификация устройства: Zima-Responder - маяк-ответчик](/documentation/RU/Zima/Zima_R_Specification_ru.md)
@@ -18,20 +19,21 @@
 * [Схема включения устройства: Zima-Responder](/Docs/EN/Zima/Zima-R_drawings_wiring.pdf)
 * [Пультовое приложение (Репозиторий)](https://github.com/ucnl/ZHost)
 * [Пультовое приложение (Скачать релиз)](https://api.github.com/repos/ucnl/ZHost/zipball)
-* [Zima USBL: медиаматериалы, видео с испытаний и т.п.](/documentation/RU/Zima/media)
+
 
 ### RedWAVE - Подводный GPS (LBL)
+* [Краткое описание](/documentation/RU/RedWAVE/RedWAVE_DataBrief_ru.md)
+* [RedWAVE: медиаматериалы, видео с испытаний, треки и т.п.](/documentation/RU/RedWAVE/media)
 * [Спецификация устройства: RedBASE - Буй-ретранслятор](/documentation/RU/RedWAVE/RedBASE_Specification_ru.md)
-* [Спецификация устройства: RedNODE - Навигационный приемник для ТНПА/АНПА](/Docs/RU/RedWAVE/RedNODE_Specification.pdf)
+* [Спецификация устройства: RedNODE - Навигационный приемник для ТНПА/АНПА](/documentation/RU/RedWAVE/RedNODE_Specification_ru.md)
 * [Спецификация устройства: RedNAV - Навигационный приемник для водолазов](/documentation/RU/RedWAVE/RedNAV_Specification_ru.md)
 * [Описание протокола сопряжения: RedNODE](/Docs/RU/RedWAVE/RedNODE_Protocol_specification.pdf)
 * [Рукводство пользователя](/Docs/RU/RedWAVE/RedWAVE_LBL_Deployment_maintenance_RedNAV_ru.pdf)
-* [Демонстрационый трек (Google KML)](/Docs/RU/RedWAVE/rednode_track_18042019.kml)
 * [Демонстрационное приложение RedNODE Host (Репозиторий)](https://github.com/ucnl/RedNodeHost)
 * [Демонстрационное приложение RedNODE Host (Скачать релиз)](https://api.github.com/repos/ucnl/RedNodeHost/zipball)
 * [Приложение для RedNAV (Репозиторий)](https://github.com/ucnl/RedNavHost)
 * [Приложение для RedNAV (Скачать релиз)](https://api.github.com/repos/ucnl/RedNavHost/zipball)
-* [RedWAVE: медиаматериалы, видео с испытаний и т.п.](/documentation/RU/RedWAVE/media)
+
 
 ### Система привода водолазов VOSTOK
 * [Спецификация устройства: VOSTOK-ACS - водолазный акустический компас](/Docs/RU/Vostok/Vostok-ACS_Specification_ru.pdf)
