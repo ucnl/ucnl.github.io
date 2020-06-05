@@ -2,7 +2,8 @@
 | :---: | ---: |
 | [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **RedWAVE** - гидроакустическая навигационная система <br/> Протокол информационного сопряжения c навигационным приемником RedNODE |
   
-  
+# ДАННЫЙ ДОКУМЕНТ НАХОДИТСЯ В РАЗРАБОТКЕ И НЕВАЛИДЕН!
+## Воспользуйтесь [предыдущей версией документа](https://docs.unavlab.com/Docs/RU/RedWAVE/RedNODE_Protocol_specification.pdf)
   
 # RedWAVE <br/> протокол информационного сопряжения c навигационными приемниками RedNODE
 
