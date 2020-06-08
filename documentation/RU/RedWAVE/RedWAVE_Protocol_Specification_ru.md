@@ -2,9 +2,7 @@
 | :---: | ---: |
 | [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **RedWAVE** - гидроакустическая навигационная система <br/> Протокол информационного сопряжения c навигационным приемником RedNODE |
   
-# ДАННЫЙ ДОКУМЕНТ НАХОДИТСЯ В РАЗРАБОТКЕ И НЕВАЛИДЕН!
-## Воспользуйтесь [предыдущей версией документа](https://docs.unavlab.com/Docs/RU/RedWAVE/RedNODE_Protocol_specification.pdf)
-  
+ 
 # RedWAVE <br/> протокол информационного сопряжения c навигационными приемниками RedNODE
 
 <div style="page-break-after: always;"></div>
@@ -467,3 +465,5 @@ ________
 | '2' | BSTS_DISCHARGED | Буй учавствует в навигации, но его батарея требует зарядки |
 | '3' | BSTS_OK | Буй учавствует в навигации |
 | '4' | BSTS_ALIVE | С буем есть связь, но данный о заряде его батареи еще не были получены |
+
+### [Вернуться к содержанию](#%D1%81%D0%BE%D0%B4%D0%B5%D1%80%D0%B6%D0%B0%D0%BD%D0%B8%D0%B5)
