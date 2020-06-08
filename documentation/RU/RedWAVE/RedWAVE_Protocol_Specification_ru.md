@@ -395,21 +395,48 @@ ________
 
 | Значение | Наименование | Описание | RO/RW |
 | :--- | :--- | :--- | :--- |
-| '0' | DEVICE_INFO | System name, version, acoustic subsystem name and version, device type and serial number	RO
-| '1' | MAX_REMOTE_TIMEOUT | Max. remote timeout, msec	RO
-| '2' | MAX_SUBSCRIBERS | Not supported	RO
-| '3' | DEPTH | Built-in depth sensor value, meters	RO
-| '4' | TEMPERATURE | Built-in temperature sensor value, ˚C	RO
-| '5' | BAT_CHARGE | Not supported	RO
-| '6' | PRESSURE_RATING | Max. allowed hydrostatic pressure, bar	RO
-| '7' | ZERO_PRESSURE | Pressure above water surface, bar	RW
-| '8' | WATER_DENSITY | Water density[ Updates internally according to current temperature, pressure and salinity], kg/m3	RO
-| '9' | SALINITY | Water salinity, ppm	RW
-| '10' | SOUND_SPEED | Speed of sound[ Updates internally (if not set manually) according to current temperature, pressure and salinity], м/с	RW
-| '11' | GRAVITY_ACC	Gravity acceleration[ Updates internally according to current geographic location (WGS-84 ellipsoid)] (g), m/s2	RO
-| '12' | YEAR	Current year	RW
-| '13' | MONTH	Current month	RW
-| '14' | DATE	Current date	RW
-| '15' | HOUR	Current hour	RO
-| '16' | MINUTE	Current minute	RO
-| '17' | SECOND	Current second[ Hour, minute and second updates from buoy's navigational signal]	RO
+| '0' | DEVICE_INFO | System name, version, acoustic subsystem name and version, device type and serial number	RO |
+| '1' | MAX_REMOTE_TIMEOUT | Max. remote timeout, msec | RO |
+| '2' | MAX_SUBSCRIBERS | Not supported | RO |
+| '3' | DEPTH | Built-in depth sensor value, meters | RO |
+| '4' | TEMPERATURE | Built-in temperature sensor value, ˚C | RO |
+| '5' | BAT_CHARGE | Not supported | RO |
+| '6' | PRESSURE_RATING | Max. allowed hydrostatic pressure, bar | RO |
+| '7' | ZERO_PRESSURE | Pressure above water surface, bar | RW |
+| '8' | WATER_DENSITY | Water density[ Updates internally according to current temperature, pressure and salinity], kg/m3 | RO |
+| '9' | SALINITY | Water salinity, ppm | RW |
+| '10' | SOUND_SPEED | Speed of sound[ Updates internally (if not set manually) according to current temperature, pressure and salinity], м/с | RW |
+| '11' | GRAVITY_ACC | Gravity acceleration[ Updates internally according to current geographic location (WGS-84 ellipsoid)] (g), m/s2	RO |
+| '12' | YEAR | Current year | RW |
+| '13' | MONTH | Current month | RW |
+| '14' | DATE | Current date | RW |
+| '15' | HOUR | Current hour | RO |
+| '16' | MINUTE | Current minute | RO |
+| '17' | SECOND | Current second[ Hour, minute and second updates from buoy's navigational signal] | RO |
+
+### 3.4. Идентификаторы сервисных операций 
+
+| Значение | Наименование | Описание |
+| :--- | :--- | :--- |
+| '0'	LOC_INVOKE_FLASH_WRITE	Save settings to internal flash |
+| ‘1’	LOC_INVOKE_CLEAR_WAYPOINTS	Not supported |
+| ‘2’	LOC_INVOKE_CLEAR_TRACK	Not supported |
+| ‘3’	LOC_INVOKE_CLEAR_NDTABLE	Not supported |
+| ‘4’	LOC_INVOKE_DPT_ZERO_ADJUST	Set current pressure value as zero pressure (above water surface) |
+
+### 3.5. Типы уточнений географического положения
+
+| Значение | Наименование | Описание |
+| :--- | :--- | :--- |
+| '0'	NO_FIX	Geographic position not available |
+| ‘1’	GNSS_FIX	Geographic position based on GNSS data |
+
+### 3.6. Идентификаторы статусов буев
+
+| Значение | Наименование | Описание |
+| :--- | :--- | :--- |
+| '0'	BSTS_NO_DATA	Buoy state unknown |
+| ‘1’	BSTS_TIMEOUT	Buoy timeout |
+| ‘2’	BSTS_DISCHARGED	Buoy is OK, but its battery in "yellow" zone |
+| ‘3’	BSTS_OK	Buoy is OK |
+| ‘4’	BSTS_ALIVE	Buoy is OK, but battery state is not available yet |
