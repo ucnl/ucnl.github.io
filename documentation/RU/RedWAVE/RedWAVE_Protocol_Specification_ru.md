@@ -360,14 +360,13 @@ ________
 |  | P | Проприетарный код |
 |  | TNT | Система команд TNT |
 |  | 6 | Идентификатор сообщения |
-|  | Action ID | Идентификатор сервисной операции \([см.x.x]()\) |
-|  | Reserved | Зарезервировано, '00' |
+| 1 | Action ID | Идентификатор сервисной операции \([см.x.x]()\) |
+| 2 | Reserved | Зарезервировано, '00' |
 |  | * | Разделитель контрольной суммы NMEA |
 |  | hh	| Контрольная сумма NMEA |
 |  | \<CR\>\<LF\> | Конец сообщения |
 
 ## 3. Таблицы идентификаторов
-
 ### 3.1. Типы устройств
 
 | Значение | Наименование | Описание |
@@ -393,50 +392,54 @@ ________
 
 ### 3.3. Идентификаторы локальных данных
 
-| Значение | Наименование | Описание | RO/RW |
+| Значение | Наименование | Описание | RO/RW<sup>[4](#footnote4)</sup> |
 | :--- | :--- | :--- | :--- |
-| '0' | DEVICE_INFO | System name, version, acoustic subsystem name and version, device type and serial number	RO |
-| '1' | MAX_REMOTE_TIMEOUT | Max. remote timeout, msec | RO |
+| '0' | DEVICE_INFO | Информация об устройстве, версии ПО и серийный номер | RO |
+| '1' | MAX_REMOTE_TIMEOUT | Максимальное время ожидания, мсек | RO |
 | '2' | MAX_SUBSCRIBERS | Not supported | RO |
-| '3' | DEPTH | Built-in depth sensor value, meters | RO |
-| '4' | TEMPERATURE | Built-in temperature sensor value, ˚C | RO |
+| '3' | DEPTH | Показания встроенного датчика глубины, м | RO |
+| '4' | TEMPERATURE | Показания встроенного датчика температуры, ˚C | RO |
 | '5' | BAT_CHARGE | Not supported | RO |
-| '6' | PRESSURE_RATING | Max. allowed hydrostatic pressure, bar | RO |
-| '7' | ZERO_PRESSURE | Pressure above water surface, bar | RW |
-| '8' | WATER_DENSITY | Water density[ Updates internally according to current temperature, pressure and salinity], kg/m3 | RO |
-| '9' | SALINITY | Water salinity, ppm | RW |
-| '10' | SOUND_SPEED | Speed of sound[ Updates internally (if not set manually) according to current temperature, pressure and salinity], м/с | RW |
-| '11' | GRAVITY_ACC | Gravity acceleration[ Updates internally according to current geographic location (WGS-84 ellipsoid)] (g), m/s2	RO |
-| '12' | YEAR | Current year | RW |
-| '13' | MONTH | Current month | RW |
-| '14' | DATE | Current date | RW |
-| '15' | HOUR | Current hour | RO |
-| '16' | MINUTE | Current minute | RO |
-| '17' | SECOND | Current second[ Hour, minute and second updates from buoy's navigational signal] | RO |
+| '6' | PRESSURE_RATING | Максимально допустимое гидростатическое давление, Бар | RO |
+| '7' | ZERO_PRESSURE | Давление на поверхности воды, мБар | RW |
+| '8' | WATER_DENSITY | Плотность воды, кг/м<sup>3</sup> | RO |
+| '9' | SALINITY | Соленость воды, PSU | RW |
+| '10' | SOUND_SPEED | Скорость звука, м/с | RW |
+| '11' | GRAVITY_ACC | Ускорение свободного падения, м/с<sup>2</sup>	RO |
+| '12' | YEAR | Год | RW |
+| '13' | MONTH | Месяц | RW |
+| '14' | DATE | День месяца | RW |
+| '15' | HOUR | Час | RO |
+| '16' | MINUTE | Минута | RO |
+| '17' | SECOND | Секунда | RO |
+
+
+________
+<a name="footnote4"><sup>4</sup> **RO** - Read-Only, параметр только для чтения; **RW** - параметр для чтения и записи.  
 
 ### 3.4. Идентификаторы сервисных операций 
 
 | Значение | Наименование | Описание |
 | :--- | :--- | :--- |
-| '0'	LOC_INVOKE_FLASH_WRITE	Save settings to internal flash |
-| ‘1’	LOC_INVOKE_CLEAR_WAYPOINTS	Not supported |
-| ‘2’	LOC_INVOKE_CLEAR_TRACK	Not supported |
-| ‘3’	LOC_INVOKE_CLEAR_NDTABLE	Not supported |
-| ‘4’	LOC_INVOKE_DPT_ZERO_ADJUST	Set current pressure value as zero pressure (above water surface) |
+| '0'	LOC_INVOKE_FLASH_WRITE | Сохранить настройки в энергонезависимую память |
+| '1'	LOC_INVOKE_CLEAR_WAYPOINTS | Не поддерживается |
+| '2'	LOC_INVOKE_CLEAR_TRACK | Не поддерживается |
+| '3'	LOC_INVOKE_CLEAR_NDTABLE | Не поддерживается |
+| '4'	LOC_INVOKE_DPT_ZERO_ADJUST | Установить текущие показания давления в качестве давления на поверхности воды |
 
 ### 3.5. Типы уточнений географического положения
 
 | Значение | Наименование | Описание |
 | :--- | :--- | :--- |
-| '0'	NO_FIX	Geographic position not available |
-| ‘1’	GNSS_FIX	Geographic position based on GNSS data |
+| '0'	NO_FIX | Географическая позиция недоступна |
+| '1'	GNSS_FIX | Географическая позиция на основе GNSS |
 
 ### 3.6. Идентификаторы статусов буев
 
 | Значение | Наименование | Описание |
 | :--- | :--- | :--- |
-| '0'	BSTS_NO_DATA	Buoy state unknown |
-| ‘1’	BSTS_TIMEOUT	Buoy timeout |
-| ‘2’	BSTS_DISCHARGED	Buoy is OK, but its battery in "yellow" zone |
-| ‘3’	BSTS_OK	Buoy is OK |
-| ‘4’	BSTS_ALIVE	Buoy is OK, but battery state is not available yet |
+| '0'	BSTS_NO_DATA | Состояние неизвестно |
+| '1'	BSTS_TIMEOUT | Превышен интервал ожидания |
+| '2'	BSTS_DISCHARGED | Буй учавствует в навигации, но его батарея требует зарядки |
+| '3'	BSTS_OK | Буй учавствует в навигации |
+| '4'	BSTS_ALIVE | С буем есть связь, но данный о заряде его батареи еще не были получены |
