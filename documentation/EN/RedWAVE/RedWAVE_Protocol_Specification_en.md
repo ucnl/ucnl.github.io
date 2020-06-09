@@ -463,4 +463,4 @@ ________
 | '3' | BSTS_OK | Buoy is alive and used in navigation |
 | '4' | BSTS_ALIVE |  Bouy is alive, but the data about its battery charge has not updated yet |
 
-### [Back to contents]()
+### [Back to contents](#contents)
