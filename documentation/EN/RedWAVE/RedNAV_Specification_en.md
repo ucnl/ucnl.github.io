@@ -57,7 +57,7 @@ Fully wireless pairing with PC via Bluetooth and wireless charging makes it extr
 | NOMINAL DEPTH ACCURACY<sup>[4](#footnote4)</sup>  | 0.1 m |
 | MINIMAL TIME TO FIRST POSITION FIX | 28 s |
 | NOMINAL POSITION UPDATE RATE | 1 Hz |
-| НОМИНАЛЬНОЕ ВРЕМЯ СТАРТА | 3 s |
+| RATED STARTUP TIME | 3 s |
 | BUILT-IN TEMPERATURE SENSOR ACCURACY | 0.1 °C |
 | PAIRING WITH PC | Bluetooth |
 | CHARGER | Wireless |
