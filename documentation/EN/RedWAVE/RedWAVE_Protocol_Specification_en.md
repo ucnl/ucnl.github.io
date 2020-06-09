@@ -11,9 +11,9 @@
 
 - [1. Introduction](#1-introduction)
   - [1.1. Physical protocol](#11-physical-protocol)
-  - [1.2. Стандарт протокола диалогового уровня NMEA0183]()
-- [2. Система команд TNT и стандартные сообщения NMEA0183]()
-  - [2.1. Оснвные и частоупотребимые сообщения]()
+  - [1.2. NMEA0183 Protocol standard NMEA0183](#12-nmea0183-protocol-standard)
+- [2. TNT Command System and Standard Messages NMEA0183](#2-tnt-command-system-and-standard-messages-nmea0183)
+  - [2.1. Commonly used messages](#21-commonly-used-messages)
     - [2.1.1. GGA](#211-gga)
     - [2.1.2. RMC](#212-rmc)
     - [2.1.3. MTW](#213-mtw)
@@ -22,20 +22,20 @@
     - [2.1.6. IC_D2H_BUOY_STATUS](#216-ic_d2h_buoy_status)
     - [2.1.7. IC_D2H_PRETMP_VAL](#217-ic_d2h_pretmp_val)
     - [2.1.8. IC_H2D_SET_VAL](#218-ic_h2d_set_val)
-  - [2.2. Дополнительные сообщения]()
+  - [2.2. Additional sentences](#22-additional-sentences)
     - [2.2.1. IC_D2H_ACK](#221-ic_d2h_ack)
     - [2.2.2. IC_H2D_LOC_DATA_GET](#222-ic_h2d_loc_data_get)
     - [2.2.3. IC_D2H_LOC_DATA_VAL](#223-ic_d2h_loc_data_val)
     - [2.2.4. IC_D2H_DEV_INFO_VAL](#224-ic_d2h_dev_info_val)
     - [2.2.5. IC_H2D_SNT_ENABLE](#225-ic_h2d_snt_enable)
     - [2.2.6. IC_H2D_ACT_INVOKE](#226-ic_h2d_act_invoke)
-- [3. Таблицы идентификаторов]()
-  - [3.1. Типы устройств]()
-  - [3.2. Коды ошибок]()
-  - [3.3. Идентификаторы локальных данных]()
-  - [3.4. Идентификаторы сервисных операций]()
-  - [3.5. Типы уточнений географического положения]()
-  - [3.6. Идентификаторы статусов буев]()
+- [3. Tables of identifiers](#3-tables-of-identifiers)
+  - [3.1. Device types](#31-device-types)
+  - [3.2. Error codes](#32-error-codes)
+  - [3.3. Local parameters identifiers](#33-local-parameters-identifiers)
+  - [3.4. Service actions identifiers](#34-service-actions-identifiers)
+  - [3.5. Fix types](#35-fix-types)
+  - [3.6. Buoy status](#36-buoy-status)
    
 <div style="page-break-after: always;"></div>
 
@@ -231,7 +231,7 @@ Format: **`$PTNTM,x.x,x.x,x.x,x,x.x,x.x,x.x,x,x.x,x.x,x.x,x,x.x,x.x,x.x,x*hh<CR>
 
 ________
 <a name="footnote2"><sup>2</sup> MSR (_Main lobe to side peak ratio_) - signal reception quality characteristic. Good reception conditions with values >= 20 dB.  
-<a name="footnote3"><sup>3</sup> Table of possible values \([see 3.6.]()\)
+<a name="footnote3"><sup>3</sup> Table of possible values \([see 3.6.](#36-buoy-status)\)
 
 #### 2.1.7. IC_D2H_PRETMP_VAL
 Hydrostatic pressure and temperature of water.
@@ -261,7 +261,7 @@ Format: **`$PTNTP,x,x.x<CR><LF>`**
 |  | P | Proprietary sentence |
 |  | TNT | Proprietery code ID |
 |  | P | Sentence ID |
-| 1 | Value ID | Local parameter ID \([see. 3.3.]()\) |
+| 1 | Value ID | Local parameter ID \([see. 3.3.](#33-local-parameters-identifiers)\) |
 | 2 | Value | New value to set |
 | | *	| NMEA checksum separator |
 | | hh	| NMEA checksum |
@@ -282,7 +282,7 @@ Format: **`$PTNT0,x*hh<CR><LF>`**
 |  | P | Proprietary sentence |
 |  | TNT | Proprietery code ID |
 |  | 0	| Sentence ID |
-| 1 | errCode	| Error code \([see 3.2.]()\) |
+| 1 | errCode	| Error code \([see 3.2.](#32-error-codes)\) |
 | | *	| NMEA checksum separator |
 | | hh	| NMEA checksum |
 | | \<CR\>\<LF\> | end of sentence |
@@ -316,7 +316,7 @@ Format: **`$PTNT5,x,x<CR><LF>`**
 |  | P | Proprietary sentence |
 |  | TNT | Proprietery code ID |
 |  | 5 | Sentence ID | 
-| 1 | Requested data ID | Parameter ID \([see 3.3.]()\) | 
+| 1 | Requested data ID | Parameter ID \([see. 3.3.](#33-local-parameters-identifiers)\) | 
 | 2 | Value | Queried value | 
 | | *	| NMEA checksum separator |
 | | hh	| NMEA checksum |
@@ -324,7 +324,7 @@ Format: **`$PTNT5,x,x<CR><LF>`**
 
 
 #### 2.2.4. IC_D2H_DEV_INFO_VAL
-Device's responce to [IC_D2H_LOC_DATA_GET](#222-ic_h2d_loc_data_get), if the queried parameter ID = [LOC_DATA_DEV_INFO]().
+Device's responce to [IC_D2H_LOC_DATA_GET](#222-ic_h2d_loc_data_get), if the queried parameter ID = [LOC_DATA_DEV_INFO](#33-local-parameters-identifiers).
 
 Format: **`$PTNT!,c--c,x,x,c--c,x,c--c<CR><LF>`**  
 
@@ -338,7 +338,7 @@ Format: **`$PTNT!,c--c,x,x,c--c,x,c--c<CR><LF>`**
 | 2 | System version | System version (BCD) |
 | 3 | Communication subsystem moniker | Communication subsystem name |
 | 4 | Communication subsystem version | Communication subsystem version (BCD) |
-| 5 | Device type | Device type \([see 3.1.]()\) |
+| 5 | Device type | Device type \([see 3.1.](#31-device-types)\) |
 | 6 | Serial number | Serial number |
 | | *	| NMEA checksum separator |
 | | hh	| NMEA checksum |
@@ -378,7 +378,7 @@ Format: **`$PTNT6,xx,00*hh<CR><LF>`**
 |  | P | Proprietary sentence |
 |  | TNT | Proprietery code ID |
 |  | 6 | Sentence ID |
-| 1 | Action ID | Service operation ID \([see 3.4.]()\) |
+| 1 | Action ID | Service operation ID \([see 3.4.](#34-service-actions-identifiers)\) |
 | 2 | Reserved | Reserved, should be '00' |
 | | *	| NMEA checksum separator |
 | | hh	| NMEA checksum |
