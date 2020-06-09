@@ -9,8 +9,8 @@
 
 ## Contents
 
-- [1. Введение]()
-  - [1.1. Протокол физического уровеня]()
+- [1. Introduction](#1-introduction)
+  - [1.1. Physical protocol](#11-physical-protocol)
   - [1.2. Стандарт протокола диалогового уровня NMEA0183]()
 - [2. Система команд TNT и стандартные сообщения NMEA0183]()
   - [2.1. Оснвные и частоупотребимые сообщения]()
@@ -56,7 +56,7 @@ Default port settings<sup>[1](#footnote1)</sup>:
 > ** ATTENTION! **
 > _Receivers are powered by a 12 V DC source, while the data line voltage is 3.3 V._
 
-### 1.2. Dialogue Protocol Standard NMEA0183
+### 1.2. NMEA0183 Protocol standard
 The NMEA0183 standard describes the format of text (ASCII) messages (sentences) of an interactive level.
 
 Example sentence: **`$PTNT0,1*hh<CR><LF>`**
