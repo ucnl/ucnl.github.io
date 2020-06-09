@@ -20,7 +20,7 @@ It has positive buoyancy, has a load-carrying eye for anchoring.
 
 <div style="page-break-after: always;"></div>
 
-## ТЕХНИЧЕСКИЕ ХАРАКТЕРИСТИКИ
+## TECHNICAL SPECIFICATION
 
 | PARAMETER | VALUE |
 | :--- | :--- |
