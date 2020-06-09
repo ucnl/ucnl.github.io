@@ -20,6 +20,7 @@
 
 
 ### RedWAVE - Underwater GPS (LBL)
+* [RedWAVE: Databrief](/documentation/EN/RedWAVE/RedWAVE_DataBrief_en.md)
 * [RedWAVE: videos, tutorials, etc.](/documentation/EN/RedWAVE/media)
 * [Device specification: RedBASE - GNSS-equipped sonobuoy](/documentation/EN/RedWAVE/RedBASE_Specification_en.md)
 * [Device specification: RedNODE - navigation receiver for ROVs and AUVs](/documentation/EN/RedWAVE/RedNODE_Specification_en.md)
