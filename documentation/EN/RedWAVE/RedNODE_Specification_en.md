@@ -41,28 +41,25 @@ simplicity of integration.
 | WORKING TEMPERATURE RANGE | -5 .. 50 °С |
 | DEPTH RATING | 300 m |
 | ACOUSTIC RANGE (ENEGRY)<sup>[2](#footnote2)</sup> | 3000 m |
-| BANDWIDTH | 10 .. 30 кГц |
-| ПРЕДЕЛЬНОЕ СООТНОШЕНИЕ СИГНАЛ/ШУМ В ПОЛОСЕ<sup>[3](#footnote3)</sup> | -6 дБ |
+| BANDWIDTH | 10 .. 30 kHz |
+| SNR<sup>[3](#footnote3)</sup> | -6 dB |
 | REFERENCE ELLIPSOID | WGS-84 |
-| НОМИНАЛЬНАЯ ГОРИЗОНТАЛЬНАЯ ПОГРЕШНОСТЬ<sup>[4](#footnote4)</sup> (2DRMS) | 0.84 м |
-| НОМИНАЛЬНАЯ ПОГРЕШНОСТЬ ПО ГЛУБИНЕ<sup>[5](#footnote5)</sup>  | 0.1 м |
-| НОМИНАЛЬНОЕ ВРЕМЯ ДО ПЕРВОГО УТОЧНЕНИЯ МЕСТОПОЛОЖЕНИЯ | 28 c |
-| НОМИНАЛЬНАЯ ЧАСТОТА ОБНОВЛЕНИЯ ГЕОГРАФИЧЕСКОГО ПОЛОЖЕНИЯ | 1 Гц |
-| НОМИНАЛЬНОЕ ВРЕМЯ СТАРТА | 100 мсек |
-| ТОЧНОСТЬ ВСТРОЕННОГО ДАТЧИКА ТЕМПЕРАТУРЫ | 0.1 °C |
+| NOMINAL 2D-ACCURACY <sup>[4](#footnote4)</sup> (2DRMS) | 0.84 m |
+| NOMINAL DEPTH ACCURACY<sup>[5](#footnote5)</sup>  | 0.1 m |
+| MINIMAL TIME TO FIRST POSITION FIX | 28 s |
+| NOMINAL POSITION UPDATE RATE | 1 Hz |
+| RATE STARTUP TIME | 100 msec |
+| BUILT-IN TEMPERATURE SENSOR ACCURACY | 0.1 °C |
 | CABLE LENGTH | 1 m |
 | CABLE DIAMETER | 5 mm |
-| ИНТЕРФЕЙС СОПРЯЖЕНИЯ<sup>[6](#footnote6)</sup> | UART, 9600  |
-| ИНФОРМАЦИОННЫЙ [ПРОТОКОЛ](RedWAVE_Protocol_Specification_ru.md) | NMEA0183 (RMC, GGA, WTW) <br/> + расширенный набор сообщений |
+| INTERFACE<sup>[6](#footnote6)</sup> | UART, 9600  |
+| COMMUNICATION [PROTOCOL](RedWAVE_Protocol_Specification_en.md) | NMEA0183 (RMC, GGA, WTW) <br/> + extended sentences set |
 
 ________________
-<a name="footnote1"><sup>1</sup></a> Для устройств, выпущенных после июня 2020 года. Для устройств, выпущенных ранее напряжение питания 5 В.    
-<a name="footnote2"><sup>2</sup></a> Параметр, определяющий максимальную дальность, на которой возможен прием сигнала, исходя из 
-электроакустических параметров передатчика и приемника, пространственным убыванием интенсивности звуковой энергии, затуханием в среде 
-и уровня гидроакустических помех.  
-<a name="footnote3"><sup>3</sup></a> Величина получена без учета эффекта многолучевого распространения.  
-<a name="footnote4"><sup>4</sup></a> Величина получена путем измерения в реальном водоеме при неподвижно закрепленных буях и навигационном
-приемнике в течение 60 минут.  
-<a name="footnote5"><sup>5</sup></a> Величина может зависеть от правильности задания пользователем солености воды, в котором производятся
-работа.  
-<a name="footnote6"><sup>6</sup></a> По договоренности возможна поставка с преобразователем интерфейса RS422, монтируемым на кабель в необслуживаемый уретановый корпус. 
+<a name="footnote1"><sup>1</sup></a> For devices released after June 2020. For devices previously released, 5 V.  
+<a name="footnote2"><sup>2</sup></a> A parameter that determines the maximum range at which a signal can be received, based on
+electro-acoustic parameters of the transmitter and receiver, spatial decrease in the intensity of sound energy, attenuation in the medium and the acoustic noise level.  
+<a name="footnote3"><sup>3</sup></a> The value obtained without taking into account the multipath effect.  
+<a name="footnote4"><sup>4</sup></a> The value is obtained by measuring in a real water body with buoys and navigation receiver fixed, within 60 minutes.  
+<a name="footnote5"><sup>5</sup></a> The value may depend on the correctness of the user setting the salinity of the water.  
+<a name="footnote6"><sup>6</sup></a> By agreement, delivery with an RS422 interface converter mounted on a cable in an unattended urethane housing is possible. 
