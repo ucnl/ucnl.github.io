@@ -6,7 +6,7 @@
 
 * **3D position in absolute geographical coordinates**
 * **Emulation of the protocol of conventional GNSS receivers**
-* **Update rate of 3D position to 1 Hz**
+* **Update rate of 3D position up to 1 Hz**
 * **Completely acoustically passive device**
 * **Minimum dimensions and weight**
 * **Simultaneous operation of an unlimited number of devices**
