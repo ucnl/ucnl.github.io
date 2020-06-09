@@ -6,7 +6,7 @@
 
 ## Navigation & tracking systems
 ### Zima - Ultrashort baseline (USBL) system
-* [Data brief](/Docs/EN/Zima/Zima_DataBrief_en.pdf)
+* [Zima USBL: Data brief](/Docs/EN/Zima/Zima_DataBrief_en.pdf)
 * [Zima USBL: videos, tutorials, etc.](/documentation/EN/Zima/media)
 * [Zima USBL User's manual](/Docs/EN/Zima/ZIMA_USBL_Deployment_maintenance_en.pdf)
 * [Device specification: Zima-Base - direction finding antenna](/Docs/EN/Zima/ZimaBase_Specification_en.pdf)
