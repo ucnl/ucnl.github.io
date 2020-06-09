@@ -8,9 +8,7 @@ navigation systems as closely as possible, it allows an unlimited number of unde
 its geographical location and depth in real-time.
 
 **RedWAVE** is a long-base (LBL, long-baseline) navigation system. The floating navigation base is formed by four small-sized
-sonobuoys [RedBASE](RedBASE_Specification_en.md); with the support of the base can simultaneously work
-unlimited number of underwater objects equipped with navigation receivers [RedNODE](RedNODE_Specification_en.md) and divers using diving 
-navigators [RedNAV](RedNAV_Specification_en.md).
+sonobuoys [RedBASE](RedBASE_Specification_en.md); an unlimited number of underwater objects equipped with navigation receivers [RedNODE](RedNODE_Specification_en.md) and divers using diving navigators [RedNAV](RedNAV_Specification_en.md) can work simultaneously with the support of the base.
 
 ## System composition
 
@@ -29,7 +27,7 @@ transmitted via the cable of the device to the control panel, where they can be 
 connection of standard GNSS receivers (RMC and GGA messages).
 
 ## Tasks to be solved
-* Simultaneous determination of 3D geographical position by an unlimited number of underwater objects (divers, ROV, AUV, etc.);
+* Simultaneous estimation of 3D geographical position by an unlimited number of underwater objects (divers, ROV, AUV, etc.);
 * Recording tracks of divers moving;
 * Pre-loading waypoints, navigation to loaded points, saving (marking) the current position of the diver;
 
@@ -43,7 +41,7 @@ connection of standard GNSS receivers (RMC and GGA messages).
 
 ## Geometric restrictions
 In view of the fact that **RedWAVE** system uses modern technology of digital broadband acoustic communication, the signals emitted by 
-buoys have a significant duration (about 200 milliseconds). The buoy signals have time and code division multiplexing, and in view of 
+buoys have a significant duration (about 200 milliseconds). The buoy's signals have time and code division multiplexing, and in view of 
 the finiteness of the speed of sound propagation in water and the period of emission of signals, under certain conditions, the signals 
 can overlap each other at the receiving point. There are also limitations associated with the physical basis of the long navigation base.
 Therefore, the system has a restriction on the relative position of navigation sonobuoys, and navigation receivers relative to buoys:
