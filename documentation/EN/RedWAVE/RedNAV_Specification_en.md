@@ -63,8 +63,8 @@ Fully wireless pairing with PC via Bluetooth and wireless charging makes it extr
 | CHARGER | Wireless |
 | BUILT-IN BATTERY TYPE | Li-Ion |
 | CABLE LENGTH | 1.2 m |
-| ROUTE FUNCTIONS | до 20 загружаемых точек + <br/> до 20 сохраняемых в процессе работы точек |
-| TRACK AUTOSAVING | До 2-х часов<sup>[5](#footnote5)</sup> |
+| ROUTE FUNCTIONS | Up to 20 pre-loaded waypoints + <br/> up to 20 marked points |
+| TRACK AUTOSAVING | Up to 2 hours<sup>[5](#footnote5)</sup> |
 | ADDITIONAL FUNCTIONS | Depth, <br/> Water temperature |
 
 
