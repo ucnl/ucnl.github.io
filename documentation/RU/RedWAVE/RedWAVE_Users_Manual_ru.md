@@ -181,9 +181,12 @@ __________
 
 | |
 | :---: |
-| ![RedNAV general view](https://ucnl.github.io/documentation/rednav_src1.png)|
-| **Рисунок 5 - Экран устройства** |
+| ![RedNAV after start](https://github.com/documentation/rednav_scr1.png)|
+| **Рисунок 5 - Главный экран устройства в навигационном режиме** |
 | _Сразу после включения/нет приема сигнала от буев_ |
+
+В навигационном режим 
+
 
 
 
