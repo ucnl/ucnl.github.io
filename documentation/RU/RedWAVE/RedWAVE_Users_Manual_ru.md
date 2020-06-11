@@ -181,7 +181,7 @@ __________
 
 | |
 | :---: |
-| ![RedNAV general view](https://ucnl.github.io/documentation/def_rednav_yellow.png)|
+| ![RedNAV general view](https://ucnl.github.io/documentation/rednav_src1.png)|
 | **Рисунок 5 - Экран устройства** |
 | _Сразу после включения/нет приема сигнала от буев_ |
 
