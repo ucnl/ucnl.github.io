@@ -15,30 +15,28 @@
 
 ## 1. Introduction
 
-Подводная акустическая навигационная система **RedWAVE** предназначена для обеспечения навигационными данными (абсолютными географическими 
-координатами и глубиной) различных подводных объектов в погруженном состоянии: 
-- телеуправляемых необитаемых подводных аппаратов (**ТНПА**);
-- обитаемых подводных аппаратов (**ОПА**);
-- автономных необитаемых подводных аппаратов (**АНПА**);
-- дайверов, технических водолазов (в случае использования приборов в водолазном исполнении).  
+Underwater acoustic navigation system **RedWAVE** is designed to provide navigation data (absolute geographic coordinates and depth) of various underwater objects in a submerged state:
+- remote-controlled unmanned underwater vehicles (**ROV**);
+- manned underwater vehicles;
+- autonomous unmanned underwater vehicles (**AUV**);
+- recreational divers, technical divers (when using a diver's version of the system).
 
-Принцип работы системы **RedWAVE** схож с принципом работы глобальных спутниковых навигационных систем **GPS**, **GLONASS** и подобных. 
-С основным отличием состоящим в том, что в роли навигационных спутников выступают небольшие плавучие буи 
-[RedBASE](RedBASE_Specification_en.md) - ретрансляторы спутникового навигационного сигнала. 
-Географические координаты вырабатывается непосредственно на навигационном приемнике, который является акустически пассивным устройством. 
-Такая организация системы позволяет одновременно обеспечить навигационными данными неограниченное число навигационных приемников при 
-поддержке одного комплекта буев в одной акватории.
+The principle of operation of the **RedWAVE** system is similar to the principle of operation of global satellite navigation systems such as **GPS**, **GLONASS** and the like.
+The main difference is that small floating buoys [RedBASE](RedBASE_Specification_en.md) - repeaters of satellite navigation signal act as navigation satellites.
 
-Система **RedWAVE** использует современную технологию цифровой широкополосной акустической связи, а применяемый сигнал специально
-разработан для сложных гидрологических условий, в том числе условий, характерных для мелких водоемов. 
+Geographic coordinates are generated directly on the navigation receiver, which is an acoustically passive device.
+This architecture of the system allows to simultaneously provide navigation data to an unlimited number of navigation receivers with the use of one set of four buoys in one water area.
+
+**RedWAVE** uses state-of-the-art digital broadband acoustic communication technology, and the applied signal is specially
+Designed for difficult hydrological conditions, including conditions characteristic of shallow water bodies.
 
 <div style="page-break-after: always;"></div>
 
-## 2. Состав системы
-### 2.1. RedBASE - гидроакустический навигационный буй-ретранслятор
-Независимо от позционируемых объектов - водолазов или роботов, в состав системы **RedWAVE** обязательно входят как минимум 4 гидроакустических навигационных буя [RedBASE](RedBASE_Specification_ru.md).
+## 2. System composition
+### 2.1. RedBASE - GNSS-equipped sonobuoy
+Regardless of the positioned objects - divers or robots, the ** RedWAVE ** system necessarily includes at least 4 navigation buoys [RedBASE](RedBASE_Specification_ru.md).
 
-#### 2.1.1. Общие сведения
+#### 2.1.1. General information
 Гидроакустические буи-ретрансляторы [RedBASE](RedBASE_Specification_en.md) предназначены для организации длинной навигационной базы в 
 акватории, при поддержке которой работают водолазные навигационные приемники [RedNAV](RedNAV_Specification_en.md) и/или интегрируемые 
 навигационные приемники [RedNODE](RedNODE_Specification_en.md).  
