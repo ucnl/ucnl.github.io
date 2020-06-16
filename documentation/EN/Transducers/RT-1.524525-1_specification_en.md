@@ -24,7 +24,7 @@
 | CABLE DIAMETER | 5 +/- 0.5 mm |
 | WORKING TEMPERATURE RANGE | -40..+60 °С |
 
-* Optionally, each transducer can be supplied with a pre-amplifier with amplification factors **100**, **1000**, **10000**, without filter or with band-pass filter **10 .. 30 kHz **
+* Optionally, each transducer can be supplied with a pre-amplifier with amplification factors **100**, **1000**, **10000**, without filter or with band-pass filter **10 .. 30 kHz**
 * Gain and filter bandwidth can be changed as agreed.
 
 <div style="page-break-after: always;"></div>
