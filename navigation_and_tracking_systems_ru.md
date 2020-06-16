@@ -29,6 +29,7 @@
 * [Спецификация устройства: RedNAV - Навигационный приемник для водолазов](/documentation/RU/RedWAVE/RedNAV_Specification_ru.md)
 * [Описание протокола сопряжения: RedNODE](/documentation/RU/RedWAVE/RedWAVE_Protocol_Specification_ru.md)
 * [Рукводство пользователя](/documentation/RU/RedWAVE/RedWAVE_Users_Manual_ru.md)
+* [Руководство пользователя ПО RedNAV Host](/documentation/RU/RedWAVE/RedNAV_Host_Users_Manual_ru.md)
 * [Демонстрационное приложение RedNODE Host (Репозиторий)](https://github.com/ucnl/RedNodeHost)
 * [Демонстрационное приложение RedNODE Host (Скачать релиз)](https://api.github.com/repos/ucnl/RedNodeHost/zipball)
 * [Приложение для RedNAV (Репозиторий)](https://github.com/ucnl/RedNavHost)
