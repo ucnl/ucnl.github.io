@@ -24,8 +24,8 @@
 | CABLE DIAMETER | 5 +/- 0.5 mm |
 | WORKING TEMPERATURE RANGE | -40..+60 °С |
 
-* Optionally, each transducer can be supplied with a pre-amplifier with amplification factors **100**, **1000**, **10000**, without filter or with band-pass filter **10 .. 30 kHz**
-* Gain and filter bandwidth can be changed as agreed.
+* Optionally, each transducer can be supplied with a pre-amplifier with amplification factors **100**, **1000**, **10000**, without filter or with a band-pass filter **10 .. 30 kHz**
+* Preamplifier gain and filter bandwidth can be changed as agreed.
 
 <div style="page-break-after: always;"></div>
 
@@ -40,7 +40,7 @@
 | 1 | Green | Signal |
 | 2 | Black | NC |
 | 3 | White/Transparent | NC |
-| 4 | Brown | Общий |
+| 4 | Brown | Common |
 | 5 | Shield | NC |
 
 <div style="page-break-after: always;"></div>
