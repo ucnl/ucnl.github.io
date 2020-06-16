@@ -35,13 +35,13 @@
 
 ### Wire functions
 
-| № | Цвет | Назначение |
+| № | Color | Function |
 | :---: | :--- | :--- |
-| 1 | Зеленый | Сигнал |
-| 2 | Черный | NC |
-| 3 | Белый | NC |
-| 4 | Коричневый | Общий |
-| 5 | Экран | NC |
+| 1 | Green | Signal |
+| 2 | Black | NC |
+| 3 | White/Transparent | NC |
+| 4 | Brown | Общий |
+| 5 | Shield | NC |
 
 <div style="page-break-after: always;"></div>
 
