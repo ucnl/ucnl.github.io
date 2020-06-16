@@ -6,6 +6,6 @@
 ## Underwater acoustic transducers and hydrophones
 * [Transducer RT-2.332820-1](/Docs/EN/Antennas/RT-2.332820-1_specification_en.pdf)
 * [Transducer RT-1.524525-1-FF](/Docs/EN/Antennas/RT-1.524525-1-FF_specification_en.pdf)
-* [Transducer RT-1.524525-1](/Docs/EN/Antennas/RT-1.524525-1_specification_en.pdf)
+* [Transducer RT-1.524525-1](/documentation/EN/Transducers/RT-1.524525-1_specification_en.md)
 
 ## [Home](README.md)
