@@ -37,39 +37,37 @@ Designed for difficult hydrological conditions, including conditions characteris
 Regardless of the positioned objects - divers or robots, the **RedWAVE** system necessarily includes four navigation buoys [RedBASE](RedBASE_Specification_ru.md).
 
 #### 2.1.1. General information
-Гидроакустические буи-ретрансляторы [RedBASE](RedBASE_Specification_en.md) предназначены для организации длинной навигационной базы в 
-акватории, при поддержке которой работают водолазные навигационные приемники [RedNAV](RedNAV_Specification_en.md) и/или интегрируемые 
-навигационные приемники [RedNODE](RedNODE_Specification_en.md).  
+GNSS-equipped sonobuoys [RedBASE](RedBASE_Specification_en.md) are designed to build a long navigation base in
+water bodies for supporting diving navigation receivers [RedNAV](RedNAV_Specification_en.md) and/or navigation receivers for robots [RedNODE](RedNODE_Specification_en.md).
 
-Длинная навигационная база формируется четырьмя буями [RedBASE](RedBASE_Specification_en.md). Каждый комплект буев содержит четыре буя с 
-порядковыми номерами (адресами) от "1" до "4", порядковый номер комплекта определяет изолирующий кодовый канал связи. Поэтому, для работы системы требуется наличие всех буев комплекта. 
+A long navigation base is formed by four buoys [RedBASE](RedBASE_Specification_en.md). Each buoy set contains four buoys with numbers (addresses) from "1" to "4", the number in the set determines the isolating code channel of communication. Therefore, for the operation of the system requires the presence of all buoys of the set.
 
-> Возможна замена буев буями из другого комплекта с такими же адресами, **любые другие варианты недопустимы** и приведут к невозможности определения координат при помощи навигационных приемников.
+> It is possible to replace buoys with buoys from another set with the same addresses, **any other options are unacceptable** and will lead to the inability to determine coordinates using navigation receivers.
 
-Общий вид буя представлен на **figure 1**.
+A general view of the buoy is presented in **figure1 **.
 
 | |
 | :---: |
 | ![RedBASE general view](https://ucnl.github.io/documentation/def_redbase_yellow.png)|
-| **Figure 1 - гидроакустический навигационный буй [RedBASE](RedBASE_Specification_en.md)** |
+| **Figure 1 - GNSS-equipped sonobuoy [RedBASE](RedBASE_Specification_en.md)** |
 
-Буи размещаются в акватории на поверхности воды, их положение фиксируется при помощи якорей. 
+Buoys are to located in the water area on the water surface, their position is fixed using anchors.
 
-> Cтоит помнить, что хотя буи и имеют небольшую положительную плавучесть, но не предназначены для непосредственного крепления на 
-> якорную веревку. Для разгрузки буя от веса якорной веревки должны применятся соответствующие весу веревки кранцы (или поплавки).
+> It is worth remembering that although the buoys have a small positive buoyancy, they are not intended for direct mounting on
+anchor rope. To unload the buoy from the weight of the anchor rope, additional floats corresponding to the weight of the rope should be used.
 
-На **figure 2**<sup>[1](#footnote1)</sup> представлена рекомендуемая схема установки буя на водоеме.
+**Figure 2** <sup>[1](#footnote1)</sup> shows the recommended deployment scheme for a buoy in a water body.
 
 | |
 | :---: |
 | ![RedBASE deployment scheme](https://ucnl.github.io/documentation/def_redbase_dep_scheme.png)|
-| **Figure 2 - Рекомендуемая схема установки буя [RedBASE](RedBASE_Specification_en.md)** |
-| _1 - гидроакустический навигационный буй [RedBASE](RedBASE_Specification_ru.md), 2 - дополнительный груз<sup>[2](#footnote2)</sup>, 3 - поплавок, 4 - якорная веревка, 5 - якорь_ |
+| **Figure 2 - [RedBASE](RedBASE_Specification_ru.md) recommended deployment scheme** |
+| _1 - GNSS-equipped sonobuoy [RedBASE](RedBASE_Specification_ru.md), 2 - additional weight<sup>[2](#footnote2)</sup>, 3 - float, 4 - anchor rope, 5 - anchor_ |
 
 __________
-<a name="footnote1"><sup>1</sup></a> Изображения могут незначительно отличаться от поставляемых изделий, 
-так как производитель постоянно работает над улучшением характеристик и вносит в конструкцию изменения.  
-<a name="footnote2"><sup>2</sup></a> Дополнительный груз применяется только в недогруженном исполнении. 
+<a name="footnote1"><sup>1</sup></a>Images may vary slightly from supplied products.
+as the manufacturer is constantly working to improve the performance and make design changes.  
+<a name="footnote2"><sup>2</sup></a> Additional weight is used only in underloaded version. 
 
 На **рисунке 3** показано расположение органов управления и индикации на крышке буя.
 
