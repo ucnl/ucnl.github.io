@@ -69,129 +69,120 @@ __________
 as the manufacturer is constantly working to improve the performance and make design changes.  
 <a name="footnote2"><sup>2</sup></a> Additional weight is used only in underloaded version. 
 
-На **рисунке 3** показано расположение органов управления и индикации на крышке буя.
+**Figure 3** shows the location of the controls and indicators on the buoy cover.
 
 | |
 | :---: |
 | ![RedBASE deployment scheme](https://ucnl.github.io/documentation/def_redbase_cover_scheme.png)|
-| **Рисунок 3 - Расположение органов управления и индикации на крышке буя [RedBASE](RedBASE_Specification_en.md)** |
-| _1 - тумблер питания, 2 - лампы световой индикации, 3 - разъем зарядки_ |
+| **Figure 3 - Controls and indicators on the cover of [RedBASE](RedBASE_Specification_en.md)** |
+| _1 - power toggle switch, 2 - indicator lights, 3 - charging connector_ |
 
-#### 2.1.2. Режимы работы и световая индикация
-Буи в каждом комплекте имеют разные адреса от 1 до 4. При включении буя при помощи тумблера 4 (см. **рисунок 3**) буй посредством индикатора 2 сообщает свой номер в комплекте: количество вспышек соответствует номеру буя. 
+#### 2.1.2. Operating modes and light indication
+The buoys in each set have different numbers (addresses) from 1 to 4. When a buoy is turned on using the toggle switch 4 (see **Figure 3**), the buoy through **indicator 2** reports its number in the set: the number of flashes corresponds to the number of the buoy.
 
-Если буй оборудован светосигнальной мачтой, то вспышки будут продублированы и на ней. 
+If the buoy is equipped with a light mast, the flashes will be duplicated on it.
 
-После сообщения своего номера буй переходит в рабочий режим. Если батарея буя заряжена, то индикатор начинает гореть постоянно, до тех пор пока встроенный GPS/GLONASS приемник не обнаружит сигналы от спутников глобальной спутниковой навигационной системы. После чего он будет вспыхивать 1 раз в 4 секунды. Число вспышек в этом случае также соответствует номеру буя в комплекте.
+After blinking its number, the buoy turns into operating mode. If the buoy’s battery is charged, the indicator will light constantly, until the built-in GPS/GLONASS receiver detects signals from satellites of the global satellite navigation system. After which it will flash 1 time in 4 seconds. The number of flashes in this case also corresponds to the number of buoys in the set.
 
-Если батарея буя находится в состоянии, когда заряда осталось менее 20%, индикатор будет вспыхивать 1 раз в секунду. Число вспышек в этом случае также соответствует номеру буя в комплекте. 
+If the buoy's battery is in a state where less than 20% of the charge remains, the indicator will flash 1 time per second. The number of flashes in this case also corresponds to the number of buoys in the set.
 
-> Если пользователь заметил вспышки 1 раз в секунду, буй следует как можно быстрее выключить и поставить на зарядку. 
-> Длительная эксплуатация с разряженным источником питания не допускается.
+> If the user noticed flashes 1 time per second, the buoy should be turned off as soon as possible and put on charge. Long-term operation with a discharged power source is not allowed.
 
-Если батарея находится в состоянии критического разряда, то после сообщения своего номера буй автоматически отключится, в этом случае индикатор также будет выключен. Буй необходимо незамедлительно поставить на зарядку во избежание выхода из строя встроенного источника питания.
+If the battery is in a critical discharge state, then after blinking with its number, the buoy will automatically turn off, in which case the indicator will also turn off. The buoy must be charged immediately to avoid failure of the internal power source.
 
-#### 2.1.3. Подготовка к использованию и проверка
-Перед непосредственной установкой буя необходимо убедиться:
-- в целостности резинового колпачка тумблера _1_ (см. **рисунок 3**);
-- в том, что крышка зарядного разъема _3_ (см. **рисунок 3**) плотно завинчена;
-- световая индикация исправна и встроенный источник питания буя не разряжен (см. [2.1.2](#212-%D1%80%D0%B5%D0%B6%D0%B8%D0%BC%D1%8B-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%8B-%D0%B8-%D1%81%D0%B2%D0%B5%D1%82%D0%BE%D0%B2%D0%B0%D1%8F-%D0%B8%D0%BD%D0%B4%D0%B8%D0%BA%D0%B0%D1%86%D0%B8%D1%8F)) 
+#### 2.1.3. Preparation for use and verification
+Before installing the buoy directly, make sure:
+- in the integrity of the rubber cap of the toggle switch _1_ (see **Figure 3**);
+- that the cover of the charging connector _3_ (see **Figure 3**) is tightly screwed;
+- the light indication is OK and the built-in power source of the buoy is not discharged (see [2.1.2.]())
 
-> _**ВНИМАНИЕ!**_  
-> Практически все известные случаи отказа буев связаны с тем, что пользователь использует буй с незавинченной крышкой 
-> зарядного разъема!  
-> Эксплуатация буев с незавинченной крышкой разъема запрещена и может привести к попаданию воды внутрь устройства. 
-> Выход буев из строя по причине попадвания воды через открытый зарядный разъем является _**негарантийным**_!
+> _**ATTENTION!**_
+> Almost all known cases of buoy failure are related to the fact that the user uses a buoy with an opened cover of charging connector!
+> Do not use buoys with an opened connector cover and may result in water entering the device.
+> Failure of buoys due to water entering through an open charging connector is _**non-warranty**_!
 
 
-#### 2.1.4. Хранение и обслуживание 
-К буям не предъявляется особых требований по хранению и обслуживанию, за исключением следующих:
+#### 2.1.4. Storage and maintenance
+No special storage and maintenance requirements are imposed on buoys, with the exception of the following:
 
-- При использовании в соленой и/или сильно загрязненной воде необходимо проводить опреснение (отстой и промывку в пресной воде);
-- Не допускается применение каких-либо органических растворителей, сильных кислот, щелочей и других агрессивных веществ;
-- При необходимости возможна промывка в бытовых мыльных растворах;
-- Не допускается воздействия ударных или значительных статических нагрузок, как на корпус буя, так и на элементы управления: тумблер включения, лампы световой индикации, зарядный разъем и т.п.;
-- При длительном хранении (более 1 месяца) необходимо проводить подзарядку устройств для предотвращения деградации встроенного свинцового аккумулятора;
-- Не допускается применение сторонних зарядных устройств;
-- Не допускается хранение во включенном состоянии;
-- Не допускается сильное (с радиусом менее 5 см) перегибание кабеля гидроакустического передатчика;
-- Не допускается хранение в перевернутом состоянии, подвешивание на грузонесущую проушину и пр.;
-- Не допускается попадание различных загрязнений 
+- When used in seawater and/or heavily polluted water, desalination is necessary (sediment and flushing in freshwater);
+- The use of any organic solvents, strong acids, alkalis and other aggressive substances is not allowed;
+- If necessary, washing in household soap solutions is possible;
+- The impact of shock or significant static loads is not allowed, both on the buoy body and on the controls: toggle switch, light indicator lamps, charging connector, etc.;
+- During long-term storage (more than 1 month), it is necessary to recharge the devices to prevent degradation of the built-in battery;
+- The use of third-party chargers is not allowed;
+- Strong (with a radius of less than 5 cm) bending of the cable of the hydroacoustic transmitter is not allowed;
+- Do not store upside down, hanging on a load-carrying eye, etc .;
 
-Поставляемые в комплекте с буями зарядные устройства могут незначительно меняться от комплекта к комплекту (в части индикации состояния и окончания процесса зарядки), поэтому перед их использованием внимательно ознакомьтесь с прилагаемой инструкцией.
+The chargers supplied with the buoys may vary slightly from kit to kit (in terms of indicating the status and completion of the charging process), so carefully read the attached instructions carefully before using them.
 
-### 2.2. RedNODE - Интегрируемый навигационный приемник
-Интегрируемый навигационный приемник [RedNODE](RedNODE_Specification_ru.md) служит для обеспечения навигационными данными различные носители: ТНПА, АНПА и т.п. в погруженном состоянии.
+#### 2.2.1. General information
+It is easiest to understand its purpose and the functionality of the integrated navigation receiver [RedNODE](RedNODE_Specification_en.md), starting from the analogy with ordinary GNSS receivers: when connected to a vessel, the receiver receives hydroacoustic signals from four buoys [RedBASE](RedBASE_Specification_en.md) and determines its own geographical position, and the built-in temperature and pressure sensor allows the vessel to additionally determine the depth, thereby providing the user with information about the position in three-dimensional space.
+Coordinates are generated in the receiver itself and are accessible via the serial interface according to the [NMEA0183-like protocol](RedWAVE_Protocol_Specification_ru.md). In this regard, if transmission of the coordinates calculated by the receiver to the control panel is required, this should be done through the vessel's information channel.
 
-#### 2.2.1. Общие сведения
-Наиболее просто понять его назначение и функционал интегрируемого навигационного приемника [RedNODE](RedNODE_Specification_en.md), отталкиваясь от аналогии с обычными GNSS-приемниками: будучи подключенным к носителю, приемник принимает гидроакустические сигналы от четырех буев [RedBASE](RedBASE_Specification_en.md) и определеяет собственное географическое положение, а встроенный датчик температуры и давления позволяет дополнительно определять глубину, обеспечивая тем самым пользователя информацией о положении носителя в трехмерном пространстве. 
-Координаты вырабатываются в самом приемнике и доступны по последовательному интерфейсу, согласно [NMEA0183-подобному протоколу](RedWAVE_Protocol_Specification_ru.md). В связи с этим, если требуется передача вычисляемых приемником координат на пульт управления ТНПА, то это должно выполнятся через информационный канал носителя.
+#### 2.2.2. Interfacing and placement requirements
+The receiver should be installed in a position in which line of sight with transmitters of all four buoys will be ensured (see paragraph [3]()). It should be located as far as possible from outputs of propulsors and various noisy mechanisms, sonars, etc. And also from units and modules that give strong electromagnetic interference (switching power supplies, motors, etc.).
 
-#### 2.2.2. Требования к интеграции и расположению на носителе
-Приемник должен устанавливаться в таком положении, при котором будет обеспечиваться прямая видимость с гидроакустическими передатчиками всех четырех буев (см. п. [3](#3-%D1%8D%D1%84%D1%84%D0%B5%D0%BA%D1%82%D0%B8%D0%B2%D0%BD%D0%BE%D0%B5-%D1%80%D0%B0%D0%B7%D0%B2%D0%B5%D1%80%D1%82%D1%8B%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-%D0%B4%D0%BB%D0%B8%D0%BD%D0%BD%D0%BE%D0%B9-%D0%BD%D0%B0%D0%B2%D0%B8%D0%B3%D0%B0%D1%86%D0%B8%D0%BE%D0%BD%D0%BD%D0%BE%D0%B9-%D0%B1%D0%B0%D0%B7%D1%8B)). Стоит располагаеть его максимально далеко от струй движетелей и различных шумящих механизмов, гидролокаторов и т.п. А также от узлов и модулей, дающих сильные электромагнитные помехи (импульсных источников питания, электродвигателей и т.п.).
+When physically pairing the device with the vessel, it is necessary to ensure a reliable and tight cable entry that prevents water from flowing through the free end of cable. When sealing the free end of the cable, aggressive sealants and compounds (for example, silicone sealant based on acetic acid, etc.) should not be used, since its components can cause corrosion of the cable cores and lead to failure of the device.
 
-При физическом сопряжении устройства с носителем необходимо обеспечить надежный и герметичный ввод кабеля, исключающий затекание воды через свободный конец. При герметизации свободного конца кабеля недопускается использовать агрессивные герметики и компаунды (например, силиконовй герметик на основе уксусной кислоты и т.п.), так как его компоненты могут вызывать коррозию жил кабеля и привести к выходу устройства из строя.
+It is not recommended to use compositions based on epoxy resins for sealing cable glands, as the latter, firstly, often collapse and lose their properties under prolonged exposure to moisture, and secondly, they give significant shrinkage after the cure.
 
-Не рекомендуется использовать для герметизации кабельного ввода составы на основе эпоксидных смол, т.к. последние во-первых, часто разрушаются и теряют свойства при длительном воздействии влаги, а во-вторых, дают значительную усадку.
+The most reliable and suitable are compounds and sealants based on polyurethanes. In case of any questions about sealing, it is recommended to consult with the manufacturer.
 
-Наиболее надежными и подходящими являются компаунды и герметики на основе полиуретанов. При возникновении вопросов с применением конкретных составов рекомедуется проконсультироваться с производителем.
+Power requirements are specified in [device specification] (RedNODE_Specification_en.md).
+For information on information exchange with the device and changes in its configuration, refer to the [description of the pairing protocol](RedWAVE_Protocol_Specification_ru.md).
 
-Требования по питанияю указаны в [спецификации на устройство](RedNODE_Specification_en.md).
-Для информации по информационному обмену с устройством и изменения его конфигурации следует обратиться к [описанию протокола сопряжения](RedWAVE_Protocol_Specification_ru.md).
+### 2.3. RedNAV - Diver's navigation receiver
+Diver's navigation receiver [RedNAV](RedNAV_Specification_en.md) designed to provide navigation data to divers and
+accordingly, it is necessary only in the case of diving operations.
 
-### 2.3. RedNAV - Водолазный навигационный приемник
-Водолазный навигационный приемник [RedNAV](RedNAV_Specification_en.md) служит для обеспечения навигационными данными водолазов и 
-соответственно необходим только в случае выполнения водолазных работ.
-
-#### 2.3.1. Общие сведения
-Водолазный навигационный приемник [RedNAV](RedNAV_Specification_en.md) позволяет дайверу определять географическое местоположение в погруженном состоянии без необходимости всплытия и использования выносных GPS-антенн на кабеле.
-Работа с устройством [RedNAV](RedNAV_Specification_en.md) во многом схожа с работой с GPS/GLONASS-треккерами и навигаторами, с тем лишь отличием, что роли спутников системы позиционирования выполняют малогабаритные плавучие буи-ретрансляторы сигнала спутниковой навигационной системы. Для работы неограниченного числа устройств [RedNAV](RedNAV_Specification_ru.md) в одной акватории требуется 4 плавучих буя-ретранслятора [RedBASE](RedBASE_Specification_ru.md).
-Уникальный функционал и простота использования делают RedNAV идеальным решением как для рекреационного дайвинга, так и для поисковых, археологических и подводнотехнических работ.
-Общий вид устройства показан на **рисунке 4**.
+#### 2.3.1. General information
+The diver's navigation receiver [RedNAV](RedNAV_Specification_en.md) allows a diver to determine the geographic location when submerged without the need for ascent and the use of floating GPS antennas on the cable.
+Working with the device [RedNAV](RedNAV_Specification_en.md) is in many ways similar to working with GPS/GLONASS trackers and navigators, with the only difference being that small-sized floating buoy transponders of a satellite navigation system signal play the role of positioning system satellites. For the operation of an unlimited number of devices [RedNAV](RedNAV_Specification_ru.md) in one water area, 4 floating relay buoys [RedBASE](RedBASE_Specification_ru.md) are required.
+The unique functionality and ease of use make [RedNAV](RedNAV_Specification_en.md) an ideal solution for recreational diving, as well as for search, archaeological and other underwater operations.
+The general view of the device is shown in **Figure 4**.
 
 | |
 | :---: |
 | ![RedNAV general view](https://ucnl.github.io/documentation/def_rednav_yellow.png)|
-| **Рисунок 4 - Водолазный навигационный приемник [RedNAV](RedNAV_Specification_en.md)** |
-| _Общий вид_ |
+| **Figure 4 - diver's navigation receiver [RedNAV](RedNAV_Specification_en.md)** |
+| _General view_ |
 
-Интерфейсный модуль содержит следующие основные органы управления и модули:
-- экран, для отображения навигационной и сервисной информации;
-- две пьезокнопки по бокам, для управления устройством;
-- встроенную акумуляторную батарею;
-- Bluetooth модуль;
-- центральный процессор;
-- приемник беспроводного заряда.
+The interface unit contains the following main controls and modules:
+- a screen for displaying navigation and service information;
+- two piezo buttons on the sides, to control the device;
+- built-in battery;
+- Bluetooth module;
+- DSP unit;
+- wireless charge receiver.
 
-Акустический навигационный приемник сопряжен с интерфейсным модулем при помощи кабеля и может устанавливаться:
-- на плече водолаза;
-- на специальной панели, которую водолаз держит в руках;
-- на баллоне для обеспечения минимального возможного акустического затенения. 
+The acoustic navigation receiver is connected to the interface unit using a cable and can be installed:
+- on the shoulder of a diver;
+- on a special panel that the diver holds in his hands;
+- on the tank to ensure the minimum possible acoustic shading.
 
-Оптимальные условия работы акустического приемника достигаются, когда на протяжении всего времени использования есть прямая видимость между навигационным приемником и акустическими передатчиками всех четырех буев [RedBASE](RedBASE_Specification_en.md). Полее подробно это положение обсуждается в [п. 3.3.](#33-%D0%BE%D0%B1%D0%B5%D1%81%D0%BF%D0%B5%D1%87%D0%B5%D0%BD%D0%B8%D0%B5-%D0%BF%D1%80%D1%8F%D0%BC%D0%BE%D0%B9-%D0%B2%D0%B8%D0%B4%D0%B8%D0%BC%D0%BE%D1%81%D1%82%D0%B8-%D0%BC%D0%B5%D0%B6%D0%B4%D1%83-%D0%B1%D1%83%D1%8F%D0%BC%D0%B8-%D0%B8-%D0%BD%D0%B0%D0%B2%D0%B8%D0%B3%D0%B0%D1%86%D0%B8%D0%BE%D0%BD%D0%BD%D1%8B%D0%BC%D0%B8-%D0%BF%D1%80%D0%B8%D0%B5%D0%BC%D0%BD%D0%B8%D0%BA%D0%B0%D0%BC%D0%B8).
+Optimum operating conditions for the acoustic receiver are achieved when there is a line of sight between the navigation receiver and the acoustic transmitters of all four buoys [RedBASE](RedBASE_Specification_en.md) throughout the entire time of use. This position is discussed in more detail in [par. 3.3.]().
 
-#### 2.3.2. Работа с устройством, режимы и интерфейс пользователя
+#### 2.3.2. Work with the device, modes and user interface
+##### 2.3.2.1. Navigation mode
+**To turn on** the device user must simultaneously press both buttons of the device located on the side surfaces of the interface unit.
 
-##### 2.3.2.1. Навигационный режим
-**Для включения** необходимо одновременно нажать обе кнопки устройства, расположенные на боковых поверхностях интерфейсного блока - слева и справа экрана.
+> ATTENTION! The diver's navigation receiver is equipped with piezo buttons to exclude the possibility of device failure due to water entering the housing through mechanical button seals. Piezo buttons have some operational features, in particular, the lack of feedback when pressed. Buttons perceive only a short change in pressure, therefore, all presses in order to control the device should be short.
 
-> ВНИМАНИЕ! Навигационный водолазный приемник оснащен пьезокнопками для исключения возможности выхода устройства из строя из-за попадания водны внутрь корпуса через уплотнения механических кнопок. Пьезокнопки имеют некоторые особенности функционирования, в частности, отсутствие обратной связи при нажатии. Кнопки воспринимают только резкое изменение давления, поэтому, все нажатия с целью управления устройством должны быть краткими.
+After switching on, the device, not installed on the charging pad, automatically switches to navigation mode.
+The appearance of the device screen in navigation mode immediately after switching on is shown in **Figure 5**.
 
-После включения прибор, не установленный на зарядную площадку, автоматически переходит в навигационный режим. 
-Внешний вид экрана прибора в навигационном режиме сразу после включения показан на **рисунке 5**.
-
-> ВНИМАНИЕ! Сразу после включения устройство в течение **10 секунд** определяет атмосферное давление для более точного определения глубины. Поэтому включать прибор рекомендуется только на воздухе. Если при включении гидростатическое давление превышает **1100 мБар**, то калибровка атмосферного давления не выполняется, и за атмосферное давление принимается стандартное значение **1013.25 мБар**.
-
+> ATTENTION! Immediately after switching on, the device calibrates atmospheric pressure for **10 seconds** to more accurately determine the depth. Therefore, turning on the device is recommended only in the air. If at startup the hydrostatic pressure exceeds ** 1100 mbar **, then atmospheric pressure calibration is not performed, and the standard value ** 1013.25 mbar ** is taken as atmospheric pressure.
 | |
 | :---: |
 | ![RedNAV after start](https://ucnl.github.io/documentation/rednav_scr1.png) |
-| **Рисунок 5 - Главный экран устройства в навигационном режиме** |
-| _Сразу после включения/нет приема сигнала от буев_ |
-| _1 - Функция левой кнопки (переключение целей), 2 - статусы буев, 3 - азимут и дистанция до цели, 4 - функция правой кнопки (отметить текущее положение), 5 - температура воды, 6 - глубина (расстояние до поверхности), 7 - заряд встроенного аккумулятора_ |
+| **Figure 5 - Main screen in navigation mode** |
+| _After start up_ |
+| _1 - Left button function (target switch), 2 - buoys status, 3 - azimuth and distance to target, 4 - right button function (mark current position), 5 - water temperature, 6 - depth (distance to the water surface), 7 -battery charge_ |
 
-Когда сигналы буев не принимаются (например, сразу после включения), на экране не отображаются азимут и дистанция до цели, т.к. географическое положение навигационного приемника или неизвестно, или заведомо устарело. Функции кнопок в этом случае также недоступны.
-На **рисунке 6** проиллюстрирована ситуация, когда навигационный премник принял сигнал от первого буя, но собственное местоположение еще не определено.  
-Стоит помнить, что излучение сигналов буев разделено по времени, и приемник принимает ожидает их сигналы последовательно. Соответственно, если приема 1-ого буя не возникает, то прием 2-ого не ведется, и т.д.
+When buoy signals are not received (for example, immediately after switching on), the azimuth and distance to the target are not displayed on the screen, because the geographic location of the navigation receiver is either unknown or obviously out of date. Button functions are also not available in this case.
+**Figure 6** illustrates the situation when the navigation receiver received a signal from the first buoy, but its own location has not yet been determined.
+It is worth remembering that the transmission of buoy signals is time-divided, and the receiver awaits their signals sequentially. Accordingly, if the reception of the 1st buoy does not occur, then the reception of the 2nd is not conducted, etc.
 
 | |
 | :---: |
