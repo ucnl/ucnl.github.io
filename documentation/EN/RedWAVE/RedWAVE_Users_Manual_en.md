@@ -34,7 +34,7 @@ Designed for difficult hydrological conditions, including conditions characteris
 
 ## 2. System composition
 ### 2.1. RedBASE - GNSS-equipped sonobuoy
-Regardless of the positioned objects - divers or robots, the ** RedWAVE ** system necessarily includes at least 4 navigation buoys [RedBASE](RedBASE_Specification_ru.md).
+Regardless of the positioned objects - divers or robots, the **RedWAVE** system necessarily includes four navigation buoys [RedBASE](RedBASE_Specification_ru.md).
 
 #### 2.1.1. General information
 Гидроакустические буи-ретрансляторы [RedBASE](RedBASE_Specification_en.md) предназначены для организации длинной навигационной базы в 
@@ -46,24 +46,24 @@ Regardless of the positioned objects - divers or robots, the ** RedWAVE ** syste
 
 > Возможна замена буев буями из другого комплекта с такими же адресами, **любые другие варианты недопустимы** и приведут к невозможности определения координат при помощи навигационных приемников.
 
-Общий вид буя представлен на **рисунке 1**.
+Общий вид буя представлен на **figure 1**.
 
 | |
 | :---: |
 | ![RedBASE general view](https://ucnl.github.io/documentation/def_redbase_yellow.png)|
-| **Рисунок 1 - гидроакустический навигационный буй [RedBASE](RedBASE_Specification_en.md)** |
+| **Figure 1 - гидроакустический навигационный буй [RedBASE](RedBASE_Specification_en.md)** |
 
 Буи размещаются в акватории на поверхности воды, их положение фиксируется при помощи якорей. 
 
 > Cтоит помнить, что хотя буи и имеют небольшую положительную плавучесть, но не предназначены для непосредственного крепления на 
 > якорную веревку. Для разгрузки буя от веса якорной веревки должны применятся соответствующие весу веревки кранцы (или поплавки).
 
-На **рисунке 2**<sup>[1](#footnote1)</sup> представлена рекомендуемая схема установки буя на водоеме.
+На **figure 2**<sup>[1](#footnote1)</sup> представлена рекомендуемая схема установки буя на водоеме.
 
 | |
 | :---: |
 | ![RedBASE deployment scheme](https://ucnl.github.io/documentation/def_redbase_dep_scheme.png)|
-| **Рисунок 2 - Рекомендуемая схема установки буя [RedBASE](RedBASE_Specification_en.md)** |
+| **Figure 2 - Рекомендуемая схема установки буя [RedBASE](RedBASE_Specification_en.md)** |
 | _1 - гидроакустический навигационный буй [RedBASE](RedBASE_Specification_ru.md), 2 - дополнительный груз<sup>[2](#footnote2)</sup>, 3 - поплавок, 4 - якорная веревка, 5 - якорь_ |
 
 __________
