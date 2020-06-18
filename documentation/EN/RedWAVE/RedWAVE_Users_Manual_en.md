@@ -61,7 +61,7 @@ anchor rope. To unload the buoy from the weight of the anchor rope, additional f
 | :---: |
 | ![RedBASE deployment scheme](https://ucnl.github.io/documentation/def_redbase_dep_scheme.png)|
 | **Figure 2 - [RedBASE](RedBASE_Specification_ru.md) recommended deployment scheme** |
-| _1 - GNSS-equipped sonobuoy [RedBASE](RedBASE_Specification_ru.md), 2 - additional weight<sup>[2](#footnote2)</sup>, 3 - float, 4 - anchor rope, 5 - anchor_ |
+| _1 - GNSS-equipped sonobuoy [RedBASE](RedBASE_Specification_en.md), 2 - additional weight<sup>[2](#footnote2)</sup>, 3 - float, 4 - anchor rope, 5 - anchor_ |
 
 __________
 <a name="footnote1"><sup>1</sup></a>Images may vary slightly from supplied products.
@@ -93,7 +93,7 @@ If the battery is in a critical discharge state, then after blinking with its nu
 Before installing the buoy directly, make sure:
 - in the integrity of the rubber cap of the toggle switch _1_ (see **Figure 3**);
 - that the cover of the charging connector _3_ (see **Figure 3**) is tightly screwed;
-- the light indication is OK and the built-in power source of the buoy is not discharged (see [2.1.2.]())
+- the light indication is OK and the built-in power source of the buoy is not discharged (see [2.1.2.](#212-operating-modes-and-light-indication))
 
 > _**ATTENTION!**_ Almost all known cases of buoy failure are related to the fact that the user uses a buoy with an opened cover of charging connector! Do not use buoys with an opened connector cover and may result in water entering the device. Failure of buoys due to water entering through an open charging connector is _**non-warranty**_!
 
@@ -157,7 +157,7 @@ The acoustic navigation receiver is connected to the interface unit using a cabl
 - on a special panel that the diver holds in his hands;
 - on the tank to ensure the minimum possible acoustic shading.
 
-Optimum operating conditions for the acoustic receiver are achieved when there is a line of sight between the navigation receiver and the acoustic transmitters of all four buoys [RedBASE](RedBASE_Specification_en.md) throughout the entire time of use. This position is discussed in more detail in [par. 3.3.]().
+Optimum operating conditions for the acoustic receiver are achieved when there is a line of sight between the navigation receiver and the acoustic transmitters of all four buoys [RedBASE](RedBASE_Specification_en.md) throughout the entire time of use. This position is discussed in more detail in [par. 3.3.](#33-providing-line-of-sight-between-buoys-and-navigation-receivers).
 
 #### 2.3.2. Work with the device, modes and user interface
 ##### 2.3.2.1. Navigation mode
@@ -199,7 +199,7 @@ In the **3** field (see **Figure 5**) **Azimuth and distance to the target** *Az
 
 > **ATTENTION!** When approaching the target at a distance of fewer than 3 meters, instead of the angular direction to the target, dashes **"- - -"** are displayed.
 
-When the location is determined (azimuth and distance to the selected target are displayed), when the user presses the left button (**>**), the next target in the list is selected (after Buoy #1, Buoy #2, #3 and #4). If waypoints have been preloaded into the device, they are located in the target list after the buoys. When switching navigation targets, the corresponding navigation information (Azimuth and distance) also changes.
+When the location is determined (azimuth and distance to the selected target are displayed), when the user presses the left button (**>**), the next target in the list is selected (after Buoy No. 1, 2, 3 and 4). If waypoints have been preloaded into the device, they are located in the target list after the buoys. When switching navigation targets, the corresponding navigation information (Azimuth and distance) also changes.
 
 When the user presses the right button (**+**), the current location is saved separately (the marked point is saved), which is placed at the end of the target list. An informational message is displayed, as in **Figure 8**.
 
@@ -317,13 +317,13 @@ However, it is worth remembering that a small figure of the navigation base (les
 The buoys are allowed to be located in the ice holes, provided that the device body is not squeezed with ice and the transducer is sufficiently submerged (at least 0.5 meters deeper than the bottom edge of the ice).
 Long-term operation of the transducer in the air is not recommended. It is also necessary to ensure the free position of the transducer in the working position avoiding contact with the anchor rope or any other objects.
 
-## 4. Возможные неисправности, их диагностика и устранение
+## 4. Possible malfunctions, their diagnosis and elimination
 
-| № | Симптомы | Возможная причина | Устранение |
-| :---: | :--- | :--- | :--- |
-| 1 | При установке на зарядную площадку не включается сервисный режим, хотя индикатор питания горит (питание подается на зарядную площадку) | 1. Зарадная площадка прилегает не плотно <br/> 2. Зарядная площадка неисправна | 1. Наити оптимальное положение зарядной площадки <br/>  2. Заменить зарядную площадку |
-| 2 | В навигационном режиме не происходит определение местоположения, хотя все буи принимаются | Системе неудается определить местоположение с достаточной точностью в виду неудачного взаимного расположения буев и навигационного приемника или неблагоприятных гидрологических условий | 1. Убедиться, что буи образуют выпуклый четырехугольник и начать навигацию внутри фигуры буев, избегая близости к буям |
-| 3 | В навигационном режиме не происходит определение местоположения из-за того что прием буев неустойчивый | 1. Один из буев не работает <br/> 2. Устойчивому приему сигналов буев препятствуют гидрологические условия <br/> 3. Между передатчиками буев и навигационным приемником нет прямой видимости | 1. Проверить работоспособность всех буев <br/> 2 и 3. Попробовать начать навигацию из другого места, убедившись, что прохождению сигнала ничего не мешает (элементы подводного ландшафта и портовой инфраструктуры, густые заросли водорослей и т.п.) |
+| No. | Symptoms | Possible reason | Elimination |
+| : ---: | : --- | : --- | : --- |
+| 1 | When installed on the charging pad, the service mode does not turn on, although the power indicator is on (power is being supplied to the charging pad) | 1. The charging pad is not as close to the device as need <br/> 2. The charging pad is defective | 1. Find the optimum position for the charging pad <br/> 2. Replace the charging pad |
+| 2 | Positioning does not occur in navigation mode, although the device receives signals from all buoys properly | The system fails to estimate the location with sufficient accuracy in view of the wrong arrangement of buoys and the navigation receiver or adverse hydrological conditions | 1. Make sure that the buoys form a convex quadrangle and start navigating inside the buoy figure, avoiding proximity to the buoys |
+| 3 | In navigation mode, positioning does not occur due to the fact that buoy reception is unstable | 1. One (or more) of the buoys does not work. <br/> 2. Sustainable receiving of buoy signals is prevented by hydrological conditions. <br/> 3. There is no direct line of sight between the buoy transducer and the navigation receiver | 1. Check the performance of all buoys <br/> 2 and 3. Try to start navigation from another place, making sure that nothing prevents the propagation of the signal (parts of the underwater landscape and port infrastructure, dense thickets of algae, etc.)  |
 
 <div style="page-break-after: always;"></div>
 
@@ -345,7 +345,7 @@ The reasons for refusing free warranty service, free repair and replacement incl
 
 ### 5.2 Disclaimer of the manufacturer
 
-**ANY OF THE PARTS OF THE DELIVERY SET SEPARATELY AND IN THE COMPOSITION OF THE SYSTEM, NAME FURTHER "DELIVERED EQUIPMENT":**
+**ANY OF THE PARTS OF THE DELIVERY SET SEPARATELY AND IN THE COMPOSITION OF THE SYSTEM:**
 
 - **ARE NOT DESIGNED FOR WATER RESCUE USE**
 - **NOT TESTED AS RESCUE EQUIPMENT**
