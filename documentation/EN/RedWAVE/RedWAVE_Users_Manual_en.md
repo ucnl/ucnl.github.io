@@ -52,7 +52,7 @@ A general view of the buoy is presented in **figure1**.
 
 Buoys are to located in the water area on the water surface, their position is fixed using anchors.
 
-> It is worth remembering that although the buoys have a small positive buoyancy, they are not intended for direct mounting on
+> _**ATTENTION!**_ It is worth remembering that although the buoys have a small positive buoyancy, they are not intended for direct mounting on
 anchor rope. To unload the buoy from the weight of the anchor rope, additional floats corresponding to the weight of the rope should be used.
 
 **Figure 2** <sup>[1](#footnote1)</sup> shows the recommended deployment scheme for a buoy in a water body.
@@ -85,7 +85,7 @@ After blinking its number, the buoy turns into operating mode. If the buoy’s b
 
 If the buoy's battery is in a state where less than 20% of the charge remains, the indicator will flash 1 time per second. The number of flashes in this case also corresponds to the number of buoys in the set.
 
-> If the user noticed flashes 1 time per second, the buoy should be turned off as soon as possible and put on charge. Long-term operation with a discharged power source is not allowed.
+> **ATTENTION!** If the user noticed flashes 1 time per second, the buoy should be turned off as soon as possible and put on charge. Long-term operation with a discharged power source is not allowed.
 
 If the battery is in a critical discharge state, then after blinking with its number, the buoy will automatically turn off, in which case the indicator will also turn off. The buoy must be charged immediately to avoid failure of the internal power source.
 
@@ -95,10 +95,7 @@ Before installing the buoy directly, make sure:
 - that the cover of the charging connector _3_ (see **Figure 3**) is tightly screwed;
 - the light indication is OK and the built-in power source of the buoy is not discharged (see [2.1.2.]())
 
-> _**ATTENTION!**_
-> Almost all known cases of buoy failure are related to the fact that the user uses a buoy with an opened cover of charging connector!
-> Do not use buoys with an opened connector cover and may result in water entering the device.
-> Failure of buoys due to water entering through an open charging connector is _**non-warranty**_!
+> _**ATTENTION!**_ Almost all known cases of buoy failure are related to the fact that the user uses a buoy with an opened cover of charging connector! Do not use buoys with an opened connector cover and may result in water entering the device. Failure of buoys due to water entering through an open charging connector is _**non-warranty**_!
 
 
 #### 2.1.4. Storage and maintenance
@@ -166,12 +163,12 @@ Optimum operating conditions for the acoustic receiver are achieved when there i
 ##### 2.3.2.1. Navigation mode
 **To turn on** the device user must simultaneously press both buttons of the device located on the side surfaces of the interface unit.
 
-> ATTENTION! The diver's navigation receiver is equipped with piezo buttons to exclude the possibility of device failure due to water entering the housing through mechanical button seals. Piezo buttons have some operational features, in particular, the lack of feedback when pressed. Buttons perceive only a short change in pressure, therefore, all presses in order to control the device should be short.
+> _**ATTENTION!**_ The diver's navigation receiver is equipped with piezo buttons to exclude the possibility of device failure due to water entering the housing through mechanical button seals. Piezo buttons have some operational features, in particular, the lack of feedback when pressed. Buttons perceive only a short change in pressure, therefore, all presses in order to control the device should be short.
 
 After switching on, the device, not installed on the charging pad, automatically switches to navigation mode.
 The appearance of the device screen in navigation mode immediately after switching on is shown in **Figure 5**.
 
-> ATTENTION! Immediately after switching on, the device calibrates atmospheric pressure for **10 seconds** to more accurately determine the depth. Therefore, turning on the device is recommended only in the air. If at startup the hydrostatic pressure exceeds **1100 mbar**, then atmospheric pressure calibration is not performed, and the standard value **1013.25 mbar** is taken as atmospheric pressure.
+> _**ATTENTION!**_ Immediately after switching on, the device calibrates atmospheric pressure for **10 seconds** to more accurately determine the depth. Therefore, turning on the device is recommended only in the air. If at startup the hydrostatic pressure exceeds **1100 mbar**, then atmospheric pressure calibration is not performed, and the standard value **1013.25 mbar** is taken as atmospheric pressure.
 
 |  |
 | :---: |
@@ -248,75 +245,77 @@ When the device is on the charging platform, after **5 minutes** inactivity, the
 When the interface unit is removed from the charging pad, the device automatically turns off.
 
 
-##### 2.3.2.3. Встроенный Bluetooth модуль и синхронизация
-Водолазный навигационный приемник содержит Bluetooth модуль, служащий для:
-- конфигурации устройства при помощи ПК;
-- передачи координат внешней системе в реальном времени (эмуляция Bluetooth GNSS-приемника).
+##### 2.3.2.3. Built-in Bluetooth module and PC connection
+The diver's navigation receiver contains a Bluetooth module for:
+- device configuration using a PC;
+- transfer of coordinates to an external system in real-time (Bluetooth GNSS-receiver emulation).
 
-Модуль включается при старте устройства независимо от режима, в котором оно находится и выключается через **10 минут** для энергосбережения, если за это время к нему не произошло подключения. 
+The module turns on when the device starts, regardless of the mode in which it is on and off after **10 minutes** to save power if no connection has been established to it during this time.
 
-Модуль каждого навигационного приемника имеет уникальное имя Bluetooth устройства, имеющего формат:
-`RDNV-XXXX`  
-где `XXXX` - уникальный идентификатор, состоящий из латинских букв в верхнем регистре и цифр. Пример того, как отображается имя Bluetooth устройства показан на **рисунках 11 и 12** (RDNV-AD48). Ниже, под строкой с именем устройства отображается подсказка, содержащая пин-код (в данном пример пин-код **1945**), который необходимо ввести при первоначальном подключении устройства к внешней системе.
+The module of each navigation receiver has a unique name for the Bluetooth device, having the format:
+`RDNV-XXXX`
+where `XXXX` is a unique identifier consisting of uppercase letters and numbers. An example of how the Bluetooth name of the device is displayed is shown in **Figures 11 and 12** (RDNV-AD48). Below, under the line with the name of the device, a hint is displayed containing a pin code (in this example, pin code **1945**), which must be entered when the device is initially connected to an external system.
 
-Если подключение по Bluetooth происходит когда устройство находится в навигационном режиме, то оно передает навигационную информацию, в частности сообщения [GGA](RedWAVE_Protocol_Specification_en.md#211-gga), [RMC](RedWAVE_Protocol_Specification_en.md#212-rmc) и [MTW](RedWAVE_Protocol_Specification_en.md#213-mtw).
+If a Bluetooth connection occurs when the device is in navigation mode, it transmits navigation information, in particular messages [GGA](RedWAVE_Protocol_Specification_en.md# 211-gga), [RMC](RedWAVE_Protocol_Specification_en.md# 212-rmc) and [MTW](RedWAVE_Protocol_Specification_en.md# 213-mtw).
 
-Таким образом, водолазный навигационный приемник [RedNAV](RedNAV_Specification_en.md) может выступать в качестве Bluetooth GNSS-приемника, данные с которого могут быть использованы при отображении местоположения водолаза в реальном времени на каком-либо картографическом устройстве, например, на водолазном планшете, поддерживающим подключение внешнего GNSS-приемника по Bluetooth. 
-Стоит помнить, что радиоволны практически не проникают через толщу воды, и для устойчивой работы Bluetooth соединения под водой, приборы (интерфейсный блок водолазного навигационного приемника и картографическое устройство) должны как можно ближе касаться друг друга корпусами.
+Thus, the diver's navigation receiver [RedNAV](RedNAV_Specification_en.md) can act as a Bluetooth GNSS-receiver, the data from which can be used to display the location of the diver in real-time on any mapping device, for example, on a diver's tablet that supports connecting an external GNSS-receiver via Bluetooth.
+It is worth remembering that radio waves practically do not penetrate the water column, and for stable operation of the Bluetooth connection underwater, devices (the interface unit of the diver's navigation receiver and the mapping device) should touch each other as closely as possible.
 
-Когда устройство стоит на зарядной площадке и находится в сервисном режиме, Bluetooth соединение применяется для изменения настроек водолазного навигационного применика при помощи специализированного ПО [RedNAV Host](https://api.github.com/repos/ucnl/RedNavHost/zipball).
+When the device is on the charging pad and in service mode, a Bluetooth connection is used to change the settings of the diver's navigation receiver using the specialized software [RedNAV Host](https://api.github.com/repos/ucnl/RedNavHost/zipball).
 
-Установка Bluetooth-соединения и работа с ПО [RedNAV Host](https://api.github.com/repos/ucnl/RedNavHost/zipball) описывается в документе [RedNAV Host: Руководстве пользователя](RedNAV_Host_Users_Manual_en.md).
+Establishing a Bluetooth connection and working with the [RedNAV Host](https://api.github.com/repos/ucnl/RedNavHost/zipball) software is described in the [RedNAV Host: User Manual](RedNAV_Host_Users_Manual_en.md).
 
-#### 2.3.3. Хранение и обслуживание
-Водолазный навигатор [RedNAV](RedNAV_Specification_en.md) не требует особых условий хранения и обслуживания, за исключением следующих:
-- Не допускается полный разряд встроенного аккумулятора навигатора. При длительном (более 1 месяца) хранении рекомендуется периодически заряжать устройство;
-- После использования в соленой воде устройство должно быть тщательно промыто в пресной воде;
-- Не допускается использование моющих средств и органических растворителей. Возникшие загрязнения удаляются мягкой влажной тряпкой. Допускается использование мыла с последующей промывкой в пресной проточной воде;
-- Не допускается оставлять надолго устройство под действием прямых солнечных лучей;
-- Защитное стекло-крышка выполнено из абразивостойкого поликарбоната, но рекомендуется избегать любых возможных контактов стекла-крышки с твердыми(острыми) предметами во избежание появления царапин и сколов на стекле-крышке;
-- Не допускается перегиб кабеля, соединяющего интерфейсный блок с навигационным приемником, с радиусом менее 5 см;
-- Следует избегать любых ударных нагрузок как к корпусу интерфейсного блока, так и к акустическому приемнику;
-- Не допускается контакт отверстия датчика давления акустического приемника с твердыми(острыми) предметами; Возникшие загрязнения в отверстии датчика давления должны удалятся только промывкой в проточной пресной воде.
+#### 2.3.3. Storage and maintenance
+Diver's navigation receiver [RedNAV](RedNAV_Specification_en.md) does not require special storage and maintenance conditions, except for the following:
+- Full discharge of the built-in battery of the navigator is not allowed. For long-term (more than 1 month) storage, it is recommended to periodically charge the device;
+- After use in seawater, the device must be thoroughly washed in freshwater;
+- Do not use detergents or organic solvents. Any dirt that has formed is removed with a soft, damp cloth. Use of soap with the subsequent washing in fresh running water is allowed;
+- It is not allowed to leave the device for a long time in direct sunlight;
+- The protective glass cover is made of abrasion-resistant polycarbonate, but it is recommended to avoid any possible contacts of the glass cover with hard (sharp) objects to avoid scratches and chips on the glass cover;
+- Do not bend the cable connecting the interface unit to the navigation receiver, with a radius of less than 5 cm;
+- Avoid any shock loads both to the housing of the interface unit and to the acoustic receiver;
+- Contact of the hole of the pressure sensor of the acoustic receiver with solid (sharp) objects is not allowed; Any dirt in the pressure sensor opening should only be removed by rinsing in running fresh water.
 
 <div style="page-break-after: always;"></div>
 
-## 3. Эффективное развертывание длинной навигационной базы
-Развертывание длинной навигационной базы в общем случае состоит из постановки четырех буев-ретрансляторов [RedBASE](RedBASE_Specification_en.md) в акватории, где предполагается работа, и их включения. Каждый из четырех буев комплекта отличается от других адресом, определяющим кодовый канал гидроакустической связи по которому буй передает данные.
+## 3. Effective deployment of a long navigation base
+The deployment of a long navigation base in the general case consists of setting four GNSS-equipped sonobuoys [RedBASE](RedBASE_Specification_en.md) in the water area where work is supposed to be. Each of the four buoys of the set differs from the others by an address defining a code channel for underwater acoustic communication through which the buoy transmits data.
 
-> _**ВНИМАНИЕ**_!
-> Не допускается одновременная работа нескольких комплектов буев на одном водоеме, а также использование буев из разных комплектов с одинаковыми адресами. В этом случае правильность определения координат и работоспособность системы не гарантируется!
+> _**ATTENTION**_!
+> The simultaneous operation of several sets of buoys in the same body of water, as well as the use of buoys from different sets with the same addresses, is not allowed. In this case, the correct determination of the coordinates and the operability of the system is not guaranteed!
 
-**Правильная установка буев подразумевает соблюдение трех основных условий:**
-1. обеспечение безопасного и стабильного положения буев на поверхности воды;
-2. обеспечение хорошего обзора небесной полусферы для установленных на буях приемных антенн спутниковых навигационных систем;
-3. обеспечение прямой видимости между акустическими передающими антеннами буев и всеми навигационными приемниками в погруженном положении.
+**Correct deployment of buoys implies the observance of three basic conditions:**
+1. ensuring a safe and stable position of buoys on the surface of the water;
+2. providing a good observation of the celestial hemisphere for buoy mounted GNSS-antennas;
+3. providing the line-of-sight between the transducers of the buoys and all navigation receivers in submerged position.
 
-Рассмотрим эти три условия более подробно:
+Consider these three conditions in more detail:
 
-### 3.1. Обеспечение безопасного и стабильного положения буев на воде
-Для обеспечения первого условия, плавучие буи должны устанавливаться на якоря, обеспечивающие сохранение положения буев от воздействия ветра и течений. При этом вес якорный веревки должен восприниматься дополнительным поплавком, а буй не должен воспринимать никакой дополнительной вертикальной нагрузки. На **рисунке 2** представлена рекомендуемая схема крепления буя [RedBASE](RedBASE_Specification_en.md) на якоре.
+### 3.1. Ensuring a safe and stable position of buoys on the water
+To ensure the first condition, floating buoys should be installed on anchors, ensuring the preservation of the position of the buoys from the effects of wind and currents. In this case, the weight of the anchor rope should be perceived by an additional float, and the buoy should not perceive any additional vertical load. **Figure 2** shows the recommended scheme for mounting the buoy [RedBASE] (RedBASE_Specification_en.md) at anchor.
 
-Не рекомендуется применение системы при волнении моря более **1.5 баллов**. При волнении моря **2 и более баллов** применение системы _крайне не рекомендуется_ и производитель не несет ответственности за повреждение отдельных устройств системы их утерю и неправильную работу и пр.
+It is not recommended to use the system with sea waves exceeding **1.5 points**. In case of sea waves **2 or more points** application of the system is _extremely not recommended_ and the manufacturer is not responsible for damage to individual devices of the system, their loss or malfunction, etc.
 
-### 3.2. Обеспечение обзора небесной полусферы
-Второе условие связано с тем, что буи [RedBASE](RedBASE_Specification_en.md) являются ретрансляторами спутникового навигационного сигнала. Они имеют встроенные комбинированные **GPS/GLONASS** приемники и для правильной работы навигационной базы, образуемой буями, необходимо обеспечить хороший прием спутникового навигационного сигнала на всех буях. Всвязи с этим буи стоит располагать на максимальном удалении от различных преград, которые могут повлиять на качество принимаемого спутникового сигнала. Например металлические корпуса судов, причальные стенки и пр.  
-Буи [RedBASE](RedBASE_Specification_en.md) оснащены световой индикацией. Так при включении лампы световой индикации постоянно горят до того момента, пока не произойдет первое уточнение географического местоположение буя встроенным **GPS/GLONASS** приемником. После чего они гаснут и через некоторое время (в среднем 1-2 минуты) буй переходит в рабочий режим. При этом лампы световой индикации вспыхивают раз в четыре секунды (число коротких вспышек соответствует номеру буя). А если встроенная батарея буя сильно разряжена, то лампы вспыхивает каждую секунду. В этом случае буй должен быть немедленно поставлен на зарядку, иначе это может привести к выходу из строя встроенной батареи.  
-Типичное время перехода буя в рабочий режим (время до того как сигнальная лампа перестанет гореть постоянно) в условиях открытой воды составляет не более 2-3 минут. Если лампа не гаснет более длительное время следует сменить местоположение буя. Многократное повторение данной ситуации на явно открытом пространстве, где ничего не может мешать прохождению спутникового навигационного сигнала, является поводом для обращения к производителю.
+### 3.2. providing a good view of the celestial hemisphere
+The second condition is because the buoys [RedBASE](RedBASE_Specification_en.md) are repeaters of the satellite navigation signal. They have built-in GPS/GLONASS combined receivers and for the correct operation of the navigation base formed by the buoys, it is necessary to ensure good receiving of the satellite navigation signal on all buoys. In connection with this, buoys should be located at the maximum distance from various obstacles that may affect the quality of the received satellite signal. For example, metal hulls of ships, mooring walls, etc.
+Buoys [RedBASE](RedBASE_Specification_en.md) are equipped with light indication. So when the user turns on the lights, the lights are constantly on until the first position fix of the buoy by the built-in **GPS/GLONASS** receiver. After which they turn lights off and after a while (on average 1-2 minutes) the buoy switches to operating mode. In this case, the indicator lamps flash once every four seconds (the number of short flashes corresponds to the number of the buoy). And if the built-in battery of the buoy is almost discharged, then the lamp flashes every second. In this case, the buoy should be immediately connected to a charger, otherwise, it may lead to failure of the built-in battery.
+Typical time the buoy enters the operating mode (the time before the light turns off) in open water is no more than 2-3 minutes. If the lamp does not turn off for a longer time, the user should change the location of the buoy. Repetition of this situation in open water, where nothing can interfere with the passage of a satellite navigation signal, is an occasion to contact the manufacturer.
 
-### 3.3. Обеспечение прямой видимости между буями и навигационными приемниками
-Третье условие определяется физическими принципами работы длинной навигационной акустической базы. Так как вычисление собственного положения навигационными приемниками производится по оценке времен прихода акустических сигналов от буев [RedBASE](RedBASE_Specification_Подводная акустическая навигационная система **RedWAVE** предназначена для обеспечения навигационными данными (абсолютными географическими 
-координатами и глубиной) различных подводных объектов в погруженном состоянии: 
-- телеуправляемых необитаемых подводных аппаратов (**ТНПА**);
-- обитаемых подводных аппаратов (**ОПА**);
-- автономных необитаемых подводных аппаратов (**АНПА**);
-- дайверов, технических водолазов (в случае использования приборов в водолазном исполнении)..md) до самих приемников, то для их правильной работы требуется постоянная прямая видимость между акустическими передатчиками всех четырех буев [RedBASE](RedBASE_Specification_en.md) и работающими навигационными приемниками (имеется в виду прямая видимость через толщу воды).  
-Оптимальным расположением буев в акватории считается выпуклый четырехугольник, ограничивающий место проведения работ. При этом расстояния между буями не должны превышать **700 метров** и не быть менее **30 метров**. Работа с навигационными приемниками вне фигуры длинной базы возможна, но в виду ее физической природы, наибольшую точность и надежность навигационных данных возможно получить внутри фигуры длинной базы.  
-Наиболее плохим, с точки зрения длинной навигационной базы, является такое расположение, при котором три или более буев располагаются в линию.
-При расстановки и планировании расстановки буев также стоит избегать таких расположений, при которых глубина места (расстояние от поверхности воды до дна) у буев значительно отличается от глубины места позиционируемых объектов. Например, когда работа предполагается в узком месте реки с одним пологим берегом. В таких случаях буи стоит располагать в глубокой части реки.  
-Однако, при этом стоит помнить, что слишком маленькая фигура навигационной базы (меньше **30 метров**) и/или сильная ее вытянутость (соотношение сторон четырехугольника более 4-5) приводит к снижению точности и/или меньшей чувствительности в некоторых направлениях соответственно.  
-Допускается расположение буев в прорубях, при условии обеспечения несдавливания корпуса устройства льдом и обеспечения достаточной осадки акустической антенны (излучающая антенна буя должна находится глубже нижней кромки льда, как минимум на 0.5 метра).  
-Не рекомендуется длительная работа акустической антенны на воздухе. Также следует обеспечить свободное положение акустической антенны в рабочем положении без касаний якорной веревки или каких-либо иных объектов.
+### 3.3. Providing line-of-sight between buoys and navigation receivers
+The third condition is determined by the physical principles of the long navigation acoustic base. Since the estimation of the proper position by the navigation receivers is made by estimating the times of arrival of the acoustic signals from the buoys [RedBASE] (RedBASE_Specification_Underwater Acoustic Navigation System ** RedWAVE ** is designed to provide navigation data (absolute geographical
+coordinates and depth) of various underwater objects in a submerged state:
+- remote-controlled unmanned underwater vehicles (**ROV**);
+- manned underwater vehicles;
+- autonomous unmanned underwater vehicles (**AUV**);
+- recreational divers, technical divers;
+
+For proper operation, constant line-of-sight to the transducers of all four buoys [RedBASE](RedBASE_Specification_en.md) and the operating navigation receivers.
+The optimal location of the buoys in the water area is a convex quadrangle that limits the place of work. In this case, the distance between the buoys should not exceed **700 meters** and not less than **30 meters**. Work with navigation receivers outside the long base figure is possible, but in view of its physical nature, the greatest accuracy and reliability of navigation data can be obtained inside the long base figure.
+The worst, from the point of view of a long navigation base, is an arrangement in which three or more buoys are placed in a line.
+When arranging and planning the placement of buoys, it is also worth avoiding such arrangements in which the depth of the place (distance from the surface of the water to the bottom) of the buoys differs significantly from the depth of the positioned objects. For example, when work is supposed to be in a bottleneck of a river with one gentle bank. In such cases, buoys should be located in the deep part of the river.
+However, it is worth remembering that a small figure of the navigation base (less than **30 meters**) and/or its strong elongation (aspect ratio of the quadrangle is more than 4-5) leads to a decrease in accuracy and/or less sensitivity in some directions, respectively.
+The buoys are allowed to be located in the ice holes, provided that the device body is not squeezed with ice and the transducer is sufficiently submerged (at least 0.5 meters deeper than the bottom edge of the ice).
+Long-term operation of the transducer in the air is not recommended. It is also necessary to ensure the free position of the transducer in the working position avoiding contact with the anchor rope or any other objects.
 
 ## 4. Возможные неисправности, их диагностика и устранение
 
@@ -328,31 +327,31 @@ When the interface unit is removed from the charging pad, the device automatical
 
 <div style="page-break-after: always;"></div>
 
-## 5. Обязательства и отказ от ответственности
-### 5.1 Условия замены и бесплатного гарантийного обслуживания
-Гарантия производителя распространяется только на заводские дефекты, выявивщиеся при эксплуатации устройства в соответствие с настоящим руководством в течении гарантийного срока (2 года с момента покупки).  
+## 5. Liability and disclaimer
+### 5.1 Terms of replacement and free warranty service
+The manufacturer’s warranty applies only to factory defects that were discovered during the operation of the device in accordance with this manual during the warranty period (2 years from the date of purchase).
 
-Производитель гарантирует бесплатный ремонт или замену неисправного оборудования из комплекта поставки, вышедшего из строя по причине заводского дефекта.  
+The manufacturer guarantees free repair or replacement of faulty equipment from the delivery set that has failed due to a factory defect.
 
-К поводам для отказа от бесплатного гарантийного обслуживания, бесплатного ремонта и замены относятся:
-- любые **механические повреждения** оборудования из комплекта поставки, в т.ч. нарушение изоляции проводов и кабелей;
-- любые **повреждения, вызванные воздействием влаги и загрязнейний**, вследствие неправильной эксплуатации оборудования из комплекта поставки;
-- любые **электрические повреждения**, вызванные **использованием некомплектных аксессуаров**; к некомплектным не отностятся аксессуары, поставленные производителем или его представителем в замен неисправных или утраченых;
-- любые **следы самостоятельного ремонта и/или вскрытия** оборудования из комплекта поставки.
+The reasons for refusing free warranty service, free repair and replacement include:
+
+- any mechanical damage of the equipment supplied, including violation of insulation of wires and cables;
+- any damage caused by exposure to moisture and pollution due to improper use of the equipment from the delivery set: moisture in the connectors.
+- any electrical damage caused by use of not original accessories;
+- any signs of self-repair and/or opening of the equipment from the delivery set.
+
 
 <div style="page-break-after: always;"></div>
 
-### 5.2 Ограничение ответственности производителя
+### 5.2 Disclaimer of the manufacturer
 
-_____________
+**ANY OF THE PARTS OF THE DELIVERY SET SEPARATELY AND IN THE COMPOSITION OF THE SYSTEM, NAME FURTHER "DELIVERED EQUIPMENT":**
 
-_**ЛЮБАЯ ИЗ ЧАСТЕЙ КОМПЛЕКТА ПОСТАВКИ В ОТДЕЛЬНОСТИ И В СОСТАВЕ СИСТЕМЫ, ИМЕНУЕМЫЕ ДАЛЕЕ "ПОСТАВЛЯЕМОЕ ОБОРУДОВАНИЕ":**_
-
-_**- НЕ РАЗРАБАТЫВАЛОСЬ КАК СРЕДСТВО СПАСЕНИЯ**_  
-_**- НЕ ТЕСТИРОВАЛОСЬ, КАК СРЕДСТВО СПАСЕНИЯ**_  
-_**- НЕ ЯВЛЯЕТСЯ СРЕДСТВОМ СПАСЕНИЯ**_  
-_**- ПРОИЗВОДИТЕЛЬ ЗАЯВЛЯЕТ, ЧТО ПОСТАВЛЯЕМОЕ ОБОРУДОВАНИЕ БЕЗОПАСНО ПРИ ЭКСПЛУАТАЦИИ СОГЛАСНО НАСТОЯЩЕЙ ИНСТРУКЦИИ И НЕ ОТВЕЧАЕТ ЗА ЛЮБЫЕ ПОСЛЕДСТВИЯ ИСПОЛЬЗОВАНИЯ ПОСТАВЛЯЕМОГО ОБОРУДОВАНИЯ**_
+- **ARE NOT DESIGNED FOR WATER RESCUE USE**
+- **NOT TESTED AS RESCUE EQUIPMENT**
+- **IS NOT RESCUE EQUIPMENT**
+- **THE MANUFACTURER DECLARES THAT THE SUPPLIED EQUIPMENT IS SAFE WHEN USING ACCORDING TO THESE INSTRUCTIONS AND MANUFACTURER IS NOT RESPONSIBLE FOR ANY CONSEQUENCES OF USE OF THE SUPPLIED EQUIPMENT**
   
 ______________
 
-[Вернуться к содержанию](#%D1%81%D0%BE%D0%B4%D0%B5%D1%80%D0%B6%D0%B0%D0%BD%D0%B8%D0%B5)
+[Back to content]()
