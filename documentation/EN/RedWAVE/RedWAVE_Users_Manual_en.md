@@ -129,7 +129,7 @@ It is not recommended to use compositions based on epoxy resins for sealing cabl
 
 The most reliable and suitable are compounds and sealants based on polyurethanes. In case of any questions about sealing, it is recommended to consult with the manufacturer.
 
-Power requirements are specified in [device specification] (RedNODE_Specification_en.md).
+Power requirements are specified in [device specification](RedNODE_Specification_en.md).
 For information on information exchange with the device and changes in its configuration, refer to the [description of the pairing protocol](RedWAVE_Protocol_Specification_ru.md).
 
 ### 2.3. RedNAV - Diver's navigation receiver
@@ -185,67 +185,67 @@ When buoy signals are not received (for example, immediately after switching on)
 It is worth remembering that the transmission of buoy signals is time-divided, and the receiver awaits their signals sequentially. Accordingly, if the reception of the 1st buoy does not occur, then the reception of the 2nd is not conducted, etc.
 
 | |
-| :---: |
+| : ---: |
 | ![RedNAV after start](https://ucnl.github.io/documentation/rednav_scr2.png) |
-| **Рисунок 6 - Главный экран устройства в процессе работы** |
-| _Принят сигнал от буя №1. Собственное местоположение не определено_ |
+| **Figure 6 - The main screen of the device during operation** |
+| _Device has received signal from Buoy #1. Own location has not been determined yet_ |
 
-Когда сигналы от всех буев принимаются и происходит обновление координат навигационного приемника, главный экран имеет вид, как на **рисунке 7**. Для примера, буи с номерами **2** и **4** имеют низкий заряд встроенного источника питания, поэтому отображаются в виде незакрашенных квадратов с инверсией цвета. Буй **№1** выбран в качестве навигационной цели и его пиктограмма отображается увеличенной. 
+When signals from all buoys are received and the coordinates of the navigation receiver are updated, the main screen has the form, as in **Figure 7**. For example, buoys with numbers **2** and **4** have a low charge of the built-in power supply, therefore, they are displayed as open squares with colour inversion. Buoy **#1** is selected as the navigation target and its icon is displayed enlarged.
 
 | |
-| :---: |
+| : ---: |
 | ![RedNAV](https://ucnl.github.io/documentation/rednav_scr3.png) |
-| **Рисунок 7 - Главный экран устройства в процессе работы** |
-| _Местоположение определено. В качестве навигационной цели выбран Буй №1_ |
+| **Figure 7 - The main screen of the device during operation** |
+| _Location determined. The buoy No. 1_ was chosen as the navigation target |
 
-В поле **3** (см. **рисунок 5**) **Азимут и дистанция до цели** отображаются *Азимут* и *дистанция* до выбранного буя. Под *Азимутом* здесь понимается *угловое направление от северного полумеридиана, отложенного по часовой стрелке до линии на цель*.
+In the **3** field (see **Figure 5**) **Azimuth and distance to the target** *Azimuth* and *distance* to the selected buoy are displayed. By *azimuth* here we mean *the angular direction from the northern half-meridian clockwise to the line to the target*.
 
-> ВНИМАНИЕ! При подходе к цели на расстояние меньше 3 метров, вместо углового направления на цель отображаются прочерки **"- - -"**.
+> ATTENTION! When approaching the target at a distance of fewer than 3 meters, instead of the angular direction to the target, dashes **"- - -"** are displayed.
 
-Когда местоположение определено (отображаются азимут и дистанция до выбранной цели), при нажатии на левую кнопку (**>**) выбирается следующая цель по списку (после Буй №1 идет Буй №2, 3, 4). Если в устройство были предварительно загружены путевые точки, они располагаются в списке целей за буями. При переключении навигационных целей сменяется и соответствующая навигационная информация (Азимут и дистанция). 
+When the location is determined (azimuth and distance to the selected target are displayed), when the user presses the left button (**>**), the next target in the list is selected (after Buoy #1, Buoy #2, #3 and #4). If waypoints have been preloaded into the device, they are located in the target list after the buoys. When switching navigation targets, the corresponding navigation information (Azimuth and distance) also changes.
 
-При нажатии на правую кнопку (**+**) текущее местоположение сохраняется отдельно (сохраняется отмеченная точка), которое помещается в конец списка целей. При этом отображается информационное сообщение, как на **рисунке 8**.
-
-| |
-| :---: |
-| ![RedNAV](https://ucnl.github.io/documentation/rednav_scr3a.png) |
-| **Рисунок 8 - Сообщение, подтверждающее сохранение текущего местоположения** |
-
-Загруженные и путевые точки нумеруются, и при выборе их в качестве целей при помощи кнопки **>**, отображаются как на **рисунке 9**.
+When the user presses the right button (**+**), the current location is saved separately (the marked point is saved), which is placed at the end of the target list. An informational message is displayed, as in **Figure 8**.
 
 | |
-| :---: |
-| ![RedNAV](https://ucnl.github.io/documentation/rednav_scr4.png) |
-| **Рисунок 9 - Главный экран устройства в процессе работы** |
-| _В качестве навигационной цели выбрана 1-ая путевая/сохраненная точка_ |
+| : ---: |
+| ![RedNAV] (https://ucnl.github.io/documentation/rednav_scr3a.png) |
+| **Figure 8 - Message confirming that the current location has been saved** |
 
-Для выключения устройства требуется одновременно нажать обе кнопки. При этом устройство запросит подтверждение выключения, как показано на **рисунке 10**.
-
-| |
-| :---: |
-| ![RedNAV](https://ucnl.github.io/documentation/rednav_scr5.png) |
-| **Рисунок 10 - Запрос на выключение устройства** |
-
-##### 2.3.2.2. Сервисный режим
-При установке интерфейсного блока на зарядную площадку, оно переходит в сервисный режим. В этом режиме происходит зарядка встроенного источника питания и возможно задание конфигурации устройства. На **рисунках 11 и 12** показан вид экрана устройства после установки на зарядную площадку. Состояние заряда и беспроводного подключения отображаются яркостью соответствующих пиктограмм.  
-
-Следует помнить, что зарядная площадка должна контактировать непосредственно с корпусом интерфейсного блока. В случае если на интерфейсном блоке закреплен ремень, его следует оттянуть и поместить зарядную площадку между корпусом интерфейсного блока и ремнем. В противном случае расстояние между передатчиком зарядного устройства и приемником внутри корпуса интерфейсного блока будет недостаточным для обеспечения требуемого зарядного тока.
+The preloaded and marked points are numbered, and when the user selects them as targets using the **> ** button, they are displayed as in ** Figure 9 **.
 
 | |
-| :---: |
+| : ---: |
+| ! [RedNAV] (https://ucnl.github.io/documentation/rednav_scr4.png) |
+| ** Figure 9 - The main screen of the device during operation ** |
+| _The first waypoint/marked point is selected as a navigation target_ |
+
+To turn off the device, the user must simultaneously press both buttons. In this case, the device will ask for confirmation of shutdown, as shown in **Figure 10**.
+
+| |
+| : ---: |
+| ! [RedNAV] (https://ucnl.github.io/documentation/rednav_scr5.png) |
+| **Figure 10 - Shutdown confirmation** |
+
+##### 2.3.2.2. Service mode
+When the interface unit is installed on the charging pad, it switches into service mode. In this mode, the built-in power supply is charged and the device configuration is possible. **Figures 11 and 12** show the device screen after installation on the charging pad. The state of charge and wireless connection are displayed by the brightness of the corresponding icons.
+
+It should be remembered that the charging platform must contact directly with the housing of the interface unit. If a belt is attached to the interface unit, it should be pulled back and a charging pad placed between the interface unit housing and the belt. Otherwise, the distance between the transmitter of the charger and the receiver inside the housing of the interface unit will be too far to provide the required charging current.
+
+| |
+| : ---: |
 | ![RedNAV](https://ucnl.github.io/documentation/rednav_scr6.png) |
-| **Рисунок 11 - Вид экрана устройства в сервисном режиме** |
-| _Пикторамма зарядки горит ярко - заряд идет, пиктограмма Bluetooth затемнена - подключение не установлено_ |
+| **Figure 11 - Screen view of the device in service mode** |
+| _The charging icon lights up brightly - the charge is on, the Bluetooth icon is darkened - the connection is not established_ |
 
 | |
-| :---: |
+| : ---: |
 | ![RedNAV](https://ucnl.github.io/documentation/rednav_scr7.png) |
-| **Рисунок 12 - Вид экрана устройства в сервисном режиме** |
-| _Обе пиктограммы горят ярко - идет заряд, соединение по Bluetooth установлено_ |
+| **Figure 12 - Screen view of the device in service mode** |
+| _Both icons glow brightly - there is a charge, a Bluetooth connection is established_ |
 
-Когда устройство находится на зарядной площадке, через **5 минут** бездействия, в целях энергосбережения и более быстрой зарядки встроенного источника питания, отключается экран. Повторное нажатие любой кнопки на интерфейсном устройстве включает экран.
+When the device is on the charging platform, after **5 minutes** inactivity, the screen turns off in order to save energy and charge the built-in power supply faster. Pressing any button on the interface device again turns on the screen.
 
-При снятии интерфейсного блока с зарядной площадки устройство автоматически отключается.
+When the interface unit is removed from the charging pad, the device automatically turns off.
 
 
 ##### 2.3.2.3. Встроенный Bluetooth модуль и синхронизация
