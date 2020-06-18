@@ -182,9 +182,9 @@ The appearance of the device screen in navigation mode immediately after switchi
 
 When buoy signals are not received (for example, immediately after switching on), the azimuth and distance to the target are not displayed on the screen, because the geographic location of the navigation receiver is either unknown or obviously out of date. Button functions are also not available in this case.
 **Figure 6** illustrates the situation when the navigation receiver received a signal from the first buoy, but its own location has not yet been determined.
-It is worth remembering that the transmission of buoy signals is time-divided, and the receiver awaits their signals sequentially. Accordingly, if the reception of the 1st buoy does not occur, then the reception of the 2nd is not conducted, etc.
+It is worth remembering that the transmission of buoy signals is time-divided, and the receiver awaits their signals sequentially. Accordingly, if the reception of the 1st buoy does not occur, then the reception of the 2nd is not conducted, etc.  
 
-| |
+|  |
 | : ---: |
 | ![RedNAV after start](https://ucnl.github.io/documentation/rednav_scr2.png) |
 | **Figure 6 - The main screen of the device during operation** |
@@ -192,7 +192,7 @@ It is worth remembering that the transmission of buoy signals is time-divided, a
 
 When signals from all buoys are received and the coordinates of the navigation receiver are updated, the main screen has the form, as in **Figure 7**. For example, buoys with numbers **2** and **4** have a low charge of the built-in power supply, therefore, they are displayed as open squares with colour inversion. Buoy **#1** is selected as the navigation target and its icon is displayed enlarged.
 
-| |
+|  |
 | : ---: |
 | ![RedNAV](https://ucnl.github.io/documentation/rednav_scr3.png) |
 | **Figure 7 - The main screen of the device during operation** |
@@ -206,14 +206,14 @@ When the location is determined (azimuth and distance to the selected target are
 
 When the user presses the right button (**+**), the current location is saved separately (the marked point is saved), which is placed at the end of the target list. An informational message is displayed, as in **Figure 8**.
 
-| |
+|  |
 | : ---: |
 | ![RedNAV](https://ucnl.github.io/documentation/rednav_scr3a.png) |
 | **Figure 8 - Message confirming that the current location has been saved** |
 
 The preloaded and marked points are numbered, and when the user selects them as targets using the **> ** button, they are displayed as in ** Figure 9 **.
 
-| |
+|  |
 | : ---: |
 | ![RedNAV](https://ucnl.github.io/documentation/rednav_scr4.png) |
 | **Figure 9 - The main screen of the device during operation** |
