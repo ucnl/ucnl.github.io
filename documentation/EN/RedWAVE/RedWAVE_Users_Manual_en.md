@@ -230,7 +230,7 @@ When the user presses the right button (**+**), the current location is saved se
 
 |  |
 | :---: |
-| ![RedNAV](https://ucnl.github.io/documentation/rednav_scr3a.png) |
+| ![RedNAV](https://ucnl.github.io/documentation/rednav_scr3a_en.png) |
 | **Figure 8 - Message confirming that the current location has been saved** |
 
 The preloaded and marked points are numbered, and when the user selects them as targets using the **>** button, they are displayed as in **Figure 9**.
@@ -245,7 +245,7 @@ To turn off the device, the user must simultaneously press both buttons. In this
 
 |  |
 | :---: |
-| ![RedNAV](https://ucnl.github.io/documentation/rednav_scr5.png) |
+| ![RedNAV](https://ucnl.github.io/documentation/rednav_scr5_en.png) |
 | **Figure 10 - Shutdown confirmation** |
 
 ##### 2.3.2.2. Service mode
@@ -372,7 +372,7 @@ The reasons for refusing free warranty service, free repair and replacement incl
 
 **ANY OF THE PARTS OF THE DELIVERY SET SEPARATELY AND IN THE COMPOSITION OF THE SYSTEM:**
 
-- **ARE NOT DESIGNED FOR WATER RESCUE USE**
+- **ARE NOT DESIGNED FOR RESCUE USE**
 - **NOT TESTED AS RESCUE EQUIPMENT**
 - **IS NOT RESCUE EQUIPMENT**
 - **THE MANUFACTURER DECLARES THAT THE SUPPLIED EQUIPMENT IS SAFE WHEN USING ACCORDING TO THESE INSTRUCTIONS AND MANUFACTURER IS NOT RESPONSIBLE FOR ANY CONSEQUENCES OF USE OF THE SUPPLIED EQUIPMENT**
