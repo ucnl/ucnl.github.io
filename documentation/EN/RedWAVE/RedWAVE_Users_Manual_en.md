@@ -263,7 +263,7 @@ It should be remembered that the charging platform must contact directly with th
 | :---: |
 | ![RedNAV](https://ucnl.github.io/documentation/rednav_scr7.png) |
 | **Figure 12 - Screen view of the device in service mode** |
-| _Both icons glow brightly - there is a charge, a Bluetooth connection is established_ |
+| _Both icons glow brightly - the charge is on, a Bluetooth connection is established_ |
 
 When the device is on the charging platform, after **5 minutes** inactivity, the screen turns off in order to save energy and charge the built-in power supply faster. Pressing any button on the interface device again turns on the screen.
 
