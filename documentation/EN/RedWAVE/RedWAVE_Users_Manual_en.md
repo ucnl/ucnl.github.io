@@ -43,7 +43,7 @@ A long navigation base is formed by four buoys [RedBASE](RedBASE_Specification_e
 
 > It is possible to replace buoys with buoys from another set with the same addresses, **any other options are unacceptable** and will lead to the inability to determine coordinates using navigation receivers.
 
-A general view of the buoy is presented in **figure1 **.
+A general view of the buoy is presented in **figure1**.
 
 | |
 | :---: |
@@ -141,9 +141,9 @@ Working with the device [RedNAV](RedNAV_Specification_en.md) is in many ways sim
 The unique functionality and ease of use make [RedNAV](RedNAV_Specification_en.md) an ideal solution for recreational diving, as well as for search, archaeological and other underwater operations.
 The general view of the device is shown in **Figure 4**.
 
-| |
+|  |
 | :---: |
-| ![RedNAV general view](https://ucnl.github.io/documentation/def_rednav_yellow.png)|
+| ![RedNAV general view](https://ucnl.github.io/documentation/def_rednav_yellow.png) |
 | **Figure 4 - diver's navigation receiver [RedNAV](RedNAV_Specification_en.md)** |
 | _General view_ |
 
@@ -171,58 +171,58 @@ Optimum operating conditions for the acoustic receiver are achieved when there i
 After switching on, the device, not installed on the charging pad, automatically switches to navigation mode.
 The appearance of the device screen in navigation mode immediately after switching on is shown in **Figure 5**.
 
-> ATTENTION! Immediately after switching on, the device calibrates atmospheric pressure for **10 seconds** to more accurately determine the depth. Therefore, turning on the device is recommended only in the air. If at startup the hydrostatic pressure exceeds ** 1100 mbar **, then atmospheric pressure calibration is not performed, and the standard value ** 1013.25 mbar ** is taken as atmospheric pressure.
+> ATTENTION! Immediately after switching on, the device calibrates atmospheric pressure for **10 seconds** to more accurately determine the depth. Therefore, turning on the device is recommended only in the air. If at startup the hydrostatic pressure exceeds **1100 mbar**, then atmospheric pressure calibration is not performed, and the standard value **1013.25 mbar** is taken as atmospheric pressure.
 
-| |
+|  |
 | :---: |
 | ![RedNAV after start](https://ucnl.github.io/documentation/rednav_scr1.png) |
 | **Figure 5 - Main screen in navigation mode** |
 | _After start up_ |
-| _1 - Left button function (target switch), 2 - buoys status, 3 - azimuth and distance to target, 4 - right button function (mark current position), 5 - water temperature, 6 - depth (distance to the water surface), 7 -battery charge_ |
+| _1 - Left button function (target switch), 2 - buoys status, 3 - azimuth and distance to target, 4 - right button function (mark current position), 5 - water temperature, 6 - depth (distance to the water surface), 7 - battery charge_ |
 
 When buoy signals are not received (for example, immediately after switching on), the azimuth and distance to the target are not displayed on the screen, because the geographic location of the navigation receiver is either unknown or obviously out of date. Button functions are also not available in this case.
 **Figure 6** illustrates the situation when the navigation receiver received a signal from the first buoy, but its own location has not yet been determined.
 It is worth remembering that the transmission of buoy signals is time-divided, and the receiver awaits their signals sequentially. Accordingly, if the reception of the 1st buoy does not occur, then the reception of the 2nd is not conducted, etc.  
 
 |  |
-| : ---: |
+| :---: |
 | ![RedNAV after start](https://ucnl.github.io/documentation/rednav_scr2.png) |
 | **Figure 6 - The main screen of the device during operation** |
-| _Device has received signal from Buoy #1. Own location has not been determined yet_ |
+| _Device has received signal from Buoy No. 1. Own location has not been determined yet_ |
 
-When signals from all buoys are received and the coordinates of the navigation receiver are updated, the main screen has the form, as in **Figure 7**. For example, buoys with numbers **2** and **4** have a low charge of the built-in power supply, therefore, they are displayed as open squares with colour inversion. Buoy **#1** is selected as the navigation target and its icon is displayed enlarged.
+When signals from all buoys are received and the coordinates of the navigation receiver are updated, the main screen has the form, as in **Figure 7**. For example, buoys with numbers **2** and **4** have a low charge of the built-in power supply, therefore, they are displayed as open squares with colour inversion. Buoy **No. 1** is selected as the navigation target and its icon is displayed enlarged.
 
 |  |
-| : ---: |
+| :---: |
 | ![RedNAV](https://ucnl.github.io/documentation/rednav_scr3.png) |
 | **Figure 7 - The main screen of the device during operation** |
 | _Location determined. The buoy No. 1_ was chosen as the navigation target |
 
 In the **3** field (see **Figure 5**) **Azimuth and distance to the target** *Azimuth* and *distance* to the selected buoy are displayed. By *azimuth* here we mean *the angular direction from the northern half-meridian clockwise to the line to the target*.
 
-> ATTENTION! When approaching the target at a distance of fewer than 3 meters, instead of the angular direction to the target, dashes **"- - -"** are displayed.
+> **ATTENTION!** When approaching the target at a distance of fewer than 3 meters, instead of the angular direction to the target, dashes **"- - -"** are displayed.
 
 When the location is determined (azimuth and distance to the selected target are displayed), when the user presses the left button (**>**), the next target in the list is selected (after Buoy #1, Buoy #2, #3 and #4). If waypoints have been preloaded into the device, they are located in the target list after the buoys. When switching navigation targets, the corresponding navigation information (Azimuth and distance) also changes.
 
 When the user presses the right button (**+**), the current location is saved separately (the marked point is saved), which is placed at the end of the target list. An informational message is displayed, as in **Figure 8**.
 
 |  |
-| : ---: |
+| :---: |
 | ![RedNAV](https://ucnl.github.io/documentation/rednav_scr3a.png) |
 | **Figure 8 - Message confirming that the current location has been saved** |
 
-The preloaded and marked points are numbered, and when the user selects them as targets using the **> ** button, they are displayed as in ** Figure 9 **.
+The preloaded and marked points are numbered, and when the user selects them as targets using the **>** button, they are displayed as in **Figure 9**.
 
 |  |
-| : ---: |
+| :---: |
 | ![RedNAV](https://ucnl.github.io/documentation/rednav_scr4.png) |
 | **Figure 9 - The main screen of the device during operation** |
 | _The first waypoint/marked point is selected as a navigation target_ |
 
 To turn off the device, the user must simultaneously press both buttons. In this case, the device will ask for confirmation of shutdown, as shown in **Figure 10**.
 
-| |
-| : ---: |
+|  |
+| :---: |
 | ![RedNAV](https://ucnl.github.io/documentation/rednav_scr5.png) |
 | **Figure 10 - Shutdown confirmation** |
 
@@ -231,14 +231,14 @@ When the interface unit is installed on the charging pad, it switches into servi
 
 It should be remembered that the charging platform must contact directly with the housing of the interface unit. If a belt is attached to the interface unit, it should be pulled back and a charging pad placed between the interface unit housing and the belt. Otherwise, the distance between the transmitter of the charger and the receiver inside the housing of the interface unit will be too far to provide the required charging current.
 
-| |
-| : ---: |
+|  |
+| :---: |
 | ![RedNAV](https://ucnl.github.io/documentation/rednav_scr6.png) |
 | **Figure 11 - Screen view of the device in service mode** |
 | _The charging icon lights up brightly - the charge is on, the Bluetooth icon is darkened - the connection is not established_ |
 
-| |
-| : ---: |
+|  |
+| :---: |
 | ![RedNAV](https://ucnl.github.io/documentation/rednav_scr7.png) |
 | **Figure 12 - Screen view of the device in service mode** |
 | _Both icons glow brightly - there is a charge, a Bluetooth connection is established_ |
