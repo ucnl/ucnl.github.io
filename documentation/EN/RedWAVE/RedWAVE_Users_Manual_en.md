@@ -9,7 +9,31 @@
 <div style="page-break-after: always;"></div>
 
 ## Contents
-
+- [1. Introduction](#1-introduction)
+- [2. System composition](#2-system-composition)
+  - [2.1. RedBASE - GNSS-equipped sonobuoy](#21-redbase---gnss-equipped-sonobuoy)
+    - [2.1.1. General information](#211-general-information)
+    - [2.1.2. Operating modes and light indication](#212-operating-modes-and-light-indication)
+    - [2.1.3. Preparation for use and verification](#213-preparation-for-use-and-verification)
+    - [2.1.4. Storage and maintenance](#214-storage-and-maintenance)
+  - [2.2. RedNODE - navigation receiver]()
+    - [2.2.1. General information](#221-general-information)
+    - [2.2.2. Interfacing and placement requirements](#222-interfacing-and-placement-requirements)
+  - [2.3. RedNAV - Diver's navigation receiver](#23-rednav---divers-navigation-receiver)
+    - [2.3.1. General information](#231-general-information)
+    - [2.3.2. Work with the device, modes and user interface](#232-work-with-the-device-modes-and-user-interface)
+      - [2.3.2.1. Navigation mode](#2321-navigation-mode)
+      - [2.3.2.2. Service mode](#2322-service-mode)
+      - [2.3.2.3. Built-in Bluetooth module and PC connection](#2323-built-in-bluetooth-module-and-pc-connection)
+    - [2.3.3. Storage and maintenance](#233-storage-and-maintenance)
+- [3. Effective deployment of a long navigation base](#3-effective-deployment-of-a-long-navigation-base)
+  - [3.1. Ensuring a safe and stable position of buoys on the water](#31-ensuring-a-safe-and-stable-position-of-buoys-on-the-water)
+  - [3.2. Providing a good view of the celestial hemisphere](#32-providing-a-good-view-of-the-celestial-hemisphere)
+  - [3.3. Providing line-of-sight between buoys and navigation receivers](#33-providing-line-of-sight-between-buoys-and-navigation-receivers)
+- [4. Possible malfunctions, their diagnosis and elimination]()
+- [5. Liability and disclaimer]()
+  - [5.1 Terms of replacement and free warranty service]()
+  - [5.2 Disclaimer of the manufacturer]()
 
 <div style="page-break-after: always;"></div>
 
@@ -112,6 +136,7 @@ No special storage and maintenance requirements are imposed on buoys, with the e
 
 The chargers supplied with the buoys may vary slightly from kit to kit (in terms of indicating the status and completion of the charging process), so carefully read the attached instructions carefully before using them.
 
+### 2.2. RedNODE - navigation receiver
 #### 2.2.1. General information
 It is easiest to understand its purpose and the functionality of the integrated navigation receiver [RedNODE](RedNODE_Specification_en.md), starting from the analogy with ordinary GNSS receivers: when connected to a vessel, the receiver receives hydroacoustic signals from four buoys [RedBASE](RedBASE_Specification_en.md) and determines its own geographical position, and the built-in temperature and pressure sensor allows the vessel to additionally determine the depth, thereby providing the user with information about the position in three-dimensional space.
 Coordinates are generated in the receiver itself and are accessible via the serial interface according to the [NMEA0183-like protocol](RedWAVE_Protocol_Specification_ru.md). In this regard, if transmission of the coordinates calculated by the receiver to the control panel is required, this should be done through the vessel's information channel.
@@ -296,7 +321,7 @@ To ensure the first condition, floating buoys should be installed on anchors, en
 
 It is not recommended to use the system with sea waves exceeding **1.5 points**. In case of sea waves **2 or more points** application of the system is _extremely not recommended_ and the manufacturer is not responsible for damage to individual devices of the system, their loss or malfunction, etc.
 
-### 3.2. providing a good view of the celestial hemisphere
+### 3.2. Providing a good view of the celestial hemisphere
 The second condition is because the buoys [RedBASE](RedBASE_Specification_en.md) are repeaters of the satellite navigation signal. They have built-in GPS/GLONASS combined receivers and for the correct operation of the navigation base formed by the buoys, it is necessary to ensure good receiving of the satellite navigation signal on all buoys. In connection with this, buoys should be located at the maximum distance from various obstacles that may affect the quality of the received satellite signal. For example, metal hulls of ships, mooring walls, etc.
 Buoys [RedBASE](RedBASE_Specification_en.md) are equipped with light indication. So when the user turns on the lights, the lights are constantly on until the first position fix of the buoy by the built-in **GPS/GLONASS** receiver. After which they turn lights off and after a while (on average 1-2 minutes) the buoy switches to operating mode. In this case, the indicator lamps flash once every four seconds (the number of short flashes corresponds to the number of the buoy). And if the built-in battery of the buoy is almost discharged, then the lamp flashes every second. In this case, the buoy should be immediately connected to a charger, otherwise, it may lead to failure of the built-in battery.
 Typical time the buoy enters the operating mode (the time before the light turns off) in open water is no more than 2-3 minutes. If the lamp does not turn off for a longer time, the user should change the location of the buoy. Repetition of this situation in open water, where nothing can interfere with the passage of a satellite navigation signal, is an occasion to contact the manufacturer.
@@ -354,4 +379,4 @@ The reasons for refusing free warranty service, free repair and replacement incl
   
 ______________
 
-[Back to content]()
+[Back to contents]()
