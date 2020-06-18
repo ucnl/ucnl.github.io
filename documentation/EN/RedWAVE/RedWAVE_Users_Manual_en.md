@@ -30,10 +30,10 @@
   - [3.1. Ensuring a safe and stable position of buoys on the water](#31-ensuring-a-safe-and-stable-position-of-buoys-on-the-water)
   - [3.2. Providing a good view of the celestial hemisphere](#32-providing-a-good-view-of-the-celestial-hemisphere)
   - [3.3. Providing line-of-sight between buoys and navigation receivers](#33-providing-line-of-sight-between-buoys-and-navigation-receivers)
-- [4. Possible malfunctions, their diagnosis and elimination]()
-- [5. Liability and disclaimer]()
-  - [5.1 Terms of replacement and free warranty service]()
-  - [5.2 Disclaimer of the manufacturer]()
+- [4. Possible malfunctions, their diagnosis and elimination](#4-possible-malfunctions-their-diagnosis-and-elimination)
+- [5. Liability and disclaimer](#5-liability-and-disclaimer)
+  - [5.1 Terms of replacement and free warranty service](#51-terms-of-replacement-and-free-warranty-service)
+  - [5.2 Disclaimer of the manufacturer](#52-disclaimer-of-the-manufacturer)
 
 <div style="page-break-after: always;"></div>
 
@@ -345,7 +345,7 @@ Long-term operation of the transducer in the air is not recommended. It is also 
 ## 4. Possible malfunctions, their diagnosis and elimination
 
 | No. | Symptoms | Possible reason | Elimination |
-| : ---: | : --- | : --- | : --- |
+| :---: | :--- | :--- | :--- |
 | 1 | When installed on the charging pad, the service mode does not turn on, although the power indicator is on (power is being supplied to the charging pad) | 1. The charging pad is not as close to the device as need <br/> 2. The charging pad is defective | 1. Find the optimum position for the charging pad <br/> 2. Replace the charging pad |
 | 2 | Positioning does not occur in navigation mode, although the device receives signals from all buoys properly | The system fails to estimate the location with sufficient accuracy in view of the wrong arrangement of buoys and the navigation receiver or adverse hydrological conditions | 1. Make sure that the buoys form a convex quadrangle and start navigating inside the buoy figure, avoiding proximity to the buoys |
 | 3 | In navigation mode, positioning does not occur due to the fact that buoy reception is unstable | 1. One (or more) of the buoys does not work. <br/> 2. Sustainable receiving of buoy signals is prevented by hydrological conditions. <br/> 3. There is no direct line of sight between the buoy transducer and the navigation receiver | 1. Check the performance of all buoys <br/> 2 and 3. Try to start navigation from another place, making sure that nothing prevents the propagation of the signal (parts of the underwater landscape and port infrastructure, dense thickets of algae, etc.)  |
@@ -379,4 +379,4 @@ The reasons for refusing free warranty service, free repair and replacement incl
   
 ______________
 
-[Back to contents]()
+[Back to contents](#contents)
