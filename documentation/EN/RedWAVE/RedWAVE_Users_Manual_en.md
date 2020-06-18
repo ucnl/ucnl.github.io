@@ -14,7 +14,6 @@
 <div style="page-break-after: always;"></div>
 
 ## 1. Introduction
-
 Underwater acoustic navigation system **RedWAVE** is designed to provide navigation data (absolute geographic coordinates and depth) of various underwater objects in a submerged state:
 - remote-controlled unmanned underwater vehicles (**ROV**);
 - manned underwater vehicles;
@@ -173,6 +172,7 @@ After switching on, the device, not installed on the charging pad, automatically
 The appearance of the device screen in navigation mode immediately after switching on is shown in **Figure 5**.
 
 > ATTENTION! Immediately after switching on, the device calibrates atmospheric pressure for **10 seconds** to more accurately determine the depth. Therefore, turning on the device is recommended only in the air. If at startup the hydrostatic pressure exceeds ** 1100 mbar **, then atmospheric pressure calibration is not performed, and the standard value ** 1013.25 mbar ** is taken as atmospheric pressure.
+
 | |
 | :---: |
 | ![RedNAV after start](https://ucnl.github.io/documentation/rednav_scr1.png) |
@@ -208,22 +208,22 @@ When the user presses the right button (**+**), the current location is saved se
 
 | |
 | : ---: |
-| ![RedNAV] (https://ucnl.github.io/documentation/rednav_scr3a.png) |
+| ![RedNAV](https://ucnl.github.io/documentation/rednav_scr3a.png) |
 | **Figure 8 - Message confirming that the current location has been saved** |
 
 The preloaded and marked points are numbered, and when the user selects them as targets using the **> ** button, they are displayed as in ** Figure 9 **.
 
 | |
 | : ---: |
-| ! [RedNAV] (https://ucnl.github.io/documentation/rednav_scr4.png) |
-| ** Figure 9 - The main screen of the device during operation ** |
+| ![RedNAV](https://ucnl.github.io/documentation/rednav_scr4.png) |
+| **Figure 9 - The main screen of the device during operation** |
 | _The first waypoint/marked point is selected as a navigation target_ |
 
 To turn off the device, the user must simultaneously press both buttons. In this case, the device will ask for confirmation of shutdown, as shown in **Figure 10**.
 
 | |
 | : ---: |
-| ! [RedNAV] (https://ucnl.github.io/documentation/rednav_scr5.png) |
+| ![RedNAV](https://ucnl.github.io/documentation/rednav_scr5.png) |
 | **Figure 10 - Shutdown confirmation** |
 
 ##### 2.3.2.2. Service mode
