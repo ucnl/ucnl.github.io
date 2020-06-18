@@ -26,7 +26,7 @@
 * [Device specification: RedNODE - navigation receiver for ROVs and AUVs](/documentation/EN/RedWAVE/RedNODE_Specification_en.md)
 * [Device specification: RedNAV - navigation receiver for divers](/documentation/EN/RedWAVE/RedNAV_Specification_en.md)
 * [Communication protocol description: RedNODE](/documentation/EN/RedWAVE/RedWAVE_Protocol_Specification_en.md)
-* [RedWAVE User's manual](/Docs/EN/RedWAVE/RedWAVE_LBL_Deployment_maintenance_RedNAV_en.pdf)
+* [RedWAVE User's manual](/documentation/EN/RedWAVE/RedWAVE_Users_Manual_en.md)
 * [Demo track (Google KML)](/Docs/RU/RedWAVE/rednode_track_18042019.kml)
 * [RedNODE demo application (Repository)](https://github.com/ucnl/RedNodeHost)
 * [RedNODE demo application (Download release)](https://api.github.com/repos/ucnl/RedNodeHost/zipball)
