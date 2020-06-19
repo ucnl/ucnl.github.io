@@ -41,7 +41,7 @@ the position of the beacons (azimuth and distance) relative to the antenna. When
 
 ## Working options
 To determine **the relative location** of the responder-beacons, the antenna is paired to a control PC on which it is installed
-open-source software [ZHost](https://github.com/ucnl/ZHost). The antenna connects to the PC via
+open-source software [ZHost](https://api.github.com/repos/ucnl/ZHost/zipball). The antenna connects to the PC via
 [Bat & Link Box](Bat_n_link_box_Specification_en.md), which provides the conversion of the interface to USB and antenna power.
 In this case, the user has access to data and functions:
 * **Azimuth** (horizontal angle) to the used responder-beacons;
@@ -53,7 +53,7 @@ In this case, the user has access to data and functions:
 | :---: |
 | _Connection scheme for relative coordinates_ |
 
-To determine **the absolute location** of the responder-beacons, the antenna is paired with the PC on which [ZHost](https://github.com/ucnl/ZHost) software is installed. The antenna connects to the PC via
+To determine **the absolute location** of the responder-beacons, the antenna is paired with the PC on which [ZHost](https://api.github.com/repos/ucnl/ZHost/zipball) software is installed. The antenna connects to the PC via
 [Bat & Link Box](Bat_n_link_box_Specification_en.md), which provides the conversion of the interface to USB and antenna power.
 Also, an external GNSS system and a magnetic compass working under the **NMEA0183** protocol (messages **RMC** and **HDG**) are connected,
 or external **GNSS** - a system with a compass function operating on the **NMEA0183** protocol (messages **RMC** and **HDT**).
