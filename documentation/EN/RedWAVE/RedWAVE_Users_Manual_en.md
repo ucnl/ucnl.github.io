@@ -142,7 +142,7 @@ It is easiest to understand its purpose and the functionality of the integrated 
 Coordinates are generated in the receiver itself and are accessible via the serial interface according to the [NMEA0183-like protocol](RedWAVE_Protocol_Specification_ru.md). In this regard, if transmission of the coordinates calculated by the receiver to the control panel is required, this should be done through the vessel's information channel.
 
 #### 2.2.2. Interfacing and placement requirements
-The receiver should be installed in a position in which line of sight with transmitters of all four buoys will be ensured (see paragraph [3]()). It should be located as far as possible from outputs of propulsors and various noisy mechanisms, sonars, etc. And also from units and modules that give strong electromagnetic interference (switching power supplies, motors, etc.).
+The receiver should be installed in a position in which line of sight with transmitters of all four buoys will be ensured (see paragraph [3](#3-effective-deployment-of-a-long-navigation-base)). It should be located as far as possible from outputs of propulsors and various noisy mechanisms, sonars, etc. And also from units and modules that give strong electromagnetic interference (switching power supplies, motors, etc.).
 
 When physically pairing the device with the vessel, it is necessary to ensure a reliable and tight cable entry that prevents water from flowing through the free end of cable. When sealing the free end of the cable, aggressive sealants and compounds (for example, silicone sealant based on acetic acid, etc.) should not be used, since its components can cause corrosion of the cable cores and lead to failure of the device.
 
@@ -233,7 +233,7 @@ When the user presses the right button (**+**), the current location is saved se
 | ![RedNAV](https://ucnl.github.io/documentation/rednav_scr3a_en.png) |
 | **Figure 8 - Message confirming that the current location has been saved** |
 
-The preloaded and marked points are numbered, and when the user selects them as targets using the **>** button, they are displayed as in **Figure 9**.
+The preloaded and marked points are numbered, and when the user selects them as targets using the (**>**) button, they are displayed as in **Figure 9**.
 
 |  |
 | :---: |
