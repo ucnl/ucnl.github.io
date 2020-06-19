@@ -14,10 +14,10 @@
 
 ## DESCRIPTION
 
-** Zima-B ** - direction-finding station of the ultrashort-baseline system [Zima USBL](Zima_DataBrief_ru.md).
+**Zima-B** - direction-finding station of the ultrashort-baseline system [Zima USBL](Zima_DataBrief_ru.md).
 
 The device uses a fixed-length signal with code division to provide direction and distance estimation, as well as transmitting telecontrol 
-commands to the responder-beacons [Zima-R] (Zima_R_Specification_ru.md) and receiving telemetry data from them.
+commands to the responder-beacons [Zima-R](Zima_R_Specification_ru.md) and receiving telemetry data from them.
 
 When using an external **GNSS**-receiver  and a Compass, the device calculates the absolute coordinates of the responder-beacons.
 Sequential transmission of up to 32 control commands for 23 transponder beacons is provided.
@@ -34,29 +34,30 @@ working with autonomous and remote-controlled devices, as well as determining th
 | PARAMETER | VALUE |
 | :--- | :--- |
 | DIMENSIONS (Ф х h) | 64 х 128 mm |
-| WEIGHT (dry) | 0.44 kg |
+| WEIGHT<sup>[1](#footnote1)</sup> (dry) | 0.44 kg |
 | DEPTH RATING | 300 m |
-| MAX OPERATING RANGE |	3000<sup>[1](#footnote1)</sup> m |
+| MAX. OPERATING RANGE<sup>[2](#footnote2)</sup> |	3000 m |
 | NOMINAL DEPTH ACCURACY | 0.1 m |
-| HORIZONTAL ANGLE OF ARRIVAL ESTIMATION ACCURACY (typ.)<sup>[2](#footnote2)</sup> | 1° |
-| МАКСИМАЛЬНЫЙ КОМПЕНСИРУЕМЫЙ ВСТРОЕННЫМ ИНКЛИНОМЕТРОМ НАКЛОН ПРИБОРА ОТНОСИТЕЛЬНО ВЕРТИКАЛИ (КРЕН/ДИФФЕРЕНТ) | +/- 30° |
-| WORKING VERTICAL ANGLES (RELATIVE TO HORIZONTAL PLANE)<sup>[2](#footnote2)</sup> | +/-30° |
+| HORIZONTAL ANGLE OF ARRIVAL ESTIMATION ACCURACY (typ.)<sup>[3](#footnote3)</sup> | 1° |
+| MAX. TILT COMPENSATED BY THE BUILT-IN INCLINOMETER RELATED TO VERTICAL AXIS (pitch/roll) | +/- 30° |
+| WORKING VERTICAL ANGLES (RELATIVE TO HORIZONTAL PLANE)<sup>[3](#footnote3)</sup> | +/-30° |
 | BANDWIDTH | 6 .. 18 kHz |
 | BUILT-IN TEMPERATURE SENSOR ACCURACY | 0.1°С |
 | BIT ERROR RATE | 10<sup>-6</sup> |
-| SNR<sup>[2](#footnote2)</sup> | -3 dB |
+| SNR<sup>[3](#footnote3)</sup> | -3 dB |
 | MAX. RELATIVE VELOCITY | +/- 2 m/s |
-| RATED START-UP TIME | 100 msec |
+| RATED STARTUP TIME | 100 msec |
 | WORKING TEMPERATURE RANGE | -5 .. 50 °C |
-| ВРЕМЯ АВТОНОМНОЙ РАБОТЫ<sup>[3](#footnote3)</sup>WHEN SUPPLIED FROM [BAT&LINK BOX](Bat_n_link_box_Specification_en.md) | 8 hours |
-| INTERFACE | USB (COM) 9600 bit/s |
+| BATTERY LIFE<sup>[4](#footnote4)</sup>WHEN SUPPLIED FROM [BAT&LINK BOX](Bat_n_link_box_Specification_en.md) | 8 hours |
+| INTERFACE | USB(COM) 9600 bit/s |
 | PROTOCOL | NMEA 0183 [PZMA](Zima_Protocol_Specification_en.md) |
-| CABLE LENGTH<sup>[4](#footnote4)</sup> | 10 m |
+| CABLE LENGTH<sup>[5](#footnote5)</sup> | 10 m |
 | SUBSCRIBER DIVISION SCHEME (commands/subscribers) | 32/23 |
   
 ________________
 <a name="footnote1"><sup>1</sup></a> Withoud cable and interface converter  
-<a name="footnote2"><sup>2</sup></a> Значение получено без учета эффекта многолучевого распространения в лабораторном статическом эксперименте  
-<a name="footnote3"><sup>3</sup></a> Considering 1 request in 3 seconds  
-<a name="footnote4"><sup>4</sup></a> С учетом преобразователя интерфейса и удлиняющего кабеля до прибора [Bat&Link Box](Bat_n_link_box_Specification_ru.md). Опционально возможно увеличение до 20 метров  
+<a name="footnote2"><sup>2</sup></a> A parameter that determines the maximum range at which a signal can be received, based on electro-acoustic parameters of the transmitter and receiver, spatial decrease in the intensity of sound energy, attenuation in the medium and the acoustic noise level.  
+<a name="footnote3"><sup>3</sup></a> Значение получено без учета эффекта многолучевого распространения в лабораторном статическом эксперименте  
+<a name="footnote4"><sup>4</sup></a> Considering 1 request in 3 seconds  
+<a name="footnote5"><sup>5</sup></a> With additional cable and interface converter [Bat&Link Box](Bat_n_link_box_Specification_ru.md). Can be increased by a request up to 20 m.  
 
