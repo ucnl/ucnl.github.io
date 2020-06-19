@@ -317,7 +317,7 @@ The deployment of a long navigation base in the general case consists of setting
 Consider these three conditions in more detail:
 
 ### 3.1. Ensuring a safe and stable position of buoys on the water
-To ensure the first condition, floating buoys should be installed on anchors, ensuring the preservation of the position of the buoys from the effects of wind and currents. In this case, the weight of the anchor rope should be perceived by an additional float, and the buoy should not perceive any additional vertical load. **Figure 2** shows the recommended scheme for mounting the buoy [RedBASE] (RedBASE_Specification_en.md) at anchor.
+To ensure the first condition, floating buoys should be installed on anchors, ensuring the preservation of the position of the buoys from the effects of wind and currents. In this case, the weight of the anchor rope should be perceived by an additional float, and the buoy should not perceive any additional vertical load. **Figure 2** shows the recommended scheme for mounting the buoy [RedBASE](RedBASE_Specification_en.md) at anchor.
 
 It is not recommended to use the system with sea waves exceeding **1.5 points**. In case of sea waves **2 or more points** application of the system is _extremely not recommended_ and the manufacturer is not responsible for damage to individual devices of the system, their loss or malfunction, etc.
 
