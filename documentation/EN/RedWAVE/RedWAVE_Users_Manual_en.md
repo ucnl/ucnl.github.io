@@ -14,7 +14,7 @@
   - [2.1. RedBASE - GNSS-equipped sonobuoy](#21-redbase---gnss-equipped-sonobuoy)
     - [2.1.1. General information](#211-general-information)
     - [2.1.2. Operating modes and light indication](#212-operating-modes-and-light-indication)
-    - [2.1.3. Preparation for use and verification](#213-preparation-for-use-and-verification)
+    - [2.1.3. Preparation for use](#213-preparation-for-use)
     - [2.1.4. Storage and maintenance](#214-storage-and-maintenance)
   - [2.2. RedNODE - navigation receiver]()
     - [2.2.1. General information](#221-general-information)
@@ -113,7 +113,7 @@ If the buoy's battery is in a state where less than 20% of the charge remains, t
 
 If the battery is in a critical discharge state, then after blinking with its number, the buoy will automatically turn off, in which case the indicator will also turn off. The buoy must be charged immediately to avoid failure of the internal power source.
 
-#### 2.1.3. Preparation for use and verification
+#### 2.1.3. Preparation for use
 Before installing the buoy directly, make sure:
 - in the integrity of the rubber cap of the toggle switch _1_ (see **Figure 3**);
 - that the cover of the charging connector _3_ (see **Figure 3**) is tightly screwed;
