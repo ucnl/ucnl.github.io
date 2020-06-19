@@ -11,7 +11,7 @@
 * [Zima USBL User's manual](/Docs/EN/Zima/ZIMA_USBL_Deployment_maintenance_en.pdf)
 * [Device specification: Zima-Base - direction finding antenna](/documentation/EN/Zima/Zima_B_Specification_en.md)
 * [Device specification: Zima-Responder](/documentation/EN/Zima/Zima_R_Specification_en.md)
-* [GNSS and heading sensors compatibility information sheet](/Docs/EN/Zima/GNSS_and_heading_system_compatibility_en.pdf)
+* [GNSS and heading sensors compatibility information sheet](/documentation/EN/Zima/Zima_GNSS_requirements_en.md)
 * [Device 3D-model (STEP): Zima-Base](/Docs/EN/Zima/Zima_Base_3D.step)
 * [Device 3D-model (STEP): Zima-Responder](/Docs/EN/Zima/ZIMA_Responder_3D.step)
 * [Device wiring: Zima-Responder](/Docs/EN/Zima/Zima-R_drawings_wiring.pdf)
