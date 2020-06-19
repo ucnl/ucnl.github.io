@@ -281,7 +281,7 @@ The module of each navigation receiver has a unique name for the Bluetooth devic
 `RDNV-XXXX`
 where `XXXX` is a unique identifier consisting of uppercase letters and numbers. An example of how the Bluetooth name of the device is displayed is shown in **Figures 11 and 12** (RDNV-AD48). Below, under the line with the name of the device, a hint is displayed containing a pin code (in this example, pin code **1945**), which must be entered when the device is initially connected to an external system.
 
-If a Bluetooth connection occurs when the device is in navigation mode, it transmits navigation information, in particular messages [GGA](RedWAVE_Protocol_Specification_en.md# 211-gga), [RMC](RedWAVE_Protocol_Specification_en.md# 212-rmc) and [MTW](RedWAVE_Protocol_Specification_en.md# 213-mtw).
+If a Bluetooth connection occurs when the device is in navigation mode, it transmits navigation information, in particular messages [GGA](RedWAVE_Protocol_Specification_en.md#211-gga), [RMC](RedWAVE_Protocol_Specification_en.md#212-rmc) and [MTW](RedWAVE_Protocol_Specification_en.md#213-mtw).
 
 Thus, the diver's navigation receiver [RedNAV](RedNAV_Specification_en.md) can act as a Bluetooth GNSS-receiver, the data from which can be used to display the location of the diver in real-time on any mapping device, for example, on a diver's tablet that supports connecting an external GNSS-receiver via Bluetooth.
 It is worth remembering that radio waves practically do not penetrate the water column, and for stable operation of the Bluetooth connection underwater, devices (the interface unit of the diver's navigation receiver and the mapping device) should touch each other as closely as possible.
