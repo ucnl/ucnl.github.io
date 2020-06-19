@@ -9,9 +9,9 @@
 
 ## Contents
 
-- [1. Introduction]()
-- [2. Establishing Bluetooth-connection]()
-- [3. Using RedNAV Host software]()
+- [1. Introduction](#1-introduction)
+- [2. Establishing Bluetooth-connection](#2-establishing-bluetooth-connection)
+- [3. Using RedNAV Host software](#3-using-rednav-host-software)
 
 <div style="page-break-after: always;"></div>
 
@@ -64,7 +64,7 @@ Device Status: **Connected**.
 At this stage, communication with the device is established.
 
 ## 3. Using RedNAV Host software
-After connecting the device according to [p. 2.](), The user can start the [RedNAV Host](https://api.github.com/repos/ucnl/RedNavHost/zipball) 
+After connecting the device according to [p. 2.](#2-establishing-bluetooth-connection), The user can start the [RedNAV Host](https://api.github.com/repos/ucnl/RedNavHost/zipball) 
 application and it will establish a connection with the device automatically. If the connection is successful, the "Connected" status 
 will be displayed in the application window in the status bar, as illustrated in **Figure 5**. The device name appears in the window 
 title (in the example **RDNV-4B8C**).
@@ -144,7 +144,7 @@ To clear all waypoints in the device:
 - answer "yes" to the application’s prompt.
 
 ______________
-[Back to contents]()
+[Back to contents](#contents)
  
 
 
