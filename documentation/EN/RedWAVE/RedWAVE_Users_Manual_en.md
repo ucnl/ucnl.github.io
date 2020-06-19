@@ -67,7 +67,7 @@ A long navigation base is formed by four buoys [RedBASE](RedBASE_Specification_e
 
 > It is possible to replace buoys with buoys from another set with the same addresses, **any other options are unacceptable** and will lead to the inability to determine coordinates using navigation receivers.
 
-A general view of the buoy is presented in **figure1**.
+A general view of the buoy is presented in **figure 1**.
 
 | |
 | :---: |
@@ -76,8 +76,7 @@ A general view of the buoy is presented in **figure1**.
 
 Buoys are to located in the water area on the water surface, their position is fixed using anchors.
 
-> _**ATTENTION!**_ It is worth remembering that although the buoys have a small positive buoyancy, they are not intended for direct mounting on
-anchor rope. To unload the buoy from the weight of the anchor rope, additional floats corresponding to the weight of the rope should be used.
+> _**ATTENTION!**_ It is worth remembering that although the buoys have a small positive buoyancy, they are not intended for direct mounting on anchor rope. To unload the buoy from the weight of the anchor rope, additional floats corresponding to the weight of the rope should be used.
 
 **Figure 2** <sup>[1](#footnote1)</sup> shows the recommended deployment scheme for a buoy in a water body.
 
