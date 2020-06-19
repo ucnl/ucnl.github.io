@@ -8,7 +8,7 @@
 The [Zima USBL](Zima_DataBrief_en.md) system allows the user to revise the coordinates of responder beacons from the local polar 
 coordinate system in geographic time.
 
-For this purpose [ZHost](https://github.com/ucnl/ZHost) software requires data on the geographical position of 
+For this purpose [ZHost](https://api.github.com/repos/ucnl/ZHost/zipball) software requires data on the geographical position of 
 [Zima-B](Zima_B_Specification_en.md) station and its orientation relative to cardinal points.
 
 Two options are possible:
@@ -23,7 +23,7 @@ and **AUX2** in the **"Settings"** window).
 The physical connection of devices is carried out either using physical serial ports (COM, or PC) or using the **RS-232/422/485 <-> USB**
 interface converters.
 
-[ZHost](https://github.com/ucnl/ZHost) software supports the **NMEA0183** protocol, and in particular, the following sentences:
+[ZHost](https://api.github.com/repos/ucnl/ZHost/zipball) software supports the **NMEA0183** protocol, and in particular, the following sentences:
 
 * **HDG** - Orientation data relative to cardinal points (**magnetic compass**)
 * **HDT** - Orientation data relative to cardinal points (**GNSS compass**)
