@@ -4,58 +4,58 @@
 
 ## KEY FEATURES
 
-* **Предельно малые габариты и масса**
-* **Дальность связи до 3000 метров**
-* **Высоконадежная цифровая гидроакустическая связь устойчивая к многолучевому распространению**
-* **Кодовое разделение абонентов - до 23 изолирующих адресов**
-* **Высоконадежная цифровая гидроакустическая связь**
-* **Низкое энергопотребление (Rx/Tx) 0.33/25 Вт**
-* **Патентованная технология одновременной навигации**
-* **Встроенный датчик давления/температуры**
+* **Extremely small size and weight**
+* **Operating range up to 3000 m**
+* **Reliable and noise-immune technology of digital broadband acoustic communication**
+* **Subscribers code division - up to 23 code channels**
+* **Low power consumption (Rx/Tx) 0.33/25 W**
+* **Patented technology of simultaneous positioning**
+* **Built-in depth/temperature sensor**
 
-## ОПИСАНИЕ
+## DESCRIPTION
 
-**Zima-R** - маяк-ответчик ультракороткобазисной навигационной системы [Zima USBL](Zima_DataBrief_en.md).  
+**Zima-R** - responder-beacon of ultrashort baseline underwater tracking system [Zima USBL](Zima_DataBrief_en.md).  
 
-Устройство предназначено для получения команд телеуправления с базовой станции [Zima-B](Zima_B_Specification_en.md) - базовая станция пеленгования, передачи телеметрической информации на базовую станцию [Zima-B](Zima_B_Specification_en.md) - базовая станция пеленгования и для определения направления, как на маяк (для базовой станции) так и на базовую станцию (для маяка) и взаимного 
-определения дистанции.  
+The device is designed to receive telecontrol commands from the base station [Zima-B](Zima_B_Specification_en.md) - the base station for direction finding and to determine the direction to the responder-beacon (for the base station) and to the base station (for responder-beacons) and the mutual
+distance estimation.
 
-Устройство может быть как автономным (с дополнительным батарейным блоком), так и сопрягаться энергетически и информационно с носителем. 
-В этом случае на носитель могут передаваться команды телеуправления, дистанция до базовой станции и азимутальный угол на базовую станцию.  
+The device can be either stand-alone (with an additional battery pack) or paired with the carrier vehicle.
+In this case, telecontrol commands, the distance to the base station and the azimuth angle to the base station can be transmitted to the carrier vehicle.
 
-Предельно малый размер, низкое энергопотребление и простота использования делают пеленгационную систему [Zima USBL](Zima_DataBrief_en.md) идеальным решением для работы с автономными и телеуправляемыми аппаратами а так же определения относительного местоположения водолазов.
+Extremely small size, low power consumption and ease of use make the [Zima USBL](Zima_DataBrief_en.md) tracking system an ideal solution for working with autonomous and remotely operated underwater vehicles as well as determining the location of divers.
 
 <div style="page-break-after: always;"></div>
 
-## ТЕХНИЧЕСКИЕ ХАРАКТЕРИСТИКИ
+## TECHNICAL SPECIFICATIONS
 
-| ПАРАМЕТР | ЗНАЧЕНИЕ |
+| PARAMETER | VALUE |
 | :--- | :--- |
-| ГАБАРИТЫ (Ф х h) | 64 x 62 мм |
-| ВЕС (сухой)<sup>[1](#footnote1)</sup> | 0.3 кг |
-| МАКСИМАЛЬНАЯ ГЛУБИНА | 300 м |
-| НОМИНАЛЬНАЯ ПОГРЕШНОСТЬ ПО ГЛУБИНЕ | 0.1 м |
-| МАКСИМАЛЬНАЯ ДАЛЬНОСТЬ СВЯЗИ | 8000 м |
-| ПОЛОСА ЧАСТОТ | 6 .. 18 кГц |
-| ТОЧНОСТЬ ВСТРОЕННОГО ДАТЧИКА ТЕМПЕРАТУРЫ | 0.1°С |
-| НАПРЯЖЕНИЕ ПИТАНИЯ | 5 .. 12 В |
-| НАПРЯЖЕНИЕ ЛИНИЙ ДАННЫХ | 0 .. 3.3 В |
+| DIMENSIONS (Ф х h) | 64 x 62 mm |
+| WEIGHT<sup>[1](#footnote1)</sup> (dry) | 0.3 kg |
+| DEPTH RATING | 300 m |
+| NOMINAL DEPTH ACCURACY | 0.1 m |
+| MAX. OPERATING RANGE<sup>[2](#footnote2)</sup> |	3000 m |
+| ACOUSIC SOURCE LEVEL |	170 dB re 1 μPa @ 1 m |
+| BANDWIDTH | 6 .. 18 kHz |
+| BUILT-IN TEMPERATURE SENSOR ACCURACY | 0.1°С |
 | BIT ERROR RATE | 10<sup>-6</sup> |
-| SNR<sup>[2](#footnote2)</sup> | -3 дБ |
-| МАКСИМАЛЬНАЯ ОТНОСИТЕЛЬНАЯ СКОРОСТЬ | +/- 2 м/с |
-| ВРЕМЯ СТАРТА | 100 мсек |
-| ДИАПАЗОН РАБОЧИХ ТЕМПЕРАТУР | -5 .. 50 °C |
-| ИНТЕРФЕЙС СОПРЯЖЕНИЯ<sup>[3](#footnote3)</sup> | UART 9600 бит/с |
-| ПРОТОКОЛ СОПРЯЖЕНИЯ | NMEA 0183 [PZMA](Zima_Protocol_Specification_ru.md) |
-| ДЛИНА КАБЕЛЯ<sup>[3](#footnote3)</sup> | 0.5 м |
-| СХЕМА РАЗДЕЛЕНИЯ АБОНЕНТОВ (КОМАНД/АБОНЕНТОВ) | 32/23 |
-| НОМИНАЛЬНАЯ ТОЧНОСТЬ ОПРЕДЕЛЕНИЯ ГОРИЗОНТАЛЬНОГО УГЛА<sup>[4](#footnote4)</sup> | 1˚ |
-| НОМИНАЛЬНАЯ ТОЧНОСТЬ ОПРЕДЕЛЕНИЯ ДИСТАНЦИИ<sup>[4](#footnote4)</sup> | 0.3 м |
+| SNR<sup>[3](#footnote3)</sup> | -3 dB |
+| MAX. RELATIVE VELOCITY | +/- 2 m/s |
+| RATED STARTUP TIME | 100 msec |
+| SUPPLY VOLTAGE | 12 V |
+| DATA LINES VOLTAGE | 0 .. 3.3 V |
+| WORKING TEMPERATURE RANGE | -5 .. 50 °C |
+| INTERFACE | USB(COM) 9600 bit/s |
+| PROTOCOL | NMEA 0183 [PZMA](Zima_Protocol_Specification_en.md) |
+| CABLE LENGTH<sup>[3](#footnote3)</sup> | 1 m |
+| SUBSCRIBER DIVISION SCHEME (commands/subscribers) | 32/23 |
+| HORIZONTAL ANGLE OF ARRIVAL ESTIMATION ACCURACY (typ.)<sup>[4](#footnote3)</sup> | 1° |
+| NOMINAL DISTANCE ESTIMATION ACCURACY<sup>[4](#footnote3)</sup> | 0.3 m |
   
 ________________
-<a name="footnote1"><sup>1</sup></a> Без учета веса блока батарей. Стандартный блок батарей ф50х165 мм, 0.58 кг, 2.9 Ач 12 В. 
-Время работы от стандартного блока батарей в режиме ожидания - до 70 часов, при излучении 1 раз в 3 секунды до 8 часов  
-<a name="footnote2"><sup>2</sup></a> Значение получено без учета эффекта многолучевого распространения   
-<a name="footnote3"><sup>3</sup></a> Значение может быть изменено по запросу
-<a name="footnote4"><sup>4</sup></a> Получено в лабораторных условиях в статическом эксперименте
+<a name="footnote1"><sup>1</sup></a> Without a battery pack. Standard battery pack ф50х165 mm, 0.58 kg, 2.9 A\*h 12 V. 
+Battery life with standard battery pack - up to 70 hours in receiving mode, up to 8 hours with 1 request in 3 seconds schedule  
+<a name="footnote2"><sup>2</sup></a> Without the presence of a multipath effect. A parameter that determines the maximum range at which a signal can be received, based on electro-acoustic parameters of the transmitter and receiver, spatial decrease in the intensity of sound energy, attenuation in the medium and the acoustic noise level.   
+<a name="footnote3"><sup>3</sup></a> Can be changed by a special request
+<a name="footnote4"><sup>4</sup></a> Obtained under laboratory conditions in a static test.
 
