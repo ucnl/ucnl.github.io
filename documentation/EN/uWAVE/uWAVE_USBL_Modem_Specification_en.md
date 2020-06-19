@@ -52,7 +52,7 @@ Using **uWAVE USBL Modems**, the user can:
 | WORKING TEMPERATURE RANGE | -5 .. 50 °C |
 | INTERFACE<sup>[3](#footnote3)</sup> | UART 9600 bit/s |
 | INTERFACING PROTOCOL | NMEA 0183 PUWV |
-| WIRE LENGTH<sup>[3](#footnote3)</sup> | 1 m |
+| CABLE LENGTH<sup>[3](#footnote3)</sup> | 1 m |
 | SUBSCRIBERS CODE DIVISION | 20 code channels |
 | COMMAND MODE | 16 predefined code messages (9 for user applications) |
   
