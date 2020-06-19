@@ -37,6 +37,7 @@ working with autonomous and remote-controlled devices, as well as determining th
 | WEIGHT<sup>[1](#footnote1)</sup> (dry) | 0.44 kg |
 | DEPTH RATING | 300 m |
 | MAX. OPERATING RANGE<sup>[2](#footnote2)</sup> |	3000 m |
+| ACOUSIC SOURCE LEVEL |	170 dB re 1 μPa @ 1 m |
 | NOMINAL DEPTH ACCURACY | 0.1 m |
 | HORIZONTAL ANGLE OF ARRIVAL ESTIMATION ACCURACY (typ.)<sup>[3](#footnote3)</sup> | 1° |
 | MAX. TILT COMPENSATED BY THE BUILT-IN INCLINOMETER RELATED TO VERTICAL AXIS (pitch/roll) | +/- 30° |
