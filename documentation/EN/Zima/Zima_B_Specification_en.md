@@ -40,6 +40,7 @@ working with autonomous and remote-controlled devices, as well as determining th
 | ACOUSIC SOURCE LEVEL |	170 dB re 1 μPa @ 1 m |
 | NOMINAL DEPTH ACCURACY | 0.1 m |
 | HORIZONTAL ANGLE OF ARRIVAL ESTIMATION ACCURACY (typ.)<sup>[3](#footnote3)</sup> | 1° |
+| NOMINAL DISTANCE ESTIMATION ACCURACY | 0.3 m |
 | MAX. TILT COMPENSATED BY THE BUILT-IN INCLINOMETER RELATED TO VERTICAL AXIS (pitch/roll) | +/- 30° |
 | WORKING VERTICAL ANGLES (RELATIVE TO HORIZONTAL PLANE)<sup>[3](#footnote3)</sup> | +/-30° |
 | BANDWIDTH | 6 .. 18 kHz |
@@ -58,7 +59,7 @@ working with autonomous and remote-controlled devices, as well as determining th
 ________________
 <a name="footnote1"><sup>1</sup></a> Withoud cable and interface converter  
 <a name="footnote2"><sup>2</sup></a> A parameter that determines the maximum range at which a signal can be received, based on electro-acoustic parameters of the transmitter and receiver, spatial decrease in the intensity of sound energy, attenuation in the medium and the acoustic noise level.  
-<a name="footnote3"><sup>3</sup></a> Значение получено без учета эффекта многолучевого распространения в лабораторном статическом эксперименте  
+<a name="footnote3"><sup>3</sup></a> Obtained under laboratory conditions in a static test    
 <a name="footnote4"><sup>4</sup></a> Considering 1 request in 3 seconds  
 <a name="footnote5"><sup>5</sup></a> With additional cable and interface converter [Bat&Link Box](Bat_n_link_box_Specification_ru.md). Can be increased by a request up to 20 m.  
 
