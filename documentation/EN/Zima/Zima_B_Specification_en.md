@@ -48,7 +48,7 @@ working with autonomous and remote-controlled devices, as well as determining th
 | MAX. RELATIVE VELOCITY | +/- 2 m/s |
 | RATED STARTUP TIME | 100 msec |
 | WORKING TEMPERATURE RANGE | -5 .. 50 °C |
-| BATTERY LIFE<sup>[4](#footnote4)</sup>WHEN SUPPLIED FROM [BAT&LINK BOX](Bat_n_link_box_Specification_en.md) | 8 hours |
+| BATTERY LIFE<sup>[4](#footnote4)</sup> (WHEN SUPPLIED FROM [BAT&LINK BOX](Bat_n_link_box_Specification_en.md)) | 8 hours |
 | INTERFACE | USB(COM) 9600 bit/s |
 | PROTOCOL | NMEA 0183 [PZMA](Zima_Protocol_Specification_en.md) |
 | CABLE LENGTH<sup>[5](#footnote5)</sup> | 10 m |
