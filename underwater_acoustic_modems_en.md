@@ -18,6 +18,7 @@
 
 ### RedLINE -  underwater acoustic modem
 * [Device specification: RedLINE](/documentation/EN/RedLINE/RedLine_Specification_en.md)
+* [Communication protocol specification: RedLINE](/documentation/EN/RedLINE/RedLINE_Protocol_Specifications_en.md)
 * [Demo host application (Repository)](https://github.com/ucnl/RedLINE_Host)
 * [Demo host application (Download release)](https://api.github.com/repos/ucnl/RedLINE_Host/zipball)
 
