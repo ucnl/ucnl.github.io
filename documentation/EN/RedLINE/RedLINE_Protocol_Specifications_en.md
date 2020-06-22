@@ -13,17 +13,17 @@
   - [1.1. Physical layer](#11-physical-layer)
   - [1.2. NMEA0183 Protocol standard](#12-nmea0183-protocol-standard)
 - [2. TNT Command System for RedLINE modems](#2-tnt-command-system-for-redline-modems)
-  - [2.1. IC_D2H_ACK]()
-  - [2.2. IC_H2D_LOC_DATA_GET]()
-  - [2.3. IC_D2H_LOC_DATA_VAL]()
-  - [2.4. IC_H2D_SETTINGS_WRITE]()
-  - [2.5. IC_H2D_SETTINGS_READ]()
-  - [2.6. IC_D2H_SETTINGS]()
-  - [2.7. IC_D2H_DEV_INFO]()
-- [3. Service mode]()
-- [4. Identifiers]()
-  - [4.1. Error codes]()
-  - [4.2. Local data identifiers]()
+  - [2.1. IC_D2H_ACK](#21-ic_d2h_ack)
+  - [2.2. IC_H2D_LOC_DATA_GET](#22-ic_h2d_loc_data_get)
+  - [2.3. IC_D2H_LOC_DATA_VAL](#23-ic_d2h_loc_data_val)
+  - [2.4. IC_H2D_SETTINGS_WRITE](#24-ic_h2d_settings_write)
+  - [2.5. IC_H2D_SETTINGS_READ](#25-ic_h2d_settings_read)
+  - [2.6. IC_D2H_SETTINGS](#26-ic_d2h_settings)
+  - [2.7. IC_D2H_DEV_INFO](#27-ic_d2h_dev_info)
+- [3. Service mode](#3-service-mode)
+- [4. Identifiers](#4-identifiers)
+  - [4.1. Error codes](#41-error-codes)
+  - [4.2. Local data identifiers](#42-local-data-identifiers)
    
 <div style="page-break-after: always;"></div>
 
@@ -95,7 +95,7 @@ Format: **`$PTNT4,xx,00*hh<CR><LF>`**
 |  | P | Proprietary sentence |
 |  | TNT | Proprietery code ID |
 |  | 4 | Sentence ID |
-| 1 | dataID	| Parameter ID \([see 4.2.]()\) |
+| 1 | dataID	| Parameter ID \([see 4.2.](#42-local-data-identifiers)\) |
 | 2 | reserved | should be '00' |
 | | *	| NMEA checksum separator |
 | | hh	| NMEA checksum |
@@ -103,7 +103,7 @@ Format: **`$PTNT4,xx,00*hh<CR><LF>`**
 
 
 ### 2.3. IC_D2H_LOC_DATA_VAL
-Device's response to [IC_H2D_LOC_DATA_GET]() sentence.
+Device's response to [IC_H2D_LOC_DATA_GET](#22-ic_h2d_loc_data_get) sentence.
 
 Format: **`$PTNT5,x,x<CR><LF>`**  
 
@@ -113,7 +113,7 @@ Format: **`$PTNT5,x,x<CR><LF>`**
 |  | P | Proprietary sentence |
 |  | TNT | Proprietery code ID |
 |  | 5 | Sentence ID | 
-| 1 | Requested data ID | Parameter ID \([see. 4.2.](#42-local-parameters-identifiers)\) | 
+| 1 | Requested data ID | Parameter ID \([see. 4.2.](#42-local-data-identifiers)\) | 
 | 2 | Value | Queried value | 
 | | *	| NMEA checksum separator |
 | | hh	| NMEA checksum |
@@ -175,7 +175,7 @@ Format: **`$PTNT9,x,x,x,x*hh <CR><LF>`**
 | | \<CR\>\<LF\> | end of sentence |
 
 ### 2.7. IC_D2H_DEV_INFO
-Device's responce to [IC_D2H_LOC_DATA_GET](), if the queried parameter ID = [LOC_DATA_DEV_INFO]().
+Device's responce to [IC_D2H_LOC_DATA_GET](#22-ic_h2d_loc_data_get), if the queried parameter ID = [LOC_DATA_DEV_INFO](#42-local-data-identifiers).
 
 Format: **`$PTNT!,c--c,x,x,c--c,x,c--c<CR><LF>`**  
 
@@ -226,9 +226,9 @@ Format: **`$PTNT!,c--c,x,x,c--c,x,c--c<CR><LF>`**
 
 | Value | Identifier | Description |
 | :--- | :--- | :--- |
-| '0' | DEVICE_INFO | Device information |
-| '2' | MAX_SUBSCRIBERS | Max. number of code channels available |
-| '6' | PRESSURE_RATING | Max. external hydrostatic pressure in Bars |
+| 0 | DEVICE_INFO | Device information |
+| 2 | MAX_SUBSCRIBERS | Max. number of code channels available |
+| 6 | PRESSURE_RATING | Max. external hydrostatic pressure in Bars |
 
 __________
 
