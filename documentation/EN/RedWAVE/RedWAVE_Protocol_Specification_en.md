@@ -299,7 +299,7 @@ Format: **`$PTNT4,xx,00*hh<CR><LF>`**
 |  | P | Proprietary sentence |
 |  | TNT | Proprietery code ID |
 |  | 4 | Sentence ID |
-| 1 | dataID	| Parameter ID \([see 3.3.]()\) |
+| 1 | dataID	| Parameter ID \([see 3.3.](#33-local-parameters-identifiers)\) |
 | 2 | reserved | should be '00' |
 | | *	| NMEA checksum separator |
 | | hh	| NMEA checksum |
