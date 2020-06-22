@@ -1,10 +1,10 @@
 | ![logo](https://ucnl.github.io/documentation/sm_logo.png) |  |
 | :---: | ---: |
-| [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **uWAVE** underwater communication system interfacing protocol specification |
+| [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **uWAVE** underwater communication system <br/> Interfacing protocol specification |
   
   
   
-# uWAVE <br/> interfacing protocol specification
+# uWAVE <br/> Interfacing protocol specification
 
 <div style="page-break-after: always;"></div>
 
