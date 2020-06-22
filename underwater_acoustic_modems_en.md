@@ -17,7 +17,7 @@
 * [uWAVE: videos, tutorials, etc.](/documentation/EN/uWAVE/media)
 
 ### RedLINE -  underwater acoustic modem
-* [Device specification: RedLINE](/Docs/EN/Modems/RedLINE/RedLINE_Specification_en.pdf)
+* [Device specification: RedLINE](/documentation/EN/RedLINE/RedLine_Specification_en.md)
 * [Demo host application (Repository)](https://github.com/ucnl/RedLINE_Host)
 * [Demo host application (Download release)](https://api.github.com/repos/ucnl/RedLINE_Host/zipball)
 
