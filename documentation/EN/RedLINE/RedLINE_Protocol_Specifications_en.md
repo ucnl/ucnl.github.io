@@ -197,7 +197,7 @@ Format: **`$PTNT!,c--c,x,x,c--c,x,c--c<CR><LF>`**
 
 <div style="page-break-after: always;"></div>
 
-## 3. Сервисный режим
+## 3. Service mode
 [RedLINE](RedLine_Specification_en.md) modems provide the user with a so-called "transparent channel" when all data supplied to the input without changes and analysis are transmitted to the hydroacoustic channel, after which they are received by another modem and in the unchanged form are given to the user at the receiving side. In this regard, to be able to configure modems, as well as to measure the propagation time to remote subscribers, there is a command mode. Modems analyze input data only in command mode. To switch to the command mode, the “service” core should be pulled to +3.3 V. After that, the “service” core should be pulled to the ground to exit the service mode.
 
 > **WARNING!** The core "service" is pulled **ONLY** to 3-5 V or ground, connecting it to a higher voltage will cause a **FATAL** and **NON-GUARANTEE** failure of the device.
