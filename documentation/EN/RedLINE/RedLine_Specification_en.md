@@ -40,7 +40,7 @@ The function of code division of subscribers allows you to most effectively solv
 | DATA LINES VOLTAGE | 0 .. 3.3 V |
 | BANDWIDTH | 5 .. 15 kHz |
 | BIT ERROR RATE | 10<sup>-6</sup> |
-| SNR<sup>[2](#footnote2)</sup> | -6 дБ |
+| SNR<sup>[2](#footnote2)</sup> | -6 dB |
 | MAX. RELATIVE VELOCITY | +/- 3 m/s |
 | RATED STARTUP TIME | 100 msec |
 | WORKING TEMPERATURE RAGE | -5 .. 50 °C |
