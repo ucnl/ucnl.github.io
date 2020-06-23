@@ -11,6 +11,7 @@
 * **Open & easy interfacing protocol**
 * **Built-in depth/temperature sensor**
 * **40 code messages / 25 subscribers**
+* **Broadcast code messages**
 
 ## DESCRIPTION
 ** RedGTR ** - hydro-acoustic code communication modem.
