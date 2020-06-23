@@ -23,6 +23,7 @@
 * [Demo host application (Download release)](https://api.github.com/repos/ucnl/RedLINE_Host/zipball)
 
 ### RedGTR -  underwater acoustic code modem
-* [Device specification: RedGTR](/Docs/EN/Modems/RedGTR/RedGTR_Specification_en.pdf)
+* [Device specification: RedGTR](/documentation/EN/RedGTR/RedGTR_Specifications_en.md)
+* [Communication protocol specification: RedGTR (Under construction)]()
 
 ## [Home](README.md)
