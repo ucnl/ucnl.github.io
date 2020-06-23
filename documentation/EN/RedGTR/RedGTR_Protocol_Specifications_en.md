@@ -10,388 +10,415 @@
 
 ## Contents
 
-     
+- [1. Introduction]()
+  - [1.1. Physical layer]()
+  - [1.2. NMEA0183 Protocol standard]()
+- [2. TNT Command System for RedLINE modems]()
+  - [2.1. IC_D2H_ACK]()
+  - [2.2. IC_H2D_LOC_DATA_GET]()
+  - [2.3. IC_H2D_LOC_DATA_SET]()
+  - [2.4. IC_D2H_LOC_DATA_VAL]()
+  - [2.5. IC_D2H_DEV_INFO]()
+  - [2.6. IC_H2D_ACT_INVOKE]()
+  - [2.7. IC_H2D_REM_SEND]()
+  - [2.8. IC_H2D_REM_PING]()
+  - [2.9. IC_H2D_REM_PINGEX]()
+  - [2.10. IC_D2H_REM_RECEIVED]()
+  - [2.11. IC_D2H_REM_TOUT]()
+  - [2.12. IC_D2H_REM_PONG]()
+  - [2.13. IC_D2H_REM_PONGEX]()
+- [3. Identifiers]()
+  - [3.1. Device type identifiers]()
+  - [3.2. Error messages]()
+  - [3.3. Local data identifier]()
+  - [3.4. Service actions identifiers]()
+  - [3.5. Remote requests identifiers]()
+
 <div style="page-break-after: always;"></div>
 
-## 1. Введение
-### 1.1. Протокол физического уровеня
-   
-Гидроакустические модемы [RedGTR](RedGTR_Specification_ru.md) поддерживают информационное сопряжение при помощи стандарта физического уровня RS-232 для 
-асинхронного интерфейса (UART) c напряжением линии данных 3.3В. Подключение производится при помощи четырехпроводного кабеля, 
-с жилами Tx (трансмиттер), Rx (ресивер), Vcc (питание)  и GND (земля). Без применения дополнительных повторителей и преобразователей 
-интерфейса максимальная длинна шины данных, для которой гарантируется корректная работа интерфейса, составляет не более 2 метров.  
+## 1. Introduction
+### 1.1. Physical layer
+Гидроакустические модемы [RedGTR](RedGTR_Specification_ru.md)  underwater acoustic modems support data pairing using the RS-232 physical layer standard for asynchronous interface (UART) with a 3.3V data line voltage. The connection is made using a four-wire cable with Tx (transmitter), Rx (receiver), Vcc (power) and GND (ground) wires. Without the use of additional repeaters and interface converters, the maximum cable length, for which the correct operation of the interface is guaranteed, is no more than 2 meters.
 
-Настройки порта подключения по умолчанию<sup>[1](#footnote1)</sup>:  
+Default port settings<sup>[1](#footnote1)</sup>:  
 > _Baudrate: 9600 bit/s_  
 > _Data bits: 8_  
 > _Stop bits: 1_  
 > _Parity: No_  
 > _Hardware flow control: No_  
 
->**ВНИМАНИЕ!**
->_Питание модемов осуществляется от источника постоянного тока 12 Вольт, при этом напряжение линии данных составляет 3.3 В._
+>**WARNING!**
+>_The modems are powered by 12 Volt DC source, while the data line voltage is 3.3 V._
 
-### 1.2. Стандарт протокола диалогового уровня NMEA0183
-Стандарт NMEA0183 описывает формат текстовых (ASCII) сообщений диалогового уровня.  
+### 1.2. NMEA0183 Protocol standard
+The NMEA0183 standard describes the format of text (ASCII) messages at the interactive level.
 
-Пример сообщения:  **`$PTNT0,0*hh<СR><LF>`**  
+Sentence example: **`$PTNT0,1*hh<СR><LF>`**  
 
-Основные элементы посылки (сообщения, sentence) NMEА0183:
-* '$' - начало сообщения,
-* 'P' - Proprietary, проприетарный код
-* 'TNT' - трехбуквенный идентификатор производителя
-* '0' - идентификатор сообщения
-* ',' - запятая (разделитель параметров)  
-* '0' - параметр (в данном случае код ошибки)
-* '*' - разделитель контрольной суммы
-* 'hh' - контрольная сумма в шестнадцатеричном формате (например FF, 01). Рассчитывается как побитовый XOR всех байт между '$' и '*'.
-* \<CR\>\<LF\> - конец сообщения (перевод строки)
+Parts of a message (sentence) NMEА0183:
+* '$' - sentence start,
+* 'P' - Proprietary
+* 'TNT' - Manufacturer/protocol identifier
+* '0' - sentence identifier
+* ',' - parameters separator
+* '*' - checksum separator
+* 'hh' - checksum in hexadecimal format (for example FF, 01). Byte-by-byte XOR for all characters between '$' and '*'.
+* \<CR\>\<LF\> - end of sentence
 ________
-<a name="footnote1"><sup>1</sup> Указанные параметры могут быть изменены по запросу</a>
+<a name="footnote1"><sup>1</sup> Specified parameters can be changed by a request</a>
 
 <div style="page-break-after: always;"></div>
 
-## 2. Система команд TNT для ГА модемов RedGTR
-Префикс **D2H** в наименовании сообщений означает, что оно передается от устройства (Device) к управляющей системе (Host).
-Префикс **H2D** в наименовании сообщений означает, что оно передается от управляющей системы (Host) к устройству (Device).
+## 2. TNT Command System for RedLINE modems
+The **D2H** prefix in the message name means that it is transmitted from the device (Device) to the host system (Host).
+The **H2D** prefix in the message name means that it is transmitted from the host system to the device.
 
 ### 2.1. IC_D2H_ACK
-Данным сообщением устройство сигнализирует о принятии команды или о возникновении ошибки (в зависимости от значения параметра errorCode, 
-\(см. [п. 3.2](#32-%D0%BA%D0%BE%D0%B4%D1%8B-%D0%BE%D1%88%D0%B8%D0%B1%D0%BE%D0%BA)\).
+Device acknowledgement.
 
-Формат сообщения:  **`$PTNT0,x*hh <CR><LF>`**
+Format: **`$PTNT0,x*hh<CR><LF>`**  
 
-| Поле/параметр |	Описание |
-| :--- | :--- |
-| $	| Начало сообщения '$' |
-| PTNT | Система команд TNT |
-| 0| Идентификатор сообщения |
-| errorCode | Код ошибки \(см. [п. 3.2](#32-%D0%BA%D0%BE%D0%B4%D1%8B-%D0%BE%D1%88%D0%B8%D0%B1%D0%BE%D0%BA)\) |
-| * | Разделитель конт. суммы NMEA |
-| hh | Контрольная сумма NMEA |
-| \<CR\>\<LF\> | Конец сообщения |
-
+| № | Field/Parameter |	Description |
+| :--- | :--- | :--- |
+| | $	| Sentence start '$' |
+|  | P | Proprietary sentence |
+|  | TNT | Proprietery code ID |
+|  | 0	| Sentence ID |
+| 1 | errCode	| Error code \([see 3.2.](#32-error-codes)\) |
+| | *	| NMEA checksum separator |
+| | hh	| NMEA checksum |
+| | \<CR\>\<LF\> | end of sentence |
 
 ### 2.2. IC_H2D_LOC_DATA_GET
-Запросить значение локального параметра. При помощи данного сообщения управляющая система может запросить значение локального параметра 
-\(см. [п. 3.3](#33-%D0%B8%D0%B4%D0%B5%D0%BD%D1%82%D0%B8%D1%84%D0%B8%D0%BA%D0%B0%D1%82%D0%BE%D1%80%D1%8B-%D0%BB%D0%BE%D0%BA%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D1%85-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85)\).  
+Query for a local parameter value.
 
-Формат сообщения: **`$PTNT4,xx,00*hh<CR><LF>`**  
+Format: **`$PTNT4,xx,00*hh<CR><LF>`**  
 
-| Поле/параметр |	Описание |
-| :--- | :--- |
-| $	| Начало сообщения '$' |
-| PTNT | Система команд TNT |
-| 4 | Идентификатор сообщения |
-| Requested data ID | Идентификатор данных \(см. [п. 3.3](#33-%D0%B8%D0%B4%D0%B5%D0%BD%D1%82%D0%B8%D1%84%D0%B8%D0%BA%D0%B0%D1%82%D0%BE%D1%80%D1%8B-%D0%BB%D0%BE%D0%BA%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D1%85-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85)\) |
-| Reserved | Зарезервированно, всегда должно быть '00' |
-| * | Разделитель конт. суммы NMEA |
-| hh | Контрольная сумма NMEA |
-| \<CR\>\<LF\> | Конец сообщения |
+| № | Field/Parameter |	Description |
+| :--- | :--- | :--- |
+| | $	| Sentence start '$' |
+|  | P | Proprietary sentence |
+|  | TNT | Proprietery code ID |
+|  | 4 | Sentence ID |
+| 1 | dataID	| Parameter ID \([see 3.3.](#33-local-data-identifiers)\) |
+| 2 | reserved | should be '00' |
+| | *	| NMEA checksum separator |
+| | hh	| NMEA checksum |
+| | \<CR\>\<LF\> | end of sentence |
 
 ### 2.3. IC_H2D_LOC_DATA_SET
-Задать значение локального параметра. При помощи данного сообщения управляющая система может запросить задание значения локального параметра \(см. [п. 3.3](#33-%D0%B8%D0%B4%D0%B5%D0%BD%D1%82%D0%B8%D1%84%D0%B8%D0%BA%D0%B0%D1%82%D0%BE%D1%80%D1%8B-%D0%BB%D0%BE%D0%BA%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D1%85-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85)\).  
+Setting a value of a local parameter. \(see. [p. 3.3]()\).  
 
-Формат сообщения: **`$PTNT7,xx,00*hh<CR><LF>`**  
+Format:  **`$PTNT7,xx,00*hh<CR><LF>`**  
 
-| Поле/параметр |	Описание |
-| :--- | :--- |
-| $	| Начало сообщения '$' |
-| PTNT | Система команд TNT |
-| 7 | Идентификатор сообщения |
-| Requested data ID | Идентификатор данных \(см. [п. 3.3](#33-%D0%B8%D0%B4%D0%B5%D0%BD%D1%82%D0%B8%D1%84%D0%B8%D0%BA%D0%B0%D1%82%D0%BE%D1%80%D1%8B-%D0%BB%D0%BE%D0%BA%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D1%85-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85)\) |
-| Reserved | Зарезервированно, всегда должно быть '00' |
-| * | Разделитель конт. суммы NMEA |
-| hh | Контрольная сумма NMEA |
-| \<CR\>\<LF\> | Конец сообщения |
+| № | Field/Parameter |	Description |
+| :--- | :--- | :--- |
+| | $	| Sentence start '$' |
+|  | P | Proprietary sentence |
+|  | TNT | Proprietery code ID |
+| | 7 | Sentence ID |
+| 1 | Requested data ID | Local parameter identifier \(see. [p. 3.3.]()\) |
+| 2 | Reserved | Reserved, should always be '00' |
+| | *	| NMEA checksum separator |
+| | hh	| NMEA checksum |
+| | \<CR\>\<LF\> | end of sentence |
 
 
 ### 2.4. IC_D2H_LOC_DATA_VAL
-Значение локального параметра. При помощи данного сообщения модем возвращает значение запрошенного 
-\(при помощи сообщения [IC_H2D_LOC_DATA_GET](#22-ic_h2d_loc_data_get)\) управляющей системой локального параметра.  
+Device's response to [IC_H2D_LOC_DATA_GET](#22-ic_h2d_loc_data_get) sentence.
 
-Формат сообщения: **`$PTNT5,x,x.x*hh<CR><LF>`**  
+Format: **`$PTNT5,x,x<CR><LF>`**  
 
-| Поле/параметр |	Описание |
-| :--- | :--- |
-| $	| Начало сообщения '$' |
-| PTNT | Система команд TNT |
-| 5 | Идентификатор сообщения |
-| Requested data ID | Идентификатор данных \(см. [п. 3.3](#33-%D0%B8%D0%B4%D0%B5%D0%BD%D1%82%D0%B8%D1%84%D0%B8%D0%BA%D0%B0%D1%82%D0%BE%D1%80%D1%8B-%D0%BB%D0%BE%D0%BA%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D1%85-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85)\) |
-| Requested data value | Значение |
-| * | Разделитель конт. суммы NMEA |
-| hh | Контрольная сумма NMEA |
-| \<CR\>\<LF\> | Конец сообщения |
+| № | Field/Parameter |	Description |
+| :--- | :--- | :--- |
+| | $	| Sentence start '$' |
+|  | P | Proprietary sentence |
+|  | TNT | Proprietery code ID |
+|  | 5 | Sentence ID | 
+| 1 | Requested data ID | Parameter ID \([see. 3.3.](#33-local-data-identifiers)\) | 
+| 2 | Value | Queried value | 
+| | *	| NMEA checksum separator |
+| | hh	| NMEA checksum |
+| | \<CR\>\<LF\> | end of sentence |
 
 ### 2.5. IC_D2H_DEV_INFO
-Информация об устройстве. При помощи данного сообщения устройство сообщает свои данные: тип устройства, версию прошивки и серийный номер.  
+Device's responce to [IC_D2H_LOC_DATA_GET](#22-ic_h2d_loc_data_get), if the queried parameter ID = [LOC_DATA_DEV_INFO](#42-local-data-identifiers).
 
-Формат сообщения: **`$PTNT!,c--c,x,x,c--c,x,c--c*hh<CR><LF>`**  
+Format: **`$PTNT!,c--c,x,x,c--c,x,c--c<CR><LF>`**  
 
-| Поле/параметр |	Описание |
-| :--- | :--- |
-| $	| Начало сообщения '$' |
-| PTNT | Система команд TNT |
-| !	| Идентификатор сообщения
-| System moniker | Строка наименование системы |
-| System version | Версия системы |
-| Device type | Тип устройства \([см. п. 3.1](#31-%D0%B8%D0%B4%D0%B5%D0%BD%D1%82%D0%B8%D1%84%D0%B8%D0%BA%D0%B0%D1%82%D0%BE%D1%80%D1%8B-%D1%83%D1%81%D1%82%D1%80%D0%BE%D0%B9%D1%81%D1%82%D0%B2)\) |
-| Communication subsystem moniker | Строка наименования подсистемы связи с наименованием релиза в квадратных скобках '\[\]' |
-| Communication subsystem version | Версия подсистемы связи |
-| Serial number | 96-битный серийный номер (строка в шестнадцатеричном формате) |
-| * | Разделитель конт. суммы NMEA |
-| hh | Контрольная сумма NMEA |
-| \<CR\>\<LF\> | Конец сообщения |
-
+| № | Field/Parameter |	Description |
+| :--- | :--- | :--- |
+| | $	| Sentence start '$' |
+|  | P | Proprietary sentence |
+|  | TNT | Proprietery code ID |
+|  | ! | Sentence ID |
+| 1 | System moniker | System name |
+| 2 | System version | System version (BCD) |
+| 3 | Communication subsystem moniker | Communication subsystem name |
+| 4 | Communication subsystem version | Communication subsystem version (BCD) |
+| 5 | Device type | Device type \([see 3.1.](#31-device-types)\) |
+| 6 | Serial number | Serial number |
+| | *	| NMEA checksum separator |
+| | hh	| NMEA checksum |
+| | \<CR\>\<LF\> | end of sentence |
 
 ### 2.6. IC_H2D_ACT_INVOKE
-Запрос на выполнение сервисной операции.   
+Service action request.   
 
-Формат сообщения: **`$PTNT6,xx,00*hh<CR><LF>`** 
+Format:  **`$PTNT6,xx,00*hh<CR><LF>`** 
 
-| Поле/параметр |	Описание |
-| :--- | :--- |
-| $	| Начало сообщения '$' |
-| PTNT | Система команд TNT |
-| 6 | Идентификатор сообщения |
-| Action ID | Идентификатор операции \([см. п. 3.4](#34-%D0%B8%D0%B4%D0%B5%D0%BD%D1%82%D0%B8%D1%84%D0%B8%D0%BA%D0%B0%D1%82%D0%BE%D1%80%D1%8B-%D0%BE%D0%BF%D0%B5%D1%80%D0%B0%D1%86%D0%B8%D0%B9)\) |
-| Reserved | Зарезервировано '00' |
-| * | Разделитель конт. суммы NMEA |
-| hh | Контрольная сумма NMEA |
-| \<CR\>\<LF\> | Конец сообщения |
+| № | Field/Parameter |	Description |
+| :--- | :--- | :--- |
+| | $	| Sentence start '$' |
+|  | P | Proprietary sentence |
+|  | TNT | Proprietery code ID |
+|  | 6 | Идентификатор сообщения |
+| 1 | Action ID | Service action ID \([see. p. 3.4.]()\) |
+| 2 | Reserved | Reserved, should always be '00' |
+|  | * | NMEA checksum separator |
+|  | hh	| NMEA checksum |
+|  | \<CR\>\<LF\> | end of sentence |
 
 ### 2.7. IC_H2D_REM_SEND
-Передача кодового сообщения удаленному абоненту.  
+Send a code message to a remote device.  
 
-Формат сообщения: **`$PTNT8,x,ч*hh<CR><LF>`**  
+Format: **`$PTNT8,x,x*hh<CR><LF>`**  
 
-| Поле/параметр |	Описание |
-| :--- | :--- |
-| $	| Начало сообщения '$' |
-| PTNT | Система команд TNT |
-| 8 | Идентификатор сообщения |
-| Subscriber ID | Адрес абонента от 0 до 25 (25 - широковещательное сообщение) |
-| Message ID | Идентификатор сообщения, \([см. п. 3.5](#35-%D0%B8%D0%B4%D0%B5%D0%BD%D1%82%D0%B8%D1%84%D0%B8%D0%BA%D0%B0%D1%82%D0%BE%D1%80%D1%8B-%D1%83%D0%B4%D0%B0%D0%BB%D0%B5%D0%BD%D0%BD%D1%8B%D1%85-%D0%B7%D0%B0%D0%BF%D1%80%D0%BE%D1%81%D0%BE%D0%B2-%D0%BA%D0%BE%D0%B4%D0%BE%D0%B2%D1%8B%D0%B5-%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B)\) |
-| * | Разделитель конт. суммы NMEA |
-| hh | Контрольная сумма NMEA |
-| \<CR\>\<LF\> | Конец сообщения |
+| № | Field/Parameter |	Description |
+| :--- | :--- | :--- |
+|  | $	| Sentence start '$' |
+|  | P | Proprietary sentence |
+|  | TNT | Proprietery code ID |
+| 8 | Sentence ID |
+| 1 | Subscriber ID | Remote device ID (from 0 to 25. 25 is broadcast address) |
+| 2 | Message ID | Code message ID, \([see. p. 3.5]()\) |
+|  | * | NMEA checksum separator |
+|  | hh	| NMEA checksum |
+|  | \<CR\>\<LF\> | end of sentence |
 
 ### 2.8. IC_H2D_REM_PING
-Пинг удаленного абонента.  
+Send a ping to a remote device.  
 
-Формат сообщения: **`$PTNTA,x,x*hh<CR><LF>`**  
+Format: **`$PTNTA,x,x*hh<CR><LF>`**  
 
-| Поле/параметр |	Описание |
-| :--- | :--- |
-| $	| Начало сообщения '$' |
-| PTNT | Система команд TNT |
-| A | Идентификатор сообщения |
-| Subscriber ID | Адрес абонента от 0 до 24 | 
-| Timeout | Максимальное время ожидание ответа в мсек (целое число) |
-| * | Разделитель конт. суммы NMEA |
-| hh | Контрольная сумма NMEA |
-| \<CR\>\<LF\> | Конец сообщения |
+| № | Field/Parameter |	Description |
+| :--- | :--- | :--- |
+| | $	| Sentence start '$' |
+|  | P | Proprietary sentence |
+|  | TNT | Proprietery code ID |
+|  | A | Sentence ID |
+| 1 | Subscriber ID | Remote device address from 0 to 24 | 
+| 2 | Timeout | Max. timeout in msec (integer value) |
+|  | * | NMEA checksum separator |
+|  | hh	| NMEA checksum |
+|  | \<CR\>\<LF\> | end of sentence |
 
 ### 2.9. IC_H2D_REM_PINGEX
-Пинг удаленного абонента (расширенная версия).  
+Send a ping to a remote device (extended version).  
 
-Формат сообщения: **`$PTNTE,x,x*hh<CR><LF>`**  
+Format: **`$PTNTE,x,x*hh<CR><LF>`**  
 
-| Поле/параметр |	Описание |
-| :--- | :--- |
-| $	| Начало сообщения '$' |
-| PTNT | Система команд TNT |
-| E | Идентификатор сообщения | 
-| Subscriber ID | Адрес абонента от 0 до 24 |
-| Message ID | Идентификатор запрашиваемого параметра удаленного абонента \([см. п. 3.5](#35-%D0%B8%D0%B4%D0%B5%D0%BD%D1%82%D0%B8%D1%84%D0%B8%D0%BA%D0%B0%D1%82%D0%BE%D1%80%D1%8B-%D1%83%D0%B4%D0%B0%D0%BB%D0%B5%D0%BD%D0%BD%D1%8B%D1%85-%D0%B7%D0%B0%D0%BF%D1%80%D0%BE%D1%81%D0%BE%D0%B2-%D0%BA%D0%BE%D0%B4%D0%BE%D0%B2%D1%8B%D0%B5-%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B)\) |
-| Timeout | Максимальное время ожидание ответа в мсек (целое число) |
-| * | Разделитель конт. суммы NMEA |
-| hh | Контрольная сумма NMEA |
-| \<CR\>\<LF\> | Конец сообщения |
+| № | Field/Parameter |	Description |
+| :--- | :--- | :--- |
+| | $	| Sentence start '$' |
+|  | P | Proprietary sentence |
+|  | TNT | Proprietery code ID |
+|  | E | Sentence ID | 
+| 1 | Subscriber ID | Remote device address from 0 to 24 |
+| 2 | Message ID | Requested parameter identifier \([see. p. 3.5]()\) |
+| 3 | Timeout | Max. timeout in msec (integer value) |
+|  | * | NMEA checksum separator |
+|  | hh	| NMEA checksum |
+|  | \<CR\>\<LF\> | end of sentence |
 
 ### 2.10. IC_D2H_REM_RECEIVED
-Принято сообщение.  
+Received a code message from a remote subscriber.  
 
-Формат сообщения: **`$PTNT9,x,x.x,x.x*hh<CR><LF>`**  
+Format: **`$PTNT9,x,x.x,x.x*hh<CR><LF>`**  
 
-| Поле/параметр |	Описание |
-| :--- | :--- |
-| $	| Начало сообщения '$' |
-| PTNT | Система команд TNT |
-| 9 | Идентификатор сообщения |
-| Message ID | Идентификатор принятого сообщения \([см. п. 3.5](#35-%D0%B8%D0%B4%D0%B5%D0%BD%D1%82%D0%B8%D1%84%D0%B8%D0%BA%D0%B0%D1%82%D0%BE%D1%80%D1%8B-%D1%83%D0%B4%D0%B0%D0%BB%D0%B5%D0%BD%D0%BD%D1%8B%D1%85-%D0%B7%D0%B0%D0%BF%D1%80%D0%BE%D1%81%D0%BE%D0%B2-%D0%BA%D0%BE%D0%B4%D0%BE%D0%B2%D1%8B%D0%B5-%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B)\) |
-| SNR | Соотношение сигнал-помеха при приеме, дБ |
-| Dpl | Доплероское смещение, Гц |
-| * | Разделитель конт. суммы NMEA |
-| hh | Контрольная сумма NMEA |
-| \<CR\>\<LF\> | Конец сообщения |
+| № | Field/Parameter |	Description |
+| :--- | :--- | :--- |
+| | $	| Sentence start '$' |
+|  | P | Proprietary sentence |
+|  | TNT | Proprietery code ID |
+|  | 9 | Sentence ID |
+| 1 | Message ID | Received message ID \([see. p. 3.5]()\) |
+| 2 | MSR | Signal quality (Main lobe to side-peak ratio, dB |
+| 3 | Dpl | Doppler shift, Hz |
+|  | * | NMEA checksum separator |
+|  | hh	| NMEA checksum |
+|  | \<CR\>\<LF\> | end of sentence |
+
 
 
 ### 2.11. IC_D2H_REM_TOUT
-Превышен интервал ожидания удаленного абонента.  
+Remote device timeout exceeded.  
 
-Формат сообщения: **`$PTNTB,x*hh<CR><LF>`**  
+Format: **`$PTNTB,x*hh<CR><LF>`**  
 
-| Поле/параметр |	Описание |
-| :--- | :--- |
-| $	| Начало сообщения '$' |
-| PTNT | Система команд TNT |
-| B | Идентификатор сообщения |
-| Subscriber ID | Идентификатор запрошенного абонента |
-| * | Разделитель конт. суммы NMEA |
-| hh | Контрольная сумма NMEA |
-| \<CR\>\<LF\> | Конец сообщения |
+| № | Field/Parameter |	Description |
+| :--- | :--- | :--- |
+| | $	| Sentence start '$' |
+|  | P | Proprietary sentence |
+|  | TNT | Proprietery code ID |
+|  | B | Sentence ID |
+| 1 | Subscriber ID | Remote device identifier |
+|  | * | NMEA checksum separator |
+|  | hh	| NMEA checksum |
+|  | \<CR\>\<LF\> | end of sentence |
+
 
 ### 2.12. IC_D2H_REM_PONG
-Принят ответ удаленного абонента на запрос [REM_PING](#28-ic_h2d_rem_ping).  
+Remote device response received for request [REM_PING](#28-ic_h2d_rem_ping).  
 
-Формат сообщения: **`$PTNTC,x,x.x,x.x,x.x,x.x,x.x,x.x*hh<CR><LF>`**  
+Format: **`$PTNTC,x,x.x,x.x,x.x,x.x,x.x,x.x*hh<CR><LF>`**  
 
-| Поле/параметр |	Описание |
-| :--- | :--- |
-| $	| Начало сообщения '$' |
-| PTNT | Система команд TNT |
-| C | Идентификатор сообщения |
-| Subscriber ID | Идентификатор запрошенного абонента |
-| MSR | Соотношение сигнал-помеха при приеме, дБ |
-| Dpl | Доплеровское смещение, Гц |
-| pTime | Время распросранения сигнала до запрошенного абонента, сек |
-| Dist | Дистанция до запрошенного абонента, м (только для исполнения со встроенным датчиком глубины) |
-| Dpt | Собственная глубина, м (только для исполнения со встроенным датчиком глубины) |
-| Tmp | Собственная температура, °С (только для исполнения со встроенным датчиком глубины) |
-| * | Разделитель конт. суммы NMEA |
-| hh | Контрольная сумма NMEA |
-| \<CR\>\<LF\> | Конец сообщения |
+| № | Field/Parameter |	Description |
+| :--- | :--- | :--- |
+| | $	| Sentence start '$' |
+|  | P | Proprietary sentence |
+|  | TNT | Proprietery code ID |
+|  | C | Sentence ID |
+| 1 | Subscriber ID | Remote device ID |
+| 2 | MSR | Signal quality (Main lobe to side-peak ratio), dB |
+| 3 | Dpl | Doppler shift, Hz |
+| 4 | pTime | Signal propagation time to the requested device, sec |
+| 5 | Dist | Distance to the requested device, m (only for devices with built-in depth sensor) |
+| 6 | Dpt | Own depth, m (only for devices with built-in depth sensor) |
+| 7 | Tmp | Water temperature, °С (only for devices with built-in depth sensor) |
+|  | * | NMEA checksum separator |
+|  | hh	| NMEA checksum |
+|  | \<CR\>\<LF\> | end of sentence |
 
 
 ### 2.13. IC_D2H_REM_PONGEX
-Принят ответ удаленного абонента на запрос [REM_PINGEX](#29-ic_h2d_rem_pingex).  
+Remote device response received for request [REM_PINGEX](#29-ic_h2d_rem_pingex).  
 
-Формат сообщения: **`$PTNTD,x,x,x.x,x.x,x.x,x.x,x.x,x.x,x.x*hh<CR><LF>`**  
+Format: **`$PTNTD,x,x,x.x,x.x,x.x,x.x,x.x,x.x,x.x*hh<CR><LF>`**  
 
-| Поле/параметр |	Описание |
-| :--- | :--- |
-| $	| Начало сообщения '$' |
-| PTNT | Система команд TNT |
-| D	| Идентификатор сообщения
-| Subscriber ID	| Идентификатор запрошенного абонента |
-| Requested data ID	| Идентификатор запрошенного значения \([см.п. 3.5](#35-%D0%B8%D0%B4%D0%B5%D0%BD%D1%82%D0%B8%D1%84%D0%B8%D0%BA%D0%B0%D1%82%D0%BE%D1%80%D1%8B-%D1%83%D0%B4%D0%B0%D0%BB%D0%B5%D0%BD%D0%BD%D1%8B%D1%85-%D0%B7%D0%B0%D0%BF%D1%80%D0%BE%D1%81%D0%BE%D0%B2-%D0%BA%D0%BE%D0%B4%D0%BE%D0%B2%D1%8B%D0%B5-%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B)\) |
-| Requested data	| Запрошенное значение |
-| MSR	| Соотношение сигнал-помеха при приеме, дБ	| 
-| Dpl	| Доплеровское смещение, Гц	| 
-| pTime	| Время распросранения сигнала до запрошенного абонента, сек	| 
-| Dist	| Дистанция до запрошенного абонента, м (только для исполнения со встроенным датчиком глубины)	| 
-| Dpt	| Собственная глубина, м (только для исполнения со встроенным датчиком глубины)	| 
-| Tmp	| Собственная температура, °С (только для исполнения со встроенным датчиком глубины)	| 
-| * | Разделитель конт. суммы NMEA |
-| hh | Контрольная сумма NMEA |
-| \<CR\>\<LF\> | Конец сообщения |
+| № | Field/Parameter |	Description |
+| :--- | :--- | :--- |
+| | $	| Sentence start '$' |
+|  | P | Proprietary sentence |
+|  | TNT | Proprietery code ID |
+|  | D	| Sentence ID |
+| 1 | Subscriber ID | Remote device ID |
+| 2 | Requested data ID	| Requested parameter ID \([see p. 3.5]()\) |
+| 3 | Requested data | Received value |
+| 4 | MSR	| Signal quality (Main lobe to side-peak ratio), dB	| 
+| 5 | Dpl	| Doppler shift, Hz	| 
+| 6 | pTime	| Signal propagation time to the requested device, sec	| 
+| 7 | Dist	| Distance to the requested device, m (only for devices with built-in depth sensor)	| 
+| 8 | Dpt	| Own depth, m (only for devices with built-in depth sensor)	| 
+| 9 | Tmp	| Water temperature, °С (only for devices with built-in depth sensor)	| 
+|  | * | NMEA checksum separator |
+|  | hh	| NMEA checksum |
+|  | \<CR\>\<LF\> | end of sentence |
 
 
-## 3. Таблицы идентификаторов
- 
-### 3.1. Идентификаторы устройств
+## 3. Identifiers 
+### 3.1. Device type identifiers
 
-| Значение | Тип устройства | Описание |
+| Value | Device type | Description |
 | :--- | :--- | :--- | 
-| '0' | DEVICE_REDBASE | RedWave гидроакустический буй-ретранслятор |
-| '1' | DEVICE_REDNODE | RedWave навигационный приемник |
-| '2' | DEVICE_REDNAV | RedWave навигатор водолаза |
-| '3' | DEVICE_REDGTR | RedWave кодовый модем |
-| '10' | DEVICE_REDLINE | RedLine ГА модем |
-| '11' | DEVICE_NATRIX | Natrix ГА модем |
+| 0 | DEVICE_REDBASE | RedWave GIB |
+| 1 | DEVICE_REDNODE | RedWave navigation receiver |
+| 2 | DEVICE_REDNAV | RedWave diver's navigation receiver |
+| 3 | DEVICE_REDGTR | RedGTR code modem |
+| 10 | DEVICE_REDLINE | RedLine modem |
 
-### 3.2. Коды ошибок
+### 3.2. Error messages
 
-| Значение | Наименование | Описание |
+| Value | Name | Description |
 | :--- | :--- | :--- | 
-| '0' | NO_ERROR | Запрос принят |
-| '1' | INVALID_SYNTAX | Ошибка синтаксиса |
-| '2' | UNSUPPORTED | Команда не поддерживается |
-| '3' | TRANSMITTER_BUSY | Передатчик занят |
-| '4' | ARGUMENT_OUT_OF_RANGE | Аргумент/параметр вне диапазона допустимых значений |
-| '5' | INVALID_OPERATION | Невозможно выполнить операцию в данный момент |
-| '6' | UNKNOWN_FIELD_ID | Неизвестное/неподдерживаемое поле |
-| '7' | VALUE_UNAVAILIBLE | Запрошенное значение недоступно |
-| '8' | RECEIVER_BUSY | Приемник занят |
+| 0 | NO_ERROR | Request accepted |
+| 1 | INVALID_SYNTAX | Syntax error in incoming sentence |
+| 2 | UNSUPPORTED | Command is not supported |
+| 3 | TRANSMITTER_BUSY | Transmitter is busy |
+| 4 | ARGUMENT_OUT_OF_RANGE | One or more arguments in the sentence is out of range |
+| 5 | INVALID_OPERATION | Operation cannot be performed at the moment |
+| 6 | UNKNOWN_FIELD_ID | Unknown/unsupported field ID |
+| 7 | VALUE_UNAVAILIBLE | Requested value is not available at the moment |
+| 8 | RECEIVER_BUSY | Receiver if busy (waiting for a response of a remote device) |
     
-### 3.3. Идентификаторы локальных данных
+### 3.3. Local data identifier
 
-| Значение | Наименование | Описание |
+| Value | Name | Description |
 | :--- | :--- | :--- | 
-| ‘0’ | DEVICE_INFO | Информация об устройстве |
-| ‘1’ | MAX_REM_TOUT | Максимальное значение интервала ожидания удаленного ответа, мсек |
-| ‘2’ | MAX_SUBS | Максимально возможное число адресов абонентов |
-| ‘3’ | PTS_PRESSURE | Значение давления по показаниям встроенного датчика (при наличии такового), мБар |
-| ‘4’ | PTS_TEMP | Значение температуры воды по показаниям встроенного датчика (при наличии такового), °С |
-| ‘5’ | PTS_DEPTH | Глубина (расстояние от поверхности воды) по показаниям встроенного датчика (при наличии такового) |
-| ‘6’ | CORE_TEMP | Температура ядра процессора, °С |
-| ‘7’ | BAT_VOLTAGE | Напряжение питания, В |
-| ‘8’ | PRESSURE_RATING | Максмально допустимое внешнее давление, Бар |
-| ‘9’ | SURFACE_PRESSURE | Давление у поверхности воды, мБар |
-| ‘10’ | WATER_DENSITY | Плотность воды, кг/м3 |
-| ‘11’ | SALINITY | Соленость воды, PSU |
-| ‘12’ | SOUND_SPEED | Скорость звука в воде, м/с |
-| ‘13’ | GRAVITY_ACC | Ускорение свободного падения, м/с2 |
-| ‘14’ | Резерв |  |
-| ‘15’ | Резерв |  |
-| ‘16’ | Резерв |  |
-| ‘17’ | Резерв |  |
-| ‘18’ | Резерв |  |
-| ‘19’ | Резерв |  |
-| ‘20’ | SUB_ID | Адрес абонента |
+| 0 | DEVICE_INFO | Device information |
+| 1 | MAX_REM_TOUT | Max. timeout value for remote requests, msec |
+| 2 | MAX_SUBS | Max. number of addresses (device IDs) |
+| 3 | PTS_PRESSURE | External hydrostatic pressure, mBar |
+| 4 | PTS_TEMP | Water temperature, °С |
+| 5 | PTS_DEPTH | Depth, m |
+| 6 | CORE_TEMP | CPU core temperature, °С |
+| 7 | BAT_VOLTAGE | Supply voltage, V |
+| 8 | PRESSURE_RATING | Max. allowed external hydrostatic pressure, Bar |
+| 9 | SURFACE_PRESSURE | Pressure at the water surface, mBar |
+| 10 | WATER_DENSITY | Water density, kg/m<sup>3</sup> |
+| 11 | SALINITY | Water salinity, PSU |
+| 12 | SOUND_SPEED | Speed of sound, m/s |
+| 13 | GRAVITY_ACC | Gravity acceleration, m/s<sup>2</sup> |
+| 14 | Резерв |  |
+| 15 | Резерв |  |
+| 16 | Резерв |  |
+| 17 | Резерв |  |
+| 18 | Резерв |  |
+| 19 | Резерв |  |
+| 20 | SUB_ID | Device ID (address) |
 
-### 3.4. Идентификаторы операций
+### 3.4. Service actions identifiers
 
-| Значение | Наименование | Описание |
+| Value | Name | Description |
 | :--- | :--- | :--- | 
-| '0' | LOC_INVOKE_FLASH_WRITE | Сохранение настроечных полей во внутренний флеш
-| '1' | LOC_INVOKE_DPT_ZERO_ADJUST | Принять текущие показания давления за давление у поверхности воды
-| '2' | LOC_INVOKE_RESTART | 'Теплая' перезагрузка устройства
+| 0 | LOC_INVOKE_FLASH_WRITE | Save current settings in flash |
+| 1 | LOC_INVOKE_DPT_ZERO_ADJUST | Set current pressure as the pressure at the water surface |
+| 2 | LOC_INVOKE_RESTART | Hot system restart |
 
-### 3.5. Идентификаторы удаленных запросов (кодовые команды)
+### 3.5. Remote requests identifiers
 
-| Наименование | Код | Описание |
+| Name | Value | Description |
 | :--- | :--- | :--- | 
-| CDS_CMD_PING | 0 | Пинг-запрос |
-| CDS_CMD_PONG | 1 | Ответ на пинг |
-| CDS_CMD_DPT | 2 | Глубина |
-| CDS_CMD_TMP | 3 | Температура |
-| CDS_CMD_BAT | 4 | Напряжение батареи |
-| CDS_CMD_USR_0 | 5 | Пользовательская команда |
-| CDS_CMD_USR_1 | 6 | Пользовательская команда |
-| CDS_CMD_USR_2 | 7 | Пользовательская команда |
-| CDS_CMD_USR_3 | 8 | Пользовательская команда |
-| CDS_CMD_USR_4 | 9 | Пользовательская команда |
-| CDS_CMD_USR_5 | 10 | Пользовательская команда |
-| CDS_CMD_USR_6 | 11 | Пользовательская команда |
-| CDS_CMD_USR_7 | 12 | Пользовательская команда |
-| CDS_CMD_USR_8 | 13 | Пользовательская команда |
-| CDS_CMD_USR_9 | 14 | Пользовательская команда |
-| CDS_CMD_USR_10 | 15 | Пользовательская команда |
-| CDS_CMD_USR_11 | 16 | Пользовательская команда |
-| CDS_CMD_USR_12 | 17 | Пользовательская команда |
-| CDS_CMD_USR_13 | 18 | Пользовательская команда |
-| CDS_CMD_USR_14 | 19 | Пользовательская команда |
-| CDS_CMD_USR_15 | 20 | Пользовательская команда |
-| CDS_CMD_USR_16 | 21 | Пользовательская команда |
-| CDS_CMD_USR_17 | 22 | Пользовательская команда |
-| CDS_CMD_USR_18 | 23 | Пользовательская команда |
-| CDS_CMD_USR_19 | 24 | Пользовательская команда |
-| CDS_CMD_USR_20 | 25 | Пользовательская команда |
-| CDS_CMD_USR_21 | 26 | Пользовательская команда |
-| CDS_CMD_USR_22 | 27 | Пользовательская команда |
-| CDS_CMD_USR_23 | 28 | Пользовательская команда |
-| CDS_CMD_USR_24 | 29 | Пользовательская команда |
-| CDS_CMD_USR_25 | 30 | Пользовательская команда |
-| CDS_CMD_USR_26 | 31 | Пользовательская команда |
-| CDS_CMD_USR_27 | 32 | Пользовательская команда |
-| CDS_CMD_USR_28 | 33 | Пользовательская команда |
-| CDS_CMD_USR_29 | 34 | Пользовательская команда |
-| CDS_CMD_USR_30 | 35 | Пользовательская команда |
-| CDS_CMD_USR_31 | 36 | Пользовательская команда |
-| CDS_CMD_USR_32 | 37 | Пользовательская команда |
-| CDS_CMD_USR_33 | 38 | Пользовательская команда |
-| CDS_CMD_USR_34 | 39 | Пользовательская команда |
+| CDS_CMD_PING | 0 | Ping |
+| CDS_CMD_PONG | 1 | Pong |
+| CDS_CMD_DPT | 2 | Depth |
+| CDS_CMD_TMP | 3 | Temperature |
+| CDS_CMD_BAT | 4 | Supply voltage |
+| CDS_CMD_USR_0 | 5 | User command |
+| CDS_CMD_USR_1 | 6 | User command |
+| CDS_CMD_USR_2 | 7 | User command |
+| CDS_CMD_USR_3 | 8 | User command |
+| CDS_CMD_USR_4 | 9 | User command |
+| CDS_CMD_USR_5 | 10 | User command |
+| CDS_CMD_USR_6 | 11 | User command |
+| CDS_CMD_USR_7 | 12 | User command |
+| CDS_CMD_USR_8 | 13 | User command |
+| CDS_CMD_USR_9 | 14 | User command |
+| CDS_CMD_USR_10 | 15 | User command |
+| CDS_CMD_USR_11 | 16 | User command |
+| CDS_CMD_USR_12 | 17 | User command |
+| CDS_CMD_USR_13 | 18 | User command |
+| CDS_CMD_USR_14 | 19 | User command |
+| CDS_CMD_USR_15 | 20 | User command |
+| CDS_CMD_USR_16 | 21 | User command |
+| CDS_CMD_USR_17 | 22 | User command |
+| CDS_CMD_USR_18 | 23 | User command |
+| CDS_CMD_USR_19 | 24 | User command |
+| CDS_CMD_USR_20 | 25 | User command |
+| CDS_CMD_USR_21 | 26 | User command |
+| CDS_CMD_USR_22 | 27 | User command |
+| CDS_CMD_USR_23 | 28 | User command |
+| CDS_CMD_USR_24 | 29 | User command |
+| CDS_CMD_USR_25 | 30 | User command |
+| CDS_CMD_USR_26 | 31 | User command |
+| CDS_CMD_USR_27 | 32 | User command |
+| CDS_CMD_USR_28 | 33 | User command |
+| CDS_CMD_USR_29 | 34 | User command |
+| CDS_CMD_USR_30 | 35 | User command |
+| CDS_CMD_USR_31 | 36 | User command |
+| CDS_CMD_USR_32 | 37 | User command |
+| CDS_CMD_USR_33 | 38 | User command |
+| CDS_CMD_USR_34 | 39 | User command |
 
-[Вернутся к содержанию](#%D1%81%D0%BE%D0%B4%D0%B5%D1%80%D0%B6%D0%B0%D0%BD%D0%B8%D0%B5)
+____________
+[Back to contents](#contents)
