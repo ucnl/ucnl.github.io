@@ -5,7 +5,7 @@
 ## KEY FEATURES
 
 * **Extremely small size and weight**
-* **Operating range up to 3000 m**
+* **Operating range up to 3000<sup>[1](#footnote1)</sup> m**
 * **Reliable and noise-immune technology of digital broadband acoustic communication**
 * **Subscribers code division - up to 23 code channels**
 * **Low power consumption (Rx/Tx) 0.33/25 W**
@@ -34,9 +34,9 @@ working with autonomous and remote-controlled devices, as well as determining th
 | PARAMETER | VALUE |
 | :--- | :--- |
 | DIMENSIONS (Ф х h) | 64 х 128 mm |
-| WEIGHT<sup>[1](#footnote1)</sup> (dry) | 0.44 kg |
+| WEIGHT<sup>[2](#footnote2)</sup> (dry) | 0.44 kg |
 | DEPTH RATING | 300 m |
-| MAX. OPERATING RANGE<sup>[2](#footnote2)</sup> |	3000 m |
+| MAX. OPERATING RANGE<sup>[1](#footnote1)</sup> |	3000 m |
 | ACOUSIC SOURCE LEVEL |	170 dB re 1 μPa @ 1 m |
 | NOMINAL DEPTH ACCURACY | 0.1 m |
 | HORIZONTAL ANGLE OF ARRIVAL ESTIMATION ACCURACY (typ.)<sup>[3](#footnote3)</sup> | 1° |
@@ -57,9 +57,9 @@ working with autonomous and remote-controlled devices, as well as determining th
 | SUBSCRIBER DIVISION SCHEME (commands/subscribers) | 32/23 |
   
 ________________
-<a name="footnote1"><sup>1</sup></a> Withoud cable and interface converter  
-<a name="footnote2"><sup>2</sup></a> A parameter that determines the maximum range at which a signal can be received, based on electro-acoustic parameters of the transmitter and receiver, spatial decrease in the intensity of sound energy, attenuation in the medium and the acoustic noise level.  
-<a name="footnote3"><sup>3</sup></a> Obtained under laboratory conditions in a static test    
-<a name="footnote4"><sup>4</sup></a> Considering 1 request in 3 seconds  
+<a name="footnote1"><sup>1</sup></a> A parameter that determines the maximum range at which a signal can be received, based on electro-acoustic parameters of the transmitter and receiver, spatial decrease in the intensity of sound energy, attenuation in the medium and the acoustic noise level.  
+<a name="footnote2"><sup>2</sup></a> Withoud cable and interface converter.  
+<a name="footnote3"><sup>3</sup></a> Obtained under laboratory conditions in a static test.  
+<a name="footnote4"><sup>4</sup></a> Considering 1 request in 3 seconds.  
 <a name="footnote5"><sup>5</sup></a> With additional cable and interface converter [Bat&Link Box](Bat_n_link_box_Specification_ru.md). Can be increased by a request up to 20 m.  
 
