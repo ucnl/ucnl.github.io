@@ -31,7 +31,7 @@ transmission, where dimensions and weight are the bottleneck.
 | DIMENSIONS (Ф х h)                     | 40 x 45 mm |
 | WEIGHT (dry)                           | 0.16 kg |
 | DEPTH RATING                           | 300 m |
-| MAX OPERATING RANGE                    | 1000 m |
+| MAX OPERATING RANGE<sup>[1](#footnote1),[2](#footnote2)</sup> | 1000 m |
 | PAYLOAD DATA RATE                      | 78 bit/s |
 | POWER CONSUMPTION Rx/Tx                | 0.33/6 W |
 | POWER SUPPLY<sup>[4](#footnote4)</sup> | 5 .. 12 V |
