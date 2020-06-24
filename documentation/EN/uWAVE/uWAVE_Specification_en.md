@@ -49,7 +49,7 @@ transmission, where dimensions and weight are the bottleneck.
 | COMMAND MODE                           | 16 predefined messages (9 for user applications) |
   
 ________________
-<a name="footnote1"><sup>1</sup></a> A parameter that determines the maximum range at which a signal can be received based on the electro-acoustic parameters of the transmitter and receiver, spatial decrease in the intensity of sound energy, attenuation in the medium and level of hydroacoustic interference.  
+<a name="footnote1"><sup>1</sup></a> A parameter that determines the maximum range at which a signal can be received based on the electro-acoustic parameters of the transmitter and receiver, spatial decrease in the intensity of sound energy, attenuation in the medium and acoustic noise level.  
 <a name="footnote2"><sup>2</sup></a> Based on the test results in a shallow water body, using the **uWAVE** devices, the practical communication range **1092 m** was obtained.  
 <a name="footnote3"><sup>3</sup></a> According to open sources, July 2018.  
 <a name="footnote4"><sup>4</sup></a> Maximum output power can be achieved with 12V power supply.  
