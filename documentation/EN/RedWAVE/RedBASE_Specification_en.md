@@ -4,7 +4,7 @@
 
 ## KEY FEATURES
 
-* **Simultaneous positioning for an unlimited number of devices [RedNODE] (RedNODE_Specification_en.md) / [RedNAV] (RedNAV_Specification_en.md)**
+* **Simultaneous positioning for an unlimited number of devices [RedNODE](RedNODE_Specification_en.md) / [RedNAV](RedNAV_Specification_en.md)**
 * **High-performance combined GPS/GLONASS receiver**
 * **Strong, durable, easily visible housing**
 * **Long battery life up to 24 hours**
@@ -13,7 +13,7 @@
 ## DESCRIPTION
 
 GNSS-equipped sonobuoy **RedBASE** as part of a set of four such devices forms a floating long navigation base,
-which supports the simultaneous positioning of an unlimited number of navigation receivers [RedNODE](RedNODE_Specification_ru.md)/[RedNAV] (RedNAV_Specification_en.md).
+which supports the simultaneous positioning of an unlimited number of navigation receivers [RedNODE](RedNODE_Specification_ru.md)/[RedNAV](RedNAV_Specification_en.md).
 The device is made in the form of a plastic cylinder with dimensions Ф150х600 mm with a hydroacoustic transmitting antenna on the cable.
 
 It has positive buoyancy, has a load-carrying eye for anchoring.
@@ -46,6 +46,6 @@ electro-acoustic parameters of the transmitter and receiver, spatial decrease in
 and the acoustic noise level.  
 <a name="footnote2"><sup>2</sup></a> Buoys are located on the surface of the water as a convex polygon so that the distance from each buoy
 before any other did not exceed the specified value.  
-<a name="footnote3"><sup>3</sup></a> The immersion depth of the navigation receivers should not exceed the size of the navigation base.
+<a name="footnote3"><sup>3</sup></a> The immersion depth of the navigation receivers should not exceed the size of the navigation base.  
 
 
