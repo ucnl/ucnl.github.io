@@ -1,6 +1,6 @@
 | ![logo](https://ucnl.github.io/documentation/sm_logo.png) | ![logo](https://ucnl.github.io/documentation/def_modem_black.png) |
 | :---: | ---: |
-| [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **uWAVE Max** underwater acoustic modem specifications |
+| [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **uWAVE Max** underwater acoustic modem <br/> Device specifications |
 
 ## KEY FEATURES
 
@@ -18,12 +18,12 @@
 
 Using **uWAVE Max**, the user can:
 
-* transfer arbitrary user data between **uWAVE USBL Modem**, **uWAVE Max** and **uWAVE modems** in any combination;
+* transfer arbitrary user data between [uWAVE USBL Modem](uWAVE_USBL_Modem_Specification_en.md), **uWAVE Max** and [uWAVE modems](uWAVE_Specification_en.md) in any combination;
 * transmit up to 9 short code telecontrol user commands;
-* request from remote modems **uWAVE USBL Modem**, **uWAVE Max** and **uWAVE** their depth, temperature and voltage;
+* request from remote modems [uWAVE USBL Modem](uWAVE_USBL_Modem_Specification_en.md), **uWAVE Max** and [uWAVE modems](uWAVE_Specification_en.md) their depth, temperature and voltage;
 * measure own depth, temperature and voltage;
 
-**uWAVE** family devices use a simple open NMEA-like configuration protocol, and the supplied open-source [uWAVELib](https://github.com/ucnl/uWAVELib) library allows 
+**uWAVE** family devices use a simple open NMEA-like configuration [protocol](uWAVE_Protocol_Specification_en.md), and the supplied open-source [uWAVELib](https://github.com/ucnl/uWAVELib) library allows 
 the fastest and easiest integration of devices into user solutions.
 
 ## TECHNICAL SPECIFICATIONS
@@ -45,7 +45,7 @@ the fastest and easiest integration of devices into user solutions.
 | RATED START-UP TIME                    | 100 ms |
 | OPERATING TEMPERATURE RANGE            | -5 .. 50 °C |
 | INTERFACE<sup>[4](#footnote4)</sup>    | UART 9600 bit/s |
-| CONFIGURATION PROTOCOL                 | NMEA 0183 PUWV |
+| CONFIGURATION PROTOCOL                 | NMEA0183 [PUWV](uWAVE_Protocol_Specification_en.md) |
 | CABLE LENGTH<sup>[4](#footnote4)</sup> | 0.5 m |
 | SUBSCRIBERS CODE DIVISION              | 20 code channels |
 | COMMAND MODE                           | 16 predefined messages (9 for user applications) |
