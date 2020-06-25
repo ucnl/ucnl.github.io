@@ -14,10 +14,10 @@
 
 ## DESCRIPTION
 
-**Zima-B** - direction-finding station of the ultrashort-baseline system [Zima USBL](Zima_DataBrief_ru.md).
+**Zima-B** - direction-finding station of the ultrashort-baseline system [Zima USBL](Zima_DataBrief_en.md).
 
 The device uses a fixed-length signal with code division to provide direction and distance estimation, as well as transmitting telecontrol 
-commands to the responder-beacons [Zima-R](Zima_R_Specification_ru.md) and receiving telemetry data from them.
+commands to the responder-beacons [Zima-R](Zima_R_Specification_en.md) and receiving telemetry data from them.
 
 When using an external **GNSS**-receiver  and a Compass, the device calculates the absolute coordinates of the responder-beacons.
 Sequential transmission of up to 32 control commands for 23 transponder beacons is provided.
@@ -61,5 +61,5 @@ ________________
 <a name="footnote2"><sup>2</sup></a> Withoud cable and interface converter.  
 <a name="footnote3"><sup>3</sup></a> Obtained under laboratory conditions in a static test.  
 <a name="footnote4"><sup>4</sup></a> Considering 1 request in 3 seconds.  
-<a name="footnote5"><sup>5</sup></a> With additional cable and interface converter [Bat&Link Box](Bat_n_link_box_Specification_ru.md). Can be increased by a request up to 20 m.  
+<a name="footnote5"><sup>5</sup></a> With additional cable and interface converter [Bat&Link Box](Bat_n_link_box_Specification_en.md). Can be increased by a request up to 20 m.  
 
