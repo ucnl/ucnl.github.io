@@ -2,7 +2,7 @@
 | :---: | ---: |
 | [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **Zima-R OEM** - **Zima USBL** responder-beacon <br/> Device specification |
 
-## КЛЮЧЕВЫЕ ОСОБЕННОСТИ
+## KEY FEATURES
 
 * **Extremely small size and weight**
 * **Operating range up to 3000<sup>[1](#footnote1)</sup> m**
