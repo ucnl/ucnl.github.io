@@ -1,8 +1,7 @@
 | ![logo](https://ucnl.github.io/documentation/sm_logo.png) |  |
 | :---: | ---: |
 | [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **RedGTR** - code communication underwater acoustic modem <br/> Communication protocol specification |
-  
-# THIS DOCUMENT IS UNDER CONSTRUCTION  
+ 
   
 # RedGTR <br/> communication protocol specification
 
