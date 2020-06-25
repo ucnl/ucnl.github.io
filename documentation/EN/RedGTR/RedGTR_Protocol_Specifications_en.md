@@ -10,35 +10,35 @@
 
 ## Contents
 
-- [1. Introduction]()
-  - [1.1. Physical layer]()
-  - [1.2. NMEA0183 Protocol standard]()
-- [2. TNT Command System for RedLINE modems]()
-  - [2.1. IC_D2H_ACK]()
-  - [2.2. IC_H2D_LOC_DATA_GET]()
-  - [2.3. IC_H2D_LOC_DATA_SET]()
-  - [2.4. IC_D2H_LOC_DATA_VAL]()
-  - [2.5. IC_D2H_DEV_INFO]()
-  - [2.6. IC_H2D_ACT_INVOKE]()
-  - [2.7. IC_H2D_REM_SEND]()
-  - [2.8. IC_H2D_REM_PING]()
-  - [2.9. IC_H2D_REM_PINGEX]()
-  - [2.10. IC_D2H_REM_RECEIVED]()
-  - [2.11. IC_D2H_REM_TOUT]()
-  - [2.12. IC_D2H_REM_PONG]()
-  - [2.13. IC_D2H_REM_PONGEX]()
-- [3. Identifiers]()
-  - [3.1. Device type identifiers]()
-  - [3.2. Error messages]()
-  - [3.3. Local data identifier]()
-  - [3.4. Service actions identifiers]()
-  - [3.5. Remote requests identifiers]()
+- [1. Introduction](#1-introduction)
+  - [1.1. Physical layer](#11-physical-layer)
+  - [1.2. NMEA0183 Protocol standard](#12-nmea0183-protocol-standard)
+- [2. TNT Command System for RedGTR modems](#2-tnt-command-system-for-redline-modems)
+  - [2.1. IC_D2H_ACK](#21-ic_d2h_ack)
+  - [2.2. IC_H2D_LOC_DATA_GET](#22-ic_h2d_loc_data_get)
+  - [2.3. IC_H2D_LOC_DATA_SET](#23-ic_h2d_loc_data_set)
+  - [2.4. IC_D2H_LOC_DATA_VAL](#24-ic_d2h_loc_data_val)
+  - [2.5. IC_D2H_DEV_INFO](#25-ic_d2h_dev_info)
+  - [2.6. IC_H2D_ACT_INVOKE](#26-ic_h2d_act_invoke)
+  - [2.7. IC_H2D_REM_SEND](#27-ic_h2d_rem_send)
+  - [2.8. IC_H2D_REM_PING](#28-ic_h2d_rem_ping)
+  - [2.9. IC_H2D_REM_PINGEX](#29-ic_h2d_rem_pingex)
+  - [2.10. IC_D2H_REM_RECEIVED](#210-ic_d2h_rem_received)
+  - [2.11. IC_D2H_REM_TOUT](#211-ic_d2h_rem_tout)
+  - [2.12. IC_D2H_REM_PONG](#212-ic_d2h_rem_pong)
+  - [2.13. IC_D2H_REM_PONGEX](#213-ic_d2h_rem_pongex)
+- [3. Identifiers](#3-identifiers)
+  - [3.1. Device type identifiers](#31-device-type-identifiers)
+  - [3.2. Error messages](#32-error-messages)
+  - [3.3. Local data identifier](#33-local-data-identifier)
+  - [3.4. Service actions identifiers](#34-service-actions-identifiers)
+  - [3.5. Remote requests identifiers](#35-remote-requests-identifiers)
 
 <div style="page-break-after: always;"></div>
 
 ## 1. Introduction
 ### 1.1. Physical layer
-Гидроакустические модемы [RedGTR](RedGTR_Specification_ru.md)  underwater acoustic modems support data pairing using the RS-232 physical layer standard for asynchronous interface (UART) with a 3.3V data line voltage. The connection is made using a four-wire cable with Tx (transmitter), Rx (receiver), Vcc (power) and GND (ground) wires. Without the use of additional repeaters and interface converters, the maximum cable length, for which the correct operation of the interface is guaranteed, is no more than 2 meters.
+[RedGTR](RedGTR_Specification_ru.md) underwater acoustic modems support data pairing using the RS-232 physical layer standard for asynchronous interface (UART) with a 3.3V data line voltage. The connection is made using a four-wire cable with Tx (transmitter), Rx (receiver), Vcc (power) and GND (ground) wires. Without the use of additional repeaters and interface converters, the maximum cable length, for which the correct operation of the interface is guaranteed, is no more than 2 meters.
 
 Default port settings<sup>[1](#footnote1)</sup>:  
 > _Baudrate: 9600 bit/s_  
@@ -69,7 +69,7 @@ ________
 
 <div style="page-break-after: always;"></div>
 
-## 2. TNT Command System for RedLINE modems
+## 2. TNT Command System for RedGTR modems
 The **D2H** prefix in the message name means that it is transmitted from the device (Device) to the host system (Host).
 The **H2D** prefix in the message name means that it is transmitted from the host system to the device.
 
@@ -84,7 +84,7 @@ Format: **`$PTNT0,x*hh<CR><LF>`**
 |  | P | Proprietary sentence |
 |  | TNT | Proprietery code ID |
 |  | 0	| Sentence ID |
-| 1 | errCode	| Error code \([see 3.2.](#32-error-codes)\) |
+| 1 | errCode	| Error code \([see 3.2.](#32-error-messages)\) |
 | | *	| NMEA checksum separator |
 | | hh	| NMEA checksum |
 | | \<CR\>\<LF\> | end of sentence |
@@ -107,7 +107,7 @@ Format: **`$PTNT4,xx,00*hh<CR><LF>`**
 | | \<CR\>\<LF\> | end of sentence |
 
 ### 2.3. IC_H2D_LOC_DATA_SET
-Setting a value of a local parameter. \(see. [p. 3.3]()\).  
+Setting a value of a local parameter \([see 3.3.](#33-local-data-identifiers)\).  
 
 Format:  **`$PTNT7,xx,00*hh<CR><LF>`**  
 
@@ -117,7 +117,7 @@ Format:  **`$PTNT7,xx,00*hh<CR><LF>`**
 |  | P | Proprietary sentence |
 |  | TNT | Proprietery code ID |
 | | 7 | Sentence ID |
-| 1 | Requested data ID | Local parameter identifier \(see. [p. 3.3.]()\) |
+| 1 | Requested data ID | Local parameter identifier \([see 3.3.](#33-local-data-identifiers)\) |
 | 2 | Reserved | Reserved, should always be '00' |
 | | *	| NMEA checksum separator |
 | | hh	| NMEA checksum |
@@ -135,14 +135,14 @@ Format: **`$PTNT5,x,x<CR><LF>`**
 |  | P | Proprietary sentence |
 |  | TNT | Proprietery code ID |
 |  | 5 | Sentence ID | 
-| 1 | Requested data ID | Parameter ID \([see. 3.3.](#33-local-data-identifiers)\) | 
+| 1 | Requested data ID | Parameter ID \([see 3.3.](#33-local-data-identifiers)\) | 
 | 2 | Value | Queried value | 
 | | *	| NMEA checksum separator |
 | | hh	| NMEA checksum |
 | | \<CR\>\<LF\> | end of sentence |
 
 ### 2.5. IC_D2H_DEV_INFO
-Device's responce to [IC_D2H_LOC_DATA_GET](#22-ic_h2d_loc_data_get), if the queried parameter ID = [LOC_DATA_DEV_INFO](#42-local-data-identifiers).
+Device's responce to [IC_D2H_LOC_DATA_GET](#22-ic_h2d_loc_data_get), if the queried parameter ID = [LOC_DATA_DEV_INFO](#33-local-data-identifiers).
 
 Format: **`$PTNT!,c--c,x,x,c--c,x,c--c<CR><LF>`**  
 
@@ -156,7 +156,7 @@ Format: **`$PTNT!,c--c,x,x,c--c,x,c--c<CR><LF>`**
 | 2 | System version | System version (BCD) |
 | 3 | Communication subsystem moniker | Communication subsystem name |
 | 4 | Communication subsystem version | Communication subsystem version (BCD) |
-| 5 | Device type | Device type \([see 3.1.](#31-device-types)\) |
+| 5 | Device type | Device type \([see 3.1.](#31-device-type-identifiers)\) |
 | 6 | Serial number | Serial number |
 | | *	| NMEA checksum separator |
 | | hh	| NMEA checksum |
@@ -173,7 +173,7 @@ Format:  **`$PTNT6,xx,00*hh<CR><LF>`**
 |  | P | Proprietary sentence |
 |  | TNT | Proprietery code ID |
 |  | 6 | Идентификатор сообщения |
-| 1 | Action ID | Service action ID \([see. p. 3.4.]()\) |
+| 1 | Action ID | Service action ID \([see 3.4.](#34-service-actions-identifiers)\) |
 | 2 | Reserved | Reserved, should always be '00' |
 |  | * | NMEA checksum separator |
 |  | hh	| NMEA checksum |
@@ -191,7 +191,7 @@ Format: **`$PTNT8,x,x*hh<CR><LF>`**
 |  | TNT | Proprietery code ID |
 | 8 | Sentence ID |
 | 1 | Subscriber ID | Remote device ID (from 0 to 25. 25 is broadcast address) |
-| 2 | Message ID | Code message ID, \([see. p. 3.5]()\) |
+| 2 | Message ID | Code message ID \([see 3.5.](#35-remote-requests-identifiers)\) |
 |  | * | NMEA checksum separator |
 |  | hh	| NMEA checksum |
 |  | \<CR\>\<LF\> | end of sentence |
@@ -225,7 +225,7 @@ Format: **`$PTNTE,x,x*hh<CR><LF>`**
 |  | TNT | Proprietery code ID |
 |  | E | Sentence ID | 
 | 1 | Subscriber ID | Remote device address from 0 to 24 |
-| 2 | Message ID | Requested parameter identifier \([see. p. 3.5]()\) |
+| 2 | Message ID | Requested parameter identifier \([see 3.5.](#35-remote-requests-identifiers)\) |
 | 3 | Timeout | Max. timeout in msec (integer value) |
 |  | * | NMEA checksum separator |
 |  | hh	| NMEA checksum |
@@ -242,7 +242,7 @@ Format: **`$PTNT9,x,x.x,x.x*hh<CR><LF>`**
 |  | P | Proprietary sentence |
 |  | TNT | Proprietery code ID |
 |  | 9 | Sentence ID |
-| 1 | Message ID | Received message ID \([see. p. 3.5]()\) |
+| 1 | Message ID | Received message ID \([see 3.5.](#35-remote-requests-identifiers)\) |
 | 2 | MSR | Signal quality (Main lobe to side-peak ratio, dB |
 | 3 | Dpl | Doppler shift, Hz |
 |  | * | NMEA checksum separator |
@@ -303,7 +303,7 @@ Format: **`$PTNTD,x,x,x.x,x.x,x.x,x.x,x.x,x.x,x.x*hh<CR><LF>`**
 |  | TNT | Proprietery code ID |
 |  | D	| Sentence ID |
 | 1 | Subscriber ID | Remote device ID |
-| 2 | Requested data ID	| Requested parameter ID \([see p. 3.5]()\) |
+| 2 | Requested data ID	| Requested parameter ID \([see 3.5.](#35-remote-requests-identifiers)\) |
 | 3 | Requested data | Received value |
 | 4 | MSR	| Signal quality (Main lobe to side-peak ratio), dB	| 
 | 5 | Dpl	| Doppler shift, Hz	| 
@@ -341,7 +341,7 @@ Format: **`$PTNTD,x,x,x.x,x.x,x.x,x.x,x.x,x.x,x.x*hh<CR><LF>`**
 | 7 | VALUE_UNAVAILIBLE | Requested value is not available at the moment |
 | 8 | RECEIVER_BUSY | Receiver if busy (waiting for a response of a remote device) |
     
-### 3.3. Local data identifier
+### 3.3. Local data identifiers
 
 | Value | Name | Description |
 | :--- | :--- | :--- | 
@@ -359,12 +359,12 @@ Format: **`$PTNTD,x,x,x.x,x.x,x.x,x.x,x.x,x.x,x.x*hh<CR><LF>`**
 | 11 | SALINITY | Water salinity, PSU |
 | 12 | SOUND_SPEED | Speed of sound, m/s |
 | 13 | GRAVITY_ACC | Gravity acceleration, m/s<sup>2</sup> |
-| 14 | Резерв |  |
-| 15 | Резерв |  |
-| 16 | Резерв |  |
-| 17 | Резерв |  |
-| 18 | Резерв |  |
-| 19 | Резерв |  |
+| 14 | Reserved |  |
+| 15 | Reserved |  |
+| 16 | Reserved |  |
+| 17 | Reserved |  |
+| 18 | Reserved |  |
+| 19 | Reserved |  |
 | 20 | SUB_ID | Device ID (address) |
 
 ### 3.4. Service actions identifiers
