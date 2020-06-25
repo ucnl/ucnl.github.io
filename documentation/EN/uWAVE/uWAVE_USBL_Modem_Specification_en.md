@@ -27,7 +27,7 @@ Using **uWAVE USBL Modems**, the user can:
 * request from remote modems **uWAVE USBL Modem**, [uWAVE Max](uWAVE_Max_Specification_en.md) and [uWAVE modems](uWAVE_Specification_en.md) their depth, temperature and voltage;
 * measure own depth, temperature and voltage;
 
-**uWAVE** family devices use a simple open NMEA-like configuration protocol, and the supplied open-source [**uWAVELib**](https://github.com/ucnl/uWAVELib) library allows for the fastest and easiest integration of devices into user solutions.
+**uWAVE** family devices use a simple open NMEA-like configuration [protocol](uWAVE_Protocol_Specification_en.md), and the supplied open-source [**uWAVELib**](https://github.com/ucnl/uWAVELib) library allows for the fastest and easiest integration of devices into user solutions.
 
 <div style="page-break-after: always;"></div>
 
@@ -51,7 +51,7 @@ Using **uWAVE USBL Modems**, the user can:
 | RATED STARTUP TIME | 100 msec |
 | WORKING TEMPERATURE RANGE | -5 .. 50 °C |
 | INTERFACE<sup>[4](#footnote4)</sup> | UART 9600 bit/s |
-| INTERFACING PROTOCOL | NMEA 0183 PUWV |
+| INTERFACING PROTOCOL | NMEA0183 [PUWV](uWAVE_Protocol_Specification_en.md) |
 | CABLE LENGTH<sup>[4](#footnote4)</sup> | 1 m |
 | SUBSCRIBERS CODE DIVISION | 20 code channels |
 | COMMAND MODE | 16 predefined code messages (9 for user applications) |
