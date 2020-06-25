@@ -12,19 +12,17 @@
 * **Low power consumption (Rx/Tx) 0.33/25 W**
 * **Patented technology of simultaneous positioning**
 
-## ОПИСАНИЕ
+## DESCRIPTION
 
-**Zima-R OEM** - маяк-ответчик ультракороткобазисной навигационной системы [Zima USBL](Zima_DataBrief_ru.md).  
+**Zima-R OEM** is the [Zima USBL](Zima_DataBrief_ru.md) ultrashort base-line navigation system responder-beacon.
 
-Устройство предназначено для получения команд телеуправления с базовой станции [Zima-B](Zima_B_Specification_ru.md) - базовая станция пеленгования, передачи телеметрической информации на базовую станцию [Zima-B](Zima_B_Specification_ru.md) - базовая станция пеленгования и для определения направления, как на маяк (для базовой станции) так и на базовую станцию (для маяка) и взаимного 
-определения дистанции.  
+The device is designed to receive telecontrol commands from the [Zima-B](Zima_B_Specification_en.md) base station - the direction-finding station, transmitting telemetry information to the [Zima-B](Zima_B_Specification_en.md) base station - the direction-finding base station and to determine the direction to the responder-beacon (for the base station) and the base station (for responder-beacon) and mutual estimation of distance.
 
-Устройство поставляется в виде сборки печатных плат для монтажа внутри нормобарического корпуса пользователя и комплектуется 
-гидроакустической антенной на глубины до 1000 метров.  
+The device is supplied in the form of an assembly of printed circuit boards for installation inside the user's normobaric enclosure and is equipped with a transducer with **1000** meters depth rating.
 
-Возможно задание глубины как пользовательской системой, так и работа с отдельно поставляемыми датчиками.  
+Depth value should be set from a user system.
 
-Предельно малый размер, низкое энергопотребление и простота использования делают пеленгационную систему [Zima USBL](Zima_DataBrief_ru.md) идеальным решением для работы с автономными и телеуправляемыми аппаратами а так же определения относительного местоположения водолазов.
+Extremely small size, low power consumption and ease of use make the [Zima USBL](Zima_DataBrief_ru.md) system an ideal solution for working with autonomous and telecontrolled devices.
 
 <div style="page-break-after: always;"></div>
 
