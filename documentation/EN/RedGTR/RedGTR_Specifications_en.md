@@ -47,7 +47,7 @@ An ideal solution for controlling autonomous underwater devices.
 | RATED STARTUP TIME | 100 msec |
 | WORKING TEMPERATURE RAGE | -5 .. 50 °C |
 | INTERFACE<sup>[4](#footnote4)</sup> | UART 9600 bit/s |
-| CONFIGURATION PROTOCOL | NMEA0183 [PTNT](RedGTR_Protocol_Specification_en.md) |
+| CONFIGURATION PROTOCOL | NMEA0183 [PTNT](RedGTR_Protocol_Specifications_en.md) |
 | CABLE LENGTH<sup>[4](#footnote4)</sup> | 0.5 m |
 | SUBSCRIBER'S DIVISION | 25 code channels |
 | NUMBER OF CODE MESSAGES | 40 |
