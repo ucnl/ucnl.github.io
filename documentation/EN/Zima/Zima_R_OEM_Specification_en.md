@@ -4,14 +4,13 @@
 
 ## КЛЮЧЕВЫЕ ОСОБЕННОСТИ
 
-* **Предельно малые габариты и масса**
-* **Дальность связи до 8000<sup>[1](#footnote1)</sup> метров**
-* **Максимальная глубина погружения антенны до 1000 м**
-* **Высоконадежная цифровая гидроакустическая связь устойчивая к многолучевому распространению**
-* **Кодовое разделение абонентов - до 23 изолирующих адресов**
-* **Высоконадежная цифровая гидроакустическая связь**
-* **Низкое энергопотребление (Rx/Tx) 0.33/25 Вт**
-* **Патентованная технология одновременной навигации**
+* **Extremely small size and weight**
+* **Operating range up to 3000<sup>[1](#footnote1)</sup> m**
+* **For depths up to 1000<sup>[2](#footnote2)</sup> m**
+* **Reliable and noise-immune technology of digital broadband acoustic communication**
+* **Subscribers code division - up to 23 code channels**
+* **Low power consumption (Rx/Tx) 0.33/25 W**
+* **Patented technology of simultaneous positioning**
 
 ## ОПИСАНИЕ
 
@@ -29,35 +28,34 @@
 
 <div style="page-break-after: always;"></div>
 
-## ТЕХНИЧЕСКИЕ ХАРАКТЕРИСТИКИ
+## TECHNICAL SPECIFICATIONS
 
-| ПАРАМЕТР | ЗНАЧЕНИЕ |
+| PARAMETER | VALUE |
 | :--- | :--- |
-| РАЗМЕР (Ф х h, маяк) | Ф52 х 55 мм |
-| РАЗМЕР (Ф х h, антенна без учета кабеля) | Ф64 х 61 мм |
-| ВЕС (сухой, маяк) | 0.12 кг |
-| ВЕС (сухой, антенна) | 0.35 кг |
-| МАКСИМАЛЬНАЯ ГЛУБИНА<sup>[2](#footnote2)</sup> | 1000 м |
-| МАКСИМАЛЬНАЯ ДАЛЬНОСТЬ АКУСТИЧЕСКОЙ СВЯЗИ<sup>[1](#footnote1)</sup> | 8000 м |
-| ПОЛОСА ЧАСТОТ | 6 .. 18 кГц |
-| НАПРЯЖЕНИЕ ПИТАНИЯ | 12 В |
-| НАПРЯЖЕНИЕ ЛИНИЙ ДАННЫХ | 0 .. 3.3 В |
+| DIMENSIONS (Ф х h, PCBs) | Ф52 х 55 mm |
+| РАЗМЕР (Ф х h, transducer) | Ф64 х 61 mm |
+| WEIGHT (PCBs) | 0.12 kg |
+| WEIGHT (transducer) | 0.35 kg |
+| DEPTH RATING<sup>[2](#footnote2)</sup> | 1000 m |
+| MAX. OPERATING RANGE<sup>[1](#footnote1)</sup> | 3000 m |
+| ACOUSIC SOURCE LEVEL |	170 dB re 1 μPa @ 1 m |
+| BANDWIDTH | 6 .. 18 kHz |
 | BIT ERROR RATE | 10<sup>-6</sup> |
-| SNR<sup>[3](#footnote3)</sup> | -3 дБ |
-| МАКСИМАЛЬНАЯ ОТНОСИТЕЛЬНАЯ СКОРОСТЬ | +/- 2 м/с |
-| ВРЕМЯ СТАРТА | 100 мсек |
-| ДИАПАЗОН РАБОЧИХ ТЕМПЕРАТУР | -5 .. 50 °C |
-| ИНТЕРФЕЙС СОПРЯЖЕНИЯ<sup>[4](#footnote4)</sup> | UART 9600 бит/с |
-| ПРОТОКОЛ СОПРЯЖЕНИЯ | NMEA 0183 [PZMA](Zima_Protocol_Specification_ru.md) |
-| ДЛИНА КАБЕЛЯ<sup>[4](#footnote4)</sup> | 0.5 м |
-| СХЕМА РАЗДЕЛЕНИЯ АБОНЕНТОВ (КОМАНД/АБОНЕНТОВ) | 32/23 |
-| НОМИНАЛЬНАЯ ТОЧНОСТЬ ОПРЕДЕЛЕНИЯ ГОРИЗОНТАЛЬНОГО УГЛА<sup>[5](#footnote5)</sup> | 1˚ |
-| НОМИНАЛЬНАЯ ТОЧНОСТЬ ОПРЕДЕЛЕНИЯ ДИСТАНЦИИ<sup>[5](#footnote5)</sup> | 0.3 м |
+| SNR<sup>[3](#footnote3)</sup> | -3 dB |
+| MAX. RELATIVE VELOCITY | +/- 2 m/s |
+| RATED STARTUP TIME | 100 msec |
+| SUPPLY VOLTAGE | 12 V |
+| DATA LINES VOLTAGE | 0 .. 3.3 V |
+| WORKING TEMPERATURE RANGE | -5 .. 50 °C |
+| INTERFACE | UART 9600 bit/s |
+| PROTOCOL | NMEA 0183 [PZMA](Zima_Protocol_Specification_en.md) |
+| CABLE LENGTH<sup>[4](#footnote4)</sup> | 1 m |
+| SUBSCRIBER DIVISION SCHEME (commands/subscribers) | 32/23 |
+| HORIZONTAL ANGLE OF ARRIVAL ESTIMATION ACCURACY (typ.)<sup>[3](#footnote3)</sup> | 1° |
+| NOMINAL DISTANCE ESTIMATION ACCURACY<sup>[3](#footnote3)</sup> | 0.3 m |
   
 ________________
-<a name="footnote1"><sup>1</sup></a> Параметр, определяющий максимальную дальность, на которой возможен прием сигнала, исходя из электроакустических параметров передатчика и приемника, пространственного убывания интенсивности звуковой энергии, затухания в среде и уровня гидроакустических помех.  
-<a name="footnote2"><sup>2</sup></a> Указана максимальная глубина погружения гидроакустической антенны.  
-<a name="footnote3"><sup>3</sup></a> Значение получено без учета эффекта многолучевого распространения в лабораторном статическом эксперименте.  
-<a name="footnote4"><sup>4</sup></a> Значение может быть изменено по запросу.  
-<a name="footnote5"><sup>5</sup></a> Получено в лабораторных условиях в статическом эксперименте.  
-
+<a name="footnote1"><sup>1</sup></a> Without the presence of a multipath effect. A parameter that determines the maximum range at which a signal can be received, based on electro-acoustic parameters of the transmitter and receiver, spatial decrease in the intensity of sound energy, attenuation in the medium and the acoustic noise level.   
+<a name="footnote2"><sup>2</sup></a> For transducer.  
+<a name="footnote3"><sup>3</sup></a> Obtained under laboratory conditions in a static test.  
+<a name="footnote4"><sup>4</sup></a> Can be changed by a special request.  
