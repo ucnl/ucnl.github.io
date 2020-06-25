@@ -47,15 +47,14 @@ Extremely small size, low power consumption and ease of use make the [Zima USBL]
 | WORKING TEMPERATURE RANGE | -5 .. 50 °C |
 | INTERFACE | USB(COM) 9600 bit/s |
 | PROTOCOL | NMEA 0183 [PZMA](Zima_Protocol_Specification_en.md) |
-| CABLE LENGTH<sup>[3](#footnote3)</sup> | 1 m |
+| CABLE LENGTH<sup>[4](#footnote4)</sup> | 1 m |
 | SUBSCRIBER DIVISION SCHEME (commands/subscribers) | 32/23 |
-| HORIZONTAL ANGLE OF ARRIVAL ESTIMATION ACCURACY (typ.)<sup>[4](#footnote3)</sup> | 1° |
-| NOMINAL DISTANCE ESTIMATION ACCURACY<sup>[4](#footnote3)</sup> | 0.3 m |
+| HORIZONTAL ANGLE OF ARRIVAL ESTIMATION ACCURACY (typ.)<sup>[3](#footnote3)</sup> | 1° |
+| NOMINAL DISTANCE ESTIMATION ACCURACY<sup>[3](#footnote3)</sup> | 0.3 m |
   
 ________________
 <a name="footnote1"><sup>1</sup></a> Without the presence of a multipath effect. A parameter that determines the maximum range at which a signal can be received, based on electro-acoustic parameters of the transmitter and receiver, spatial decrease in the intensity of sound energy, attenuation in the medium and the acoustic noise level.   
 <a name="footnote2"><sup>2</sup></a> Without a battery pack. Standard battery pack ф50х165 mm, 0.58 kg, 2.9 A\*h 12 V. 
 Battery life with standard battery pack - up to 70 hours in receiving mode, up to 8 hours with 1 request in 3 seconds schedule.  
-<a name="footnote3"><sup>3</sup></a> Can be changed by a special request.  
-<a name="footnote4"><sup>4</sup></a> Obtained under laboratory conditions in a static test.  
-
+<a name="footnote3"><sup>3</sup></a> Obtained under laboratory conditions in a static test.  
+<a name="footnote4"><sup>4</sup></a> Can be changed by a special request.  
