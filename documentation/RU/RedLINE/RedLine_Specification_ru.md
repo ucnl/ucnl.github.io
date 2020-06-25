@@ -47,7 +47,7 @@
 | ВРЕМЯ СТАРТА | 100 мсек |
 | ДИАПАЗОН РАБОЧИХ ТЕМПЕРАТУР | -5 .. 50 °C |
 | ИНТЕРФЕЙС СОПРЯЖЕНИЯ<sup>[3](#footnote3)</sup> | UART 9600 бит/с |
-| ПРОТОКОЛ СОПРЯЖЕНИЯ | NMEA 0183 [PTNT](RedLINE_Protocol_Specification_ru.md) |
+| ПРОТОКОЛ СОПРЯЖЕНИЯ | NMEA 0183 [PTNT](RedLINE_Protocol_Specifications_ru.md) |
 | ДЛИНА КАБЕЛЯ<sup>[3](#footnote3)</sup> | 0.5 м |
 | СХЕМА РАЗДЕЛЕНИЯ АБОНЕНТОВ | 20 кодовых каналов |
   
