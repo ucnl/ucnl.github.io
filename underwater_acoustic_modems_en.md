@@ -24,6 +24,6 @@
 
 ### RedGTR -  underwater acoustic code modem
 * [Device specification: RedGTR](/documentation/EN/RedGTR/RedGTR_Specifications_en.md)
-* [Communication protocol specification: RedGTR (Under construction)]()
+* [Communication protocol specification: RedGTR](/documentation/EN/RedGTR/RedGTR_Protocol_Specifications_en.md)
 
 ## [Home](README.md)
