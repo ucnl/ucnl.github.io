@@ -463,7 +463,7 @@ Format: **`$PZMA!, c--c,x,c--c,x,x,c--c*hh <CR><LF>`**
 
 ### 3.5 Remote request identifiers
 | Name | Value | Description |
-| :---: | :--- | :--- |
+| :--- | :--- | :--- |
 | CDS_PING | 361 | Ping |
 | CDS_DPT_GET | 362 | Remote responder-beacon depth |
 | CDS_STY_SET_0 | 363 | Set salinity 0 PSU |
