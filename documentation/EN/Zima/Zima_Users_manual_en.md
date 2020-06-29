@@ -160,112 +160,108 @@ The responder-beacon [Zima-R](Zima_R_Specification_ru.md) is a transceiver for u
 When autonomous, the beacon is equipped with a battery canister, as shown in Figure 4. In this case, it is completely autonomous and does not require pairing with the carrier underwater vessel.
 In [OEM](Zima_R_OEM_Specification_en.md) the beacon is delivered as a set of electronic boards for user installation in own normobaric housing. The responder-beacon is equipped with a deep-sea underwater acoustic antenna. Insertion of the antenna cable into the pressure-sensitive housing and switching with the beacon electronics, in this case, is provided by the user.
 
-#### 2.2.4. Работа с устройством (автономное исполнение)
-В случае автономного исполнения маяк является полностью автономным. Для работы он должен фиксироваться на носителе таким образом, чтобы рабочие поверхности моноблока (цилиндрическая поверхность и торец) не перекрывались элементами крепежа (для крепления должен использоваться специальный паз) и не экранировались различными элементами конструкции носителя. Для включения маяка-ответчика требуется подключить его к батарейному блоку при помощи разъема, как показано на рисунке 5.
+#### 2.2.4. Work with the device (stand-alone version)
+In this case, the responder-beacon is fully autonomous. For operation, it must be fixed on the carrier vessel in such a way that the working surfaces of the monoblock (cylindrical surface and end face) are not blocked by fasteners (a special groove must be used for fastening) and are not shielded by various structural elements of the carrier. To turn on the responder-beacon, the user needs to connect it to the battery pack using the connector, as shown in Figure 5.
 
 | ![Zima-R](https://ucnl.github.io/documentation/zima_r_bat_conn.png) |
 | :---: |
-| **Рисунок 5 - подключение маяка-ответчика к батарейному блоку** |
+| **Figure 5 - Connecting a responder-beacon to a battery pack** |
 
-В данном исполнении маяк комплектуется никель-металлгидридной сборной батареей из 10 элементов. 
-Нормобарический корпус (канистра) имеет крышку с двойным уплотнением и четырехзаходной резьбой, которая позволяет закрывать крышку канистры за 3/4 оборота. Перед погружением в воду необходимо убедиться, что крышка канистры плотно закручена (от руки).
-После подключения разъема маяка к батарейному блоку в течении первых десяти секунд устройство производит калибровку атмосферного давления, поэтому не допускается в течении первых десяти секунд с момента включения прибора прикладывать к нему какое-либо (отрицательное или положительное) давление, отличное от атмосферного - это приведет к некорректному измерению глубины маяком-ответчиком.
-При автономном исполнении Tx и Rx жилы кабеля маяка замкнуты (см. рисунок 6). Это приводит к автоматическому отключению модуля UART в целях энергосбережения.
+In this version, the responder-beacon is equipped with a 10-cell nickel-metal hydride battery.
+The normobaric housing (canister) has a lid with a double seal and a four-thread, which allows the user to close the lid of the canister in 3/4 of a turn. Before immersion in water, make sure that the lid of the canister is tightly screwed (by hand).
+After connecting the responder-beacon connector to the battery pack within the first ten seconds, the device calibrates the atmospheric pressure, therefore it is not allowed to apply any (negative or positive) pressure to it during the first ten seconds from the moment the device is turned on, this will lead to incorrect depth measurement by the responder-beacon.
+With the autonomous version Tx and Rx, the wires of the beacon cable are closed (see Figure 6). This causes the UART module to automatically shut off in order to save energy.
 
 | ![Zima-R](https://ucnl.github.io/documentation/zima_r_drawings.png) |
 | :---: |
-| **Рисунок 6 - [Zima-R](Zima_R_Specification_ru.md)** |
-| _габаритный чертеж_ |
+| **Figure 6 - [Zima-R](Zima_R_Specification_en.md)** |
+| _Outline drawing_ |
 
-#### 2.2.5. Работа с устройством (интегрируемое исполнение)
-При энергетическом и информационном сопряжении с носителем, маяк передает на носитель дистанцию до базовой станции и азимут на маяк (только при подключенном к базовой станции магнитном компасе). Кроме того, в этом случае базовая станция может передать до 28 кодовых команд, о чем маяк-ответчик оповещает носитель в соответствие с [протоколом сопряжения](Zima_Protocol_Specification_ru.md).
+#### 2.2.5. Work with the device (integrated version)
+During energy and information pairing with the carrier vessel, the beacon transmits to the carrier the distance to the base station and the azimuth (only when the heading sensor is connected to the base station). In addition, in this case, the base station can transmit up to 28 code commands, about which the responder-beacon notifies the carrier in accordance with the [pairing protocol](Zima_Protocol_Specification_en.md).
 
-#### 2.2.6. Хранение и обслуживание
-Маяк-ответчик не требует каких-либо специальных процедур обслуживания, за исключением опреснения и промывки в проточной пресной воде, после использования в соленой и/или загрязненной воде.
-При этом не допускается применение каких-либо смазочных материалов или растворителей, агрессивных моющих средств и тп. для удалении загрязнений с маяка-ответчика и его кабеля.
+#### 2.2.6. Storage and maintenance
+The responder-beacon does not require any special maintenance procedures, except for desalination and washing in running fresh water, after use in salt and/or contaminated water.
+In this case, the use of any lubricants or solvents, aggressive detergents, etc. are not allowed to remove contaminants from the responder-beacon and its cable.
 
-В случае использования маяка в автономном исполнении предъявляются дополнительные требования и назначаются мероприятия по обслуживанию батарейного блока и канистры. В частности:
-- не допускается длительное (более суток) хранение батарейного блока в подключенном к маяку состоянии;
-- не рекомендуется длительное хранение батарейного блока без плановой подзарядки (1 раз в месяц);
-- уплотнительные кольца и резьба батарейной канистры при наличии загрязнений должны очищаться при помощи воды, мягкой кисти и мыльного раствора с последующей промывкой в проточной пресной воде и смазкой уплотнительных колец силиконовой смазкой;
-- хранение канистры производится с закрытой крышкой;
-- при использовании устройства в соленой и/или загрязненной воде по окончании работ требуется произвести его опреснение в проточной пресной воде.
+In the case of using the responder-beacon in the stand-alone version, additional requirements are presented and measures are taken to service the battery pack and canister. In particular:
+- long-term (more than one day) storage of the battery pack in the state connected to the beacon is not allowed;
+- long-term storage of the battery pack without scheduled recharging (1 time per month) is not recommended;
+- O-rings and the threads of the battery canister should be cleaned with water, a soft brush and a soap solution, followed by washing in running freshwater and greasing the o-rings with silicone grease;
+- the canister is stored with the lid closed;
+- when using the device in salt and/or contaminated water at the end of work, it is required to desalinate it in running fresh water.
 
 <div style="page-break-after: always;"></div>
 
-## 3. Пультовое ПО ZHost
+## 3. ZHost software
+### 3.1. System requirements
+Specialized software [ZHost](https://github.com/ucnl/ZHost) (hereinafter referred to as the software) runs under the **MS Windows** operating system versions 7, 8 and 10. A monitor with a resolution of at least **1024x768** pixels and a mouse or touchpad are recommended.
+The software is portable, distributed as [zip-archive \(Download the latest version\)](https://api.github.com/repos/ucnl/ZHost/zipball) and does not require any installation other than Unpacking to the user's PC.
 
-### 3.1. Системные требования
-Специализированное ПО [ZHost](https://github.com/ucnl/ZHost) (далее ПО) работает под управлением операционной системы MS Windows версий 7, 8 и 10. Рекомендуется монитор разрешением не менее 1024х768 пикселей и наличие мыши или тачпада.
-ПО является портируемым (Portable), распространяется в виде [zip-архива \(Скачать последнюю версию \)](https://api.github.com/repos/ucnl/ZHost/zipball) и не требует какой-либо установки, кроме распаковки на ПК пользователя. 
+The executable file **ZHost.exe**, the settings file **ZHost.setting**s and the required libraries are located in the root directory of the application. Localization resources are located in subdirectories corresponding to the localization language (e.g. `\ru`, `\ru-RU`, etc.).
+When running, the application maintains log files. Logs are stored in the \LOG subdirectory, which contains subdirectories with the name of the current date (for example, `\LOG\2020-01-21`), which contain **.log** files with names corresponding to the file creation time (**HH-MM-SS**). A new log file is created each time the application starts. Log files have a text format and contain all the information exchange of the console software with the devices connected to it, as well as all errors that occur during the operation of the software.
 
-Исполняемый файл ZHost.exe, файл настроек ZHost.settings и требуемые библиотеки располагаются в корневом каталоге приложения. Ресурсы локализации располагаются в подкаталогах, соответствующих языку локализации (напр. \ru, \ru-RU и т.п.).
-При работе приложение ведет файлы журналов. Журналы хранятся в подкаталоге \LOG, который содержит подкаталоги с именем текущей даты (например, \LOG\2020-01-21), в которых содержатся .log-файлы с именами, соответствующими времени создания файла (ЧЧ-ММ-СС). Новый файл журнала создается каждый раз при старте приложения. Файлы журналов имеют текстовый формат и содержат весь информационный обмен пультового ПО с подключенными к нему устройствами, а также все возникающие в процессе работы ПО ошибки.
+When the **AUTOSCRINSHOT** function is enabled, the screenshots of the application window are saved in the `\SNAPSHOTS` directory, which also contains subdirectories by the name of the creation date, the window snapshot files are named by the current time (**HH-MM-SS**) and are in **PNG** format (Portable Network Graphics).
 
-При включенной функции АВТОСКРИНШОТ, снимки окна приложения сохраняются в католог \SNAPSHOTS, который также содержит подкаталоги по имени даты создания, файлы снимков окна именуются по текущему времени (ЧЧ-ММ-СС) и имеют формат PNG (Portable Network Graphics).
+> Since the connection with the base station is carried out by means of converters of the UART/RS-232/RS-422 interface to USB, additional drivers for a specific converter are required.
 
-> Поскольку коммутация с базовой станцией осуществляется посредством преобразователей интерфейса UART/RS-232/RS-422 в USB, то могут 
-> потребоваться дополнительные драйверы для конкретного преобразователя.
-
-### 3.2. Описание интерфейса ПО ZHost
-Общий вид окна приложения показан на рисунке 7. Оно состоит из панели инструментов (меню), расположенной в верхней части окна, панели статуса, расположенной в нижней части окна; слева располагается экран отображения относительного положения маяков-ответчиков (ПЛАН), а справа древовидная структура, содержащая свойства используемых маяков (МАЯКИ).  
-Панель инструментов состоит из верхней (СОЕДНИЕНИЕ, СТАНЦИЯ и т.п.) и нижней (АВТОЗАПРОС, АВТОСКРИНШОТ) субпанелей.
+### 3.2. Description of the ZHost software interface
+The general view of the application window is shown in Figure 7. It consists of a toolbar (menu) located at the top of the window, a status panel located at the bottom of the window; on the left is a screen for displaying the relative position of responder beacons (**PLAN**), and on the right is a tree structure containing the properties of the beacons used (**BEACONS**).
+The toolbar consists of the upper (**CONNECTION**, **STATION**, etc.) and lower (**AUTO REQUEST**, **AUTOSCRINSHOT**) subpanels.
 
 | ![ZHost main window view](https://ucnl.github.io/documentation/zhost_screen_gnss_hdg.png) |
 | :---: |
-| **Рисунок 7 - Пультовое ПО [ZHost](https://github.com/ucnl/ZHost)** |
-| _вид главного окна в процессе работы_ |
+| **Figure 7 - [ZHost](https://github.com/ucnl/ZHost) software** |
+| _Main window view_ |
 
-#### 3.2.1 Панель инструментов
+#### 3.2.1 Toolbar
+##### 3.2.1.1 Menu item CONNECTION
+The menu item **"CONNECTION"** serves to open and close the connection on the configured serial ports. These include the port, through which is exchanging information with the base station, AUX ports, through which navigation information from the **GNSS + GNSS compass** or **GNSS + magnetic compass** can be received (with appropriate settings), as well as a GNSS emulation port for one of the responder beacons.
 
-##### 3.2.1.1 Пункт СОЕДИНЕНИЕ
-Пункт меню **"СОЕДИНЕНИЕ"** служит для открытия и закрытия соединения по настроенным последовательным портам. К ним относится порт, через 
-который происходит информационный обмен с базовой станцией, порты AUX, по которым в ПО могут поступать (при соответствующих настройках) навигационные данные от GNSS + GNSS компас или GNSS + магнитный компас, а также порт эмуляции GNSS для одного из маяков-ответчиков.
+When the user clicks on the menu item **"CONNECTION"** the application tries to open connections on the serial ports according to the settings.
+If additional providers of navigation data (GNSS, compass) are not specified and the system operates in relative coordinates, an attempt will be made to open the port for communication with the base station. If one or both of the AUX ports and the GNSS emulation output port are enabled in the settings, the software will try to open them as well.
 
-При нажатии на пункт меню **"СОЕДИНЕНИЕ"** приложение пытается открыть соединения по последовательным портам согласно заданным настройкам.
-Если не указаны дополнительные поставщики навигационных данных (GNSS, компас) и система работает в относительных координатах, то будет произведена попытка открыть порт для связи с базовой станцией. Если в настройках включены один или оба порта AUX и выходной порт эмуляции GNSS, то ПО произведет попытку открыть и их.
+If the ports are opened successfully, the menu item **"CONNECTION"** becomes highlighted, and subsequent clicking on it will close the connections.
 
-При удачном открытии портов, пункт меню **"СОЕДИНЕНИЕ"** становится выделенным, и последующее нажатие на него закроет соединения.
+##### 3.2.1.2 Menu item STATION
+The menu item **"STATION"** becomes active only after the connection with the base station is open and device information has been successfully received from it. The item contains the following subitems:
+- **"INFORMATION"** to call up a dialogue box containing information about the connected base station (device serial number, firmware version, etc.).
+- **"DEPTH CALIBRATION"** to call the dialogue box for setting the actual depth of the base station.
 
-##### 3.2.1.2 Пункт СТАНЦИЯ
-Пункт меню **"СТАНЦИЯ"** становится активным только после того, как открыто соединение с базовой станцией и от нее успешно получена информация об устройстве. Пункт содержит подпункты:
-- **"ИНФОРМАЦИЯ"** для вызова диалогового окна, содержащего информацию о подключенной базовой станции (серийный номер устройства, версия прошивки и т.п.). 
-- **"КАЛИБРОВКА ГЛУБИНЫ"** для вызова диалогового окна задания фактической глубины базовой станции. 
+##### 3.2.1.2 Menu item BEACON
+This menu item becomes active only after the connection with the base station is opened and information about the device is successfully received from it, and the function **"AUTO REQUEST"** is not active. The item contains the following subitems:
+- **"SEND COMMAND"** to call the remote command sending dialogue box, in which the user can select the address of the responder-beacon to which the user command should be sent and the command identifier.
+- **"CHANGE ADDRESS"** to call the dialogue box for changing the address of the remote beacon-responder. In the dialogue box, the user must specify the current address of the beacon, which needs to change the address and the new address. *The user should be careful when using this function. It is intended only for setting beacon addresses before submersion.*
+- **"CALIBRATION OF ATMOSPHERIC PRESSURE"** to call up the atmospheric pressure calibration dialogue box. In the dialogue box, the user must specify the address of the beacon. Upon receipt of a command to calibrate atmospheric pressure, the responder-beacon will use the current pressure readings from the built-in sensor as atmospheric. *The user should be careful when using this function. It is intended only for configuring beacons before submersion.*
 
-##### 3.2.1.2 Пункт МАЯК
-Данный пункт меню становится активным только после того, как открыто соединение с базовой станцией и от нее успешно получена информация об устройстве, и при этом не активна функция **"АВТОЗАПРОС"**. Пункт содержит следующие подпункты:
-- **"ПОСЛАТЬ КОМАНДУ"** для вызова диалогового окна отправки удаленной команды, в котором пользователь может выбрать адрес маяка-ответчика, которому необходимо отправить пользовательскую команду и идентификатор команды.
-- **"СМЕНИТЬ АДРЕС"** для вызова диалогового окна смены адреса удаленного маяка-ответчика. В диалоговом окне необходимо указать текущий адрес маяка, которому необходимо изменить адрес и новый адрес. *Стоит быть осторожным при использовании данной функции. Она предназначена только для настройки адресов маяков до погружения.*
-- **"КАЛИБРОВКА АТМОСФЕРНОГО ДАВЛЕНИЯ"** для вызова диалогового окна калибровки атмосферного давления. В диалоговом окне необходимо указать адрес маяка. При получении команды на калибровку атмосферного давления, маяк-ответчик примет текущие показания давления по встроенному сенсору за атмосферное. *Стоит быть осторожным при использовании давнной функции. Она предназначена только для настройки маяков до погружения.*
+##### 3.2.1.3 Menu item LOG
+Menu item **"LOG"** contains functions for working with application log files and contains the following sub-items:
+- **"VIEW"**. Selecting this subitem will open the current application log file.
+- **"ANALYZE"**. If the user selects this sub-item, the file selection dialogue for analysis will be displayed. The log file analysis function allows the user to quickly restore the system’s progress, for example, in order to restore the tracks of the vessel and/or responder-beacons in case of loss.
+- **"ANALYZE CURRENT"**. The action of this sub-item is similar to the function of the **"ANALYZE"** sub-item, with the difference that the current one will be selected as the analyzed log file.
+- **"RESTART CURRENT"**. When this sub-item is enabled, the contents of the current log file will be deleted and the log recording will continue.
+- **"DELETE ALL LOGS"**. This menu sub-item is intended to delete all application logs from the LOG\ directory. *Attention! Data from the log files will be lost forever!*
 
-##### 3.2.1.3 Пункт ЖУРНАЛ
-Пункт меню **"ЖУРНАЛ"** содержит функции для работы с файлами журналов приложения и содержит следующие подпункты:
-- **"ПРОСМОТР"**. При выборе данного подпункта будет открыт текущий файл журнала приложения.
-- **"АНАЛИЗИРОВАТЬ"**. При выборе данного подпункта будет отображен диалог выбора файла для анализа. Функция анализа файла журнала позволяет быстро восстановить ход работы системы, например, для того, чтобы восстановить треки судна и/или маяков-ответчиков в случае его утери.
-- **"АНАЛИЗИРОВАТЬ ТЕКУЩИЙ"**. Действие данной функции аналогично действию функции **"АНАЛИЗИРОВАТЬ"**, с тем отличием, что в качетстве анализируемого файла журнала будет выбран текущий.
-- **"ПЕРЕЗАПУСТИТЬ ТЕКУЩИЙ"**. При задействовании данного подпункта, содержимое текущего файла журнала будет удалено и будет продолжена запись журнала.
-- **"УДАЛИТЬ ВСЕ ЖУРНАЛЫ"**. Данный подпункт меню предназначен для удаления все журналов приложения из каталога LOG\. *Внимание! Данные из файлов журналов будут утрачены безвозвратно!*
+##### 3.2.1.4 Menu item TRACK
+The menu item **"TRACK"** contains functions for working with tracks generated by the software and contains sub-items:
+- **"SAVE AS ..."** serves to open a dialogue box for selecting a name and file format, for saving tracks. The function becomes active only if the system has unsaved geographic data. The software supports exporting tracks to Keyhole Markup Language (KML) and Comma-separated values (CSV) formats.
+- **"CLEAR"**. This sub-item is used to delete all geographic data accumulated by the software for the current session. *This function should be used with caution!*
 
-##### 3.2.1.4 Пункт ТРЕК
-Пункт меню **"ТРЕК"** содержит функции для работы с треками, формируемыми ПО и содержит подпункты:
-- **"СОХРАНИТЬ КАК..."** служит для вызова диалогового окна выбора имени и формата файла, для сохранения треков. Функция становится активна только при наличии в системе несохраненных географических данных. ПО поддерживает экспорт треков в форматы Keyhole Markup Language (KML) и Comma-separated values (CSV). 
-- **"ОЧИСТИТЬ"**. Данный подпункт служит для удаления всех географических данных, накопленных ПО за текущую сессию. *Данную функцию стоит применять с осторожностью!*
+##### 3.2.1.5 Menu item SETTINGS
+The menu item **"SETTINGS"** is active only when the connection is closed and serves to call the dialogue box for changing software settings.
 
-##### 3.2.1.5 Пункт НАСТРОЙКИ
-Пункт меню **"НАСТРОЙКИ"** активен только при закрытом соединении и служит для вызова диалогового окна изменения настроек ПО. 
+Settings are saved in the root directory of the application. It should be remembered that in order for the changed and saved settings to be used by the application, it must be restarted. If the settings are saved successfully, the software will display the corresponding prompt to the user.
 
-Настройки сохраняются в корневом каталоге приложения. Следует помнить, что для того, чтобы измененные и сохраненные настройки были задействованы приложением, его необходимо перезапустить. При успешном сохранении настроек ПО отобразит соответствующий запрос пользователю.
+The settings in the dialogue box are grouped for convenience, each group is located on a separate tab.
+**RESET button** is used to restore default settings.
+The **OK button**, which is used to accept the settings, is only active when the user has set consistent data (for example, with AUX ports enabled, the names for all the enabled ports must not coincide with each other).
 
-Настройки в диалоговом окне собраны в группы для удобства, каждая группа располагается на отдельной вкладке.
-Кнопка **"ВОССТАНОВИТЬ"** служит для восстановления настроек по умолчанию.  
-Кнопка **"ОК"**, служащая для принятия настроек, активна только тогда, когда пользователем заданы непротиворечивые данные (например, при задействованных портах AUX имена для всех задействованных портов не должны совпадать друг с другом).
-
-Вкладка **"СОЕДИНЕНИЕ"** содержит настройки портов соединения. Ее внешний вид показан на рисунке 8.
+The **CONNECTION** tab contains the settings for the connection ports. Its appearance is shown in Figure 8.
 
 | ![ZHost settings window view](https://ucnl.github.io/documentation/zhost_setts_1.png) |
 | :---: |
-| **Рисунок 8 - Окно настроек** |
-| _Вкладка "СОЕДИНЕНИЕ"_ |
+| **Figure 8 - Settings editor** |
+| _Tab "CONNECTION"_ |
 
 Группа **"Порт ZMA"** активна всегда и отвечает за настройки соединения с базовой станцией [Zima-B](Zima_B_Specification_ru.md). В серийно выпускаемых устройствах поддерживается только скорость 9600 бит/с. 
 
