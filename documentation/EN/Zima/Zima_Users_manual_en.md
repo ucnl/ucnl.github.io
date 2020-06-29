@@ -1,194 +1,162 @@
 | ![logo](https://ucnl.github.io/documentation/sm_logo.png) |  |
 | :---: | ---: |
-| [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **Zima USBL** - гидроакустическая навигационная система <br/> Руководство пользователя |
+| [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **Zima USBL** - underwater acoustic tracking system <br/> User's manual |
 
 
-# Zima USBL <br/> Руководство пользователя
-
-<div style="page-break-after: always;"></div>
-
-## Содержание
-
-- [1. Введение](#1-%D0%B2%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5)  
-- [2. Состав системы](#2-%D1%81%D0%BE%D1%81%D1%82%D0%B0%D0%B2-%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D1%8B)  
-  - [2.1. Zima-B: Гидроакустическая станция пеленгования](#21-zima-b-%D0%B3%D0%B8%D0%B4%D1%80%D0%BE%D0%B0%D0%BA%D1%83%D1%81%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F-%D1%81%D1%82%D0%B0%D0%BD%D1%86%D0%B8%D1%8F-%D0%BF%D0%B5%D0%BB%D0%B5%D0%BD%D0%B3%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F)
-    - [2.1.1. Общие сведения](#211-%D0%BE%D0%B1%D1%89%D0%B8%D0%B5-%D1%81%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D1%8F)
-    - [2.1.2. Технические характеристики](#212-%D1%82%D0%B5%D1%85%D0%BD%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B5-%D1%85%D0%B0%D1%80%D0%B0%D0%BA%D1%82%D0%B5%D1%80%D0%B8%D1%81%D1%82%D0%B8%D0%BA%D0%B8)
-    - [2.1.3 Хранение и обслуживание](#213-%D1%85%D1%80%D0%B0%D0%BD%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B8-%D0%BE%D0%B1%D1%81%D0%BB%D1%83%D0%B6%D0%B8%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5)
-  - [2.2. Zima-R: маяк-ответчик](#22-zima-r-%D0%BC%D0%B0%D1%8F%D0%BA-%D0%BE%D1%82%D0%B2%D0%B5%D1%82%D1%87%D0%B8%D0%BA)
-    - [2.2.1. Общие сведения](#221-%D0%BE%D0%B1%D1%89%D0%B8%D0%B5-%D1%81%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D1%8F)
-    - [2.2.2. Технические характеристики](#222-%D1%82%D0%B5%D1%85%D0%BD%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B5-%D1%85%D0%B0%D1%80%D0%B0%D0%BA%D1%82%D0%B5%D1%80%D0%B8%D1%81%D1%82%D0%B8%D0%BA%D0%B8)
-    - [2.2.3. Варианты исполнения](#223-%D0%B2%D0%B0%D1%80%D0%B8%D0%B0%D0%BD%D1%82%D1%8B-%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D0%BD%D0%B5%D0%BD%D0%B8%D1%8F)
-    - [2.2.4. Работа с устройством (автономное исполнение)](#224-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0-%D1%81-%D1%83%D1%81%D1%82%D1%80%D0%BE%D0%B9%D1%81%D1%82%D0%B2%D0%BE%D0%BC-%D0%B0%D0%B2%D1%82%D0%BE%D0%BD%D0%BE%D0%BC%D0%BD%D0%BE%D0%B5-%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D0%BD%D0%B5%D0%BD%D0%B8%D0%B5)
-    - [2.2.5. Работа с устройством (интегрируемое исполнение)](#225-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0-%D1%81-%D1%83%D1%81%D1%82%D1%80%D0%BE%D0%B9%D1%81%D1%82%D0%B2%D0%BE%D0%BC-%D0%B8%D0%BD%D1%82%D0%B5%D0%B3%D1%80%D0%B8%D1%80%D1%83%D0%B5%D0%BC%D0%BE%D0%B5-%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D0%BD%D0%B5%D0%BD%D0%B8%D0%B5)
-    - [2.2.6. Хранение и обслуживание](#226-%D1%85%D1%80%D0%B0%D0%BD%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B8-%D0%BE%D0%B1%D1%81%D0%BB%D1%83%D0%B6%D0%B8%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5)
-- [3. Пультовое ПО ZHost](#3-%D0%BF%D1%83%D0%BB%D1%8C%D1%82%D0%BE%D0%B2%D0%BE%D0%B5-%D0%BF%D0%BE-zhost)
-  - [3.1. Системные требования](#31-%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%BD%D1%8B%D0%B5-%D1%82%D1%80%D0%B5%D0%B1%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F)
-  - [3.2. Описание интерфейса ПО ZHost](#32-%D0%BE%D0%BF%D0%B8%D1%81%D0%B0%D0%BD%D0%B8%D0%B5-%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D1%84%D0%B5%D0%B9%D1%81%D0%B0-%D0%BF%D0%BE-zhost)
-    - [3.2.1 Панель инструментов](#321-%D0%BF%D0%B0%D0%BD%D0%B5%D0%BB%D1%8C-%D0%B8%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D0%BE%D0%B2)
-      - [3.2.1.1 Пункт СОЕДИНЕНИЕ](#3211-%D0%BF%D1%83%D0%BD%D0%BA%D1%82-%D1%81%D0%BE%D0%B5%D0%B4%D0%B8%D0%BD%D0%B5%D0%BD%D0%B8%D0%B5)
-      - [3.2.1.2 Пункт СТАНЦИЯ](#3212-%D0%BF%D1%83%D0%BD%D0%BA%D1%82-%D1%81%D1%82%D0%B0%D0%BD%D1%86%D0%B8%D1%8F)
-      - [3.2.1.2 Пункт МАЯК](#3212-%D0%BF%D1%83%D0%BD%D0%BA%D1%82-%D0%BC%D0%B0%D1%8F%D0%BA)
-      - [3.2.1.3 Пункт ЖУРНАЛ](#3213-%D0%BF%D1%83%D0%BD%D0%BA%D1%82-%D0%B6%D1%83%D1%80%D0%BD%D0%B0%D0%BB)
-      - [3.2.1.4 Пункт ТРЕК](#3214-%D0%BF%D1%83%D0%BD%D0%BA%D1%82-%D1%82%D1%80%D0%B5%D0%BA)
-      - [3.2.1.5 Пункт НАСТРОЙКИ](#3215-%D0%BF%D1%83%D0%BD%D0%BA%D1%82-%D0%BD%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B8)
-      - [3.2.1.6 Пункт АВТОЗАПРОС](#3216-%D0%BF%D1%83%D0%BD%D0%BA%D1%82-%D0%B0%D0%B2%D1%82%D0%BE%D0%B7%D0%B0%D0%BF%D1%80%D0%BE%D1%81)
-      - [3.2.1.7 Пункт АВТОСКРИНШОТ](#3217-%D0%BF%D1%83%D0%BD%D0%BA%D1%82-%D0%B0%D0%B2%D1%82%D0%BE%D1%81%D0%BA%D1%80%D0%B8%D0%BD%D1%88%D0%BE%D1%82)
-   - [3.2.2 Панель ПЛАН](#322-%D0%BF%D0%B0%D0%BD%D0%B5%D0%BB%D1%8C-%D0%BF%D0%BB%D0%B0%D0%BD)
-   - [3.2.3 Панель МАЯКИ](#323-%D0%BF%D0%B0%D0%BD%D0%B5%D0%BB%D1%8C-%D0%BC%D0%B0%D1%8F%D0%BA%D0%B8)
-   - [3.2.3 Панель статуса](#323-%D0%BF%D0%B0%D0%BD%D0%B5%D0%BB%D1%8C-%D1%81%D1%82%D0%B0%D1%82%D1%83%D1%81%D0%B0)
-- [4. Эффективное применение навигационной системы Zima USBL](#4-%D1%8D%D1%84%D1%84%D0%B5%D0%BA%D1%82%D0%B8%D0%B2%D0%BD%D0%BE%D0%B5-%D0%BF%D1%80%D0%B8%D0%BC%D0%B5%D0%BD%D0%B5%D0%BD%D0%B8%D0%B5-%D0%BD%D0%B0%D0%B2%D0%B8%D0%B3%D0%B0%D1%86%D0%B8%D0%BE%D0%BD%D0%BD%D0%BE%D0%B9-%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D1%8B-zima)
-- [5. Возможные неисправности, их диагностика и устранение](#5-%D0%B2%D0%BE%D0%B7%D0%BC%D0%BE%D0%B6%D0%BD%D1%8B%D0%B5-%D0%BD%D0%B5%D0%B8%D1%81%D0%BF%D1%80%D0%B0%D0%B2%D0%BD%D0%BE%D1%81%D1%82%D0%B8-%D0%B8%D1%85-%D0%B4%D0%B8%D0%B0%D0%B3%D0%BD%D0%BE%D1%81%D1%82%D0%B8%D0%BA%D0%B0-%D0%B8-%D1%83%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B5%D0%BD%D0%B8%D0%B5)
-- [6. Обязательства и отказ от ответственности](#6-%D0%BE%D0%B1%D1%8F%D0%B7%D0%B0%D1%82%D0%B5%D0%BB%D1%8C%D1%81%D1%82%D0%B2%D0%B0-%D0%B8-%D0%BE%D1%82%D0%BA%D0%B0%D0%B7-%D0%BE%D1%82-%D0%BE%D1%82%D0%B2%D0%B5%D1%82%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%BE%D1%81%D1%82%D0%B8)
-  - [6.1. Условия замены и бесплатного гарантийного обслуживания](#61-%D1%83%D1%81%D0%BB%D0%BE%D0%B2%D0%B8%D1%8F-%D0%B7%D0%B0%D0%BC%D0%B5%D0%BD%D1%8B-%D0%B8-%D0%B1%D0%B5%D1%81%D0%BF%D0%BB%D0%B0%D1%82%D0%BD%D0%BE%D0%B3%D0%BE-%D0%B3%D0%B0%D1%80%D0%B0%D0%BD%D1%82%D0%B8%D0%B9%D0%BD%D0%BE%D0%B3%D0%BE-%D0%BE%D0%B1%D1%81%D0%BB%D1%83%D0%B6%D0%B8%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F)
-  - [6.2. Ограничение ответственности производителя](#62-%D0%BE%D0%B3%D1%80%D0%B0%D0%BD%D0%B8%D1%87%D0%B5%D0%BD%D0%B8%D0%B5-%D0%BE%D1%82%D0%B2%D0%B5%D1%82%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%BE%D1%81%D1%82%D0%B8-%D0%BF%D1%80%D0%BE%D0%B8%D0%B7%D0%B2%D0%BE%D0%B4%D0%B8%D1%82%D0%B5%D0%BB%D1%8F)
-  
-<div style="page-break-after: always;"></div>
-
-## 1. Введение
-Подводная акустическая навигационная система **Zima** предназначена определения в реальном времени горизонтального угла и дистанции 
-до подводных объектов, оснащенных гидроакустическими маяками-ответчиками [Zima-R](Zima_R_Specification_ru.md). Маяки-ответчики 
-(далее маяки) могут устанавливаться на телеуправляемые подводные аппараты (ТНПА), обитаемые подводные аппараты (ОПА), автономные 
-необитаемые подводные аппараты (АНПА) а также на дайверов и технических водолазов (в случае использования автономной версии маяка).
-
-Навигационная система **Zima** является ультракороткобазисной навигационной системой (УКБ, _англ. USBL_), принцип работы которой основан 
-на применении фазированной антенной решетки для определения горизонтального угла прихода сигнала и определения дистанции до маяка методом "запрос-ответ". 
-Отличительной особенностью данной системы является т.н. двусторонняя навигация, запатентованное решение, которое позволяет взаимно 
-определять дистанцию как на базовой станции, так и на маяке, а также передавать на маяк азимутальный угол на базовую станцию.
-Система также позволяет передавать на маяки сигналы телеуправления и получать от маяков телеметрические данные.
+# Zima USBL <br/> User's manual
 
 <div style="page-break-after: always;"></div>
 
-## 2. Состав системы
-### 2.1. Zima-B: Гидроакустическая станция пеленгования
-#### 2.1.1. Общие сведения
-Гидроакустическая станция пеленгования [Zima-B](Zima_B_Specification_ru.md) (далее базовая станция) предназначена для передачи на маяки управляющих акустических сигналов, определения времени распространения сигнала до маяков, определения горизонтального угла прихода ответных сигналов маяков, передачи команд телеуправления и получения телеметрической информации от маяков посредством специализированных гидроакустических сигналов.
+## Contents
+
+    
+<div style="page-break-after: always;"></div>
+
+## 1. Introduction
+Underwater acoustic navigation and tracking system **Zima** is designed to determine in real-time the horizontal angle and distance
+to underwater objects equipped with responder-beacons [Zima-R](Zima_R_Specification_en.md). Responder-beacons
+ can be installed on remote-operated underwater vehicles (ROVs), inhabited underwater vehicles, autonomous
+unmanned underwater vehicles (AUVs) as well as for divers and technical divers (in case of using an autonomous version of the responder-beacons).
+
+Navigation system **Zima** is an ultra-short baseline navigation system (_USBL_), the principle of which is based
+using a phased array antenna to determine the horizontal angle of arrival of the signal and determine the distance to the beacons using the "request-response" method.
+A distinctive feature of this system is the so-called "two-way" navigation, a patented solution that allows mutually
+determine the distance both at the base station and at responder-beacons, and also transmit to beacons the azimuth angle to the base station.
+The system also allows transmitting telecontrol commands to beacons and receiving telemetry data from beacons.
+
+<div style="page-break-after: always;"></div>
+
+## 2. Composition of the system
+### 2.1. Zima-B: Hydroacoustic direction-finding base station
+#### 2.1.1. General information
+Hydroacoustic direction-finding station [Zima-B](Zima_B_Specification_en.md) (hereinafter referred to as the base station) is designed to transmit control acoustic signals to beacons, determine the propagation time of the signal to the beacons, determine the horizontal angle of arrival of the response signals of the beacons, transmit telecommands and receive telemetry information from beacons through specialized acoustic signals.
 
 | ![Zima-B](https://ucnl.github.io/documentation/def_zima_b_ant.png) |
 | :---: |
-| **Рисунок 1 - Базовая станция [Zima-B](Zima_B_Specification_ru.md)** | 
-| _внешний вид_ |
+| **Figure 1 - Base station [Zima-B](Zima_B_Specification_en.md)** | 
+| _Main view_ |
 
-Базовая станция выполняется в виде необслуживаемого моноблока на кабеле, залитого в высокопрочный полиуретановый компаунд. Станция имеет фазированную антенную решетку, передающую антенну, встроенный датчик глубины/температуры. В качестве дополнительной опции базовая станция комплектуется системой определения курса и положения. В общем случае базовая станция монтируется на жесткой вертикальной штанге с учетом направленности антенны - определяемые углы прихода передаются в системе координат антенны.
+The base station is designed as a maintenance-free candy bar on a cable, embedded in a high-strength polyurethane compound. The station has a phased array antenna, a transmitting antenna, and an integrated depth/temperature sensor. As an additional option, the base station is equipped with a system for determining the course and position. In the general case, the base station is mounted on a rigid vertical rod taking into account the directivity of the antenna - the determined arrival angles are transmitted in the antenna coordinate system.  
 
 | ![Zima-B placement](https://ucnl.github.io/documentation/zima_boat_placement.png) |
 | :---: |
-| **Рисунок 2 - Схема установки антенны [Zima-B](Zima_B_Specification_ru.md)** |
-| _1-штанга, 2-судно, 3-поверхность воды, 4-кабель, 5-антенна [Zima-B](Zima_B_Specification_ru.md), 6-нулевое направление антенны_ |
+| **Figure 2 - [Zima-B](Zima_B_Specification_en.md) Deployment scheme** |
+| _1-rod, 2-boat, 3-water surface, 4-cable, 5-[Zima-B](Zima_B_Specification_en.md), 6-zero direction_ |
 
-На рисунке 3 представлен габаритный чертеж базовой станции [Zima-B](Zima_B_Specification_ru.md).
-Базовая станция имеет ввод кабеля энергетического и информационного сопряжения и отверстие датчика давления/температуры. Структурно базовая станция разделена на следующие части: кабельный ввод (в верхней части станции)  и крепежный паз для фиксации станции при помощи хомута. Ниже располагается цилиндрическая поверхность передающего пьезоэлемента, под которой находится приемная фазированная антенная решетка. Поверхности передающего элемента и приемной решетки при установке перекрывать или экранировать не допускается. 
-Для правильной работы станции требуется прямая видимость между рабочими поверхностями станции и антенной маяка-ответчика.
+Figure 3 shows the outline drawing of the base station [Zima-B](Zima_B_Specification_en.md).
+The base station has an input cable for energy and information pairing and an opening for the pressure/temperature sensor. Structurally, the base station is divided into the following parts: cable entry (in the upper part of the station) and a fixing groove for fixing the station with a clamp. Below is the cylindrical surface of the transmitting piezoelectric element, under which there is a receiving phased antenna array. The surface of the transmitting element and the receiving grille during installation should not be blocked or shielded.
+For proper operation of the station, line-of-sight is required between the working surfaces of the station and the antenna of the responder-beacon.
 
 | ![Zima-B drawings](https://ucnl.github.io/documentation/Zima_B_drawings.png) |
 | :---: |
-| **Рисунок 3 - [Zima-B](Zima_B_Specification_ru.md)** |
-|  _габаритный чертеж_ |
+| **Figure 3 - [Zima-B](Zima_B_Specification_en.md)** |
+|  _Outine drawing_ |
 
-В стандартной конфигурации [Zima-B](Zima_B_Specification_ru.md) поставляется с преобразователем интерфейса UART<->RS-422 и кабелем 
-длиной 10 метров, который подключается к блоку питания и коммутации [Bat&Link Box](Bat_n_link_box_Specification_ru.md). Таким образом,
-посредством блока коммутации станция подключается к пультовому ПК через интерфейс USB (последовательный порт).
+In the standard configuration, [Zima-B](Zima_B_Specification_en.md) is supplied with a UART <-> RS-422 interface converter and cable
+10 meters long, which is connected to the power supply and switching unit [Bat & Link Box](Bat_n_link_box_Specification_en.md). Thus,
+through the switching unit, the station is connected to the control PC via the USB interface (serial port).
 
-#### 2.1.2. Технические характеристики
+#### 2.1.2. Technical specifications
 
-| ПАРАМЕТР | ЗНАЧЕНИЕ |
+| PARAMETER | VALUE |
 | :--- | :--- |
-| ГАБАРИТЫ (Ф х h) | 64 x 128 мм |
-| ВЕС (сухой)<sup>[1](#footnote2121)</sup> | 0.44 кг |
-| МАКСИМАЛЬНАЯ ГЛУБИНА | 40 м |
-| НОМИНАЛЬНАЯ ПОГРЕШНОСТЬ ПО ГЛУБИНЕ | 0.1 м |
-| МАКСИМАЛЬНАЯ ДАЛЬНОСТЬ СВЯЗИ | 8000 м |
-| НОМИНАЛЬНАЯ ТОЧНОСТЬ ОПРЕДЕЛЕНИЯ ГОРИЗОНТАЛЬНОГО УГЛА ПРИХОДА СИНГНАЛА<sup>[2](#footnote2122)</sup> | 1° |
-| МАКСИМАЛЬНЫЙ КОМПЕНСИРУЕМЫЙ ВСТРОЕННЫМ ИНКЛИНОМЕТРОМ НАКЛОН ПРИБОРА ОТНОСИТЕЛЬНО ВЕРТИКАЛИ (КРЕН/ДИФФЕРЕНТ) | +/- 30° |
-| РАБОЧИЙ КОНУС (ОТНОСИТЕЛЬНО ГОРИЗОНТАЛИ)<sup>[2](#footnote2122)</sup> | +/-30° |
-| ПОЛОСА ЧАСТОТ | 6 .. 18 кГц |
-| ТОЧНОСТЬ ВСТРОЕННОГО ДАТЧИКА ТЕМПЕРАТУРЫ | 0.1°С |
+| DIMENSIONS (Ф х h) | 64 х 128 mm |
+| WEIGHT<sup>[1](#footnote2122)</sup> (dry) | 0.44 kg |
+| DEPTH RATING | 300 m |
+| MAX. OPERATING RANGE<sup>[2](#footnote2121)</sup> |	3000 m |
+| ACOUSIC SOURCE LEVEL |	170 dB re 1 μPa @ 1 m |
+| NOMINAL DEPTH ACCURACY | 0.1 m |
+| HORIZONTAL ANGLE OF ARRIVAL ESTIMATION ACCURACY (typ.)<sup>[3](#footnote2123)</sup> | 1° |
+| NOMINAL DISTANCE ESTIMATION ACCURACY | 0.3 m |
+| MAX. TILT COMPENSATED BY THE BUILT-IN INCLINOMETER RELATED TO VERTICAL AXIS (pitch/roll) | +/- 30° |
+| WORKING VERTICAL ANGLES (RELATIVE TO HORIZONTAL PLANE)<sup>[3](#footnote2123)</sup> | +/-30° |
+| BANDWIDTH | 6 .. 18 kHz |
+| BUILT-IN TEMPERATURE SENSOR ACCURACY | 0.1°С |
 | BIT ERROR RATE | 10<sup>-6</sup> |
-| SNR<sup>[2](#footnote2)</sup> | -3 дБ |
-| МАКСИМАЛЬНАЯ ОТНОСИТЕЛЬНАЯ СКОРОСТЬ | +/- 2 м/с |
-| ВРЕМЯ СТАРТА | 100 мсек |
-| ДИАПАЗОН РАБОЧИХ ТЕМПЕРАТУР | -5 .. 50 °C |
-| ВРЕМЯ АВТОНОМНОЙ РАБОТЫ<sup>[3](#footnote2123)</sup> ПРИ ПИТАНИИ ОТ [BAT&LINK BOX](Bat_n_link_box_Specification_ru.md) | 8 ч |
-| ИНТЕРФЕЙС СОПРЯЖЕНИЯ | USB (COM) 9600 бит/с |
-| ПРОТОКОЛ СОПРЯЖЕНИЯ | NMEA 0183 [PZMA](Zima_Protocol_Specification_ru.md) |
-| ДЛИНА КАБЕЛЯ<sup>[4](#footnote2124)</sup> | 10 м |
-| СХЕМА РАЗДЕЛЕНИЯ АБОНЕНТОВ (КОМАНД/АБОНЕНТОВ) | 32/23 |
+| SNR<sup>[3](#footnote2123)</sup> | -3 dB |
+| MAX. RELATIVE VELOCITY | +/- 2 m/s |
+| RATED STARTUP TIME | 100 msec |
+| WORKING TEMPERATURE RANGE | -5 .. 50 °C |
+| BATTERY LIFE<sup>[4](#footnote2124)</sup> (WHEN SUPPLIED FROM [BAT&LINK BOX](Bat_n_link_box_Specification_en.md)) | 8 hours |
+| INTERFACE | USB(COM) 9600 bit/s |
+| PROTOCOL | NMEA 0183 [PZMA](Zima_Protocol_Specification_en.md) |
+| CABLE LENGTH<sup>[5](#footnote2125)</sup> | 10 m |
+| SUBSCRIBER DIVISION SCHEME (commands/subscribers) | 32/23 |
   
 ________________
-<a name="footnote2121"><sup>1</sup></a> Без учета веса преобразователя и кабеля  
-<a name="footnote2122"><sup>2</sup></a> Значение получено без учета эффекта многолучевого распространения в лабораторном статическом эксперименте  
-<a name="footnote2123"><sup>3</sup></a> При режиме работы станции 1 запрос в 3 секунды  
-<a name="footnote2124"><sup>4</sup></a> С учетом преобразователя интерфейса и удлиняющего кабеля до прибора [Bat&Link Box](Bat_n_link_box_Specification_ru.md). Опционально возможно увеличение до 20 метров  
+<a name="footnote2121"><sup>2</sup></a> Withoud cable and interface converter.
+<a name="footnote2122"><sup>1</sup></a> A parameter that determines the maximum range at which a signal can be received, based on electro-acoustic parameters of the transmitter and receiver, spatial decrease in the intensity of sound energy, attenuation in the medium and the acoustic noise level.    
+<a name="footnote2123"><sup>3</sup></a> Obtained under laboratory conditions in a static test.  
+<a name="footnote2124"><sup>4</sup></a> Considering 1 request in 3 seconds.  
+<a name="footnote2125"><sup>5</sup></a> With additional cable and interface converter [Bat&Link Box](Bat_n_link_box_Specification_en.md). Can be increased by a request up to 20 m.  
 
-#### 2.1.3 Хранение и обслуживание
+#### 2.1.3 Storage and maintenance
+There are no special storage and maintenance requirements for the base station, with the exception of the following:
+- When used in salt and/or heavily polluted water, desalination is necessary (flushing in freshwater)
+- The use of any organic solvents, strong acids, alkalis and other aggressive substances is not allowed
+- If necessary, washing in household soap solutions is possible, avoiding liquid getting on the connector
+- Impact or significant static loads are not allowed.
+- Strong (with a radius of less than 5 cm) cable bending is not allowed.
 
-К базовой станции не предъявляется особых требований по хранению и обслуживанию, за исключением следующих:
-- При использовании в соленой и/или сильно загрязненной воде необходимо проводить опреснение (отстой и промывку в пресной воде)
-- Не допускается применение каких-либо органических растворителей, сильных кислот, щелочей и других агрессивных веществ
-- При необходимости возможна промывка в бытовых мыльных растворах, избегая попадания жидкости на разъем
-- Не допускается воздействия ударных или значительных статических нагрузок
-- Не допускается сильное (с радиусом менее 5 см) перегибание кабеля
-
-
-### 2.2. Zima-R: маяк-ответчик
-#### 2.2.1. Общие сведения
-Маяк-ответчик выполняется в виде необслуживаемого моноблока на кабеле, залитого в высокопрочный полиуретановый компаунд. Внешний вид маяка-ответичка [Zima-R](Zima_R_Specification_ru.md) показан на рисунке 4. Структурно маяк содержит кабельный ввод, крепежный паз, отверстие датчика давления и рабочую поверхность. Отверстие датчика давления и рабочие поверхности (цилиндр и торец цилиндра, противоположный кабельному вводу) перекрывать и экранировать не допускается. Для правильной работы акустической связи требуется прямая видимость между базовой станцией и маяком-ответчиком.
+### 2.2. Zima-R: responder-beacon
+#### 2.2.1. General information
+The responder-beacon is designed as a maintenance-free monoblock on a cable, embedded in a high-strength polyurethane compound. The appearance of the responder beacon [Zima-R] (Zima_R_Specification_en.md) is shown in Figure 4. Structurally, the beacon contains a cable entry, a mounting groove, a pressure sensor hole and a working surface. The pressure sensor opening and working surfaces (cylinder and cylinder end opposite the cable entry) must not be blocked or shielded. For correct operation of acoustic communication, line-of-sight between the base station and the responder-beacon is required.
 
 | ![Zima-R](https://ucnl.github.io/documentation/zima_r.png) |
 | :---: |
-| **Рисунок 4 - [Zima-R](Zima_R_Specification_ru.md)** |
-|  _внешний вид (автономное исполнение)_ |
+| **Figure 4 - [Zima-R](Zima_R_Specification_en.md)** |
+|  _General view (autonomous version)_ |
 
-#### 2.2.2. Технические характеристики
+#### 2.2.2. Technical specifications
 
-| ПАРАМЕТР | ЗНАЧЕНИЕ |
+| PARAMETER | VALUE |
 | :--- | :--- |
-| ГАБАРИТЫ (Ф х h) | 64 x 62 мм |
-| ВЕС (сухой)<sup>[1](#footnote2221)</sup> | 0.3 кг |
-| МАКСИМАЛЬНАЯ ГЛУБИНА | 300 м |
-| НОМИНАЛЬНАЯ ПОГРЕШНОСТЬ ПО ГЛУБИНЕ | 0.1 м |
-| МАКСИМАЛЬНАЯ ДАЛЬНОСТЬ СВЯЗИ | 8000 м |
-| ПОЛОСА ЧАСТОТ | 6 .. 18 кГц |
-| ТОЧНОСТЬ ВСТРОЕННОГО ДАТЧИКА ТЕМПЕРАТУРЫ | 0.1°С |
-| НАПРЯЖЕНИЕ ПИТАНИЯ | 5 .. 12 В |
-| НАПРЯЖЕНИЕ ЛИНИЙ ДАННЫХ | 0 .. 3.3 В |
+| DIMENSIONS (Ф х h) | 64 x 62 mm |
+| WEIGHT<sup>[1](#footnote2221)</sup> (dry) | 0.3 kg |
+| DEPTH RATING | 300 m |
+| NOMINAL DEPTH ACCURACY | 0.1 m |
+| MAX. OPERATING RANGE<sup>[2](#footnote2222)</sup> |	3000 m |
+| ACOUSIC SOURCE LEVEL |	170 dB re 1 μPa @ 1 m |
+| BANDWIDTH | 6 .. 18 kHz |
+| BUILT-IN TEMPERATURE SENSOR ACCURACY | 0.1°С |
 | BIT ERROR RATE | 10<sup>-6</sup> |
-| SNR<sup>[2](#footnote2)</sup> | -3 дБ |
-| МАКСИМАЛЬНАЯ ОТНОСИТЕЛЬНАЯ СКОРОСТЬ | +/- 2 м/с |
-| ВРЕМЯ СТАРТА | 100 мсек |
-| ДИАПАЗОН РАБОЧИХ ТЕМПЕРАТУР | -5 .. 50 °C |
-| ИНТЕРФЕЙС СОПРЯЖЕНИЯ<sup>[3](#footnote2223)</sup> | UART 9600 бит/с |
-| ПРОТОКОЛ СОПРЯЖЕНИЯ | NMEA 0183 [PZMA](Zima_Protocol_Specification_ru.md) |
-| ДЛИНА КАБЕЛЯ<sup>[3](#footnote2223)</sup> | 0.5 м |
-| СХЕМА РАЗДЕЛЕНИЯ АБОНЕНТОВ (КОМАНД/АБОНЕНТОВ) | 32/23 |
-| НОМИНАЛЬНАЯ ТОЧНОСТЬ ОПРЕДЕЛЕНИЯ ГОРИЗОНТАЛЬНОГО УГЛА<sup>[4](#footnote2224)</sup> | 1˚ |
-| НОМИНАЛЬНАЯ ТОЧНОСТЬ ОПРЕДЕЛЕНИЯ ДИСТАНЦИИ<sup>[4](#footnote2224)</sup> | 0.3 м |
+| SNR<sup>[3](#footnote2223)</sup> | -3 dB |
+| MAX. RELATIVE VELOCITY | +/- 2 m/s |
+| RATED STARTUP TIME | 100 msec |
+| SUPPLY VOLTAGE | 12 V |
+| DATA LINES VOLTAGE | 0 .. 3.3 V |
+| WORKING TEMPERATURE RANGE | -5 .. 50 °C |
+| INTERFACE | USB(COM) 9600 bit/s |
+| PROTOCOL | NMEA 0183 [PZMA](Zima_Protocol_Specification_en.md) |
+| CABLE LENGTH<sup>[4](#footnote2224)</sup> | 1 m |
+| SUBSCRIBER DIVISION SCHEME (commands/subscribers) | 32/23 |
+| HORIZONTAL ANGLE OF ARRIVAL ESTIMATION ACCURACY (typ.)<sup>[3](#footnote2223)</sup> | 1° |
+| NOMINAL DISTANCE ESTIMATION ACCURACY<sup>[3](#footnote2223)</sup> | 0.3 m |
 
-##### Дополнительные параметры батарейной канистры<sup>[5](#footnote2225)</sup>
+##### Additional parameters of standard battery pack<sup>[5](#footnote2225)</sup>
 
-| ПАРАМЕТР | ЗНАЧЕНИЕ |
+| PARAMETER | VALUE |
 | :--- | :--- |
-| ТИП ВСТРОЕННЫХ АККУМУЛЯТОРОВ | Ni-MH |
-| ЭЛЕКТРИЧЕСКАЯ ЕМКОСТЬ | 2.9 А\*ч |
-| НОМИНАЛЬНОЕ НАПРЯЖЕНИЕ | 12 В |
-| КОЛИЧЕСТВО ЭЛЕМЕНТОВ В СБОРКЕ | 10 шт |
-| МАТЕРИАЛ КОРПУСА | Delrin |
-| ДИАПАЗОН РАБОЧИХ ТЕМПЕРАТУР | -5 .. 50 °С |
+| BUIT-IN BATTERY TYPE | Ni-MH |
+| ELECTRICAL CAPACITY | 2.9 A\*h |
+| NOMINAL VOLTAGE | 12 V |
+| NUMBER OF BATTERIES | 10 pcs. |
+| CANISTER MATERIAL | Delrin |
+| WORKING TEMPERATURE RANGE | -5 .. 50 °С |
 
+  
 ________________
-<a name="footnote2221"><sup>1</sup></a> Без учета веса блока батарей. Стандартный блок батарей ф50х165 мм, 0.58 кг, 2.9 Ач 12 В. 
-Время работы от стандартного блока батарей в режиме ожидания - до 70 часов, при излучении 1 раз в 3 секунды до 8 часов  
-<a name="footnote2222"><sup>2</sup></a> Значение получено без учета эффекта многолучевого распространения   
-<a name="footnote2223"><sup>3</sup></a> Значение может быть изменено по запросу  
-<a name="footnote2224"><sup>4</sup></a> Получено в лабораторных условиях в статическом эксперименте  
-<a name="footnote2225"><sup>5</sup></a> Стандартная комплектация, может быть изменена без уведомления  
+<a name="footnote2221"><sup>2</sup></a> Without a battery pack. Standard battery pack ф50х165 mm, 0.58 kg, 2.9 A\*h 12 V. Operating time from a standard battery pack in standby mode - up to 70 hours, with radiation 1 time in 3 seconds up to 8 hours.  
+<a name="footnote2222"><sup>1</sup></a> Without the presence of a multipath effect. A parameter that determines the maximum range at which a signal can be received, based on electro-acoustic parameters of the transmitter and receiver, spatial decrease in the intensity of sound energy, attenuation in the medium and the acoustic noise level.   
+Battery life with standard battery pack - up to 70 hours in receiving mode, up to 8 hours with 1 request in 3 seconds schedule.  
+<a name="footnote2223"><sup>3</sup></a> Obtained under laboratory conditions in a static test.  
+<a name="footnote2224"><sup>4</sup></a> Can be changed by a special request.  
+<a name="footnote2225"><sup>5</sup></a> Standard delivery set, subject to change without notice  
 
-#### 2.2.3. Варианты исполнения
-Маяк [Zima-R](Zima_R_Specification_ru.md) представляет собой приемопередатчик гидроакустической цифровой широкополосной связи и может сопрягаться с управляющей системой энергетически и информационно. В этом случае имеется возможность, при наличии у управляющей системы магнитного компаса, определять дистанцию и курсовой угол на базовую станцию, а также получать кодовые команды телеуправления от базовой станции.
-При автономном исполнении маяк комплектуется батарейной канистрой, как показано на рисунке 4. В этом случае он является полностью автономным и не требует сопряжения с носителем.
-В [OEM](Zima_R_OEM_Specification_ru.md) исполнении маяк поставляется в виде комплекта электронных плат для установки пользователем в 
-свой нормобарический корпус. Маяк комплектуется глубоководной гидроакустической антенной. Введение кабеля антенны в нормобарический корпус 
-и коммутация с электроникой маяка в этом случае обеспечивается пользователем.
+#### 2.2.3. Configuration options
+The responder-beacon [Zima-R](Zima_R_Specification_ru.md) is a transceiver for underwater acoustic digital broadband communication and can be interfaced with the control system energetically and informationally. In this case, it is possible, if the control system has a magnetic compass, to determine the distance and heading angle to the base station, as well as receive telecontrol code commands from the base station.
+When autonomous, the beacon is equipped with a battery canister, as shown in Figure 4. In this case, it is completely autonomous and does not require pairing with the carrier underwater vessel.
+In [OEM](Zima_R_OEM_Specification_en.md) the beacon is delivered as a set of electronic boards for user installation in own normobaric housing. The responder-beacon is equipped with a deep-sea underwater acoustic antenna. Insertion of the antenna cable into the pressure-sensitive housing and switching with the beacon electronics, in this case, is provided by the user.
 
 #### 2.2.4. Работа с устройством (автономное исполнение)
 В случае автономного исполнения маяк является полностью автономным. Для работы он должен фиксироваться на носителе таким образом, чтобы рабочие поверхности моноблока (цилиндрическая поверхность и торец) не перекрывались элементами крепежа (для крепления должен использоваться специальный паз) и не экранировались различными элементами конструкции носителя. Для включения маяка-ответчика требуется подключить его к батарейному блоку при помощи разъема, как показано на рисунке 5.
