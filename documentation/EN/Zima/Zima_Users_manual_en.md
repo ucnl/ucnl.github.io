@@ -63,9 +63,9 @@ through the switching unit, the station is connected to the control PC via the U
 | PARAMETER | VALUE |
 | :--- | :--- |
 | DIMENSIONS (Ф х h) | 64 х 128 mm |
-| WEIGHT<sup>[1](#footnote2122)</sup> (dry) | 0.44 kg |
+| WEIGHT<sup>[1](#footnote2121)</sup> (dry) | 0.44 kg |
 | DEPTH RATING | 300 m |
-| MAX. OPERATING RANGE<sup>[2](#footnote2121)</sup> |	3000 m |
+| MAX. OPERATING RANGE<sup>[2](#footnote2122)</sup> |	3000 m |
 | ACOUSIC SOURCE LEVEL |	170 dB re 1 μPa @ 1 m |
 | NOMINAL DEPTH ACCURACY | 0.1 m |
 | HORIZONTAL ANGLE OF ARRIVAL ESTIMATION ACCURACY (typ.)<sup>[3](#footnote2123)</sup> | 1° |
@@ -86,8 +86,8 @@ through the switching unit, the station is connected to the control PC via the U
 | SUBSCRIBER DIVISION SCHEME (commands/subscribers) | 32/23 |
   
 ________________
-<a name="footnote2121"><sup>2</sup></a> Withoud cable and interface converter.  
-<a name="footnote2122"><sup>1</sup></a> A parameter that determines the maximum range at which a signal can be received, based on electro-acoustic parameters of the transmitter and receiver, spatial decrease in the intensity of sound energy, attenuation in the medium and the acoustic noise level.  
+<a name="footnote2121"><sup>1</sup></a> Withoud cable and interface converter.  
+<a name="footnote2122"><sup>2</sup></a> A parameter that determines the maximum range at which a signal can be received, based on electro-acoustic parameters of the transmitter and receiver, spatial decrease in the intensity of sound energy, attenuation in the medium and the acoustic noise level.  
 <a name="footnote2123"><sup>3</sup></a> Obtained under laboratory conditions in a static test.  
 <a name="footnote2124"><sup>4</sup></a> Considering 1 request in 3 seconds.  
 <a name="footnote2125"><sup>5</sup></a> With additional cable and interface converter [Bat&Link Box](Bat_n_link_box_Specification_en.md). Can be increased by a request up to 20 m.  
@@ -262,54 +262,53 @@ The **CONNECTION** tab contains the settings for the connection ports. Its appea
 | **Figure 8 - Settings editor** |
 | _Tab "CONNECTION"_ |
 
-Группа **"Порт ZMA"** активна всегда и отвечает за настройки соединения с базовой станцией [Zima-B](Zima_B_Specification_ru.md). В серийно выпускаемых устройствах поддерживается только скорость 9600 бит/с. 
+The group **"ZMA port"** is always active and is responsible for the settings for connecting to the base station [Zima-B](Zima_B_Specification_ru.md). On commercially available devices, only 9600 bps is supported.
 
-Остальные группы **"Порт AUX1"**, **"Порт AUX2"** и **"Выходной порт"** становятся активны только если установлен соответствующий флажок. 
+Other groups **"AUX1 port"**, **"AUX2 port"** and **"Output port"** become active only if the corresponding checkbox is selected.
 
-- Если система [Zima USBL](Zima_DataBrief_ru.md) используется с GNSS приемником с функцией определения азимута, то необходимо использовать только один из портов AUX, через который в систему поступают данные от этого приемника
+- If the system [Zima USBL](Zima_DataBrief_en.md) is used with a GNSS receiver with heading measurement function, then the user needs to use only one of the AUX ports through which data is received;
 
-- Если система [Zima USBL](Zima_DataBrief_ru.md) используется со стандартным GNSS-приемником, а данный о направлении поставляются от магнитного компаса, то следует использовать оба порта AUX, к одному из них подключается GNSS-приемник, а к другому - магнитный компас.
+- If the system [Zima USBL](Zima_DataBrief_en.md) is used with a standard GNSS receiver, and heading information is supplied from a magnetic compass, then both AUX ports should be used, a GNSS receiver is connected to one of them and a magnetic compass to the other.
 
-Если флажок **"Сохрянять AUX в журнал"** не установлен, то данные, приходящие из портов AUX не будут сохраняться в файл журнала.
+If **"Save AUX to Log"** is not checked, then the data coming from the AUX ports will not be saved to the log file.
 
-Если система работает в абсолютных координатах (т.е. в неё поступают данные о географическом местоположении базовой станции и ориентации ее относительно сторон света) и вычисляются абсолютные геогрфические координаты маяков-ответчиков, то возникает возможность эмулировать сообщения GNSS **RMC** и **GGA** на основе геогрфического положения маяка и передавать их в выходной порт. 
+If the system operates in absolute coordinates (i.e., it receives data on the geographic location of the base station and its orientation relative to the cardinal points) and the absolute geographic coordinates of the responder beacons are calculated, then it becomes possible to emulate GNSS **RMC** and **GGA** messages based on the geographic location of the beacon and transmit them to the output port.
 
-Это может быть, например, виртуальный COM-порт, ко второму концу которого может подключаться картографическое ПО (например, SAS.Planet) для отображения местоположения маяка на карте в реальном времени. Для включения этой функции необходимо установить флажок **"Использовать выходной порт"** и задать требуемые настройки порта, а также указать адрес маяка, на основе координат которого будут эмулироваться данные GNSS. 
+This can be, for example, a virtual COM port, to the second end of which cartographic software (for example, SAS.Planet) can be connected to display the location of the beacon on the map in real-time. To enable this function, it is necessary to check the **Use Output Port** checkbox and set the required port settings, as well as specify the beacon address, based on the coordinates of which GNSS data will be emulated.
 
-При установленном флажке **"Сохранять журнал отдельно"**, данные, передаваемый в выходной порт будут сохраняться в отдельный журнал.
+If the checkbox **"Save log separately"** is checked, the data transferred to the output port will be saved in a separate log.
 
 
-Вкладка **"ОБЩИЕ"** содержит настройки адресов используемых маяков и некоторые физические параметры. Ее внешний вид показан на рисунке 9.
-
+The tab **"GENERAL"** contains the address settings of the used beacons and some physical parameters. Its appearance is shown in Figure 9.
 | ![ZHost settings window view](https://ucnl.github.io/documentation/zhost_setts_2.png) |
 | :---: |
-| **Рисунок 9 - Окно настроек** |
-| _Вкладка "ОБЩИЕ"_ |
+| **Figure 9 - Settings editor** |
+| _Tab "GENERAL"_ |
 
-Группа **"Используемые маяки"** содержит список всех возможных адресов маяков. Система будет автоматически опрашивать маяки, напротив адресов которых в этом списке установлены флажки. 
+The **Used Beacons** group contains a list of all possible beacon addresses. The system will automatically poll beacons, opposite the addresses of which are checked in this list.
 
-Группа **"Временные интервалы"** содержит настройки:
-- порога устаревания данных (в секундах). Если значение не обновлялось более указанного временного интервала, рядом с ним в скобках будут отобржаться символы OBS (Obsolete), указывая оператору на то, что данный конкретный параметр (например, температура воды или напряжение питания маяка) давно не обновлялся
-- Максимальная дистанция. Данный параметр указывает системе максимальное расстояние, на котором может находится маяк-ответчик. Этот параметр ответчает за то, сколько базовая станция будет ожидать ответа маяка. Если по какой-либо причине станция не принимает ответный сигнал маяка, она ждет его в течении определенного времени, называемым времнем таймаута. Имеет смысл устанавливать минимально возможные значения исходя из требований задачи, для того, чтобы ограничить время простоя системы, когда она будет ожидать пропущенный ответ маяка.
+The group **"Time intervals"** contains the settings:
+- the threshold for data obsolescence (in seconds). If the value has not been updated more than the specified time interval, OBS (Obsolete) symbols will be displayed next to it in parentheses, indicating to the operator that this particular parameter (for example, water temperature or beacon supply voltage) has not been updated for a long time;
+- The maximum distance. This parameter tells the system the maximum distance that the responder-beacon can be located. This parameter is responsible for how long the base station will wait for a beacon response. If for some reason the station does not receive a beacon response, it waits for it for a certain time, called a timeout time. It makes sense to set the minimum possible values ​​based on the requirements of the task, in order to limit the downtime of the system when it expects a missed beacon response.
 
-Группа **"Соленость"** позволяет задать значение солености воды (в PSU) или напрямую, или выбрать из базы соленостей мирового окена (вызвав диалог выбора солености по ссылке **". . ."**. Не рекомендуется брать соленость из базы для малых внутренних водоемов: рек, озер, прудов и тп. В данном случае, если точно значение не известно, установить нулевую соленость (пресная вода).
-Значение солености используется системой для более точного определения глубин и скорости звука.
+The **Salinity** group allows the user to set the salinity of the water (in PSU) either directly, or select from the world salinity database (by calling the salinity selection dialogue by the link **".."**). It is not recommended to take salinity from the base for small inland water bodies: rivers, lakes, ponds, etc. In this case, if the exact value is not known, set zero salinity (freshwater).
+The salinity value is used by the system to more accurately determine the depth and speed of sound.
 
-Флажок **"Авторасчет скорости звука"** и управляемая им соответствующая группа отвечают за то, откуда система будет брать скорость звука в воде. Если это значение известно непосредственно из измерения, стоит отключить функцию автоматического расчета и указать значение напрямую. В остальных случаях флажок должен быть установлен. При этом система будет рассчитвать скорость звука по давлению, температуре и солености. Как правило, рассчетное значение хорошо согласуется с фактическим.
+The checkbox **"Auto-calculation of the speed of sound"** and the corresponding group managed by it are responsible for where the system will take the speed of sound in water. If this value is known directly from the measurement, the user should disable the automatic calculation function and specify the value directly. In other cases, the checkbox should be checked. In this case, the system will calculate the speed of sound by pressure, temperature and salinity. As a rule, the calculated value is in good agreement with the actual value.
 
-Группа **"Дополнительно"** содержит:
-- Флажок **"Менее точная оценка глубины"**. Если эта функция включена, маяк будет передавать глубину с меньшим разрешением (~40 см), но при этом глубина будет передаваться за одну транзакцию "запрос-ответ", а фукнция одновременной навигации (отправка на маяк обратного азимута на базовую станцию и измерение маяком дистанции до базовой станции) будет недоступна. Если не требуется функция одновременной навигации (например, если применяется маяк в автономном исполнении) и точность в 40 см по глубине достаточна, следует установить данный флажок.
-- Флажок **"Антенна неподвижна"** предназначен для ситуации, когда система работает в относительных координатах, а базовая станция закреплена неподвижно (например, на пирсе или другом стационарном объекте портовой инфраструктуры) так, что ее горизонтальная ось направлена на север. В таком режиме возможна передача обратного азимута на маяки-ответчики без необходимости наличия GNSS-приемника и компаса.
+Group **"Advanced"** contains:
+- Checkbox **"Less accurate depth estimate"**. If this function is enabled, the beacon will transmit depth with a lower resolution (~ 40 cm), but at the same time, the depth will be transmitted in one request-response transaction, and the function of simultaneous navigation (sending back azimuth to the base station and measuring the distance by the beacon to the base station) will be unavailable. If the simultaneous navigation function is not required (for example, if a beacon is used in stand-alone version) and an accuracy of 40 cm in depth is sufficient, select this checkbox.
+- The checkbox **"Antenna is stationary"** is designed for the situation when the system operates in relative coordinates and the base station is fixed motionless (for example, on a pier or other stationary facility of port infrastructure) so that its horizontal axis is directed to the north. In this mode, it is possible to transmit the reverse azimuth to the transponder beacons without the need for a GNSS receiver and compass.
 
-Вкладка **"ДОПОЛНИТЕЛЬНО"** содержит настройки ориентации базовой станции относительно точки топопривязки (антенны GNSS) и направления нуля компаса. Ее внешний вид показан на рисунке 10.
+The tab **"OPTIONAL"** contains the settings for the orientation of the base station relative to the topographic position (GNSS antenna) and the zero direction of the compass. Its appearance is shown in Figure 10.
 
 | ![ZHost settings window view](https://ucnl.github.io/documentation/zhost_setts_3.png) |
 | :---: |
-| **Рисунок 10 - Окно настроек** |
-| _Вкладка "ДОПОЛНИТЕЛЬНО"_ |
+| **Figure 10 - Settings editor** |
+| _Tab "ADVANCED"_ |
 
-- Параметры **"&Delta;X"** и **"&Delta;Y"** (в метрах) определяют расположение базовой станции в прямоугольной системе координат, связанной с антенной GNSS-приемника (согласно рисунку)
-- Параметр **"&delta;"** (в градусах) задает поворот нуля антенны базовой станции относительно нуля магнитного или GNSS-компаса
+- Parameters **"&Delta;X"** and **"&Delta;Y"** (in meters) determine the location of the base station in a rectangular coordinate system associated with the antenna of the GNSS receiver (according to the figure)
+- The parameter **"&delta;"** (in degrees) sets the zero rotation of the base station antenna relative to the zero of the magnetic or GNSS compass
 
 
 ##### 3.2.1.6 Пункт АВТОЗАПРОС
