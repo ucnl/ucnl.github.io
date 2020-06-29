@@ -86,8 +86,8 @@ through the switching unit, the station is connected to the control PC via the U
 | SUBSCRIBER DIVISION SCHEME (commands/subscribers) | 32/23 |
   
 ________________
-<a name="footnote2121"><sup>2</sup></a> Withoud cable and interface converter.
-<a name="footnote2122"><sup>1</sup></a> A parameter that determines the maximum range at which a signal can be received, based on electro-acoustic parameters of the transmitter and receiver, spatial decrease in the intensity of sound energy, attenuation in the medium and the acoustic noise level.    
+<a name="footnote2121"><sup>2</sup></a> Withoud cable and interface converter.  
+<a name="footnote2122"><sup>1</sup></a> A parameter that determines the maximum range at which a signal can be received, based on electro-acoustic parameters of the transmitter and receiver, spatial decrease in the intensity of sound energy, attenuation in the medium and the acoustic noise level.  
 <a name="footnote2123"><sup>3</sup></a> Obtained under laboratory conditions in a static test.  
 <a name="footnote2124"><sup>4</sup></a> Considering 1 request in 3 seconds.  
 <a name="footnote2125"><sup>5</sup></a> With additional cable and interface converter [Bat&Link Box](Bat_n_link_box_Specification_en.md). Can be increased by a request up to 20 m.  
@@ -145,11 +145,10 @@ The responder-beacon is designed as a maintenance-free monoblock on a cable, emb
 | NUMBER OF BATTERIES | 10 pcs. |
 | CANISTER MATERIAL | Delrin |
 | WORKING TEMPERATURE RANGE | -5 .. 50 °С |
-
   
 ________________
-<a name="footnote2221"><sup>2</sup></a> Without a battery pack. Standard battery pack ф50х165 mm, 0.58 kg, 2.9 A\*h 12 V. Operating time from a standard battery pack in standby mode - up to 70 hours, with radiation 1 time in 3 seconds up to 8 hours.  
-<a name="footnote2222"><sup>1</sup></a> Without the presence of a multipath effect. A parameter that determines the maximum range at which a signal can be received, based on electro-acoustic parameters of the transmitter and receiver, spatial decrease in the intensity of sound energy, attenuation in the medium and the acoustic noise level.   
+<a name="footnote2221"><sup>1</sup></a> Without a battery pack. Standard battery pack ф50х165 mm, 0.58 kg, 2.9 A\*h 12 V. Operating time from a standard battery pack in standby mode - up to 70 hours, with radiation 1 time in 3 seconds up to 8 hours.  
+<a name="footnote2222"><sup>2</sup></a> Without the presence of a multipath effect. A parameter that determines the maximum range at which a signal can be received, based on electro-acoustic parameters of the transmitter and receiver, spatial decrease in the intensity of sound energy, attenuation in the medium and the acoustic noise level.   
 Battery life with standard battery pack - up to 70 hours in receiving mode, up to 8 hours with 1 request in 3 seconds schedule.  
 <a name="footnote2223"><sup>3</sup></a> Obtained under laboratory conditions in a static test.  
 <a name="footnote2224"><sup>4</sup></a> Can be changed by a special request.  
