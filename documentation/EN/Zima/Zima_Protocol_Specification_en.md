@@ -412,14 +412,14 @@ Format: **`$PZMA!, c--c,x,c--c,x,x,c--c*hh <CR><LF>`**
 ### 3.1 Device types 
 
 | Value | Name | Description |
-| :---: | :---: | :--- |
+| :---: | :--- | :--- |
 | 0 |	DEV_BASE | Zima-B base station |
 | 1 | DEV_BCN | Zima-R responder-beacon |
 
 ### 3.2 Error codes
 
 | Value | Name | Description |
-| :---: | :---: | :--- |
+| :---: | :--- | :--- |
 | 0 | NO_ERROR | Request accepted | 
 | 1 | INVALID_SYNTAX | Syntax error | 
 | 2 | UNSUPPORTED | Request is not supported | 
@@ -435,7 +435,7 @@ Format: **`$PZMA!, c--c,x,c--c,x,x,c--c*hh <CR><LF>`**
 ### 3.3 Local data identifiers
 
 | Value | Name | Description |
-| :---: | :---: | :--- |
+| :---: | :--- | :--- |
 | 0 | DEVICE_INFO | Device information |
 | 1 | LOC_DATA_MAX_REMOTE_TIMEOUT | Remote response timeout, msec |
 | 2 | LOC_DATA_MAX_SUBSCRIBERS | Max. number of responder-beacons (addresses) |
@@ -454,7 +454,7 @@ Format: **`$PZMA!, c--c,x,c--c,x,x,c--c*hh <CR><LF>`**
 ### 3.4 Service action identifiers
 
 | Value | Name | Description |
-| :---: | :---: | :--- |
+| :---: | :--- | :--- |
 | 0 | LOC_INVOKE_FLASH_WRITE | Save all settings in built-in flash memory |
 | 1 | LOC_INVOKE_DPT_ZERO_ADJUST | Set current pressure readings as a pressure at the water surface |
 | 2 | LOC_INVOKE_SYSTEM_RESET | Warm system reset |
@@ -463,7 +463,7 @@ Format: **`$PZMA!, c--c,x,c--c,x,x,c--c*hh <CR><LF>`**
 
 ### 3.5 Remote request identifiers
 | Name | Value | Description |
-| :---: | :---: | :--- |
+| :---: | :--- | :--- |
 | CDS_PING | 361 | Ping |
 | CDS_DPT_GET | 362 | Remote responder-beacon depth |
 | CDS_STY_SET_0 | 363 | Set salinity 0 PSU |
