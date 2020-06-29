@@ -43,7 +43,7 @@
 
 ## 1. Introduction
 ### 1.1. Physical layer
-Devices of [Zima USBL](Zima_DataBrief_en.md) underwater acoustic tracking system support data pairing using the RS-232 physical layer standard for asynchronous interface (UART) with a 3.3V data line voltage. The connection is made using a four-wire cable with Tx (transmitter), Rx (receiver), Vcc (power) and GND (ground) wires. Without the use of additional repeaters and interface converters, the maximum cable length, for which the correct operation of the interface is guaranteed, is no more than 2 meters.
+Devices of [Zima USBL](Zima_DataBrief_en.md) underwater acoustic tracking system support data pairing using the **RS-232** physical layer standard for asynchronous interface **(UART)** with a **3.3V** data line voltage. The connection is made using a four-wire cable with Tx (transmitter), Rx (receiver), Vcc (power) and GND (ground) wires. Without the use of additional repeaters and interface converters, the maximum cable length, for which the correct operation of the interface is guaranteed, is no more than 2 meters.
 
 Default port settings<sup>[1](#footnote1)</sup>:  
 > _Baudrate: 9600 bit/s_  
@@ -53,17 +53,17 @@ Default port settings<sup>[1](#footnote1)</sup>:
 > _Hardware flow control: No_  
 
 >**WARNING!**
->_The modems are powered by 12 Volt DC source, while the data line voltage is 3.3 V._
+>_Devices are powered by 12 Volt DC source, while the data line voltage is 3.3 V._
 
 ### 1.2. NMEA0183 Protocol standard
 The NMEA0183 standard describes the format of text (ASCII) messages at the interactive level.
 
-Sentence example: **`$PTNT0,1*hh<СR><LF>`**  
+Sentence example: **`$PZMA0,0*hh<СR><LF>`**  
 
 Parts of a message (sentence) NMEА0183:
 * '$' - sentence start,
 * 'P' - Proprietary
-* 'TNT' - Manufacturer/protocol identifier
+* 'ZMA' - Manufacturer/protocol identifier
 * '0' - sentence identifier
 * ',' - parameters separator
 * '*' - checksum separator
@@ -72,415 +72,401 @@ Parts of a message (sentence) NMEА0183:
 ________
 <a name="footnote1"><sup>1</sup> Specified parameters can be changed by a request</a>
 
-## 1. Введение
-### 1.1. Протокол физического уровеня
-
-Устройства системы [Zima USBL](Zima_DataBrief_ru.md) поддерживают информационное сопряжение при помощи стандарта физического уровня RS-232 
-для асинхронного интерфейса (UART) c напряжением линии данных 3.3В. Подключение производится при помощи четырехпроводного кабеля, с жилами Tx
-(трансмиттер), Rx (ресивер), Vcc (питание) и GND (земля). Без применения дополнительных повторителей и преобразователей интерфейса 
-максимальная длинна шины данных, для которой гарантируется корректная работа интерфейса, составляет не более 2 метров.
-
-Настройки порта подключения по умолчанию<sup>[1](#footnote1)</sup>:  
-> _Baudrate: 9600 bit/s_  
-> _Data bits: 8_  
-> _Stop bits: 1_  
-> _Parity: No_  
-> _Hardware flow control: No_  
-
->**ВНИМАНИЕ!**
->_У устройств без преобразователей интерфейса напряжение линии данных составляет 3.3 В._
-
-### 1.2. Стандарт протокола диалогового уровня NMEA0183
-Стандарт NMEA0183 описывает формат текстовых (ASCII) сообщений диалогового уровня.  
-
-Пример сообщения:  **`$PZMA0,0*hh<СR><LF>`**  
-
-Основные элементы посылки (сообщения, sentence) NMEА0183:
-* '$' - начало сообщения,
-* 'P' - Proprietary, проприетарный код
-* 'ZMA' - трехбуквенный идентификатор производителя
-* '0' - идентификатор сообщения
-* ',' - запятая (разделитель параметров)  
-* '*' - разделитель контрольной суммы
-* 'hh' - контрольная сумма в шестнадцатеричном формате (например FF, 01). Рассчитывается как побитовый XOR всех байт между '$' и '*'.
-* \<CR\>\<LF\> - конец сообщения (перевод строки)
-________
-<a name="footnote1"><sup>1</sup> Указанные параметры могут быть изменены по запросу</a>
-
 <div style="page-break-after: always;"></div>
 
-## 2. Система команд ZMA
-Префикс **D2H** в наименовании сообщений означает, что оно передается от устройства (Device) к управляющей системе (Host).
-Префикс **H2D** в наименовании сообщений означает, что оно передается от управляющей системы (Host) к устройству (Device).
+## 2. ZMA command system for Zima USBL system
+The **D2H** prefix in the message name means that it is transmitted from the device (Device) to the host system (Host).
+The **H2D** prefix in the message name means that it is transmitted from the host system to the device.
 
 ### 2.1. IC_D2H_ACK
-Сообщение IC_D2H_ACK - реакция устройства на поступивший от управляющей системы запрос.  
+Device acknowledgement.
 
-Формат сообщения: **`$PZMA0,xx*hh<CR><LF>`**
+Format: **`$PTNT0,x*hh<CR><LF>`**  
 
-| Поле/параметр | Описание |
-| :--- | :--- |
-| $	| начало сообщения '$' |
-| PZMA | система команд ZMA |
-| 0	| идентификатор сообщения |
-| Error code | Код ошибки \([см. 3.2.](#32-%D0%BA%D0%BE%D0%B4%D1%8B-%D0%BE%D1%88%D0%B8%D0%B1%D0%BE%D0%BA)\) |
-| *	| разделитель контр. суммы NMEA |
-| hh | контрольная сумма NMEA |
-| \<CR\>\<LF\> | конец сообщения |
+| № | Field/Parameter |	Description |
+| :--- | :--- | :--- |
+|   | $	| Sentence start '$' |
+|   | P | Proprietary sentence |
+|   | ZMA | Proprietery code ID |
+|   | 0	| Sentence ID |
+| 1 | errCode	| Error code \([see 3.2.](#32-error-messages)\) |
+|   | *	| NMEA checksum separator |
+|   | hh	| NMEA checksum |
+|   | \<CR\>\<LF\> | end of sentence |
 
 
 ### 2.2. IC_H2D_FLD_GET
-Прочитать значение поля. В ответ на эту команду устройство отсылает сообщение [IC_D2H_FLD_VAL](#24-ic_d2h_fld_val), содержащее значение запрашиваемого поля 
-в случае успешного присваивания и сообщения [IC_D2H_ACK](#21-ic_d2h_ack) с кодом ошибки, в случае возникновения ошибки.  
+Reads the value of the field. In response to this command, the device sends a message [IC_D2H_FLD_VAL](#24-ic_d2h_fld_val) containing the value of the requested field
+in case of successful assignment and message [IC_D2H_ACK](#21-ic_d2h_ack) with an error code, in case of an error. 
 
-Формат сообщения: **`$PZMA1,xx,00*hh <CR><LF>`**
+Format: **`$PZMA1,xx,00*hh <CR><LF>`**
 
-| Поле/параметр | Описание |
-| :--- | :--- |
-| $	| начало сообщения '$' |
-| PZMA | система команд ZMA |
-| 1 | Идентификатор сообщения |
-| Field ID | Идентификатор поля |
-| Reserved | Должно быть всегда '00', зарезервированно |
-| *	| разделитель контр. суммы NMEA |
-| hh | контрольная сумма NMEA |
-| \<CR\>\<LF\> | конец сообщения |
+| № | Field/Parameter |	Description |
+| :--- | :--- | :--- |
+|  | $	| Sentence start '$' |
+|  | P | Proprietary sentence |
+|  | ZMA | Proprietery code ID |
+|   | 1 | Sentence ID |
+| 1 | Field ID | Field identifier |
+| 2 | Reserved | Shall be '00' |
+|   | *	| NMEA checksum separator |
+|   | hh	| NMEA checksum |
+|   | \<CR\>\<LF\> | end of sentence |
 
 
-### 2.3 IC_H2D_FLD_SET
-Задать значение поля. В ответ на эту команду устройство отсылает сообщение [IC_D2H_FLD_VAL](#24-ic_d2h_fld_val), содержащее значение запрашиваемого поля в 
-случае успешного присваивания и сообщения [IC_D2H_ACK](#21-ic_d2h_ack) с кодом ошибки, в случае возникновения ошибки.  
+### 2.3. IC_H2D_FLD_SET
+Sets the value of the field. In response to this command, the device sends a message [IC_D2H_FLD_VAL](#24-ic_d2h_fld_val) containing the value of the requested field in
+in case of successful assignment and message [IC_D2H_ACK](#21-ic_d2h_ack) with an error code, in case of an error.
 
-Формат сообщения: **`$PZMA2,x,x*hh<CR><LF>`**
+Format: **`$PZMA2,x,x*hh<CR><LF>`**
 
-| Поле/параметр | Описание |
-| :--- | :--- |
-| $	| начало сообщения '$' |
-| PZMA | система команд ZMA |
-| 2 | Идентификатор сообщения |
-| Field ID | Идентификатор поля |
-| Field value | Значение поля (0..99) |
-| *	| разделитель контр. суммы NMEA |
-| hh | контрольная сумма NMEA |
-| \<CR\>\<LF\> | конец сообщения |
+| № | Field/Parameter |	Description |
+| :--- | :--- | :--- |
+|   | $	| Sentence start '$' |
+|   | P | Proprietary sentence |
+|   | ZMA | Proprietery code ID |
+|   | 2 | Sentence ID |
+| 1 | Field ID | Field identifier |
+| 2 | Field value | Field value (0..99) |
+|   | *	| NMEA checksum separator |
+|   | hh	| NMEA checksum |
+|   | \<CR\>\<LF\> | end of sentence |
 
 
 ### 2.4 IC_D2H_FLD_VAL
-Прочитать локальные данные.  
+Requested field value.  
 
-Формат сообщения: **`$PZMA3,xx,xx,00*hh<CR><LF>`**
+Format: **`$PZMA3,xx,xx,00*hh<CR><LF>`**
 
-| Поле/параметр | Описание |
-| :--- | :--- |
-| $	| начало сообщения '$' |
-| PZMA | система команд ZMA |
-| 3 | Идентификатор сообщения |
-| Requested data ID | Идентификатор поля |
-| Reserved | Значение поля |
-| *	| разделитель контр. суммы NMEA |
-| hh | контрольная сумма NMEA |
-| \<CR\>\<LF\> | конец сообщения |
+| № | Field/Parameter |	Description |
+| :--- | :--- | :--- |
+|   | $	| Sentence start '$' |
+|   | P | Proprietary sentence |
+|   | ZMA | Proprietery code ID |
+|   | 3 | Sentence ID |
+| 1 | Requested field ID | Field identifier |
+| 2 | Value | Requested value |
+|   | *	| NMEA checksum separator |
+|   | hh	| NMEA checksum |
+|   | \<CR\>\<LF\> | end of sentence |
+
 
 
 ### 2.5 IC_H2D_LOC_DATA_GET
-Прочитать значение локального параметра.  
+Reads the value of local parameter.  
 
-Формат сообщения: **`$PZMA4,xx,00*hh<CR><LF`**
+Format: **`$PZMA4,xx,00*hh<CR><LF`**
 
-| Поле/параметр | Описание |
-| :--- | :--- |
-| $	| начало сообщения '$' |
-| PZMA | система команд ZMA |
-| 4	| Идентификатор сообщения |
-| LocDataID	| Идентификатор параметра \([см. 3.3.](#33-%D0%B8%D0%B4%D0%B5%D0%BD%D1%82%D0%B8%D1%84%D0%B8%D0%BA%D0%B0%D1%82%D0%BE%D1%80%D1%8B-%D0%BB%D0%BE%D0%BA%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D1%85-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85)\) |
-| Reserved	| Зарезервировано - '00' |
-| *	| разделитель контр. суммы NMEA |
-| hh | контрольная сумма NMEA |
-| \<CR\>\<LF\> | конец сообщения |
+| № | Field/Parameter |	Description |
+| :--- | :--- | :--- |
+|   | $	| Sentence start '$' |
+|   | P | Proprietary sentence |
+|   | ZMA | Proprietery code ID |
+|   | 4	| Sentence ID |
+| 1 | LocDataID	| Local parameter ID \([see 3.3.]()\) |
+| 2 | Reserved	| Reserved, shall be '00' |
+|   | *	| NMEA checksum separator |
+|   | hh	| NMEA checksum |
+|   | \<CR\>\<LF\> | end of sentence |
 
 
 ### 2.6 IC_H2D_LOC_DATA_SET
-Задать значение локального параметра.  
+Sets the value of a local parameter.  
 
-Формат сообщения: **`$PZMA5,xx,x.x*hh<CR><LF>`**
+Format: **`$PZMA5,xx,x.x*hh<CR><LF>`**
 
-| Поле/параметр | Описание |
-| :--- | :--- |
-| $	| начало сообщения '$' |
-| PZMA | система команд ZMA |
-| 5	| Идентификатор сообщения |
-| LocDataID	| Идентификатор параметра Идентификатор параметра \([см. 3.3.](#33-%D0%B8%D0%B4%D0%B5%D0%BD%D1%82%D0%B8%D1%84%D0%B8%D0%BA%D0%B0%D1%82%D0%BE%D1%80%D1%8B-%D0%BB%D0%BE%D0%BA%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D1%85-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85)\) |
-| LocDataValue	| Значение параметра |
-| *	| разделитель контр. суммы NMEA |
-| hh | контрольная сумма NMEA |
-| \<CR\>\<LF\> | конец сообщения |
+| № | Field/Parameter |	Description |
+| :--- | :--- | :--- |
+|   | $	| Sentence start '$' |
+|   | P | Proprietary sentence |
+|   | ZMA | Proprietery code ID |
+|   | 5	| Sentence ID |
+| 1 | LocDataID	| Local parameter identifier \([see 3.3.]()\) |
+| 2 | LocDataValue	| New value to be set |
+|   | *	| NMEA checksum separator |
+|   | hh	| NMEA checksum |
+|   | \<CR\>\<LF\> | end of sentence |
 
 
 ### 2.7 IC_D2H_LOC_DATA_VAL
-Значение локального параметра.  
+Value of the requested local parameter.  
 
-Формат сообщения: **`$PZMA6,xx,x.x*hh <CR><LF>`**
+Format: **`$PZMA6,xx,x.x*hh <CR><LF>`**
 
-| Поле/параметр | Описание |
-| :--- | :--- |
-| $	| начало сообщения '$' |
-| PZMA | система команд ZMA |
-| 6 | Идентификатор сообщения |
-| LocDataID | Идентификатор параметра Идентификатор параметра \([см. 3.3.](#33-%D0%B8%D0%B4%D0%B5%D0%BD%D1%82%D0%B8%D1%84%D0%B8%D0%BA%D0%B0%D1%82%D0%BE%D1%80%D1%8B-%D0%BB%D0%BE%D0%BA%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D1%85-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85)\) |
-| LocDataValue | Значение параметра |
-| *	| разделитель контр. суммы NMEA |
-| hh | контрольная сумма NMEA |
-| \<CR\>\<LF\> | конец сообщения |
+| № | Field/Parameter |	Description |
+| :--- | :--- | :--- |
+|   | $	| Sentence start '$' |
+|   | P | Proprietary sentence |
+|   | ZMA | Proprietery code ID |
+|   | 6 | Sentence ID |
+| 1 | LocDataID | Local parameter identifier \([see 3.3.]()\) |
+| 2 | LocDataValue | Actual parameter value |
+|   | *	| NMEA checksum separator |
+|   | hh	| NMEA checksum |
+|   | \<CR\>\<LF\> | end of sentence |
 
 ### 2.8 IC_H2D_LOC_INVOKE
-Выполнить операцию.  
+Service operation invokation.  
 
-Формат сообщения: **`$PZMA7,xx,xx*hh <CR><LF>`**
+Format: **`$PZMA7,xx,xx*hh <CR><LF>`**
 
-| Поле/параметр | Описание |
-| :--- | :--- |
-| $	| начало сообщения '$' |
-| PZMA | система команд ZMA |
-| 7 | Идентификатор сообщения |
-| ActionID | Идентификатор операции \([см. 3.4.](#34-%D0%B8%D0%B4%D0%B5%D0%BD%D1%82%D0%B8%D1%84%D0%B8%D0%BA%D0%B0%D1%82%D0%BE%D1%80%D1%8B-%D0%BE%D0%BF%D0%B5%D1%80%D0%B0%D1%86%D0%B8%D0%B9)\) |
-| ActionParam | Параметр |
-| *	| разделитель контр. суммы NMEA |
-| hh | контрольная сумма NMEA |
-| \<CR\>\<LF\> | конец сообщения |
+| № | Field/Parameter |	Description |
+| :--- | :--- | :--- |
+|   | $	| Sentence start '$' |
+|   | P | Proprietary sentence |
+|   | ZMA | Proprietery code ID |
+|   | 7 | Sentence ID |
+| 1 | ActionID | Service operation identifier \([see 3.4.]()\) |
+| 2 | ActionParam | Service operation parameter |
+|   | *	| NMEA checksum separator |
+|   | hh	| NMEA checksum |
+|   | \<CR\>\<LF\> | end of sentence |
 
 
 ### 2.9 IC_D2H_LD
-Навигационные данные (ответчик).  
+Navigation data (responder-beacon).  
 
-Формат сообщения: **`$PZMAA,x.x,x.x,x.x,x.x*hh <CR><LF>`**
+Format: **`$PZMAA,x.x,x.x,x.x,x.x*hh <CR><LF>`**
 
-| Поле/параметр | Описание |
-| :--- | :--- |
-| $	| начало сообщения '$' |
-| PZMA | система команд ZMA |
-| A	| Идентификатор сообщения |
-| Azimuth	| Азимут на базовую станцию, град. |
-| Distance	| Дистанция до базовой станции, м |
-| SNR	| Соотношение сигнал-шум, дБ |
-| Dpl	| Допплеровское смещение частоты, Гц |
-| *	| разделитель контр. суммы NMEA |
-| hh | контрольная сумма NMEA |
-| \<CR\>\<LF\> | конец сообщения |
+| № | Field/Parameter |	Description |
+| :--- | :--- | :--- |
+|   | $	| Sentence start '$' |
+|   | P | Proprietary sentence |
+|   | ZMA | Proprietery code ID |
+|   | A	| Sentence ID |
+| 1 | Azimuth	| Azimuth to the base station, ° |
+| 2 | Distance	| Slant range to the base station, m |
+| 3 | MSR	| Main lobe to side-peak ratio, dB |
+| 4 | Dpl	| Doppler shift, Hz |
+|   | *	| NMEA checksum separator |
+|   | hh	| NMEA checksum |
+|   | \<CR\>\<LF\> | end of sentence |
 
 ### 2.10 IC_D2H_BASE_REQ
-Запрос базовой станции (ответчик).  
+A request from the base station is received (responder-beacon).  
 
-Формат сообщения: **`$PZMAB,x,x.x,x.x*hh <CR><LF>`**
+Format: **`$PZMAB,x,x.x,x.x*hh <CR><LF>`**
 
-| Поле/параметр | Описание |
-| :--- | :--- |
-| $	| начало сообщения '$' |
-| PZMA | система команд ZMA |
-| B | Идентификатор сообщения |
-| CommandID | Идентификатор команды  \([см. 3.5.](#35-%D0%B8%D0%B4%D0%B5%D0%BD%D1%82%D0%B8%D1%84%D0%B8%D0%BA%D0%B0%D1%82%D0%BE%D1%80%D1%8B-%D1%83%D0%B4%D0%B0%D0%BB%D0%B5%D0%BD%D0%BD%D1%8B%D1%85-%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4)\) |
-| SNR | Соотношение сигнал-шум, дБ |
-| Dpl | Допплеровское смещение частоты, Гц |
-| *	| разделитель контр. суммы NMEA |
-| hh | контрольная сумма NMEA |
-| \<CR\>\<LF\> | конец сообщения |
+| № | Field/Parameter |	Description |
+| :--- | :--- | :--- |
+|   | $	| Sentence start '$' |
+|   | P | Proprietary sentence |
+|   | ZMA | Proprietery code ID |
+|   | B | Sentence ID |
+| 1 | CommandID | Request ID \([see 3.5.]()\) |
+| 2 | MSR	| Main lobe to side-peak ratio, dB |
+| 3 | Dpl	| Doppler shift, Hz |
+|   | *	| NMEA checksum separator |
+|   | hh	| NMEA checksum |
+|   | \<CR\>\<LF\> | end of sentence |
 
 
 ### 2.11 IC_H2D_REM_REQ
-Запрос удаленного ответчика
+Request to a remote responder-beacon.
 
-Формат сообщения: **`$PZMAС,x,x*hh <CR><LF>`**
+Format: **`$PZMAС,x,x*hh <CR><LF>`**
 
-| Поле/параметр | Описание |
-| :--- | :--- |
-| $	| начало сообщения '$' |
-| PZMA | система команд ZMA |
-| C | Идентификатор сообщения |
-| TargetID | Адрес запрашиваемого ответчика |
-| RequestID | Идентификатор запроса \([см. 3.5.](#35-%D0%B8%D0%B4%D0%B5%D0%BD%D1%82%D0%B8%D1%84%D0%B8%D0%BA%D0%B0%D1%82%D0%BE%D1%80%D1%8B-%D1%83%D0%B4%D0%B0%D0%BB%D0%B5%D0%BD%D0%BD%D1%8B%D1%85-%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4)\) |
-| *	| разделитель контр. суммы NMEA |
-| hh | контрольная сумма NMEA |
-| \<CR\>\<LF\> | конец сообщения |
+| № | Field/Parameter |	Description |
+| :--- | :--- | :--- |
+|   | $	| Sentence start '$' |
+|   | P | Proprietary sentence |
+|   | ZMA | Proprietery code ID |
+|   | C | Sentence ID |
+| 1 | TargetID | Address of a remote responder-beacon |
+| 2 | RequestID | Request ID \([see 3.5.]()\) |
+|   | *	| NMEA checksum separator |
+|   | hh	| NMEA checksum |
+|   | \<CR\>\<LF\> | end of sentence |
 
 
 ### 2.12 IC_D2H_REM_TOUT
-Таймаут удаленного ответчика.  
+Requested responder-beacon timeout exceeded.  
 
-Формат сообщения: **`$PZMAD,x, x*hh <CR><LF>`**
+Format: **`$PZMAD,x, x*hh <CR><LF>`**
 
-| Поле/параметр | Описание |
-| :--- | :--- |
-| $	| начало сообщения '$' |
-| PZMA | система команд ZMA |
-| D | Идентификатор сообщения |
-| TargetID | Адрес запрошенного ответчика |
-| RequestID | Идентификатор запроса \([см. 3.5.](#35-%D0%B8%D0%B4%D0%B5%D0%BD%D1%82%D0%B8%D1%84%D0%B8%D0%BA%D0%B0%D1%82%D0%BE%D1%80%D1%8B-%D1%83%D0%B4%D0%B0%D0%BB%D0%B5%D0%BD%D0%BD%D1%8B%D1%85-%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4)\) |
-| *	| разделитель контр. суммы NMEA |
-| hh | контрольная сумма NMEA |
-| \<CR\>\<LF\> | конец сообщения |
+| № | Field/Parameter |	Description |
+| :--- | :--- | :--- |
+|   | $	| Sentence start '$' |
+|   | P | Proprietary sentence |
+|   | ZMA | Proprietery code ID |
+|   | D | Идентификатор сообщения |
+| 1 | TargetID | Address of the requested remote responder-beacon |
+| 2 | RequestID | Request identifier \([see 3.5.]()\) |
+|   | *	| NMEA checksum separator |
+|   | hh	| NMEA checksum |
+|   | \<CR\>\<LF\> | end of sentence |
 
 
 ### 2.13 IC_D2H_REM_RESP
-Ответ удаленного ответчика.  
+Station has received a response of a requested responder-beacon.  
 
-Формат сообщения: **`$PZMAE, x,x,x,x.x,x.x,x.x,x.x,x.x*hh <CR><LF>`**
+Format: **`$PZMAE, x,x,x,x.x,x.x,x.x,x.x,x.x*hh <CR><LF>`**
 
-| Поле/параметр | Описание |
-| :--- | :--- |
-| $	| начало сообщения '$' |
-| PZMA | система команд ZMA |
-| E | Идентификатор сообщения |
-| TargetID | Адрес запрошенного ответчика |
-| RequestID | Идентификатор запроса \([см. 3.5.](#35-%D0%B8%D0%B4%D0%B5%D0%BD%D1%82%D0%B8%D1%84%D0%B8%D0%BA%D0%B0%D1%82%D0%BE%D1%80%D1%8B-%D1%83%D0%B4%D0%B0%D0%BB%D0%B5%D0%BD%D0%BD%D1%8B%D1%85-%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4)\) |
-| dFlag | Зарезервированно |
-| Azimuth | Горизонтальный угол на ответчик, град. |
-| Distance | Дистанция до ответчика, м |
-| DataValue | Значение запрошенного параметра |
-| SNR | Соотношение сигнал-шум, дБ |
-| DPL | Допплеровское смещение, Гц |
-| *	| разделитель контр. суммы NMEA |
-| hh | контрольная сумма NMEA |
-| \<CR\>\<LF\> | конец сообщения |
+| № | Field/Parameter |	Description |
+| :--- | :--- | :--- |
+|   | $	| Sentence start '$' |
+|   | P | Proprietary sentence |
+|   | ZMA | Proprietery code ID |
+|   | E | Sentence ID |
+| 1 | TargetID | Address of the requested remote responder-beacon |
+| 2 | RequestID | Request identifier \([see 3.5.]()\) |
+| 2 | dFlag | reserved |
+| 4 | Azimuth | Horizontal angle to the responder-beacon, °. |
+| 5 | Distance | Slant range to the responder-beacon, m |
+| 6 | DataValue | Value of the requested parameter |
+| 7 | MSR | Main lobe to side-peak ratio, dB |
+| 8 | Dpl | Doppler shift, Hz |
+|   | *	| NMEA checksum separator |
+|   | hh	| NMEA checksum |
+|   | \<CR\>\<LF\> | end of sentence |
 
 
 ### 2.14 IC_D2H_SYS_STATE
-Cостояние системы.  
+Station state.  
 
-Формат сообщения: **`$PZMAF, x.x,x.x,x.x*hh <CR><LF>`**
+Format: **`$PZMAF, x.x,x.x,x.x*hh <CR><LF>`**
 
-| Поле/параметр | Описание |
-| :--- | :--- |
-| $	| начало сообщения '$' |
-| PZMA | система команд ZMA |
-| F | Идентификатор сообщения |
-| Temperature | Температура воды, °С |
-| Depth | Глубина базовой станции от поверхности, м |
-| isAHRSEnabled | Состояние AHRS |
-| TRX_State | Состояние приемопередатчика |
-| *	| разделитель контр. суммы NMEA |
-| hh | контрольная сумма NMEA |
-| \<CR\>\<LF\> | конец сообщения |
+| № | Field/Parameter |	Description |
+| :--- | :--- | :--- |
+|   | $	| Sentence start '$' |
+|   | P | Proprietary sentence |
+|   | ZMA | Proprietery code ID |
+|   | F | Sentence ID |
+| 1 | Temperature | Water temperature, °С |
+| 2 | Depth | Depth of the base station, m |
+| 3 | isAHRSEnabled | reserved |
+| 4 | TRX_State | Transmitter/Receiver state |
+|   | *	| NMEA checksum separator |
+|   | hh	| NMEA checksum |
+|   | \<CR\>\<LF\> | end of sentence |
+
 
 ### 2.15 IC_D2H_INC_DATA
-Показания встроенного инклинометра[<sup>*</sup>](#footnote_incdata)  
+Built-in inclinometer data[<sup>*</sup>](#footnote_incdata).  
 
-Формат сообщения: **`$PZMAG, x.x,x.x*hh <CR><LF>`**
+Format: **`$PZMAG, x.x,x.x*hh <CR><LF>`**
 
-| Поле/параметр | Описание |
-| :--- | :--- |
-| $	| начало сообщения '$' |
-| PZMA | система команд ZMA |
-| G | Идентификатор сообщения |
-| Roll | Крен, °. 0 - вертикальное положение, 0..+90 - поворот на правый борт, 0..-90 - поворот на левый борт |
-| Pitch | Дифферент, °. 0 - вертикальное положение, 0..+90 - крен на нос, 0..-90 - крен на корму |
-| *	| разделитель контр. суммы NMEA |
-| hh | контрольная сумма NMEA |
-| \<CR\>\<LF\> | конец сообщения |
+| № | Field/Parameter |	Description |
+| :--- | :--- | :--- |
+|   | $	| Sentence start '$' |
+|   | P | Proprietary sentence |
+|   | ZMA | Proprietery code ID |
+|   | G | Sentence ID |
+| 1 | Roll | Roll, °. 0 - vertical, 0 .. +90 - to the right side, 0 .. -90 - to the left side |
+| 2 | Pitch | Pitch, °. 0 - vertical, 0 .. +90 - to bow, 0 .. -90 - to stern |
+|   | *	| NMEA checksum separator |
+|   | hh	| NMEA checksum |
+|   | \<CR\>\<LF\> | end of sentence |
 
 ____________
-<a name="footnote_incdata"><sup>*</sup></a> Для систем, выпущенных после 09.2019  
+<a name="footnote_incdata"><sup>*</sup></a> For devices released after 09.2019  
 
 ### 2.16 IC_H2D_REM_REQ_EX
-Запрос удаленного ответчика c передачей обратного азимута.  
+Request of a remote responder-beacon with transmission of a reverse azimiuth.  
 
-Формат сообщения: **`$PZMAH,x,x,x*hh <CR><LF>`**
+Format: **`$PZMAH,x,x,x*hh <CR><LF>`**
 
-| Поле/параметр | Описание |
-| :--- | :--- |
-| $	| начало сообщения '$' |
-| PZMA | система команд ZMA |
-| H	| Идентификатор сообщения |
-| TargetAddress	| Адрес запрашиваемого маяка-ответчика |
-| RequestID | Команда (всегда должно быть CDS_DPT_GET, \([см. 3.5.](#35-%D0%B8%D0%B4%D0%B5%D0%BD%D1%82%D0%B8%D1%84%D0%B8%D0%BA%D0%B0%D1%82%D0%BE%D1%80%D1%8B-%D1%83%D0%B4%D0%B0%D0%BB%D0%B5%D0%BD%D0%BD%D1%8B%D1%85-%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4)\) |
-| ReverseAzimuthToTheBase | Обратный азимут[ Значение обратного азимута от маяка-ответчика на базовую станцию должно быть предварительно вычислено. При использовании библиотеки ZLibrary и приложения ZHost происходит автоматически, при наличии подключенной системы определения курса и положения антенны Zima-Base.] от маяка-ответчика на базовую станцию
-| *	| разделитель контр. суммы NMEA |
-| hh | контрольная сумма NMEA |
-| \<CR\>\<LF\> | конец сообщения |
+| № | Field/Parameter |	Description |
+| :--- | :--- | :--- |
+|   | $	| Sentence start '$' |
+|   | P | Proprietary sentence |
+|   | ZMA | Proprietery code ID |
+|   | H	| Sentence ID |
+| 1 | TargetAddress	| Address of a remote responder-beacon to request |
+| 2 | RequestID | Command (should be always **CDS_DPT_GET** \([see 3.5.]()\) |
+| 3 | ReverseAzimuthToTheBase | Reverse azimuth[<sup>*</sup>](#footnote_revaz) from the responder-beacon to the base station |
+|   | *	| NMEA checksum separator |
+|   | hh	| NMEA checksum |
+|   | \<CR\>\<LF\> | end of sentence |
+
+____________
+<a name="footnote_revaz"><sup>*</sup></a> The azimuth value from the responder-beacon to the base station must be pre-calculated. When using the [ZHost](https://api.github.com/repos/ucnl/ZHost/zipball) application, it happens automatically, if there is a connected system for determining the heading and position of the [Zima-B](Zima_B_Specification_en.md) antenna.  
 
 
 ### 2.17 IC_D2H_DEV_INFO
-Информация об устройстве.  
+Device information.  
 
-Формат сообщения: **`$PZMA!, c--c,x,c--c,x,x,c--c*hh <CR><LF>`**
+Format: **`$PZMA!, c--c,x,c--c,x,x,c--c*hh <CR><LF>`**
 
-| Поле/параметр | Описание |
-| :--- | :--- |
-| $	| начало сообщения '$' |
-| PZMA | система команд ZMA |
-| ! | Идентификатор сообщения |
-| Sys_moniker | Наименование системы |
-| Sys_version | Версия системы |
-| Device_Type | Тип устройства |
-| Core_moniker | Наименование акустического ядра |
-| Core_version | Версия ядра |
-| Serial number | Серийный номер устройства |
-| *	| разделитель контр. суммы NMEA |
-| hh | контрольная сумма NMEA |
-| \<CR\>\<LF\> | конец сообщения |
+| № | Field/Parameter |	Description |
+| :--- | :--- | :--- |
+|   | $	| Sentence start '$' |
+|   | P | Proprietary sentence |
+|   | ZMA | Proprietery code ID |
+|   | ! | Sentence ID |
+| 1 | Sys_moniker | System name |
+| 2 | Sys_version | System version |
+| 3 | Device_Type | Device type \(see [3.1]()\) |
+| 4 | Core_moniker | Acoustic subsystem name |
+| 5 | Core_version | Acoustic subsystem version |
+| 6 |Serial number | Device serial number |
+|   | *	| NMEA checksum separator |
+|   | hh	| NMEA checksum |
+|   | \<CR\>\<LF\> | end of sentence |
 
 
 <div style="page-break-after: always;"></div>
 
-## 3. Таблицы идентификаторов
+## 3. Identifiers
 
-### 3.1 Типы устройств
+### 3.1 Device types 
 
-| Значение | Наименование |	Описание |
+| Value | Name | Description |
 | :---: | :---: | :--- |
-| '0' |	DEV_BASE | Базовая станция |
-| '1' | DEV_NODE | Маяк-ответчик |
+| 0 |	DEV_BASE | Zima-B base station |
+| 1 | DEV_BCN | Zima-R responder-beacon |
 
-### 3.2 Коды ошибок
+### 3.2 Error codes
 
-| Значение | Наименование |	Описание |
+| Value | Name | Description |
 | :---: | :---: | :--- |
-| '0' | NO_ERROR | Запрос принят | 
-| '1' | INVALID_SYNTAX | Ошибка синтаксиса | 
-| '2' | UNSUPPORTED | Команда не поддерживается | 
-| '3' | TRANSMITTER_BUSY | Передатчик занят | 
-| '4' | ARGUMENT_OUT_OF_RANGE | Аргумент/параметр вне диапазона допустимых значений | 
-| '5' | INVALID_OPERATION | Невозможно выполнить операцию в данный момент | 
-| '6' | UNKNOWN_FIELD_ID | Неизвестное/неподдерживаемое поле | 
-| '7' | VALUE_UNAVAILIBLE | Запрошенное значение недоступно | 
-| '8' | RECEIVER_BUSY | Приемник занят | 
-| '9' | WAKE_UP | Управление энергосберегающим режимом. Ответчик высылает сообщение об ошибке с данным параметром сразу после пробуждения | 
-| '10' | STAND_BY | Управление энергосберегающим режимом. Ответчик высылает сообщение об ошибке с данным параметром перед уходом в спящий режим | 
+| 0 | NO_ERROR | Request accepted | 
+| 1 | INVALID_SYNTAX | Syntax error | 
+| 2 | UNSUPPORTED | Request is not supported | 
+| 3 | TRANSMITTER_BUSY | Transmitter is busy | 
+| 4 | ARGUMENT_OUT_OF_RANGE | One or more arguments is out of range | 
+| 5 | INVALID_OPERATION | Requested operation can not be performed at the moment | 
+| 6 | UNKNOWN_FIELD_ID | Unknown/unsupported field ID | 
+| 7 | VALUE_UNAVAILIBLE | Requested value is not available at the moment | 
+| 8 | RECEIVER_BUSY | Receiver is busy | 
+| 9 | WAKE_UP | Energy Saving Management. The responder-beacon sends an error message with this parameter immediately after waking up | 
+| 10 | STAND_BY | Energy Saving Management. The responder-beacon an error message with this parameter before going to sleep | 
 
-### 3.3 Идентификаторы локальных данных
+### 3.3 Local data identifiers
 
-| Значение | Наименование |	Описание |
+| Value | Name | Description |
 | :---: | :---: | :--- |
-| '0' | DEVICE_INFO | Информация об устройстве |
-| '1' | LOC_DATA_MAX_REMOTE_TIMEOUT | Максимальное время ожидания удаленного ответа, мсек |
-| '2' | LOC_DATA_MAX_SUBSCRIBERS | Максимальное число ответчиков |
-| '3' | LOC_DATA_PTS_PRESSURE | Показания встроенного датчика давления, мБар |
-| '4' | LOC_DATA_PTS_TEMPERATURE | Показания встроенного датчика температуры,˚С |
-| '5' | LOC_DATA_PTS_DEPTH | Глубина антенны от поверхности |
-| '6' | LOC_DATA_CORE_TEMPERATURE | Температура ядра процессора, ˚С |
-| '7' | LOC_DATA_BAT_CHARGE | Заряд батареи |
-| '8' | LOC_DATA_PRESSURE_RATING | Максимальное внешнее давление, Бар |
-| '9' | LOC_DATA_ZERO_PRESSURE | Давление у поверхности воды, мБар |
-| '10' | LOC_DATA_WATER_DENSITY | Плотность воды, кг/м3 |
-| '11' | LOC_DATA_SALINITY | Соленость воды, ppm |
-| '12' | LOC_DATA_SOUNDSPEED | Скорость звука, м/с |
-| '13' | LOC_DATA_GRAVITY_ACC | Ускорение свободного падения, м/с2 |
+| 0 | DEVICE_INFO | Device information |
+| 1 | LOC_DATA_MAX_REMOTE_TIMEOUT | Remote response timeout, msec |
+| 2 | LOC_DATA_MAX_SUBSCRIBERS | Max. number of responder-beacons (addresses) |
+| 3 | LOC_DATA_PTS_PRESSURE | Indications of the built-in pressure sensor, mBar |
+| 4 | LOC_DATA_PTS_TEMPERATURE | Indications of the built-in temperature sensor,˚С |
+| 5 | LOC_DATA_PTS_DEPTH | Depth of the device, m |
+| 6 | LOC_DATA_CORE_TEMPERATURE | CPU core temperature, ˚С |
+| 7 | LOC_DATA_BAT_CHARGE | Battery voltage, V |
+| 8 | LOC_DATA_PRESSURE_RATING | Max. allowed external hydrostatic pressure, Bar |
+| 9 | LOC_DATA_ZERO_PRESSURE | Pressure at the water surface, mBar |
+| 10 | LOC_DATA_WATER_DENSITY | Water density, kg/m<sup>3</sup> |
+| 11 | LOC_DATA_SALINITY | Water salinity, PSU |
+| 12 | LOC_DATA_SOUNDSPEED | Speed of sound, m/s |
+| 13 | LOC_DATA_GRAVITY_ACC | Gravity acceleration, m/s<sup>2</sup> |
 
-### 3.4 Идентификаторы операций
+### 3.4 Service action identifiers
 
-| Значение | Наименование |	Описание |
+| Value | Name | Description |
 | :---: | :---: | :--- |
-| '0' | LOC_INVOKE_FLASH_WRITE | Сохранение настроечных полей во внутренний флеш |
-| '1' | LOC_INVOKE_DPT_ZERO_ADJUST | Принять текущие показания датчика давления за давление на поверхности воды |
-| '2' | LOC_INVOKE_SYSTEM_RESET | 'Теплая' перезагрузка устройства |
-| '3' | LOC_INVOKE_STAND_BY | Перевод устройства в режим сна |
-| '4' | LOC_INVOKE_UART_OFF | Отключение приемопередатчика UART |
+| 0 | LOC_INVOKE_FLASH_WRITE | Save all settings in built-in flash memory |
+| 1 | LOC_INVOKE_DPT_ZERO_ADJUST | Set current pressure readings as a pressure at the water surface |
+| 2 | LOC_INVOKE_SYSTEM_RESET | Warm system reset |
+| 3 | LOC_INVOKE_STAND_BY | Go to sleep mode |
+| 4 | LOC_INVOKE_UART_OFF | Turn off the UART unit |
 
-### 3.5 Идентификаторы удаленных команд
-
-| Значение | Наименование |	Описание |
+### 3.5 Remote request identifiers
+| Name | Value | Description |
 | :---: | :---: | :--- |
-| CDS_PING | 361 | Пинг-запрос |
-| CDS_DPT_GET | 362 | Глубина удаленного ответчика |
-| CDS_STY_SET_0 | 363 | Задать соленость 0 ppm |
+| CDS_PING | 361 | Ping |
+| CDS_DPT_GET | 362 | Remote responder-beacon depth |
+| CDS_STY_SET_0 | 363 | Set salinity 0 PSU |
 | CDS_STY_SET_1 | 364 | ... |
 | CDS_STY_SET_2 | 365 | ... |
 | CDS_STY_SET_3 | 366 | ... |
@@ -520,113 +506,113 @@ ____________
 | CDS_STY_SET_37 | 400 | ... |
 | CDS_STY_SET_38 | 401 | ... |
 | CDS_STY_SET_39 | 402 | ... |
-| CDS_STY_SET_40 | 403 | Задать соленость 40 ppm |
-| CDS_SLP_SET_59_60 | 404 | Задать режим сна 59 из 60 секунд |
-| CDS_SLP_SET_58_60 | 405 | Задать режим сна 58 из 60 секунд |
-| CDS_SLP_SET_56_60 | 406 | Задать режим сна 56 из 60 секунд |
-| CDS_SLP_SET_52_60 | 407 | Задать режим сна 52 из 60 секунд |
-| CDS_SLP_SET_50_60 | 408 | Задать режим сна 50 из 60 секунд |
-| CDS_SLP_SET_40_60 | 409 | Задать режим сна 40 из 60 секунд |
-| CDS_SLP_SET_30_60 | 410 | Задать режим сна 30 из 60 секунд |
-| CDS_SLP_SET_20_60 | 411 | Задать режим сна 20 из 60 секунд |
-| CDS_SLP_SET_10_60 | 412 | Задать режим сна 10 из 60 секунд |
-| CDS_SLP_SET_NEVER | 413 | Задать режим сна - включен постоянно |
-| CDS_BAT_CHG_GET | 414 | Заряд батарей |
-| CDS_PTS_TMP_GET | 415 | Температура | 
-| CDS_PTS_PRS_GET | 416 | Давление |
-| CDS_CRE_TMP_GET | 417 | Температура ядра процессора |
-| CDS_SLP_GET | 418 | Режим сна |
-| CDS_STY_GET | 419 | Соленость |
-| CDS_CMD_RSV_0 | 420 | Зарезервировано |
-| CDS_CMD_RSV_1 | 421 | Зарезервировано |
-| CDS_CMD_RSV_2 | 422 | Зарезервировано |
-| CDS_CMD_RSV_3 | 423 | Зарезервировано |
-| CDS_CMD_RSV_4 | 424 | Зарезервировано |
-| CDS_CMD_RSV_5 | 425 | Зарезервировано |
-| CDS_CMD_ZDPT_ADJ | 426 | Задание нуля глубины ответчику |
-| CDS_USR_CMD_0 | 427 | Пользовательская команда 0 |
-| CDS_USR_CMD_1 | 428 | Пользовательская команда 1 |
-| CDS_USR_CMD_2 | 429 | Пользовательская команда 2 |
-| CDS_USR_CMD_3 | 430 | Пользовательская команда 3 |
-| CDS_USR_CMD_4 | 431 | Пользовательская команда 4 |
-| CDS_USR_CMD_5 | 432 | Пользовательская команда 5 |
-| CDS_USR_CMD_6 | 433 | Пользовательская команда 6 |
-| CDS_USR_CMD_7 | 434 | Пользовательская команда 7 |
-| CDS_USR_CMD_8 | 435 | Пользовательская команда 8 |
-| CDS_USR_CMD_9 | 436 | Пользовательская команда 9 |
-| CDS_USR_CMD_10 | 437 | Пользовательская команда 10 |
-| CDS_USR_CMD_11 | 438 | Пользовательская команда 11 |
-| CDS_USR_CMD_12 | 439 | Пользовательская команда 12 |
-| CDS_USR_CMD_13 | 440 | Пользовательская команда 13 |
-| CDS_USR_CMD_14 | 441 | Пользовательская команда 14 |
-| CDS_USR_CMD_15 | 442 | Пользовательская команда 15 |
-| CDS_USR_CMD_16 | 443 | Пользовательская команда 16 |
-| CDS_USR_CMD_17 | 444 | Пользовательская команда 17 |
-| CDS_USR_CMD_18 | 445 | Пользовательская команда 18 |
-| CDS_USR_CMD_19 | 446 | Пользовательская команда 19 |
-| CDS_USR_CMD_20 | 447 | Пользовательская команда 20 |
-| CDS_USR_CMD_21 | 448 | Пользовательская команда 21 |
-| CDS_USR_CMD_22 | 449 | Пользовательская команда 22 |
-| CDS_USR_CMD_23 | 450 | Пользовательская команда 23 |
-| CDS_USR_CMD_24 | 451 | Пользовательская команда 24 |
-| CDS_USR_CMD_25 | 452 | Пользовательская команда 25 |
-| CDS_USR_CMD_26 | 453 | Пользовательская команда 26 |
-| CDS_USR_CMD_27 | 454 | Пользовательская команда 27 |
-| CDS_USR_CMD_28 | 455 | Пользовательская команда 28 |
-| CDS_USR_CMD_29 | 456 | Пользовательская команда 29 |
-| CDS_USR_CMD_30 | 457 | Пользовательская команда 30 |
-| CDS_USR_CMD_31 | 458 | Пользовательская команда 31 |
-| CDS_USR_CMD_32 | 459 | Пользовательская команда 32 |
-| CDS_RESERVED_0 | 460 | Зарезервировано |
-| CDS_RESERVED_1 | 461 | Зарезервировано |
-| CDS_RESERVED_2 | 462 | Зарезервировано |
-| CDS_RESERVED_3 | 463 | Зарезервировано |
-| CDS_RESERVED_4 | 464 | Зарезервировано |
-| CDS_RESERVED_5 | 465 | Зарезервировано |
-| CDS_RESERVED_6 | 466 | Зарезервировано |
-| CDS_RESERVED_7 | 467 | Зарезервировано |
-| CDS_SET_ADDR_01 | 468 | Задать адрес 1 |
-| CDS_SET_ADDR_02 | 469 | Задать адрес 2 |
-| CDS_SET_ADDR_03 | 470 | Задать адрес 3 |
-| CDS_SET_ADDR_04 | 471 | Задать адрес 4 |
-| CDS_SET_ADDR_05 | 472 | Задать адрес 5 |
-| CDS_SET_ADDR_06 | 473 | Задать адрес 6 |
-| CDS_SET_ADDR_07 | 474 | Задать адрес 7 |
-| CDS_SET_ADDR_08 | 475 | Задать адрес 8 |
-| CDS_SET_ADDR_09 | 476 | Задать адрес 9 |
-| CDS_SET_ADDR_10 | 477 | Задать адрес 10 |
-| CDS_SET_ADDR_11 | 478 | Задать адрес 11 |
-| CDS_SET_ADDR_12 | 479 | Задать адрес 12 |
-| CDS_SET_ADDR_13 | 480 | Задать адрес 13 |
-| CDS_SET_ADDR_14 | 481 | Задать адрес 14 |
-| CDS_SET_ADDR_15 | 482 | Задать адрес 15 |
-| CDS_SET_ADDR_16 | 483 | Задать адрес 16 |
-| CDS_SET_ADDR_17 | 484 | Задать адрес 17 |
-| CDS_SET_ADDR_18 | 485 | Задать адрес 18 |
-| CDS_SET_ADDR_19 | 486 | Задать адрес 19 |
-| CDS_SET_ADDR_20 | 487 | Задать адрес 20 |
-| CDS_SET_ADDR_21 | 488 | Задать адрес 21 |
-| CDS_SET_ADDR_22 | 489 | Задать адрес 22 |
-| CDS_SET_ADDR_23 | 490 | Задать адрес 23 |
-| CDS___________0 | 491 | Зарезервировано |
-| CDS___________1 | 492 | Зарезервировано |
-| CDS___________2 | 493 | Зарезервировано |
-| CDS___________3 | 494 | Зарезервировано |
-| CDS___________4 | 495 | Зарезервировано |
-| CDS___________5 | 496 | Зарезервировано |
-| CDS___________6 | 497 | Зарезервировано |
-| CDS___________7 | 498 | Зарезервировано |
-| CDS___________8 | 499 | Зарезервировано |
-| CDS_ERR_NSUPP | 500 | Ошибка - запрос не поддерживается |
-| CDS_ERR_NAVAIL | 501 | Ошибка - данные не доступны в данный момент |
-| CDS_ERR_RES_0 | 502 | Ошибка - зарезервированно |
-| CDS_ERR_RES_1 | 503 | Ошибка - зарезервированно |
-| CDS_ERR_RES_2 | 504 | Ошибка - зарезервированно |
-| CDS_ERR_RES_3 | 505 | Ошибка - зарезервированно |
-| CDS_ERR_RES_4 | 506 | Ошибка - зарезервированно |
-| CDS_ERR_RES_5 | 507 | Ошибка - зарезервированно |
-| CDS_ERR_RES_6 | 508 | Ошибка - зарезервированно |
-| CDS_ERR_BAT_LOW | 509 | Заряд батарей минимален |
+| CDS_STY_SET_40 | 403 | Set salinity 40 PSU |
+| CDS_SLP_SET_59_60 | 404 | Set sleep mode: sleep 59 from 60 seconds |
+| CDS_SLP_SET_58_60 | 405 | Set sleep mode: sleep 58 from 60 seconds |
+| CDS_SLP_SET_56_60 | 406 | Set sleep mode: sleep 56 from 60 seconds |
+| CDS_SLP_SET_52_60 | 407 | Set sleep mode: sleep 52 from 60 seconds |
+| CDS_SLP_SET_50_60 | 408 | Set sleep mode: sleep 50 from 60 seconds |
+| CDS_SLP_SET_40_60 | 409 | Set sleep mode: sleep 40 from 60 seconds |
+| CDS_SLP_SET_30_60 | 410 | Set sleep mode: sleep 30 from 60 seconds |
+| CDS_SLP_SET_20_60 | 411 | Set sleep mode: sleep 20 from 60 seconds |
+| CDS_SLP_SET_10_60 | 412 | Set sleep mode: sleep 10 from 60 seconds |
+| CDS_SLP_SET_NEVER | 413 | Set sleep mode - always on |
+| CDS_BAT_CHG_GET | 414 | Battery voltage |
+| CDS_PTS_TMP_GET | 415 | Water temperature | 
+| CDS_PTS_PRS_GET | 416 | External pressure |
+| CDS_CRE_TMP_GET | 417 | CPU core temperature |
+| CDS_SLP_GET | 418 | Sleep mode |
+| CDS_STY_GET | 419 | Salinity |
+| CDS_CMD_RSV_0 | 420 | Reserved |
+| CDS_CMD_RSV_1 | 421 | Reserved |
+| CDS_CMD_RSV_2 | 422 | Reserved |
+| CDS_CMD_RSV_3 | 423 | Reserved |
+| CDS_CMD_RSV_4 | 424 | Reserved |
+| CDS_CMD_RSV_5 | 425 | Reserved |
+| CDS_CMD_ZDPT_ADJ | 426 | Set current pressure readings as pressure at the water surface |
+| CDS_USR_CMD_0 | 427 | User command 0 |
+| CDS_USR_CMD_1 | 428 | User command 1 |
+| CDS_USR_CMD_2 | 429 | User command 2 |
+| CDS_USR_CMD_3 | 430 | User command  3 |
+| CDS_USR_CMD_4 | 431 | User command  4 |
+| CDS_USR_CMD_5 | 432 | User command  5 |
+| CDS_USR_CMD_6 | 433 | User command  6 |
+| CDS_USR_CMD_7 | 434 | User command  7 |
+| CDS_USR_CMD_8 | 435 | User command  8 |
+| CDS_USR_CMD_9 | 436 | User command  9 |
+| CDS_USR_CMD_10 | 437 | User command  10 |
+| CDS_USR_CMD_11 | 438 | User command  11 |
+| CDS_USR_CMD_12 | 439 | User command  12 |
+| CDS_USR_CMD_13 | 440 | User command  13 |
+| CDS_USR_CMD_14 | 441 | User command  14 |
+| CDS_USR_CMD_15 | 442 | User command  15 |
+| CDS_USR_CMD_16 | 443 | User command  16 |
+| CDS_USR_CMD_17 | 444 | User command  17 |
+| CDS_USR_CMD_18 | 445 | User command  18 |
+| CDS_USR_CMD_19 | 446 | User command  19 |
+| CDS_USR_CMD_20 | 447 | User command  20 |
+| CDS_USR_CMD_21 | 448 | User command  21 |
+| CDS_USR_CMD_22 | 449 | User command  22 |
+| CDS_USR_CMD_23 | 450 | User command  23 |
+| CDS_USR_CMD_24 | 451 | User command  24 |
+| CDS_USR_CMD_25 | 452 | User command  25 |
+| CDS_USR_CMD_26 | 453 | User command  26 |
+| CDS_USR_CMD_27 | 454 | User command  27 |
+| CDS_USR_CMD_28 | 455 | User command  28 |
+| CDS_USR_CMD_29 | 456 | User command  29 |
+| CDS_USR_CMD_30 | 457 | User command  30 |
+| CDS_USR_CMD_31 | 458 | User command  31 |
+| CDS_USR_CMD_32 | 459 | User command  32 |
+| CDS_RESERVED_0 | 460 | Reserved |
+| CDS_RESERVED_1 | 461 | Reserved |
+| CDS_RESERVED_2 | 462 | Reserved |
+| CDS_RESERVED_3 | 463 | Reserved |
+| CDS_RESERVED_4 | 464 | Reserved |
+| CDS_RESERVED_5 | 465 | Reserved |
+| CDS_RESERVED_6 | 466 | Reserved |
+| CDS_RESERVED_7 | 467 | Reserved |
+| CDS_SET_ADDR_01 | 468 | Set address 1 |
+| CDS_SET_ADDR_02 | 469 | Set address  2 |
+| CDS_SET_ADDR_03 | 470 | Set address  3 |
+| CDS_SET_ADDR_04 | 471 | Set address  4 |
+| CDS_SET_ADDR_05 | 472 | Set address  5 |
+| CDS_SET_ADDR_06 | 473 | Set address  6 |
+| CDS_SET_ADDR_07 | 474 | Set address  7 |
+| CDS_SET_ADDR_08 | 475 | Set address  8 |
+| CDS_SET_ADDR_09 | 476 | Set address  9 |
+| CDS_SET_ADDR_10 | 477 | Set address  10 |
+| CDS_SET_ADDR_11 | 478 | Set address  11 |
+| CDS_SET_ADDR_12 | 479 | Set address  12 |
+| CDS_SET_ADDR_13 | 480 | Set address  13 |
+| CDS_SET_ADDR_14 | 481 | Set address  14 |
+| CDS_SET_ADDR_15 | 482 | Set address  15 |
+| CDS_SET_ADDR_16 | 483 | Set address  16 |
+| CDS_SET_ADDR_17 | 484 | Set address  17 |
+| CDS_SET_ADDR_18 | 485 | Set address  18 |
+| CDS_SET_ADDR_19 | 486 | Set address  19 |
+| CDS_SET_ADDR_20 | 487 | Set address  20 |
+| CDS_SET_ADDR_21 | 488 | Set address  21 |
+| CDS_SET_ADDR_22 | 489 | Set address  22 |
+| CDS_SET_ADDR_23 | 490 | Set address  23 |
+| CDS___________0 | 491 | Reserved |
+| CDS___________1 | 492 | Reserved |
+| CDS___________2 | 493 | Reserved |
+| CDS___________3 | 494 | Reserved |
+| CDS___________4 | 495 | Reserved |
+| CDS___________5 | 496 | Reserved |
+| CDS___________6 | 497 | Reserved |
+| CDS___________7 | 498 | Reserved |
+| CDS___________8 | 499 | Reserved |
+| CDS_ERR_NSUPP | 500 | Error - request is not supported |
+| CDS_ERR_NAVAIL | 501 | Error - requested data is not available at the moment |
+| CDS_ERR_RES_0 | 502 | Error - reserved |
+| CDS_ERR_RES_1 | 503 | Error - reserved |
+| CDS_ERR_RES_2 | 504 | Error - reserved |
+| CDS_ERR_RES_3 | 505 | Error - reserved |
+| CDS_ERR_RES_4 | 506 | Error - reserved |
+| CDS_ERR_RES_5 | 507 | Error - reserved |
+| CDS_ERR_RES_6 | 508 | Error - reserved |
+| CDS_ERR_BAT_LOW | 509 | Low battery voltage |
 
 
 
