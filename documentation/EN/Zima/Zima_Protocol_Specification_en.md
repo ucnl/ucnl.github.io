@@ -9,10 +9,10 @@
 <div style="page-break-after: always;"></div>
 
 ## Contents
-- [1. Введение]()  
-  - [1.1. Протокол физического уровня]()
-  - [1.2. Стандарт протокола диалогового уровня NMEA0183]()
-- [2. Система команд ZMA]()  
+- [1. Introducation](#1-introduction)  
+  - [1.1. Physical layer](#11-physical-layer)
+  - [1.2. NMEA0183 Protocol standard](#12-nmea0183-protocol-standard)
+- [2. ZMA command system for Zima USBL system](#2-zma-command-system-for-zima-usbl-system)  
    - [2.1. IC_D2H_ACK](#21-ic_d2h_ack)
    - [2.2. IC_H2D_FLD_GET](#22-ic_h2d_fld_get)
    - [2.3. IC_H2D_FLD_SET](#23-ic_h2d_fld_set)
@@ -31,12 +31,12 @@
    - [2.16. IC_H2D_REM_REQ_EX](#216-ic_h2d_rem_req_ex)
    - [2.17. IC_D2H_DEV_INFO](#217-ic_d2h_dev_info)
    - [2.18. IC_D2H_BASE_REQ](#210-ic_d2h_base_req)   
-- [3. Таблицы идентификаторов]()
-   - [3.1. Типы устройств]()
-   - [3.2. Коды ошибок]()
-   - [3.3. Идентификаторы локальных данных]()
-   - [3.4. Идентификаторы операций]()
-   - [3.5. Идентификаторы удаленных команд]()
+- [3. Identifiers](#3-identifiers)
+   - [3.1. Device types](#31-device-types)
+   - [3.2. Error codes](#32-error-codes)
+   - [3.3. Local data identifiers](#33-local-data-identifiers)
+   - [3.4. Service action identifiers](#34-service-action-identifiers)
+   - [3.5. Remote request identifiers](#35-remote-request-identifiers)
 
 
 <div style="page-break-after: always;"></div>
@@ -89,7 +89,7 @@ Format: **`$PTNT0,x*hh<CR><LF>`**
 |   | P | Proprietary sentence |
 |   | ZMA | Proprietery code ID |
 |   | 0	| Sentence ID |
-| 1 | errCode	| Error code \([see 3.2.](#32-error-messages)\) |
+| 1 | errCode	| Error code \([see 3.2.](#32-error-codes)\) |
 |   | *	| NMEA checksum separator |
 |   | hh	| NMEA checksum |
 |   | \<CR\>\<LF\> | end of sentence |
@@ -163,7 +163,7 @@ Format: **`$PZMA4,xx,00*hh<CR><LF`**
 |   | P | Proprietary sentence |
 |   | ZMA | Proprietery code ID |
 |   | 4	| Sentence ID |
-| 1 | LocDataID	| Local parameter ID \([see 3.3.]()\) |
+| 1 | LocDataID	| Local parameter ID \([see 3.3.](#33-local-data-identifiers)\) |
 | 2 | Reserved	| Reserved, shall be '00' |
 |   | *	| NMEA checksum separator |
 |   | hh	| NMEA checksum |
@@ -181,7 +181,7 @@ Format: **`$PZMA5,xx,x.x*hh<CR><LF>`**
 |   | P | Proprietary sentence |
 |   | ZMA | Proprietery code ID |
 |   | 5	| Sentence ID |
-| 1 | LocDataID	| Local parameter identifier \([see 3.3.]()\) |
+| 1 | LocDataID	| Local parameter identifier \([see 3.3.](#33-local-data-identifiers)\) |
 | 2 | LocDataValue	| New value to be set |
 |   | *	| NMEA checksum separator |
 |   | hh	| NMEA checksum |
@@ -199,7 +199,7 @@ Format: **`$PZMA6,xx,x.x*hh <CR><LF>`**
 |   | P | Proprietary sentence |
 |   | ZMA | Proprietery code ID |
 |   | 6 | Sentence ID |
-| 1 | LocDataID | Local parameter identifier \([see 3.3.]()\) |
+| 1 | LocDataID | Local parameter identifier \([see 3.3.](#33-local-data-identifiers)\) |
 | 2 | LocDataValue | Actual parameter value |
 |   | *	| NMEA checksum separator |
 |   | hh	| NMEA checksum |
@@ -216,7 +216,7 @@ Format: **`$PZMA7,xx,xx*hh <CR><LF>`**
 |   | P | Proprietary sentence |
 |   | ZMA | Proprietery code ID |
 |   | 7 | Sentence ID |
-| 1 | ActionID | Service operation identifier \([see 3.4.]()\) |
+| 1 | ActionID | Service operation identifier \([see 3.4.](#34-service-action-identifiers)\) |
 | 2 | ActionParam | Service operation parameter |
 |   | *	| NMEA checksum separator |
 |   | hh	| NMEA checksum |
@@ -253,7 +253,7 @@ Format: **`$PZMAB,x,x.x,x.x*hh <CR><LF>`**
 |   | P | Proprietary sentence |
 |   | ZMA | Proprietery code ID |
 |   | B | Sentence ID |
-| 1 | CommandID | Request ID \([see 3.5.]()\) |
+| 1 | CommandID | Request ID \([see 3.5.](#35-remote-request-identifiers)\) |
 | 2 | MSR	| Main lobe to side-peak ratio, dB |
 | 3 | Dpl	| Doppler shift, Hz |
 |   | *	| NMEA checksum separator |
@@ -273,7 +273,7 @@ Format: **`$PZMAС,x,x*hh <CR><LF>`**
 |   | ZMA | Proprietery code ID |
 |   | C | Sentence ID |
 | 1 | TargetID | Address of a remote responder-beacon |
-| 2 | RequestID | Request ID \([see 3.5.]()\) |
+| 2 | RequestID | Request ID \([see 3.5.](#35-remote-request-identifiers)\) |
 |   | *	| NMEA checksum separator |
 |   | hh	| NMEA checksum |
 |   | \<CR\>\<LF\> | end of sentence |
@@ -291,7 +291,7 @@ Format: **`$PZMAD,x, x*hh <CR><LF>`**
 |   | ZMA | Proprietery code ID |
 |   | D | Идентификатор сообщения |
 | 1 | TargetID | Address of the requested remote responder-beacon |
-| 2 | RequestID | Request identifier \([see 3.5.]()\) |
+| 2 | RequestID | Request identifier \([see 3.5.](#35-remote-request-identifiers)\) |
 |   | *	| NMEA checksum separator |
 |   | hh	| NMEA checksum |
 |   | \<CR\>\<LF\> | end of sentence |
@@ -309,7 +309,7 @@ Format: **`$PZMAE, x,x,x,x.x,x.x,x.x,x.x,x.x*hh <CR><LF>`**
 |   | ZMA | Proprietery code ID |
 |   | E | Sentence ID |
 | 1 | TargetID | Address of the requested remote responder-beacon |
-| 2 | RequestID | Request identifier \([see 3.5.]()\) |
+| 2 | RequestID | Request identifier \([see 3.5.](#35-remote-request-identifiers)\) |
 | 2 | dFlag | reserved |
 | 4 | Azimuth | Horizontal angle to the responder-beacon, °. |
 | 5 | Distance | Slant range to the responder-beacon, m |
@@ -373,7 +373,7 @@ Format: **`$PZMAH,x,x,x*hh <CR><LF>`**
 |   | ZMA | Proprietery code ID |
 |   | H	| Sentence ID |
 | 1 | TargetAddress	| Address of a remote responder-beacon to request |
-| 2 | RequestID | Command (should be always **CDS_DPT_GET** \([see 3.5.]()\) |
+| 2 | RequestID | Command (should be always **CDS_DPT_GET** \([see 3.5.](#35-remote-request-identifiers)\) |
 | 3 | ReverseAzimuthToTheBase | Reverse azimuth[<sup>*</sup>](#footnote_revaz) from the responder-beacon to the base station |
 |   | *	| NMEA checksum separator |
 |   | hh	| NMEA checksum |
@@ -396,7 +396,7 @@ Format: **`$PZMA!, c--c,x,c--c,x,x,c--c*hh <CR><LF>`**
 |   | ! | Sentence ID |
 | 1 | Sys_moniker | System name |
 | 2 | Sys_version | System version |
-| 3 | Device_Type | Device type \(see [3.1]()\) |
+| 3 | Device_Type | Device type \(see [3.1.](#31-device-types)\) |
 | 4 | Core_moniker | Acoustic subsystem name |
 | 5 | Core_version | Acoustic subsystem version |
 | 6 |Serial number | Device serial number |
