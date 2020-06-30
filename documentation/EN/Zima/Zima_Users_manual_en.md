@@ -203,7 +203,7 @@ The normobaric housing (canister) has a lid with a double seal and a four-thread
 After connecting the responder-beacon connector to the battery pack within the first ten seconds, the device calibrates the atmospheric pressure, therefore it is not allowed to apply any (negative or positive) pressure to it during the first ten seconds from the moment the device is turned on, this will lead to incorrect depth measurement by the responder-beacon.
 With the autonomous version Tx and Rx, the wires of the beacon cable are closed (see Figure 6). This causes the UART module to automatically shut off in order to save energy.
 
-| ![Zima-R](https://ucnl.github.io/documentation/zima_r_drawings.png) |
+| ![Zima-R](https://ucnl.github.io/documentation/zima_r_drawings_en.png) |
 | :---: |
 | **Figure 6 - [Zima-R](Zima_R_Specification_en.md)** |
 | _Outline drawing_ |
