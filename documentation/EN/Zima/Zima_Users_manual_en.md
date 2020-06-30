@@ -311,115 +311,117 @@ The tab **"OPTIONAL"** contains the settings for the orientation of the base sta
 - The parameter **"&delta;"** (in degrees) sets the zero rotation of the base station antenna relative to the zero of the magnetic or GNSS compass
 
 
-##### 3.2.1.6 Пункт АВТОЗАПРОС
-Данный пункт меню управляет режимом **"АВТОЗАПРОС"**. При включении этого режима ПО будет автоматически с максимально возможной скоростью опрашивать маяки-ответчики согласно списку **"Используемые маяки"** вкладки **"ОБЩИЕ"** окна настроек приложения.
-Режим **"АВТОЗАПРОС"** является основным рабочим режимом системы и должен отключаться только в тех случая, когда навигационные данные не требуются или необходима передача пользовательской команды на один или несколько маяков (при включенном режиме **"АВТОЗАПРОС"** данная функция недоступна).
+##### 3.2.1.6 Menu item AUTO REQUEST
+This menu item controls the mode **"AUTO REQUEST"**. When this mode is turned on, the software will automatically interrogate responder-beacons at the highest possible speed according to the list **"Used beacons"** in **"GENERAL"** tab in the application settings window.
+**AUTO REQUEST** mode is the main operating mode of the system and should only be turned off if navigation data is not required or if a user command must be sent to one or more beacons (with **AUTO REQUEST** mode on, this function is not available)
 
-##### 3.2.1.7 Пункт АВТОСКРИНШОТ
-Если данная функция включена, ПО будет автоматически сохранять изображение главного окна при обновлении данных. Файлы располагаются в каталоге **"\SNAPSHOTS\YYYY-DD-MM\"**, где **"YYYY-DD-MM"** - текущая дата. Каждый файл именуется согласно текущему времени в формате **"HH-MM-SS"** и имеет формат Portable Network Graphics (\*.png).
+##### 3.2.1.7 Menu item AUTO SCREENSHOT
+If this function is enabled, the software will automatically save the image of the main window when updating data. Files are located in the **"\SNAPSHOTS\YYYY-DD-MM\"** directory, where **"YYYY-DD-MM"** is the current date. Each file is named according to the current time in the format **"HH-MM-SS"** and has the Portable Network Graphics (\*.png) format.
 
-#### 3.2.2 Панель ПЛАН
-На этой панели (см. рис. 7) в центре отображается положение базовой станции в виде желтой стрелки, которая ориентирована снизу вверх при работе в относительных координатах и изменяет свою ориентацию, при доступных данных курса. В последнем случае в верху лимба отображается символ **"N"** (North, Север).
-Панель **"ПЛАН"** отображает положение маяков относительно базовой станции. Маяки отображаются в виде кружков с адресом маяка внутри. При возникновении таймаута (превышении интервала ожидания ответа маяка) соответствующие маяки отображаются пунктирной линией.
+#### 3.2.2 PPI View panel
+This panel (see Fig. 7) in the centre displays the position of the base station in the form of a yellow arrow, which is oriented from bottom to top when working in relative coordinates and changes its orientation when heading data is available. In the latter case, the symbol **"N"** (North) is displayed at the top of the limb.
+Panel **"PPI View"** displays the position of the beacons relative to the base station. Beacons are displayed as circles with the address of the beacon inside. When a timeout occurs (exceeding the waiting interval for the response of the beacon), the corresponding beacons are displayed with a dashed line.
 
-В левом верхнем углу отображается текущее состояние базовой станции:
-- **TRX**: состояние приемопередатчика (TX - идет передача, RX - ожидание ответа, READY - готова к запросам)
-- **DPT**: глубина (расстояние от поверхности воды) базовой станции по показаниям встроенного датчика давления
-- **TMP**: температура воды по показаниям встроенного датчика температуры
+In the upper left corner the current status of the base station is displayed:
+- **TRX**: transceiver status (TX - transmitting, RX - waiting for a response, READY - ready for requests);
+- **DPT**: depth (distance from the water surface) of the base station according to the readings of the built-in pressure sensor;
+- **TMP**: water temperature according to the built-in temperature sensor.
 
-В левом нижнем углу отображаются дополнительные данные, получаемые системой через порты AUX:
-- **LAT, LON**: географичекие широта и долгота (из сообщений **RMC**)
-- **AZM**: азимутальный угол (из сообщений **HDG** или **HDT**)
-- **SPD**: скорость (из сообщений **VTG**)
-- **VTG**: курс движения (из сообщений **VTG**)
+In the lower-left corner additional data is received by the system via AUX ports:
+- **LAT, LON**: geographical latitude and longitude (from **RMC** messages);
+- **AZM**: azimuth angle (from **HDG** or **HDT** messages);
+- **SPD**: speed (from **VTG** messages);
+- **VTG**: heading (from **VTG** messages).
 
-#### 3.2.3 Панель МАЯКИ
-Отображает данные маяков-ответчиков в виде древовидной структуры, где узлы первого уровня обозначают маяки (**"RESPONDER #ХХ"**), каждый из которых имеет набор узлов, обозначающих различные парметры и характеристики маяков в виде `Идентификатор параметра: Значение`. Ниже представлен список возможных идентификаторов параметров и их описания.
 
-| Идентификатор параметра | Единицы измерения | Описание | Источник |
+#### 3.2.3 BEACONS panel
+Displays data of responder-beacons in the form of a tree structure, where the nodes of the first level indicate beacons (**"RESPONDER # ХХ"**), each of which has a set of nodes indicating different parameters and characteristics of the beacons in the form of `Parameter identifier: Value`. Below is a list of possible parameter identifiers and their descriptions.
+
+| Parameter identifier | Units | Description | Source |
 | :--- | :--- | :--- | :--- |
-| **MSR** | дБ | Mean lobe-to-sidepeak ratio. Характеристика качества приема. Порог приема 14, значения выше 20 - хороший прием | Определяется базовой станцией при приеме ответа маяка |
-| **DPL** | Гц | Доплеровский сдвиг несущей частоты | Определяетя базовой станцией при приема ответа маяка |
-| **AZM** | ° | Азимут на маяк | Определяется базовой станцией при приеме ответа маяка |
-| **DST** | м | Наклонная дальность до маяка | Определяется базовой станцией при приема ответа маяка |
-| **STY** | PSU | Значение солености, которое было задано маяку | Из ответа маяка, который подтверждает задание параметра |
-| **LQR** | - | Результат последнего сервисного запроса | Определяется логикой ПО ZHost |
-| **TMP** | °C | Окружающая температура (температура воды) | Из ответа маяка, по данным встроенного датчика маяка |
-| **BAT** | В | Напряжение питания маяка | Из ответа маяка, как результат прямого измерения |
-| **LAT** | ° | Географическая широта маяка | Определяется логикой ПО ZHost |
-| **LON** | ° | Географическая долгота маяка | Определяется логикой ПО ZHost |
-| **DPT** | м | Глубина (расстояние от поверхности воды) маяка | Из ответа маяка, по данным встроенного датчика глубины |
-| **DSTP** | м | Проекция наклонной дальности на поверхность воды | Определяется логикой ПО ZHost |
+| **MSR** | dB | Mean lobe-to-sidepeak ratio. Signal quality. 14 dB is the threshold, values above 20 dB a good signal quality | Determined by the base station when receiving a beacon response |
+| **DPL** | Hz | Doppler shift | Determined by the base station when receiving a beacon response |
+| **AZM** | ° | Aimuth from the base station to the beacon | Determined by the base station when receiving a beacon response |
+| **DST** | m | Slant range from the base station to the beacon | Determined by the base station when receiving a beacon response |
+| **STY** | PSU | Salinity value, that has been set to the beacon | From the response of the beacon, which confirms the setting of the parameter |
+| **LQR** | - | Result of the last service request | Determined by the logic of the ZHost software |
+| **TMP** | °C | Water temperature | From the response of the beacon, according to the built-in sensor of the beacon |
+| **BAT** | V | Beacon supply voltage | From the response of the beacon as a result of direct measurement |
+| **LAT** | ° | Latitude of the responder-beacon | Determined by the logic of the ZHost software |
+| **LON** | ° | Longitude of the responder-beacon | Determined by the logic of the ZHost software |
+| **DPT** | m | Depth (distance from the water surface) of the beacon | From the response of the beacon, according to the built-in sensor of the beacon |
+| **DSTP** | m | Slant range projection on the water surface | Determined by the logic of the ZHost software |
 
-Справа от каждого значения отображется возраст данных - время, которое прошло с момента, когда значение параметра было обновлено. Возраст отображается только в том случае, если он превышает 7 секунд.
+The age of the data is displayed to the right of each value - the time that has passed since the moment the parameter value was updated. Age is displayed only if it exceeds 7 seconds.
 
-#### 3.2.3 Панель статуса
-Располагается в нижней части окна и отображает состояние соответствующих устройств:
-- **ZMA**: базовая станция
-- **GNSS**: географическое положение
-- **HDG**: источник данных об азимуте
+#### 3.2.3 Status bar
+Located at the bottom of the window and displays the status of the relevant devices:
+- **ZMA**: base station
+- **GNSS**: geographical location
+- **HDG**: azimuth data source
 
 <div style="page-break-after: always;"></div>
 
-## 4. Эффективное применение навигационной системы Zima
-Система  [Zima USBL](Zima_DataBrief_ru.md) является гидроакустической ультракороткобазисной системой, которая определяет относительное местоположение маяков-ответчиков по времени распространения акустического сигнала в воде и углу прихода ответного сигнала маяков-ответчиков.  
-В связи с этим, эффективное ее применение основывается на соблюдении следующих условий:
-- **обеспечение стабильного положения базовой станции во время работы**; Данное условие обеспечивается надежным закреплением базовой станции на вертикальной штанге, с учетом направления нуля антенны пеленгования. Угловые отклонения вертикальной оси станции от вертикали а также отклонения и колебания ее нуля негативно сказываются на точности определения угла прихода ответного сигнала;
-- **обеспечение прямой видимости между базовой станцией и маяком-ответчиком;** Поскольку дистанция до маяка-ответчика определяется по времени распространения гидроакустического сигнала в воде, то любые препятствия на пути прохождения сигнала сильно искажают измеряемое время распространения, а следовательно и определяемую дистанцию до маяка-ответчика; к препятствиям можно отнести как естественные, связанные с рельефом дна и/или береговым профилем, так и искусственные - пирсы, причальные стенки, суда с глубокой осадкой, опоры мостов и иные технические сооружения;
-- **рабочие поверхности должны быть свободны от различных загрязнений** (ил, грязь, водоросли и т. п.);
+## 4. Effective use of the Zima navigation system
+The [Zima USBL](Zima_DataBrief_en.md) system is an underwater acoustic ultrashort base-line system that determines the relative location of responder-beacons by the propagation time of the acoustic signal in the water and the angle of arrival of the response signal of the responder-beacons.
+In this regard, its effective use is based on the following conditions:
+- **ensuring a stable position of the base station during operation**; This condition is ensured by the reliable fixing of the base station on a vertical rod, taking into account the zero direction of the direction-finding antenna. Angular deviations of the vertical axis of the station from the vertical, as well as deviations and oscillations of its zero, negatively affect the accuracy of determining the angle of arrival of the response signal;
+- **ensuring direct visibility between the base station and the transponder beacon;** Since the distance to the responder-beacon is determined by the propagation time of the hydroacoustic signal in the water, any obstacles in the signal path greatly distort the measured propagation time, and therefore the determined distance to responder-beacon; Obstacles can be attributed to both natural, associated with the bottom topography and/or coastal profile, as well as artificial ones - piers, mooring walls, ships with a deep draft, bridge supports and other technical structures;
+- **work surfaces should be free from various contaminants** (silt, dirt, algae, etc.);
 
-Ввиду специфики распространения звуковых колебаний в водной среде базовую станцию не следует располагать на глубине, меньшей, чем **2 - 3 ** метра и как минимум **1.5** метра от нижней части киля для малых лодок и не менее **2 - 3** метров для крупных лодок. 
+Due to the nature of the propagation of sound vibrations in the aquatic environment, the base station should not be located at a depth less than **2 - 3** meters and at least **1.5** meters from the bottom of the keel for small boats and not less than **2 - 3** meters for large boats.
 
-Антенная решетка базовой станции предназначена для определения горизонтального угла прихода сигнала маяков-ответчиков, поэтому стоит помнить, что при таком взаимном расположении антенны и маяка-ответчика, когда они находятся практически на одной вертикальной оси, точность определения местоположения ответчика будет минимальной. Хорошим взаимным расположением антенны и маяка-ответчика считается такое, при котором проекция наклонной дальности на водную поверхность значительно превышает проекцию ее на вертикальную ось.
-Рабочими вертикальными углами базовой станции [Zima-B](Zima_B_Specification_ru.md) являются углы +/- 30° от горизонтальной плоскости, проходящей через антенную решетку базовой станции. Данное положени проиллюстрировано на рисунке 11:
+The antenna array of the base station is designed to determine the horizontal angle of arrival of the signal of the responder beacons, so it is worth remembering that with such a mutual arrangement of the antenna and the responder beacon when they are practically on the same vertical axis, the accuracy of determining the location of the transponder will be minimal. A good relative position of the antenna and the transponder beacon is considered to be such that the projection of the inclined range onto the water surface significantly exceeds its projection on the vertical axis.
+The working vertical angles of the base station [Zima-B](Zima_B_Specification_en.md) are angles +/- 30° from the horizontal plane passing through the antenna array of the base station. This provision is illustrated in Figure 11:
 
 | ![Zima-B angular zones](https://ucnl.github.io/documentation/zima_dir.png) |
 | :---: |
-| **Рисунок 11 - Геометрические ограничения [Zima-B](Zima_B_Specification_ru.md)** |
-| _1 - рабочая зона (+/- 30°), 2 - зона снижения точности (30 .. 45°), 3 - теневая зона ( > 45°), 4 - пеленгационная антенна. Отклонение указывается от горизонтальной плоскости, проходящей через центр антенной решетки_ |
+| **Figure 11 - Geometric limitations for [Zima-B](Zima_B_Specification_en.md)** |
+| _1 - work zone (+/- 30°), 2 - low accuracy zone (30 .. 45°), 3 - shadow zone ( > 45°), 4 - direction-finding antenna. The deviation is indicated from the horizontal plane passing through the center of the antenna array_ |
 
 <div style="page-break-after: always;"></div>
 
-## 5. Возможные неисправности, их диагностика и устранение
+## 5. Possible malfunctions, their diagnosis and elimination
 
-| № | Симптомы | Возможная причина | Устранение |
+| № | Symptom | Possible reason | Elimination |
 | :---: | :--- | :--- | :--- |
-| 1 | Не удается установить соединение ZHost и Zima-B (Ошибка “Нет доступа к COM-порту) | Особенность работы драйверов преобразователя RS422-USB в системах Win8-10 | 1. Отключить питание станции Zima-B <br/> 2. Отсоединить разъем USB <br/> 3. Закрыть приложение ZHost <br/> 4. Подсоединить разъем USB <br/> 5. Запустить приложение ZHost <br/> 6. Нажать кнопку **СОЕДИНЕНИЕ** в ZHost <br/> 7. Подать питание на станцию Zima-B |
-| 2 | Станция излучает запросный сигнал, но маяк не отвечает | Гидрология не позволяет обеспечить устойчивую связь | Проверить исправность маяка на малой дистанции (0.5-10 метров) в прямой видимости |
-|   |   | Не подключен разъем питания на маяке | Подключить разъем | 
-|   |   | Разряжен АКБ батарейного блока маяка	| Зарядить или заменить батарейный блок |
-|   |   | Запрашиваемый адрес маяка не соответствует его фактическому | В настройках ZHost выбрать все доступные адреса, станция переберет все поочередно и таким образом адрес маяка будет установлен |
-|   |    | Возможно, сигнал излучается неполностью и станции не хватает питания | Такое возможно при питании станции от источников питания, имеющих ограничение по току. Для нормальной работы в режиме передачи станции необходимо порядка 3А |
-| 3 | Нет связи со станцией Zima-B, порт открыт, но станция не передает данные | На станцию не приходит питание | Проверить источник питания и соединительные кабеля |
-|   |   | Станция неисправна | Заменить станцию |
-| 4 | Определяемый угол прихода имеет статическую ошибку | Нулевые направления станции и компаса (или продольной оси судна) расположены под углом - станция повернута в хомуте | Совместить нулевое направление станции с продольной осью судна и/или нулевым направлением компаса и исключить случайное проворачивание антенны в хомуте |
-| 5 | Система работает, маяк отвечает но абсолютное местоположение маяка не вычисляется (при подключенном внешнем GNSS-приемнике, компасе или GNSS-компасе) | Не обновляются данные о географическом положении и курсе судна | Проверить исправность GNSS-приемника и магнитного/GNSS компаса а также соединительных кабелей и настроек портов |
+| 1 | Unable to establish a connection between ZHost and Zima-B (Error “COM port access denied”) | Feature of operation of drivers of the RS422-USB converter in Win8-10 systems | 1. Disconnect power to the Zima-B station <br/> 2. Disconnect the USB connector <br/> 3. Close the ZHost application <br/> 4. Connect the USB connector <br/> 5. Launch the ZHost application <br/> 6. Press the button **CONNECTION** at ZHost <br/> 7. Apply power to the Zima-B station |
+| 2 | The station emits a request signal, but the beacon does not respond | Hydrologic conditions do not allow to provide sustainable communication | Check the serviceability of the responder-beacon at a short distance (0.5-10 meters) in line-of-sight conditions |
+|   |   | The power connector on the beacon is not connected | Plug in connector | 
+|   |   | The battery pack of the beacon is discharged	| Charge or replace the battery pack. |
+|   |   | The requested beacon address does not match its actual address | In the ZHost settings, select all available addresses, the station will poll through all possible addresses one by one and thus the actual beacon address will be determined |
+|   |    | The station may not have enough power and the signal may not be fully emitted | This is possible when the station is powered by power supplies that have a current limit. For normal operation in the transmission mode of the station, about 3A is necessary |
+| 3 | There is no communication with the Zima-B station, the port is open, but the station does not transmit data | No power comes to the station | Check power supply and connection cables |
+|   |   | Station defective | Replace station |
+| 4 | Estimated angle of arrival has a static error | The zero directions of the station and the compass (or the longitudinal axis of the vessel) are located at an angle - the station is rotated in the clamp | Combine the zero direction of the station with the longitudinal axis of the vessel and/or the zero direction of the compass and prevent accidental rotation of the antenna in the clamp |
+| 5 | The system works, the beacon responds but the absolute location of the beacon is not calculated (when an external GNSS receiver, compass or GNSS compass is connected) | Geographical position and heading are not updated | Verify that the GNSS receiver and the magnetic / GNSS compass as well as the connecting cables and port settings are working |
 
 <div style="page-break-after: always;"></div>
 
-## 6. Обязательства и отказ от ответственности
-### 6.1 Условия замены и бесплатного гарантийного обслуживания
-Гарантия производителя распространяется только на заводские дефекты, выявивщиеся при эксплуатации устройства в соответствие с настоящим руководством в течении гарантийного срока (2 года с момента покупки).  
+## 6. Liability and disclaimer
+### 6.1 Terms of replacement and free warranty service
+The manufacturer’s warranty applies only to factory defects that were discovered during the operation of the device in accordance with this manual during the warranty period (2 years from the date of purchase).
 
-Производитель гарантирует бесплатный ремонт или замену неисправного оборудования из комплекта поставки, вышедшего из строя по причине заводского дефекта.  
+The manufacturer guarantees free repair or replacement of faulty equipment from the delivery set that has failed due to a factory defect.
 
-К поводам для отказа от бесплатного гарантийного обслуживания, бесплатного ремонта и замены относятся:
-- любые **механические повреждения** оборудования из комплекта поставки, в т.ч. нарушение изоляции проводов и кабелей;
-- любые **повреждения, вызванные воздействием влаги и загрязнейний**, вследствие неправильной эксплуатации оборудования из комплекта поставки;
-- любые **электрические повреждения**, вызванные **использованием некомплектных аксессуаров**; к некомплектным не отностятся аксессуары, поставленные производителем или его представителем в замен неисправных или утраченых;
-- любые **следы самостоятельного ремонта и/или вскрытия** оборудования из комплекта поставки.
+The reasons for refusing free warranty service, free repair and replacement include:
+
+- any mechanical damage of the equipment supplied, including violation of insulation of wires and cables;
+- any damage caused by exposure to moisture and pollution due to improper use of the equipment from the delivery set: moisture in the connectors.
+- any electrical damage caused by use of not original accessories;
+- any signs of self-repair and/or opening of the equipment from the delivery set.
 
 <div style="page-break-after: always;"></div>
 
-### 6.2 Ограничение ответственности производителя
+### 6.2 Disclaimer of the manufacturer
 
-_____________
+**ANY OF THE PARTS OF THE DELIVERY SET SEPARATELY AND IN THE COMPOSITION OF THE SYSTEM:**
 
-_**ЛЮБАЯ ИЗ ЧАСТЕЙ КОМПЛЕКТА ПОСТАВКИ В ОТДЕЛЬНОСТИ И В СОСТАВЕ СИСТЕМЫ, ИМЕНУЕМЫЕ ДАЛЕЕ "ПОСТАВЛЯЕМОЕ ОБОРУДОВАНИЕ":**_
+- **ARE NOT DESIGNED FOR RESCUE USE**
+- **NOT TESTED AS RESCUE EQUIPMENT**
+- **IS NOT RESCUE EQUIPMENT**
+- **THE MANUFACTURER DECLARES THAT THE SUPPLIED EQUIPMENT IS SAFE WHEN USING ACCORDING TO THESE INSTRUCTIONS AND MANUFACTURER IS NOT RESPONSIBLE FOR ANY CONSEQUENCES OF USE OF THE SUPPLIED EQUIPMENT**
+  
+______________
 
-_**- НЕ РАЗРАБАТЫВАЛОСЬ КАК СРЕДСТВО СПАСЕНИЯ**_  
-_**- НЕ ТЕСТИРОВАЛОСЬ, КАК СРЕДСТВО СПАСЕНИЯ**_  
-_**- НЕ ЯВЛЯЕТСЯ СРЕДСТВОМ СПАСЕНИЯ**_  
-_**- ПРОИЗВОДИТЕЛЬ ЗАЯВЛЯЕТ, ЧТО ПОСТАВЛЯЕМОЕ ОБОРУДОВАНИЕ БЕЗОПАСНО ПРИ ЭКСПЛУАТАЦИИ СОГЛАСНО НАСТОЯЩЕЙ ИНСТРУКЦИИ И НЕ ОТВЕЧАЕТ ЗА ЛЮБЫЕ ПОСЛЕДСТВИЯ ИСПОЛЬЗОВАНИЯ ПОСТАВЛЯЕМОГО ОБОРУДОВАНИЯ**_
-
-
+[Back to contents](#contents)
