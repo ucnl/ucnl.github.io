@@ -8,7 +8,7 @@
 ### Zima - Ultrashort baseline (USBL) system
 * [Zima USBL: Data brief](/documentation/EN/Zima/Zima_DataBrief_en.md)
 * [Zima USBL: videos, tutorials, etc.](/documentation/EN/Zima/media)
-* [Zima USBL User's manual](/Docs/EN/Zima/ZIMA_USBL_Deployment_maintenance_en.pdf)
+* [Zima USBL User's manual](/documentation/EN/Zima/Zima_Users_manual_en.md)
 * [Zima USBL: Communication protocol specification](/documentation/EN/Zima/Zima_Protocol_Specification_en.md)
 * [Device specification: Zima-B - direction finding antenna](/documentation/EN/Zima/Zima_B_Specification_en.md)
 * [Device specification: Zima-R](/documentation/EN/Zima/Zima_R_Specification_en.md)
