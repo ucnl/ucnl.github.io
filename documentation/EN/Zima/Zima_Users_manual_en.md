@@ -81,7 +81,7 @@ Figure 3 shows the outline drawing of the base station [Zima-B](Zima_B_Specifica
 The base station has an input cable for energy and information pairing and an opening for the pressure/temperature sensor. Structurally, the base station is divided into the following parts: cable entry (in the upper part of the station) and a fixing groove for fixing the station with a clamp. Below is the cylindrical surface of the transmitting piezoelectric element, under which there is a receiving phased antenna array. The surface of the transmitting element and the receiving grille during installation should not be blocked or shielded.
 For proper operation of the station, line-of-sight is required between the working surfaces of the station and the antenna of the responder-beacon.
 
-| ![Zima-B drawings](https://ucnl.github.io/documentation/Zima_B_drawings.png) |
+| ![Zima-B drawings](https://ucnl.github.io/documentation/Zima_B_drawings_en.png) |
 | :---: |
 | **Figure 3 - [Zima-B](Zima_B_Specification_en.md)** |
 |  _Outine drawing_ |
@@ -187,7 +187,7 @@ Battery life with standard battery pack - up to 70 hours in receiving mode, up t
 <a name="footnote2225"><sup>5</sup></a> Standard delivery set, subject to change without notice  
 
 #### 2.2.3. Configuration options
-The responder-beacon [Zima-R](Zima_R_Specification_ru.md) is a transceiver for underwater acoustic digital broadband communication and can be interfaced with the control system energetically and informationally. In this case, it is possible, if the control system has a magnetic compass, to determine the distance and heading angle to the base station, as well as receive telecontrol code commands from the base station.
+The responder-beacon [Zima-R](Zima_R_Specification_en.md) is a transceiver for underwater acoustic digital broadband communication and can be interfaced with the control system energetically and informationally. In this case, it is possible, if the control system has a magnetic compass, to determine the distance and heading angle to the base station, as well as receive telecontrol code commands from the base station.
 When autonomous, the beacon is equipped with a battery canister, as shown in Figure 4. In this case, it is completely autonomous and does not require pairing with the carrier underwater vessel.
 In [OEM](Zima_R_OEM_Specification_en.md) the beacon is delivered as a set of electronic boards for user installation in own normobaric housing. The responder-beacon is equipped with a deep-sea underwater acoustic antenna. Insertion of the antenna cable into the pressure-sensitive housing and switching with the beacon electronics, in this case, is provided by the user.
 
