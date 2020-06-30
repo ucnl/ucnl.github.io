@@ -312,6 +312,7 @@ If the checkbox **"Save log separately"** is checked, the data transferred to th
 
 
 The tab **"GENERAL"** contains the address settings of the used beacons and some physical parameters. Its appearance is shown in Figure 9.
+
 | ![ZHost settings window view](https://ucnl.github.io/documentation/zhost_setts_2.png) |
 | :---: |
 | **Figure 9 - Settings editor** |
