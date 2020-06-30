@@ -10,7 +10,39 @@
 <div style="page-break-after: always;"></div>
 
 ## Contents
-
+- [1. Introduction](#1-introduction)
+- [2. Composition of the system](#2-composition-of-the-system)
+  - [2.1. Zima-B: Hydroacoustic direction-finding base station](#21-zima-b-hydroacoustic-direction-finding-base-station)
+     - [2.1.1. General information](#211-general-information)
+     - [2.1.2. Technical specifications](#212-technical-specifications)
+     - [2.1.3 Storage and maintenance](#213-storage-and-maintenance)
+  - [2.2. Zima-R: responder-beacon](#22-zima-r-responder-beacon)
+     - [2.2.1. General information](#221-general-information)
+     - [2.2.2. Technical specifications](#222-technical-specifications)
+     - [2.2.3. Configuration options](#223-configuration-options)
+     - [2.2.4. Work with the device (stand-alone version)](#224-work-with-the-device-stand-alone-version)
+     - [2.2.5. Work with the device (integrated version)](#225-work-with-the-device-integrated-version)
+     - [2.2.6. Storage and maintenance](#226-storage-and-maintenance)
+- [3. ZHost software](#3-zhost-software)
+  - [3.1. System requirements](#31-system-requirements)
+  - [3.2. Description of the ZHost software interface](#32-description-of-the-zhost-software-interface)
+     - [3.2.1 Toolbar](#321-toolbar)
+       - [3.2.1.1. Menu item CONNECTION](#3211-menu-item-connection)
+       - [3.2.1.2. Menu item STATION](#3212-menu-item-station)
+       - [3.2.1.3. Menu item BEACON](#3213-menu-item-beacon)
+       - [3.2.1.4. Menu item LOG](#3214-menu-item-log)
+       - [3.2.1.5. Menu item TRACK](#3215-menu-item-track)
+       - [3.2.1.6. Menu item SETTINGS](#3216-menu-item-settings)
+       - [3.2.1.7. Menu item AUTO REQUEST](#3217-menu-item-auto-request)
+       - [3.2.1.8. Menu item AUTO SCREENSHOT](#3218-menu-item-auto-screenshot)
+     - [3.2.2 PPI View panel](#322-ppi-view-panel)
+     - [3.2.3 BEACONS panel](#323-beacons-panel)
+     - [3.2.3 Status bar](#323-status-bar)
+- [4. Effective use of the Zima USBL navigation system](#4-effective-use-of-the-zima-usbl-navigation-system)
+- [5. Possible malfunctions, their diagnosis and elimination](#5-possible-malfunctions-their-diagnosis-and-elimination)
+- [6. Liability and disclaimer](#6-liability-and-disclaimer)
+  - [6.1 Terms of replacement and free warranty service](#61-terms-of-replacement-and-free-warranty-service)
+  - [6.2 Disclaimer of the manufacturer](#62-disclaimer-of-the-manufacturer)
     
 <div style="page-break-after: always;"></div>
 
@@ -214,7 +246,7 @@ The toolbar consists of the upper (**CONNECTION**, **STATION**, etc.) and lower 
 | _Main window view_ |
 
 #### 3.2.1 Toolbar
-##### 3.2.1.1 Menu item CONNECTION
+##### 3.2.1.1. Menu item CONNECTION
 The menu item **"CONNECTION"** serves to open and close the connection on the configured serial ports. These include the port, through which is exchanging information with the base station, AUX ports, through which navigation information from the **GNSS + GNSS compass** or **GNSS + magnetic compass** can be received (with appropriate settings), as well as a GNSS emulation port for one of the responder beacons.
 
 When the user clicks on the menu item **"CONNECTION"** the application tries to open connections on the serial ports according to the settings.
@@ -222,18 +254,18 @@ If additional providers of navigation data (GNSS, compass) are not specified and
 
 If the ports are opened successfully, the menu item **"CONNECTION"** becomes highlighted, and subsequent clicking on it will close the connections.
 
-##### 3.2.1.2 Menu item STATION
+##### 3.2.1.2. Menu item STATION
 The menu item **"STATION"** becomes active only after the connection with the base station is open and device information has been successfully received from it. The item contains the following subitems:
 - **"INFORMATION"** to call up a dialogue box containing information about the connected base station (device serial number, firmware version, etc.).
 - **"DEPTH CALIBRATION"** to call the dialogue box for setting the actual depth of the base station.
 
-##### 3.2.1.2 Menu item BEACON
+##### 3.2.1.3. Menu item BEACON
 This menu item becomes active only after the connection with the base station is opened and information about the device is successfully received from it, and the function **"AUTO REQUEST"** is not active. The item contains the following subitems:
 - **"SEND COMMAND"** to call the remote command sending dialogue box, in which the user can select the address of the responder-beacon to which the user command should be sent and the command identifier.
 - **"CHANGE ADDRESS"** to call the dialogue box for changing the address of the remote beacon-responder. In the dialogue box, the user must specify the current address of the beacon, which needs to change the address and the new address. *The user should be careful when using this function. It is intended only for setting beacon addresses before submersion.*
 - **"CALIBRATION OF ATMOSPHERIC PRESSURE"** to call up the atmospheric pressure calibration dialogue box. In the dialogue box, the user must specify the address of the beacon. Upon receipt of a command to calibrate atmospheric pressure, the responder-beacon will use the current pressure readings from the built-in sensor as atmospheric. *The user should be careful when using this function. It is intended only for configuring beacons before submersion.*
 
-##### 3.2.1.3 Menu item LOG
+##### 3.2.1.4. Menu item LOG
 Menu item **"LOG"** contains functions for working with application log files and contains the following sub-items:
 - **"VIEW"**. Selecting this subitem will open the current application log file.
 - **"ANALYZE"**. If the user selects this sub-item, the file selection dialogue for analysis will be displayed. The log file analysis function allows the user to quickly restore the system’s progress, for example, in order to restore the tracks of the vessel and/or responder-beacons in case of loss.
@@ -241,12 +273,12 @@ Menu item **"LOG"** contains functions for working with application log files an
 - **"RESTART CURRENT"**. When this sub-item is enabled, the contents of the current log file will be deleted and the log recording will continue.
 - **"DELETE ALL LOGS"**. This menu sub-item is intended to delete all application logs from the LOG\ directory. *Attention! Data from the log files will be lost forever!*
 
-##### 3.2.1.4 Menu item TRACK
+##### 3.2.1.5. Menu item TRACK
 The menu item **"TRACK"** contains functions for working with tracks generated by the software and contains sub-items:
 - **"SAVE AS ..."** serves to open a dialogue box for selecting a name and file format, for saving tracks. The function becomes active only if the system has unsaved geographic data. The software supports exporting tracks to Keyhole Markup Language (KML) and Comma-separated values (CSV) formats.
 - **"CLEAR"**. This sub-item is used to delete all geographic data accumulated by the software for the current session. *This function should be used with caution!*
 
-##### 3.2.1.5 Menu item SETTINGS
+##### 3.2.1.6. Menu item SETTINGS
 The menu item **"SETTINGS"** is active only when the connection is closed and serves to call the dialogue box for changing software settings.
 
 Settings are saved in the root directory of the application. It should be remembered that in order for the changed and saved settings to be used by the application, it must be restarted. If the settings are saved successfully, the software will display the corresponding prompt to the user.
@@ -311,11 +343,11 @@ The tab **"OPTIONAL"** contains the settings for the orientation of the base sta
 - The parameter **"&delta;"** (in degrees) sets the zero rotation of the base station antenna relative to the zero of the magnetic or GNSS compass
 
 
-##### 3.2.1.6 Menu item AUTO REQUEST
+##### 3.2.1.7. Menu item AUTO REQUEST
 This menu item controls the mode **"AUTO REQUEST"**. When this mode is turned on, the software will automatically interrogate responder-beacons at the highest possible speed according to the list **"Used beacons"** in **"GENERAL"** tab in the application settings window.
 **AUTO REQUEST** mode is the main operating mode of the system and should only be turned off if navigation data is not required or if a user command must be sent to one or more beacons (with **AUTO REQUEST** mode on, this function is not available)
 
-##### 3.2.1.7 Menu item AUTO SCREENSHOT
+##### 3.2.1.8. Menu item AUTO SCREENSHOT
 If this function is enabled, the software will automatically save the image of the main window when updating data. Files are located in the **"\SNAPSHOTS\YYYY-DD-MM\"** directory, where **"YYYY-DD-MM"** is the current date. Each file is named according to the current time in the format **"HH-MM-SS"** and has the Portable Network Graphics (\*.png) format.
 
 #### 3.2.2 PPI View panel
@@ -362,7 +394,7 @@ Located at the bottom of the window and displays the status of the relevant devi
 
 <div style="page-break-after: always;"></div>
 
-## 4. Effective use of the Zima navigation system
+## 4. Effective use of the Zima USBL navigation system
 The [Zima USBL](Zima_DataBrief_en.md) system is an underwater acoustic ultrashort base-line system that determines the relative location of responder-beacons by the propagation time of the acoustic signal in the water and the angle of arrival of the response signal of the responder-beacons.
 In this regard, its effective use is based on the following conditions:
 - **ensuring a stable position of the base station during operation**; This condition is ensured by the reliable fixing of the base station on a vertical rod, taking into account the zero direction of the direction-finding antenna. Angular deviations of the vertical axis of the station from the vertical, as well as deviations and oscillations of its zero, negatively affect the accuracy of determining the angle of arrival of the response signal;
