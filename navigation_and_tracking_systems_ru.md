@@ -36,9 +36,4 @@
 * [Приложение для RedNAV (Скачать релиз)](https://api.github.com/repos/ucnl/RedNavHost/zipball)
 
 
-### Система привода водолазов VOSTOK
-* [Спецификация устройства: VOSTOK-ACS - водолазный акустический компас](/Docs/RU/Vostok/Vostok-ACS_Specification_ru.pdf)
-* [Спецификация устройства: VOSTOK-BASE - приводной маяк](/Docs/RU/Vostok/Vostok-BASE_Specification_ru.pdf)
-* [Рукводство пользователя](/Docs/RU/Vostok/Vostok_Users_Manual_ru.pdf)
-
 ## [Домой](README_RU.md)
