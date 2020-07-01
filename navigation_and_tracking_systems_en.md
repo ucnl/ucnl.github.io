@@ -36,8 +36,4 @@
 * [RedNAV host application (Download release)](https://api.github.com/repos/ucnl/RedNavHost/zipball)
 
 
-### VOSTOK - diver's homing system
-* [Device specification: VOSTOK-ACS - diver's acoustic compass](/Docs/EN/Vostok/Vostok-ACS_Specification_en.pdf)
-* [Device specification: VOSTOK-BASE - homing beacon](/Docs/EN/Vostok/Vostok-BASE_Specification_en.pdf)
-
 ## [Home](README.md)
