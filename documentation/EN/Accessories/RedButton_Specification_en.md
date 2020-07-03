@@ -37,7 +37,7 @@ It has high reliability and MTBF compared with spring-rod designs and piezo butt
 | NUMBER OF CYCLES | 10<sup>5</sup> | 
 
 ________________
-<a name="footnote1"><sup>1</sup></a> With standard length cable.
-<a name="footnote2"><sup>2</sup></a> The parameter can be changed by agreement.
+<a name="footnote1"><sup>1</sup></a> With standard length cable.  
+<a name="footnote2"><sup>2</sup></a> The parameter can be changed by agreement.  
 <a name="footnote3"><sup>3</sup></a> The default color is specified. Other colors are available: black, yellow, green, blue. It is possible to dye in any color according to the RAL catalog when ordering from 50 pcs.  
 
