@@ -8,6 +8,7 @@
 * [Underwater acoustic modems](underwater_acoustic_modems_en.md)
 * [Underwater Wireless voice systems (Underwater telephone)](underwater_wireless_voice_systems_en.md)
 * [Underwater acoustic transducers & hydrophones](underwater_acoustic_antennas_en.md)
+* [Accessories](accessories_en.md)
 
 ## Media & Demos
 * [Videos](media_videos_en.md)
