@@ -6,6 +6,6 @@
 
 ## Аксессуары
 * [Кнопка подводная RedButton](/documentation/RU/Accessories/RedButton_Specification_ru.md)
-
+* [Автономный источник питания и преобразователь RS422/485<->USBBat&Link Box](/documentation/RU/Zima/Bat_n_link_box_Specification_ru.html)
 
 ## [Домой](README_RU.md)
