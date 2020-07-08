@@ -326,8 +326,7 @@ Buoys [RedBASE](RedBASE_Specification_en.md) are equipped with light indication.
 Typical time the buoy enters the operating mode (the time before the light turns off) in open water is no more than 2-3 minutes. If the lamp does not turn off for a longer time, the user should change the location of the buoy. Repetition of this situation in open water, where nothing can interfere with the passage of a satellite navigation signal, is an occasion to contact the manufacturer.
 
 ### 3.3. Providing line-of-sight between buoys and navigation receivers
-The third condition is determined by the physical principles of the long navigation acoustic base. Since the estimation of the proper position by the navigation receivers is made by estimating the times of arrival of the acoustic signals from the buoys [RedBASE] (RedBASE_Specification_Underwater Acoustic Navigation System **RedWAVE** is designed to provide navigation data (absolute geographical
-coordinates and depth) of various underwater objects in a submerged state:
+The third condition is determined by the physical principles of the long navigation acoustic base. Since the estimation of the proper position by the navigation receivers is made by estimating the times of arrival of the acoustic signals from the buoys [RedBASE](RedBASE_Specification_en.md). Underwater acoustic navigation System **RedWAVE** is designed to provide navigation data (absolute geographical coordinates and depth) of various underwater objects in a submerged state:
 - remote-controlled unmanned underwater vehicles (**ROV**);
 - manned underwater vehicles;
 - autonomous unmanned underwater vehicles (**AUV**);
