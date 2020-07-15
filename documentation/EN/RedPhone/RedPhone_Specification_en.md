@@ -6,7 +6,7 @@
 ## KEY FEATURES
 
 * **Compatible with most similar systems (OTS, Oceanreef, etc.)**
-* **Built-in diver location function <sup>[1](# footnote1)</sup>**
+* **Built-in diver location function <sup>[1](#footnote1)</sup>**
 * **Acoustic communication range up to 1000 <sup>[2](#footnote2)</sup> m**
 * **Battery life up to 100 hours in receiving mode**
 * **Automatic poweron in water**
