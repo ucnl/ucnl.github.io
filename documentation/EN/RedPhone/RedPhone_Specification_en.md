@@ -35,7 +35,7 @@ Diver's underwater wireless telephone communication unit **RedPhone-D** provides
 | BATTERY LIFE (MIXED MODE)<sup>[5](#footnote5), [6](#footnote6)</sup> | up to 8 hours |
 | WORKING TEMPERATURE RANGE | 0 .. 50° С |
 | BATTERIES | 3 x 18650 Li-Ion |
-| CHANNEL SWITCHING | DIP-switch battery housing |
+| CHANNEL SWITCHING | DIP-switch in the battery compartment |
 | BODY MATERIAL | Delrin |
 | CABLES INSULATION MATERIAL | Polyurethane |
 | NAVIGATION SIGNAL CARRIER | 20050 Hz |
