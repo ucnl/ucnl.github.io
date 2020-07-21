@@ -34,7 +34,7 @@ The function of code division of subscribers allows you to most effectively solv
 | DEPTH RATING | 400 m |
 | MAX. OPERATING RANGE<sup>[1](#footnote1)</sup> | 8000 m |
 | PAYLOAD DATA RATE | 80 bit/s |
-| POWER CONSUMPTION Rx/Tx | 0.33/25 W |
+| POWER CONSUMPTION Rx/Tx | 0.33/10 W |
 | SUPPLY VOLTAGE | 12 V |
 | ACOUSIC SOURCE LEVEL | 170 dB re 1 μPa @ 1 m |
 | DATA LINES VOLTAGE | 0 .. 3.3 V |
