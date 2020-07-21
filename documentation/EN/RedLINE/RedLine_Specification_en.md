@@ -8,7 +8,7 @@
 * **Operating range up to 8000<sup>[1](#footnote1)</sup> m**
 * **Subscribers code division**
 * **Reliable and noise-immune technology of digital broadband acoustic communication**
-* **Low power consumption (Rx/Tx) 0.33/25 W**
+* **Low power consumption (Rx/Tx) 0.33/10 W**
 * **Open & easy interfacing protocol**
 
 
