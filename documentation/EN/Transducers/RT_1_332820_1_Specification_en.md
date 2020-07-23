@@ -15,7 +15,7 @@
 | PARAMETER | VALUE |
 | :--- | :--- |
 | DIMENSIONS (Ф х h) | 45 x 45 mm |
-| WEIGHT (dry) | 0.1 кг |
+| WEIGHT (dry) | 0.1 kg |
 | MAX. INPUT VOLTAGE (peak) | 200 V |
 | ELECTRIC CAPACITY | 15 +/- 3 nF |
 | MAX. EXTERNAL HYDROSTATIC PRESSURE | 30 Bar |
