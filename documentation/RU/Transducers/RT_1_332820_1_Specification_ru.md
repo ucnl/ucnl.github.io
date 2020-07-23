@@ -1,4 +1,4 @@
-| ![logo](https://ucnl.github.io/documentation/sm_logo.png) | ![logo](/documentation/def_buoy_txd.png) |
+| ![logo](https://ucnl.github.io/documentation/sm_logo.png) | ![logo](https://ucnl.github.io/documentation/def_modem_yellow.png) |
 | :---: | ---: |
 | [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **RT-1.332820-1** <br/> Антенна гидроакустическая приемопередающая <br/> Спецификация устройства |
 
@@ -14,9 +14,9 @@
 | ПАРАМЕТР | ЗНАЧЕНИЕ |
 | :--- | :--- |
 | РАЗМЕР (Ф х h) | 45 x 45 мм |
-| ВЕС (сухой) | 0.xx кг |
+| ВЕС (сухой) | 0.1 кг |
 | МАКСИМАЛЬНОЕ ПОДВОДИМОЕ НАПРЯЖЕНИЕ (ПИКОВОЕ) | 200 В |
-| ЭЛЕКТРИЧЕСКАЯ ЕМКОСТЬ | xx +/- x нФ |
+| ЭЛЕКТРИЧЕСКАЯ ЕМКОСТЬ | 15 +/- 3 нФ |
 | МАКСИМАЛЬНОЕ ВНЕШНЕЕ ГИДРОСТАТИЧЕСКОЕ ДАВЛЕНИЕ | 30 Бар |
 | СТАНДАРТНАЯ ДЛИНА КАБЕЛЯ | 1 м |
 | ДИАПАЗОН РАБОЧИХ ТЕМПЕРАТУР | -40..+60 °С |
