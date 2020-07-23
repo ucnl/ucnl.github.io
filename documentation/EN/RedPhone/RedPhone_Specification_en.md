@@ -59,7 +59,7 @@ ________________
 <a name="footnote1"><sup>1</sup></a> The function is provided by buoys of the navigation system **RWLT**.  
 <a name="footnote2"><sup>2</sup></a> A parameter that determines the maximum range at which a signal can be received based on the electro-acoustic parameters of the transmitter and receiver, spatial decrease in the intensity of sound energy, attenuation in the medium and level of acoustic noise.  
 <a name="footnote3"><sup>3</sup></a> Including transducer.  
-<a name="footnote4"><sup>4</sup></a> With a battery, a PTT and a Kirby-Morgan mask connector, with connectors for other masks, the value may differ by the weight of the connector.  
+<a name="footnote4"><sup>4</sup></a> With a battery, a PTT and a mask connector, deepending on the specific connector, the value may differ by the weight of the connector.  
 <a name="footnote5"><sup>5</sup></a> With new, fully charged batteries with a capacity of 3000 mA\*h or more, at an ambient temperature of 20 °C.  
 <a name="footnote6"><sup>6</sup></a> While transmitting 10 minutes per hour.  
 
