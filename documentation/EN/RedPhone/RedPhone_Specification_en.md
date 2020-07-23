@@ -56,7 +56,7 @@ Diver's underwater wireless telephone communication unit **RedPhone-D** provides
 | 8 | 25000 | High | 25300 .. 29300 |
 
 ________________
-<a name="footnote1"><sup>1</sup></a> The function is provided by buoys of the navigation system **RWLT**.  
+<a name="footnote1"><sup>1</sup></a> The function is provided by buoys of the **RWLT** navigation system.  
 <a name="footnote2"><sup>2</sup></a> A parameter that determines the maximum range at which a signal can be received based on the electro-acoustic parameters of the transmitter and receiver, spatial decrease in the intensity of sound energy, attenuation in the medium and level of acoustic noise.  
 <a name="footnote3"><sup>3</sup></a> Including transducer.  
 <a name="footnote4"><sup>4</sup></a> With a battery, a PTT and a mask connector, deepending on the specific connector, the value may differ by the weight of the connector.  
