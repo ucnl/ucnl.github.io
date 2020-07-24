@@ -1,4 +1,4 @@
-| ![logo](https://ucnl.github.io/documentation/sm_logo.png) | ![logo](https://ucnl.github.io/documentation/def_modem_yellow.png) |
+| ![logo](https://ucnl.github.io/documentation/sm_logo.png) | ![logo](https://ucnl.github.io/documentation/RT_1_332820_1.png) |
 | :---: | ---: |
 | [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **uWAVE** underwater acoustic modem <br/> Device specifications |
 
@@ -28,7 +28,7 @@ transmission, where dimensions and weight are the bottleneck.
 
 | PARAMETER                              | VALUE |
 | :--- | :--- |
-| DIMENSIONS (Ф х h)                     | 40 x 45 mm |
+| DIMENSIONS (Ф х h)                     | 41 x 45 mm |
 | WEIGHT (dry)                           | 0.16 kg |
 | DEPTH RATING                           | 300 m |
 | MAX OPERATING RANGE<sup>[1](#footnote1),[2](#footnote2)</sup> | 1000 m |
