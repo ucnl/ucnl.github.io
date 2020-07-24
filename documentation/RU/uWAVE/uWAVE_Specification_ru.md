@@ -1,4 +1,4 @@
-| ![logo](https://ucnl.github.io/documentation/sm_logo.png) | ![logo](https://ucnl.github.io/documentation/def_modem_yellow.png) |
+| ![logo](https://ucnl.github.io/documentation/sm_logo.png) | ![logo](https://ucnl.github.io/documentation/RT_1_332820_1.png) |
 | :---: | ---: |
 | [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **uWAVE** - Гидроакустический модем <br/> Спецификация устройства |
 
