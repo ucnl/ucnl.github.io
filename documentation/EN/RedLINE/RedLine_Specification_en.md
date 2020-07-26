@@ -45,7 +45,7 @@ The function of code division of subscribers allows you to most effectively solv
 | RATED STARTUP TIME | 100 msec |
 | WORKING TEMPERATURE RAGE | -5 .. 50 °C |
 | INTERFACE<sup>[3](#footnote3)</sup> | UART 9600 bit/s |
-| CONFIGURATION PROTOCOL | NMEA 0183 [PTNT](RedLINE_Protocol_Specification_en.md) |
+| CONFIGURATION PROTOCOL | NMEA 0183 [PTNT](RedLINE_Protocol_Specifications_en.md) |
 | CABLE LENGTH<sup>[3](#footnote3)</sup> | 0.5 m |
 | SUBSCRIBER'S DIVISION | 20 code channels |
 | EXTRA FEATURES | Relay mode |
