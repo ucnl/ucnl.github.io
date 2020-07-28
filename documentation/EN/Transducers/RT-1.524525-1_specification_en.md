@@ -37,10 +37,10 @@
 
 | № | Color | Function |
 | :---: | :--- | :--- |
-| 1 | Green | Signal |
-| 2 | Black | NC |
+| 1 | Green | "-" |
+| 2 | Red | "+" |
 | 3 | White/Transparent | NC |
-| 4 | Brown | Common |
+| 4 | Yello | NC |
 | 5 | Shield | NC |
 
 <div style="page-break-after: always;"></div>
