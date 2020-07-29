@@ -10,7 +10,7 @@
 
 ## DRAWINGS
 
-![uWAVE_drawings](https://ucnl.github.io/documentation/uWAVE_drawings.png)
+![uWAVE_drawing](https://ucnl.github.io/documentation/uWAVE_drawing.png)
 
 <div style="page-break-after: always;"></div>
 
