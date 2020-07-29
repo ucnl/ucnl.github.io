@@ -33,7 +33,7 @@ Acoustic Transfer Protocol **uWAVE** implements code division multiple access (C
 isolating code channels. Any device from the **uWAVE** family can be configured with any code channels for reception and transmission.
 
 The isolating code channel ensures that data transmitted on one channel is not received by the device receiving on any
-another code channel.
+other code channel.
 
 All devices of the **uWAVE** family can receive at the same time in only one code channel.
 
