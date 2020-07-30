@@ -16,7 +16,7 @@
 * [GNSS and heading sensors compatibility information sheet](/documentation/EN/Zima/Zima_GNSS_requirements_en.md)
 * [Device 3D-model (STEP): Zima-B](/Docs/EN/Zima/Zima_Base_3D.step)
 * [Device 3D-model (STEP): Zima-R](/Docs/EN/Zima/ZIMA_Responder_3D.step)
-* [Device wiring: Zima-R](/Docs/EN/Zima/Zima-R_drawings_wiring.pdf)
+* [Device wiring diagram: Zima-R](/documentation/EN/Zima/ZimaR_wiring_diagram_en.md)
 * [Host application (Repository)](https://github.com/ucnl/ZHost)
 * [Host application (Download release)](https://api.github.com/repos/ucnl/ZHost/zipball)
 
@@ -29,6 +29,7 @@
 * [Device specification: RedNAV - navigation receiver for divers](/documentation/EN/RedWAVE/RedNAV_Specification_en.md)
 * [Communication protocol description: RedNODE](/documentation/EN/RedWAVE/RedWAVE_Protocol_Specification_en.md)
 * [RedWAVE User's manual](/documentation/EN/RedWAVE/RedWAVE_Users_Manual_en.md)
+* [Device wiring diagram: RedNODE](/documentation/EN/RedWAVE/RedNODE_wiring_diagram_en.md)
 * [Demo track (Google KML)](/Docs/RU/RedWAVE/rednode_track_18042019.kml)
 * [RedNODE demo application (Repository)](https://github.com/ucnl/RedNodeHost)
 * [RedNODE demo application (Download release)](https://api.github.com/repos/ucnl/RedNodeHost/zipball)
