@@ -10,7 +10,7 @@
 
 ## ГАБАРИТНЫЙ ЧЕРТЕЖ
 
-![uWAVE_drawing](https://ucnl.github.io/documentation/uWAVE_drawing.png)
+![RedLINE_drawing](https://ucnl.github.io/documentation/RedLINE_drawing.png)
 
 <div style="page-break-after: always;"></div>
 
