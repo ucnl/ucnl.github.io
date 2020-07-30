@@ -17,7 +17,7 @@
 * [Протокол информационного сопряжения: Zima USBL](/documentation/RU/Zima/Zima_Protocol_Specification_ru.md)
 * [3D-модель устройства (STEP): Zima-B](/Docs/EN/Zima/Zima_Base_3D.step)
 * [3D-модель устройства (STEP): Zima-R](/Docs/RU/Zima/ZIMA_Responder_3D.step)
-* [Схема включения устройства: Zima-R](/Docs/EN/Zima/Zima-R_drawings_wiring.pdf)
+* [Схема включения устройства: Zima-R](/documentation/RU/Zima/ZimaR_wiring_diagram_ru.md)
 * [Пультовое приложение (Репозиторий)](https://github.com/ucnl/ZHost)
 * [Пультовое приложение (Скачать релиз)](https://api.github.com/repos/ucnl/ZHost/zipball)
 
@@ -31,6 +31,7 @@
 * [Описание протокола сопряжения: RedNODE](/documentation/RU/RedWAVE/RedWAVE_Protocol_Specification_ru.md)
 * [Рукводство пользователя](/documentation/RU/RedWAVE/RedWAVE_Users_Manual_ru.md)
 * [Руководство пользователя ПО RedNAV Host](/documentation/RU/RedWAVE/RedNAV_Host_Users_Manual_ru.md)
+* [Схема включения устройства: RedNODE](/documentation/RU/RedWAVE/RedNODE_wiring_diagram_ru.md)
 * [Демонстрационное приложение RedNODE Host (Репозиторий)](https://github.com/ucnl/RedNodeHost)
 * [Демонстрационное приложение RedNODE Host (Скачать релиз)](https://api.github.com/repos/ucnl/RedNodeHost/zipball)
 * [Приложение для RedNAV (Репозиторий)](https://github.com/ucnl/RedNavHost)
