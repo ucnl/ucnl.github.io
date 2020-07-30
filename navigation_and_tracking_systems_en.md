@@ -30,7 +30,6 @@
 * [Communication protocol description: RedNODE](/documentation/EN/RedWAVE/RedWAVE_Protocol_Specification_en.md)
 * [RedWAVE User's manual](/documentation/EN/RedWAVE/RedWAVE_Users_Manual_en.md)
 * [Device wiring diagram: RedNODE](/documentation/EN/RedWAVE/RedNODE_wiring_diagram_en.md)
-* [Demo track (Google KML)](/Docs/RU/RedWAVE/rednode_track_18042019.kml)
 * [RedNODE demo application (Repository)](https://github.com/ucnl/RedNodeHost)
 * [RedNODE demo application (Download release)](https://api.github.com/repos/ucnl/RedNodeHost/zipball)
 * [RedNAV host application (Repository)](https://github.com/ucnl/RedNavHost)
