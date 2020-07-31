@@ -43,10 +43,6 @@
 
 <div style="page-break-after: always;"></div>
 
-
-
-<div style="page-break-after: always;"></div>
-
 ## Схемы сопряжения
 Для определения **относительного местоположения** маяков-ответчиков, антенна информационно сопрягается с ПК, на котором установлено специализированное пультовое ПО с открытым исходным кодом [ZHost](https://github.com/ucnl/ZHost). Антенна подключается к ПК через [Bat&Link Box](Bat_n_link_box_Specification_ru.md), обеспечивающий преобразование интерфейса в USB и питание антенны. 
 
@@ -59,7 +55,6 @@
 | ![Zima-B relative scheme](https://ucnl.github.io/documentation/zima_relative_scheme.png) |
 | :---: |
 | _Схема подключения при работе в относительных координатах_ |
-
 
 <div style="page-break-after: always;"></div>
 
