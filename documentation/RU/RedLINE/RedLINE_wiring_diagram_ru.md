@@ -10,5 +10,5 @@
 
 ### ГАБАРИТНЫЙ ЧЕРТЕЖ
 ![RedLINE_drawing](https://ucnl.github.io/documentation/RedLINE_drawings.png)
-
+<div style="page-break-after: always;"></div>
 
