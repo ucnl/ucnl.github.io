@@ -2,12 +2,9 @@
 | :---: | ---: |
 | [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **uWAVE** - underwater communication devices family <br/> Brief description |
   
-  
-  
 # uWAVE devices family <br/> Brief description
 
 <div style="page-break-after: always;"></div>
-
 
 ## 1. List of devices
 
@@ -28,6 +25,8 @@ horizontal direction, from which the signal came from any other devices of the *
 All devices within the family are fully acoustically compatible and have a common, [NMEA-like protocol](uWAVE_Protocol_Specification_en.md)
 interfacing.
 
+<div style="page-break-after: always;"></div>
+
 ## 2. Features of the acoustic protocol and code channels
 Acoustic Transfer Protocol **uWAVE** implements code division multiple access (CDMA) and supports 20
 isolating code channels. Any device from the **uWAVE** family can be configured with any code channels for reception and transmission.
@@ -36,6 +35,8 @@ The isolating code channel ensures that data transmitted on one channel is not r
 other code channel.
 
 All devices of the **uWAVE** family can receive at the same time in only one code channel.
+
+<div style="page-break-after: always;"></div>
 
 ## 3. Device working modes
 All devices of the family can work in two modes, switching between which is carried out by the user:
@@ -62,6 +63,8 @@ from the need to monitor the status of a remote modem.
 The devices [uWAVE USBL Modem](uWAVE_USBL_Modem_Specification_en.md) allow users to determine the horizontal angle of arrival of any
 incoming message from other devices of the **uWAVE** family. Including for user messages transmitted in transparent channel mode.
 
+<div style="page-break-after: always;"></div>
+
 ## 4. Equipment devices
 All devices of the family have built-in depth and temperature sensors, and also measure the supply voltage, devices
 [uWAVE USBL Modem](uWAVE_USBL_Modem_Specification_en.md) additionally have built-in dual-axis inclinometers
@@ -74,6 +77,8 @@ accuracy for this technology, the device allows users to set an adequate value o
 (for example, according to the WGS84 Gravity model, thereby eliminating the influence of its change from geographical latitude).
 
 All devices are designed for a maximum immersion depth of 300 meters.
+
+<div style="page-break-after: always;"></div>
 
 ## 5. Application and integration
 All **uWAVE** family devices are paired with the user system using the 3.3 V UART physical interface, and by default
@@ -93,5 +98,8 @@ Our [GitHub](https://ucnl.github.com) provides open-source examples for interfac
   * [Example 3](https://github.com/ucnl/uWAVE_Arduino/blob/master/uWAVE_Example_1.ino) - The reference point of the virtual long base. Analyzes
   RMC messages from a GNSS-receiver, requests a remote modem, sends its location and data received from a remote modem, as well as the slant range measured to it to a radio channel.
   * [uMCPIno](https://github.com/AlekUnderwater/uMCPIno) - Protocol with guaranteed delivery and message sequence (implementations for Arduino, STM32 and .NET)
+  
+  <div style="page-break-after: always;"></div>
+
   
   
