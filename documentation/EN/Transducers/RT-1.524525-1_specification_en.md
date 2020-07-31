@@ -2,7 +2,9 @@
 | :---: | ---: |
 | [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **RT-1.524525-1** <br/> Underwater acoustic transducer <br/> Device specification |
 
-## KEY FEATURES
+<div style="page-break-after: always;"></div>
+
+### KEY FEATURES
 
 * Maintenance-free monoblock design, patented technology
 * The complete absence of corrosive elements
@@ -10,7 +12,7 @@
 * High quality shielded cable in polyurethane insulation
 * Mounting groove
 
-## TECHNICAL SPECIFICATIONS
+### TECHNICAL SPECIFICATIONS
 
 | PARAMETER | VALUE |
 | :--- | :--- |
@@ -29,7 +31,7 @@
 
 <div style="page-break-after: always;"></div>
 
-## DRAWINGS
+### DRAWINGS
 
 ![RT_1_524525_1_drawings](/documentation/RT_1_524525_1_drawings.png)
 
