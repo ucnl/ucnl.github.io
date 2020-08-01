@@ -19,3 +19,7 @@
 * [UCNLPhysics](https://github.com/ucnl/UCNLPhysics) - Библиотека для определения фундаментальных свойств морской воды (C#/Rust/C/Matlab/GNU Octave/JavaScript)
 * [uMCPIno](https://github.com/AlekUnderwater/uMCPIno) - протокол с гарантированной доставкой и очередностью сообщений (C#/C/Arduino)
 * [UCNLNMEA](https://github.com/ucnl/UCNLNMEA) - библиотека для парсигна и формирования NMEA-сообщений
+
+## Дополнительно
+
+* [Дополнительные материалы](misc_ru.md)
