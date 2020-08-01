@@ -1,10 +1,12 @@
 <div style="page-break-after: always;"></div>
 
 <p align="center">
-<img src="https://ucnl.github.io/documentation/sm_logo.png" /><br/>
-<hr/>
-Наш сайт <br/> www.unavlab.com <br/>
-<img src="https://ucnl.github.io/documentation/unavlab_web_qr.png" /> <br/>
+<img src="https://ucnl.github.io/documentation/sm_logo.png"/></p>
+<hr>
+<p align="center">Наш сайт <br/> www.unavlab.com</p>
+
+<p align="center">
+<img src="https://ucnl.github.io/documentation/unavlab_web_qr.png" />
 </p>
 
 <div style="page-break-after: always;"></div>
