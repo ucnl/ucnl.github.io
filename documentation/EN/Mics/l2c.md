@@ -1,12 +1,12 @@
-| ![logo](https://ucnl.github.io/documentation/sm_logo.png) |  |
-| :--- | :--- |
-| Web | [unavlab.com](https://unavlab.com/) |
-| Documentation | [docs.unavlab.com](https://docs.unavlab.com/) |
-| Technical support | [support@unavlab.com](mailto:support@unavlab.com) |
-| GitHub | [github.com/ucnl](https://github.com/ucnl) |
-| Facebook | [facebook.com/unavlab](https://www.facebook.com/unavlab) |
-| Instagram | [instagram.com/unavlab](https://instagram.com/unavlab) |
-| Twitter | [twitter.com/unavlab](https://twitter.com/unavlab) |
-| Linkedin | [linkedin.com/company/ucnl](https://www.linkedin.com/company/ucnl) |
+![logo](https://ucnl.github.io/documentation/sm_logo.png)  
+___________  
+
+| Web <br/> www.unavlab.com | Documentation <br/> www.docs.unavlab.com |
+| :---: | :---: | 
+| ![](https://ucnl.github.io/documentation/unavlab_web_qr.png) | ![](https://ucnl.github.io/documentation/docs_unavlab_web_qr.png) |
+
+| Technical support <br/> support@unavlab.com | GitHub <br/> www.github.com/ucnl |
+| :---: | :---: | 
+| ![](https://ucnl.github.io/documentation/unavlab_support_email_qr.png) | ![](https://ucnl.github.io/documentation/unavlab_github_qr.png) |
 
 <div style="page-break-after: always;"></div>
