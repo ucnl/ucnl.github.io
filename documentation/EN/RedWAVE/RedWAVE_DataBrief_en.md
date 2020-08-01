@@ -2,6 +2,8 @@
 | :---: | ---: |
 | [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **RedWAVE**<br/> Data brief |
 
+<div style="page-break-after: always;"></div>
+
 ## General information
 **RedWAVE** - the only system in the world that implements the so-called "underwater GPS", following the ideology of satellite 
 navigation systems as closely as possible, it allows an unlimited number of underwater objects, such as divers and various mobile robots (ROV, AUV, etc.) to determine
@@ -9,6 +11,8 @@ its geographical location and depth in real-time.
 
 **RedWAVE** is a long-base (LBL, long-baseline) navigation system. The floating navigation base is formed by four small-sized
 sonobuoys [RedBASE](RedBASE_Specification_en.md); an unlimited number of underwater objects equipped with navigation receivers [RedNODE](RedNODE_Specification_en.md) and divers using diving navigators [RedNAV](RedNAV_Specification_en.md) can work simultaneously with the support of the base.
+
+<div style="page-break-after: always;"></div>
 
 ## System composition
 
@@ -26,10 +30,14 @@ depending on the user task:
 transmitted via the cable of the device to the control panel, where they can be displayed on any mapping software that supports the 
 connection of standard GNSS receivers (RMC and GGA messages).
 
+<div style="page-break-after: always;"></div>
+
 ## Tasks to be solved
 * Simultaneous estimation of 3D geographical position by an unlimited number of underwater objects (divers, ROV, AUV, etc.);
 * Recording tracks of divers moving;
 * Pre-loading waypoints, navigation to loaded points, saving (marking) the current position of the diver;
+
+<div style="page-break-after: always;"></div>
 
 ## Distinctive features
 * Work in absolute geographical coordinates;
@@ -38,6 +46,7 @@ connection of standard GNSS receivers (RMC and GGA messages).
 * Small size and power consumption of navigation receivers;
 * Emulation of the protocol of standard GNSS receivers for integrated devices
 
+<div style="page-break-after: always;"></div>
 
 ## Geometric restrictions
 In view of the fact that **RedWAVE** system uses modern technology of digital broadband acoustic communication, the signals emitted by 
@@ -51,6 +60,8 @@ Therefore, the system has a restriction on the relative position of navigation s
 * _The highest accuracy of the system is achieved inside the figure of buoys, and work should always begin inside this figure. 
 Going beyond the limits of the figure is possible, however, the accuracy can significantly decrease as the positioned object moves away 
 from the figure of buoys_
+
+<div style="page-break-after: always;"></div>
 
 _________  
 
