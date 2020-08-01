@@ -43,7 +43,7 @@ In this case, the system determines the absolute geographical coordinates of und
 
 | ![Zima-B placement](https://ucnl.github.io/documentation/zima_boat_placement.png) |
 | :---: |
-| Схема установки антенны [Zima-B](Zima_B_Specification_en.md) <br/> _1 - rod, 2 - boat, 3 - water surface, 4 - cable, 5 - antenna [Zima-B](Zima_B_Specification_en.md), 6 - antenna's direction_ |
+| [Zima-B](Zima_B_Specification_en.md) Installation scheme <br/> _1 - rod, 2 - boat, 3 - water surface, 4 - cable, 5 - antenna [Zima-B](Zima_B_Specification_en.md), 6 - antenna's direction_ |
 
 <div style="page-break-after: always;"></div>
 
