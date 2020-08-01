@@ -7,6 +7,7 @@ _______
 <br/>
 <br/>
 <br/>
+<br/>
 <p align="center">Наш сайт <br/> <a href="https:\\www.unavlab.com\">unavlab.com</a></p>
 <p align="center"><img src="https://ucnl.github.io/documentation/unavlab_web_qr.png" /></p>
 
@@ -16,6 +17,7 @@ _______
 
 _______  
 
+<br/>
 <br/>
 <br/>
 <br/>
@@ -33,6 +35,7 @@ _______
 <br/>
 <br/>
 <br/>
+<br/>
 <p align="center">Техподдержка <br/> <a href="mailto:support@unavlab.com">support@unavlab.com</a></p>
 <p align="center"><img src="https://ucnl.github.io/documentation/unavlab_support_email_qr.png" /></p>
 
@@ -42,6 +45,7 @@ _______
 
 _______  
 
+<br/>
 <br/>
 <br/>
 <br/>
