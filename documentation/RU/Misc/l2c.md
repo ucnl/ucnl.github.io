@@ -2,7 +2,8 @@
 
 <p align="center">
 <img src="https://ucnl.github.io/documentation/sm_logo.png" /><br/>
-Наш сайт <br/> www.unavlab.com  <br/>
+<hr/>
+Наш сайт <br/> www.unavlab.com <br/>
 <img src="https://ucnl.github.io/documentation/unavlab_web_qr.png" /> <br/>
 </p>
 
