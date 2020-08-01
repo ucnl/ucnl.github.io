@@ -1,9 +1,9 @@
 <div style="page-break-after: always;"></div>
 
 <p align="center">
-<img src="https://ucnl.github.io/documentation/sm_logo.png" />
-Наш сайт <br/> www.unavlab.com  
-<img src="https://ucnl.github.io/documentation/unavlab_web_qr.png" />
+<img src="https://ucnl.github.io/documentation/sm_logo.png" /><br/>
+Наш сайт <br/> www.unavlab.com  <br/>
+<img src="https://ucnl.github.io/documentation/unavlab_web_qr.png" /> <br/>
 </p>
 
 <div style="page-break-after: always;"></div>
