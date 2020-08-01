@@ -86,7 +86,7 @@ operate in transparent channel mode. This does not require any additional integr
 
 To work in command mode, a simple [NMEA-like ASCII protocol](uWAVE_Protocol_Specification_en.md) is used.
 
-Our [GitHub](https://ucnl.github.com) provides open-source examples for interfacing with **uWAVE** devices:
+Our [GitHub](https://ucnl.github.com) (https://ucnl.github.com) provides open-source examples for interfacing with **uWAVE** devices:
 * Library [uWAVELib](https://github.com/ucnl/uWAVELib) (.NET)
 * Demo software [uWAVE Host](https://github.com/ucnl/uWAVE_Host)
 * Demo project [uWAVE VLBL](https://github.com/ucnl/uWAVE_VLBL) - navigation on a virtual long base using two modems [uWAVE](uWAVE_Specification_en.md)
