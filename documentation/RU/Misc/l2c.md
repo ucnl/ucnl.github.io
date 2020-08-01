@@ -2,8 +2,6 @@
 
 ![logo](https://ucnl.github.io/documentation/sm_logo.png)  
 
-___________  
-
 | Наш сайт <br/> www.unavlab.com | Документация <br/> www.docs.unavlab.com |
 | :---: | :---: | 
 | ![](https://ucnl.github.io/documentation/unavlab_web_qr.png) | ![](https://ucnl.github.io/documentation/docs_unavlab_web_qr.png) |
