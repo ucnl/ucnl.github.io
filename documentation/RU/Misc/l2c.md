@@ -1,14 +1,12 @@
-![logo](https://ucnl.github.io/documentation/sm_logo.png) 
-___________
+![logo](https://ucnl.github.io/documentation/sm_logo.png)  
+___________  
 
-| Наш сайт | Документация |
+| Наш сайт <br/> unavlab.com| Документация <br/> docs.unavlab.com |
 | :---: | :---: | 
 | ![](https://ucnl.github.io/documentation/unavlab_web_qr.png) | ![](https://ucnl.github.io/documentation/docs_unavlab_web_qr.png) |
-| unavlab.com | docs.unavlab.com |
 
-| Техподдержка | GitHub |
+| Техподдержка <br/> support@unavlab.com | GitHub <br/> github.com/ucnl |
 | :---: | :---: | 
 | ![](https://ucnl.github.io/documentation/unavlab_support_email_qr.png) | ![](https://ucnl.github.io/documentation/unavlab_github_qr.png) |
-| support@unavlab.com | github.com/ucnl |
 
 <div style="page-break-after: always;"></div>
