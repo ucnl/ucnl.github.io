@@ -52,12 +52,10 @@
 
 <div style="page-break-after: always;"></div>
 
-![RT_1_332820_1_impedance](/documentation/RT_1_332820_1_ru_cosphi.png)
-
-<div style="page-break-after: always;"></div>
-
 ![RT_1_332820_1_tx_sensitivity](/documentation/RT_1_332820_1_ru_tx_sensitivity.png)
 
 <div style="page-break-after: always;"></div>
 
 ![RT_1_332820_1_rx_sensitivity](/documentation/RT_1_332820_1_ru_rx_sensitivity.png)
+
+<div style="page-break-after: always;"></div>
