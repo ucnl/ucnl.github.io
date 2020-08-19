@@ -19,7 +19,7 @@
 * [3D-модель устройства (STEP): Zima-R](/documentation/Zima_R_3D.step)
 * [Схема включения устройства: Zima-R](/documentation/RU/Zima/ZimaR_wiring_diagram_ru.md)
 * [Пультовое приложение (Репозиторий)](https://github.com/ucnl/ZHost)
-* [Пультовое приложение (Скачать релиз)](https://api.github.com/repos/ucnl/ZHost/zipball)
+* [Пультовое приложение (Скачать релиз)](https://github.com/ucnl/ZHost/releases/download/1.2/ZHost.zip)
 
 
 ### RedWAVE - Подводный GPS (LBL)
@@ -33,9 +33,9 @@
 * [Руководство пользователя ПО RedNAV Host](/documentation/RU/RedWAVE/RedNAV_Host_Users_Manual_ru.md)
 * [Схема включения устройства: RedNODE](/documentation/RU/RedWAVE/RedNODE_wiring_diagram_ru.md)
 * [Демонстрационное приложение RedNODE Host (Репозиторий)](https://github.com/ucnl/RedNodeHost)
-* [Демонстрационное приложение RedNODE Host (Скачать релиз)](https://api.github.com/repos/ucnl/RedNodeHost/zipball)
+* [Демонстрационное приложение RedNODE Host (Скачать релиз)](https://github.com/ucnl/RedNodeHost/releases/download/2.0/RedNODEHost.zip)
 * [Приложение для RedNAV (Репозиторий)](https://github.com/ucnl/RedNavHost)
-* [Приложение для RedNAV (Скачать релиз)](https://api.github.com/repos/ucnl/RedNavHost/zipball)
+* [Приложение для RedNAV (Скачать релиз)](https://github.com/ucnl/RedNavHost/releases/download/2.0/RedNAVHost.zip)
 
 
 ## [Домой](README_RU.md)
