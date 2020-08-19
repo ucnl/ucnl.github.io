@@ -13,7 +13,7 @@
 * [Описание протокола сопряжения: uWAVE](/documentation/RU/uWAVE/uWAVE_Protocol_Specification_ru.md)
 * [Схема подключения: uWAVE](/documentation/RU/uWAVE/uWAVE_wiring_diagram_ru.md)
 * [Демонстрационное приложение: uWAVE_Host (Репозиторий)](https://github.com/ucnl/uWAVE_Host)
-* [Демонстрационное приложение: uWAVE_Host (Скачать релиз)](https://api.github.com/repos/ucnl/uWAVE_Host/zipball)
+* [Демонстрационное приложение: uWAVE_Host (Скачать релиз)](https://github.com/ucnl/uWAVE_Host/releases/download/1.0/uWAVE_Host.zip)
 * [Примеры для Arduino](https://github.com/ucnl/uWAVE_Arduino)
 * [uWAVE: медиаматериалы, видео и т.п.](/documentation/RU/uWAVE/media)
 
@@ -22,7 +22,7 @@
 * [Спецификация протокола сопряжения: RedLINE](/documentation/RU/RedLINE/RedLINE_Protocol_Specifications_ru.md)
 * [Схема подключения: RedLINE](/documentation/RU/RedLINE/RedLINE_wiring_diagram_ru.md)
 * [Демонстрационное приложение: RedLINE Host (Репозиторий)](https://github.com/ucnl/RedLINE_Host)
-* [Демонстрационное приложение: RedLINE Host (Скачать релиз)](https://api.github.com/repos/ucnl/RedLINE_Host/zipball)
+* [Демонстрационное приложение: RedLINE Host (Скачать релиз)](https://github.com/ucnl/RedLINE_Host/releases/download/1.0/RedLINE_Host.zip)
 
 ### RedGTR -  гидроакустический модем кодовой связи
 * [Спецификация устройства: RedGTR](/documentation/RU/RedGTR/RedGTR_Specifications_ru.md)
