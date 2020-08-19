@@ -18,7 +18,7 @@
 * [Device 3D-model (STEP): Zima-R](/documentation/Zima_R_3D.step)
 * [Device wiring diagram: Zima-R](/documentation/EN/Zima/ZimaR_wiring_diagram_en.md)
 * [Host application (Repository)](https://github.com/ucnl/ZHost)
-* [Host application (Download release)](https://github.com/ucnl/ZHost/releases/download/latest/ZHost.zip)
+* [Host application (Download release)](https://github.com/ucnl/ZHost/releases/download/1.2/ZHost.zip)
 
 
 ### RedWAVE - Underwater GPS (LBL)
@@ -31,9 +31,9 @@
 * [RedWAVE User's manual](/documentation/EN/RedWAVE/RedWAVE_Users_Manual_en.md)
 * [Device wiring diagram: RedNODE](/documentation/EN/RedWAVE/RedNODE_wiring_diagram_en.md)
 * [RedNODE demo application (Repository)](https://github.com/ucnl/RedNodeHost)
-* [RedNODE demo application (Download release)](https://api.github.com/repos/ucnl/RedNodeHost/zipball)
+* [RedNODE demo application (Download release)](https://github.com/ucnl/RedNodeHost/releases/download/2.0/RedNODEHost.zip)
 * [RedNAV host application (Repository)](https://github.com/ucnl/RedNavHost)
-* [RedNAV host application (Download release)](https://api.github.com/repos/ucnl/RedNavHost/zipball)
+* [RedNAV host application (Download release)](https://github.com/ucnl/RedNavHost/releases/download/2.0/RedNAVHost.zip)
 
 
 ## [Home](README.md)
