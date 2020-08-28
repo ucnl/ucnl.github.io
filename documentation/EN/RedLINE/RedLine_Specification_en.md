@@ -48,6 +48,8 @@ The function of code division of subscribers allows you to most effectively solv
 | CONFIGURATION PROTOCOL | NMEA 0183 [PTNT](RedLINE_Protocol_Specifications_en.md) |
 | CABLE LENGTH<sup>[3](#footnote3)</sup> | 0.5 m |
 | SUBSCRIBER'S DIVISION | 20 code channels |
+| MINIMAL PACKET SIZE FOR TRANSMISSION | 7 bytes |
+| TX BUFFER SIZE | 256 bytes |
 | EXTRA FEATURES | Relay mode |
   
 ________________
