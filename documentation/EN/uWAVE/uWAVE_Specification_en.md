@@ -46,6 +46,7 @@ transmission, where dimensions and weight are the bottleneck.
 | CONFIGURATION PROTOCOL                 | NMEA0183 [PUWV](uWAVE_Protocol_Specification_en.md) |
 | CABLE LENGTH<sup>[6](#footnote6)</sup> | 0.5 m |
 | SUBSCRIBERS CODE DIVISION              | 20 code channels |
+| TX BUFFER SIZE                         | 127 bytes |
 | COMMAND MODE                           | 16 predefined messages (9 for user applications) |
   
 ________________
