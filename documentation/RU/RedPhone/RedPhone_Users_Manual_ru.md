@@ -37,7 +37,7 @@ _______________
 
 Общий вид станции [RedPhone](RedPhone_Specification_ru.md), с подключенной гидроакустической антенной и микрофоном представлен на **рисунке 1**.
 
-| ![RedPhone](/documentation/redphone_big.JPG) |
+| ![RedPhone](/documentation/redphone_d.JPG) |
 | :---: |
 | **Рисунок 1 - Общий вид станции [RedPhone](RedPhone_Specification_ru.md)** |
 
