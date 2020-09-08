@@ -23,6 +23,7 @@
 - [3. Storage and maintenance](#3-storage-and-maintenance)
   - [3.1. Storage and maintenance conditions](#31-storage-and-maintenance-conditions)
   - [3.2. Charging the device](#32-charging-the-device)
+  - [3.3. ]()
 - [4. Liability and disclaimer](#4-liability-and-disclaimer)
   - [4.1. Terms of replacement and free warranty service](#41-terms-of-replacement-and-free-warranty-service)
   - [4.2 Disclaimer of the manufacturer](#42-disclaimer-of-the-manufacturer)
@@ -190,6 +191,35 @@ Charging of the built-in power supply of the station is allowed only with the ch
 Before using the charger, read the operating instructions for the charger.
 To charge the device, you must install it in the charging cradle and connect the complete charger in the household electrical network.
 The end of the charge is determined by the indicator of the charger from the equipment set.
+
+### 3.3. Battery replacement
+The device has a serviceable battery compartment, which houses 3 Li-Ion batteries of size 18650. Dismantling of the battery compartment cover should only be carried out by qualified persons and only to change channel settings and/or switch compatibility with the **RWLT** navigation system, and also for replacing batteries at the end of their service life.
+It is highly discouraged to frequently open and close the battery compartment in order to quickly replace discharged batteries with charged ones: the user must monitor the state of charge of the batteries and charge them in a timely manner, especially before use
+
+To remove and install the cover of the battery compartment:
+- place the device on the table, placing it on the narrow side, with the antenna away from you;
+- using the supplied bit and a hex screwdriver h2.5 mm, loosen (by 3-4 turns) 8 cover screws one by one (see **Figure 3**);
+- completely unscrew the cover screws;
+- remove the bolts and nuts, remove the cover;
+- place the device horizontally;
+- * if necessary, carefully remove the batteries, if necessary, prying them from behind with a flat non-conductive tool; *
+- * if necessary, carefully install new batteries, observing the polarity of the installation; *
+- * if necessary, configure the device using the switch; *
+- make sure that the sealing ring is intact and, if necessary, lubricate it with a thick silicone grease;
+- make sure that there are no foreign objects (debris, hairs, etc.) on the O-ring and groove;
+- install the cover of the battery compartment;
+- insert the bolts;
+- pressing the cover by hand, turn the device on its edge and tighten 4 nuts on the edges of the cover;
+- slightly tighten the nuts to prevent slipping of the sealing ring;
+- install the remaining nuts and tighten them completely so that there are no gaps between the cover and the body.
+
+| ![RedPhone battery compartment screws](/documentation/redphone_batcompartment_screws.png) |
+| :---: |
+| **Figure 3 - Location of screws of the battery compartment cover** |
+
+> **WARNING !!!**  
+>
+> **It is strictly forbidden to unscrew any other screws and nuts on the device, except for those that secure the battery compartment cover! This may damage the device!**  
 
 <div style="page-break-after: always;"></div>
 
