@@ -8,24 +8,24 @@
 
 ## Contents
 
-- [1. Описание станции RedPhone-D](#1-%D0%BE%D0%BF%D0%B8%D1%81%D0%B0%D0%BD%D0%B8%D0%B5-%D1%81%D1%82%D0%B0%D0%BD%D1%86%D0%B8%D0%B8-redphone-d)
-  - [1.1. Назначение](#11-%D0%BD%D0%B0%D0%B7%D0%BD%D0%B0%D1%87%D0%B5%D0%BD%D0%B8%D0%B5)
-  - [1.2. Органы управления и разъемы](#12-%D0%BE%D1%80%D0%B3%D0%B0%D0%BD%D1%8B-%D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F-%D0%B8-%D1%80%D0%B0%D0%B7%D1%8A%D0%B5%D0%BC%D1%8B)
-  - [1.3. Технические характеристики](#13-%D1%82%D0%B5%D1%85%D0%BD%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B5-%D1%85%D0%B0%D1%80%D0%B0%D0%BA%D1%82%D0%B5%D1%80%D0%B8%D1%81%D1%82%D0%B8%D0%BA%D0%B8)
-  - [1.4. Комплект поставки](#14-%D0%BA%D0%BE%D0%BC%D0%BF%D0%BB%D0%B5%D0%BA%D1%82-%D0%BF%D0%BE%D1%81%D1%82%D0%B0%D0%B2%D0%BA%D0%B8)
-- [2. Работа с устройством](#2-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0-%D1%81-%D1%83%D1%81%D1%82%D1%80%D0%BE%D0%B9%D1%81%D1%82%D0%B2%D0%BE%D0%BC)
-  - [2.1. Предварительные проверки](#21-%D0%BF%D1%80%D0%B5%D0%B4%D0%B2%D0%B0%D1%80%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D1%8B%D0%B5-%D0%BF%D1%80%D0%BE%D0%B2%D0%B5%D1%80%D0%BA%D0%B8)
-  - [2.2. Работа](#22-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0)
-    - [2.2.1. Звуковые сигналы](#221-%D0%B7%D0%B2%D1%83%D0%BA%D0%BE%D0%B2%D1%8B%D0%B5-%D1%81%D0%B8%D0%B3%D0%BD%D0%B0%D0%BB%D1%8B)
-    - [2.2.2. Прием голосовых сообщений](#222-%D0%BF%D1%80%D0%B8%D0%B5%D0%BC-%D0%B3%D0%BE%D0%BB%D0%BE%D1%81%D0%BE%D0%B2%D1%8B%D1%85-%D1%81%D0%BE%D0%BE%D0%B1%D1%89%D0%B5%D0%BD%D0%B8%D0%B9)
-    - [2.2.3. Передача голосовых сообщений](#223-%D0%BF%D0%B5%D1%80%D0%B5%D0%B4%D0%B0%D1%87%D0%B0-%D0%B3%D0%BE%D0%BB%D0%BE%D1%81%D0%BE%D0%B2%D1%8B%D1%85-%D1%81%D0%BE%D0%BE%D0%B1%D1%89%D0%B5%D0%BD%D0%B8%D0%B9)
-  - [2.3. Завершение работы](#23-%D0%B7%D0%B0%D0%B2%D0%B5%D1%80%D1%88%D0%B5%D0%BD%D0%B8%D0%B5-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%8B)
-- [3. Хранение и обслуживание](#3-%D1%85%D1%80%D0%B0%D0%BD%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B8-%D0%BE%D0%B1%D1%81%D0%BB%D1%83%D0%B6%D0%B8%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5)
-  - [3.1. Условия хранения и обслужвания](#31-%D1%83%D1%81%D0%BB%D0%BE%D0%B2%D0%B8%D1%8F-%D1%85%D1%80%D0%B0%D0%BD%D0%B5%D0%BD%D0%B8%D1%8F-%D0%B8-%D0%BE%D0%B1%D1%81%D0%BB%D1%83%D0%B6%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F)
-  - [3.2. Заряд встроенного источника питания](#32-%D0%B7%D0%B0%D1%80%D1%8F%D0%B4-%D0%B2%D1%81%D1%82%D1%80%D0%BE%D0%B5%D0%BD%D0%BD%D0%BE%D0%B3%D0%BE-%D0%B8%D1%81%D1%82%D0%BE%D1%87%D0%BD%D0%B8%D0%BA%D0%B0-%D0%BF%D0%B8%D1%82%D0%B0%D0%BD%D0%B8%D1%8F)
-- [4. Обязательства и отказ от ответственности](#4-%D0%BE%D0%B1%D1%8F%D0%B7%D0%B0%D1%82%D0%B5%D0%BB%D1%8C%D1%81%D1%82%D0%B2%D0%B0-%D0%B8-%D0%BE%D1%82%D0%BA%D0%B0%D0%B7-%D0%BE%D1%82-%D0%BE%D1%82%D0%B2%D0%B5%D1%82%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%BE%D1%81%D1%82%D0%B8)
-  - [4.1. Условия замены и бесплатного гарантийного обслуживания](#41-%D1%83%D1%81%D0%BB%D0%BE%D0%B2%D0%B8%D1%8F-%D0%B7%D0%B0%D0%BC%D0%B5%D0%BD%D1%8B-%D0%B8-%D0%B1%D0%B5%D1%81%D0%BF%D0%BB%D0%B0%D1%82%D0%BD%D0%BE%D0%B3%D0%BE-%D0%B3%D0%B0%D1%80%D0%B0%D0%BD%D1%82%D0%B8%D0%B9%D0%BD%D0%BE%D0%B3%D0%BE-%D0%BE%D0%B1%D1%81%D0%BB%D1%83%D0%B6%D0%B8%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F)
-  - [4.2. Ограничение ответственности производителя](#42-%D0%BE%D0%B3%D1%80%D0%B0%D0%BD%D0%B8%D1%87%D0%B5%D0%BD%D0%B8%D0%B5-%D0%BE%D1%82%D0%B2%D0%B5%D1%82%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%BE%D1%81%D1%82%D0%B8-%D0%BF%D1%80%D0%BE%D0%B8%D0%B7%D0%B2%D0%BE%D0%B4%D0%B8%D1%82%D0%B5%D0%BB%D1%8F)
+- [1. RedPhone-D: Device description](#1-redphone-d-device-description)
+  - [1.1. Purpose](#11-purpose)
+  - [1.2. Controls and connectors](#12-controls-and-connectors)
+  - [1.3. Technical specifications](#13-technical-specifications)
+  - [1.4. Equipment set](#14-equipment-set)
+- [2. Using the device](#2-using-the-device)
+  - [2.1 Preliminary checks](#21-preliminary-checks)
+  - [2.2. Working mode](#22-working-mode)
+    - [2.2.1. Sound alerts](#221-sound-alerts)
+    - [2.2.2. Receiving voice messages](#222-receiving-voice-messages)
+    - [2.2.3. Transmitting voice messages](#222-transmitting-voice-messages)
+  - [2.3. Finishing work](#23-finishing-work)
+- [3. Storage and maintenance](#3-storage-and-maintenance)
+  - [3.1. Storage and maintenance conditions](#31-storage-and-maintenance-conditions)
+  - [3.2. Charging the device](#32-charging-the-device)
+- [4. Liability and disclaimer](#4-liability-and-disclaimer)
+  - [4.1. Terms of replacement and free warranty service](#41-terms-of-replacement-and-free-warranty-service)
+  - [4.2 Disclaimer of the manufacturer](#42-disclaimer-of-the-manufacturer)
 
 <div style="page-break-after: always;"></div>
 
@@ -132,10 +132,10 @@ Before immersing the appliance in water, it is the user's responsibility to ensu
 - the device is securely fastened with a strap to the tank (recommended attachment point) or to the diver's belt.
 
 Before starting work, the user must:
-- check the correctness of the selected communication channels on all devices participating in the work in the immediate vicinity according to paragraphs [2.2.2]() и [2.2.3.]().
+- check the correctness of the selected communication channels on all devices participating in the work in the immediate vicinity according to paragraphs [2.2.2.](#222-receiving-voice-messages) и [2.2.3.](#223-voice-message-transmission).
 
 ### 2.2. Working mode
-Before work, all preparations and checks must be accomplished provided in [2.1]().
+Before work, all preparations and checks must be accomplished provided in [2.1.](#21-preliminary-checks).
 
 Diver's wireless voice communication works on a half-duplex scheme: transmission and reception alternate, if the device is in transmission mode, it cannot receive incoming messages.
 
@@ -154,7 +154,7 @@ To receive voice messages from divers, the **PTT** button on the headset must be
 
 The volume of the reproduced incoming voice messages depends on the distance between the acoustic antennas, on hydrological conditions. It may decrease when the diver enters the acoustic shadow zone (when elements of the underwater landscape, parts of structures, ships, algae, etc. are on the signal path).
 
-#### 2.2.3. Voice message transmission
+#### 2.2.3. Transmitting voice messages
 To transmit voice messages, the following sequence of actions is performed:
 * Press the **PTT** on the headset;
 * Wait for a short pause (~**0.5** seconds) for the station to switch to transmission mode;
@@ -181,9 +181,9 @@ The station does not need special storage conditions, except for the following:
 
 > **PROHIBITED:**
 >
-> **- OPENING EQUIPMENT FROM THE DELIVERY SET ACCORDING TO [p. 1.4.]()**
-> **- ACCESS TO USE OF EQUIPMENT FROM THE DELIVERY SET ACCORDING TO [p. 1.4.]() PERSONS WHO ARE NOT FAMILIAR WITH THESE INSTRUCTIONS**
-> **- ACCESS TO USE OF EQUIPMENT FROM THE DELIVERY SET ACCORDING TO [p. 1.4.]() PERSONS UNDER THE ADVANCED**
+> **- OPENING EQUIPMENT FROM THE DELIVERY SET ACCORDING TO [p. 1.4.](#14-equipment-set)**
+> **- ACCESS TO USE OF EQUIPMENT FROM THE DELIVERY SET ACCORDING TO [p. 1.4.](#14-equipment-set) PERSONS WHO ARE NOT FAMILIAR WITH THESE INSTRUCTIONS**
+> **- ACCESS TO USE OF EQUIPMENT FROM THE DELIVERY SET ACCORDING TO [p. 1.4.](#14-equipment-set) PERSONS UNDER THE ADVANCED**
 
 ### 3.2. Charging the device
 Charging of the built-in power supply of the station is allowed only with the charger from the equipment set when the headset connector is disconnected.
@@ -200,17 +200,17 @@ The manufacturer’s warranty applies only to factory defects that were discover
 The manufacturer guarantees free repair or replacement of faulty equipment from the equipment set that has failed due to a factory defect.
 
 The reasons for refusing free warranty service, free repair and replacement include:
-- any **mechanical damage** of the equipment supplied according to [p. 1.4.](#14-contents-of-the-standard-delivery-set), Including violation of insulation of wires and cables;
-- any **damage caused by exposure to moisture and pollution** due to improper use of the equipment from the equipment set according to [p. 1.4.]();
+- any **mechanical damage** of the equipment supplied according to [p. 1.4.](#14-equipment-set), Including violation of insulation of wires and cables;
+- any **damage caused by exposure to moisture and pollution** due to improper use of the equipment from the equipment set according to [p. 1.4.](#14-equipment-set);
 - any **electrical damage** caused by **use of not original accessories** (charger, headset etc.);  
-- any **signs of self-repair and/or opening** of the equipment from the equipment set according to [p. 1.4.](#14-contents-of-the-standard-delivery-set).
+- any **signs of self-repair and/or opening** of the equipment from the equipment set according to [p. 1.4.](#14-equipment-set).
 
 <div style = "page-break-after: always;"> </div>
 
 ### 4.2 Disclaimer of the manufacturer
 _____________
 
-_**ANY OF THE PARTS OF THE EQUIPMENT SET ACCORDING TO [par. 1.4.](#14-contents-of-the-standard-delivery-set) SEPARATELY AND IN THE COMPOSITION OF THE SYSTEM, NAME FURTHER "DELIVERED EQUIPMENT":**_  
+_**ANY OF THE PARTS OF THE EQUIPMENT SET ACCORDING TO [par. 1.4.](#14-equipment-set) SEPARATELY AND IN THE COMPOSITION OF THE SYSTEM, NAME FURTHER "DELIVERED EQUIPMENT":**_  
 
 _**- ARE NOT DESIGNED FOR WATER RESCUE USE**_  
 _**- NOT TESTED AS RESCUE EQUIPMENT**_  
