@@ -179,11 +179,11 @@ The station does not need special storage conditions, except for the following:
 - The application of torsion forces to the acoustic antenna or cable entry is not allowed;
 - Before placing the device in the shipping container, moisture on the device **must be completely removed**.
 
-> **PROHIBITED:**
->
-> **- OPENING EQUIPMENT FROM THE DELIVERY SET ACCORDING TO [p. 1.4.](#14-equipment-set)**
-> **- ACCESS TO USE OF EQUIPMENT FROM THE DELIVERY SET ACCORDING TO [p. 1.4.](#14-equipment-set) PERSONS WHO ARE NOT FAMILIAR WITH THESE INSTRUCTIONS**
-> **- ACCESS TO USE OF EQUIPMENT FROM THE DELIVERY SET ACCORDING TO [p. 1.4.](#14-equipment-set) PERSONS UNDER THE ADVANCED**
+> **PROHIBITED:**  
+>  
+> **- OPENING EQUIPMENT FROM THE DELIVERY SET ACCORDING TO [p. 1.4.](#14-equipment-set)**  
+> **- ACCESS TO USE OF EQUIPMENT FROM THE DELIVERY SET ACCORDING TO [p. 1.4.](#14-equipment-set) PERSONS WHO ARE NOT FAMILIAR WITH THESE INSTRUCTIONS**  
+> **- ACCESS TO USE OF EQUIPMENT FROM THE DELIVERY SET ACCORDING TO [p. 1.4.](#14-equipment-set) PERSONS UNDER THE ADVANCED**  
 
 ### 3.2. Charging the device
 Charging of the built-in power supply of the station is allowed only with the charger from the equipment set when the headset connector is disconnected.
