@@ -31,196 +31,194 @@
 
 ## 1. RedPhone-D: Device description
 ### 1.1. Purpose
-Diver's voice communication unit [RedPhone](RedPhone_Specification_en.md) (hereinafter - the station) is intended for the wireless exchange of voice messages between divers, as well as divers and a surface control station, equipped with diving communication devices that maintain signal parameters common with the station. 
+Diver's wireless voice communication unit [RedPhone](RedPhone_Specification_en.md) (hereinafter - the station) is intended for the wireless exchange of voice messages between divers, as well as divers and a surface control station, equipped with diving communication devices that maintain signal parameters common with the station. 
 
-Общий вид станции [RedPhone](RedPhone_Specification_ru.md), с подключенной гидроакустической антенной и микрофоном представлен на **рисунке 1**.
+The general view of the station [RedPhone](RedPhone_Specification_en.md) is shown in **Figure 1**.
 
 | ![RedPhone](/documentation/redphone_d.png) |
 | :---: |
-| **Рисунок 1 - Общий вид станции [RedPhone](RedPhone_Specification_ru.md)** |
+| **Figure 1 - [RedPhone](RedPhone_Specification_en.md) general view** |
 
-Прибор выполнен в пластиковом корпусе с обслуживаемым батарейным отсеком, где располагаются аккумуляторные батареи формата **18650**.  
-На корпусе прибора в верхней его части располагаются гидроакустическая приемопередающая антенна и кабельный ввод с кабелем и разъемом для подключения телефонной гарнитуры с тангентой (PTT). Возможны варианты исполнения как для гарнитур со встроенной тангентой, так и без таковой, в этом случае прибор комплектуется собственной тангентой.
+The device is made in a plastic case with a serviceable battery compartment, where rechargeable batteries of **18650** format are located.
+On the upper part of the device, there is a hydroacoustic transceiver antenna and a cable entry with a cable and a connector for a telephone headset with a push-to-talk (PTT) button. Versions are possible both for headsets with built-in push-to-talk button, and without it, in this case, the device can be equipped with its own push-to-talk button.
 
-### 1.2. Органы управления и разъемы
+### 1.2. Controls and Connectors
+The device does not contain external controls and turns on automatically when it submerged into the water. Charging is performed with a complete cradle (chassis) with a charger. Switching channels and switching on the compatibility mode with the navigation tracking system RWLT is carried out using a DIP-switch located in the battery compartment.
 
-Прибор не содержит внешних органов управления и включается автоматически при попадании в воду. Зарядка производится комплектным кредлом (шасси) с зарядным устройством. Переключение каналов и включение режима совместимости с навигационной трекинговой системой RWLT осуществляется при помощи переключателя типа DIP-switch, расположенного в батарейном отсеке.
-
-На **рисунке 2** показано расположение переключателя каналов и режима совместимости с навигационной системой RWLT.
+**Figure 2** shows the location of the channel selector and the compatibility mode with the **RWLT** navigation system.
 
 | ![RedPhone dip-switch scheme](/documentation/redphone_dipswitch_scheme.png) |
 | :---: |
-| **Рисунок 2 - Расположение переключателя в батарейном отсеке прибора** |
+| **Figure 2 - The location of the channel selector in battery compartment** |
 
-В **таблице 1** приводится описание функций секций переключателя.
+**Table 1** describes the functions of the switch sections.
 
-### **Таблица 1** - Функции секций переключателя
+### **Table 1** - Switch Section Functions
 
-| Номер секции | Фнукция |
+| Section number | Function |
 | :-- | :-- |
-| 1 | Режим совместимости с навигационной системой **RWLT** |
-| 2 | Выбор канала связи - бит 2 |
-| 3 | Выбор канала связи - бит 1 |
-| 4 | Выбор канала связи - бит 0 |
+| 1 | **RWLT** navigation system compatibility mode |
+| 2 | Channel selector - bit 2 |
+| 3 | Channel selector - bit 1 |
+| 4 | Channel selector - bit 0 |
 
-### 1.3. Технические характеристики
-Станция использует однополосную амплитудную модуляцию (_англ. SSB, Single side band_) и поддерживает наиболее часто используемые в подобных системах диапазоны, что обеспечивает совместимость практически со всеми аналогами.
-В **таблице 2** приведено соответствие номеров каналов станции и полос частот.
+### 1.3. Technical specifications
+The station uses single sideband amplitude modulation (_engl. SSB, Single side band_) and supports the bands most commonly used in such systems, which ensures compatibility with almost all analogs.
+**Table 2** shows the correspondence of station channel numbers and frequency bands.
 
-### **Таблица 2** - Соответствие номера канала, положение секций переключателя и параметров сигнала
+### **Table 2** - Correspondence of channel number, position of switch sections and signal parameters
 
-| Номер канала | Бит 2 | Бит 1 | Бит 0 | Несущая частота, Гц | Боковая полоса | Полоса частот, Гц |
+| Channel number | Bit 2 | Bit 1 | Bit 0 | Carrier, Hz | Side band | Bandwidth, Hz |
 | :---: | :---: | :---: | :---: | :--- | :--- | :--- |
-| 1 | 0 | 0 | 0 | 32768 | Нижняя | 28468 .. 32468 |
-| 2 | 0 | 0 | 1 | 32768 | Верхняя | 33068 .. 37068 |
-| 3 | 0 | 1 | 0 | 31250 | Нижняя | 26950 .. 30950 |
-| 4 | 0 | 1 | 1 | 31250 | Верхняя | 31550 .. 35550 |
-| 5 | 1 | 0 | 0 | 28500 | Нижняя | 24200 .. 28200 |
-| 6 | 1 | 0 | 1 | 28500 | Верхняя | 28800 .. 32800 |
-| 7 | 1 | 1 | 0 | 25000 | Нижняя | 20700 .. 24700 |
-| 8 | 1 | 1 | 1 | 25000 | Верхняя | 25300 .. 29300 |
+| 1 | 0 | 0 | 0 | 32768 | Lower | 28468 .. 32468 |
+| 2 | 0 | 0 | 1 | 32768 | Upper | 33068 .. 37068 |
+| 3 | 0 | 1 | 0 | 31250 | Lower | 26950 .. 30950 |
+| 4 | 0 | 1 | 1 | 31250 | Upper | 31550 .. 35550 |
+| 5 | 1 | 0 | 0 | 28500 | Lower | 24200 .. 28200 |
+| 6 | 1 | 0 | 1 | 28500 | Upper | 28800 .. 32800 |
+| 7 | 1 | 1 | 0 | 25000 | Lower | 20700 .. 24700 |
+| 8 | 1 | 1 | 1 | 25000 | Upper | 25300 .. 29300 |
 
+General technical specifications of the device are shown in **table 3**:
 
-Общие технические характеристики устройства приведены в **таблице 3**:
+### **Table 3** - Technical specifications
 
-### **Таблица 3** - Технические характеристики
-
-| Параметр | Значение |
+| Parameter | Value |
 | :--- | :--- |
-| Габариты<sup>[1](#footnote1)</sup> (д х ш х в) | 203 x 105 x 45 мм |
-| Вес<sup>[2](#footnote2)</sup> (сухой) | 1.55 кг |
-| Максимальная глубина погружения | 70 m |
-| Максимальная дальность акустической связи<sup>[3](#footnote3)</sup> | 1000 m |
-| Максимальное акустическое давление | 150 дБ re 1 мкПа @ 1 м |
-| Число поддерживаемых каналов | 8 |
-| Максимальное время работы в режиме приема<sup>[4](#footnote4)</sup> | до 100 часов |
-| Максимальное время работы в режиме передачи<sup>[4](#footnote4)</sup> | до 2 часов |
-| Максимальное время работы в смешанном режиме<sup>[4](#footnote4), [5](#footnote5)</sup> | до 8 часов |
-| Диапазон рабочих температур | 0 .. 50° С |
-| Применяемые источники питания | 3 x 18650 Li-Ion |
-| Переключение каналов связи | DIP-switch в батарейном отсеке |
-| Материал корпуса | Delrin |
-| Материал изоляции кабелей | Полиуретан |
-| Дополнительные функции | Определение географического положения водолаза по окончании им передачи<sup>[6](#footnote6) |
-| Несущая частота навигационного сигнала | 20050 Гц |
-| Тип модуляции навигационного сигнала | BPSK |
-| Длительность навигационного сигнала | 200 мсек |
+| Dimensions<sup>[1](#footnote1)</sup> (l х w х h) | 203 x 105 x 45 mm |
+| Вес<sup>[2](#footnote2)</sup> (сухой) | 1.55 kg |
+| Max. depth | 70 m |
+| Max. operating range<sup>[3](#footnote3)</sup> | 1000 m |
+| Acoustic source level | 150 dB re 1 uPa @ 1 m |
+| Number of channels | 8 |
+| Battery life (RX mode)<sup>[4](#footnote4)</sup> | up to 100 hours |
+| Battery life (TX mode)<sup>[4](#footnote4)</sup> | up to 2 hours |
+| Battery life (mixed mode)<sup>[4](#footnote4), [5](#footnote5)</sup> | up to 8 hours |
+| Working temperature range | 0 .. 50° С |
+| Battery type | 3 x 18650 Li-Ion |
+| Channel selection | DIP-switch in the battery compartment |
+| Housing material | Delrin |
+| Cable cover material | Полиуретан |
+| Additional functions | Diver's geographic location estimation<sup>[6](#footnote6) |
+| Navigation signal carrier | 20050 Hz |
+| Navigation signal modulation | BPSK |
+| Navigation signal duration | 200 msec |
 
 ________________
-<a name="footnote1"><sup>1</sup></a> С учетом гидроакустической антенны.  
-<a name="footnote2"><sup>2</sup></a> С АКБ, тангентой и разъемом для масок, в зависимости от разъема значение может отличаться на вес разъема.  
-<a name="footnote3"><sup>3</sup></a> Параметр, определяющий максимальную дальность, на которой возможен прием сигнала, исходя из электроакустических параметров передатчика и приемника, пространственного убывания интенсивности звуковой энергии, затухания в среде и уровня гидроакустических помех.  
-<a name="footnote4"><sup>4</sup></a> С новыми, полностью заряженными АКБ емкостью 3000 мА\*ч и более, при температуре окружающей среды 20° С.  
-<a name="footnote5"><sup>5</sup></a> В режиме 10 минут передачи в час.  
-<a name="footnote6"><sup>6</sup></a> Функция обеспечивается буями навигационной системы **RWLT**.  
+<a name="footnote1"><sup>1</sup></a> With acoustic antenna.  
+<a name="footnote2"><sup>2</sup></a> With batteries, a push-to-talk button and a connector for a headset, depending on the connector, the value may differ by the weight of the connector.  
+<a name="footnote3"><sup>3</sup></a> A parameter that determines the maximum range at which a signal can be received based on the electro-acoustic parameters of the transmitter and receiver, spatial decrease in the intensity of sound energy, attenuation in the medium and level of acoustic noise.  
+<a name="footnote4"><sup>4</sup></a> With new, fully charged batteries with a capacity of 3000 mAh and more, at an ambient temperature of 20° C.  
+<a name="footnote5"><sup>5</sup></a> In the mode, 10 minutes of transmission per hour.  
+<a name="footnote6"><sup>6</sup></a> The function is provided by the **RWLT** navigation system buoys.  
 
-### 1.4. Комплект поставки
+### 1.4. Equipment set
 
-### **Таблица 4** - Комплект поставки
+### **Table 4** - equipment set
 
-| № | Наименование | Количество | Примечания |
+| № | Item | Quantity | Description |
 | :--- | :--- | :--- | :--- |
-| 1 | Станция RedPhone с креплением на ремень и разъемом для подключения гарнитуры | 1 шт. |  |
-| 2 | Сетевое зарядное устройство с кредлом | 1 шт. | |
-| 3 | Комплект ЗИП (бита под шестигранную гайку, комплект болтов и гаек) | 1 шт. | |
+| 1 | RedPhone-D with belt clip and headset connector | 1 pcs. |  |
+| 2 | Charger with cradle | 1 pcs. | |
+| 3 | SPTA kit (bit for a hex nut, a set of bolts and nuts, spare o-ring seal) | 1 pcs. | |
 
 <div style="page-break-after: always;"></div>
 
-## 2. Работа с устройством
-### 2.1 Предварительные проверки
-Перед погружением прибора в воду пользователь обязан убедиться в том, что:
-- батарейный отсек прибора герметично закручен;
-- к разъему подключена гарнитура (разъем подключен);
-- прибор надежно закреплен при помощи ремня на балон (рекомендуемое место крепления) или на пояс водолаза.
+## 2. Using the device
+### 2.1 Preliminary checks
+Before immersing the appliance in water, it is the user's responsibility to ensure that:
+- the battery compartment of the device is tightly screwed;
+- a headset is connected to the connector (connector is connected);
+- the device is securely fastened with a strap to the tank (recommended attachment point) or to the diver's belt.
 
-Перед началом работы пользователь обязан:
-- проверить правильность выбранных каналов связи на всех приборах, учавствующих в работе в непосредственной близости по п.п. [2.2.2](#222-%D0%BF%D1%80%D0%B8%D0%B5%D0%BC-%D0%B3%D0%BE%D0%BB%D0%BE%D1%81%D0%BE%D0%B2%D1%8B%D1%85-%D1%81%D0%BE%D0%BE%D0%B1%D1%89%D0%B5%D0%BD%D0%B8%D0%B9) и [2.2.3.](#223-%D0%BF%D0%B5%D1%80%D0%B5%D0%B4%D0%B0%D1%87%D0%B0-%D0%B3%D0%BE%D0%BB%D0%BE%D1%81%D0%BE%D0%B2%D1%8B%D1%85-%D1%81%D0%BE%D0%BE%D0%B1%D1%89%D0%B5%D0%BD%D0%B8%D0%B9).
+Before starting work, the user must:
+- check the correctness of the selected communication channels on all devices participating in the work in the immediate vicinity according to paragraphs [2.2.2]() и [2.2.3.]().
 
-### 2.2. Работа
-Перед работой должны быть выполнены все подготовки и проверки, предусмотренные [п. 2.1](#21-%D0%BF%D1%80%D0%B5%D0%B4%D0%B2%D0%B0%D1%80%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D1%8B%D0%B5-%D0%BF%D1%80%D0%BE%D0%B2%D0%B5%D1%80%D0%BA%D0%B8).
+### 2.2. Working mode
+Before work, all preparations and checks must be accomplished provided in [2.1]().
 
-Водолазная гидроакустическая голосовая связь работает по полудуплексной схеме: передача и прием чередуются, если устройство находится в режиме передачи, оно не может принимать входящие сообщения.
+Diver's wireless voice communication works on a half-duplex scheme: transmission and reception alternate, if the device is in transmission mode, it cannot receive incoming messages.
 
-#### 2.2.1. Звуковые сигналы
-Возможные звуковые оповещения сведены в **таблицу 5**.
+#### 2.2.1. Sound alerts
+Possible sound alerts are summarized in **Table 5**.
 
-### **Таблица 5** - Звуковые оповещения
+### **Table 5** - Sound alerts
 
-| Описание оповещения | О чем сигнализирует |
+| Alert | Meaning |
 | :--- | :--- |
-| Короткий повышающийся а потом понижающийся тон | Переход в режим приема (в т.ч. при включении станции)  |
-| Длительная трель | Низкий заряд встроенного источника питания |
+| Short rising and then falling tone | Switching to the receive mode (including when the station is turned on)  |
+| Long trill | Internal power supply low |
 
-#### 2.2.2. Прием голосовых сообщений
-Для приема голосовых сообщений от водолазов тангента **PTT** на гарнитуре должна быть отпущена. При этом входящие сообщения будут воспроизводится гарнитурой. 
+#### 2.2.2. Receiving voice messages
+To receive voice messages from divers, the **PTT** button on the headset must be released. In this case, incoming messages will be played by the headset.
 
-Громкость воспроизводимых входящих голосовых сообщений зависит от расстояния между антенной станцией и водолазом, от гидрологических условий. Может снижаться при попадании водолаза в зону акустической тени (когда на пути следования сигнала находятся элементы подводного ландшафта, части конструкций, суда, водоросли и т.п.). 
+The volume of the reproduced incoming voice messages depends on the distance between the acoustic antennas, on hydrological conditions. It may decrease when the diver enters the acoustic shadow zone (when elements of the underwater landscape, parts of structures, ships, algae, etc. are on the signal path).
 
-#### 2.2.3. Передача голосовых сообщений
-Для передачи голосовых сообщений выполняется следующая последовательность действий:
-* Нажать тангенту на **PTT** гарнитуре;
-* Выждержать короткую паузу (~**0.5** секунды) для того, чтобы станция перешла в режим передачи;
-* Произнести голосовое сообщений с выраженной артикуляцией; Рекомендуется завершать голосовое сообщение словом **"Прием!"**, сигнализирующем адресату о том, что сообщение окончено;
-* Выдержать короткую паузу (~**0.5** секунды);
-* Отпустить тангенту **PTT**;
-* Станция издает короткий звуковой сигнал, говорящий о том, что устройство перешло в режим приема, если режим совместимости с навигационной системой **RWLT** отключен или излучит навигационный сигнал при помощи гидроакустической антенны, если режим совместимости с навигационной системой **RWLT** включен.
+#### 2.2.3. Voice message transmission
+To transmit voice messages, the following sequence of actions is performed:
+* Press the **PTT** on the headset;
+* Wait for a short pause (~**0.5** seconds) for the station to switch to transmission mode;
+* Pronounce voice messages with good articulation; It is recommended to end the voice message with **"Roger"** or **"Copy"** etc., signalling the addressee that the message is over;
+* Take a short pause (~**0.5** seconds);
+* Release the **PTT**;
+* The station emits a short beep indicating that the device has switched to the receiving mode if the compatibility mode with the navigation system **RWLT** is disabled or emits a navigation signal using the acoustic antenna if compatibility mode with the navigation system **RWLT** is enabled.
 
-### 2.3. Завершение работы
-По завершении работ водолазная станция не требует каких-либо дополнительных манипуляций и отключается автоматически в воздушной среде. Перед укладкой в транспортировочную тару необходимо выполнить промывку и/или опреснение в пресной воде с последующем обтиранием впитывающей тканью и просушкой не менее 30 минут на воздухе.
+### 2.3. Finishing work
+Upon completion of the work, the diving station does not require any additional manipulations and turns off automatically in the air. Before placing in the shipping container, it is necessary to rinse and/or desalinate in fresh water, followed by wiping with an absorbent cloth and air drying for at least 30 minutes.
 
 <div style="page-break-after: always;"></div>
 
-## 3. Хранение и обслуживание
-### 3.1. Условия хранения и обслужвания
-К станции не предъявляется особых условий хранения, кроме следующих:
-- Хранение при температуре от -20° до 60°С;
-- Разъем гарнитуры должен быть отсоединен;
-- При длительном хранении (более месяца) рекомендуется производить подзарядку встроенного источника питания станции;
-- Для удаления загрязнений с корпуса устройства и после работы в морской воде необходима промывка в пресной воде. Дпускается применение слабого раствора бытовых моющих средств при закрытой крышке батарейного отсека; При промывке следует избегать попадания влаги и/или моющиъх средств в открытый разъем гарнитуры;
-- Не допускается перегибание кабелей радиусом менее 5 см;
-- Не допускается приложение вращательных усилий к гидроакустической антенне или кабельному вводу;
-- Перед помещением прибора в транспортировочную тару, с него **полностью должна быт удалена влага**.
+## 3. Storage and maintenance
+### 3.1. Storage and maintenance conditions
+The station does not need special storage conditions, except for the following:
+- Storage at temperatures from -20 ° to 60 °C;
+- The headset connector must be disconnected;
+- In case of long-term storage (more than a month), it is recommended to recharge the station's built-in power supply;
+- To remove impurities from the body of the device and after working in seawater, rinsing in freshwater is required. It is allowed to use a weak solution of household detergents with the battery compartment cover closed; When flushing, avoid getting moisture and / or detergents into the open connector of the headset;
+- Bending of cables with a radius of less than 5 cm is not allowed;
+- The application of torsion forces to the acoustic antenna or cable entry is not allowed;
+- Before placing the device in the shipping container, moisture on the device **must be completely removed**.
 
-> **ЗАПРЕЩАЕТСЯ:**
+> **PROHIBITED:**
 >
-> **- ВСКРЫТИЕ ОБОРУДОВАНИЯ ИЗ КОМПЛЕКТА ПОСТАВКИ СОГЛАСНО [п. 1.4.](#14-%D0%BA%D0%BE%D0%BC%D0%BF%D0%BB%D0%B5%D0%BA%D1%82-%D0%BF%D0%BE%D1%81%D1%82%D0%B0%D0%B2%D0%BA%D0%B8)**  
-> **- ДОПУСК К ПОЛЬЗОВАНИЮ ОБОРУДОВАНИЕМ ИЗ КОМПЛЕКТА ПОСТАВКИ СОГЛАСНО [п. 1.4.](#14-%D0%BA%D0%BE%D0%BC%D0%BF%D0%BB%D0%B5%D0%BA%D1%82-%D0%BF%D0%BE%D1%81%D1%82%D0%B0%D0%B2%D0%BA%D0%B8) ЛИЦ, НЕ ОЗНАКОМИВШИХСЯ С НАСТОЯЩЕЙ ИНСТРУКЦИЕЙ**  
-> **- ДОПУСК К ПОЛЬЗОВАНИЮ ОБОРУДОВАНИЕМ ИЗ КОМПЛЕКТА ПОСТАВКИ СОГЛАСНО [п. 1.4.](#14-%D0%BA%D0%BE%D0%BC%D0%BF%D0%BB%D0%B5%D0%BA%D1%82-%D0%BF%D0%BE%D1%81%D1%82%D0%B0%D0%B2%D0%BA%D0%B8) ЛИЦ, НЕ ДОСТИГШИХ СОВЕРШЕННОЛЕТИЯ**  
+> **- OPENING EQUIPMENT FROM THE DELIVERY SET ACCORDING TO [p. 1.4.]()**
+> **- ACCESS TO USE OF EQUIPMENT FROM THE DELIVERY SET ACCORDING TO [p. 1.4.]() PERSONS WHO ARE NOT FAMILIAR WITH THESE INSTRUCTIONS**
+> **- ACCESS TO USE OF EQUIPMENT FROM THE DELIVERY SET ACCORDING TO [p. 1.4.]() PERSONS UNDER THE ADVANCED**
 
-
-### 3.2. Заряд встроенного источника питания
-Заряд встроенного источника питания станции допускается только комплектным зарядным устройством при отсоединенном разъеме гарнитуры.
-Перед применением зарядного устройства необходимо ознакомиться с инструкцией по эксплуатации зарядного устройства.
-Для зарядки прибора его необходимо установить в зарядный кредл и подклюить комплектное зарядное устройство в бытовой электрической сети.
-Окончание заряда определяется по индикатору комплектного сетевого зарядного устройства.
-
-<div style="page-break-after: always;"></div>
-
-## 4. Обязательства и отказ от ответственности
-### 4.1. Условия замены и бесплатного гарантийного обслуживания
-Гарантия производителя распространяется только на заводские дефекты, выявивщиеся при эксплуатации устройства в соответствие с настоящим руководством в течении гарантийного срока (2 года с момента покупки).  
-
-Производитель гарантирует бесплатный ремонт или замену неисправного оборудования из комплекта поставки, вышедшего из строя по причине заводского дефекта.  
-
-К поводам для отказа от бесплатного гарантийного обслуживания, бесплатного ремонта и замены относятся:
-- любые **механические повреждения** оборудования из комплекта поставки [п. 1.4.](#14-%D0%BA%D0%BE%D0%BC%D0%BF%D0%BB%D0%B5%D0%BA%D1%82-%D0%BF%D0%BE%D1%81%D1%82%D0%B0%D0%B2%D0%BA%D0%B8), в т.ч. нарушение изоляции проводов и кабелей;
-- любые **повреждения, вызванные воздействием влаги и загрязнейний**, вследствие неправильной эксплуатации оборудования из комплекта поставки [п. 1.4.](#14-%D0%BA%D0%BE%D0%BC%D0%BF%D0%BB%D0%B5%D0%BA%D1%82-%D0%BF%D0%BE%D1%81%D1%82%D0%B0%D0%B2%D0%BA%D0%B8);
-- любые **электрические повреждения**, вызванные **использованием некомплектных аксессуаров** (зарядного устройства), применением некачественных и/или вышедших из строя аккумуляторов; к некомплектным не отностятся аксессуары, поставленные производителем или его представителем в замен неисправных или утраченых;
-- любые **следы самостоятельного ремонта и/или вскрытия** оборудования из комплекта поставки [п. 1.4.](#14-%D0%BA%D0%BE%D0%BC%D0%BF%D0%BB%D0%B5%D0%BA%D1%82-%D0%BF%D0%BE%D1%81%D1%82%D0%B0%D0%B2%D0%BA%D0%B8).
+### 3.2. Charging the device
+Charging of the built-in power supply of the station is allowed only with the charger from the equipment set when the headset connector is disconnected.
+Before using the charger, read the operating instructions for the charger.
+To charge the device, you must install it in the charging cradle and connect the complete charger in the household electrical network.
+The end of the charge is determined by the indicator of the charger from the equipment set.
 
 <div style="page-break-after: always;"></div>
 
-### 4.2. Ограничение ответственности производителя
+## 4. Liability and disclaimer
+### 4.1 Terms of replacement and free warranty service
+The manufacturer’s warranty applies only to factory defects that were discovered during the operation of the device in accordance with this manual during the warranty period (2 years from the date of purchase).
+
+The manufacturer guarantees free repair or replacement of faulty equipment from the equipment set that has failed due to a factory defect.
+
+The reasons for refusing free warranty service, free repair and replacement include:
+- any **mechanical damage** of the equipment supplied according to [p. 1.4.](#14-contents-of-the-standard-delivery-set), Including violation of insulation of wires and cables;
+- any **damage caused by exposure to moisture and pollution** due to improper use of the equipment from the equipment set according to [p. 1.4.]();
+- any **electrical damage** caused by **use of not original accessories** (charger, headset etc.);  
+- any **signs of self-repair and/or opening** of the equipment from the equipment set according to [p. 1.4.](#14-contents-of-the-standard-delivery-set).
+
+<div style = "page-break-after: always;"> </div>
+
+### 4.2 Disclaimer of the manufacturer
+_____________
+
+_**ANY OF THE PARTS OF THE EQUIPMENT SET ACCORDING TO [par. 1.4.](#14-contents-of-the-standard-delivery-set) SEPARATELY AND IN THE COMPOSITION OF THE SYSTEM, NAME FURTHER "DELIVERED EQUIPMENT":**_  
+
+_**- ARE NOT DESIGNED FOR WATER RESCUE USE**_  
+_**- NOT TESTED AS RESCUE EQUIPMENT**_  
+_**- NOT RESCUE EQUIPMENT**_  
+_**- THE MANUFACTURER DECLARES THAT THE DELIVERED EQUIPMENT IS SAFE WHEN OPERATING ACCORDING TO THESE INSTRUCTIONS AND IS NOT RESPONSIBLE FOR ANY CONSEQUENCES OF USE OF THE DELIVERED EQUIPMENT**_  
 
 _____________
 
-_**ЛЮБАЯ ИЗ ЧАСТЕЙ КОМПЛЕКТА ПОСТАВКИ СОГЛАСНО [п. 1.4.](#14-%D0%BA%D0%BE%D0%BC%D0%BF%D0%BB%D0%B5%D0%BA%D1%82-%D0%BF%D0%BE%D1%81%D1%82%D0%B0%D0%B2%D0%BA%D0%B8) В ОТДЕЛЬНОСТИ И В СОСТАВЕ СИСТЕМЫ, ИМЕНУЕМЫЕ ДАЛЕЕ "ПОСТАВЛЯЕМОЕ ОБОРУДОВАНИЕ":**_
+<div style="page-break-after: always;"></div>
 
-_**- НЕ РАЗРАБАТЫВАЛОСЬ КАК СРЕДСТВО СПАСЕНИЯ**_  
-_**- НЕ ТЕСТИРОВАЛОСЬ, КАК СРЕДСТВО СПАСЕНИЯ**_  
-_**- НЕ ЯВЛЯЕТСЯ СРЕДСТВОМ СПАСЕНИЯ**_  
-_**- ПРОИЗВОДИТЕЛЬ ЗАЯВЛЯЕТ, ЧТО ПОСТАВЛЯЕМОЕ ОБОРУДОВАНИЕ БЕЗОПАСНО ПРИ ЭКСПЛУАТАЦИИ СОГЛАСНО НАСТОЯЩЕЙ ИНСТРУКЦИИ И НЕ ОТВЕЧАЕТ ЗА ЛЮБЫЕ ПОСЛЕДСТВИЯ ИСПОЛЬЗОВАНИЯ ПОСТАВЛЯЕМОГО ОБОРУДОВАНИЯ**_
-
-______________
-
-[Вернуться к содержанию](#%D1%81%D0%BE%D0%B4%D0%B5%D1%80%D0%B6%D0%B0%D0%BD%D0%B8%D0%B5)
+[Back to content](#content)
