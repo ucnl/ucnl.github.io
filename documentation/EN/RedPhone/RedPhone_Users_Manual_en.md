@@ -23,7 +23,7 @@
 - [3. Storage and maintenance](#3-storage-and-maintenance)
   - [3.1. Storage and maintenance conditions](#31-storage-and-maintenance-conditions)
   - [3.2. Charging the device](#32-charging-the-device)
-  - [3.3. ]()
+  - [3.3. Battery replacement](#33-battery-replacement)
 - [4. Liability and disclaimer](#4-liability-and-disclaimer)
   - [4.1. Terms of replacement and free warranty service](#41-terms-of-replacement-and-free-warranty-service)
   - [4.2 Disclaimer of the manufacturer](#42-disclaimer-of-the-manufacturer)
