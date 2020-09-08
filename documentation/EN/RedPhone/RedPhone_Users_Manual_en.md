@@ -202,9 +202,9 @@ To remove and install the cover of the battery compartment:
 - completely unscrew the cover screws;
 - remove the bolts and nuts, remove the cover;
 - place the device horizontally;
-- * if necessary, carefully remove the batteries, if necessary, prying them from behind with a flat non-conductive tool; *
-- * if necessary, carefully install new batteries, observing the polarity of the installation; *
-- * if necessary, configure the device using the switch; *
+- *if necessary, carefully remove the batteries, if necessary, prying them from behind with a flat non-conductive tool;*
+- *if necessary, carefully install new batteries, observing the polarity of the installation;*
+- *if necessary, configure the device using the switch;*
 - make sure that the sealing ring is intact and, if necessary, lubricate it with a thick silicone grease;
 - make sure that there are no foreign objects (debris, hairs, etc.) on the O-ring and groove;
 - install the cover of the battery compartment;
