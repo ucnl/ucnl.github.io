@@ -39,7 +39,7 @@ The general view of the station [RedPhone](RedPhone_Specification_en.md) is show
 | :---: |
 | **Figure 1 - [RedPhone](RedPhone_Specification_en.md) general view** |
 
-The device is made in a plastic case with a serviceable battery compartment, where rechargeable batteries of **18650** format are located.
+The device is made in a plastic case with a serviceable battery compartment, where rechargeable batteries of **18650** type are located.
 On the upper part of the device, there is a hydroacoustic transceiver antenna and a cable entry with a cable and a connector for a telephone headset with a push-to-talk (PTT) button. Versions are possible both for headsets with built-in push-to-talk button, and without it, in this case, the device can be equipped with its own push-to-talk button.
 
 ### 1.2. Controls and Connectors
