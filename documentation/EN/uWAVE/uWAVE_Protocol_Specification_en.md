@@ -107,7 +107,7 @@ Sentence format: **`$PUWV1,x,x,x.x,x,x,x.x*hh<CR><LF>`**
 | STY | Salinity, PSU |
 | isCmdMode | ‘0’ - command mode by pin, ‘1’ - command mode by default \(to switch back to transparent channel mode use ‘0’\) |
 | isACKOnTXFinished | ‘1’ - Device will send [IC_D2H_ACK](#21-ic_d2h_ack) with [LOC_ACK_TX_FINISHED](#41-error-codes) ACK code after TX buffer has been emptied, ‘0’ - no ACK on TX buffer empty  |
-| gravityAcc | gravity acceleration value for precise depth estimate, in m/s<sup>2</sup> from range 9.77 to 9.84|
+| gravityAcc | gravity acceleration value for precise depth estimate, in m/s<sup>2</sup> from range 9.77 to 9.84 |
 | *	| Checksum separator NMEA |
 | hh	| Checksum NMEA |
 | \<CR\>\<LF\> | Sentence end |
