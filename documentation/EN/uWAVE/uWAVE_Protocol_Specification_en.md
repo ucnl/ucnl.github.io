@@ -143,7 +143,7 @@ rcCmdID | Command ID \([see 4.2](#42-remote-commands)\) |
 propTime | Signal propagation time, sec |
 MSR | Mean main lobe to side-peak ratio, dB |
 Value | Requested value | 
-Azimuth | Horizontal angle of arrival[ For uWAVE USBL devices only, otherwise empty] |
+Azimuth | Horizontal angle of arrival \(For [uWAVE USBL](/documentation/EN/uWAVE/uWAVE_USBL_Modem_Specification_en.md) devices only, otherwise empty\) |
 | *	| Checksum separator NMEA |
 | hh	| Checksum NMEA |
 | \<CR\>\<LF\> | Sentence end |
@@ -182,7 +182,7 @@ Sentence format: **`$PUWV5,x,x.x,x*hh <CR><LF>`**
 
 ### 2.7. IC_H2D_AMB_DTA_CFG
 Ambient parameters and supply voltage configuration.  
-This mesage configures the modem's output of the readings of the built-in pressure/temperature sensor and supply voltage. After configuration, the modem can transmit these readings using the IC_D2H_AMB_DTA message (Section 2.8)
+This mesage configures the modem's output of the readings of the built-in pressure/temperature sensor and supply voltage. After configuration, the modem can transmit these readings using the [IC_D2H_AMB_DTA message](#28-ic_h2d_amb_dta).
 
 Sentence format: **`$PUWV6,x,x,x,x,x,x*hh <CR><LF>`**
 
@@ -192,7 +192,7 @@ Sentence format: **`$PUWV6,x,x,x,x,x,x*hh <CR><LF>`**
 | PUWV | UWV |
 | 6 | Sentence identifier |
 | IsSaveToFlash | 1 - store settings in internal Flash, 0 - do not store |
-| PeriodMs | IC_D2H_AMB_DTA period in msec., 0 - disabled, 1 - tandem (send immediately after any outcoming message to the host system), or value from 500 to 60000 (0.5 - 60 sec.)  |
+| PeriodMs | [IC_D2H_AMB_DTA](#28-ic_h2d_amb_dta) period in msec., 0 - disabled, 1 - tandem (send immediately after any outcoming message to the host system), or value from 500 to 60000 (0.5 - 60 sec.)  |
 | IsPressure | 1 - pressure output enabled, 0 - disabled |
 | IsTemperature | 1 - temperature output enabled, 0 - disabled |
 | IsDepth | 1 - depth output enabled, 0 - disabled |
