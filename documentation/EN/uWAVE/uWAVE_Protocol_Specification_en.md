@@ -95,7 +95,7 @@ Sentence format: **`$PUWV0,x,x*hh<CR><LF>`**
 ### 2.2. IC_H2D_SETTINGS_WRITE
  Witing new settings
  
-Sentence format: **`$PUWV1,x,x,x.x*hh<CR><LF>`**
+Sentence format: **`$PUWV1,x,x,x.x,x,x,x.x*hh<CR><LF>`**
 
 | Field/Parameter |	Description |
 | :--- | :--- |
@@ -106,6 +106,8 @@ Sentence format: **`$PUWV1,x,x,x.x*hh<CR><LF>`**
 | rxChID | Rx code channel ID |
 | STY | Salinity, PSU |
 | isCmdMode | ‘0’ - command mode by pin, ‘1’ - command mode by default \(to switch back to transparent channel mode use ‘0’\) |
+| isACKOnTXFinished | ‘1’ - Device will send [IC_D2H_ACK](#21-ic_d2h_ack) with [LOC_ACK_TX_FINISHED](#41-error-codes) ACK code after TX buffer has been emptied, ‘0’ - no ACK on TX buffer empty  |
+| gravityAcc | gravity acceleration value for precise depth estimate, in m/s<sup>2</sup> from range 9.77 to 9.84|
 | *	| Checksum separator NMEA |
 | hh	| Checksum NMEA |
 | \<CR\>\<LF\> | Sentence end |
@@ -173,7 +175,7 @@ Sentence format: **`$PUWV5,x,x.x,x*hh <CR><LF>`**
 | 5 | Sentence ID |
 | rcCmdID | Command ID \([see 4.2](#42-remote-commands)\) |
 | MSR | Mean main lobe to side-peak ratio, dB |
-| Azimuth | Horizontal angle of arrival[ For uWAVE USBL devices only, otherwise empty] |
+| Azimuth | Horizontal angle of arrival \(For [uWAVE USBL](/documentation/EN/uWAVE/uWAVE_USBL_Modem_Specification_en.md) devices only, otherwise empty\) |
 | *	| Checksum separator NMEA |
 | hh	| Checksum NMEA |
 | \<CR\>\<LF\> | Sentence end |
@@ -290,6 +292,11 @@ Also, the command mode can be enabled by default using the [IC_H2D_SETTINGS_WRIT
 | LOC_ERR_RECEIVER_BUSY | 8 | Receiver is busy (waiting for a remote answer) |
 | LOC_ERR_TX_BUFFER_OVERRUN | 9 | Transmitter buffer is full |
 | LOC_ERR_CHKSUM_ERROR | 10 | Checksum error |
+| LOC_ACK_TX_FINISHED | 11 | Transmission finished, buffer is empty |
+| LOC_ACK_BEFORE_STANDBY | 12 | Device is entering stand-by mode |
+| LOC_ACK_AFTER_WAKEUP | 13 | Device is exited stand-by mode |
+| LOC_ERR_SVOLTAGE_TOO_HIGH | 14 | Supply voltage too high, power amplifier will not be used |
+
 
 ### 4.2 Remote commands   
 
