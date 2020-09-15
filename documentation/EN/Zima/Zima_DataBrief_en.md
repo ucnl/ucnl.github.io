@@ -109,3 +109,5 @@ _________
 | [Interfacing protocol **Zima USBL**](Zima_Protocol_Specification_en.md) |
 | [GNSS and heading sensor compatibility requirements](Zima_GNSS_requirements_en.md) |
 
+> The export version of the system is limited in range to 3000 meters
+
