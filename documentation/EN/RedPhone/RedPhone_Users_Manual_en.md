@@ -147,8 +147,9 @@ Possible sound alerts are summarized in **Table 5**.
 
 | Alert | Meaning |
 | :--- | :--- |
-| Short rising and then falling tone | Switching to the receive mode (including when the station is turned on)  |
-| Long trill | Internal power supply low |
+| Short rising and then falling tone | On power on | 
+| Short rising tone | Switching to the receive mode |
+| Short falling tone (~ every 30 seconds) | Internal power supply low |
 
 #### 2.2.2. Receiving voice messages
 To receive voice messages from divers, the **PTT** button on the headset must be released. In this case, incoming messages will be played by the headset.
