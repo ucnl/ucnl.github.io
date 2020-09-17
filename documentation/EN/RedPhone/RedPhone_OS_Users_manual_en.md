@@ -222,7 +222,7 @@ Possible sound alerts are summarized in **table 4**.
 | :--- | :--- | :--- |
 | Short rising and then lowering tone | The station power-on and switch to receive mode | [Sound sample](/documentation/redphone_pwon.wav) |
 | Short rising tone | Switching to receive mode after completion of transmission (releasing tangents **PTT**) | [Sound sample](/documentation/redphone_switch_to_rx.wav) |
-| Short falling tone | Low charge internal power supply |   |
+| Short falling tone (~ every 30 seconds) | Low charge internal power supply |   |
 
 #### 2.3.2. Receiving voice messages
 To receive voice messages from divers, the **PTT** button on the microphone must be released. In this case, incoming messages will be played by the device’s speaker (or headphones, if the latter are connected and the toggle switch **“Speaker”** is in the state **“Off”**).
