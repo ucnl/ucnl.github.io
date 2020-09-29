@@ -18,7 +18,7 @@
 * [Device 3D-model (STEP): Zima-R](/documentation/Zima_R_3D.step)
 * [Device wiring diagram: Zima-R](/documentation/EN/Zima/ZimaR_wiring_diagram_en.md)
 * [Host application (Repository)](https://github.com/ucnl/ZHost)
-* [Host application (Download release)](https://github.com/ucnl/ZHost/releases/download/1.2/ZHost.zip)
+* [Host application (Download release)](https://github.com/ucnl/ZHost/releases/download/1.3/ZHost.zip)
 
 
 ### RedWAVE - Underwater GPS (LBL)
