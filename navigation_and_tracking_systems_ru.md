@@ -19,7 +19,7 @@
 * [3D-модель устройства (STEP): Zima-R](/documentation/Zima_R_3D.step)
 * [Схема включения устройства: Zima-R](/documentation/RU/Zima/ZimaR_wiring_diagram_ru.md)
 * [Пультовое приложение (Репозиторий)](https://github.com/ucnl/ZHost)
-* [Пультовое приложение (Скачать релиз)](https://github.com/ucnl/ZHost/releases/download/1.2/ZHost.zip)
+* [Пультовое приложение (Скачать релиз)](https://github.com/ucnl/ZHost/releases/download/1.3/ZHost.zip)
 
 
 ### RedWAVE - Подводный GPS (LBL)
