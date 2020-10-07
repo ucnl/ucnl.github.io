@@ -86,7 +86,7 @@
 
 Для работы в командном режиме используется простой [NMEA-подобный ASCII протокол](uWAVE_Protocol_Specification_ru.md).
 
-На нашем [GitHub](https://ucnl.github.com) представлены примеры с открытым исходным кодом для сопряжения устройств **uWAVE**:
+На нашем [GitHub](https://github.com/ucnl) представлены примеры с открытым исходным кодом для сопряжения устройств **uWAVE**:
 * Библиотека [uWAVELib](https://github.com/ucnl/uWAVELib) (.NET)
 * Демонстрационное ПО [uWAVE Host](https://github.com/ucnl/uWAVE_Host)
 * Демонстрационный проект [uWAVE VLBL](https://github.com/ucnl/uWAVE_VLBL) - навигация на виртуальной длинной базе при помощи двух модемов [uWAVE](uWAVE_Specification_ru.md)
