@@ -13,7 +13,7 @@
 ## DESCRIPTION
 
 GNSS-equipped sonobuoy **RedBASE** as part of a set of four such devices forms a floating long navigation base,
-which supports the simultaneous positioning of an unlimited number of navigation receivers [RedNODE](RedNODE_Specification_ru.md)/[RedNAV](RedNAV_Specification_en.md).
+which supports the simultaneous positioning of an unlimited number of navigation receivers [RedNODE](RedNODE_Specification_en.md)/[RedNAV](RedNAV_Specification_en.md).
 The device is made in the form of a plastic cylinder with dimensions Ф150х600 mm with a hydroacoustic transmitting antenna on the cable.
 
 It has positive buoyancy, has a load-carrying eye for anchoring.
