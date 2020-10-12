@@ -1,8 +1,8 @@
 | ![logo](https://ucnl.github.io/documentation/sm_logo.png) |  |
 | :---: | ---: |
-| [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **RedPhone** <br/> Система беспроводной гидроакустической голосовой связи <br/> **Программа и методика испытаний** |
+| [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **RedPhone** <br/> Система беспроводной гидроакустической голосовой связи <br/> **Программа и методики испытаний** |
 
-# **RedPhone** <br/> Система беспроводной гидроакустической голосовой связи <br/> **Программа и методика испытаний**
+# **RedPhone** <br/> Система беспроводной гидроакустической голосовой связи <br/> **Программа и методики испытаний**
 
 <div style="page-break-after: always;"></div>
 
