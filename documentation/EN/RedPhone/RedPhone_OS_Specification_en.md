@@ -31,7 +31,7 @@ The RedPhone-OS Wireless underwater telephone provides voice transmission betwee
 | WORKING TEMPERATURE RANGE | -10 .. 50 °С |
 | PROTECTION CLASS | IP67[<sup>2</sup>](#footnote2) |
 
-### ДОПОЛНИТЕЛЬНО
+### ADDITIONAL INFORMATION
 
 [Material Safety Data Sheet (MSDS) for built-in battery](\documetnation\MSDS_BATLINK_LiFePO4_en.pdf)  
 
