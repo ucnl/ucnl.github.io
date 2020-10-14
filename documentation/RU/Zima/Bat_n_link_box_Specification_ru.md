@@ -39,4 +39,4 @@
 
 ## ДОПОЛНИТЕЛЬНО
 
-[Паспорт безопасности для встроенного источника питания, Material Safety Data Sheet (MSDS)](\documetnation\MSDS_BATLINK_LiFePO4_ru.pdf)  
+[Паспорт безопасности для встроенного источника питания, Material Safety Data Sheet (MSDS)](\documentation\MSDS_BATLINK_LiFePO4_ru.pdf)  
