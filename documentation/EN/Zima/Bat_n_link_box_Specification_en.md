@@ -37,3 +37,6 @@ The device is housed in a small shockproof plastic case. Has a front panel made 
 | | EXTERNAL POWER SUPPLY |
 | | CHARGER |
 
+## ADDITIONAL INFORMATION
+
+[Material Safety Data Sheet (MSDS) for built-in battery](\documetnation\MSDS_BATLINK_LiFePO4_en.pdf)  
