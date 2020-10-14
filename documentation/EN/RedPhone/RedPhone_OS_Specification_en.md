@@ -31,6 +31,10 @@ The RedPhone-OS Wireless underwater telephone provides voice transmission betwee
 | WORKING TEMPERATURE RANGE | -10 .. 50 °С |
 | PROTECTION CLASS | IP67[<sup>2</sup>](#footnote2) |
 
+### ДОПОЛНИТЕЛЬНО
+
+[Material Safety Data Sheet (MSDS) for built-in battery](\documetnation\MSDS_BATLINK_LiFePO4_en.pdf)  
+
 ________________
 <a name="footnote1"><sup>1</sup></a> A parameter that determines the maximum range at which a signal can be received, based on electro-acoustic parameters of the transmitter and receiver, spatial decrease in the intensity of sound energy, attenuation in the medium and the acoustic noise level.  
 <a name="footnote1"><sup>1</sup></a> With top cover closed
