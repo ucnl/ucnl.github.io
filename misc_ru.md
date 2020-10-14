@@ -10,7 +10,7 @@
 | :--- | :--- |
 | [RedPhone-OS](/documentation/RU/RedPhone/RedPhone_OS_Specification_ru.md) <br/> [Bat&Link Box](/documentation/RU/Zima/Bat_n_link_box_Specification_ru.md) | [Открыть файл \(pdf\)](\documentation\MSDS_BATLINK_LiFePO4_ru.pdf) |
 | [RedBASE](/documentation/RU/RedWAVE/RedBASE_Specification_ru.md) | [Открыть файл \(pdf\)](\documentation\msds_delta12v4_5ah.pdf) |
-| [Zima-R (батарейная канистра, автономное исполнение)] | [Открыть файл \(pdf\)](\documentation\material-safety-datasheet-nimh-batteries-ru-material-safety-datasheet.pdf) |
+| [Zima-R (батарейная канистра, автономное исполнение)](/documentation/RU/Zima/Zima_R_Specification_ru.md) | [Открыть файл \(pdf\)](\documentation\material-safety-datasheet-nimh-batteries-ru-material-safety-datasheet.pdf) |
 
 
 ## Информационные листки и прочие материалы
