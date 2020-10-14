@@ -8,7 +8,7 @@
 
 | Распространяется на устройства | Документ |
 | :--- | :--- |
-| [RedPhone-OS](/documentation/RU/RedPhone/RedPhone_OS_Specification_ru.md) </br> [Bat&Link Box](/documentation/RU/Zima/Bat_n_link_box_Specification_ru.md) | [Открыть файл \(pdf\)](\documentation\MSDS_BATLINK_LiFePO4_ru.pdf) |
+| [RedPhone-OS](/documentation/RU/RedPhone/RedPhone_OS_Specification_ru.md) <br/> [Bat&Link Box](/documentation/RU/Zima/Bat_n_link_box_Specification_ru.md) | [Открыть файл \(pdf\)](\documentation\MSDS_BATLINK_LiFePO4_ru.pdf) |
 
 
 ## Информационные листки и прочие материалы
