@@ -20,5 +20,5 @@
 * [uMCPIno](https://github.com/AlekUnderwater/uMCPIno) - a lightweight communication protocol with guaranteed delivery (C#/C/Arduino)
 * [UCNLNMEA](https://github.com/ucnl/UCNLNMEA) - a library for parsing/building NMEA sentences
 
-## Misc.
+## Miscellaneous
 * [Additional info](misc_en.md)
