@@ -7,8 +7,15 @@
 
 ______  
 
+### Работа с [RedWAVE](/documentation/RU/RedWAVE/RedWAVE_DataBrief_ru.md) underwater GPS
+Место: [Амерьевский Карьер, Подмосковье, Россия](https://goo.gl/maps/BftxRy1cKA6ZsUUP6)  
+Время: 7 ноября 2020  
+Трек погружения: [RedNAV track 07 NOV 2020 (Водолаз)](/documentation/7-11-2020_17-30.kml.kml), [RedNODE track 07 NOV 2020 (ROV)](/documentation/UGPSHub_Tracks_17-30-59.kml)
+
+______  
+
 ### Работа с [RedWAVE/DiveNET GPS](/documentation/RU/RedWAVE/RedWAVE_DataBrief_ru.md) underwater GPS
-Place: [Залив Монтерей, Калифорния, США](https://goo.gl/maps/SZ3tC49dcVGnequB7)  
+Место: [Залив Монтерей, Калифорния, США](https://goo.gl/maps/SZ3tC49dcVGnequB7)  
 Время: Март 2020  
 Трек погружения: [RedNAV track 03 MAR 2020](/documentation/rednav_track_03-03-2020.kml)
 
