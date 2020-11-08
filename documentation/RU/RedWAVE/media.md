@@ -10,7 +10,7 @@ ______
 ### Одновременная работа с [RedWAVE](/documentation/RU/RedWAVE/RedWAVE_DataBrief_ru.md) underwater GPS на водолазе и на малом ТНПА/ROV
 Место: [Амерьевский Карьер, Подмосковье, Россия](https://goo.gl/maps/BftxRy1cKA6ZsUUP6)  
 Время: 7 ноября 2020  
-Трек погружения: [RedNAV track 07 NOV 2020 (Водолаз)](/documentation/7-11-2020_17-30.kml.kml), [RedNODE track 07 NOV 2020 (ROV)](/documentation/UGPSHub_Tracks_17-30-59.kml)
+Трек погружения: [RedNAV track 07 NOV 2020 (Водолаз)](/documentation/7-11-2020_17-30.kml), [RedNODE track 07 NOV 2020 (ROV)](/documentation/UGPSHub_Tracks_17-30-59.kml)
 
 ______  
 
