@@ -5,7 +5,8 @@
 | [EN](navigation_and_tracking_systems_en.md) \| [RU](navigation_and_tracking_systems_ru.md) |
 
 ## Navigation & tracking systems
-### RedWAVE - Underwater GPS (LBL)
+### RedWAVE
+#### Underwater GPS (LBL)
 * [RedWAVE: Databrief](/documentation/EN/RedWAVE/RedWAVE_DataBrief_en.md)
 * [RedWAVE: videos, tutorials, etc.](/documentation/EN/RedWAVE/media)
 * [Device specification: RedBASE - GNSS-equipped sonobuoy](/documentation/EN/RedWAVE/RedBASE_Specification_en.md)
@@ -19,7 +20,8 @@
 * [RedNAV host application (Repository)](https://github.com/ucnl/RedNavHost)
 * [RedNAV host application (Download release)](https://github.com/ucnl/RedNavHost/releases/download/2.0/RedNAVHost.zip)
 
-### Zima - Ultrashort baseline (USBL) system
+### Zima
+#### Ultrashort baseline (USBL) system
 * [Zima USBL: Data brief](/documentation/EN/Zima/Zima_DataBrief_en.md)
 * [Zima USBL: videos, tutorials, etc.](/documentation/EN/Zima/media)
 * [Zima USBL User's manual](/documentation/EN/Zima/Zima_Users_manual_en.md)
