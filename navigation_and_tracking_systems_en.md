@@ -5,6 +5,20 @@
 | [EN](navigation_and_tracking_systems_en.md) \| [RU](navigation_and_tracking_systems_ru.md) |
 
 ## Navigation & tracking systems
+### RedWAVE - Underwater GPS (LBL)
+* [RedWAVE: Databrief](/documentation/EN/RedWAVE/RedWAVE_DataBrief_en.md)
+* [RedWAVE: videos, tutorials, etc.](/documentation/EN/RedWAVE/media)
+* [Device specification: RedBASE - GNSS-equipped sonobuoy](/documentation/EN/RedWAVE/RedBASE_Specification_en.md)
+* [Device specification: RedNODE - navigation receiver for ROVs and AUVs](/documentation/EN/RedWAVE/RedNODE_Specification_en.md)
+* [Device specification: RedNAV - navigation receiver for divers](/documentation/EN/RedWAVE/RedNAV_Specification_en.md)
+* [Communication protocol description: RedNODE](/documentation/EN/RedWAVE/RedWAVE_Protocol_Specification_en.md)
+* [RedWAVE User's manual](/documentation/EN/RedWAVE/RedWAVE_Users_Manual_en.md)
+* [Device wiring diagram: RedNODE](/documentation/EN/RedWAVE/RedNODE_wiring_diagram_en.md)
+* [RedNODE demo application (Repository)](https://github.com/ucnl/RedNodeHost)
+* [RedNODE demo application (Download release)](https://github.com/ucnl/RedNodeHost/releases/download/2.0/RedNODEHost.zip)
+* [RedNAV host application (Repository)](https://github.com/ucnl/RedNavHost)
+* [RedNAV host application (Download release)](https://github.com/ucnl/RedNavHost/releases/download/2.0/RedNAVHost.zip)
+
 ### Zima - Ultrashort baseline (USBL) system
 * [Zima USBL: Data brief](/documentation/EN/Zima/Zima_DataBrief_en.md)
 * [Zima USBL: videos, tutorials, etc.](/documentation/EN/Zima/media)
@@ -19,21 +33,6 @@
 * [Device wiring diagram: Zima-R](/documentation/EN/Zima/ZimaR_wiring_diagram_en.md)
 * [Host application (Repository)](https://github.com/ucnl/ZHost)
 * [Host application (Download release)](https://github.com/ucnl/ZHost/releases/download/1.3/ZHost.zip)
-
-
-### RedWAVE - Underwater GPS (LBL)
-* [RedWAVE: Databrief](/documentation/EN/RedWAVE/RedWAVE_DataBrief_en.md)
-* [RedWAVE: videos, tutorials, etc.](/documentation/EN/RedWAVE/media)
-* [Device specification: RedBASE - GNSS-equipped sonobuoy](/documentation/EN/RedWAVE/RedBASE_Specification_en.md)
-* [Device specification: RedNODE - navigation receiver for ROVs and AUVs](/documentation/EN/RedWAVE/RedNODE_Specification_en.md)
-* [Device specification: RedNAV - navigation receiver for divers](/documentation/EN/RedWAVE/RedNAV_Specification_en.md)
-* [Communication protocol description: RedNODE](/documentation/EN/RedWAVE/RedWAVE_Protocol_Specification_en.md)
-* [RedWAVE User's manual](/documentation/EN/RedWAVE/RedWAVE_Users_Manual_en.md)
-* [Device wiring diagram: RedNODE](/documentation/EN/RedWAVE/RedNODE_wiring_diagram_en.md)
-* [RedNODE demo application (Repository)](https://github.com/ucnl/RedNodeHost)
-* [RedNODE demo application (Download release)](https://github.com/ucnl/RedNodeHost/releases/download/2.0/RedNODEHost.zip)
-* [RedNAV host application (Repository)](https://github.com/ucnl/RedNavHost)
-* [RedNAV host application (Download release)](https://github.com/ucnl/RedNavHost/releases/download/2.0/RedNAVHost.zip)
 
 
 ## [Home](README.md)
