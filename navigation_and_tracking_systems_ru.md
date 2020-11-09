@@ -4,6 +4,21 @@
 | [EN](navigation_and_tracking_systems_en.md) \| [RU](navigation_and_tracking_systems_ru.md) |
 
 ## Гидроакустические навигационные и трекинговые системы
+### RedWAVE - Подводный GPS (LBL)
+* [Краткое описание](/documentation/RU/RedWAVE/RedWAVE_DataBrief_ru.md)
+* [RedWAVE: медиаматериалы, видео с испытаний, треки и т.п.](/documentation/RU/RedWAVE/media)
+* [Спецификация устройства: RedBASE - Буй-ретранслятор](/documentation/RU/RedWAVE/RedBASE_Specification_ru.md)
+* [Спецификация устройства: RedNODE - Навигационный приемник для ТНПА/АНПА](/documentation/RU/RedWAVE/RedNODE_Specification_ru.md)
+* [Спецификация устройства: RedNAV - Навигационный приемник для водолазов](/documentation/RU/RedWAVE/RedNAV_Specification_ru.md)
+* [Описание протокола сопряжения: RedNODE](/documentation/RU/RedWAVE/RedWAVE_Protocol_Specification_ru.md)
+* [Рукводство пользователя](/documentation/RU/RedWAVE/RedWAVE_Users_Manual_ru.md)
+* [Руководство пользователя ПО RedNAV Host](/documentation/RU/RedWAVE/RedNAV_Host_Users_Manual_ru.md)
+* [Схема включения устройства: RedNODE](/documentation/RU/RedWAVE/RedNODE_wiring_diagram_ru.md)
+* [Демонстрационное приложение RedNODE Host (Репозиторий)](https://github.com/ucnl/RedNodeHost)
+* [Демонстрационное приложение RedNODE Host (Скачать релиз)](https://github.com/ucnl/RedNodeHost/releases/download/2.0/RedNODEHost.zip)
+* [Приложение для RedNAV (Репозиторий)](https://github.com/ucnl/RedNavHost)
+* [Приложение для RedNAV (Скачать релиз)](https://github.com/ucnl/RedNavHost/releases/download/2.0/RedNAVHost.zip)
+
 ### Zima - Ультракороткобазисная (USBL) система
 * [Краткое описание](/documentation/RU/Zima/Zima_DataBrief_ru.md)
 * [Zima USBL: медиаматериалы, видео с испытаний и т.п.](/documentation/RU/Zima/media)
@@ -20,22 +35,5 @@
 * [Схема включения устройства: Zima-R](/documentation/RU/Zima/ZimaR_wiring_diagram_ru.md)
 * [Пультовое приложение (Репозиторий)](https://github.com/ucnl/ZHost)
 * [Пультовое приложение (Скачать релиз)](https://github.com/ucnl/ZHost/releases/download/1.3/ZHost.zip)
-
-
-### RedWAVE - Подводный GPS (LBL)
-* [Краткое описание](/documentation/RU/RedWAVE/RedWAVE_DataBrief_ru.md)
-* [RedWAVE: медиаматериалы, видео с испытаний, треки и т.п.](/documentation/RU/RedWAVE/media)
-* [Спецификация устройства: RedBASE - Буй-ретранслятор](/documentation/RU/RedWAVE/RedBASE_Specification_ru.md)
-* [Спецификация устройства: RedNODE - Навигационный приемник для ТНПА/АНПА](/documentation/RU/RedWAVE/RedNODE_Specification_ru.md)
-* [Спецификация устройства: RedNAV - Навигационный приемник для водолазов](/documentation/RU/RedWAVE/RedNAV_Specification_ru.md)
-* [Описание протокола сопряжения: RedNODE](/documentation/RU/RedWAVE/RedWAVE_Protocol_Specification_ru.md)
-* [Рукводство пользователя](/documentation/RU/RedWAVE/RedWAVE_Users_Manual_ru.md)
-* [Руководство пользователя ПО RedNAV Host](/documentation/RU/RedWAVE/RedNAV_Host_Users_Manual_ru.md)
-* [Схема включения устройства: RedNODE](/documentation/RU/RedWAVE/RedNODE_wiring_diagram_ru.md)
-* [Демонстрационное приложение RedNODE Host (Репозиторий)](https://github.com/ucnl/RedNodeHost)
-* [Демонстрационное приложение RedNODE Host (Скачать релиз)](https://github.com/ucnl/RedNodeHost/releases/download/2.0/RedNODEHost.zip)
-* [Приложение для RedNAV (Репозиторий)](https://github.com/ucnl/RedNavHost)
-* [Приложение для RedNAV (Скачать релиз)](https://github.com/ucnl/RedNavHost/releases/download/2.0/RedNAVHost.zip)
-
 
 ## [Домой](README_RU.md)
