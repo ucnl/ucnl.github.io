@@ -4,7 +4,8 @@
 | [EN](navigation_and_tracking_systems_en.md) \| [RU](navigation_and_tracking_systems_ru.md) |
 
 ## Гидроакустические навигационные и трекинговые системы
-### RedWAVE - Подводный GPS (LBL)
+### RedWAVE
+#### Подводный GPS (LBL)
 * [Краткое описание](/documentation/RU/RedWAVE/RedWAVE_DataBrief_ru.md)
 * [RedWAVE: медиаматериалы, видео с испытаний, треки и т.п.](/documentation/RU/RedWAVE/media)
 * [Спецификация устройства: RedBASE - Буй-ретранслятор](/documentation/RU/RedWAVE/RedBASE_Specification_ru.md)
@@ -19,7 +20,8 @@
 * [Приложение для RedNAV (Репозиторий)](https://github.com/ucnl/RedNavHost)
 * [Приложение для RedNAV (Скачать релиз)](https://github.com/ucnl/RedNavHost/releases/download/2.0/RedNAVHost.zip)
 
-### Zima - Ультракороткобазисная (USBL) система
+### Zima
+#### Ультракороткобазисная (USBL) система
 * [Краткое описание](/documentation/RU/Zima/Zima_DataBrief_ru.md)
 * [Zima USBL: медиаматериалы, видео с испытаний и т.п.](/documentation/RU/Zima/media)
 * [Рукводство пользователя](/documentation/RU/Zima/Zima_Users_manual_ru.md)
