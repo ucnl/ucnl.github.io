@@ -8,8 +8,8 @@ url: "http://docs.unavlab.com"
 twitter_username: unavlab
 github_username:  ucnl
 mapping:
-	provider: openstreetmap
-	zoom: 8
-	dimensions:
-		width: 300
-		height: 200
+  provider: openstreetmap
+  zoom: 8
+  dimensions:
+    width: 300
+    height: 200
