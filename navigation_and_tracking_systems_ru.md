@@ -18,7 +18,7 @@
 * [Демонстрационное приложение RedNODE Host (Репозиторий)](https://github.com/ucnl/RedNodeHost)
 * [Демонстрационное приложение RedNODE Host (Скачать релиз)](https://github.com/ucnl/RedNodeHost/releases/download/2.0/RedNODEHost.zip)
 * [Приложение для RedNAV (Репозиторий)](https://github.com/ucnl/RedNavHost)
-* [Приложение для RedNAV (Скачать релиз)](https://github.com/ucnl/RedNavHost/releases/download/2.0/RedNAVHost.zip)
+* [Приложение для RedNAV (Скачать релиз)](https://github.com/ucnl/RedNavHost/releases/download/1.1/RedNAVHost.zip)
 
 ### Zima
 #### Ультракороткобазисная (USBL) система
