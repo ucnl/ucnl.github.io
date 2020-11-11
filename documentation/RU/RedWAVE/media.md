@@ -7,6 +7,16 @@
 
 ______  
 
+
+### Позиционирование малого ТНПА/ROV при помощи [RedWAVE](/documentation/EN/RedWAVE/RedWAVE_DataBrief_en.md)  
+Place: [Пруд Южный, Волгоград, Россия](https://goo.gl/maps/xjJrX28KmWDdJxLC9)  
+Time: 11 November 2020  
+Tracks:  
+- [RedNODE track 11 NOV 2020](/documentation/UGPSHub_Tracks_14-31-20.kml)
+
+
+______  
+
 ### Одновременная работа с [RedWAVE](/documentation/RU/RedWAVE/RedWAVE_DataBrief_ru.md) underwater GPS на водолазе и на малом ТНПА/ROV
 Место: [Амерьевский Карьер, Подмосковье, Россия](https://goo.gl/maps/BftxRy1cKA6ZsUUP6)  
 Время: 7 ноября 2020  
