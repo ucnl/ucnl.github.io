@@ -9,7 +9,7 @@ ______
 
 
 ### ROV navigation via [RedWAVE](/documentation/EN/RedWAVE/RedWAVE_DataBrief_en.md)  
-Place: [Yujzniy pond](https://goo.gl/maps/xjJrX28KmWDdJxLC9)  
+Place: [Yujzniy pond, Volgograd, Russia](https://goo.gl/maps/xjJrX28KmWDdJxLC9)  
 Time: 11 November 2020  
 Tracks:  
 - [RedNODE track 11 NOV 2020](/documentation/UGPSHub_Tracks_14-31-20.kml)
@@ -19,7 +19,7 @@ ______
 
 
 ### ROV & diver simultaneous navigation via [RedWAVE](/documentation/EN/RedWAVE/RedWAVE_DataBrief_en.md)  
-Place: [Amerievsky dolomite quarry](https://goo.gl/maps/BftxRy1cKA6ZsUUP6)  
+Place: [Amerievsky dolomite quarry, Moskow, Russia](https://goo.gl/maps/BftxRy1cKA6ZsUUP6)  
 Time: 7 November 2020  
 Tracks:  
 - [RedNAV track 07 NOV 2020 (Diver)](/documentation/7-11-2020_17-30.kml)
