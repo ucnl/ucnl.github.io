@@ -8,7 +8,7 @@
 ### RedWAVE
 #### Underwater GPS (LBL)
 * [RedWAVE: Databrief](/documentation/EN/RedWAVE/RedWAVE_DataBrief_en.md)
-* [RedWAVE: videos, tutorials, etc.](/documentation/EN/RedWAVE/media)
+* [RedWAVE: tracks, videos, tutorials, etc.](/documentation/EN/RedWAVE/media)
 * [Device specification: RedBASE - GNSS-equipped sonobuoy](/documentation/EN/RedWAVE/RedBASE_Specification_en.md)
 * [Device specification: RedNODE - navigation receiver for ROVs and AUVs](/documentation/EN/RedWAVE/RedNODE_Specification_en.md)
 * [Device specification: RedNAV - navigation receiver for divers](/documentation/EN/RedWAVE/RedNAV_Specification_en.md)
@@ -23,7 +23,7 @@
 ### Zima
 #### Ultrashort baseline (USBL) system
 * [Zima USBL: Data brief](/documentation/EN/Zima/Zima_DataBrief_en.md)
-* [Zima USBL: videos, tutorials, etc.](/documentation/EN/Zima/media)
+* [Zima USBL: tracks, videos, tutorials, etc.](/documentation/EN/Zima/media)
 * [Zima USBL User's manual](/documentation/EN/Zima/Zima_Users_manual_en.md)
 * [Zima USBL: Communication protocol specification](/documentation/EN/Zima/Zima_Protocol_Specification_en.md)
 * [Device specification: Zima-B - direction finding antenna](/documentation/EN/Zima/Zima_B_Specification_en.md)
