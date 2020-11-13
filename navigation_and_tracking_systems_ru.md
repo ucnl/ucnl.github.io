@@ -19,6 +19,7 @@
 * [Демонстрационное приложение RedNODE Host (Скачать релиз)](https://github.com/ucnl/RedNodeHost/releases/download/2.0/RedNODEHost.zip)
 * [Приложение для RedNAV (Репозиторий)](https://github.com/ucnl/RedNavHost)
 * [Приложение для RedNAV (Скачать релиз)](https://github.com/ucnl/RedNavHost/releases/download/1.1/RedNAVHost.zip)
+* [Программа и методики испытаний (Водолазный вариант)](/documentation/RU/RedWAVE/RedNAV_PM_ru.md)
 
 ### Zima
 #### Ультракороткобазисная (USBL) система
