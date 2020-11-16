@@ -15,8 +15,8 @@
 * [Communication protocol description: RedNODE](/documentation/EN/RedWAVE/RedWAVE_Protocol_Specification_en.md)
 * [RedWAVE User's manual](/documentation/EN/RedWAVE/RedWAVE_Users_Manual_en.md)
 * [Device wiring diagram: RedNODE](/documentation/EN/RedWAVE/RedNODE_wiring_diagram_en.md)
-* [RedNODE demo application (Repository)](https://github.com/ucnl/RedNodeHost)
-* [RedNODE demo application (Download release)](https://github.com/ucnl/RedNodeHost/releases/download/2.0/RedNODEHost.zip)
+* [UGPSHub demo application (Repository)]((https://github.com/ucnl/UGPSHub)
+* [UGPSHub demo application (Download release)](https://github.com/ucnl/UGPSHub/releases/download/1.0/UGPSHub.zip)
 * [RedNAV host application (Repository)](https://github.com/ucnl/RedNavHost)
 * [RedNAV host application (Download release)](https://github.com/ucnl/RedNavHost/releases/download/1.1/RedNAVHost.zip)
 
