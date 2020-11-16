@@ -15,7 +15,7 @@
 * [Рукводство пользователя](/documentation/RU/RedWAVE/RedWAVE_Users_Manual_ru.md)
 * [Руководство пользователя ПО RedNAV Host](/documentation/RU/RedWAVE/RedNAV_Host_Users_Manual_ru.md)
 * [Схема включения устройства: RedNODE](/documentation/RU/RedWAVE/RedNODE_wiring_diagram_ru.md)
-* [Демонстрационное приложение UGPSHub (Репозиторий)]((https://github.com/ucnl/UGPSHub)
+* [Демонстрационное приложение UGPSHub (Репозиторий)](https://github.com/ucnl/UGPSHub)
 * [Демонстрационное приложение UGPSHub (Скачать релиз)](https://github.com/ucnl/UGPSHub/releases/download/1.0/UGPSHub.zip)
 * [Приложение для RedNAV (Репозиторий)](https://github.com/ucnl/RedNavHost)
 * [Приложение для RedNAV (Скачать релиз)](https://github.com/ucnl/RedNavHost/releases/download/1.1/RedNAVHost.zip)
