@@ -27,8 +27,8 @@
 * [COMING SOON Device specification: RWLT Pinger]()
 * [COMING SOON Device specification: RWLT GIB]()
 * [COMING SOON User's manual]()
-* [COMING SOON RWLTHost application (Repository)]()
-* [COMING SOON RWLTHost application (Download release)]()
+* [COMING SOON RWLTHost application (Repository)](https://github.com/ucnl/RWLT_Host)
+* [COMING SOON RWLTHost application (Download release)](https://github.com/ucnl/RWLT_Host/releases/download/1.0/RWLT_Host.zip)
 
 ### WAYU
 #### Sensibly priced amateur LBL tracking system 
