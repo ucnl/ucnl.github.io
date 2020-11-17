@@ -26,7 +26,7 @@
 * [COMING SOON RWLT: media, tracks, videos, etc.]()
 * [COMING SOON Device specification: RWLT Pinger]()
 * [COMING SOON Device specification: RWLT GIB]()
-* [COMING SOON User's manual]
+* [COMING SOON User's manual]()
 * [COMING SOON RWLTHost application (Repository)]()
 * [COMING SOON RWLTHost application (Download release)]()
 
@@ -37,7 +37,7 @@
 * [COMING SOON Device specification: WAYU Pinger]()
 * [COMING SOON Device specification: WAYU GIB]()
 * [COMING SOON User's manual]()
-* [COMING SOON WAYU GIB Firmware (Repository)]
+* [COMING SOON WAYU GIB Firmware (Repository)]()
 * [COMING SOON WAYU Application (Repository)]()
 * [COMING SOON WAYU Application (Download release)]()
 
