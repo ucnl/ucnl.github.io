@@ -8,10 +8,20 @@
 ______  
 
 
+### Трек движения дайвера полученный с помощью  [RedWAVE](/documentation/EN/RedWAVE/RedWAVE_DataBrief_en.md)  
+Место: [Химкинское водохранилище, Москва, Россия](https://goo.gl/maps/T3ipWGqQJ65j9p5w7)  
+Время: 22 ноября 2020  
+Трек погружения:  
+- [RedNODE track 22 NOV 2020](/documentation/rednode_track_22-10-2020-13-39-24.kml)
+
+
+______  
+
+
 ### Позиционирование малого ТНПА/ROV при помощи [RedWAVE](/documentation/EN/RedWAVE/RedWAVE_DataBrief_en.md)  
-Place: [Пруд Южный, Волгоград, Россия](https://goo.gl/maps/xjJrX28KmWDdJxLC9)  
-Time: 11 November 2020  
-Tracks:  
+Место: [Пруд Южный, Волгоград, Россия](https://goo.gl/maps/xjJrX28KmWDdJxLC9)  
+Время: 11 ноября 2020  
+Трек погружения:  
 - [RedNODE track 11 NOV 2020](/documentation/UGPSHub_Tracks_14-31-20.kml)
 
 
