@@ -8,6 +8,16 @@
 ______  
 
 
+### Diver's movement track obtained with [RedWAVE](/documentation/EN/RedWAVE/RedWAVE_DataBrief_en.md)  
+Place: [Khimkinskoye Vodokhranilishche, Moscow, Russia](https://goo.gl/maps/T3ipWGqQJ65j9p5w7)  
+Time: 22 November 2020  
+Tracks:  
+- [RedNODE track 22 NOV 2020](/documentation/rednode_track_22-10-2020-13-39-24.kml)
+
+
+______  
+
+
 ### ROV navigation via [RedWAVE](/documentation/EN/RedWAVE/RedWAVE_DataBrief_en.md)  
 Place: [Yujzniy pond, Volgograd, Russia](https://goo.gl/maps/xjJrX28KmWDdJxLC9)  
 Time: 11 November 2020  
