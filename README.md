@@ -14,6 +14,7 @@
 * [Videos](media_videos_en.md)
 
 ## Our educational projects
+* [DIY.unavlab.com](https://diy.unavlab.com) - easy to repeat projects for DIY
 * [Online utilities](online_utilities_en.md): Depth, Speed of sound, NMEA0183 etc.
 * [UCNLNav](https://github.com/ucnl/UCNLNav) - a library for solving geodetic and navigation problems (C#/Rust/Matlab/GNU Octave)
 * [UCNLPhysics](https://github.com/ucnl/UCNLPhysics) - a library for estimation of fundamental properties of seawater (C#/Rust/C/Matlab/GNU Octave/JavaScript)
