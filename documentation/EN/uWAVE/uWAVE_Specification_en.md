@@ -34,7 +34,7 @@ transmission, where dimensions and weight are the bottleneck.
 | MAX OPERATING RANGE<sup>[1](#footnote1),[2](#footnote2)</sup> | 1000 m |
 | PAYLOAD DATA RATE                      | 78 bit/s |
 | POWER CONSUMPTION Rx/Tx                | 0.33/6 W |
-| POWER SUPPLY<sup>[4](#footnote4)</sup> | 5 .. 12 V |
+| POWER SUPPLY<sup>[4](#footnote4),[7](#footnote7)</sup> | 5 .. 12 V |
 | DATA LINES VOLTAGE                     | 0 .. 3.3 V |
 | FREQUENCY BAND                         | 10 .. 30 kHz |
 | BIT ERROR RATE                         | 10<sup>-6</sup> |
@@ -56,3 +56,4 @@ ________________
 <a name="footnote4"><sup>4</sup></a> Maximum output power can be achieved with 12V power supply.  
 <a name="footnote5"><sup>5</sup></a> This value is obtained without the presence of the multipath effect.  
 <a name="footnote6"><sup>6</sup></a> Сan be changed by special request.  
+<a name="footnote7"><sup>7</sup></a> The device has built-in overvoltage protection of the amplifying circuit. At voltages over 12.8-13 volts, the device does not turn on the power amplifier, i.e. does not allow data transfer
