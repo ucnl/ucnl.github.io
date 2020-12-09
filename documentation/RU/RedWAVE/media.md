@@ -1,7 +1,7 @@
 | ![logo](https://ucnl.github.io/documentation/sm_logo.png) |
 | :---: |
 | [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) |
-| [EN](\documentation\EN\RedWAVE\media.html) \| [RU](\documentation\RU\RedWAVE\media.html) |
+| [EN](\documentation\EN\RedWAVE\media) \| [RU](\documentation\RU\RedWAVE\media) |
 
 ## RedWAVE медиаматериалы: видео с испытаний, видеоинструкции и т.п.
 
