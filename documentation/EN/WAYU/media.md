@@ -1,7 +1,7 @@
 | ![logo](https://ucnl.github.io/documentation/sm_logo.png) |
 | :---: |
 | [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) |
-| [EN](\documentation\EN\WAYU\media.html) \| [RU](\documentation\RU\WAYU\media.html) |
+| [EN](\documentation\EN\WAYU\media) \| [RU](\documentation\RU\WAYU\media) |
 
 ## WAYU media: tests videos, tutorials, etc.
 
