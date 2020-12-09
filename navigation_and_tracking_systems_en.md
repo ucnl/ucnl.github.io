@@ -33,11 +33,10 @@
 ### WAYU
 #### Sensibly priced amateur LBL tracking system 
 * [COMING SOON WAYU: Databrief]()
-* [COMING SOON WAYU: media, tracks, videos, etc.]()
+* [WAYU: media, tracks, videos, etc.](/documentation/EN/WAYU/media)
 * [COMING SOON Device specification: WAYU Pinger]()
 * [COMING SOON Device specification: WAYU GIB]()
 * [COMING SOON User's manual]()
-* [COMING SOON WAYU GIB Firmware (Repository)]()
 * [COMING SOON WAYU Application (Repository)]()
 * [COMING SOON WAYU Application (Download release)]()
 
