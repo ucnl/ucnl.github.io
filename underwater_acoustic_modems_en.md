@@ -17,6 +17,14 @@
 * [Examples for Arduino](https://github.com/ucnl/uWAVE_Arduino)
 * [uWAVE: videos, tutorials, etc.](/documentation/EN/uWAVE/media)
 
+## uSwitch
+### Sensibly priced amateur underwater acoustic remote control system 
+* [COMING SOON: Data brief](/documentation/EN/uSwitch/uSwitch_DataBrief_en.md)
+* [COMING SOON: Device specification: uSwitch TX](/documentation/EN/uSwitch/uSwitch_TX_Specification_en.md)
+* [COMING SOON: Device specification: uSwitch RX](/documentation/EN/uSwitch/uSwitch_RX_Specification_en.md)
+* [COMING SOON: uSwitch: videos, tutorials, etc.](/documentation/EN/uSwitch/media)
+* [COMING SOON: uSwitch: Examples for Arduino]()
+
 ### RedLINE
 #### underwater acoustic modem
 * [Device specification: RedLINE](/documentation/EN/RedLINE/RedLine_Specification_en.md)
