@@ -14,6 +14,7 @@
 * **Low power consumption (Rx/Tx) 0.33/6 W**
 * **Open configuration protocol**
 * **Built-in depth/temperature sensor**
+* **Patented monoblock design**
 
 ## DESCRIPTION
 
