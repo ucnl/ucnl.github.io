@@ -10,6 +10,7 @@
 * **Subscribers code division - up to 23 code channels**
 * **Low power consumption (Rx/Tx) 0.33/25 W**
 * **Patented technology of simultaneous positioning**
+* **Patented monoblock design**
 * **Built-in depth/temperature sensor**
 
 ## DESCRIPTION
