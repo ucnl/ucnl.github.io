@@ -18,14 +18,6 @@
 * [Примеры для Arduino](https://github.com/ucnl/uWAVE_Arduino)
 * [uWAVE: медиаматериалы, видео и т.п.](/documentation/RU/uWAVE/media)
 
-## uSwitch
-### Гидроакустическая система телеуправления любительского сегмента
-* [Краткое описание](/documentation/RU/uSwitch/uSwitch_DataBrief_ru.md)
-* [Спецификация устройства: uSwitch TX](/documentation/RU/uSwitch/uSwitch_TX_Specification_ru.md)
-* [Спецификация устройства: uSwitch RX](/documentation/RU/uSwitch/uSwitch_RX_Specification_ru.md)
-* [ОЖИДАЕТСЯ: uSwitch: медиаматериалы, видео и т.п.](/documentation/RU/uSwitch/media)
-* [ОЖИДАЕТСЯ: uSwitch: примеры для работы с платформой Arduino]()
-
 ### RedLINE
 #### гидроакустический модем
 * [Спецификация устройства: RedLINE](/documentation/RU/RedLINE/RedLine_Specification_ru.md)
