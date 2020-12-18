@@ -11,6 +11,7 @@
 * **Minimum dimensions and weight**
 * **Simultaneous operation of an unlimited number of devices**
 * **Reliable and noise-immune technology of digital broadband acoustic communication**
+* **Patented monoblock design**
 
 ## DESCRIPTION
 
