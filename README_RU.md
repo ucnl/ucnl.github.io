@@ -8,7 +8,6 @@
 * [Гидроакустические модемы](underwater_acoustic_modems_ru.md)
 * [Беспроводная голосовая подводная связь (подводная телефония)](underwater_wireless_voice_systems_ru.md)
 * [Гидроакустические преобразователи и гидрофоны](underwater_acoustic_antennas_ru.md)
-* [Оборудование любительского сегмента](amature_ru.md)
 * [Аксессуары](accessories_ru.md)
 
 ## Медиа и демонстрационные материалы
