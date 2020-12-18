@@ -10,6 +10,7 @@
 * **Reliable and noise-immune technology of digital broadband acoustic communication**
 * **Low power consumption (Rx/Tx) 0.33/10 W**
 * **Open & easy interfacing protocol**
+* **Patented monoblock design**
 
 
 ## DESCRIPTION
