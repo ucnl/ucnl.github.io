@@ -5,12 +5,12 @@
 
 
 ## uSwitch
-### Гидроакустическая система телеуправления любительского сегмента
-* [Краткое описание](/documentation/RU/uSwitch/uSwitch_DataBrief_ru.md)
-* [Спецификация устройства: uSwitch TX](/documentation/RU/uSwitch/uSwitch_TX_Specification_ru.md)
-* [Спецификация устройства: uSwitch RX](/documentation/RU/uSwitch/uSwitch_RX_Specification_ru.md)
-* [ОЖИДАЕТСЯ: uSwitch: медиаматериалы, видео и т.п.](/documentation/RU/uSwitch/media)
-* [ОЖИДАЕТСЯ: uSwitch: примеры для работы с платформой Arduino]()
+### Sensibly priced amateur underwater acoustic remote control system 
+* [COMING SOON: Data brief](/documentation/EN/uSwitch/uSwitch_DataBrief_en.md)
+* [COMING SOON: Device specification: uSwitch TX](/documentation/EN/uSwitch/uSwitch_TX_Specification_en.md)
+* [COMING SOON: Device specification: uSwitch RX](/documentation/EN/uSwitch/uSwitch_RX_Specification_en.md)
+* [COMING SOON: uSwitch: videos, tutorials, etc.](/documentation/EN/uSwitch/media)
+* [COMING SOON: uSwitch: Examples for Arduino]()
 
 
-## [Домой](README_RU.md)
+## [Home](README_EN.md)
