@@ -12,6 +12,7 @@
 * **Built-in depth/temperature sensor**
 * **40 code messages / 25 subscribers**
 * **Broadcast code messages**
+* **Patented monoblock design**
 
 ## DESCRIPTION
 ** RedGTR ** - hydro-acoustic code communication modem.
