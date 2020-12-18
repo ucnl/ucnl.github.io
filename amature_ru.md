@@ -12,5 +12,8 @@
 * [В РАЗРАБОТКЕ: uSwitch: videos, tutorials, etc.](/documentation/RU/uSwitch/media)
 * [В РАЗРАБОТКЕ: uSwitch: Examples for Arduino]()
 
+## Преобразователи и гидрофоны
+* [Приемная антенна RT-](/documentation/RU/Transducers/RT_1_d23h03_1_ru.md)
+
 
 ## [Домой](README_RU.md)
