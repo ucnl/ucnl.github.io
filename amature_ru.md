@@ -6,7 +6,7 @@
 
 ## uSwitch
 ### Гидроакустическая система телеуправления любительского сегмента 
-* [Краткое описание: uSwitch](/documentation/RU/uSwitch/uSwitch_DataBrief_en.md)
+* [Краткое описание: uSwitch](/documentation/RU/uSwitch/uSwitch_DataBrief_ru.md)
 * [Спецификация устройства: uSwitch TX](/documentation/RU/uSwitch/uSwitch_TX_Specification_ru.md)
 * [Спецификация устройства: uSwitch RX](/documentation/RU/uSwitch/uSwitch_RX_Specification_ru.md)
 * [В РАЗРАБОТКЕ: uSwitch: videos, tutorials, etc.](/documentation/RU/uSwitch/media)
