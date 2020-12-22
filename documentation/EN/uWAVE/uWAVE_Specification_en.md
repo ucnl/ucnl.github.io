@@ -27,28 +27,29 @@ transmission, where dimensions and weight are the bottleneck.
 
 ## TECHNICAL SPECIFICATIONS
 
-| PARAMETER                              | VALUE |
+| PARAMETER                               | VALUE |
 | :--- | :--- |
-| DIMENSIONS (Ф х h)                     | 41 x 45 mm |
-| WEIGHT (dry)                           | 0.16 kg |
-| DEPTH RATING                           | 300 m |
+| DIMENSIONS (Ф х h)                      | 41 x 45 mm |
+| WEIGHT (dry)                            | 0.16 kg |
+| DEPTH RATING                            | 300 m |
 | MAX OPERATING RANGE<sup>[1](#footnote1),[2](#footnote2)</sup> | 1000 m |
-| PAYLOAD DATA RATE                      | 78 bit/s |
-| POWER CONSUMPTION Rx/Tx                | 0.33/6 W |
+| PAYLOAD DATA RATE                       | 78 bit/s |
+| POWER CONSUMPTION Rx/Tx                 | 0.33/6 W |
 | POWER SUPPLY<sup>[4](#footnote4),[7](#footnote7)</sup> | 5 .. 12 V |
-| DATA LINES VOLTAGE                     | 0 .. 3.3 V |
-| FREQUENCY BAND                         | 10 .. 30 kHz |
-| BIT ERROR RATE                         | 10<sup>-6</sup> |
-| SNR<sup>[5](#footnote5)</sup>          | -2 dB |
-| MAX RELATIVE VELOCITY                  | +/- 1 m/s |
-| RATED START-UP TIME                    | 100 ms |
-| OPERATING TEMPERATURE RANGE            | -5 .. 50 °C |
-| INTERFACE<sup>[6](#footnote6)</sup>    | UART 9600 bit/s |
-| CONFIGURATION PROTOCOL                 | NMEA0183 [PUWV](uWAVE_Protocol_Specification_en.md) |
-| CABLE LENGTH<sup>[6](#footnote6)</sup> | 0.5 m |
-| SUBSCRIBERS CODE DIVISION              | 20 code channels |
-| TX BUFFER SIZE                         | 127 bytes |
-| COMMAND MODE                           | 16 predefined messages (9 for user applications) |
+| DATA LINES VOLTAGE                      | 0 .. 3.3 V |
+| FREQUENCY BAND                          | 10 .. 30 kHz |
+| BIT ERROR RATE                          | 10<sup>-6</sup> |
+| SNR<sup>[5](#footnote5)</sup>           | -2 dB |
+| MAX RELATIVE VELOCITY                   | +/- 1 m/s |
+| RATED START-UP TIME                     | 100 ms |
+| OPERATING TEMPERATURE RANGE             | -5 .. 50 °C |
+| INTERFACE<sup>[6](#footnote6)</sup>     | UART 9600 bit/s |
+| CONFIGURATION PROTOCOL                  | NMEA0183 [PUWV](uWAVE_Protocol_Specification_en.md) |
+| CABLE LENGTH<sup>[6](#footnote6)</sup>  | 0.5 m |
+| SUBSCRIBERS CODE DIVISION               | 20 code channels |
+| TX BUFFER SIZE                          | 127 bytes |
+| COMMAND MODE                            | 16 predefined messages (9 for user applications) |
+| PROPAGATION TIME MEASUREMENT RESOLUTION<sup>[8](#footnote8)</sup> | 0.0001 s |
   
 ________________
 <a name="footnote1"><sup>1</sup></a> A parameter that determines the maximum range at which a signal can be received based on the electro-acoustic parameters of the transmitter and receiver, spatial decrease in the intensity of sound energy, attenuation in the medium and acoustic noise level.  
@@ -57,4 +58,5 @@ ________________
 <a name="footnote4"><sup>4</sup></a> Maximum output power can be achieved with 12V power supply.  
 <a name="footnote5"><sup>5</sup></a> This value is obtained without the presence of the multipath effect.  
 <a name="footnote6"><sup>6</sup></a> Сan be changed by special request.  
-<a name="footnote7"><sup>7</sup></a> The device has built-in overvoltage protection of the amplifying circuit. At voltages over 12.8-13 volts, the device does not turn on the power amplifier, i.e. does not allow data transfer
+<a name="footnote7"><sup>7</sup></a> The device has built-in overvoltage protection of the amplifying circuit. At voltages over 12.8-13 volts, the device does not turn on the power amplifier, i.e. does not allow data transfer.  
+<a name="footnote8"><sup>8</sup></a> Considering the given value, the resolution when measuring the distance, considering the speed of sound 1500 m/s is 0.15 m  
