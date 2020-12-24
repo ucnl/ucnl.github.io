@@ -18,6 +18,8 @@
 * [uWAVE: videos, tutorials, etc.](/documentation/EN/uWAVE/media)
 * [uWAVE: Tank holder 3D model (step)](/documentation/uWAVE_holder_tank.step)
 * [uWAVE: Tank holder 3D model (Fusion360 f3d)](/documentation/uWAVE_holder_tank.f3d)
+* [uWAVE: Flat holder 3D model (step)](/documentation/uWAVE_holder_flat.step)
+* [uWAVE: Flat holder 3D model (Fusion360 f3d)](/documentation/uWAVE_holder_flat.f3d)
 
 ### RedLINE
 #### underwater acoustic modem
