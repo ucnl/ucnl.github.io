@@ -65,7 +65,7 @@ incoming message from other devices of the **uWAVE** family. Including for user 
 
 <div style="page-break-after: always;"></div>
 
-## 4. Equipment devices
+## 4. Built-in sensors
 All devices of the family have built-in depth and temperature sensors, and also measure the supply voltage, devices
 [uWAVE USBL Modem](uWAVE_USBL_Modem_Specification_en.md) additionally have built-in dual-axis inclinometers
 (to measure roll and pitch angles). the user can configure the output of this data periodically, with a given
