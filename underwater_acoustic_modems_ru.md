@@ -17,6 +17,10 @@
 * [Демонстрационное приложение: uWAVE_Host (Скачать релиз)](https://github.com/ucnl/uWAVE_Host/releases/download/1.0/uWAVE_Host.zip)
 * [Примеры для Arduino](https://github.com/ucnl/uWAVE_Arduino)
 * [uWAVE: медиаматериалы, видео и т.п.](/documentation/RU/uWAVE/media)
+* [uWAVE: кронштейн на баллон 3D модель (step)](/documentation/uWAVE_holder_tank.step)
+* [uWAVE: кронштейн на баллон 3D модель (Fusion360 f3d)](/documentation/uWAVE_holder_tank.f3d)
+* [uWAVE: кронштейн плоский 3D модель (step)](/documentation/uWAVE_holder_flat.step)
+* [uWAVE: кронштейн плоский 3D модель (Fusion360 f3d)](/documentation/uWAVE_holder_flat.f3d)
 
 ### RedLINE
 #### гидроакустический модем
