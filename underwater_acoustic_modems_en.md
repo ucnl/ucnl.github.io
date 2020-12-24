@@ -16,6 +16,8 @@
 * [Demo host application (Download release)](https://github.com/ucnl/uWAVE_Host/releases/download/1.0/uWAVE_Host.zip)
 * [Examples for Arduino](https://github.com/ucnl/uWAVE_Arduino)
 * [uWAVE: videos, tutorials, etc.](/documentation/EN/uWAVE/media)
+* [uWAVE: Tank holder 3D model (step)](/documentation/uWAVE_holder_tank.step)
+* [uWAVE: Tank holder 3D model (Fusion360 f3d)](/documentation/uWAVE_holder_tank.f3d)
 
 ### RedLINE
 #### underwater acoustic modem
