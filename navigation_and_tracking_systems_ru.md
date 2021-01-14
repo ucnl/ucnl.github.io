@@ -4,6 +4,10 @@
 | [EN](navigation_and_tracking_systems_en.md) \| [RU](navigation_and_tracking_systems_ru.md) |
 
 ## Гидроакустические навигационные и трекинговые системы
+
+### Общие сведения
+* [Таблица сравнения навигационных систем](navigation_systems_comparison_ru.md)
+
 ### RedWAVE
 #### Подводный GPS (LBL)
 * [Краткое описание](/documentation/RU/RedWAVE/RedWAVE_DataBrief_ru.md)
