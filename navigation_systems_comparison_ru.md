@@ -5,7 +5,7 @@
 
 ## Сравнительная таблица
 
-|                                                    | RedWAVE подводный GPS | RWLT            | Zima USBL                      | WAYU            | uWAVE USBL           |
+|  | [RedWAVE подводный GPS](/documentation/RU/RedWAVE/RedWAVE_DataBrief_ru.md) | [RWLT](/documentation/RU/RWLT/RWLT_DataBrief_ru.md) | [Zima USBL](/documentation/RU/Zima/Zima_DataBrief_ru.md) | [WAYU](/documentation/RU/WAYU/WAYU_DataBrief_ru.md) | [uWAVE USBL](/documentation/RU/uWAVE/uWAVE_USBL_DataBrief_ru.md) |
 | :---                                               | :---:                 | :---:           | :---:                           | :---:           | :---:                |
 | Тип системы                                        | LBL                   | LBL             | USBL                            | LBL             | USBL                 |
 | Место выработки навигационной информации           | Подводный объект      | Надводный пульт | Надводный пульт                 | Надводный пульт | Надводный пульт                    |
