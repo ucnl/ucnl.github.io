@@ -8,7 +8,7 @@
 |  | [RedWAVE подводный GPS](/documentation/RU/RedWAVE/RedWAVE_DataBrief_ru.md) | [RWLT](/documentation/RU/RWLT/RWLT_DataBrief_ru.md) | [Zima USBL](/documentation/RU/Zima/Zima_DataBrief_ru.md) | [WAYU](/documentation/RU/WAYU/WAYU_DataBrief_ru.md) | [uWAVE USBL](/documentation/RU/uWAVE/uWAVE_USBL_DataBrief_ru.md) |
 | :---                                               | :---:                 | :---:           | :---:                           | :---:           | :---:                |
 | Тип системы                                        | LBL                   | LBL             | USBL                            | LBL             | USBL                 |
-| Место выработки навигационной информации           | Подводный объект      | Надводный пульт | Надводный пульт                 | Надводный пульт | Надводный пульт                    |
+| Место выработки навигационной информации           | Подводный <br/> объект | Надводный <br/> пульт | Надводный <br/> пульт | Надводный <br/> пульт | Надводный <br/> пульт |
 | Число позиционируемых объектов                     | ∞                     | 1               | до 23<sup>[1](#footnote1)</sup> | 1               | до 20<sup>[1](#footnote1)</sup>                |
 | Номинальный период обновления навигационных данных | 1 с                   | 2 с             | ≥ 3.6<sup>[2](#footnote2)</sup> с | 2 c           | ≥ 3.6<sup>[2](#footnote2)</sup> c                |
 | Максимальный размер покрываемой области            | 700 х 700 м           | 1500 x 1500 м   | круг радиусом 8000 м      | 300 x 300 м     | круг радиусом 1000 м |
