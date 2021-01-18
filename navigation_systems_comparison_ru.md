@@ -2,6 +2,7 @@
 | :---: | ---: |
 | [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | Сравнение навигационных и трекинговых систем |
 
+<div style="page-break-after: always;"></div>
 
 ## Сравнительная таблица
 
