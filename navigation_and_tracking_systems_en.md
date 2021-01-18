@@ -5,6 +5,10 @@
 | [EN](navigation_and_tracking_systems_en.md) \| [RU](navigation_and_tracking_systems_ru.md) |
 
 ## Navigation & tracking systems
+
+### General information
+* [Comparison table of navigation systems](navigation_systems_comparison_en.md)
+
 ### RedWAVE
 #### Underwater GPS (LBL)
 * [RedWAVE: Databrief](/documentation/EN/RedWAVE/RedWAVE_DataBrief_en.md)
