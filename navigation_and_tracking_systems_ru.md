@@ -28,7 +28,7 @@
 ### RWLT
 #### Длиннобазисная трекинговая система
 * [Краткое описание](/documentation/RU/RWLT/RWLT_DataBrief_ru.md)
-* [RWLT: медиаматериалы, видео испытаний, треки и т.п.](/documentation/RU/RWLT/media.md)
+* [ОЖИДАЕТСЯ RWLT: медиаматериалы, видео испытаний, треки и т.п.](/documentation/RU/RWLT/media.md)
 * [Спецификация устройства: RWLT Pinger](/documentation/RU/RWLT/RWLT_Pinger_specification_ru.md)
 * [Спецификация устройства: RWLT GIB](/documentation/RU/RWLT/RWLT_GIB_Specification_ru.md)
 * [ОЖИДАЕТСЯ Руководство пользователя]()
