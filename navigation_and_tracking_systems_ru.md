@@ -29,8 +29,9 @@
 #### Длиннобазисная трекинговая система
 * [Краткое описание](/documentation/RU/RWLT/RWLT_DataBrief_ru.md)
 * [ОЖИДАЕТСЯ RWLT: медиаматериалы, видео испытаний, треки и т.п.](/documentation/RU/RWLT/media.md)
-* [Спецификация устройства: RWLT Pinger](/documentation/RU/RWLT/RWLT_Pinger_specification_ru.md)
+* [Спецификация устройства: RWLT Pinger](/documentation/RU/RWLT/RWLT_Pinger_Specification_ru.md)
 * [Спецификация устройства: RWLT GIB](/documentation/RU/RWLT/RWLT_GIB_Specification_ru.md)
+* [ОЖИДАЕТСЯ Спецификация устройства: RWLT Radio dongle](/documentation/RU/RWLT/RWLT_RF_Dongle_Specification_ru.md)
 * [ОЖИДАЕТСЯ Руководство пользователя]()
 * [Приложение для работы с системой RWLT Host (Репозиторий)](https://github.com/ucnl/RWLT_Host)
 * [Приложение для работы с системой RWLT Host (Скачать релиз)](https://github.com/ucnl/RWLT_Host/releases/download/1.0/RWLT_Host.zip)
@@ -39,9 +40,9 @@
 #### Длиннобазисная трекинговая система любительского сегмента
 * [ОЖИДАЕТСЯ Краткое описание]()
 * [WAYU: медиаматериалы, видео испытаний, треки и т.п.](/documentation/RU/WAYU/media)
-* [ОЖИДАЕТСЯ Спецификация устройства: WAYU Pinger]()
-* [ОЖИДАЕТСЯ Спецификация устройства: WAYU GIB]()
-* [ОЖИДАЕТСЯ Спецификация устройства: WAYU Radio dongle]()
+* [ОЖИДАЕТСЯ Спецификация устройства: WAYU Pinger](/documentation/RU/WAYU/WAYU_Pinger_Specification_ru.md)
+* [ОЖИДАЕТСЯ Спецификация устройства: WAYU GIB](/documentation/RU/WAYU/WAYU_GIB_Specification_ru.md)
+* [ОЖИДАЕТСЯ Спецификация устройства: WAYU Radio dongle](/documentation/RU/WAYU/WAYU_RF_Dongle_Specification_ru.md)
 * [ОЖИДАЕТСЯ Руководство пользователя]()
 * [ОЖИДАЕТСЯ Приложение для работы с системой WAYU (Репозиторий)]()
 * [ОЖИДАЕТСЯ Приложение для работы с системой WAYU (Скачать релиз)]()
