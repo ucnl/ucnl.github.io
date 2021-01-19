@@ -1,4 +1,4 @@
-| ![logo](https://ucnl.github.io/documentation/sm_logo.png) | ![logo]() |
+| ![logo](https://ucnl.github.io/documentation/sm_logo.png) |  |
 | :---: | ---: |
 | [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **WAYU** - Гидроакустическая трекинговая система <br/> Краткое описание |
 
@@ -14,7 +14,7 @@
 | :---: | :--- |
 | ![WAYU Pinger]() | [WAYU Pinger](WAYU_Pinger_Specification_ru.md) <br/> Навигационный гидроакустический маяк-пингер |
 | ![WAYU GIB]() | [WAYU GIB](WAYU_GIB_Specification_ru.md) <br/> Навигационный буй |
-| ![WAYU Radio dongle]() | [WAYU Radio dongle](RedNAV_Specification_ru.md) <br/> Радидонгл приемник навигационныйх буев |
+| ![WAYU Radio dongle]() | [WAYU Radio dongle](WAYU_RF_Dongle_Specification_ru.md) <br/> Радидонгл - приемник навигационныйх буев |
 
 
 <div style="page-break-after: always;"></div>
