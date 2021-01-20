@@ -24,7 +24,7 @@ It has positive buoyancy, has a load-carrying eye for anchoring.
 
 | PARAMETER | VALUE |
 | :--- | :--- |
-| DIMENSIONS (Ф х h) | 597 x 146 mm |
+| DIMENSIONS (Ф х h) | 146 x 597 mm |
 | WEIGHT(dry) | 4.8 kg |
 | REDUNDANT BUOYANCY | 1 kg |
 | BANDWIDTH | 10 .. 30 kHz |
