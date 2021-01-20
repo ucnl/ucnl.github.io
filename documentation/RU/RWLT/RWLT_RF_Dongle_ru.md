@@ -1,4 +1,4 @@
-| ![logo](https://ucnl.github.io/documentation/sm_logo.png) | ![logo]() |
+| ![logo](https://ucnl.github.io/documentation/sm_logo.png) | ![RWLT RF dongle]() |
 | :---: | ---: |
 | [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **RWLT RF dongle** - Приемник сигнала навигационных буев <br/> Спецификация устройства |
 
