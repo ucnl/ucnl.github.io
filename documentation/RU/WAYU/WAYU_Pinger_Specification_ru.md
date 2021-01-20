@@ -1,4 +1,4 @@
-| ![logo](https://ucnl.github.io/documentation/sm_logo.png) | ![logo]() |
+| ![logo](https://ucnl.github.io/documentation/sm_logo.png) | ![WAYU Pinger]() |
 | :---: | ---: |
 | [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **WAYU Pinger** - Навигационный маяк - пингер <br/> Спецификация устройства |
 
@@ -19,7 +19,7 @@
 
 | ПАРАМЕТР | ЗНАЧЕНИЕ |
 | :--- | :--- |
-| ГАБАРИТЫ (Ф х h) | XX x XXX мм |
+| ГАБАРИТЫ (Ф х h) | 70 x 300 мм |
 | ВЕС (сухой) | X кг |
 | ЧАСТОТА АКУСТИЧЕСКОГО СИГНАЛА | 28400 ± 100 Гц |
 | ПЕРИОД ИЗЛУЧЕНИЯ АКУСТИЧЕСКОГО СИГНАЛА | 2 ± 0.1 секунды |
