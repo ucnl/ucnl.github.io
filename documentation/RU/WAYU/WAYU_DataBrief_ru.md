@@ -5,6 +5,7 @@
 <div style="page-break-after: always;"></div>
 
 ## Общие данные
+**WAYU** расшифровывается как **W**here **A**re **Y**ou **U**nderwater.
 
 <div style="page-break-after: always;"></div>
 
