@@ -1,39 +1,39 @@
 | ![logo](https://ucnl.github.io/documentation/sm_logo.png) | ![logo](https://ucnl.github.io/documentation/RWLT_Pinger.png) |
 | :---: | ---: |
-| [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **RWLT Pinger** - Навигационный маяк - пингер <br/> Спецификация устройства |
+| [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **RWLT Pinger** - Pinger beacon <br/> Device specification |
 
-## КЛЮЧЕВЫЕ ОСОБЕННОСТИ
+## KEY FEATURES
 
-* **Не требует интеграции - просто механическое закрепление на позиционируемом объекте**
-* **Максимальная простота в обслуживани**
-* **Автоматическое включение от воды**
-* **Минимальные габариты и масса**
+* **Does not require connection - just mechanical fixation on the positioned object**
+* **Maximum ease of use and maintenance**
+* **Automatic turn-on in water**
+* **Minimum dimensions and weight**
 
-## ОПИСАНИЕ
+## DESCRIPTION
 
-Навигационный маяк-пингер **RWLT Pinger** системы **[RWLT](RWLT_DataBrief_ru.md)** размещается на позиционируемом объекте: ТНПА, АНПА, водолазе или ином подводном объекте и излучает периодический навигационный сигнал, который принимается четырьмя плавучими навигационными буями **[RWLT GIB](RWLT_GIB_Specification_ru.md)**, по навигационному сигналу определяется географическое положение пингера, совмещенная с навигацией передача телеметрической информации с пингера позволяет определять его глубину, температуру воды и напряжение питания батарей.
-Пингер не требует никакого сопряжение с позиционируемым объектом, его достаточно просто закрепить на объекте.
+Navigational pinger beacon  **RWLT Pinger** of the system **[RWLT](RWLT_DataBrief_en.md)** is placed on the positioned object: ROV, AUV, diver or other underwater object and emits a periodic navigation signal, which is received by four floating navigation buoys **[RWLT GIB](RWLT_GIB_Specification_en.md)**, according to the navigation signal, the geographic position of the pinger is determined, the transmission of telemetric information from the pinger combined with navigation allows determining its depth, water temperature and battery voltage.
+The pinger does not require any pairing with the positioned object; it is enough to simply attach it to the object.
 
 <div style="page-break-after: always;"></div>
 
-## ТЕХНИЧЕСКИЕ ХАРАКТЕРИСТИКИ
+## TECHNICAL SPECIFICATIONS
 
-| ПАРАМЕТР | ЗНАЧЕНИЕ |
+| PARAMETER | VALUE |
 | :--- | :--- |
-| ГАБАРИТЫ<sup>[1](#footnote1)</sup> (Ф х h) | 41 x 45 мм |
-| ВЕС<sup>[1](#footnote1)</sup> (сухой) | 0.16 кг |
-| ПОЛОСА ЧАСТОТ | 10 .. 30 кГц |
-| ПЕРИОД ИЗЛУЧЕНИЯ АКУСТИЧЕСКОГО СИГНАЛА | 2 секунды |
-| ДЛИТЕЛЬНОСТЬ НАВИГАЦИОННОГО СИГНАЛА | 0.2 секунды |
-| ТЕЛЕМЕТРИЧЕСКАЯ ИНФОРМАЦИЯ | Глубина, Температура, Напряжение питания |
-| МАКСИМАЛЬНАЯ ДАЛЬНОСТЬ АКУСТИЧЕСКОЙ СВЯЗИ<sup>[2](#footnote2)</sup> | 1500 м |
-| МАКСИМАЛЬНОЕ АКУСТИЧЕСКОЕ ДАВЛЕНИЕ | 160 дБ re 1 мкПа @ 1 м |
-| МАКСИМАЛЬНАЯ СКОРОСТЬ ОТНОСИТЕЛЬНО БУЕВ | ± 1.8 м/с  |
-| МАКСИМАЛЬНАЯ ГЛУБИНА ПОГРУЖЕНИЯ | 300 м |
-| ДИАПАЗОН РАБОЧИХ ТЕМПЕРАТУР | -10 .. 50 °С |
-| МАКСИМАЛЬНОЕ ВРЕМЯ АВТОНОМНОЙ РАБОТЫ | до 8 часов |
+| DIMENSIONS<sup>[1](#footnote1)</sup> (Ф х h) | 41 x 45 mm |
+| WEIGHT<sup>[1](#footnote1)</sup> (dry) | 0.16 кг |
+| FREQUENCY RANGE | 10 .. 30 kHz |
+| ACOUSTIC TRANSMISSION PERIOD | 2 seconds |
+| NAVIGATION SIGNAL DURATION | 0.2 seconds |
+| TELEMETRY | Depth, Temperature, Supply voltage |
+| MAX. ACOUSTIC RANGE<sup>[2](#footnote2)</sup> | 1500 m |
+| ACOUSTIC SOURCE LEVEL | 160 dB re 1 uPa @ 1 m |
+| MAX. RELATIVE VELOCITY | ± 1.8 m/s  |
+| DEPTH RATING | 300 m |
+| WORKING TEMPERATURE RANGE | -10 .. 50 °С |
+| BATTERY LIFE<sup>[1](#footnote1)</sup> | до 8 часов |
 
 ________________
-<a name="footnote1"><sup>1</sup></a> Без учета веса блока батарей. Стандартный блок батарей ф50х165 мм, 0.58 кг, 2.9 Ач 12 В. 
-Время работы от стандартного блока батарей в режиме ожидания - до 70 часов, при излучении 1 раз в 2 секунды до 8 часов на полностью заряженном новом АКБ при температуре окружающей среды 20 °С.  
-<a name="footnote2"><sup>2</sup></a> Параметр, определяющий максимальную дальность, на которой возможен прием сигнала, исходя из электроакустических параметров передатчика и приемника, пространственного убывания интенсивности звуковой энергии, затухания в среде и уровня гидроакустических помех. 
+<a name="footnote1"><sup>1</sup></a> Excluding the weight of the battery pack. Standard battery pack ф50х165 mm, 0.58 kg, 2.9 Ah 12 V.
+Operating time from a standard battery pack in standby mode is up to 70 hours, with radiation 1 time in 2 seconds up to 8 hours on a fully charged new battery at an ambient temperature of 20 ° C.  
+<a name="footnote2"><sup>2</sup></a> A parameter that determines the maximum range at which a signal can be received, based on the electro-acoustic parameters of the transmitter and receiver, the spatial decrease in the intensity of sound energy, attenuation in the medium and the level of hydroacoustic noise. 
