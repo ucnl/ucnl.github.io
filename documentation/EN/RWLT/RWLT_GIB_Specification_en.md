@@ -1,51 +1,51 @@
 | ![logo](https://ucnl.github.io/documentation/sm_logo.png) | ![RWLT GIB](https://ucnl.github.io/documentation/RWLT_GIB.png) |
 | :---: | ---: |
-| [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **RWLT GIB** - Навигационный буй <br/> Спецификация устройства |
+| [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **RWLT GIB** - Navigation buoy <br/> Device specification |
 
-## КЛЮЧЕВЫЕ ОСОБЕННОСТИ
+## KEY FEATURES
 
-* **Высокопроизводительный комбинированный GPS/GLONASS приемник**
-* **Прочный, долговечный легкозаметный корпус**
-* **Длительное время автономной работы до 24 часов**
-* **Надежная и помехоустойчивая технология цифровой широкополосной гидроакустической связи**
+* **High performance combined GPS/GLONASS receiver**
+* **Robust, durable, highly visible body**
+* **Long battery life up to 24 hours**
+* **Reliable and robust digital broadband hydroacoustic communication technology**
 
-## ОПИСАНИЕ
+## DESCRIPTION
 
-Навигационный гидроакустический буй **RWLT GIB** системы **[RWLT](RWLT_DataBrief_ru.md)** в составе набора из четырех таких устройств формирует плавучую длинную навигационную базу, при поддержке которой обеспечивается позиционирование пингера **[RWLT Pinger](RWLT_Pinger_Specification_ru.md)** или водолазной телефонной станции **[RedPhone](https://docs.unavlab.com/documentation/RU/RedPhone/RedPhone_Specification_ru.html)**.  
-Устройство выполняется в виде пластикового цилиндра размерами Ф150х600 мм с приемной гидроакустической антенной на кабеле.
+Navigation buoy **RWLT GIB** of the system **[RWLT](RWLT_DataBrief_en.md)** as part of a set of four such devices forms a floating long navigation base, with the support of which positioning of the pinger **[RWLT Pinger](RWLT_Pinger_Specification_ru. md)** or underwater wireless telephone **[RedPhone] (https://docs.unavlab.com/documentation/EN/RedPhone/RedPhone_Specification_en.html)** is provided.  
+The device is made in the form of a plastic cylinder with dimensions Ф150х600 mm with a receiving hydroacoustic antenna on a cable.
 
-Обладает положительной плавучестью, имеет грузонесущую проушину для крепления якоря.
+The device has positive buoyancy and a load-carrying eye for anchor attachment.
 
 <div style="page-break-after: always;"></div>
 
-## ТЕХНИЧЕСКИЕ ХАРАКТЕРИСТИКИ
+## TECHNICAL SPECIFICATIONS
 
-| ПАРАМЕТР | ЗНАЧЕНИЕ |
+| PARAMETER | VALUE |
 | :--- | :--- |
-| ГАБАРИТЫ<sup>[1](#footnote1)</sup> (Ф х h) | 146 x 597 мм |
-| ВЕС (сухой) | 4.8 кг |
-| ИЗБЫТОЧНАЯ ПЛАВУЧЕСТЬ | 1 кг |
-| ЧАСТОТНЫЙ ДИАПАЗОН | 10 .. 30 кГц |
-| МАКСИМАЛЬНОЕ ВРЕМЯ<sup>[2](#footnote2)</sup> АВТОНОМНОЙ РАБОТЫ | 12 часов |
-| МАКСИМАЛЬНАЯ СКОРОСТЬ ОТНОСИТЕЛЬНО ПИНГЕРА | +/- 1.8 м/с  |
-| ДИАПАЗОН РАБОЧИХ ТЕМПЕРАТУР | -10 .. 50 °С |
-| МАКСИМАЛЬНАЯ ДАЛЬНОСТЬ АКУСТИЧЕСКОЙ СВЯЗИ<sup>[3](#footnote3)</sup> | 3000 м |
-| МАКСИМАЛЬНО ДОПУСТИМОЕ РАССТОЯНИЕ ДО ДРУГИХ БУЕВ КОМПЛЕКТА<sup>[4](#footnote4),[5](#footnote5)</sup> | 1500 м |
-| МИНИМАЛЬНО ДОПУСТИМОЕ РАССТОЯНИЕ ДО ДРУГИХ БУЕВ КОМПЛЕКТА<sup>[5](#footnote5)</sup> | 30 м |
-| РЕФЕРЕНСНЫЙ ЭЛЛИПСОИД | WGS-84 |
-| ТИП ВСТРОЕННОГО АКБ | Свинцово-кислотный |
-| ДЛИНА КАБЕЛЯ АКУСТИЧЕСКОЙ АНТЕННЫ | 1.5 м |
-| ТИП ВСТРОЕННОГО РАДИОМОДУЛЯ | GFSK, 433 МГц |
-| МАКСИМАЛЬНАЯ МОЩНОСТЬ РАДИОМОДУЛЯ | 100 мВт |
-| МАКСИМАЛЬНАЯ ДАЛЬНОСТЬ РАДИОСВЯЗИ<sup>[6](#footnote4)</sup> | 1000 м |
+| DIMENSIONS<sup>[1](#footnote1)</sup> (Ф х h) | 146 x 597 mm |
+| WEIGHT (dry) | 4.8 kg |
+| POSITIVE BUOYANCY | 1 kg |
+| FREQUENCY RANGE | 10 .. 30 kHz |
+| BATTERY LIFE<sup>[2](#footnote2)</sup> | up to 12 hours |
+| MAX. RELATIVE VELOCITY | +/- 1.8 m/s  |
+| WORKING TEMPERATURE RANGE | -10 .. 50 °С |
+| MAX. ACOUSTIC RANGE<sup>[3](#footnote3)</sup> | 3000 m |
+| MAX. ALLOWED DISTANCE TO OTHER BUOYS OF THE SET<sup>[4](#footnote4),[5](#footnote5)</sup> | 1500 m |
+| MIN. ALLOWED DISTANCE TO OTHER BUOYS OF THE SET<sup>[5](#footnote5)</sup> | 30 m |
+| REFERENCE ELLIPSOID | WGS-84 |
+| BUILT-IN BATTERY TYPE | Lead-acid |
+| ACOUSTIC ANTENNA CABLE LENGTH | 1.5 m |
+| BUILT-IN RF UNIT TYPE | GFSK, 433 MHz |
+| MAX. BUILT-IN RF UNIT OUTPUT POWER | 100 mW |
+| MAX. RF RANGE<sup>[6](#footnote4)</sup> | 1000 m |
 
 ________________
-<a name="footnote1"><sup>1</sup></a> Без учета высоты радиоантенны (180 мм) и гидроакустической приемной антенны на кабеле, длиной 1.5 м.  
-<a name="footnote2"><sup>2</sup></a> На новым, полностью заряженном АКБ, при температуре окружающей среды 20°С.  
-<a name="footnote3"><sup>3</sup></a> Параметр, определяющий максимальную дальность, на которой возможен прием сигнала, исходя из 
-электроакустических параметров передатчика и приемника, пространственного убывания интенсивности звуковой энергии, затухания в среде 
-и уровня гидроакустических помех.  
-<a name="footnote4"><sup>4</sup></a> Буи располагаются на поверхности воды выпуклым многоугольником так, чтобы расстояние от каждого буя 
-до любого другого не превышало указанную величину.  
-<a name="footnote5"><sup>5</sup></a> Глубина погружения пингера не должна превышать размеры навигационной базы.  
-<a name="footnote6"><sup>6</sup></a> Достигается при отсутствие помех, на открытой местности.  
+<a name="footnote1"><sup>1</sup></a> Without taking into account the height of the radio antenna (180 mm) and the acoustic receiving antenna on a cable 1.5 m long.  
+<a name="footnote2"><sup>2</sup></a> With a new, fully charged battery, at an ambient temperature of 20 °C.  
+<a name="footnote3"><sup>3</sup></a> A parameter that determines the maximum range at which signal reception is possible, based on
+electroacoustic parameters of the transmitter and receiver, spatial decrease in the intensity of sound energy, attenuation in the environment
+and the level of hydroacoustic noise.  
+<a name="footnote4"><sup>4</sup></a>Buoys should be located on the surface of the water in a convex polygon so that the distance from each buoy
+to any other did not exceed the indicated value.  
+<a name="footnote5"><sup>5</sup></a> Pinger's immersion depth should not exceed the size of the navigation base.  
+<a name="footnote6"><sup>6</sup></a> Achieved in the absence of interference, in an open area.  
