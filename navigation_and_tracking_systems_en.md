@@ -26,11 +26,11 @@
 
 ### RWLT
 #### LBL Tracking system
-* [COMING SOON RWLT: Data brief](/documentation/RU/RWLT/RWLT_DataBrief_ru.md)
-* [COMING SOON RWLT: tracks, videos, tutorials, etc.](/documentation/RU/RWLT/media.md)
-* [COMING SOON Device specification: RWLT Pinger](/documentation/RU/RWLT/RWLT_Pinger_Specification_ru.md)
-* [COMING SOON Device specification: RWLT GIB](/documentation/RU/RWLT/RWLT_GIB_Specification_ru.md)
-* [COMING SOON Device specification: RWLT Radio dongle](/documentation/RU/RWLT/RWLT_RF_Dongle_Specification_ru.md)
+* [RWLT: Data brief](/documentation/EN/RWLT/RWLT_DataBrief_en.md)
+* [COMING SOON RWLT: tracks, videos, tutorials, etc.](/documentation/EN/RWLT/media.md)
+* [Device specification: RWLT Pinger](/documentation/EN/RWLT/RWLT_Pinger_Specification_en.md)
+* [Device specification: RWLT GIB](/documentation/EN/RWLT/RWLT_GIB_Specification_en.md)
+* [COMING SOON Device specification: RWLT Radio dongle](/documentation/EN/RWLT/RWLT_RF_Dongle_Specification_en.md)
 * [COMING SOON RWLT: User's manual]()
 * [Host Application RWLT Host (Repository)](https://github.com/ucnl/RWLT_Host)
 * [Host Application RWLT Host (Download release)](https://github.com/ucnl/RWLT_Host/releases/download/1.0/RWLT_Host.zip)
