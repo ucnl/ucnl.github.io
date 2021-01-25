@@ -10,30 +10,30 @@
 
 ## DESCRIPTION
 
-Navigational pinger beacon **WAYU Pinger** of the system **[WAYU](WAYU_DataBrief_en.md)** is placed on the positioned object: ROV, AUV, diver or other underwater object and emits a periodic navigation signal, which is received by four floating navigation buoys * * [WAYU GIB] (WAYU_GIB_Specification_ru.md) **, the geographic position of the pinger is determined from the navigation signal.
+Navigational pinger beacon **WAYU Pinger** of the system **[WAYU](WAYU_DataBrief_en.md)** is placed on the positioned object: ROV, AUV, diver or other underwater object and emits a periodic navigation signal, which is received by four floating navigation buoys **[WAYU GIB](WAYU_GIB_Specification_en.md)**, the geographic position of the pinger is determined from the navigation signal.
 The pinger does not require any pairing with the positioned object, it is enough to simply attach it to the object.
 
 <div style="page-break-after: always;"></div>
 
-## ТЕХНИЧЕСКИЕ ХАРАКТЕРИСТИКИ
+## TECHNICAL SPECIFICATIONS
 
-| ПАРАМЕТР | ЗНАЧЕНИЕ |
+| PARAMETER | VALUE |
 | :--- | :--- |
-| ГАБАРИТЫ (Ф х h) | 70 x 300 мм |
-| ВЕС (сухой) | X кг |
-| ЧАСТОТА АКУСТИЧЕСКОГО СИГНАЛА | 28400 ± 100 Гц |
-| ПЕРИОД ИЗЛУЧЕНИЯ АКУСТИЧЕСКОГО СИГНАЛА | 2 ± 0.1 секунды |
-| МАКСИМАЛЬНАЯ ДАЛЬНОСТЬ АКУСТИЧЕСКОЙ СВЯЗИ<sup>[1](#footnote1)</sup> | 300 м |
-| МАКСИМАЛЬНОЕ АКУСТИЧЕСКОЕ ДАВЛЕНИЕ | 163 дБ re 1 мкПа @ 1 м |
-| МАКСИМАЛЬНАЯ СКОРОСТЬ ОТНОСИТЕЛЬНО БУЕВ | ± 1 м/с  |
-| МАКСИМАЛЬНАЯ ГЛУБИНА ПОГРУЖЕНИЯ | 100 м |
-| ДИАПАЗОН РАБОЧИХ ТЕМПЕРАТУР | -10 .. 50 °С |
-| МАКСИМАЛЬНОЕ ВРЕМЯ<sup>[2](#footnote2)</sup> АВТОНОМНОЙ РАБОТЫ | до 8 часов |
-| ТИП ВСТРОЕННОГО ИСТОЧНИКА ПИТАНИЯ | Литий-ионный |
-| ЗАРЯДКА ВСТРОЕННОГО ИСТОЧНИКА ПИТАНИЯ | Комплектное шасси, от сетевого адаптера |
+| DIMENSIONS (Ф х h) | 70 x 300 mm |
+| WEIGHT (dry) | X kg |
+| SIGNAL FREQUENCY | 28400 ± 100 Hz |
+| TRANSMISSION PERIOD | 2 ± 0.1 seconds |
+| MAX. ACOUSTIC RANGE<sup>[1](#footnote1)</sup> | 300 m |
+| ACOUSTIC SOURCE LEVEL | 163 dB re 1 uPa @ 1 m |
+| MAX. RELATIVE VELOCITY | ± 1 m/s  |
+| DEPTH RATING | 100 m |
+| WORKING TEMPERATURE RANGE | -10 .. 50 °С |
+| BATTERY LIFE<sup>[2](#footnote2)</sup>| up to 8 hours |
+| BUILT-IN BATTERY TYPE | Li-Ion |
+| BUILT-IN BATTERY CHARGING | By a complete cradle, from the power adapter |
 
 ________________
-<a name="footnote1"><sup>1</sup></a> Параметр, определяющий максимальную дальность, на которой возможен прием сигнала, исходя из 
-электроакустических параметров передатчика и приемника, пространственного убывания интенсивности звуковой энергии, затухания в среде 
-и уровня гидроакустических помех.  
+<a name="footnote1"><sup>1</sup></a> A parameter that determines the maximum range at which signal reception is possible, based on
+electroacoustic parameters of the transmitter and receiver, spatial decrease in the intensity of sound energy, attenuation in the environment
+and the level of hydroacoustic noise.  
 <a name="footnote2"><sup>2</sup></a> На новом, полностью заряженном АКБ при температуре окружающей среды 20 °C
