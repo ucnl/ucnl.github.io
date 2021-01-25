@@ -1,28 +1,28 @@
 | ![logo](https://ucnl.github.io/documentation/sm_logo.png) | ![RWLT RF dongle]() |
 | :---: | ---: |
-| [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **RWLT RF dongle** - Приемник сигнала навигационных буев <br/> Спецификация устройства |
+| [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **RWLT RF dongle** - Navigation buoys receiver <br/> Device specification |
 
-## КЛЮЧЕВЫЕ ОСОБЕННОСТИ
+## KEY FEATURES
 
-* **Минимальные габариты и масса**
-* **Исполнение IP67**
-* **Магнитное основание для удобной фиксации**
+* **Minimum dimensions and weight**
+* **IP67**
+* **Magnetic base for easy fit**
 
-## ОПИСАНИЕ
+## DESCRIPTION
 
-Приемник навигационного сигнала буев системы **[RWLT](RWLT_DataBrief_ru.md)** предназначен для передачи данных с навигационных буев в пультовое приложение **[RWLT Host]()**. Приемник выполнен в брызгозащитном исполнении и меет встроенный неодимовый магнит для удобной фиксации на магнитных основаниях.
+The receiver of the navigation signal of the system buoys **[RWLT](RWLT_DataBrief_en.md)** is designed to transmit data from the navigation buoys to the ** [RWLT Host](https://github.com/ucnl/RWLT_Host)** application. The receiver has IP67 protection class and has a built-in neodymium magnet for easy fixation on magnetic bases.
 
 <div style="page-break-after: always;"></div>
 
-## ТЕХНИЧЕСКИЕ ХАРАКТЕРИСТИКИ
+## TECHNICAL SPECIFICATIONS 
 
-| ПАРАМЕТР | ЗНАЧЕНИЕ |
+| PARAMETER | VALUE |
 | :--- | :--- |
-| ГАБАРИТЫ (Ф х h) | XX x XXX мм |
-| ВЕС (сухой) | X кг |
-| ДИАПАЗОН РАБОЧИХ ТЕМПЕРАТУР | -10 .. 50 °С |
-| МАКСИМАЛЬНАЯ ДАЛЬНОСТЬ РАДИОСВЯЗИ<sup>[1](#footnote1)</sup> | 1000 м |
-| ПОДКЛЮЧЕНИЕ | К USB-порту ПК при помощи комплектного кабеля USB-B |
+| DIMENSTIONS (Ф х h) | XX x XXX mm |
+| WEIGHT (dry) | X kg |
+| WORKING TEMPERATURE RANGE | -10 .. 50 °С |
+| RF RANGE<sup>[1](#footnote1)</sup> | 1000 m |
+| CONNECTION | To a PC USB port using the supplied USB-B cable |
 
 ________________
-<a name="footnote1"><sup>1</sup></a> Достигается при отсутствие помех, на открытой местности.  
+<a name="footnote1"><sup>1</sup></a>Achieved in the absence of interference, in an open area.  
