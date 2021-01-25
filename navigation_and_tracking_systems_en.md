@@ -26,24 +26,26 @@
 
 ### RWLT
 #### LBL Tracking system
-* [COMING SOON RWLT: Databrief]()
-* [COMING SOON RWLT: media, tracks, videos, etc.]()
-* [COMING SOON Device specification: RWLT Pinger]()
-* [COMING SOON Device specification: RWLT GIB]()
-* [COMING SOON User's manual]()
-* [RWLT Host application (Repository)](https://github.com/ucnl/RWLT_Host)
-* [RWLT Host application (Download release)](https://github.com/ucnl/RWLT_Host/releases/download/1.0/RWLT_Host.zip)
+* [COMING SOON RWLT: Data brief](/documentation/RU/RWLT/RWLT_DataBrief_ru.md)
+* [COMING SOON RWLT: tracks, videos, tutorials, etc.](/documentation/RU/RWLT/media.md)
+* [COMING SOON Device specification: RWLT Pinger](/documentation/RU/RWLT/RWLT_Pinger_Specification_ru.md)
+* [COMING SOON Device specification: RWLT GIB](/documentation/RU/RWLT/RWLT_GIB_Specification_ru.md)
+* [COMING SOON Device specification: RWLT Radio dongle](/documentation/RU/RWLT/RWLT_RF_Dongle_Specification_ru.md)
+* [COMING SOON RWLT: User's manual]()
+* [Host Application RWLT Host (Repository)](https://github.com/ucnl/RWLT_Host)
+* [Host Application RWLT Host (Download release)](https://github.com/ucnl/RWLT_Host/releases/download/1.0/RWLT_Host.zip)
 
 ### WAYU
-#### Sensibly priced amateur LBL tracking system 
-* [COMING SOON WAYU: Databrief]()
-* [WAYU: media, tracks, videos, etc.](/documentation/EN/WAYU/media)
-* [COMING SOON Device specification: WAYU Pinger]()
-* [COMING SOON Device specification: WAYU GIB]()
-* [COMING SOON Device specification: WAYU Radio dongle]()
+#### Sencibly priced amateur LBL tracking system
+* [WAYU: Data brief](/documentation/EN/WAYU/WAYU_DataBrief_ru.md)
+* [WAYU: tracks, videos, tutorials, etc.](/documentation/EN/WAYU/media)
+* [Device specification: WAYU Pinger](/documentation/EN/WAYU/WAYU_Pinger_Specification_en.md)
+* [Device specification: WAYU GIB](/documentation/EN/WAYU/WAYU_GIB_Specification_en.md)
+* [COMING SOON Device specification: WAYU Radio dongle](/documentation/EN/WAYU/WAYU_RF_Dongle_Specification_en.md)
 * [COMING SOON User's manual]()
-* [COMING SOON WAYU Application (Repository)]()
-* [COMING SOON WAYU Application (Download release)]()
+* [Host Application WAYU (Repository)](https://github.com/ucnl/WAYU)
+* [Host Application WAYU (Download release)](https://github.com/ucnl/WAYU/releases/download/1.0/WAYU.zip)
+
 
 ### Zima
 #### Ultrashort baseline (USBL) system
