@@ -25,7 +25,7 @@ The device has a monoblock one-piece construction and is made of high-strength p
 | BATTERY LIFE<sup>[2](#footnote2)</sup> | 12 hours |
 | MAX.RELATIVE VELOCITY | +/- 2 m/s  |
 | WORKING TEMPERATURE RANGE | -10 .. 50 °С |
-| ACOUSTIC RANGE (ENEGRY)<sup>[3](#footnote3)</sup> | 300 m |
+| MAX. ACOUSTIC RANGE<sup>[3](#footnote3)</sup> | 300 m |
 | SIGNAL FREQUENCY | 28400 Hz |
 | REFERENCE ELLIPSOID | WGS-84 |
 | BUILT-IN BATTERY TYPE | Li-Ion |
