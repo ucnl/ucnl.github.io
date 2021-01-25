@@ -6,8 +6,8 @@
 
 ## General info
 **WAYU** stands for **W**here **A**re **Y**ou **U**nderwater.
-The **WAYU** system is a reliable and easy-to-use solution for the amateur segment. The user places a pinger beacon [WAYU Pinger](WAYU_Pinger_Specification_en.md) on the positioned object (TNLA, AUV, diver, etc.), and on the surface of the reservoir four small navigation buoys [WAYU GIB] (WAYU_GIB_Specification_ru.md).
-From this moment on, the absolute geographic position of the underwater object is displayed on the PC screen, where the specialized software [WAYU] () open source is installed. The position of an underwater object can be easily transferred from the [WAYU] () application via a serial port (physical or virtual) to any mapping software that supports work with conventional GPS receivers via the NMEA0183 protocol.
+The **WAYU** system is a reliable and easy-to-use solution for the amateur segment. The user places a pinger beacon [WAYU Pinger](WAYU_Pinger_Specification_en.md) on the positioned object (ROV, AUV, diver, etc.), and on the surface of the reservoir four small navigation buoys [WAYU GIB](WAYU_GIB_Specification_en.md).
+From this moment on, the absolute geographic position of the underwater object is displayed on the PC screen, where the specialized software [WAYU](https://github.com/ucnl/WAYU) open source is installed. The position of an underwater object can be easily transferred from the [WAYU](https://github.com/ucnl/WAYU) application via a serial port (physical or virtual) to any mapping software that supports work with conventional GPS receivers via the NMEA0183 protocol.
 Both the pinger and **WAYU** buoys turn on automatically when they enter the water, do not require any adjustments or calibrations other than charging the built-in power supplies.
 
 <div style="page-break-after: always;"></div>
