@@ -27,7 +27,7 @@
 ### RWLT
 #### LBL Tracking system
 * [RWLT: Data brief](/documentation/EN/RWLT/RWLT_DataBrief_en.md)
-* [COMING SOON RWLT: tracks, videos, tutorials, etc.](/documentation/EN/RWLT/media.md)
+* [RWLT: tracks, videos, tutorials, etc.](/documentation/EN/RWLT/media.md)
 * [Device specification: RWLT Pinger](/documentation/EN/RWLT/RWLT_Pinger_Specification_en.md)
 * [Device specification: RWLT GIB](/documentation/EN/RWLT/RWLT_GIB_Specification_en.md)
 * [COMING SOON Device specification: RWLT Radio dongle](/documentation/EN/RWLT/RWLT_RF_Dongle_Specification_en.md)
