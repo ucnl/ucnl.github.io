@@ -11,7 +11,7 @@
 
 ## DESCRIPTION
 
-Navigation buoy **RWLT GIB** of the system **[RWLT](RWLT_DataBrief_en.md)** as part of a set of four such devices forms a floating long navigation base, with the support of which positioning of the pinger **[RWLT Pinger](RWLT_Pinger_Specification_ru. md)** or underwater wireless telephone **[RedPhone] (https://docs.unavlab.com/documentation/EN/RedPhone/RedPhone_Specification_en.html)** is provided.  
+Navigation buoy **RWLT GIB** of the system **[RWLT](RWLT_DataBrief_en.md)** as part of a set of four such devices forms a floating long navigation base, with the support of which positioning of the pinger **[RWLT Pinger](RWLT_Pinger_Specification_ru. md)** or underwater wireless telephone **[RedPhone](https://docs.unavlab.com/documentation/EN/RedPhone/RedPhone_Specification_en.html)** is provided.  
 The device is made in the form of a plastic cylinder with dimensions Ф150х600 mm with a receiving hydroacoustic antenna on a cable.
 
 The device has positive buoyancy and a load-carrying eye for anchor attachment.
