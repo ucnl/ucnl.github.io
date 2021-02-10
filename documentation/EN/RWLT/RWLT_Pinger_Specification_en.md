@@ -4,7 +4,7 @@
 
 ## KEY FEATURES
 
-* **Does not require connection - just mechanical fixation on the positioned object**
+* **Does not require connection - just mechanical fixation on a ROV/AUV/diver/etc.**
 * **Maximum ease of use and maintenance**
 * **Automatic turn-on in water**
 * **Minimum dimensions and weight**
