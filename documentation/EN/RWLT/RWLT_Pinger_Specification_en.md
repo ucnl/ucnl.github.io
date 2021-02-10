@@ -20,9 +20,12 @@ The pinger does not require any pairing with the positioned object; it is enough
 
 | PARAMETER | VALUE |
 | :--- | :--- |
-| DIMENSIONS<sup>[1](#footnote1)</sup> (Ф х h) | 41 x 45 mm |
-| WEIGHT<sup>[1](#footnote1)</sup> (dry) | 0.16 кг |
-| FREQUENCY RANGE | 10 .. 30 kHz |
+| DIMENSIONS (W/O battery unit, Ф х h) | 41 x 45 mm |
+| BATTERY UNIT DIMENSIONS | Ф50 х 165 mm |
+| WEIGHT (dry, W/O battery unit) | 0.16 kg |
+| BATTERY UNIT WEIGHT (dry) | 0.75 kg |
+| BATTERY LIFE<sup>[1](#footnote1)</sup> | 10 h |
+| BANDWIDTH | 10 .. 30 kHz |
 | ACOUSTIC TRANSMISSION PERIOD | 2 seconds |
 | NAVIGATION SIGNAL DURATION | 0.2 seconds |
 | TELEMETRY | Depth, Temperature, Supply voltage |
@@ -31,9 +34,10 @@ The pinger does not require any pairing with the positioned object; it is enough
 | MAX. RELATIVE VELOCITY | ± 1.8 m/s  |
 | DEPTH RATING | 300 m |
 | WORKING TEMPERATURE RANGE | -10 .. 50 °С |
-| BATTERY LIFE<sup>[1](#footnote1)</sup> | до 8 часов |
+| CHARGING | By special cradle |
 
 ________________
-<a name="footnote1"><sup>1</sup></a> Excluding the weight of the battery pack. Standard battery pack ф50х165 mm, 0.58 kg, 2.9 Ah 12 V.
-Operating time from a standard battery pack in standby mode is up to 70 hours, with radiation 1 time in 2 seconds up to 8 hours on a fully charged new battery at an ambient temperature of 20 ° C.  
-<a name="footnote2"><sup>2</sup></a> A parameter that determines the maximum range at which a signal can be received, based on the electro-acoustic parameters of the transmitter and receiver, the spatial decrease in the intensity of sound energy, attenuation in the medium and the level of hydroacoustic noise. 
+<a name="footnote1"><sup>1</sup></a>  With a new, fully charged battery, at an ambient temperature of 20 °C.  
+<a name="footnote2"><sup>2</sup></a> A parameter that determines the maximum range at which signal reception is possible, based on
+electroacoustic parameters of the transmitter and receiver, spatial decrease in the intensity of sound energy, attenuation in the environment
+and the level of hydroacoustic noise.  
