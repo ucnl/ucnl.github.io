@@ -20,6 +20,7 @@
 * [UCNLPhysics](https://github.com/ucnl/UCNLPhysics) - a library for estimation of fundamental properties of seawater (C#/Rust/C/Matlab/GNU Octave/JavaScript)
 * [uMCPIno](https://github.com/AlekUnderwater/uMCPIno) - a lightweight communication protocol with guaranteed delivery (C#/C/Arduino)
 * [UCNLNMEA](https://github.com/ucnl/UCNLNMEA) - a library for parsing/building NMEA sentences
+* [uRayTracerDemo](https://github.com/ucnl/uRayTracerDemo) - Underwater sound propagation through layered medium
 
 ## Miscellaneous
 * [Additional info](misc_en.md)
