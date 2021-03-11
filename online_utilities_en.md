@@ -9,6 +9,7 @@
 * [Proper sound speed calculator ](/online_utils/proper_speed_of_sound_calculator.html)
 * [Seawater freezing point calculator](/online_utils/seawater_freezing_point_calculator.html)
 * [Online world ocean salinity database](/online_utils/world_salinity_db.html)
+* [Ray tracing in layered medium](/online_utils/uraytracer.html)
 
 ### Underwater acoustic communication
 * [Proper vertical sound path calculator](/online_utils/proper_vsound_distance_calculator.html)
