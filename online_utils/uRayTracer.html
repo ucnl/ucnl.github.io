@@ -1,0 +1,773 @@
+<head>
+<title>uRayTracer - Online underwater acoustic propagation simulator</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+<script src="https://ucnl.github.io/UCNLPhysics/JS/ucnlphysics.js" type="text/javascript"></script>
+<script type="text/javascript">
+
+const gPaddingTop = 5;
+const gPaddingBottom = 5;
+const gPaddingLeft = 5;
+const gPaddingRight = 5;
+const axisTickSize = 5;
+
+var alpha;
+var nr;
+var dZ;
+var Ztx;
+var Xmax;
+var Smax;
+var etaBottom;
+var etaSurface;
+
+var Zmax;
+var tsProfile = [];
+var tsProfileLat;
+var tsProfileLon;
+var tsProfileDescription;
+
+var tmax;
+var tmin;
+var smax;
+var smin;
+var vmax;
+var vmin;
+var zRange;
+var tRange;
+var sRange;
+var vRange;
+
+var vssp = [];
+var rays = [];
+var vssp_lookup = new Map();
+
+function TSProfilePoint(z, t, s)
+{
+  this.Z = z;
+  this.T = t;
+  this.S = s;
+}
+
+function VSSPPoint(z, v)
+{
+  this.Z = z;
+  this.V = v;
+}
+
+function RayPoint(x, z, e)
+{
+  this.X = x;
+  this.Z = z;
+  this.E = e;
+}
+
+function Ray(z, theta_deg)
+{
+  this.Z = z;
+  this.Theta = theta_deg * Math.PI / 180;
+
+  if ((this.Theta >= 0) && (this.Theta < 0.002))
+      this.Theta = 0.002;
+  else if ((this.Theta <= 0) && (this.Theta > -0.002))
+      this.Theta = -0.002;
+
+  this.prevThetaValid = this.Theta;
+  this.cPrev = getSoundSpeed(z);
+  this.Path = 0;
+  this.X = 0;
+  this.Points = [];
+  this.Points.push(new RayPoint(0, Ztx, 1.0));
+}
+
+function buildVSSP()
+{
+  var z1 = tsProfile[0].Z;
+  var t1 = tsProfile[0].T;
+  var s1 = tsProfile[0].S;
+  var rho0 = PHX_water_density_calc(t1, PHX_ATM_PRESSURE_MBAR, s1);
+  var p1 = PHX_pressure_by_depth_calc(z1, PHX_ATM_PRESSURE_MBAR, rho0, PHX_GRAVITY_ACC_MPS2);
+
+  var p_idx = 1;
+  var z2 = tsProfile[p_idx].Z;
+  var t2 = tsProfile[p_idx].T;
+  var s2 = tsProfile[p_idx].S;
+  var p2 = PHX_pressure_by_depth_calc(z2, PHX_ATM_PRESSURE_MBAR, rho0, PHX_GRAVITY_ACC_MPS2);
+
+  var t, p, s;
+  var z = 0;
+  var v = PHX_speed_of_sound_UNESCO_calc(t1, p1, s1);
+
+  vmin = Number.MAX_VALUE;
+  vmax = Number.MIN_VALUE;
+
+  vssp.length = 0;
+
+  while (z < Zmax)
+  {
+    if (z > z2)
+    {
+      p1 = p2;
+      t1 = t2;
+      s1 = s2;
+      z1 = z2;
+      p_idx = p_idx + 1;
+
+      z2 = tsProfile[p_idx].Z;
+      t2 = tsProfile[p_idx].T;
+      s2 = tsProfile[p_idx].S;
+      p2 = PHX_pressure_by_depth_calc(z2, PHX_ATM_PRESSURE_MBAR, rho0, PHX_GRAVITY_ACC_MPS2);
+    }
+
+    t = PHX_linterp(z1, t1, z2, t2, z);
+    p = PHX_linterp(z1, p1, z2, p2, z);
+    s = PHX_linterp(z1, s1, z2, s2, z);
+    v = PHX_speed_of_sound_UNESCO_calc(t, p, s);
+
+    if (v < vmin) { vmin = v; }
+    if (v > vmax) { vmax = v; }
+
+    vssp.push(new VSSPPoint(z, v));
+
+    z += 0.1;
+  }
+
+  vRange = Math.abs(vmax - vmin);
+}
+
+function getSoundSpeed(z_m)
+{
+    if (vssp_lookup.has(z_m))
+        return vssp_lookup.get(z_m);
+    else
+    {
+        var nearest_idx = 0;
+        var v = vssp[nearest_idx].V;
+        var delta_z = Math.abs(z_m - vssp[nearest_idx].Z);
+
+        for (var i = 1; i < vssp.length; i++)
+        {
+            if (Math.abs(z_m - vssp[i].Z) < delta_z)
+            {
+                nearest_idx = i;
+                delta_z = Math.abs(z_m - vssp[i].Z);
+            }
+        }
+
+        vssp_lookup.set(z_m, vssp[nearest_idx].V);
+        return vssp[nearest_idx].V;
+    }
+}
+
+function fitAxisStepByRange(range)
+{
+  var x = Math.pow(10.0, Math.floor(Math.log10(range)));
+  if (range / x >= 5)
+      return x;
+  else if (range / (x / 2.0) >= 5)
+      return x / 2.0;
+  else
+      return x / 5.0;
+}
+
+function redraw()
+{
+  var cnv = document.getElementById("canvas");
+  var ctx = cnv.getContext("2d");
+  ctx.clearRect(0, 0, cnv.width, cnv.height);
+
+  ctx.strokeStyle = "white";
+  ctx.fillStyle = "white";
+  ctx.font = "12px Consolas";
+
+  var maxZLblWidth = ctx.measureText("99999").width;
+  var maxZLblHeight = 10;
+  var zLblHeight2 = 3;
+  var zAxisTitle = "Z, m";
+  var zAxisTitleWidth = ctx.measureText(zAxisTitle).width;
+
+  tsWidth = cnv.width / 5;
+  gLeft = gPaddingLeft + maxZLblWidth + maxZLblHeight + axisTickSize;
+  gTop = gPaddingTop * 3 + maxZLblHeight + axisTickSize + maxZLblHeight;
+  gWidth = tsWidth - gLeft - gPaddingRight;
+  gHeight = cnv.height - gTop - gPaddingBottom - maxZLblHeight * 2 - axisTickSize;
+  gRight = gLeft + gWidth;
+  gBottom = gTop + gHeight;
+
+  tTop = gTop;
+  tBottom = gBottom;
+  tLeft = gRight + gPaddingLeft + maxZLblWidth + maxZLblHeight + axisTickSize;
+  tRight = cnv.width - gPaddingRight;
+  tWidth = tRight - tLeft;
+
+  var gTitleWidth = ctx.measureText(tsProfileDescription).width;
+  ctx.fillText(tsProfileDescription, gLeft + gWidth / 2 - gTitleWidth / 2, gPaddingTop + maxZLblHeight);
+
+  ctx.fillStyle = "lightgreen";
+  ctx.fillText("Vmin = " + vmin.toFixed(1) + " m/s", tLeft, gPaddingTop + maxZLblHeight);
+  ctx.fillText("Vmax = " + vmax.toFixed(1) + " m/s", tLeft, gPaddingTop * 2 + maxZLblHeight * 2);
+
+  ctx.fillStyle = "white";
+  var sWidth;
+  var str;
+  str = "Ray tracing";
+  sWidth = ctx.measureText(str).width;
+  ctx.fillText(str, tLeft + tWidth / 2 - sWidth / 2, gPaddingTop + maxZLblHeight);
+
+  str = "www.unavlab.com";
+  sWidth = ctx.measureText(str).width;
+  ctx.fillText(str, tRight - sWidth, gPaddingTop + maxZLblHeight);
+
+  var xLbl = "X, m";
+  var xLblWidth = ctx.measureText(xLbl).width;
+  ctx.fillText(xLbl, tRight - xLblWidth, tBottom + axisTickSize + gPaddingBottom + maxZLblHeight);
+
+  ctx.save();
+  ctx.translate(gPaddingLeft, gTop + gHeight / 2);
+  ctx.rotate(-Math.PI/2);
+  ctx.textAlign = "center";
+  ctx.fillText(zAxisTitle, maxZLblWidth, gPaddingLeft + maxZLblHeight);
+  ctx.fillText(zAxisTitle, maxZLblWidth, tLeft - axisTickSize - gPaddingLeft - maxZLblHeight);
+  ctx.restore();
+
+  ctx.beginPath();
+  ctx.moveTo(gLeft, gTop);
+  ctx.lineTo(gRight, gTop);
+  ctx.lineTo(gRight, gBottom);
+  ctx.lineTo(gLeft, gBottom);
+  ctx.lineTo(gLeft, gTop);
+  ctx.stroke();
+
+  ctx.beginPath();
+  ctx.moveTo(tLeft, tTop);
+  ctx.lineTo(tRight, tTop);
+  ctx.lineTo(tRight, tBottom);
+  ctx.lineTo(tLeft, tBottom);
+  ctx.lineTo(tLeft, tTop);
+  ctx.stroke();
+
+  var zscale = gHeight / zRange;
+  var tscale = gWidth / tRange;
+  var sscale = gWidth / sRange;
+  var vscale = gWidth / vRange;
+
+  var zstep = fitAxisStepByRange(zRange);
+
+  var z = 0;
+  var za;
+  while (z <= Zmax - zstep / 2)
+  {
+      za = gTop + z * zscale;
+      ctx.beginPath();
+      ctx.moveTo(gLeft, za);
+      ctx.lineTo(gLeft - axisTickSize, za);
+
+      var lbl = z.toFixed(0);
+      var lblWidth = ctx.measureText(lbl).width;
+      ctx.fillText(lbl, gLeft - axisTickSize - lblWidth - gPaddingLeft, za + zLblHeight2);
+      ctx.stroke();
+
+      ctx.beginPath();
+      ctx.moveTo(tLeft, za);
+      ctx.lineTo(tLeft - axisTickSize, za);
+      ctx.fillText(lbl, tLeft - axisTickSize - lblWidth - gPaddingLeft, za + zLblHeight2);
+      ctx.stroke();
+
+      z += zstep;
+  }
+
+  // T, S and V
+  ctx.beginPath();
+  ctx.moveTo(gLeft, gBottom);
+  ctx.lineTo(gLeft, gBottom + axisTickSize);
+  ctx.moveTo(gLeft, gTop);
+  ctx.lineTo(gLeft, gTop - axisTickSize);
+  ctx.moveTo(gRight, gBottom);
+  ctx.lineTo(gRight, gBottom + axisTickSize);
+  ctx.moveTo(gRight, gTop);
+  ctx.lineTo(gRight, gTop - axisTickSize);
+  ctx.stroke();
+
+  var tsvLbl = smin.toFixed(1);
+  var tsvLblWidth = ctx.measureText(tsvLbl).width;
+
+  ctx.fillStyle = "cyan";
+  ctx.fillText(tsvLbl, gLeft - tsvLblWidth / 2, gBottom + axisTickSize + gPaddingBottom + maxZLblHeight);
+  tsvLbl = smax.toFixed(1);
+  tsvLblWidth = ctx.measureText(tsvLbl).width;
+  ctx.fillText(tsvLbl, gRight - tsvLblWidth / 2, gBottom + axisTickSize + gPaddingBottom + maxZLblHeight);
+  tsvLbl = "S, PSU";
+  tsvLblWidth = ctx.measureText(tsvLbl).width;
+  ctx.fillText(tsvLbl, gRight - gWidth / 2 - tsvLblWidth / 2, gBottom + axisTickSize + gPaddingBottom + maxZLblHeight);
+  ctx.stroke();
+
+  ctx.fillStyle = "yellow";
+  tsvLbl = tmin.toFixed(1);
+  tsvLblWidth = ctx.measureText(tsvLbl).width;
+  ctx.fillText(tsvLbl, gLeft - tsvLblWidth / 2, gTop - axisTickSize - gPaddingTop);
+  tsvLbl = tmax.toFixed(1);
+  tsvLblWidth = ctx.measureText(tsvLbl).width;
+  ctx.fillText(tsvLbl, gRight - tsvLblWidth / 2, gTop - axisTickSize - gPaddingTop);
+  tsvLbl = "t, °";
+  tsvLblWidth = ctx.measureText(tsvLbl).width;
+  ctx.fillText(tsvLbl, gRight - gWidth / 2 - tsvLblWidth / 2, gTop - axisTickSize - gPaddingTop);
+  ctx.stroke();
+
+  var x;
+  var z;
+  ctx.strokeStyle = "yellow";
+  ctx.beginPath();
+  ctx.moveTo(gLeft + (tsProfile[0].T - tmin) * tscale, gTop + tsProfile[0].Z * zscale);
+  for (var i = 1; i < tsProfile.length; i++)
+  {
+    x = gLeft + (tsProfile[i].T - tmin) * tscale;
+    z = gTop + tsProfile[i].Z * zscale;
+    ctx.lineTo(x, z);
+  }
+  ctx.stroke();
+
+  ctx.strokeStyle = "cyan";
+  ctx.beginPath();
+  ctx.moveTo(gLeft + (tsProfile[0].S - smin) * sscale, gTop + tsProfile[0].Z * zscale);
+  for (var i = 1; i < tsProfile.length; i++)
+  {
+    x = gLeft + (tsProfile[i].S - smin) * sscale;
+    z = gTop + tsProfile[i].Z * zscale;
+    ctx.lineTo(x, z);
+  }
+  ctx.stroke();
+
+  ctx.strokeStyle = "lightgreen";
+  ctx.beginPath();
+  ctx.moveTo(gLeft + (vssp[0].V - vmin) * vscale, gTop + vssp[0].Z * zscale);
+  for (var i = 1; i < vssp.length; i++)
+  {
+    x = gLeft + (vssp[i].V - vmin) * vscale;
+    z = gTop + vssp[i].Z * zscale;
+    ctx.lineTo(x, z);
+  }
+  ctx.stroke();
+
+  if (rays && rays.length)
+  {
+    ctx.fillStyle = "white";
+    var xscale = tWidth / Xmax;
+    var xstep = fitAxisStepByRange(Xmax);
+    x = 0;
+    var xa;
+    while (x <= Xmax - xstep / 2)
+    {
+        xa = tLeft + x * xscale;
+        ctx.beginPath();
+        ctx.moveTo(xa, tBottom);
+        ctx.lineTo(xa, tBottom + axisTickSize);
+        ctx.stroke();
+
+        var lbl = x.toFixed(0);
+        var lblWidth = ctx.measureText(lbl).width;
+        ctx.fillText(lbl, xa - lblWidth / 2, tBottom + axisTickSize + gPaddingBottom + maxZLblHeight);
+
+        x += xstep;
+    }
+
+    for (var rayIdx = 0; rayIdx < rays.length; rayIdx++)
+    {
+      for (var rPointIdx = 0; rPointIdx < rays[rayIdx].Points.length; rPointIdx++)
+      {
+        //ctx.beginPath();
+        ctx.fillStyle = 'rgba(0, 255, 255, ' + rays[rayIdx].Points[rPointIdx].E + ')';
+        x = tLeft + rays[rayIdx].Points[rPointIdx].X * xscale;
+        z = tTop + rays[rayIdx].Points[rPointIdx].Z * zscale;
+        ctx.fillRect(x - 1, z - 1, 2, 2);
+      }
+    }
+    ctx.stroke();
+  }
+}
+
+function run()
+{
+  var runBtn = document.getElementById("run_btn");
+  runBtn.disabled = true;
+  var openProfileBtn = document.getElementById("tsProfile_input");
+  openProfileBtn.disabled = true;
+
+  rays = [];
+  redraw();
+
+  var dTheta_deg = alpha / nr;
+  var theta_deg = -alpha / 2;
+  for (var i = 0; i < nr; i++)
+  {
+      rays.push(new Ray(Ztx, theta_deg));
+      theta_deg += dTheta_deg;
+  }
+
+  var finished = false;
+  while (!finished)
+  {
+      finished = true;
+      for (var rayIdx = 0; rayIdx < rays.length; rayIdx++)
+      {
+          if ((rays[rayIdx].X < Xmax) && (rays[rayIdx].Path < Smax))
+          {
+              //
+              var z = rays[rayIdx].Points[rays[rayIdx].Points.length - 1].Z;
+              var x = rays[rayIdx].Points[rays[rayIdx].Points.length - 1].X;
+              var e = rays[rayIdx].Points[rays[rayIdx].Points.length - 1].E;
+
+              var theta_sign = rays[rayIdx].Theta > 0 ? 1 : -1;
+              z += (dZ * theta_sign);
+
+              if (z > Zmax)
+              {
+                  if (z >= Zmax)
+                  {
+                      rays[rayIdx].Theta = -rays[rayIdx].Theta;
+                      theta_sign = -theta_sign;
+                      z = Zmax * 2 - z;
+                      e *= etaBottom;
+                      // bottom reflection
+                  }
+              }
+              else
+              {
+                  if (z <= 0)
+                  {
+                      rays[rayIdx].Theta = -rays[rayIdx].Theta;
+                      theta_sign = -theta_sign;
+                      z = -z;
+                      e *= etaSurface;
+                      // surface reflection
+                  }
+              }
+
+              var rsn = dZ / Math.abs(Math.sin(rays[rayIdx].Theta));
+              var drn = Math.sqrt(rsn * rsn - dZ * dZ);
+              rays[rayIdx].Path += Math.abs(rsn);
+              x += drn;
+
+              c = getSoundSpeed(z);
+
+              var cosTheta = Math.cos(rays[rayIdx].Theta);
+              var recipSinTheta = 1.0 / Math.sin(rays[rayIdx].Theta);
+              var cncp = cosTheta * c / rays[rayIdx].cPrev;
+
+              if ((Math.abs(cncp) <= 1) && (isFinite(recipSinTheta)))
+              {
+                  rays[rayIdx].prevThetaValid = rays[rayIdx].Theta;
+                  rays[rayIdx].Theta = theta_sign * Math.acos(cncp);
+              }
+              else
+              {
+                  rays[rayIdx].Theta = -rays[rayIdx].prevThetaValid;
+              }
+
+              rays[rayIdx].cPrev = c;
+              rays[rayIdx].Points.push(new RayPoint(x, z, e));
+              //
+              finished = false;
+          }
+      }
+  }
+
+  redraw();
+  runBtn.disabled = false;
+  openProfileBtn.disabled = false;
+}
+
+function parseTSProfile(lines)
+{
+  var isVars = false;
+  var lat = 0;
+  var lon = 0;
+  var t = 0;
+  var s = 0;
+  var z = 0;
+  var lt = 0;
+  var ln = 0;
+  var description = "";
+
+  tmin = Number.MAX_VALUE;
+  tmax = Number.MIN_VALUE;
+  smin = Number.MAX_VALUE;
+  smax = Number.MIN_VALUE;
+
+  tsProfile.length = 0;
+
+  for (var i = 0; i < lines.length; i++)
+  {
+      if (!lines[i].startsWith("#-------"))
+      {
+          if (isVars)
+          {
+              var splits = lines[i].split(",");
+              z = parseFloat(splits[1]);
+              t = parseFloat(splits[4]);
+              s = parseFloat(splits[7]);
+
+              if (!isNaN(z) && !isNaN(t) && !isNaN(s))
+              {
+                tsProfile.push(new TSProfilePoint(z, t, s));
+
+                if (t < tmin) { tmin = t; }
+                if (t > tmax) { tmax = t; }
+                if (s < smin) { smin = s; }
+                if (s > smax) { smax = s; }
+              }
+          }
+          else
+          {
+              if (lines[i].startsWith("Prof-Flag"))
+                  isVars = true;
+              else
+              {
+                  var splits = lines[i].split(",");
+                  if (lines[i].startsWith("Latitude"))
+                  {
+                    lt = parseFloat(splits[2])
+                    if (!isNaN(lt))
+                       lat = lt;
+                  }
+                  else if (lines[i].startsWith("Longitude"))
+                  {
+                    ln = parseFloat(splits[2])
+                    if (!isNaN(ln))
+                       lon = ln;
+                  }
+                  else if (lines[i].startsWith("NODC Cruise ID"))
+                  {
+                      description = splits[2].trim();
+                  }
+              }
+          }
+      }
+  }
+
+  Zmax = tsProfile[tsProfile.length - 1].Z;
+  tsProfileLat = lat;
+  tsProfileLon = lon;
+  tsProfileDescription = description;
+
+  zRange = Zmax;
+  tRange = Math.abs(tmax - tmin);
+  sRange = Math.abs(smax - smin);
+
+  document.getElementById("Ztx_range").innerText = "0 .. " + Zmax.toFixed(0);
+  document.getElementById("Ztx_input").max = Zmax;
+  document.getElementById("tsProfileDescriptor").innerText = "Loaded profile: " +
+     tsProfileDescription + " (" + tsProfile.length + " points)\n" +
+     "Latitude: " + tsProfileLat.toFixed(6) + ", Longitude: " + tsProfileLon.toFixed(6) + "\n" +
+     "Profile depth: " + Zmax.toFixed(0) + " m\n";
+
+  onInput();
+  buildVSSP();
+  vssp_lookup.clear();
+  rays.length = 0;
+
+  var cnv = document.getElementById("canvas");
+  if (cnv.style.visibility != "visible")
+  {
+    cnv.style.visibility = "visible";
+    cnv.height = 700;
+  }
+
+  redraw();
+}
+
+function readSingleFile(evt)
+{
+    var f = evt.target.files[0];
+    if (f)
+    {
+      var r = new FileReader();
+      r.onload = function(e)
+      {
+	      var contents = e.target.result;
+        var lines = contents.split("\n");
+        parseTSProfile(lines);
+      }
+      r.readAsText(f);
+    }
+    else
+    {
+      alert("Failed to load file");
+    }
+}
+
+function getSigleFile(fname)
+{
+  var rawFile = new XMLHttpRequest();
+  rawFile.open("GET", fname, true);
+  rawFile.onreadystatechange = function()
+  {
+    if (rawFile.readyState === 4)
+    {
+       if (rawFile.status === 200 || rawFile.status == 0)
+       {
+          var allText = rawFile.responseText;
+          var lines = allText.split("\n");
+          parseTSProfile(lines);
+       }
+     }
+   }
+   rawFile.send(null);
+}
+
+function loadStdProfile1()
+{
+  getSigleFile("/online_utils/GR_553.csv");
+}
+
+function loadStdProfile2()
+{
+  getSigleFile("/online_utils/NA_35.csv");
+}
+
+function loadStdProfile3()
+{
+  getSigleFile("/online_utils/US_32437.csv");
+}
+
+function loadStdProfile4()
+{
+  getSigleFile("/online_utils/SU_7464.csv");
+}
+
+function onInput()
+{
+  var alpha_in = document.getElementById("alpha_input");
+  var nr_in = document.getElementById("nr_input");
+  var dZ_in = document.getElementById("dZ_input");
+  var Ztx_in = document.getElementById("Ztx_input");
+  var Xmax_in = document.getElementById("Xmax_input");
+  var Smax_in = document.getElementById("Smax_input");
+  var etaBottom_in = document.getElementById("etaBottom_input");
+  var etaSurface_in = document.getElementById("etaSurface_input");
+  var runBtn = document.getElementById("run_btn");
+
+  if ((alpha_in.validity.valid) && (!alpha_in.validity.valueMissing) &&
+      (nr_in.validity.valid) && (!nr_in.validity.valueMissing) &&
+      (dZ_in.validity.valid) && (!dZ_in.validity.valueMissing) &&
+      (Ztx_in.validity.valid) && (!Ztx_in.validity.valueMissing) &&
+      (Xmax_in.validity.valid) && (!Xmax_in.validity.valueMissing) &&
+      (Smax_in.validity.valid) && (!Smax_in.validity.valueMissing) &&
+      (etaBottom_in.validity.valid) && (!etaBottom_in.validity.valueMissing) &&
+      (etaSurface_in.validity.valid) && (!etaSurface_in.validity.valueMissing) &&
+      (tsProfile.length >= 2))
+  {
+    alpha = parseFloat(alpha_in.value);
+    nr = parseInt(nr_in.value);
+    dZ = parseFloat(dZ_in.value);
+    Ztx = parseFloat(Ztx_in.value);
+    Xmax = parseFloat(Xmax_in.value);
+    Smax = parseFloat(Smax_in.value);
+    etaBottom = parseFloat(etaBottom_in.value);
+    etaSurface = parseFloat(etaSurface_in.value);
+    runBtn.disabled = false;
+  }
+  else
+  {
+    runBtn.disabled = true;
+  }
+}
+
+</script>
+
+</head>
+
+<body>
+<h1>uRayTracer: underwater acoustic propagation simulator</h1>
+<hr>
+
+<h2>1. Parameters</h2>
+<table id="in_values_tbl">
+ <tr>
+   <th>Notation</th>
+   <th><b><i>&alpha;</i></b></th>
+   <th><b><i>n<sub>r</sub></i></b></th>
+   <th><b><i>&delta;<sub>Z</sub></i></b></th>
+   <th><b><i>Z<sub>TX</sub></i></b></th>
+   <th><b><i>X<sub>max</sub></i></b></th>
+   <th><b><i>S<sub>max</sub></i></b></th>
+   <th><b><i>&eta;<sub>bottom</sub></i></b></th>
+   <th><b><i>&eta;<sub>surface</sub></i></b></th>
+ </tr>
+ <tr>
+   <td>Value</td>
+   <td><input type="number" size="3" step="1" value="90" min="5" max="179" name="alpha" id="alpha_input" oninput="onInput()"></td>
+   <td><input type="number" size="3" step="1" value="64" min="4" max="256" name="nr" id="nr_input" oninput="onInput()"></td>
+   <td><input type="number" size="3" step="0.1" value="1" min="0.1" max="10" name="dZ" id="dZ_input" oninput="onInput()"></td>
+   <td><input type="number" size="4" step="1" value="2" min="0" max="1000" name="Ztx" id="Ztx_input" oninput="onInput()"></td>
+   <td><input type="number" size="6" step="1" value="1000" min="100" max="99999" name="Xmax" id="Xmax_input" oninput="onInput()"></td>
+   <td><input type="number" size="6" step="1" value="1000" min="100" max="99999" name="Smax" id="Smax_input" oninput="onInput()"></td>
+   <td><input type="number" size="4" step="0.01" value="0.3" min="0" max="1" name="etaBottom" id="etaBottom_input" oninput="onInput()"></td>
+   <td><input type="number" size="4" step="0.01" value="0.5" min="0" max="1" name="etaSurface" id="etaSurface_input" oninput="onInput()"></td>
+ </tr>
+ <tr>
+   <td>Units</td>
+   <td>°</td>
+   <td></td>
+   <td>m</td>
+   <td>m</td>
+   <td>m</td>
+   <td>m</td>
+   <td></td>
+   <td></td>
+ </tr>
+ <tr>
+   <td>Range</td>
+   <td>5 .. 179</td>
+   <td>4 .. 256</td>
+   <td>0.1 .. 10</td>
+   <td><p id="Ztx_range">0 .. 1000</p></td>
+   <td>100 .. 100000</td>
+   <td>100 .. 100000</td>
+   <td>0 .. 1</td>
+   <td>0 .. 1</td>
+ </tr>
+ <tr>
+   <td>Description</td>
+   <td>Beam angle</td>
+   <td>Rays number</td>
+   <td>Delta Z</td>
+   <td>TX depth</td>
+   <td>X axis max</td>
+   <td>Max path</td>
+   <td>Bottom absorbtion</td>
+   <td>Surface absorbtion</td>
+ </tr>
+</table>
+<br>
+
+<h3>TS-profile</h3>
+Select one of following TS-profiles:<br>
+<input type="button" id="std_profile_1" value="GR-553" onclick="loadStdProfile1()"/>
+<input type="button" id="std_profile_2" value="NA-35" onclick="loadStdProfile2()"/>
+<input type="button" id="std_profile_3" value="US-32437" onclick="loadStdProfile3()"/>
+<input type="button" id="std_profile_4" value="SU-7464" onclick="loadStdProfile4()"/>
+<br>
+<br>
+Or open a TS-profile in CSV <a href="#csvformatfootnote">format</a>: <input type="file" id="tsProfile_input"/>
+<br>
+<hr>
+<p id = "tsProfileDescriptor"/>
+<hr>
+
+<h2>2. Simulator</h2>
+
+<p><input type="button" id="run_btn" value="RUN SIMULATION" onclick="run()"/></p>
+
+<canvas id="canvas" width="1024" height="1"></canvas>
+<hr>
+
+
+<hr>
+(C) <a href="https://github.com/AlekUnderwater">Alek Dikarev</a>, 2021<br>
+For bug reports, suggestions and questions, please feel free to reach me<br>
+
+<script type="text/javascript">
+  document.getElementById('tsProfile_input').addEventListener('change', readSingleFile, false);
+  onInput();
+</script>
+
+</body>
+</html>
