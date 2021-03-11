@@ -20,3 +20,9 @@ th {
   background-color: black;
   color: white;
 }
+canvas {
+  border: 1px solid black;
+  background-color: black;
+  width: 100%;
+  visibility: hidden;
+}
