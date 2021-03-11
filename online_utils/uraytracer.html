@@ -224,8 +224,8 @@ function redraw()
   ctx.translate(gPaddingLeft, gTop + gHeight / 2);
   ctx.rotate(-Math.PI/2);
   ctx.textAlign = "center";
-  ctx.fillText(zAxisTitle, maxZLblWidth, gPaddingLeft + maxZLblHeight);
-  ctx.fillText(zAxisTitle, maxZLblWidth, tLeft - axisTickSize - gPaddingLeft - maxZLblHeight);
+  ctx.fillText(zAxisTitle, maxZLblWidth, gLeft - axisTickSize - gPaddingLeft - maxZLblWidth);
+  ctx.fillText(zAxisTitle, maxZLblWidth, tLeft - axisTickSize - gPaddingLeft - maxZLblWidth);
   ctx.restore();
 
   ctx.beginPath();
