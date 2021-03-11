@@ -632,6 +632,11 @@ function loadStdProfile4()
   getSigleFile("/online_utils/SU_7464.csv");
 }
 
+function loadStdProfile5()
+{
+  getSigleFile("/online_utils/CA_13414.csv");
+}
+
 function onInput()
 {
   var alpha_in = document.getElementById("alpha_input");
@@ -744,6 +749,7 @@ Select one of following TS-profiles:<br>
 <input type="button" id="std_profile_2" value="NA-35" onclick="loadStdProfile2()"/>
 <input type="button" id="std_profile_3" value="US-32437" onclick="loadStdProfile3()"/>
 <input type="button" id="std_profile_4" value="SU-7464" onclick="loadStdProfile4()"/>
+<input type="button" id="std_profile_5" value="CA-13414" onclick="loadStdProfile5()"/>
 <br>
 <br>
 Or open a TS-profile in CSV <a href="#csvformatfootnote">format</a>: <input type="file" id="tsProfile_input"/>
