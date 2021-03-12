@@ -1,7 +1,3 @@
----
-layout: default
----
-
 | ![logo](https://ucnl.github.io/documentation/sm_logo.png) |
 | :---: |
 | [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) |
