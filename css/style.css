@@ -13,9 +13,6 @@ th, td {
 tr:nth-child(even) {
   background-color: #eee;
 }
-tr:nth-child(odd) {
- background-color: #fff;
-}
 canvas {
   border: 1px solid black;
   width: 100%;
