@@ -16,10 +16,6 @@ tr:nth-child(even) {
 tr:nth-child(odd) {
  background-color: #fff;
 }
-th {
-  background-color: black;
-  color: white;
-}
 canvas {
   border: 1px solid black;
   width: 100%;
