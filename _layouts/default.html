@@ -1,2 +1,16 @@
-{% include yandex_metrika.html %}
-{{ content }}
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>{{ page.title }}</title>
+    {% include yandex_metrika.html %}
+  </head>
+  <body>    
+    <h1>{{ page.title }}</h1>
+    <section>
+      {{ content }}
+    </section>    
+  </body>
+</html>
+
