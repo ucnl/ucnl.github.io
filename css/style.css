@@ -13,8 +13,3 @@ th, td {
 tr:nth-child(even) {
   background-color: #eee;
 }
-canvas {
-  border: 1px solid black;
-  width: 100%;
-  visibility: hidden;
-}
