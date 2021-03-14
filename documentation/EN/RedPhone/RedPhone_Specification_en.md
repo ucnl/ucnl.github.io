@@ -11,7 +11,7 @@
 * **Battery life up to 100 hours in receiving mode**
 * **Automatic poweron in water**
 * **Built-in voice activity detector**
-* **Durable plastic case**
+* **Durable plastic enclosure**
 
 ## DESCRIPTION
 
