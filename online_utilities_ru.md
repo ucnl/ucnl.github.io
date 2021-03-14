@@ -9,10 +9,11 @@
 * [Толковый калькулятор скорости звука в воде](/online_utils/proper_speed_of_sound_calculator.html)
 * [Калькулятор точки замерзания морской воды](/online_utils/seawater_freezing_point_calculator.html)
 * [Online база данных солености мирового океана](/online_utils/world_salinity_db.html)
-* [Трассировка лучей в слоистой среде по профилю TS](/online_utils/uraytracer.html)
+
 
 ### Гидроакустическая связь
 * [Толковый калькулятор вертикального пути звука по слоистой среде](/online_utils/proper_vsound_distance_calculator.html)
+* [Трассировка лучей в слоистой среде по профилю TS](/online_utils/uraytracer.html)
 * [Простая оценка дальности связи по чувствительности передатчика и затуханию](/online_utils/simple_prop_distance_estimation.html)
 
 ### Online утилиты для протокола NMEA0183
