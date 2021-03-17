@@ -29,6 +29,7 @@ Diver's underwater wireless telephone communication unit **RedPhone-D** provides
 | MAX. DEPTH | 70 m |
 | MAX. OPERATING RANGE<sup>[2](#footnote2)</sup> | 1000 m |
 | ACOUSTIC SOURCE LEVEL | 150 dB re 1 uPa @ 1 m |
+| VOICE BANDWIDTH | 300 .. 4300 Hz |
 | NUMBER OF SUPPORTED CHANNELS | 8 |
 | BATTERY LIFE (RX MODE)<sup>[5](#footnote5)</sup> | up to 100 hours |
 | BATTERY LIFE (TX MODE)<sup>[5](#footnote5)</sup> | up to 2 hours |
