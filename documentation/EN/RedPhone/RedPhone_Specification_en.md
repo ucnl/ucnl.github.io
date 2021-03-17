@@ -29,11 +29,11 @@ Diver's underwater wireless telephone communication unit **RedPhone-D** provides
 | MAX. DEPTH | 70 m |
 | MAX. OPERATING RANGE<sup>[2](#footnote2)</sup> | 1000 m |
 | ACOUSTIC SOURCE LEVEL | 150 dB re 1 uPa @ 1 m |
-| VOICE BANDWIDTH | 300 .. 4300 Hz |
+| VOICE BANDWIDTH<sup>[5](#footnote5)</sup> | 300 .. 4300 Hz |
 | NUMBER OF SUPPORTED CHANNELS | 8 |
-| BATTERY LIFE (RX MODE)<sup>[5](#footnote5)</sup> | up to 100 hours |
-| BATTERY LIFE (TX MODE)<sup>[5](#footnote5)</sup> | up to 2 hours |
-| BATTERY LIFE (MIXED MODE)<sup>[5](#footnote5), [6](#footnote6)</sup> | up to 8 hours |
+| BATTERY LIFE (RX MODE)<sup>[6](#footnote6)</sup> | up to 100 hours |
+| BATTERY LIFE (TX MODE)<sup>[6](#footnote6)</sup> | up to 2 hours |
+| BATTERY LIFE (MIXED MODE)<sup>[6](#footnote6), [7](#footnote7)</sup> | up to 8 hours |
 | WORKING TEMPERATURE RANGE | 0 .. 50° С |
 | BATTERIES | 3 x 18650 Li-Ion |
 | CHANNEL SWITCHING | DIP-switch in the battery compartment |
@@ -61,6 +61,7 @@ ________________
 <a name="footnote2"><sup>2</sup></a> A parameter that determines the maximum range at which a signal can be received based on the electro-acoustic parameters of the transmitter and receiver, spatial decrease in the intensity of sound energy, attenuation in the medium and level of acoustic noise.  
 <a name="footnote3"><sup>3</sup></a> Including transducer.  
 <a name="footnote4"><sup>4</sup></a> With a battery, a PTT and a mask connector, deepending on the specific connector, the value may differ by the weight of the connector.  
-<a name="footnote5"><sup>5</sup></a> With new, fully charged batteries with a capacity of 3000 mA\*h or more, at an ambient temperature of 20 °C.  
-<a name="footnote6"><sup>6</sup></a> While transmitting 10 minutes per hour.  
+<a name="footnote5"><sup>5</sup></a> The actual audible frequency range depends on the headset used.  
+<a name="footnote6"><sup>6</sup></a> With new, fully charged batteries with a capacity of 3000 mA\*h or more, at an ambient temperature of 20 °C.  
+<a name="footnote7"><sup>7</sup></a> While transmitting 10 minutes per hour.  
 
