@@ -27,12 +27,12 @@ The RedPhone-OS Wireless underwater telephone provides voice transmission betwee
 | ACOUSIC SOURCE LEVEL | 160 dB re 1 μPa @ 1 m |
 | TRANSDUCER'S CABLE LENGTH<sup>[2](#footnote2)</sup> | 7 m |
 | NUMBER OF SUPPORTED CHANNELS | 8 |
-| VOICE BANDWIDTH | 300 .. 4300 Hz |
+| VOICE BANDWIDTH<sup>[3](#footnote3)</sup> | 300 .. 4300 Hz |
 | BATTERY LIFE (RX MODE) | up to 8 hours |
 | WORKING TEMPERATURE RANGE | -10 .. 50 °С |
 | MICROPHONE | Handhelh with PTT |
 | EXTERNAL HEADPHONES RESISTANCE (not less) | 8 Ohm |
-| PROTECTION CLASS | IP67<sup>[3](#footnote3)</sup> |
+| PROTECTION CLASS | IP67<sup>[4](#footnote4)</sup> |
 
 ## CHANNELS & FREQUENCY BANDS
 
@@ -54,4 +54,5 @@ The RedPhone-OS Wireless underwater telephone provides voice transmission betwee
 ________________
 <a name="footnote1"><sup>1</sup></a> A parameter that determines the maximum range at which a signal can be received, based on electro-acoustic parameters of the transmitter and receiver, spatial decrease in the intensity of sound energy, attenuation in the medium and the acoustic noise level.  
 <a name="footnote2"><sup>2</sup></a> By agreement, delivery with increased cable length is possible.  
-<a name="footnote3"><sup>3</sup></a> With top cover closed
+<a name="footnote3"><sup>3</sup></a> The actual audible frequency range depends on the headset used.  
+<a name="footnote4"><sup>4</sup></a> With top cover closed
