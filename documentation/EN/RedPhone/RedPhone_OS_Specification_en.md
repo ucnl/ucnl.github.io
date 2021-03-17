@@ -30,7 +30,7 @@ The RedPhone-OS Wireless underwater telephone provides voice transmission betwee
 | VOICE BANDWIDTH<sup>[3](#footnote3)</sup> | 300 .. 4300 Hz |
 | BATTERY LIFE (RX MODE) | up to 8 hours |
 | WORKING TEMPERATURE RANGE | -10 .. 50 °С |
-| MICROPHONE | Handhelh with PTT |
+| MICROPHONE | Handheld, with PTT |
 | EXTERNAL HEADPHONES RESISTANCE (not less) | 8 Ohm |
 | PROTECTION CLASS | IP67<sup>[4](#footnote4)</sup> |
 
