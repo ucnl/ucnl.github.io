@@ -8,8 +8,8 @@
 #### underwater acoustic modem
 <!--* [Data brief: uWAVE devices family](/documentation/EN/uWAVE/uWAVE_Family_en.md)-->
 * [Device specification: uWAVE](/documentation/EN/uWAVE/uWAVE_Specification_en.md)
-<!--* [Device specification: uWAVE USBL Modem](/documentation/EN/uWAVE/uWAVE_USBL_Modem_Specification_en.md)
-* [Device specification: uWAVE Max](/documentation/EN/uWAVE/uWAVE_Max_Specification_en.md)-->
+<!--* [Device specification: uWAVE USBL Modem](/documentation/EN/uWAVE/uWAVE_USBL_Modem_Specification_en.md)-->
+<!--* [Device specification: uWAVE Max](/documentation/EN/uWAVE/uWAVE_Max_Specification_en.md)-->
 * [Communication protocol specification: uWAVE](documentation/EN/uWAVE/uWAVE_Protocol_Specification_en.md)
 * [Device wiring diagram: uWAVE](/documentation/EN/uWAVE/uWAVE_wiring_diagram_en.md)
 * [Demo host application (Repository)](https://github.com/ucnl/uWAVE_Host)
