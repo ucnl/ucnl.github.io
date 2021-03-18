@@ -33,7 +33,7 @@ Diver's underwater wireless telephone communication unit **RedPhone-D** provides
 | NUMBER OF SUPPORTED CHANNELS | 8 |
 | BATTERY LIFE (RX MODE)<sup>[6](#footnote6)</sup> | up to 80 hours |
 | BATTERY LIFE (MIXED MODE)<sup>[6](#footnote6), [7](#footnote7)</sup> | up to 2 hours |
-| BATTERY LIFE (MIXED MODE)<sup>[6](#footnote6), [8](#footnote7)</sup> | up to 2.5 hours |
+| BATTERY LIFE (MIXED MODE)<sup>[6](#footnote6), [8](#footnote8)</sup> | up to 2.5 hours |
 | WORKING TEMPERATURE RANGE | 0 .. 50° С |
 | BATTERIES | 3 x 18650 Li-Ion |
 | CHANNEL SWITCHING | DIP-switch in the battery compartment |
@@ -64,5 +64,5 @@ ________________
 <a name="footnote5"><sup>5</sup></a> The actual audible frequency range depends on the headset used.  
 <a name="footnote6"><sup>6</sup></a> With new, fully charged batteries with a capacity of 3000 mA\*h or more, at an ambient temperature of 20 °C.  
 <a name="footnote7"><sup>7</sup></a> While transmitting 2 minutes per 10 minutes.  
-<a name="footnote7"><sup>7</sup></a> While transmitting 5 minutes per 10 minutes. 
+<a name="footnote8"><sup>8</sup></a> While transmitting 5 minutes per 10 minutes. 
 
