@@ -30,7 +30,8 @@ It has positive buoyancy, has a load-carrying eye for anchoring.
 | BANDWIDTH | 10 .. 30 kHz |
 | BATTERY LIFE | 24 hours |
 | ACOUSTIC RANGE (ENEGRY)<sup>[1](#footnote1)</sup> | 3000 m |
-| ACOUSIC SOURCE LEVEL | 170 dB re 1 μPa @ 1 m |
+| ACOUSTIC SOURCE LEVEL (IN BAND) | 170 dB re 1 μPa @ 1 m |
+| ACOUSTIC SOURCE LEVEL (IN 1 Hz BAND) | 88 dB re 1 μPa @ 1 m |
 | MAX. ALLOWED DISTANCE TO OTHER BUOYS FROM THE SET<sup>[2](#footnote2),[3](#footnote3)</sup> | 700 m |
 | MIN. ALLOWED DISTANCE TO OTHER BUOYS FROM THE SET<sup>[3](#footnote3)</sup> | 30 m |
 | MAX. RELATIVE VELOCITY | +/- 1.8 m/s  |
