@@ -1,4 +1,4 @@
-| ![logo](https://ucnl.github.io/documentation/sm_logo.png) | ![logo](https://ucnl.github.io/documentation/RWLT_Pinger.png) |
+| ![logo](/documentation/sm_logo.png) | ![pic](/documentation/RWLT_Pinger.png) |
 | :---: | ---: |
 | [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **RWLT Pinger** - Pinger beacon <br/> Device specification |
 
