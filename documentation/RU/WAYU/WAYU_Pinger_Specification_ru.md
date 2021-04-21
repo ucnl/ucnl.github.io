@@ -1,4 +1,4 @@
-| ![logo](https://ucnl.github.io/documentation/sm_logo.png) | ![WAYU Pinger]() |
+| ![logo](/documentation/sm_logo.png) | ![WAYU Pinger]() |
 | :---: | ---: |
 | [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **WAYU Pinger** - Навигационный маяк - пингер <br/> Спецификация устройства |
 
