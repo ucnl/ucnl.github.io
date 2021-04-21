@@ -1,4 +1,4 @@
-| ![logo](https://ucnl.github.io/documentation/sm_logo.png) | ![WAYU GIB]() |
+| ![logo](/documentation/sm_logo.png) | ![WAYU GIB]() |
 | :---: | ---: |
 | [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **WAYU GIB** - Navigation buoy <br/> Device specification |
 
