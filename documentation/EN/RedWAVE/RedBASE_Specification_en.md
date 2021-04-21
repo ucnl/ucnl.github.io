@@ -1,4 +1,4 @@
-| ![logo](https://ucnl.github.io/documentation/sm_logo.png) | ![logo](https://ucnl.github.io/documentation/def_redbase_yellow.png) |
+| ![logo](/documentation/sm_logo.png) | ![logo](/documentation/def_redbase_yellow.png) |
 | :---: | ---: |
 | [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **RedBASE** - GNSS-equipped sonobuoy <br/> Device specification |
 
