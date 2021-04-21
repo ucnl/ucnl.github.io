@@ -1,4 +1,4 @@
-| ![logo](https://ucnl.github.io/documentation/sm_logo.png) |  |
+| ![logo](/documentation/sm_logo.png) |  |
 | :---: | ---: |
 | [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **Zima USBL**<br/> Data brief |
 
@@ -15,9 +15,9 @@ antenna [Zima-B](Zima_B_Specification_en.md).
 
 |  |  |
 | :---: | :--- |
-| ![Zima-B](https://ucnl.github.io/documentation/def_zima_b_ant.png) | [Zima-B](Zima_B_Specification_en.md) <br/> Base station |
-| ![Zima-R](https://ucnl.github.io/documentation/zima_r.png) | [Zima-R](Zima_R_Specification_en.md) <br/> Responder-beacons (One base station supports up to 23 responder-beacons) |
-| ![Bat&Link Box](https://ucnl.github.io/documentation/batnlinkbox.png) | [Bat&Link Box](Bat_n_link_box_Specification_en.md) <br/> Autonomous power supply and interfacing unit |
+| ![Zima-B](/documentation/def_zima_b_ant.png) | [Zima-B](Zima_B_Specification_en.md) <br/> Base station |
+| ![Zima-R](/documentation/zima_r.png) | [Zima-R](Zima_R_Specification_en.md) <br/> Responder-beacons (One base station supports up to 23 responder-beacons) |
+| ![Bat&Link Box](/documentation/batnlinkbox.png) | [Bat&Link Box](Bat_n_link_box_Specification_en.md) <br/> Autonomous power supply and interfacing unit |
 
 <div style="page-break-after: always;"></div>
 
@@ -41,7 +41,7 @@ In this case, the system determines the absolute geographical coordinates of und
 
 <div style="page-break-after: always;"></div>
 
-| ![Zima-B placement](https://ucnl.github.io/documentation/zima_boat_placement.png) |
+| ![Zima-B placement](/documentation/zima_boat_placement.png) |
 | :---: |
 | [Zima-B](Zima_B_Specification_en.md) Installation scheme <br/> _1 - rod, 2 - boat, 3 - water surface, 4 - cable, 5 - antenna [Zima-B](Zima_B_Specification_en.md), 6 - antenna's direction_ |
 
@@ -70,7 +70,7 @@ To determine **the absolute location** of the responder-beacons, the antenna is 
 Also, an external GNSS system and a magnetic compass working under the **NMEA0183** protocol (messages **RMC** and **HDG**) are connected,
 or external **GNSS** - a system with a compass function operating on the **NMEA0183** protocol (messages **RMC** and **HDT**).
 
-| ![Zima-B absolut scheme](https://ucnl.github.io/documentation/zima_abs_scheme.png) |
+| ![Zima-B absolut scheme](/documentation/zima_abs_scheme.png) |
 | :---: |
 | _Connection scheme for absolute coordinates_ |
 
@@ -92,7 +92,7 @@ to work with such relative positions of the antenna and the responder-beacon whe
 **30°** to **45°** due to a decrease in the accuracy of determining the angle of arrival of the signal. Operation at vertical angles to the 
 responder-beacons above 45° is highly not recommended.
 
-| ![Zima-B angular zones](https://ucnl.github.io/documentation/zima_dir.png) |
+| ![Zima-B angular zones](/documentation/zima_dir.png) |
 | :---: |
 | Geometric limitations [Zima-B](Zima_B_Specification_ru.md) <br/> _1 - working zone (+/- 30°), 2 - low accuracy zone (30 .. 45°), 3 - shadow zone ( > 45°), 4 - direction-finding antenna. The deviation is indicated from the horizontal plane passing through the centre of the antenna phased array_ |
 
