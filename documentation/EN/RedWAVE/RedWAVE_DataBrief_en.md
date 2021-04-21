@@ -71,5 +71,5 @@ _________
 | [RedBASE - GNSS-equipped sonobuoy: Device specification](RedBASE_Specification_en.md) |
 | [RedNAV - Diver's navigation receiver: Device specification](RedNAV_Specification_en.md) |
 | [RedNODE - navigation receiver: Device specification](RedNODE_Specification_en.md) |
-| [RedWAVE - RedNODE interfacing protocol description](RedWAVE_Protocol_Specification_en.html) |
+| [RedWAVE - RedNODE interfacing protocol description](RedWAVE_Protocol_Specification_en.md) |
 | [RedWAVE - User's manual](RedWAVE_Users_Manual_en.md) |
