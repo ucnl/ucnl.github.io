@@ -1,4 +1,4 @@
-| ![logo](https://ucnl.github.io/documentation/sm_logo.png) | ![Bat&Link Box](https://ucnl.github.io/documentation/batnlinkbox.png) |
+| ![logo](/documentation/sm_logo.png) | ![Bat&Link Box](/documentation/batnlinkbox.png) |
 | :---: | ---: |
 | [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **Bat & Link Box** - источник питания и преобразователь интерфейса <br/> Руководство пользователя |
 
@@ -28,7 +28,7 @@
 ## 2. Внешний вид и ограны управления
 Внешний вид лицевой панели усройства показан на **рисунке 1**. В центре панели располагаются разъемы для подключения устройств, поддерживающий связь по интерфейсу RS-422/485 и разъемы USB-B. Разъемы объединены в группы **1** и **8**<sup>[1](#footnote21)</sup>. Внешние устройства подключаются к разъемам **X1** и **X3**, через эти разъемы обеспечивается питание подключаемых внешних устройств. Разъемы USB-B **X2** и **X4** предназначены для подключения к USB порту ПК.
 
-| ![Bat&Link Box panel](https://ucnl.github.io/documentation/batnlinkbox_panel.png) |
+| ![Bat&Link Box panel](/documentation/batnlinkbox_panel.png) |
 | :---: |
 | **Рисунок 1 - Внешний вид лицевой панели устройства** | 
 | _1 - линия 1, 2 - разъем подключения зарядного устройства, 3 - индикатор, 4 - тумблер питания, 5 - предохранитель линии аккумулятора<sup>[2](#footnote22)</sup>, 6 - предохранитель линии внешнего питания<sup>[2](#footnote22)</sup>, 7 - разъем подключения внешнего источника питания<sup>[2](#footnote22)</sup>, 8 - линия 2_ |
