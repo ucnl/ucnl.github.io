@@ -1,4 +1,4 @@
-| ![logo](https://ucnl.github.io/documentation/sm_logo.png) |  |
+| ![logo](/documentation/sm_logo.png) |  |
 | :---: | ---: |
 | [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **RedWAVE** - гидроакустическая навигационная система <br/> Руководство пользователя |
 
@@ -76,7 +76,7 @@
 
 | |
 | :---: |
-| ![RedBASE general view](https://ucnl.github.io/documentation/def_redbase_yellow.png)|
+| ![RedBASE general view](/documentation/def_redbase_yellow.png)|
 | **Рисунок 1 - гидроакустический навигационный буй [RedBASE](RedBASE_Specification_ru.md)** |
 
 Буи размещаются в акватории на поверхности воды, их положение фиксируется при помощи якорей. 
@@ -88,7 +88,7 @@
 
 | |
 | :---: |
-| ![RedBASE deployment scheme](https://ucnl.github.io/documentation/def_redbase_dep_scheme.png)|
+| ![RedBASE deployment scheme](/documentation/def_redbase_dep_scheme.png)|
 | **Рисунок 2 - Рекомендуемая схема установки буя [RedBASE](RedBASE_Specification_ru.md)** |
 | _1 - гидроакустический навигационный буй [RedBASE](RedBASE_Specification_ru.md), 2 - дополнительный груз<sup>[2](#footnote2)</sup>, 3 - поплавок, 4 - якорная веревка, 5 - якорь_ |
 
@@ -101,7 +101,7 @@ __________
 
 | |
 | :---: |
-| ![RedBASE deployment scheme](https://ucnl.github.io/documentation/def_redbase_cover_scheme.png)|
+| ![RedBASE deployment scheme](/documentation/def_redbase_cover_scheme.png)|
 | **Рисунок 3 - Расположение органов управления и индикации на крышке буя [RedBASE](RedBASE_Specification_ru.md)** |
 | _1 - тумблер питания, 2 - лампы световой индикации, 3 - разъем зарядки_ |
 
@@ -179,7 +179,7 @@ __________
 
 | |
 | :---: |
-| ![RedNAV general view](https://ucnl.github.io/documentation/def_rednav_yellow.png)|
+| ![RedNAV general view](/documentation/def_rednav_yellow.png)|
 | **Рисунок 4 - Водолазный навигационный приемник [RedNAV](RedNAV_Specification_ru.md)** |
 | _Общий вид_ |
 
@@ -212,7 +212,7 @@ __________
 
 | |
 | :---: |
-| ![RedNAV after start](https://ucnl.github.io/documentation/rednav_scr1.png) |
+| ![RedNAV after start](/documentation/rednav_scr1.png) |
 | **Рисунок 5 - Главный экран устройства в навигационном режиме** |
 | _Сразу после включения/нет приема сигнала от буев_ |
 | _1 - Функция левой кнопки (переключение целей), 2 - статусы буев, 3 - азимут и дистанция до цели, 4 - функция правой кнопки (отметить текущее положение), 5 - температура воды, 6 - глубина (расстояние до поверхности), 7 - заряд встроенного аккумулятора_ |
@@ -223,7 +223,7 @@ __________
 
 | |
 | :---: |
-| ![RedNAV after start](https://ucnl.github.io/documentation/rednav_scr2.png) |
+| ![RedNAV after start](/documentation/rednav_scr2.png) |
 | **Рисунок 6 - Главный экран устройства в процессе работы** |
 | _Принят сигнал от буя №1. Собственное местоположение не определено_ |
 
@@ -231,7 +231,7 @@ __________
 
 | |
 | :---: |
-| ![RedNAV](https://ucnl.github.io/documentation/rednav_scr3.png) |
+| ![RedNAV](/documentation/rednav_scr3.png) |
 | **Рисунок 7 - Главный экран устройства в процессе работы** |
 | _Местоположение определено. В качестве навигационной цели выбран Буй №1_ |
 
@@ -245,14 +245,14 @@ __________
 
 | |
 | :---: |
-| ![RedNAV](https://ucnl.github.io/documentation/rednav_scr3a.png) |
+| ![RedNAV](/documentation/rednav_scr3a.png) |
 | **Рисунок 8 - Сообщение, подтверждающее сохранение текущего местоположения** |
 
 Загруженные и путевые точки нумеруются, и при выборе их в качестве целей при помощи кнопки **>**, отображаются как на **рисунке 9**.
 
 | |
 | :---: |
-| ![RedNAV](https://ucnl.github.io/documentation/rednav_scr4.png) |
+| ![RedNAV](/documentation/rednav_scr4.png) |
 | **Рисунок 9 - Главный экран устройства в процессе работы** |
 | _В качестве навигационной цели выбрана 1-ая путевая/сохраненная точка_ |
 
@@ -260,7 +260,7 @@ __________
 
 | |
 | :---: |
-| ![RedNAV](https://ucnl.github.io/documentation/rednav_scr5.png) |
+| ![RedNAV](/documentation/rednav_scr5.png) |
 | **Рисунок 10 - Запрос на выключение устройства** |
 
 ##### 2.3.2.2. Сервисный режим
@@ -270,13 +270,13 @@ __________
 
 | |
 | :---: |
-| ![RedNAV](https://ucnl.github.io/documentation/rednav_scr6.png) |
+| ![RedNAV](/documentation/rednav_scr6.png) |
 | **Рисунок 11 - Вид экрана устройства в сервисном режиме** |
 | _Пикторамма зарядки горит ярко - заряд идет, пиктограмма Bluetooth затемнена - подключение не установлено_ |
 
 | |
 | :---: |
-| ![RedNAV](https://ucnl.github.io/documentation/rednav_scr7.png) |
+| ![RedNAV](/documentation/rednav_scr7.png) |
 | **Рисунок 12 - Вид экрана устройства в сервисном режиме** |
 | _Обе пиктограммы горят ярко - идет заряд, соединение по Bluetooth установлено_ |
 
