@@ -1,4 +1,4 @@
-| ![logo](https://ucnl.github.io/documentation/sm_logo.png) | ![Bat&Link Box](https://ucnl.github.io/documentation/batnlinkbox.png) |
+| ![logo](/documentation/sm_logo.png) | ![Bat&Link Box](/documentation/batnlinkbox.png) |
 | :---: | ---: |
 | [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **Bat & Link Box** - источник питания и преобразователь интерфейса **Zima USBL** <br/> спецификация устройства |
 
@@ -39,4 +39,4 @@
 
 ## ДОПОЛНИТЕЛЬНО
 
-[Паспорт безопасности для встроенного источника питания, Material Safety Data Sheet (MSDS)](\documentation\MSDS_BATLINK_LiFePO4_ru.pdf)  
+[Паспорт безопасности для встроенного источника питания, Material Safety Data Sheet (MSDS)](/documentation/MSDS_BATLINK_LiFePO4_ru.pdf)  
