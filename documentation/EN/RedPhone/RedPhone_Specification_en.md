@@ -1,4 +1,4 @@
-| ![logo](https://ucnl.github.io/documentation/sm_logo.png) | ![RedPhone-D](https://ucnl.github.io/documentation/redphone_d.png) |
+| ![logo](/documentation/sm_logo.png) | ![RedPhone-D](/documentation/redphone_d.png) |
 | :---: | ---: |
 | [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **RedPhone-D** <br/> Underwater telephone. Diver's unit <br/> Device specification |
 
