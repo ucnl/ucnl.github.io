@@ -1,4 +1,4 @@
-| ![logo](https://ucnl.github.io/documentation/sm_logo.png) | ![batpack1](https://ucnl.github.io/documentation/batpack1.png) |
+| ![logo](/documentation/sm_logo.png) | ![batpack1](/documentation/batpack1.png) |
 | :---: | ---: |
 | [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | Изготовление конформных аккумуляторных сборок |
 
@@ -18,7 +18,7 @@
 В зависимости от требований заказчика и применяемого кейса возможно изготовление сборок в диапазоне электрических емкостей от **12** до **120** Вт\*ч, обеспечивающих напряжение **11.6** .. **14.4** Вольт. В зависимости от материала кейса возможно изготовление съемных и несъемных сборок.  
 Конкретная модель кейса и высота сборки предварительно оговариваются. 
 
-![batpack2](https://ucnl.github.io/documentation/batpack2.png)
+![batpack2](/documentation/batpack2.png)
 
 <div style="page-break-after: always;"></div>
 
