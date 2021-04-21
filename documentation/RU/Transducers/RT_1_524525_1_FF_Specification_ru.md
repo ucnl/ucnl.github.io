@@ -1,4 +1,4 @@
-| ![logo](https://ucnl.github.io/documentation/sm_logo.png) | ![logo](https://ucnl.github.io/documentation/rt_1_524525_1_ff.png) |
+| ![logo](/documentation/sm_logo.png) | ![logo](/documentation/rt_1_524525_1_ff.png) |
 | :---: | ---: |
 | [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **RT-1.524525-1-FF** <br/> Антенна гидроакустическая приемопередающая <br/> Спецификация устройства |
 
