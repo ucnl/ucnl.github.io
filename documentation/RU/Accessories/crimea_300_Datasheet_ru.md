@@ -1,4 +1,4 @@
-| ![logo](https://ucnl.github.io/documentation/sm_logo.png) | ![logo](https://ucnl.github.io/documentation/crm_300.png) |
+| ![logo](/documentation/sm_logo.png) | ![logo](/documentation/crm_300.png) |
 | :---: | ---: |
 | [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **Crimea-300** датчик давления <br/> Спецификация устройства |
 
@@ -314,7 +314,7 @@ ________________
 
 | |
 | :---: |
-| ![crm_300_drawings_ru.png](https://ucnl.github.io/documentation/crm_300_drawings_ru.png) |
+| ![crm_300_drawings_ru.png](/documentation/crm_300_drawings_ru.png) |
 | **Габаритный чертеж** |
 
 <div style="page-break-after: always;"></div>
