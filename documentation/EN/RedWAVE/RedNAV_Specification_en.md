@@ -49,6 +49,7 @@ Fully wireless pairing with PC via Bluetooth and wireless charging makes it extr
 | MAX. RELATIVE VELOCITY | +/- 1.8 m/s  |
 | WORKING TEMPERATURE RANGE | -5 .. 50 °С |
 | DEPTH RATING | 70 m |
+| MAX SIZE OF WORKING AREA | 700 х 700 m inside a polygon of buoys |
 | ACOUSTIC RANGE (ENEGRY)<sup>[1](#footnote1)</sup> | 3000 m |
 | BANDWIDTH | 10 .. 30 kHz |
 | SNR<sup>[2](#footnote2)</sup> | -6 dB |
