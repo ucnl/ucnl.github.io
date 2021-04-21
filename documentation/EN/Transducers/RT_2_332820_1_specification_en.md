@@ -1,4 +1,4 @@
-| ![logo](https://ucnl.github.io/documentation/sm_logo.png) | ![logo](/documentation/def_buoy_txd.png) |
+| ![logo](/documentation/sm_logo.png) | ![logo](/documentation/def_buoy_txd.png) |
 | :---: | ---: |
 | [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **RT-2.332820-1** <br/> Underwater acostic transducer <br/> Device specification |
 
