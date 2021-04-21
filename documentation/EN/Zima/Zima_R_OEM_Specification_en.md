@@ -1,4 +1,4 @@
-| ![logo](https://ucnl.github.io/documentation/sm_logo.png) | ![logo](https://ucnl.github.io/documentation/zima_r_oem.png) |
+| ![logo](/documentation/sm_logo.png) | ![logo](/documentation/zima_r_oem.png) |
 | :---: | ---: |
 | [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **Zima-R OEM** - **Zima USBL** responder-beacon <br/> Device specification |
 
