@@ -1,5 +1,5 @@
 <div style="page-break-after: always;"></div>
-<p align="center"><img src="https://ucnl.github.io/documentation/sm_logo.png"/></p>
+<p align="center"><img src="/documentation/sm_logo.png"/></p>
 
 _______  
 
