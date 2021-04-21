@@ -1,4 +1,4 @@
-| ![logo](https://ucnl.github.io/documentation/sm_logo.png) |  |
+| ![logo](/documentation/sm_logo.png) |  |
 | :---: | ---: |
 | [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **Zima USBL**<br/> Краткое описание |
 
@@ -13,9 +13,9 @@
 
 |  |  |
 | :---: | :--- |
-| ![Zima-B](https://ucnl.github.io/documentation/def_zima_b_ant.png) | [Zima-B](Zima_B_Specification_ru.md) <br/> Базовая станция пеленгования |
-| ![Zima-R](https://ucnl.github.io/documentation/zima_r.png) | [Zima-R](Zima_R_Specification_ru.md) <br/> Маяки-ответчики (одня базовая станция может последовательно работать максимум с 23 ответчиками) |
-| ![Bat&Link Box](https://ucnl.github.io/documentation/batnlinkbox.png) | [Bat&Link Box](Bat_n_link_box_Specification_ru.md) <br/> Автономный блок питания и коммутации базовой станции |
+| ![Zima-B](/documentation/def_zima_b_ant.png) | [Zima-B](Zima_B_Specification_ru.md) <br/> Базовая станция пеленгования |
+| ![Zima-R](/documentation/zima_r.png) | [Zima-R](Zima_R_Specification_ru.md) <br/> Маяки-ответчики (одня базовая станция может последовательно работать максимум с 23 ответчиками) |
+| ![Bat&Link Box](/documentation/batnlinkbox.png) | [Bat&Link Box](Bat_n_link_box_Specification_ru.md) <br/> Автономный блок питания и коммутации базовой станции |
 
 <div style="page-break-after: always;"></div>
 
@@ -37,7 +37,7 @@
 
 <div style="page-break-after: always;"></div>
 
-| ![Zima-B placement](https://ucnl.github.io/documentation/zima_boat_placement.png) |
+| ![Zima-B placement](/documentation/zima_boat_placement.png) |
 | :---: |
 | Схема установки антенны [Zima-B](Zima_B_Specification_ru.md) <br/> _1-штанга, 2-судно, 3-поверхность воды, 4-кабель, 5-антенна [Zima-B](Zima_B_Specification_ru.md), 6-направление антенны_ |
 
@@ -54,7 +54,7 @@
 * Глубины маяков-ответчиков
 * Возможность **адресной передачи до 32 кодовых команд** на каждый маяк (при информационном сопряжении маяков с носителем)
 
-| ![Zima-B relative scheme](https://ucnl.github.io/documentation/zima_relative_scheme.png) |
+| ![Zima-B relative scheme](/documentation/zima_relative_scheme.png) |
 | :---: |
 | _Схема подключения при работе в относительных координатах_ |
 
@@ -63,7 +63,7 @@
 ### Работа в абсолютных координатах
 Для определения **абсолютного местопложения** маяков-ответчиков антенна информационно сопрягается с ПК, на котором установлено специализированное пультовое ПО [ZHost](https://github.com/ucnl/ZHost). Антенна подключается к ПК через [Bat&Link Box](Bat_n_link_box_Specification_ru.md), обеспечивающий преобразование интерфейса в USB и питание антенны. Дополнительно подключаются внешняя GNSS-система и магнитный компас, работающие по протоколу **NMEA 0183** (сообщения **RMC** и **HDG**), либо внешняя **GNSS**-система с функцией компаса, работающая по протоколу **NMEA 0183** (сообщения **RMC** и **HDT**).
 
-| ![Zima-B absolut scheme](https://ucnl.github.io/documentation/zima_abs_scheme.png) |
+| ![Zima-B absolut scheme](/documentation/zima_abs_scheme.png) |
 | :---: |
 | _Схема подключения при работе в абсолютных координатах_ |
 
@@ -80,7 +80,7 @@
 
 Так как определение местоположения маяков-ответчиков [Zima-R](Zima_R_Specification_ru.md) осуществляется по горизонтальному углу прихода сигнала, наклонной дальности и разности глубин, антенная решетка пеленгационной станции [Zima-B](Zima_B_Specification_ru.md) имеет наибольшую чувствительность в горизонтальной плоскости. Это накладывает геометрические ограничения на взаимное расположение пеленгационной антенны и маяка-ответчика. Рабочий вертикальный угол антенны составляет +/- 30° от горизонтальной плоскости. Возможна, но не рекомендуется работа при таких взаимных расположениях антенны и маяка-ответчика, когда вертикальный угол на маяк находится в диапазоне от 30° до 45° в виду снижения точности определения угла прихода сигнала. Работа при вертикальных углах на маяк более 45° крайне не рекомендуется.  
 
-| ![Zima-B angular zones](https://ucnl.github.io/documentation/zima_dir.png) |
+| ![Zima-B angular zones](/documentation/zima_dir.png) |
 | :---: |
 | Геометрические ограничения [Zima-B](Zima_B_Specification_ru.md) <br/> _1 - рабочая зона (+/- 30°), 2 - зона снижения точности (30 .. 45°), 3 - теневая зона ( > 45°), 4 - пеленгационная антенна. Отклонение указывается от горизонтальной плоскости, проходящей через центр антенной решетки_ |
 
