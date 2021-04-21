@@ -1,4 +1,4 @@
-| ![logo](https://ucnl.github.io/documentation/sm_logo.png) | ![logo](/documentation/def_modem_black.png) |
+| ![logo](/documentation/sm_logo.png) | ![logo](/documentation/def_modem_black.png) |
 | :---: | ---: |
 | [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **RedGTR** - code communication underwater acoustic modem <br/> Device specification |
 
