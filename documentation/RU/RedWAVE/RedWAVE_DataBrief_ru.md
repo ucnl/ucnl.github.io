@@ -1,4 +1,4 @@
-| ![logo](https://ucnl.github.io/documentation/sm_logo.png) |  |
+| ![logo](/documentation/sm_logo.png) |  |
 | :---: | ---: |
 | [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **RedWAVE**<br/> Краткое описание |
 
@@ -19,9 +19,9 @@
 
 |  |  |
 | :---: | :--- |
-| ![RedBASE](https://ucnl.github.io/documentation/def_redbase_yellow.png) | [RedBASE](RedBASE_Specification_ru.md) <br/> Навигационный гидроакустический буй-ретранслятор |
-| ![RedNODE](https://ucnl.github.io/documentation/def_modem_black.png) | [RedNODE](RedNODE_Specification_ru.md) <br/> Универсальный навигационный приемник |
-| ![RedNAV](https://ucnl.github.io/documentation/def_rednav_yellow.png) | [RedNAV](RedNAV_Specification_ru.md) <br/> Водолазный навигатор |
+| ![RedBASE](/documentation/def_redbase_yellow.png) | [RedBASE](RedBASE_Specification_ru.md) <br/> Навигационный гидроакустический буй-ретранслятор |
+| ![RedNODE](/documentation/def_modem_black.png) | [RedNODE](RedNODE_Specification_ru.md) <br/> Универсальный навигационный приемник |
+| ![RedNAV](/documentation/def_rednav_yellow.png) | [RedNAV](RedNAV_Specification_ru.md) <br/> Водолазный навигатор |
 
 Минимальный состав системы включает четыре гидроакустических буя [RedBASE](RedBASE_Specification_ru.md) и одно приемное устройство, в зависимости от пользовательской задачи:
 * Если требуется обеспечить навигационными данными водолаза, то используется водолазный навигатор [RedNAV](RedNAV_Specification_ru.md);
