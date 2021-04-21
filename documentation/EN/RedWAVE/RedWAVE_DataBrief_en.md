@@ -1,4 +1,4 @@
-| ![logo](https://ucnl.github.io/documentation/sm_logo.png) |  |
+| ![logo](/documentation/sm_logo.png) |  |
 | :---: | ---: |
 | [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **RedWAVE**<br/> Data brief |
 
@@ -18,9 +18,9 @@ sonobuoys [RedBASE](RedBASE_Specification_en.md); an unlimited number of underwa
 
 |  |  |
 | :---: | :--- |
-| ![RedBASE](https://ucnl.github.io/documentation/def_redbase_yellow.png) | [RedBASE](RedBASE_Specification_en.md) <br/> GNSS-equipped sonobuoy |
-| ![RedNODE](https://ucnl.github.io/documentation/def_modem_black.png) | [RedNODE](RedNODE_Specification_en.md) <br/> Navigation receiver |
-| ![RedNAV](https://ucnl.github.io/documentation/def_rednav_yellow.png) | [RedNAV](RedNAV_Specification_en.md) <br/> Diver's navigation received |
+| ![RedBASE](/documentation/def_redbase_yellow.png) | [RedBASE](RedBASE_Specification_en.md) <br/> GNSS-equipped sonobuoy |
+| ![RedNODE](/documentation/def_modem_black.png) | [RedNODE](RedNODE_Specification_en.md) <br/> Navigation receiver |
+| ![RedNAV](/documentation/def_rednav_yellow.png) | [RedNAV](RedNAV_Specification_en.md) <br/> Diver's navigation received |
 
 The minimum composition of the system includes four sonobuoys [RedBASE](RedBASE_Specification_en.md) and one receiving device, 
 depending on the user task:
@@ -72,4 +72,4 @@ _________
 | [RedNAV - Diver's navigation receiver: Device specification](RedNAV_Specification_en.md) |
 | [RedNODE - navigation receiver: Device specification](RedNODE_Specification_en.md) |
 | [RedWAVE - RedNODE interfacing protocol description](RedWAVE_Protocol_Specification_en.html) |
-| [RedWAVE - User's manual]() |
+| [RedWAVE - User's manual](RedWAVE_Users_Manual_en.md) |
