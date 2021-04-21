@@ -1,4 +1,4 @@
-| ![logo](https://ucnl.github.io/documentation/sm_logo.png) |  |
+| ![logo](/documentation/sm_logo.png) |  |
 | :---: | ---: |
 | [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **RedWAVE** - underwater acoustic navigation system <br/> RedNAV Host sorftware: User's manual |
 
@@ -34,7 +34,7 @@ After the system detects a new device, it will be displayed in the list, as in *
 
 | |
 | :---: |
-| ![Fig. 1](https://ucnl.github.io/documentation/rdnvhost1_en.png)|
+| ![Fig. 1](/documentation/rdnvhost1_en.png)|
 | **Figure 1 - Search results for new devices** |
 
 In **Figure 1** The list shows the name of the device, which is visible on the screen of the device itself (in the example **RDNV-CFBB**). 
@@ -42,7 +42,7 @@ Further, when the user clicks **Pair**, the system prompts the user to enter a P
 
 | |
 | :---: |
-| ![Fig. 2](https://ucnl.github.io/documentation/rdnvhost2_en.png)|
+| ![Fig. 2](/documentation/rdnvhost2_en.png)|
 | **Figure 2 - Dialog for entering a PIN code** |
 
 The pin code is displayed on the device screen, which the user must enter to create a connection with the device (**1945** in the 
@@ -52,7 +52,7 @@ Device Status: **Connected**.
 
 | |
 | :---: |
-| ![Fig. 3](https://ucnl.github.io/documentation/rdnvhost3_en.png)|
+| ![Fig. 3](/documentation/rdnvhost3_en.png)|
 | **Figure 3 - Device is connected** |
 
 At this stage, communication with the device is established.
@@ -69,7 +69,7 @@ The upper lines display information about the device version and its serial numb
 
 | |
 | :---: |
-| ![Fig. 4](https://ucnl.github.io/documentation/rdnvhost4_en.png)|
+| ![Fig. 4](/documentation/rdnvhost4_en.png)|
 | **Figure 4 - RedNAV Host main window** |
 | _Device is connected and recognized by the software_ |
 
@@ -86,7 +86,7 @@ by the link **Search in the base**, the main application window.
 
 | |
 | :---: |
-| ![Fig. 5](https://ucnl.github.io/documentation/rdnvhost5_en.png)|
+| ![Fig. 5](/documentation/rdnvhost5_en.png)|
 | **Figure 5 - Water salinity dialogue** |
 
 When **OK** button is clicked, the found value will be placed in the settings field of the main window.
@@ -100,7 +100,7 @@ This situation is illustrated in **Figure 6**.
 
 | |
 | :---: |
-| ![Fig. 6](https://ucnl.github.io/documentation/rdnvhost6_en.png)|
+| ![Fig. 6](/documentation/rdnvhost6_en.png)|
 | **Figure 6 - Downloading tracks from the device** |
 
 After pressing the **Download** button, while the tracks are downloading from the device, the other buttons will become unavailable, and the operation progress will be displayed in the application status bar.
@@ -110,7 +110,7 @@ The application allows saving tracks in **Keyhole Markup Language (KML)** format
 
 | |
 | :---: |
-| ![Fig. 7](https://ucnl.github.io/documentation/rdnvhost7_en.png)|
+| ![Fig. 7](/documentation/rdnvhost7_en.png)|
 | **Figure 7 - Tracks saving dialogue** | 
 
 After saving data, the application will ask the user whether to clear the track from the device.
@@ -121,14 +121,14 @@ Work with waypoints is done using the context menu, called with the right mouse 
 
 | |
 | :---: |
-| ![Fig. 8](https://ucnl.github.io/documentation/rdnvhost8_en.png)|
+| ![Fig. 8](/documentation/rdnvhost8_en.png)|
 | **Figure 8 - Working with waypoints** |
 
 Manually added waypoints can be edited using the panel on the right when the added point is selected (see **Figure 9**).
 
 | |
 | :---: |
-| ![Fig. 9](https://ucnl.github.io/documentation/rdnvhost9_en.png)|
+| ![Fig. 9](/documentation/rdnvhost9_en.png)|
 | **Figure 9 - Editing an added waypoint** |
 
 To synchronize the list in the panel **Waypoints** with the device click the **Download to device** button. 
