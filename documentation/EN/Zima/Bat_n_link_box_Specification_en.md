@@ -1,4 +1,4 @@
-| ![logo](https://ucnl.github.io/documentation/sm_logo.png) | ![Bat&Link Box](https://ucnl.github.io/documentation/batnlinkbox.png) |
+| ![logo](/documentation/sm_logo.png) | ![Bat&Link Box](https://ucnl.github.io/documentation/batnlinkbox.png) |
 | :---: | ---: |
 | [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **BAT&LINK BOX** - Autonomous power supply and interfacing unit <br/> Device specification |
 
