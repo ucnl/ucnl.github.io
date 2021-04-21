@@ -8,8 +8,8 @@
 
 | Devices | File |
 | :--- | :--- |
-| [RedPhone-OS](/documentation/EN/RedPhone/RedPhone_OS_Specification_en.md) <br/> [Bat&Link Box](/documentation/EN/Zima/Bat_n_link_box_Specification_en.md) | [Open file \(pdf\)](\documentation\MSDS_BATLINK_LiFePO4_en.pdf) |
-| [RedBASE](/documentation/EN/RedWAVE/RedBASE_Specification_en.md) | [Open file \(pdf\)](\documentation\msds_delta12v4_5ah.pdf) |
+| [RedPhone-OS](/documentation/EN/RedPhone/RedPhone_OS_Specification_en.md) <br/> [Bat&Link Box](/documentation/EN/Zima/Bat_n_link_box_Specification_en.md) | [Open file \(pdf\)](/documentation/MSDS_BATLINK_LiFePO4_en.pdf) |
+| [RedBASE](/documentation/EN/RedWAVE/RedBASE_Specification_en.md) | [Open file \(pdf\)](/documentation/msds_delta12v4_5ah.pdf) |
 
 ## Info sheets & additional
 * [QR links sheet](/documentation/EN/Misc/l2c.md)
