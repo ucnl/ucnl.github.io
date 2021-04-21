@@ -1,4 +1,4 @@
-| ![logo](https://ucnl.github.io/documentation/sm_logo.png) | ![RWLT GIB](https://ucnl.github.io/documentation/RWLT_GIB.png) |
+| ![logo](/documentation/sm_logo.png) | ![RWLT GIB](https://ucnl.github.io/documentation/RWLT_GIB.png) |
 | :---: | ---: |
 | [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **RWLT GIB** - Navigation buoy <br/> Device specification |
 
