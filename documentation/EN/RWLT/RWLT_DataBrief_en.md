@@ -1,4 +1,4 @@
-| ![logo](https://ucnl.github.io/documentation/sm_logo.png) |  |
+| ![logo](/documentation/sm_logo.png) |  |
 | :---: | ---: |
 | [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **RWLT** - Underwater tracking system <br/> Data brief|
 
@@ -14,9 +14,9 @@ A distinctive feature of the system is the ability to work simultaneously with w
 
 |  |  |
 | :---: | :--- |
-| ![RWLT GIB](https://ucnl.github.io/documentation/RWLT_GIB.png) | [RWLT GIB](RWLT_GIB_Specification_en.md) <br/> Hydroacoustic navigation buoy |
-| ![RWLT Pinger](https://ucnl.github.io/documentation/RWLT_Pinger.png) | [RWLT Pinger](RWLT_Pinger_Specification_en.md) <br/> Pinger beacon |
-| ![RWLT RF Dongle](https://ucnl.github.io/documentation/RWLT_RF_Dongle.png) | [RWLT RF Dongle](RWLT_RF_Dongle_Specification_en.md) <br/> Digital RF dongle |
+| ![RWLT GIB](/documentation/RWLT_GIB.png) | [RWLT GIB](RWLT_GIB_Specification_en.md) <br/> Hydroacoustic navigation buoy |
+| ![RWLT Pinger](/documentation/RWLT_Pinger.png) | [RWLT Pinger](RWLT_Pinger_Specification_en.md) <br/> Pinger beacon |
+| ![RWLT RF Dongle](/documentation/RWLT_RF_Dongle.png) | [RWLT RF Dongle](RWLT_RF_Dongle_Specification_en.md) <br/> Digital RF dongle |
 
 The minimum composition of the system includes four sonar buoys [RWLT GIB](RWLT_GIB_Specification_en.md) and one transmitting device, depending on the user's task:
 * If it is required to provide a diver with navigation data simultaneously with voice communication, then the diving telephone exchange [RedPhone](https://docs.unavlab.com/documentation/EN/RedPhone/RedPhone_Specification_en.html) is used; In this case, the geo-position of the diver will be determined at the moment when he releases the PTT button, i.e. ends the transmission of a voice message;
