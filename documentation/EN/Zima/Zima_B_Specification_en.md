@@ -1,4 +1,4 @@
-| ![logo](https://ucnl.github.io/documentation/sm_logo.png) | ![logo](https://ucnl.github.io/documentation/def_zima_b_ant.png) |
+| ![logo](/documentation/sm_logo.png) | ![logo](/documentation/def_zima_b_ant.png) |
 | :---: | ---: |
 | [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **Zima-B** - **Zima USBL** base station <br/> Device specification |
 
