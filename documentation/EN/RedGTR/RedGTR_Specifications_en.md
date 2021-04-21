@@ -15,7 +15,7 @@
 * **Patented monoblock design**
 
 ## DESCRIPTION
-** RedGTR ** - hydro-acoustic code communication modem.
+**RedGTR** - hydro-acoustic code communication modem.
 
 The device uses a fixed-length signal with a code division to ensure the operation of a point-to-point network consisting of 25 devices,
 located in one water area.
