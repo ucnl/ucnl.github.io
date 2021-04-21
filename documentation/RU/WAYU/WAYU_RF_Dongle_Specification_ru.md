@@ -1,4 +1,4 @@
-| ![logo](https://ucnl.github.io/documentation/sm_logo.png) | ![logo]() |
+| ![logo](/documentation/sm_logo.png) | ![logo]() |
 | :---: | ---: |
 | [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **WAYU Radio dongle** - Приемник сигнала навигационных буев <br/> Спецификация устройства |
 
