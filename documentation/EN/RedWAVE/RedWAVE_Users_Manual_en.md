@@ -1,4 +1,4 @@
-| ![logo](https://ucnl.github.io/documentation/sm_logo.png) |  |
+| ![logo](/documentation/sm_logo.png) |  |
 | :---: | ---: |
 | [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **RedWAVE** - underwater acoustic navigation system <br/> User's manual |
 
@@ -69,7 +69,7 @@ A general view of the buoy is presented in **figure 1**.
 
 | |
 | :---: |
-| ![RedBASE general view](https://ucnl.github.io/documentation/def_redbase_yellow.png)|
+| ![RedBASE general view](/documentation/def_redbase_yellow.png)|
 | **Figure 1 - GNSS-equipped sonobuoy [RedBASE](RedBASE_Specification_en.md)** |
 
 Buoys are to located in the water area on the water surface, their position is fixed using anchors.
@@ -80,7 +80,7 @@ Buoys are to located in the water area on the water surface, their position is f
 
 | |
 | :---: |
-| ![RedBASE deployment scheme](https://ucnl.github.io/documentation/def_redbase_dep_scheme.png)|
+| ![RedBASE deployment scheme](/documentation/def_redbase_dep_scheme.png)|
 | **Figure 2 - [RedBASE](RedBASE_Specification_ru.md) recommended deployment scheme** |
 | _1 - GNSS-equipped sonobuoy [RedBASE](RedBASE_Specification_en.md), 2 - additional weight<sup>[2](#footnote2)</sup>, 3 - float, 4 - anchor rope, 5 - anchor_ |
 
@@ -93,7 +93,7 @@ as the manufacturer is constantly working to improve the performance and make de
 
 | |
 | :---: |
-| ![RedBASE deployment scheme](https://ucnl.github.io/documentation/def_redbase_cover_scheme.png)|
+| ![RedBASE deployment scheme](/documentation/def_redbase_cover_scheme.png)|
 | **Figure 3 - Controls and indicators on the cover of [RedBASE](RedBASE_Specification_en.md)** |
 | _1 - power toggle switch, 2 - indicator lights, 3 - charging connector_ |
 
@@ -162,7 +162,7 @@ The general view of the device is shown in **Figure 4**.
 
 |  |
 | :---: |
-| ![RedNAV general view](https://ucnl.github.io/documentation/def_rednav_yellow.png) |
+| ![RedNAV general view](/documentation/def_rednav_yellow.png) |
 | **Figure 4 - diver's navigation receiver [RedNAV](RedNAV_Specification_en.md)** |
 | _General view_ |
 
@@ -194,7 +194,7 @@ The appearance of the device screen in navigation mode immediately after switchi
 
 |  |
 | :---: |
-| ![RedNAV after start](https://ucnl.github.io/documentation/rednav_scr1.png) |
+| ![RedNAV after start](/documentation/rednav_scr1.png) |
 | **Figure 5 - Main screen in navigation mode** |
 | _After start up_ |
 | _1 - Left button function (target switch), 2 - buoys status, 3 - azimuth and distance to target, 4 - right button function (mark current position), 5 - water temperature, 6 - depth (distance to the water surface), 7 - battery charge_ |
@@ -205,7 +205,7 @@ It is worth remembering that the transmission of buoy signals is time-divided, a
 
 |  |
 | :---: |
-| ![RedNAV after start](https://ucnl.github.io/documentation/rednav_scr2.png) |
+| ![RedNAV after start](/documentation/rednav_scr2.png) |
 | **Figure 6 - The main screen of the device during operation** |
 | _Device has received signal from Buoy No. 1. Own location has not been determined yet_ |
 
@@ -213,7 +213,7 @@ When signals from all buoys are received and the coordinates of the navigation r
 
 |  |
 | :---: |
-| ![RedNAV](https://ucnl.github.io/documentation/rednav_scr3.png) |
+| ![RedNAV](/documentation/rednav_scr3.png) |
 | **Figure 7 - The main screen of the device during operation** |
 | _Location determined. The buoy No. 1_ was chosen as the navigation target |
 
@@ -227,14 +227,14 @@ When the user presses the right button (**+**), the current location is saved se
 
 |  |
 | :---: |
-| ![RedNAV](https://ucnl.github.io/documentation/rednav_scr3a_en.png) |
+| ![RedNAV](/documentation/rednav_scr3a_en.png) |
 | **Figure 8 - Message confirming that the current location has been saved** |
 
 The preloaded and marked points are numbered, and when the user selects them as targets using the (**>**) button, they are displayed as in **Figure 9**.
 
 |  |
 | :---: |
-| ![RedNAV](https://ucnl.github.io/documentation/rednav_scr4.png) |
+| ![RedNAV](/documentation/rednav_scr4.png) |
 | **Figure 9 - The main screen of the device during operation** |
 | _The first waypoint/marked point is selected as a navigation target_ |
 
@@ -242,7 +242,7 @@ To turn off the device, the user must simultaneously press both buttons. In this
 
 |  |
 | :---: |
-| ![RedNAV](https://ucnl.github.io/documentation/rednav_scr5_en.png) |
+| ![RedNAV](/documentation/rednav_scr5_en.png) |
 | **Figure 10 - Shutdown confirmation** |
 
 ##### 2.3.2.2. Service mode
@@ -252,13 +252,13 @@ It should be remembered that the charging platform must contact directly with th
 
 |  |
 | :---: |
-| ![RedNAV](https://ucnl.github.io/documentation/rednav_scr6.png) |
+| ![RedNAV](/documentation/rednav_scr6.png) |
 | **Figure 11 - Screen view of the device in service mode** |
 | _The charging icon lights up brightly - the charge is on, the Bluetooth icon is darkened - the connection is not established_ |
 
 |  |
 | :---: |
-| ![RedNAV](https://ucnl.github.io/documentation/rednav_scr7.png) |
+| ![RedNAV](/documentation/rednav_scr7.png) |
 | **Figure 12 - Screen view of the device in service mode** |
 | _Both icons glow brightly - the charge is on, a Bluetooth connection is established_ |
 
