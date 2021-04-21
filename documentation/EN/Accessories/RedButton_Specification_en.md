@@ -1,4 +1,4 @@
-| ![logo](https://ucnl.github.io/documentation/sm_logo.png) | ![logo](https://ucnl.github.io/documentation/redbutton.png) |
+| ![logo](/documentation/sm_logo.png) | ![pic](/documentation/redbutton.png) |
 | :---: | ---: |
 | [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | RedButton underwater button <br/> Device specification |
 
