@@ -1,4 +1,4 @@
-| ![logo](https://ucnl.github.io/documentation/sm_logo.png) | ![logo](https://ucnl.github.io/documentation/redphone_os.png) |
+| ![logo](/documentation/sm_logo.png) | ![logo](/documentation/redphone_os.png) |
 | :---: | ---: |
 | [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **RedPhone-OS** <br/> Надводная станция водолазной беспроводной голосовой связи <br/> Спецификация устройства |
 
@@ -57,7 +57,7 @@
 
 ### ДОПОЛНИТЕЛЬНО
 
-[Паспорт безопасности для встроенного источника питания, Material Safety Data Sheet (MSDS)](\documentation\MSDS_BATLINK_LiFePO4_ru.pdf)  
+[Паспорт безопасности для встроенного источника питания, Material Safety Data Sheet (MSDS)](/documentation/MSDS_BATLINK_LiFePO4_ru.pdf)  
 
 ________________
 <a name="footnote1"><sup>1</sup></a> Параметр, определяющий максимальную дальность, на которой возможен прием сигнала, исходя из электроакустических параметров передатчика и приемника, пространственного убывания интенсивности звуковой энергии, затухания в среде и уровня гидроакустических помех.  
