@@ -1,16 +1,16 @@
-| ![logo](https://ucnl.github.io/documentation/sm_logo.png) |  |
+| ![logo](/documentation/sm_logo.png) |  |
 | :---: | ---: |
 | [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **uWAVE** underwater acoustic modem <br/> Wiring diagram & drawings |
 
 <div style="page-break-after: always;"></div>
 
 ### WIRING DIAGRAM
-![uWAVE_wiring_diagram_en](https://ucnl.github.io/documentation/uWAVE_wiring_diagram_en.png)
+![uWAVE_wiring_diagram_en](/documentation/uWAVE_wiring_diagram_en.png)
 
 <div style="page-break-after: always;"></div>
 
 ### DRAWINGS
-![uWAVE_drawing](https://ucnl.github.io/documentation/uWAVE_drawing.png)
+![uWAVE_drawing](/documentation/uWAVE_drawing.png)
 
 <div style="page-break-after: always;"></div>
 
