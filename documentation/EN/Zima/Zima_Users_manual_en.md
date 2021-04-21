@@ -1,4 +1,4 @@
-| ![logo](https://ucnl.github.io/documentation/sm_logo.png) |  |
+| ![logo](/documentation/sm_logo.png) |  |
 | :---: | ---: |
 | [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **Zima USBL** - underwater acoustic tracking system <br/> User's manual |
 
@@ -65,14 +65,14 @@ The system also allows transmitting telecontrol commands to beacons and receivin
 #### 2.1.1. General information
 Hydroacoustic direction-finding station [Zima-B](Zima_B_Specification_en.md) (hereinafter referred to as the base station) is designed to transmit control acoustic signals to beacons, determine the propagation time of the signal to the beacons, determine the horizontal angle of arrival of the response signals of the beacons, transmit telecommands and receive telemetry information from beacons through specialized acoustic signals.
 
-| ![Zima-B](https://ucnl.github.io/documentation/def_zima_b_ant.png) |
+| ![Zima-B](/documentation/def_zima_b_ant.png) |
 | :---: |
 | **Figure 1 - Base station [Zima-B](Zima_B_Specification_en.md)** | 
 | _Main view_ |
 
 The base station is designed as a maintenance-free candy bar on a cable, embedded in a high-strength polyurethane compound. The station has a phased array antenna, a transmitting antenna, and an integrated depth/temperature sensor. As an additional option, the base station is equipped with a system for determining the course and position. In the general case, the base station is mounted on a rigid vertical rod taking into account the directivity of the antenna - the determined arrival angles are transmitted in the antenna coordinate system.  
 
-| ![Zima-B placement](https://ucnl.github.io/documentation/zima_boat_placement.png) |
+| ![Zima-B placement](/documentation/zima_boat_placement.png) |
 | :---: |
 | **Figure 2 - [Zima-B](Zima_B_Specification_en.md) Deployment scheme** |
 | _1-rod, 2-boat, 3-water surface, 4-cable, 5-[Zima-B](Zima_B_Specification_en.md), 6-zero direction_ |
@@ -81,7 +81,7 @@ Figure 3 shows the outline drawing of the base station [Zima-B](Zima_B_Specifica
 The base station has an input cable for energy and information pairing and an opening for the pressure/temperature sensor. Structurally, the base station is divided into the following parts: cable entry (in the upper part of the station) and a fixing groove for fixing the station with a clamp. Below is the cylindrical surface of the transmitting piezoelectric element, under which there is a receiving phased antenna array. The surface of the transmitting element and the receiving grille during installation should not be blocked or shielded.
 For proper operation of the station, line-of-sight is required between the working surfaces of the station and the antenna of the responder-beacon.
 
-| ![Zima-B drawings](https://ucnl.github.io/documentation/Zima_B_drawings_en.png) |
+| ![Zima-B drawings](/documentation/Zima_B_drawings_en.png) |
 | :---: |
 | **Figure 3 - [Zima-B](Zima_B_Specification_en.md)** |
 |  _Outine drawing_ |
@@ -136,7 +136,7 @@ There are no special storage and maintenance requirements for the base station, 
 #### 2.2.1. General information
 The responder-beacon is designed as a maintenance-free monoblock on a cable, embedded in a high-strength polyurethane compound. The appearance of the responder beacon [Zima-R] (Zima_R_Specification_en.md) is shown in Figure 4. Structurally, the beacon contains a cable entry, a mounting groove, a pressure sensor hole and a working surface. The pressure sensor opening and working surfaces (cylinder and cylinder end opposite the cable entry) must not be blocked or shielded. For correct operation of acoustic communication, line-of-sight between the base station and the responder-beacon is required.
 
-| ![Zima-R](https://ucnl.github.io/documentation/zima_r.png) |
+| ![Zima-R](/documentation/zima_r.png) |
 | :---: |
 | **Figure 4 - [Zima-R](Zima_R_Specification_en.md)** |
 |  _General view (autonomous version)_ |
@@ -194,7 +194,7 @@ In [OEM](Zima_R_OEM_Specification_en.md) the beacon is delivered as a set of ele
 #### 2.2.4. Work with the device (stand-alone version)
 In this case, the responder-beacon is fully autonomous. For operation, it must be fixed on the carrier vessel in such a way that the working surfaces of the monoblock (cylindrical surface and end face) are not blocked by fasteners (a special groove must be used for fastening) and are not shielded by various structural elements of the carrier. To turn on the responder-beacon, the user needs to connect it to the battery pack using the connector, as shown in Figure 5.
 
-| ![Zima-R](https://ucnl.github.io/documentation/zima_r_bat_conn.png) |
+| ![Zima-R](/documentation/zima_r_bat_conn.png) |
 | :---: |
 | **Figure 5 - Connecting a responder-beacon to a battery pack** |
 
@@ -203,7 +203,7 @@ The normobaric housing (canister) has a lid with a double seal and a four-thread
 After connecting the responder-beacon connector to the battery pack within the first ten seconds, the device calibrates the atmospheric pressure, therefore it is not allowed to apply any (negative or positive) pressure to it during the first ten seconds from the moment the device is turned on, this will lead to incorrect depth measurement by the responder-beacon.
 With the autonomous version Tx and Rx, the wires of the beacon cable are closed (see Figure 6). This causes the UART module to automatically shut off in order to save energy.
 
-| ![Zima-R](https://ucnl.github.io/documentation/zima_r_drawings_en.png) |
+| ![Zima-R](/documentation/zima_r_drawings_en.png) |
 | :---: |
 | **Figure 6 - [Zima-R](Zima_R_Specification_en.md)** |
 | _Outline drawing_ |
@@ -240,7 +240,7 @@ When the **AUTOSCRINSHOT** function is enabled, the screenshots of the applicati
 The general view of the application window is shown in Figure 7. It consists of a toolbar (menu) located at the top of the window, a status panel located at the bottom of the window; on the left is a screen for displaying the relative position of responder beacons (**PLAN**), and on the right is a tree structure containing the properties of the beacons used (**BEACONS**).
 The toolbar consists of the upper (**CONNECTION**, **STATION**, etc.) and lower (**AUTO REQUEST**, **AUTOSCRINSHOT**) subpanels.
 
-| ![ZHost main window view](https://ucnl.github.io/documentation/zhost_screen_gnss_hdg.png) |
+| ![ZHost main window view](/documentation/zhost_screen_gnss_hdg.png) |
 | :---: |
 | **Figure 7 - [ZHost](https://github.com/ucnl/ZHost) software** |
 | _Main window view_ |
@@ -289,7 +289,7 @@ The **OK button**, which is used to accept the settings, is only active when the
 
 The **CONNECTION** tab contains the settings for the connection ports. Its appearance is shown in Figure 8.
 
-| ![ZHost settings window view](https://ucnl.github.io/documentation/zhost_setts_1.png) |
+| ![ZHost settings window view](/documentation/zhost_setts_1.png) |
 | :---: |
 | **Figure 8 - Settings editor** |
 | _Tab "CONNECTION"_ |
@@ -313,7 +313,7 @@ If the checkbox **"Save log separately"** is checked, the data transferred to th
 
 The tab **"GENERAL"** contains the address settings of the used beacons and some physical parameters. Its appearance is shown in Figure 9.
 
-| ![ZHost settings window view](https://ucnl.github.io/documentation/zhost_setts_2.png) |
+| ![ZHost settings window view](/documentation/zhost_setts_2.png) |
 | :---: |
 | **Figure 9 - Settings editor** |
 | _Tab "GENERAL"_ |
@@ -322,7 +322,7 @@ The **Used Beacons** group contains a list of all possible beacon addresses. The
 
 The group **"Time intervals"** contains the settings:
 - the threshold for data obsolescence (in seconds). If the value has not been updated more than the specified time interval, OBS (Obsolete) symbols will be displayed next to it in parentheses, indicating to the operator that this particular parameter (for example, water temperature or beacon supply voltage) has not been updated for a long time;
-- The maximum distance. This parameter tells the system the maximum distance that the responder-beacon can be located. This parameter is responsible for how long the base station will wait for a beacon response. If for some reason the station does not receive a beacon response, it waits for it for a certain time, called a timeout time. It makes sense to set the minimum possible values ​​based on the requirements of the task, in order to limit the downtime of the system when it expects a missed beacon response.
+- The maximum distance. This parameter tells the system the maximum distance that the responder-beacon can be located. This parameter is responsible for how long the base station will wait for a beacon response. If for some reason the station does not receive a beacon response, it waits for it for a certain time, called a timeout time. It makes sense to set the minimum possible values based on the requirements of the task, in order to limit the downtime of the system when it expects a missed beacon response.
 
 The **Salinity** group allows the user to set the salinity of the water (in PSU) either directly, or select from the world salinity database (by calling the salinity selection dialogue by the link **".."**). It is not recommended to take salinity from the base for small inland water bodies: rivers, lakes, ponds, etc. In this case, if the exact value is not known, set zero salinity (freshwater).
 The salinity value is used by the system to more accurately determine the depth and speed of sound.
@@ -335,7 +335,7 @@ Group **"Advanced"** contains:
 
 The tab **"OPTIONAL"** contains the settings for the orientation of the base station relative to the topographic position (GNSS antenna) and the zero direction of the compass. Its appearance is shown in Figure 10.
 
-| ![ZHost settings window view](https://ucnl.github.io/documentation/zhost_setts_3.png) |
+| ![ZHost settings window view](/documentation/zhost_setts_3.png) |
 | :---: |
 | **Figure 10 - Settings editor** |
 | _Tab "ADVANCED"_ |
@@ -407,7 +407,7 @@ Due to the nature of the propagation of sound vibrations in the aquatic environm
 The antenna array of the base station is designed to determine the horizontal angle of arrival of the signal of the responder beacons, so it is worth remembering that with such a mutual arrangement of the antenna and the responder beacon when they are practically on the same vertical axis, the accuracy of determining the location of the transponder will be minimal. A good relative position of the antenna and the transponder beacon is considered to be such that the projection of the inclined range onto the water surface significantly exceeds its projection on the vertical axis.
 The working vertical angles of the base station [Zima-B](Zima_B_Specification_en.md) are angles +/- 30° from the horizontal plane passing through the antenna array of the base station. This provision is illustrated in Figure 11:
 
-| ![Zima-B angular zones](https://ucnl.github.io/documentation/zima_dir.png) |
+| ![Zima-B angular zones](/documentation/zima_dir.png) |
 | :---: |
 | **Figure 11 - Geometric limitations for [Zima-B](Zima_B_Specification_en.md)** |
 | _1 - work zone (+/- 30°), 2 - low accuracy zone (30 .. 45°), 3 - shadow zone ( > 45°), 4 - direction-finding antenna. The deviation is indicated from the horizontal plane passing through the center of the antenna array_ |
