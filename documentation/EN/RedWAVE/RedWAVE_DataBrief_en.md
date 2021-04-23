@@ -32,7 +32,7 @@ connection of standard GNSS receivers (RMC and GGA messages).
 
 <div style="page-break-after: always;"></div>
 
-## Tasks to be solved
+## Tasks that can be solved by the system
 * Simultaneous estimation of 3D geographical position by an unlimited number of underwater objects (divers, ROV, AUV, etc.);
 * Recording tracks of divers moving;
 * Pre-loading waypoints, navigation to loaded points, saving (marking) the current position of the diver;
