@@ -50,6 +50,7 @@
 <div style="page-break-after: always;"></div>
 
 ## 0. Changes and versions
+
 | Date | Firmware version | Description |
 | :--- | :--- | :--- |
 | 14-MAY-2021 | System: STRONG 2.0, Core: uWAVE [JULY] v1.10 |Packet mode, sentences from [2.11. IC_H2D_PT_SETTINGS_READ](#211-ic_h2d_pt_settings_read) to [2.17. IC_D2H_PT_RCVD](#217-ic_d2h_pt_rcvd) |
