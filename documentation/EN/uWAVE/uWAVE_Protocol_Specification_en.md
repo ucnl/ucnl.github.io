@@ -23,15 +23,28 @@
    - [2.8. IC_H2D_AMB_DTA - ambient parameters and supply voltage](#28-ic_h2d_amb_dta)
    - [2.9. IC_H2D_DINFO_GET - request device information](#29-ic_h2d_dinfo_get)
    - [2.10. IC_D2H_DINFO - device information](#210-ic_d2h_dinfo)
-- [3. Command mode](#3-command-mode)
+   - [2.11. IC_H2D_PT_SETTINGS_READ - packet mode: read settings](#211-ic_h2d_pt_settings_read)
+   - [2.12. IC_D2H_PT_SETTINGS - packet mode: settings](#212-ic_d2h_pt_settings)
+   - [2.13. IC_H2D_PT_SETTINGS_WRITE - packet mode: write new settings](#213-ic_h2d_pt_settings_write)
+   - [2.14. IC_H2D_PT_SEND - packet mode: send a packet](#214-ic_h2d_pt_send)
+   - [2.15. IC_D2H_PT_FAILED - packet mode: transfer failed](#215-ic_d2h_pt_failed)
+   - [2.16. IC_D2H_PT_DLVRD - packet mode: transfer succeeded](#216-ic_d2h_pt_dlvrd)
+   - [2.17. IC_D2H_PT_RCVD - packet mode: incoming packet](#217-ic_d2h_pt_rcvd)
+- [3. Working modes]()
+   - [3.1. Transparent channel mode]()
+   - [3.2. Command mode]()
+   - [3.3. Packet mode]()
 - [4. Identifiers](#4-identifiers)
    - [4.1. Error codes](#41-error-codes)
    - [4.2. Remote commands](#42-remote-commands)
 - [5. Appendix](#5-appendix)
    - [5.1 Command mode interfacing examples](#51-command-mode-interfacing-examples)
-   - [5.1.2 Example 1 - requesting device information](#512-example-1---requesting-device-information)
-   - [5.1.3 Example 2 - requesting remote data from a remote subscriber](#513-example-2---requesting-remote-data-from-a-remote-subscriber)
-   - [5.1.4 Example 3 - setting up the ambient data configuration](#514-example-3---setting-up-the-ambient-data-configuration)  
+   - [5.1.2. Example 1 - requesting device information](#512-example-1---requesting-device-information)
+   - [5.1.3. Example 2 - requesting remote data from a remote subscriber](#513-example-2---requesting-remote-data-from-a-remote-subscriber)
+   - [5.1.4. Example 3 - setting up the ambient data configuration](#514-example-3---setting-up-the-ambient-data-configuration)  
+   - [5.1.5. Example 4 - Enabling packet mode]()
+   - [5.1.6. Example 5 - Sending a packet and receiving an acknowledgement]()
+ - [5.2. Recipes]()
    
 <div style="page-break-after: always;"></div>
 
@@ -260,9 +273,131 @@ Sentence format: **`$PUWV!,c--c,с--с,x,c--c,x,x.x,x,x,x*hh <CR><LF>`**
 | hh	| Checksum NMEA |
 | \<CR\>\<LF\> | Sentence end |
 
+### 2.11. IC_H2D_PT_SETTINGS_READ
+Read packet mode settings. The device responds to this request with the sentence [IC_D2H_PT_SETTINGS](#212-ic_d2h_pt_settings).
+
+Sentence format: **`$PUWVD,x*hh <CR><LF>`**
+
+| Field/Parameter |	Description |
+| :--- | :--- |
+| $	| Sentence start '$' |
+| PUWV | UWV |
+| D | Sentence identifier |
+| reserved | Should be '0' |
+| *	| Checksum separator NMEA |
+| hh	| Checksum NMEA |
+| \<CR\>\<LF\> | Sentence end |
+
+### 2.12. IC_D2H_PT_SETTINGS
+Packet mode settings.
+
+Sentence format: **`$PUWVE,x,x*hh <CR><LF>`**
+
+| Field/Parameter |	Description |
+| :--- | :--- |
+| $	| Sentence start '$' |
+| PUWV | UWV |
+| E | Sentence identifier |
+| isPTMode | '0' - packet mode disabled, '1' - packet mode enabled |
+| ptLocalAddress | Address of the local modem in the packet mode, 0 .. 254 |
+| *	| Checksum separator NMEA |
+| hh	| Checksum NMEA |
+| \<CR\>\<LF\> | Sentence end |
+
+### 2.13. IC_H2D_PT_SETTINGS_WRITE
+Set new settings for the packet mode. The device responds to this request with the sentence [IC_D2H_PT_SETTINGS](#212-ic_d2h_pt_settings).
+
+Sentence format: **`$PUWVF,x,x,x*hh <CR><LF>`**
+
+| Field/Parameter |	Description |
+| :--- | :--- |
+| $	| Sentence start '$' |
+| PUWV | UWV |
+| F | Sentence identifier |
+| isSaveInFlash | '0' - do not save settings to flash, '1' - save settings to flash |
+| isPTMode | '0' - packet mode disabled, '1' - packet mode enabled |
+| ptLocalAddress | Address of the local modem in the packet mode, 0 .. 254 |
+| *	| Checksum separator NMEA |
+| hh	| Checksum NMEA |
+| \<CR\>\<LF\> | Sentence end |
+
+### 2.14. IC_H2D_PT_SEND
+Send message in packet mode.
+
+Sentence format: **`$PUWVG,x,x,h--h*hh <CR><LF>`**
+
+| Field/Parameter |	Description |
+| :--- | :--- |
+| $	| Sentence start '$' |
+| PUWV | UWV |
+| G | Sentence identifier |
+| target_ptAddress | Address of a remote modem, 0 .. 254, 255 - broadcast |
+| maxTries | Maximum number of attempts, 0 .. 255. If the field is empty, the default maximum number of attempts will be used - 255 |
+| dataPacket | An array of bytes in HEX format with a '0x' prefix, for example, for the string '123' 0x313233. The maximum packet size is 64 bytes. If the field is empty, the current transfer will be canceled. |
+| *	| Checksum separator NMEA |
+| hh	| Checksum NMEA |
+| \<CR\>\<LF\> | Sentence end |
+
+### 2.15. IC_D2H_PT_FAILED
+Data packet transmission was unsuccessful.
+
+Sentence format: **`$PUWVH,x,x,h--h*hh <CR><LF>`**
+
+| Field/Parameter |	Description |
+| :--- | :--- |
+| $	| Sentence start '$' |
+| PUWV | UWV |
+| H | Sentence identifier |
+| target_ptAddress | Address of a remote modem, 0 .. 254 |
+| maxTries | Number of attempts proceeded |
+| dataPacket | An array of bytes in HEX format with a '0x' prefix, for example, for the string '123' 0x313233. The maximum packet size is 64 bytes. |
+| *	| Checksum separator NMEA |
+| hh	| Checksum NMEA |
+| \<CR\>\<LF\> | Sentence end |
+
+### 2.16. IC_D2H_PT_DLVRD
+The data packet has been successfully transmitted.
+
+Sentence format: **`$PUWVI,x,x,h--h*hh <CR><LF>`**
+
+| Field/Parameter |	Description |
+| :--- | :--- |
+| $	| Sentence start '$' |
+| PUWV | UWV |
+| I | Sentence identifier |
+| target_ptAddress | Address of a remote modem, 0 .. 254 |
+| maxTries | Number of attempts proceeded |
+| dataPacket | An array of bytes in HEX format with a '0x' prefix, for example, for the string '123' 0x313233. The maximum packet size is 64 bytes. |
+| *	| Checksum separator NMEA |
+| hh	| Checksum NMEA |
+| \<CR\>\<LF\> | Sentence end |
+
+### 2.17. IC_D2H_PT_RCVD
+Data packet received.
+
+Sentence format: **`$PUWVJ,x,h--h*hh <CR><LF>`**
+
+| Field/Parameter |	Description |
+| :--- | :--- |
+| $	| Sentence start '$' |
+| PUWV | UWV |
+| J | Sentence identifier |
+| sender_ptAddress | Address of a sender, 0 .. 254 |
+| dataPacket | An array of bytes in HEX format with a '0x' prefix, for example, for the string '123' 0x313233. The maximum packet size is 64 bytes. |
+| *	| Checksum separator NMEA |
+| hh	| Checksum NMEA |
+| \<CR\>\<LF\> | Sentence end |
+
 <div style="page-break-after: always;"></div>
 
-## 3. Command mode
+## 3. Working modes
+
+### 3.1. Transparent channel mode
+In the transparent channel mode, the devices do not analyze the data coming from the control system and transmit them without changes to the hydroacoustic channel, where they can be received by any other **uWAVE** modem receiving in the same code channel in which the transmission was made. Provided that the receiving modem has not activated [packet mode]().
+
+<div style="page-break-after: always;"></div>
+
+### 3.2. Command mode
 **uWAVE** modems provide the user with a so-called "transparent channel" when all data supplied to the input without changes and 
 analysis are transmitted to the hydroacoustic channel, after which they are received by another modem and in the unchanged form are 
 given to the user at the receiving side. In this regard, to be able to configure modems, as well as to measure the propagation time 
@@ -273,6 +408,22 @@ Also, the command mode can be enabled by default using the [IC_H2D_SETTINGS_WRIT
 > **WARNING!** The core "service" is pulled **ONLY** to 3-5 V or ground, connecting it to a higher voltage will cause a **FATAL** and **NON-GUARANTEE** failure of the device.
 
 > **WARNING!** Before switching on the device, the "service" core should be pulled to the ground, otherwise, the device will enter the software update mode.
+
+<div style="page-break-after: always;"></div>
+
+### 3.3. Packet mode
+Packet mode provides the user with the ability to transfer data in packets up to 64 bytes with guaranteed delivery (**ALO - at-least-once**, it is guaranteed that the message will be transmitted at least once) and receipt notification (acknowledgement). Since the interaction of the modem with the user system in the packet mode is implemented using **NMEA0183** sentences, to work in this mode, both the transmitting and receiving devices must be switched to [command mode]().
+In packet mode, up to 255 devices are addressed (addresses from 0 to 254, address 255 reserved for broadcast messages without acknowledgements).
+The following functions are available to the user:
+- setting the address of the local modem  
+- address transmission of a data packet to a remote device  
+- receiving a notification about the successful delivery of the package and the number of attempts required  
+- receiving a notification about exceeding the interval of attempts in case of a failed transfer  
+- receiving an incoming packet message with the sender's address  
+
+To interact with the modem in batch mode, use the commands from [2.11. IC_H2D_PT_SETTINGS_READ] (# 211-ic_h2d_pt_settings_read) according to [2.17. IC_D2H_PT_RCVD] (# 217-ic_d2h_pt_rcvd).
+
+After transmitting data in packet mode, the sending modem waits for a short code message [ACK]() from the sender, upon receipt it notifies the user of a successful transmission or repeats the transmission until a response is received from the sender or the number of attempts is exceeded.
 
 <div style="page-break-after: always;"></div>
 
