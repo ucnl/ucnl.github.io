@@ -43,9 +43,9 @@
    - [5.1.2. Example 1 - requesting device information](#512-example-1---requesting-device-information)
    - [5.1.3. Example 2 - requesting remote data from a remote subscriber](#513-example-2---requesting-remote-data-from-a-remote-subscriber)
    - [5.1.4. Example 3 - setting up the ambient data configuration](#514-example-3---setting-up-the-ambient-data-configuration)  
-   - [5.1.5. Example 4 - Enabling packet mode]()
-   - [5.1.6. Example 5 - Sending a packet and receiving an acknowledgement]()
- - [5.2. Recipes]()
+   - [5.1.5. Example 4 - Enabling packet mode](#515-example-4---enabling-packet-mode)
+   - [5.1.6. Example 5 - Sending a packet and receiving an acknowledgement](#516-example-5---sending-a-message-in-the-packet-mode-and-receiving-an-acknowledgement)
+ - [5.2. Recipes](#52-recipes)
    
 <div style="page-break-after: always;"></div>
 
@@ -401,7 +401,7 @@ Sentence format: **`$PUWVJ,x,h--h*hh <CR><LF>`**
 ## 3. Working modes
 
 ### 3.1. Transparent channel mode
-In the transparent channel mode, the devices do not analyze the data coming from the control system and transmit them without changes to the hydroacoustic channel, where they can be received by any other **uWAVE** modem receiving in the same code channel in which the transmission was made. Provided that the receiving modem has not activated [packet mode]().
+In the transparent channel mode, the devices do not analyze the data coming from the control system and transmit them without changes to the hydroacoustic channel, where they can be received by any other **uWAVE** modem receiving in the same code channel in which the transmission was made. Provided that the receiving modem has not activated [packet mode](#33-packet-mode).
 
 <div style="page-break-after: always;"></div>
 
@@ -420,7 +420,7 @@ Also, the command mode can be enabled by default using the [IC_H2D_SETTINGS_WRIT
 <div style="page-break-after: always;"></div>
 
 ### 3.3. Packet mode
-Packet mode provides the user with the ability to transfer data in packets up to 64 bytes with guaranteed delivery (**ALO - at-least-once**, it is guaranteed that the message will be transmitted at least once) and receipt notification (acknowledgement). Since the interaction of the modem with the user system in the packet mode is implemented using **NMEA0183** sentences, to work in this mode, both the transmitting and receiving devices must be switched to [command mode]().
+Packet mode provides the user with the ability to transfer data in packets up to 64 bytes with guaranteed delivery (**ALO - at-least-once**, it is guaranteed that the message will be transmitted at least once) and receipt notification (acknowledgement). Since the interaction of the modem with the user system in the packet mode is implemented using **NMEA0183** sentences, to work in this mode, both the transmitting and receiving devices must be switched to [command mode](#32-command-mode).
 In packet mode, up to 255 devices are addressed (addresses from 0 to 254, address 255 reserved for broadcast messages without acknowledgements).
 The following functions are available to the user:
 - setting the address of the local modem  
@@ -429,9 +429,9 @@ The following functions are available to the user:
 - receiving a notification about exceeding the interval of attempts in case of a failed transfer  
 - receiving an incoming packet message with the sender's address  
 
-To interact with the modem in batch mode, use the commands from [2.11. IC_H2D_PT_SETTINGS_READ] (# 211-ic_h2d_pt_settings_read) according to [2.17. IC_D2H_PT_RCVD] (# 217-ic_d2h_pt_rcvd).
+To interact with the modem in batch mode, use the commands from [2.11. IC_H2D_PT_SETTINGS_READ](#211-ic_h2d_pt_settings_read) according to [2.17. IC_D2H_PT_RCVD](#217-ic_d2h_pt_rcvd).
 
-After transmitting data in packet mode, the sending modem waits for a short code message [ACK]() from the sender, upon receipt it notifies the user of a successful transmission or repeats the transmission until a response is received from the sender or the number of attempts is exceeded.
+After transmitting data in packet mode, the sending modem waits for a short code message [ACK](#42-remote-commands) from the sender, upon receipt it notifies the user of a successful transmission or repeats the transmission until a response is received from the sender or the number of attempts is exceeded.
 
 <div style="page-break-after: always;"></div>
 
