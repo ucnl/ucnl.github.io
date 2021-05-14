@@ -9,7 +9,7 @@
 <div style="page-break-after: always;"></div>
 
 ## Content
-- [0. Changes & versions]()
+- [0. Changes & versions](#0-changes-and-versions)
 - [1. Introduction](#1-introduction)  
   - [1.1. Physical layer](#11-physical-layer)
   - [1.2. NMEA0183 Protocol standard](#12-nmea0183-protocol-standard)
@@ -598,7 +598,98 @@ PUWV6 = [IC_H2D_AMB_DTA_CFG](#27-ic_h2d_amb_dta_cfg)
 PUWV0 = [IC_D2H_ACK](#21-ic_d2h_ack)  
 6 = ACK is for PUWV6 request  
 0 = Error code = [LOC_ERR_NO_ERROR](#41-error-codes)  
-  
+
+#### 5.1.5. Example 4 - Enabling packet mode
+
+```
+<< $PUWVF,1,1,0*5E<CR><LF>
+```
+PUWVF = [IC_H2D_PT_SETTINGS_WRITE](#213-ic_h2d_pt_settings_write)  
+1 = Save settings to flash  
+1 = Packet mode enabled  
+0 = Address of the local modem  
+```
+>> $PUWVE,1,0*40
+```
+PUWVE = [IC_D2H_PT_SETTINGS](#212-ic_d2h_pt_settings)  
+1 = Packet mode enabled  
+0 = Address of the local modem  
+
+#### 5.1.6. Example 5 - Sending a message in the packet mode and receiving an acknowledgement
+
+```
+<< $PUWVG,0,8,0x313233*2C
+```
+PUWVG = [IC_H2D_PT_SEND](#214-ic_h2d_pt_send)  
+0 = Target address  
+8 = Max number of attempts  
+0x313233 = bytes to send ('123')  
+```
+>> $PUWV0,G,0*43
+```
+PUWV0 = [IC_D2H_ACK](#21-ic_d2h_ack)  
+G = ACK for PUWVG  
+0 = Error code = [LOC_ERR_NO_ERROR](#41-error-codes)  
+```
+$PUWVI,0,1,0x313233*2B
+```  
+PUWVI = [IC_D2H_PT_DLVRD](#216-ic_d2h_pt_dlvrd)  
+0 = Target address  
+1 = Attempts preceeded  
+0x313233 = bytes to send ('123')  
+
+### 5.2. Recipes
+It is assumed that the modem is connected to a host system, and the command mode is enabled. Sentences can be copied and sent to the modem. Characters <CR><LF> (New line, Hex: 0x0D 0x0A, Dec: 13 10, или \\r\\n) should be added.
+
+#### Recipe 1
+Set default settings
+- Tx and Rx channel IDs - **0**
+- Command mode by default **disabled**
+- ACK of Tx finish **disabled**
+- Salinity **0.0 PSU**
+- Gravity acceleration **9.8067 м/с<sup>2</sup>**
+
+```
+$PUWV1,0,0,0.,0,0,9.8067*35
+```
+
+#### Recipe 2
+Disabling automatic transmission of all parameters of the environment and supply voltage and saving the settings in the flash.  
+
+```
+$PUWV6,0,0,0,0,0,0*32
+```
+
+#### Recipe 3
+Enabling automatic transmission of all parameters of the environment and supply voltage 1 time per second without saving these settings to the flash.  
+
+```
+$PUWV6,0,1000,1,1,1,1*03
+```
+
+#### Recipe 4
+Enabling automatic transmission of all parameters of the environment and supply voltage after any outgoing message from the modem without saving the settings to the flash.  
+
+```
+$PUWV6,0,1,1,1,1,1*33
+```
+
+#### Recipe 5
+Enabling automatic transmission of only the depth of the local modem after any outgoing message from the modem without saving the settings to the flash.  
+
+```
+$PUWV6,0,1,0,0,1,0*32
+```
+
+#### Recipe 6
+Requesting the depth of the remote modem with transmit and receive channel IDs of 0.  
+
+```
+$PUWV2,0,0,2*28
+```
+
+
+
 ________
 
 [Back to content](#content)
