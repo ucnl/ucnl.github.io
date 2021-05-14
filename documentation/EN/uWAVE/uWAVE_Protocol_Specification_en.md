@@ -9,6 +9,7 @@
 <div style="page-break-after: always;"></div>
 
 ## Content
+- [0. Changes & versions]()
 - [1. Introduction](#1-introduction)  
   - [1.1. Physical layer](#11-physical-layer)
   - [1.2. NMEA0183 Protocol standard](#12-nmea0183-protocol-standard)
@@ -30,10 +31,10 @@
    - [2.15. IC_D2H_PT_FAILED - packet mode: transfer failed](#215-ic_d2h_pt_failed)
    - [2.16. IC_D2H_PT_DLVRD - packet mode: transfer succeeded](#216-ic_d2h_pt_dlvrd)
    - [2.17. IC_D2H_PT_RCVD - packet mode: incoming packet](#217-ic_d2h_pt_rcvd)
-- [3. Working modes]()
-   - [3.1. Transparent channel mode]()
-   - [3.2. Command mode]()
-   - [3.3. Packet mode]()
+- [3. Working modes](#3-working-modes)
+   - [3.1. Transparent channel mode](#31-transparent-channel-mode)
+   - [3.2. Command mode](#32-command-mode)
+   - [3.3. Packet mode](#33-packet-mode)
 - [4. Identifiers](#4-identifiers)
    - [4.1. Error codes](#41-error-codes)
    - [4.2. Remote commands](#42-remote-commands)
@@ -46,6 +47,13 @@
    - [5.1.6. Example 5 - Sending a packet and receiving an acknowledgement]()
  - [5.2. Recipes]()
    
+<div style="page-break-after: always;"></div>
+
+## 0. Changes and versions
+| Date | Firmware version | Description |
+| :--- | :--- | :--- |
+| 14-MAY-2021 | System: STRONG 2.0, Core: uWAVE [JULY] v1.10 |Packet mode, sentences from [2.11. IC_H2D_PT_SETTINGS_READ](#211-ic_h2d_pt_settings_read) to [2.17. IC_D2H_PT_RCVD](#217-ic_d2h_pt_rcvd) |
+
 <div style="page-break-after: always;"></div>
 
 ## 1. Introduction
