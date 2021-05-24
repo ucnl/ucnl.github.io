@@ -12,6 +12,7 @@
 <!--* [Device specification: uWave Max](/documentation/EN/uWAVE/uWAVE_Max_Specification_en.md)-->
 * [Communication protocol specification: uWave](documentation/EN/uWAVE/uWAVE_Protocol_Specification_en.md)
 * [Device wiring diagram: uWave](/documentation/EN/uWAVE/uWAVE_wiring_diagram_en.md)
+* [Versions & changes](/documentation/EN/uWAVE/uWAVE_version_history_en.md)
 * [Demo host application (Repository)](https://github.com/ucnl/uWAVE_Host)
 * [Demo host application (Download release)](https://github.com/ucnl/uWAVE_Host/releases/download/1.0/uWAVE_Host.zip)
 * [Examples for Arduino](https://github.com/ucnl/uWAVE_Arduino)
