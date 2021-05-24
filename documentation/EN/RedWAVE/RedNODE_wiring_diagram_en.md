@@ -2,6 +2,8 @@
 | :---: | ---: |
 | [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **RedNODE** Navigation receiver <br/> Wiring diagram and drawings |
 
+<div style="page-break-after: always;"></div>
+
 ## WIRING DIAGRAM
 
 ![RedNODE_wiring_diagram](/documentation/RedNODE_wiring_diagram_en.png)
