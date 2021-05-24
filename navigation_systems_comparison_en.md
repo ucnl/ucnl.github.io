@@ -1,7 +1,10 @@
+<div style="page-break-after: always;"></div>
+
 | ![logo](/documentation/sm_logo.png) | |
 | :---: | ---: |
 | [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | Comparison of navigation and tracking systems |
 
+<div style="page-break-after: always;"></div>
 
 ## comparison table
 
@@ -19,6 +22,8 @@
 | Deployment features | Requires 4 floating buoys to be deployed | Requires 4 floating buoys to be deployed | Requires fixing the base station on a rigid rod and connecting an external GPS and compass | Requires 4 floating buoys to be deployed | Requires fixing the base station on a rigid rod and connecting an external GPS and compass |
 | Distinctive feature | Unlimited number of simultaneously positioned devices | Divers positioning simultaneously with voice transmission | Control code transmission function | The most affordable solution for amateurs | Two-way data transmission |
 
+<div style="page-break-after: always;"></div>
+
 ________________
 <a name="footnote1"><sup>1</sup></a> The maximum number of transponder beacons supported to be processed sequentially is specified.  
 <a name="footnote2"><sup>2</sup></a> The minimum value is indicated when working with one transponder beacon located at a distance of up to 100 meters from the base station  
@@ -27,3 +32,4 @@ ________________
 <a name="footnote5"><sup>5</sup></a> These parameters are available only when external sources of navigation data are connected: course and base station geo position  
 <a name="footnote6"><sup>6</sup></a> These parameters are not available in the diver's version
   
+<div style="page-break-after: always;"></div>
