@@ -29,9 +29,8 @@ The device allows:
 * transfer data in batch mode with guaranteed delivery (ALO - At-least-once) and delivery notification
 * measure immersion depth, water temperature, and supply voltage of local modem.
 
-The devices use a simple open [NMEA-like configuration protocol](uWAVE_Protocol_Specification_en.md), and the supplied library
-[**uWAVELib**](https://github.com/ucnl/uWAVELib) open-source allows for the fastest and easiest
-integration of devices into custom solutions.
+The devices use a simple open [NMEA-like configuration protocol](uWAVE_Protocol_Specification_en.md), and the supplied open-source library
+[**uWAVELib**](https://github.com/ucnl/uWAVELib) allows the fastest and easiest integration of devices into custom solutions.
 
 <div style="page-break-after: always;"></div>
 
