@@ -23,6 +23,16 @@ up to 20 subscribers in area 1000 x 1000 meters with both transparent channel an
 Extremely small size, low power consumption and simplicity of usage make **uWAVE** an ideal solution for AUV control as well as data 
 transmission, where dimensions and weight are the bottleneck.
 
+The device allows:
+* transfer data in transparent channel mode - just connect the modem to a serial port
+* request the depth, temperature, supply voltage of remote modems with simultaneous measurement of the signal propagation time (and hence the distance to them)
+* transfer data in batch mode with guaranteed delivery (ALO - At-least-once) and delivery notification
+* measure immersion depth, water temperature, and supply voltage of local modem.
+
+The devices use a simple open [NMEA-like configuration protocol](uWAVE_Protocol_Specification_en.md), and the supplied library
+[**uWAVELib**](https://github.com/ucnl/uWAVELib) open-source allows for the fastest and easiest
+integration of devices into custom solutions.
+
 <div style="page-break-after: always;"></div>
 
 ## TECHNICAL SPECIFICATIONS
