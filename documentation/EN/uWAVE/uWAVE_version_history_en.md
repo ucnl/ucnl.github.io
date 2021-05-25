@@ -12,8 +12,8 @@
 
 | Date | Firmware version | Description |
 | :--- | :--- | :--- |
-| 14-MAY-2021 | System: STRONG 2.0, </br> Core: uWAVE [JULY] v1.10 | + Packet mode (guaranteed delivery, ALO - At-least-once, logical addressing) </br> - Bug fixed: Tx/Rx channel ID in remote requests |
-| 21-DEC-2019 | System: STRONG 1.0, </br> Core: uWAVE [JULY] v1.08 | + Gravity acceleration setting for more precise depth measuring |    
+| 14-MAY-2021 | System: STRONG 2.0, <br/> Core: uWAVE [JULY] v1.10 | + Packet mode (guaranteed delivery, ALO - At-least-once, logical addressing) <br/> - Bug fixed: Tx/Rx channel ID in remote requests |
+| 21-DEC-2019 | System: STRONG 1.0, <br/> Core: uWAVE [JULY] v1.08 | + Gravity acceleration setting for more precise depth measuring |    
 
 
 ## 1. Features and difficult questions
