@@ -63,6 +63,7 @@ Differences from the basic version [uWAVE](/documentation/EN/uWAVE/uWAVE_Specifi
 | COMMAND MODE | 16 predefined messages (9 for user applications) |
 | PACKET MODE | 254 subscribers with an acknowledgement; broadcasting; packet size up to 64 bytes |
 | TX BUFFER SIZE | 127 bytes |
+| PROPAGATION TIME MEASUREMENT RESOLUTION | 0.0001 sec |
   
 ________________
 <a name="footnote1"><sup>1</sup></a> A parameter that determines the maximum range at which a signal can be received based on the electro-acoustic parameters of the transmitter and receiver, spatial decrease in the intensity of sound energy, attenuation in the medium and acoustic noise level.  
