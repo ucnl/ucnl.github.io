@@ -41,7 +41,7 @@ Differences from the basic version [uWAVE](/documentation/EN/uWAVE/uWAVE_Specifi
 | :--- | :--- |
 | DIMENSIONS (PCB, l х w х h) | 80 х 43 х 29 mm |
 | WEIGHT | 54 g |
-| DIMENSIONS (Transducer, Ф х h | 64 x 62 mm |
+| DIMENSIONS (Transducer, Ф х h) | 64 x 62 mm |
 | WEIGHT (Transducer, dry) | 360 g |
 | DEPTH RATING (Transducer) | 400 m |
 | MAX OPERATING RANGE<sup>[1](#footnote1),[2](#footnote2)</sup> | 3000 м |
