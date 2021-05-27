@@ -59,8 +59,9 @@ Differences from the basic version [uWAVE](/documentation/EN/uWAVE/uWAVE_Specifi
 | INTERFACE<sup>[4](#footnote4)</sup> | UART 9600 bps |
 | CONFIGURATION PROTOCOL | NMEA 0183 [PUWV](uWAVE_Protocol_Specification_en.md) |
 | TRANSDUCER CABLE LENGTH<sup>[4](#footnote4)</sup> | 1 m |
-| SUBSCRIBERS CODE DIVISION | 20 кодовых каналов |
+| SUBSCRIBERS CODE DIVISION | 20 code channels |
 | COMMAND MODE | 16 predefined messages (9 for user applications) |
+| PACKET MODE | 254 subscribers with an acknowledgement; broadcasting; packet size up to 64 bytes |
 | TX BUFFER SIZE | 127 bytes |
   
 ________________
