@@ -47,6 +47,7 @@ The devices use a simple open [NMEA-like configuration protocol](uWAVE_Protocol_
 | POWER SUPPLY<sup>[4](#footnote4),[7](#footnote7)</sup> | 5 .. 12 V |
 | DATA LINES VOLTAGE                      | 0 .. 3.3 V |
 | FREQUENCY BAND                          | 10 .. 30 kHz |
+| ACOUSTIC SOURCE LEVEL (IN BAND)         | 169 dB re 1 uPa @ 1 m |
 | BIT ERROR RATE                          | 10<sup>-6</sup> |
 | SNR<sup>[5](#footnote5)</sup>           | -2 dB |
 | MAX RELATIVE VELOCITY                   | +/- 1 m/s |
@@ -56,9 +57,10 @@ The devices use a simple open [NMEA-like configuration protocol](uWAVE_Protocol_
 | CONFIGURATION PROTOCOL                  | NMEA0183 [PUWV](uWAVE_Protocol_Specification_en.md) |
 | CABLE LENGTH<sup>[6](#footnote6)</sup>  | 0.5 m |
 | SUBSCRIBERS CODE DIVISION               | 20 code channels |
-| TX BUFFER SIZE                          | 127 bytes |
 | COMMAND MODE                            | 16 predefined messages (9 for user applications) |
-| PROPAGATION TIME MEASUREMENT RESOLUTION<sup>[8](#footnote8)</sup> | 0.0001 s |
+| PACKET MODE                             | 254 subscribers with an acknowledgement; broadcasting; packet size up to 64 bytes |
+| TX BUFFER SIZE | 127 bytes |
+| PROPAGATION TIME MEASUREMENT RESOLUTION | 0.0001 sec |
   
 ________________
 <a name="footnote1"><sup>1</sup></a> A parameter that determines the maximum range at which a signal can be received based on the electro-acoustic parameters of the transmitter and receiver, spatial decrease in the intensity of sound energy, attenuation in the medium and acoustic noise level.  
