@@ -2,6 +2,8 @@
 | :---: | ---: |
 | [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **uWAVE Max** underwater acoustic modem <br/> Device specifications |
 
+## THIS DEVICE IS COOMING SOON, STAY TUNED!
+
 ## KEY FEATURES
 
 * **Extremely small size and weight**
