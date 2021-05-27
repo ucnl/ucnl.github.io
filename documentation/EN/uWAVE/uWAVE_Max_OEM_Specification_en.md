@@ -9,7 +9,7 @@
 * **Communication range up to 3000<sup>[1](#footnote1), [2](#footnote2)</sup> m**
 * **Code division of subscribers**
 * **Measurement of signal propagation time**
-* **Highly reliable digital broadband acoustic communication technology **
+* **Highly reliable digital broadband acoustic communication technology**
 * **Low power consumption (Rx/Tx) 0.33/15 W**
 * **Open pairing protocol**
 * **Batch transmission with guaranteed delivery and acknowledgement**
