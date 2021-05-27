@@ -52,7 +52,7 @@ Differences from the basic version [uWAVE](/documentation/EN/uWAVE/uWAVE_Specifi
 | FREQUENCY BAND | 10 .. 30 kHz |
 | ACOUSTIC SOURCE LEVEL (IN BAND) | 175 dB re 1 uPa @ 1 m |
 | BIT ERROR RATE | 10<sup>-6</sup> |
-| SNR<sup>[3](#footnote3)</sup></sup> | -2 dB |
+| SNR<sup>[3](#footnote3)</sup> | -2 dB |
 | MAX RELATIVE VELOCITY | +/- 1 m/s |
 | RATED START-UP TIME | 100 msec |
 | OPERATING TEMPERATURE RANGE | -5 .. 50 °C |
