@@ -1,4 +1,4 @@
-| ![logo](/documentation/sm_logo.png) | ![logo](/documentation/crm_300_os.png) |
+| ![logo](/documentation/sm_logo.png) | ![crm_300_os](/documentation/crm_300_os.png) |
 | :---: | ---: |
 | [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **Crimea-300 OS** Интерфейсный модуль <br/> Спецификация устройства |
 
@@ -45,7 +45,7 @@
 На рисунке 1 показаны места для пайки кабеля и кнопок управления.
 
 | |
-| :--- : | 
+| :---: | 
 | ![crm_300_os_connection](/documentation/crm_300_os_connection.png) |
 | Рисунок 1 - Расположение мест пайки |
 
