@@ -46,7 +46,7 @@
 
 | |
 | :--- : | 
-| [crm_300_os_connection](/documentation/crm_300_os_connection.png) |
+| ![crm_300_os_connection](/documentation/crm_300_os_connection.png) |
 | Рисунок 1 - Расположение мест пайки |
 
 Кнопки 1 и 2, подключаемые к интерфейсному модулю и применяемые для калибровки и управления модулем **НОРМАЛЬНО РАЗОМКНУТЫ**.
