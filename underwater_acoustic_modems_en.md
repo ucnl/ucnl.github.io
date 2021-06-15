@@ -16,7 +16,7 @@
 * [Versions & changes](/documentation/EN/uWAVE/uWAVE_version_history_en.md)
 * [Demo host application (Repository)](https://github.com/ucnl/uWAVE_Host)
 * [Demo host application (Download release)](https://github.com/ucnl/uWAVE_Host/releases/download/1.0/uWAVE_Host.zip)
-* [Arduino library with examples)[https://github.com/ucnl/uWAVE_ALib]
+* [Arduino library with examples](https://github.com/ucnl/uWAVE_ALib)
 * [Examples for Arduino (Old)](https://github.com/ucnl/uWAVE_Arduino)
 * [uWave: videos, tutorials, etc.](/documentation/EN/uWAVE/media)
 * [uWave: Tank holder 3D model (step)](/documentation/uWAVE_holder_tank.step)
