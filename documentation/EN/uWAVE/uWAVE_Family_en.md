@@ -36,12 +36,21 @@ other code channel.
 
 All devices of the **uWAVE** family can receive at the same time in only one code channel.
 
+### 2.1. Acoustic baud rate
+The standard mode for **uWAVE** devices is 78 bps. This mode provides maximum communication range and reliability. It is in this mode that the largest number of code channels is available.
+
+All devices in the **uWAVE** family support alternate modes, providing baud rates of 156 and 314 bps. The higher the speed, the less noise immunity, and, accordingly, the reliability and range of communication.
+
+Different speed modes are not compatible with each other. Transfer of the modem to another speed mode is provided by replacing its firmware.
+
+
 <div style="page-break-after: always;"></div>
 
 ## 3. Device working modes
 All devices of the family can work in two modes, switching between which is carried out by the user:
 * Transparent channel mode
 * Command mode
+* Packet mode
 
 These modes determine how the modem perceives data coming from the control system:
 
@@ -63,20 +72,26 @@ from the need to monitor the status of a remote modem.
 The devices [uWAVE USBL Modem](uWAVE_USBL_Modem_Specification_en.md) allow users to determine the horizontal angle of arrival of any
 incoming message from other devices of the **uWAVE** family. Including for user messages transmitted in transparent channel mode.
 
+### 3.3. Packet mode
+Packet mode allows transmitting data packets with guaranteed delivery (ALO - At-least-once), delivery notification to the addressee. In packet mode, logical addressing of up to 254 subscribers is used over each code channel (255 is a broadcast address without notification and guaranteed delivery). Packet mode can only be used when the modem is in command mode.
+
+
 <div style="page-break-after: always;"></div>
 
 ## 4. Built-in sensors
-All devices of the family have built-in depth and temperature sensors, and also measure the supply voltage, devices
-[uWAVE USBL Modem](uWAVE_USBL_Modem_Specification_en.md) additionally have built-in dual-axis inclinometers
-(to measure roll and pitch angles). the user can configure the output of this data periodically, with a given
-period (from 0.5 to 60 seconds) or in tandem - upon receipt of any data from remote devices.
+**All** devices in the family have a built-in supply voltage measurement module. The supply voltage for all devices in the family can be remotely requested by any other devices of the family.
 
-All devices, when turned on in the air, automatically calibrate the pressure sensor, which eliminates the error of
-determining the depth associated with changes in atmospheric pressure and zero drift of the sensor. To achieve the highest possible 
-accuracy for this technology, the device allows users to set an adequate value of the acceleration of gravity for the place of work
-(for example, according to the WGS84 Gravity model, thereby eliminating the influence of its change from geographical latitude).
+Devices [uWAVE](uWAVE_Specification_en.md), [uWAVE Max](uWAVE_Max_Specification_en.md) and [uWAVE USBL Modem](uWAVE_USBL_Modem_Specification_en.md) have built-in depth/temperature sensors. Depth and temperature readings can be remotely requested by any device of the family.
 
-All devices are designed for a maximum immersion depth of 300 meters.
+[UWAVE USBL Modem](uWAVE_USBL_Modem_Specification_en.md) devices additionally have built-in two-axis inclinometers
+(measure the angles of roll and pitch). The user can configure the output of this data, with a given
+period (from 0.5 to 60 seconds) or tandem - when any data is received from remote devices. Inclinometer readings are only available locally.
+
+All devices equipped with depth/temperature sensors, when switched on in the air, automatically calibrate the pressure sensor, which eliminates the error in determining the depth associated with changes in atmospheric pressure and zero drift of the sensor. To achieve the maximum possible for
+of this precision technology, the device allows you to set an adequate value for the acceleration of gravity for the place of work
+(for example, according to the WGS84 Gravity model, thereby excluding the influence of its variation from geographical latitude).
+
+The devices are designed for a maximum immersion depth of 300 meters.
 
 <div style="page-break-after: always;"></div>
 
@@ -86,19 +101,14 @@ operate in transparent channel mode. This does not require any additional integr
 
 To work in command mode, a simple [NMEA-like ASCII protocol](uWAVE_Protocol_Specification_en.md) is used.
 
-Our [GitHub](https://github.com/ucnl) provides open-source examples for interfacing with **uWAVE** devices:
-* Library [uWAVELib](https://github.com/ucnl/uWAVELib) (.NET)
-* Demo software [uWAVE Host](https://github.com/ucnl/uWAVE_Host)
-* Demo project [uWAVE VLBL](https://github.com/ucnl/uWAVE_VLBL) - navigation on a virtual long base using two modems [uWAVE](uWAVE_Specification_en.md)
-* Repository with examples of the operation of modems [uWAVE](uWAVE_Specification_en.md) on the Arduino platform:
-  * [Example 1](https://github.com/ucnl/uWAVE_Arduino/blob/master/uWAVE_Example_1.ino) - Switching to command mode,
-  requesting device information, updating device settings, configuring settings for issuing environmental parameters, requesting of a remote device
-  * [Example 2](https://github.com/ucnl/uWAVE_Arduino/blob/master/uWAVE_Example_2.ino) - Work in a transparent channel: a simple terminal for transferring
-  text messaging via underwater acoustic channel
-  * [Example 3](https://github.com/ucnl/uWAVE_Arduino/blob/master/uWAVE_Example_1.ino) - The reference point of the virtual long base. Analyzes
-  RMC messages from a GNSS-receiver, requests a remote modem, sends its location and data received from a remote modem, as well as the slant range measured to it to a radio channel.
-  * [uMCPIno](https://github.com/AlekUnderwater/uMCPIno) - Protocol with guaranteed delivery and message sequence (implementations for Arduino, STM32 and .NET)
-  
+On our [GitHub](https://github.com/ucnl) you can find examples and linbraries to interface with **uWAVE** devices:
+* [uWAVE ALib](https://github.com/ucnl/uWAVE_ALib) - Arduino library
+* [uWAVELib](https://github.com/ucnl/uWAVELib) - .NET Library
+* [uWAVE Host](https://github.com/ucnl/uWAVE_Host) - Demo application
+* [uWAVE VLBL](https://github.com/ucnl/uWAVE_VLBL) - Demo application (VLBL navigation system on two [uWAVE](uWAVE_Specification_ru.md) modems)
+* [uMCPIno](https://github.com/AlekUnderwater/uMCPIno) - Point-to-point protocol with guaranteed delivery and packets ordering (Arduino, STM32, .NET)
+* [uWAVE](uWAVE_Specification_ru.md) Some Arduino examples (old version):
+
   <div style="page-break-after: always;"></div>
 
   
