@@ -13,7 +13,7 @@
 |      | ![](https://raw.githubusercontent.com/ucnl/ucnl.github.io/master/documentation/RT_1_332820_1.png) | ![](https://raw.githubusercontent.com/ucnl/ucnl.github.io/master/documentation/utro_pcb_rt_1_524525_1_2.png) | ![](https://raw.githubusercontent.com/ucnl/ucnl.github.io/master/documentation/def_modem_black.png) | ![](https://raw.githubusercontent.com/ucnl/ucnl.github.io/master/documentation/def_zima_b_ant.png) |
 | Максимальная дальность связи | 1000 м | 3000 м | 3000 м | 3000 м |
 | Скорость передачи данных | 78 бит/с | 78 бит/с | 78 бит/с | 78 бит/с |
-| Габариты | (Ф х h) 41 x 45 мм |   |   |   |
+| Габариты | (Ф х h) 41 x 45 мм | Плата (д х ш х в) 80 х 43 х 29 мм <br/> Антенна (Ф х h) 64 x 62 мм |  (Ф х h) 64 x 62 мм | (Ф х h) 64 х 128 мм |
 | Вес (сухой) | 0.16 кг |   |   |   |
 | Максимальная рабочая глубина |   |   |   |   |
 
