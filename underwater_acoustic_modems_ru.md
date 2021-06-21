@@ -7,7 +7,7 @@
 ## Гидроакустические модемы
 ### uWave
 #### гидроакустический модем
-<!--* [Краткое описание семества устройств uWave](/documentation/RU/uWAVE/uWAVE_Family_ru.md)-->
+[Краткое описание семества устройств uWave](/documentation/RU/uWAVE/uWAVE_Family_ru.md)
 * [Спецификация устройства: uWave](/documentation/RU/uWAVE/uWAVE_Specification_ru.md)
 <!--* [Спецификация устройства: uWave USBL Modem](/documentation/RU/uWAVE/uWAVE_USBL_Modem_Specification_ru.md)-->
 <!--* [Спецификация устройства: uWave Max](/documentation/RU/uWAVE/uWAVE_Max_Specification_ru.md)-->
