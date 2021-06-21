@@ -1,6 +1,6 @@
 | ![logo](/documentation/sm_logo.png) | ![logo](/documentation/utro_pcb_rt_1_524525_1_2.png) |
 | :---: | ---: |
-| [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **uWAVE Max OEM** - Гидроакустический модем <br/> Спецификация устройства |
+| [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **uWave Max OEM** - Гидроакустический модем <br/> Спецификация устройства |
 
 ## КЛЮЧЕВЫЕ ОСОБЕННОСТИ
 
@@ -16,20 +16,20 @@
 
 ## ОПИСАНИЕ
 
-**uWAVE Max OEM** базируется на платформе **UTRO** и поставляется в виде модуля печатной платы с гидроакустической антенной [RT-1.524525-1](/documentation/RU/Transducers/RT-1.524525-1_specification_ru.md).
+**uWave Max OEM** базируется на платформе **UTRO** и поставляется в виде модуля печатной платы с гидроакустической антенной [RT-1.524525-1](/documentation/RU/Transducers/RT-1.524525-1_specification_ru.md).
 
 При помощи модемов **uWAVE Max OEM** пользователь может:
-* передавать произвольные цифровые данные между устройствами [uWAVE USBL Modem](uWAVE_USBL_Modem_Specification_ru.md), **uWAVE Max** и [uWAVE](uWAVE_Specification_ru.md) в любой комбинации;
+* передавать произвольные цифровые данные между устройствами [uWAVE USBL Modem](uWAVE_USBL_Modem_Specification_ru.md), **uWave Max** и [uWAVE](uWAVE_Specification_ru.md) в любой комбинации;
 * передавать до 9 кодовых пользовательских команд телеуправления;
-* запрашивать у удаленных устройств [uWAVE USBL Modem](uWAVE_USBL_Modem_Specification_ru.md), **uWAVE Max** и [uWAVE](uWAVE_Specification_ru.md) их глубину, температуру и напряжение питания;
+* запрашивать у удаленных устройств [uWave USBL Modem](uWAVE_USBL_Modem_Specification_ru.md), **uWave Max** и [uWave](uWAVE_Specification_ru.md) их глубину, температуру и напряжение питания;
 * передавать данные в пакетном режиме с уведомлением о доставке (ALO - At-least-once)
 * измерять собственное напряжение питания;
 
-Устройства [семейства uWAVE](uWAVE_Family_ru.md) используют простой открытый [NMEA-подобный протокол настройки](uWAVE_Protocol_Specification_ru.md), а поставляемая библиотека 
-[**uWAVELib**](https://github.com/ucnl/uWAVELib) с открытым исходным кодом позволяет осуществлять максимально быструю и простую 
+Устройства [семейства uWave](uWAVE_Family_ru.md) используют простой открытый [NMEA-подобный протокол настройки](uWAVE_Protocol_Specification_ru.md), а поставляемая библиотека 
+[**uWaveLib**](https://github.com/ucnl/uWAVELib) с открытым исходным кодом позволяет осуществлять максимально быструю и простую 
 интеграцию устройств в пользовательские решения.
 
-Отличия от базовой версии [uWAVE](/documentation/RU/uWAVE/uWAVE_Specification_ru.md):
+Отличия от базовой версии [uWave](/documentation/RU/uWAVE/uWAVE_Specification_ru.md):
 * Увеличенная до 3000<sup>[1](#footnote1),[2](#footnote2)</sup> м максимальная дальность связи
 * OEM-исполнение
 * Отсутствие встроенного датчика глубины/температуры
@@ -66,6 +66,6 @@
   
 ________________
 <a name="footnote1"><sup>1</sup></a> Параметр, определяющий максимальную дальность, на которой возможен прием сигнала, исходя из электроакустических параметров передатчика и приемника, пространственного убывания интенсивности звуковой энергии, затухания в среде и уровня гидроакустических помех.  
-<a name="footnote2"><sup>2</sup></a> При работе с другим **uWAVE Max/uWAVE Max OEM** или при работе с модемами [uWAVE USBL Modem](uWAVE_USBL_Modem_Specification_ru.md). Максимальная дальность связи со стандартными модемами [uWAVE](uWAVE_Specification_ru.md) составляет 1000 метров.  
+<a name="footnote2"><sup>2</sup></a> При работе с другим **uWave Max/uWave Max OEM** или при работе с модемами [uWave USBL Modem](uWAVE_USBL_Modem_Specification_ru.md). Максимальная дальность связи со стандартными модемами [uWave](uWAVE_Specification_ru.md) составляет 1000 метров.  
 <a name="footnote3"><sup>3</sup></a> Значение получено без учета эффекта многолучевого распространения в лабораторном статическом эксперименте.  
 <a name="footnote4"><sup>4</sup></a> Значение может быть изменено по запросу.  
