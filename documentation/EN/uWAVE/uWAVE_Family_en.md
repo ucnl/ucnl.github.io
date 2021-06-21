@@ -1,6 +1,6 @@
 | ![logo](/documentation/sm_logo.png) |  |
 | :---: | ---: |
-| [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **uWAVE** - underwater communication devices family <br/> Brief description |
+| [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **uWave** - underwater communication devices family <br/> Brief description |
   
 # uWave devices family <br/> Brief description
 
