@@ -6,7 +6,7 @@
 
 <div style="page-break-after: always;"></div>
 
-## Сравнительная таблица
+## Основные параметры устройств
 
 |  | [uWave](/documentation/RU/uWAVE/uWAVE_Specification_ru.md) | [uWave Max OEM](/documentation/RU/uWAVE/uWAVE_Max_OEM_Specification_ru.md) | [uWave Max](/documentation/RU/uWAVE/uWAVE_Max_Specification_ru.md) | [uWave USBL Modem](/documentation/RU/uWAVE/uWAVE_USBL_Modem_Specification_ru.md) | 
 | :--- | :---: | :---: | :---: | :---: | 
@@ -19,6 +19,14 @@
 | Модуль измерения напряжения питания | + | + | + | + |
 | Датчик глубины/температуры | + | - | + | + |
 | Двухосевой инклинометр | - | - | - | + |
+
+## Скоростные режимы
+
+|      | STRONG | EASY   | LITE   |
+| :--- | :---:  | :---:  | :---:  |
+| Скорость передачи, бит/с | 78 | 156 | 314 |
+| Максимальная дальность, м | 3000* | 700 | 500 |
+| Число кодовых каналов | 20 | 14 | 7 | 
 
 
 <div style="page-break-after: always;"></div>
