@@ -1,6 +1,6 @@
 | ![logo](/documentation/sm_logo.png) | ![logo](/documentation/utro_pcb_rt_1_524525_1_2.png) |
 | :---: | ---: |
-| [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **uWAVE Max OEM** - Underwater acoustic modem <br/> Device specifications |
+| [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **uWave Max OEM** - Underwater acoustic modem <br/> Device specifications |
 
 ## KEY FEATURES
 
@@ -16,20 +16,18 @@
 
 ## DESCRIPTION
 
-**uWAVE Max OEM** is based on **UTRO** platform and is supplied as a printed circuit board module with [RT-1.524525-1](/documentation/EN/Transducers/RT-1.524525-1_specification_en.md) transducer.
+**uWave Max OEM** is based on **UTRO** platform and is supplied as a printed circuit board module with [RT-1.524525-1](/documentation/EN/Transducers/RT-1.524525-1_specification_en.md) transducer.
 
 With the **uWAVE Max OEM** modems, the user can:
-* transfer arbitrary digital data between devices [uWAVE USBL Modem](uWAVE_USBL_Modem_Specification_ru.md), **uWAVE Max** and [uWAVE](uWAVE_Specification_ru.md) in any combination;
+* transfer arbitrary digital data between devices [uWave USBL Modem](uWAVE_USBL_Modem_Specification_ru.md), **uWave Max** and [uWave](uWAVE_Specification_ru.md) in any combination;
 * transmit up to 9 code user commands of telecontrol;
-* request from remote devices [uWAVE USBL Modem](uWAVE_USBL_Modem_Specification_ru.md), **uWAVE Max** and [uWAVE](uWAVE_Specification_ru.md) their depth, temperature and supply voltage;
+* request from remote devices [uWave USBL Modem](uWAVE_USBL_Modem_Specification_ru.md), **uWave Max** and [uWave](uWAVE_Specification_ru.md) their depth, temperature and supply voltage;
 * transfer data in batch mode with acknowledgment (ALO - At-least-once)
 * measure its own supply voltage;
 
-Devices from [uWAVE family](uWAVE_Family_en.md) use a simple open [NMEA-like configuration protocol](uWAVE_Protocol_Specification_en.md), and the supplied open-source library
-[**uWAVELib**](https://github.com/ucnl/uWAVELib) allows for the fastest and easiest
-integration of devices into custom solutions.
+Devices from [uWave family](uWAVE_Family_en.md) use a simple open [NMEA-like configuration protocol](uWAVE_Protocol_Specification_en.md), and the supplied open-source libraries [**uWaveLib**](https://github.com/ucnl/uWAVELib) (.NET) and [**uWave ALib**](https://github.com/ucnl/uWAVE_ALib) (Arduino) allows for the fastest and easiest integration of devices into custom solutions.
 
-Differences from the basic version [uWAVE](/documentation/EN/uWAVE/uWAVE_Specification_en.md):
+Differences from the basic version [uWave](/documentation/EN/uWAVE/uWAVE_Specification_en.md):
 * Increased to 3000<sup>[1](#footnote1), [2](#footnote2)</sup> m maximum communication range
 * OEM
 * No built-in depth/temperature sensor
@@ -67,6 +65,6 @@ Differences from the basic version [uWAVE](/documentation/EN/uWAVE/uWAVE_Specifi
   
 ________________
 <a name="footnote1"><sup>1</sup></a> A parameter that determines the maximum range at which a signal can be received based on the electro-acoustic parameters of the transmitter and receiver, spatial decrease in the intensity of sound energy, attenuation in the medium and acoustic noise level.  
-<a name="footnote2"><sup>2</sup></a> When working with another **uWAVE Max/uWAVE Max OEM** or when working with [uWAVE USBL Modem](uWAVE_USBL_Modem_Specification_en.md). The maximum communication range with standard modems [uWAVE](uWAVE_Specification_en.md) is 1000 meters.  
+<a name="footnote2"><sup>2</sup></a> When working with another **uWave Max/uWave Max OEM** or when working with [uWave USBL Modem](uWAVE_USBL_Modem_Specification_en.md). The maximum communication range with standard modems [uWave](uWAVE_Specification_en.md) is 1000 meters.  
 <a name="footnote3"><sup>3</sup></a> This value is obtained without the presence of the multipath effect.  
 <a name="footnote4"><sup>4</sup></a> Сan be changed by special request.  
