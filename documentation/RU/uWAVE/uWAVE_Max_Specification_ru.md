@@ -24,9 +24,11 @@
 * запрашивать у удаленных устройств [uWAVE USBL Modem](uWAVE_USBL_Modem_Specification_ru.md), **uWave Max** и [uWave](uWAVE_Specification_ru.md) их глубину, температуру и напряжение питания;
 * измерять собственную глубину, температуру и напряжение питания;
 
-Устройства [семейства uWave](uWAVE_Family_ru.md) используют простой открытый [NMEA-подобный протокол настройки](uWAVE_Protocol_Specification_ru.md), а поставляемая библиотека 
-[**uWaveLib**](https://github.com/ucnl/uWAVELib) с открытым исходным кодом позволяет осуществлять максимально быструю и простую 
-интеграцию устройств в пользовательские решения.
+Устройства [семейства uWave](uWAVE_Family_ru.md) используют простой [NMEA-подобный протокол](uWAVE_Protocol_Specification_en.md) настройки, а поставляемые open-source библиотеки [**uWaveLib**](https://github.com/ucnl/uWAVELib) (.NET) и [**uWave ALib**](https://github.com/ucnl/uWAVE_ALib) (Arduino) позволяют сделать интеграцию модемов в пользовательские решения максимально просто и быстро.
+
+Отличия от базовой версии [uWave](/documentation/EN/uWAVE/uWAVE_Specification_ru.md):
+* Увеличенная до 3000<sup>[1](#footnote1), [2](#footnote2)</sup> м максимальная дальность
+
 
 ## ТЕХНИЧЕСКИЕ ХАРАКТЕРИСТИКИ
 
