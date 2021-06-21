@@ -9,10 +9,12 @@
 ## Сравнительная таблица
 
 |  | [uWave](/documentation/RU/uWAVE/uWAVE_Specification_ru.md) | [uWave Max OEM](/documentation/RU/uWAVE/uWAVE_Max_OEM_Specification_ru.md) | [uWave Max](/documentation/RU/uWAVE/uWAVE_Max_Specification_ru.md) | [uWave USBL Modem](/documentation/RU/uWAVE/uWAVE_USBL_Modem_Specification_ru.md) | 
-| :---                                               | :---:                 | :---:           | :---:                           | :---:           | 
+| :--- | :---: | :---: | :---: | :---: | 
+| Максимальная дальность связи | 1000 м | 3000 м | 3000 м | 3000 м |
 
 
 <div style="page-break-after: always;"></div>
+
 ________________
 <a name="footnote1"><sup>1</sup></a> Указано максимальное поддерживаемое число маяков-ответчиков, работа с которыми происходит последовательно  
 <a name="footnote2"><sup>2</sup></a> Указано минимальное значение при работе с одним маяком-ответчиком, находящимся на расстоянии до 100 метров от базовой станции  
