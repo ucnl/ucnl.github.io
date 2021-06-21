@@ -13,7 +13,7 @@
 |      | ![](https://raw.githubusercontent.com/ucnl/ucnl.github.io/master/documentation/RT_1_332820_1.png) | ![](https://raw.githubusercontent.com/ucnl/ucnl.github.io/master/documentation/utro_pcb_rt_1_524525_1_2.png) | ![](https://raw.githubusercontent.com/ucnl/ucnl.github.io/master/documentation/def_modem_black.png) | ![](https://raw.githubusercontent.com/ucnl/ucnl.github.io/master/documentation/def_zima_b_ant.png) |
 | Текущий статус | Поставляется | Поставляется | Ожидается в 2022 | Ожидается в 2022 |
 | Максимальная дальность связи | 1000 м | 3000 м | 3000 м | 3000 м |
-| Скорость передачи данных | 78 бит/с | 78 бит/с | 78 бит/с | 78 бит/с |
+| Скорость передачи данных | 78 / 156 / 314 бит/с | 78 / 156 / 314 бит/с | 78 / 156 / 314 бит/с | 78 / 156 / 314 бит/с |
 | Габариты | Ф41 x 45 мм | 80 х 43 х 29 мм (плата) <br/> Ф64 x 62 мм (антенна) |  Ф64 x 62 мм | Ф64 х 128 мм |
 | Вес (сухой) | 160 г | (Плата) 54 г <br/> (Антенна) 360 г | 360 г | 440 г |
 | Максимальная рабочая глубина | 300 м | 400 м* | 300 м | 300 м |
