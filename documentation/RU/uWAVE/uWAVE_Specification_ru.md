@@ -29,9 +29,7 @@
 * передавать данные в пакетном режиме с гарантированной доставкой (ALO - At-least-once) и уведомлением о доставке
 * измерять локальную глубину погружения, температуру воды и напряжение питания.
 
-Устройства [семейства uWave](uWAVE_Family_ru.md) используют простой открытый [NMEA-подобный протокол настройки](uWAVE_Protocol_Specification_ru.md), а поставляемая библиотека 
-[**uWaveLib**](https://github.com/ucnl/uWAVELib) с открытым исходным кодом позволяет осуществлять максимально быструю и простую 
-интеграцию устройств в пользовательские решения.
+Устройства [семейства uWave](uWAVE_Family_ru.md) используют простой [NMEA-подобный протокол](uWAVE_Protocol_Specification_en.md) настройки, а поставляемые open-source библиотеки [**uWaveLib**](https://github.com/ucnl/uWAVELib) (.NET) и [**uWave ALib**](https://github.com/ucnl/uWAVE_ALib) (Arduino) позволяют сделать интеграцию модемов в пользовательские решения максимально просто и быстро.
 
 <div style="page-break-after: always;"></div>
 
