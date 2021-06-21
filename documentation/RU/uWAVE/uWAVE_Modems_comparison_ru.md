@@ -2,25 +2,15 @@
 
 | ![logo](/documentation/sm_logo.png) | |
 | :---: | ---: |
-| [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | Сравнение навигационных и трекинговых систем |
+| [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | Сравнение модемов семейства **uWave** |
 
 <div style="page-break-after: always;"></div>
 
 ## Сравнительная таблица
 
-|  | [RedWAVE подводный GPS](/documentation/RU/RedWAVE/RedWAVE_DataBrief_ru.md) | [RWLT](/documentation/RU/RWLT/RWLT_DataBrief_ru.md) | [Zima USBL](/documentation/RU/Zima/Zima_DataBrief_ru.md) | [WAYU](/documentation/RU/WAYU/WAYU_DataBrief_ru.md) | [uWAVE USBL](/documentation/RU/uWAVE/uWAVE_USBL_DataBrief_ru.md) |
-| :---                                               | :---:                 | :---:           | :---:                           | :---:           | :---:                |
-| Тип системы                                        | LBL                   | LBL             | USBL                            | LBL             | USBL                 |
-| Место выработки навигационной информации           | Подводный <br/> объект | Надводный <br/> пульт | Надводный <br/> пульт | Надводный <br/> пульт | Надводный <br/> пульт |
-| Число позиционируемых объектов                     | **∞**                  | 1               | до 23<sup>[1](#footnote1)</sup> | 1               | до 20<sup>[1](#footnote1)</sup>                |
-| Номинальный период обновления навигационных данных | 1 с                   | 2 с             | ≥ 3.6<sup>[2](#footnote2)</sup> с | 2 c           | ≥ 3.6<sup>[2](#footnote2)</sup> c                |
-| Максимальный размер рабочей области            | 700 х 700 м           | 1500 x 1500 м   | круг R = 8000 м      | 300 x 300 м     | круг R = 1000 м |
-| Номинальная точность                               | 2DRMS 0.84 м          | 2DRMS 0.84 м    | 1° (≈17 м на удалении 1000 м) | 2DRMS 2 м | 2° (≈35 м на удалении 1000 м) |
-| Максимальная глубина                               | 300<sup>[3](#footnote3)</sup> м | 300<sup>[3](#footnote3)</sup> м | 300 м | 100 м | 300 м |
-| Вырабатываемые навигационные данные                | Широта, <br/> Долгота, <br/> Глубина, <br/> Температура, <br/> Время UTC<sup>[6](#footnote6)</sup>, <br/> Курс | Широта, <br/> Долгота, <br/> Глубина<sup>[4](#footnote4)</sup>, <br/> Температура<sup>[4](#footnote4)</sup>, <br/> Курс | Дальность, <br/> Азимут, <br/> Глубина, <br/> Заряд батареи, <br/> Широта<sup>[5](#footnote5)</sup>, <br/> Долгота<sup>[5](#footnote5)</sup> | Широта, <br/> Долгота, <br/> Курс | Дальность, <br/> Азимут, <br/> Глубина, <br/> Заряд батареи, <br/> Широта<sup>[4](#footnote5)</sup>, <br/> Долгота<sup>[5](#footnote4)</sup> | 
-| Максимальная относительная скорость | ±1.8 м/с | ±1.8 м/с | ±2 м/с | ±1 м/с | ±1 м/с |
-| Особенности развертывания | Требуется расстановка 4 плавучих буев | Требуется расстановка 4 плавучих буев | Требуется закрепление базовой станции на жесткой штанге и подключение внешнего GPS и компаса | Требуется расстановка 4 плавучих буев | Требуется закрепление базовой станции на жесткой штанге и подключение внешнего GPS и компаса |
-| Отличительная черта | - Неограниченное число одновременно позиционируемых устройств.<br/> - Не требуется никаких калибровок. | - Самое быстрое и просто развертывание системы. <br/> - Позиционирование водолазов одновременно с голосовой передачей. <br/> - Не требуется никаких калибровок. | Функция передачи управляющих кодовых посылок | - Максимально доступное решение для любительского применения. <br/> - Не требуется никаких калибровок. | Двусторонняя передача данных |
+|  | [uWave](/documentation/RU/uWAVE/uWAVE_Specification_ru.md) | [uWave Max OEM](/documentation/RU/uWAVE/uWAVE_Max_OEM_Specification_ru.md) | [uWave Max](/documentation/RU/uWAVE/uWAVE_Max_Specification_ru.md) | [uWave USBL Modem](/documentation/RU/uWAVE/uWAVE_USBL_Modem_Specification_ru.md) | 
+| :---                                               | :---:                 | :---:           | :---:                           | :---:           | 
+
 
 <div style="page-break-after: always;"></div>
 ________________
