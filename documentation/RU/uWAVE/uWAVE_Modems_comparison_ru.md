@@ -11,7 +11,10 @@
 |  | [uWave](/documentation/RU/uWAVE/uWAVE_Specification_ru.md) | [uWave Max OEM](/documentation/RU/uWAVE/uWAVE_Max_OEM_Specification_ru.md) | [uWave Max](/documentation/RU/uWAVE/uWAVE_Max_Specification_ru.md) | [uWave USBL Modem](/documentation/RU/uWAVE/uWAVE_USBL_Modem_Specification_ru.md) | 
 | :--- | :---: | :---: | :---: | :---: | 
 | Максимальная дальность связи | 1000 м | 3000 м | 3000 м | 3000 м |
-| Скорость передачи данных | 78/156/315 бит/с | 78/156/315 бит/с | 78/156/315 бит/с | 78/156/315 бит/с |
+| Скорость передачи данных | 78 бит/с | 78 бит/с | 78 бит/с | 78 бит/с |
+| Габариты |   |   |   |   |
+| Вес (сухой) |   |   |   |   |
+| Максимальная рабочая глубина |   |   |   |   |
 
 
 <div style="page-break-after: always;"></div>
