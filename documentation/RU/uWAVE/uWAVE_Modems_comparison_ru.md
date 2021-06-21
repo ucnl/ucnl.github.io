@@ -11,7 +11,7 @@
 |  | [uWave](/documentation/RU/uWAVE/uWAVE_Specification_ru.md) | [uWave Max OEM](/documentation/RU/uWAVE/uWAVE_Max_OEM_Specification_ru.md) | [uWave Max](/documentation/RU/uWAVE/uWAVE_Max_Specification_ru.md) | [uWave USBL Modem](/documentation/RU/uWAVE/uWAVE_USBL_Modem_Specification_ru.md) | 
 | :--- | :---: | :---: | :---: | :---: | 
 |      | ![](https://raw.githubusercontent.com/ucnl/ucnl.github.io/master/documentation/RT_1_332820_1.png) | ![](https://raw.githubusercontent.com/ucnl/ucnl.github.io/master/documentation/utro_pcb_rt_1_524525_1_2.png) | ![](https://raw.githubusercontent.com/ucnl/ucnl.github.io/master/documentation/def_modem_black.png) | ![](https://raw.githubusercontent.com/ucnl/ucnl.github.io/master/documentation/def_zima_b_ant.png) |
-| Текущий статус | Поставляется | Поставляется | Ожидается в 2022 | Ожидается в 2022 |
+| Текущий статус | **Поставляется** | **Поставляется** | **Ожидается в 2022** | **Ожидается в 2022** |
 | Максимальная дальность связи | 1000 м | 3000 м | 3000 м | 3000 м |
 | Скорость передачи данных | 78 / 156 / 314 бит/с | 78 / 156 / 314 бит/с | 78 / 156 / 314 бит/с | 78 / 156 / 314 бит/с |
 | Габариты | Ф41 x 45 мм | 80 х 43 х 29 мм (плата) <br/> Ф64 x 62 мм (антенна) |  Ф64 x 62 мм | Ф64 х 128 мм |
