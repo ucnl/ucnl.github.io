@@ -1,10 +1,10 @@
 | ![logo](/documentation/sm_logo.png) |  |
 | :---: | ---: |
-| [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **uWAVE** underwater communication system <br/> Interfacing protocol specification |
+| [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **uWave** underwater communication system <br/> Interfacing protocol specification |
   
   
   
-# uWAVE <br/> Interfacing protocol specification
+# uWave <br/> Interfacing protocol specification
 
 <div style="page-break-after: always;"></div>
 
@@ -60,7 +60,7 @@
 ## 1. Introduction
 ### 1.1. Physical layer
    
-**uWAVE** underwater acoustic modems support data pairing using the RS-232 physical layer standard for asynchronous interface (UART) 
+**uWave** underwater acoustic modems support data pairing using the RS-232 physical layer standard for asynchronous interface (UART) 
 with a 3.3V data line voltage. The connection is made using a four-wire cable with Tx (transmitter), Rx (receiver), Vcc (power) 
 and GND (ground) wires. Without the use of additional repeaters and interface converters, the maximum cable length, for which 
 the correct operation of the interface is guaranteed, is no more than 2 meters.
@@ -402,12 +402,12 @@ Sentence format: **`$PUWVJ,x,h--h*hh <CR><LF>`**
 ## 3. Working modes
 
 ### 3.1. Transparent channel mode
-In the transparent channel mode, the devices do not analyze the data coming from the control system and transmit them without changes to the hydroacoustic channel, where they can be received by any other **uWAVE** modem receiving in the same code channel in which the transmission was made. Provided that the receiving modem has not activated [packet mode](#33-packet-mode).
+In the transparent channel mode, the devices do not analyze the data coming from the control system and transmit them without changes to the hydroacoustic channel, where they can be received by any other **uWave** modem receiving in the same code channel in which the transmission was made. Provided that the receiving modem has not activated [packet mode](#33-packet-mode).
 
 <div style="page-break-after: always;"></div>
 
 ### 3.2. Command mode
-**uWAVE** modems provide the user with a so-called "transparent channel" when all data supplied to the input without changes and 
+**uWave** modems provide the user with a so-called "transparent channel" when all data supplied to the input without changes and 
 analysis are transmitted to the hydroacoustic channel, after which they are received by another modem and in the unchanged form are 
 given to the user at the receiving side. In this regard, to be able to configure modems, as well as to measure the propagation time 
 to remote subscribers, there is a command mode. Modems analyze input data only in command mode. To switch to the command mode, the 
