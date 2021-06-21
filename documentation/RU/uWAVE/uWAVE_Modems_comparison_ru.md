@@ -29,7 +29,7 @@
 |      | STRONG | EASY   | LITE   |
 | :--- | :---:  | :---:  | :---:  |
 | Скорость передачи, бит/с | 78 | 156 | 314 |
-| Максимальная дальность, м | 1000/3000<sup>[1](#footnote1),[2](#footnote2)</sup> | 700<sup>[1](#footnote1),[2](#footnote2)</sup> | 500<sup>[1](#footnote1),[2](#footnote2)</sup> |
+| Максимальная дальность, м | 1000/3000<sup>[1](#footnote1),[2](#footnote2)</sup> | 700<sup>[1](#footnote1)</sup> | 500<sup>[1](#footnote1)</sup> |
 | Число кодовых каналов | 20 | 14 | 7 | 
 
 
