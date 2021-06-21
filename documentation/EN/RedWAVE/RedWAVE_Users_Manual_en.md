@@ -318,7 +318,7 @@ To ensure the first condition, floating buoys should be installed on anchors, en
 
 It is not recommended to use the system with sea waves exceeding **1.5 points**. In case of sea waves **2 or more points** application of the system is _extremely not recommended_ and the manufacturer is not responsible for damage to individual devices of the system, their loss or malfunction, etc.
 
-**It is important to remember that buoys are rinse-proof and are not intended to be submerged in water!**
+**It is important to remember that the buoys have a splash-proof design (that is, they are protected from atmospheric precipitation, rare wave coverings, etc.) are not intended for complete immersion in water. The top of the buoy must always be above the water.**
 
 ### 3.2. Providing a good view of the celestial hemisphere
 The second condition is because the buoys [RedBASE](RedBASE_Specification_en.md) are repeaters of the satellite navigation signal. They have built-in GPS/GLONASS combined receivers and for the correct operation of the navigation base formed by the buoys, it is necessary to ensure good receiving of the satellite navigation signal on all buoys. In connection with this, buoys should be located at the maximum distance from various obstacles that may affect the quality of the received satellite signal. For example, metal hulls of ships, mooring walls, etc.
