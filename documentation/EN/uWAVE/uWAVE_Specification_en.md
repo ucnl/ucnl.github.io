@@ -1,6 +1,6 @@
 | ![logo](/documentation/sm_logo.png) | ![logo](/documentation/RT_1_332820_1.png) |
 | :---: | ---: |
-| [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **uWAVE** underwater acoustic modem <br/> Device specifications |
+| [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **uWave** underwater acoustic modem <br/> Device specifications |
 
 ## KEY FEATURES
 
@@ -18,9 +18,9 @@
 
 ## DESCRIPTION
 
-**uWAVE** is the world smallest<sup>[3](#footnote3)</sup> underwater acoustic digital modem, which allows to communicate 
+**uWave** is the world smallest<sup>[3](#footnote3)</sup> underwater acoustic digital modem, which allows to communicate 
 up to 20 subscribers in area 1000 x 1000 meters with both transparent channel and predefined code messages/telemetry transmission.
-Extremely small size, low power consumption and simplicity of usage make **uWAVE** an ideal solution for AUV control as well as data 
+Extremely small size, low power consumption and simplicity of usage make **uWave** an ideal solution for AUV control as well as data 
 transmission, where dimensions and weight are the bottleneck.
 
 The device allows:
@@ -29,8 +29,7 @@ The device allows:
 * transfer data in batch mode with guaranteed delivery (ALO - At-least-once) and delivery notification
 * measure immersion depth, water temperature, and supply voltage of local modem.
 
-The devices use a simple open [NMEA-like configuration protocol](uWAVE_Protocol_Specification_en.md), and the supplied open-source library
-[**uWAVELib**](https://github.com/ucnl/uWAVELib) allows the fastest and easiest integration of devices into custom solutions.
+Devices from [uWave family](uWAVE_Family_en.md) use a simple open [NMEA-like configuration protocol](uWAVE_Protocol_Specification_en.md), and the supplied open-source libraries [**uWaveLib**](https://github.com/ucnl/uWAVELib) (.NET) and [**uWave ALib**](https://github.com/ucnl/uWAVE_ALib) (Arduino) allows for the fastest and easiest integration of devices into custom solutions.
 
 <div style="page-break-after: always;"></div>
 
@@ -64,7 +63,7 @@ The devices use a simple open [NMEA-like configuration protocol](uWAVE_Protocol_
   
 ________________
 <a name="footnote1"><sup>1</sup></a> A parameter that determines the maximum range at which a signal can be received based on the electro-acoustic parameters of the transmitter and receiver, spatial decrease in the intensity of sound energy, attenuation in the medium and acoustic noise level.  
-<a name="footnote2"><sup>2</sup></a> Based on the test results in a shallow water body, using the **uWAVE** devices, the practical communication range **1092 m** was obtained.  
+<a name="footnote2"><sup>2</sup></a> Based on the test results in a shallow water body, using the **uWave** devices, the practical communication range **1092 m** was obtained.  
 <a name="footnote3"><sup>3</sup></a> According to open sources, July 2018.  
 <a name="footnote4"><sup>4</sup></a> Maximum output power can be achieved with 12V power supply.  
 <a name="footnote5"><sup>5</sup></a> This value is obtained without the presence of the multipath effect.  
