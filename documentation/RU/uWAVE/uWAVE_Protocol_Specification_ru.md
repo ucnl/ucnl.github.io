@@ -50,10 +50,7 @@
 <div style="page-break-after: always;"></div>
 
 ## 0. История версий и список изменений
-
-| Дата | Версия ПО | Описание |
-| :--- | :--- | :--- |
-| 14-MAY-2021 | System: STRONG 2.0, Core: uWAVE [JULY] v1.10 | Пакетный режим, команды с [2.11. IC_H2D_PT_SETTINGS_READ](#211-ic_h2d_pt_settings_read) по [2.17. IC_D2H_PT_RCVD](#217-ic_d2h_pt_rcvd) |
+[История версий и изменений](uWAVE/uWAVE_version_history_ru.md)
 
 <div style="page-break-after: always;"></div>
 
