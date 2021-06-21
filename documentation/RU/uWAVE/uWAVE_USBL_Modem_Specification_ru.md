@@ -1,6 +1,6 @@
 | ![logo](/documentation/sm_logo.png) | ![logo](/documentation/def_zima_b_ant.png) |
 | :---: | ---: |
-| [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **uWAVE USBL Modem** - Гидроакустический модем <br/> Спецификация устройства |
+| [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **uWave USBL Modem** - Гидроакустический модем <br/> Спецификация устройства |
 
 ## ЭТО УСТРОЙСТВО ТЕСТИРУЕТСЯ И БУДЕТ ДОСТУПНО В БЛИЖАЙШЕЕ ВРЕМЯ
 
@@ -22,16 +22,16 @@
 **uWAVE USBL Modem** - Устройство, сочетающее в себе функции передачи данных по гидроакустическому каналу и навигационной системы на 
 ультракороткой базе.  
 При помощи модемов **uWAVE USBL Modem** пользователь может:
-- передавать произвольные пользовательские данные между модемами **uWAVE USBL Modem**, [uWAVE Max](uWAVE_Max_Specification_ru.md) и [uWAVE](uWAVE_Specification_ru.md) в любой комбинации 
+- передавать произвольные пользовательские данные между модемами **uWAVE USBL Modem**, [uWave Max](uWAVE_Max_Specification_ru.md) и [uWave](uWAVE_Specification_ru.md) в любой комбинации 
 с одновременным определением горизонтального угла прихода сигнала;
-- определять местоположение модемов **uWAVE USBL Modem**, [uWAVE Max](uWAVE_Max_Specification_ru.md) и [uWAVE](uWAVE_Specification_ru.md) в командном режиме по дистанции и горизонтальному 
+- определять местоположение модемов **uWAVE USBL Modem**, [uWave Max](uWAVE_Max_Specification_ru.md) и [uWave](uWAVE_Specification_ru.md) в командном режиме по дистанции и горизонтальному 
 углу прихода сигнала;
 - передавать до 9 коротких кодовых пользовательских команд телеуправления;
-- запрашивать у удаленных модемов **uWAVE USBL Modem**, [uWAVE Max](uWAVE_Max_Specification_ru.md) и [uWAVE](uWAVE_Specification_ru.md) их глубину, температуру и напряжение питания;
+- запрашивать у удаленных модемов **uWave USBL Modem**, [uWave Max](uWAVE_Max_Specification_ru.md) и [uWave](uWAVE_Specification_ru.md) их глубину, температуру и напряжение питания;
 - измерять собственную глубину, температуру и напряжение питания;  
 
-Устройства [семейства uWAVE](uWAVE_Family_ru.md) используют простой открытый [NMEA-подобный протокол настройки](uWAVE_Protocol_Specification_ru.md), а поставляемая библиотека 
-[**uWAVELib**](https://github.com/ucnl/uWAVELib) с открытым исходным кодом позволяет осуществлять максимально быструю и простую 
+Устройства [семейства uWave](uWAVE_Family_ru.md) используют простой открытый [NMEA-подобный протокол настройки](uWAVE_Protocol_Specification_ru.md), а поставляемая библиотека 
+[**uWaveLib**](https://github.com/ucnl/uWAVELib) с открытым исходным кодом позволяет осуществлять максимально быструю и простую 
 интеграцию устройств в пользовательские решения.
 
 <div style="page-break-after: always;"></div>
@@ -65,7 +65,7 @@
   
 ________________
 <a name="footnote1"><sup>1</sup></a> Параметр, определяющий максимальную дальность, на которой возможен прием сигнала, исходя из электроакустических параметров передатчика и приемника, пространственного убывания интенсивности звуковой энергии, затухания в среде и уровня гидроакустических помех.  
-<a name="footnote2"><sup>2</sup></a> При работе с другим **uWAVE USBL Modem** или при работе с модемами [uWAVE Max](uWAVE_Max_Specification_ru.md). Максимальная дальность связи со стандартными модемами [uWAVE](uWAVE_Specification_ru.md) составляет 1000 метров.  
+<a name="footnote2"><sup>2</sup></a> При работе с другим **uWave USBL Modem** или при работе с модемами [uWave Max](uWAVE_Max_Specification_ru.md). Максимальная дальность связи со стандартными модемами [uWave](uWAVE_Specification_ru.md) составляет 1000 метров.  
 <a name="footnote3"><sup>3</sup></a> Значение получено без учета эффекта многолучевого распространения в лабораторном статическом эксперименте.  
 <a name="footnote4"><sup>4</sup></a> Значение может быть изменено по запросу.  
 
