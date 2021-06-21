@@ -1,6 +1,6 @@
 | ![logo](/documentation/sm_logo.png) | ![logo](/documentation/def_zima_b_ant.png) |
 | :---: | ---: |
-| [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **uWAVE USBL Modem** underwater acoustic modem <br/> Device specifications |
+| [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **uWave USBL Modem** underwater acoustic modem <br/> Device specifications |
 
 ## THIS DEVICE IS COOMING SOON, STAY TUNED!
 
@@ -21,17 +21,17 @@
 
 ## DESCRIPTION
 
-**uWAVE USBL Modem** - a device that combines the functions of transmitting data through a underwater acoustic channel and a navigation 
+**uWave USBL Modem** - a device that combines the functions of transmitting data through a underwater acoustic channel and a navigation 
 system on an ultra-short base.
 
 Using **uWAVE USBL Modems**, the user can:
-* transfer arbitrary user data between **uWAVE USBL Modem**, [uWAVE Max](uWAVE_Max_Specification_en.md) and [uWAVE modems](uWAVE_Specification_en.md) in any combination with the simultaneous estimation of the horizontal angle of arrival;
-* estimate the location of the **uWAVE USBL Modem**, [uWAVE Max](uWAVE_Max_Specification_en.md) and [uWAVE modems](uWAVE_Specification_en.md) in command mode by slant range and horizontal angle of arrival;
+* transfer arbitrary user data between **uWave USBL Modem**, [uWave Max](uWAVE_Max_Specification_en.md) and [uWave modems](uWAVE_Specification_en.md) in any combination with the simultaneous estimation of the horizontal angle of arrival;
+* estimate the location of the **uWave USBL Modem**, [uWave Max](uWAVE_Max_Specification_en.md) and [uWave modems](uWAVE_Specification_en.md) in command mode by slant range and horizontal angle of arrival;
 * transmit up to 9 short code telecontrol user commands;
-* request from remote modems **uWAVE USBL Modem**, [uWAVE Max](uWAVE_Max_Specification_en.md) and [uWAVE modems](uWAVE_Specification_en.md) their depth, temperature and voltage;
+* request from remote modems **uWave USBL Modem**, [uWave Max](uWAVE_Max_Specification_en.md) and [uWave modems](uWAVE_Specification_en.md) their depth, temperature and voltage;
 * measure own depth, temperature and voltage;
 
-**uWAVE** family devices use a simple open NMEA-like configuration [protocol](uWAVE_Protocol_Specification_en.md), and the supplied open-source [**uWAVELib**](https://github.com/ucnl/uWAVELib) library allows for the fastest and easiest integration of devices into user solutions.
+Devices from [uWave family](uWAVE_Family_en.md) use a simple open [NMEA-like configuration protocol](uWAVE_Protocol_Specification_en.md), and the supplied open-source libraries [**uWaveLib**](https://github.com/ucnl/uWAVELib) (.NET) and [**uWave ALib**](https://github.com/ucnl/uWAVE_ALib) (Arduino) allows for the fastest and easiest integration of devices into custom solutions.
 
 <div style="page-break-after: always;"></div>
 
@@ -62,6 +62,6 @@ Using **uWAVE USBL Modems**, the user can:
   
 ________________
 <a name="footnote1"><sup>1</sup></a> A parameter that determines the maximum range at which a signal can be received based on the electro-acoustic parameters of the transmitter and receiver, spatial decrease in the intensity of sound energy, attenuation in the medium and acoustic noise level.  
-<a name="footnote2"><sup>2</sup></a> While working with **uWAVE USBL Modem** or [uWAVE Max](uWAVE_Max_Specification_en.md). Max. operating range with [uWAVE](uWAVE_Specification_en.md) modems is 1000 m.  
+<a name="footnote2"><sup>2</sup></a> While working with **uWave USBL Modem** or [uWave Max](uWAVE_Max_Specification_en.md). Max. operating range with [uWave](uWAVE_Specification_en.md) modems is 1000 m.  
 <a name="footnote3"><sup>3</sup></a> This value is obtained without the presence of the multipath effect.  
 <a name="footnote4"><sup>4</sup></a> Can be changed by the special request.  
