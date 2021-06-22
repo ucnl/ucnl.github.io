@@ -12,12 +12,13 @@
 | :--- | :---: | :---: | :---: | :---: | 
 |      | ![](https://raw.githubusercontent.com/ucnl/ucnl.github.io/master/documentation/RT_1_332820_1.png) | ![](https://raw.githubusercontent.com/ucnl/ucnl.github.io/master/documentation/utro_pcb_rt_1_524525_1_2.png) | ![](https://raw.githubusercontent.com/ucnl/ucnl.github.io/master/documentation/def_modem_black.png) | ![](https://raw.githubusercontent.com/ucnl/ucnl.github.io/master/documentation/def_zima_b_ant.png) |
 | Текущий статус | **Поставляется** | **Поставляется** | **Ожидается в 2022** | **Ожидается в 2022** |
-| Максимальная дальность связи | 1000<sup>[1](#footnote1)</sup> м | 3000<sup>[1](#footnote1),[2](#footnote2)</sup> м | 3000<sup>[1](#footnote1),[2](#footnote2)</sup> м | 3000<sup>[1](#footnote1),[2](#footnote2)</sup> м |
-| Скорость передачи данных | 78 / 156<sup>[3](#footnote3)</sup> / 314<sup>[3](#footnote3)</sup> бит/с | 78 / 156<sup>[3](#footnote3)</sup> / 314<sup>[3](#footnote3)</sup> бит/с | 78 / 156<sup>[3](#footnote3)</sup> / 314<sup>[3](#footnote3)</sup> бит/с | 78 / 156<sup>[3](#footnote3)</sup> / 314<sup>[3](#footnote3)</sup> бит/с |
-| Габариты | **Ф41 x 45 мм** | 80 х 43 х 29 мм (плата) <br/> Ф64 x 62 мм (антенна) |  Ф64 x 62 мм | Ф64 х 128 мм |
-| Вес (сухой) | **160 г** | 54 г (плата) <br/> 360 г (aнтенна) | 360 г | 440 г |
-| Максимальная рабочая глубина | 300 м | **400 / 1000** <sup>[4](#footnote4),[5](#footnote5)</sup> м | 300 м | 300 м |
-| Энергопотребление (RX/TX) | 0.33/6 Вт | 0.33/15 Вт | 0.33/15 Вт | 0.33/15 Вт |
+| Максимальная дальность связи, м | 1000<sup>[1](#footnote1)</sup> | 3000<sup>[1](#footnote1),[2](#footnote2)</sup> | 3000<sup>[1](#footnote1),[2](#footnote2)</sup> | 3000<sup>[1](#footnote1),[2](#footnote2)</sup> |
+| Скорость передачи данных, бит/с | 78 / 156<sup>[3](#footnote3)</sup> / 314<sup>[3](#footnote3)</sup> | 78 / 156<sup>[3](#footnote3)</sup> / 314<sup>[3](#footnote3)</sup> | 78 / 156<sup>[3](#footnote3)</sup> / 314<sup>[3](#footnote3)</sup> | 78 / 156<sup>[3](#footnote3)</sup> / 314<sup>[3](#footnote3)</sup> |
+| Габариты, мм | **Ф41 x 45** | 80 х 43 х 29 (плата) <br/> Ф64 x 62 (антенна) |  Ф64 x 62 | Ф64 х 128 |
+| Вес (сухой), г | **160** | 54 (плата) <br/> 360 (aнтенна) | 360 | 440 |
+| Максимальная рабочая глубина, м | 300 | **400 / 1000** <sup>[4](#footnote4),[5](#footnote5)</sup> | 300 | 300 |
+| Энергопотребление (RX/TX), Вт | **0.33/6** | 0.33/15 | 0.33/15 | 0.33/15 |
+| МАКСИМАЛЬНОЕ АКУСТИЧЕСКОЕ ДАВЛЕНИЕ (В полосе), дБ re 1 мкПа @ 1 м | 169 | 175 | 175 | 175 |
 | Модуль измерения напряжения питания | **✓** | **✓** | **✓** | **✓** |
 | Датчик глубины/температуры | **✓** | **✘** | **✓** | **✓** |
 | Двухосевой инклинометр | **✘** | **✘** | **✘** | **✓** |
