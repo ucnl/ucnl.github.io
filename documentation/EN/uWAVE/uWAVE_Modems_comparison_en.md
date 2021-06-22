@@ -12,12 +12,13 @@
 | :--- | :---: | :---: | :---: | :---: | 
 |      | ![](https://raw.githubusercontent.com/ucnl/ucnl.github.io/master/documentation/RT_1_332820_1.png) | ![](https://raw.githubusercontent.com/ucnl/ucnl.github.io/master/documentation/utro_pcb_rt_1_524525_1_2.png) | ![](https://raw.githubusercontent.com/ucnl/ucnl.github.io/master/documentation/def_modem_black.png) | ![](https://raw.githubusercontent.com/ucnl/ucnl.github.io/master/documentation/def_zima_b_ant.png) |
 | Status | **Active** | **Active** | **Planned for 20222** | **Planned for 2022** |
-| Max. acoustic range | 1000<sup>[1](#footnote1)</sup> m | 3000<sup>[1](#footnote1),[2](#footnote2)</sup> m | 3000<sup>[1](#footnote1),[2](#footnote2)</sup> m | 3000<sup>[1](#footnote1),[2](#footnote2)</sup> m |
-| Baudrate | 78 / 156<sup>[3](#footnote3)</sup> / 314<sup>[3](#footnote3)</sup> bps | 78 / 156<sup>[3](#footnote3)</sup> / 314<sup>[3](#footnote3)</sup> bps | 78 / 156<sup>[3](#footnote3)</sup> / 314<sup>[3](#footnote3)</sup> bps | 78 / 156<sup>[3](#footnote3)</sup> / 314<sup>[3](#footnote3)</sup> bps |
-| Dimensions | **Ф41 x 45 mm** | 80 х 43 х 29 mm (PCB) <br/> Ф64 x 62 mm (transducer) | Ф64 x 62 mm | Ф64 х 128 mm |
-| Weight (dry) | **160 g** | (PCB) 54 г <br/> (transducer) 360 g | 360 g | 440 g |
-| Depth rating | 300 m | **400 / 1000** <sup>[4](#footnote4),[5](#footnote5)</sup> m | 300 m | 300 m |
-| Power consumption (RX/TX) | 0.33/6 W | 0.33/15 W | 0.33/15 W | 0.33/15 W |
+| Max. acoustic range, m | 1000<sup>[1](#footnote1)</sup> | 3000<sup>[1](#footnote1),[2](#footnote2)</sup> | 3000<sup>[1](#footnote1),[2](#footnote2)</sup> | 3000<sup>[1](#footnote1),[2](#footnote2)</sup> |
+| Baudrate, bps | 78 / 156<sup>[3](#footnote3)</sup> / 314<sup>[3](#footnote3)</sup> | 78 / 156<sup>[3](#footnote3)</sup> / 314<sup>[3](#footnote3)</sup> | 78 / 156<sup>[3](#footnote3)</sup> / 314<sup>[3](#footnote3)</sup> | 78 / 156<sup>[3](#footnote3)</sup> / 314<sup>[3](#footnote3)</sup> |
+| Dimensions, mm | **Ф41 x 45** | 80 х 43 х 29 (PCB) <br/> Ф64 x 62 (transducer) | Ф64 x 62 | Ф64 х 128 |
+| Weight (dry), g | **160** | (PCB) 54 <br/> (transducer) 360 | 360 | 440 |
+| Depth rating, m | 300 | **400 / 1000** <sup>[4](#footnote4),[5](#footnote5)</sup> | 300 | 300 |
+| Power consumption (RX/TX), W | 0.33/6 | 0.33/15 | 0.33/15 | 0.33/15 |
+| Acoustic source level (in band), dB re 1 uPa @ 1 m | 169 | 175 | 175 | 175 |
 | Supply voltage measurement | **✓** | **✓** | **✓** | **✓** |
 | Depth/temperature sensor | **✓** | **✘** | **✓** | **✓** |
 | 2-Axis inclinometer | **✘** | **✘** | **✘** | **✓** |
