@@ -8,7 +8,7 @@
 
 ## 1. List of devices
 
-The **uWave** family (_&mu;Wave, pronounced: "mu-wave"_) is specifically designed for applications that are extremely sensitive to weight 
+The **uWave** family (_&mu;Wave, pronounced: "mu-wave" or, if you like it more - "you-wave"_) is specifically designed for applications that are extremely sensitive to weight 
 and size and is presented currently by three devices:
 
 * [uWave](uWAVE_Specification_en.md) - underwater acoustic modem. It is the smallest underwater acoustic modem in the world: its size is 
@@ -17,10 +17,14 @@ than **1000** meters.
 * [uWave Max](uWAVE_Max_Specification_en.md) - underwater acoustic modem. Reinforced version of the base device. Due to an increased
 transducer and power amplifier allows user to transmit data at a distance of more than **3000** meters. Dimensions in this case are
 **Ф62х65** mm, and dry weight 360 grams.
+* [uWave Max OEM](uWAVE_Max_OEM_Specification_en.md) - underwater acoustic modem. Reinforced version of the base device. Due to an increased
+transducer and power amplifier allows user to transmit data at a distance of more than **3000** meters. Supplied as a modem PCB module and sonar antenna. 
 * [uWave USBL Modem](uWAVE_USBL_Modem_Specification_en.md) - underwater acoustic modem with the function of determining the horizontal 
 angle of arrival signal. The device is equipped with a phased array and integrated inclinometer, which allows user to determine the 
 horizontal direction, from which the signal came from any other devices of the **uWAVE** family. Dimensions [uWave USBL Modem](uWAVE_USBL_Modem_Specification_en.md)
 **Ф64х128** mm, the dry weight of the device is 440 grams.
+
+More detailed comparison can be found in [uWave modems comparison tables](uWAVE/uWAVE_Modems_comparison_en.md).
 
 All devices within the family are fully acoustically compatible and have a common, [NMEA-like protocol](uWAVE_Protocol_Specification_en.md)
 interfacing.
