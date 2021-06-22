@@ -17,6 +17,7 @@
 | Dimensions | **Ф41 x 45 mm** | 80 х 43 х 29 mm (PCB) <br/> Ф64 x 62 mm (transducer) | Ф64 x 62 mm | Ф64 х 128 mm |
 | Weight (dry) | **160 g** | (PCB) 54 г <br/> (transducer) 360 g | 360 g | 440 g |
 | Depth rating | 300 m | **400 / 1000** <sup>[4](#footnote4),[5](#footnote5)</sup> m | 300 m | 300 m |
+| Power consumption (RX/TX) | 0.33/6 W | 0.33/15 W | 0.33/15 W | 0.33/15 W |
 | Supply voltage measurement | **✓** | **✓** | **✓** | **✓** |
 | Depth/temperature sensor | **✓** | **✘** | **✓** | **✓** |
 | 2-Axis inclinometer | **✘** | **✘** | **✘** | **✓** |
