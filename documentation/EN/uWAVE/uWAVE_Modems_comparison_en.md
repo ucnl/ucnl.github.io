@@ -20,6 +20,7 @@
 | Supply voltage measurement | **✓** | **✓** | **✓** | **✓** |
 | Depth/temperature sensor | **✓** | **✘** | **✓** | **✓** |
 | 2-Axis inclinometer | **✘** | **✘** | **✘** | **✓** |
+| Horizontal angle of arrival estimation | **✘** | **✘** | **✘** | **✓** |
 
 ## Data transmission speed options
 
