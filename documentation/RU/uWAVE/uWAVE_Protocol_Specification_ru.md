@@ -50,7 +50,7 @@
 <div style="page-break-after: always;"></div>
 
 ## 0. История версий и список изменений
-[История версий и изменений](uWAVE/uWAVE_version_history_ru.md)
+[История версий и изменений](uWAVE_version_history_ru.md)
 
 <div style="page-break-after: always;"></div>
 
