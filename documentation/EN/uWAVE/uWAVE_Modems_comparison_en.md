@@ -11,26 +11,26 @@
 |  | [uWave](uWAVE_Specification_en.md) | [uWave Max OEM](uWAVE_Max_OEM_Specification_en.md) | [uWave Max](uWAVE_Max_Specification_en.md) | [uWave USBL Modem](uWAVE_USBL_Modem_Specification_en.md) | 
 | :--- | :---: | :---: | :---: | :---: | 
 |      | ![](https://raw.githubusercontent.com/ucnl/ucnl.github.io/master/documentation/RT_1_332820_1.png) | ![](https://raw.githubusercontent.com/ucnl/ucnl.github.io/master/documentation/utro_pcb_rt_1_524525_1_2.png) | ![](https://raw.githubusercontent.com/ucnl/ucnl.github.io/master/documentation/def_modem_black.png) | ![](https://raw.githubusercontent.com/ucnl/ucnl.github.io/master/documentation/def_zima_b_ant.png) |
-| Текущий статус | **Поставляется** | **Поставляется** | **Ожидается в 2022** | **Ожидается в 2022** |
-| Максимальная дальность связи | 1000<sup>[1](#footnote1)</sup> м | 3000<sup>[1](#footnote1),[2](#footnote2)</sup> м | 3000<sup>[1](#footnote1),[2](#footnote2)</sup> м | 3000<sup>[1](#footnote1),[2](#footnote2)</sup> м |
-| Скорость передачи данных | 78 / 156<sup>[3](#footnote3)</sup> / 314<sup>[3](#footnote3)</sup> бит/с | 78 / 156<sup>[3](#footnote3)</sup> / 314<sup>[3](#footnote3)</sup> бит/с | 78 / 156<sup>[3](#footnote3)</sup> / 314<sup>[3](#footnote3)</sup> бит/с | 78 / 156<sup>[3](#footnote3)</sup> / 314<sup>[3](#footnote3)</sup> бит/с |
-| Габариты | **Ф41 x 45 мм** | 80 х 43 х 29 мм (плата) <br/> Ф64 x 62 мм (антенна) |  Ф64 x 62 мм | Ф64 х 128 мм |
-| Вес (сухой) | **160 г** | (Плата) 54 г <br/> (Антенна) 360 г | 360 г | 440 г |
-| Максимальная рабочая глубина | 300 м | **400 / 1000** <sup>[4](#footnote4),[5](#footnote5)</sup> м | 300 м | 300 м |
-| Модуль измерения напряжения питания | **✓** | **✓** | **✓** | **✓** |
-| Датчик глубины/температуры | **✓** | **✘** | **✓** | **✓** |
-| Двухосевой инклинометр | **✘** | **✘** | **✘** | **✓** |
+| Status | **Active** | **Active** | **Planned for 20222** | **Planned for 2022** |
+| Max. acoustic range | 1000<sup>[1](#footnote1)</sup> m | 3000<sup>[1](#footnote1),[2](#footnote2)</sup> m | 3000<sup>[1](#footnote1),[2](#footnote2)</sup> m | 3000<sup>[1](#footnote1),[2](#footnote2)</sup> m |
+| Baudrate | 78 / 156<sup>[3](#footnote3)</sup> / 314<sup>[3](#footnote3)</sup> bps | 78 / 156<sup>[3](#footnote3)</sup> / 314<sup>[3](#footnote3)</sup> bps | 78 / 156<sup>[3](#footnote3)</sup> / 314<sup>[3](#footnote3)</sup> bps | 78 / 156<sup>[3](#footnote3)</sup> / 314<sup>[3](#footnote3)</sup> bps |
+| Dimensions | **Ф41 x 45 mm** | 80 х 43 х 29 mm (PCB) <br/> Ф64 x 62 mm (transducer) | Ф64 x 62 mm | Ф64 х 128 mm |
+| Weight (dry) | **160 g** | (PCB) 54 г <br/> (transducer) 360 g | 360 g | 440 g |
+| Depth rating | 300 m | **400 / 1000** <sup>[4](#footnote4),[5](#footnote5)</sup> m | 300 m | 300 m |
+| Supply voltage measurement | **✓** | **✓** | **✓** | **✓** |
+| Depth/temperature sensor | **✓** | **✘** | **✓** | **✓** |
+| 2-Axis inclinometer | **✘** | **✘** | **✘** | **✓** |
 
 ## Data transmission speed options
 
-Все устройства семейства могут работать с альтернативными прошивками, поддерживающие разные скоростные режимы связи.
-Режимы не совместимы между собой. Смена режима производится путем перепрошивки устройства.
+All devices of the family can work with alternative firmware supporting different communication speed modes.
+The modes are not compatible with each other. Mode change is made by flashing the device.
 
 |      | STRONG | EASY   | LITE   |
 | :--- | :---:  | :---:  | :---:  |
-| Скорость передачи, бит/с | 78 | 156 | 314 |
-| Максимальная дальность, м | 1000/3000<sup>[1](#footnote1),[2](#footnote2)</sup> | 700<sup>[1](#footnote1)</sup> | 500<sup>[1](#footnote1)</sup> |
-| Число кодовых каналов | 20 | 14 | 7 | 
+| Baudrate, bps | 78 | 156 | 314 |
+| Max. acoustic range, m | 1000/3000<sup>[1](#footnote1),[2](#footnote2)</sup> | 700<sup>[1](#footnote1)</sup> | 500<sup>[1](#footnote1)</sup> |
+| Number of code channels | 20 | 14 | 7 | 
 
 
 <div style="page-break-after: always;"></div>
