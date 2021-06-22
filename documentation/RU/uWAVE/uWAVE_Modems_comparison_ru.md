@@ -8,7 +8,7 @@
 
 ## Основные параметры устройств
 
-|  | [uWave](/documentation/RU/uWAVE/uWAVE_Specification_ru.md) | [uWave Max OEM](/documentation/RU/uWAVE/uWAVE_Max_OEM_Specification_ru.md) | [uWave Max](/documentation/RU/uWAVE/uWAVE_Max_Specification_ru.md) | [uWave USBL Modem](/documentation/RU/uWAVE/uWAVE_USBL_Modem_Specification_ru.md) | 
+|  | [uWave](uWAVE_Specification_ru.md) | [uWave Max OEM](uWAVE_Max_OEM_Specification_ru.md) | [uWave Max](uWAVE_Max_Specification_ru.md) | [uWave USBL Modem](uWAVE_USBL_Modem_Specification_ru.md) | 
 | :--- | :---: | :---: | :---: | :---: | 
 |      | ![](https://raw.githubusercontent.com/ucnl/ucnl.github.io/master/documentation/RT_1_332820_1.png) | ![](https://raw.githubusercontent.com/ucnl/ucnl.github.io/master/documentation/utro_pcb_rt_1_524525_1_2.png) | ![](https://raw.githubusercontent.com/ucnl/ucnl.github.io/master/documentation/def_modem_black.png) | ![](https://raw.githubusercontent.com/ucnl/ucnl.github.io/master/documentation/def_zima_b_ant.png) |
 | Текущий статус | **Поставляется** | **Поставляется** | **Ожидается в 2022** | **Ожидается в 2022** |
@@ -37,7 +37,7 @@
 
 ________________
 <a name="footnote1"><sup>1</sup></a> Параметр, определяющий максимальную дальность, на которой возможен прием сигнала, исходя из электроакустических параметров передатчика и приемника, пространственного убывания интенсивности звуковой энергии, затухания в среде и уровня гидроакустических помех.   
-<a name="footnote2"><sup>2</sup></a> При работе [uWave Max OEM](/documentation/RU/uWAVE/uWAVE_Max_OEM_Specification_ru.md), [uWave Max](/documentation/RU/uWAVE/uWAVE_Max_Specification_ru.md) и [uWave USBL Modem](uWAVE_USBL_Modem_Specification_ru.md) в любых сочетаниях. Максимальная дальность связи со стандартными модемами [uWave](uWAVE_Specification_ru.md) составляет 1000 метров. Параметр указан для стандартного скоростного режима - 78 бит/с.  
+<a name="footnote2"><sup>2</sup></a> При работе [uWave Max OEM](uWAVE_Max_OEM_Specification_ru.md), [uWave Max](uWAVE_Max_Specification_ru.md) и [uWave USBL Modem](uWAVE_USBL_Modem_Specification_ru.md) в любых сочетаниях. Максимальная дальность связи со стандартными модемами [uWave](uWAVE_Specification_ru.md) составляет 1000 метров. Параметр указан для стандартного скоростного режима - 78 бит/с.  
 <a name="footnote3"><sup>3</sup></a> Стандартный скоростной режим 78 бит/с обеспечивает максимальную дальность связи и помехоустойчивость. Другие режимы обеспечиваются перепрошивкой устройств.  
 <a name="footnote4"><sup>4</sup></a> Максимальная глубина определяется антенной. Печатная плата модема должна располагаться в нормобарическом корпусе пользователя. 
 <a name="footnote5"><sup>5</sup></a> Рабочая глубина 1000 метров обеспечивается при работе с антенной [RT-1.524525-1-FF](/documentation/RU/Transducers/RT_1_524525_1_FF_Specification_ru.md).   
