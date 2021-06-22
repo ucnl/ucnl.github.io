@@ -51,7 +51,7 @@
 
 ## 0. Changes and versions
 
-[Changes and versions list](https://github.com/ucnl/ucnl.github.io/blob/master/documentation/EN/uWAVE/uWAVE_version_history_en.md)
+[Changes and versions list](uWAVE_version_history_en.md)
 
 <div style="page-break-after: always;"></div>
 
