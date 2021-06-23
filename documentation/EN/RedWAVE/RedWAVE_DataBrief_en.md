@@ -5,12 +5,16 @@
 <div style="page-break-after: always;"></div>
 
 ## General information
-**RedWAVE** - the only system in the world that implements the so-called "underwater GPS", following the ideology of satellite 
+**RedWAVE** - the only system in the world based on patented<sup>[*](#footnote_a1)</sup> technology that implements the so-called "underwater GPS", following the ideology of satellite 
 navigation systems as closely as possible, it allows an unlimited number of underwater objects, such as divers and various mobile robots (ROV, AUV, etc.) to determine
 its geographical location and depth in real-time.
 
 **RedWAVE** is a long-base (LBL, long-baseline) navigation system. The floating navigation base is formed by four small-sized
 sonobuoys [RedBASE](RedBASE_Specification_en.md); an unlimited number of underwater objects equipped with navigation receivers [RedNODE](RedNODE_Specification_en.md) and divers using diving navigators [RedNAV](RedNAV_Specification_en.md) can work simultaneously with the support of the base.
+
+_________
+<a name="footnote_a1"><sup>*</sup></a> Patents US10989815B2, WO2017044012A1, EP3349040A4, RU2599902C1.  
+
 
 <div style="page-break-after: always;"></div>
 
