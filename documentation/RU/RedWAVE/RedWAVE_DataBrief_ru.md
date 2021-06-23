@@ -1,4 +1,4 @@
-| ![logo](/documentation/sm_logo.png) | Патенты: <br/> US10989815B2, RU2599902C1, WO2017044012A1, <br/> RU156897U1 |
+| ![logo](/documentation/sm_logo.png) |  |
 | :---: | ---: |
 | [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **RedWAVE**<br/> Краткое описание |
 
