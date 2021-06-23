@@ -29,7 +29,7 @@
  
 _________
 <a name="footnote_a1"><sup>*</sup></a> Патент RU2659299C1.  
-<a name="footnote_a2"><sup>**</sup></a> Патент US10989815B2, WO2017044012A1, EP3349040A4, RU2599902C1.  
+<a name="footnote_a2"><sup>**</sup></a> Патенты US10989815B2, WO2017044012A1, EP3349040A4, RU2599902C1.  
 
 <div style="page-break-after: always;"></div>
 
