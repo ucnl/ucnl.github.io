@@ -1,4 +1,4 @@
-| ![logo](/documentation/sm_logo.png) | Патенты: <br/> RU156897U1, <br/> RU2659299C1 |
+| ![logo](/documentation/sm_logo.png) | |
 | :---: | ---: |
 | [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **Zima USBL** <br/> Краткое описание |
 
