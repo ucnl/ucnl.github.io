@@ -305,7 +305,7 @@ Sentence format: **`$PUWVE,x,x*hh <CR><LF>`**
 | $	| Sentence start '$' |
 | PUWV | UWV |
 | E | Sentence identifier |
-| isPTMode | '0' - packet mode disabled, '1' - packet mode enabled |
+| isPTMode | '0' - packet mode disabled, '1' - packet mode enabled. **Not used since firmware version 1.20 - for transmission in packet mode, the modem needs only to be in command mode, and receiving a packet message is possible regardless of the mode in which the modem is** |
 | ptLocalAddress | Address of the local modem in the packet mode, 0 .. 254 |
 | *	| Checksum separator NMEA |
 | hh	| Checksum NMEA |
@@ -322,7 +322,7 @@ Sentence format: **`$PUWVF,x,x,x*hh <CR><LF>`**
 | PUWV | UWV |
 | F | Sentence identifier |
 | isSaveInFlash | '0' - do not save settings to flash, '1' - save settings to flash |
-| isPTMode | '0' - packet mode disabled, '1' - packet mode enabled |
+| isPTMode | '0' - packet mode disabled, '1' - packet mode enabled. **Not used since firmware version 1.20 - for transmission in packet mode, the modem needs only to be in command mode, and receiving a packet message is possible regardless of the mode in which the modem is** |
 | ptLocalAddress | Address of the local modem in the packet mode, 0 .. 254 |
 | *	| Checksum separator NMEA |
 | hh	| Checksum NMEA |
