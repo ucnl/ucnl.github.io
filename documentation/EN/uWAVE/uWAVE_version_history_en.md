@@ -12,6 +12,7 @@
 
 | Date | Firmware version | Description |
 | :--- | :--- | :--- |
+| 28-JUN-2021 | System: (all), <br/> Core: uWAVE [JULY] v1.20 | + Packet mode no longer needs to be enabled separately (it is always enabled). The modem can receive packet mode messages while in both transparent channel mode and command mode |
 | 21-JUN-2021 | System: --- | + Alternative firmwares: <br/> 156 bps (System: Easy) <br/> 314 bps (System: Lite) <br/> Alternative firmwares tested in real conditions on max. range 500 m |
 | 14-MAY-2021 | System: STRONG 2.0, <br/> Core: uWAVE [JULY] v1.10 | + Packet mode (guaranteed delivery, ALO - At-least-once, logical addressing) <br/> - Bug fixed: Tx/Rx channel ID in remote requests |
 | 21-DEC-2019 | System: STRONG 1.0, <br/> Core: uWAVE [JULY] v1.08 | + Gravity acceleration setting for more precise depth measuring |    
