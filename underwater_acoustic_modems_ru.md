@@ -10,9 +10,9 @@
 * [Краткое описание семества устройств uWave](/documentation/RU/uWAVE/uWAVE_Family_ru.md)
 * [Сравнительная таблица модемов семейства uWave](/documentation/RU/uWAVE/uWAVE_Modems_comparison_ru.md)
 * [Спецификация устройства: uWave](/documentation/RU/uWAVE/uWAVE_Specification_ru.md)
-<!--* [Спецификация устройства: uWave USBL Modem](/documentation/RU/uWAVE/uWAVE_USBL_Modem_Specification_ru.md)-->
-<!--* [Спецификация устройства: uWave Max](/documentation/RU/uWAVE/uWAVE_Max_Specification_ru.md)-->
+* [Спецификация устройства: uWave Max](/documentation/RU/uWAVE/uWAVE_Max_Specification_ru.md)
 * [Спецификация устройства: uWave Max OEM](/documentation/RU/uWAVE/uWAVE_Max_OEM_Specification_ru.md)
+<!--* [Спецификация устройства: uWave USBL Modem](/documentation/RU/uWAVE/uWAVE_USBL_Modem_Specification_ru.md)-->
 * [Описание протокола сопряжения: uWave](/documentation/RU/uWAVE/uWAVE_Protocol_Specification_ru.md)
 * [Схема подключения: uWave](/documentation/RU/uWAVE/uWAVE_wiring_diagram_ru.md)
 * [История версий и изменений](/documentation/RU/uWAVE/uWAVE_version_history_ru.md)
