@@ -2,8 +2,6 @@
 | :---: | ---: |
 | [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **uWave Max** underwater acoustic modem <br/> Device specifications |
 
-## THIS DEVICE IS COOMING in 2022, STAY TUNED!
-
 ## KEY FEATURES
 
 * **Extremely small size and weight**
