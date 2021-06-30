@@ -9,9 +9,9 @@
 * [Data brief: uWave devices family](/documentation/EN/uWAVE/uWAVE_Family_en.md)
 * [uWave family modems comparison tables](/documentation/EN/uWAVE/uWAVE_Modems_comparison_en.md)
 * [Device specification: uWave](/documentation/EN/uWAVE/uWAVE_Specification_en.md)
-<!--* [Device specification: uWave USBL Modem](/documentation/EN/uWAVE/uWAVE_USBL_Modem_Specification_en.md)-->
-<!--* [Device specification: uWave Max](/documentation/EN/uWAVE/uWAVE_Max_Specification_en.md)-->
+* [Device specification: uWave Max](/documentation/EN/uWAVE/uWAVE_Max_Specification_en.md)
 * [Device specification: uWave Max OEM](/documentation/EN/uWAVE/uWAVE_Max_OEM_Specification_en.md)
+<!--* [Device specification: uWave USBL Modem](/documentation/EN/uWAVE/uWAVE_USBL_Modem_Specification_en.md)-->
 * [Communication protocol specification: uWave](documentation/EN/uWAVE/uWAVE_Protocol_Specification_en.md)
 * [Device wiring diagram: uWave](/documentation/EN/uWAVE/uWAVE_wiring_diagram_en.md)
 * [Versions & changes](/documentation/EN/uWAVE/uWAVE_version_history_en.md)
