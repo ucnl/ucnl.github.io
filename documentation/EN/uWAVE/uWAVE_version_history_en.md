@@ -12,6 +12,7 @@
 
 | Date | Firmware version | Description |
 | :--- | :--- | :--- |
+| 05-JUL-2021 | System: (все) , <br/> Core: uWAVE [JULY] v1.21 | - BUG FIX: fixed incorrect operation of the transmitter in the transparent channel mode, which led to the fact that when new data was received via the UART at the time of the end of the transfer, new data could be left untransmitted |
 | 28-JUN-2021 | System: (all), <br/> Core: uWAVE [JULY] v1.20 | + Packet mode no longer needs to be enabled separately (it is always enabled). The modem can receive packet mode messages while in both transparent channel mode and command mode |
 | 21-JUN-2021 | System: --- | + Alternative firmwares: <br/> 156 bps (System: Easy) <br/> 314 bps (System: Lite) <br/> Alternative firmwares tested in real conditions on max. range 500 m |
 | 14-MAY-2021 | System: STRONG 2.0, <br/> Core: uWAVE [JULY] v1.10 | + Packet mode (guaranteed delivery, ALO - At-least-once, logical addressing) <br/> - Bug fixed: Tx/Rx channel ID in remote requests |
