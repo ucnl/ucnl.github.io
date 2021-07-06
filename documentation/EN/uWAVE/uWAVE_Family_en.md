@@ -54,7 +54,6 @@ Different speed modes are not compatible with each other. Transfer of the modem 
 All devices of the family can work in two modes, switching between which is carried out by the user:
 * Transparent channel mode
 * Command mode
-* Packet mode
 
 These modes determine how the modem perceives data coming from the control system:
 
@@ -76,7 +75,7 @@ from the need to monitor the status of a remote modem.
 The devices [uWave USBL Modem](uWAVE_USBL_Modem_Specification_en.md) allow users to determine the horizontal angle of arrival of any
 incoming message from other devices of the **uWave** family. Including for user messages transmitted in transparent channel mode.
 
-### 3.3. Packet mode
+### 3.2.1. Packet mode
 Packet mode allows transmitting data packets with guaranteed delivery (ALO - At-least-once), delivery notification to the addressee. In packet mode, logical addressing of up to 254 subscribers is used over each code channel (255 is a broadcast address without notification and guaranteed delivery). Packet mode can only be used when the modem is in command mode.
 
 
