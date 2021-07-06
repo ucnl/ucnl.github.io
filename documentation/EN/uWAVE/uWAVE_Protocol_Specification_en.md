@@ -633,11 +633,12 @@ PUWV0 = [IC_D2H_ACK](#21-ic_d2h_ack)
 G = ACK for PUWVG  
 0 = Error code = [LOC_ERR_NO_ERROR](#41-error-codes)  
 ```
-$PUWVI,0,1,,0x313233*2B
+$PUWVI,0,1,,0x313233*07
 ```  
 PUWVI = [IC_D2H_PT_DLVRD](#216-ic_d2h_pt_dlvrd)  
 0 = Target address  
 1 = Attempts preceeded  
+empty field - the device doesn't support horizontal angle of arrival estimation  
 0x313233 = bytes to send ('123')  
 
 ### 5.2. Recipes
