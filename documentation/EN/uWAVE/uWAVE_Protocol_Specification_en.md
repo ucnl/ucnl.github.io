@@ -365,7 +365,7 @@ Sentence format: **`$PUWVH,x,x,h--h*hh <CR><LF>`**
 ### 2.16. IC_D2H_PT_DLVRD
 The data packet has been successfully transmitted.
 
-Sentence format: **`$PUWVI,x,x,h--h*hh <CR><LF>`**
+Sentence format: **`$PUWVI,x,x,x.x,h--h*hh <CR><LF>`**
 
 | Field/Parameter |	Description |
 | :--- | :--- |
@@ -374,6 +374,7 @@ Sentence format: **`$PUWVI,x,x,h--h*hh <CR><LF>`**
 | I | Sentence identifier |
 | target_ptAddress | Address of a remote modem, 0 .. 254 |
 | maxTries | Number of attempts proceeded |
+| azimuth | Horizontal angle of arrival, only for uWAVE USBL device, otherwise - field is empty |
 | dataPacket | An array of bytes in HEX format with a '0x' prefix, for example, for the string '123' 0x313233. The maximum packet size is 64 bytes. |
 | *	| Checksum separator NMEA |
 | hh	| Checksum NMEA |
@@ -382,7 +383,7 @@ Sentence format: **`$PUWVI,x,x,h--h*hh <CR><LF>`**
 ### 2.17. IC_D2H_PT_RCVD
 Data packet received.
 
-Sentence format: **`$PUWVJ,x,h--h*hh <CR><LF>`**
+Sentence format: **`$PUWVJ,x,x.x,h--h*hh <CR><LF>`**
 
 | Field/Parameter |	Description |
 | :--- | :--- |
@@ -390,6 +391,7 @@ Sentence format: **`$PUWVJ,x,h--h*hh <CR><LF>`**
 | PUWV | UWV |
 | J | Sentence identifier |
 | sender_ptAddress | Address of a sender, 0 .. 254 |
+| azimuth | Horizontal angle of arrival, only for uWAVE USBL device, otherwise - field is empty |
 | dataPacket | An array of bytes in HEX format with a '0x' prefix, for example, for the string '123' 0x313233. The maximum packet size is 64 bytes. |
 | *	| Checksum separator NMEA |
 | hh	| Checksum NMEA |
@@ -476,6 +478,7 @@ After transmitting data in packet mode, the sending modem waits for a short code
 | RC_USR_CMD_006 | 13 | User command |
 | RC_USR_CMD_007 | 14 | User command |
 | RC_USR_CMD_008 | 15 | User command |
+| RC_MSG_ASYNC_IN | 16 | Incoming message in the transparent channel mode |
 
 <div style="page-break-after: always;"></div>
 
@@ -630,7 +633,7 @@ PUWV0 = [IC_D2H_ACK](#21-ic_d2h_ack)
 G = ACK for PUWVG  
 0 = Error code = [LOC_ERR_NO_ERROR](#41-error-codes)  
 ```
-$PUWVI,0,1,0x313233*2B
+$PUWVI,0,1,,0x313233*2B
 ```  
 PUWVI = [IC_D2H_PT_DLVRD](#216-ic_d2h_pt_dlvrd)  
 0 = Target address  
