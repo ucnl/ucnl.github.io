@@ -31,6 +31,9 @@
    - [2.15. IC_D2H_PT_FAILED - packet mode: transfer failed](#215-ic_d2h_pt_failed)
    - [2.16. IC_D2H_PT_DLVRD - packet mode: transfer succeeded](#216-ic_d2h_pt_dlvrd)
    - [2.17. IC_D2H_PT_RCVD - packet mode: incoming packet](#217-ic_d2h_pt_rcvd)
+   - [2.18. IC_H2D_PT_ITG - remote request with logical addressing](#218-ic_h2d_pt_itg)
+   - [2.19. IC_D2H_PT_ITG_TMO - remote device timeout with logical addressing](#219-ic_d2h_pt_itg_tmo)
+   - [2.20. IC_D2H_PT_ITG_RESP - remote response with logical addressing](#220-ic_d2h_pt_itg_resp)
 - [3. Working modes](#3-working-modes)
    - [3.1. Transparent channel mode](#31-transparent-channel-mode)
    - [3.2. Command mode](#32-command-mode)
@@ -163,7 +166,7 @@ rcCmdID | Command ID \([see 4.2](#42-remote-commands)\) |
 propTime | Signal propagation time, sec |
 MSR | Mean main lobe to side-peak ratio, dB |
 Value | Requested value | 
-Azimuth | Horizontal angle of arrival \(For [uWAVE USBL](/documentation/EN/uWAVE/uWAVE_USBL_Modem_Specification_en.md) devices only, otherwise empty\) |
+Azimuth | Horizontal angle of arrival. Only for [uWAVE USBL](uWAVE_USBL_Modem_Specification_en.md) devices, otherwise the field is empty |
 | *	| Checksum separator NMEA |
 | hh	| Checksum NMEA |
 | \<CR\>\<LF\> | Sentence end |
@@ -195,7 +198,7 @@ Sentence format: **`$PUWV5,x,x.x,x*hh <CR><LF>`**
 | 5 | Sentence ID |
 | rcCmdID | Command ID \([see 4.2](#42-remote-commands)\) |
 | MSR | Mean main lobe to side-peak ratio, dB |
-| Azimuth | Horizontal angle of arrival \(For [uWAVE USBL](/documentation/EN/uWAVE/uWAVE_USBL_Modem_Specification_en.md) devices only, otherwise empty\) |
+| Azimuth | Horizontal angle of arrival. Only for [uWAVE USBL](uWAVE_USBL_Modem_Specification_en.md) devices, otherwise the field is empty |
 | *	| Checksum separator NMEA |
 | hh	| Checksum NMEA |
 | \<CR\>\<LF\> | Sentence end |
@@ -374,7 +377,7 @@ Sentence format: **`$PUWVI,x,x,x.x,h--h*hh <CR><LF>`**
 | I | Sentence identifier |
 | target_ptAddress | Address of a remote modem, 0 .. 254 |
 | maxTries | Number of attempts proceeded |
-| azimuth | Horizontal angle of arrival, only for uWAVE USBL device, otherwise - field is empty |
+| azimuth | Horizontal angle of arrival. Only for [uWAVE USBL](uWAVE_USBL_Modem_Specification_en.md) devices, otherwise the field is empty |
 | dataPacket | An array of bytes in HEX format with a '0x' prefix, for example, for the string '123' 0x313233. The maximum packet size is 64 bytes. |
 | *	| Checksum separator NMEA |
 | hh	| Checksum NMEA |
@@ -391,8 +394,59 @@ Sentence format: **`$PUWVJ,x,x.x,h--h*hh <CR><LF>`**
 | PUWV | UWV |
 | J | Sentence identifier |
 | sender_ptAddress | Address of a sender, 0 .. 254 |
-| azimuth | Horizontal angle of arrival, only for uWAVE USBL device, otherwise - field is empty |
+| azimuth | Horizontal angle of arrival. Only for [uWAVE USBL](uWAVE_USBL_Modem_Specification_en.md) devices, otherwise the field is empty |
 | dataPacket | An array of bytes in HEX format with a '0x' prefix, for example, for the string '123' 0x313233. The maximum packet size is 64 bytes. |
+| *	| Checksum separator NMEA |
+| hh	| Checksum NMEA |
+| \<CR\>\<LF\> | Sentence end |
+
+### 2.18. IC_H2D_PT_ITG
+Remote request with logical addressing.
+
+Sentence format: **`$PUWVK,x,x*hh <CR><LF>`**
+
+| Field/Parameter |	Description |
+| :--- | :--- |
+| $	| Sentence start '$' |
+| PUWV | UWV |
+| K | Sentence identifier |
+| target_ptAddress | Address of a remote modem, 0 .. 254 |
+| dataID | Paramter ID (0 - depth, 1 - temperature, 2 - supply voltage) |
+| *	| Checksum separator NMEA |
+| hh	| Checksum NMEA |
+| \<CR\>\<LF\> | Sentence end |
+
+### 2.19. IC_D2H_PT_ITG_TMO 
+Remote device timeout with logical addressing.
+
+Sentence format: **`$PUWVL,x,x*hh <CR><LF>`**
+
+| Field/Parameter |	Description |
+| :--- | :--- |
+| $	| Sentence start '$' |
+| PUWV | UWV |
+| K | Sentence identifier |
+| target_ptAddress | Address of a remote modem, 0 .. 254 |
+| dataID | Requested paramter ID (0 - depth, 1 - temperature, 2 - supply voltage) |
+| *	| Checksum separator NMEA |
+| hh	| Checksum NMEA |
+| \<CR\>\<LF\> | Sentence end |
+
+### 2.20. IC_D2H_PT_ITG_RESP
+Remote response with logical addressing.
+
+Sentence format: **`$PUWVM,x,x,x.x,x.x,x.x*hh <CR><LF>`**
+
+| Поле/Параметр |	Описание|
+| :--- | :--- |
+| $	| Начало сообщения '$' |
+| PUWV | UWV |
+| K | Идентификатор сообщения |
+| target_ptAddress | Address of a remote modem, 0 .. 254 |
+| dataID | Requested paramter ID (0 - depth, 1 - temperature, 2 - supply voltage) |
+| dataValue | Requested paramter value |
+| pTime | Measured propagation time, sec |
+| azimuth | Horizontal angle of arrival, °. Only for [uWAVE USBL](uWAVE_USBL_Modem_Specification_en.md) devices, otherwise the field is empty |
 | *	| Checksum separator NMEA |
 | hh	| Checksum NMEA |
 | \<CR\>\<LF\> | Sentence end |
@@ -429,8 +483,11 @@ The following functions are available to the user:
 - receiving a notification about the successful delivery of the package and the number of attempts required  
 - receiving a notification about exceeding the interval of attempts in case of a failed transfer  
 - receiving an incoming packet message with the sender's address  
+- request parameters of a remote device with logic addressing
+- receiving a notification about exceeding the timeout interval of remote request with logic addressing
+- receiving a logical addressing remote request result with propagation time measurement
 
-To interact with the modem in batch mode, use the commands from [2.11. IC_H2D_PT_SETTINGS_READ](#211-ic_h2d_pt_settings_read) according to [2.17. IC_D2H_PT_RCVD](#217-ic_d2h_pt_rcvd).
+To interact with the modem in batch mode, use the commands from [2.11. IC_H2D_PT_SETTINGS_READ](#211-ic_h2d_pt_settings_read) according to [2.20. IC_D2H_PT_ITG_RESP](#220-ic_d2h_pt_itg_resp).
 
 After transmitting data in packet mode, the sending modem waits for a short code message [ACK](#42-remote-commands) from the sender, upon receipt it notifies the user of a successful transmission or repeats the transmission until a response is received from the sender or the number of attempts is exceeded.
 
