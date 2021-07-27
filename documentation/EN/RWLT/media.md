@@ -7,6 +7,13 @@
 
 ______  
 
+### ROV & Towing field tests
+Place: [Sixth Gateway Volga-Don Canal, Volgograd, Russia](https://goo.gl/maps/rmktnCWcauE4HbcZ6)  
+Time: 27 JUL 2021  
+Tracks:  
+- [RWLT tracks 27 JUL 2021](/documentation/RWLT_Tracks_27_JUL_2021_06-48-42.kml)
+
+______  
 
 ### First field tests (static, GIB in ice holes)
 Place: [Pond Yuzhnii, Volgograd, Russia](https://goo.gl/maps/8hZFEP7M3Z8YtdAo6)  
