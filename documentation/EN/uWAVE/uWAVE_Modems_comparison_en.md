@@ -19,7 +19,7 @@
 | Depth rating, m | 300 | **400 / 1000** <sup>[4](#footnote4),[5](#footnote5)</sup> | 300 | 300 |
 | Power consumption (RX/TX), W | 0.33/6 | 0.33/15 | 0.33/15 | 0.33/15 |
 | Acoustic source level (in band), dB re 1 uPa @ 1 m | 169 | 175 | 175 | 175 |
-| Supply voltage measurement | **✓** | **✓** | **✓** | **✓** |
+| Supply voltage measurement | **✓** | **✓** | **✓** | **✘** |
 | Depth/temperature sensor | **✓** | **✘** | **✓** | **✓** |
 | 2-Axis inclinometer | **✘** | **✘** | **✘** | **✓** |
 | Horizontal angle of arrival estimation | **✘** | **✘** | **✘** | **✓** |
