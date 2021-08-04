@@ -48,6 +48,7 @@ Devices from [uWave family](uWAVE_Family_en.md) use a simple open [NMEA-like con
 | HORIZONTAL ANGLE OF ARRIVAL ESTIMATION ACCURACY (typ.) |	2° |
 | SUPPLY VOLTAGE | 12 V |
 | DATA LINES VOLTAGE | 0 .. 3.3 V |
+| DATA LINES OUTPUT IMPEDANCE | 1 kOhm |
 | FREQUENCY BAND | 10 .. 30 kHz |
 | BIT ERROR RATE | 10<sup>-6</sup> |
 | SNR<sup>[3](#footnote3)</sup> | -2 dB |
