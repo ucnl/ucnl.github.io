@@ -59,7 +59,7 @@ Devices from [uWave family](uWAVE_Family_en.md) use a simple open [NMEA-like con
 | SUBSCRIBERS CODE DIVISION               | 20 code channels |
 | COMMAND MODE                            | 16 predefined messages (9 for user applications) |
 | PACKET MODE                             | 254 subscribers with an acknowledgement; broadcasting; packet size up to 64 bytes |
-| TX BUFFER SIZE | 127 bytes |
+| TX BUFFER SIZE                          | 127 bytes |
 | PROPAGATION TIME MEASUREMENT RESOLUTION | 0.0001 sec |
   
 ________________
