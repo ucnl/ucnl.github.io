@@ -37,6 +37,7 @@ simplicity of integration.
 | WEIGHT (dry) | 0.3 kg |
 | SUPPLY VOLTAGE<sup>[1](#footnote1)</sup> | 12 V |
 | DATA LINES VOLTAGE | 3.3 V |
+| DATA LINES OUTPUT IMPEDANCE | 1 kOhm |
 | POWER CONSUMPTION | 0.35 W |
 | MAX. RELATIVE VELOCITY | +/- 1.8 m/s  |
 | WORKING TEMPERATURE RANGE | -5 .. 50 °С |
