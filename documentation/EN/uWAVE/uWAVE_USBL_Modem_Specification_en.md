@@ -29,7 +29,7 @@ Using **uWAVE USBL Modems**, the user can:
 * estimate the location of the **uWave USBL Modem**, [uWave Max](uWAVE_Max_Specification_en.md) and [uWave modems](uWAVE_Specification_en.md) in command mode by slant range and horizontal angle of arrival;
 * transmit up to 9 short code telecontrol user commands;
 * request from remote modems **uWave USBL Modem**, [uWave Max](uWAVE_Max_Specification_en.md) and [uWave modems](uWAVE_Specification_en.md) their depth, temperature and voltage;
-* measure own depth, temperature and voltage;
+* measure own depth, temperature, pitch and roll;
 
 Devices from [uWave family](uWAVE_Family_en.md) use a simple open [NMEA-like configuration protocol](uWAVE_Protocol_Specification_en.md), and the supplied open-source libraries [**uWaveLib**](https://github.com/ucnl/uWAVELib) (.NET) and [**uWave ALib**](https://github.com/ucnl/uWAVE_ALib) (Arduino) allows for the fastest and easiest integration of devices into custom solutions.
 
