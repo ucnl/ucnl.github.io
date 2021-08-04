@@ -58,8 +58,11 @@ Devices from [uWave family](uWAVE_Family_en.md) use a simple open [NMEA-like con
 | INTERFACE<sup>[4](#footnote4)</sup> | UART 9600 bit/s |
 | INTERFACING PROTOCOL | NMEA0183 [PUWV](uWAVE_Protocol_Specification_en.md) |
 | CABLE LENGTH<sup>[4](#footnote4)</sup> | 1 m |
-| SUBSCRIBERS CODE DIVISION | 20 code channels |
-| COMMAND MODE | 16 predefined code messages (9 for user applications) |
+| SUBSCRIBERS CODE DIVISION               | 20 code channels |
+| COMMAND MODE                            | 16 predefined messages (9 for user applications) |
+| PACKET MODE                             | 254 subscribers with an acknowledgement; broadcasting; packet size up to 64 bytes |
+| TX BUFFER SIZE                          | 127 bytes |
+| PROPAGATION TIME MEASUREMENT RESOLUTION | 0.0001 sec |
   
 ________________
 <a name="footnote1"><sup>1</sup></a> A parameter that determines the maximum range at which a signal can be received based on the electro-acoustic parameters of the transmitter and receiver, spatial decrease in the intensity of sound energy, attenuation in the medium and acoustic noise level.  
