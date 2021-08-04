@@ -42,6 +42,7 @@ Differences from the basic version [uWave](/documentation/EN/uWAVE/uWAVE_Specifi
 | POWER CONSUMPTION Rx/Tx                | 0.33/25 W |
 | POWER SUPPLY                           | 12 V |
 | DATA LINES VOLTAGE                     | 0 .. 3.3 V |
+| DATA LINES OUTPUT IMPEDANCE            | 1 kOhm |
 | FREQUENCY BAND                         | 10 .. 30 kHz |
 | BIT ERROR RATE                         | 10<sup>-6</sup> |
 | SNR<sup>[3](#footnote3)</sup></sup>    | -2 dB |
