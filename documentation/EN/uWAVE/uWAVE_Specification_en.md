@@ -45,6 +45,7 @@ Devices from [uWave family](uWAVE_Family_en.md) use a simple open [NMEA-like con
 | POWER CONSUMPTION Rx/Tx                 | 0.33/6 W |
 | POWER SUPPLY<sup>[4](#footnote4),[7](#footnote7)</sup> | 5 .. 12 V |
 | DATA LINES VOLTAGE                      | 0 .. 3.3 V |
+| DATA LINES OUTPUT IMPEDANCE             | 1 kOhm |
 | FREQUENCY BAND                          | 10 .. 30 kHz |
 | ACOUSTIC SOURCE LEVEL (IN BAND)         | 169 dB re 1 uPa @ 1 m |
 | BIT ERROR RATE                          | 10<sup>-6</sup> |
