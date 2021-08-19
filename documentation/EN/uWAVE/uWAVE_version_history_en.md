@@ -24,7 +24,7 @@
 ### 1.1. Switching to command mode and back
 Changing the state of the service core has a higher priority in relation to the transmission or reception of data. If the core is not pulled to the ground, on some models of interface converters, noise may be induced on the cable at the time of transmission in transparent channel mode. This causes the modem to switch to command mode during transmission, which can lead to premature completion of data transmission. To exclude this situation, the service core should not be left unconnected.
 
-## 1.2. Using the same code channel for TX and RX
+### 1.2. Using the same code channel for TX and RX
 The use of the same code channel for receiving and transmitting in some small water areas can lead to a situation when working with short code requests, the requesting modem can receive its own request signal reflected from the coast or other objects. This is not a bug or a flaw in the modem, but a consequence of the laws of sound propagation in water. Therefore, it is recommended to use different code channels for transmission and reception.
 
 ________  
