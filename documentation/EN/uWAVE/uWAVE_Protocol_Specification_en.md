@@ -437,11 +437,11 @@ Remote response with logical addressing.
 
 Sentence format: **`$PUWVM,x,x,x.x,x.x,x.x*hh <CR><LF>`**
 
-| Поле/Параметр |	Описание|
+| Field/Parameter |	Description |
 | :--- | :--- |
-| $	| Начало сообщения '$' |
+| $	| Sentence start '$' |
 | PUWV | UWV |
-| K | Идентификатор сообщения |
+| K | Sentence identifier |
 | target_ptAddress | Address of a remote modem, 0 .. 254 |
 | dataID | Requested paramter ID (0 - depth, 1 - temperature, 2 - supply voltage) |
 | dataValue | Requested paramter value |
@@ -450,6 +450,44 @@ Sentence format: **`$PUWVM,x,x,x.x,x.x,x.x*hh <CR><LF>`**
 | *	| Checksum separator NMEA |
 | hh	| Checksum NMEA |
 | \<CR\>\<LF\> | Sentence end |
+
+### 2.21. IC_H2D_INC_DTA_CFG
+> For [uWAVE USBL](uWAVE_USBL_Modem_Specification_en.md) devices only.
+Настройка вывода данных о крене и дифференте.
+
+Sentence format: **`$PUWV8,x,x*hh<CR><LF>`**
+
+| Field/Parameter |	Description |
+| :--- | :--- |
+| $	| Sentence start '$' |
+| PUWV | UWV |
+| 8 | Sentence identifier |
+| IsSaveToFlash | 1 - store settings in internal Flash, 0 - do not store |
+| PeriodMs | Period in msec., 0 - disabled, 1 - tandem (send immediately after any outcoming message to the host system), or value from 500 to 60000 (0.5 - 60 sec.) |
+| *	| Checksum separator NMEA |
+| hh	| Checksum NMEA |
+| \<CR\>\<LF\> | Sentence end |
+
+
+
+### 2.22. IC_D2H_INC_DTA
+> For [uWAVE USBL](uWAVE_USBL_Modem_Specification_en.md) devices only.
+Pitch and roll readings.
+
+Sentence format: **`$PUWV9,x.x,x.x,x.x*hh<CR><LF>`**
+
+| Field/Parameter |	Description |
+| :--- | :--- |
+| $	| Sentence start '$' |
+| PUWV | UWV |
+| 9 | Sentence identifier |
+| reserved | Reserved and left empty |
+| Pitch | Device's pitch in degrees |
+| Roll | Device's roll in degrees |
+| *	| Checksum separator NMEA |
+| hh	| Checksum NMEA |
+| \<CR\>\<LF\> | Sentence end |
+
 
 <div style="page-break-after: always;"></div>
 
