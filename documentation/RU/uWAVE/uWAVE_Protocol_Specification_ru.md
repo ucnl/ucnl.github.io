@@ -452,6 +452,13 @@ Reserved | Reserved |
 | \<CR\>\<LF\> | Конец сообщения |
 
 
+### 2.21. IC_H2D_INC_DTA_CFG
+
+
+
+### 2.22. IC_D2H_INC_DTA
+
+
 
 <div style="page-break-after: always;"></div>
 
