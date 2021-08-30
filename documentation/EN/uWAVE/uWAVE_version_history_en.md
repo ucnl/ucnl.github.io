@@ -29,7 +29,7 @@ Changing the state of the service core has a higher priority in relation to the 
 The use of the same code channel for receiving and transmitting in some small water areas can lead to a situation when working with short code requests, the requesting modem can receive its own request signal reflected from the coast or other objects. This is not a bug or a flaw in the modem, but a consequence of the laws of sound propagation in water. Therefore, it is recommended to use different code channels for transmission and reception.
 
 ### 1.3. Modem returns 'TX Busy' error when trying to send something after receiving a message in the packet mode
-A modem that receives a message in burst mode immediately sends the ACK, so its transmitter is busy. The user can use the 'ACK On TX Finished' setting. In this case, the modem will inform the user at the end of each transmission. An alternative way to handle this situation is to retry transmission after a time of about 500 ms.
+A modem that receives a message in the packet mode immediately sends the ACK, so its transmitter is busy. The user can use the 'ACK On TX Finished' setting. In this case, the modem will inform the user at the end of each transmission. An alternative way to handle this situation is to retry transmission after a time of about 500 ms.
 
 ________  
                     
