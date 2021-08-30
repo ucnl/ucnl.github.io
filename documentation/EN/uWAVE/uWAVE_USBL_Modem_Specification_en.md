@@ -2,8 +2,6 @@
 | :---: | ---: |
 | [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **uWave USBL Modem** underwater acoustic modem <br/> Device specifications |
 
-## THIS DEVICE IS COOMING IN 2022, STAY TUNED!
-
 
 ## KEY FEATURES
 
