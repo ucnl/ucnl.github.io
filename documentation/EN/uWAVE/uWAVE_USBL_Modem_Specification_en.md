@@ -41,7 +41,7 @@ Devices from [uWave family](uWAVE_Family_en.md) use a simple open [NMEA-like con
 | WEIGHT (dry) | 0.44 kg |
 | DEPTH RATING | 300 m |
 | MAX. OPERATING RANGE<sup>[1](#footnote1),[2](#footnote2)</sup> |	3000 m |
-| WORKING AREA (cone, from the horizontal) | +/- 30° |
+| WORKING ANGLE (cone, from the horizontal) | +/- 30° |
 | PAYLOAD DATA RATE |	78 bit/s |
 | POWER CONSUMPTION Rx/Tx |	0.33/25 W |
 | HORIZONTAL ANGLE OF ARRIVAL ESTIMATION ACCURACY (typ.) |	2° |
