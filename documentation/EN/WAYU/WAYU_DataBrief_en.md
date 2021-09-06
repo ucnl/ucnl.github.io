@@ -18,7 +18,7 @@ Both the pinger and **WAYU** buoys turn on automatically when they touch the wat
 | :---: | :--- |
 | ![WAYU Pinger]() | [WAYU Pinger](WAYU_Pinger_Specification_ru.md) <br/> Underwater pinger beacon |
 | ![WAYU GIB]() | [WAYU GIB](WAYU_GIB_Specification_ru.md) <br/> Navigation buoy |
-| ![WAYU Radio dongle]() | [WAYU Radio dongle](WAYU_RF_Dongle_Specification_ru.md) <br/> RF dongle |
+| ![WAYU Radio dongle](/documentation/wayu_rf_dongle.png) | [WAYU Radio dongle](WAYU_RF_Dongle_Specification_ru.md) <br/> RF dongle |
 
 
 <div style="page-break-after: always;"></div>
