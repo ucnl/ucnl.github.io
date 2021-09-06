@@ -1,4 +1,4 @@
-| ![logo](/documentation/sm_logo.png) | ![WAYU Pinger]() |
+| ![logo](/documentation/sm_logo.png) | ![WAYU Pinger](/documentation/RWLT_Pinger.png) |
 | :---: | ---: |
 | [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **WAYU Pinger** - Underwater pinger beacon <br/> Device specification |
 
