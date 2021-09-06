@@ -10,7 +10,7 @@
 
 |  | [uWave](uWAVE_Specification_ru.md) | [uWave Max OEM](uWAVE_Max_OEM_Specification_ru.md) | [uWave Max](uWAVE_Max_Specification_ru.md) | [uWave USBL Modem](uWAVE_USBL_Modem_Specification_ru.md) | 
 | :--- | :---: | :---: | :---: | :---: | 
-|      | ![](https://raw.githubusercontent.com/ucnl/ucnl.github.io/master/documentation/RT_1_332820_1.png) | ![](https://raw.githubusercontent.com/ucnl/ucnl.github.io/master/documentation/utro_pcb_rt_1_524525_1_2.png) | ![](https://raw.githubusercontent.com/ucnl/ucnl.github.io/master/documentation/def_modem_black.png) | ![](https://raw.githubusercontent.com/ucnl/ucnl.github.io/master/documentation/def_zima_b_ant.png) |
+|      | ![](/documentation/RT_1_332820_1.png) | ![](/documentation/utro_pcb_rt_1_524525_1_2.png) | ![](/documentation/def_modem_black.png) | ![](/documentation/def_zima_b_ant.png) |
 | Текущий статус | **Поставляется** | **Поставляется** | **Поставляется** | **Поставляется** |
 | Максимальная дальность связи, м | 1000<sup>[1](#footnote1)</sup> | 3000<sup>[1](#footnote1),[2](#footnote2)</sup> | 3000<sup>[1](#footnote1),[2](#footnote2)</sup> | 3000<sup>[1](#footnote1),[2](#footnote2)</sup> |
 | Скорость передачи данных, бит/с | 78 / 156<sup>[3](#footnote3)</sup> / 314<sup>[3](#footnote3)</sup> | 78 / 156<sup>[3](#footnote3)</sup> / 314<sup>[3](#footnote3)</sup> | 78 / 156<sup>[3](#footnote3)</sup> / 314<sup>[3](#footnote3)</sup> | 78 / 156<sup>[3](#footnote3)</sup> / 314<sup>[3](#footnote3)</sup> |
