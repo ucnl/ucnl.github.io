@@ -16,11 +16,13 @@ The device is designed to receive navigation information from navigation buoys [
 
 | PARAMETER | VALUE |
 | :--- | :--- |
-| DIMENSIONS (Ф х h) | XX x XXX mm |
-| WEIGHT (dry) | X кг |
+| DIMENSIONS (l x w x h, w/o cable) | 42 x 26 х 235 mm |
+| USB cable length | not less than 1.5 m |
+| WEIGHT (dry) | 160 g |
 | WORKING TEMPERATURE RANGE | -10 .. 50 °С |
 | MAX. RF RANGE<sup>[1](#footnote1)</sup> | 300 m |
 | CONNECTION | To a PC USB port using the supplied USB-B cable |
+| MOUNTING | Mangnetic |
 
 ________________
 <a name="footnote1"><sup>1</sup></a> Achieved in the absence of interference, in an open area.  
