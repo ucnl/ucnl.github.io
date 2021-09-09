@@ -9,7 +9,7 @@
 ## 1. List of devices
 
 The **uWave** family (_&mu;Wave, pronounced: "mu-wave" or, if you like it more - "you-wave"_) is specifically designed for applications that are extremely sensitive to weight 
-and size and is presented currently by three devices:
+and size and is presented currently by four devices:
 
 * [uWave](uWAVE_Specification_en.md) - underwater acoustic modem. It is the smallest underwater acoustic modem in the world: its size is 
 only **Ф40х45** mm, and dry weight does not exceed 160 grams. With these parameters, it allows user to transfer data at distances of more 
