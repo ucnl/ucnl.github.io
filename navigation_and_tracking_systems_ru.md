@@ -19,7 +19,7 @@
 * [Рукводство пользователя](/documentation/RU/RedWAVE/RedWAVE_Users_Manual_ru.md)
 * [Руководство пользователя ПО RedNAV Host](/documentation/RU/RedWAVE/RedNAV_Host_Users_Manual_ru.md)
 * [Схема включения устройства: RedNODE](/documentation/RU/RedWAVE/RedNODE_wiring_diagram_ru.md)
-* [3D-модель устройства (STEP): RedBase](/documentation/RedBase_v2.0_3D.step)
+* [3D-модель устройства (STEP): RedBase](/documentation/RedBase_v2.0_3D.STEP)
 * [3D-модель устройства (STEP): RedNav](/documentation/RedNav_v2.0_3D.step)
 * [3D-модель (STEP): RedNav с навигационной панелью](/documentation/RedNav_with_compass_3D.step) 
 * [Приложение для работы с навигационными приемниками UGPSHub (Репозиторий)](https://github.com/ucnl/UGPSHub)
