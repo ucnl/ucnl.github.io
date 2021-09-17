@@ -10,8 +10,12 @@
 
 ## 0. Changes and versions
 
+| Actual FW version | **uWave [JULY] 1.23** 17-SEP-2021 |
+| :--- | :--- |
+
 | Date | Firmware version | Description |
 | :--- | :--- | :--- |
+| 17-SEP-2021 | System: (все) <br/> Core: uWAVE [JULY] v1.23 | - BUG FIX: fixed a bug due to which in rare cases the modem could stay in the remote request awaiting mode |
 | 30-AUG-2021 | System: (all) , <br/> Core: uWAVE [JULY] v1.22 | - BUG FIX: fixed a bug that could lead to disruption of the interface in the direction from the modem to the user system when working with command requests |
 | 08-JUL-2021 | System: (all) , <br/> Core: uWAVE [JULY] v1.21 | - BUG FIX: fixed incorrect operation of the transmitter in the transparent channel mode, which led to the fact that when new data was received via the UART at the time of the end of the transfer, new data could be left untransmitted <br/> +/- Packet mode sentences changed - added a filed for azimuth for uWAVE USBL device <br/> + Supports range measurement and requests for depth, temperature and supply voltage within the logical addressing of the packet mode |
 | 28-JUN-2021 | System: (all), <br/> Core: uWAVE [JULY] v1.20 | + Packet mode no longer needs to be enabled separately (it is always enabled). The modem can receive packet mode messages while in both transparent channel mode and command mode |
