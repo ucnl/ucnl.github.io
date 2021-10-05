@@ -17,6 +17,7 @@
 
 | Date | Firmware version | Description |
 | :--- | :--- | :--- |
+| 05-OCT-2021 | System: (все) <br/> Core: uWAVE [JULY] v1.25 | PRE-RELEASE. From this version, with the active setting of IsCmdModeByDefault, the CMD wire becomes not an input, but an output. It transmits a digital strobe signal synchronized with the moment of emission and reception. |
 | 27-SEP-2021 | System: (all) <br/> Core: uWAVE [JULY] v1.24 | - BUG FIX: fixed a bug due to which it was impossible to interrupt retry attempts to transmit a packet message |
 | 17-SEP-2021 | System: (all) <br/> Core: uWAVE [JULY] v1.23 | - BUG FIX: fixed a bug due to which in rare cases the modem could stay in the remote request awaiting mode |
 | 30-AUG-2021 | System: (all) , <br/> Core: uWAVE [JULY] v1.22 | - BUG FIX: fixed a bug that could lead to disruption of the interface in the direction from the modem to the user system when working with command requests |
