@@ -11,7 +11,7 @@
 * **Acoustic communication range up to 1000 <sup>[2](#footnote2)</sup> m**
 * **Battery life up to 80 hours in receiving mode**
 * **Automatic poweron in water**
-* **Built-in voice activity detector**
+* **Built-in voice activity detector / automatic squelch**
 
 ## DESCRIPTION
 
