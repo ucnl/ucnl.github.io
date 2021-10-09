@@ -16,7 +16,7 @@
 ## DESCRIPTION
 
 Diver's underwater wireless telephone communication unit **RedPhone-DX** provides voice messaging between divers and/or from a diver to a surface station. The device supports standard frequency bands and is compatible with most similar systems. The built-in pinger function of the navigation system **RWLT** allows the user to determine the geographic position of the diver after he completes voice transmission.
-[RedButton](https://docs.unavlab.com/documentation/EN/Accessories/RedButton_Specification_en.html) that does not contain corrodable elements is used as a Push-To-Talk button.
+[RedButton](https://docs.unavlab.com/documentation/EN/Accessories/RedButton_Specification_en.html) that does not contain corrodable elements can be used as a Push-To-Talk button.
 
 <div style="page-break-after: always;"></div>
 
@@ -24,18 +24,19 @@ Diver's underwater wireless telephone communication unit **RedPhone-DX** provide
 
 | PARAMETER | VALUE |
 | :--- | :--- |
-| DIMENSIONS<sup>[3](#footnote3)</sup> | 203 x 105 x 45 mm |
+| DIMENSIONS<sup>[3](#footnote3)</sup> | 106 x 95 x 55 mm |
 | WEIGHT<sup>[4](#footnote4)</sup> (dry) | 0.6 kg |
 | MAX. DEPTH | 100 m |
 | MAX. OPERATING RANGE<sup>[2](#footnote2)</sup> | 1000 m |
 | ACOUSTIC SOURCE LEVEL | 150 dB re 1 uPa @ 1 m |
+| POWER (PEP) | 15 Watts |
 | VOICE BANDWIDTH<sup>[5](#footnote5)</sup> | 300 .. 4300 Hz |
 | NUMBER OF SUPPORTED CHANNELS | 8 |
 | BATTERY LIFE (RX MODE)<sup>[6](#footnote6)</sup> | up to 80 hours |
 | BATTERY LIFE (MIXED MODE)<sup>[6](#footnote6), [7](#footnote7)</sup> | up to 5 hours |
 | BATTERY LIFE (MIXED MODE)<sup>[6](#footnote6), [8](#footnote8)</sup> | up to 2.5 hours |
 | WORKING TEMPERATURE RANGE | -10 .. 50° С |
-| Built-in power supply | 4 x 18650 LiFePO4, up to 3000 cycles |
+| BUILT-IN POWER SUPPLY | 4 x 18650 LiFePO4, up to 3000 cycles |
 | CHANNEL SWITCHING | Onshore, via RF-dongle |
 | BODY MATERIAL | Polyurethane |
 | CABLES INSULATION MATERIAL | Polyurethane |
