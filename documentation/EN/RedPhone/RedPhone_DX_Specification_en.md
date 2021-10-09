@@ -36,7 +36,7 @@ Diver's underwater wireless telephone communication unit **RedPhone-DX** provide
 | BATTERY LIFE (MIXED MODE)<sup>[6](#footnote6), [7](#footnote7)</sup> | up to 5 hours |
 | BATTERY LIFE (MIXED MODE)<sup>[6](#footnote6), [8](#footnote8)</sup> | up to 2.5 hours |
 | WORKING TEMPERATURE RANGE | -10 .. 50° С |
-| BUILT-IN POWER SUPPLY | 4 x 18650 LiFePO4, up to 3000 cycles |
+| BUILT-IN POWER SUPPLY | 28 Watt-hours, LiFePO4, up to 3000 cycles |
 | CHANNEL SWITCHING | Onshore, via RF-dongle |
 | BODY MATERIAL | Polyurethane |
 | CABLES INSULATION MATERIAL | Polyurethane |
