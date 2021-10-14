@@ -36,6 +36,8 @@
    - [2.20. IC_D2H_PT_ITG_RESP - ответ удаленного абонента с логической адресацией](#220-ic_d2h_pt_itg_resp)
    - [2.21. IC_H2D_INC_DTA_CFG - настройка выдачи значений крена и дифферента](#221-ic_h2d_inc_dta_cfg)
    - [2.22. IC_D2H_INC_DTA - данные о крене и дифференте](#222-ic_d2h_inc_dta)
+   - [2.23. IC_H2D_AQPNG_SETTINGS_READ - запрос настроек режима AUTO QUERY / PINGER](#223-ic_h2d_aqpng_settings_read)
+   - [2.24. IC_HDH_AQPNG_SETTINGS - настройки режима AUTO QUERY / PINGER](#224-ic_hdh_aqpng_settings)
 - [3. Режимы работы устройства](#3-%D1%80%D0%B5%D0%B6%D0%B8%D0%BC%D1%8B-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%8B-%D1%83%D1%81%D1%82%D1%80%D0%BE%D0%B9%D1%81%D1%82%D0%B2%D0%B0)
    - [3.1. Режим прозрачного канала](#31-%D1%80%D0%B5%D0%B6%D0%B8%D0%BC-%D0%BF%D1%80%D0%BE%D0%B7%D1%80%D0%B0%D1%87%D0%BD%D0%BE%D0%B3%D0%BE-%D0%BA%D0%B0%D0%BD%D0%B0%D0%BB%D0%B0)
    - [3.2. Командный режим](#32-%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D0%BD%D1%8B%D0%B9-%D1%80%D0%B5%D0%B6%D0%B8%D0%BC)
