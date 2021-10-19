@@ -9,7 +9,7 @@
 
 ## ОПИСАНИЕ
 
-Устройство предназначено для сопряжения приборов RedPhone-DX с ПК для настройки.
+Устройство предназначено для сопряжения приборов [RedPhone-DX](RedPhone_DX_Specification_ru.md) с ПК для настройки.
 
 <div style="page-break-after: always;"></div>
 
