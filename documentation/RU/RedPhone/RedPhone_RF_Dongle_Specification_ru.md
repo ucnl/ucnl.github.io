@@ -1,4 +1,4 @@
-| ![logo](/documentation/sm_logo.png) | ![logo](/documentation/wayu_rf_dongle.png) |
+| ![logo](/documentation/sm_logo.png) | ![logo](/documentation/redphone_rf_dongle.png) |
 | :---: | ---: |
 | [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **RedPhone Radio dongle** - Радиодонгл для настройки приборов RedPhone-DX <br/> Спецификация устройства |
 
