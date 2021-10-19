@@ -8,6 +8,7 @@
 * [Спецификация устройства: RedPhone-OS](/documentation/RU/RedPhone/RedPhone_OS_Specification_ru.md)
 * [Инструкция по эксплуатации RedPhone-OS](/documentation/RU/RedPhone/RedPhone_OS_Users_manual_ru.md)
 * [Спецификация устройства: RedPhone-DX](/documentation/RU/RedPhone/RedPhone_DX_Specification_ru.md)
+* [Спецификация устройства: RedPhone RF Dongle](/documentation/RU/RedPhone/RedPhone_RF_Dongle_Specification_ru.md)
 * [Спецификация устройства: RedPhone-D](/documentation/RU/RedPhone/RedPhone_Specification_ru.md)  
 * [Инструкция по эксплуатации RedPhone-D](/documentation/RU/RedPhone/RedPhone_Users_Manual_ru.md)
 * [Программа и методики испытаний: RedPhone](/documentation/RU/RedPhone/RedPhone_PM_ru.md)
