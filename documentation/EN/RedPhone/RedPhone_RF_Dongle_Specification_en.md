@@ -1,6 +1,6 @@
 | ![logo](/documentation/sm_logo.png) | ![logo](/documentation/redphone_rf_dongle.png) |
 | :---: | ---: |
-| [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **RedPhone Radio dongle** - RedPhone-DX configuration tool <br/> Device specifications |
+| [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **RedPhone Radio dongle** - [RedPhone-DX](RedPhone_DX_Specification_en.md) configuration tool <br/> Device specifications |
 
 ## KEY FEATURES
 
@@ -9,7 +9,7 @@
 
 ## ОПИСАНИЕ
 
-The device is designed to connect [RedPhone-DX](RedPhone_DX_Specification_ru.md) devices to a PC for configuration purposes.
+The device is designed to connect [RedPhone-DX](RedPhone_DX_Specification_en.md) devices to a PC for configuration purposes.
 
 <div style="page-break-after: always;"></div>
 
