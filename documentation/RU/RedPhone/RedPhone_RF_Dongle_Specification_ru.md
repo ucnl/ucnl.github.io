@@ -1,6 +1,6 @@
 | ![logo](/documentation/sm_logo.png) | ![logo](/documentation/redphone_rf_dongle.png) |
 | :---: | ---: |
-| [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **RedPhone Radio dongle** - Радиодонгл для настройки приборов RedPhone-DX <br/> Спецификация устройства |
+| [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **RedPhone Radio dongle** - Радиодонгл для настройки приборов [RedPhone-DX](RedPhone_DX_Specification_ru.md) <br/> Спецификация устройства |
 
 ## КЛЮЧЕВЫЕ ОСОБЕННОСТИ
 
