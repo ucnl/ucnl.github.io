@@ -8,7 +8,7 @@
 
 ## comparison table
 
-|  | [RedWAVE underwater GPS](/documentation/EN/RedWAVE/RedWAVE_DataBrief_en.md) | [RWLT](/documentation/EN/RWLT/RWLT_DataBrief_en.md) | [Zima USBL](/documentation/EN/Zima/Zima_DataBrief_en.md) | [WAYU](/documentation/EN/WAYU/WAYU_DataBrief_en.md) | [uWAVE USBL](/documentation/EN/uWAVE/uWAVE_USBL_DataBrief_en.md) |
+|  | [RedWAVE underwater GPS](/documentation/EN/RedWAVE/RedWAVE_DataBrief_en.md) | [RWLT](/documentation/EN/RWLT/RWLT_DataBrief_en.md) | [Zima USBL](/documentation/EN/Zima/Zima_DataBrief_en.md) | [WAYU](/documentation/EN/WAYU/WAYU_DataBrief_en.md) | [uWAVE USBL](/documentation/EN/uWAVE/uWAVE_USBL_Modem_Specification_en.md) |
 | :--- | :---: | :---: | :---: | :---: | :---: |
 | System configuration | LBL | LBL | USBL | LBL | USBL |
 | Place of generation of navigation information | Submerged <br/> object | Surface <br/> control <br/> point | Surface <br/> control <br/> point | Surface <br/> control <br/> point | Surface <br/> control <br/> point |
