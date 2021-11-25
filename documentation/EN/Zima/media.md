@@ -7,6 +7,15 @@
 
 ______  
 
+
+### Looking for the responder beacon, assessment of the effect of vessel heading oscillations on accuracy  
+Place: [Sixth Gateway Volga-Don Canal, Volgograd, Russia](https://goo.gl/maps/rmktnCWcauE4HbcZ6)  
+Time: 24 September 2021  
+Tracks:  
+- [Zima-R & station tracks 24 SEP 2021](/documentation/zima_29_SEP_2021.kml)
+
+______  
+
 ### A pipeline inspection by a ROV equipped with [Zima USBL](/documentation/EN/Zima/Zima_DataBrief_en.md)  
 Place:   
 Time: January 2019
