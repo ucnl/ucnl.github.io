@@ -9,7 +9,7 @@
 * **Fully rugger monoblock design - no place to leak!**
 * **Built-in diver location function <sup>[1](#footnote1)</sup>**
 * **Acoustic communication range up to 1000 <sup>[2](#footnote2)</sup> m**
-* **Battery life up to 80 hours in receiving mode**
+* **Battery life up to 30 hours in receiving mode**
 * **Automatic poweron in water**
 * **Built-in voice activity detector / automatic squelch**
 
