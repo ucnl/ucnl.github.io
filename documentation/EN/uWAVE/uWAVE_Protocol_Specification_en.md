@@ -504,7 +504,7 @@ analysis are transmitted to the hydroacoustic channel, after which they are rece
 given to the user at the receiving side. In this regard, to be able to configure modems, as well as to measure the propagation time 
 to remote subscribers, there is a command mode. Modems analyze input data only in command mode. To switch to the command mode, the 
 “service” core should be pulled to +3.3 V. After that, the “service” core should be pulled to the ground to exit the service mode.
-Also, the command mode can be enabled by default using the [IC_H2D_SETTINGS_WRITE](#22-ic_h2d_settings_write) sentence, when isCmdMode parameter equals to 1. To return to control by “service” core, [IC_H2D_SETTINGS_WRITE](#22-ic_h2d_settings_write) sentence can be used with isCmdMode parameter equals to 0.
+Also, the command mode can be enabled by default using the [IC_H2D_SETTINGS_WRITE](#22-ic_h2d_settings_write) sentence, when isCmdMode parameter equals to 1, in this case, starting from firmware version 1.30, the "service" core becomes an output digital line that goes to a high logical state synchronously with the start of the signal emission by the modem and 500 ms after the start of the incoming message is detected.. To return to control by “service” core, [IC_H2D_SETTINGS_WRITE](#22-ic_h2d_settings_write) sentence can be used with isCmdMode parameter equals to 0.
 
 > **WARNING!** The core "service" is pulled **ONLY** to 3-5 V or ground, connecting it to a higher voltage will cause a **FATAL** and **NON-GUARANTEE** failure of the device.
 
