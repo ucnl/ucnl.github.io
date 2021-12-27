@@ -208,7 +208,7 @@ ________________
 | **Рисунок 6a - [Zima-R](Zima_R_Specification_ru.md)** |
 | _габаритный чертеж_ |
 
-| ![Zima-R](/ZimaR_wiring_diagram_ru.png) |
+| ![Zima-R](/documentation/ZimaR_wiring_diagram_ru.png) |
 | :---: |
 | **Рисунок 6b - [Zima-R](Zima_R_Specification_ru.md)** |
 | _Назначение жил кабеля_ |
