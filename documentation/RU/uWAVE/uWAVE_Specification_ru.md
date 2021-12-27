@@ -40,7 +40,7 @@
 Устройства [семейства uWave](uWAVE_Family_ru.md) используют простой [NMEA-подобный протокол](uWAVE_Protocol_Specification_en.md) настройки, а поставляемые open-source библиотеки [**uWaveLib**](https://github.com/ucnl/uWAVELib) (.NET) и [**uWave ALib**](https://github.com/ucnl/uWAVE_ALib) (Arduino) позволяют сделать интеграцию модемов в пользовательские решения максимально просто и быстро.
 
 _________
-<a name="footnote_a1"><sup>*</sup></a> *Патент RU2659299C1*.  
+<a name="footnote_a1"><sup>\*</sup></a> *Патент RU2659299C1*.  
 
 <div style="page-break-after: always;"></div>
 
