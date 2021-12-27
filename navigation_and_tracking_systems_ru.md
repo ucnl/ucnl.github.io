@@ -68,6 +68,6 @@
 * [3D-модель (Fusion360 f3d): кронштейн плоский для Zima-R](/documentation/ZIMA-R_holder_flat.f3d)
 * [Схема включения устройства: Zima-R](/documentation/RU/Zima/ZimaR_wiring_diagram_ru.md)
 * [Пультовое приложение (Репозиторий)](https://github.com/ucnl/ZHost)
-* [Пультовое приложение (Скачать релиз)](https://github.com/ucnl/ZHost/releases/download/1.3/ZHost.zip)
+* [Пультовое приложение (Скачать релиз)](https://github.com/ucnl/ZHost/releases/download/2.2/ZHost.zip)
 
 ## [Домой](README_RU.md)
