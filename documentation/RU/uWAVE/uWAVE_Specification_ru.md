@@ -2,6 +2,8 @@
 | :---: | ---: |
 | [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **uWave** - Гидроакустический модем <br/> Спецификация устройства |
 
+<div style="page-break-after: always;"></div>
+
 ## КЛЮЧЕВЫЕ ОСОБЕННОСТИ
 
 * **Предельно малые габариты и масса**
