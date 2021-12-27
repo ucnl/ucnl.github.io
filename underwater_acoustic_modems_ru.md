@@ -25,6 +25,7 @@
 * [uWave: кронштейн на баллон 3D модель (Fusion360 f3d)](/documentation/uWAVE_holder_tank.f3d)
 * [uWave: кронштейн плоский 3D модель (step)](/documentation/uWAVE_holder_flat.step)
 * [uWave: кронштейн плоский 3D модель (Fusion360 f3d)](/documentation/uWAVE_holder_flat.f3d)
+* [uWave: технический паспорт (шаблон)](/documentation/RU/uWAVE/uWave_technical_passport_ru.md)
 
 ### RedLine
 #### гидроакустический модем
