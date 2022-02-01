@@ -106,7 +106,8 @@ operate in transparent channel mode. This does not require any additional integr
 To work in command mode, a simple [NMEA-like ASCII protocol](uWAVE_Protocol_Specification_en.md) is used.
 
 On our [GitHub](https://github.com/ucnl) you can find examples and linbraries to interface with **uWAVE** devices:
-* [uWave ALib](https://github.com/ucnl/uWAVE_ALib) - Arduino library
+* [uWave ALibs](https://github.com/ucnl/UCNL_ALibs) - Arduino library with examples
+* (old version) [uWave ALib](https://github.com/ucnl/uWAVE_ALib) - Arduino library
 * [uWaveLib](https://github.com/ucnl/uWAVELib) - .NET Library
 * [uWave Host](https://github.com/ucnl/uWAVE_Host) - Demo application
 * [uWave VLBL](https://github.com/ucnl/uWAVE_VLBL) - Demo application (VLBL navigation system on two [uWave](uWAVE_Specification_ru.md) modems)
