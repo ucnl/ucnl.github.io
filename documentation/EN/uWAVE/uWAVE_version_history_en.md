@@ -10,13 +10,14 @@
 
 ## 0. Changes and versions
 
-| Actual FW version | **uWave [JULY] 1.24** 27-SEP-2021 |
+| Actual FW version | **uWave [JULY] 1.31** 31-JAN-2022 |
 | :--- | :--- |
 | | |
 
 
 | Date | Firmware version | Description |
 | :--- | :--- | :--- |
+| 31-JAN-2022 | System: (all) <br/> Core: uWAVE [JULY] v1.31 | - BUGFIX: Fixed a bug due to which the message about the delivered package came along with the ACK message to the previous command <br/> - The size of firmware has been reduced by almost 4 times due to extensive refactoring |
 | 10-DEC-2021 | System: (all) <br/> Core: uWAVE [JULY] v1.30 | From this version, with the active setting of **IsCmdModeByDefault**, the CMD wire becomes not an input, but an output. It transmits a digital strobe signal synchronized with the moment of emission and reception. |
 | 27-SEP-2021 | System: (all) <br/> Core: uWAVE [JULY] v1.24 | - BUG FIX: fixed a bug due to which it was impossible to interrupt retry attempts to transmit a packet message |
 | 17-SEP-2021 | System: (all) <br/> Core: uWAVE [JULY] v1.23 | - BUG FIX: fixed a bug due to which in rare cases the modem could stay in the remote request awaiting mode |
