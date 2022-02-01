@@ -82,7 +82,8 @@ Packet mode allows transmitting data packets with guaranteed delivery (ALO - At-
 <div style="page-break-after: always;"></div>
 
 ## 4. Built-in sensors
-Devices [uWave](uWAVE_Specification_en.md), [uWave Max](uWAVE_Max_Specification_en.md) and [uWave Max OEM](uWAVE_Max_OEM_Specification_en.md) have a built-in supply voltage measurement module. The supply voltage for all devices in the family can be remotely requested by any other devices of the family.
+Devices [uWave](uWAVE_Specification_en.md), [uWave Max](uWAVE_Max_Specification_en.md) and [uWave Max OEM](uWAVE_Max_OEM_Specification_en.md) have a built-in supply voltage measurement module. The supply voltage for all devices in the family can be remotely requested by any other devices of the family.  
+**Starting from firmware version 1.30 with command mode enabled by default, the SVC/CMD cable core becomes a digital output. To which strobe rectangular pulses are transmitted synchronized with the moment the radiation starts and the moment the incoming message is detected. This option allows you to build navigation systems based on the uWave modems.**
 
 Devices [uWave](uWAVE_Specification_en.md), [uWave Max](uWAVE_Max_Specification_en.md) and [uWave USBL Modem](uWAVE_USBL_Modem_Specification_en.md) have built-in depth/temperature sensors. Depth and temperature readings can be remotely requested by any device of the family.
 
