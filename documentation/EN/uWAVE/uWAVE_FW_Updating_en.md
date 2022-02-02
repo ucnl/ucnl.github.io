@@ -2,177 +2,174 @@
 
 | ![logo](/documentation/sm_logo.png) | |
 | :---: | ---: |
-| [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | Инструкция по обновлению прошивки модемов uWave  |
+| [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | Instructions for updating the firmware of uWave modems   |
 
 <div style="page-break-after: always;"></div>
 
-# Обновление внутреннего программного обеспечения модемов uWave
+# Updating the firmware of uWave modems
 
-> Мы постоянно работаем над улучшением продуктов, учитываем мнения и пожелания пользователей и устраняем обнаруженные недоработки. С историей версий, добавлением  новых функций и исправлениями ошибок вы можете ознакомиться на странице [uWave: История версий и изменений](uWAVE_version_history_ru.md).
+>We are constantly working to improve products, take into account the opinions and wishes of users and eliminate the identified shortcomings. Version history, new feature additions, and bug fixes can be found on the [uWave: Version and Changes History](uWAVE_version_history_en.md) page.
 
-## Шаг 1 
-Скачайте необходимые утилиты.
+## Step 1 
+Download the necessary utilities.
 
-### Шаг 1.1 
-Скачайте демо-приложение [uWave Host](https://github.com/ucnl/uWAVE_Host/releases/download/1.0/uWAVE_Host.zip) для работы с модемами uWave. Приложение работает на ПК под управлением ОС Windiws (Версии 8 и выше).
+### Step 1.1 
+Download the demo app [uWave Host](https://github.com/ucnl/uWAVE_Host/releases/download/1.0/uWAVE_Host.zip) to work with uWave modems. The application runs on a PC running Windows OS (Version 8 and above).
 
-### Шаг 1.2 
-Скачайте утилиту для обновления прошивки [UCNL_FW_Update](https://github.com/ucnl/UCNL_FW_Update/releases/download/1.1/UCNL_FW_Update.zip). Утилита работает на ПК под управлением OC Windows (Версии 8 и выше).
+### Step 1.2 
+Download the firmware update utility [UCNL_FW_Update](https://github.com/ucnl/UCNL_FW_Update/releases/download/1.1/UCNL_FW_Update.zip). The utility works on a PC running OC Windows (Version 8 and higher).
 
-### Шаг 1.3 
-Просто распакуйте скачанные архивы в удобные для вас папки. Оба приложения не требуют установки. 
+### Step 1.3 
+Just unpack the downloaded archives into folders convenient for you. Both applications do not require installation.
 
-## Шаг 2
-Подготовьте все для подключения модема к ПК.
+## Step 2
+Prepare everything to connect the modem to the PC.
 
-### Шаг 2.1 
-Подключите ваш модем к преобразователю **UART<->USB**. Назначение жил кабеля по цветам представлено ниже:  
+### Step 2.1 
+Connect your modem to the **UART<->USB** converter. The purpose of the cable cores by color is shown below:
 
 | ![uWAVE_wiring_diagram_en](/documentation/uWAVE_wiring_diagram_ru.png) |
 | :---: |
-| Рисунок 1. Назначение жил кабеля |
+| Fig 1. Functions of cable cores |
 
-Напряжение на линиях данных **НЕ ДОЛЖНО** превышать 3.3 V. 
-Для первоначального переключения модема в командный режим необходимо предусмотреть возможность подтяжки жилы SVC/CMD к напряжению 3.3 или 5 Вольт. Это удобно сделать при помощи джампера.
+The voltage on the data lines **MUST NOT** exceed 3.3 V.
+For the initial switching of the modem to the command mode, it is necessary to provide for the possibility of tightening the SVC / CMD wire to a voltage of 3.3 or 5 Volts. It is convenient to do this with a jumper.
 
-### Шаг 2.2 
-Обеспечте возможность удобного включения и выключения командного режима согласно нижеприведенным схемам.
+### Step 2.2 
+Provide the ability to conveniently turn on and off the command mode according to the diagrams below.
 
 | ![uwave_usb_cmd_mode_off](/documentation/uwave_usb_cmd_mode_off.png) |
 | :---: |
-| Рисунок 2. Подключение модема к USB-порту ПК при помощи конвертера интерфейса. **Командный режим выключен** |
+| Fig 2. Connecting a modem to a PC USB port using an interface converter. **Command mode OFF** |
 
 | ![uwave_usb_cmd_mode_on](/documentation/uwave_usb_cmd_mode_on.png) |
 | :---: |
-| Рисунок 3. Подключение модема к USB-порту ПК при помощи конвертера интерфейса. **Командный режим включен** |
+| Fig 3. Connecting a modem to a PC USB port using an interface converter. **Command mode ON** |
 
 
-## Шаг 3
-Подключите устройство к USB-порту ПК.
+## Step 3
+Connecting the device to the USB port of the PC.
 
-### Шаг 3.1 
-Убедитесь, что командый режим не включен (джампер снят, жила **SVC/CMD** притянута к земле - как показано на схеме рис. 2) 
+### Step 3.1 
+Make sure that the command mode is not enabled (jumper removed, **SVC/CMD** wire pulled to GND- as shown in the diagram in Fig. 2).
 
-### Шаг 3.2 
-Подключите модем к USB-порту ПК при помощи преобразователя:
+### Step 3.2 
+Connect the modem to the USB port of the PC using a converter:
 
 | ![uwave_and_uart_usb_converter3](/documentation/uwave_and_uart_usb_converter3.png) |
 | :---: |
-| Рисунок 4. Модем подключен к ПК |
+| Fig 4. Modem is connected to a PC |
 
-## Шаг 4
-Включите настройку **Command mode by default**.
+## Step 4
+Enabling the **Command mode by default** setting.
 
-### Шаг 4.1 
-Запустите приложение [uWave Host](https://github.com/ucnl/uWAVE_Host/releases/download/1.0/uWAVE_Host.zip)
+### Step 4.1 
+Start the [uWave Host](https://github.com/ucnl/uWAVE_Host/releases/download/1.0/uWAVE_Host.zip) application.
 
-### Шаг 4.2 
-Нажмите кнопку **SETTINGS** на верхней панели инструментов. 
+### Step 4.2 
+Press the **SETTINGS** button on the top toolbar.
 
-### Шаг 4.3 
-В открывшемся окне настроек выберите нужный порт и нажмите кнопку **OK**. 
+### Step 4.3 
+In the settings window that opens, select the desired port and click the **OK** button.
 
 | ![uwave_host1](/documentation/uwave_host1.png) |
 | :---: |
-| Рисунок 5. Выбор порта |
+| Fig 5. Selecting right port |
 
-### Шаг 4.4
-Приложение предложит перезапуститься для применения новых настроек - подтвердите, нажав кнопку **OK**.
+### Step 4.4
+The application will prompt to restart it to apply the new settings - confirm by pressing the **OK** button.
 
-### Шаг 4.5 
-После перезапуска приложения нажмите кнопку **CONNECT**. 
-Если приложению удалось успешно открыть порт, то кнопка **CONNECT** станет выделенной и сменит название на **DISCONNECT** а в текстовом окне **HISTORY WINDOW** отобразится соответствующее сообщение.
+### Step 4.5 
+After restarting the application, press the **CONNECT** button.
+If the application was able to successfully open the port, the **CONNECT** button will become highlighted and change its name to **DISCONNECT** and a corresponding message will be displayed in the **HISTORY WINDOW** text box.
 
-Если возникает какая-либо ошибка, убедитесь что порт был выбран правильно и при необходимости вернитесь на [Шаг 4.2]().
+If any error occurs, check that the correct port has been selected and return to [Step 4.2]() if necessary.
 
-### Шаг 4.6
-Нажмите кнопку **COMMAND MODE**, сообщив тем самым приложению, что вы собираетесь работать с модемом в командном режиме.
+### Step 4.6
+Press the **COMMAND MODE** button, thereby informing the application that you are going to work with the modem in command mode.
 
-### Шаг 4.7
-Переведите модем в командный режим притянув жилу **SVC/CMD** к 3.3 или 5 Вольтам.
+### Step 4.7
+Put the modem into command mode by pulling the **SVC/CMD** wire to 3.3 or 5 Volts.
 
-### Шаг 4.8
-Нажмите кнопку **QUERY** на вкладке **DEVICE INFO**. Если все сделано правильно, то в окнах **HISTORY WINDOW** и текстовом поле на вкладке **DEVICE INFO** отобразится соответствующая информация, например, как на рисунке 6. 
+### Step 4.8
+Press the **QUERY** button on the **DEVICE INFO** tab. If everything is done correctly, then in the **HISTORY WINDOW** windows and the text field on the **DEVICE INFO** tab, the corresponding information will be displayed, for example, as in Figure 6.
 
 | ![uwave_host2](/documentation/uwave_host2.png) |
 | :---: |
-| Рисунок 6. Чтение настроек и установка командного режима по умолчанию |
+| Fig 6. Reading settings and enabling the "Command mode by default" settings |
 
-Убедитесь что флажок **Command mode by default** установлен. Если нет, установите его и нажмите кнопку **APPLY** для изменения настроек модема.
+Make sure the **Command mode by default** checkbox is checked. If not, install it and press the **APPLY** button to change the modem settings.
 
-Если этого не происходит, закройте порт, нажав кнопку **DISCONNECT** и перейдите к шагу [Шаг 4.2](). Если порт все-таки выбран верно, убедитесь, что в момент подачи питания на модем жила **SVC/CMD** была притянута к земле, т.е. перейдите на [Шаг 3]().
+If it doesn't, close the port by pressing the **DISCONNECT** button and go to [Step 4.2](). If the port is selected correctly, make sure that the **SVC/CMD** wire was pulled to GND when power was supplied to the modem, i.e. go to [Step 3]().
 
-### Шаг 4.9
-Закройте приложение [uWave Host](https://github.com/ucnl/uWAVE_Host/releases/download/1.0/uWAVE_Host.zip)
+### Step 4.9
+Close [uWave Host](https://github.com/ucnl/uWAVE_Host/releases/download/1.0/uWAVE_Host.zip) application.
 
-### Шаг 4.10
-Притяните жилу **SVC/CMD** к земле.
+### Step 4.10
+Pull the **SVC/CMD** conductor to the GND.
 
-## Шаг 5
-Обновление прошивки устройства
+## Step 5
+Updating device firmware
 
-### Шаг 5.1
-Если у вас нет файла прошивки для этого модема, обратитесь к [разработчику](mailto:support@unavlab.com) для получения файла прошивки. В письме укажите серийный номер устройства:
+### Step 5.1
+If you do not have a firmware file for this modem, please contact the [developer](mailto:support@unavlab.com) for a firmware file. In the letter, place the serial number of the device:
 
 | ![uwave_host3](/documentation/uwave_host3.png) |
 | :---: |
-| Рисунок 7. Серийный номер устройства в окне **DEVICE INFO** |
+| Fig 7. Serial number of the device in **DEVICE INFO** tab |
 
-### Шаг 5.2
-Запустите утилиту [UCNL_FW_Update](https://github.com/ucnl/UCNL_FW_Update/releases/download/1.1/UCNL_FW_Update.zip).
+### Step 5.2
+Start the [UCNL_FW_Update](https://github.com/ucnl/UCNL_FW_Update/releases/download/1.1/UCNL_FW_Update.zip) utility.
 
-### Шаг 5.3
-Подключите модем к ПК через преобразователь интерфейса, как показано в [Шаг 3](), убедившись перед подключением в том, что жила **SVC/CMD** притянута к земле.
+### Step 5.3
+Connect the modem to the PC via the interface converter as shown in [Step 3](), making sure the **SVC/CMD** wire is pulled to GND before connecting.
 
-### Шаг 5.4
-В выпадающем списке **Port** выберите соответствуюший устройству порт.
+### Step 5.4
+In the **Port** Combobox, select the appropriate port for the device.
 
-### Шаг 5.5
-Выберите соответсвующий устройству файл прошивки, нажав на кнопку **Load**. 
-Остальные элементы управления интерфейсом утилиты должны выглядеть как на рисунке 8.:
+### Step 5.5
+Select the appropriate firmware file for the device by pressing the **Load** button.
+The rest of the utility interface controls should look like in Figure 8.:
 
 | ![ucnl_fw_update1](/documentation/ucnl_fw_update1.png) |
 | :---: |
-| Рисунок 8. Подготовка утилиты **UCNL_FW_Update** к перепрошивке модема **uWave** |
+| Fig 8. Preparing the **UCNL_FW_Update** utility for flashing the **uWave** modem |
 
-### Шаг 5.6
-Запустите процесс обновления прошивки, нажав кнопку **Start**. 
+### Step 5.6
+Start the firmware update process by pressing the **Start** button.
 
-Если:  
-* порт выбран правильно
-* состояние элементов интерфейса перед началом соответствовало рисунку 8
-* файл прошивки соответствует серийному номеру устройства
-* перед подачей питания на устройство жила **SVC/CMD** была притянута к земле
+If:
+* port is correct
+* the state of the interface elements before the start corresponded to Figure 8
+* the firmware file corresponds to the serial number of the device
+* before powering up the device, the **SVC/CMD** wire was pulled to the GND
 
-То, в нижнем текстовом поле начнет отображаться ход обновления прошивки, как показано на рисунках 9 - 11.
+Then, the bottom text box will start to display the progress of the firmware update, as shown in Figures 9 to 11.
 
 | ![ucnl_fw_update2](/documentation/ucnl_fw_update2.png) |
 | :---: |
-| Рисунок 9. Начало обновления прошивки |
+| Fig 9. Firmware update start |
 
 | ![ucnl_fw_update3](/documentation/ucnl_fw_update3.png) |
 | :---: |
-| Рисунок 10. Загрузка обновления в устройство |
+| Fig 10. Downloading the update to the device |
 
 | ![ucnl_fw_update4](/documentation/ucnl_fw_update4.png) |
 | :---: |
-| Рисунок 11. Обновление прошивки успешно завершено |
+| Fig 11. Firmware update completed successfully |
 
-### Шаг 5.7
-Закройте приложение и отключите модем от ПК. Обновление завершено.
+### Step 5.7
+Close the application and disconnect the modem from the PC. Update completed.
 
-Если не удается выполнить обновление прошивки устройства, проверьте следующие причины:
+If the device firmware update fails, check the following reasons:
 
-* порт выбран неправильно
-* состояние элементов интерфейса перед началом не соответствовало рисунку 8
-* файл прошивки не соответствует серийному номеру устройства
-* перед подачей питания на устройство жила **SVC/CMD** не была притянута к земле
-* в процессе обновления прошивки было нарушено подключение
+* port selected incorrectly
+* the state of the interface elements before the start did not match Figure 8
+* the firmware file does not match the serial number of the device
+* before powering up the device, the **SVC/CMD** wire was not connected to GND
+* the connection was broken during the firmware update
 
-Если обновление не удается выполнить, [свяжитесь с разработчиком](mailto:support@unavlab.com)
-
-
-
+If the update fails, [contact the developer](mailto:support@unavlab.com)
 
 
 
