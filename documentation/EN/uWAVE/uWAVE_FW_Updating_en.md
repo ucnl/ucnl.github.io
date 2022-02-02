@@ -28,7 +28,7 @@ Prepare everything to connect the modem to the PC.
 ### Step 2.1 
 Connect your modem to the **UART<->USB** converter. The purpose of the cable cores by color is shown below:
 
-| ![uWAVE_wiring_diagram_en](/documentation/uWAVE_wiring_diagram_ru.png) |
+| ![uWAVE_wiring_diagram_en](/documentation/uWAVE_wiring_diagram_en.png) |
 | :---: |
 | Fig 1. Functions of cable cores |
 
