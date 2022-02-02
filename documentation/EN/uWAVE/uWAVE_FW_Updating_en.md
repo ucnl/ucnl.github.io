@@ -83,7 +83,7 @@ The application will prompt to restart it to apply the new settings - confirm by
 After restarting the application, press the **CONNECT** button.
 If the application was able to successfully open the port, the **CONNECT** button will become highlighted and change its name to **DISCONNECT** and a corresponding message will be displayed in the **HISTORY WINDOW** text box.
 
-If any error occurs, check that the correct port has been selected and return to [Step 4.2]() if necessary.
+If any error occurs, check that the correct port has been selected and return to [Step 4.2](#step-42) if necessary.
 
 ### Step 4.6
 Press the **COMMAND MODE** button, thereby informing the application that you are going to work with the modem in command mode.
@@ -100,7 +100,7 @@ Press the **QUERY** button on the **DEVICE INFO** tab. If everything is done cor
 
 Make sure the **Command mode by default** checkbox is checked. If not, install it and press the **APPLY** button to change the modem settings.
 
-If it doesn't, close the port by pressing the **DISCONNECT** button and go to [Step 4.2](). If the port is selected correctly, make sure that the **SVC/CMD** wire was pulled to GND when power was supplied to the modem, i.e. go to [Step 3]().
+If it doesn't, close the port by pressing the **DISCONNECT** button and go to [Step 4.2](#step-42). If the port is selected correctly, make sure that the **SVC/CMD** wire was pulled to GND when power was supplied to the modem, i.e. go to [Step 3](#step-3).
 
 ### Step 4.9
 Close [uWave Host](https://github.com/ucnl/uWAVE_Host/releases/download/1.0/uWAVE_Host.zip) application.
@@ -122,7 +122,7 @@ If you do not have a firmware file for this modem, please contact the [developer
 Start the [UCNL_FW_Update](https://github.com/ucnl/UCNL_FW_Update/releases/download/1.1/UCNL_FW_Update.zip) utility.
 
 ### Step 5.3
-Connect the modem to the PC via the interface converter as shown in [Step 3](), making sure the **SVC/CMD** wire is pulled to GND before connecting.
+Connect the modem to the PC via the interface converter as shown in [Step 3](#step-3), making sure the **SVC/CMD** wire is pulled to GND before connecting.
 
 ### Step 5.4
 In the **Port** Combobox, select the appropriate port for the device.
