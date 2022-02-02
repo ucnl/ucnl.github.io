@@ -26,6 +26,7 @@
 * [uWave: кронштейн плоский 3D модель (step)](/documentation/uWAVE_holder_flat.step)
 * [uWave: кронштейн плоский 3D модель (Fusion360 f3d)](/documentation/uWAVE_holder_flat.f3d)
 * [uWave: технический паспорт (шаблон)](/documentation/RU/uWAVE/uWave_technical_passport_ru.md)
+* [uWave: руководство по обновлению прошивки](/documentation/RU/uWAVE/uWAVE_FW_Updating_ru.md)
 
 ### RedLine
 #### гидроакустический модем
