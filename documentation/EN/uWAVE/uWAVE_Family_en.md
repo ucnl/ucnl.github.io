@@ -41,9 +41,9 @@ other code channel.
 All devices of the **uWave** family can receive at the same time in only one code channel.
 
 ### 2.1. Acoustic baud rate
-The standard mode for **uWave** devices is 78 bps. This mode provides maximum communication range and reliability. It is in this mode that the largest number of code channels is available.
+The standard mode for **uWave** devices is **78 bps**. This mode provides maximum communication range and reliability. It is in this mode that the largest number of code channels is available.
 
-All devices in the **uWave** family support alternate modes, providing baud rates of 156 and 314 bps. The higher the speed, the less noise immunity, and, accordingly, the reliability and range of communication.
+All devices in the **uWave** family support alternate modes, providing baud rates of **156** and **314 bps**. The higher the speed, the less noise immunity, and, accordingly, the reliability and range of communication.
 
 Different speed modes are not compatible with each other. Transfer of the modem to another speed mode is provided by [replacing its firmware](uWAVE_FW_Updating_en.md).
 
