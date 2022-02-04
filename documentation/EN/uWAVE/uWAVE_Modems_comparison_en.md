@@ -27,7 +27,7 @@
 ## Data transmission speed options
 
 All devices of the family can work with alternative firmware supporting different communication speed modes.
-The modes are not compatible with each other. Mode change is made by flashing the device.
+The modes are not compatible with each other. Mode change is made by [flashing the device](uWAVE_FW_Updating_en.md).
 
 |      | STRONG | EASY   | LITE   |
 | :--- | :---:  | :---:  | :---:  |
