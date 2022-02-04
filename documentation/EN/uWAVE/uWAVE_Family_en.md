@@ -45,7 +45,7 @@ The standard mode for **uWave** devices is 78 bps. This mode provides maximum co
 
 All devices in the **uWave** family support alternate modes, providing baud rates of 156 and 314 bps. The higher the speed, the less noise immunity, and, accordingly, the reliability and range of communication.
 
-Different speed modes are not compatible with each other. Transfer of the modem to another speed mode is provided by replacing its firmware.
+Different speed modes are not compatible with each other. Transfer of the modem to another speed mode is provided by [replacing its firmware](uWAVE_FW_Updating_en.md).
 
 
 <div style="page-break-after: always;"></div>
@@ -112,7 +112,7 @@ On our [GitHub](https://github.com/ucnl) you can find examples and linbraries to
 * [uWave Host](https://github.com/ucnl/uWAVE_Host) - Demo application
 * [uWave VLBL](https://github.com/ucnl/uWAVE_VLBL) - Demo application (VLBL navigation system on two [uWave](uWAVE_Specification_ru.md) modems)
 * [uMCPIno](https://github.com/AlekUnderwater/uMCPIno) - Point-to-point protocol with guaranteed delivery and packets ordering (Arduino, STM32, .NET)
-* [uWave](uWAVE_Specification_ru.md) Some Arduino examples (old version):
+* [uWave](uWAVE_Specification_ru.md) Some Arduino examples (old version): [uWAVE_ALib](https://github.com/ucnl/uWAVE_ALib)
 
   <div style="page-break-after: always;"></div>
 
