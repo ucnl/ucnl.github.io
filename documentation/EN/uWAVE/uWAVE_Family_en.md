@@ -112,7 +112,7 @@ On our [GitHub](https://github.com/ucnl) you can find examples and linbraries to
 * [uWave Host](https://github.com/ucnl/uWAVE_Host) - Demo application
 * [uWave VLBL](https://github.com/ucnl/uWAVE_VLBL) - Demo application (VLBL navigation system on two [uWave](uWAVE_Specification_ru.md) modems)
 * [uMCPIno](https://github.com/AlekUnderwater/uMCPIno) - Point-to-point protocol with guaranteed delivery and packets ordering (Arduino, STM32, .NET)
-* [uWave](uWAVE_Specification_ru.md) Some Arduino examples (old version): [uWAVE_ALib](https://github.com/ucnl/uWAVE_ALib)
+* [uWave](uWAVE_Specification_en.md) Some Arduino examples (old version): [uWAVE_ALib](https://github.com/ucnl/uWAVE_ALib)
 
   <div style="page-break-after: always;"></div>
 
