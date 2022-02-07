@@ -8,20 +8,20 @@ instagram:
   href: 'https://www.insagram.com/'
   title: 'Instagram'
   
-telegramm:
+telegramm_en:
   id: 'underwaterthings_en'
   href: 'https://t.me/'
-  title: 'Telegramm'
+  title: 'Telegramm (EN)'
+  
+telegramm_ru:
+  id: 'underwaterthings'
+  href: 'https://t.me/'
+  title: 'Telegramm (RU)'
 
 facebook:
   id: 'unavlab'
   href: 'https://www.facebook.com/'
   title: 'Facebook'
-
-twitter:
-  id: 'unavlab'
-  href: 'https://www.twitter.com/'
-  title: 'Twitter'
 
 github:
   id: 'ucnl'
