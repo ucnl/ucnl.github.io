@@ -10,11 +10,6 @@
 * [Underwater acoustic transducers & hydrophones](underwater_acoustic_antennas_en.md)
 * [Accessories](accessories_en.md)
 
-## Support & social media
-* [Email us](mailto:support@unavlab.com)
-* [Our instagram](https://www.instagram.com/unavlab/)
-* [Telegram channel](https://t.me/underwaterthings_en)
-
 ## Media & Demos
 * [Videos](media_videos_en.md)
 
