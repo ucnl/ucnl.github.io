@@ -2,25 +2,21 @@ email:
   id: 'support@unavlab.com'
   href: 'mailto:'
   title: 'Email'
-  fa-icon: 'fa-envelope-square'
 
 facebook:
   id: 'unavlab'
   href: 'https://www.facebook.com/'
   title: 'Facebook'
-  fa-icon: 'fa-facebook-square'
 
 twitter:
   id: 'unavlab'
   href: 'https://www.twitter.com/'
   title: 'Twitter'
-  fa-icon: 'fa-twitter-square'
 
 github:
   id: 'ucnl'
   href: 'https://github.com/'
   title: 'GitHub'
-  fa-icon: 'fa-github-square'
   
   
 
