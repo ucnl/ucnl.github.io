@@ -23,5 +23,7 @@
 * [uRayTracerDemo](https://github.com/ucnl/uRayTracerDemo) - Трассировка лучей через слоистую среду
 
 ## Дополнительно
-
 * [Дополнительные материалы](misc_ru.md)
+
+## Техподдержка и соцсети
+{% include social-media-links.html %}
