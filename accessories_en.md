@@ -1,3 +1,4 @@
+ {% include yandex-metrica.html %}
 
 | ![logo](/documentation/sm_logo.png) |
 | :---: |
