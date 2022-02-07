@@ -29,7 +29,4 @@
 - [Дополнительные материалы](misc_ru.md)
 
 ## Техподдержка и соцсети
-
-<p align="center">
 {% include social-media-links.html %}
-</p>
