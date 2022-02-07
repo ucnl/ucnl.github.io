@@ -30,4 +30,5 @@
 ## Miscellaneous
 * [Additional info](misc_en.md)
 
+## Support & Social media
 {% include social-media-links.html %}
