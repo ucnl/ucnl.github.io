@@ -2,6 +2,16 @@ email:
   id: 'support@unavlab.com'
   href: 'mailto:'
   title: 'Email'
+  
+instagram:
+  id: 'unavlab'
+  href: 'https://www.insagram.com/'
+  title: 'Instagram'
+  
+telegramm:
+  id: 'underwaterthings_en'
+  href: 'https://t.me/'
+  title: 'Telegramm'
 
 facebook:
   id: 'unavlab'
