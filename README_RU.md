@@ -23,7 +23,7 @@
 ## Наши образовательные проекты
 
 | | |
-| ---: | :--- |
+| :--- | :--- |
 | [**DIY.unavlab.com**](https://diy.unavlab.com/README_RU.html) | Простые проекты для самостоятельной сборки **DIY** |
 | [**Online утилиты**](online_utilities_ru.md) |  Расчет глубины, скорости звука, работа с NMEA0183 etc. |
 | [**UCNLPhysics**](https://github.com/ucnl/UCNLPhysics) | Библиотека для определения фундаментальных свойств морской воды *(C#/Rust/C/Matlab/GNU Octave/JavaScript)* |
