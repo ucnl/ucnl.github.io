@@ -4,25 +4,25 @@
 | [EN](README.md) \| [RU](README_RU.md) |
 
 
-## Документация
+## 
 
-| |
+| **Документация** |
 | :--- |
-| [**ГИДРОАКУСТИЧЕСКИЕ НАВИГАЦИОННЫЕ И ТРЕКИНГОВЫЕ СИСТЕМЫ**](navigation_and_tracking_systems_ru.md) |
-| [**ГИДРОАКУСТИЧЕСКИЕ МОДЕМЫ**](underwater_acoustic_modems_ru.md) |
-| [**БЕСПРОВОДНАЯ ГОЛОСОВАЯ ПОДВОДНАЯ СВЯЗЬ (ТЕЛЕФОНИЯ)**](underwater_wireless_voice_systems_ru.md) |
-| [**ГИДРОАКУСТИЧЕСКИЕ АНТЕННЫ И ГИДРОФОНЫ**](underwater_acoustic_antennas_ru.md) |
-| [**АКСЕССУАРЫ**](accessories_ru.md) |
+| [ГИДРОАКУСТИЧЕСКИЕ НАВИГАЦИОННЫЕ И ТРЕКИНГОВЫЕ СИСТЕМЫ](navigation_and_tracking_systems_ru.md) |
+| [ГИДРОАКУСТИЧЕСКИЕ МОДЕМЫ**](underwater_acoustic_modems_ru.md) |
+| [БЕСПРОВОДНАЯ ГОЛОСОВАЯ ПОДВОДНАЯ СВЯЗЬ (ТЕЛЕФОНИЯ)](underwater_wireless_voice_systems_ru.md) |
+| [ГИДРОАКУСТИЧЕСКИЕ АНТЕННЫ И ГИДРОФОНЫ](underwater_acoustic_antennas_ru.md) |
+| [АКСЕССУАРЫ](accessories_ru.md) |
 
-## Медиа и демонстрационные материалы
+## 
 
-| |
+| **Медиа и демонстрационные материалы** |
 | :--- |
-| [**ВИДЕО**](media_videos_ru.md) |
+| [ВИДЕО](media_videos_ru.md) |
 
-## Наши образовательные проекты
+## 
 
-| | |
+| **Наши образовательные проекты** | |
 | :--- | :--- |
 | [**DIY.unavlab.com**](https://diy.unavlab.com/README_RU.html) | Простые проекты для самостоятельной сборки **DIY** |
 | [**Online утилиты**](online_utilities_ru.md) |  Расчет глубины, скорости звука, работа с NMEA0183 etc. |
@@ -31,9 +31,9 @@
 | [**UCNLNMEA**](https://github.com/ucnl/UCNLNMEA) | Библиотека для парсигна и формирования NMEA-сообщений *(C#)* |
 | [**uRayTracerDemo**](https://github.com/ucnl/uRayTracerDemo) | Трассировка лучей через слоистую среду |
 
-## Дополнительно
+## 
 
-| |
+| **Дополнительно** |
 | :--- |
 | [**ДОПОЛНИТЕЛЬНЫЕ МАТЕРИАЛЫ**](misc_ru.md) |
 
