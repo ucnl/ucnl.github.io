@@ -5,14 +5,14 @@
 
 
 ## Документация
-- [ГИДРОАКУСТИЧЕСКИЕ НАВИГАЦИОННЫЕ И ТРЕКИНГОВЫЕ СИСТЕМЫ](navigation_and_tracking_systems_ru.md)
-- [ГИДРОАКУСТИЧЕСКИЕ МОДЕМЫ](underwater_acoustic_modems_ru.md)
-- [БЕСПРОВОДНАЯ ГОЛОСОВАЯ ПОДВОДНАЯ СВЯЗЬ (ТЕЛЕФОНИЯ)](underwater_wireless_voice_systems_ru.md)
-- [ГИДРОАКУСТИЧЕСКИЕ АНТЕННЫ И ГИДРОФОНЫ](underwater_acoustic_antennas_ru.md)
-- [АКСЕССУАРЫ](accessories_ru.md)
+- [Гидроакустические навигационные и трекинговые системы](navigation_and_tracking_systems_ru.md)
+- [Гидроакустические модемы](underwater_acoustic_modems_ru.md)
+- [Беспроводная голосовая подводная связь (ТЕЛЕФОНИЯ)](underwater_wireless_voice_systems_ru.md)
+- [Гидроакустические антенны и гидрофоны](underwater_acoustic_antennas_ru.md)
+- [Аксессуары](accessories_ru.md)
 
 ## Медиа и демонстрационные материалы 
-* [ВИДЕО](media_videos_ru.md)
+* [Видео](media_videos_ru.md)
 
 ## Наши образовательные проекты
 
@@ -26,7 +26,7 @@
 | [uRayTracerDemo](https://github.com/ucnl/uRayTracerDemo) | Трассировка лучей через слоистую среду |
 
 ## Дополнительно
-- [ДОПОЛНИТЕЛЬНЫЕ МАТЕРИАЛЫ](misc_ru.md)
+- [Дополнительные материалы](misc_ru.md)
 
 ## Техподдержка и соцсети
 
