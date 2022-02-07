@@ -10,11 +10,6 @@
 * [Гидроакустические преобразователи и гидрофоны](underwater_acoustic_antennas_ru.md)
 * [Аксессуары](accessories_ru.md)
 
-## Техподдержка и соцсети
-* [Написать письмо в техподдержку](mailto:support@unavlab.com)
-* [Наш инстаграмм](https://www.instagram.com/unavlab/)
-* [Канал в телеграмм](https://t.me/underwaterthings)
-
 ## Медиа и демонстрационные материалы
 * [Видео](media_videos_ru.md)
 
