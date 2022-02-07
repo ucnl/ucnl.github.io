@@ -30,6 +30,6 @@
 
 ## Техподдержка и соцсети
 
-| |
-| :---: |
-| {% include social-media-links.html %} |
+<p align="center">
+{% include social-media-links.html %}
+</p>
