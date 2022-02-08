@@ -76,6 +76,10 @@ Default port settings<sup>[1](#footnote1)</sup>:
 >**WARNING!**
 >_The modems are powered by a 5 or 12 Volt DC source, while the data line voltage is 3.3 V._
 
+| ![uWAVE_wiring_diagram_en](/documentation/uWAVE_wiring_diagram_en.png) |
+| :---: |
+| **uWave** wiring diagram |
+
 ### 1.2. NMEA0183 Protocol standard
 The NMEA0183 standard describes the format of text (ASCII) messages at the interactive level.
 
@@ -503,12 +507,22 @@ In the transparent channel mode, the devices do not analyze the data coming from
 analysis are transmitted to the hydroacoustic channel, after which they are received by another modem and in the unchanged form are 
 given to the user at the receiving side. In this regard, to be able to configure modems, as well as to measure the propagation time 
 to remote subscribers, there is a command mode. Modems analyze input data only in command mode. To switch to the command mode, the 
-“service” core should be pulled to +3.3 V. After that, the “service” core should be pulled to the ground to exit the service mode.
+“service” core should be pulled to +3.3 V. After that, the **SVC/CMD** core should be pulled to the ground to exit the service mode.
 Also, the command mode can be enabled by default using the [IC_H2D_SETTINGS_WRITE](#22-ic_h2d_settings_write) sentence, when isCmdMode parameter equals to 1, in this case, starting from firmware version 1.30, the "service" core becomes an output digital line that goes to a high logical state synchronously with the start of the signal emission by the modem and 500 ms after the start of the incoming message is detected.. To return to control by “service” core, [IC_H2D_SETTINGS_WRITE](#22-ic_h2d_settings_write) sentence can be used with isCmdMode parameter equals to 0.
 
-> **WARNING!** The core "service" is pulled **ONLY** to 3-5 V or ground, connecting it to a higher voltage will cause a **FATAL** and **NON-GUARANTEE** failure of the device.
+> **WARNING!** _The core **SVC/CMD** is pulled **ONLY** to 3-5 V or ground, connecting it to a higher voltage will cause a **FATAL** and **NON-GUARANTEE** failure of the device._
 
-> **WARNING!** Before switching on the device, the "service" core should be pulled to the ground, otherwise, the device will enter the software update mode.
+> **WARNING!** _Before switching on the device, the **SVC/CMD** wire should be pulled to the ground, otherwise, the device will enter the software update mode._
+
+Below are the schemes for switching on and off the command mode using the **SVC/CMD** wire in the case of pairing the modem with a PC using a UART-USB interface converter.
+
+| ![uwave_usb_cmd_mode_off](/documentation/uwave_usb_cmd_mode_off.png) |
+| :---: |
+| Connecting a modem to a PC USB port using an interface converter. **Command mode OFF** |
+
+| ![uwave_usb_cmd_mode_on](/documentation/uwave_usb_cmd_mode_on.png) |
+| :---: |
+| Connecting a modem to a PC USB port using an interface converter. **Command mode ON** |
 
 <div style="page-break-after: always;"></div>
 
