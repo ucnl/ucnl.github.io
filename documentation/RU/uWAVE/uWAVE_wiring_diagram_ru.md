@@ -8,7 +8,7 @@
 
 ### НАЗНАЧЕНИЕ ЖИЛ КАБЕЛЯ
 
-![uWAVE_wiring_diagram_en](/documentation/uWAVE_wiring_diagram_ru.png)
+![uWAVE_wiring_diagram_ru](/documentation/uWAVE_wiring_diagram_ru.png)
 
 <div style="page-break-after: always;"></div>
 
