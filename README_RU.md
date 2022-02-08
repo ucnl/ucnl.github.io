@@ -7,7 +7,7 @@
 ## Документация
 - [Гидроакустические навигационные и трекинговые системы](navigation_and_tracking_systems_ru.md)
 - [Гидроакустические модемы](underwater_acoustic_modems_ru.md)
-- [Беспроводная голосовая подводная связь (ТЕЛЕФОНИЯ)](underwater_wireless_voice_systems_ru.md)
+- [Беспроводная голосовая подводная связь (водолазная телефония)](underwater_wireless_voice_systems_ru.md)
 - [Гидроакустические антенны и гидрофоны](underwater_acoustic_antennas_ru.md)
 - [Аксессуары](accessories_ru.md)
 
