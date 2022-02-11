@@ -34,7 +34,7 @@
 * Увеличенная до 3000<sup>[1](#footnote1), [2](#footnote2)</sup> м максимальная дальность
 
 _________
-<a name="footnote_a1"><sup>*</sup></a> *Патент RU2659299C1*.  
+<a name="footnote_a1"><sup>\*</sup></a> *Патент RU2659299C1*.  
 
 <div style="page-break-after: always;"></div>
 
