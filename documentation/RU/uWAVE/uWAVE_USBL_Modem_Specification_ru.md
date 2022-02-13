@@ -29,7 +29,7 @@
 - запрашивать у удаленных модемов **uWave USBL Modem**, [uWave Max](uWAVE_Max_Specification_ru.md) и [uWave](uWAVE_Specification_ru.md) их глубину, температуру и напряжение питания;
 - измерять собственную глубину, температуру, углы крена и дифферента;
 
-Устройства [семейства uWave](uWAVE_Family_ru.md) используют простой [NMEA-подобный протокол](uWAVE_Protocol_Specification_en.md) настройки, а поставляемые open-source библиотеки [**uWaveLib**](https://github.com/ucnl/uWAVELib) (.NET) и [**uWave ALibs**](https://github.com/ucnl/UCNL_ALibs) (Arduino) позволяют сделать интеграцию модемов в пользовательские решения максимально просто и быстро.
+Устройства [семейства uWave](uWAVE_Family_ru.md) используют простой [NMEA-подобный протокол](uWAVE_Protocol_Specification_ru.md) настройки, а поставляемые open-source библиотеки [**uWaveLib**](https://github.com/ucnl/uWAVELib) (.NET) и [**uWave ALibs**](https://github.com/ucnl/UCNL_ALibs) (Arduino) позволяют сделать интеграцию модемов в пользовательские решения максимально просто и быстро.
 
 _________
 <a name="footnote_a1"><sup>\*</sup></a> Патент RU2659299C1.  
