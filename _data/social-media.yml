@@ -18,10 +18,15 @@ telegramm_ru:
   href: 'https://t.me/'
   title: 'Telegramm (RU)'
 
-facebook:
+facebook_en:
+  id: 'unavlab.en'
+  href: 'https://www.facebook.com/'
+  title: 'Facebook (EN)'
+
+facebook_ru:
   id: 'unavlab'
   href: 'https://www.facebook.com/'
-  title: 'Facebook'
+  title: 'Facebook (RU)'
 
 github:
   id: 'ucnl'
