@@ -40,6 +40,9 @@ The use of the same code channel for receiving and transmitting in some small wa
 ### 1.3. Modem returns 'TX Busy' error when trying to send something after receiving a message in the packet mode
 A modem that receives a message in the packet mode immediately sends the ACK, so its transmitter is busy. The user can use the 'ACK On TX Finished' setting. In this case, the modem will inform the user at the end of each transmission. An alternative way to handle this situation is to retry transmission after a time of about 500 ms.
 
+### 1.4. Code channels settings update should be followed with device restart
+If you change these settings just restart (disconnect power supply, wait 1-2 seconds and connect power supply) the device to apply new settings.
+
 ________  
                     
 <div style="page-break-after: always;"></div>
