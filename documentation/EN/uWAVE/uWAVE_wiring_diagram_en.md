@@ -14,3 +14,8 @@
 
 <div style="page-break-after: always;"></div>
 
+### INSTALLATION REQUIREMENTS
+
+![uWAVE_mount](/documentation/uWave_mount.png)
+
+<div style="page-break-after: always;"></div>
