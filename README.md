@@ -3,6 +3,9 @@
 | [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) |
 | [EN](README.md) \| [RU](README_RU.md) |
 
+## Support & Social media
+{% include social-media-links.html %}
+
 ## Products documentation
 * [Navigation & tracking systems](navigation_and_tracking_systems_en.md)
 * [Underwater acoustic modems](underwater_acoustic_modems_en.md)
@@ -27,6 +30,3 @@
 
 ## Miscellaneous
 * [Additional info](misc_en.md)
-
-## Support & Social media
-{% include social-media-links.html %}
