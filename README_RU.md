@@ -3,6 +3,8 @@
 | [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) |
 | [EN](README.md) \| [RU](README_RU.md) |
 
+## Техподдержка и соцсети
+{% include social-media-links.html %}
 
 ## Документация
 - [Гидроакустические навигационные и трекинговые системы](navigation_and_tracking_systems_ru.md)
@@ -27,6 +29,3 @@
 
 ## Дополнительно
 - [Дополнительные материалы](misc_ru.md)
-
-## Техподдержка и соцсети
-{% include social-media-links.html %}
