@@ -23,4 +23,4 @@
 * [Online NMEA0183 парсер/билдер (under construction)](https://ucnl.github.io/Docs/)
 -->
 
-## [Home](README.md)
+## [На главную](README_RU.md)
