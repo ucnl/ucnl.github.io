@@ -70,4 +70,4 @@
 * [Пультовое приложение (Репозиторий)](https://github.com/ucnl/ZHost)
 * [Пультовое приложение (Скачать релиз)](https://github.com/ucnl/ZHost/releases/download/2.2/ZHost.zip)
 
-## [Домой](README_RU.md)
+## [На главную](README_RU.md)
