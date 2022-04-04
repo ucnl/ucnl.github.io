@@ -16,4 +16,4 @@
 * [Комплект PhoneTrack: технический паспорт (шаблон)](/documentation/RU/RedPhone/RedPhone_Tracking_package_tech_passport_ru.md)
 * [Медиаматериалы: видео c испытаний, видеоинструкции и т.п.](/documentation/RU/RedPhone/media.md)
 
-## [Домой](README_RU.md)
+## [На главную](README_RU.md)
