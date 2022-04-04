@@ -12,6 +12,8 @@
 * [Device specification: uWave Max](/documentation/EN/uWAVE/uWAVE_Max_Specification_en.md)
 * [Device specification: uWave Max OEM](/documentation/EN/uWAVE/uWAVE_Max_OEM_Specification_en.md)
 * [Device specification: uWave USBL Modem](/documentation/EN/uWAVE/uWAVE_USBL_Modem_Specification_en.md)
+* [uBear: uWave USBL Modem Host application (Repository)](https://github.com/ucnl/uBear)
+* [uBear: uWave USBL Modem Host application(Download release)](https://github.com/ucnl/uBear/releases/download/1.0/uBear.zip)
 * [Communication protocol specification: uWave](documentation/EN/uWAVE/uWAVE_Protocol_Specification_en.md)
 * [Device wiring diagram: uWave](/documentation/EN/uWAVE/uWAVE_wiring_diagram_en.md)
 * [Versions & changes](/documentation/EN/uWAVE/uWAVE_version_history_en.md)
