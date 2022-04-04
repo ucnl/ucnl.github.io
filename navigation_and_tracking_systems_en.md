@@ -36,6 +36,8 @@
 * [COMING SOON RWLT: User's manual]()
 * [Host Application RWLT Host (Repository)](https://github.com/ucnl/RWLT_Host)
 * [Host Application RWLT Host (Download release)](https://github.com/ucnl/RWLT_Host/releases/download/1.0/RWLT_Host.zip)
+* [Diver's tracking with RWLT_RedPhone (репозиторий)](https://github.com/ucnl/RWLT_RedPhone)
+* [Diver's tracking with RWLT_RedPhone (скачать релиз)](https://github.com/ucnl/RWLT_RedPhone/releases/download/1.0/RWLT_RedPhone.zip)
 
 ### WAYU
 #### Sencibly priced amateur LBL tracking system
