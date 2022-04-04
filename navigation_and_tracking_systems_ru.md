@@ -38,6 +38,8 @@
 * [ОЖИДАЕТСЯ Руководство пользователя]()
 * [Приложение для работы с системой RWLT Host (Репозиторий)](https://github.com/ucnl/RWLT_Host)
 * [Приложение для работы с системой RWLT Host (Скачать релиз)](https://github.com/ucnl/RWLT_Host/releases/download/1.0/RWLT_Host.zip)
+* [Приложение для трекинга приборов водолазной телефонии RWLT_RedPhone (репозиторий)](https://github.com/ucnl/RWLT_RedPhone)
+* [Приложение для трекинга приборов водолазной телефонии RWLT_RedPhone (скачать релиз)](https://github.com/ucnl/RWLT_RedPhone/releases/download/1.0/RWLT_RedPhone.zip)
 
 ### WAYU
 #### Длиннобазисная трекинговая система любительского сегмента
