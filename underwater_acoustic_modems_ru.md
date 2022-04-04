@@ -41,4 +41,4 @@
 * [Спецификация протокола сопряжения: RedGTR](/documentation/RU/RedGTR/RedGTR_Protocol_Specifications_ru.md)
 * [Схема подключения: RedGTR](/documentation/redgtr_drawings_ru.png)
 
-## [Домой](README_RU.md)
+## [На главную](README_RU.md)
