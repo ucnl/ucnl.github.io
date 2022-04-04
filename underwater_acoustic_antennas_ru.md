@@ -9,4 +9,4 @@
 * [Приемопередающая антенна RT-1.524525-1](/documentation/RU/Transducers/RT-1.524525-1_specification_ru.md)
 * [Приемопередающая антенна RT-1.524525-1-FF](/documentation/RU/Transducers/RT_1_524525_1_FF_Specification_ru.md)
 
-## [Домой](README_RU.md)
+## [На главную](README_RU.md)
