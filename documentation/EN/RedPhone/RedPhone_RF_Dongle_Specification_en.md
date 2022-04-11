@@ -18,7 +18,7 @@ The device is designed to connect [RedPhone-DX](RedPhone_DX_Specification_en.md)
 | PARAMETER | VALUE |
 | :--- | :--- |
 | DIMENSIONS (l x w x h, w/o cable) | 42 x 26 x 109 mm |
-| CABLE LENGTH | Not less than 0.5 m |
+| CABLE LENGTH | Not less than 0.1 m |
 | WEIGHT | 110 г |
 | WORKING TEMPERATURE RANGE | -10 .. 50 °С |
 | COMMUNICATION RANGE<sup>[1](#footnote1)</sup> | 30 m |
