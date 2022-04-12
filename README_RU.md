@@ -13,19 +13,7 @@
 - [Гидроакустические антенны и гидрофоны](underwater_acoustic_antennas_ru.md)
 - [Аксессуары](accessories_ru.md)
 
-## Медиа и демонстрационные материалы 
+## Видео, образовательный контент и прочее
 * [Видео](media_videos_ru.md)
-
-## Наши образовательные проекты
-
-| **Проект** | **Описание** |
-| :--- | :--- |
-| [DIY.unavlab.com](https://diy.unavlab.com/README_RU.html) | Простые проекты для самостоятельной сборки **DIY** |
-| [Online утилиты](online_utilities_ru.md) |  Расчет глубины, скорости звука, работа с NMEA0183 etc. |
-| [UCNLPhysics](https://github.com/ucnl/UCNLPhysics) | Библиотека для определения фундаментальных свойств морской воды *(C#/Rust/C/Matlab/GNU Octave/JavaScript)* |
-| [uMCPIno](https://github.com/AlekUnderwater/uMCPIno) | Протокол с гарантированной доставкой и очередностью сообщений *(C#/C/Arduino)* |
-| [UCNLNMEA](https://github.com/ucnl/UCNLNMEA) | Библиотека для парсигна и формирования NMEA-сообщений *(C#)* |
-| [uRayTracerDemo](https://github.com/ucnl/uRayTracerDemo) | Трассировка лучей через слоистую среду |
-
-## Дополнительно
-- [Дополнительные материалы](misc_ru.md)
+* [Образовательные проекты](educational_projects_ru.md)
+* [Дополнительные материалы](misc_ru.md)
