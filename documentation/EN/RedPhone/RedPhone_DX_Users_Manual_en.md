@@ -61,7 +61,7 @@ The device is made in the form of a maintenance-free polyurethane monoblock, wit
 
 > Standard devices are equipped with a connector and a PTT for connecting a headset that does not contain a PTT.
 
-Charging is carried out with a complete cradle (chassis) with a charger. Switching channels and the compatibility mode with the navigation tracking system [RWLT] (/documentation/EN/RWLT/RWLT_DataBrief_en.md) is carried out using the built-in radio transceiver and the bundled [USB radio dongle](RedPhone_RF_Dongle_Specification_en.md).
+Charging is carried out with a complete cradle (chassis) with a charger. Switching channels and the compatibility mode with the navigation tracking system [RWLT](/documentation/EN/RWLT/RWLT_DataBrief_en.md) is carried out using the built-in radio transceiver and the bundled [USB radio dongle](RedPhone_RF_Dongle_Specification_en.md).
 
 To ensure the best working conditions and communication quality, subscribers' acoustic antennas must have a direct line of sight. The recommended mounting location for the device is on the tank on the diver's back. Fastening should be carried out with a belt or rubber band through the fixing eyes. The cables must not restrict the diver's movements. The PTT has a special loop for attaching to the suit.
 
