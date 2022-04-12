@@ -2,8 +2,6 @@
 | :---: | ---: |
 | [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **RedPhone-DX** <br/> Wireless telephone for divers <br/> **User's manual** |
 
-# DOCUMENT IS UNDER CONSTRUCTION
-
 # **RedPhone-DX** <br/> Wireless telephone for divers
 ## **User's manual**
 
@@ -11,33 +9,33 @@
 
 ## Содержание
 
-- [1. Описание станции RedPhone-DX]()
-  - [1.1. Назначение]()
-  - [1.2. Устройство]()
-  - [1.3. Технические характеристики]()
-  - [1.4. Комплект поставки]()  
-- [2. Работа с устройством]()
-  - [2.1. Предварительные проверки]()
-  - [2.2. Работа]()
-    - [2.2.1. Звуковые сигналы]()
-    - [2.2.2. Прием голосовых сообщений]()
-    - [2.2.3. Передача голосовых сообщений]()
-  - [2.3. Завершение работы]()
-- [3. Хранение и обслуживание]()
-   - [3.1. Условия хранения и обслужвания]()
-   - [3.2. Заряд встроенного источника питания]()
-   - [3.3. Настройка станции]()
-     - [3.3.1. Шаг 1]()
-     - [3.3.2. Шаг 2]()
-     - [3.3.3. Шаг 3]()
-     - [3.3.4. Шаг 4]()
-     - [3.3.5. Шаг 5]()
-     - [3.3.6. Шаг 6]()
-     - [3.3.7. Шаг 7]()
-     - [3.3.8 Настройки станции]()
-- [4. Обязательства и отказ от ответственности]()
-  - [4.1. Условия замены и бесплатного гарантийного обслуживания]()
-  - [4.2. Ограничение ответственности производителя]()
+- [1. General information](#1-general-information)
+  - [1.1. Purpose](#11-purpose)
+  - [1.2. Description](#12-description)
+  - [1.3. Specifications](#13specifications)
+  - [1.4. Equipment set](#14-equipment-set)  
+- [2. Working with the device](#2-working-with-the-device)
+  - [2.1. Preliminary checks](#21-preliminary-checks)
+  - [2.2. Work](#22-work)
+    - [2.2.1. Sound alerts](#221-sound-alerts)
+    - [2.2.2. Receiving voice messages](#222-receiving-voice-messages)
+    - [2.2.3. Sending voice messages](#223-sending-voice-messages)
+  - [2.3. Shutdown](#23-shutdown)
+- [3. Storage and maintenance](#3-storage-and-maintenance)
+   - [3.1. Storage and maintenance conditions](#31-storage-and-maintenance-conditions)
+   - [3.2. Charging the device](#32-charging-the-device)
+   - [3.3. Configuration](#33-configuration)
+     - [3.3.1. Step 1](#331-step-1)
+     - [3.3.2. Step 2](#331-step-2)
+     - [3.3.3. Step 3](#331-step-3)
+     - [3.3.4. Step 4](#331-step-4)
+     - [3.3.5. Step 5](#331-step-5)
+     - [3.3.6. Step 6](#331-step-6)
+     - [3.3.7. Step 7](#331-step-7)
+     - [3.3.8 Station settings](#338-station-settings)
+- [4. Liability and disclaimer](#4-liability-and-disclaimer)
+  - [4.1 Terms of replacement and free warranty service](#41-terms-of-replacement-and-free-warranty-service)
+  - [4.2 Disclaimer of the manufacturer](#42-disclaimer-of-the-manufacturer)
 
 <div style="page-break-after: always;"></div>
 
