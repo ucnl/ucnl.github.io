@@ -103,9 +103,9 @@ The general technical characteristics of the device are given in **Table 2**:
 | CHANNEL SWITCHING | Wireless, using a [USB-RF Dongle](RedPhone_RF_Dongle_Specification_en.md) |
 | BODY MATERIAL | Polyurethane |
 | CABLE INSULATION MATERIAL | Polyurethane |
-| NAVIGATION SIGNAL CARRIER<sup>[8](#footnote8)</sup> СИГНАЛА | 20050 Hz |
-| NAVIGATION SIGNAL MODULATION<sup>[8](#footnote8)</sup> СИГНАЛА | BPSK |
-| NAVIGATION SIGNAL DURATION<sup>[8](#footnote8)</sup> СИГНАЛА | 200 msec |
+| NAVIGATION SIGNAL CARRIER<sup>[8](#footnote8)</sup> | 20050 Hz |
+| NAVIGATION SIGNAL MODULATION<sup>[8](#footnote8)</sup> | BPSK |
+| NAVIGATION SIGNAL DURATION<sup>[8](#footnote8)</sup> | 200 msec |
 
 ________________
 <a name="footnote1"><sup>1</sup></a> Including hydroacoustic antenna.  
