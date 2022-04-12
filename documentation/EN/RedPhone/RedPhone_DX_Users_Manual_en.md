@@ -84,7 +84,7 @@ The station uses single-sideband amplitude modulation (_English SSB, Single side
 
 The general technical characteristics of the device are given in **Table 2**:
 
-### **Таблица 2** - Technical characteristics
+### **Table 2** - Technical characteristics
 
 | PARAMETER | VALUE |
 | :--- | :--- |
@@ -158,10 +158,10 @@ Before immersing the device in water, the user must ensure that:
 - the device is securely fastened with a strap to the tank (**recommended mounting location**) or to the diver's belt.
 
 Before starting work, the user must:
-- check the correctness of the selected communication channels on all devices participating in the work in the immediate vicinity according to p.p. [2.2.2]() and [2.2.3.]().
+- check the correctness of the selected communication channels on all devices participating in the work in the immediate vicinity according to p.p. [2.2.2](#222-receiving-voice-messages) and [2.2.3.](#223-sending-voice-messages).
 
 ### 2.2. Work
-Before work, all preparations and checks provided for in [p. 2.1]().
+Before work, all preparations and checks provided for in [p. 2.1](#21-preliminary-checks).
 
 Diver's hydroacoustic voice communication works on a half-duplex scheme: transmission and reception alternate, if the device is in transmit mode, it cannot receive incoming messages.
 
@@ -230,7 +230,7 @@ Charging chassis installation is shown in Figure 3:
 ### 3.3. Configuration
 
 Station can be configured:
-- one of the supported communication channels from [Table 1]()
+- one of the supported communication channels from [Table 1](#table-1---correspondence-between-channel-number-and-signal-parameters)
 - compatibility mode with tracking system [RWLT](/documentation/EN/RWLT/RWLT_DataBrief_en.md)
 - Address (diver ID) for tracking system
 - System channel ID [RWLT](/documentation/EN/RWLT/RWLT_DataBrief_en.md) (Reserved for future versions, should be 0)
@@ -290,7 +290,7 @@ In the app, press the **CONNECTION** button. If everything is done correctly, th
 
 The **RedPhone DX Device settings** field will display the current device settings:
 
-- communication channel number from [Table 1]()
+- communication channel number from [Table 1](#table-1---correspondence-between-channel-number-and-signal-parameters)
 - indication of enabled/disabled tracking function
 - diver's address (identifier) in the [RWLT](/documentation/EN/RWLT/RWLT_DataBrief_en.md) tracking system
 - [RWLT](/documentation/EN/RWLT/RWLT_DataBrief_en.md) system channel identifier (reserved for future use, should always be 0)
@@ -307,7 +307,7 @@ After the  wireless connection is established, in the **RedPhone DX Device setti
 
 > **Always make sure that all devices are set to the same channel when diving together!**
 
-The **RWLT Pinger enabled** checkbox controls the built-in diver tracking feature. When the tracking function is enabled, at the end of each voice transmission from a diver (after releasing the PTT), the station will transmitt a special navigation signal that is received by the buoys of the [RWLT] (/documentation/RU/RWLT/RWLT_DataBrief_en.md) system, which allows to determine the geographical position of the diver .
+The **RWLT Pinger enabled** checkbox controls the built-in diver tracking feature. When the tracking function is enabled, at the end of each voice transmission from a diver (after releasing the PTT), the station will transmitt a special navigation signal that is received by the buoys of the [RWLT](/documentation/RU/RWLT/RWLT_DataBrief_en.md) system, which allows to determine the geographical position of the diver .
 
 The **RWLT Diver's ID** input field specifies the diver's address (identifier) to be displayed on the map.
 
