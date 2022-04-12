@@ -41,109 +41,108 @@
 
 <div style="page-break-after: always;"></div>
 
-## 1. Описание станции RedPhone-DX
-### 1.1. Назначение
-Водолазная станция голосовой гидроакустической связи [RedPhone-DX](RedPhone_DX_Specification_en.md) (далее - станция) предназначена для:  
-- беспроводного обмена голосовыми сообщениями между водолазами, оснащенными приборами водолазной связи, поддерживающими общие со станцией параметры сигнала;  
-- беспроводного обмена голосовыми сообщениями между водолазами и надводным пунктом контроля за спусками, оснащенным надводной станцией [RedPhone-OS](RedPhone_OS_Specification_ru.md) или другими приборами водолазной связи, поддерживающими общие со станцией параметры сигнала;  
-- определения местоположения (трекинга) водолазов при помощи длиннобазисной навигационноый системы [RWLT](/documentation/EN/RWLT/RWLT_DataBrief_en.md).
+## 1. General information
+### 1.1. Purpose
+The diving station of voice hydroacoustic communication [RedPhone-DX](RedPhone_DX_Specification_en.md) (hereinafter referred to as the station) is intended for:
+- wireless exchange of voice messages between divers equipped with diving communication devices that support signal parameters common with the station;
+- wireless exchange of voice messages between divers and a surface control station equipped with a surface station [RedPhone-OS](RedPhone_OS_Specification_ru.md) or other diving communication devices that support signal parameters common with the station;
+- determining the location (tracking) of divers using the long-base navigation system [RWLT] (/documentation/EN/RWLT/RWLT_DataBrief_en.md).
 
-Общий вид станции [RedPhone-DX](RedPhone_DX_Specification_en.md) представлен на **рисунке 1**.
+The general view of the [RedPhone-DX](RedPhone_DX_Specification_en.md) station is shown in **Figure 1**.
 
 | ![RedPhone-DX](/documentation/redphone_dx.png) |
 | :---: |
-| **Рисунок 1 - Общий вид станции [RedPhone-DX](RedPhone_DX_Specification_en.md)** |
+| **Fig 1 - [RedPhone-DX](RedPhone_DX_Specification_en.md): General view** |
 
-### 1.2. Устройство
-Прибор выполнен в виде необслуживаемого полиуретанового моноблока, со встроенными LiFePO4 аккумуляторами, обеспечивающими более 3000 циклов "заряд-разряд". На корпусе прибора в верхней его части располагаются:  
-- гидроакустическая приемопередающая антенна;
-- контакты для подключения зарядного шасси;
-- контакты для автоматического включения при попадании в воду / отключения при изъятии из воды;
-- ввод кабеля с разъемом и тангентой (Push-To-Talk, PTT) для подключения гарнитуры связи.
+### 1.2. Description
+The device is made in the form of a maintenance-free polyurethane monoblock, with built-in LiFePO4 batteries that provide more than 3000 charge-discharge cycles. On the top of the device in its upper part are located:
+- hydroacoustic transceiver antenna;
+- contacts for connecting the charging cradle;
+- contacts for automatic switching on when entering the water / switching off when removed from the water;
+- cable inlet with a connector and a PTT (Push-To-Talk) for connecting a communication headset.
 
-> Стандартно устройства комплектуются разъемом и тангентой для подключения гарнитуры, не содержащей в составе тангенту.
+> Standard devices are equipped with a connector and a PTT for connecting a headset that does not contain a PTT.
 
-Зарядка производится комплектным кредлом (шасси) с зарядным устройством. Переключение каналов и включение режима совместимости с навигационной трекинговой системой [RWLT](/documentation/EN/RWLT/RWLT_DataBrief_en.md) осуществляется при помощи встроенного радио приемопередатчика и комплектного [USB-радиодонгла](RedPhone_RF_Dongle_Specification_en.md).
+Charging is carried out with a complete cradle (chassis) with a charger. Switching channels and the compatibility mode with the navigation tracking system [RWLT] (/documentation/EN/RWLT/RWLT_DataBrief_en.md) is carried out using the built-in radio transceiver and the bundled [USB radio dongle](RedPhone_RF_Dongle_Specification_en.md).
 
-Для обеспечения наилучших условий работы и качества связи, акустические антенны абонентов должны иметь прямую видимость. Рекомендуемое место крепления прибора - на баллон на спине водолаза. Крепление должно осуществлятся ремнем или резиновым жгутом через крепежные проушины. Кабели не должны стеснять движений водолаза. Тангента имеет специальную петлю для пристегивания к костюму.
+To ensure the best working conditions and communication quality, subscribers' acoustic antennas must have a direct line of sight. The recommended mounting location for the device is on the tank on the diver's back. Fastening should be carried out with a belt or rubber band through the fixing eyes. The cables must not restrict the diver's movements. The PTT has a special loop for attaching to the suit.
 
+### 1.3.Specifications
+The station uses single-sideband amplitude modulation (_English SSB, Single side band_) and supports the most commonly used bands in such systems, which ensures compatibility with almost all analogues.
+**Table 1** shows the correspondence between station channel numbers and frequency bands.
 
-### 1.3. Технические характеристики
-Станция использует однополосную амплитудную модуляцию (_англ. SSB, Single side band_) и поддерживает наиболее часто используемые в подобных системах диапазоны, что обеспечивает совместимость практически со всеми аналогами.
-В **таблице 1** приведено соответствие номеров каналов станции и полос частот.
+### **Table 1** - Correspondence between channel number and signal parameters
 
-### **Таблица 1** - Соответствие номера канала и параметров сигнала
-
-| Номер канала | Несущая частота, Гц | Боковая полоса | Полоса частот, Гц |
+| Channel number | Carrier, Hz | Side band | Bandwidth, Hz |
 | :---: | :---: | :---: | :---: |
-| 1 | 32768 | Нижняя | 28468 .. 32468 |
-| 2 | 32768 | Верхняя | 33068 .. 37068 |
-| 3 | 31250 | Нижняя | 26950 .. 30950 |
-| 4 | 31250 | Верхняя | 31550 .. 35550 |
-| 5 | 28500 | Нижняя | 24200 .. 28200 |
-| 6 | 28500 | Верхняя | 28800 .. 32800 |
-| 7 | 25000 | Нижняя | 20700 .. 24700 |
-| 8 | 25000 | Верхняя | 25300 .. 29300 |
+| 1 | 32768 | Lower | 28468 .. 32468 |
+| 2 | 32768 | Upper | 33068 .. 37068 |
+| 3 | 31250 | Lower | 26950 .. 30950 |
+| 4 | 31250 | Upper | 31550 .. 35550 |
+| 5 | 28500 | Lower | 24200 .. 28200 |
+| 6 | 28500 | Upper | 28800 .. 32800 |
+| 7 | 25000 | Lower | 20700 .. 24700 |
+| 8 | 25000 | Upper | 25300 .. 29300 |
 
-Общие технические характеристики устройства приведены в **таблице 2**:
+The general technical characteristics of the device are given in **Table 2**:
 
-### **Таблица 2** - Технические характеристики
+### **Таблица 2** - Technical characteristics
 
-| ПАРАМЕТР | ЗНАЧЕНИЕ |
+| PARAMETER | VALUE |
 | :--- | :--- |
-| ГАБАРИТЫ<sup>[1](#footnote1)</sup> (д х ш х в) | 203 x 105 x 45 мм |
-| ВЕС<sup>[2](#footnote2)</sup> (сухой) | 0.6 кг |
-| МАКСИМАЛЬНАЯ ГЛУБИНА ПОГРУЖЕНИЯ | 70 m |
-| МАКСИМАЛЬНАЯ ДАЛЬНОСТЬ АКУСТИЧЕСКОЙ СВЯЗИ<sup>[3](#footnote3)</sup> | 1000 m |
-| МАКСИМАЛЬНОЕ АКУСТИЧЕСКОЕ ДАВЛЕНИЕ | 150 дБ re 1 мкПа @ 1 м |
-| ПОЛОСА ГОЛОСОВОГО СИГНАЛА<sup>[4](#footnote4)</sup> | 300 .. 4300 Гц |
-| ЧИСЛО ПОДДЕРЖИВАЕМЫХ КАНАЛОВ | 8 |
-| МАКСИМАЛЬНОЕ ВРЕМЯ АВТОНОМНОЙ РАБОТЫ В РЕЖИМЕ ПРИЕМА<sup>[5](#footnote5)</sup> | до 50 часов |
-| МАКСИМАЛЬНОЕ ВРЕМЯ АВТОНОМНОЙ РАБОТЫ В СМЕШАННОМ РЕЖИМЕ (20%)<sup>[5](#footnote5),[6](#footnote6)</sup> | до 8 часов |
-| МАКСИМАЛЬНОЕ ВРЕМЯ АВТОНОМНОЙ РАБОТЫ В СМЕШАННОМ РЕЖИМЕ (50%)<sup>[5](#footnote5),[7](#footnote7)</sup> | до 2.5 часов |
-| ДИАПАЗОН РАБОЧИХ ТЕМПЕРАТУР | 0 .. 50° С |
-| ВСТРОЕННЫЙ ИСТОЧНИКИ ПИТАНИЯ | 28 Вт\*ч, LiFePO4, до 3000 циклов заряд-разряд |
-| ПЕРЕКЛЮЧЕНИЕ КАНАЛОВ СВЯЗИ | Беспроводное, при помощи [USB-радиодонгла](RedPhone_RF_Dongle_Specification_en.md) |
-| МАТЕРИАЛ КОРПУСА | Полиуретан |
-| МАТЕРИАЛ ИЗОЛЯЦИИ КАБЕЛЕЙ | Полиуретан |
-| НЕСУЩАЯ ЧАСТОТА НАВИГАЦИОННОГО<sup>[8](#footnote8)</sup> СИГНАЛА | 20050 Гц |
-| ТИП МОДУЛЯЦИИ НАВИГАЦИОННОГО<sup>[8](#footnote8)</sup> СИГНАЛА | BPSK |
-| ДЛИТЕЛЬНОСТЬ НАВИГАЦИОННОГО<sup>[8](#footnote8)</sup> СИГНАЛА | 200 мсек |
+| DIMENSIONS<sup>[1](#footnote1)</sup> (l х w х h) | 203 x 105 x 45 mm |
+| WEIGHT<sup>[2](#footnote2)</sup> (dry) | 0.6 kg |
+| MAX. WORKING DEPTH | 70 m |
+| MAX. ACOUSTIC RANGE<sup>[3](#footnote3)</sup> | 1000 m |
+| MAX. ACOUSTIC PRESSURE | 150 dB re 1 uPa @ 1 m |
+| VOICE BANDWIDTH<sup>[4](#footnote4)</sup> | 300 .. 4300 Hz |
+| NUMBER OF CHANNELS | 8 |
+| BATTERY LIFE IN RECEIVING MODE<sup>[5](#footnote5)</sup> | up to 50 hours |
+| BATTERY LIFE IN MIXED MODE (20%)<sup>[5](#footnote5),[6](#footnote6)</sup> | up to 8 hours |
+| BATTERY LIFE IN MIXED MODE (50%)<sup>[5](#footnote5),[7](#footnote7)</sup> | up 2.5 hours |
+| WORKING TEMPERATURES | 0 .. 50° С |
+| BUILT-IN POWER SUPPLY | 28 W\*h, LiFePO4, up to 3000 charge-discharge cycles |
+| CHANNEL SWITCHING | Wireless, using a [USB-RF Dongle](RedPhone_RF_Dongle_Specification_en.md) |
+| BODY MATERIAL | Polyurethane |
+| CABLE INSULATION MATERIAL | Polyurethane |
+| NAVIGATION SIGNAL CARRIER<sup>[8](#footnote8)</sup> СИГНАЛА | 20050 Hz |
+| NAVIGATION SIGNAL MODULATION<sup>[8](#footnote8)</sup> СИГНАЛА | BPSK |
+| NAVIGATION SIGNAL DURATION<sup>[8](#footnote8)</sup> СИГНАЛА | 200 msec |
 
 ________________
-<a name="footnote1"><sup>1</sup></a> С учетом гидроакустической антенны.  
-<a name="footnote2"><sup>2</sup></a> С тангентой и разъемом для масок, в зависимости от разъема значение может отличаться на вес разъема.  
-<a name="footnote3"><sup>3</sup></a> Параметр, определяющий максимальную дальность, на которой возможен прием сигнала, исходя из электроакустических параметров передатчика и приемника, пространственного убывания интенсивности звуковой энергии, затухания в среде и уровня гидроакустических помех.  
-<a name="footnote4"><sup>4</sup></a> Фактический диапазон воспроизводимых частот зависит от характеристик применяемой гарнитуры.  
-<a name="footnote5"><sup>5</sup></a> С новым, полностью заряженным АКБ, при температуре окружающей среды 20° С.  
-<a name="footnote6"><sup>6</sup></a> В режиме 2 минуты передачи 8 минут приема.  
-<a name="footnote7"><sup>7</sup></a> В режиме 5 минут передачи 5 минут приема.  
-<a name="footnote8"><sup>8</sup></a> Функция обеспечивается буями навигационной системы [RWLT](/documentation/EN/RWLT/RWLT_DataBrief_en.md).  
+<a name="footnote1"><sup>1</sup></a> Including hydroacoustic antenna.  
+<a name="footnote2"><sup>2</sup></a> With a PTT and mask connector, depending on the connector, the value may differ by the weight of the connector.  
+<a name="footnote3"><sup>3</sup></a> A parameter that determines the maximum range at which signal reception is possible, based on the electroacoustic parameters of the transmitter and receiver, the spatial decrease in the intensity of sound energy, attenuation in the medium and the level of hydroacoustic interference.  
+<a name="footnote4"><sup>4</sup></a> Actual frequency range depends on headset specifications.  
+<a name="footnote5"><sup>5</sup></a> With a new, fully charged battery, at an ambient temperature of 20°C.  
+<a name="footnote6"><sup>6</sup></a> In a mode 2 minutes transmit 8 minutes receive.  
+<a name="footnote7"><sup>7</sup></a> In a mode 5 minutes transmit 5 minutes receive.  
+<a name="footnote8"><sup>8</sup></a> The function is provided by buoys of the [RWLT](/documentation/EN/RWLT/RWLT_DataBrief_en.md) navigation system.  
 
 
-### 1.4. Комплект поставки
+### 1.4. Equipment set
 
-### **Таблица 3** - Комплект поставки
+### **Table 3** - Contents of delivery
 
-| № | Наименование | Количество | Примечания |
+| № | Item | Number | Notes |
 | :--- | :--- | :--- | :--- |
-| 1 | Станция [RedPhone-DX](RedPhone_DX_Specification_en.md) с разъемом для подключения гарнитуры | 1 шт. |  |
-| 2 | Сетевое зарядное устройство с кредлом | 1 шт. | |
-| 3 | [USB-радиодонгла](RedPhone_RF_Dongle_Specification_en.md) для беспроводного подключения станции к ПК | 1 шт. | |
+| 1 | [RedPhone-DX](RedPhone_DX_Specification_en.md) with a headset connector | 1 pcs. |  |
+| 2 | Charger with the cradle | 1 pcs. | |
+| 3 | [USB-RF dongle](RedPhone_RF_Dongle_Specification_en.md) for wireless connection to a PC | 1 pcs. | |
 
 
-На рисунке 2 показан комплект поставки
+Figure 2 shows the scope of delivery
 
 | ![RedPhone-DX](/documentation/redphone_dx_package.png) |
 | :---: |
-| **Рисунок 2 - Комплект поставки** |
-| Цифрами обозначены: *1 - сетевой адаптер, 2 - зарядное шасси (кредл), 3 - тангента, 4 - разъем, 5 - USB радиодонгл, 6 - станция RedPhone-DX* |
+| **Fig 2 - Contents of delivery** |
+| The numbers indicate: *1 - charger, 2 - charging chassis (cradle), 3 - PTT, 4 - connector, 5 - USB radio dongle, 6 - RedPhone-DX station* |
 
-Распиновка разъема в стандартной версии приведена в **Таблице 4** 
+The pinout of the connector in the standard version is shown in **Table 4**
 
-### **Таблица 4** - Распиновка разъема
+### **Table 4** - Connector Pinout
 
-| № Контакта | Функция |
+| Pin number | Function |
 | :--- | :--- |
 | 1 | MIC "+" |
 | 2 | SPEAKER "-" |
@@ -153,210 +152,211 @@ ________________
 
 <div style="page-break-after: always;"></div>
 
-## 2. Работа с устройством
-### 2.1 Предварительные проверки
-Перед погружением прибора в воду пользователь обязан убедиться в том, что:
-- уплотнительные кольца (если имеются) на разъёме гарнитуры не имеют механических повреждений, не загрязнены, смазаны (в соответствии с рекомендациями производителя);
-- к разъему подключена гарнитура (разъем подключен);
-- прибор надежно закреплен при помощи ремня на балон (**рекомендуемое место крепления**) или на пояс водолаза.
+## 2. Working with the device
+### 2.1 Preliminary checks
+Before immersing the device in water, the user must ensure that:
+- O-rings (if any) on the headset connector are not mechanically damaged, not dirty, properly lubricated (in accordance with the manufacturer's recommendations);
+- a headset is connected to the jack (the jack is connected);
+- the device is securely fastened with a strap to the tank (**recommended mounting location**) or to the diver's belt.
 
-Перед началом работы пользователь обязан:
-- проверить правильность выбранных каналов связи на всех приборах, учавствующих в работе в непосредственной близости по п.п. [2.2.2]() и [2.2.3.]().
+Before starting work, the user must:
+- check the correctness of the selected communication channels on all devices participating in the work in the immediate vicinity according to p.p. [2.2.2]() and [2.2.3.]().
 
-### 2.2. Работа
-Перед работой должны быть выполнены все подготовки и проверки, предусмотренные [п. 2.1]().
+### 2.2. Work
+Before work, all preparations and checks provided for in [p. 2.1]().
 
-Водолазная гидроакустическая голосовая связь работает по полудуплексной схеме: передача и прием чередуются, если устройство находится в режиме передачи, оно не может принимать входящие сообщения.
+Diver's hydroacoustic voice communication works on a half-duplex scheme: transmission and reception alternate, if the device is in transmit mode, it cannot receive incoming messages.
 
-#### 2.2.1. Звуковые сигналы
-Возможные звуковые оповещения сведены в **таблицу 5**.
+#### 2.2.1. Sound alerts
+Possible sound alerts are summarized in **Table 5**.
 
-### **Таблица 5** - Звуковые оповещения
+### **Table 5** - Sound alerts
 
-| Описание оповещения | О чем сигнализирует |
+| Alert | Description |
 | :--- | :--- |
-| Короткий повышающийся а потом понижающийся тон | Включение станции |
-| Короткий повышающийся тон | Переход в режим приема (при выключенной навигационной функции) |
-| Короткий понижающийся тон (~ каждые 30 секунд) | Низкий заряд встроенного источника питания |
+| A short rising and then falling tone | The station turned on |
+| A short rising tone | Switching to receive mode (when the navigation function is off) |
+| A short falling tone (~ every 30 seconds) | Low battery |
 
-#### 2.2.2. Прием голосовых сообщений
-Для приема голосовых сообщений от водолазов тангента **PTT** на гарнитуре должна быть отпущена. При этом входящие сообщения будут воспроизводится гарнитурой. 
+#### 2.2.2. Receiving voice messages
+To receive voice messages from divers, the **PTT** button on the headset must be released. In this case, incoming messages will be played by the headset.
 
-Громкость воспроизводимых входящих голосовых сообщений зависит от расстояния между антенной станцией и водолазом а также от гидрологических условий. Она может снижаться при попадании водолаза в зону акустической тени (когда на пути следования сигнала находятся элементы подводного ландшафта, части конструкций, суда, водоросли и т.п.). 
+The volume of the replayed incoming voice messages depends on the distance between the subscriber's antennas, as well as on hydrological conditions. It can decrease when a diver enters the zone of acoustic shadow (when elements of the underwater landscape, parts of structures, vessels, algae, etc. are on the path of the signal).
 
-#### 2.2.3. Передача голосовых сообщений
-Для передачи голосовых сообщений выполняется следующая последовательность действий:
-* Нажать тангенту на **PTT** гарнитуре;
-* Станция издает короткий звуковой сигнал, говорящий о том, что устройство переходит в режим передачи;
-* Выждержать короткую паузу (~**0.5** секунды) для того, чтобы станция перешла в режим передачи;
-* Произнести голосовое сообщений с выраженной артикуляцией; Рекомендуется завершать голосовое сообщение словом **"Прием!"**, сигнализирующем адресату о том, что сообщение окончено;
-* Выдержать короткую паузу (~**0.5** секунды);
-* Отпустить тангенту **PTT**;
-* Станция издает короткий звуковой сигнал, говорящий о том, что устройство перешло в режим приема, если режим совместимости с навигационной системой [RWLT](/documentation/EN/RWLT/RWLT_DataBrief_en.md) отключен или излучит навигационный сигнал при помощи гидроакустической антенны, если режим совместимости с навигационной системой [RWLT](/documentation/EN/RWLT/RWLT_DataBrief_en.md) включен.
+#### 2.2.3. Sending voice messages
+To send voice messages, the following sequence of actions is performed:
+* Press PTT ;
+* The station emits a short beep, indicating that the device is entering transmission mode;
+* Wait a short pause (~**0.5** seconds) for the station to switch to transmit mode;
+* Speak voice messages with pronounced articulation; It is recommended to end a voice message with the phrase **"Do you copy?"**, signaling to the addressee that the message is over;
+* Sustain a short pause (~**0.5** seconds);
+* Release the **PTT**;
+* The station emits a short beep to indicate that the device has switched to receive mode if the [RWLT](/documentation/EN/RWLT/RWLT_DataBrief_en.md) navigation system compatibility mode is disabled or will emit a navigation signal using a hydroacoustic antenna if navigation compatibility mode [RWLT](/documentation/EN/RWLT/RWLT_DataBrief_en.md) is enabled.
 
-### 2.3. Завершение работы
-По завершении работ водолазная станция не требует каких-либо дополнительных манипуляций и отключается автоматически в воздушной среде. Перед укладкой в транспортировочную тару необходимо выполнить промывку и/или опреснение в пресной воде с последующем обтиранием впитывающей тканью и просушкой не менее 30 минут на воздухе.
+### 2.3. Shutdown
+Upon completion of the work, the diving station does not require any additional manipulations and turns off automatically when in the air. Before packing in a shipping container, it is necessary to rinse and/or desalinate in fresh water, followed by wiping with an absorbent cloth and air drying for at least 30 minutes.
 
 <div style="page-break-after: always;"></div>
 
-## 3. Хранение и обслуживание
-### 3.1. Условия хранения и обслужвания
-К станции не предъявляется особых условий хранения, кроме следующих:
-- Хранение при температуре от -20° до 60°С;
-- Разъем гарнитуры должен быть отсоединен;
-- При длительном хранении (более месяца) рекомендуется производить подзарядку встроенного источника питания станции;
-- Для удаления загрязнений с корпуса устройства и после работы в морской воде необходима промывка в пресной воде. Дпускается применение слабого раствора бытовых моющих средств при закрытой крышке батарейного отсека; При промывке следует избегать попадания влаги и/или моющиъх средств в открытый разъем гарнитуры;
-- Не допускается перегибание кабелей радиусом менее 5 см;
-- Не допускается приложение вращательных усилий к гидроакустической антенне или кабельному вводу;
-- Перед помещением прибора в транспортировочную тару, с него **полностью должна быт удалена влага**.
+## 3. Storage and maintenance
+### 3.1. Storage and maintenance conditions
+The station does not need special storage conditions, except for the following:
+- Storage at temperatures from -20 ° to 60 °C;
+- The headset connector must be disconnected;
+- In case of long-term storage (more than a month), it is recommended to recharge the station's built-in power supply;
+- To remove impurities from the body of the device and after working in seawater, rinsing in freshwater is required. It is allowed to use a weak solution of household detergents with the battery compartment cover closed; When flushing, avoid getting moisture and / or detergents into the open connector of the headset;
+- Bending of cables with a radius of less than 5 cm is not allowed;
+- The application of torsion forces to the acoustic antenna or cable entry is not allowed;
+- Before placing the device in the shipping container, moisture on the device **must be completely removed**.
 
-> **ЗАПРЕЩАЕТСЯ:**
->
-> **- ВСКРЫТИЕ ОБОРУДОВАНИЯ ИЗ КОМПЛЕКТА ПОСТАВКИ СОГЛАСНО [п. 1.4.]()**  
-> **- ДОПУСК К ПОЛЬЗОВАНИЮ ОБОРУДОВАНИЕМ ИЗ КОМПЛЕКТА ПОСТАВКИ СОГЛАСНО [п. 1.4.]() ЛИЦ, НЕ ОЗНАКОМИВШИХСЯ С НАСТОЯЩЕЙ ИНСТРУКЦИЕЙ**  
-> **- ДОПУСК К ПОЛЬЗОВАНИЮ ОБОРУДОВАНИЕМ ИЗ КОМПЛЕКТА ПОСТАВКИ СОГЛАСНО [п. 1.4.]() ЛИЦ, НЕ ДОСТИГШИХ СОВЕРШЕННОЛЕТИЯ**  
+> **PROHIBITED:**  
+>  
+> **- OPENING EQUIPMENT FROM THE DELIVERY SET ACCORDING TO [p. 1.4.](#14-equipment-set)**  
+> **- ACCESS TO USE OF EQUIPMENT FROM THE DELIVERY SET ACCORDING TO [p. 1.4.](#14-equipment-set) PERSONS WHO ARE NOT FAMILIAR WITH THESE INSTRUCTIONS**  
+> **- ACCESS TO USE OF EQUIPMENT FROM THE DELIVERY SET ACCORDING TO [p. 1.4.](#14-equipment-set) PERSONS UNDER THE ADVANCED**  
 
 
-### 3.2. Заряд встроенного источника питания
-Заряд встроенного источника питания станции допускается только комплектным зарядным устройством при отсоединенном разъеме гарнитуры.
-Перед применением зарядного устройства необходимо ознакомиться с инструкцией по эксплуатации зарядного устройства.
-Для зарядки прибора его необходимо установить в зарядный кредл и подклюить комплектное зарядное устройство в бытовой электрической сети.
-Окончание заряда определяется по индикатору комплектного сетевого зарядного устройства. Рекомендуется после окончания зарядки по индикатору на сетевом адаптере оставить прибор на зарядке еще на 1-1.5 часа.
+### 3.2. Charging the device
+Charging the built-in power supply of the station is allowed only with the supplied charger when the headset is disconnected.
+Before using the charger, read the instruction manual for the charger.
+To charge the device, you must install it in the charging cradle and connect the supplied charger to the household electrical network.
+The end of the charge is determined by the indicator of the complete mains charger. It is recommended to leave the device on charge for another 1-1.5 hours after the end of charging according to the indicator on the network adapter.
 
-Установка зарядного шасси показана на рисунке 3:
+Charging chassis installation is shown in Figure 3:
 
 | ![RedPhone-DX](/documentation/redphone_dx_charging_cradle.png) |
 | :---: |
-| **Рисунок 3 - Установка зарядного шасси на станцию** |
+| **Fig 3 - Charging chassis installation** |
 
 
-### 3.3. Настройка станции
+### 3.3. Configuration
 
-Станции могут быть настроены:
-- один из поддерживаемых каналов связи из [Таблицы 1]()
-- режим совместимости с трекинговой системой [RWLT](/documentation/EN/RWLT/RWLT_DataBrief_en.md)
-- Адрес (идентификатор водолаза) для трекинговой системы
-- Идентификатор канала системы [RWLT](/documentation/EN/RWLT/RWLT_DataBrief_en.md) (Введен для будущих версий, должен иметь значение 0)
+Station can be configured:
+- one of the supported communication channels from [Table 1]()
+- compatibility mode with tracking system [RWLT](/documentation/EN/RWLT/RWLT_DataBrief_en.md)
+- Address (diver ID) for tracking system
+- System channel ID [RWLT](/documentation/EN/RWLT/RWLT_DataBrief_en.md) (Reserved for future versions, should be 0)
 
-Для беспроводного подключения станции к ПК выполните следующую последовательность шагов:
+To wirelessly connect the station to a PC, follow these steps:
 
-#### 3.3.1. Шаг 1
+#### 3.3.1. Step 1
 
-Скачайте утилиту [RedPhoneDXConfig](https://github.com/ucnl/RedPhoneDXConfig/releases/download/1.0/RedPhoneDXConfig.zip) (требуется ПК с ОС Windows 8 и выше).
-Приложение не требует установки: просто распакуйте архив в удобное для вас место.
+Download the [RedPhoneDXConfig](https://github.com/ucnl/RedPhoneDXConfig/releases/download/1.0/RedPhoneDXConfig.zip) utility (requires PC with Windows 8 or higher).
+The application does not require installation: just unzip the archive to a location convenient for you.
 
-#### 3.3.2. Шаг 2
+#### 3.3.2. Step 2
 
-Отсоедините USB-донгл от ПК если он присоединен.
+Disconnect the USB dongle from the PC if connected.
 
-#### 3.3.3. Шаг 3
+#### 3.3.3. Step 3
 
-Запустите приложение **RedPhoneDXConfig.exe**
+Run the application **RedPhoneDXConfig.exe**
 
-#### 3.3.4. Шаг 4
+#### 3.3.4. Step 4
 
-В выпадающем списке **RedPhone DX Dongle PORT** обратите внимание на уже приустсвующие порты:
+In the **RedPhone DX Dongle PORT** combo box, pay attention to the ports already present:
 
-| ![шаг 4](/documentation/rpdx_cfg1.png) |
+| ![Step 4](/documentation/rpdx_cfg1.png) |
 | :---: |
-| Шаг 4 |
+| Step 4 |
 
-#### 3.3.5. Шаг 5
+#### 3.3.5. Step 5
 
-Подсоедините USB-донгл к ПК, подождите несколько секунд и нажмите кнопку **🗘** (Обновить).
-В некоторых случаях может потребоваться установка драйвера на USB-преобразователь.
-Появившийся новый порт в списке соответствует порту донгла. Его необходимо выбрать:
+Connect USB dongle to PC, wait a few seconds and click **🗘** (Update) button.
+In some cases, you may need to install a driver on the USB converter.
+The new port that appears in the list corresponds to the port of the dongle. It must be selected:
 
-| ![шаг 5](/documentation/rpdx_cfg2.png) |
+| ![Step 5](/documentation/rpdx_cfg2.png) |
 | :---: |
-| Шаг 5 |
+| Step 5 |
 
-#### 3.3.6. Шаг 6
+#### 3.3.6. Step 6
 
-Беспроводное соединение устанавливается монопольно, это означает что в один момент времени работа по настройке проводится только с одним прибором [RedPhone-DX](RedPhone_DX_Specification_en.md).
-Расположите прибор, который необходимо настроить на расстоянии до 5 метров от USB-донгла. 
-Чтобы включить телефонию, не погружая ее в воду: можно воспользуйтесь мокрой салфеткой, положив ее на контакты, показанные на рисунке:
+The wireless connection is established exclusively, which means that at one time the configuration work is carried out with only one device [RedPhone-DX](RedPhone_DX_Specification_en.md).
+Place the device to be configured up to 5 meters away from the USB dongle.
+To turn on telephony without immersing it in water: you can use a wet cloth by placing it on the contacts shown in the figure:
 
-| ![шаг 6](/documentation/rpdx_cfg4.png) |
+| ![Step 6](/documentation/rpdx_cfg4.png) |
 | :---: |
-| Шаг 6 |
+| Step 6 |
 
-Можно замкнуть контакты металлическим предметом, с условием того, что соединение будет надежным: при пропадании контакта между проводниками станция мгновенно отключится.
-Также можно положить прибор в емкость с водой антенной вниз так, чтобы водой оказались покрыты только антенна и контакты. В противном случае вода будет припятствовать радиосвязи.
+You can close the contacts with a metal object, provided that the connection is reliable: if the contact between the conductors is lost, the station will instantly turn off.
+You can also put the device in a container of water with the antenna down so that only the antenna and contacts are covered with water. Otherwise, water will interfere with radio communication.
 
-#### 3.3.7. Шаг 7
+#### 3.3.7. Step 7
 
-В приложении нажмите кнопку **CONNECTION**. Если все выполнено правильно, то в текстовом поле **RedPhone DX Device Information** отобразится информация об устройстве:
+In the app, press the **CONNECTION** button. If everything is done correctly, then the text field **RedPhone DX Device Information** will display information about the device:
 
-- Серийный номер
-- Название системы, ее версия а также название и версия подсистемы связи
+- Serial number
+- The name of the system, its version, as well as the name and version of the communication subsystem
 
-В поле **RedPhone DX Device settings** будут отображены текущие настройки прибора:
+The **RedPhone DX Device settings** field will display the current device settings:
 
-- номер канала связи из [Таблицы 1]()
-- признак включенной/отключенной функции трекинга
-- адрес (идентификатор) водолаза в системе [RWLT](/documentation/EN/RWLT/RWLT_DataBrief_en.md)
-- идентификатор канала системы [RWLT](/documentation/EN/RWLT/RWLT_DataBrief_en.md) (зарезервировано для будущего применения, должен быть всегда равен 0)
+- communication channel number from [Table 1]()
+- indication of enabled/disabled tracking function
+- diver's address (identifier) in the [RWLT](/documentation/EN/RWLT/RWLT_DataBrief_en.md) tracking system
+- [RWLT](/documentation/EN/RWLT/RWLT_DataBrief_en.md) system channel identifier (reserved for future use, should always be 0)
 
 | ![шаг 7](/documentation/rpdx_cfg3.png) |
 | :---: |
-| Шаг 7 |
+| Step 7 |
 
-#### 3.3.8 Настройки станции
+#### 3.3.8 Station settings
 
-После установки беспроводного подключения станции в поле **RedPhone DX Device settings** пользователь может задать один из поддерживаемых станцией каналов связи при помощи поля ввода **Channel**.
+After the  wireless connection is established, in the **RedPhone DX Device settings** field, the user can set one of the communication channels supported by the station using the **Channel** input field.
 
-> Мы рекомендуем пользоваться 8-мы каналом, т.к. используемая в этом канале полоса частот позволяет максимально эффективно использовать аналоговый тракт станций [RedPhone-DX](RedPhone_DX_Specification_en.md) и [RedPhone-OS](RedPhone_OS_Specification_en.md).
+> We recommend using **channel number 8**, because the frequency band used in this channel allows the most efficient use of the analog circuitry of the [RedPhone-DX](RedPhone_DX_Specification_en.md) and [RedPhone-OS](RedPhone_OS_Specification_en.md) stations.
 
-> **Всегда строго следите, чтобы при совместном погружении все приборы были настроены на один и тот же канал!**
+> **Always make sure that all devices are set to the same channel when diving together!**
 
-Галочка **RWLT Pinger enabled** управляет встроенной функцией трекинга водолазов. При включенной функции трекинга, в конце каждой голосовой передачи от водолаза (после отпускания тангенты) станция будет вопспроизводить специальный навигационный сигнал, который принимается буями системы [RWLT](/documentation/RU/RWLT/RWLT_DataBrief_en.md), что позволяет определять географическое положение водолаза. 
+The **RWLT Pinger enabled** checkbox controls the built-in diver tracking feature. When the tracking function is enabled, at the end of each voice transmission from a diver (after releasing the PTT), the station will transmitt a special navigation signal that is received by the buoys of the [RWLT] (/documentation/RU/RWLT/RWLT_DataBrief_en.md) system, which allows to determine the geographical position of the diver .
 
-Поле ввода **RWLT Diver's ID** задает адрес (идентификатор) водолаза, который будет отображаться на карте. 
+The **RWLT Diver's ID** input field specifies the diver's address (identifier) to be displayed on the map.
 
-> Очень важно при работе с системой [RWLT](/documentation/EN/RWLT/RWLT_DataBrief_en.md) настроить всем водолазным станциям разные адреса, иначе местоположения разных водолазов с одинаковыми адресами будут отображаться в виде единого трека.
+> When working with the [RWLT](/documentation/EN/RWLT/RWLT_DataBrief_en.md) system, it is very important to set different addresses for all diving stations, otherwise the locations of different divers with the same addresses will be displayed as a single track.
 
-Если вы не планируете использовать трекинговую систему [RWLT](/documentation/EN/RWLT/RWLT_DataBrief_en.md) обязательно снимите галочку **RWLT Pinger enabled**, это позволит сэкономить заряд батарей и исключит дополнительную паузу после голосовой передачи, в течении которой излучается навигационный сигнал.
+If you do not plan to use the tracking system [RWLT](/documentation/EN/RWLT/RWLT_DataBrief_en.md) be sure to uncheck **RWLT Pinger enabled**, this will save battery power and eliminate an additional pause after a voice transmission during which navigation signal is being transmitted.
 
-В текущей версии системы настройка **RWLT Channel** не используется. Обязательно оставьте это поле равным нулю.
+The current version of the system does not use the **RWLT Channel** setting. Be sure to leave this field set to zero.
 
-Для того, чтобы записать настройки в станцию, нажмите кнопку **APPLY SETTINGS**. По результатам отобразится всплывающее окошко, подтверждающее успешную запись новых настроек:
+To save the settings to a station, press the **APPLY SETTINGS** button. Based on the results, a pop-up window will be displayed confirming the successful recording of new settings:
 
 | ![шаг 8](/documentation/rpdx_cfg5.png) |
 | :---: |
-| Настройки успешно обновлены |
+| Settings successfully updated |
 
-Если этого не происходит, проверьте не был ли отключен донгл и/или станция и повторите попытку, убедитесь, что станция не разряжена.
-Если ошибка не исчезнет, обратитесь к разработчику.
+If it doesn't, check if the dongle and/or station has been disconnected and try again, make sure the station is not turned off or discharged.
+If the error persists, contact the developer.
 
-
-<div style="page-break-after: always;"></div>
-
-## 4. Обязательства и отказ от ответственности
-### 4.1. Условия замены и бесплатного гарантийного обслуживания
-Гарантия производителя распространяется только на заводские дефекты, выявивщиеся при эксплуатации устройства в соответствие с настоящим руководством в течении гарантийного срока (2 года с момента покупки).  
-
-Производитель гарантирует бесплатный ремонт или замену неисправного оборудования из комплекта поставки, вышедшего из строя по причине заводского дефекта.  
-
-К поводам для отказа от бесплатного гарантийного обслуживания, бесплатного ремонта и замены относятся:
-- любые **механические повреждения** оборудования из комплекта поставки [п. 1.4.](), в т.ч. нарушение изоляции проводов и кабелей;
-- любые **повреждения, вызванные воздействием влаги и загрязнейний**, вследствие неправильной эксплуатации оборудования из комплекта поставки [п. 1.4.]();
-- любые **электрические повреждения**, вызванные **использованием некомплектных аксессуаров** (зарядного устройства), применением некачественных и/или вышедших из строя аккумуляторов; к некомплектным не отностятся аксессуары, поставленные производителем или его представителем в замен неисправных или утраченых;
-- любые **следы самостоятельного ремонта и/или вскрытия** оборудования из комплекта поставки [п. 1.4.]().
 
 <div style="page-break-after: always;"></div>
 
-### 4.2. Ограничение ответственности производителя
+## 4. Liability and disclaimer
+### 4.1 Terms of replacement and free warranty service
+The manufacturer’s warranty applies only to factory defects that were discovered during the operation of the device in accordance with this manual during the warranty period (2 years from the date of purchase).
+
+The manufacturer guarantees free repair or replacement of faulty equipment from the equipment set that has failed due to a factory defect.
+
+The reasons for refusing free warranty service, free repair and replacement include:
+- any **mechanical damage** of the equipment supplied according to [p. 1.4.](#14-equipment-set), Including violation of insulation of wires and cables;
+- any **damage caused by exposure to moisture and pollution** due to improper use of the equipment from the equipment set according to [p. 1.4.](#14-equipment-set);
+- any **electrical damage** caused by **use of not original accessories** (charger, headset etc.);  
+- any **signs of self-repair and/or opening** of the equipment from the equipment set according to [p. 1.4.](#14-equipment-set).
+
+<div style = "page-break-after: always;"> </div>
+
+### 4.2 Disclaimer of the manufacturer
+_____________
+
+_**ANY OF THE PARTS OF THE EQUIPMENT SET ACCORDING TO [par. 1.4.](#14-equipment-set) SEPARATELY AND IN THE COMPOSITION OF THE SYSTEM, NAME FURTHER "DELIVERED EQUIPMENT":**_  
+
+_**- ARE NOT DESIGNED FOR WATER RESCUE USE**_  
+_**- NOT TESTED AS RESCUE EQUIPMENT**_  
+_**- NOT RESCUE EQUIPMENT**_  
+_**- THE MANUFACTURER DECLARES THAT THE DELIVERED EQUIPMENT IS SAFE WHEN OPERATING ACCORDING TO THESE INSTRUCTIONS AND IS NOT RESPONSIBLE FOR ANY CONSEQUENCES OF USE OF THE DELIVERED EQUIPMENT**_  
 
 _____________
 
-_**ЛЮБАЯ ИЗ ЧАСТЕЙ КОМПЛЕКТА ПОСТАВКИ СОГЛАСНО [п. 1.4.]() В ОТДЕЛЬНОСТИ И В СОСТАВЕ СИСТЕМЫ, ИМЕНУЕМЫЕ ДАЛЕЕ "ПОСТАВЛЯЕМОЕ ОБОРУДОВАНИЕ":**_
+<div style = "page-break-after: always;"> </div>
 
-_**- НЕ РАЗРАБАТЫВАЛОСЬ КАК СРЕДСТВО СПАСЕНИЯ**_  
-_**- НЕ ТЕСТИРОВАЛОСЬ, КАК СРЕДСТВО СПАСЕНИЯ**_  
-_**- НЕ ЯВЛЯЕТСЯ СРЕДСТВОМ СПАСЕНИЯ**_  
-_**- ПРОИЗВОДИТЕЛЬ ЗАЯВЛЯЕТ, ЧТО ПОСТАВЛЯЕМОЕ ОБОРУДОВАНИЕ БЕЗОПАСНО ПРИ ЭКСПЛУАТАЦИИ СОГЛАСНО НАСТОЯЩЕЙ ИНСТРУКЦИИ И НЕ ОТВЕЧАЕТ ЗА ЛЮБЫЕ ПОСЛЕДСТВИЯ ИСПОЛЬЗОВАНИЯ ПОСТАВЛЯЕМОГО ОБОРУДОВАНИЯ**_
-
-______________
-
-[Вернуться к содержанию]()
+[Back to contents](#contents)
