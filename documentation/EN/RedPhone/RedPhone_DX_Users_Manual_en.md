@@ -7,7 +7,7 @@
 
 <div style="page-break-after: always;"></div>
 
-## Содержание
+## Contents
 
 - [1. General information](#1-general-information)
   - [1.1. Purpose](#11-purpose)
