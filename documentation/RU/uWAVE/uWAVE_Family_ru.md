@@ -1,3 +1,5 @@
+<div style="page-break-after: always;"></div>
+
 | ![logo](/documentation/sm_logo.png) |  |
 | :---: | ---: |
 | [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **uWave** - семейство устройств гидроакустической цифровой связи <br/> Краткое описание |
@@ -113,5 +115,5 @@
 * Репозиторий (старая версия) с примерами работы модемов [uWave](uWAVE_Specification_ru.md) на платформе Arduino: [uWAVE_ALib](https://github.com/ucnl/uWAVE_ALib)
 
   
-  <div style="page-break-after: always;"></div>
+<div style="page-break-after: always;"></div>
   
