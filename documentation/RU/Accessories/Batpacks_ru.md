@@ -1,7 +1,8 @@
+<div style="page-break-after: always;"></div>
+
 | ![logo](/documentation/sm_logo.png) | ![batpack1](/documentation/batpack1.png) |
 | :---: | ---: |
 | [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | Изготовление конформных аккумуляторных сборок |
-
 
 ## ОСОБЕННОСТИ
 
@@ -9,7 +10,6 @@
 * **Встроенный модуль Battery Management Service (BMS)**
 * **Изготавливается из высококачественных LiFePO4 аккумуляторов (более 1000 циклов)**
 * **Герметичная заливка в полиуретановый компаунд**
-
 
 ## ОПИСАНИЕ
 
@@ -31,4 +31,4 @@
 | МАТЕРИАЛ ЗАЩИТНОГО КОМПАУНДА | Полиуретан |
 | ТОЛЩИНА ЗАЩИТНОГО СЛОЯ КОМПАУНДА | не менее 5 мм |
 
-
+<div style="page-break-after: always;"></div>
