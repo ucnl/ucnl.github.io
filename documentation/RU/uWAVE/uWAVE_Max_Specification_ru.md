@@ -1,3 +1,5 @@
+<div style="page-break-after: always;"></div>
+
 | ![logo](/documentation/sm_logo.png) | ![logo](/documentation/def_modem_black.png) |
 | :---: | ---: |
 | [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **uWave Max** - Гидроакустический модем <br/> Спецификация устройства |
@@ -77,4 +79,6 @@ ________________
 <a name="footnote6"><sup>6</sup></a> Значение может быть изменено по запросу.  
 <a name="footnote7"><sup>7</sup></a> С учетом данного значения разрешающая способность при измерении расстояния с учетом скорости звука 1500 м/с составляет 0.15 м.  
 <a name="footnote8"><sup>8</sup></a> При работе с другим **uWave Max**, [uWave Max OEM](uWAVE_Max_OEM_Specification_ru.md) или при работе с модемами [uWave USBL Modem](uWAVE_USBL_Modem_Specification_ru.md). Максимальная дальность связи со стандартными модемами [uWave](uWAVE_Specification_ru.md) составляет 1000 метров.  
+
+<div style="page-break-after: always;"></div>
 
