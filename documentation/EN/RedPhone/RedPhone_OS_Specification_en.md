@@ -39,6 +39,8 @@ The RedPhone-OS Wireless underwater telephone provides voice transmission betwee
 | EXTERNAL HEADPHONES RESISTANCE (not less) | 8 Ohm |
 | PROTECTION CLASS | IP67<sup>[8](#footnote8)</sup> |
 
+<div style="page-break-after: always;"></div>
+
 ## CHANNELS & FREQUENCY BANDS
 
 | CHANNEL NUMBER | CARRIER, Hz | SIDE BAND | BANDWIDTH, Hz |
@@ -65,3 +67,5 @@ ________________
 <a name="footnote6"><sup>6</sup></a> In the mode, 2 minutes of transmission and 8 minutes of reception.  
 <a name="footnote7"><sup>7</sup></a> In the mode, 5 minutes of transmission and 5 minutes of reception.  
 <a name="footnote8"><sup>8</sup></a> With top cover closed
+
+<div style="page-break-after: always;"></div>
