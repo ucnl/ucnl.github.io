@@ -1,7 +1,8 @@
+<div style="page-break-after: always;"></div>
+
 | ![logo](/documentation/sm_logo.png) | ![pic](/documentation/redbutton.png) |
 | :---: | ---: |
 | [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | RedButton underwater button <br/> Device specification |
-
 
 ## KEY FEATURES
 * **Total absence of corrosive elements**
@@ -42,3 +43,4 @@ ________________
 <a name="footnote2"><sup>2</sup></a> The parameter can be changed by agreement.  
 <a name="footnote3"><sup>3</sup></a> The default color is specified. Other colors are available: black, yellow, green, blue. It is possible to dye in any color according to the RAL catalog when ordering from 50 pcs.  
 
+<div style="page-break-after: always;"></div>
