@@ -1,8 +1,9 @@
+<div style="page-break-after: always;"></div>
+
 | ![logo](/documentation/sm_logo.png) |  |
 | :---: | ---: |
 | [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **RedWAVE** - underwater acoustic navigation system <br/> RedNODE interfacing protocol |
-  
- 
+
 # RedWAVE <br/> RedNODE interfacing protocol
 
 <div style="page-break-after: always;"></div>
@@ -463,4 +464,6 @@ ________
 | '3' | BSTS_OK | Buoy is alive and used in navigation |
 | '4' | BSTS_ALIVE |  Bouy is alive, but the data about its battery charge has not updated yet |
 
+<div style="page-break-after: always;"></div>
+  
 ### [Back to contents](#contents)
