@@ -16,6 +16,7 @@
 * [Инструкция по эксплуатации: RedPhone-D](/documentation/RU/RedPhone/RedPhone_Users_Manual_ru.md)
 * [Программа и методики испытаний: RedPhone](/documentation/RU/RedPhone/RedPhone_PM_ru.md)
 * [Комплект Phone-T: технический паспорт (шаблон)](/documentation/RU/RedPhone/Phone_T_package_tech_passport_ru.md)
+* [Комплект Phone-S: технический паспорт (шаблон)](/documentation/RU/RedPhone/Phone_S_package_tech_passport_ru.md)
 * [Медиаматериалы: видео c испытаний, видеоинструкции и т.п.](/documentation/RU/RedPhone/media.md)
 
 ## [На главную](README_RU.md)
