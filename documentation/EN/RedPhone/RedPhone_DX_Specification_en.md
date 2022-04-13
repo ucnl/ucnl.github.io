@@ -4,7 +4,6 @@
 | :---: | ---: |
 | [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **RedPhone-DX** <br/> Underwater telephone. Diver's unit <br/> Device specification |
 
-
 ## KEY FEATURES
 
 * **Compatible with most similar systems (OTS, Oceanreef, etc.)**
@@ -46,6 +45,8 @@ Diver's underwater wireless telephone communication unit **RedPhone-DX** provide
 | NAVIGATION SIGNAL MODULATION TYPE | BPSK |
 | NAVIGATION SIGNAL DURATION | 200 msec |
 
+<div style="page-break-after: always;"></div>
+
 ## CHANNELS AND FREQUENCY BANDS
 
 | CHANNEL NUMBER | CARRIER, Hz | SIDE BAND | BANDWIDTH, Hz |
@@ -68,4 +69,6 @@ ________________
 <a name="footnote6"><sup>6</sup></a> With new, fully charged batteries with a capacity of 3000 mA\*h or more, at an ambient temperature of 20 °C.  
 <a name="footnote7"><sup>7</sup></a> While transmitting 2 minutes per 10 minutes.  
 <a name="footnote8"><sup>8</sup></a> While transmitting 5 minutes per 10 minutes. 
+
+<div style="page-break-after: always;"></div>
 
