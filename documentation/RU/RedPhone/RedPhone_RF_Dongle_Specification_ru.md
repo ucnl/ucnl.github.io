@@ -29,3 +29,5 @@
 
 ________________
 <a name="footnote1"><sup>1</sup></a> Достигается при отсутствии помех, на открытой местности.  
+
+<div style="page-break-after: always;"></div>
