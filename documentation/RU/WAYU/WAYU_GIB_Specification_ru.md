@@ -1,3 +1,5 @@
+<div style="page-break-after: always;"></div>
+
 | ![logo](/documentation/sm_logo.png) | ![WAYU GIB]() |
 | :---: | ---: |
 | [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **WAYU GIB** - Навигационный буй <br/> Спецификация устройства |
@@ -42,3 +44,5 @@ ________________
 электроакустических параметров передатчика и приемника, пространственного убывания интенсивности звуковой энергии, затухания в среде 
 и уровня гидроакустических помех.  
 <a name="footnote4"><sup>4</sup></a> Достигается при отсутствие помех, на открытой местности.  
+
+<div style="page-break-after: always;"></div>
