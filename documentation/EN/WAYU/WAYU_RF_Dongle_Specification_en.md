@@ -1,3 +1,5 @@
+<div style="page-break-after: always;"></div>
+
 | ![logo](/documentation/sm_logo.png) | ![logo](/documentation/wayu_rf_dongle.png) |
 | :---: | ---: |
 | [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **WAYU Radio dongle** - Receiver of navigation buoys <br/> Device specification |
@@ -26,3 +28,5 @@ The device is designed to receive navigation information from navigation buoys [
 
 ________________
 <a name="footnote1"><sup>1</sup></a> Achieved in the absence of interference, in an open area.  
+
+<div style="page-break-after: always;"></div>
