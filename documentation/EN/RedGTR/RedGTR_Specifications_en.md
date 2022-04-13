@@ -1,3 +1,5 @@
+<div style="page-break-after: always;"></div>
+
 | ![logo](/documentation/sm_logo.png) | ![logo](/documentation/def_modem_black.png) |
 | :---: | ---: |
 | [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **RedGTR** - code communication underwater acoustic modem <br/> Device specification |
@@ -59,3 +61,4 @@ ________________
 <a name="footnote3"><sup>3</sup></a> This value is obtained without the presence of the multipath effect  
 <a name="footnote4"><sup>4</sup></a> Can be changed by the special request  
  
+<div style="page-break-after: always;"></div>
