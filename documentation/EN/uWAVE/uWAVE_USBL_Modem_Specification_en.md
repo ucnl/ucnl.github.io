@@ -1,7 +1,8 @@
+<div style="page-break-after: always;"></div>
+
 | ![logo](/documentation/sm_logo.png) | ![logo](/documentation/def_zima_b_ant.png) |
 | :---: | ---: |
 | [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **uWave USBL Modem** underwater acoustic modem <br/> Device specifications |
-
 
 ## KEY FEATURES
 
@@ -68,3 +69,5 @@ ________________
 <a name="footnote2"><sup>2</sup></a> While working with **uWave USBL Modem** or [uWave Max](uWAVE_Max_Specification_en.md). Max. operating range with [uWave](uWAVE_Specification_en.md) modems is 1000 m.  
 <a name="footnote3"><sup>3</sup></a> This value is obtained without the presence of the multipath effect.  
 <a name="footnote4"><sup>4</sup></a> Can be changed by the special request.  
+
+<div style="page-break-after: always;"></div>
