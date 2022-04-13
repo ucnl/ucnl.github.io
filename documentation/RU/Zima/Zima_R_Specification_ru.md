@@ -1,3 +1,5 @@
+<div style="page-break-after: always;"></div>
+
 | ![logo](/documentation/sm_logo.png) | ![logo](/documentation/zima_r.png) |
 | :---: | ---: |
 | [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **Zima-R** - маяк-ответчик навигационной системы **Zima USBL** <br/> спецификация устройства |
@@ -64,4 +66,6 @@ ________________
 <a name="footnote3"><sup>3</sup></a> Значение получено без учета эффекта многолучевого распространения в лабораторном статическом эксперименте.  
 <a name="footnote4"><sup>4</sup></a> Значение может быть изменено по запросу.  
 <a name="footnote5"><sup>5</sup></a> Получено в лабораторных условиях в статическом эксперименте.  
+
+<div style="page-break-after: always;"></div>
 
