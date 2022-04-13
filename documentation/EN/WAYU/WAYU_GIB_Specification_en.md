@@ -1,3 +1,5 @@
+<div style="page-break-after: always;"></div>
+
 | ![logo](/documentation/sm_logo.png) | ![WAYU GIB]() |
 | :---: | ---: |
 | [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **WAYU GIB** - Navigation buoy <br/> Device specification |
@@ -42,3 +44,5 @@ ________________
 electroacoustic parameters of the transmitter and receiver, spatial decrease in the intensity of sound energy, attenuation in the environment
 and the level of hydroacoustic noise.  
 <a name="footnote4"><sup>4</sup></a>Achieved in the absence of interference, in an open area.  
+
+<div style="page-break-after: always;"></div>
