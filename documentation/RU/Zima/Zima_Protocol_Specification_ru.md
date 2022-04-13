@@ -1,9 +1,9 @@
+<div style="page-break-after: always;"></div>
+
 | ![logo](/documentation/sm_logo.png) |  |
 | :---: | ---: |
 | [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **Zima USBL** - гидроакустическая навигационная система <br/> Протокол информационного сопряжения |
 
-
-  
 # Zima USBL <br/> Протокол информационного сопряжения
 
 <div style="page-break-after: always;"></div>
@@ -597,6 +597,4 @@ ____________
 | CDS_ERR_RES_6 | 508 | Ошибка - зарезервированно |
 | CDS_ERR_BAT_LOW | 509 | Заряд батарей минимален |
 
-
-
-
+<div style="page-break-after: always;"></div>
