@@ -1,8 +1,8 @@
+<div style="page-break-after: always;"></div>
+
 | ![logo](/documentation/sm_logo.png) |  |
 | :---: | ---: |
 | [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **RedLINE** - семейство устройств гидроакустической связи <br/> Протокол информационного сопряжения |
-  
-  
   
 # RedLINE <br/> протокол информационного сопряжения
 
@@ -226,6 +226,8 @@ ________
 | 6 | PRESSURE_RATING | Максимальное рабочее внешнее гидростатическое давление в барах |
 
 __________
+
+<div style="page-break-after: always;"></div>
 
 [Назад к содержанию](#%D1%81%D0%BE%D0%B4%D0%B5%D1%80%D0%B6%D0%B0%D0%BD%D0%B8%D0%B5)
 
