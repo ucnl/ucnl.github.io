@@ -1,3 +1,5 @@
+<div style="page-break-after: always;"></div>
+
 | ![logo](/documentation/sm_logo.png) | ![logo](/documentation/def_redbase_yellow.png) |
 | :---: | ---: |
 | [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **RedBASE** - GNSS-equipped sonobuoy <br/> Device specification |
@@ -49,4 +51,5 @@ and the acoustic noise level.
 before any other did not exceed the specified value.  
 <a name="footnote3"><sup>3</sup></a> The immersion depth of the navigation receivers should not exceed the size of the navigation base.  
 
+<div style="page-break-after: always;"></div>
 
