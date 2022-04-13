@@ -1,3 +1,5 @@
+<div style="page-break-after: always;"></div>
+
 | ![logo](/documentation/sm_logo.png) |  |
 | :---: | ---: |
 | [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **Гидрофоны и гидроакустические антенны** <br/> Дополнительные опции |
@@ -16,3 +18,4 @@
 
 * Доступные цвета: черный, красный, синий, зеленый, желтый. При заказе партии от 50 шт возможно окрашивание в массе любым цветом по каталогу RAL.
 
+<div style="page-break-after: always;"></div>
