@@ -1,8 +1,8 @@
+<div style="page-break-after: always;"></div>
+
 | ![logo](/documentation/sm_logo.png) |  |
 | :---: | ---: |
 | [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **uWave** underwater communication system <br/> Interfacing protocol specification |
-  
-  
   
 # uWave <br/> Interfacing protocol specification
 
@@ -800,8 +800,8 @@ Requesting the depth of the remote modem with transmit and receive channel IDs o
 $PUWV2,0,0,2*28
 ```
 
-
-
 ________
 
+<div style="page-break-after: always;"></div>
+  
 [Back to content](#content)
