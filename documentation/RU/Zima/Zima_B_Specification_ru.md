@@ -1,3 +1,5 @@
+<div style="page-break-after: always;"></div>
+
 | ![logo](/documentation/sm_logo.png) | ![logo](/documentation/def_zima_b_ant.png) |
 | :---: | ---: |
 | [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **Zima-B** - станция пеленгования **Zima USBL** <br/> спецификация устройства |
@@ -65,4 +67,6 @@ ________________
 <a name="footnote3"><sup>3</sup></a> Значение получено без учета эффекта многолучевого распространения в лабораторном статическом эксперименте.  
 <a name="footnote4"><sup>4</sup></a> При режиме работы станции 1 запрос в 3 секунды.  
 <a name="footnote5"><sup>5</sup></a> С учетом преобразователя интерфейса и удлиняющего кабеля до прибора [Bat&Link Box](Bat_n_link_box_Specification_ru.md). Опционально возможно увеличение до 20 метров.  
+
+<div style="page-break-after: always;"></div>
 
