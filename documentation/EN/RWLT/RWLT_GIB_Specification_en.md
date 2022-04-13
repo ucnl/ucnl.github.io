@@ -1,3 +1,5 @@
+<div style="page-break-after: always;"></div>
+
 | ![logo](/documentation/sm_logo.png) | ![RWLT GIB](https://ucnl.github.io/documentation/RWLT_GIB.png) |
 | :---: | ---: |
 | [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **RWLT GIB** - Navigation buoy <br/> Device specification |
@@ -49,3 +51,5 @@ and the level of hydroacoustic noise.
 to any other did not exceed the indicated value.  
 <a name="footnote5"><sup>5</sup></a> Pinger's immersion depth should not exceed the size of the navigation base.  
 <a name="footnote6"><sup>6</sup></a> Achieved in the absence of interference, in an open area.  
+
+<div style="page-break-after: always;"></div>
