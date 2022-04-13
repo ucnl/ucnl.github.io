@@ -1,3 +1,5 @@
+<div style="page-break-after: always;"></div>
+
 | ![logo](/documentation/sm_logo.png) | ![logo](/documentation/utro_pcb_rt_1_524525_1_2.png) |
 | :---: | ---: |
 | [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **uWave Max OEM** - Underwater acoustic modem <br/> Device specifications |
@@ -32,6 +34,7 @@ Differences from the basic version [uWave](/documentation/EN/uWAVE/uWAVE_Specifi
 * OEM
 * No built-in depth/temperature sensor
 
+<div style="page-break-after: always;"></div>
 
 ## TECHNICAL SPECIFICATIONS
 
@@ -68,3 +71,5 @@ ________________
 <a name="footnote2"><sup>2</sup></a> When working with another **uWave Max/uWave Max OEM** or when working with [uWave USBL Modem](uWAVE_USBL_Modem_Specification_en.md). The maximum communication range with standard modems [uWave](uWAVE_Specification_en.md) is 1000 meters.  
 <a name="footnote3"><sup>3</sup></a> This value is obtained without the presence of the multipath effect.  
 <a name="footnote4"><sup>4</sup></a> Сan be changed by special request.  
+
+<div style="page-break-after: always;"></div>
