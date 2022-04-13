@@ -1,7 +1,8 @@
+<div style="page-break-after: always;"></div>
+
 | ![logo](/documentation/sm_logo.png) | ![logo](/documentation/redbutton.png) |
 | :---: | ---: |
 | [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | RedButton подводная кнопка <br/> Спецификация устройства |
-
 
 ## ОСОБЕННОСТИ
 
@@ -39,9 +40,10 @@
 | КОЛИЧЕСТВО СРАБАТЫВАНИЙ | 10<sup>5</sup> | 
 | УСИЛИЕ СРАБАТЫВАНИЯ | 25 +/- 5 Н |
 
-
 ________________
 <a name="footnote1"><sup>1</sup></a> С учетом кабеля станартной длины.  
 <a name="footnote2"><sup>2</sup></a> Параметр может быть изменен по договоренности.  
 <a name="footnote3"><sup>3</sup></a> Указан цвет по умолчанию. Доступны другие цвета: черный, желтный, зеленый, синий. Возможно окрашивание в любой цвет по каталогу RAL при заказе от 50 шт.  
+
+<div style="page-break-after: always;"></div>
 
