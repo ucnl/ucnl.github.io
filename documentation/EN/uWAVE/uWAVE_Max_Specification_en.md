@@ -1,3 +1,5 @@
+<div style="page-break-after: always;"></div>
+
 | ![logo](/documentation/sm_logo.png) | ![logo](/documentation/def_modem_black.png) |
 | :---: | ---: |
 | [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **uWave Max** underwater acoustic modem <br/> Device specifications |
@@ -29,6 +31,8 @@ Devices from [uWave family](uWAVE_Family_en.md) use a simple open [NMEA-like con
 Differences from the basic version [uWave](/documentation/EN/uWAVE/uWAVE_Specification_en.md):
 * Increased to 3000<sup>[1](#footnote1), [2](#footnote2)</sup> m maximum communication range
 * OEM
+
+<div style="page-break-after: always;"></div>
 
 ## TECHNICAL SPECIFICATIONS
 
@@ -63,3 +67,5 @@ ________________
 <a name="footnote2"><sup>2</sup></a> While working with [uWave USBL Modem](uWAVE_USBL_Modem_Specification_en.md) or **uWave Max**. Max operating range with [uWave](uWAVE_Specification_en.md) modems is 1000 m.  
 <a name="footnote3"><sup>3</sup></a> This value is obtained without the presence of the multipath effect  
 <a name="footnote4"><sup>4</sup></a> Can be changed by the special request  
+
+<div style="page-break-after: always;"></div>
