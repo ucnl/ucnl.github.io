@@ -1,7 +1,8 @@
+<div style="page-break-after: always;"></div>
+
 | ![logo](/documentation/sm_logo.png) |  |
 | :---: | ---: |
 | [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **RedWAVE** - underwater acoustic navigation system <br/> RedNAV Host sorftware: User's manual |
-
 
 # RedNAV Host software: <br/> User's manual
 
@@ -136,6 +137,8 @@ To clear all waypoints in the device:
 - delete all items in the list
 - click the **Upload to Device** button
 - answer "yes" to the application’s prompt.
+
+<div style="page-break-after: always;"></div>
 
 ______________
 [Back to contents](#contents)
