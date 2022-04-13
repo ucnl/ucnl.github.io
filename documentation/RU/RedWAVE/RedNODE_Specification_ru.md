@@ -1,3 +1,5 @@
+<div style="page-break-after: always;"></div>
+
 | ![logo](/documentation/sm_logo.png) | ![logo](/documentation/def_modem_black.png) |
 | :---: | ---: |
 | [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **RedNODE** - Универсальный навигационный приемник <br/> Спецификация устройства |
@@ -73,3 +75,5 @@ ________________
 <a name="footnote5"><sup>5</sup></a> Величина может зависеть от правильности задания пользователем солености воды, в котором производятся
 работа.  
 <a name="footnote6"><sup>6</sup></a> По договоренности возможна поставка с преобразователем интерфейса RS422, монтируемым на кабель в необслуживаемый уретановый корпус.  
+
+<div style="page-break-after: always;"></div>
