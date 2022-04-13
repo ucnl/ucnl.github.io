@@ -1,3 +1,5 @@
+<div style="page-break-after: always;"></div>
+
 | ![logo](/documentation/sm_logo.png) | ![logo](/documentation/def_redbase_yellow.png) |
 | :---: | ---: |
 | [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **RedBASE** - Навигационный гидроакустический буй <br/> Спецификация устройства |
@@ -51,4 +53,4 @@ ________________
 до любого другого не превышало указанную величину.  
 <a name="footnote3"><sup>3</sup></a> Глубина погружения навигационных приемников не должна превышать размеры навигационной базы.  
 
-
+<div style="page-break-after: always;"></div>
