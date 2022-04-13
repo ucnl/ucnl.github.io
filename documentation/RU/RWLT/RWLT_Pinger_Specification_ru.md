@@ -1,3 +1,5 @@
+<div style="page-break-after: always;"></div>
+
 | ![logo](/documentation/sm_logo.png) | ![logo](/documentation/RWLT_Pinger.png) |
 | :---: | ---: |
 | [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **RWLT Pinger** - Навигационный маяк - пингер <br/> Спецификация устройства |
@@ -39,3 +41,5 @@
 ________________
 <a name="footnote1"><sup>1</sup></a> При работе от стандарного, нового и полностью заряженного блока батарей при температуре окружающей среды 20 °С.  
 <a name="footnote2"><sup>2</sup></a> Параметр, определяющий максимальную дальность, на которой возможен прием сигнала, исходя из электроакустических параметров передатчика и приемника, пространственного убывания интенсивности звуковой энергии, затухания в среде и уровня гидроакустических помех.  
+
+<div style="page-break-after: always;"></div>
