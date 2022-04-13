@@ -1,3 +1,5 @@
+<div style="page-break-after: always;"></div>
+
 | ![logo](/documentation/sm_logo.png) | ![logo](/documentation/def_modem_black.png) |
 | :---: | ---: |
 | [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **RedLINE** - Гидроакустический модем <br/> Спецификация устройства |
@@ -28,7 +30,6 @@
 
 _________
 <a name="footnote_a1"><sup>*</sup></a> Патент RU2659299C1.  
-
 
 <div style="page-break-after: always;"></div>
 
