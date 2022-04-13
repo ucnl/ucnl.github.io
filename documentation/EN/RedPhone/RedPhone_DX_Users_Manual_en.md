@@ -46,7 +46,7 @@
 The diving station of voice hydroacoustic communication [RedPhone-DX](RedPhone_DX_Specification_en.md) (hereinafter referred to as the station) is intended for:
 - wireless exchange of voice messages between divers equipped with diving communication devices that support signal parameters common with the station;
 - wireless exchange of voice messages between divers and a surface control station equipped with a surface station [RedPhone-OS](RedPhone_OS_Specification_ru.md) or other diving communication devices that support signal parameters common with the station;
-- determining the location (tracking) of divers using the long-base navigation system [RWLT] (/documentation/EN/RWLT/RWLT_DataBrief_en.md).
+- determining the location (tracking) of divers using the long-base navigation system [RWLT](/documentation/EN/RWLT/RWLT_DataBrief_en.md).
 
 The general view of the [RedPhone-DX](RedPhone_DX_Specification_en.md) station is shown in **Figure 1**.
 
