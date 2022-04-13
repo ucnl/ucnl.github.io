@@ -1,3 +1,5 @@
+<div style="page-break-after: always;"></div>
+
 | ![logo](/documentation/sm_logo.png) | ![RWLT GIB](/documentation/RWLT_GIB.png) |
 | :---: | ---: |
 | [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **RWLT GIB** - Навигационный буй <br/> Спецификация устройства |
@@ -49,3 +51,5 @@ ________________
 до любого другого не превышало указанную величину.  
 <a name="footnote5"><sup>5</sup></a> Глубина погружения пингера не должна превышать размеры навигационной базы.  
 <a name="footnote6"><sup>6</sup></a> Достигается при отсутствие помех, на открытой местности.  
+
+<div style="page-break-after: always;"></div>
