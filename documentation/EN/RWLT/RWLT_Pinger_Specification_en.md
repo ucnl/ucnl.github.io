@@ -1,3 +1,5 @@
+<div style="page-break-after: always;"></div>
+
 | ![logo](/documentation/sm_logo.png) | ![pic](/documentation/RWLT_Pinger.png) |
 | :---: | ---: |
 | [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **RWLT Pinger** - Pinger beacon <br/> Device specification |
@@ -41,3 +43,5 @@ ________________
 <a name="footnote2"><sup>2</sup></a> A parameter that determines the maximum range at which signal reception is possible, based on
 electroacoustic parameters of the transmitter and receiver, spatial decrease in the intensity of sound energy, attenuation in the environment
 and the level of hydroacoustic noise.  
+
+<div style="page-break-after: always;"></div>
