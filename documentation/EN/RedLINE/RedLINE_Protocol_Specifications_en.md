@@ -1,9 +1,9 @@
+<div style="page-break-after: always;"></div>
+
 | ![logo](/documentation/sm_logo.png) |  |
 | :---: | ---: |
 | [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **RedLINE** - underwater acoustic modem <br/> Interfacing protocol specification |
-  
-  
-  
+
 # RedLINE <br/> Interfacing protocol specification
 
 <div style="page-break-after: always;"></div>
@@ -231,5 +231,7 @@ Format: **`$PTNT!,c--c,x,x,c--c,x,c--c<CR><LF>`**
 | 6 | PRESSURE_RATING | Max. external hydrostatic pressure in Bars |
 
 __________
+
+<div style="page-break-after: always;"></div>
 
 [Back to contents](#contents)
