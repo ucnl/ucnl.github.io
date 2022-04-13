@@ -1,3 +1,5 @@
+<div style="page-break-after: always;"></div>
+
 | ![logo](/documentation/sm_logo.png) | ![RWLT RF dongle]() |
 | :---: | ---: |
 | [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **RWLT RF dongle** - Navigation buoys receiver <br/> Device specification |
@@ -26,3 +28,5 @@ The receiver of the navigation signal of the system buoys **[RWLT](RWLT_DataBrie
 
 ________________
 <a name="footnote1"><sup>1</sup></a>Achieved in the absence of interference, in an open area.  
+
+<div style="page-break-after: always;"></div>
