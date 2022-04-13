@@ -1,8 +1,8 @@
+<div style="page-break-after: always;"></div>
+
 | ![logo](/documentation/sm_logo.png) |  |
 | :---: | ---: |
 | [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **uWAVE** underwater communication system <br/> Version history & changes |
-  
-  
   
 # uWAVE <br/> Version history & changes
 
@@ -13,8 +13,8 @@
 | Actual FW version | **uWave [JULY] 1.31** from 31-JAN-2022 |
 | :--- | :--- |
 | | |
-
-
+  
+  
 | Date | Firmware version | Description |
 | :--- | :--- | :--- |
 | 31-JAN-2022 | System: (all) <br/> Core: uWAVE [JULY] v1.31 | - BUGFIX: Fixed a bug due to which the message about the delivered package came along with the ACK message to the previous command <br/> - The size of firmware has been reduced by almost 4 times due to extensive refactoring |
