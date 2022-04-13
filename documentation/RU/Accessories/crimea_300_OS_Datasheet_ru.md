@@ -1,7 +1,8 @@
+<div style="page-break-after: always;"></div>
+
 | ![logo](/documentation/sm_logo.png) | ![crm_300_os](/documentation/crm_300_os.png) |
 | :---: | ---: |
 | [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **Crimea-300 OS** Интерфейсный модуль <br/> Спецификация устройства |
-
 
 ## ОСОБЕННОСТИ
 
@@ -36,6 +37,8 @@
 | МАКСИМАЛЬНАЯ ЧАСТОТА ОБНОВЛЕНИЯ ДАННЫХ | 4 Гц |
 | ЖКИ ЭКРАН | Символьный, 4 строки по 20 символов, кириллица |
 | КНОПКИ УПРАВЛЕНИЯ | 2 Шт, Нормально разомкнутые |
+
+<div style="page-break-after: always;"></div>
 
 ## ТРЕБОВАНИЯ ПО ПОДКЛЮЧЕНИЮ
 
@@ -105,7 +108,7 @@
 | ![crm_300_os_drawings](/documentation/crm_300_os_drawings.png) |
 | Рисунок 2 - Габаритный чертеж |
 
-
+<div style="page-break-after: always;"></div>
 
 
 
