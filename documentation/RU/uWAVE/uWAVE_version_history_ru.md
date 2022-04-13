@@ -1,8 +1,8 @@
+<div style="page-break-after: always;"></div>
+
 | ![logo](/documentation/sm_logo.png) |  |
 | :---: | ---: |
 | [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **uWAVE** семейство устройств гидроакустической связи <br/> История версий и изменений |
-  
-  
   
 # uWAVE <br/> История версий и изменений
 
