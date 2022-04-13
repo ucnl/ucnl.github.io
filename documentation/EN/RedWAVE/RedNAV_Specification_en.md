@@ -1,3 +1,5 @@
+<div style="page-break-after: always;"></div>
+
 | ![logo](/documentation/sm_logo.png) | ![logo](/documentation/def_rednav_yellow.png) |
 | :---: | ---: |
 | [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **RedNAV** - diver's navigation receiver <br/> Device specification |
@@ -77,3 +79,5 @@ medium and the acoustic noise level.
 <a name="footnote3"><sup>3</sup></a> The value is obtained by measuring in a real water body with buoys and navigation receiver fixed, within 60 minutes.  
 <a name="footnote4"><sup>4</sup></a> The value may depend on the correctness of the user setting the salinity of the water.  
 <a name="footnote5"><sup>5</sup></a> During continuous operation of the device, taking into account the position update rate of 1 Hz.  
+
+<div style="page-break-after: always;"></div>
