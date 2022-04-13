@@ -171,8 +171,4 @@ If the device firmware update fails, check the following reasons:
 
 If the update fails, [contact the developer](mailto:support@unavlab.com)
 
-
-
-
-
-
+<div style="page-break-after: always;"></div>
