@@ -1,3 +1,5 @@
+<div style="page-break-after: always;"></div>
+
 | ![logo](/documentation/sm_logo.png) |  |
 | :---: | ---: |
 | [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **RedGTR** - code communication underwater acoustic modem <br/> Communication protocol specification |
@@ -419,5 +421,9 @@ Format: **`$PTNTD,x,x,x.x,x.x,x.x,x.x,x.x,x.x,x.x*hh<CR><LF>`**
 | CDS_CMD_USR_33 | 38 | User command |
 | CDS_CMD_USR_34 | 39 | User command |
 
+<div style="page-break-after: always;"></div>
+
 ____________
 [Back to contents](#contents)
+
+
