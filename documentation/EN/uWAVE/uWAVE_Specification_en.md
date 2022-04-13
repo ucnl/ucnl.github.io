@@ -1,3 +1,5 @@
+<div style="page-break-after: always;"></div>
+
 | ![logo](/documentation/sm_logo.png) | ![logo](/documentation/RT_1_332820_1.png) |
 | :---: | ---: |
 | [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **uWave** underwater acoustic modem <br/> Device specifications |
@@ -71,3 +73,4 @@ ________________
 <a name="footnote6"><sup>6</sup></a> Сan be changed by special request.  
 <a name="footnote7"><sup>7</sup></a> The device has built-in overvoltage protection of the amplifying circuit. At voltages over 12.8-13 volts, the device does not turn on the power amplifier, i.e. does not allow data transfer.  
 <a name="footnote8"><sup>8</sup></a> Considering the given value, the resolution when measuring the distance, considering the speed of sound 1500 m/s is 0.15 m  
+<div style="page-break-after: always;"></div>
