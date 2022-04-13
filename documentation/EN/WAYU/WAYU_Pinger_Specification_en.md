@@ -1,3 +1,5 @@
+<div style="page-break-after: always;"></div>
+
 | ![logo](/documentation/sm_logo.png) | ![WAYU Pinger](/documentation/RWLT_Pinger.png) |
 | :---: | ---: |
 | [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **WAYU Pinger** - Underwater pinger beacon <br/> Device specification |
@@ -37,3 +39,5 @@ ________________
 electroacoustic parameters of the transmitter and receiver, spatial decrease in the intensity of sound energy, attenuation in the environment
 and the level of hydroacoustic noise.  
 <a name="footnote2"><sup>2</sup></a> На новом, полностью заряженном АКБ при температуре окружающей среды 20 °C
+
+<div style="page-break-after: always;"></div>
