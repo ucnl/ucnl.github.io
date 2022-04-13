@@ -1,3 +1,5 @@
+<div style="page-break-after: always;"></div>
+
 | ![logo](/documentation/sm_logo.png) |  |
 | :---: | ---: |
 | [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **uWave** - underwater communication devices family <br/> Brief description |
@@ -105,6 +107,8 @@ operate in transparent channel mode. This does not require any additional integr
 
 To work in command mode, a simple [NMEA-like ASCII protocol](uWAVE_Protocol_Specification_en.md) is used.
 
+<div style="page-break-after: always;"></div>
+
 On our [GitHub](https://github.com/ucnl) you can find examples and linbraries to interface with **uWAVE** devices:
 * [uWave ALibs](https://github.com/ucnl/UCNL_ALibs) - Arduino library with examples
 * (old version) [uWave ALib](https://github.com/ucnl/uWAVE_ALib) - Arduino library
@@ -114,7 +118,7 @@ On our [GitHub](https://github.com/ucnl) you can find examples and linbraries to
 * [uMCPIno](https://github.com/AlekUnderwater/uMCPIno) - Point-to-point protocol with guaranteed delivery and packets ordering (Arduino, STM32, .NET)
 * [uWave](uWAVE_Specification_en.md) Some Arduino examples (old version): [uWAVE_ALib](https://github.com/ucnl/uWAVE_ALib)
 
-  <div style="page-break-after: always;"></div>
+<div style="page-break-after: always;"></div>
 
   
   
