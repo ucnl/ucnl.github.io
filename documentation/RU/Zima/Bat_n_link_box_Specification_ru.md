@@ -1,3 +1,5 @@
+<div style="page-break-after: always;"></div>
+
 | ![logo](/documentation/sm_logo.png) | ![Bat&Link Box](/documentation/batnlinkbox.png) |
 | :---: | ---: |
 | [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **Bat & Link Box** - источник питания и преобразователь интерфейса **Zima USBL** <br/> спецификация устройства |
@@ -9,7 +11,6 @@
 * **Долговечный встроенный LiFePO4 источник питания**
 * **Возможность работы от внешнего источника питания**
 * **Лицевая панель из нержавеющей стали толщиной 3 мм**
-
 
 ## ОПИСАНИЕ
 
@@ -36,6 +37,8 @@
 | | 2 RS-422 (ТОЛЬКО TX) |
 | | ВНЕШНЕЕ ПИТАНИЕ |
 | | РАЗЪЕМ ЗАРЯДКИ |
+
+<div style="page-break-after: always;"></div>
 
 ## ДОПОЛНИТЕЛЬНО
 
