@@ -1,3 +1,5 @@
+<div style="page-break-after: always;"></div>
+
 | ![logo](/documentation/sm_logo.png) | ![logo](/documentation/def_modem_black.png) |
 | :---: | ---: |
 | [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **RedNODE** - Underwater navigation receiver <br/> Device specification |
@@ -66,3 +68,5 @@ electro-acoustic parameters of the transmitter and receiver, spatial decrease in
 <a name="footnote4"><sup>4</sup></a> The value is obtained by measuring in a real water body with buoys and navigation receiver fixed, within 60 minutes.  
 <a name="footnote5"><sup>5</sup></a> The value may depend on the correctness of the user setting the salinity of the water.  
 <a name="footnote6"><sup>6</sup></a> By agreement, delivery with an RS422 interface converter mounted on a cable in an unattended urethane housing is possible. 
+
+<div style="page-break-after: always;"></div>
