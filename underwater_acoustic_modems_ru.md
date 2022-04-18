@@ -22,12 +22,13 @@
 * [Библиотека для Arduino с примерами](https://github.com/ucnl/uWAVE_ALib)
 * [Примеры для Arduino (Старая версия)](https://github.com/ucnl/uWAVE_Arduino)
 * [uWave: медиаматериалы, видео и т.п.](/documentation/RU/uWAVE/media)
-* [uWave: кронштейн на баллон 3D модель (step)](/documentation/uWAVE_holder_tank.step)
-* [uWave: кронштейн на баллон 3D модель (Fusion360 f3d)](/documentation/uWAVE_holder_tank.f3d)
-* [uWave: кронштейн плоский 3D модель (step)](/documentation/uWAVE_holder_flat.step)
-* [uWave: кронштейн плоский 3D модель (Fusion360 f3d)](/documentation/uWAVE_holder_flat.f3d)
-* [uWave: технический паспорт (шаблон)](/documentation/RU/uWAVE/uWave_technical_passport_ru.md)
-* [uWave: руководство по обновлению прошивки](/documentation/RU/uWAVE/uWAVE_FW_Updating_ru.md)
+* [3D-модель (STEP): кронштейн для uWave Max на баллон](/documentation/msize_tank_holder.STEP)
+* [3D-модель (STEP): кронштейн для uWave на баллон](/documentation/uWAVE_holder_tank.step)
+* [3D-модель (Fusion360 f3d): кронштейн для uWave на баллон](/documentation/uWAVE_holder_tank.f3d)
+* [3D-модель (STEP): кронштейн для uWave плоский](/documentation/uWAVE_holder_flat.step)
+* [3D-модель (Fusion360 f3d): кронштейн для uWave плоский](/documentation/uWAVE_holder_flat.f3d)
+* [Технический паспорт (шаблон): uWave](/documentation/RU/uWAVE/uWave_technical_passport_ru.md)
+* [Руководство по обновлению прошивки: uWave](/documentation/RU/uWAVE/uWAVE_FW_Updating_ru.md)
 
 ### RedLine
 #### гидроакустический модем
