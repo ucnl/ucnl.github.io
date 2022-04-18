@@ -72,4 +72,4 @@
 * [Host application (Download release)](https://github.com/ucnl/ZHost/releases/download/1.3/ZHost.zip)
 
 
-## [Home](README.md)
+## [Back to main](README.md)
