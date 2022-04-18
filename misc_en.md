@@ -14,4 +14,4 @@
 * [QR links sheet](/documentation/EN/Misc/l2c.md)
 * [Small box sticker](/documentation/EN/Misc/package_sticker.md)
 
-## [Home](README.md)
+## [Back to main](README.md)
