@@ -16,4 +16,4 @@
 * [User's manual: RedPhone-D](/documentation/EN/RedPhone/RedPhone_Users_Manual_en.md)
 * [Media: tests videos, tutorials etc.](/documentation/EN/RedPhone/media.md)
 
-## [Home](README.md)
+## [Back to main](README.md)
