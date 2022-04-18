@@ -22,11 +22,12 @@
 * [Arduino library with examples](https://github.com/ucnl/uWAVE_ALib)
 * [Examples for Arduino (Old)](https://github.com/ucnl/uWAVE_Arduino)
 * [uWave: videos, tutorials, etc.](/documentation/EN/uWAVE/media)
-* [uWave: Tank holder 3D model (step)](/documentation/uWAVE_holder_tank.step)
-* [uWave: Tank holder 3D model (Fusion360 f3d)](/documentation/uWAVE_holder_tank.f3d)
-* [uWave: Flat holder 3D model (step)](/documentation/uWAVE_holder_flat.step)
-* [uWave: Flat holder 3D model (Fusion360 f3d)](/documentation/uWAVE_holder_flat.f3d)
-* [uWave: Instructions for firmware updating](/documentation/EN/uWAVE/uWAVE_FW_Updating_en.md)
+* [3D-model (STEP): uWave Max tank holder](/documentation/msize_tank_holder.STEP)
+* [3D-model (STEP): uWave tank holder 3D model](/documentation/uWAVE_holder_tank.step)
+* [3D-model (Fusion360 f3d): uWave tank holder 3D model](/documentation/uWAVE_holder_tank.f3d)
+* [3D-model (STEP): uWave flat holder](/documentation/uWAVE_holder_flat.step)
+* [3D-model (Fusion360 f3d): uWave flat holder](/documentation/uWAVE_holder_flat.f3d)
+* [Instructions for firmware updating: uWave family](/documentation/EN/uWAVE/uWAVE_FW_Updating_en.md)
 
 ### RedLine
 #### underwater acoustic modem
