@@ -6,5 +6,4 @@
 ## Acessories
 * [Underwater button RedButton](/documentation/EN/Accessories/RedButton_Specification_en.md)
 
-
-## [Home](README.md)
+## [Back to main](README.md)
