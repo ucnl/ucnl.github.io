@@ -14,7 +14,6 @@
 | [UCNLNMEA](https://github.com/ucnl/UCNLNMEA) | Библиотека для парсигна и формирования NMEA-сообщений *(C#)* |
 | [uRayTracerDemo](https://github.com/ucnl/uRayTracerDemo) | Трассировка лучей через слоистую среду |
 
-
-## [Назад](README_RU.md)
+## [На главную](README_RU.md)
 
 
