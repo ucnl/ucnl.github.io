@@ -12,5 +12,4 @@
 * [Bat&Link Box: Автономный источник питания и преобразователь RS422/485<->USB](/documentation/RU/Zima/Bat_n_link_box_Specification_ru.html)
 * [Изготовление конформных аккумуляторных сборок](/documentation/RU/Accessories/Batpacks_ru.md)
 
-
-## [Домой](README_RU.md)
+## [На главную](README_RU.md)
