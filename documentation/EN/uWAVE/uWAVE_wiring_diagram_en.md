@@ -1,3 +1,5 @@
+[Main](/README.md) ❯ [Underwater acoustic modems](/underwater_acoustic_modems_en) ❯ **Device wiring diagram: uWave**
+
 <div style="page-break-after: always;"></div>
 
 | ![logo](/documentation/sm_logo.png) |  |
