@@ -14,6 +14,6 @@
 * [Accessories](accessories_en.md)
 
 ## Media, educational project and other things
-* [Videos](media_videos_en.md)
+* [Media](media_videos_en.md)
 * [Our educational projects](educational_projects_en.md)
 * [Miscellaneous info](misc_en.md)
