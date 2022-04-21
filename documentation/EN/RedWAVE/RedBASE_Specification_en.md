@@ -1,4 +1,4 @@
-[Main](/../../) ❯ [Navigation & tracking systems](/navigation_and_tracking_systems_en) ❯ **RedWAVE: Databrief**
+[Main](/../../) ❯ [Navigation & tracking systems](/navigation_and_tracking_systems_en) ❯ **Device specification: RedBASE - GNSS-equipped sonobuoy**
 
 <div style="page-break-after: always;"></div>
 
