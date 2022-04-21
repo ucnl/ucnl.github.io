@@ -1,4 +1,4 @@
-[Main](/README) ❯ **Acessories**
+[Main](/README.md) ❯ **Acessories**
 
 | ![logo](/documentation/sm_logo.png) |
 | :---: |
