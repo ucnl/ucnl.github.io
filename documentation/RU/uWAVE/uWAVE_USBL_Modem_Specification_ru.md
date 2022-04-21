@@ -1,3 +1,5 @@
+[Главная](/README_RU) ❯ [Гидроакустические модемы](/underwater_acoustic_modems_ru) ❯ **Спецификация устройства: uWave USBL Modem**
+
 <div style="page-break-after: always;"></div>
 
 | ![logo](/documentation/sm_logo.png) | ![logo](/documentation/def_zima_b_ant.png) |
