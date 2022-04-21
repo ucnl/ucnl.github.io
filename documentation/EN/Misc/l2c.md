@@ -1,3 +1,5 @@
+[Main](/../../) ❯ [Miscellaneous info](/misc_en.md) ❯ **QR links sheet**
+
 <div style="page-break-after: always;"></div>
 <p align="center"><img src="/documentation/sm_logo.png"/></p>
 
