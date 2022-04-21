@@ -1,3 +1,5 @@
+[Главная](/README_RU) ❯ [Гидроакустические навигационные и трекинговые системы](/navigation_and_tracking_systems_ru) ❯ **Спецификация устройства: RWLT GIB**
+
 <div style="page-break-after: always;"></div>
 
 | ![logo](/documentation/sm_logo.png) | ![RWLT GIB](/documentation/RWLT_GIB.png) |
