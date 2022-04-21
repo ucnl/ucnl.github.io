@@ -1,3 +1,5 @@
+[Главная](/README_RU) ❯ [Аксессуары](/accessories_ru) ❯ **Датчик абсолютного давления Crimea-300 (30 Бар, UART/RS-485)**
+
 <div style="page-break-after: always;"></div>
 
 | ![logo](/documentation/sm_logo.png) | ![logo](/documentation/crm_300.png) |
