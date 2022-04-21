@@ -14,6 +14,6 @@
 - [Аксессуары](accessories_ru.md)
 
 ## Видео, образовательный контент и прочее
-* [Видео](media_videos_ru.md)
+* [Медиа](media_videos_ru.md)
 * [Образовательные проекты](educational_projects_ru.md)
 * [Дополнительные материалы](misc_ru.md)
