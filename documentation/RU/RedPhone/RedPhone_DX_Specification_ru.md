@@ -1,4 +1,4 @@
-[Главная](/README_RU.md) ❯ [Голосовая подводная связь (водолазная телефония)](/underwater_wireless_voice_systems_ru.md) ❯ **Спецификация устройства: RedPhone-DX**
+[Главная](/README_RU) ❯ [Голосовая подводная связь (водолазная телефония)](/underwater_wireless_voice_systems_ru) ❯ **Спецификация устройства: RedPhone-DX**
 
 <div style="page-break-after: always;"></div>
 
