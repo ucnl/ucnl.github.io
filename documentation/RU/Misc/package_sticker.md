@@ -1,3 +1,5 @@
+[Главная](/README_RU) ❯ [Дополнительные материалы](/misc_ru) ❯ **Стикер на упаковку малый**
+
 <div style="page-break-after: always;"></div>
 
 <hr>
