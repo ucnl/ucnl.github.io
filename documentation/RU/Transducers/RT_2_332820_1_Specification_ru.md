@@ -1,3 +1,5 @@
+[Главная](/README_RU) ❯ [Гидрофоны и гидроакустические антенны](underwater_acoustic_antennas_ru.md) ❯ **Приемопередающая антенна RT-2.332820-1**
+
 <div style="page-break-after: always;"></div>
 
 | ![logo](/documentation/sm_logo.png) | ![logo](/documentation/def_buoy_txd.png) |
