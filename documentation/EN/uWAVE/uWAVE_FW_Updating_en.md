@@ -1,4 +1,4 @@
-[Main](/README.md) ❯ [Underwater acoustic modems](/underwater_acoustic_modems_en) ❯ **Instructions for firmware updating: uWave family**
+[Main](/../../) ❯ [Underwater acoustic modems](/underwater_acoustic_modems_en) ❯ **Instructions for firmware updating: uWave family**
 
 <div style="page-break-after: always;"></div>
 
