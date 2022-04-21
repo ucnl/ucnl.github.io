@@ -1,4 +1,4 @@
-[Main](/README) ❯ **Miscellaneous info**
+[Main](/README.md) ❯ **Miscellaneous info**
 
 | ![logo](/documentation/sm_logo.png) |
 | :---: |
