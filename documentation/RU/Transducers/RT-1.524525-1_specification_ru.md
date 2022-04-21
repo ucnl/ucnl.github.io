@@ -1,3 +1,5 @@
+[Главная](/README_RU) ❯ [Гидрофоны и гидроакустические антенны](underwater_acoustic_antennas_ru.md) ❯ **Приемопередающая антенна RT-1.524525-1**
+
 <div style="page-break-after: always;"></div>
 
 | ![logo](/documentation/sm_logo.png) | ![logo](/documentation/def_modem_black.png) |
