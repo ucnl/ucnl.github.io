@@ -1,3 +1,4 @@
+[Главная](/README_RU) ❯ [Гидроакустические модемы](/underwater_acoustic_modems_ru) ❯ **Спецификация устройства: uWave**
 
 <div style="page-break-after: always;"></div>
 
