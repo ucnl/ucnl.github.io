@@ -1,3 +1,5 @@
+[Main](/README.md) ❯ [Navigation & tracking systems](/navigation_and_tracking_systems_en) ❯ **Device specification: RWLT GIB**
+
 <div style="page-break-after: always;"></div>
 
 | ![logo](/documentation/sm_logo.png) | ![RWLT GIB](https://ucnl.github.io/documentation/RWLT_GIB.png) |
