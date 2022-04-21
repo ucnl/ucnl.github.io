@@ -1,3 +1,5 @@
+[Главная](README_RU.md) ❯ [Голосовая подводная связь (водолазная телефония)](underwater_wireless_voice_systems_ru.md) ❯ **Спецификация устройства: RedPhone-DX**
+
 <div style="page-break-after: always;"></div>
 
 | ![logo](/documentation/sm_logo.png) | ![RedPhone-DX](/documentation/redphone_dx.png) |
