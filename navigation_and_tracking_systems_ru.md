@@ -12,13 +12,13 @@
 
 ### RedWAVE
 #### Подводный GPS (LBL)
-* [Краткое описание](/documentation/RU/RedWAVE/RedWAVE_DataBrief_ru.md)
-* [RedWAVE: медиаматериалы, видео с испытаний, треки и т.п.](/documentation/RU/RedWAVE/media)
+* [RedWave: Краткое описание](/documentation/RU/RedWAVE/RedWAVE_DataBrief_ru.md)
+* [RedWave: медиаматериалы, видео с испытаний, треки и т.п.](/documentation/RU/RedWAVE/media)
 * [Спецификация устройства: RedBASE - Буй-ретранслятор](/documentation/RU/RedWAVE/RedBASE_Specification_ru.md)
 * [Спецификация устройства: RedNODE - Навигационный приемник для ТНПА/АНПА](/documentation/RU/RedWAVE/RedNODE_Specification_ru.md)
 * [Спецификация устройства: RedNAV - Навигационный приемник для водолазов](/documentation/RU/RedWAVE/RedNAV_Specification_ru.md)
 * [Описание протокола сопряжения: RedNODE](/documentation/RU/RedWAVE/RedWAVE_Protocol_Specification_ru.md)
-* [Рукводство пользователя](/documentation/RU/RedWAVE/RedWAVE_Users_Manual_ru.md)
+* [RedWave: Рукводство пользователя](/documentation/RU/RedWAVE/RedWAVE_Users_Manual_ru.md)
 * [Руководство пользователя ПО RedNAV Host](/documentation/RU/RedWAVE/RedNAV_Host_Users_Manual_ru.md)
 * [Схема включения устройства: RedNode](/documentation/RU/RedWAVE/RedNODE_wiring_diagram_ru.md)
 * [3D-модель (STEP): кронштейн для RedNode на баллон](/documentation/msize_tank_holder.STEP)
@@ -33,7 +33,7 @@
 
 ### RWLT
 #### Длиннобазисная трекинговая система
-* [Краткое описание](/documentation/RU/RWLT/RWLT_DataBrief_ru.md)
+* [RWLT: Краткое описание](/documentation/RU/RWLT/RWLT_DataBrief_ru.md)
 * [RWLT: медиаматериалы, видео испытаний, треки и т.п.](/documentation/RU/RWLT/media.md)
 * [Спецификация устройства: RWLT Pinger](/documentation/RU/RWLT/RWLT_Pinger_Specification_ru.md)
 * [Спецификация устройства: RWLT GIB](/documentation/RU/RWLT/RWLT_GIB_Specification_ru.md)
@@ -46,20 +46,20 @@
 
 ### WAYU
 #### Длиннобазисная трекинговая система любительского сегмента
-* [Краткое описание](/documentation/RU/WAYU/WAYU_DataBrief_ru.md)
+* [WAYU: Краткое описание](/documentation/RU/WAYU/WAYU_DataBrief_ru.md)
 * [WAYU: медиаматериалы, видео испытаний, треки и т.п.](/documentation/RU/WAYU/media)
 * [Спецификация устройства: WAYU Pinger](/documentation/RU/WAYU/WAYU_Pinger_Specification_ru.md)
 * [Спецификация устройства: WAYU GIB](/documentation/RU/WAYU/WAYU_GIB_Specification_ru.md)
 * [Спецификация устройства: WAYU Radio dongle](/documentation/RU/WAYU/WAYU_RF_Dongle_Specification_ru.md)
-* [ОЖИДАЕТСЯ Руководство пользователя]()
+* [ОЖИДАЕТСЯ WAYU: Руководство пользователя]()
 * [Приложение для работы с системой WAYU (Репозиторий)](https://github.com/ucnl/WAYU)
 * [Приложение для работы с системой WAYU (Скачать релиз)](https://github.com/ucnl/WAYU/releases/download/1.0/WAYU.zip)
 
 ### Zima
 #### Ультракороткобазисная (USBL) система
-* [Краткое описание](/documentation/RU/Zima/Zima_DataBrief_ru.md)
+* [Zima USBL: Краткое описание](/documentation/RU/Zima/Zima_DataBrief_ru.md)
 * [Zima USBL: медиаматериалы, видео с испытаний и т.п.](/documentation/RU/Zima/media)
-* [Рукводство пользователя](/documentation/RU/Zima/Zima_Users_manual_ru.md)
+* [Zima USBL: Рукводство пользователя](/documentation/RU/Zima/Zima_Users_manual_ru.md)
 * [Спецификация устройства: Zima-B - пеленгационная антенна](/documentation/RU/Zima/Zima_B_Specification_ru.md)
 * [Спецификация устройства: Zima-R - маяк-ответчик](/documentation/RU/Zima/Zima_R_Specification_ru.md)
 * [Спецификация устройства: Zima-R 1000 (OEM) - маяк ответчик](/documentation/RU/Zima/Zima_R_OEM_Specification_ru.md)
