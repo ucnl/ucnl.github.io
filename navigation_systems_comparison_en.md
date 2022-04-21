@@ -1,3 +1,5 @@
+[Main](/README) ❯ [Navigation & tracking systems](/navigation_and_tracking_systems_en) ❯ **Comparison table of navigation systems**
+
 <div style="page-break-after: always;"></div>
 
 | ![logo](/documentation/sm_logo.png) | |
@@ -6,7 +8,7 @@
 
 <div style="page-break-after: always;"></div>
 
-## comparison table
+## Comparison table of navigation systems
 
 |  | [RedWAVE underwater GPS](/documentation/EN/RedWAVE/RedWAVE_DataBrief_en.md) | [RWLT](/documentation/EN/RWLT/RWLT_DataBrief_en.md) | [RWLT](/documentation/EN/RWLT/RWLT_DataBrief_en.md) + <br/> [RedPhone-DX](/documentation/EN/RedPhone/RedPhone_DX_Specification_en.md) | [Zima USBL](/documentation/EN/Zima/Zima_DataBrief_en.md) | [WAYU](/documentation/EN/WAYU/WAYU_DataBrief_en.md) | [uWAVE USBL](/documentation/EN/uWAVE/uWAVE_USBL_Modem_Specification_en.md) |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
