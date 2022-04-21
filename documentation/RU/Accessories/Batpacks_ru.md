@@ -1,3 +1,5 @@
+[Главная](/README_RU) ❯ [Аксессуары](/accessories_ru) ❯ **Изготовление конформных аккумуляторных сборок**
+
 <div style="page-break-after: always;"></div>
 
 | ![logo](/documentation/sm_logo.png) | ![batpack1](/documentation/batpack1.png) |
