@@ -1,4 +1,4 @@
-[Main](/README) ❯ **Videos**
+[Main](/README.md) ❯ **Videos**
 
 | ![logo](/documentation/sm_logo.png) |
 | :---: |
