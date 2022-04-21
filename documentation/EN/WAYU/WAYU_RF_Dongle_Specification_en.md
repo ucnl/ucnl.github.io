@@ -1,3 +1,5 @@
+[Main](/../../) ❯ [Navigation & tracking systems](/navigation_and_tracking_systems_en) ❯ **Device specification: WAYU Radio dongle**
+
 <div style="page-break-after: always;"></div>
 
 | ![logo](/documentation/sm_logo.png) | ![logo](/documentation/wayu_rf_dongle.png) |
