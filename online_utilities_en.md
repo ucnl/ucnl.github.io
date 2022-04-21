@@ -1,4 +1,4 @@
-[Main](/README.md) ❯ [Navigation & tracking systems](/navigation_and_tracking_systems_en) ❯ **Comparison table of navigation systems**
+[Main](/README.md) ❯ [Our educational projects](/educational_projects_en) ❯ **Online utilities**
 
 | ![logo](/documentation/sm_logo.png) |
 | :---: |
