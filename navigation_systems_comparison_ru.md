@@ -1,3 +1,5 @@
+[Главная](/README_RU) ❯ [Навигационные и трекинговые системы](/navigation_and_tracking_systems_ru) ❯ **Таблица сравнения навигационных систем**
+
 <div style="page-break-after: always;"></div>
 
 | ![logo](/documentation/sm_logo.png) | |
@@ -6,7 +8,7 @@
 
 <div style="page-break-after: always;"></div>
 
-## Сравнительная таблица
+## Таблица сравнения навигационных систем
 
 |  | [RedWAVE подводный GPS](/documentation/RU/RedWAVE/RedWAVE_DataBrief_ru.md) | [RWLT](/documentation/RU/RWLT/RWLT_DataBrief_ru.md) | [RWLT](/documentation/RU/RWLT/RWLT_DataBrief_ru.md) + <br/> [RedPhone-DX](/documentation/RU/RedPhone/RedPhone_DX_Specification_ru.md) | [Zima USBL](/documentation/RU/Zima/Zima_DataBrief_ru.md) | [WAYU](/documentation/RU/WAYU/WAYU_DataBrief_ru.md) | [uWAVE USBL](/documentation/RU/uWAVE/uWAVE_USBL_Modem_Specification_ru.md) |
 | :---                                               | :---:                 | :---:           | :---:           | :---:                           | :---:           | :---:                |
