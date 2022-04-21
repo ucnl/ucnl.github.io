@@ -42,4 +42,4 @@ alt="uWAVE Modem range test 1092 m" width="240" height="180" border="10" /></a>
 ______  
 
 
-## [Назад](/../../media_videos_ru)
+## [К общему списку медиаматериалов](/../../media_videos_ru)
