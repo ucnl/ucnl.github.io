@@ -1,4 +1,4 @@
-[Main](/README) ❯ **Navigation & tracking systems**
+[Main](/README.md) ❯ **Navigation & tracking systems**
 
 | ![logo](/documentation/sm_logo.png) |
 | :---: |
