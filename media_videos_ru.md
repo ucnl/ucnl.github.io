@@ -1,4 +1,4 @@
-[Главная](/README_RU) ❯ **Видео**
+[Главная](/README_RU) ❯ **Медиа**
 
 | ![logo](/documentation/sm_logo.png) |
 | :---: |
@@ -11,5 +11,6 @@
 * [uWAVE - cемейство гидроакустических модемов](/documentation/RU/uWAVE/media.md)
 * [Zima USBL - трекинговая УКБ система](/documentation/RU/Zima/media.md)
 * [RedPhone - подводная беспроводная голосовая водолазная связь](/documentation/RU/RedPhone/media.md)
+* [WAYU - доступная трекинговая система](/documentation/RU/WAYU/media.md)
 
 ## [На главную](README_RU.md)
