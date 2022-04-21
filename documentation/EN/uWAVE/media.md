@@ -1,5 +1,4 @@
-[Main](/README.md) ❯ [Underwater acoustic modems](/underwater_acoustic_modems_en) ❯ **uWave: videos, tutorials, etc.**
-uWave: videos, tutorials, etc.
+[Main](/../../) ❯ [Underwater acoustic modems](/underwater_acoustic_modems_en) ❯ **uWave: videos, tutorials, etc.**
 
 | ![logo](/documentation/sm_logo.png) |
 | :---: |
