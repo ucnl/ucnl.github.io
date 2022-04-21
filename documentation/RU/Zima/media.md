@@ -24,6 +24,7 @@ ______
 target="_blank"><img src="http://img.youtube.com/vi/fy9CjD4cgak/0.jpg" 
 alt="ROV equipped with Zima USBL performing pipeline inspection" width="240" height="180" border="10" /></a>  
 
-______  
+______   
 
-## [Назад](/../../media_videos_ru)
+
+## [К общему списку медиаматериалов](/../../media_videos_ru)
