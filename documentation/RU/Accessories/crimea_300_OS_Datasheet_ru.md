@@ -1,3 +1,5 @@
+[Главная](/README_RU) ❯ [Аксессуары](/accessories_ru) ❯ **Интерфейсный модуль Crimea-300 OS**
+
 <div style="page-break-after: always;"></div>
 
 | ![logo](/documentation/sm_logo.png) | ![crm_300_os](/documentation/crm_300_os.png) |
