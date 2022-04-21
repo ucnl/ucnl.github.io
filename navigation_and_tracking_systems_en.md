@@ -44,7 +44,7 @@
 * [Diver's tracking with RWLT_RedPhone (Download release)](https://github.com/ucnl/RWLT_RedPhone/releases/download/1.0/RWLT_RedPhone.zip)
 
 ### WAYU
-#### Sencibly priced amateur LBL tracking system
+#### Sensibly priced amateur LBL tracking system
 * [WAYU: Data brief](/documentation/EN/WAYU/WAYU_DataBrief_en.md)
 * [WAYU: tracks, videos, tutorials, etc.](/documentation/EN/WAYU/media)
 * [Device specification: WAYU Pinger](/documentation/EN/WAYU/WAYU_Pinger_Specification_en.md)
