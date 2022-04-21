@@ -50,7 +50,7 @@
 * [WAYU: медиаматериалы, видео испытаний, треки и т.п.](/documentation/RU/WAYU/media)
 * [Спецификация устройства: WAYU Pinger](/documentation/RU/WAYU/WAYU_Pinger_Specification_ru.md)
 * [Спецификация устройства: WAYU GIB](/documentation/RU/WAYU/WAYU_GIB_Specification_ru.md)
-* [ОЖИДАЕТСЯ Спецификация устройства: WAYU Radio dongle](/documentation/RU/WAYU/WAYU_RF_Dongle_Specification_ru.md)
+* [Спецификация устройства: WAYU Radio dongle](/documentation/RU/WAYU/WAYU_RF_Dongle_Specification_ru.md)
 * [ОЖИДАЕТСЯ Руководство пользователя]()
 * [Приложение для работы с системой WAYU (Репозиторий)](https://github.com/ucnl/WAYU)
 * [Приложение для работы с системой WAYU (Скачать релиз)](https://github.com/ucnl/WAYU/releases/download/1.0/WAYU.zip)
