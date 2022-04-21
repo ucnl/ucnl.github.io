@@ -1,3 +1,5 @@
+[Main](/../../) ❯ [Miscellaneous info](/misc_en.md) ❯ **Package sticker small**
+
 <div style="page-break-after: always;"></div>
 
 <hr>
