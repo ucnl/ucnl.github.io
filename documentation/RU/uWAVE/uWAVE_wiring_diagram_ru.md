@@ -1,3 +1,5 @@
+[Главная](/README_RU) ❯ [Гидроакустические модемы](/underwater_acoustic_modems_ru) ❯ **Схема подключения: uWave**
+
 <div style="page-break-after: always;"></div>
 
 | ![logo](/documentation/sm_logo.png) |  |
