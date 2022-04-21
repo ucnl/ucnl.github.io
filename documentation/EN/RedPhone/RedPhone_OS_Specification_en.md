@@ -1,8 +1,10 @@
+[Main](/README.md) ❯ [Underwater Wireless voice systems (Underwater telephone)](underwater_wireless_voice_systems_en) ❯ **Device specification: RedPhone-OS**
+
 <div style="page-break-after: always;"></div>
 
 | ![logo](/documentation/sm_logo.png) | ![logo](/documentation/redphone_os.png) |
 | :---: | ---: |
-| [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | RedPhone underwater telephone |
+| [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **RedPhone-OS** <br/> Underwater telephone. Surface unit <br/> Device specification |
 
 
 ## KEY FEATURES
