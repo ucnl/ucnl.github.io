@@ -1,4 +1,4 @@
-[Main](/README) ❯ [Navigation & tracking systems](/navigation_and_tracking_systems_en) ❯ **Comparison table of navigation systems**
+[Main](/README.md) ❯ [Navigation & tracking systems](/navigation_and_tracking_systems_en) ❯ **Comparison table of navigation systems**
 
 <div style="page-break-after: always;"></div>
 
