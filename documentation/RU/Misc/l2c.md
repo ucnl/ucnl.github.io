@@ -1,3 +1,5 @@
+[Главная](/README_RU) ❯ [Дополнительные материалы](/misc_ru) ❯ **Вкладыш с QR кодами ссылок**
+
 <div style="page-break-after: always;"></div>
 <p align="center"><img src="/documentation/sm_logo.png"/></p>
 
