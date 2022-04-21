@@ -1,4 +1,4 @@
-[Main](/README) ❯ **Our educational projects**
+[Main](/README.md) ❯ **Our educational projects**
 
 | ![logo](/documentation/sm_logo.png) |
 | :---: |
