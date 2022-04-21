@@ -1,3 +1,5 @@
+[Главная](/README_RU) ❯ [Голосовая подводная связь (водолазная телефония)](/underwater_wireless_voice_systems_ru) ❯ **Спецификация устройства: RedPhone-OS**
+
 <div style="page-break-after: always;"></div>
 
 | ![logo](/documentation/sm_logo.png) | ![logo](/documentation/redphone_os.png) |
