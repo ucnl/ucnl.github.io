@@ -1,4 +1,4 @@
-[Main](/../../) ❯ [Underwater Wireless voice systems (Underwater telephone)](underwater_wireless_voice_systems_en) ❯ **Device specification: RedPhone-DX**
+[Main](/../../) ❯ [Underwater Wireless voice systems (Underwater telephone)](/underwater_wireless_voice_systems_en) ❯ **Device specification: RedPhone-DX**
 
 <div style="page-break-after: always;"></div>
 
