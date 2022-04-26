@@ -25,7 +25,7 @@
 * [3D-модель (STEP): RedBase](/documentation/RedBase_v2.0_3D.STEP)
 * [3D-модель (STEP): RedNav](/documentation/RedNav_v2.0_3D.step)
 * [3D-модель (STEP): RedNav с навигационной панелью](/documentation/RedNav_with_compass_3D.step) 
-* [Приложение для работы с навигационными приемниками UGPSHub (Репозиторий)](https://github.com/ucnl/UGPSHub)
+* [Приложение для работы с навигационными приемниками UGPSHub (Исходный код)](https://github.com/ucnl/UGPSHub)
 * [Приложение для работы с навигационными приемниками  UGPSHub (Скачать релиз)](https://github.com/ucnl/UGPSHub/releases/download/1.0/UGPSHub.zip)
 * [Приложение для RedNAV (Репозиторий)](https://github.com/ucnl/RedNavHost)
 * [Приложение для RedNAV (Скачать релиз)](https://github.com/ucnl/RedNavHost/releases/download/1.1/RedNAVHost.zip)
@@ -39,10 +39,12 @@
 * [Спецификация устройства: RWLT GIB](/documentation/RU/RWLT/RWLT_GIB_Specification_ru.md)
 * [ОЖИДАЕТСЯ Спецификация устройства: RWLT Radio dongle](/documentation/RU/RWLT/RWLT_RF_Dongle_ru.md)
 * [ОЖИДАЕТСЯ Руководство пользователя]()
-* [Приложение для работы с системой RWLT Host (Репозиторий)](https://github.com/ucnl/RWLT_Host)
+* [uTrack: Проект приложений для RWLT (Исходный код)](https://github.com/ucnl/uTrack)
+* [uTrackDiver: Трекинг водолазов, оснащенных приборами RedPhone-DX (Скачать релиз)](https://github.com/ucnl/uTrack/releases/download/beta/uTrackDiver.zip)
+* [Приложение для работы с системой RWLT Host (Исходный код)](https://github.com/ucnl/RWLT_Host)
 * [Приложение для работы с системой RWLT Host (Скачать релиз)](https://github.com/ucnl/RWLT_Host/releases/download/1.0/RWLT_Host.zip)
-* [Приложение для трекинга приборов водолазной телефонии RWLT_RedPhone (репозиторий)](https://github.com/ucnl/RWLT_RedPhone)
-* [Приложение для трекинга приборов водолазной телефонии RWLT_RedPhone (скачать релиз)](https://github.com/ucnl/RWLT_RedPhone/releases/download/1.0/RWLT_RedPhone.zip)
+* [СТАРАЯ ВЕРСИЯ Приложение для трекинга приборов водолазной телефонии RWLT_RedPhone (репозиторий)](https://github.com/ucnl/RWLT_RedPhone)
+* [СТАРАЯ ВЕРСИЯ Приложение для трекинга приборов водолазной телефонии RWLT_RedPhone (скачать релиз)](https://github.com/ucnl/RWLT_RedPhone/releases/download/1.0/RWLT_RedPhone.zip)
 
 ### WAYU
 #### Длиннобазисная трекинговая система любительского сегмента
@@ -52,7 +54,7 @@
 * [Спецификация устройства: WAYU GIB](/documentation/RU/WAYU/WAYU_GIB_Specification_ru.md)
 * [Спецификация устройства: WAYU Radio dongle](/documentation/RU/WAYU/WAYU_RF_Dongle_Specification_ru.md)
 * [ОЖИДАЕТСЯ WAYU: Руководство пользователя]()
-* [Приложение для работы с системой WAYU (Репозиторий)](https://github.com/ucnl/WAYU)
+* [Приложение для работы с системой WAYU (Исходный код)](https://github.com/ucnl/WAYU)
 * [Приложение для работы с системой WAYU (Скачать релиз)](https://github.com/ucnl/WAYU/releases/download/1.0/WAYU.zip)
 
 ### Zima
@@ -73,7 +75,7 @@
 * [3D-модель (Fusion360 f3d): кронштейн плоский для Zima-R](/documentation/ZIMA-R_holder_flat.f3d)
 * [3D-модель (STEP): кронштейн для Zima-R на баллон](/documentation/msize_tank_holder.STEP)
 * [Схема включения устройства: Zima-R](/documentation/RU/Zima/ZimaR_wiring_diagram_ru.md)
-* [Пультовое приложение (Репозиторий)](https://github.com/ucnl/ZHost)
+* [Пультовое приложение (Исходный код)](https://github.com/ucnl/ZHost)
 * [Пультовое приложение (Скачать релиз)](https://github.com/ucnl/ZHost/releases/download/2.2/ZHost.zip)
 
 ## [На главную](README_RU.md)
