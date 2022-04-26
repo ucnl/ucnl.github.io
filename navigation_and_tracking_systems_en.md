@@ -25,9 +25,9 @@
 * [3D-model (STEP): RedNav](/documentation/RedNav_v2.0_3D.step)
 * [3D-model (STEP): RedNav with navigation board](/documentation/RedNav_with_compass_3D.step)
 * [3D-model (STEP): RedNode tank holder](/documentation/msize_tank_holder.STEP)
-* [UGPSHub application (Repository)](https://github.com/ucnl/UGPSHub)
+* [UGPSHub application (Source code)](https://github.com/ucnl/UGPSHub)
 * [UGPSHub application (Download release)](https://github.com/ucnl/UGPSHub/releases/download/1.0/UGPSHub.zip)
-* [RedNAV host application (Repository)](https://github.com/ucnl/RedNavHost)
+* [RedNAV host application (Source code)](https://github.com/ucnl/RedNavHost)
 * [RedNAV host application (Download release)](https://github.com/ucnl/RedNavHost/releases/download/1.1/RedNAVHost.zip)
 
 ### RWLT
@@ -38,10 +38,12 @@
 * [Device specification: RWLT GIB](/documentation/EN/RWLT/RWLT_GIB_Specification_en.md)
 * [COMING SOON Device specification: RWLT Radio dongle](/documentation/EN/RWLT/RWLT_RF_Dongle_Specification_en.md)
 * [COMING SOON RWLT: User's manual]()
-* [Host Application RWLT Host (Repository)](https://github.com/ucnl/RWLT_Host)
+* [uTrack: RWLT Host package (Source code)](https://github.com/ucnl/uTrack)
+* [uTrackDiver: Tracking RedPhone-DX devices with RWLT (Release)](https://github.com/ucnl/uTrack/releases/download/beta/uTrackDiver.zip)
+* [Host Application RWLT Host (Source code)](https://github.com/ucnl/RWLT_Host)
 * [Host Application RWLT Host (Download release)](https://github.com/ucnl/RWLT_Host/releases/download/1.0/RWLT_Host.zip)
-* [Diver's tracking with RWLT_RedPhone (Repository)](https://github.com/ucnl/RWLT_RedPhone)
-* [Diver's tracking with RWLT_RedPhone (Download release)](https://github.com/ucnl/RWLT_RedPhone/releases/download/1.0/RWLT_RedPhone.zip)
+* [OBSOLETE: Diver's tracking with RWLT_RedPhone (Source code)](https://github.com/ucnl/RWLT_RedPhone)
+* [OBSOLETE: Diver's tracking with RWLT_RedPhone (Download release)](https://github.com/ucnl/RWLT_RedPhone/releases/download/1.0/RWLT_RedPhone.zip)
 
 ### WAYU
 #### Sensibly priced amateur LBL tracking system
@@ -51,7 +53,7 @@
 * [Device specification: WAYU GIB](/documentation/EN/WAYU/WAYU_GIB_Specification_en.md)
 * [Device specification: WAYU Radio dongle](/documentation/EN/WAYU/WAYU_RF_Dongle_Specification_en.md)
 * [COMING SOON User's manual]()
-* [Host Application WAYU (Repository)](https://github.com/ucnl/WAYU)
+* [Host Application WAYU (Source code)](https://github.com/ucnl/WAYU)
 * [Host Application WAYU (Download release)](https://github.com/ucnl/WAYU/releases/download/1.0/WAYU.zip)
 
 
@@ -71,7 +73,7 @@
 * [3D-model (Fusion360 f3d): Zima-R flat holder](/documentation/ZIMA-R_holder_flat.f3d)
 * [3D-model (STEP): Zima-R tank holder](/documentation/msize_tank_holder.STEP)
 * [Device wiring diagram: Zima-R](/documentation/EN/Zima/ZimaR_wiring_diagram_en.md)
-* [Host application (Repository)](https://github.com/ucnl/ZHost)
+* [Host application (Source code)](https://github.com/ucnl/ZHost)
 * [Host application (Download release)](https://github.com/ucnl/ZHost/releases/download/1.3/ZHost.zip)
 
 
