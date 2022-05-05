@@ -41,8 +41,9 @@
 * [ОЖИДАЕТСЯ Руководство пользователя]()
 * [uTrack: Проект приложений для RWLT (Исходный код)](https://github.com/ucnl/uTrack)
 * [uTrackDiver: Трекинг водолазов, оснащенных приборами RedPhone-DX (Скачать релиз)](https://github.com/ucnl/uTrack/releases/download/beta/uTrackDiver.zip)
-* [Приложение для работы с системой RWLT Host (Исходный код)](https://github.com/ucnl/RWLT_Host)
-* [Приложение для работы с системой RWLT Host (Скачать релиз)](https://github.com/ucnl/RWLT_Host/releases/download/1.0/RWLT_Host.zip)
+* [uTrack: Трекинг подводного объекта, оснащенного пингером RWLT (Скачать релиз)](https://github.com/ucnl/uTrack/releases/download/beta1/uTrack.zip)
+* [СТАРАЯ ВЕРСИЯ Приложение для работы с системой RWLT Host (Исходный код)](https://github.com/ucnl/RWLT_Host)
+* [СТАРАЯ ВЕРСИЯ Приложение для работы с системой RWLT Host (Скачать релиз)](https://github.com/ucnl/RWLT_Host/releases/download/1.0/RWLT_Host.zip)
 * [СТАРАЯ ВЕРСИЯ Приложение для трекинга приборов водолазной телефонии RWLT_RedPhone (Исходный код)](https://github.com/ucnl/RWLT_RedPhone)
 * [СТАРАЯ ВЕРСИЯ Приложение для трекинга приборов водолазной телефонии RWLT_RedPhone (Скачать релиз)](https://github.com/ucnl/RWLT_RedPhone/releases/download/1.0/RWLT_RedPhone.zip)
 
