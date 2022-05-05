@@ -40,8 +40,9 @@
 * [COMING SOON RWLT: User's manual]()
 * [uTrack: RWLT Host package (Source code)](https://github.com/ucnl/uTrack)
 * [uTrackDiver: Tracking RedPhone-DX devices with RWLT (Release)](https://github.com/ucnl/uTrack/releases/download/beta/uTrackDiver.zip)
-* [Host Application RWLT Host (Source code)](https://github.com/ucnl/RWLT_Host)
-* [Host Application RWLT Host (Download release)](https://github.com/ucnl/RWLT_Host/releases/download/1.0/RWLT_Host.zip)
+* [uTrack: Tracking any underwater object equipped with a RWLT-Pinger (Release)](https://github.com/ucnl/uTrack/releases/download/beta1/uTrack.zip)
+* [OBSOLETE: Host Application RWLT Host (Source code)](https://github.com/ucnl/RWLT_Host)
+* [OBSOLETE: Host Application RWLT Host (Download release)](https://github.com/ucnl/RWLT_Host/releases/download/1.0/RWLT_Host.zip)
 * [OBSOLETE: Diver's tracking with RWLT_RedPhone (Source code)](https://github.com/ucnl/RWLT_RedPhone)
 * [OBSOLETE: Diver's tracking with RWLT_RedPhone (Download release)](https://github.com/ucnl/RWLT_RedPhone/releases/download/1.0/RWLT_RedPhone.zip)
 
