@@ -10,7 +10,7 @@
 
 ## General information
 **RWLT** system is **the easiest to use** and at the same time accurate solution for tracking an underwater object. The system **does not require any calibrations** and integration: it is enough to place an autonomous pinger beacon [RWLT Pinger](RWLT_Pinger_Specification_en.md) on an underwater object (ROV, AUV, diver, etc.), and four navigation buoys on the water surface [RWLT GIB](RWLT_GIB_Specification_en.md). This configuration allows real-time tracking of the movement of an underwater object in 3D: absolute geographic coordinates + depth.
-A distinctive feature of the system is the ability to work simultaneously with wireless underwater telephone [RedPhone](https://docs.unavlab.com/documentation/EN/RedPhone/RedPhone_Specification_en.html) as a pinger, thus combining two-way voice communication and navigation.
+A distinctive feature of the system is the ability to work simultaneously with wireless underwater telephone [RedPhone-DX](https://docs.unavlab.com/documentation/EN/RedPhone/RedPhone_DX_Specification_en.html) as a pinger, thus combining two-way voice communication and navigation.
 
 <div style="page-break-after: always;"></div>
 
@@ -23,7 +23,7 @@ A distinctive feature of the system is the ability to work simultaneously with w
 | ![RWLT RF Dongle](/documentation/RWLT_RF_Dongle.png) | [RWLT RF Dongle](RWLT_RF_Dongle_Specification_en.md) <br/> Digital RF dongle |
 
 The minimum composition of the system includes four sonar buoys [RWLT GIB](RWLT_GIB_Specification_en.md) and one transmitting device, depending on the user's task:
-* If it is required to provide a diver with navigation data simultaneously with voice communication, then the diving telephone exchange [RedPhone](https://docs.unavlab.com/documentation/EN/RedPhone/RedPhone_Specification_en.html) is used; In this case, the geo-position of the diver will be determined at the moment when he releases the PTT button, i.e. ends the transmission of a voice message;
+* If it is required to provide a diver with navigation data simultaneously with voice communication, then the diving telephone exchange [RedPhone-DX](https://docs.unavlab.com/documentation/EN/RedPhone/RedPhone_DX_Specification_en.html) is used; In this case, the geo-position of the diver will be determined at the moment when he releases the PTT button, i.e. ends the transmission of a voice message;
 * If it is required to determine the location of a remotely controlled vehicle (ROV, AUV), or a diver without the need to use voice communication, then a pinger beacon [RWLT Pinger](RWLT_Pinger_Specification_en.md) is used. The pinger works autonomously and the location of the object on which the pinger is attached will be updated every two seconds.
 
 To work on a PC, specialized open-source software is installed [uTrack](https://github.com/ucnl/uTrack), which displays:
