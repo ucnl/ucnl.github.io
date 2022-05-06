@@ -26,7 +26,7 @@ The minimum composition of the system includes four sonar buoys [RWLT GIB](RWLT_
 * If it is required to provide a diver with navigation data simultaneously with voice communication, then the diving telephone exchange [RedPhone](https://docs.unavlab.com/documentation/EN/RedPhone/RedPhone_Specification_en.html) is used; In this case, the geo-position of the diver will be determined at the moment when he releases the PTT button, i.e. ends the transmission of a voice message;
 * If it is required to determine the location of a remotely controlled vehicle (ROV, AUV), or a diver without the need to use voice communication, then a pinger beacon [RWLT Pinger](RWLT_Pinger_Specification_en.md) is used. The pinger works autonomously and the location of the object on which the pinger is attached will be updated every two seconds.
 
-To work on a PC, specialized open-source software is installed [RWLT Host](https://github.com/ucnl/RWLT_Host), which displays:
+To work on a PC, specialized open-source software is installed [uTrack](https://github.com/ucnl/uTrack), which displays:
 - current geographic position of the underwater object (longitude, latitude)
 - depth
 - water temperature
@@ -45,7 +45,7 @@ To work on a PC, specialized open-source software is installed [RWLT Host](https
 
 ## Distinctive features
 * Work in absolute geographic coordinates;
-* A floating base of four sonar devices provides security both behind the pinger [RWLT Pinger](RWLT_Pinger_Specification_en.md), and behind the diving telephone exchange [RedPhone](https://docs.unavlab.com/documentation/EN/RedPhone/RedPhone_Specification_en.html);
+* A floating base of four sonar devices provides security both behind the pinger [RWLT Pinger](RWLT_Pinger_Specification_en.md), and behind the diving telephone exchange [RedPhone-DX](https://docs.unavlab.com/documentation/EN/RedPhone/RedPhone_DX_Specification_en.html);
 * No preliminary setup and calibration of the system and its components is required;
 * No informational pairing of the object with the pinger is required - the pinger is mechanically fixed on the underwater carrier;
 * Transfer of the calculated position of the underwater object to third-party software via the serial port using the NMEA0183 protocol;
