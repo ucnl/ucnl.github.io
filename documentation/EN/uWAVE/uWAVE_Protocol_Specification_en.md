@@ -167,12 +167,13 @@ Sentence format: **`$PUWV3,x,x.x,x.x,x.x,x.x,x.x*hh <CR><LF>`**
 | :--- | :--- |
 | $	| Sentence start '$' |
 | PUWV | UWV |
-3 | Sentence ID |
-rcCmdID | Command ID \([see 4.2](#42-remote-commands)\) |
-propTime | Signal propagation time, sec |
-MSR | Mean main lobe to side-peak ratio, dB |
-Value | Requested value | 
-Azimuth | Horizontal angle of arrival. Only for [uWAVE USBL](uWAVE_USBL_Modem_Specification_en.md) devices, otherwise the field is empty |
+| 3 | Sentence ID |
+| txChID | Tx code channel ID (In which the request was performed) |
+| rcCmdID | Command ID \([see 4.2](#42-remote-commands)\) |
+| propTime | Signal propagation time, sec |
+| MSR | Mean main lobe to side-peak ratio, dB |
+| Value | Requested value | 
+| Azimuth | Horizontal angle of arrival. Only for [uWAVE USBL](uWAVE_USBL_Modem_Specification_en.md) devices, otherwise the field is empty |
 | *	| Checksum separator NMEA |
 | hh	| Checksum NMEA |
 | \<CR\>\<LF\> | Sentence end |
@@ -180,14 +181,15 @@ Azimuth | Horizontal angle of arrival. Only for [uWAVE USBL](uWAVE_USBL_Modem_Sp
 ### 2.5. IC_D2H_RC_TIMEOUT
 Remote subscriber timeout  
 
-Sentence format: **`$PUWV4,x*hh <CR><LF>`**
+Sentence format: **`$PUWV4,x,x*hh <CR><LF>`**
 
 | Field/Parameter |	Description |
 | :--- | :--- |
 | $	| Sentence start '$' |
 | PUWV | UWV |
-4 | Sentence ID |
-rcCmdID | Command ID \([see 4.2](#42-remote-commands)\) |
+| 4 | Sentence ID |
+| txChID | Tx code channel ID (in which the request was performed) |
+| rcCmdID | Command ID \([see 4.2](#42-remote-commands)\) |
 | *	| Checksum separator NMEA |
 | hh	| Checksum NMEA |
 | \<CR\>\<LF\> | Sentence end |
