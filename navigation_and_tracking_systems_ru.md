@@ -38,7 +38,7 @@
 * [Спецификация устройства: RWLT Pinger](/documentation/RU/RWLT/RWLT_Pinger_Specification_ru.md)
 * [Спецификация устройства: RWLT GIB](/documentation/RU/RWLT/RWLT_GIB_Specification_ru.md)
 * [ОЖИДАЕТСЯ Спецификация устройства: RWLT Radio dongle](/documentation/RU/RWLT/RWLT_RF_Dongle_ru.md)
-* [ОЖИДАЕТСЯ Руководство пользователя]()
+* [В ПРОЦЕССЕ ДОПОЛНЕНИЯ Руководство пользователя](/documentation/RU/RWLT/RWLT_Users_Manual_ru.md)
 * [uTrack: Проект приложений для RWLT (Исходный код)](https://github.com/ucnl/uTrack)
 * [uTrackDiver: Трекинг водолазов, оснащенных приборами RedPhone-DX (Скачать релиз)](https://github.com/ucnl/uTrack/releases/download/beta/uTrackDiver.zip)
 * [uTrack: Трекинг подводного объекта, оснащенного пингером RWLT (Скачать релиз)](https://github.com/ucnl/uTrack/releases/download/beta1/uTrack.zip)
