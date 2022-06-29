@@ -37,12 +37,34 @@ TODO
 
 ### 1.3. Состав системы
 
-| Внешний вид устройства | Наименование |
-| :---: | :--- |
-| ![RWLT GIB](/documentation/RWLT_GIB.png) | [RWLT GIB](RWLT_GIB_Specification_ru.md) <br/> Навигационный гидроакустический буй-приемник |
-| ![RWLT Pinger](/documentation/RWLT_Pinger.png) | [RWLT Pinger](RWLT_Pinger_Specification_ru.md) <br/> Маяк-пингер |
-| ![RWLT RF Dongle](/documentation/RWLT_RF_Dongle.png) | [RWLT RF Dongle](RWLT_RF_Dongle_Specification_ru.md) <br/> Цифровой радиоприемник |
+Минимальный состав системы включает:
 
-Минимальный состав системы включает четыре гидроакустических буя [RWLT GIB](RWLT_GIB_Specification_ru.md) и одно передающее устройство, в зависимости от пользовательской задачи:
-* Если требуется обеспечить навигационными данными водолаза одновременно с голосовой связью, то используется водолазная телефонная станция [RedPhone-DX](https://docs.unavlab.com/documentation/RU/RedPhone/RedPhone_DX_Specification_ru.html); В этом случае геопозиция водолаза будет определяться в момент, когда он отпускает кнопку PTT, т.е. завершает передачу голосового сообщения;
-* Если требуется определять местоположение телеуправляемого аппарата (ТНПА, ROV), или водолаза без необходимости использования голосовой связи, то применяется маяк-пингер [RWLT Pinger](RWLT_Pinger_Specification_ru.md). Пингер работает автономно и геопозиция объекта, на котором закреплен пингер будет обновляться каждые две секунды.
+- **Четыре гидроакустических буя** [RWLT GIB](RWLT_GIB_Specification_ru.md):
+
+| ![RWLT GIB](/documentation/RWLT_GIB.png) |
+| :---: |
+| [RWLT GIB](RWLT_GIB_Specification_ru.md) <br/> Навигационный гидроакустический буй-приемник |
+
+- Радиомодем [RWLT RF Dongle](RWLT_RF_Dongle_Specification_ru.md), для приема навигационной информации от буев:
+
+| ![RWLT RF Dongle](/documentation/RWLT_RF_Dongle.png) | 
+| :---: |
+| [RWLT RF Dongle](RWLT_RF_Dongle_Specification_ru.md) <br/> Цифровой радиоприемник |
+
+И , в зависимости от пользовательской задачи:  
+* Если требуется обеспечить навигационными данными водолаза одновременно с голосовой связью, то используется **до 255** водолазных телефонных станций [RedPhone-DX](https://docs.unavlab.com/documentation/RU/RedPhone/RedPhone_DX_Specification_ru.html); 
+
+| ![RedPhone-DX](/documentation/redphone_dx.png) |
+| :---: |
+| [RedPhone-DX](https://docs.unavlab.com/documentation/RU/RedPhone/RedPhone_DX_Specification_ru.html) <br/> Водолазная станция беспроводной голосовой связи |
+
+
+В данной конфигурации геопозиция водолазов будет определяться в момент, когда они отпускют кнопку PTT, т.е. завершают передачу голосового сообщения; Передача голосовых сообщений должна происходить по очереди.
+
+* Если требуется определять местоположение телеуправляемого аппарата (ТНПА, ROV), или водолаза без необходимости использования голосовой связи, то применяется **1** маяк-пингер [RWLT Pinger](RWLT_Pinger_Specification_ru.md). Пингер работает автономно и геопозиция объекта, на котором закреплен пингер будет обновляться каждые две секунды.
+
+| ![RWLT Pinger](/documentation/RWLT_Pinger.png) | 
+| :---: |
+| [RWLT Pinger](RWLT_Pinger_Specification_ru.md) <br/> Маяк-пингер |
+
+
