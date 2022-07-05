@@ -29,7 +29,7 @@ Underwater Acoustic Tracking System **RWLT** is designed for:
 The **RWLT** system uses state-of-the-art digital broadband noise-immune hydroacoustic communication, and the applied signal is specially designed for difficult hydrological conditions, including those found in shallow waters.
 
 The **RWLT** System is the **Easiest to Use** yet Accurate Subsea Tracking Solution. The system **does not require any calibrations** and integration: it is enough to place an autonomous pinger [RWLT Pinger](RWLT_Pinger_Specification_en.md) on an underwater object (ROV, AUV, diver, etc.), and four navigation buoys on the water surface [RWLT GIB](RWLT_GIB_Specification_en.md). This configuration allows you to monitor the movement of an underwater object in real time in 3D: absolute geographic coordinates + depth.
-A distinctive feature of the system is the ability to work with wireless diver's telephones [RedPhone-DX] (https://docs.unavlab.com/documentation/EN/RedPhone/RedPhone_EN_Specification_en.html) as a pinger, thus combining two-way voice communication and navigation.
+A distinctive feature of the system is the ability to work with wireless diver's telephones [RedPhone-DX](https://docs.unavlab.com/documentation/EN/RedPhone/RedPhone_EN_Specification_en.html) as a pinger, thus combining two-way voice communication and navigation.
 
 ### 1.3. System Composition
 
@@ -48,7 +48,7 @@ The minimum composition of the system includes:
 | [RWLT RF Dongle](RWLT_RF_Dongle_Specification_en.md) <br/> Digital Radio |
 
 And, depending on the user task:
-* If it is required to determine the location of divers simultaneously with voice communication, then **up to 255** wireless diver's telephone stations [RedPhone-DX] (https://docs.unavlab.com/documentation/EN/RedPhone/RedPhone_DX_Specification_en.html) are used;
+* If it is required to determine the location of divers simultaneously with voice communication, then **up to 255** wireless diver's telephone stations [RedPhone-DX](https://docs.unavlab.com/documentation/EN/RedPhone/RedPhone_DX_Specification_en.html) are used;
 
 | ![RedPhone-DX](/documentation/redphone_dx.png) |
 | :---: |
@@ -70,7 +70,7 @@ Depending on whether you are working with a pinger or tracking divers, you will 
 
 - To track an underwater object equipped with an autonomous pinger [RWLT Pinger](RWLT_Pinger_Specification_en.md), the application [🐠 uTrack](https://github.com/ucnl/uTrack/releases/download/beta1/uTrack) must be installed on the operator's PC .zip)
 
-- To track the position of divers equipped with [RedPhone-DX] wireless voice communication diving stations (https://docs.unavlab.com/documentation/EN/RedPhone/RedPhone_DX_Specification_en.html), the [🤿 uTrackDiver] application must be installed on the operator's PC (https://github.com/ucnl/uTrack/releases/download/beta/uTrackDiver.zip)
+- To track the position of divers equipped with [RedPhone-DX](https://docs.unavlab.com/documentation/EN/RedPhone/RedPhone_DX_Specification_en.html) wireless voice communication diving stations, the [🤿 uTrackDiver](https://github.com/ucnl/uTrack/releases/download/beta/uTrackDiver.zip) application must be installed on the operator's PC 
 
 Download the necessary software in advance. Installation is not required - just unzip the contents of the archive to a location convenient for you.
 
@@ -152,7 +152,7 @@ The buoys should be located in a convex quadrilateral covering the entire propos
 - from each sonoacoustic receiver of the buoy there must be a direct line of sight to the positioned underwater object
 - it is not recommended to place buoys close to the shore, port infrastructure facilities, ships
 - the size of the navigation base (the average size of the rectangle formed by buoys on the surface of the water) should not be less than the maximum depth of the positioned object
-- the size of the navigation base should be slightly larger than the intended area of ​​work
+- the size of the navigation base should be slightly larger than the intended area of work
 
 > _**WARNING!**_
 > Buoys are not underwater devices and are designed to operate on the surface of the water. Although the protection class implies a short-term overlap of the device with a wave, it is worth remembering that the built-in radio equipment (GNSS module and radio modem) cannot work in such conditions!
