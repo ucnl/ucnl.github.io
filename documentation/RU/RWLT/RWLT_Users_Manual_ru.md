@@ -70,7 +70,7 @@
 | :---: |
 | [RWLT RF Dongle](RWLT_RF_Dongle_Specification_ru.md) <br/> Цифровой радиоприемник |
 
-И , в зависимости от пользовательской задачи:  
+И, в зависимости от пользовательской задачи:  
 * Если требуется обеспечить навигационными данными водолаза, одновременно с голосовой связью, то используется **до 255** водолазных телефонных станций [RedPhone-DX](https://docs.unavlab.com/documentation/RU/RedPhone/RedPhone_DX_Specification_ru.html); 
 
 | ![RedPhone-DX](/documentation/redphone_dx.png) |
