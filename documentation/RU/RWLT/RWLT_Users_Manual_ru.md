@@ -6,8 +6,6 @@
 | :---: | ---: |
 | [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **RWLT** - гидроакустическая трекинговая система <br/> Руководство пользователя |
 
-# ДОКУМЕНТ НАХОДИТСЯ В РАЗРАБОТКЕ
-
 # RWLT <br/> Руководство пользователя
 
 <div style="page-break-after: always;"></div>
