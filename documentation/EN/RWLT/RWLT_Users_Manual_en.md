@@ -182,226 +182,219 @@ The pinger beacon must be fastened only to a special groove with a soft clamp in
 
 The performance of the pinger beacon is easy to check by lowering it into the water: when submerged more than 1 meter, it starts emitting a navigation signal with a period of 2 seconds.
 
-## 2.2. Работа с системой
+## 2.2. Working with the system
 
-### 2.2.1. Конфигурация с водолазными станциями связи
+### 2.2.1. Diving station configuration
 
-#### 2.2.1.1. Интерфейс и функции приложения
+#### 2.2.1.1. Application interface and functions
 
-Знакомство с приложением предлагаем начать с его настроек. На рисунке ниже представлен общий вид окна настроек, его можно вызвать, нажав на кнопку **'⚙ SETTINGS'** на главной панели инструментов главного окна приложения.
+We propose to start acquaintance with the application with its settings. The figure below shows a general view of the settings window, it can be opened by pressing the **'⚙ SETTINGS'** button on the main toolbar of the main application window.
 
 | |
 | :---: |
 | ![1](/documentation/uTrackDiver_settingswindow_1.png)|
-| Элементы управления окна настроек |
-| _1 - Признак использования дополнительного источника навигационных данных (GNSS-приемника), 2 - Выпадающий список скорости порта дополнительного источника навигационных данных, 3 - Признак использования первого буя в качестве дополнительного источника навигационных данных, 4 - Список серверов-источников тайлов карты, 5 - Кнопка сброса настроек в настройки по умолчанию, 6 - Признак автоматического выбора солености (из базы данных), 7 - Поле ввода солености, 8 - Признак автовычисления скорости звука, 9 - Поле ввода скорости звука, 10 - Поле ввода температуры воды, 11 - Количество точек трека для отображения, 12 - Поле ввода порога радиальной ошибки, 13 - Выпадащий список выбора размера тайлов карты, 14 - Кнопки принятия настроек и отмены_ |
+| Settings window controls |
+| _1 - Checkbox for using an additional source of navigation data (GNSS receiver), 2 - Combo box of port speed of an additional source of navigation data, 3 - Checkbox for using the first buoy as an additional source of navigation data, 4 - List of map tile source servers, 5 - Button for reset the settings to default settings, 6 - Checkbox of automatic salinity selection (from the database), 7 - Salinity input field, 8 - Sound speed auto calculation flag, 9 - Sound speed input field, 10 - Water temperature input field, 11 - Number of points track to display, 12 - Radial error threshold input field, 13 - Drop-down list for selecting the size of map tiles, 14 - Buttons for accepting settings and canceling_ |
 
-Приемный радиомодем подключается к ПК через порт USB. Приложение само производит поиск виртуального последовательного порта и это не требует от пользователя задания каких-либо настроек.
+The receiving radio modem is connected to the PC via the USB port. The application itself searches for the serial port and this does not require the user to set any settings.
 
-- В некоторых ситуациях оператору удобно видеть на карте собственное местоположение, это можно обеспечить двумя способами: первый состоит в подключении дополнительного GNSS-приемника к ПК. В этом случае приложению нужно указать, что такой способ используется, поставив галочку в окошке 1 **Use AUX GNSS**. Так же в этом случае требуется указать скорость последовательного порта, на которой работает внешний GNSS-приемник. Сам порт указывать не требуется, приложение обнаружит его само.
+- In some situations it is convenient for the operator to see his own location on the map, this can be achieved in two ways: the first is to connect an additional GNSS receiver to the PC. In this case, the application needs to indicate that this method is being used by checking the check box 1 **Use AUX GNSS**. Also in this case, you need to specify the serial port speed at which the external GNSS receiver operates. The port itself does not need to be specified, the application will detect it itself.
 
-- Если внешнего GNSS-приемника нет, но оператору желательно видеть собственное местоположение на карте, можно воспользоваться вторым способом: в качестве внешнего GNSS может быть использован буй №1. Этот способ имеет некоторые ограничения, например, не всегда есть возможность расположить оператора рядом с буем, от буев идет ограниченный по сравнению с внешним GNSS-приемником набор навигационной информации. Если такой способ применим в текущей задаче, то следует поставить галочку в окошко 3 **Base 1 as AUX GNSS Source**. В этом случае галочка в окошке 1 будет автоматически снята.
+- If there is no external GNSS receiver, but the operator would like to see his own location on the map, you can use the second method: buoy #1 can be used as an external GNSS. This method has some limitations, for example, it is not always possible to locate the operator next to the buoy, the buoys provide a limited set of navigation information compared to an external GNSS receiver. If this method is applicable in the current task, then check the check box 3 **Base 1 as AUX GNSS Source**. In this case, the checkbox in box 1 will be automatically unchecked.
 
-- Приложение позволяет отображать треки поверх карты, тайлы которой могут скачиваться по протоколу HTTPS. На данный момент поддерживаются сервис Open Street Maps. В поле 4 **Tile servers** указываются адреса серверов, а в поле 13 **Tile size** указывается размер тайлов в пикселях. Для загрузки тайлов приложению нужен доступ к сети Интернет.
+- The application allows you to display tracks on top of the map, the tiles of which can be downloaded via the HTTPS protocol (this needs the Internet connection). Currently, the Open Street Maps service is supported. Field 4 **Tile servers** specifies server addresses, and field 13 **Tile size** specifies the size of tiles in pixels. To download tiles, the application needs access to the Internet.
 
-- Кнопка 5 **SET DEFAULTS** позволяет сбросить настройки в состояние по умолчанию.
+- Button 5 **SET DEFAULTS** allows you to reset the settings to the default state.
 
-- Установленная галочка 6 **Auto salinity** означает, что приложение будет пытаться определить соленость из базы данных по текущим географическим координатам. Приложение содержит базу солености поверхности мирового океана с шагом в 1 градус по широте и долготе. Используйте эту настройку только в крупных водоемах: морях и океанах. Если вы работает в небольших внутренних водоемах рекомендуется снять галочку 6 и задать соответствующее значение солености воды в поле 7 **Salinity, PSU**. В большинстве случаев, для внутренних пресных водоемов значение 0 PSU является адекватным. Если у вас есть точные данные о солености водоема или она может быть непосредственно измерена, вы также можете задать ее в поле 7. Значение солености используется для рассчета скорости звука.
+- Check box 6 **Auto salinity** means that the application will try to determine the salinity from the database using the current geographic coordinates. The application contains a base of salinity of the surface of the world's oceans with a step of 1 degree in latitude and longitude. Use this setting only in large bodies of water: seas and oceans. If you work in small inland waters, it is recommended to uncheck 6 and set the appropriate water salinity value in field 7 **Salinity, PSU**. In most cases, for inland fresh waters, a value of 0 PSU is adequate. If you have accurate data on the salinity of the body of water, or it can be measured directly, you can also enter it in field 7. The salinity value is used to calculate the speed of sound.
 
-- Снятая галочка 7 **Auto speed of sound** и соответствующее поле 9 **Speed of sound, m/s** позволяет задать приложению известное значение скорости звука. Если у вас есть прямое измерение, в противном случае рекомендуется установить галочку 7.
+- With the check box 7 **Auto speed of sound** unchecked and the corresponding field 9 **Speed of sound, m/s** allows you to set a known sound speed value. Use this option if you have a direct measurement, otherwise it is recommended to check the check box 7.
 
-- Поле 10 **Water temperature, °C** позволяет указать приложению релевантное значение температуры воды. Температура воды участвтует в расчете скорости звука, если галочка 9 **Auto speed of sound** установлена. Если вы измеряете температуру воды, рекомендуется брать пробы на некотором расстоянии от поверхности.
+- Field 10 **Water temperature, °C** allows to specify the relevant water temperature value. The water temperature is used in the calculation of the speed of sound, if the check box 9 **Auto speed of sound** is checked. If you are measuring water temperature, it is recommended to take samples some distance from the surface.
 
-- Поле 11 **Track points to show** указывает приложению сколько точек (вычисленных положений) для каждого трека следует одновременно отображать. Данный параметр влияет только на отображение. Приложение дополнительно хранит все полученные точки, которые затем могут быть сохранены.
+- Field 11 **Track points to show** tells the application how many points (calculated positions) for each track should be displayed at the same time. This setting only affects the display. The application additionally stores all received points, which can then be saved.
 
-- Поле 12 **Radial error threshold, m** указывает порог радиальной ошибки (значения функции невязки в конце решения навигационной задачи), выше которого вычисленное местоположение считается ошибочным и отбрасывается. Рекомендуется задавать это значение в пределах 10 метров.
+- Field 12 **Radial error threshold, m** specifies the radial error threshold (residual function values at the end of the navigation problem solution), above which the computed position is considered erroneous and discarded. It is recommended to set this value within 10 meters.
 
-- Копки 14 **OK** и **CANCEL** отвечают за сохранение настроек и отмену изменений соответственно. После изменения и сохранения настроек приложение запросит перезапуск для того, чтобы настройки вступили в силу.
+- Buttons 14 **OK** and **CANCEL** are responsible for saving the settings and canceling the changes, respectively. After changing and saving the settings, the application will request a restart for the settings to take effect.
 
-Рассмотрим теперь главное окно приложения. Его общий вид с указанием основных элементов управления представлен на рисунке ниже.
+Consider now the main window of the application. Its general view with indication of the main controls is shown in the figure below.
 
 | |
 | :---: |
 | ![1](/documentation/uTrackDiver_mainwindow_1.png)|
-| Основные элементы главного окна приложения |
-| _1 - Главная панель инструментов, 2 - Панель инструментов карты, 3 - Поле карты, 4 - Поле дополнительной информации, 5 - Поле журнала, 6 - Панель инструментов списка водолазов, 7 - Список водолазов, 8 - Поле обозначений треков, 9 - Линейка масштаба, 10 - Панель переключателей отображаемых параметров водолазов, 11 - Строка статуса_ |
+| Basic elements of the main application window |
+| _1 - Main toolbar, 2 - Map toolbar, 3 - Map panel, 4 - Additional information panel, 5 - Log panel, 6 - Divers list toolbar, 7 - Divers list, 8 - Track legend panel, 9 - Scale bar , 10 - Panel of switches for displayed parameters of divers, 11 - Status line_ |
 
-- 1 - Главная панель инструментов располагается в верхней части окна и содержит следующие элементы:
-  - Кнопка **🔌 LINK** - управляет соединением с приемным радиомодемом и внешним GNSS-приемником. 
-  - Кнопка **⚙ SETTINGS** - вызов редактора настроек. Данная кнопка недоступна при включенном соединении или при проигрывании файла журнала
-  - Меню **📖 LOG** - содержит функции для работы с файлами журналов
-    - Пункт **👀 View current** - открыть текущий файл журнала в приложении, ассоциированном с расширением 'log' (как правило это Notepad)
-    - Пункт **▶ Playback...** - выбор файла журнала для воспроизведения в реальном масштабе времени. Данная функция позволяет практически полностью восстановить ход проведенных работ и, к примеру, восстановить трек, который не был сохранен.
-    - Пункт **🧹 Remove empty entries** - очистка директории LOG в папке приложения: будут удалены все файлы журналов, размером менее 2 килобайт и все пустые папки
-    - Пункт **🗜 Archive all entries...** - упаковка всей папки с файлами журналов в Zip-архив.
-    - Пункт **🗑 Clear all** - удаление всех файлов журналов приложения. **Будьте внимательны! Все файлы будут удалены без возможности восстановления!!!**
-    - Пункт **🧹+🗜+🗑 Do them all...** - Удаление всех пустых папок, файлов журналов меньше 2 килобайт, упаковка остальных файлов журналов в Zip-архим и удаление оригиналов в папке LOG приложения.
-  - Меню **🛠 UTILS** - содержит дополнительные функции
-    - Подменю **🗺 TRACKS** - функции для работы с треками
-      - Пункт **💾 Export...** - сохранение треков в одном из поддерживаемых форматов через системный диалог
-      - Пункт **🗑 Clear** - очистка треков, содержащихся в памяти приложения
-  - Поле ввода и кнопка **📝 ADD NOTE** служат для ввода комментариев в файл журнала. Вы можете просто набирать текстовый комментарий и нажимать клавишу **Enter** независимо от того, на каком элементе управления находится фокус. Комментарии сохраняются с временной меткой, и в дальнейшем, при проигрывании файла журнала комментарии будут отображаться в соответствующий момент времени. Данная функция позволяет быстро сохранить какие-либо текстовые заметки о ходе работы.
-  - Кнопка **ℹ INFO** - вызывает диалог с информацией о приложении и ссылками на дополнительную информацию по системе.
+- 1 - The main toolbar is located in the upper part of the window and contains the following elements:
+  - **🔌 LINK** button - controls the connection to the receiving radio modem and external GNSS receiver (if the corresponding settings enabled).
+  - Button **⚙ SETTINGS** - call the settings editor. This button is not available when the connection is active or when a log file is being playing.
+  - Menu **📖 LOG** - contains functions for working with log files
+    - Item **👀 View current** - opens the current log file in the application associated with the 'log' extension (usually Notepad)
+    - Item **▶ Playback...** - selects a log file for real-time playback. This function allows you to almost completely restore the progress of the work done and, for example, restore a track that has not been saved from a log file.
+    - Item **🧹 Remove empty entries** - cleaning the LOG directory in the application folder: all log files less than 2 kilobytes in size and all empty folders will be deleted
+    - Item **🗜 Archive all entries...** - packing the entire folder with log files into a Zip archive.
+    - Item **🗑 Clear all** - deletes all application log files. **Be careful! All files will be permanently deleted!!!**
+    - Item **🧹+🗜+🗑 Do them all...** - Deleting all empty folders, log files less than 2 kilobytes, packing the rest of the log files into a Zip archive and deleting the originals in the LOG folder of the application.
+  - Menu **🛠 UTILS** - contains additional functions
+    - Submenu **🗺 TRACKS** - functions for working with tracks
+      - Item **💾 Export...** - saving tracks in one of the supported formats through the system dialog
+      - Item **🗑 Clear** - clearing the tracks contained in the application's memory
+  - The input field and button **📝 ADD NOTE** are used to enter comments (notes) into the log file. You can simply type a text comment and press **Enter** regardless of which control has focus. The comments are saved with a timestamp, and in the future, when playing the log file, the comments will be displayed at the appropriate point in time. This function allows you to quickly save any text notes about the progress of work.
+  - Button **ℹ INFO** - calls a dialog with information about the application and links to additional information on the system.
 
-- 2 - Панель инструментов карты располагается под главной панелью инструментов слева и содержит следующие элементы:
-  - Кнопка **⛯** - включение/отключение отображения базовых точек (буев). Иногда может потребоваться отключить отображение положения буев на карте, чтобы увеличить масштаб и иметь возможность рассмотреть треки движения водолазов более детально. Изменение состояния этой кнопки автоматически сохраняется и воспроизводится при проигрывании файлов журнала.
-  - Кнопка **📜** - включение/отключение отображения текстового поля журнала (5). Изменение состояния этой кнопки автоматически сохраняется и воспроизводится при проигрывании файлов журнала.
-  - Кнопка **⋮** - включение/отключение отображения 'легенды' - списка обозначения треков (8). Изменение состояния этой кнопки автоматически сохраняется и воспроизводится при проигрывании файлов журнала.
-  - Кнопка **📑** - включение/отключение отображения поля комментариев (NOTES). Изменение состояния этой кнопки автоматически сохраняется и воспроизводится при проигрывании файлов журнала.
-  - Кнопка **👽** - включение/отключение отображения поля дополнительной информации (4). Изменение состояния этой кнопки автоматически сохраняется и воспроизводится при проигрывании файлов журнала.
-  - Кнопка **⎙** - служит для сохранения скриншота главного окна приложения. Скриншоты сохраняются в директории **SCREENSHOTS** в папке приложения. Имя последнего сохраненного скриншота отображается в строке статуса (11).
-  - Кнопка **♻ RESET VIEW** позволяет сбросить текущий вид и отображаемые треки.
-- 3 - Поле карты - служит для отображения треков движения водолазов, положения буев на карте-подложке, а также:
-  - вертикальной линейки масштаба (9)
-  - журнала приложения (5). В этом поле снизу вверх отображаются последние 4 строки журнала приложения.
-  - легенды (8). Легенда дает соответствие цвету и размеру точек и наименованию трека. 
-  - комментариев. Для создания комментариев о ходе работы налету, оператору достаточно просто набрать их на клавиатуре, при этом набранный текст будет отображаться в поле ввода на главной панели инструментов. По нажатии клавиши 'Enter' текст сохранится в журнал и будет отображен справа в поле карты (если соотствующий переключатель **'📑'** на панели инструментов карты находится в активном состоянии).
-  - дополнительной навигационной информации (4).
-- 3 - Панель карты предназначена для отображения карты, местоположений буев, вычисленных местоположений водолазов и некоторой дополнительной информации
-- 4 - Поле дополнительной информации располагается в левой верхней части панели карты и служит для отображения дополнительной информации. Отображение этого поля может переключаться при помощи кнопки **👽** на панели инструментов карты (2). Каждый параметр отображается в отдельной строке, начинающейся с трехбуквенного идентификатора параметра и двоеточия, затем отображается значение параметра и единицы измерения. Время в формате (MM:SS), отображаемое рядом с параметром, показывает как давно значение параметра было обновлено. Ниже в таблице представлен список всех возможных идентификаторов и их описание:
+- 2 - The map toolbar is located under the main toolbar on the left and contains the following elements:
+  - Button **⛯** - enable/disable the display of base points (buoys) positions. Sometimes it may be necessary to turn off the display of buoy positions on the chart in order to zoom in and be able to view diver tracks in more detail. Changes to the state of this button are automatically saved and replayed when playing log files.
+  - Button **📜** - enable/disable the display of the log text panel (5). Changes to the state of this button are automatically saved and replayed when playing log files.
+  - Button **⋮** - enable/disable the display of the 'legend' - the list of track designations (8). Changes to the state of this button are automatically saved and replayed when playing log files.
+  - Button **📑** - enable/disable the display of the comments field (NOTES). Changes to the state of this button are automatically saved and replayed when playing log files.
+  - Button **👽** - enable/disable the display of the additional (Extra-) information field (4). Changes to the state of this button are automatically saved and replayed when playing log files.
+  - Button **⎙** - used to save a screenshot of the main application window. Screenshots are saved in the **SCREENSHOTS** directory in the application folder. The name of the last saved screenshot is displayed in the status bar (11).
+  - The **♻ RESET VIEW** button allows you to reset the current view and displayed tracks. This does not affects tracks in the application memory.
+- 3 - Map panel - serves to display divers' tracks, buoy positions on the map, as well as:
+  - vertical scale bar (9)
+  - application log (5). This field displays the last 4 lines of the application log from bottom to top.
+  - legends (8). The legend matches the color and size of the points and the track name.
+  - comments (notes). To create comments on the progress of work on the fly, the operator simply needs to type them on the keyboard, while the typed text will be displayed in the input field on the main toolbar. By pressing the 'Enter' key, the text will be saved to the log and will be displayed on the right in the map panel (if the corresponding switch **'📑'** on the map toolbar is in the active state).
+  - additional navigational information (4).
+- 3 - The map panel is for displaying the map, buoy positions, calculated diver positions and some additional information
+- 4 - The additional information field is located in the upper left part of the map panel and serves to display additional information. The display of this field can be switched using the **👽** button on the map toolbar (2). Each parameter is displayed on a separate line, starting with a three-letter parameter identifier followed by a colon, followed by the parameter value and unit of measure. The time in the format (MM:SS) displayed next to the parameter indicates how long ago the parameter value was updated. The table below lists all possible identifiers and their descriptions:
 
-| Идентификатор | Описание | Единицы измерения | Диапазон | 
+| ID | Description | Units | Range |
 | :--- | :--- | :--- | :--- |
-| CRS | Курс по данным внешнего GNSS | ° | 0 .. 360 |
-| SPD | Скорость по данным внешнего GNSS | km/h (m/s) | >= 0 | 
-| LAT | Широта по данным внешнего GNSS | ° | -90 .. 90 |
-| LON | Долгота по данным внешнего GNSS  | ° | -180 .. 180 |
-| STY | Значение солености (из настроек или из базы данных) | PSU | 0 .. 40 |
-| WTM | Занчение температуры воды (из настроек) | °C | -10 .. +40 |
-| SOS | Значение скорости звука (из настроек или вычисленное) | m/s | 1300 .. 1600 |
-| B1V | Напряжение встроенного АКБ буя №1 | V | 10 .. 13 |
-| B2V | Напряжение встроенного АКБ буя №2 | V | 10 .. 13 |
-| B3V | Напряжение встроенного АКБ буя №3 | V | 10 .. 13 |
-| B4V | Напряжение встроенного АКБ буя №4 | V | 10 .. 13 |
-| B1M | Уровень сигнала на буе №1 | dB | 14 .. 36 |
-| B2M | Уровень сигнала на буе №2 | dB | 14 .. 36 |
-| B3M | Уровень сигнала на буе №3 | dB | 14 .. 36 |
-| B4M | Уровень сигнала на буе №4 | dB | 14 .. 36 |
+| CRS | Heading according to external GNSS | ° | 0 .. 360 |
+| SPD | Speed according to external GNSS | km/h (m/s) | >= 0 |
+| LAT | Latitude according to external GNSS | ° | -90 .. 90 |
+| lon | Longitude according to external GNSS | ° | -180 .. 180 |
+| STY | Salinity (from settings or from database) | PSU | 0 .. 40 |
+| WTM | Water temperature (from settings) | °C | -10 .. +40 |
+| SOS | Sound speed (from settings or calculated) | m/s | 1300 .. 1600 |
+| B1V | Built-in battery voltage of buoy 1 | v | 10 .. 13 |
+| B2V | Built-in battery voltage of buoy 2 | v | 10 .. 13 |
+| B3V | Built-in battery voltage of buoy 3 | v | 10 .. 13 |
+| B4V | Built-in battery voltage of buoy 4 | v | 10 .. 13 |
+| B1M | Signal level on buoy 1 | dB | 14 .. 36 |
+| B2M | Signal level on buoy 2 | dB | 14 .. 36 |
+| B3M | Signal level on buoy 3 | dB | 14 .. 36 |
+| B4M | Signal level on buoy 4 | dB | 14 .. 36 |
 
-- 5 - Поле журнала располагается в нижней части панели карты и отображает последние 4 строки журнала приложения. Видимость этого поля переключается кнопкой **📜** на панели инструментов карты (2).
-- 6 - Панель инструментов списка водолазов **DIVERS** расположена над списком водолазов в левой части главного окна приложения. Панель содержит следующие элементы:
-  - Кнопка **🎢** - сортировка списка водолазов по номеру.
-  - Кнопка **▼** - свернуть все элементы списка.
-  - Кнопка **▲** - развернуть все элементы списка.
-- 7 - Список водолазов **DIVERS** расположен в левой части главного окна приложения. Список имеет древовидную структуру, узлы верхнего уровня имеются в формате **Diver #N**, где N - это идентификатор водолаза, который задается в настройках водолазной станции связи [RedPhone-DX](https://docs.unavlab.com/documentation/RU/RedPhone/RedPhone_DX_Specification_ru.html) (настройка **RWLT Diver's ID**, за более подробной информацией обратитесь к [инструкции по эксплуатации водолазных станций RedPhone-DX](https://docs.unavlab.com/documentation/RU/RedPhone/RedPhone_DX_Users_Manual_ru.html)). Дочерние узлы содержат известную системе информацию о данном водолазе. Каждый отдельный параметр представлен строчкой, которая начинается с идентификатора параметра, через двоеточие следует значение параметра. Если значение данного параметра было обновлено более 3-х секунд назад, то в скобках указывается время, прошедшее с момента обновления параметра в формате (MM:SS). Ниже представлен список возможных параметров:
+- 5 - The log panel is located at the bottom of the map panel and displays the last 4 lines of the application's log. The visibility of this field is toggled with the **📜** button on the map toolbar (2).
+- 6 - The **DIVERS** diver list toolbar is located above the diver list on the left side of the main application window. The toolbar contains the following elements:
+  - Button **🎢** - sorting the list of divers by their ID.
+  - Button **▼** - collapse all list items.
+  - Button **▲** - expand all list items.
+- 7 - The list of divers **DIVERS** is located on the left side of the main application window. The list has a tree structure, the top-level nodes are in the format **Diver #N**, where N is the diver ID, which is set in the settings of the diving communication station [RedPhone-DX](https://docs.unavlab.com/documentation /EN/RedPhone/RedPhone_DX_Specification_en.html) (setting **RWLT Diver's ID**, for more information, see [Operating Instructions for RedPhone-DX Diving Stations](https://docs.unavlab.com/documentation/EN/RedPhone/RedPhone_DX_Users_Manual_en.html)). Child nodes contain information about the diver known to the system. Each individual parameter is represented by a string that begins with the parameter identifier, followed by a colon followed by the value of the parameter. If the value of this parameter was updated more than 3 seconds ago, then the time elapsed since the parameter was updated in the format (MM:SS) is indicated in brackets. Below is a list of possible options:
 
-| Идентификатор | Описание | Единицы измерения | Диапазон | 
+| ID | Description | Units | Range |
 | :--- | :--- | :--- | :--- |
-| LAT | Вычисленная широта | ° | -90 .. 90 |
-| LON | Вычисленная долгота | ° | -180 .. 180 |
-| RER | Радиальная ошибка | м | 0 .. 99 |
-| DOP | Геометрический фактор снижения точности | - | - |
-| TBA | Качество взаимного расположения позиционируемого объекта и опорных точек | - | - |
-| DST | Дистанция до водолаза от положения по данным внешнего GNSS | м | 0 .. 1500 |
-| AZM | Направление (курс) на водолаза из положения по данным внешнего GNSS | ° | 0 .. 360 |
-| RAZ | Обратное направление (курс) от водолаза на положение по данным внешнего GNSS | ° | 0 .. 360 |
+| LAT | Computed latitude | ° | -90 .. 90 |
+| LON | Computed longitude | ° | -180 .. 180 |
+| RER | Radial error | m | 0 .. 99 |
+| DOP | Geometric dilution of precision factor | - | - |
+| TBA | The quality of the relative position of the positioned object and reference points | - | - |
+| DST | Distance to diver from external GNSS position | m | 0 .. 1500 |
+| AZM | Direction (course) to the diver from the position according to external GNSS | ° | 0 .. 360 |
+| RAZ | Reverse direction (course) from diver to external GNSS position | ° | 0 .. 360 |
 
-Наиболее важными параметрами здесь являются **AZM**, **DST** и **RAZ**: по азимуту и дистанции оператор всегда может понять где относительно него располагается тот или иной водолаз, а параметр **RAZ** он может сообщить водолазу по голосовой связи, для того, чтобы тот, придерживаясь данного курса, смог осуществить привод.
+The most important parameters here are **AZM**, **DST** and **RAZ**: by azimuth and distance, the operator can always understand where this or that diver is located relative to him, and he can report the **RAZ** parameter to the diver via voice communication, so that he, adhering to this course, can perform homing task.
 
-Отображение различных параметров переключается кнопками на панели (10). Следует понимать, что параметры, связанные с взаимным расположением водолаза и надводного пункта (дальность, прямой и обратный курс) могут быть определены только при наличии внешнего источника навигационных данных - внешнего GNSS-приемника, задающего системе местоположение надводного пункта слежения за водолазами или при включенной настройке **Base 1 as AUX GNSS** - когда все параметры определяются относительно буя №1.
+The display of various parameters is switched by the buttons on the panel (10). It should be understood that the parameters associated with the relative position of the diver and the surface point (range, forward and reverse course) can only be determined if there is an external source of navigation data - an external GNSS receiver that sets the system the location of the surface point of operator or when the setting is enabled **Base 1 as AUX GNSS** - when all parameters are determined relative to buoy #1.
 
-- 8 - Поле легенды. Отображается в правом верхнем углу поля карты. В нем отображется список треков с примерами точек треков.
-- 9 - Линейка масштаба отображается в нижнем правом углу поля карты и показывает масштаб карты в метрах.
-- 10 - Панель переключателей отображаемых параметров водолазов расположена под списком водолазов и переключает видимость параметров в списке:
-  - Кнопка **DST** - включает/выключает отображение дистанции до водолаза. Изменение состояния этой кнопки автоматически сохраняется и воспроизводится при проигрывании файлов журнала.
-  - Кнопка **AZM** - включает/выключает отображение направления **на** водолаза. Изменение состояния этой кнопки автоматически сохраняется и воспроизводится при проигрывании файлов журнала.
-  - Кнопка **RAZ** - включает/выключает отображение направления **от** водолаза на положение согласно внешнему GNSS-приемнику. Изменение состояния этой кнопки автоматически сохраняется и воспроизводится при проигрывании файлов журнала.
-  - Кнопка **LOC** - включает/выключает отображение местоположения водолаза (широты и долготы). Изменение состояния этой кнопки автоматически сохраняется и воспроизводится при проигрывании файлов журнала.
-  - Кнопка **RER** - включает/выключает отображение радиальной ошибки - значения функции невязки, на котором закончилось решение задачи об определении местоположения водолаза. Изменение состояния этой кнопки автоматически сохраняется и воспроизводится при проигрывании файлов журнала.
-  - Кнопка **DOP** - включает/отключает отображение параметров **DOP** и **TBA**.
-- 11 - Строка статуса. В строке отображаются статусы портов радиомодема и внешнего источника навигационных данных (внешнего GNSS-приемника), имя последнего сохраненного скриншота или Zip-архива, в который были упакованы файлы журнала.
+- 8 - Legend panel. Displayed in the upper right corner of the map field. It displays a list of tracks with examples of track points.
+- 9 - The scale bar is displayed in the lower right corner of the map field and shows the scale of the map in meters.
+- 10 - The panel of switches for the displayed parameters of divers is located under the list of divers and switches the visibility of parameters in the list:
+  - Button **DST** - turns on/off the display of the distance to a diver. Changes to the state of this button are automatically saved and replayed when playing log files.
+  - Button **AZM** - turns on/off the display of the direction **to** a diver. Changes to the state of this button are automatically saved and replayed when playing log files.
+  - Button **RAZ** - turns on/off the display of the direction **from** a diver to the position according to the external GNSS receiver. Changes to the state of this button are automatically saved and replayed when playing log files.
+  - Button **LOC** - turns on/off the display of the diver's location (latitude and longitude). Changes to the state of this button are automatically saved and replayed when playing log files.
+  - Button **RER** - turns on/off the display of the radial error - the value of the residual function, on which the solution of the problem of determining the location of the diver ended. Changes to the state of this button are automatically saved and replayed when playing log files.
+  - Button **DOP** - enables/disables the display of parameters **DOP** and **TBA**.
+- 11 - Status bar. The line displays the statuses of the ports of the radio modem and the external source of navigation data (external GNSS receiver), the name of the last saved screenshot or the Zip archive into which the log files were packed.
 
 
-#### 2.2.1.2. Взаимодействие с системой
+#### 2.2.1.2. Interaction with the system
 
-Определение местоположения водолазов, оснащенных водолазными станциями беспроводной голосовой связи [RedPhone-DX](https://docs.unavlab.com/documentation/RU/RedPhone/RedPhone_DX_Specification_ru.html) возможно тогда, когда соблюдаются следующие условия (подразумевается, что станции правильно сконфигурированы для работы с системой RWLT, а на водоеме установлены навигационные буи):
+Locating divers equipped with [RedPhone-DX](https://docs.unavlab.com/documentation/EN/RedPhone/RedPhone_DX_Specification_en.html) wireless voice communication stations is possible when the following conditions are met (assuming the stations are properly configured to work with the RWLT system, and navigation buoys are properly deployed):
 
-- на всех буях есть прием GNSS, а на пульте оператора есть прием радиосигналов от всех буев. Т.е. в приложении отображаются положения всех четырех буев;
-- специальный навигационный сигнал, воспроизводимый водолазной станцией после завершения водолазом голосовой передачи (отпускании кнопки **PTT**), принимается всеми четырьмя буями системы **RWLT**;
-- сигналы от разных водолазов не накладываются друг на друга, и между сигналами от разных водолазов есть временной промежуток не менее 2-х секунд;
+- all buoys have GNSS reception, and the operator's console has radio reception from all buoys. Thus the application displays the positions of all four buoys;
+- a special navigation signal transmitted by the diving station after the diver completes the voice transmission (releasing the **PTT** button), is received by all four buoys of the **RWLT** system;
+- signals from different divers do not overlap each other, and there is a time interval of at least 2 seconds between signals from different divers;
 
-Следует помнить о факторах, снижающих эффективность работы системы:
-- гидрологические условия: шум природный и техногенный может ухудшать и полностью исключать нормальную работу системы; неблагоприятный подводный ландшафт и донная растительность могут способствовать возникновению акустического затенения и т.п.
-- выход водолазов за пределы навигационной базы (фигуры, образуемой буями на водной поверхности): наиболее устойчивая работа системы достигается внутри навигационной базы. В некотором приближении взаимное расположение водолаза и навигационной базы оценивается параметрами **DOP** и **TBA**. Положение в непосредственной близости от одного из буев или прямо за ним также является неблагоприятным.
-- крупные суда, особенно с большой осадкой, могут препятствовать прохождению акустического сигнала.
+It is necessary to remember the factors that reduce the efficiency of the system:
+- hydrological conditions: natural and technogenic noise can worsen and completely exclude the normal operation of the system; unfavorable underwater landscape and benthic vegetation can contribute to acoustic shadowing, etc.
+- divers leaving the navigation base (a figure formed by buoys on the water surface): the most stable operation of the system is achieved inside the navigation base. In some approximation, the relative position of the diver and the navigation base is estimated by the parameters **DOP** and **TBA**. Position in the immediate vicinity of one of the buoys or directly behind it is also unfavorable.
+- large vessels, especially those with deep draft, may interfere with the passage of the acoustic signal.
 
-### 2.2.2. Конфигурация с маяком-пингером
+### 2.2.2. Pinger beacon configuration
 
-**ДАННЫЙ РАЗДЕЛ НАХОДИТСЯ В РАЗРАБОТКЕ**
+**THIS SECTION IS UNDER DEVELOPMENT**
 
-## 2.3. По завершении работ
+## 2.3. Upon completion of work
 
-**Навигационные буи** должны быть:
-- сняты с якорей;
-- выключены;
-- очищены от загрязнений (ил, грязь, водоросли и тп);
-- опреснены без погружения верхней части, если работа проводилась не в пресной воде;
-- перед помещением в транспортировочный кейс протерты мягкой тканью от влаги;
+**Navigation buoys** must be:
+- removed from anchors;
+- turned off;
+- cleaned of contaminants (silt, dirt, algae, etc.);
+- desalinated without immersion of the upper part, if the work was not carried out in fresh water;
+- wiped with a soft cloth from moisture before being placed in a transport case;
 
-Не допускается:
-- Хранение в неопресненном виде;
-- Хранение буев вместе с влажными якорными веревками;
-- Развешивание буев для просушки за грузонесущие проушины;
+Not allowed:
+- Storage in undesalinated form;
+- Storage of buoys together with wet anchor lines;
+- Hanging out buoys for drying by load-carrying eyes;
 
-**Маяк-пингер** должен быть:
-- демонтирован с носителя;
-- промыт от загрязнений (ил, грязь, водоросли и тп);
-- опреснен, если работа проводилась не в пресной воде;
-- аккуратно протерт мягкой тканью и просушен на воздухе в течение не менее 30 минут;
+**Pinger-beacon** should be:
+- dismantled from the vessel;
+- washed from contaminants (silt, dirt, algae, etc.);
+- desalinated, if the work was not carried out in fresh water;
+- gently wiped with a soft cloth and air-dried for at least 30 minutes;
 
-Не допускается:
-- механическое воздействие на отверстие датчика давления;
-- хранение с присутствием влаги (особенно морской);
-- замерзание воды в отверстии датчика давления;
+Not allowed:
+- mechanical impact on the opening of the pressure sensor;
+- storage with the presence of moisture (especially marine);
+- freezing of water in the opening of the pressure sensor;
 
-**Водолазные станции беспроводной голосовой связи**  
-По завершении работ не требуют каких-либо дополнительных манипуляций и отключается автоматически в воздушной среде. Перед укладкой в транспортировочную тару необходимо выполнить промывку и/или опреснение в пресной воде с последующем обтиранием впитывающей тканью и просушкой не менее 30 минут на воздухе.
+**Diving Wireless Voice Stations**
+Upon completion of work, it does not require any additional manipulations and turns off automatically in the air. Before packing in a shipping container, it is necessary to rinse and/or desalinate in fresh water, followed by wiping with an absorbent cloth and air drying for at least 30 minutes.
 
-Для дополнительной и актуальной информации обратитесь к [Инструкции по эксплуатации водолазных станций беспроводной голосовой связи]().
+For additional and up-to-date information, refer to the [Operating Instructions for RedPhone-DX Wireless Voice Diver Stations](https://docs.unavlab.com/documentation/EN/RedPhone/RedPhone_DX_Users_Manual_en.html).
 
 <div style="page-break-after: always;"></div>
 
-## 3. Обязательства и отказ от ответственности
-### 3.1. Условия замены и бесплатного гарантийного обслуживания
-Гарантия производителя распространяется только на заводские дефекты, выявивщиеся при эксплуатации устройства в соответствие с настоящим руководством в течении гарантийного срока (2 года с момента покупки).  
+## 3. Liability and Disclaimer
+### 3.1. Terms of replacement and free warranty service
+The manufacturer's warranty covers only factory defects that appear during the operation of the device in accordance with this manual during the warranty period (2 years from the date of purchase).
 
-Производитель гарантирует бесплатный ремонт или замену неисправного оборудования из комплекта поставки, вышедшего из строя по причине заводского дефекта.  
+The manufacturer guarantees free repair or replacement of faulty equipment from the delivery set that has failed due to a manufacturing defect.
 
-К основаниям для отказа от бесплатного гарантийного обслуживания, бесплатного ремонта и замены относятся:
-- любые **механические повреждения** оборудования из комплекта поставки, в т.ч. нарушение изоляции проводов и кабелей;
-- любые **повреждения, вызванные воздействием влаги и загрязнений**, вследствие неправильной эксплуатации оборудования из комплекта поставки;
-- любые **электрические повреждения**, вызванные **использованием некомплектных аксессуаров** (зарядного устройства), применением некачественных и/или вышедших из строя аккумуляторов; к некомплектным не отностятся аксессуары, поставленные производителем или его представителем взамен неисправных или утраченых;
-- любые **следы самостоятельного ремонта и/или вскрытия** оборудования из комплекта поставки.
+The reasons for refusing free warranty service, free repair and replacement include:
+- any **mechanical damage** of the equipment from the delivery set, including violation of the insulation of wires and cables;
+- any **damage caused by exposure to moisture and dirt** due to improper use of the equipment supplied;
+- any **electrical damage** caused by **the use of incomplete accessories** (chargers), the use of low-quality and/or defective batteries; Incomplete accessories do not include accessories supplied by the manufacturer or its representative to replace faulty or lost ones;
+- any **traces of self-repair and/or opening** of the equipment supplied.
 
 <div style="page-break-after: always;"></div>
 
-### 3.2. Ограничение ответственности производителя
+### 3.2. Manufacturer disclaimer
 
 _____________
 
-_**ЛЮБАЯ ИЗ ЧАСТЕЙ КОМПЛЕКТА ПОСТАВКИ В ОТДЕЛЬНОСТИ И В СОСТАВЕ СИСТЕМЫ, ИМЕНУЕМЫЕ ДАЛЕЕ "ПОСТАВЛЯЕМОЕ ОБОРУДОВАНИЕ":**_
+_**ANY OF THE PARTS OF THE DELIVERY SET, INDIVIDUALLY AND AS A PART OF THE SYSTEM (hereinafter referred to as the "EQUIPMENT SUPPLIED"):**_
 
-_**- НЕ РАЗРАБАТЫВАЛОСЬ КАК СРЕДСТВО СПАСЕНИЯ**_  
-_**- НЕ ТЕСТИРОВАЛОСЬ, КАК СРЕДСТВО СПАСЕНИЯ**_  
-_**- НЕ ЯВЛЯЕТСЯ СРЕДСТВОМ СПАСЕНИЯ**_  
-_**- ПРОИЗВОДИТЕЛЬ ЗАЯВЛЯЕТ, ЧТО ПОСТАВЛЯЕМОЕ ОБОРУДОВАНИЕ БЕЗОПАСНО ПРИ ЭКСПЛУАТАЦИИ СОГЛАСНО НАСТОЯЩЕЙ ИНСТРУКЦИИ И НЕ ОТВЕЧАЕТ ЗА ЛЮБЫЕ ПОСЛЕДСТВИЯ ИСПОЛЬЗОВАНИЯ ПОСТАВЛЯЕМОГО ОБОРУДОВАНИЯ**_
-
-______________
-
-_**ПРОИЗВОДИТЕЛЬ ГАРАНТИРУЕТ, ЧТО ГИДРОАКУСТИЧЕСКАЯ ТРЕКИНГОВАЯ СИСТЕМА RWLT (ДАЛЕЕ - СИСТЕМА):**_  
-_**- ПРЕДНАЗНАЧЕНА ТОЛЬКО ДЛЯ РАБОТЫ С МАЯКАМИ-ПИНГЕРАМИ ИЛИ ВОДОЛАЗНЫМИ СТАНЦИЯМИ СВЯЗИ, РАССЧИТАНЫМИ НА СОВМЕСТНУЮ РАБОТУ С СИСТЕМОЙ**_  
-_**- КОНСТРУКТИВНО НЕ МОЖЕТ БЫТЬ ИСПОЛЬЗОВАНА ДЛЯ СЛЕЖЕНИЯ ЗА ОБЪЕКТАМИ, НЕ ОСНАЩЕННЫМИ МАЯКАМИ-ПИНГЕРАМИ ИЛИ ВОДОЛАЗНЫМИ СТАНЦИЯМИ СВЯЗИ, НЕ РАССЧИТАНЫМИ НА СОВМЕСТНУЮ РАБОТУ С СИСТЕМОЙ**_  
-_**- СОДЕРЖИТ ТОЛЬКО ГРАЖДАНСКИЕ И НЕ ПОДЛЕЖАЩИЕ ЛИЦЕНЗИРОВАНИЮ РАДИОЧАСТОТНЫЕ МОДУЛИ: GNSS-ПРИЕМНИКИ И РАДИОМОДЕМЫ**_  
-_**ВЫШЕУКАЗАННЫЕ ОГРАНИЧЕНИЯ НЕ МОГУТ БЫТЬ СНЯТЫ НИКАКИМИ МАНИПУЛЯЦИЯМИ С НАСТРОЙКАМИ И/ИЛИ ОРГАНАМИ УПРАВЛЕНИЯ ПРИБОРОВ СИСТЕМЫ И/ИЛИ ПРОГРАММНОГО ОБЕСПЕЧЕНИЯ, ПРЕДНАЗНАЧЕННОГО ДЛЯ РАБОТЫ С СИСТЕМОЙ**_
+_**- NOT DEVELOPED AS MEANS OF RESCUE**_
+_**- NOT TESTED AS MEANS OF RESCUE**_
+_**- IS NOT MEANS OF RESCUE**_
+_**- THE MANUFACTURER DECLARES THAT THE EQUIPMENT SUPPLIED IS SAFE WHEN USE ACCORDING TO THESE INSTRUCTIONS AND IS NOT RESPONSIBLE FOR ANY CONSEQUENCES OF THE USE OF THE SUPPLIED EQUIPMENT**_
 
 ______________
 
+_** THE MANUFACTURER GUARANTEE THAT THE RWLT HYDRO-ACOUSTIC TRACKING SYSTEM (hereinafter referred to as the SYSTEM):**_
+_**- DESIGNED ONLY TO WORK WITH PINGER BEACONS OR DIVING COMMUNICATION STATIONS DESIGNED FOR JOINT OPERATION WITH THE SYSTEM **_
+_**- STRUCTURALLY CANNOT BE USED FOR TRACKING OBJECTS NOT EQUIPPED WITH PINGER BEACONS OR DIVING COMMUNICATION STATIONS NOT DESIGNED FOR JOINT WORK WITH THE SYSTEM**_
+_**- CONTAINS ONLY CIVIL AND UNLICENSED RADIO MODULES: GNSS RECEIVERS AND RADIOS**_
+_** THE ABOVE LIMITATIONS CANNOT BE REMOVED BY ANY MANIPULATION WITH THE SETTINGS AND/OR CONTROLS OF THE SYSTEM DEVICES AND/OR THE SOFTWARE INTENDED TO WORK WITH THE SYSTEM**_
+
+______________
 
 
-
-
-[Вернуться к содержанию](#%D1%81%D0%BE%D0%B4%D0%B5%D1%80%D0%B6%D0%B0%D0%BD%D0%B8%D0%B5)
-
-
-
-
+[Back to contents](#%D1%81%D0%BE%D0%B4%D0%B5%D1%80%D0%B6%D0%B0%D0%BD%D0%B8%D0%B5)
