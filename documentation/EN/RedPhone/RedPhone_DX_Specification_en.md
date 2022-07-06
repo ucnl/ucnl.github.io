@@ -35,7 +35,7 @@ Diver's underwater wireless telephone communication unit **RedPhone-DX** provide
 | POWER (PEP) | 70 Watts |
 | VOICE BANDWIDTH<sup>[5](#footnote5)</sup> | 300 .. 4300 Hz |
 | NUMBER OF SUPPORTED CHANNELS | 8 |
-| BATTERY LIFE (RX MODE)<sup>[6](#footnote6)</sup> | up to 30 hours |
+| BATTERY LIFE (RX MODE)<sup>[6](#footnote6)</sup> | up to 20 hours |
 | BATTERY LIFE (MIXED MODE)<sup>[6](#footnote6), [7](#footnote7)</sup> | up to 8 hours |
 | BATTERY LIFE (MIXED MODE)<sup>[6](#footnote6), [8](#footnote8)</sup> | up to 2.5 hours |
 | WORKING TEMPERATURE RANGE | -10 .. 50° С |
