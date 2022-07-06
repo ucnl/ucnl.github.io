@@ -12,23 +12,23 @@
 
 ## Contents
 
-- [1. Introduction]()
-  - [1.1. Purpose]()
-  - [1.2. Peculiarities]()
-  - [1.3. System Composition]()
-- [2. Working with the RWLT system]()
-  - [2.0. Before work]()
-  - [2.1. Preparing for work and checking equipment]()
-    - [2.1.1. Choosing a location for the operator's place ]()
-    - [2.1.2. Checking the set of buoys]()
-    - [2.1.3. Location of buoys on the surface of the water]()
-    - [2.1.4. Preparation of underwater equipment]()
-  - [2.2. Working with the system]()
-    - [2.2.1. Configuration for working with divers]()
-      - [2.2.1.1. Application interface and functions]()
-      - [2.2.1.2. Interaction with the system]()
+- [1. Introduction](#1-introduction)
+  - [1.1. Purpose](#11-purpose)
+  - [1.2. Peculiarities](#12-peculiarities)
+  - [1.3. System Composition](#13-system-composition)
+- [2. Working with the RWLT system](#2-working-with-the-rwlt-system)
+  - [2.0. Before work](#20-before-work)
+  - [2.1. Preparing for work and checking equipment](#21-preparing-for-work-and-checking-equipment)
+    - [2.1.1. Choosing a location for the operator's place](#211-choosing-a-location-for-the-operators-place)
+    - [2.1.2. Checking the set of buoys](#212-checking-the-set-of-buoys)
+    - [2.1.3. Location of buoys on the surface of the water](#213-location-of-buoys-on-the-surface-of-the-water)
+    - [2.1.4. Preparation of underwater equipment](#214-preparation-of-underwater-equipment)
+  - [2.2. Working with the system](#22-working-with-the-system)
+    - [2.2.1. Configuration for working with divers](#221-configuration-for-working-with-divers)
+      - [2.2.1.1. Application interface and functions](#2211-application-interface-and-functions)
+      - [2.2.1.2. Interaction with the system](#2212-interaction-with-the-system)
     - [2.2.2. Configuration for working with pinger beacon]()
-  - [2.3. Upon completion of work]()
+  - [2.3. Upon completion of work](#23-upon-completion-of-work)
 - [3. Liability and Disclaimer]()
   - [3.1. Terms of replacement and free warranty service]()
   - [3.2. Manufacturer disclaimer]()
@@ -345,7 +345,7 @@ It is necessary to remember the factors that reduce the efficiency of the system
 - divers leaving the navigation base (a figure formed by buoys on the water surface): the most stable operation of the system is achieved inside the navigation base. In some approximation, the relative position of the diver and the navigation base is estimated by the parameters **DOP** and **TBA**. Position in the immediate vicinity of one of the buoys or directly behind it is also unfavorable.
 - large vessels, especially those with deep draft, may interfere with the passage of the acoustic signal.
 
-### 2.2.2. Configuration for working with divers pinger beacon
+### 2.2.2. Configuration for working with pinger beacon
 
 **THIS SECTION IS UNDER DEVELOPMENT**
 
