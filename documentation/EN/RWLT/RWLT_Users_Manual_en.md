@@ -29,9 +29,9 @@
       - [2.2.1.2. Interaction with the system](#2212-interaction-with-the-system)
     - [2.2.2. Configuration for working with pinger beacon]()
   - [2.3. Upon completion of work](#23-upon-completion-of-work)
-- [3. Liability and Disclaimer]()
-  - [3.1. Terms of replacement and free warranty service]()
-  - [3.2. Manufacturer disclaimer]()
+- [3. Liability and Disclaimer](#3-liability-and-disclaimer)
+  - [3.1. Terms of replacement and free warranty service](#31-terms-of-replacement-and-free-warranty-service)
+  - [3.2. Manufacturer disclaimer](#32-manufacturer-disclaimer)
 
 <div style="page-break-after: always;"></div>
 
