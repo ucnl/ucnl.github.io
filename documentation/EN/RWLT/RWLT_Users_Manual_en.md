@@ -12,6 +12,26 @@
 
 ## Contents
 
+- [1. Introduction]()
+  - [1.1. Purpose]()
+  - [1.2. Peculiarities]()
+  - [1.3. System Composition]()
+- [2. Working with the RWLT system]()
+  - [2.0. Before work]()
+  - [2.1. Preparing for work and checking equipment]()
+    - [2.1.1. Choosing a location for the operator's place ]()
+    - [2.1.2. Checking the set of buoys]()
+    - [2.1.3. Location of buoys on the surface of the water]()
+    - [2.1.4. Preparation of underwater equipment]()
+  - [2.2. Working with the system]()
+    - [2.2.1. Configuration for working with divers]()
+      - [2.2.1.1. Application interface and functions]()
+      - [2.2.1.2. Interaction with the system]()
+    - [2.2.2. Configuration for working with pinger beacon]()
+  - [2.3. Upon completion of work]()
+- [3. Liability and Disclaimer]()
+  - [3.1. Terms of replacement and free warranty service]()
+  - [3.2. Manufacturer disclaimer]()
 
 <div style="page-break-after: always;"></div>
 
@@ -184,7 +204,7 @@ The performance of the pinger beacon is easy to check by lowering it into the wa
 
 ## 2.2. Working with the system
 
-### 2.2.1. Diving station configuration
+### 2.2.1. Configuration for working with divers
 
 #### 2.2.1.1. Application interface and functions
 
@@ -325,7 +345,7 @@ It is necessary to remember the factors that reduce the efficiency of the system
 - divers leaving the navigation base (a figure formed by buoys on the water surface): the most stable operation of the system is achieved inside the navigation base. In some approximation, the relative position of the diver and the navigation base is estimated by the parameters **DOP** and **TBA**. Position in the immediate vicinity of one of the buoys or directly behind it is also unfavorable.
 - large vessels, especially those with deep draft, may interfere with the passage of the acoustic signal.
 
-### 2.2.2. Pinger beacon configuration
+### 2.2.2. Configuration for working with divers pinger beacon
 
 **THIS SECTION IS UNDER DEVELOPMENT**
 
