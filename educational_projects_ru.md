@@ -11,6 +11,7 @@
 | :--- | :--- |
 | [DIY.unavlab.com](https://diy.unavlab.com/README_RU.html) | Простые проекты для самостоятельной сборки **DIY** |
 | [Online утилиты](online_utilities_ru.md) |  Расчет глубины, скорости звука, работа с NMEA0183 etc. |
+| [UCNLNav](https://github.com/ucnl/UCNLNav) | Библиотека навигационных алгоритмов *(C#/Rust/Matlab/GNU Octave)* |
 | [UCNLPhysics](https://github.com/ucnl/UCNLPhysics) | Библиотека для определения фундаментальных свойств морской воды *(C#/Rust/C/Matlab/GNU Octave/JavaScript)* |
 | [uMCPIno](https://github.com/AlekUnderwater/uMCPIno) | Протокол с гарантированной доставкой и очередностью сообщений *(C#/C/Arduino)* |
 | [UCNLNMEA](https://github.com/ucnl/UCNLNMEA) | Библиотека для парсигна и формирования NMEA-сообщений *(C#)* |
