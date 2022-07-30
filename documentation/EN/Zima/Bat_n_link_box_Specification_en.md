@@ -26,7 +26,7 @@ The device is housed in a small shockproof plastic case. Has a front panel made 
 | DIMENSIONS | 110 X 260 X 210 mm |
 | WEIGHT | 2.5 kg |
 | WORKING TEMPERATURE RANGE | -10 .. 50 °С |
-| BUILT-IN BATTERY CAPACITY | 50 W\*h |
+| BUILT-IN BATTERY CAPACITY | 40 W\*h |
 | BUILT-IN BATTERY TYPE | LiFePO4 |
 | EXTERNAL POWER SUPPLY VOLTAGE | 12 +/-2 V |
 | LOW BATTERY INDICATION | YES |
