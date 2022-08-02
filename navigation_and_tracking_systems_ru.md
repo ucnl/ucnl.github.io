@@ -66,6 +66,8 @@
 * [ОЖИДАЕТСЯ: Zima2-B (пеленгационная антенна): Спецификация устройства:](/documentation/RU/Zima/Zima2B_Specification_ru.md)
 * [ОЖИДАЕТСЯ: Zima2-R (маяк-ответчик): Спецификация устройства]()
 * [ОЖИДАЕТСЯ: Zima2 USBL: Протокол информационного сопряжения]()
+* [ОЖИДАЕТСЯ: AzimuthSuit: Пультовое приложение для Zima2 USBL (Исходный код)]()
+* [ОЖИДАЕТСЯ: AzimuthSuit: Пультовое приложение для Zima2 USBL (Скачать релиз)]()
 ##### Zima
 * [Zima USBL: Краткое описание](/documentation/RU/Zima/Zima_DataBrief_ru.md)
 * [Zima USBL: медиаматериалы, видео с испытаний и т.п.](/documentation/RU/Zima/media)
