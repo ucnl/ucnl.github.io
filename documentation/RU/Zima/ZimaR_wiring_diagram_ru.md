@@ -1,10 +1,10 @@
-[Главная](/README_RU) ❯ [Гидроакустические навигационные и трекинговые системы](/navigation_and_tracking_systems_ru) ❯ **Схема включения устройства: Zima-R**
+[Главная](/README_RU) ❯ [Гидроакустические навигационные и трекинговые системы](/navigation_and_tracking_systems_ru) ❯ **Zima-R, Zima2-R: Схема включения устройства**
 
 <div style="page-break-after: always;"></div>
 
 | ![logo](/documentation/sm_logo.png) |  |
 | :---: | ---: |
-| [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **Zima-R** Маяк-ответчик <br/> Назначение жил кабеля и габариты |
+| [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **Zima-R, Zima2-R** Маяк-ответчик <br/> Назначение жил кабеля и габариты |
 
 ## НАЗНАЧЕНИЕ ЖИЛ КАБЕЛЯ
 
