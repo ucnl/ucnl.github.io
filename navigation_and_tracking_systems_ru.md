@@ -62,7 +62,7 @@
 #### Ультракороткобазисная (USBL) система
 ##### Zima2
 * [ОЖИДАЕТСЯ: Zima2 USBL: Краткое описание](/documentation/RU/Zima/Zima2_DataBrief_ru.md)
-* [ОЖИДАЕТСЯ: Zima2 USBL: Руководство пользователя]()
+* [ОЖИДАЕТСЯ: Zima2 USBL: Руководство пользователя](/documentation/RU/Zima/Zima2_Users_manual_ru.md)
 * [Zima2-B (пеленгационная антенна): Спецификация устройства:](/documentation/RU/Zima/Zima2B_Specification_ru.md)
 * [Zima2-R (маяк-ответчик): Спецификация устройства](/documentation/RU/Zima/Zima2R_Specification_ru.md)
 * [Zima2 USBL: Протокол информационного сопряжения](/documentation/RU/Zima/Zima2_Protocol_Specification_ru.md)
