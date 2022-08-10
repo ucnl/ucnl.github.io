@@ -56,19 +56,26 @@
 
 Система включает в себя:
 
-- Пеленгационную антенну [Zima2-B]() с кабелем и интегрированным преобразвателем интерфейса, от 1 до 16 маяков-ответчиков [Zima2-R]() и блок питания и коммутации [Bat&Link Box]().
+- Пеленгационную антенну [Zima2-B](Zima2B_Specification_ru.md) 
+- Кабель с интегрированным преобразвателем интерфейса
+- От 1 до 16 маяков-ответчиков [Zima2-R](Zima2R_Specification_ru.md)
+- Блок питания и коммутации [Bat&Link Box](Bat_n_link_box_Specification_ru.md).
 
 | ![Zima2-B](/documentation/def_zima_b_ant.png) |
 | :---: |
-| [Zima2-B](Zima2B_Specification_ru.md) <br/> Пеленгационная антенна |
+| [Zima2-B](Zima2B_Specification_ru.md) <br/> *Пеленгационная антенна* |
+
+| ![Zima2-B-Interface-cable](/documentation/def_zima_b_int_cable.png) |
+| :---: |
+| <br/> *Кабель с интегрированным преобразователем интерфейса* |
 
 | ![Zima2-R](/documentation/zima_r.png) | 
 | :---: |
-| [Zima2-R](Zima2R_Specification_ru.md) <br/> Маяк-ответчик |
+| [Zima2-R](Zima2R_Specification_ru.md) <br/> *Маяк-ответчик* |
 
 | ![Bat&Link Box](/documentation/batnlinkbox.png) | 
 | :---: |
-| [Bat&Link Box](Bat_n_link_box_Users_manual_ru.md) <br/> Блок питания и коммутации |
+| [Bat&Link Box](Bat_n_link_box_Specification_ru.md) <br/> *Блок питания и коммутации* |
 
 <div style="page-break-after: always;"></div>
 
