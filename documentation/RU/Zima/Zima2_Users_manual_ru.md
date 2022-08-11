@@ -3,7 +3,7 @@
 
 <div style="page-break-after: always;"></div>
 
-| ![logo](/documentation/sm_logo.png) | ![qr_link](/documentation/zima2_users_manual_qr_link.png) |
+| ![logo](/documentation/sm_logo.png) | Электронная версия доступна по ссылке: <br/> ![qr_link](/documentation/zima2_users_manual_qr_link.png) |
 | :---: | ---: |
 | [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **Zima2 USBL** - гидроакустическая навигационная система <br/> Руководство пользователя |
 
