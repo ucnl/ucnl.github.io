@@ -3,7 +3,7 @@
 
 <div style="page-break-after: always;"></div>
 
-| ![logo](/documentation/sm_logo.png) | Электронная версия доступна по ссылке: <br/> ![qr_link](/documentation/zima2_users_manual_qr_link.png) |
+| ![logo](/documentation/sm_logo.png) | ![qr_link](/documentation/zima2_users_manual_qr_link.png) |
 | :---: | ---: |
 | [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **Zima2 USBL** - гидроакустическая навигационная система <br/> Руководство пользователя |
 
@@ -54,6 +54,8 @@
 на применении фазированной антенной решетки для определения горизонтального угла прихода сигнала и определения дистанции до маяка методом "запрос-ответ". 
 Система **Zima2** использует современную технологию цифровой широкополосной помехоустойчивой гидроакустической связи, а применяемый сигнал специально
 разработан для сложных гидрологических условий, в том числе условий, характерных для мелких водоемов. 
+
+<div style="page-break-after: always;"></div>
 
 ### 1.3. Состав системы
 
