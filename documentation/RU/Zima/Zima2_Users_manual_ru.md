@@ -329,6 +329,7 @@
 
 > ВНИМАНИЕ! Напряжение линий данных маяка-ответичка 0 .. 3.3 V! Используйте для подключения маяков к ПК только преобразователи с подходящими уровнями.
 
+<div style="page-break-after: always;"></div>
 
 | ![Zima-R and Zima2-R wiring](/documentation/ZimaR_wiring_diagram_ru.png) |
 | :---: |
