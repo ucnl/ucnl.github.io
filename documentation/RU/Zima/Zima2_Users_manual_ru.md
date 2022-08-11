@@ -9,6 +9,9 @@
 
 # Zima2 USBL <br/> Руководство пользователя
 
+![qr_link](/documentation/zima2_users_manual_qr_link.png)
+
+
 <div style="page-break-after: always;"></div>
 
 ## Содержание
