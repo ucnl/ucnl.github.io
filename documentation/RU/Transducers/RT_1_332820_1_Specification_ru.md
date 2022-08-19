@@ -1,4 +1,4 @@
-[Главная](/README_RU) ❯ [Гидрофоны и гидроакустические антенны](/underwater_acoustic_antennas_ru.md) ❯ **Приемопередающая антенна RT-1.332820-1**
+[Главная](/README_RU) ❯ [Гидрофоны и гидроакустические антенны](/underwater_acoustic_antennas_ru) ❯ **Приемопередающая антенна RT-1.332820-1**
 
 <div style="page-break-after: always;"></div>
 
