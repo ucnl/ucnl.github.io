@@ -1,4 +1,4 @@
-[Главная](/README_RU) ❯ [Гидрофоны и гидроакустические антенны](underwater_acoustic_antennas_ru.md) ❯ **Приемопередающая антенна RT-1.524525-1-FF**
+[Главная](/README_RU) ❯ [Гидрофоны и гидроакустические антенны](/underwater_acoustic_antennas_ru.md) ❯ **Приемопередающая антенна RT-1.524525-1-FF**
 
 <div style="page-break-after: always;"></div>
 
