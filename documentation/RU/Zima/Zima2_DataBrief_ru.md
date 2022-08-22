@@ -38,9 +38,9 @@
 
 <div style="page-break-after: always;"></div>
 
-| ![Zima2-B placement](/documentation/zima_boat_placement.png) |
+| ![Zima2-B placement](/documentation/zima2_boat_gnss_1.png) |
 | :---: |
-| Схема установки антенны [Zima 2-B](Zima2B_Specification_ru.md) <br/> _1-штанга, 2-судно, 3-поверхность воды, 4-кабель, 5-антенна [Zima 2-B](Zima2B_Specification_ru.md), 6-направление антенны_ |
+| Схема установки антенны [Zima 2-B](Zima2B_Specification_ru.md) <br/> _Антенна монтируется на жесткой штанге таким образом, чтобы быть не ближе двух метров от поверхности воды и не ближе 1.5 метров от нижней точки судна_ |
 
 <div style="page-break-after: always;"></div>
 
