@@ -280,45 +280,45 @@ d_type,address,serialNumber,sys_info,sys_version,pts_type,ch_id
 | | $	| Sentence start '$' |
 | | PAZM | AZM protocol |
 | | !	| Sentence ID |
-| 1 | d_type | Тип устройства (0 - станция пеленгования, 1 - маяк-ответчик) |
-| 2 | addressOrMask | В зависимости от типа устройства - маска адресов маяков-ответчиков или адрес маяка-ответчика |
-| 3 | serialNumber | Серийный номер устройства |
-| 4 | sys_info | Информация о прошивке |
-| 5 | sys_version | Версия прошивки |
-| 6 | pts_type | Тип датчика давления [См. Таблица 3.6. Типы датчиков давления](#36-%D1%82%D0%B8%D0%BF%D1%8B-%D0%B4%D0%B0%D1%82%D1%87%D0%B8%D0%BA%D0%BE%D0%B2-%D0%B4%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F) |
-| 7 | ch_id | Идентификатор канала связи |
+| 1 | d_type | Device type (0 - DF-antenna, 1 - responder beacon) |
+| 2 | addressOrMask | Depending on the type of device - a mask of responder beacon addresses or an address of a responder beacon |
+| 3 | serialNumber | Device serial number |
+| 4 | sys_info | Firmware information |
+| 5 | sys_version | Firmware version |
+| 6 | pts_type | Pressure sensor type [see Table 3.6. Pressure sensors]() |
+| 7 | ch_id | Code channel ID |
 | | *	| NMEA Checksum delimiter |
 | | hh | NMEA Checksum |
 | | \<CR\>\<LF\> | End of sentence |
 
 <div style="page-break-after: always;"></div>
 
-## 3. Таблицы идентификаторов
+## 3. Identifiers
 
-### 3.1. Коды ошибок
+### 3.1. Error codes
 
-| Код | Наименование | Описание |
+| Code | Name | Description |
 | :--- | :--- | :--- |
-| 0 | IC_RES_OK | Команда принята без ошибок |
-| 1 | IC_RES_INVALID_SYNTAX | Ошибка синтаксиса |
-| 2 | IC_RES_UNSUPPORTED_CMD | Команда не поддерживается |
-| 3 | IC_RES_ARGUMENT_OUT_OF_RANGE | Значение как минимум одного аргумента вне границ диапазона допустимымх значений |
-| 4 | IC_RES_INVALID_OPERATION | Данная команды не может быть выполнена в текущем состоянии устройства |
-| 5 | IC_RES_VALUE_UNAVAILABLE | Значение запрошенного параметра недоступно в данный момент |
-| 6 | IC_RES_TX_BUSY | Передатчик занят |
-| 7 | IC_RES_RX_BUSY | Приемник занят |
+| 0 | IC_RES_OK | Command accepted. No errors |
+| 1 | IC_RES_INVALID_SYNTAX | Syntax error |
+| 2 | IC_RES_UNSUPPORTED_CMD | Command not supported |
+| 3 | IC_RES_ARGUMENT_OUT_OF_RANGE | The value of at least one argument is out of the range of valid values |
+| 4 | IC_RES_INVALID_OPERATION | This command cannot be executed in the current state of the device |
+| 5 | IC_RES_VALUE_UNAVAILABLE | The value of the requested parameter is not available at the moment |
+| 6 | IC_RES_TX_BUSY | Transmitter is busy |
+| 7 | IC_RES_RX_BUSY | Receiver is busy |
 
-### 3.2. Статус сообщения NDTA
+### 3.2. NDTA sentence status
 
-| Код | Наименование | Описание |
+| Code | Name | Description |
 | :--- | :--- | :--- |
-| 0 | NDTA_LOC_ONLY | В сообщении только локальные параметры пеленгационной антенны |
-| 1 | NDTA_REMR | В сообщении присутствуют данные ответа маяка-ответчика и локальные параметры пеленгационной антенны |
-| 2 | NDTA_REMT | в сообщении присутствуют данные о превышении интервала ожидвания маяка-ответчика и локальные параметры пеленгационной антенны |
+| 0 | NDTA_LOC_ONLY | The sentence contains only local parameters of the direction finding antenna |
+| 1 | NDTA_REMR | The sentence contains the response data of the responding beacon and the local parameters of the direction-finding antenna |
+| 2 | NDTA_REMT | The sentence contains data on exceeding the waiting interval of the response of the requested responder beacon and local parameters of the direction-finding antenna |
 
-### 3.3. Идентификаторы адресных запросов
+### 3.3. Addressed requests
 
-| Код | Наименование | Описание |
+| Code | Name | Description |
 | :--- | :--- | :--- |
 | 0 | CDS_REQ_DPT | |
 | 1 | CDS_REQ_TMP | |
@@ -352,9 +352,9 @@ d_type,address,serialNumber,sys_info,sys_version,pts_type,ch_id
 | 29 |	CDS_REQ_USER_CMD_1 | |
 | 30 |	CDS_REQ_USER_CMD_0 | |
   
-### 3.4. Идентификаторы широковещательных команд
+### 3.4. Broadcast requests
 
-| Код | Наименование | Описание |
+| Code | Name | Description |
 | :--- | :--- | :--- |
 | 497 | CDS_BCAST_FUNC_0 | |
 | 498 | CDS_BCAST_FUNC_1 | |
@@ -371,9 +371,9 @@ d_type,address,serialNumber,sys_info,sys_version,pts_type,ch_id
 | 509 | CDS_BCAST_STY_SET_35 | |
 | 520 | CDS_BCAST_STY_SET_40 | |
   
-### 3.5. Идентификаторы ответов 
+### 3.5. Response identifiers 
 
-| Код | Наименование | Описание |
+| Code | Name | Description |
 | :--- | :--- | :--- |
 | 500 | CDS_ERR_RES_0 | |
 | 501 | CDS_ERR_RES_1 | |
@@ -386,14 +386,14 @@ d_type,address,serialNumber,sys_info,sys_version,pts_type,ch_id
 | 508 | CDS_ERR_BAT_LOW | |
 | 509 | CDS_RSYS_STRT | |
 
-### 3.6. Типы датчиков давления
+### 3.6. Pressure sensors
 
-| Код | Наименование | Описание |
+| Code | Name | Description |
 | :--- | :--- | :--- |
-| 0 | NO SENSOR | Устройство не содержит встроенного датчика давления |
-| 1 | 100 BAR | Датчик закрытого типа с диапазоном 0 .. 100 Bar |
-| 2 | 30 BAR TYPE 1 | Датчик открытого типа с диапазоном 0 .. 30 Bar |
-| 3 | 30 BAR TYPE 2 | Датчик открытого типа с диапазоном 0 .. 30 Bar |
+| 0 | NO SENSOR | The device does not contain a built-in pressure sensor |
+| 1 | 100 BAR | Closed type sensor with range 0 .. 100 Bar |
+| 2 | 30 BAR TYPE 1 | Open type sensor with range 0 .. 30 Bar |
+| 3 | 30 BAR TYPE 2 | Open type sensor with range 0 .. 30 Bar |
 
 
 <div style="page-break-after: always;"></div>
