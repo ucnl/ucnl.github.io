@@ -1,51 +1,31 @@
-[Главная](/README_RU) ❯ [Гидроакустические навигационные и трекинговые системы](/navigation_and_tracking_systems_ru) ❯ **Zima2 USBL: Протокол информационного сопряжения**
+[Main](/../../) ❯ [Navigation & tracking systems](/navigation_and_tracking_systems_en) ❯ **Zima2 USBL: Protocol specification**
 
 <div style="page-break-after: always;"></div>
 
 | ![logo](/documentation/sm_logo.png) |  |
 | :---: | ---: |
-| [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **Zima2 USBL** - гидроакустическая навигационная система <br/> Протокол информационного сопряжения |
+| [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **Zima2 USBL** - Underwater tracking system <br/> Communication protocol specification |
 
-# Zima2 USBL <br/> Протокол информационного сопряжения
-
-<div style="page-break-after: always;"></div>
-
-## Содержание
-
-- [1. Введение](#1-%D0%B2%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5)
-  - [1.1. Протокол физического уровеня](#11-%D0%BF%D1%80%D0%BE%D1%82%D0%BE%D0%BA%D0%BE%D0%BB-%D1%84%D0%B8%D0%B7%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%BE%D0%B3%D0%BE-%D1%83%D1%80%D0%BE%D0%B2%D0%B5%D0%BD%D1%8F)
-  - [1.2. Стандарт протокола диалогового уровня NMEA0183](#12-%D1%81%D1%82%D0%B0%D0%BD%D0%B4%D0%B0%D1%80%D1%82-%D0%BF%D1%80%D0%BE%D1%82%D0%BE%D0%BA%D0%BE%D0%BB%D0%B0-%D0%B4%D0%B8%D0%B0%D0%BB%D0%BE%D0%B3%D0%BE%D0%B2%D0%BE%D0%B3%D0%BE-%D1%83%D1%80%D0%BE%D0%B2%D0%BD%D1%8F-nmea0183)
-- [2. Система команд AZM](h#2-%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%B0-%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4-azm)
-  - [2.1. D2H_ACK](#21-d2h_ack)
-  - [2.2. D2D_STRSTP](#22-d2d_strstp)
-  - [2.3. D2D_RSTS](#23-d2d_rsts)
-  - [2.4. D2H_NDTA](#24-d2h_ndta)
-  - [2.5. H2D_DPTOVR](#25-h2d_dptovr)
-  - [2.6. D2H_RUCMD](#26-d2h_rucmd)
-  - [2.7. D2H_RBCAST](#27-d2h_rbcast)
-  - [2.8. H2D_DINFO_GET](#28-h2d_dinfo_get)
-  - [2.9. D2H_DINFO](#29-d2h_dinfo)
-- [3. Таблицы идентификаторов](#3-%D1%82%D0%B0%D0%B1%D0%BB%D0%B8%D1%86%D1%8B-%D0%B8%D0%B4%D0%B5%D0%BD%D1%82%D0%B8%D1%84%D0%B8%D0%BA%D0%B0%D1%82%D0%BE%D1%80%D0%BE%D0%B2)
-  - [3.1. Коды ошибок](#31-%D0%BA%D0%BE%D0%B4%D1%8B-%D0%BE%D1%88%D0%B8%D0%B1%D0%BE%D0%BA)
-  - [3.2. Статус сообщения NDTA](#32-%D1%81%D1%82%D0%B0%D1%82%D1%83%D1%81-%D1%81%D0%BE%D0%BE%D0%B1%D1%89%D0%B5%D0%BD%D0%B8%D1%8F-ndta)
-  - [3.3. Идентификаторы адресных запросов](#33-%D0%B8%D0%B4%D0%B5%D0%BD%D1%82%D0%B8%D1%84%D0%B8%D0%BA%D0%B0%D1%82%D0%BE%D1%80%D1%8B-%D0%B0%D0%B4%D1%80%D0%B5%D1%81%D0%BD%D1%8B%D1%85-%D0%B7%D0%B0%D0%BF%D1%80%D0%BE%D1%81%D0%BE%D0%B2)
-  - [3.4. Идентификаторы широковещательных команд](#34-%D0%B8%D0%B4%D0%B5%D0%BD%D1%82%D0%B8%D1%84%D0%B8%D0%BA%D0%B0%D1%82%D0%BE%D1%80%D1%8B-%D1%88%D0%B8%D1%80%D0%BE%D0%BA%D0%BE%D0%B2%D0%B5%D1%89%D0%B0%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D1%8B%D1%85-%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4)
-  - [3.5. Идентификаторы ответов](#35-%D0%B8%D0%B4%D0%B5%D0%BD%D1%82%D0%B8%D1%84%D0%B8%D0%BA%D0%B0%D1%82%D0%BE%D1%80%D1%8B-%D0%BE%D1%82%D0%B2%D0%B5%D1%82%D0%BE%D0%B2)
-  - [3.6. Типы датчиков давления](#36-%D1%82%D0%B8%D0%BF%D1%8B-%D0%B4%D0%B0%D1%82%D1%87%D0%B8%D0%BA%D0%BE%D0%B2-%D0%B4%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F)
+# Zima2 USBL <br/> Communication protocol specification
 
 <div style="page-break-after: always;"></div>
 
-## 1. Введение
-### 1.1. Протокол физического уровеня
+## Contents
 
-Устройства системы [Zima2 USBL](Zima2_DataBrief_ru.md) поддерживают информационное сопряжение при помощи стандарта физического уровня RS-232 
-для асинхронного интерфейса (UART) c напряжением линии данных 3.3В. Подключение производится при помощи четырехпроводного кабеля, с жилами Tx
-(трансмиттер), Rx (ресивер), Vcc (питание) и GND (земля). Без применения дополнительных повторителей и преобразователей интерфейса 
-максимальная длинна шины данных, для которой гарантируется корректная работа интерфейса, составляет не более 2 метров.
 
-Настройки порта подключения:  
+<div style="page-break-after: always;"></div>
 
-| Парметр | Значение |
+## 1. Introducation
+### 1.1. Physical layer
+
+Devices of the [Zima2 USBL](Zima2_DataBrief_en.md) system support data interfacing using the RS-232 physical layer standard
+for asynchronous interface (UART) with 3.3V data line voltage. The connection is made with a four-wire cable, with Tx cores.
+(transmitter), Rx (receiver), Vcc (power) and GND (ground). Without the use of additional repeaters and interface converters
+the maximum length of the data bus, for which the correct operation of the interface is guaranteed, is no more than 2 meters.
+
+Connection port settings: 
+
+| Parameter | Value |
 | :--- | :--- |
 | Baudrate | 9600 bit/s |
 | Data bits | 8 |
@@ -53,253 +33,253 @@
 | Parity | No |
 | Hardware flow control | No |  
 
->**ВНИМАНИЕ!**
->_У устройств без преобразователей интерфейса напряжение линии данных составляет 3.3 В._
+>**WARNING!**
+>_For devices without interface converters, the data line voltage is 3.3 V._
 
-### 1.2. Стандарт протокола диалогового уровня NMEA0183
-Стандарт NMEA0183 описывает формат текстовых (ASCII) сообщений диалогового уровня.  
+### 1.2. NMEA0183 Dialog Layer Protocol Standard
+The NMEA0183 standard describes the format for text (ASCII) messages (sentences).
 
-Пример сообщения:  
+Sentence example:
 **`
 $PAZM0,,0*06<СR><LF>
 `**  
 
-Основные элементы посылки (сообщения, sentence) NMEА0183:
+The main parts of an NMEA 0183 sentence:
 
-| Элемент | Описание |
+| Item | Description |
 | :--- | :--- |
-| $ | начало сообщения |
-| P | Proprietary, проприетарный код |
-| AZM | трехбуквенный идентификатор |
-| 0 | идентификатор сообщения |
-| | первый параметр - пустой |
-| , | запятая (разделитель параметров) |
-| 0 | второй параметр имеет значение '0' |
-| \* | разделитель контрольной суммы |
-| 06 | контрольная сумма в шестнадцатеричном формате (например FF, 01). [Рассчитывается](https://docs.unavlab.com/online_utils/nmea0183_checksum_calculator.html) как побитовый XOR всех байт между '$' и '\*'. |
-| <CR\><LF\> | конец сообщения (перевод строки) |
+| $ | Sentence start |
+| P | Proprietary |
+| AZM | Protocol ID |
+| 0 | Sentence ID |
+| | The first parameter is empty |
+| , | comma (parameter delimiter) |
+| 0 | the second parameter has value '0' |
+| \* | Checksum delimiter |
+| 06 | Checksum in hex (e.g. FF, 01). [Calculates](https://docs.unavlab.com/online_utils/nmea0183_checksum_calculator.html) as byte by byte XOR for all bytes between '$' и '\*'. |
+| <CR\><LF\> | End of sentence |
 
-Формат вышеприведенного сообщения описывается следующим образом:
+The format of the above sentence is described as follows:
 **`
 $PAZM0,[x],x*06<СR><LF>
 `**
 
-x - означает целочисленный параметр, квадратные скобки '[]' - говорят о том, что параметр может быть пустым.
-Ниже представлен список возможных дескрипторов параметров:
+x - means an integer parameter, square brackets '[]' - indicate that the parameter can be empty.
+The following is a list of possible parameter descriptors:
 
-| Дескриптор | Описание |
+| Descriptors | Description |
 | :--- | :--- |
-| x | Целочисленное значение |
-| xx | Целочисленное значение занимающее ровно два символа: от 00 до 99 |
-| x.x | Вещественное значение |
-| c--c | Строка символов |
-| hh | шестнадцатеричное значение от 00 до FF |
+| x | Integer value |
+| xx | Integer value spanning exactly two characters: from 00 to 99 |
+| x.x | Real value |
+| c--c | Character string |
+| hh | hex value from 00 to FF |
 
 <div style="page-break-after: always;"></div>
 
-## 2. Система команд AZM
-Префикс **D2H** в наименовании сообщений означает, что оно передается от устройства (Device) к управляющей системе (Host).
-Префикс **H2D** в наименовании сообщений означает, что оно передается от управляющей системы (Host) к устройству (Device).
-Префикс **D2D** в наименовании сообщений означает, что оно может передаваться в обе стороны: как от устройства к управляющей системе, так и наоборот.
+## 2. AZM Protocol
+The **D2H** prefix in the sentence name means that it is transmitted from the device (Device) to the host system (Host).
+The **H2D** prefix in the sentence name means that it is transmitted from the control system (Host) to the device (Device).
+The **D2D** prefix in the sentence name means that it can be transmitted in both directions: from the device to the control system, and vice versa.
 
 ### 2.1. D2H_ACK
-Сообщение D2H_ACK - реакция устройства на поступивший от управляющей системы запрос.  
+Sentence D2H_ACK - response of the device to a request received from the control system.  
 
-Формат сообщения: 
+Sentence format: 
 **`
 $PAZM0,[x],x*hh<CR><LF>
 `**
 
-| № | Поле/параметр | Описание |
+| № | Field/Parameter | Description |
 | :--- | :--- | :--- |
-| | $	| начало сообщения '$' |
-| | PAZM | система команд AZM |
-| | 0	| идентификатор сообщения |
-| 1 | cmdID | Идентификатор команды, на которую устройство отреагировало |
-| 2 | result | Код ошибки [См. Таблица 3.1. Коды ошибок](#31-%D0%BA%D0%BE%D0%B4%D1%8B-%D0%BE%D1%88%D0%B8%D0%B1%D0%BE%D0%BA) |
-| | *	| разделитель контр. суммы NMEA |
-| | hh | контрольная сумма NMEA |
-| | \<CR\>\<LF\> | конец сообщения |
+| | $	| Sentence start '$' |
+| | PAZM | AZM protocol |
+| | 0	| Sentence ID |
+| 1 | cmdID | ID of the command to which the device responded |
+| 2 | result | Error code [see Table 3.1. Error codes]() |
+| | *	| NMEA Checksum delimiter |
+| | hh | NMEA Checksum |
+| | \<CR\>\<LF\> | End of sentence |
 
 ### 2.2. D2D_STRSTP
-Сообщение D2D_STRSTP - сообщение для задания параметров запроса маяков-ответчиков.
+The D2D_STRSTP message is a sentence for setting the autorequest (polling) parameters for beacons-responders.
 
-Передается от управляющей системы к пеленгационной станции для:
-- начала опроса маяков-ответчиков
-- останова опроса маяков-ответчиков
-- изменения параметров опроса (маски адресов, максимальной дистанции, солености воды)
+Transmitted from the control system to the direction finding station for:
+- start of interrogation of beacons-responders
+- stop polling beacons-responders
+- changes in polling parameters (address masks, maximum distance, water salinity)
 
-Передается от пеленгационной станции к управляющей системе как эхо-подтверждение о принятии команды. Если команда не принимается устройством, то оно сообщает об этом при помощи команды [2.1. D2H_ACK](#21-d2h_ack) с соответствущим кодом ошибки.
+Transmitted from the direction finding antenna to the control system as an echo confirmation of the acceptance of the command. If the command is not accepted by the device, then it reports this using the command [2.1. D2H_ACK](#21-d2h_ack) with the corresponding error code.
 
-Формат сообщения: 
+Sentence format: 
 **`
 $PAZM1,[x],[x.x],[x.x],[x]*hh<CR><LF>
 `**
 
-| № | Поле/параметр | Описание |
+| № | Field/Parameter | Description |
 | :--- | :--- | :--- |
-| | $	| начало сообщения '$' |
-| | PAZM | система команд AZM |
-| | 1	| идентификатор сообщения |
-| 1 | addrMask | Маска адреса маяков для опроса, 16-битное цело беззнаковое число, каждый бит от 0 до 15 соответствует одному из маяков, бит = 0 - маяк не учавствует в опросе, бит = 1 - маяк участвует в опросе. Если параметр пустой или равен нулю, то опрос не останавливается. |
-| 2 | sty_PSU | Соленость воды в PSU в диапазоне от 0 до 40. Если параметр пустой, используется значение по умолчанию (0 PSU) |
-| 3 | soundSpeed_mps | Скорость звука в воде в м/с в диапазоне от 1350 до 1600 м/с. Если параметр пустой, скорость звука будет рассчитываться автоматически на основе данных о солености, температуре и давлении |
-| 4 | max_dist_m | Максимальная дальность в метрах в диапазоне от 500 до 5500. По данному параметру рассчитывается максимальный интервал ожидания ответа маяка. |
-| | *	| разделитель контр. суммы NMEA |
-| | hh | контрольная сумма NMEA |
-| | \<CR\>\<LF\> | конец сообщения |
+| | $	| Sentence start '$' |
+| | PAZM | AZM protocol |
+| | 1	| Sentence ID |
+| 1 | addrMask | Address mask for polling, 16-bit unsigned integer, each bit from 0 to 15 corresponds to one of the responders, bit = 0 - the responder does not participate in the poll, bit = 1 - the responder participates in the poll. If the parameter is empty or equal to zero, then polling stops. |
+| 2 | sty_PSU | Salinity of water in PSU in the range from 0 to 40. If the parameter is empty, the default value (0 PSU) is used. |
+| 3 | soundSpeed_mps | The speed of sound in water in m/s in the range from 1350 to 1600 m/s. If the parameter is empty, the speed of sound will be calculated automatically based on salinity, temperature and pressure data |
+| 4 | max_dist_m | Maximum range in meters in the range from 500 to 5500. This parameter is used to calculate the maximum interval for waiting for a responder response |
+| | *	| NMEA Checksum delimiter |
+| | hh | NMEA Checksum |
+| | \<CR\>\<LF\> | End of sentence |
 
 
 ### 2.3. D2D_RSTS
-Сообщение D2D_RSTS - сообщение для задания настроек маяков-ответчиков.
+D2D_RSTS message - a message for setting the settings of responder beacons.
 
-Передается от управляющей системы к маяку-ответчику для задания его адреса и солености воды.
-Передается от маяка-ответчика к управляющей системе как эхо-подтверждение о принятии команды и установке параметров.
-Если команда не принимается устройством, то оно сообщает об этом при помощи команды [2.1. D2H_ACK](#21-d2h_ack) с соответствущим кодом ошибки.
+It is transmitted from the control system to the responding beacon to set its address and water salinity.
+It is transmitted from the responder beacon to the control system as an echo confirmation that the command has been accepted and the parameters have been set.
+If the command is not accepted by the device, then it reports this using the command [2.1. D2H_ACK](#21-d2h_ack) with the corresponding error code.
 
-Формат сообщения: 
+Sentence format: 
 **`
 $PAZM2,[x],[x.x]*hh<CR><LF>
 `**
 
-| № | Поле/параметр | Описание |
+| № | Field/Parameter | Description |
 | :--- | :--- | :--- |
-| | $	| начало сообщения '$' |
-| | PAZM | система команд AZM |
-| | 2	| идентификатор сообщения |
-| 1 | addr | Адрес маяка в диапазоне от 0 до 15. Если параметр пустой, то адрес не изменяется. |
-| 2 | sty_PSU | Соленость воды в PSU в диапазоне от 0 до 40. Если параметр пустой, используется значение по умолчанию (0 PSU) |
-| | *	| разделитель контр. суммы NMEA |
-| | hh | контрольная сумма NMEA |
-| | \<CR\>\<LF\> | конец сообщения |
+| | $	| Sentence start '$' |
+| | PAZM | AZM protocol |
+| | 2	| Sentence ID |
+| 1 | addr | Responder address in the range from 0 to 15. If the parameter is empty, then the address does not change. |
+| 2 | sty_PSU | Salinity of water in PSU in the range from 0 to 40. If the parameter is empty, the default value (0 PSU) is used. |
+| | *	| NMEA Checksum delimiter |
+| | hh | NMEA Checksum |
+| | \<CR\>\<LF\> | End of sentence |
 
 
 ### 2.4. D2H_NDTA
-Сообщение D2H_NDTA - статус пеленгационной станции.
+D2H_NDTA message - direction-finding antenna status.
 
-Это основное сообщение, передающееся от пеленгационной станции к управляющей системе. При помощи него станция сообщает:
-- значения локальных парметров: температура, давление, крен, дифферент
-- параметры принятого от маяка-ответчика ответа: адрес маяка, время распространения сигнала, наклонная дальность и ее проекция, глубина, горизонтальный и вертикальный углы, код ошибки, качество связи
-- превышение интервала ожидания ответа маяка (таймаут)
+This is the main message transmitted from the direction finding antenna to the control system. With it, the station reports:
+- values of local parameters: temperature, pressure, roll, pitch
+- parameters of the response received from the responder beacon: address, signal propagation time, slant range and its projection, depth, horizontal and vertical angles, error code, communication quality
+- exceeding the responder beacon response waiting interval (timeout)
 
-Формат сообщения: 
+Sentence format: 
 **`
 $PAZM3,x,[x],[x],[x],[x.x],[x.x],[x.x],[x.x],[x.x],[x.x],[x.x],[x.x],[x.x],[x.x],[x.x],[x.x]*hh<CR><LF>
 `**
 
-| № | Поле/параметр | Описание |
+| № | Field/Parameter | Description |
 | :--- | :--- | :--- |
-| | $	| начало сообщения '$' |
-| | PAZM | система команд AZM |
-| | 3	| идентификатор сообщения |
-| 1 | status | Статус сообщения, [См. Таблица 3.2. Статус сообщения NDTA](#32-%D1%81%D1%82%D0%B0%D1%82%D1%83%D1%81-%D1%81%D0%BE%D0%BE%D0%B1%D1%89%D0%B5%D0%BD%D0%B8%D1%8F-ndta) |
-| 2 | addr | Адрес маяка в диапазоне от 0 до 15. Параметр пустой для сообщений с полем 'status' содержащим '0' (Только локальные параметры) |
-| 3 | rq_code | Идентификатор запрошенного у маяка параметра, [См. Таблица 3.3. Идентификаторы адресных запросов](#33-%D0%B8%D0%B4%D0%B5%D0%BD%D1%82%D0%B8%D1%84%D0%B8%D0%BA%D0%B0%D1%82%D0%BE%D1%80%D1%8B-%D0%B0%D0%B4%D1%80%D0%B5%D1%81%D0%BD%D1%8B%D1%85-%D0%B7%D0%B0%D0%BF%D1%80%D0%BE%D1%81%D0%BE%D0%B2) |
-| 4 | rs_code | Код ответа маяка, [См. Таблица 3.5. Идентификаторы ответов](#35-%D0%B8%D0%B4%D0%B5%D0%BD%D1%82%D0%B8%D1%84%D0%B8%D0%BA%D0%B0%D1%82%D0%BE%D1%80%D1%8B-%D0%BE%D1%82%D0%B2%D0%B5%D1%82%D0%BE%D0%B2) |
-| 5 | msr_dB | Параметр, определяющий качество приема ответного сигнала маяка в dB. 14 - порог приема, значения выше 20 dB означают хорошие условия связи |
-| 6 | p_time_s | Время распростренения сигнала в секундах. Умноженное на значение скорости звука дает наклонную дальность |
-| 7 | s_range_m | Наклонная дальность от пеленгационной антенны до маяка в метрах |
-| 8 | p_range_m | Проекция наклонной дальности от пеленгационной антенны до маяка на водную поверхность в метрах |
-| 9 | r_dpt_m | Абсолютное значение глубины маяка-ответчика в метрах |
-| 10 | a_deg | Горизонтальный угол прихода сигнала маяка-ответчика в градусах. Отсчитывается от нулевого направления пеленгационной антенны по часовой стрелке со стороны кабеля |
-| 11 | e_deg | Вертикальный угол прихода сигнала маяка-ответчика в градусах. Отсчитывается от горизонтальной плоскости, проходящей через антенную решетку |
-| 12 | lprs_mBar | Абсолютное давление в миллибарах по данным встроенного датчика пеленгационной антенны |
-| 13 | ltmp_C | Температура в °С по данным встроенного датчика пеленгационной антенны |
-| 14 | lhdn_deg | Параметр не используется, зарезервирован для будущих применений |
-| 15 | lptc_deg | Угол дифферента пеленгационной антенны. Отсчитывается от вертикали, положительные значения - крен на нос (в сторону нулевого направления антенны), отрицательные - крен на корму |
-| 16 | lrol_deg | Угол крена пеленгационной антенны. Отсчитывается от вертикали, положительные значения - на правый борт (относительно нулевого направления антенны), отрицательные значения - на левый борт |
-| | *	| разделитель контр. суммы NMEA |
-| | hh | контрольная сумма NMEA |
-| | \<CR\>\<LF\> | конец сообщения |
+| | $	| Sentence start '$' |
+| | PAZM | AZM protocol |
+| | 3	| Sentence ID |
+| 1 | status | Sentence status [see Table 3.2. NDTA sentence status]() |
+| 2 | addr | Responder address from 0 to 15. Parameter empty for sentences with 'status' field containing '0' (Local parameters only) |
+| 3 | rq_code |Identifier of the parameter requested from the responder beacon, [see Table 3.3. Addressed requests]() |
+| 4 | rs_code | Response code, [see Table 3.5. Response identifiers]() |
+| 5 | msr_dB | A parameter that determines the quality of receiving the beacon's response signal in dB. 14 - reception threshold, values above 20 dB indicate good communication conditions |
+| 6 | p_time_s | Signal propagation time in seconds. Multiplied by the speed of sound gives the slant range |
+| 7 | s_range_m | Slant range from DF antenna to responder in meters |
+| 8 | p_range_m | Projection of the slant range from the direction finding antenna to the responder on the water surface in meters |
+| 9 | r_dpt_m | The absolute value of the depth of the responder beacon in meters |
+| 10 | a_deg | Horizontal angle of arrival of the responder signal in degrees. Counted from the zero direction of the direction finding antenna clockwise from the cable side |
+| 11 | e_deg | Vertical angle of arrival of the responder signal in degrees. Counted down from a horizontal plane passing through the antenna array |
+| 12 | lprs_mBar | Absolute pressure in millibars according to the built-in DF antenna sensor |
+| 13 | ltmp_C | Temperature in °C according to the built-in sensor of the DF antenna |
+| 14 | lhdn_deg | Parameter not used, reserved for future use |
+| 15 | lptc_deg | DF antenna pitch angle. Counted from the vertical, positive values - pitch to the bow (towards the zero direction of the antenna), negative - pitch to the stern |
+| 16 | lrol_deg | Angle of roll of the DF antenna. Measured from the vertical, positive values - to starboard (relative to the zero direction of the antenna), negative values - to port |
+| | *	| NMEA Checksum delimiter |
+| | hh | NMEA Checksum |
+| | \<CR\>\<LF\> | End of sentence |
 
 
 ### 2.5. H2D_DPTOVR
-Сообщение H2D_DPTOVR - сообщение для задания глубины маякам-ответчикам, не имеющих встроенный датчик глубины.
-Если команда не принимается устройством, то оно сообщает об этом при помощи команды [2.1. D2H_ACK](#21-d2h_ack) с соответствущим кодом ошибки.
+The H2D_DPTOVR sentence is for setting the depth for responder beacons that do not have a built-in depth sensor.
+If the command is not accepted by the device, then it reports this using the command [2.1. D2H_ACK](#21-d2h_ack) with the corresponding error code.
 
-Формат сообщения: 
+Sentence format: 
 **`
 $PAZM4,x.x*hh<CR><LF>
 `**
 
-| № | Поле/параметр | Описание |
+| № | Field/Parameter | Description |
 | :--- | :--- | :--- |
-| | $	| начало сообщения '$' |
-| | PAZM | система команд AZM |
-| | 4	| идентификатор сообщения |
-| 1 | dpt_m | Значение глубины в метрах |
-| | *	| разделитель контр. суммы NMEA |
-| | hh | контрольная сумма NMEA |
-| | \<CR\>\<LF\> | конец сообщения |
+| | $	| Sentence start '$' |
+| | PAZM | AZM protocol |
+| | 4	| Sentence ID |
+| 1 | dpt_m | Depth in meters |
+| | *	| NMEA Checksum delimiter |
+| | hh | NMEA Checksum |
+| | \<CR\>\<LF\> | End of sentence |
 
 ### 2.6. D2H_RUCMD
-Сообщение D2H_RUCMD - передается маяком-ответчиком управляющей системе, если была получена команда телеуправления.
+Sentence D2H_RUCMD - transmitted by the responder beacon to the control system if a telecontrol command was received.
 
-Формат сообщения: 
+Sentence format: 
 **`
 $PAZM5,x*hh<CR><LF>
 `**
 
-| № | Поле/параметр | Описание |
+| № | Field/Parameter | Description |
 | :--- | :--- | :--- |
-| | $	| начало сообщения '$' |
-| | PAZM | система команд AZM |
-| | 5	| идентификатор сообщения |
-| 1 | cmdID | Идентификатор команды, [См. Таблица 3.3. Идентификаторы адресных запросов](#33-%D0%B8%D0%B4%D0%B5%D0%BD%D1%82%D0%B8%D1%84%D0%B8%D0%BA%D0%B0%D1%82%D0%BE%D1%80%D1%8B-%D0%B0%D0%B4%D1%80%D0%B5%D1%81%D0%BD%D1%8B%D1%85-%D0%B7%D0%B0%D0%BF%D1%80%D0%BE%D1%81%D0%BE%D0%B2) |
-| | *	| разделитель контр. суммы NMEA |
-| | hh | контрольная сумма NMEA |
-| | \<CR\>\<LF\> | конец сообщения |
+| | $	| Sentence start '$' |
+| | PAZM | AZM protocol |
+| | 5	| Sentence ID |
+| 1 | cmdID | Addressed request ID, [see Table 3.3. Addressed requests]() |
+| | *	| NMEA Checksum delimiter |
+| | hh | NMEA Checksum |
+| | \<CR\>\<LF\> | End of sentence |
 
 ### 2.7. D2H_RBCAST
-Сообщение D2H_RBCAST - передается маяком-ответчиком управляющей системе, если была получена широковещательная команда.
+D2H_RBCAST sentence - sent by the responder beacon to the control system if a broadcast command has been received.
 
-Формат сообщения: 
+Sentence format: 
 **`
 $PAZM6,x*hh<CR><LF>
 `**
 
-| № | Поле/параметр | Описание |
+| № | Field/Parameter | Description |
 | :--- | :--- | :--- |
-| | $	| начало сообщения '$' |
-| | PAZM | система команд AZM |
-| | 6	| идентификатор сообщения |
-| 1 | cmdID | Идентификатор команды, [См. Таблица 3.4. Идентификаторы широковещательных команд](#34-%D0%B8%D0%B4%D0%B5%D0%BD%D1%82%D0%B8%D1%84%D0%B8%D0%BA%D0%B0%D1%82%D0%BE%D1%80%D1%8B-%D1%88%D0%B8%D1%80%D0%BE%D0%BA%D0%BE%D0%B2%D0%B5%D1%89%D0%B0%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D1%8B%D1%85-%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4) |
-| | *	| разделитель контр. суммы NMEA |
-| | hh | контрольная сумма NMEA |
-| | \<CR\>\<LF\> | конец сообщения |
+| | $	| Sentence start '$' |
+| | PAZM | AZM protocol |
+| | 6	| Sentence ID |
+| 1 | cmdID | Request ID, [see Table 3.4. Broadcast requests](#34-%D0%B8%D0%B4%D0%B5%D0%BD%D1%82%D0%B8%D1%84%D0%B8%D0%BA%D0%B0%D1%82%D0%BE%D1%80%D1%8B-%D1%88%D0%B8%D1%80%D0%BE%D0%BA%D0%BE%D0%B2%D0%B5%D1%89%D0%B0%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D1%8B%D1%85-%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4) |
+| | *	| NMEA Checksum delimiter |
+| | hh | NMEA Checksum |
+| | \<CR\>\<LF\> | End of sentence |
 
 ### 2.8. H2D_DINFO_GET
-Сообщение H2D_DINFO_GET - служит для запроса информации об устройстве. 
+H2D_DINFO_GET sentence - is used to request information about the device.
 
-Формат сообщения: 
+Sentence format: 
 **`
 $PAZM?,x*hh<CR><LF>
 `**
 
-| № | Поле/параметр | Описание |
+| № | Field/Parameter | Description |
 | :--- | :--- | :--- |
-| | $	| начало сообщения '$' |
-| | PAZM | система команд AZM |
-| | ?	| идентификатор сообщения |
-| 1 | 0 | Зарезервированно |
-| | *	| разделитель контр. суммы NMEA |
-| | hh | контрольная сумма NMEA |
-| | \<CR\>\<LF\> | конец сообщения |
+| | $	| Sentence start '$' |
+| | PAZM | AZM protocol |
+| | ?	| Sentence ID |
+| 1 | 0 | Reserved |
+| | *	| NMEA Checksum delimiter |
+| | hh | NMEA Checksum |
+| | \<CR\>\<LF\> | End of sentence |
 
 ### 2.9. D2H_DINFO
-Сообщение D2H_DINFO - информация об устройстве. 
+Sentence D2H_DINFO - device information. 
 
-Формат сообщения: 
+Sentence format: 
 **`
 $PAZM!,x,x,c--c,c--c,x,x,x*hh<CR><LF>
 d_type,address,serialNumber,sys_info,sys_version,pts_type,ch_id
 `**
 
-| № | Поле/параметр | Описание |
+| № | Field/Parameter | Description |
 | :--- | :--- | :--- |
-| | $	| начало сообщения '$' |
-| | PAZM | система команд AZM |
-| | !	| идентификатор сообщения |
+| | $	| Sentence start '$' |
+| | PAZM | AZM protocol |
+| | !	| Sentence ID |
 | 1 | d_type | Тип устройства (0 - станция пеленгования, 1 - маяк-ответчик) |
 | 2 | addressOrMask | В зависимости от типа устройства - маска адресов маяков-ответчиков или адрес маяка-ответчика |
 | 3 | serialNumber | Серийный номер устройства |
@@ -307,9 +287,9 @@ d_type,address,serialNumber,sys_info,sys_version,pts_type,ch_id
 | 5 | sys_version | Версия прошивки |
 | 6 | pts_type | Тип датчика давления [См. Таблица 3.6. Типы датчиков давления](#36-%D1%82%D0%B8%D0%BF%D1%8B-%D0%B4%D0%B0%D1%82%D1%87%D0%B8%D0%BA%D0%BE%D0%B2-%D0%B4%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F) |
 | 7 | ch_id | Идентификатор канала связи |
-| | *	| разделитель контр. суммы NMEA |
-| | hh | контрольная сумма NMEA |
-| | \<CR\>\<LF\> | конец сообщения |
+| | *	| NMEA Checksum delimiter |
+| | hh | NMEA Checksum |
+| | \<CR\>\<LF\> | End of sentence |
 
 <div style="page-break-after: always;"></div>
 
