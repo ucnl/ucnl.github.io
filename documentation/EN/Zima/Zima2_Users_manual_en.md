@@ -17,428 +17,425 @@
 
 ## 1. Introducation
 ### 1.1. Purpose
-Подводная акустическая навигационная система **Zima2** предназначена для определения местоположения подводных объектов, оснащенных маяками-ответчиками [Zima2-R](Zima2R_Specification_en.md) в реальном времени.
+The **Zima2** underwater acoustic tracking system is designed to locate underwater objects equipped with [Zima2-R](Zima2R_Specification_en.md) responder beacons in real time.
  
-Маяки-ответчики (далее маяки) могут устанавливаться на:
-- телеуправляемые подводные аппараты (ТНПА)
-- обитаемые подводные аппараты (ОПА)
-- автономные необитаемые подводные аппараты (АНПА)
-- дайверов и технических водолазов (в случае использования автономной версии маяка).
+Beacons-responders (hereinafter beacons) can be installed on:
+- remotely controlled underwater vehicles (RTUV)
+- manned underwater vehicles (OPA)
+- autonomous uninhabited underwater vehicles (AUVs)
+- divers and technical divers (in case of using the autonomous version of beacon).
 
-Система позволяет определять:
-- относительное местоположение подводных объектов (азимутальный угол, дальность, глубина) 
-- абсолютное местоположение подводных объектов (широта, долгота, глубина) при использовании внешних источников навигационных данных (GNSS-приемник и компас) .
+The system allows you to determine:
+- relative location of underwater objects (azimuth angle, range, depth)
+- absolute location of underwater objects (latitude, longitude, depth) when using external sources of navigation data (GNSS receiver and compass).
 
 ### 1.2. Особенности
-Навигационная система **Zima2** является ультракороткобазисной навигационной системой (УКБ, _англ. USBL_), принцип работы которой основан 
-на применении фазированной антенной решетки для определения горизонтального угла прихода сигнала и определения дистанции до маяка методом "запрос-ответ". 
-Система **Zima2** использует современную технологию цифровой широкополосной помехоустойчивой гидроакустической связи, а применяемый сигнал специально
-разработан для сложных гидрологических условий, в том числе условий, характерных для мелких водоемов. 
+The navigation system **Zima2** is an ultra-short-base navigation system (_USBL_), the principle of operation of which is based
+on the use of a phased antenna array to determine the horizontal angle of arrival of the signal and determine the distance to the beacon using the "request-response" method.
+The **Zima2** system uses state-of-the-art digital broadband noise-resistant hydroacoustic communication technology, and the applied signal is specially
+Designed for difficult hydrological conditions, including those found in shallow waters.
 
 <div style="page-break-after: always;"></div>
 
-### 1.3. Состав системы
+### 1.3. System Composition
 
-Система включает в себя:
+The system includes:
 
-- Пеленгационную антенну [Zima2-B](Zima2B_Specification_en.md) 
-- Кабель с интегрированным преобразвателем интерфейса
-- От 1 до 16 маяков-ответчиков [Zima2-R](Zima2R_Specification_en.md)
-- Блок питания и коммутации [Bat&Link Box](Bat_n_link_box_Specification_en.md).
+- DF antenna [Zima2-B](Zima2B_Specification_en.md)
+- Cable with integrated interface converter
+- From 1 to 16 responder beacons [Zima2-R](Zima2R_Specification_en.md)
+- Power supply and switching unit [Bat&Link Box](Bat_n_link_box_Specification_en.md).
 
 | ![Zima2-B](/documentation/def_zima_b_ant.png) |
 | :---: |
 | [Zima2-B](Zima2B_Specification_en.md)|
-| *Пеленгационная антенна* |
+| *DF Antenna* |
 | ![Zima2-B-Interface-cable](/documentation/def_zima_b_int_cable.png) |
 | |
-| *Кабель с интегрированным преобразователем интерфейса* |
-| ![Zima2-R](/documentation/zima_r.png) | 
+| *Cable with integrated interface converter* |
+| ![Zima2-R](/documentation/zima_r.png) |
 | [Zima2-R](Zima2R_Specification_en.md) |
-| *Маяк-ответчик* |
-| ![Bat&Link Box](/documentation/batnlinkbox.png) | 
+| *Beacon-responder* |
+| ![Bat&Link Box](/documentation/batnlinkbox.png) |
 | [Bat&Link Box](Bat_n_link_box_Specification_en.md) |
-| *Блок питания и коммутации* |
+| *Power supply and switching unit* |
 
 <div style="page-break-after: always;"></div>
 
-## 2. Работа с системой Zima2
+## 2. Working with Zima2 USBL system
 
-### 2.0. До проведения работ
-Для работы с системой требуется специализированное программное обеспечениe [🐙 AzimuthSiute](https://github.com/ucnl/AzimuthSuite/releases/download/beta/AzimuthSuit.zip).
+### 2.0. Before start
+Specialized software [🐙 AzimuthSiute](https://github.com/ucnl/AzimuthSuite/releases/download/beta/AzimuthSuit.zip) is required to work with the system.
 
-Заранее скачайте необходимое ПО. Установка не требуется - достаточно просто распаковать содержимое архива в удобное для вас место.
-Перед выездом на водоем убедитесь, что все оборудование полностью заряжено, и при необходимости зарядите все устройства.
+Download the necessary software in advance. Installation is not required - just unzip the contents of the archive to a location convenient for you.
+Make sure all equipment is fully charged before heading out to the water and charge all devices if necessary.
 
-Особое внимание стоит уделять блокам питания и коммутации и маякам-ответчикам: в виду того, что эти устройства имеют встроенные источники питания на основе **LiFePO4**, они имеют очень пологую разрядную характеристику и определить степень заряда встроенного источника сложно. Поэтому рекомендуется перед использованием не раньше чем за 1-2 дня выполнить зарядку всех устройств.
+Particular attention should be paid to power and switching units and responder beacons: in view of the fact that these devices have built-in power supplies based on **LiFePO4**, they have a very flat discharge characteristic and it is difficult to determine the degree of charge of the built-in source. Therefore, it is recommended to charge all devices no earlier than 1-2 days before use.
 
-Мы применяем аккумуляторы на основе **LiFePO4** так как они являются наиболее долговечными и выдерживают максимальное число циклов-заряд разряд по сравнению с аккумуляторами **Li-ion** и **Li-Po**, а также могут работать при низких температурах.
+We use **LiFePO4** based batteries because they are the most durable and withstand the maximum number of charge-discharge cycles compared to **Li-ion** and **Li-Po** batteries, and can also operate at low temperatures. 
 
 <div style="page-break-after: always;"></div>
 
-### 2.1. Подготовка к работе и проверка оборудования
+### 2.1. Preparing for work and equipment testing
 
-#### 2.1.1. Расположение и настройка пеленгационной антенны
+#### 2.1.1. DF Antenna mounting and setup
 
-> ВНИМАНИЕ!!!  
-> В ОТЛИЧИЕ ОТ ПРЕДЫДУЩЕЙ ВЕРСИИ СИСТЕМЫ ПОЛОЖЕНИЕ НУЛЕВОГО НАПРАВЛЕНИЯ АНТЕННЫ БЫЛО ИЗМЕНЕНО!
+> WARNING!  
+> UNLIKE THE PREVIOUS VERSION OF THE SYSTEM, THE POSITION OF THE ZERO DIRECTION OF THE ANTENNA HAS BEEN CHANGED!
 
-Если держать антенну за кабель так, что слева на крепежном пазе окажется скругленный выступ, а справа - острый, то нулевое направление антенны указывает вперед и совпадает с литьевым швом. Нулевое направление показано стрелкой на рисунке ниже. 
+If you hold the antenna by the cable so that there is a rounded protrusion on the mounting groove on the left and a sharp protrusion on the right, then the zero direction of the antenna points forward and coincides with the molding seam. The zero direction is indicated by an arrow in the figure below.
 
 | ![zima2_zero_direction](/documentation/zima2_zero_direction_1.png) | 
 | :---: |
-| Нулевое направление антенны |
-| *Горизонтальный угол отсчитывается по часовой стрелке от нулевого направления антенны, вертикальная ось направлена вниз* |
+| DF antenna zero direction |
+| *The horizontal angle is measured clockwise from the zero direction of the antenna, the vertical axis is pointing down* |
 
-Антенна определяет горизонтальный угол прихода сигнала относительно своего нулевого направления, необходимо соблюдать следующие требования при креплении антенны:
-- Антенна должна располагаться на опускной штанге, обеспечивающей ее стабильное положение не ближе 2 метров от поверхности воды и не выше 1.5 от нижней точки киля судна
-- Антенна должна закрепляться при помощи хомута таким образом, чтобы ее положение во время работы не изменялось (антенна не должна проворачиваться внутри хомута)
-- Антенна не должна быть сильно сдавлена креплением
-- Крепление и его части не должны выступать ниже крепежного паза и таким образом перекрывать рабочие поверхности антенны
-- Крепление и его части не должны перекрывать отверстие датчика давления
-- Тонкий кабель, выходящий из антенны не должен изгибаться с радиусом, меньшим 50 мм, толстый кабель - с радиусом, меньшим 100 мм.
+The antenna determines the horizontal angle of signal arrival relative to its zero direction, the following requirements must be observed when mounting the antenna:
+- The antenna should be placed on a lowering rod, ensuring its stable position no closer than 2 meters from the surface of the water and no higher than 1.5 from the bottom of the vessel's keel
+- The antenna must be fixed with a clamp in such a way that its position does not change during operation (the antenna must not rotate inside the clamp)
+- The antenna should not be strongly squeezed by the mount
+- The mount and its parts must not protrude below the mounting groove and thus overlap the working surfaces of the antenna
+- The mount and its parts must not block the opening of the pressure sensor
+- A thin cable coming out of the antenna should not be bent with a radius of less than 50 mm, a thick cable - with a radius of less than 100 mm.
 
-**Не рекомендуется** установка антенны вблизи крупных объектов: причальных стенок, пирсов, молов, крупных судов, массивных опор и прочих объектов водной инфраструктуры.
+**It is not recommended** to install the antenna near large underwater objects: mooring walls, piers, breakwaters, large ships, massive supports and other water infrastructure facilities.
 
-Антенна подключается к блоку питания и коммутации при помощи удлиняющего кабеля с интегрированным преобразователем интерфейса. На кабеле присутствуют два разъема: один надводный - для подключения к блоку питания и коммутации, другой - подводный, для подключения антенны.
+The antenna is connected to the power supply and switching unit using an extension cable with an integrated interface converter. There are two connectors on the cable: one for connecting to the power supply and switching unit, the other - underwater, for connecting the antenna.
 
-Перед погружением антенны необходимо убедиться:
-- В отсутствии влаги, следов коррозии и загрязнений в обоих частях подводного разъема антенны
-- В целостности уплотнений на обеих частях подводного разъема
-- Наличием на уплотнениях подводного разъема достаточного количества густой силиконовой смазки
-- В том, что разъем сомкнут и крепежное кольцо плотно закручено от руки
+Before submerging the antenna, make sure:
+- In the absence of moisture, traces of corrosion and contamination in both parts of the underwater antenna connector
+- In the integrity of the seals on both parts of the underwater connector
+- The presence of a sufficient amount of thick silicone grease on the seals of the underwater connector
+- That the connector is closed and the fastening ring is tightly screwed on by hand
 
-> ВНИМАНИЕ!  
-> Попадание воды внутрь любых разъемов совершенно недопустимо и приведет к негрантийной поломке!
+> WARNING!  
+> Water ingress into any connectors is completely unacceptable and will result in non-grant damage!
 
-Удлиняющий кабель не должен иметь больших свободных провисов на длине его погружения в воду. Кабель рекомендуется крепить к штанге при помощи веревки или нейлоновых стяжек.
+The extension cable must not have large free sags for the length of its immersion in water. It is recommended to fasten the cable to the rod with a rope or nylon ties.
 
-> ВНИМАНИЕ!  
-> Перед подключением антенны к блоку питания и коммутации посредством удлиняющего кабеля убедитесь, что блок питания коммутации выключен!
+> WARNING!  
+> Before connecting the antenna to the power and switching unit using an extension cable, make sure that the power supply is switched off!
 
-Рекомендуется следующая последовательность действий при установке антенны:
+The following sequence of actions is recommended when installing the antenna:
 
-- проверить подводный разъем антенны
-- подключаить антенну к удлиняющему кабелю сомкнув и закрутив подводный разъем
-- установить антенну в хомут
-- закрепить кабель на штанге при помощи нейлоновых стяжек или отрезков веревки в точках, расположенных не реже 500 мм
-- убедиться, что блок питания и коммутации выключен
-- подключить надводный разъем удлиняющего кабеля к блоку питания и коммутации
-- подключить блок питания и коммутации к ПК при помощи кабеля USB-B
+- check underwater connector of antenna 
+- connect the antenna to the extension cable by closing and screwing the underwater connector
+- install the antenna in the clamp
+- fasten the cable to the rod using nylon ties or pieces of rope at points located at least 500 mm apart
+- make sure that the power supply and switching unit is turned off
+- connect the topside connector of the extension cable to the power supply and switching unit
+- connect the power supply and switching unit to the PC using a USB-B cable
 
-Для исполнения блока питания и коммутации с двумя каналами (для подключения внешнего GNSS-компаса) требуются дополнительные шаги:
-- подключите GNSS-компас к комплектному кабелю
-- подключите кабель GNSS-компаса к блоку питания и коммутации
+The dual channel power supply and switching unit (for connecting an external GNSS compass) requires additional steps:
+- connect the GNSS compass to the supplied cable
+- connect the GNSS compass cable to the power and switching unit
 
-**Включение блока питания** и коммутации необходимо выполнять **после запуска специализированного ПО** на пультовом ПК. Работа с ПО и настройка описаны ниже.
+**Turning on the power supply** and switching must be performed **after launching the specialized software** on the control PC. Software operation and setup are described below.
 
-Для уточнения наименований разъемов на панели блока питания и коммутации обратитесь к [инструкции по эксплуатации блока питания и коммутации Bat&Link Box](Bat_n_link_box_Users_manual_en.md).
+To clarify the names of the connectors on the power and switching unit panel, refer to the [Bat&Link Box power and switching unit user's manual](Bat_n_link_box_Users_manual_en.md).
 
-#### 2.1.2. Расположение маяка на носителе
+#### 2.1.2. Mounting of the responder beacon on the carrier
 
-Маяк-ответчик должен крепиться только за специальный паз мягким хомутом таким образом, чтобы исключить любое неравномерное нагружение корпуса маяка, излишнее сдавливание и затенение/экранирование корпуса маяка. Ниже на рисунке представлены базовые требования по монтажу акустической части маяка-ответчика на носителе:
+The responder beacon must be fastened only by special groove with a soft clamp in such a way as to exclude any uneven loading of the beacon body, excessive squeezing and shading/shielding of the beacon body. The figure below shows the basic requirements for mounting the acoustic part of the transponder beacon on the carrier:
 
 | ![0](/documentation/uWave_mounting_en.png)|
 | :---: |
-| Требования по монтажу акустической части маяка-ответчика на носителе |
-| *Не допускается экранирование пространственной полусферы или частей антенны, расположенной выше крепежного паза; давление в области под креплением должно быть уравновешено с внешним давлением* |
+| Requirements for mounting the acoustic part of the transponder beacon on the carrier |
+| * Shielding of the spatial hemisphere or parts of the antenna located above the mounting groove is not allowed; the pressure in the area under the fastening must be balanced with the external pressure* |
 
-Маяк-ответчик не следует располагать вблизи струй движетелей или непосредственно на их пути. Для работы системы требуется прямая видимость (через толщу воды) между пеленгационной антенной и маяком ответчиком, поэтому маяк должен устанавливаться в верхней точки носителя.
+The responder beacon should not be located near propulsion jets or directly in their path. The system requires a direct line of sight (through the water column) between the direction finding antenna and the responder beacon, so the beacon must be installed at the top of the carrier.
 
-**Для маяка-ответчика в автономном исполнении:**
-Включение маяка-ответчика в автономном исполнении происходит автоматически, при попадании его в воду (контакты для включения от воды расположены на батарейном блоке). Следует помнить, что сразу после включения, маяк-отчетчик в течение **5** секунд определяет атмосферное давление для более точного измерения глубины. Поэтому рекомендуется сначала погрузить в воду батарейный блок и подождать 5 секунд перед погружением самого маяка-ответчика. 
+**For autonomous responder beacon:**
+The standalone beacon is turned on automatically when it falls into water (contacts for switching on from water are located on the battery pack). It should be remembered that immediately after switching on, the beacon determines atmospheric pressure for **5** seconds for more accurate depth measurement. Therefore, it is recommended to submerge the battery pack first and wait 5 seconds before submerging the responder itself.
 
-**Для маяка-ответчика в интегрируемом исполнении:**
-Включение маяка-ответчика в интегрируемом исполнении происходит при подачи питания от внешней системы. После включения маяк-ответчик определяет атмосферное давление в течение **5** секунд для более точного измерения глубины. Если текущее значение внешнего давления более 1200 мБар, то маяк считает, что был включен в погруженном положении, и калибровка атмосферного давления не происходит.
+**For an integrated responder beacon:**
+The integrated version of the responder beacon is switched on when power is supplied from an external system. Once turned on, the responder detects barometric pressure for **5** seconds for more accurate depth measurement. If the current value of the external pressure is more than 1200 mbar, then the beacon considers that it was switched on in the submerged position, and the atmospheric pressure calibration does not take place.
 
-Работоспособность маяка-ответчика легко проверить, включив его: после подачи питания через 2 секунды однократно издается навигационный сигнал. 
+The operability of the beacon-responder can be easily checked by turning it on: after the power is turned on, after 2 seconds, a navigation signal is emitted once.
 
 <div style="page-break-after: always;"></div>
 
-### 2.2. Работа с системой
-Практически всю работу система выполняет в автоматическом режиме, системе требуется задать:
-- адреса маяков, с которыми предполагается работа
-- соленость воды, для правильного вычисления глубины и скорости звука
-- максимальную дальность, на которой маяки могут находится от пеленгационной антенны
-- параметры подключения внешнего источника навигационных данных (GNSS-компас) при необходимости
-- параметры подключения внешнего порта-приемника, для эмуляции GNSS для выбранного маяка-ответчика (при наличии внешнего GNSS-компаса).
+### 2.2. Working with the system
+The system performs almost all the work automatically, the system needs to set:
+- addresses of beacons with which it is supposed to work
+- salinity of water, for the correct calculation of the depth and speed of sound
+- the maximum range at which the beacons can be located from the direction-finding antenna
+- parameters for connecting an external source of navigation data (GNSS compass) if necessary
+- parameters for connecting an external receiver port for GNSS emulation for the selected responder beacon (if an external GNSS compass is available).
 
-Далее система автоматически опрашивает маяки-ответчики из указанного диапазона адресов. Отображает их положение на экране, и записывает трек в абсолютных координатах, при наличии внешнего GNSS-компаса.
+Next, the system automatically polls responder beacons from the specified address range. Displays their position on the screen, and records the track in absolute coordinates, in the presence of an external GNSS compass.
 
-В ходе работы пультовое приложение записывает файлы журналов, которые затем могут быть воспроизведены в том же масштабе времени, в котором были записаны.
+During operation, the application writes log files, which can then be played back in the same time scale in which they were recorded.
 
-#### 2.2.1. Интерфейс и функции приложения AzimuthSuite
+#### 2.2.1. Interface and functions of the AzimuthSuite application
 
-Пультовое приложение [🐙 AzimuthSiute](https://github.com/ucnl/AzimuthSuite/releases/download/beta/AzimuthSuite.zip) предназначено для работы под управлением OC Windows начиная с версии 10 и выше с установленным .NET Framework 4.8.
-Приложение является портируемым (Portable) и не требует установки. Достаточно распаковать архив в удобное для оператора место.
-Приложение и все используемые им библиотеки разработаны ООО "Лаборатория подводной связи и навигации" и являются Open-Source (с открытым исходным кодом).
+The application [🐙 AzimuthSiute](https://github.com/ucnl/AzimuthSuite/releases/download/beta/AzimuthSuite.zip) is designed to work under OS Windows starting from version 10 and higher with .NET Framework 4.8 installed.
+The application is portable and does not require installation. It is enough to unpack the archive to a place convenient for the operator.
+The application and all the libraries used by it are developed by LLC "Laboratory of Underwater Communications and Navigation" and are Open-Source.
 
-Пультовое приложение взаимодействует с устройствами системы согласно откытому [NMEA-подобному протоколу](Zima2_Protocol_Specification_en.md) по последовательному порту.
+The application communicates with the system devices according to the open [NMEA-like protocol](Zima2_Protocol_Specification_en.md) via the serial port.
 
-##### 2.2.1.1. Настройки приложения
+##### 2.2.1.1. Application settings
+The application uses two types of settings:
+- basic system settings, which are stored in the `AzimuthSuite.settings` file in the application directory. These settings are read by the application at startup and saved at the user's command from the settings editor.
+- interface settings, which are stored in the `AzimuthSuite.uisettings` file in the application directory. These settings are read by the application at startup and saved automatically when the application ends.
 
-Приложение использует два типа настроек: 
-- основные системные настройки, которые хранятся в файле `AzimuthSuite.settings` в директории приложения. Данные настройки читаются приложением при старте и сохраняются по команде пользователя из редактора настроек.
-- настройки интерфейса, которые хранятся в файле `AzimuthSuite.uisettings` в директории приложения. Данные настройки читаются приложением при старте и сохраняются автоматически при завершении работы приложения.
-
-Внешний вид окна редактора настроек приложения показан на рисунке ниже.
+The appearance of the application settings editor window is shown in the figure below.
 
 | ![0](/documentation/azimuthsuite_settings_editor_1.png)|
 | :---: |
-| Вид редактора настроек приложения |
-| *1 - Список используемых маяков-ответчиков, 2 - Признак использования внешнего GNSS-компаса, 3 - Скорость порта внешнего GNSS-компаса, 4 - Смещение положения антенны от положения GNSS-компаса в поперечном направлении, 5 - Смещение положения антенны от положения GNSS-компаса в продольном направлении, 6 - Угловая поправка (угол между нулевым направлением GNSS-компаса и нулевым направлением антенны), 7 - Признак использования выходного порта, 8 - Скорость выходного порта, 9 - Кнопки принятия настроек и отмены, 10 - Кнопка сброса настроек к значениям по умолчанию, 11 - Максимальная дистанция до маяков-ответчиков, 12 - Соленость воды* |
+| Settings editor |
+| *1 - List of used responder beacons, 2 - External GNSS compass usage option, 3 - External GNSS compass port speed, 4 - Antenna position offset from GNSS compass position in transverse direction, 5 - Antenna position offset from GNSS compass position Longitudinal direction, 6 - Angle correction (angle between GNSS compass zero and antenna zero), 7 - Output port usage option, 8 - Output port speed, 9 - Accept settings and cancel buttons, 10 - Reset settings to default values button, 11 - Maximum distance to responder beacons, 12 - Water salinity* |
 
-Система поддерживает **последовательную работу с 16 маяками-ответчиками**. Оператор может выбрать требуемые адреса маяков в окне **1**, установив соответствующие галочки. Всегда устанавливайте галочки только напротив тех адресов, которые будут использованы в текущей работе, иначе система буедт тратить время на опрос отсутствующих в акватории маяков.
+The system supports **sequential operation with up to 16 responder beacons**. The operator can select the required beacon addresses in the **1** box by checking the corresponding checkboxes. Always check the boxes next to those addresses that will be used in the current work, otherwise the system will waste time polling beacons that are not in the water area.
 
-**Подключение внешнего GNSS-компаса** поддерживается по последовательному порту. Для этого установите галочку **2** и укажите скорость порта. Сам порт будет определен системой автоматически. Если компас установлен не соосно с антенной (не на штанге), потребуется указать положение антенны относительно положения GNSS-компаса: положение GNSS-компаса принимается за точку отсчета декартовой системы координат и указываются поперечное **4** и продольное **5** смещения антенны от этой точки (поперечное в направлении левый борт - правый борт, продольное в направлении корма - нос). Если нулевые направления компаса и антенны не совпадают, необходимо указать угловую поправку **6** - угол между нулевыми направлениями компаса и антенны, отсчитывающийся от нулевого направления компаса по часовой стрелке.
+**Connection of an external GNSS compass** is supported via serial port. To do this, check the **2** checkbox and specify the port speed. The port itself will be determined automatically by the system. If the compass is not installed coaxially with the antenna (not on the boom), you will need to set the position of the antenna relative to the position of the GNSS compass: the position of the GNSS compass is taken as the reference point of the Cartesian coordinate system and the lateral **4** and longitudinal **5** offsets are indicated antennas from this point (transverse in the direction of the port side - starboard side, longitudinal in the direction of the stern - bow). If the zero directions of the compass and the antenna do not match, you must specify the angular correction **6** - the angle between the zero directions of the compass and the antenna, counted from the zero direction of the compass clockwise.
 
-Ниже проиллюстрировано расположение пеленгационной антенны относительно точки привязки:
+The location of the DF antenna in relation to the anchor point is illustrated below:
 
 | ![0](/documentation/boat_gnss_1.png)|
 | :---: |
-| Задание расположения пеленгационной антенны относительно точки привязки и нулевого направления компаса |
-| _Смещения антенны относительно GNSS-компаса: **поперечное ΔX** и **продольное ΔY**; угловое несовпадение нулевых направлений компаса и пеленгационной антенны **𝛿**_ |
+| Setting the location of the direction finding antenna relative to the anchor point and compass zero direction |
+| _Antenna offsets relative to the GNSS compass: **lateral ΔX** and **longitudinal ΔY**; angular mismatch of zero directions of compass and direction-finding antenna **𝛿**_ |
 
-**При работе в морской воде** следует указать соленость при помощи группы элементов **12**: или введя известное значение в поле ввода или воспользовавшись встроенной базой данных соленостей мирового океана, нажав кнопку **🔎** и указав текущие географические координаты.
+**When working in sea water**, specify the salinity using the **12** group of elements: either by entering a known value in the input field or using the built-in database of world ocean salinities by pressing the **🔎** button and indicating the current geographical coordinates .
 
-**При работе во внутренних пресных водоемах** задайте соленость воды **0.0 PSU**.
-Значение солености необходимо для более точного определения системой глубины и скорости звука.
+**When operating in inland fresh waters** set the water salinity to **0.0 PSU**.
+The salinity value is necessary for the system to more accurately determine the depth and speed of sound.
 
-**Макисмальная дистанция до маяка** задается в поле **11** и определяет максимальный временной интервал ожидания ответа маяка. Значение задается в диапазоне от 500 до 5999 метров. Следует указывать минимально применимое для текущих условий работы значение, так как это значение напрямую определяет скорость работы системы и время ее простоя при пропуске ответа маяка-ответчика.
+**Maximum distance to the beacon** is set in the **11** field and determines the maximum time interval for waiting for the beacon's response. The value is set in the range from 500 to 5999 meters. The minimum applicable value for the current operating conditions should be specified, since this value directly determines the speed of the system and its idle time when the response of the responder beacon is missed.
 
-Если требуется передача вычисленного географического положения одного из маяков-отвтетчиков в виде стандартных сообщений NMEA (GGA, RMC) в другую систему, включите настройку **7** и укажите имя и скорость порта, в который приложение будет передавать данные. Так как порт используется только для передачи, он не может быть определен автоматически и его имя требуется указать.
+If you want to transmit the computed geographic location of one of the responder beacons as standard NMEA (GGA, RMC) messages to another system, enable setting **7** and specify the name and speed of the port to which the application will transmit data. Since the port is used only for transmission, it cannot be determined automatically and its name must be specified.
 
-При нажатии кнопки **ОК** приложение сохранит настройки и предложит перезапуститься для того, чтобы новые настройки вступили в силу.
+When you press the **OK** button, the application will save the settings and prompt you to restart for the new settings to take effect.
 
-##### 2.2.1.2. Главное окно приложения
+##### 2.2.1.2. Main window
 
-Вид главного окна приложения показан на рисунке ниже.
+The view of the main window of the application is shown in the figure below.
 
 | ![0](/documentation/azimuthsuite_main_window_1.png)|
 | :---: |
-| Вид главного окна приложения |
-| *1 - Главная панель инструментов, 2 - Панель инструментов карты, 3 - Поле карты, 4 - Текстовое поле дополнительных параметров, 5 - Текстовое поле журнала, 6 - Дополнительная панель инструментов, 7 - Строка статуса, 8 - Панель инструментов списка маяков-ответчиков, 9 - Список маяков-ответчиков, 10 - Панель переключателей отбражаемых в списке маяков-отвтетчиков параметров* |
+| View of the main application window |
+| *1 - Main toolbar, 2 - Map toolbar, 3 - Map field, 4 - Misc info text field, 5 - Log text field, 6 - Additional toolbar, 7 - Status bar, 8 - Responder beacon list toolbar , 9 - List of responder beacons, 10 - Switch panel of parameters displayed in the list of responder beacons* |
 
-- **1. Главная панель инструментов** располагается в верхней части окна приложения и сподержит следующие элементы:
-  - Кнопка **🔌 LINK** включает и отключает связь со всеми устройствами. При включении соединения приложение бует искать подключенную пеленгационную антенну Zima2-B и внешний GNSS-компас (при включенной настройке). Эта функция также доступна по комбинации клавиш `Ctrl + L`.
-  - Кнопка **⚙ SETTINGS** служит для вызова редактора настроек. Она становится недоступка при активном соединении и при активном воспроизведении файла журнала
-  - Меню **📖 LOG** - содержит функции для работы с файлами журналов
-    - Пункт **👀 View current** - открыть текущий файл журнала в приложении, ассоциированном с расширением 'log' (как правило это Notepad). Эта функция также доступка по комбинации клавиш `Ctrl + H`
-    - Пункт **▶ Playback...** - выбор файла журнала для воспроизведения в реальном масштабе времени. Данная функция позволяет практически полностью восстановить ход проведенных работ и, к примеру, восстановить трек, который не был сохранен.
-    - Пункт **🧹 Clear empty entries** - очистка директории LOG в папке приложения: будут удалены все файлы журналов, размером менее 2 килобайт и все пустые папки
-    - Пункт **🗜 Archive all entries...** - упаковка всей папки с файлами журналов в Zip-архив.
-    - Пункт **🗑 Delete all entries** - удаление всех файлов журналов приложения. **Будьте внимательны! Все файлы будут удалены без возможности восстановления!!!**
-    - Пункт **🧹+🗜+🗑 Do them all...** - Удаление всех пустых папок, файлов журналов меньше 2 килобайт, упаковка остальных файлов журналов в Zip-архим и удаление оригиналов в папке LOG приложения.
-  - Меню **🛠 UTILS**
-    - Подменю **🗺 TRACKS** содержит функции для работы с треками
-      - Пункт **💾 Export...** служит для сохранения треков в формате Goole KML или CSV (Comma-separated values). Эта функция доступна по комбинации клвиш `Ctrl + S`
-      - Подменю **🤖 DEVICE**
-        - Пункт **View info...** активен только при активном соединении и подключенном устройсте (пеленгационной антенне или маяке-ответчике) и служит для вызова окна с информацией об устройстве: типе, версии прошивки и серийном номере
-        - Пункт **Responder settings...** активен только при активном соединении и подключенном маяке-ответчике. Служит для вызова редактора настроек маяка-ответчика. Функция также доступна по комбинации клавиш `Ctrl + R`
-  - Группа элементов для управления выходным портом содержит:
-    - Кнопка **🔄** обновить доступные последовательные порты
-    - Выпадающий список доступных портов для использования в качестве выходного
-    - Выпадающий список адресов маяков-ответчикаов, чьи координаты необходимо передавать в выходной порт
-    - Кнопка **📣** включения/выключения выходного порта
-  - Кнопка **ℹ INFO** служит для вызова окна с данными о приложении
+- **1. The main toolbar** is located at the top of the application window and contains the following elements:
+  - The **🔌 LINK** button turns on and off the connection with all devices. When the connection is enabled, the application will search for the connected Zima2-B DF antenna and external GNSS compass (when the setting is enabled). This feature is also available via the `Ctrl + L` key combination.
+  - The **⚙ SETTINGS** button is used to open the settings editor. It becomes inaccessible when the connection is active and when the log file is actively replayed.
+  - Menu **📖 LOG** - contains functions for working with log files
+    - Item **👀 View current** - open the current log file in the application associated with the 'log' extension (usually Notepad). This function is also accessible via the key combination `Ctrl + H`
+    - Item **▶ Playback...** - select a log file for real-time playback. This function allows you to almost completely restore the progress of the work done and, for example, restore a track that has not been saved.
+    - Item **🧹 Clear empty entries** - cleaning the LOG directory in the application folder: all log files less than 2 kilobytes in size and all empty folders will be deleted
+    - Item **🗜 Archive all entries...** - packing the entire folder with log files into a Zip archive.
+    - Item **🗑 Delete all entries** - delete all application log files. **Be careful! All files will be permanently deleted!!!**
+    - Item **🧹+🗜+🗑 Do them all...** - Deleting all empty folders, log files less than 2 kilobytes, packing the rest of the log files into a Zip archive and deleting the originals in the LOG folder of the application.
+  - Menu **🛠UTILS**
+    - **🗺 TRACKS** submenu contains functions for working with tracks
+      - The **💾 Export...** item is used to save tracks in Goole KML or CSV (Comma-separated values) format. This function is available with the key combination `Ctrl + S`
+      - Submenu **🤖 DEVICE**
+        - The **View info...** item is active only when the connection is active and the device is connected (DF antenna or responder beacon) and serves to open a window with information about the device: type, firmware version and serial number
+        - The **Responder settings...** item is active only when the connection is active and the responder beacon is connected. Serves to call the editor of the responder beacon settings. The function is also available with the key combination `Ctrl + R`
+  - The group of elements for controlling the output port contains:
+    - Button **🔄** to update available serial ports
+    - Drop-down list of available ports to use as output
+    - Drop-down list of addresses of beacons-responders, whose coordinates must be transmitted to the output port
+    - Button **📣** on/off output port
+  - Button **ℹ INFO** is used to open the window with information about the application
 
-- **2. Панель инструментов карты** находится над полем карты (3) и содержит следующие элементы:
-  - Кнопка **⛯** - включение/отключение отображения лимба. Изменение состояния этой кнопки автоматически сохраняется и воспроизводится при проигрывании файлов журнала
-  - Кнопка **📜** - включение/отключение отображения текстового поля журнала (5). Изменение состояния этой кнопки автоматически сохраняется и воспроизводится при проигрывании файлов журнала
-  - Кнопка **📑** - включение/отключение отображения поля комментариев (NOTES). Изменение состояния этой кнопки автоматически сохраняется и воспроизводится при проигрывании файлов журнала
-  - Кнопка **👽** - - включение/отключение отображения поля дополнительных параметров (4). Изменение состояния этой кнопки автоматически сохраняется и воспроизводится при проигрывании файлов журнала
-  - Меню **🎨** содержит список доступных цветовых схем. Измненение цветовой схемы автомтически сохраняется
+- **2. The map toolbar** is located above the map field (3) and contains the following elements:
+  - Button **⛯** - enable / disable the display of the limb. Changing the state of this button is automatically saved and replayed when playing log files
+  - Button **📜** - enable/disable the display of the log text field (5). Changing the state of this button is automatically saved and replayed when playing log files
+  - Button **📑** - enable/disable the display of the comments field (NOTES). Changing the state of this button is automatically saved and replayed when playing log files
+  - Button **👽** - - enable/disable the display of the misc info field (4). Changing the state of this button is automatically saved and replayed when playing log files
+  - Menu **🎨** contains a list of available color schemes. Color scheme changes are automatically saved
 
-- **3. Поле карты** служит для отображения относительного положения антенны и маяков-ответчтиков в масштабе, а также различной дополнительной информации:
-  - Текстовое поле дополнительных параметров (4) располагается в левой верхней части панели карты. Отображение этого поля может переключаться при помощи кнопки **👽** на панели инструментов карты (2). Каждый параметр отображается в отдельной строке, начинающейся с трехбуквенного идентификатора параметра и двоеточия, затем отображается значение параметра и единицы измерения. Время в формате (MM:SS), отображаемое рядом с параметром, показывает как давно значение параметра было обновлено. Ниже в таблице представлен список всех возможных идентификаторов и их описание:
+- **3. The map field** serves to display the relative position of the antenna and responder beacons on a scale, as well as various additional information:
+  - The field of mics info (4) is located in the upper left part of the map panel. The display of this field can be switched using the **👽** button on the map toolbar (2). Each parameter is displayed on a separate line, starting with a three-letter parameter identifier followed by a colon, followed by the parameter value and unit of measure. The time in the format (MM:SS) displayed next to the parameter indicates how long ago the parameter value was updated. The table below lists all possible identifiers and their descriptions:
 
-| Идентификатор | Описание | Единицы измерения | Диапазон | 
+| ID | Description | Units of measure | Range |
 | :--- | :--- | :--- | :--- |
-| DPT | Глубина погружения антенн | м | 0 .. 300 |
-| WTM | Занчение температуры воды | °C | -10 .. +40 |
-| PTC | Дифферент антенны | ° | -90 .. +90 |
-| ROL | Крен антенны | ° | -90 .. +90 |
-| LAT | Широта по данным внешнего GNSS | ° | -90 .. 90 |
-| LON | Долгота по данным внешнего GNSS  | ° | -180 .. 180 |
-| SPD | Скорость по данным внешнего GNSS | km/h (m/s) | >= 0 | 
-| CRS | Курс по данным внешнего GNSS | ° | 0 .. 360 |
-| HDN | Азимут по данным внешнего GNSS | ° | 0 .. 360 |
+| DPT | Antenna immersion depth | m | 0 .. 300 |
+| WTM | Water temperature reading | °C | -10 .. +40 |
+| PTC | Antenna pitch | ° | -90 .. +90 |
+| ROL | Antenna roll | ° | -90 .. +90 |
+| LAT | Latitude according to external GNSS | ° | -90 .. 90 |
+| lon | Longitude according to external GNSS | ° | -180 .. 180 |
+| SPD | Speed according to external GNSS | km/h (m/s) | >= 0 |
+| CRS | Course according to external GNSS | ° | 0 .. 360 |
+| HDN | Azimuth according to external GNSS | ° | 0 .. 360 |
 
-- **5. Поле журнала** располагается в нижней части панели карты и отображает последние 4 строки журнала приложения. Видимость этого поля переключается кнопкой **📜** на панели инструментов карты (2).
+- **5. The log field** is located at the bottom of the map panel and displays the last 4 lines of the application's log. The visibility of this field is toggled with the **📜** button on the map toolbar (2).
 
-- **6. Дополнительная панель инструментов** располагается под панелью карты и содержит следующие элементы:
-  - Поле ввода и кнопка **📝 ADD NOTE** служат для ввода комментариев в файл журнала. Вы можете просто набирать текстовый комментарий и нажимать клавишу **Enter** независимо от того, на каком элементе управления находится фокус. Комментарии сохраняются с временной меткой, и в дальнейшем, при проигрывании файла журнала комментарии будут отображаться в соответствующий момент времени. Данная функция позволяет быстро сохранить какие-либо текстовые заметки о ходе работы
-  - Кнопка **📸 SCREENSHOT** служит для сохранения снимка главного окна приложения в графический файл. Снимки экрана сохраняются в директории **SCREENSHOTS** в папке приложения. Имя последнего сохраненного скриншота отображается в строке статуса (7). Данная функция также доступна по комбинации клавиш `Ctrl + P`
+- **6. The additional toolbar** is located below the map panel and contains the following elements:
+  - The input field and button **📝 ADD NOTE** are used to enter comments into the log file. You can simply type a text comment and press **Enter** regardless of which control has focus. The comments are saved with a timestamp, and in the future, when playing the log file, the comments will be displayed at the appropriate point in time. This function allows you to quickly save any text notes about the progress of work.
+  - The **📸 SCREENSHOT** button is used to save a snapshot of the main application window to a graphic file. Screenshots are saved in the **SCREENSHOTS** directory in the application folder. The name of the last saved screenshot is displayed in the status bar (7). This function is also available via the key combination `Ctrl + P`
 
-- **7. Строка статуса** В строке отображаются статусы портов пеленгационной антенны и внешнего источника навигационных данных (внешнего GNSS-компаса), имя последнего сохраненного скриншота или Zip-архива, в который были упакованы файлы журнала
+- **7. Status bar** The bar displays the status of the ports of the DF antenna and the external source of navigation data (external GNSS compass), the name of the last saved screenshot or the Zip archive in which the log files were packed
 
-- **8. Панель инструментов списка маяков-ответчиков** **REMOTES** расположена над списком маяков-ответчиков (9) в левой части главного окна приложения. Панель содержит следующие элементы:
-  - Кнопка **▼** - свернуть все элементы списка (`Ctrl + Down`)
-  - Кнопка **▲** - развернуть все элементы списка (`Ctrl + Up`)
+- **8. The toolbar of the list of responder beacons** **REMOTES** is located above the list of responder beacons (9) in the left part of the main application window. The panel contains the following elements:
+  - Button **▼** - collapse all list items (`Ctrl + Down`)
+  - Button **▲** - expand all list items (`Ctrl + Up`)
 
-- **9. Список маяков-ответчиков** **REMOTES** расположен в левой части главного окна приложения. Список имеет древовидную структуру, узлы верхнего уровня именуются по адресам маяков-ответчиков. Дочерние узлы содержат известную системе информацию о данном маяке-ответчике. Каждый отдельный параметр представлен строчкой, которая начинается с идентификатора параметра, через двоеточие следует значение параметра. Если значение данного параметра было обновлено более 3-х секунд назад, то в скобках указывается время, прошедшее с момента обновления параметра в формате (MM:SS). Ниже представлен список возможных параметров:
+- **9. The list of responder beacons** **REMOTES** is located on the left side of the main application window. The list has a tree structure, the top-level nodes are named after the addresses of responder beacons. Child nodes contain information known to the system about a given responder beacon. Each individual parameter is represented by a string that starts with the parameter identifier followed by a colon followed by the parameter value. If the value of this parameter was updated more than 3 seconds ago, then the time elapsed since the parameter was updated in the format (MM:SS) is indicated in brackets. Below is a list of possible options:
 
-| Идентификатор | Описание | Единицы измерения | Диапазон | 
+| ID | Description | Units of measure | Range |
 | :--- | :--- | :--- | :--- |
-| DST | Дистанция до маяка-отвечика от положения по данным внешнего GNSS (проекция наклонной дальности на водную поверхность) | м | 0 .. 5999 |
-| AZM | Направление (курс) на маяк-ответчик | ° | 0 .. 360 |
-| DPT | Глубина маяка-отвечика | м | 0 .. 300 |
-| RAZ | Обратное направление (курс) от маяка-ответчика на пеленгационную антенну | ° | 0 .. 360 |
-| ELV | Вертикальный угол на маяк-ответчик | ° | 0 .. 90 |
-| MSR | Параметр, характеризующий качество связи | dB | 0 .. 90 |
-| PTM | Время распространения сигнала | сек | 0 .. 4 |
-| LAT | Вычисленная широта | ° | -90 .. 90 |
-| LON | Вычисленная долгота | ° | -180 .. 180 |
+| DST | Distance to the beacon-responder from the position according to external GNSS data (slant range projection onto the water surface) | m | 0..5999 |
+| AZM | Direction (course) to the transponder beacon | ° | 0 .. 360 |
+| DPT | Depth of the responder beacon | m | 0 .. 300 |
+| RAZ | Reverse direction (course) from the transponder beacon to the direction finding antenna | ° | 0 .. 360 |
+| ELV | Vertical angle on transponder beacon | ° | 0 .. 90 |
+| MSR | Parameter characterizing the quality of communication | dB | 14 .. 40 |
+| PTM | Signal propagation time | sec | 0 .. 4 |
+| LAT | Computed latitude | ° | -90 .. 90 |
+| lon | Computed longitude | ° | -180 .. 180 |
 
-Наиболее важными параметрами здесь являются **AZM**, **DST** и **RAZ**: по азимуту и дистанции оператор всегда может понять где относительно него располагается тот или иной маяк-ответчик, а параметр **RAZ** позволит осуществить привод носителя.
-Отображение различных параметров переключается кнопками на панели (10). 
+The most important parameters here are **AZM**, **DST** and **RAZ**: by azimuth and distance, the operator can always understand where one or another responder beacon is located relative to him, and the **RAZ** parameter will allow perform the homing task.
+The display of various parameters is switched by the buttons on the panel (10).
 
-- **10. Панель переключателей отбражаемых в списке маяков-отвтетчиков параметров** переключает видимость параметров в списке:
-  - Кнопка **DST/AZM** включает/выключает отображение дистанции и направления на маяки-ответчики. Изменение состояния этой кнопки автоматически сохраняется и воспроизводится при проигрывании файлов журнала
-  - Кнопка **DPT** включает/выключает отображение глубины маяков-ответчиков. Изменение состояния этой кнопки автоматически сохраняется и воспроизводится при проигрывании файлов журнала
-  - Кнопка **RAZ** включает/выключает отображение направления **от** маяков-ответчиков. Изменение состояния этой кнопки автоматически сохраняется и воспроизводится при проигрывании файлов журнала
-  - Кнопка **ELV** включает/выключает отображение вертикального направления на маяки-ответчики. Изменение состояния этой кнопки автоматически сохраняется и воспроизводится при проигрывании файлов журнала
-  - Кнопка **MISC** включает/выключает отображение времени распространения сигнала **PTM** и параметра качества связи **MSR**. Изменение состояния этой кнопки автоматически сохраняется и воспроизводится при проигрывании файлов журнала
-  - Кнопка **LOC** - включает/выключает отображение местоположения маяков-ответчиков (широты и долготы). Изменение состояния этой кнопки автоматически сохраняется и воспроизводится при проигрывании файлов журнала
+- **10. The switch panel of parameters displayed in the list of responder beacons** switches the visibility of parameters in the list:
+  - The **DST/AZM** button turns on/off the display of distance and direction on the responder beacons. Changing the state of this button is automatically saved and replayed when playing log files
+  - The **DPT** button turns on / off the display of the depth of the responder beacons. Changing the state of this button is automatically saved and replayed when playing log files
+  - The **RAZ** button turns on/off the display of the direction **from** the responder beacons. Changing the state of this button is automatically saved and replayed when playing log files
+  - The **ELV** button turns on/off the display of the vertical direction on the responder beacons. Changing the state of this button is automatically saved and replayed when playing log files
+  - The **MISC** button turns on/off the display of the signal propagation time **PTM** and the link quality parameter **MSR**. Changing the state of this button is automatically saved and replayed when playing log files
+  - Button **LOC** - turns on/off the display of the location of responder beacons (latitude and longitude). Changing the state of this button is automatically saved and replayed when playing log files
 
-##### 2.2.1.3. Настройка маяков-ответчиков
+##### 2.2.1.3. Configuring responder beacons
 
-Если работа проводится с более чем одним маяком-ответчиком, совершенно необходимо, чтобы их адреса были различны. 
-Для настройки адреса маяка-ответчика его требуется подключить к ПК. Для автономного исполнения маяка-ответчика его необходимо отсоединить от батарейного блока и подключить через комплектный USB-переходник.
+If work is being done with more than one responder beacon, it is imperative that their addresses are different.
+To set the address of the responder beacon, it must be connected to a PC. For autonomous execution of the responder beacon, it must be disconnected from the battery pack and connected via the supplied USB adapter.
 
-Для интегрируемого исполнения, необходимо воспользоваться преобразователем USB-UART согласно распиновке:
+For an integrated version, you must use the USB-UART converter according to the pinout:
 
-> ВНИМАНИЕ! Напряжение линий данных маяка-ответичка 0 .. 3.3 V! Используйте для подключения маяков к ПК только преобразователи с подходящими уровнями.
+> ATTENTION! The voltage of the data lines of the response beacon is 0 .. 3.3 V! Use only converters with suitable levels to connect beacons to a PC.
 
 <div style="page-break-after: always;"></div>
 
 | ![Zima-R and Zima2-R wiring](/documentation/ZimaR_wiring_diagram_en.png) |
 | :---: |
-| Назначение жил кабеля маяков-ответчиков Zima-R и Zima2-R |
+| Functions of wires of Zima-R and Zima2-R responder beacons |
 
-После подключения маяка-ответчика к ПК, запустите приложение **AzimuthSuite** и установите соединение, нажав кнопку **🔌 LINK** (или комбинацию клавиш `Ctrl + L`).
-Приложение выполнит поиск порта, ход и результат поиска отображается в строке статуса.
+After connecting the beacon to the PC, launch the **AzimuthSuite** application and establish a connection by pressing the **🔌 LINK** button (or the key combination `Ctrl + L`).
+The application will search for the port, the progress and result of the search is displayed in the status bar.
 
-После того, как соединение будет успешно установлено, станет доступен пункт меню **🛠 UTILS** ⯈ **🤖 DEVICE** ⯈ **Responder settings...**.  
-В открывшемся окне диалога настройки адреса доступны функции:
-- определения текущего адреса маяка (кнопка **📤 QUERY**)
-- задания указанного адреса маяка (кнопка **📥 APPLY**)
+After the connection is successfully established, the menu item **🛠 UTILS** ⯈ **🤖 DEVICE** ⯈ **Responder settings...** will become available.
+In the address setting dialog box that opens, the following functions are available:
+- determination of the current beacon address (button **📤 QUERY**)
+- setting the specified beacon address (button **📥 APPLY**)
 
-Запись новых настроек в энергонезависимую память маяка-ответчика занимает от 1.5 до 3 секунд.
+Writing new settings to the non-volatile memory of the responder beacon takes from 1.5 to 3 seconds.
 
+#### 2.2.2. Working with the system
 
-#### 2.2.2. Взаимодействие с системой
+At this stage it is assumed that:
 
-На данном этапе подразумевается, что:
+- Underwater antenna connector reviwed and closed (extension cable connected to DF antenna)
+- The antenna is properly fixed to the pole and the extension cable has no loose slack
+- The topside connector of the extension cable is connected to the power and switching unit, and the unit itself is turned off
+- Power and switching unit connected to PC with USB-B cable
+- If a dual-channel power supply and switching is used:
+  - External GNSS compass connected to the power supply and switching unit
+  - The offset of the direction finding antenna relative to the geolocation point (the position of the GNSS receiver) is measured and entered in the application settings
+  - Angle between compass and DF antenna zero measured and entered in app settings
+  - The second channel of the power supply and switching unit is connected to the PC using a USB-B cable
+- All responder beacons with which work is supposed to have different addresses
+- Addresses of all responder beacons with which work is supposed to be specified in the application settings
+- If autonomous beacons are used, then the connectors connecting them to the battery packs are reviwed and tightly closed, the battery packs are fully charged
+- If integrated beacons are used, then the cable connections with the carrier are reviwed for tightness (according to the type of connection)
+- **AzimuthSuite** app launched
 
-- Подводный разъем антенны проверен и сомкнут (удлиняющий кабель подключен к пеленгационной антенне)
-- Антенна должным образом закреплена на штанге, а удлиняющий кабель не имеет свободных провисов
-- Надводный разъем удлиняющего кабеля подключен к блоку питания и коммутации, а сам блок выключен
-- Блок питания и коммутации подключен к ПК при помощи кабеля USB-B
-- Если используется двухканальный блок питания и коммутациия:
-  - Внешний GNSS-компас подключен к блоку питания и коммутации
-  - Смещение пеленгационной антенны относительно точки топопривязки (положения GNSS-приемника) измерено и внесено в настройки приложения
-  - Угол между нулевым направлением компаса и пеленгационной антенны измерен и внесен в настройки приложения
-  - Второй канал блока питания и коммутации подключен к ПК при помощи кабеля USB-B
-- Все маяки-ответчики, с которыми предполагается работа имеют несовпадающие адреса
-- Адреса всех маяков-ответчиков, с которыми предполагается работа указаны в настройках приложения
-- Если используются маяки-ответчики в автономном исполнении, то разъемы, соединяющие их с батарейными блоками проверены и плотно сомкнуты, батарейные блоки полностью заряжены
-- Если используются маяки-ответчики в интегрируемом исполнении, то места кабельных соединений с носителем проверены на герметичность (согласно типу соединения)
-- Приложение **AzimuthSuite** запущено
+Beacons are recommended to be turned on in the surface position: within five seconds after power-up, atmospheric pressure is calibrated, which allows you to measure depth with greater absolute accuracy.
 
-Маяки рекомендуется включать в надводном положении: при этом в течение пяти секунд после подачи питания происходит калибровка атмосферного давления, которая позволяет выполнять измерение глубины с большей абсолютной точностью.
+Since autonomous beacons turn on when the battery pack is immersed in water, it is recommended that the battery pack be immersed in water first, and the transponder beacon itself only after five seconds have passed.
 
-Так как автономные маяки включаются при погружении батарейного блока в воду, то рекомендуется сначала погружать в воду батарейный блок, а сам маяк-ответчик только по прошествии пяти секунд.
+It is desirable to turn on beacons in an integrated version before diving, if this is possible under current conditions.
 
-Маяки в интегрируемом исполнении желательно включать перед погружением если это возможно в текущих условиях.
+To start the system, connect by pressing the **🔌 LINK** button (or use the `Ctrl + L` key combination). The application will start searching for the connection port for the DF antenna and, if the corresponding setting is set, for the connection port for the external GNSS compass.
+Then turn on the Bat&Link Box power and switching unit.
+The connection status is displayed in the status bar at the bottom of the main application window. A green background below the corresponding text field indicates a successful connection.
 
-Для начала работы системы выполните подключение, нажав кнопку  **🔌 LINK** (или воспользуйтесь комбинацией клавиш `Ctrl + L`). Приложение начнет поиск порта подключения пеленгационной антенны и, если соответствующая настройка установлена, порта подключения внешнего GNSS-компаса.
-После этого включите блок питания и коммутации Bat&Link Box. 
-Статус подключения отображается в строке статуса в нижней части главного окна приложения. Зеленый фон под соответствующим текстовым полем сигнализирует об успешном подключении.
+> It should be remembered that the application is designed to work with only one system device at a time: if both the direction finding antenna and one of the beacons are connected to the PC, then it is highly likely that the beacon will be the first to be detected when searching for the port. The search for the port of the direction finding station will not be performed in this case.
 
-> Следует помнить, что приложение рассчитано на работу только с одним устройством системы в один момент времени: если к ПК подключена и пеленгационная антенна и один из маяков, то велика вероятность, что при поиске порта будет первым обнаружен маяк. Поиск порта пеленгационной станции в этом случае производится не будет.
+After the corresponding port (or ports) are detected, the system immediately proceeds to polling responder beacons, the addresses of which are specified in the settings.
+The work takes place in a fully automatic mode.
 
-После того, как соответствующий порт (или порты) будут обнаружены, система сразу переходит к опросу маяков-ответчиков, адреса которых указаны в настройках.
-Работа происходит в полностью автоматическом режиме.
+Make sure that the additional information text field is displayed (button **👽** on the map tools field is pressed) in the upper left corner of the map field.
+Immediately after connecting, the local parameters are displayed in the additional information field:
+- depth, temperature, roll and pitch according to the readings of the built-in DF antenna sensor
+- geographic position, speed, heading and azimuth angle if an external GNSS compass is connected.
 
-Убедитесь, что текстовое поле дополнительной информации отображается (кнопка **👽** на поле инструментов карты нажата)  в левом врхнем углу поля карты.
-Сразу после подключения в поле дополнительной информации отображаются локальные параметры: 
-- глубина, температура, крен и дифферент по показаниям встроенного датчика пеленгационной антенны
-- географическоге положение, скорость, курс и азимутальный угол, если подключен внешний GNSS-компас.
+The map field is arranged as follows: the position of the vessel (DF antenna) is displayed in the middle. If an external GNSS receiver is not used, then the null direction of the antenna is assumed to point to the top of the screen. If an external GNSS compass is connected, the heading to the top of the screen is the same as Geographic North, and the vessel is displayed based on the current heading angle.
 
-Поле карты устроено следующим образом: в середине отображается положение судна (пеленгационной антенны). Если внешний GNSS-приемник не используется, то принимается, что нулевое направление антенны указывает на верх экрана. Если внешний GNSS-компас подключен, то направление на верх экарна совпадает с направлением на географический север, а судно отображается с учетом текущих показаний азимутального угла.
+The position of the responder beacons is displayed in the form of circles with numbers, the circles are connected by lines with the center of the polar coordinate system - the position of the direction-finding antenna or the geolocation point, if an external GNSS compass is used.
 
-Положение маяков ответчиков отображается в виде кругов с номерами, круги соединяются линиями с центром полярной системы координат - положением пеленгационной антенны или точки топопривязки, если используется внешний GNSS-компас.
+The list of responder beacons **REMOTES** (to the right of the map field) displays the parameters of responder beacons known to the system. When a responder beacon response is missed (or if the responder beacon did not receive the interrogation signal), the string **TMO: ⚑** is displayed in the parameter list of this responder beacon.
 
-В списке маяков-ответчиков **REMOTES** (справа от поля карты) отображаются известные системе параметры маяков-ответчиков. При пропуске ответа маяка-ответчика (или если маяк-ответик не принял запросный сигнал) в списке параметров данного маяка-ответчика отображается строка **TMO: ⚑**.
+If an external GNSS receiver is used, the system calculates their absolute geographic coordinates and the application accumulates tracks of their own position and the calculated positions of the transponder beacons. Tracks are not saved automatically! To save tracks, use the menu item **🛠 UTILS** ⯈ **🗺 TRACKS** ⯈ **💾 Export...** (or the key combination `Ctrl + S`).
+Saving in Google KML and CSV format is available.
 
-Если используется внешний GNSS-приемник, система вычисляет их абсолютные географические координаты и приложение накапливает треки собственного местоположения и вычисленных местоположений маяков-ответчиков. Треки не сохраняются автоматически! Для созранения треков воспользуйтесь пунктом меню **🛠 UTILS** ⯈ **🗺 TRACKS** ⯈ **💾 Export...** (или комбинацией клавиш `Ctrl + S`).
-Доступно сохранение в формате Google KML и CSV.
+The application allows you to emulate a GNSS receiver for one of the beacons in real time (if an external GNSS compass is used): the calculated coordinates can be transmitted as standard RMC and GGA messages via the serial port. The selection of the beacon address and the port name for emulation can be done while the system is running.
 
-Приложение позволяет в реальном времени эмулировать GNSS-приемник для одного из маяков (в случае если используется внешний GNSS-компас): вычисленные координаты могут передаваться в виде стандартных сообщений RMC и GGA через последовательный порт. Выбор адреса маяка и имя порта для эмуляции можно производить во время работы системы.
-
-Следует помнить о факторах, снижающих эффективность работы системы, в частности:
-- недостаточная глубина пеленгационной антенны
-- расположение в непосредственной близости массивных слабопоглощающих объектов инфраструктуры и судов
-- отсутствие прямой видимости через толщу воды между пеленгационной антенной и маяками-ответчиками
-- высокая зашумленность (как электромагнитные помехи, например в сети питания судна, так и акустические - работающий двигатель судна или носителя, прибой, другие гидроакустические системы, например - гидролокаторы и т.п.)
-- малая глубина водоема и малые водоемы в целом создают сложные гидрологические условия для работы гидроакустических навигационных и связных систем
-- экранирование пеленгационной антенны и антенн маяков-ответчиков
-- воздействие на антенны турбулетных струй от движетелей и/или кильватерного следа
-- стратификация плотности воды (термоклин и т.п.)
-
+You should be aware of the factors that reduce the efficiency of the system, in particular:
+- insufficient depth of the DF antenna
+- location in the immediate vicinity of massive low-absorbing infrastructure facilities and ships
+- lack of direct visibility through the water column between the direction-finding antenna and responder beacons
+- high noise (both electromagnetic interference, for example, in the ship's power supply network, and acoustic - a running engine of a ship or carrier, surf, other hydroacoustic systems, for example - sonars, etc.)
+- the shallow depth of the reservoir and small reservoirs in general create difficult hydrological conditions for the operation of hydroacoustic navigation and communication systems
+- shielding of the direction-finding antenna and responder beacon antennas
+- impact on antennas of turbulent jets from propellers and/or wake
+- water density stratification (thermocline, etc.)
 
 <div style="page-break-after: always;"></div>
 
-### 2.3. По завершении работ
+### 2.3. Upon completion of work
 
-- Отключить питание блока питания и коммутации
-- Отключить все разъемы на панели блока питания и коммутации
-- Закрыть все разъемы, имеющие транспортировочные заглушки
-- При наличии загрязнений или после работы в соленой воде выполнить промывку всех погружаемых частей оборудования в пресной воде
-- Демонтировать пеленгационную антенну со штанги
-- При постановке на длительное хранение (более недели) или для транспортировки разомнкуть подводный разъем
-- Перед помещением в транспортировочную тару вся влага должна быть удалена естественной просушкой без воздействия прямых солнечных лучей
-- Для маяков-ответчиков в интегрируемом исполнении, при невозможности снятия их с носителя обязательна промывка в пресной воде и удаление любых загрязнений
-
-<div style="page-break-after: always;"></div>
-
-## 3. Обязательства и отказ от ответственности
-### 3.1. Условия замены и бесплатного гарантийного обслуживания
-Гарантия производителя распространяется только на заводские дефекты, выявивщиеся при эксплуатации устройства в соответствие с настоящим руководством в течении гарантийного срока (2 года с момента покупки).  
-
-Производитель гарантирует бесплатный ремонт или замену неисправного оборудования из комплекта поставки, вышедшего из строя по причине заводского дефекта.  
-
-К основаниям для отказа от бесплатного гарантийного обслуживания, бесплатного ремонта и замены относятся:
-- любые **механические повреждения** оборудования из комплекта поставки, в т.ч. нарушение изоляции проводов и кабелей;
-- любые **повреждения, вызванные воздействием влаги и загрязнений**, вследствие неправильной эксплуатации оборудования из комплекта поставки;
-- любые **электрические повреждения**, вызванные **использованием некомплектных аксессуаров** (зарядных устройства); к некомплектным не отностятся аксессуары, поставленные производителем или его представителем взамен неисправных или утраченых;
-- любые **следы самостоятельного ремонта и/или вскрытия** оборудования из комплекта поставки.
+- Turn off the power supply of the power supply and switching
+- Disconnect all connectors on the panel of the power supply and switching
+- Close all connectors with transport plugs
+- In the presence of dirt or after working in salt water, flush all immersed parts of the equipment in fresh water
+- Remove the DF antenna from the boom
+- When storing for a long time (more than a week) or for transportation, open the underwater connector
+- Before being placed in the shipping container, all moisture must be removed by natural drying without exposure to direct sunlight.
+- For transponder beacons in an integrated design, if it is impossible to remove them from the carrier, it is mandatory to rinse in fresh water and remove any contaminants
 
 <div style="page-break-after: always;"></div>
 
-### 3.2. Ограничение ответственности производителя
+## 3. Liability and Disclaimer
+### 3.1. Terms of replacement and free warranty service
+The manufacturer's warranty covers only factory defects that appear during the operation of the device in accordance with this manual during the warranty period (2 years from the date of purchase).
+
+The manufacturer guarantees free repair or replacement of faulty equipment from the delivery set that has failed due to a manufacturing defect.
+
+The reasons for refusing free warranty service, free repair and replacement include:
+- any **mechanical damage** of the equipment from the delivery set, incl. violation of the insulation of wires and cables;
+- any **damage caused by exposure to moisture and dirt** due to improper use of the equipment supplied;
+- any **electrical damage** caused by **use of incomplete accessories** (chargers); Incomplete does not include accessories supplied by the manufacturer or its representative to replace defective or lost ones;
+- any **traces of self-repair and/or opening** of the equipment supplied.
+
+<div style="page-break-after: always;"></div>
+
+### 3.2. Disclamer
 
 _____________
 
-_**ЛЮБАЯ ИЗ ЧАСТЕЙ КОМПЛЕКТА ПОСТАВКИ В ОТДЕЛЬНОСТИ И В СОСТАВЕ СИСТЕМЫ, ИМЕНУЕМЫЕ ДАЛЕЕ "ПОСТАВЛЯЕМОЕ ОБОРУДОВАНИЕ":**_
+_**ANY OF THE PARTS OF THE SUPPLY KIT, INDIVIDUALLY AND AS A PART OF THE SYSTEM, HEREINHERALL Referred to as the "SUPPLIED EQUIPMENT":**_
 
-* _**НЕ РАЗРАБАТЫВАЛОСЬ КАК СРЕДСТВО СПАСЕНИЯ**_
-* _**НЕ ТЕСТИРОВАЛОСЬ, КАК СРЕДСТВО СПАСЕНИЯ**_
-* _**НЕ ЯВЛЯЕТСЯ СРЕДСТВОМ СПАСЕНИЯ**_
-* _**ПРОИЗВОДИТЕЛЬ ЗАЯВЛЯЕТ, ЧТО ПОСТАВЛЯЕМОЕ ОБОРУДОВАНИЕ БЕЗОПАСНО ПРИ ЭКСПЛУАТАЦИИ СОГЛАСНО НАСТОЯЩЕЙ ИНСТРУКЦИИ И НЕ ОТВЕЧАЕТ ЗА ЛЮБЫЕ ПОСЛЕДСТВИЯ ИСПОЛЬЗОВАНИЯ ПОСТАВЛЯЕМОГО ОБОРУДОВАНИЯ**_
+* _**WAS NOT DESIGNED AS MEANS OF RESCUE**_
+* _**NOT TESTED AS AS MEANS OF RESCUE**_
+* _**ARE NOT MEANS OF RESCUE**_
+* _** THE MANUFACTURER DECLARES THAT THE SUPPLIED EQUIPMENT IS SAFE WHEN USE ACCORDING TO THESE INSTRUCTIONS AND IS NOT RESPONSIBLE FOR ANY CONSEQUENCES OF THE SUPPLIED EQUIPMENT USE**_
 
 ______________
 
-_**ПРОИЗВОДИТЕЛЬ ГАРАНТИРУЕТ, ЧТО ГИДРОАКУСТИЧЕСКАЯ СИСТЕМА ZIMA2 (ДАЛЕЕ - СИСТЕМА):**_
-* _**ПРЕДНАЗНАЧЕНА ТОЛЬКО ДЛЯ РАБОТЫ С МАЯКАМИ-ОТВЕТЧИКАМИ, РАССЧИТАНЫМИ НА СОВМЕСТНУЮ РАБОТУ С СИСТЕМОЙ**_
-* _**КОНСТРУКТИВНО НЕ МОЖЕТ БЫТЬ ИСПОЛЬЗОВАНА ДЛЯ СЛЕЖЕНИЯ ЗА ОБЪЕКТАМИ, НЕ ОСНАЩЕННЫМИ МАЯКАМИ-ОТВЕТЧИКАМИ, РАССЧИТАНЫМИ НА СОВМЕСТНУЮ РАБОТУ С СИСТЕМОЙ**_
-* _**НЕ СОДЕРЖИТ СРЕДСТВ РАДИОСВЯЗИ, ЗАПИСИ И ДЛИТЕЛЬНОГО ХРАНЕНИЯ АУДИОСИГНАЛОВ**_  
+_** THE MANUFACTURER GUARANTEE THAT THE ZIMA2 HYDRO-ACOUSTIC SYSTEM (hereinafter referred to as the SYSTEM):**_
+* _** DESIGNED ONLY TO WORK WITH RESPONDER BEACONS DESIGNED TO WORK WITH THE SYSTEM**_
+* _** STRUCTURALLY CANNOT BE USED FOR TRACKING OBJECTS NOT EQUIPPED WITH RESPONDER BEACONS DESIGNED FOR OPERATION WITH THE SYSTEM**_
+* _** DOES NOT CONTAIN RADIO COMMUNICATIONS, RECORDING AND LONG-TERM STORAGE OF AUDIO SIGNALS**_
 
-_**ВЫШЕУКАЗАННЫЕ ОГРАНИЧЕНИЯ НЕ МОГУТ БЫТЬ СНЯТЫ НИКАКИМИ МАНИПУЛЯЦИЯМИ С НАСТРОЙКАМИ И/ИЛИ ОРГАНАМИ УПРАВЛЕНИЯ ПРИБОРОВ СИСТЕМЫ И/ИЛИ ПРОГРАММНОГО ОБЕСПЕЧЕНИЯ, ПРЕДНАЗНАЧЕННОГО ДЛЯ РАБОТЫ С СИСТЕМОЙ**_
+_** THE ABOVE LIMITATIONS CANNOT BE REMOVED BY ANY MANIPULATION WITH THE SETTINGS AND/OR CONTROLS OF THE SYSTEM DEVICES AND/OR THE SOFTWARE INTENDED TO WORK WITH THE SYSTEM**_
 
 ______________
 
 <div style="page-break-after: always;"></div>
 
-[Вернуться к содержанию](#%D1%81%D0%BE%D0%B4%D0%B5%D1%80%D0%B6%D0%B0%D0%BD%D0%B8%D0%B5)
+[Back to contents]()
