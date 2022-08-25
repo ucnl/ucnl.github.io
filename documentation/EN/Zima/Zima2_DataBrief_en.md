@@ -1,101 +1,94 @@
-[Главная](/README_RU) ❯ [Гидроакустические навигационные и трекинговые системы](/navigation_and_tracking_systems_ru) ❯ **Zima 2 USBL: Краткое опсиание**
-
+[Main](/../../) ❯ [Navigation & tracking systems](/navigation_and_tracking_systems_en) ❯ **Zima2 USBL: Data brief**
 <div style="page-break-after: always;"></div>
 
 | ![logo](/documentation/sm_logo.png) | ![logo](/documentation/zima_package.png) |
 | :---: | ---: |
-| [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **Zima 2 USBL** <br/> Краткое описание |
+| [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **Zima 2 USBL** <br/> Data brief |
 
 <div style="page-break-after: always;"></div>
 
-## Общие данные
-**Zima 2 USBL** – гидроакустическая ультракороткобазисная (УКБ) навигационная система, предназначенная для определения местоположения подводных объектов, помеченных гидроакустическими маяками-ответчиками [Zima-R](Zima_R_Specification_ru.md) при помощи пеленгационной приемо-передающей антенны [Zima-B](Zima_B_Specification_ru.md).
+## Brief description
+**Zima 2 USBL** is a hydroacoustic ultra-short baseline (USBL) navigation system designed to determine the location of underwater objects marked with hydroacoustic responder beacons [Zima2-R](Zima2R_Specification_en.md) using a direction-finding transceiver antenna [Zima2-B](Zima2B_Specification_en.md).
 
 <div style="page-break-after: always;"></div>
 
-## Состав системы
+## System Composition
 
 |  |  |
 | :---: | :--- |
-| ![Zima2-B](/documentation/def_zima_b_ant.png) | [Zima2-B](Zima2B_Specification_ru.md) <br/> Базовая станция пеленгования |
-| ![Zima2-R](/documentation/zima_r.png) | [Zima2-R](Zima2R_Specification_ru.md) <br/> Маяки-ответчики (одня базовая станция может последовательно работать максимум с 16 ответчиками) |
-| ![Bat&Link Box](/documentation/batnlinkbox.png) | [Bat&Link Box](Bat_n_link_box_Specification_ru.md) <br/> Автономный блок питания и коммутации базовой станции |
+| ![Zima2-B](/documentation/def_zima_b_ant.png) | [Zima2-B](Zima2B_Specification_en.md) <br/> Direction-finding antenna |
+| ![Zima2-R](/documentation/zima_r.png) | [Zima2-R](Zima2R_Specification_en.md) <br/> Responder-beacons (one base station can work with a maximum of 16 transponders in sequence) |
+| ![Bat&Link Box](/documentation/batnlinkbox.png) | [Bat&Link Box](Bat_n_link_box_Specification_en.md) <br/> Autonomous power supply |
 
 <div style="page-break-after: always;"></div>
 
-## Решаемые задачи
-* Определение местоположения до 16 подводных объектов в акватории (слежение за подводными объектами)
-* Определение относительного местоположения (**азимут, дистанция, глубина**)
-* Определение абсолютного местоположения (**широта, долгота, азимут, дистанция, глубина**) при подключении внешней **GNSS** и компаса (или **GNSS с функцией компаса**)
+## Tasks to be solved by the system
+* Determining the location of up to 16 underwater objects in water area (tracking underwater objects)
+* Relative location determination (**azimuth, distance, depth**)
+* Absolute positioning (**latitude, longitude, azimuth, distance, depth**) when connected to an external **GNSS** and compass (or **GNSS with compass function**)
 
 <div style="page-break-after: always;"></div>
 
-## Отличительные черты
-* Компактность, большой радиус действия и максимальная простота использования позволяют использовать систему **Zima2** для работы как с различными **ТНПА** и **АНПА**, так и с **водолазами** в любых сочетаниях
-* Высокая универсализация маяков позволяет использовать их как автономном исполнении с отдельным блоком батарей, так и энергетически и информационно сопрягать их с носителем
-* Система поддерживает интеграцию с внешними источниками навигационных данных: **GNSS** с функцией компаса(подключаются к пультовому ПК). В этом случае система определяет абсолютные географические координаты подводных объектов, позволяет сохранять трек перемещения подводных объектов и имеет функции эмуляции GPS для одного из выбранных маяков для интеграции со сторонним ПО (например, Hypack, SAS.Planet, и пр.)
-* Антенна ZIMA2-B устанавливается на штанге с борта практически любого судна, подключается к источнику питания 12 В / 3.5 А, и к пультовому ПК (Windows 10 и выше) – в такой минимальной конфигурации система определяет положение маяков (азимут и дистанция) относительно антенны. При подключении к пультовому ПК GNSS-приемника с функцией компаса (**RMC, GGA, HDG**) система определяет географические координаты маяков и может передавать их (**RMC, GGA**) в любой последовательный порт, эмулируя тем самым GNSS приемник для выбранного маяка-ответчика;
-
+## Distinctive features
+* Compactness, long range and maximum ease of use make it possible to use the **Zima2** system to work with various **ROV** and **AUV**, as well as with **divers** in any combination
+* High versatility of responders allows them to be used as a stand-alone version with a separate battery pack, as well as energetically and informationally connected with a vessel
+* The system supports integration with external sources of navigation data: **GNSS** with compass function (connected to the control PC). In this case, the system determines the absolute geographical coordinates of underwater objects, allows you to save a track of movement of underwater objects and has GPS emulation functions for one of the selected beacons for integration with third-party software (for example, Hypack, SAS.Planet, etc.)
+* Antenna Zima2-B is installed on a boom from almost any vessel, connected to a 12 V / 3.5 A power source, and to a control PC (Windows 10 and higher) - in this minimum configuration, the system determines the position of the responders (azimuth and distance) relative to the antenna. When a GNSS receiver with a compass function (**RMC, GGA, HDG**) is connected to the control PC, the system determines the geographic coordinates of the responders and can transmit them (**RMC, GGA**) to any serial port, thereby emulating a GNSS receiver for the selected responder beacon;
 <div style="page-break-after: always;"></div>
 
 | ![Zima2-B placement](/documentation/zima2_boat_gnss_1.png) |
 | :---: |
-| Схема установки антенны [Zima 2-B](Zima2B_Specification_ru.md) <br/> _Антенна монтируется на жесткой штанге таким образом, чтобы быть не ближе 2 метров от поверхности воды и не ближе 1.5 метров от нижней точки судна. Задаются смещения антенны относительно точки топопривязки и угловое смещение нуля антенны и GNSS-компаса_ |
+| Схема установки антенны [Zima 2-B](Zima2B_Specification_en.md) <br/> _The antenna is mounted on a rigid rod so that it is no closer than 2 meters from the surface of the water and no closer than 1.5 meters from the bottom of the vessel. The antenna offsets relative to the geolocation point and the angular offset of the zero of the antenna and the GNSS compass are set_ |
 
 <div style="page-break-after: always;"></div>
 
-## Схемы сопряжения
+## Pairing schemes
 
-### Работа в относительных координатах
-Для определения **относительного местоположения** маяков-ответчиков, антенна информационно сопрягается с ПК, на котором установлено специализированное пультовое ПО с открытым исходным кодом [AzimuthSuit](https://github.com/ucnl/AzimuthSuit). Антенна подключается к ПК через [Bat&Link Box](Bat_n_link_box_Specification_ru.md), обеспечивающий преобразование интерфейса в USB и питание антенны. 
+### Work in relative coordinates
+To determine the **relative location** of the responder beacons, the antenna is interfaced with a PC on which specialized open source software [AzimuthSuite](https://github.com/ucnl/AzimuthSuite) is installed. The antenna is connected to the PC via [Bat&Link Box](Bat_n_link_box_Specification_en.md), which converts the interface to USB and powers the antenna.
 
-В этом случае пользователю доступны данные и функции:
-* **Азимут** (горизонтальный угол) на используемые маяки-ответчики;
-* **Дистанция** до маяков-ответчиков
-* Глубины маяков-ответчиков
-
+In this case, the following data and functions are available to the user:
+* **Azimuth** (horizontal angle) to the used transponder beacons;
+* **Distance** to responder beacons
+* **Depths** of transponder beacons
 
 | ![Zima2B relative scheme](/documentation/zima2_option1.png) |
 | :---: |
-| _Схема подключения при работе в относительных координатах_ |
+| _Working in relative coordinates_ |
 
 <div style="page-break-after: always;"></div>
 
-### Работа в абсолютных координатах
-Для определения **абсолютного местопложения** маяков-ответчиков антенна информационно сопрягается с ПК, на котором установлено специализированное пультовое ПО [AzimuthSuite](https://github.com/ucnl/AzimuthSuite). Антенна подключается к ПК через [Bat&Link Box](Bat_n_link_box_Specification_ru.md), обеспечивающий преобразование интерфейса в USB и питание антенны. Дополнительно подключаются внешняя **GNSS**-система с функцией компаса, работающая по протоколу **NMEA 0183** (сообщения **RMC** и **HDT**).
+### Working in absolute coordinates
+To determine the **absolute location** of the responder beacons, the antenna is interfaced with a PC on which specialized control software [AzimuthSuite](https://github.com/ucnl/AzimuthSuite) is installed. The antenna is connected to the PC via [Bat&Link Box](Bat_n_link_box_Specification_en.md), which converts the interface to USB and powers the antenna. Additionally, an external **GNSS** system with compass function operating under the **NMEA 0183** protocol (**RMC** and **HDT** messages) is connected.
 
 | ![Zima-B absolut scheme](/documentation/zima2_option2.png) |
 | :---: |
-| _Схема подключения при работе в абсолютных координатах_ |
+| _Working in absolute coordinates_ |
 
-В этом случае пользователю доступны следующие данные и функции:
-* Абсолютные **географические координаты** маяков и глубина
-* **Азимут** (относительно направления на север)
-* **Дистанция**
-* Запись трека движения подводных объектов с возможностью последующего сохранения в формате Google KML.
+In this case, the following data and functions are available to the user:
+* Absolute **geographical coordinates** of responders and their depths
+* **Azimuth** (relative to North)
+* **Distance**
+* Recording a track of the movement of underwater objects with the possibility of subsequent saving in Google KML format.
 
 <div style="page-break-after: always;"></div>
 
-## Геометрические ограничения
+## Geometric Constraints
 
-Так как определение местоположения маяков-ответчиков [Zima2-R](Zima2R_Specification_ru.md) осуществляется по горизонтальному углу прихода сигнала, наклонной дальности и разности глубин, антенная решетка пеленгационной станции [Zima 2-B](Zima2B_Specification_ru.md) имеет наибольшую чувствительность в диапазоне углов от 0° до 85° от горизонтали. Точность системы, когда маяк-ответчик находится близко к направлению на надир, может снижаться.
+Since the location of [Zima2-R](Zima2R_Specification_en.md) responder beacons is carried out by the horizontal angle of arrival of the signal, slant range and depth difference, the [Zima 2-B](Zima2B_Specification_en.md) direction finding station antenna array has the highest sensitivity in the range angles from 0° to 85° from the horizontal. The accuracy of the system when the responder is close to the nadir direction may be reduced.
 
 | ![Zima2-B angular zones](/documentation/zima2_geometric_limitations.png) |
 | :---: |
-| Геометрические ограничения [Zima 2-B](Zima2B_Specification_ru.md) <br/> _1 - Пеленгационная антенна, 2 - верхняя полусфера, 3 - рабочая зона (0° .. 85°, 0 .. -85°), 4 - зона снижения точности (85° .. -85°)_ |
+| Geometric constraints [Zima 2-B](Zima2B_Specification_en.md) <br/> _1 - DF antenna, 2 - upper hemisphere, 3 - working area (0° .. 85°, 0 .. -85°), 4 - area of accuracy reduction (85° .. -85°)_ |
 
 <div style="page-break-after: always;"></div>
 
 _________  
 
-| **Дополнительная информация** |
+| **Additional information** |
 | :--- |
-| [**Zima 2 USBL**: Инструкция по эксплуатации](Zima2_Users_manual_ru.md) |
-| [Маяк-ответчик **Zima 2-R**: спецификация устройства](Zima2R_Specification_ru.md) |
-| [Станция пеленгования **Zima 2-B**: спецификация устройства](Zima2B_Specification_ru.md) |
-| [Блок питания и коммутации **Bat&Link Box**: спецификация устройства](Bat_n_link_box_Specification_ru.md) |
-| [Протокол информационного сопряжения устройств системы **Zima 2 USBL**](Zima2_Protocol_Specification_ru.md) |
-| [Требования по совместимости для систем определения курса и положения](Zima2_GNSS_requirements_ru.md) |
-
-> Экспортный вариант системы отличается приемопередающим трактом и имеет меньший рабочий диапазон по дальности (3000 м).
-
+| [**Zima2 USBL**: User's manual](Zima2_Users_manual_en.md) |
+| [**Zima2-R**: Responder beacon, device specification](Zima2R_Specification_en.md) |
+| [**Zima2-B**: DF-antenna, device specification](Zima2B_Specification_en.md) |
+| [**Bat&Link Box**: Autonomous power supply, device specification](Bat_n_link_box_Specification_en.md) |
+| [**Zima2 USBL: Communication protocol specification**](Zima2_Protocol_Specification_en.md) |
