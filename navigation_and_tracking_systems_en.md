@@ -80,14 +80,14 @@
 * [ZHost: Host application for Zima USBL (dowload release)](https://github.com/ucnl/ZHost/releases/download/2.2/ZHost.zip)
 
 ##### Common documents for Zima и Zima2
-* [Bat&Link Box (Autonomous power supply): Device specification](/documentation/RU/Zima/Bat_n_link_box_Specification_en.md)
-* [Bat&Link Box (Autonomous power supply): Руководство пользователя](/documentation/RU/Zima/Bat_n_link_box_Users_manual_en.md)
-* [Data brief for GNSS compatibility](/documentation/RU/Zima/Zima_GNSS_requirements_en.md)
+* [Bat&Link Box (Autonomous power supply): Device specification](/documentation/EN/Zima/Bat_n_link_box_Specification_en.md)
+* [Bat&Link Box (Autonomous power supply): User's manual](/documentation/EN/Zima/Bat_n_link_box_Users_manual_en.md)
+* [Data brief for GNSS compatibility](/documentation/EN/Zima/Zima_GNSS_requirements_en.md)
 * [Zima-B, Zima2-B: 3D-model (STEP)](/documentation/Zima_B_3D.step)
 * [Zima-R, Zima2-R: 3D-model (STEP)](/documentation/Zima_R_3D.step)
 * [Zima-R, Zima2-R: Bracket flat (3D-model STEP)](/documentation/ZIMA-R_holder_flat.step)
 * [Zima-R, Zima2-R: Bracket flat (3D-model Fusion360 f3d)](/documentation/ZIMA-R_holder_flat.f3d)
 * [Zima-R, Zima2-R: Bracket on tank (3D-model STEP)](/documentation/msize_tank_holder.STEP)
-* [Zima-R, Zima2-R: Wirind diagram](/documentation/RU/Zima/ZimaR_wiring_diagram_en.md)
+* [Zima-R, Zima2-R: Wirind diagram](/documentation/EN/Zima/ZimaR_wiring_diagram_en.md)
 
 ## [Back to main](README.md)
