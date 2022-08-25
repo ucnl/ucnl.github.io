@@ -12,6 +12,24 @@
 
 ## Contents
 
+- [1. Introducation]()
+  - [1.1. Purpose]()
+  - [1.2. Distinctive features]()
+  - [1.3. System Composition]()
+- [2. Working with Zima2 USBL system]()
+  - [2.0. Before start]()
+  - [2.1. Preparing for work and equipment testing]()
+    - [2.1.1. DF Antenna mounting and setup]()
+  - [2.2. Working with the system]()
+    - [2.2.1. Interface and functions of the AzimuthSuite application]()
+      - [2.2.1.1. Application settings]()
+      - [2.2.1.2. Main window]()
+      - [2.2.1.3. Configuring responder beacons]()
+    - [2.2.2. Working with the system]()
+  - [2.3. Upon completion of work]()
+- [3. Liability and Disclaimer]()
+  - [3.1. Terms of replacement and free warranty service]()
+  - [3.2. Disclamer]()
  
 <div style="page-break-after: always;"></div>
 
@@ -29,7 +47,7 @@ The system allows you to determine:
 - relative location of underwater objects (azimuth angle, range, depth)
 - absolute location of underwater objects (latitude, longitude, depth) when using external sources of navigation data (GNSS receiver and compass).
 
-### 1.2. Особенности
+### 1.2. Distinctive features
 The navigation system **Zima2** is an ultra-short-base navigation system (_USBL_), the principle of operation of which is based
 on the use of a phased antenna array to determine the horizontal angle of arrival of the signal and determine the distance to the beacon using the "request-response" method.
 The **Zima2** system uses state-of-the-art digital broadband noise-resistant hydroacoustic communication technology, and the applied signal is specially
