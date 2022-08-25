@@ -116,7 +116,7 @@ $PAZM0,[x],x*hh<CR><LF>
 | | PAZM | AZM protocol |
 | | 0	| Sentence ID |
 | 1 | cmdID | ID of the command to which the device responded |
-| 2 | result | Error code [see Table 3.1. Error codes]() |
+| 2 | result | Error code [see Table 3.1. Error codes](#31-error-codes) |
 | | *	| NMEA Checksum delimiter |
 | | hh | NMEA Checksum |
 | | \<CR\>\<LF\> | End of sentence |
@@ -192,10 +192,10 @@ $PAZM3,x,[x],[x],[x],[x.x],[x.x],[x.x],[x.x],[x.x],[x.x],[x.x],[x.x],[x.x],[x.x]
 | | $	| Sentence start '$' |
 | | PAZM | AZM protocol |
 | | 3	| Sentence ID |
-| 1 | status | Sentence status [see Table 3.2. NDTA sentence status]() |
+| 1 | status | Sentence status [see Table 3.2. NDTA sentence status](#32-ndta-sentence-status) |
 | 2 | addr | Responder address from 0 to 15. Parameter empty for sentences with 'status' field containing '0' (Local parameters only) |
-| 3 | rq_code |Identifier of the parameter requested from the responder beacon, [see Table 3.3. Addressed requests]() |
-| 4 | rs_code | Response code, [see Table 3.5. Response identifiers]() |
+| 3 | rq_code |Identifier of the parameter requested from the responder beacon, [see Table 3.3. Addressed requests](#33-addressed-requests) |
+| 4 | rs_code | Response code, [see Table 3.5. Response identifiers](#35-response-identifiers) |
 | 5 | msr_dB | A parameter that determines the quality of receiving the beacon's response signal in dB. 14 - reception threshold, values above 20 dB indicate good communication conditions |
 | 6 | p_time_s | Signal propagation time in seconds. Multiplied by the speed of sound gives the slant range |
 | 7 | s_range_m | Slant range from DF antenna to responder in meters |
@@ -245,7 +245,7 @@ $PAZM5,x*hh<CR><LF>
 | | $	| Sentence start '$' |
 | | PAZM | AZM protocol |
 | | 5	| Sentence ID |
-| 1 | cmdID | Addressed request ID, [see Table 3.3. Addressed requests]() |
+| 1 | cmdID | Addressed request ID, [see Table 3.3. Addressed requests](#33-addressed-requests) |
 | | *	| NMEA Checksum delimiter |
 | | hh | NMEA Checksum |
 | | \<CR\>\<LF\> | End of sentence |
@@ -305,7 +305,7 @@ d_type,address,serialNumber,sys_info,sys_version,pts_type,ch_id
 | 3 | serialNumber | Device serial number |
 | 4 | sys_info | Firmware information |
 | 5 | sys_version | Firmware version |
-| 6 | pts_type | Pressure sensor type [see Table 3.6. Pressure sensors]() |
+| 6 | pts_type | Pressure sensor type [see Table 3.6. Pressure sensors](#36-pressure-sensors) |
 | 7 | ch_id | Code channel ID |
 | | *	| NMEA Checksum delimiter |
 | | hh | NMEA Checksum |
