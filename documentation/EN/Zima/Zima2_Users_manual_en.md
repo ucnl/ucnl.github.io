@@ -20,7 +20,7 @@
   - [2.0. Before start](#20-before-start)
   - [2.1. Preparing for work and equipment testing](#21-preparing-for-work-and-equipment-testing)
     - [2.1.1. DF Antenna mounting and setup](#211-df-antenna-mounting-and-setup)
-    - [2.1.2. Mounting of the responder beacon on the carrier](#212-mounting-of-the-responder-beacon-on-the-carrier
+    - [2.1.2. Mounting of the responder beacon on the carrier](#212-mounting-of-the-responder-beacon-on-the-carrier)
   - [2.2. Working with the system](#22-working-with-the-system)
     - [2.2.1. Interface and functions of the AzimuthSuite application](#221-interface-and-functions-of-the-azimuthsuite-application)
       - [2.2.1.1. Application settings](#2211-application-settings)
