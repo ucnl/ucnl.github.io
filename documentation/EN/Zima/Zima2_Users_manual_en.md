@@ -12,24 +12,25 @@
 
 ## Contents
 
-- [1. Introducation]()
-  - [1.1. Purpose]()
-  - [1.2. Distinctive features]()
-  - [1.3. System Composition]()
-- [2. Working with Zima2 USBL system]()
-  - [2.0. Before start]()
-  - [2.1. Preparing for work and equipment testing]()
-    - [2.1.1. DF Antenna mounting and setup]()
-  - [2.2. Working with the system]()
-    - [2.2.1. Interface and functions of the AzimuthSuite application]()
-      - [2.2.1.1. Application settings]()
-      - [2.2.1.2. Main window]()
-      - [2.2.1.3. Configuring responder beacons]()
-    - [2.2.2. Working with the system]()
-  - [2.3. Upon completion of work]()
-- [3. Liability and Disclaimer]()
-  - [3.1. Terms of replacement and free warranty service]()
-  - [3.2. Disclamer]()
+- [1. Introducation](#1-introducation)
+  - [1.1. Purpose](#11-purpose)
+  - [1.2. Distinctive features](#12-distinctive-features)
+  - [1.3. System Composition](#13-system-composition)
+- [2. Working with Zima2 USBL system](#2-working-with-zima2-usbl-system)
+  - [2.0. Before start](#20-before-start)
+  - [2.1. Preparing for work and equipment testing](#21-preparing-for-work-and-equipment-testing)
+    - [2.1.1. DF Antenna mounting and setup](#211-df-antenna-mounting-and-setup)
+    - [2.1.2. Mounting of the responder beacon on the carrier](#212-mounting-of-the-responder-beacon-on-the-carrier
+  - [2.2. Working with the system](#22-working-with-the-system)
+    - [2.2.1. Interface and functions of the AzimuthSuite application](#221-interface-and-functions-of-the-azimuthsuite-application)
+      - [2.2.1.1. Application settings](#2211-application-settings)
+      - [2.2.1.2. Main window](#2212-main-window)
+      - [2.2.1.3. Configuring responder beacons](#2213-configuring-responder-beacons)
+    - [2.2.2. Working with the system](#222-working-with-the-system)
+  - [2.3. Upon completion of work](#23-upon-completion-of-work)
+- [3. Liability and Disclaimer](#3-liability-and-disclaimer)
+  - [3.1. Terms of replacement and free warranty service](#31-terms-of-replacement-and-free-warranty-service)
+  - [3.2. Disclamer](#32-disclamer)
  
 <div style="page-break-after: always;"></div>
 
@@ -441,19 +442,19 @@ _**ANY OF THE PARTS OF THE SUPPLY KIT, INDIVIDUALLY AND AS A PART OF THE SYSTEM,
 * _**WAS NOT DESIGNED AS MEANS OF RESCUE**_
 * _**NOT TESTED AS AS MEANS OF RESCUE**_
 * _**ARE NOT MEANS OF RESCUE**_
-* _** THE MANUFACTURER DECLARES THAT THE SUPPLIED EQUIPMENT IS SAFE WHEN USE ACCORDING TO THESE INSTRUCTIONS AND IS NOT RESPONSIBLE FOR ANY CONSEQUENCES OF THE SUPPLIED EQUIPMENT USE**_
+* _**THE MANUFACTURER DECLARES THAT THE SUPPLIED EQUIPMENT IS SAFE WHEN USE ACCORDING TO THESE INSTRUCTIONS AND IS NOT RESPONSIBLE FOR ANY CONSEQUENCES OF THE SUPPLIED EQUIPMENT USE**_
 
 ______________
 
 _** THE MANUFACTURER GUARANTEE THAT THE ZIMA2 HYDRO-ACOUSTIC SYSTEM (hereinafter referred to as the SYSTEM):**_
-* _** DESIGNED ONLY TO WORK WITH RESPONDER BEACONS DESIGNED TO WORK WITH THE SYSTEM**_
-* _** STRUCTURALLY CANNOT BE USED FOR TRACKING OBJECTS NOT EQUIPPED WITH RESPONDER BEACONS DESIGNED FOR OPERATION WITH THE SYSTEM**_
-* _** DOES NOT CONTAIN RADIO COMMUNICATIONS, RECORDING AND LONG-TERM STORAGE OF AUDIO SIGNALS**_
+* _**DESIGNED ONLY TO WORK WITH RESPONDER BEACONS DESIGNED TO WORK WITH THE SYSTEM**_
+* _**STRUCTURALLY CANNOT BE USED FOR TRACKING OBJECTS NOT EQUIPPED WITH RESPONDER BEACONS DESIGNED FOR OPERATION WITH THE SYSTEM**_
+* _**DOES NOT CONTAIN RADIO COMMUNICATIONS, RECORDING AND LONG-TERM STORAGE OF AUDIO SIGNALS**_
 
-_** THE ABOVE LIMITATIONS CANNOT BE REMOVED BY ANY MANIPULATION WITH THE SETTINGS AND/OR CONTROLS OF THE SYSTEM DEVICES AND/OR THE SOFTWARE INTENDED TO WORK WITH THE SYSTEM**_
+_**THE ABOVE LIMITATIONS CANNOT BE REMOVED BY ANY MANIPULATION WITH THE SETTINGS AND/OR CONTROLS OF THE SYSTEM DEVICES AND/OR THE SOFTWARE INTENDED TO WORK WITH THE SYSTEM**_
 
 ______________
 
 <div style="page-break-after: always;"></div>
 
-[Back to contents]()
+[Back to contents](#contents)
