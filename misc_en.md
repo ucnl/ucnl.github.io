@@ -11,7 +11,6 @@
 | :--- | :--- |
 | [RedPhone-DX](/documentation/EN/RedPhone/RedPhone_DX_Specification_en.md) | [RedPhone-DX MSDS EN](/documentation/EN/Misc/RedPhone_DX_MSDS_en.md) |
 | [RedPhone-OS](/documentation/EN/RedPhone/RedPhone_OS_Specification_en.md) | [RedPhone-OS MSDS EN](/documentation/EN/Misc/RedPhone_OS_MSDS_en.md) |
-
 | [Bat&Link Box](/documentation/EN/Zima/Bat_n_link_box_Specification_en.md) | [Open file \(pdf\)](/documentation/MSDS_BATLINK_LiFePO4_en.pdf) |
 | [RedBASE](/documentation/EN/RedWAVE/RedBASE_Specification_en.md) | [Open file \(pdf\)](/documentation/msds_delta12v4_5ah.pdf) |
 
