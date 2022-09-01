@@ -2,345 +2,345 @@
 
 <div style="page-break-after: always;"></div>
 
-| ![logo](/documentation/sm_logo.png) |  Версия 1 <br/> 20.02.20022 |
+| ![logo](/documentation/sm_logo.png) |  VErsion 1 <br/> 20.02.20022 |
 | :---: | ---: |
-| [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | Аккумулятор высокотоковый литий-железофосфатный <br/> в составе RedPhone-DX ПМВР.134098.002 <br/> Паспорт безопасности химической продукции (MSDS) |
+| [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | High current LiFePO4 battery pack <br/> as part of RedPhone-DX PMVR.134098.002 <br/> Material safety datasheet (MSDS) |
 
-## Аккумулятор высокотоковый литий-железофосфатный <br/> в составе RedPhone-DX ПМВР.134098.002
-### Паспорт безопасности химической продукции (MSDS)
+## High current LiFePO4 battery pack <br/> as part of RedPhone-DX PMVR.134098.002
+### Material safety datasheet (MSDS)
 
-## 1. ИДЕНТИФИКАЦИЯ ХИМИЧЕСКОЙ ПРОДУКЦИИ И СВЕДЕНИЯ О ПРОИЗВОДИТЕЛЕ ИЛИ ПОСТАВЩИКЕ
-
-| | |
-| :--- | :--- |
-| Торговое наименование | Аккумулятор RedPhone-DX ПМВР.134098.002 |
-| Номер статьи |
-| Номер регистрации (REACH) | Эта информация не доступна |
-| Номер ЕС | отсутствует |
-| Номер CAS |	отсутствует |
-
-### Соответствующие установленным применения вещества или смеси и противопоказания к применению
+## 1. IDENTIFICATION OF THE PRODUCT AND OF THE COMPANY OR THE SUPPLIER
 
 | | |
 | :--- | :--- |
-| Установленные применения: | Предназначен для питания портативной аппаратуры постоянным током напряжением 12 Вольт. |
+| Trade name | RedPhone-DX PMVR.134098.002 |
+| Article number |
+| Registration number (REACH) | This information is not available |
+| EC number | is absent |
+| CAS number |	is absent |
 
-### Подробная информация о поставщике в паспорте безопасности
+### The corresponding set of the substance or mixture and contraindications
+
+| | |
+| :--- | :--- |
+| Installed applications: | Designed to power portable equipment DC voltage of 12 volts. |
+
+### Details of the supplier of the safety data sheet
 
 | |
 | :--- |
-| Общество с ограниченной ответственностью «ЛиФорс» |
-| Почтовый адрес: 634055, Томская обл, Томск г, Вавилова ул, дом 10а <br/> Юридический адрес: 634055, Томская обл, Томск г, Вавилова ул, дом 10а |
+| Limited Liability Company "LiFors" |
+| Mailing address: 634055, Tomsk, Tomsk g, Vavilova St., Building 10a <br/> Legal address: 634055, Tomsk, Tomsk g, Vavilova St., Building 10a |
 
 | | |
 | :--- | :--- |
-| Телефон: | +7 (3822) 445533 | 
-| Факс:	| | 
-| Электронная почта: | 	hello@unavlab.com | 
-| Веб-сайт: | unavlab.com |
-| Номер телефона экстренных служб |	03 неотложная медицинская помощь <br/> 01 пожарная служба |
-| Аварийная информационная служба | +7 (3822) 445533 |
+| Telephone: | +7 (3822) 445533 | 
+| Fax machine:	| | 
+| Email: | 	hello@unavlab.com | 
+| Web site: | unavlab.com |
+| Emergency numbers |	03 medical emergency <br/> 01 fire service |
+| Emergency Information Service | +7 (3822) 445533 |
 
-## 2. ИДЕНТИФИКАЦИЯ ОПАСНОСТИ (ОПАСНОСТЕЙ)
+## 2. Identification of danger(s)
 
-## 2.1. Классификация вещества или смеси
-Классификация в соответствии с Регламентом (ЕС) № 1272/2008 (CLP)
-В соответствии со статьей 3 (3) REACH данный продукт (данные продукты) является (являются) изделием.
-На изделия не наносится обязательная маркировка, предусмотренная законами об опасных веществах.
-Данный продукт не классифицируется как опасный для здоровья или окружающей среды в соответствии с Регламентом по классификации, маркировке и упаковке веществ и смесей (CLP).
+## 2.1. Classification of the substance or mixture
+Classification in accordance with Regulation (EC) № 1272/2008 (CLP)
+In accordance with Article 3 (3) REACH active product (the data products) is (are) product.
+For products not applied mandatory labeling stipulated by the law on hazardous substances.
+This product is not classified as hazardous to health or the environment in accordance with the Regulations on the classification, labeling and packaging of substances and mixtures (CLP).
 
-### Замечания
-Полный текст об Опасности - и ЕС заявления опасности: смотреть в РАЗДЕЛЕ 16.
+### Remarks
+Full text of Hazard - Hazard and EU statements: see section 16.
 
-### 2.2. Элементы маркировки 
-**Маркировка в соответствии с Регламентом (ЕС) № 1272/2008 (CLP)**  
-**Сигнальное слово** **Отсутствует**  
-**Краткая характеристика опасности**  
+### 2.2. Label elements 
+**Labeling in accordance with Regulation (EC) № 1272/2008 (CLP)**  
+**Signal word** **Is absent**  
+**Hazard**  
 
-| отсутствует	| |
+| is absent	| |
 | :--- | :---: |
 | | |
 
-**Меры предосторожности**  
-**Меры предосторожности - реакция отсутствует**  
+**Precautionary measures**  
+**Precautions - reaction is absent**  
 
-### 2.3. Другие опасности
-Составные вещества аккумуляторной батареи находятся в герметично закрытых ячейках, исполнение которых обеспечивает стойкость к воздействию тех или иных температур и давлений при нормальных условиях эксплуатации. Кроме того, благодаря такой конструкции при нормальной эксплуатации обеспечивается защита от воспламенения или взрыва, а также предотвращается опасность вытекания вышеупомянутых веществ.
-В случае разрешении корпуса аккумулятора происходит высвобождение составных веществ.  
+### 2.3. Other hazards
+Composite Battery substances are in sealed cells, the performance of which provides resistance to the effects of various temperatures and pressures under normal operating conditions. Moreover, thanks to this construction, during normal operation protected from fire or explosion and prevents leak of the aforementioned substances.
+In the case of the resolution of the battery body is released composite materials.  
 
-## 3. СОСТАВ (ИНФОРМАЦИЯ О КОМПОНЕНТАХ)
-### 3.1. Вещества
+## 3. Composition (INFORMATION ON INGREDIENTS)
+### 3.1. Substances
 
-| Литий	| |
+| Lithium	| |
 | --- | --- |
-| Номер ЕС | 231-102-5
-| Номер CAS | 7439-93-2
-| Фосфат железа | |	
-| Номер ЕС | 233-149-7 | 
-| Номер CAS | 10045-86-0 | 
+| EC number | 231-102-5
+| CAS number | 7439-93-2
+| Iron phosphate | |	
+| EC number | 233-149-7 | 
+| CAS number | 10045-86-0 | 
 
-## 4. МЕРЫ ПО ОКАЗАНИЮ ПЕРВОЙ ПОМОЩИ
-### 4.1. Описание мер первой помощи
-**При вдыхании**  
-Обеспечить доступ свежего воздуха или кислорода, вызвать врача.  
-**При контакте с кожей**  
-Не предполагается.  
-**При попадании в глаза**  
-Не предполагается.  
-**При проглатывании**  
-Не предполагается.
+## 4. MEASURES FOR FIRST AID
+### 4.1. Description of first aid measures
+**After inhalation**  
+Supply fresh air or oxygen; call for doctor.  
+**Upon contact with skin**  
+Not assumed.  
+**Eye Contact**  
+Not assumed.  
+**If swallowed**  
+Not assumed.  
 
-### 4.2. Наиболее важные симптомы и воздействия, как острые, так и замедленные
-Симптомы и эффекты не известны до настоящего времени
+### 4.2. Most important symptoms and effects, both acute and delayed
+Symptoms and effects known to date
 
-### 4.3. Указание на необходимость немедленной медицинской помощи и специального лечения
-Отсутствует
+### 4.3. Indication of immediate medical attention and special treatment
+Is absent
 
-## 5. МЕРЫ И СРЕДСТВА ОБЕСПЕЧЕНИЯ ПОЖАРОВЗРЫВОБЕЗОПАСНОСТИ
-### 5.1. Средства пожаротушения
-**Подходящие средства пожаротушения**  
-CO<sub>2</sub>, порошковое средство для тушения или водяная струя мелкого разбрызгивания. При борьбе с крупными пожарами следует применять водяную струю мелкого разбрызгивания или спиртоустойчивую пену.  
-**Неподходящие средства пожаротушения**
-отсутствуют
+## 5. MEASURES AND FIRE-FIGHTING
+### 5.1. Extinguishing media
+**Suitable extinguishing means**  
+CO<sub>2</sub>, powder extinguishing agent or water spray. Fight larger fires with water spray or alcohol resistant foam.  
+**Unsuitable extinguishing media**
+Is absent
 
-### 5.2. Особые опасности, создаваемые веществом или смесью
-При нагревании или в случае пожара возможно образование ядовитых газов  
-**Опасные продукты сгорания**  
-В случае пожара могут образоваться: ядовитые газы
+### 5.2. Special hazards arising from the substance or mixture
+Upon heating or in case of fire, the formation of toxic gases  
+**Hazardous combustion products**  
+In case of fire: toxic gases
 
-### 5.3. Рекомендации для пожарных
-Тушить пожар с достаточного расстояния, соблюдая обычные меры предосторожности.  
-Надеть автономный дыхательный аппарат.
+### 5.3. Advice for firefighters
+Fight fire from a distance, observing the usual precautions. Wear self-contained breathing apparatus.
 
-## 6. МЕРЫ ПО ПРЕДОТВРАЩЕНИЮ И ЛИКВИДАЦИИ АВАРИЙНЫХ И ЧРЕЗВЫЧАЙНЫХ СИТУАЦИЙ И ИХ ПОСЛЕДСТВИЙ
-### 6.1. Меры личной безопасности, защитное снаряжение и чрезвычайные меры
-**Для неаварийного персонала**
-Ношение подходящих защитных средств (в том числе индивидуальной защиты, которая указана в разделе 8 паспорта безопасности) для предотвращения любого загрязнения кожи, глаз и личной одежды. Не вдыхать пыль. Избегать контакта с кожей, глазами и одеждой 
+## 6. MEASURES FOR THE PREVENTION AND ELIMINATION OF ACCIDENTAL AND THEIR CONSEQUENCES
+### 6.1. Personal precautions, protective equipment and emergency procedures
+**For non-emergency personnel**
+The wearing of suitable protective equipment (including personal protective equipment specified in Section 8 of the safety data sheet) to prevent any contamination of skin, eyes and personal clothing. Do not breathe dust. Avoid contact with skin, eyes and clothing. 
 
-### 6.2. Экологические меры предосторожности
-Не допускать попадания под землю / в грунт.
+### 6.2. Environmental precautions
+Do not allow to penetrate the ground / soil.
 
-### 6.3. Методы и материалы для локализации и очистки
-**Советы, как воспрепятствовать утечке**  
-Не требуется
-**Советы, как очистить утечку**  
-Собрать механическим образом.  
-**Другая информация, касающаяся разливов и выбросов**  
-Поместить в соответствующие контейнеры для утилизации.  
-**Ссылка на другие разделы**  
-Опасные продукты горения: смотреть в разделе 5. Средства индивидуальной защиты: смотреть в разделе 8. Несовместимые материалы: смотреть в разделе 10. Рекомендации по утилизации: смотреть в разделе 13.
+### 6.3. Methods and materials for cleaning
+**Advice on how to prevent leakage**  
+Not required
+**Tips on how to clean up the leak**  
+Pick up mechanically.  
+**Other information relating to spills and releases**  
+Put into suitable containers for disposal.  
+**Reference to other sections**  
+Hazardous products of combustion: see section 5. Personal protective equipment: see section 8. Incompatible materials: see section 10. Disposal: see section 13.
 
-## 7.	ПРАВИЛА ХРАНЕНИЯ ХИМИЧЕСКОЙ ПРОДУКЦИИ И ОБРАЩЕНИЯ С НЕЙ ПРИ ПОГРУЗОЧНО-РАЗГРУЗОЧНЫХ РАБОТАХ
-### 7.1. Меры предосторожности по безопасному обращению
-Не допускать насыщения аккумуляторных элементов водой (морской водой).  
-Не подвергать воздействию сильных окислителей.  
-Не бросать. Избегать механических (ударных) нагрузок.  
-Не разбирать, не изменять конструкцию, не деформировать.  
-Не допускать контакта положительного и отрицательного полюсов с электропроводящим материалом.  
-Использовать для перезарядки и разрядки только предписанные зарядные устройства и инструменты.  
-**Консультации по промышленной гигиене**
-Перед перерывами и по окончанию работы вымыть руки. Хранить вдали от пищевых продуктов, напитков и кормов для животных.
+## 7.	RULES OF STORAGE AND HANDLING OF CHEMICAL PRODUCTS DURING LOADING AND UNLOADING WORKS
+### 7.1. Precautions for safe handling
+Avoid saturation of the battery cells with water (sea water).  
+Do not expose to strong oxidizers.  
+Do not throw. Avoiding mechanical (shock) loads.  
+Do not disassemble, modify the unit, do not deform.  
+Avoid contact with the positive and negative poles of the electrically conductive material.  
+Used for charging and discharging only the prescribed chargers and tools.  
+**Industrial hygiene advice**
+Before breaks and after work wash your hands. Keep away from food, drink and animal feed.
 
-### 7.2. Условия для безопасного хранения с учетом любых несовместимостей
-Не допускать прямого воздействия солнечного света, высоких температур и высокой влажности. Хранить в прохладном месте. Температура хранения: от -20 до 60 °C. Допустимая влажность воздуха: 45–85 %.
-**Несовместимые вещества или смеси**  
-Хранить отдельно от воды.  
-Не хранить вместе с электропроводными материалами  
-**Рассмотрение других советов**
-Не хранить в местах, подверженных статической электризации.  
-Защищать от жары и от прямых солнечных лучей.  
-Защищать от влажности воздуха и от воды.  
+### 7.2. Conditions for safe storage, including any incompatibilities
+Avoid exposure to direct sunlight, high temperatures and high humidity. Store in a cool place. Storage temperature: -20 to 60 ° C. Allowable humidity: 45-85%.
+**Incompatible substance or mixture**  
+Keep away from water.  
+Do not store together with conductive materials  
+**Consideration of other tips**  
+Do not store in locations subject to static discharges.  
+Protect from heat and direct sunlight.  
+Protect from humidity and water.  
 
-### 7.3. Специфическое(ие) конечное(ые) применение(ия)
-Использовать только по прямому назначению; см. инструкцию по эксплуатации.
+### 7.3. Specific end use(s)
+Use only for its intended purpose; See. Operating Instructions.
 
-## 8. СРЕДСТВА КОНТРОЛЯ ЗА ОПАСНЫМ ВОЗДЕЙСТВИЕМ И СРЕДСТВА ИНДИВИДУАЛЬНОЙ ЗАЩИТЫ
-### 8.1. Инженерно-технические средства контроля: 
-Не храните аккумуляторные батареи рядом с источниками тепла и открытого пламени. Храните в сухом холодном месте. 
-### 8.2. Средства индивидуальной защиты:
-**Респиратор:** При нормальной работе не требуется. В случае возгорания требуется автономный ВДА. Защита глаз/лица: При соблюдении правил техники безопасности не требуется.  
-**Перчатки:** Не требуются при работе с аккумуляторными батареями.  
-**Защита ног:** Не требуется
+## 8. CONTROLS EXPOSURE AND PERSONAL PROTECTION
+### 8.1. Engineering controls: 
+Do not store the batteries away from sources of heat and open flames. Store in a cool, dry place.
+### 8.2. Personal protective equipment:
+**Respirator:** In normal operation is not required. In the case of a fire requires autonomous HDA. Eye / face protection: In compliance with safety regulations is required.  
+**Gloves:** Not required when working with batteries.  
+**Foot protection:** Not required
 
-## 9. ФИЗИКО-ХИМИЧЕСКИЕ СВОЙСТВА
-### 9.1. Информация об основных физических и химических свойств
-**Внешний вид**  
+## 9. PHYSIOCHEMICAL PROPERTIES
+### 9.1. Information on basic physical and chemical properties
+**Appearance**  
 
 | | |
 | --- | --- |
-| Агрегатное состояние | твердое |
-| Запах | без запаха |
-| Порог запаха | нn данных |
+| State of aggregation | solid |
+| Smell | without smell |
+| Odor threshold | no data available |
 
-**Другие физические и химические параметры**
-
-| | |
-| --- | --- |
-| рН (значение) | неприменимо |
-| Плотность при 20 °С | неприменимо |
-| Точка плавления/замерзания | нет данных | 
-| Начальная температура кипения и интервал кипения | нет данных |
-| Температура вспышки в закрытом тигле | неприменимо |
-| Интенсивность испарения | нет данных |
-| Воспламеняемость (твердое вещество, газ) | неприменимо |
-| _Пределы взрываемости_ |  |
-| • нижний предел взрывоопасности (НПВ) | нет данных |
-| • верхний предел взрыва (ВПВ) | нет данных | 
-| Пределы взрываемости из пылевых облаков | нет данных |
-| Давление паров | нет данных |
-| Плотность пара | нет данных |
-| Объемная плотность | нет данных |
-| Относительная плотность | нет данных |
-| _Растворимость(и)_ | |
-| Растворимость в воде | неприменимо |
-| _Коэффициент распределения_ | |
-| н-октанол / вода (log KOW) | нет данных |
-| Температура воспламенения | нет данных |
-| Температура самовоспламенения | нет данных |
-| Температура разложения | нет данных |
-| Вязкость | нет данных |
-| Опасность взрыва | нет данных |
-| Окисляющие свойства | нет данных |
-
-### 9.2. Другая информация
-Нет дополнительной информации
-
-## 10. СТАБИЛЬНОСТЬ И РЕАКЦИОННАЯ СПОСОБНОСТЬ
-
-### 10.1. Химическая активность: 
-Замечание 
-
-### 10.2. Несовместимость с другими веществами: 
-При нормальной работе отсутствует. Не допускайте воздействия тепла, открытого пламени и коррозийных веществ. 
-
-### 10.3. Условия, действия которых следует избегать: 
-Избегайте воздействия тепла и открытого пламени. Не допускайте прокалывания или сдавливания, не сжигайте аккумуляторные батареи.
-
-## 11. ИНФОРМАЦИЯ О ТОКСИЧНОСТИ
-При правильном обращении и использовании данное изделие не проявляет токсичности. 
-**Признаки и симптомы:** Отсутствуют, если аккумуляторная батарея не разрушена. 
-Чрезмерное воздействие может вызвать симптомы поражения неволокнистых тканей легких и раздражения слизистых оболочек.  
-**Вдыхание:** Раздражение легких.  
-**Попадание на кожу:** Раздражение кожи  
-**Попадание в глаза:** Раздражение глаз  
-**Проглатывание:** При проглатывании повреждение тканей гортани и желудочно-кишечного тракта.  
-**Медицинские состояния, в общем случае усугубляющиеся при воздействии:** В случае воздействия на организм внутреннего содержимого аккумуляторной батареи возможна экзема, кожные проявления аллергии, поражение легких, возникновение астмы и других респираторных заболеваний.
-
-## 12. ИНФОРМАЦИЯ О ВОЗДЕЙСТВИИ НА ОКРУЖАЮЩУЮ СРЕДУ
-### 12.1. Токсичность
-**Акватоксичность:**  
-отсутствует какая-либо соответствующая информация.  
-**Стойкость и склонность к деградации:**  
-отсутствует какая-либо соответствующая информация.
-**Поведение в экологических системах:**  
-**Биоаккумулятивный потенциал:**  
-отсутствует какая-либо соответствующая информация.  
-**Подвижность в грунте:**  
-отсутствует какая-либо соответствующая информация.  
-**Дополнительные экологические указания:**  
-**Общие указания:**  
-Не допускайте попадания отслуживших аккумуляторных элементов в землю.  
-Возможно их корродирование и утечка электролита.  
-**Результаты оценки PBT (устойчивое биоаккумулятивное токсическое вещество) и vPvB (очень устойчивое биоаккумулятивное вещество)**
-**PBT:** Неприменимо.  
-**vPvB:** Неприменимо.  
-**Другие вредные эффекты:**  
-Отсутствует какая-либо соответствующая информация.
-
-## 13. РЕКОМЕНДАЦИИ ПО УДАЛЕНИЮ ОТХОДОВ (ОСТАТКОВ)
-### 13.1. Методы утилизации отходов
-Утилизируйте аккумуляторы в соответствии с национальными предписаниями или сдавайте отслужившие аккумуляторы на предприятие-изготовитель.  
-Утилизируйте упаковку в соответствии с указаниями по утилизации упаковочных материалов.  
-**Утилизация сточных вод - актуальная информация**
-В канализацию не сливать.
-
-### 13.2. Замечания
-отсутствуют
-
-## 14. ИНФОРМАЦИЯ ПРИ ПЕРЕВОЗКАХ (ТРАНСПОРТИРОВАНИИ)
+**Other physical and chemical parameters**
 
 | | |
 | --- | --- |
-| **14.1.** Номер ООН | (не подлежит регламентам транспортировки) |
-| **14.2.** Собственное транспортное наименование ООН | не имеет отношения |
-| **14.3.** Класс(ы) опасности при транспортировке <br/> Класс | не имеет отношения <br/> - |
-| **14.4.** Группа упаковки <br/> **14.5** Экологические опасности | не имеет отношения <br/> отсутствует (не опасные для окружающей среды в соотв. с Техническими регламентами) |
+| pH (value) | not applicable |
+| Density at 20 °С | not applicable |
+| Melting point / freezing | no data available | 
+| Initial boiling point and boiling range | no data available |
+| Flash point closed cup | not applicable |
+| Evaporation rate | no data available |
+| lammability (solid, gas) | not applicable |
+| _Explosive limits_ |  |
+| • Lower explosion limit (LEL) | no data available |
+| • Upper explosion limit (UEL) | no data available | 
+| Explosive limits of dust clouds | no data available |
+| Vapor pressure | no data available |
+| Vapor density | no data available |
+| Bulk density | no data available |
+| Relative density | no data available |
+| _Solubility (u)_ | |
+| Solubility in water | not applicable |
+| _Distribution factor_ | |
+| n-octanol / water (log KOW) | no data available |
+| Ignition point | no data available |
+| Autoignition Temperature | no data available |
+| Decomposition temperature | no data available |
+| Viscosity | no data available |
+| Risk of explosion | no data available |
+| Oxidising properties | no data available |
 
-### 14.6 Специальные меры предосторожности для пользователя
-Нет дополнительной информации.
+### 9.2. Other information
+No further information
 
-### 14.7 Транспортировка емкостей в соответствии с Приложением II из MARPOL 73/78 и Кодексом КСГМГ
-Груз предназначен для перевозки оптом.
+## 10. STABILITY AND REACTIVITY
 
-### 14.8 Информация по каждому из Типовых Регламентов ООН
-**• Перевозка опасных грузов автомобильным, железнодорожным и внутренним водным транспортом (ДОПОГ/МПОГ/ВОПОГ)**  
-Не подлежит ДОПОГ, МПОГ и ВОПОГ.  
-**• Международный морской код опасных грузов (МКМПОГ)**  
-Не подлежит МКМПОГ.  
-**• Международная ассоциация воздушного транспорта (ИКАО-IATA/DGR)**  
-Не подлежит ИКАО-IATA.
+### 10.1. Reactivity: 
+Comment
 
-## 15. ИНФОРМАЦИЯ О НАЦИОНАЛЬНОМ И МЕЖДУНАРОДНОМ ЗАКОНОДАТЕЛЬСТВЕ
-### 15.1 Безопасность, здоровье и экологическая законодательство/регламенты характерные для данного вещества или смеси
-**Соответствующие положения Европейского союза (ЕС)**  
-**• Регламент 649/2012/ЕС о экспорте и импорте опасных химических веществ (PIC)**  
-Не перечислен  
+### 10.2. Incompatibility with other substances:
+In normal operation, no. Avoid exposure to heat, open flame and corrosive substances. 
+
+### 10.3. The conditions of action that should be avoided:
+Avoid exposure to heat and flames. Avoid puncturing or crushing, or burn batteries.
+
+## 11. TOXICOLOGICAL INFORMATION
+With proper handling and use of this product does not show toxicity.  
+**Signs and symptoms:** No, if the battery is not destroyed. 
+Excessive exposure may cause symptoms of non-fibrous tissue of the lungs and irritation of mucous membranes.  
+**Inhalation:** Lung irritation.  
+**Skin contact:** Skin irritation  
+**Eye contact:** Eye irritation  
+**Ingestion:** Ingestion tissue damage larynx and gastrointestinal tract.  
+**Medical conditions generally exacerbated when exposed to:** In the case of impact on the body internal battery contents can eczema, skin allergy, lung, asthma and other respiratory diseases.
+
+## 12. INFORMATION ON ECOLOGICAL
+### 12.1. Toxicity
+**Aquatic:**  
+No further relevant information available.  
+**Persistence and degradability:**  
+No further relevant information available.
+**Behavior in environmental systems:**  
+**Bioaccumulative potential:**  
+No further relevant information available.  
+**Mobility in soil:**  
+No further relevant information available.  
+**Additional ecological information:**  
+**General information:**  
+Do not expose the battery cells served in the ground.  
+Possible corrosion and electrolyte leakage.  
+**The results of evaluation of PBT (bioaccumulative stable toxic substance) and vPvB (bioaccumulative very stable substance)**
+**PBT:** Not applicable.  
+**vPvB:** Not applicable.  
+**Other adverse effects:**  
+No further relevant information available.
+
+## 13. DISPOSAL CONSIDERATIONS (EWC)
+### 13.1. Waste treatment methods
+Dispose of batteries in accordance with national regulations or return used batteries to the manufacturer.  
+Dispose of the packaging in accordance with the instructions on the disposal of packaging materials.  
+**Disposal of wastewater - current information**
+The sewers are not drained.
+
+### 13.2. Notes
+There are no
+
+## 14. INFORMATION (AIR TRANSPORT)
+
+| | |
+| --- | --- |
+| **14.1.** UN number | (Not subject to transport regulations) |
+| **14.2.** UN proper shipping name | not applicable |
+| **14.3.** Transport hazard class(es) <br/> Class | not applicable <br/> - |
+| **14.4.** Packaging group <br/> **14.5** Environmental hazards | not applicable <br/> no (not dangerous for the environment acc. to technical regulations) |
+
+### 14.6 Special precautions for user
+No additional information.
+
+### 14.7 Transportation of containers in accordance with Annex II of MARPOL 73/78 and IBC Code
+Cargo for carriage in bulk.
+
+### 14.8 Information on each of the UN Model Regulations
+**• Transport of dangerous goods by road, rail and inland waterway (ADR / RID / ADN)**  
+Not subject to ADR, RID and ADN.  
+**• International Maritime Dangerous Goods (IMDG)**  
+Not subject to the IMDG Code.  
+**• International Air Transport Association (ICAO-IATA / DGR)**  
+Not subject to ICAO-IATA.
+
+## 15. INFORMATION ON NATIONAL AND INTERNATIONAL LAW
+### 15.1 Safety, health and environmental laws / regulations specific for the substance or mixture
+**The relevant provisions of the European Union (EU)**  
+**• Regulation 649/2012 / EC on the export and import of hazardous chemicals (PIC)**  
+Not listed  
 **• Regulation 1005/2009/EC on substances that deplete the ozone layer (ODS)**  
-Не перечислен  
+Not listed  
 **• Регламент 850/2004/EC о стойких органических загрязнителях (СОЗ)**  
-Не перечислен  
-**• Ограничения в соответствии с REACH, Приложении XVII**  
-Не перечислен  
-**• Список веществ, подлежащих санкционированию (REACH, Приложение XIV)**  
-Не перечислен  
-**• Директива 2011/65/ЕС об ограничении использования некоторых опасных веществ в электрическом и электронном оборудовании (RoHS) - Приложения II**  
-Не перечислен  
-**• Регламент 166/2006/ЕС о создании Европейских регистрах выбросов и переноса загрязнителей (РВПЗ)**  
-Не перечислен  
-**• Директива 2000/60/EС, устанавливающая рамки для действий Сообщества в области водной политики (РВД)**  
-Не перечислен  
-**Национальные регламенты** 
-Вещество включено в следующие национальные регламенты:  
-- EINECS/ELINCS (Европа)  
+Not listed  
+**• Restrictions under REACH, Annex XVII**  
+Not listed  
+**• List of substances subject to authorization (REACH, Appendix XIV)**  
+Not listed  
+**• Directive 2011/65 / EC on the restriction of the use of certain hazardous substances in electrical and electronic equipment (RoHS) - Annex II**  
+Not listed  
+**• Regulation 166/2006 / EC establishing the European Release and Transfer Registers (PRTR)**  
+Not listed  
+**• Directive 2000/60 / EC establishing a framework for Community action in the field of water policy (WFD)**  
+Not listed  
+**National regulations** 
+The substance is included in the following national regulations:  
+- EINECS/ELINCS (Europe)  
 
-### 15.2 Оценка химической безопасности
-Ни одна оценка химической безопасности не проводилась для этого вещества.
+### 15.2 Chemical Safety Assessment
+None of the chemical safety assessment was not carried out for this substance.
 
-### 16. ДОПОЛНИТЕЛЬНАЯ ИНФОРМАЦИЯ
+### 16. ADDITIONAL INFORMATION
  
-| Сокр.	| Описания используемых сокращений |
+| Abbr.	| Descriptions of the abbreviations used |
 | --- | --- |
-| CAS	| Chemical Abstracts Service (служба, которая поддерживает наиболее полный список химических веществ) |
-| CLP	| Регламент (EC) № 1272/2008 о классификации, маркировке и упаковке веществ и смесей |
-| CMR	| Канцерогенное, мутагенное или токсичное для репродуктивной системы |
-| DGR	| Регламент перевозки опасных грузов (см IATA/DGR) |
-| DMEL | Полученный минимальный уровень эффекта |
-| DNEL | Полученный минимальный уровень эффекта |
-| EINECS | Европейский реестр существующих коммерческих химических веществ |
-| ELINCS | Европейский перечень выявляемых химических веществ |
-| IATA | Международная ассоциация воздушного транспорта |
-| IATA/DGR | Регламенты перевозки опасных грузов (DGR) для воздушного транспорта (IATA) |
-| MARPOL | Международная конвенция по предотвращению загрязнения с судов (abbr. of "Marine Pollutant) |
-| NLP | Больше не полимер |
-| PBT | Стойкое, биологически накапливающееся и токсичное |
-| PNEC | Прогнозируемая концентрация без воздействия |
-| REACH | Регистрация, оценка, разрешение и ограничение химических веществ |
-| vPvB | Очень устойчивые и очень биоаккумулятивные |
-| ВОПОГ | Accord européen relatif au transport international des marchandises dangereuses par voies de navigation intérieures (Европейское соглашение о международной дорожной перевозке опасных грузов по внутренним водным путям) |
-| ДОПОГ | Accord européen relatif au transport international des marchandises dangereuses par route (Европейское соглашение о международной дорожной перевозке опасных грузов автомобильным транспортом) |
-| ИКАО | Международная организация гражданской авиации |
-| МКМПОГ | Международный код для перевозки опасных грузов морем |
-| МПОГ | Règlement concernant le transport International ferroviaire des marchandises Dangereuses (Регламенты международной перевозки опасных грузов по железным дорогам) |
-| СГС | Согласованная на глобальном уровне системы классификации и маркировки химических веществ", разработанный Организацией Объединенных Наций |
+| CAS | Chemical Abstracts Service (a service that supports the most comprehensive list of chemicals) |
+| CLP | Regulation (EC) № 1272/2008 on the classification, labeling and packaging of substances and mixtures |
+| CMR | Carcinogenic, mutagenic or toxic to the reproductive system |
+| DGR | Transport of Dangerous Goods Regulations (see IATA / DGR) |
+| DMEL | The resulting minimal effect level |
+| DNEL | The resulting minimal effect level |
+| EINECS | European Inventory of Existing Commercial Chemical Substances |
+| ELINCS | European Inventory of identified chemicals |
+| IATA | International Air Transport Association |
+| IATA / DGR | Regulations transport of dangerous goods (DGR) for Air Transport (IATA) |
+| MARPOL | International Convention for the Prevention of Pollution from Ships (abbr. Of "Marine Pollutant) |
+| NLP | Longer polymer |
+| PBT | Persistent, Bioaccumulative and Toxic |
+| PNEC | Target concentration without affecting |
+| REACH | Registration, Evaluation, Authorization and Restriction of Chemicals |
+| vPvB | Very persistent and very bioaccumulative |
+| ADN | Accord européen relatif au transport international des marchandises dangereuses par voies de navigation intérieures (European Agreement concerning the International Carriage of Dangerous Goods by Inland Waterways) |
+| ADR | Accord européen relatif au transport international des marchandises dangereuses par route (European Agreement concerning the International Carriage of Dangerous Goods by Road) |
+| ICAO | International civil aviation organization |
+| IMDG | The international code for the transport of dangerous goods by sea |
+| RID | Règlement concernant le transport International ferroviaire des marchandises Dangereuses (Regulations of the International Carriage of Dangerous Goods by Rail) |
+| GHS | The Globally Harmonized System of Classification and Labeling of Chemicals "developed by the United Nations |
 
-**Основные литературные ссылки и источники данных**  
-- Регламент (EC) № 1907/2006 (REACH), с поправками, внесенными 453/2010/ЕС 
-- Регламент (EC) № 1272/2008 (CLP, ЕС СГС)
-**Список соответствующих фраз (код и полный текст, как указано в главе 2 и 3)**
-отсутствует  
+**Key literature references and sources of data**  
+- Regulation (EC) № 1907/2006 (REACH), as amended by 453/2010/EC 
+- Regulation (EC) № 1272/2008 (CLP, EU GHS)
 
-## Отказ от ответственности
-Информация, содержащаяся в настоящем паспорте безопасности материала, соответствует уровню знаний на текущий момент и действующему законодательству. Паспорт безопасности материала содержит справочные данные по безопасности здоровья, охране труда и окружающей среды при эксплуатации изделия; он ни в коем случае не содержит каких-либо гарантий, касающихся технических характеристик или применимости для конкретных условий использования
+**List of relevant R-phrases (full text of the Code and, as mentioned in chapter 2 and 3)**
+absent  
+
+## Renunciation
+The information contained in this material safety data sheet corresponds to the level of knowledge at the moment and the current legislation. Material Safety Data Sheet contains reference data for health security, health and the environment during use of the product; it is in any case does not contain any guarantees concerning technical characteristics or fitness for a particular use conditions.
 
   
     
