@@ -352,7 +352,7 @@ The information contained in this material safety data sheet corresponds to the 
   </tr>
 </tbody>
 </table>
-   
+<br/>   
    
 Stamp here
   
