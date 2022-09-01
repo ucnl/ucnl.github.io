@@ -4,9 +4,9 @@
 
 | ![logo](/documentation/sm_logo.png) |  VErsion 1 <br/> 20.02.20022 |
 | :---: | ---: |
-| [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | High current LiFePO4 battery pack <br/> as part of RedPhone-DX PMVR.134098.002 <br/> Material safety datasheet (MSDS) |
+| [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | PMVR.134098.002 LiFePO4 battery pack <br/> as part of RedPhone-DX <br/> Material safety datasheet (MSDS) |
 
-## High current LiFePO4 battery pack <br/> as part of RedPhone-DX PMVR.134098.002
+## PMVR.134098.002 LiFePO4 battery pack <br/> as part of RedPhone-DX
 ### Material safety datasheet (MSDS)
 
 ## 1. IDENTIFICATION OF THE PRODUCT AND OF THE COMPANY OR THE SUPPLIER
