@@ -348,7 +348,7 @@ The information contained in this material safety data sheet corresponds to the 
  | :--- |
  | " ________ " ______________________________________________ 20 _______ |
    
- М. П.
+ Stamp here
   
   
 <div style="page-break-after: always;"></div>
