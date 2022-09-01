@@ -342,13 +342,19 @@ absent
 ## Renunciation
 The information contained in this material safety data sheet corresponds to the level of knowledge at the moment and the current legislation. Material Safety Data Sheet contains reference data for health security, health and the environment during use of the product; it is in any case does not contain any guarantees concerning technical characteristics or fitness for a particular use conditions.
 
-  
-    
- | ______________________________________________________________________________ / ______________________________________________________________________________ |
- | :--- |
- | " ________ " ______________________________________________ 20 _______ |
-   
- Stamp here
-  
+<br/>
+<br/>
+
+| `________________________ / ________________________________________` |
+| :--- |
+| `" ____ " ________________ 20 ____ ` |
+
+<br/>
+<br/>  
+Stamp here
+<br/>
+<br/>
+<br/>
+<br/>
   
 <div style="page-break-after: always;"></div>
