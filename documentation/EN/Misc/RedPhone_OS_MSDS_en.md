@@ -345,7 +345,7 @@ The information contained in this material safety data sheet corresponds to the 
 <table align="left">
 <tbody> 
   <tr>
-    <td>_________________ / _________________</td>
+    <td> _________________ / _________________ </td>
   </tr>
   <tr>
     <td>" ____ " __________________ 20 ____ </td>
@@ -353,7 +353,9 @@ The information contained in this material safety data sheet corresponds to the 
 </tbody>
 </table>
    
-      Stamp here
+   
+Stamp here
   
   
+     
 <div style="page-break-after: always;"></div>
