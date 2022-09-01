@@ -1,4 +1,4 @@
-[Main](/../../) ❯ [Miscellaneous info](/misc_en.md) ❯ **Bat&Link Box MSDS EN**
+[Main](/../../) ❯ [Miscellaneous info](/misc_en) ❯ **Bat&Link Box MSDS EN**
 
 <div style="page-break-after: always;"></div>
 
