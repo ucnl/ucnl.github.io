@@ -1,4 +1,4 @@
-[Main](/../../) ❯ [Miscellaneous info](/misc_en.md) ❯ **RedPhone-OS MSDS EN**
+[Main](/../../) ❯ [Miscellaneous info](/misc_en) ❯ **RedPhone-OS MSDS EN**
 
 <div style="page-break-after: always;"></div>
 
