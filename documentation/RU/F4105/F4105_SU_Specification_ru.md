@@ -1,4 +1,4 @@
-[Главная](/README_RU) ❯ [Специализированное оборудование](/underwater_bespoke_systems_ru) ❯ **Спецификация устройства: F4105-SU <br/> Модуль управления гидроакустическими размыкателями**
+[Главная](/README_RU) ❯ [Специализированное оборудование](/underwater_bespoke_systems_ru) ❯ **Спецификация устройства: F4105-SU**
 
 <div style="page-break-after: always;"></div>
 
