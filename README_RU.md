@@ -11,6 +11,7 @@
 - [Гидроакустические модемы](underwater_acoustic_modems_ru.md)
 - [Голосовая подводная связь (водолазная телефония)](underwater_wireless_voice_systems_ru.md)
 - [Гидрофоны и гидроакустические антенны](underwater_acoustic_antennas_ru.md)
+- [Специализированное оборудование](underwater_bespoke_systems_ru.md)
 - [Аксессуары](accessories_ru.md)
 
 ## Видео, образовательный контент и прочее
