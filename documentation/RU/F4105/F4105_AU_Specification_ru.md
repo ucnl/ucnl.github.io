@@ -2,7 +2,7 @@
 
 <div style="page-break-after: always;"></div>
 
-| ![logo](/documentation/sm_logo.png) | ![logo](/documentation/RT_1_332820_1.png) |
+| ![logo](/documentation/sm_logo.png) | ![logo](/documentation/F4105_AU.png) |
 | :---: | ---: |
 | [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **F4105-AU** <br/> Гидроакустический пробудитель <br/> Спецификация устройства |
 
@@ -37,6 +37,16 @@
 | ПРОБУЖДЕНИЕ ВНЕШНЕГО ОБОРУДОВАНИЯ | Подача логической единицы длительностью 90 секунд | 
 | ЧИСЛО ВОЗМОЖНЫХ АДРЕСОВ | 64 |
 | НАСТРОЙКА АДРЕСА | по UART, с подключением к надводному блоку пробуждения [F4105-SU](F4105_SU_Specification_ru.md) |
+
+## РАСПИНОВКА РАЗЪЕМА
+
+| № Контакта | Функция |
+| :--- | :--- |
+| 1 | Питание +6 .. +9 В |
+| 2 | RX/TX |
+| 3 | NC |
+| 4 | WAKE (пробуждение) |
+| 5 | Общий |
 
 <div style="page-break-after: always;"></div>
 
