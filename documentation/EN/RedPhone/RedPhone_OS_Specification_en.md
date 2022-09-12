@@ -26,7 +26,7 @@ The RedPhone-OS Wireless underwater telephone provides voice transmission betwee
 | PARAMETER | VALUE |
 | :--- | :--- |
 | DIMENSIONS (length х width х height) | 259 x 202 x 115 mm |
-| WIGHT (dry) | 2 kg |
+| WIGHT | 2 kg |
 | MAX. OPERATING RANGE<sup>[1](#footnote1)</sup> | 1000 m |
 | ACOUSIC SOURCE LEVEL | 160 dB re 1 μPa @ 1 m |
 | TRANSDUCER'S CABLE LENGTH<sup>[2](#footnote2)</sup> | 7 m |
