@@ -2,7 +2,7 @@
 
 <div style="page-break-after: always;"></div>
 
-| ![logo](/documentation/sm_logo.png) | ![F4105-BU](F4105_BU.png) |
+| ![logo](/documentation/sm_logo.png) | ![F4105-BU](/documentation/F4105_BU.png) |
 | :---: | ---: |
 | [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **F4105-BU** <br/> Актуатор-размыкатель <br/> Спецификация устройства |
 
