@@ -10,6 +10,40 @@
 ### Общие сведения
 * [Таблица сравнения навигационных систем](navigation_systems_comparison_ru.md)
 
+### Zima
+#### Ультракороткобазисная (USBL) система
+##### Zima2
+* [Zima2 USBL: Краткое описание](/documentation/RU/Zima/Zima2_DataBrief_ru.md)
+* [Zima2 USBL: Руководство пользователя](/documentation/RU/Zima/Zima2_Users_manual_ru.md)
+* [Zima2-B (пеленгационная антенна): Спецификация устройства:](/documentation/RU/Zima/Zima2B_Specification_ru.md)
+* [Zima2-R (маяк-ответчик): Спецификация устройства](/documentation/RU/Zima/Zima2R_Specification_ru.md)
+* [Zima2 USBL: Протокол информационного сопряжения](/documentation/RU/Zima/Zima2_Protocol_Specification_ru.md)
+* [🐙 AzimuthSuite: Пультовое приложение для Zima2 USBL (Исходный код)](https://github.com/ucnl/AzimuthSuite)
+* [🐙 AzimuthSuite: Пультовое приложение для Zima2 USBL (Скачать релиз)](https://github.com/ucnl/AzimuthSuite/releases/download/beta/AzimuthSuit.zip)
+* [Zima2 USBL: технический паспорт (шаблон)](/documentation/RU/Zima/Zima2_technical_passport_ru.md)
+
+##### Zima
+* [Zima USBL: Краткое описание](/documentation/RU/Zima/Zima_DataBrief_ru.md)
+* [Zima USBL: медиаматериалы, видео с испытаний и т.п.](/documentation/RU/Zima/media)
+* [Zima USBL: Рукводство пользователя](/documentation/RU/Zima/Zima_Users_manual_ru.md)
+* [Zima-B (пеленгационная антенна): Спецификация устройства](/documentation/RU/Zima/Zima_B_Specification_ru.md)
+* [Zima-R (маяк-ответчик): Спецификация устройства](/documentation/RU/Zima/Zima_R_Specification_ru.md)
+* [Zima-R 1000 (OEM маяк ответчик): Спецификация устройства](/documentation/RU/Zima/Zima_R_OEM_Specification_ru.md)
+* [Zima USBL: Протокол информационного сопряжения](/documentation/RU/Zima/Zima_Protocol_Specification_ru.md)
+* [ZHost: Пультовое приложение для Zima USBL (Исходный код)](https://github.com/ucnl/ZHost)
+* [ZHost: Пультовое приложение для Zima USBL (Скачать релиз)](https://github.com/ucnl/ZHost/releases/download/2.2/ZHost.zip)
+
+##### Общие документы для систем Zima и Zima2
+* [Bat&Link Box (блок питания и коммутации): Спецификация устройства](/documentation/RU/Zima/Bat_n_link_box_Specification_ru.md)
+* [Bat&Link Box (блок питания и коммутации): Руководство пользователя](/documentation/RU/Zima/Bat_n_link_box_Users_manual_ru.md)
+* [Информационный лист по совместимости для систем определения положения и курса](/documentation/RU/Zima/Zima_GNSS_requirements_ru.md)
+* [Zima-B, Zima2-B: 3D-модель (STEP)](/documentation/Zima_B_3D.step)
+* [Zima-R, Zima2-R: 3D-модель (STEP)](/documentation/Zima_R_3D.step)
+* [Zima-R, Zima2-R: Кронштейн плоский (3D-модель STEP)](/documentation/ZIMA-R_holder_flat.step)
+* [Zima-R, Zima2-R: Кронштейн плоский (3D-модель Fusion360 f3d)](/documentation/ZIMA-R_holder_flat.f3d)
+* [Zima-R, Zima2-R: Кронштейн на баллон (3D-модель STEP)](/documentation/msize_tank_holder.STEP)
+* [Zima-R, Zima2-R: Схема включения устройства](/documentation/RU/Zima/ZimaR_wiring_diagram_ru.md)
+
 ### RedWAVE
 #### Подводный GPS (LBL)
 * [RedWave: Краткое описание](/documentation/RU/RedWAVE/RedWAVE_DataBrief_ru.md)
@@ -57,39 +91,5 @@
 * [ОЖИДАЕТСЯ WAYU: Руководство пользователя]()
 * [Приложение для работы с системой WAYU (Исходный код)](https://github.com/ucnl/WAYU)
 * [Приложение для работы с системой WAYU (Скачать релиз)](https://github.com/ucnl/WAYU/releases/download/1.0/WAYU.zip)
-
-### Zima
-#### Ультракороткобазисная (USBL) система
-##### Zima2
-* [Zima2 USBL: Краткое описание](/documentation/RU/Zima/Zima2_DataBrief_ru.md)
-* [Zima2 USBL: Руководство пользователя](/documentation/RU/Zima/Zima2_Users_manual_ru.md)
-* [Zima2-B (пеленгационная антенна): Спецификация устройства:](/documentation/RU/Zima/Zima2B_Specification_ru.md)
-* [Zima2-R (маяк-ответчик): Спецификация устройства](/documentation/RU/Zima/Zima2R_Specification_ru.md)
-* [Zima2 USBL: Протокол информационного сопряжения](/documentation/RU/Zima/Zima2_Protocol_Specification_ru.md)
-* [🐙 AzimuthSuite: Пультовое приложение для Zima2 USBL (Исходный код)](https://github.com/ucnl/AzimuthSuite)
-* [🐙 AzimuthSuite: Пультовое приложение для Zima2 USBL (Скачать релиз)](https://github.com/ucnl/AzimuthSuite/releases/download/beta/AzimuthSuit.zip)
-* [Zima2 USBL: технический паспорт (шаблон)](/documentation/RU/Zima/Zima2_technical_passport_ru.md)
-
-##### Zima
-* [Zima USBL: Краткое описание](/documentation/RU/Zima/Zima_DataBrief_ru.md)
-* [Zima USBL: медиаматериалы, видео с испытаний и т.п.](/documentation/RU/Zima/media)
-* [Zima USBL: Рукводство пользователя](/documentation/RU/Zima/Zima_Users_manual_ru.md)
-* [Zima-B (пеленгационная антенна): Спецификация устройства](/documentation/RU/Zima/Zima_B_Specification_ru.md)
-* [Zima-R (маяк-ответчик): Спецификация устройства](/documentation/RU/Zima/Zima_R_Specification_ru.md)
-* [Zima-R 1000 (OEM маяк ответчик): Спецификация устройства](/documentation/RU/Zima/Zima_R_OEM_Specification_ru.md)
-* [Zima USBL: Протокол информационного сопряжения](/documentation/RU/Zima/Zima_Protocol_Specification_ru.md)
-* [ZHost: Пультовое приложение для Zima USBL (Исходный код)](https://github.com/ucnl/ZHost)
-* [ZHost: Пультовое приложение для Zima USBL (Скачать релиз)](https://github.com/ucnl/ZHost/releases/download/2.2/ZHost.zip)
-
-##### Общие документы для систем Zima и Zima2
-* [Bat&Link Box (блок питания и коммутации): Спецификация устройства](/documentation/RU/Zima/Bat_n_link_box_Specification_ru.md)
-* [Bat&Link Box (блок питания и коммутации): Руководство пользователя](/documentation/RU/Zima/Bat_n_link_box_Users_manual_ru.md)
-* [Информационный лист по совместимости для систем определения положения и курса](/documentation/RU/Zima/Zima_GNSS_requirements_ru.md)
-* [Zima-B, Zima2-B: 3D-модель (STEP)](/documentation/Zima_B_3D.step)
-* [Zima-R, Zima2-R: 3D-модель (STEP)](/documentation/Zima_R_3D.step)
-* [Zima-R, Zima2-R: Кронштейн плоский (3D-модель STEP)](/documentation/ZIMA-R_holder_flat.step)
-* [Zima-R, Zima2-R: Кронштейн плоский (3D-модель Fusion360 f3d)](/documentation/ZIMA-R_holder_flat.f3d)
-* [Zima-R, Zima2-R: Кронштейн на баллон (3D-модель STEP)](/documentation/msize_tank_holder.STEP)
-* [Zima-R, Zima2-R: Схема включения устройства](/documentation/RU/Zima/ZimaR_wiring_diagram_ru.md)
 
 ## [На главную](README_RU.md)
