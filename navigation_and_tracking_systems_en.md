@@ -10,6 +10,39 @@
 ### General information
 * [Comparison table of navigation systems](navigation_systems_comparison_en.md)
 
+### Zima
+#### Ultrashort baseline (USBL) system
+##### Zima2
+* [Zima2 USBL: Data brief](/documentation/EN/Zima/Zima2_DataBrief_en.md)
+* [Zima2 USBL: User's manual](/documentation/EN/Zima/Zima2_Users_manual_en.md)
+* [Zima2-B (Direction-finding antenna): Device specification](/documentation/EN/Zima/Zima2B_Specification_en.md)
+* [Zima2-R (Responder-beacon): Device specification](/documentation/EN/Zima/Zima2R_Specification_en.md)
+* [Zima2 USBL: Communication protocol](/documentation/EN/Zima/Zima2_Protocol_Specification_en.md)
+* [🐙 AzimuthSuite: Host application for Zima2 USBL (source code)](https://github.com/ucnl/AzimuthSuite)
+* [🐙 AzimuthSuite: Host application for Zima2 USBL (dowload release)](https://github.com/ucnl/AzimuthSuite/releases/download/beta/AzimuthSuit.zip)
+
+##### Zima
+* [Zima USBL: Data brief](/documentation/EN/Zima/Zima_DataBrief_en.md)
+* [Zima USBL: media, tracks etc.](/documentation/EN/Zima/media)
+* [Zima USBL: User's manual](/documentation/EN/Zima/Zima_Users_manual_en.md)
+* [Zima-B (Direction-finding antenna): Device specification](/documentation/EN/Zima/Zima_B_Specification_en.md)
+* [Zima-R (Responder-beacon): Device specification](/documentation/EN/Zima/Zima_R_Specification_en.md)
+* [Zima-R 1000 (OEM Responder-beacon): Device specification](/documentation/EN/Zima/Zima_R_OEM_Specification_en.md)
+* [Zima USBL: Communication protocol](/documentation/EN/Zima/Zima_Protocol_Specification_en.md)
+* [ZHost: Host application for Zima USBL (source code)](https://github.com/ucnl/ZHost)
+* [ZHost: Host application for Zima USBL (dowload release)](https://github.com/ucnl/ZHost/releases/download/2.2/ZHost.zip)
+
+##### Common documents for Zima и Zima2
+* [Bat&Link Box (Autonomous power supply): Device specification](/documentation/EN/Zima/Bat_n_link_box_Specification_en.md)
+* [Bat&Link Box (Autonomous power supply): User's manual](/documentation/EN/Zima/Bat_n_link_box_Users_manual_en.md)
+* [Data brief for GNSS compatibility](/documentation/EN/Zima/Zima_GNSS_requirements_en.md)
+* [Zima-B, Zima2-B: 3D-model (STEP)](/documentation/Zima_B_3D.step)
+* [Zima-R, Zima2-R: 3D-model (STEP)](/documentation/Zima_R_3D.step)
+* [Zima-R, Zima2-R: Bracket flat (3D-model STEP)](/documentation/ZIMA-R_holder_flat.step)
+* [Zima-R, Zima2-R: Bracket flat (3D-model Fusion360 f3d)](/documentation/ZIMA-R_holder_flat.f3d)
+* [Zima-R, Zima2-R: Bracket on tank (3D-model STEP)](/documentation/msize_tank_holder.STEP)
+* [Zima-R, Zima2-R: Wirind diagram](/documentation/EN/Zima/ZimaR_wiring_diagram_en.md)
+
 ### RedWAVE
 #### Underwater GPS (LBL)
 * [RedWAVE: Databrief](/documentation/EN/RedWAVE/RedWAVE_DataBrief_en.md)
@@ -56,38 +89,5 @@
 * [COMING SOON User's manual]()
 * [Host Application WAYU (Source code)](https://github.com/ucnl/WAYU)
 * [Host Application WAYU (Download release)](https://github.com/ucnl/WAYU/releases/download/1.0/WAYU.zip)
-
-### Zima
-#### Ultrashort baseline (USBL) system
-##### Zima2
-* [Zima2 USBL: Data brief](/documentation/EN/Zima/Zima2_DataBrief_en.md)
-* [Zima2 USBL: User's manual](/documentation/EN/Zima/Zima2_Users_manual_en.md)
-* [Zima2-B (Direction-finding antenna): Device specification](/documentation/EN/Zima/Zima2B_Specification_en.md)
-* [Zima2-R (Responder-beacon): Device specification](/documentation/EN/Zima/Zima2R_Specification_en.md)
-* [Zima2 USBL: Communication protocol](/documentation/EN/Zima/Zima2_Protocol_Specification_en.md)
-* [🐙 AzimuthSuite: Host application for Zima2 USBL (source code)](https://github.com/ucnl/AzimuthSuite)
-* [🐙 AzimuthSuite: Host application for Zima2 USBL (dowload release)](https://github.com/ucnl/AzimuthSuite/releases/download/beta/AzimuthSuit.zip)
-
-##### Zima
-* [Zima USBL: Data brief](/documentation/EN/Zima/Zima_DataBrief_en.md)
-* [Zima USBL: media, tracks etc.](/documentation/EN/Zima/media)
-* [Zima USBL: User's manual](/documentation/EN/Zima/Zima_Users_manual_en.md)
-* [Zima-B (Direction-finding antenna): Device specification](/documentation/EN/Zima/Zima_B_Specification_en.md)
-* [Zima-R (Responder-beacon): Device specification](/documentation/EN/Zima/Zima_R_Specification_en.md)
-* [Zima-R 1000 (OEM Responder-beacon): Device specification](/documentation/EN/Zima/Zima_R_OEM_Specification_en.md)
-* [Zima USBL: Communication protocol](/documentation/EN/Zima/Zima_Protocol_Specification_en.md)
-* [ZHost: Host application for Zima USBL (source code)](https://github.com/ucnl/ZHost)
-* [ZHost: Host application for Zima USBL (dowload release)](https://github.com/ucnl/ZHost/releases/download/2.2/ZHost.zip)
-
-##### Common documents for Zima и Zima2
-* [Bat&Link Box (Autonomous power supply): Device specification](/documentation/EN/Zima/Bat_n_link_box_Specification_en.md)
-* [Bat&Link Box (Autonomous power supply): User's manual](/documentation/EN/Zima/Bat_n_link_box_Users_manual_en.md)
-* [Data brief for GNSS compatibility](/documentation/EN/Zima/Zima_GNSS_requirements_en.md)
-* [Zima-B, Zima2-B: 3D-model (STEP)](/documentation/Zima_B_3D.step)
-* [Zima-R, Zima2-R: 3D-model (STEP)](/documentation/Zima_R_3D.step)
-* [Zima-R, Zima2-R: Bracket flat (3D-model STEP)](/documentation/ZIMA-R_holder_flat.step)
-* [Zima-R, Zima2-R: Bracket flat (3D-model Fusion360 f3d)](/documentation/ZIMA-R_holder_flat.f3d)
-* [Zima-R, Zima2-R: Bracket on tank (3D-model STEP)](/documentation/msize_tank_holder.STEP)
-* [Zima-R, Zima2-R: Wirind diagram](/documentation/EN/Zima/ZimaR_wiring_diagram_en.md)
 
 ## [Back to main](README.md)
