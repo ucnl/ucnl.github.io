@@ -17,7 +17,7 @@ ______
 
 <details><summary>Просмотр трека</summary>
 <p>
-<script src="https://embed.github.com/view/geojson/ucnl/ucnl.github.io/blob/master/documentation/rednode_track_22_10_2020_13-39-24.geojson"></script>
+<script src="https://embed.github.com/view/geojson/ucnl/ucnl.github.io/documentation/rednode_track_22_10_2020_13-39-24.geojson"></script>
 </p>
 </details>
 
