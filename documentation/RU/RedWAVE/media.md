@@ -37,9 +37,8 @@ ______
 
 </details>
   
-
-[Скачать трек RedNODE track 22 NOV 2020 (KML)](/documentation/rednode_track_22-10-2020-13-39-24.kml)
-[Скачать трек RedNODE track 22 NOV 2020 (geojson)](/documentation/rednode_track_22_10_2020_13-39-24.geojson)
+* [Скачать трек RedNODE track 22 NOV 2020 (KML)](/documentation/rednode_track_22-10-2020-13-39-24.kml)
+* [Скачать трек RedNODE track 22 NOV 2020 (geojson)](/documentation/rednode_track_22_10_2020_13-39-24.geojson)
 
 ______  
 
