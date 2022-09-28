@@ -16,16 +16,7 @@ ______
 Трек погружения:  
 
 <details><summary>Просмотр трека</summary>
-
-```mermaid
-graph TD;
-    A-->B;
-    A-->C;
-    B-->D;
-    C-->D;
-```
-  
-  
+    
 ```geojson
 {
   "type": "FeatureCollection",
@@ -40,9 +31,9 @@ graph TD;
 ]
 }
 ```
-
+  
 <script src="https://embed.github.com/view/geojson/ucnl/ucnl.github.io/documentation/rednode_track_22_10_2020_13-39-24.geojson"></script>
-
+  
 </details>
   
 * [Скачать трек RedNODE track 22 NOV 2020 (KML)](/documentation/rednode_track_22-10-2020-13-39-24.kml)
