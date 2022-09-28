@@ -32,13 +32,14 @@ ______
 }
   
 ```
-  
-///<script src="https://embed.github.com/view/geojson/ucnl/ucnl.github.io/documentation/rednode_track_22_10_2020_13-39-24.geojson"></script>
+
+<script src="https://embed.github.com/view/geojson/ucnl/ucnl.github.io/documentation/rednode_track_22_10_2020_13-39-24.geojson"></script>
 
 </details>
   
-  
+
 [Скачать трек RedNODE track 22 NOV 2020 (KML)](/documentation/rednode_track_22-10-2020-13-39-24.kml)
+[Скачать трек RedNODE track 22 NOV 2020 (geojson)](/documentation/rednode_track_22_10_2020_13-39-24.geojson)
 
 ______  
 
