@@ -17,12 +17,21 @@ ______
 
 <details><summary>Просмотр трека</summary>
 
+```mermaid
+graph TD;
+    A-->B;
+    A-->C;
+    B-->D;
+    C-->D;
+```
+  
+  
 ```geojson
 {
-"type": "FeatureCollection",
-"name": "kml",
-"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
-"features": [
+  "type": "FeatureCollection",
+  "name": "kml",
+  "crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+  "features": [
 { "type": "Feature", "properties": { "Name": "BASE 1 track" }, "geometry": { "type": "Point", "coordinates": [ 37.469684, 55.838203 ] } },
 { "type": "Feature", "properties": { "Name": "BASE 2 track" }, "geometry": { "type": "Point", "coordinates": [ 37.475868, 55.838623 ] } },
 { "type": "Feature", "properties": { "Name": "BASE 3 track" }, "geometry": { "type": "Point", "coordinates": [ 37.475048, 55.839225 ] } },
