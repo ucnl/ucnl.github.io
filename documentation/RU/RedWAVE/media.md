@@ -15,11 +15,7 @@ ______
 Время: 22 ноября 2020  
 Трек погружения:  
 
-<details><summary>Просмотр трека</summary>
-<p>
 <script src="https://embed.github.com/view/geojson/ucnl/ucnl.github.io/documentation/rednode_track_22_10_2020_13-39-24.geojson"></script>
-</p>
-</details>
 
 [Скачать трек RedNODE track 22 NOV 2020 (KML)](/documentation/rednode_track_22-10-2020-13-39-24.kml)
 
