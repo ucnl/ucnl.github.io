@@ -6,7 +6,7 @@
 | [EN](accessories_en.md) \| [RU](accessories_ru.md) |
 
 ## Аксессуары
-* [Кнопка подводная RedButton](/documentation/RU/Accessories/RedButton_Specification_ru.md)
+* [Кнопка подводная uPress](/documentation/RU/Accessories/uPress_Specification_ru.md)
 
 ## Источники питания
 * [Подводные аккумуляторные сборки](/documentation/RU/Accessories/Sub_batteries_ru.md)
