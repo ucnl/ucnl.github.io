@@ -19,7 +19,7 @@
 ## DESCRIPTION
 
 Diver's underwater wireless telephone communication unit **RedPhone-DX** provides voice messaging between divers and/or from a diver to a surface station. The device supports standard frequency bands and is compatible with most similar systems. The built-in pinger function of the navigation system **RWLT** allows the user to determine the geographic position of the diver after he completes voice transmission.
-[RedButton](https://docs.unavlab.com/documentation/EN/Accessories/RedButton_Specification_en.html) that does not contain corrodable elements can be used as a Push-To-Talk button.
+[uPress](https://docs.unavlab.com/documentation/EN/Accessories/uPress_Specification_en.html) that does not contain corrodable elements can be used as a Push-To-Talk button.
 
 <div style="page-break-after: always;"></div>
 
