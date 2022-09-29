@@ -1,10 +1,10 @@
-[Main](/../../) ❯ [Accessories](/accessories_en) ❯ **Underwater button RedButton**
+[Main](/../../) ❯ [Accessories](/accessories_en) ❯ **Underwater button uPress**
 
 <div style="page-break-after: always;"></div>
 
 | ![logo](/documentation/sm_logo.png) | ![pic](/documentation/redbutton.png) |
 | :---: | ---: |
-| [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | RedButton underwater button <br/> Device specification |
+| [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | uPress underwater button <br/> Device specification |
 
 ## KEY FEATURES
 * **Total absence of corrosive elements**
@@ -13,7 +13,7 @@
 * **Loop for a cord or belt**
 
 ## DESCRIPTION
-Submersible switch **RedButton** specially designed for divers. The device has no serviced and corrosive parts.
+Submersible switch **uPress** specially designed for divers. The device has no serviced and corrosive parts.
 It has high reliability and MTBF compared with spring-rod designs and piezo buttons.  
 
 <div style="page-break-after: always;"></div>
