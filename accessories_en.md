@@ -6,6 +6,6 @@
 | [EN](accessories_en.md) \| [RU](accessories_ru.md) |
 
 ## Accessories
-* [Underwater button RedButton](/documentation/EN/Accessories/RedButton_Specification_en.md)
+* [Underwater button uPress](/documentation/EN/Accessories/uPress_Specification_en.md)
 
 ## [Back to main](README.md)
