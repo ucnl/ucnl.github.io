@@ -1,10 +1,10 @@
-[Главная](/README_RU) ❯ [Аксессуары](/accessories_ru) ❯ **Кнопка подводная RedButton**
+[Главная](/README_RU) ❯ [Аксессуары](/accessories_ru) ❯ **Кнопка подводная uPress**
 
 <div style="page-break-after: always;"></div>
 
 | ![logo](/documentation/sm_logo.png) | ![logo](/documentation/redbutton.png) |
 | :---: | ---: |
-| [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | RedButton подводная кнопка <br/> Спецификация устройства |
+| [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | uPress подводная кнопка <br/> Спецификация устройства |
 
 ## ОСОБЕННОСТИ
 
@@ -15,7 +15,7 @@
 
 ## ОПИСАНИЕ
 
-Подводный переключатель **RedButton** специально разработан для применения водолазами. Устройство не имеет обслуживаемых и подверженных коррозии частей.
+Подводный переключатель **uPress** специально разработан для применения водолазами. Устройство не имеет обслуживаемых и подверженных коррозии частей.
 Имеет высокую надежность и наработку на отказ сравнению с пружинными штоковыми конструкциями и пьезокнопками.
   
 <div style="page-break-after: always;"></div>
