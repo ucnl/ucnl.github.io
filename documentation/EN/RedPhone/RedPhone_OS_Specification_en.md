@@ -58,7 +58,7 @@ The RedPhone-OS Wireless underwater telephone provides voice transmission betwee
 
 ## ADDITIONAL INFORMATION
 
-[Material Safety Data Sheet (MSDS) for built-in battery](\documentation\EN\Misc\RedPhone_OS_MSDS_en.md) 
+[Material Safety Data Sheet (MSDS) for built-in battery](\documentation\EN\Misc\RedPhone_OS_MSDS_en) 
 
 ________________
 <a name="footnote1"><sup>1</sup></a> A parameter that determines the maximum range at which a signal can be received, based on electro-acoustic parameters of the transmitter and receiver, spatial decrease in the intensity of sound energy, attenuation in the medium and the acoustic noise level.  
