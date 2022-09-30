@@ -67,7 +67,7 @@ Diver's underwater wireless telephone communication unit **RedPhone-DX** provide
 [Material Safety Data Sheet (MSDS) for built-in battery](\documentation\EN\Misc\RedPhone_DX_MSDS_en) 
 
 ________________
-<a name="footnote1"><sup>1</sup></a> The function is provided by buoys of the **RWLT** navigation system.  
+<a name="footnote1"><sup>1</sup></a> The function is provided by buoys of the [RWLT](/documentation/EN/RWLT/RWLT_DataBrief_en) navigation system.  
 <a name="footnote2"><sup>2</sup></a> A parameter that determines the maximum range at which a signal can be received based on the electro-acoustic parameters of the transmitter and receiver, spatial decrease in the intensity of sound energy, attenuation in the medium and level of acoustic noise.  
 <a name="footnote3"><sup>3</sup></a> Including transducer.  
 <a name="footnote4"><sup>4</sup></a> With a PTT button and a mask connector, deepending on the specific connector, the value may differ by the weight of the connector.  
