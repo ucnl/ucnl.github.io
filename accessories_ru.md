@@ -10,7 +10,7 @@
 
 ## Источники питания
 * [Подводные аккумуляторные сборки](/documentation/RU/Accessories/Sub_batteries_ru.md)
-* [Bat&Link Box: Автономный источник питания и преобразователь RS422/485<->USB](/documentation/RU/Zima/Bat_n_link_box_Specification_ru.html)
+* [Bat&Link Box: Автономный источник питания и преобразователь RS422/485⮀USB](/documentation/RU/Zima/Bat_n_link_box_Specification_ru.html)
 * [Заливка аккумуляторных сборок в пластиковые кейсы](/documentation/RU/Accessories/Batpacks_ru.md)
 
 ## Вспомогательные устройства
