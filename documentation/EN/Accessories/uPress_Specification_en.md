@@ -39,7 +39,7 @@ It has high reliability and MTBF compared with spring-rod designs and piezo butt
 | VOLTAGE RANGE | 5·10<sup>-2</sup> .. 100 В |
 | CURRENT TYPE |DC, AC |
 | NUMBER OF CYCLES | 10<sup>5</sup> |
-| SWITCHING FORCE | 25 +/- 5 N |
+| SWITCHING FORCE | 16 +/- 2 N |
 
 ________________
 <a name="fn1"><sup>1</sup></a> With standard length cable.  
