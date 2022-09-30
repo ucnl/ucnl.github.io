@@ -64,7 +64,7 @@ Diver's underwater wireless telephone communication unit **RedPhone-DX** provide
 
 ### ADDITIONAL INFORMATION
 
-[Material Safety Data Sheet (MSDS) for built-in battery](\documentation\EN\Misc\RedPhone_DX_MSDS_en.md) 
+[Material Safety Data Sheet (MSDS) for built-in battery](\documentation\EN\Misc\RedPhone_DX_MSDS_en) 
 
 ________________
 <a name="footnote1"><sup>1</sup></a> The function is provided by buoys of the **RWLT** navigation system.  
