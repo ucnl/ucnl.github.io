@@ -24,13 +24,14 @@ It has high reliability and MTBF compared with spring-rod designs and piezo butt
 | :--- | :--- |
 | STATE BY DEFAULT | DISCONNECTED |
 | DIMENSIONS | 86 x 60 x 23 mm |
-| WEIGHT<sup>[1](#footnote1)</sup> (dry) | 55 g |
+| WEIGHT<sup>[1](#fn1)</sup> (dry) | 55 g |
 | DEPTH RATING | 300 m |
 | CABLE LENGTH<sup>[2](#footnote2)</sup> | 0.5 m |
 | CABLE DIAMETER | 5 мм |
 | CABLE INSULATION MATERIAL | Polyurethane |
 | BODY MATERIAL | Polyurethane |
-| BODY COLOUR<sup>[3](#footnote1)</sup> | Red |
+| BODY COLOUR<sup>[3](#fn3)</sup> | 🟥 🟦 🟩 🟨 ⬛ ⬜ |
+| FLEXIBLE ELEMENT COLOUR<sup>[3](#fn3)</sup> | 🟥 🟦 🟩 🟨 ⬛ ⬜ |
 | WORKING TEMPERATURE RANGE | -20 .. 50 °С |
 | DISPLACEMENT BETWEEN SWITCHING | 3 mm |
 | MAX. POWER | 10 W |
@@ -41,8 +42,8 @@ It has high reliability and MTBF compared with spring-rod designs and piezo butt
 | SWITCHING FORCE | 25 +/- 5 N |
 
 ________________
-<a name="footnote1"><sup>1</sup></a> With standard length cable.  
-<a name="footnote2"><sup>2</sup></a> The parameter can be changed by agreement.  
-<a name="footnote3"><sup>3</sup></a> The default color is specified. Other colors are available: black, yellow, green, blue. It is possible to dye in any color according to the RAL catalog when ordering from 50 pcs.  
+<a name="fn1"><sup>1</sup></a> With standard length cable.  
+<a name="fn2"><sup>2</sup></a> The parameter can be changed by agreement.  
+<a name="fn3"><sup>3</sup></a> Any color according from the RAL catalog when ordering from 50 pcs.  
 
 <div style="page-break-after: always;"></div>
