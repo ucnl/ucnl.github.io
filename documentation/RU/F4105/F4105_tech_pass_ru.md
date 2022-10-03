@@ -1,3 +1,5 @@
+[Главная](/README_RU) ❯ [Специализированное оборудование](/underwater_bespoke_systems_ru) ❯ **F4105 Технический паспорт (шаблон)**
+
 <div style="page-break-after: always;"></div>
 
 <h3 align="center">
