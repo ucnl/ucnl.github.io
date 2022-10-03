@@ -1,3 +1,5 @@
+[Главная](/README_RU) ❯ [Гидроакустические модемы](/underwater_acoustic_modems_ru) ❯ **Технический паспорт (шаблон): uWave**
+
 <div style="page-break-after: always;"></div>
 
 <h3 align="center">
