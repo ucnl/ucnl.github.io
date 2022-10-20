@@ -7,78 +7,67 @@
 
 ## RedWAVE media: tests videos, tutorials, etc.
 
-______  
+| Diver's movement track obtained with [RedWAVE](/documentation/EN/RedWAVE/RedWAVE_DataBrief_en.md) |
+| :--- |
+| 18 September 2022 |
+| [Moscow river, Moscow, Russia (Google Maps)](https://goo.gl/maps/zJtaqhawt4GzD3Em8) |
+| [🡇 Download track (KML)](/documentation/UGPSHub_Tracks_09-29-24.kml) |
+| ![](/documentation/UGPSHub_Tracks_09-29-24.jpg) |
 
+| Diver's movement track obtained with [RedWAVE](/documentation/EN/RedWAVE/RedWAVE_DataBrief_en.md) |
+| :--- |
+| 08 August 2022 |
+| [Moscow river, Moscow, Russia (Google Maps)](https://goo.gl/maps/zJtaqhawt4GzD3Em8) |
+| [🡇 Download track (KML)](/documentation/UGPSHub_Tracks_23-32-48.kml) |
+| ![](/documentation/UGPSHub_Tracks_23-32-48.jpg) |
 
-### Diver's movement track obtained with [RedWAVE](/documentation/EN/RedWAVE/RedWAVE_DataBrief_en.md)  
-Place: [Khimkinskoye Vodokhranilishche, Moscow, Russia](https://goo.gl/maps/T3ipWGqQJ65j9p5w7)  
-Time: 22 November 2020  
-Tracks:  
-- [RedNODE track 22 NOV 2020](/documentation/rednode_track_22-10-2020-13-39-24.kml)
+| Diver's movement track obtained with [RedWAVE](/documentation/EN/RedWAVE/RedWAVE_DataBrief_en.md) |
+| :--- |
+| 22 November 2020 |
+| [Khimkinskoye Vodokhranilishche, Moscow, Russia (Google Maps)](https://goo.gl/maps/T3ipWGqQJ65j9p5w7) |
+| [🡇 Download track (KML)](/documentation/rednode_track_22-10-2020-13-39-24.kml) |
+| ![](/documentation/rednode_track_22-10-2020-13-39-24.jpg) |
 
+| ROV navigation via [RedWAVE](/documentation/EN/RedWAVE/RedWAVE_DataBrief_en.md) |
+| :--- |
+| 11 November 2020 |
+| [Yujzniy pond, Volgograd, Russia (Google Maps)](https://goo.gl/maps/xjJrX28KmWDdJxLC9) |
+| [🡇 Download track (KML)](/documentation/UGPSHub_Tracks_14-31-20.kml) |
+| ![](/documentation/UGPSHub_Tracks_14-31-20.jpg) |
 
-______  
+| ROV & diver simultaneous navigation via [RedWAVE](/documentation/EN/RedWAVE/RedWAVE_DataBrief_en.md) |
+| :--- |
+| 7 November 2020 |
+| [Amerievsky dolomite quarry, Moskow, Russia (Google Maps)](https://goo.gl/maps/BftxRy1cKA6ZsUUP6) |
+| [🡇 Download track (Diver, KML)](/documentation/7-11-2020_17-30.kml) |
+| [🡇 Download track (ROV, KML)](/documentation/UGPSHub_Tracks_17-30-59.kml) |
+| ![](/documentation/7-11-2020_17-30.jpg) |
 
+| Working with [RedWAVE/DiveNET GPS](/documentation/EN/RedWAVE/RedWAVE_DataBrief_en.md) underwater GPS |
+| :--- |
+| 3 March 2020 |
+| [Monterey Bay, California, US (Google Maps)](https://goo.gl/maps/SZ3tC49dcVGnequB7) |
+| [🡇 Download track (KML)](/documentation/rednav_track_03-03-2020.kml) |
+| ![](/documentation/rednav_track_03-03-2020.jpg) |
+| <a href="https://youtu.be/_2PoVsB1wEY" target="_blank"><img src="http://img.youtube.com/vi/_2PoVsB1wEY/0.jpg" alt="RedWAVE Underwater GPS Monterey, California, US" width="240" height="180" border="10" /></a> |
 
-### ROV navigation via [RedWAVE](/documentation/EN/RedWAVE/RedWAVE_DataBrief_en.md)  
-Place: [Yujzniy pond, Volgograd, Russia](https://goo.gl/maps/xjJrX28KmWDdJxLC9)  
-Time: 11 November 2020  
-Tracks:  
-- [RedNODE track 11 NOV 2020](/documentation/UGPSHub_Tracks_14-31-20.kml)
+| Palying with a small ROV equipped with [RedWAVE](/documentation/EN/RedWAVE/RedWAVE_DataBrief_en.md) underwater GPS |
+| :--- |
+| 18 April 2019 |
+| [Pichuga river, Volgograd Oblast, RU (Google Maps)](https://goo.gl/maps/Qix3nK84i7inM3FGA) |
+| [🡇 Download track (1, KML)](/documentation/rednode_track_18042019_092548.kml) |
+| [🡇 Download track (2, KML)](/documentation/rednode_track_18042019_131504.kml) |
+| ![](/documentation/rednode_track_18042019_092548.jpg) |
+| <a href="https://youtu.be/xaVfjhPIURc" target="_blank"><img src="http://img.youtube.com/vi/xaVfjhPIURc/0.jpg" alt="RedWAVE Underwater GPS on ROV" width="240" height="180" border="10" /></a> |
 
-
-______  
-
-
-### ROV & diver simultaneous navigation via [RedWAVE](/documentation/EN/RedWAVE/RedWAVE_DataBrief_en.md)  
-Place: [Amerievsky dolomite quarry, Moskow, Russia](https://goo.gl/maps/BftxRy1cKA6ZsUUP6)  
-Time: 7 November 2020  
-Tracks:  
-- [RedNAV track 07 NOV 2020 (Diver)](/documentation/7-11-2020_17-30.kml)
-- [RedNODE track 07 NOV 2020 (ROV)](/documentation/UGPSHub_Tracks_17-30-59.kml)
-
-______  
-
-
-### Working with [RedWAVE/DiveNET GPS](/documentation/EN/RedWAVE/RedWAVE_DataBrief_en.md) underwater GPS
-Place: [Monterey Bay, California, US](https://goo.gl/maps/SZ3tC49dcVGnequB7)  
-Time: March 2020  
-Track:  
-- [RedNAV track 03 MAR 2020](/documentation/rednav_track_03-03-2020.kml)
-
-<a href="https://youtu.be/_2PoVsB1wEY" 
-target="_blank"><img src="http://img.youtube.com/vi/_2PoVsB1wEY/0.jpg" 
-alt="RedWAVE Underwater GPS Monterey, California, US" width="240" height="180" border="10" /></a>  
-
-______
-
-
-### Palying with a small ROV equipped with [RedWAVE](/documentation/EN/RedWAVE/RedWAVE_DataBrief_en.md) underwater GPS
-Place: [Pichuga river, Volgograd Oblast, RU](https://goo.gl/maps/Qix3nK84i7inM3FGA)  
-Time: April 2019  
-Tracks:  
-- [RedNODE Track 18-04-2019 09:25](/documentation/rednode_track_18042019_092548.kml)
-- [RedNODE Track 18-04-2019 13:15](/documentation/rednode_track_18042019_131504.kml)
-
-<a href="https://youtu.be/xaVfjhPIURc" 
-target="_blank"><img src="http://img.youtube.com/vi/xaVfjhPIURc/0.jpg" 
-alt="RedWAVE Underwater GPS on ROV" width="240" height="180" border="10" /></a>  
-
-______  
-
-
-### Working with [RedWAVE](/documentation/EN/RedWAVE/RedWAVE_DataBrief_en.md) underwater GPS
-Place: [Casino Point Underwater Park, Avalon, California, US](https://goo.gl/maps/Qv7d9sCtDehMiVtg9)  
-Time: October 2018  
-Tracks: 
-- [RedNAV track 1, 30 OCT 2018](/documentation/rednav_track_30-10-2018_13-40.kml)
-- [RedNAV track 2, 30 OCT 2018](/documentation/rednav_track_30-10-2018_21-42.kml)  
-
-<a href="https://youtu.be/nqmbPgxIonM" 
-target="_blank"><img src="http://img.youtube.com/vi/nqmbPgxIonM/0.jpg" 
-alt="RedWAVE Underwater GPS Casino Point Underwater Park, Avalon, California, US" width="240" height="180" border="10" /></a>  
-
-______  
+| Working with [RedWAVE](/documentation/EN/RedWAVE/RedWAVE_DataBrief_en.md) underwater GPS |
+| :--- |
+| 30 October 2018 |
+| [Casino Point Underwater Park, Avalon, California, US (Google Maps)](https://goo.gl/maps/Qv7d9sCtDehMiVtg9) |
+| [🡇 Download track (1, KML)](/documentation/rednav_track_30-10-2018_13-40.kml) |
+| [🡇 Download track (2, KML)](/documentation/rednav_track_30-10-2018_21-42.kml) |
+| ![](/documentation/rednav_track_30-10-2018_13-40.jpg) |
+| <a href="https://youtu.be/nqmbPgxIonM" target="_blank"><img src="http://img.youtube.com/vi/nqmbPgxIonM/0.jpg" alt="RedWAVE Underwater GPS Casino Point Underwater Park, Avalon, California, US" width="240" height="180" border="10" /></a>   |
 
 
 ## [To all media](/../../media_videos_en)
