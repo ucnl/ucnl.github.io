@@ -22,7 +22,7 @@
 | Navigation data | Latitude, <br/> Longitude, <br/> Depth, <br/> Temperature, <br/> Time UTC<sup>[6](#footnote6)</sup>, <br/> Course | Latitude, <br/> Longitude, <br/> Depth<sup>[4](#footnote4)</sup>, <br/> Temperature<sup>[4](#footnote4)</sup>, <br/> Course | Latitude, <br/> Longitude | Distance, <br/> Azimuth, <br/> Depth, <br/> Battery voltage, <br/> Latitude<sup>[5](#footnote5)</sup>, <br/> Longitude<sup>[5](#footnote5)</sup> | Distance, <br/> Azimuth, <br/> Depth, <br/> Battery voltage, <br/> Latitude<sup>[4](#footnote5)</sup>, <br/> Longitude<sup>[5](#footnote4)</sup> | Latitude, <br/> Longitude, <br/> Course |
 | Maximal relative velocity | ±1.8 m/s | ±1.8 m/s | ±1.8 m/s | ±2 m/s | ±1 m/s | ±1 m/s |
 | Deployment features | Requires 4 floating buoys to be deployed | Requires 4 floating buoys to be deployed | Requires 4 floating buoys to be deployed | Requires fixing the base station on a rigid rod and connecting an external GPS and compass | Requires fixing the base station on a rigid rod and connecting an external GPS and compass | Requires 4 floating buoys to be deployed |
-| Distinctive feature | Unlimited number of simultaneously positioned devices | Divers positioning simultaneously with voice transmission | Divers positioning simultaneously with voice transmission | Control code transmission function | Two-way data transmission | The most affordable solution for amateurs |
+| Distinctive feature | Unlimited number of simultaneously positioned devices | Divers positioning simultaneously with voice transmission | Divers positioning simultaneously with voice transmission | Automatic tracking | Two-way data transmission | The most affordable solution for amateurs |
 
 <div style="page-break-after: always;"></div>
 
