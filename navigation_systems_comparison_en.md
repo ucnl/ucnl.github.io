@@ -30,7 +30,7 @@ ________________
 <a name="footnote1"><sup>1</sup></a> The maximum number of devices supported to be processed sequentially is specified.  
 <a name="footnote2"><sup>2</sup></a> The minimum value is indicated when working with one transponder beacon located at a distance of up to 100 meters from the base station  
 <a name="footnote3"><sup>3</sup></a> For the diving version, the maximum depth is 70 m  
-<a name="footnote4"><sup>4</sup></a> The parameters are available only when working with the RWLT pinger. When positioning diving telephone devices, these parameters are not available.  
+<a name="footnote4"><sup>4</sup></a> The parameters are available only when working with the [RWLT pinger](/documentation/EN/RWLT/RWLT_Pinger_Specification_en). When positioning diving telephone devices, these parameters are not available.  
 <a name="footnote5"><sup>5</sup></a> These parameters are available only when external sources of navigation data are connected: course and base station geo position  
 <a name="footnote6"><sup>6</sup></a> These parameters are not available in the diver's version
   
