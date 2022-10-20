@@ -40,6 +40,7 @@ Extremely small size, low power consumption and ease of use make the direction f
 | NOMINAL DEPTH ACCURACY | 0.1 m |
 | MAX. OPERATING RANGE<sup>[1](#footnote1)</sup> | 3000 m |
 | HORIZONTAL ANGLE OF ARRIVAL ESTIMATION ACCURACY (typ.)<sup>[3](#footnote3)</sup> | 1° |
+| SLANT RANGE RESOLUTION | 0.15 m |
 | MAX. TILT COMPENSATED BY THE BUILT-IN INCLINOMETER RELATED TO VERTICAL AXIS (pitch/roll) | +/- 30° |
 | WORKING VERTICAL ANGLES (RELATIVE TO HORIZONTAL PLANE)<sup>[3](#footnote3)</sup> | 0 .. 85° |
 | BANDWIDTH | 10 .. 30 kHz |
