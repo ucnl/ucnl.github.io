@@ -50,7 +50,7 @@ Extremely small size, low power consumption and ease of use make the direction f
 | MAX. RELATIVE VELOCITY | +/- 2 m/s |
 | RATED STARTUP TIME | 100 msec |
 | WORKING TEMPERATURE RANGE | -5 .. 50 °C |
-| BATTERY LIFE<sup>[4](#footnote4)</sup> (WHEN SUPPLIED FROM [BAT&LINK BOX](Bat_n_link_box_Specification_en.md)) | 8 ч |
+| BATTERY LIFE<sup>[4](#footnote4)</sup> (WHEN SUPPLIED FROM [BAT&LINK BOX](Bat_n_link_box_Specification_en.md)) | 8 h |
 | INTERFACE | USB(COM) 9600 bit/s |
 | COMMUNICATION PROTOCOL | NMEA 0183 [PAZM](Zima2_Protocol_Specification_en.md) |
 | CABLE LENGTH<sup>[5](#footnote5)</sup> | 10 m |
