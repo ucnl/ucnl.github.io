@@ -10,7 +10,7 @@
 
 ## Таблица сравнения навигационных систем
 
-|  | [RedWAVE подводный GPS](/documentation/RU/RedWAVE/RedWAVE_DataBrief_ru.md) | [RWLT](/documentation/RU/RWLT/RWLT_DataBrief_ru.md) | [RWLT](/documentation/RU/RWLT/RWLT_DataBrief_ru.md) + <br/> [RedPhone-DX](/documentation/RU/RedPhone/RedPhone_DX_Specification_ru.md) | [Zima2 USBL](/documentation/RU/Zima/Zima2_DataBrief_ru.md) | [WAYU](/documentation/RU/WAYU/WAYU_DataBrief_ru.md) | [uWAVE USBL](/documentation/RU/uWAVE/uWAVE_USBL_Modem_Specification_ru.md) |
+|  | [RedWAVE подводный GPS](/documentation/RU/RedWAVE/RedWAVE_DataBrief_ru.md) | [RWLT](/documentation/RU/RWLT/RWLT_DataBrief_ru.md) | [RWLT](/documentation/RU/RWLT/RWLT_DataBrief_ru.md) + <br/> [RedPhone-DX](/documentation/RU/RedPhone/RedPhone_DX_Specification_ru.md) | [Zima2 USBL](/documentation/RU/Zima/Zima2_DataBrief_ru.md) | [uWAVE USBL](/documentation/RU/uWAVE/uWAVE_USBL_Modem_Specification_ru.md) | [WAYU](/documentation/RU/WAYU/WAYU_DataBrief_ru.md) | 
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
 | Тип системы  | LBL | LBL | LBL | USBL | USBL | LBL |
 | Место выработки навигационной информации | Подводный <br/> объект | Надводный <br/> пульт | Надводный <br/> пульт | Надводный <br/> пульт | Надводный <br/> пульт | Надводный <br/> пульт |
