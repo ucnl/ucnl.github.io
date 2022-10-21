@@ -7,23 +7,18 @@
 
 ## RWLT media: videos, tracks, etc.
 
-______  
+| Towing pinger and tracking an ROV |
+| :--- |
+| 27 July 2021 |
+| [🗺 6th Gateway of Volga-Don Channel, Volgograd (Google Maps)](https://goo.gl/maps/rmktnCWcauE4HbcZ6) |
+| [🡇 Download track (KML)](/documentation/RWLT_Tracks_27_JUL_2021_06-48-42.kml) |
+| ![](/documentation/RWLT_Tracks_27_JUL_2021_06-48-42.jpg) |
 
-### ROV & Towing field tests
-Place: [Sixth Gateway Volga-Don Canal, Volgograd, Russia](https://goo.gl/maps/rmktnCWcauE4HbcZ6)  
-Time: 27 JUL 2021  
-Tracks:  
-- [RWLT tracks 27 JUL 2021](/documentation/RWLT_Tracks_27_JUL_2021_06-48-42.kml)
-
-______  
-
-### First field tests (static, GIB in ice holes)
-Place: [Pond Yuzhnii, Volgograd, Russia](https://goo.gl/maps/8hZFEP7M3Z8YtdAo6)  
-Time: 09 FEB 2021  
-Tracks:  
-- [RWLT tracks 09 FEB 2021](/documentation/09-02-2021_RWLT_static_ice.kml)
-
-______  
-
+| Static test (GIBs in ice holes, pinger is submerged on a rope) |
+| :--- | 
+| 09 February 2021 |
+| [🗺 Youzhny Pond, Volgograd (Google Maps)](https://goo.gl/maps/8hZFEP7M3Z8YtdAo6) |
+| [🡇 Download track (KML)](/documentation/09-02-2021_RWLT_static_ice.kml) |
+| ![](/documentation/09-02-2021_RWLT_static_ice.jpg) |
 
 ## [To all media](/../../media_videos_en)
