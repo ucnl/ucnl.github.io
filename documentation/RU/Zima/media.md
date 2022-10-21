@@ -7,26 +7,15 @@
 
 ## Zima медиаматериалы: видео с испытаний, видеоинструкции и т.п.
 
+| Выход на маяк-ответчик, оценка влияния кусровых колебаний носителя антенны на точность |
+| :--- |
+| 24 Сентября 2021 |
+| [6 Шлюз Волго-Донского судоходного канала, Волгоград (Google Maps)](https://goo.gl/maps/rmktnCWcauE4HbcZ6) |
+| [Скчать трек (KML)](/documentation/zima_29_SEP_2021.kml) |
 
-______  
-
-### Выход на маяк-ответчик, оценка влияния кусровых колебаний носителя антенны на точность  
-Место: [6 Шлюз Волго-Донского судоходного канала, Волгоград, Россия](https://goo.gl/maps/rmktnCWcauE4HbcZ6)  
-Время: 24 Сентября 2021  
-Треки:  
-- [Zima-R & station tracks 24 SEP 2021](/documentation/zima_29_SEP_2021.kml)
-
-______  
-
-### Работы по осмотру трубопровода при помощи малого ТНПА, оборудованного трекинговой USBL системой [Zima](/documentation/RU/Zima/Zima_DataBrief_ru.md)  
-Место:   
-Время: Январь 2019
-
-<a href="https://youtu.be/fy9CjD4cgak"
-target="_blank"><img src="http://img.youtube.com/vi/fy9CjD4cgak/0.jpg" 
-alt="ROV equipped with Zima USBL performing pipeline inspection" width="240" height="180" border="10" /></a>  
-
-______   
-
+| Работы по осмотру трубопровода при помощи малого ТНПА, оборудованного трекинговой USBL системой [Zima](/documentation/RU/Zima/Zima_DataBrief_ru.md) | 
+| :--- |
+| Январь 2019 |
+| <a href="https://youtu.be/fy9CjD4cgak" target="_blank"><img src="http://img.youtube.com/vi/fy9CjD4cgak/0.jpg" alt="ROV equipped with Zima USBL performing pipeline inspection" width="240" height="180" border="10" /></a> |
 
 ## [К общему списку медиаматериалов](/../../media_videos_ru)
