@@ -12,6 +12,7 @@
 | 24 Сентября 2021 |
 | [6 Шлюз Волго-Донского судоходного канала, Волгоград (Google Maps)](https://goo.gl/maps/rmktnCWcauE4HbcZ6) |
 | [Скчать трек (KML)](/documentation/zima_29_SEP_2021.kml) |
+| ![](/documentation/zima_29_SEP_2021.jpg) |
 
 | Работы по осмотру трубопровода при помощи малого ТНПА, оборудованного трекинговой USBL системой [Zima](/documentation/RU/Zima/Zima_DataBrief_ru.md) | 
 | :--- |
