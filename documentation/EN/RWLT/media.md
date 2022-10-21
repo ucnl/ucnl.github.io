@@ -10,7 +10,7 @@
 | Towing pinger and tracking an ROV |
 | :--- |
 | 27 July 2021 |
-| [🗺 6th Gateway of Volga-Don Channel, Volgograd (Google Maps)](https://goo.gl/maps/rmktnCWcauE4HbcZ6) |
+| [🗺 6th Gateway of Volga-Don Canal, Volgograd (Google Maps)](https://goo.gl/maps/rmktnCWcauE4HbcZ6) |
 | [🡇 Download track (KML)](/documentation/RWLT_Tracks_27_JUL_2021_06-48-42.kml) |
 | ![](/documentation/RWLT_Tracks_27_JUL_2021_06-48-42.jpg) |
 
