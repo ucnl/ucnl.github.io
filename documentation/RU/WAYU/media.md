@@ -7,17 +7,12 @@
 
 ## WAYU медиаматериалы: видео, треки, и т.п.
 
-______  
-
-
-### Первое испытание системы (в статике, GIB и пингер расположены на поверхности льда)
-Место: [Шестой шлюз Волго-Донского судоходного канала, Волгоград, Россия](https://goo.gl/maps/rmktnCWcauE4HbcZ6)  
-Время: 09 Декабря 2020  
-Tracks:  
-- [WAYU Pinger track #1 09 DEC 2020](/documentation/WAYU_Tracks_11-23-05_static.kml)
-- [WAYU Pinger track #2 09 DEC 2020](/documentation/WAYU_Tracks_11-56-52_static_wide.kml)
-
-______  
-
+| Первое испытание системы (в статике, GIB и пингер расположены на поверхности льда) |
+| :--- |
+| 09 Декабря 2020 |
+| [Шестой шлюз Волго-Донского судоходного канала, Волгоград (Google Maps)](https://goo.gl/maps/rmktnCWcauE4HbcZ6) |
+| [Скачать трек 1 (KML)](/documentation/WAYU_Tracks_11-23-05_static.kml) |
+| [Скачать трек 2 (KML)](/documentation/WAYU_Tracks_11-56-52_static_wide.kml) |
+| ![](/documentation/WAYU_Tracks_11-56-52_static_wide.jpg) |
 
 ## [К общему списку медиаматериалов](/../../media_videos_ru)
