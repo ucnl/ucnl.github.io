@@ -9,6 +9,15 @@
 
 | Трек дайвера, полученный при помощи [RedWAVE](/documentation/EN/RedWAVE/RedWAVE_DataBrief_en.md) |
 | :--- |
+| 23 Октября 2022 |
+| [🗺 Дайвинг центр "Спас-Каменка" (Google Maps)](https://goo.gl/maps/JhHLn1t4AWQ5sQvd6) |
+| [🡇 Скачать трек (KML)](/documentation/UGPSHub_Tracks_23_10_2022.kml) |
+| ![](/documentation/Dslt_readwave_20_10_2022.jpg) |
+| ![](/documentation/Dslt_readwave_20_10_2022_z1.jpg) |
+| ![](/documentation/Dslt_readwave_20_10_2022_zmax.jpg) |
+
+| Трек дайвера, полученный при помощи [RedWAVE](/documentation/EN/RedWAVE/RedWAVE_DataBrief_en.md) |
+| :--- |
 | 18 Сентября 2022 |
 | [🗺 Москва река (Google Maps)](https://goo.gl/maps/zJtaqhawt4GzD3Em8) |
 | [🡇 Скачать трек (KML)](/documentation/UGPSHub_Tracks_09-29-24.kml) |
