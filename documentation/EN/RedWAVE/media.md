@@ -9,6 +9,15 @@
 
 | Diver's movement track obtained with [RedWAVE](/documentation/EN/RedWAVE/RedWAVE_DataBrief_en.md) |
 | :--- |
+| 23 October 2022 |
+| [🗺 Diving Center "Spas-Kamenka" (Google Maps)](https://goo.gl/maps/JhHLn1t4AWQ5sQvd6) |
+| [🡇 Download track (KML)](/documentation/UGPSHub_Tracks_23_10_2022.kml) |
+| ![](/documentation/Dslt_readwave_20_10_2022.jpg) |
+| ![](/documentation/Dslt_readwave_20_10_2022_z1.jpg) |
+| ![](/documentation/Dslt_readwave_20_10_2022_zmax.jpg) |
+
+| Diver's movement track obtained with [RedWAVE](/documentation/EN/RedWAVE/RedWAVE_DataBrief_en.md) |
+| :--- |
 | 18 September 2022 |
 | [Moscow river, Moscow, Russia (Google Maps)](https://goo.gl/maps/zJtaqhawt4GzD3Em8) |
 | [🡇 Download track (KML)](/documentation/UGPSHub_Tracks_09-29-24.kml) |
