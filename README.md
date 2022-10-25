@@ -17,4 +17,3 @@
 * [Media](media_videos_en.md)
 * [Our educational projects](educational_projects_en.md)
 * [Miscellaneous info](misc_en.md)
-* [Blog](/_posts)
