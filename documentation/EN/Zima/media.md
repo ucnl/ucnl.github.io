@@ -5,25 +5,16 @@
 
 ## Zima USBL: tests videos, tutorials, etc.
 
-______  
+| Navigating to the responder-beacon, estimation of the  fluctuations of the antenna heading oscillations on the accuracy |
+| :--- |
+| 24 Сентября 2021 |
+| [🗺 6th Gateway Volga-Don Canal, Volgograd (Google Maps)](https://goo.gl/maps/rmktnCWcauE4HbcZ6) |
+| [🡇 Download track (KML)](/documentation/zima_29_SEP_2021.kml) |
+| ![](/documentation/zima_29_SEP_2021.jpg) |
 
-
-### Looking for the responder beacon, assessment of the effect of vessel heading oscillations on accuracy  
-Place: [Sixth Gateway Volga-Don Canal, Volgograd, Russia](https://goo.gl/maps/rmktnCWcauE4HbcZ6)  
-Time: 24 September 2021  
-Tracks:  
-- [Zima-R & station tracks 24 SEP 2021](/documentation/zima_29_SEP_2021.kml)
-
-______  
-
-### A pipeline inspection by a ROV equipped with [Zima USBL](/documentation/EN/Zima/Zima_DataBrief_en.md)  
-Place:   
-Time: January 2019
-
-<a href="https://youtu.be/fy9CjD4cgak"
-target="_blank"><img src="http://img.youtube.com/vi/fy9CjD4cgak/0.jpg" 
-alt="ROV equipped with Zima USBL performing pipeline inspection" width="240" height="180" border="10" /></a>  
-
-______  
+| Inspection of a pipeline using a small ROV equipped with [Zima](/documentation/EN/Zima/Zima2_DataBrief_en) USBL tracking system | 
+| :--- |
+| January 2019 |
+| <a href="https://youtu.be/fy9CjD4cgak" target="_blank"><img src="http://img.youtube.com/vi/fy9CjD4cgak/0.jpg" alt="ROV equipped with Zima USBL performing pipeline inspection" width="240" height="180" border="10" /></a> |
 
 ## [Back](/../../media_videos_en)
