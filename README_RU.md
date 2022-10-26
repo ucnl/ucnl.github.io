@@ -14,7 +14,8 @@
 - [Специализированное оборудование](underwater_bespoke_systems_ru.md)
 - [Аксессуары](accessories_ru.md)
 
-## Видео, образовательный контент и прочее
+## Прочее
+* [Блог](rublog.md)
 * [Медиа](media_videos_ru.md)
 * [Образовательные проекты](educational_projects_ru.md)
 * [Дополнительные материалы](misc_ru.md)
