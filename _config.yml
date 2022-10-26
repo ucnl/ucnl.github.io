@@ -1,3 +1,5 @@
+name: UC&NL Documentation site
+
 title: docs.unavlab.com
 email: support@unavlab.com
 description: > 
@@ -8,3 +10,4 @@ url: "http://docs.unavlab.com"
 twitter_username: unavlab
 github_username:  ucnl
 
+disqus:
