@@ -18,3 +18,4 @@
 * [Медиа](media_videos_ru.md)
 * [Образовательные проекты](educational_projects_ru.md)
 * [Дополнительные материалы](misc_ru.md)
+* [Блог](blog_ru.md)
