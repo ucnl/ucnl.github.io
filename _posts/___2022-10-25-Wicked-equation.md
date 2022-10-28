@@ -145,6 +145,7 @@ $$10^{\frac{-k·log(r)}{10·log(10)-0.001·α·r}}=\frac{P_N·SNR}{P_{tx}}$$
 
 <details>
   <summary>Узреть формулу</summary>
+$$d_{km} = \left( \frac{40}{f_{kHz}} \right) ^\frac{3}{2}$$  
 </details>
 
 
@@ -167,8 +168,6 @@ $$10^{\frac{-k·log(r)}{10·log(10)-0.001·α·r}}=\frac{P_N·SNR}{P_{tx}}$$
 
 
 
-
-$$d_{km} = \left( \frac{40}{f_{kHz}} \right) ^\frac{3}{2}$$
 
 
 [^1]: [Ainslie M. A., McColm J. G., "A simplified formula for viscous and chemical absorption in sea water", Journal of the Acoustical Society of America, 103(3), 1671-1672, 1998.](https://asa.scitation.org/doi/10.1121/1.421258)
