@@ -161,6 +161,9 @@ $$d_{km} = \left( \frac{40}{f_{kHz}} \right) ^\frac{3}{2}$$
 
 Как видите, записал я ее неправильно - число перепутал. Восстановить удалось при помощи знания двух точек: 20 кГц - это 3 км, а 10 кГц - 8 км.
 
+График в диапазоне от 1 до 100 кГц выглядит так:
+
+![2](../images/equation_from_bobrovsky1.png)
 
 
 
@@ -176,24 +179,34 @@ $$d_{km} = \left( \frac{40}{f_{kHz}} \right) ^\frac{3}{2}$$
 
 
 
+<details>
+  <summary>P.S.</summary>
+  
+Как писалась статья. 
+Сначала я думал просто кратенько, всем трем человекам, которым это интересно, рассказать про феномен формулы, которая в принципе подтверждается реальностью и непонятно откуда взялась, снабдив рассказ автобиографичным антуражем.
+К сожалению, Игоря Владимировича уже не спросишь, и приходится искать фактически на -слух- ощупь. 
+  
+Вы же помните сюжет "Попытки к бегству" Стругацких? Если нет, я напомню: на одной планете, куда прилетели герои, есть некий конвейер: из одной дыры в земле неведомая техника выходит, движется по земле, и исчезает в другой дыре в земле. Туземцы пытаются овладеть исскуством управления техникой методом тыка - буквально - силами заключенных техника изымается с конвейера и подвергается исследованию методом научного тыка: сунули палец в дырку согласно прилагаемому рисунку, машина зарычала и поехала направо, проехала такое-то расстояние и встала.
+  
+Меня не покидает ощущение, что мы в каком-то смысле похожи на этих туземцев, и данная статья есть ни что иное, как робкая попытка размежеваться с туземцами. Разойтись по разным мирам не вышло, скажем так: мы просто сделали пару шагов в сторону.
 
-
-
-
-
+Написание растянулось на неделю. Пришлось прочитать книгу[^5], не найти в ней ничего нового, написать мат модель и основательно ее поковвырять. Поэтому в списке авторов я не могу оставить одного себя: я напряг своих коллег и их вклад неоценим. 
+  
+</details>
 
 
 [^1]: [Ainslie M. A., McColm J. G., "A simplified formula for viscous and chemical absorption in sea water", Journal of the Acoustical Society of America, 103(3), 1671-1672, 1998.](https://asa.scitation.org/doi/10.1121/1.421258)
 [^2]: [Fisher F. H., Simmons V. P., "Sound absorption in seawater", Journal of the Acoustical Society of America, 62, 558-564, 1977.](https://asa.scitation.org/doi/abs/10.1121/1.386278)
 [^3]: [Francois R. E., Garrison G. R., "Sound absorption based on ocean measurements: Part I: Pure water and magnesium sulfate contributions", Journal of the Acoustical Society of America, 72(3), 896-907, 1982.](https://asa.scitation.org/doi/abs/10.1121/1.388170)
 [^4]: [Francois, R.E., & Garrison, G.R. (1982). Sound absorption based on ocean measurements. Part II: Boric acid contribution and equation for total absorption. Journal of the Acoustical Society of America, 72, 1879-1890.](https://asa.scitation.org/doi/10.1121/1.388673)
+[^5]: [Матвиенко В.Н., Тарасюк Ю. Ф., Дальность действия гидроакустических средств](http://publ.lib.ru/ARCHIVES/B/%27%27Biblioteka_injenera-gidroakustika%27%27/%CC%E0%F2%E2%E8%E5%ED%EA%EE%20%C2.%CD.,%20%D2%E0%F0%E0%F1%FE%EA%20%DE.%D4._%20%C4%E0%EB%FC%ED%EE%F1%F2%FC%20%E4%E5%E9%F1%F2%E2%E8%FF%20%E3%E8%E4%F0%EE%E0%EA%F3%F1%F2%E8%F7%E5%F1%EA%E8%F5%20%F1%F0%E5%E4%F1%F2%E2.(1981).pdf)
 
 
 Ваши, до _глубины_ души  
-[@AlekUnderwater](https://www.github.com/AlekUnderwater)
-[@Vital792](https://github.com/vital792)
-[@AndreyUnderwater](https://github.com/AndreyUnderwater)
-[@StDmitriev](https://github.com/StDmitriev)
+[@AlekUnderwater](https://www.github.com/AlekUnderwater)  
+[@Vital792](https://github.com/vital792)  
+[@AndreyUnderwater](https://github.com/AndreyUnderwater)  
+[@StDmitriev](https://github.com/StDmitriev)  
 
 
 
