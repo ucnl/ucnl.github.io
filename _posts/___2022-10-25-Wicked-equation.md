@@ -245,6 +245,20 @@ $$d_{km} = \left( \frac{40}{f_{kHz}} \right) ^\frac{3}{2}$$
   
 </details>
 
+<details>
+  <summary>P.P.S.</summary>
+
+Есть еще намеки, откуда взялся показатель степени 3/2. В работе Торпа[^6] и Забыл-Фамилию[^7] приводятся опять же эмпирические формулы для коэффициента _пространственного_ (т.е. геометрического) геометрического затухания, в которых частота присутствует в этой степени. 
+  
+Как то:
+  
+  $$α=0.036·f^{3/2}$$
+  
+Согласитесь, есть некоторое сходство:
+  
+  $d_{km}=(40/f_{kHz})^{3/2}$    
+  
+</details>
 
 [^1]: [Ainslie M. A., McColm J. G., "A simplified formula for viscous and chemical absorption in sea water", Journal of the Acoustical Society of America, 103(3), 1671-1672, 1998.](https://asa.scitation.org/doi/10.1121/1.421258)
 [^2]: [Fisher F. H., Simmons V. P., "Sound absorption in seawater", Journal of the Acoustical Society of America, 62, 558-564, 1977.](https://asa.scitation.org/doi/abs/10.1121/1.386278)
