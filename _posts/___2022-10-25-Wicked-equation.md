@@ -189,8 +189,11 @@ $$d_{km} = \left( \frac{40}{f_{kHz}} \right) ^\frac{3}{2}$$
 [^4]: [Francois, R.E., & Garrison, G.R. (1982). Sound absorption based on ocean measurements. Part II: Boric acid contribution and equation for total absorption. Journal of the Acoustical Society of America, 72, 1879-1890.](https://asa.scitation.org/doi/10.1121/1.388673)
 
 
-Ваш, до _глубины_ души  
+Ваши, до _глубины_ души  
 [@AlekUnderwater](https://www.github.com/AlekUnderwater)
+[@Vital792](https://github.com/vital792)
+[@AndreyUnderwater](https://github.com/AndreyUnderwater)
+[@StDmitriev](https://github.com/StDmitriev)
 
 
 
