@@ -198,6 +198,152 @@ $$d_{km} = \left( \frac{40}{f_{kHz}} \right) ^\frac{3}{2}$$
 Давление на передатчике мы варьируем от 100 до 400 Па с шагом в 100 Па. 
 Стоит отметить, что 100 Па - это довольно мало. Например, у нас в [большинстве применяемых антенн](https://docs.unavlab.com/underwater_acoustic_antennas_ru.html#%D0%B3%D0%B8%D0%B4%D1%80%D0%BE%D1%84%D0%BE%D0%BD%D1%8B-%D0%B8-%D0%B3%D0%B8%D0%B4%D1%80%D0%BE%D0%B0%D0%BA%D1%83%D1%81%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B5-%D0%B0%D0%BD%D1%82%D0%B5%D0%BD%D0%BD%D1%8B) при чувствтительности порядка 4 Па/В подается около 100 Вольт действующего. Соответственно, оценки с давлением ниже 400 Па весьма пессимистичны.
 
+Посчитать и построить графики удобно в Matlab или, что приятнее - в GNU Octave. Ниже под спойлером незамысловатый код скрипта.
+
+<details>
+  <summary>Функция расчета дальности численным методом</summary>
+  
+```Octave
+function r = calc_r(alpha_e, k, Pn, SNR, Ptx)
+  a = -0.001 * alpha_e;
+  b = -k;
+  c = Pn * SNR / Ptx;
+
+  d1 = log(10);
+  d = 10*d1;
+  a1 = a / 10;
+  epsilon = 1E-8;
+
+  r = 1;
+  r_prev = r;
+  itc = 0;
+
+  itc_max = 1000;
+  eps = 1;
+
+  while (eps > epsilon) && (itc < itc_max)
+
+     lr = log(r);
+     pf = 10^(a1*r + b*lr/d);
+     f  = pf - c;
+     f1 = pf * d1 * (a1 + b/(r*d));
+
+     r = r_prev - f / f1;
+
+     eps = abs(r_prev - r);
+     r_prev = r;
+     itc = itc + 1;
+  end  
+```
+  
+</details>
+  
+<details>
+  <summary>Сам скрипт</summary>
+
+clear all; 
+close all;
+clc;
+
+t = 4;        % Water temperature, °C
+h = 10;       % depth, m
+s = 37;       % Water salinity, PSU
+pH = 8;       % pH-factor
+
+Pn = 0.01;    % Noise pressure, Pa
+SNR = 20;     % Signal to noise ratio, dB
+
+f_start = 1;  % from frequency, kHz
+f_end   = 25; % to frequency, kHz
+f_step  = 1;  % frequency step, kHz
+
+Ptx_start = 100; % Transmitter pressure (from), Pa
+Ptx_end   = 400; % Transmitter pressure (to), Pa
+Ptx_step  = 100; % Transmitter pressure step, Pa
+
+
+f = f_start:f_step:f_end;
+
+%% Sound absorption coefficient calculation acc. to 
+% Francois, R.E., & Garrison, G.R. (1982). Sound absorption based on ocean 
+% measurements. Part II: Boric acid contribution and equation for total 
+% absorption. Journal of the Acoustical Society of America, 72, 1879-1890
+
+% Measured ambient temp
+t_kel = t + 273.15;
+fsq = f .* f;
+% Calculate speed of sound 
+c = 1412 + 3.21 * t + 1.19 * s + 0.0167 * h;
+
+% Boric acid contribution
+A1 = (8.86 / c) * 10^(0.78 * pH - 5.0);
+P1 = 1;
+f1 = 2.8 * sqrt(s / 35) * 10^(4.0 - 1245 / t_kel);
+Boric = (A1 * P1 * f1 * fsq) ./ (fsq + f1 * f1);
+
+% MgSO4 contribution
+A2 = 21.44 * (s / c) * (1 + 0.025 * t);
+P2 = 1 - 1.37E-4 * h + 6.2E-9 * h * h;
+f2 = (8.17 * 10^(8 - 1990 / t_kel)) / (1 + 0.0018 * (s - 35));
+MgSO4 = (A2 * P2 * f2 * fsq) ./ (fsq + f2 * f2);
+
+% Pure water contribution
+if t <= 20
+    A3 = 4.937E-4 - 2.59E-5 * t + 9.11E-7 * t * t - 1.5E-8 * t * t * t;
+else
+    A3 = 3.964E-4 - 1.146E-5 * t + 1.45E-7 * t * t - 6.5E-10 * t * t * t;
+end
+
+P3 = 1 - 3.83E-5 * h + 4.9E-10 * h * h;
+H2O = A3 * P3 * fsq;
+
+% Total absorption 
+alpha =  Boric + MgSO4 + H2O; % dB/km
+
+
+
+
+li_ = 1;
+
+for Ptx=Ptx_start:Ptx_step:Ptx_end
+  
+  k1 = 3;
+  idx = 1;
+
+  for idx=1:length(alpha)
+    r(idx) = calc_r(alpha(idx), k1, Pn, SNR, Ptx);
+  end
+
+
+  plot(f, real(r)/1000); 
+  hold on;
+
+  l_{li_} = ['P_{Tx}= ',num2str(Ptx), ' Pa'];
+  li_ = li_ + 1;
+end
+
+Rb = (40./(f)).^1.5; 
+plot(f, Rb, 'r');
+
+set(gca, "linewidth", 1, "fontsize", 18);
+xlabel ("f, kHz");
+ylabel ("r, km");
+plot(10, 8, "or");
+plot(20, 3, "ob");
+title ("Estimated distance vs. frequency"); 
+
+l_{li_} = ['r=(40/f)^{3/2}'];
+li_ = li_ + 1;
+
+l_{li_} = ['f=10 kHz'];
+li_ = li_ + 1;
+l_{li_} = ['f=20 kHz'];
+li_ = li_ + 1;
+
+legend(l_);
+</details>
+  
+
 И вот что мы имеем в итоге:
 
 ![2](../images/r_vs_freq_total.png)
