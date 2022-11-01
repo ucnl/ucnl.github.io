@@ -241,6 +241,7 @@ function r = calc_r(alpha_e, k, Pn, SNR, Ptx)
 <details>
   <summary>Сам скрипт</summary>
 
+```Octave
 clear all; 
 close all;
 clc;
@@ -300,9 +301,6 @@ H2O = A3 * P3 * fsq;
 % Total absorption 
 alpha =  Boric + MgSO4 + H2O; % dB/km
 
-
-
-
 li_ = 1;
 
 for Ptx=Ptx_start:Ptx_step:Ptx_end
@@ -341,6 +339,8 @@ l_{li_} = ['f=20 kHz'];
 li_ = li_ + 1;
 
 legend(l_);
+```
+         
 </details>
   
 
