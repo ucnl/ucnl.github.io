@@ -4,6 +4,7 @@
 
 | ![logo](/documentation/sm_logo.png) | ![crm_300_os](/documentation/crm_300_os.png) |
 | :---: | ---: |
+| Электронная версия документа | ![crm300_OS_url_qrcode.png](/documentation/crm300_OS_url_qrcode.png) |
 | [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **Crimea-300 OS** Интерфейсный модуль <br/> Спецификация устройства |
 
 ## ОСОБЕННОСТИ
