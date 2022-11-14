@@ -42,6 +42,7 @@ The assemblies are equipped with a connector designed for diving to depths of up
 
 
 ## ADDITIONAL SPECIFICATIONS
+
 | PARAMETER | VALUE |
 | :--- | :--- |
 | BODY MATERIAL | Polyurethane |
