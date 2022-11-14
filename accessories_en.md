@@ -7,5 +7,6 @@
 
 ## Accessories
 * [Underwater button uPress](/documentation/EN/Accessories/uPress_Specification_en.md)
+* [Underwater battery packs](/documentation/EN/Accessories/Sub_batpacks_en.md)
 
 ## [Back to main](README.md)
