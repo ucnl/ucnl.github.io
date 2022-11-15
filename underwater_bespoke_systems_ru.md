@@ -9,7 +9,7 @@
 * [F4105-SU Модуль управления гидроакустическими размыкателями: спецификация](/documentation/RU/F4105/F4105_SU_Specification_ru.md)
 * [F4105-BU Актуатор-размыкатель: спецификация](/documentation/RU/F4105/F4105_BU_Specification_ru.md)
 * [F4105-AU Гидроакустический пробудитель: спецификация](/documentation/RU/F4105/F4105_AU_Specification_ru.md)
-* [(В разработке) F4105: Руководство пользователя](/documentation/RU/F4105/F4105_Users_manual_ru.md)
+* [F4105: Руководство пользователя](/documentation/RU/F4105/F4105_Users_manual_ru.md)
 * [F4105: Технический паспорт (шаблон)](/documentation/RU/F4105/F4105_tech_pass_ru.md)
 * [(В разработке) F4105-SU: (Material Safety Datasheet) MSDS]()
 * [(В разработке) F4105-BU: (Material Safety Datasheet) MSDS]()
