@@ -7,12 +7,16 @@
 
 <div style="page-break-after: always;"></div>
 
-| ![logo](/documentation/sm_logo.png) | ![logo](/documentation/ucnl_nav_systems_brochure_ru_qr.png)  |
+| ![logo](/documentation/sm_logo.png) | ![logo](/documentation/ucnl_nav_systems_brochure_ru_title.png)  |
 | :---: | :---: |
 | [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **Подводная навигация от UC&NL** |
 
 
 
 
+<div style="page-break-after: always;"></div>
+
+<p align="center">Электронная версия этого документа</p>
+<p align="center"><img src="/documentation/ucnl_nav_systems_brochure_ru_qr.png" /></p>
 
 <div style="page-break-after: always;"></div>
