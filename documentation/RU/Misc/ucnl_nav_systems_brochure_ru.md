@@ -21,5 +21,10 @@
 <br/>
 <p align="center">Электронная версия этого документа</p>
 <p align="center"><img src="/documentation/ucnl_nav_systems_brochure_ru_qr.png" /></p>
+<br/>
+<br/>
+<br/>
+
+__________
 
 <div style="page-break-after: always;"></div>
