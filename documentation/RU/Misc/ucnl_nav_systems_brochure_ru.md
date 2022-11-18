@@ -9,7 +9,7 @@
 
 | ![logo](/documentation/sm_logo.png) | ![logo](/documentation/ucnl_nav_systems_brochure_ru_qr.png)  |
 | :---: | ---: |
-| [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) |  |
+| [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **Подводная навигация от UC&NL** |
 
 
 
