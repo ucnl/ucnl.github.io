@@ -19,5 +19,6 @@
 ## Информационные листки и прочие материалы
 * [Вкладыш с QR кодами ссылок](/documentation/RU/Misc/l2c.md)
 * [Стикер на упаковку малый](/documentation/RU/Misc/package_sticker.md)
+* [Брошюра: Навигационные системы от UC&NL](/documentation/RU/Misc/ucnl_nav_systems_brochure_ru.md)
 
 ## [На главную](README_RU.md)
