@@ -22,7 +22,7 @@
 
 The device is designed to be placed on an underwater object in order to determine the location of this object in real time using a direction-finding antenna [Zima2-B](Zima2B_Specification_en.md).
 
-The device can be either autonomous (with an additional [battery pack](/documentation/EN/Accessories/Sub_batteries_en#sb2448lf)) or coupled energetically with the carrier.
+The device can be either autonomous (with an additional [battery pack](/documentation/EN/Accessories/Sub_batteries_en.md#sb2448lf)) or coupled energetically with the carrier.
 
 Extremely small size, ease of use and low power consumption make the direction finding system [Zima2 USBL](Zima2_DataBrief_en.md) an ideal solution for working with autonomous and remotely controlled vehicles, as well as determining the relative position of divers.
 
