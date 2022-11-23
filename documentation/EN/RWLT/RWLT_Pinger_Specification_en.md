@@ -27,7 +27,7 @@ The pinger does not require any pairing with the positioned object; it is enough
 | DIMENSIONS (W/O battery unit, Ф х h) | 41 x 45 mm |
 | BATTERY UNIT DIMENSIONS | Ф50 х 165 mm |
 | WEIGHT (dry, W/O battery unit) | 0.16 kg |
-| BATTERY PACK | [SB-24-48-LF](documentation/EN/Accessories/Sub_batteries_en.md#sb2448lf) |
+| BATTERY PACK | [SB-24-48-LF](/documentation/EN/Accessories/Sub_batteries_en.md#sb2448lf) |
 | BATTERY PACK WEIGHT (dry) | 0.75 kg |
 | BATTERY LIFE<sup>[1](#footnote1)</sup> | 10 h |
 | BANDWIDTH | 10 .. 30 kHz |
