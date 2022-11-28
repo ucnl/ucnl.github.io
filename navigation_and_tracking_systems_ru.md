@@ -19,7 +19,7 @@
 * [Zima2-R (маяк-ответчик): Спецификация устройства](/documentation/RU/Zima/Zima2R_Specification_ru.md)
 * [Zima2 USBL: Протокол информационного сопряжения](/documentation/RU/Zima/Zima2_Protocol_Specification_ru.md)
 * [🐙 AzimuthSuite: Пультовое приложение для Zima2 USBL (Исходный код)](https://github.com/ucnl/AzimuthSuite)
-* [🐙 AzimuthSuite: Пультовое приложение для Zima2 USBL (Скачать релиз)](https://github.com/ucnl/AzimuthSuite/releases/download/beta/AzimuthSuit.zip)
+* [🐙 AzimuthSuite: Пультовое приложение для Zima2 USBL (Скачать релиз)](https://github.com/ucnl/AzimuthSuite/releases/download/beta/AzimuthSuite.zip)
 * [Zima2 USBL: технический паспорт (шаблон)](/documentation/RU/Zima/Zima2_technical_passport_ru.md)
 
 ##### Zima
