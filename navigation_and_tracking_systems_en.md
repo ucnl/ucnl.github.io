@@ -19,7 +19,7 @@
 * [Zima2-R (Responder-beacon): Device specification](/documentation/EN/Zima/Zima2R_Specification_en.md)
 * [Zima2 USBL: Communication protocol](/documentation/EN/Zima/Zima2_Protocol_Specification_en.md)
 * [🐙 AzimuthSuite: Host application for Zima2 USBL (source code)](https://github.com/ucnl/AzimuthSuite)
-* [🐙 AzimuthSuite: Host application for Zima2 USBL (dowload release)](https://github.com/ucnl/AzimuthSuite/releases/download/beta/AzimuthSuit.zip)
+* [🐙 AzimuthSuite: Host application for Zima2 USBL (dowload release)](https://github.com/ucnl/AzimuthSuite/releases/download/beta/AzimuthSuite.zip)
 
 ##### Zima
 * [Zima USBL: Data brief](/documentation/EN/Zima/Zima_DataBrief_en.md)
