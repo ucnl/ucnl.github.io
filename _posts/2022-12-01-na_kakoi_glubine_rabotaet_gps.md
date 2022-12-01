@@ -135,5 +135,3 @@ $$ \lambda=\frac{c}{\nu} $$
 [@Vital792](https://github.com/vital792)  
 [@AndreyUnderwater](https://github.com/AndreyUnderwater)  
 [@StDmitriev](https://github.com/StDmitriev)  
-
-Подписывайтесь на нашу телегу - [Underwater things](https://t.me/underwaterthings)
