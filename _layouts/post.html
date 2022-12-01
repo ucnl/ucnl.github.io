@@ -8,7 +8,9 @@ layout: default
   <div class="entry">
     {{ content }}
   </div>
-
+  
+  {% include social-media-links.html %}
+  
   <div class="date">
     Опубликовано {{ page.date | date: "%B %e, %Y" }}
   </div>
