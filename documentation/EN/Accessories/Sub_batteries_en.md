@@ -28,9 +28,9 @@ The assemblies are equipped with a connector designed for diving to depths of up
 | BATTERY PACK TYPE | <a name="sb2448lf">[SB-24-48-LF](#sb2448lf)</a> | <a name="sb2364li">[SB-23-64-LI](#sb2364li)</a> | <a name="sb34140lf">[SB-34-140-LF](#sb34140lf)</a> |
 | :--- | :---: | :---: | :---: |
 | CAPACITY, W·h | 48 | 64 | 140 |
-| DIMENSIONS, mm | coming soon | Ф47 х 175 | coming soon |
-| WEIGHT (dry), kg | coming soon | 0.58 | coming soon |
-| WEIGHT (wet), kg | coming soon | 0.28 | coming soon |
+| DIMENSIONS, mm | Ф47 х 255 | Ф47 х 200 | coming soon |
+| WEIGHT (dry), kg | 0.69 | 0.58 | coming soon |
+| WEIGHT (wet), kg | 0.25 | 0.28 | coming soon |
 | VOLTAGE, V | 10 .. 14.4 | 10 .. 12.6 | 10 .. 14.4 |
 | MAX CURRENT, A | 3 | 3 | 3 |
 | BATTERY TYPE | LiFePO4 | Li-Ion | LiFePO4 |
