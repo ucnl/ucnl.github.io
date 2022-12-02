@@ -7,6 +7,7 @@
 
 ## Аксессуары
 * [Кнопка подводная uPress](/documentation/RU/Accessories/uPress_Specification_ru.md)
+* [(ДОПОЛНЯЕТСЯ) Микрофон для водолазных масок uSpeak](/documentation/RU/Accessories/uSpeak_specification_ru.md)
 
 ## Источники питания
 * [Подводные аккумуляторные сборки](/documentation/RU/Accessories/Sub_batteries_ru.md)
