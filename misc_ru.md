@@ -9,6 +9,7 @@
 
 | Распространяется на устройства | Документ |
 | :--- | :--- |
+| [Сборка аккумуляторная подводная SB-23-64-LI](/documentation/RU/Accessories/Sub_batteries_ru.md) | [SB-23-64-LI NSDS RU](/documentation/RU/Misc/SB_23_64_LI_NSDS_ru.md) |
 | [RedPhone-OS](/documentation/RU/RedPhone/RedPhone_OS_Specification_ru.md) | [RedPhone-OS MSDS RU](/documentation/RU/Misc/RedPhone_OS_MSDS_ru.md) |
 | [RedPhone-DX](/documentation/RU/RedPhone/RedPhone_DX_Specification_ru.md) | [RedPhone-DX MSDS RU](/documentation/RU/Misc/RedPhone_DX_MSDS_ru.md) |
 | [Bat&Link Box](/documentation/RU/Zima/Bat_n_link_box_Specification_ru.md) | [Bat&Link Box MSDS RU](/documentation/RU/Misc/BatLinkBox_MSDS_ru.md) |
