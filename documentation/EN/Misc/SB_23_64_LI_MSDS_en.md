@@ -4,9 +4,9 @@
 
 | ![logo](/documentation/sm_logo.png) |  Version 1 <br/> 20.02.2022 |
 | :---: | ---: |
-| [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | Li-Ion battery 64 W\*h<br/> as part of PMVR.134098.010 SB-23-64-LI Submersible battery pack <br/> Material safety datasheet (MSDS) |
+| [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | Li-Ion battery 64 W·h<br/> as part of PMVR.134098.010 SB-23-64-LI Submersible battery pack <br/> Material safety datasheet (MSDS) |
 
-## Li-Ion battery 64 W\*h <br/> as part of PMVR.134098.010 SB-23-64-LI Submersible battery pack
+## Li-Ion battery 64 W·h <br/> as part of PMVR.134098.010 SB-23-64-LI Submersible battery pack
 ### Material safety datasheet (MSDS)
 
 ## 1. IDENTIFICATION OF THE PRODUCT AND OF THE COMPANY OR THE SUPPLIER
