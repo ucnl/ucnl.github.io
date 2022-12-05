@@ -9,7 +9,7 @@
 
 | Devices | File |
 | :--- | :--- |
-| [Submersible battery pack SB-23-64-LI](/documentation/EN/Accessories/Sub_batteries_en.md) | [SB-23-64-LI NSDS EN](/documentation/EN/Misc/SB_23_64_LI_MSDS_en.md) |
+| [Submersible battery pack SB-23-64-LI](/documentation/EN/Accessories/Sub_batteries_en.md) | [SB-23-64-LI MSDS EN](/documentation/EN/Misc/SB_23_64_LI_MSDS_en.md) |
 | [RedPhone-DX](/documentation/EN/RedPhone/RedPhone_DX_Specification_en.md) | [RedPhone-DX MSDS EN](/documentation/EN/Misc/RedPhone_DX_MSDS_en.md) |
 | [RedPhone-OS](/documentation/EN/RedPhone/RedPhone_OS_Specification_en.md) | [RedPhone-OS MSDS EN](/documentation/EN/Misc/RedPhone_OS_MSDS_en.md) |
 | [Bat&Link Box](/documentation/EN/Zima/Bat_n_link_box_Specification_en.md) | [Bat&Link Box MSDS EN](/documentation/EN/Misc/BatLinkBox_MSDS_en.md) |
