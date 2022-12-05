@@ -13,7 +13,7 @@
 
 | | |
 | :--- | :--- |
-| Trade name | Bat&Link Box PMVR.134098.010 |
+| Trade name | PMVR.134098.010 SB-23-64-LI Submersible battery pack |
 | Article number |
 | Registration number (REACH) | This information is not available |
 | EC number | is absent |
