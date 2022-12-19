@@ -51,6 +51,7 @@
 * [RedBase (Буй-ретранслятор): Спецификация устройства](/documentation/RU/RedWAVE/RedBASE_Specification_ru.md)
 * [RedNode (Навигационный приемник для ТНПА/АНПА): Спецификация устройства](/documentation/RU/RedWAVE/RedNODE_Specification_ru.md)
 * [RedNav (Навигационный приемник для водолазов): Спецификация устройства](/documentation/RU/RedWAVE/RedNAV_Specification_ru.md)
+* [AQUATAB-S (Водолазный планшет): Спецификация устройства](/documentation/RU/RedWAVE/Aquatab_s_specification_ru.md)
 * [RedNode: Описание протокола сопряжения](/documentation/RU/RedWAVE/RedWAVE_Protocol_Specification_ru.md)
 * [RedWave: Рукводство пользователя](/documentation/RU/RedWAVE/RedWAVE_Users_Manual_ru.md)
 * [ПО RedNAV Host: Руководство пользователя](/documentation/RU/RedWAVE/RedNAV_Host_Users_Manual_ru.md)
