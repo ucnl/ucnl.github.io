@@ -27,7 +27,7 @@ function NMEA0183_getChecksum(sentence) {
 
 function nmeaSnt_onKey() {
   el = document.getElementById("snt_input");
-  el.style.width = ((el.value.length + 1) * 8);
+  el.style.width = ((el.value.length + 3) * 8);
   chk_sum = NMEA0183_getChecksum(el.value);
   document.getElementById("chk_sum").innerText = Number(chk_sum).toString(16).padStart(2, "0").toUpperCase();
 }
