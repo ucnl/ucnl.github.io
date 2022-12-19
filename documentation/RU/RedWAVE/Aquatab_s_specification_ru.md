@@ -4,7 +4,7 @@
 
 | ![logo](/documentation/sm_logo.png) | ![logo](https://duslate.com/upload/content-images/primary/aquatab-s.png) |
 | :---: | ---: |
-| [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **Aquatab S** - Навигационный планшет для водолазов <br/> Спецификация устройства |
+| [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **AQUATAB S** - Навигационный планшет для водолазов <br/> Спецификация устройства |
 
 ## КЛЮЧЕВЫЕ ОСОБЕННОСТИ
 
@@ -56,22 +56,22 @@ _________
 | МАКСИМАЛЬНОЕ ВРЕМЯ АВТОНОМНОЙ РАБОТЫ | 12 часов |
 | МАКСИМАЛЬНАЯ ГЛУБИНА ПОГРУЖЕНИЯ | 100 м |
 | РАБОЧАЯ ОБЛАСТЬ ЭКРАНА | 6.7" |
-| Дисплей | Super AMOLED, HDR |
-| Разрешение | 1080×2400 pixels, 20:9 ratio (~394 ppi density) |
-| Процессор | Octa-core (4×2.7 GHz Mongoose M3 & 4×1.7 GHz Cortex-A55) |
-| Память | 128GB 6GB RAM, 128GB 8GB RAM |
-| Слот памяти | microSDXC |
-| Задняя камера | тройная 12 MP |
-| Фронтальная камера | 32 MP |
-| Видео | 4K@30/60fps, 1080p@30/60/240fps; gyro-EIS |
-| Сеть | Wi-Fi 802.11 a/b/g/n/ac, dual-band, Wi-Fi Direct, hotspot Bluetooth 5.0, A2DP, LE |
-| Геолокация | A-GPS, GLONASS, GALILEO, BDS |
-| Особенности | Акселерометр, гиро, датчик приближения, компас |
-| Батарея | Li-Po 4500 mAh, non-removable |
-| Технология ввода информации | ЭМР | 
-| Стилус | ЭМР стилус |
-| Операционная система | Android 10 с возможностью обновления до Android 11, One UI 3.1 |
+| ДИСПЛЕЙ | Super AMOLED, HDR |
+| РАЗРЕШЕНИЕ | 1080×2400 pixels, 20:9 ratio (~394 ppi density) |
+| ПРОЦЕССОР | Octa-core (4×2.7 GHz Mongoose M3 & 4×1.7 GHz Cortex-A55) |
+| ПАМЯТЬ | 128GB 6GB RAM, 128GB 8GB RAM |
+| СЛОТ ПАМЯТИ | microSDXC |
+| ЗАДНЯЯ КАМЕРА | тройная 12 MP |
+| ФРОНТАЛЬНАЯ КАМЕРА | 32 MP |
+| ВИДЕО | 4K@30/60fps, 1080p@30/60/240fps; gyro-EIS |
+| СЕТЬ | Wi-Fi 802.11 a/b/g/n/ac, dual-band, Wi-Fi Direct, hotspot Bluetooth 5.0, A2DP, LE |
+| ГЕОЛОКАЦИЯ | A-GPS, GLONASS, GALILEO, BDS |
+| ОСОБЕННОСТИ | Акселерометр, гиро, датчик приближения, компас |
+| БАТАРЕЯ | Li-Po 4500 mAh, non-removable |
+| ТЕХНОЛОГИЯ ВВОДА ИНФОРМАЦИИ | ЭМР | 
+| СТИЛУС | ЭМР стилус |
+| ОПЕРАЦИОННАЯ СИСТЕМА | Android 10 с возможностью обновления до Android 11, One UI 3.1 |
 
-[Перейти на сайт производителя AQUATAB-S](https://duslate.com/ru/products/aquatab-s/)
+[Перейти на сайт производителя AQUATAB S](https://duslate.com/ru/products/aquatab-s/)
 
 <div style="page-break-after: always;"></div>
