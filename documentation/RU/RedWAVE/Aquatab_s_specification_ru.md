@@ -58,7 +58,7 @@ _________
 | РАБОЧАЯ ОБЛАСТЬ ЭКРАНА | 6.7" |
 | ДИСПЛЕЙ | Super AMOLED, HDR |
 | РАЗРЕШЕНИЕ | 1080×2400 pixels, 20:9 ratio (~394 ppi density) |
-| ПРОЦЕССОР | Octa-core (4×2.7 GHz Mongoose M3 & 4×1.7 GHz Cortex-A55) |
+| ПРОЦЕССОР | Octa-core (4 х 2.7 GHz Mongoose M3 & 4 х 1.7 GHz Cortex-A55) |
 | ПАМЯТЬ | 128GB 6GB RAM, 128GB 8GB RAM |
 | СЛОТ ПАМЯТИ | microSDXC |
 | ЗАДНЯЯ КАМЕРА | тройная 12 MP |
