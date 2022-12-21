@@ -13,6 +13,7 @@
 ### Zima
 #### Ultrashort baseline (USBL) system
 ##### Zima2
+Since 2022
 * [Zima2 USBL: Data brief](/documentation/EN/Zima/Zima2_DataBrief_en.md)
 * [Zima2 USBL: User's manual](/documentation/EN/Zima/Zima2_Users_manual_en.md)
 * [Zima2-B (Direction-finding antenna): Device specification](/documentation/EN/Zima/Zima2B_Specification_en.md)
@@ -22,6 +23,7 @@
 * [🐙 AzimuthSuite: Host application for Zima2 USBL (dowload release)](https://github.com/ucnl/AzimuthSuite/releases/download/beta/AzimuthSuite.zip)
 
 ##### Zima
+2016-2022
 * [Zima USBL: Data brief](/documentation/EN/Zima/Zima_DataBrief_en.md)
 * [Zima USBL: media, tracks etc.](/documentation/EN/Zima/media)
 * [Zima USBL: User's manual](/documentation/EN/Zima/Zima_Users_manual_en.md)
