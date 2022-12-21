@@ -13,6 +13,7 @@
 ### Zima
 #### Ультракороткобазисная (USBL) система
 ##### Zima2
+Поставляется в 2022 г.
 * [Zima2 USBL: Краткое описание](/documentation/RU/Zima/Zima2_DataBrief_ru.md)
 * [Zima2 USBL: Руководство пользователя](/documentation/RU/Zima/Zima2_Users_manual_ru.md)
 * [Zima2-B (пеленгационная антенна): Спецификация устройства:](/documentation/RU/Zima/Zima2B_Specification_ru.md)
@@ -23,6 +24,7 @@
 * [Zima2 USBL: технический паспорт (шаблон)](/documentation/RU/Zima/Zima2_technical_passport_ru.md)
 
 ##### Zima
+Поставлялась с 2016 по 2022 г.
 * [Zima USBL: Краткое описание](/documentation/RU/Zima/Zima_DataBrief_ru.md)
 * [Zima USBL: медиаматериалы, видео с испытаний и т.п.](/documentation/RU/Zima/media)
 * [Zima USBL: Рукводство пользователя](/documentation/RU/Zima/Zima_Users_manual_ru.md)
