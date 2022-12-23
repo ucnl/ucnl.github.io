@@ -14,8 +14,10 @@
 * [Utility for RedPhone-DX configuration (Repository)](https://github.com/ucnl/RedPhoneDXConfig)
 * [Utility for RedPhone-DX configuration (Download release)](https://github.com/ucnl/RedPhoneDXConfig/releases/download/1.0/RedPhoneDXConfig.zip)
 * [Device specification: RedPhone RF Dongle](/documentation/EN/RedPhone/RedPhone_RF_Dongle_Specification_en.md)
+* [Media: tests videos, tutorials etc.](/documentation/EN/RedPhone/media.md)
+
+### Discontinued
 * [Device specification: RedPhone-D](/documentation/EN/RedPhone/RedPhone_Specification_en.md)  
 * [User's manual: RedPhone-D](/documentation/EN/RedPhone/RedPhone_Users_Manual_en.md)
-* [Media: tests videos, tutorials etc.](/documentation/EN/RedPhone/media.md)
 
 ## [Back to main](README.md)
