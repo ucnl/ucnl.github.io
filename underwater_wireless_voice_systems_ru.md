@@ -14,11 +14,13 @@
 * [Приложение для конфигурирования устройства RedPhone-DX (Репозиторий)](https://github.com/ucnl/RedPhoneDXConfig)
 * [Приложение для конфигурирования устройства RedPhone-DX (Скачать релиз)](https://github.com/ucnl/RedPhoneDXConfig/releases/download/1.0/RedPhoneDXConfig.zip)
 * [Спецификация устройства: RedPhone RF Dongle](/documentation/RU/RedPhone/RedPhone_RF_Dongle_Specification_ru.md)
-* [Спецификация устройства: RedPhone-D](/documentation/RU/RedPhone/RedPhone_Specification_ru.md)  
-* [Инструкция по эксплуатации: RedPhone-D](/documentation/RU/RedPhone/RedPhone_Users_Manual_ru.md)
 * [Программа и методики испытаний: RedPhone](/documentation/RU/RedPhone/RedPhone_PM_ru.md)
 * [Комплект Phone-T: технический паспорт (шаблон)](/documentation/RU/RedPhone/Phone_T_package_tech_passport_ru.md)
 * [Комплект Phone-S: технический паспорт (шаблон)](/documentation/RU/RedPhone/Phone_S_package_tech_passport_ru.md)
 * [Медиаматериалы: видео c испытаний, видеоинструкции и т.п.](/documentation/RU/RedPhone/media.md)
+
+### Предыдущие версии
+* [Спецификация устройства: RedPhone-D](/documentation/RU/RedPhone/RedPhone_Specification_ru.md)  
+* [Инструкция по эксплуатации: RedPhone-D](/documentation/RU/RedPhone/RedPhone_Users_Manual_ru.md)
 
 ## [На главную](README_RU.md)
