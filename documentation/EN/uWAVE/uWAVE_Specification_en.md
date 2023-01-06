@@ -60,6 +60,7 @@ Devices from [uWave family](uWAVE_Family_en.md) use a simple open [NMEA-like con
 | INTERFACE<sup>[6](#footnote6)</sup>     | UART 9600 bit/s |
 | CONFIGURATION PROTOCOL                  | NMEA0183 [PUWV](uWAVE_Protocol_Specification_en.md) |
 | CABLE LENGTH<sup>[6](#footnote6)</sup>  | 0.5 m |
+| CABLE DIAMETER | 5 mm |
 | SUBSCRIBERS CODE DIVISION               | 20 code channels |
 | COMMAND MODE                            | 16 predefined messages (9 for user applications) |
 | PACKET MODE                             | 254 subscribers with an acknowledgement; broadcasting; packet size up to 64 bytes |
