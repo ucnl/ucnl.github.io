@@ -38,7 +38,7 @@
 
 | ![Zima2-B placement](/documentation/zima2_boat_gnss_1.png) |
 | :---: |
-| Схема установки антенны [Zima 2-B](Zima2B_Specification_en.md) <br/> _The antenna is mounted on a rigid rod so that it is no closer than 2 meters from the surface of the water and no closer than 1.5 meters from the bottom of the vessel. The antenna offsets relative to the geolocation point and the angular offset of the zero of the antenna and the GNSS compass are set_ |
+| [Zima 2-B](Zima2B_Specification_en.md) deployment scheme <br/> _The antenna is mounted on a rigid rod so that it is no closer than 2 meters from the surface of the water and no closer than 1.5 meters from the bottom of the vessel. The antenna offsets relative to the geolocation point and the angular offset of the zero of the antenna and the GNSS compass are set_ |
 
 <div style="page-break-after: always;"></div>
 
