@@ -2,7 +2,7 @@
 
 <div style="page-break-after: always;"></div>
 
-| ![logo](/documentation/sm_logo.png) | ![RedPhone-DX](/documentation/redphone_dx.png) |
+| ![logo](/documentation/sm_logo.png) | ![RedPhone-DX](/documentation/redphone_dx_qr_ru.png) |
 | :---: | ---: |
 | [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **RedPhone-DX** <br/> Водолазная станция беспроводной голосовой связи <br/> Спецификация устройства |
 
