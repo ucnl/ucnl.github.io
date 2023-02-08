@@ -11,14 +11,14 @@
 <div style="page-break-after: always;"></div>
 
 ## Contents
-- [1. Introducation]()
-- [2. Appearance and controls]()
-- [3. Connector pinouts]()
+- [1. Introducation](#1-introduction)
+- [2. Appearance and controls](#2-appearance-and-controls)
+- [3. Connector pinouts](#3-connector-pinouts)
 - [4. Working with the device]()
-- [5. Storage and maintenance]()
-- [6. Liability and Disclaimer]()
-  - [6.1. Terms of replacement and free warranty service]()
-  - [6.2. Manufacturer Liability Limitation]()
+- [5. Storage and maintenance](#5-storage-and-maintenance)
+- [6. Liability and Disclaimer](#6-liability-and-disclaimer)
+  - [6.1. Terms of replacement and free warranty service](#61-terms-of-replacement-and-free-warranty-service)
+  - [6.2. Manufacturer Liability Limitation](#62-manufacturer-liability-limitation)
 
 <div style="page-break-after: always;"></div>
 
@@ -100,12 +100,12 @@ _____________
   
 <div style="page-break-after: always;"></div>
 
-## 4. Работа с устройством
+## 4. Working with the device
 Before use, the device must be placed on a stable horizontal base. When working on ships and moving objects, it is recommended to fix the device by the handle of the case with a cord.
 
 Connecting and disconnecting connectors is recommended to be done when the toggle switch **4** is in the **OFF** position.
 
-After the connection is completed and the toggle switch **4** is turned to the **ON** position. The status of the device is displayed using the indicator **3** in accordance with [table 1]().
+After the connection is completed and the toggle switch **4** is turned to the **ON** position. The status of the device is displayed using the indicator **3** in accordance with [table 1](#table-1---indicator-3-states).
 
 <div style="page-break-after: always;"></div>
 
@@ -146,4 +146,4 @@ _**- THE MANUFACTURER DECLARES THAT THE SUPPLIED EQUIPMENT IS SAFE WHEN USE ACCO
 <div style="page-break-after: always;"></div>
 
 _____________
-[Back to contents]()
+[Back to contents](#contents)
