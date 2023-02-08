@@ -1,6 +1,8 @@
+[Main](/../../) ❯ [Navigation & tracking systems](/navigation_and_tracking_systems_en) ❯ **Bat & Link Box: Device specification**
+
 | ![logo](/documentation/sm_logo.png) | ![Bat&Link Box](https://ucnl.github.io/documentation/batnlinkbox.png) |
 | :---: | ---: |
-| [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **BAT&LINK BOX** - Autonomous power supply and interfacing unit <br/> Device specification |
+| [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **Bat&Link Box** - Autonomous power supply and interfacing unit <br/> Device specification |
 
 ## KEY FEATURES
 
