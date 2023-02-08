@@ -88,6 +88,7 @@ _____________
 
 ### Table 4 - Connector pins X3 (Group 8)
 
+| Pin number | Function |
 | :---: | :--- |
 | 1 | +U |
 | 2 | GND |
