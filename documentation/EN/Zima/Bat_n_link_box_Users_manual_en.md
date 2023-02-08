@@ -37,15 +37,15 @@ The appearance of the front panel of the device is shown in **Figure 1**. In the
 | **Fig. 1 - Control panel** | 
 | _1 - Line 1, 2 - Charge indicator, 3 - Power state indicator, 4 - power switch, 5 - battery line fuse<sup>[2](#footnote22)</sup>, 6 - external power line fuse<sup>[2](#footnote22)</sup>, 7 - Charger (AC/DC adaptor) connector<sup>[2](#footnote22)</sup>, 8 - line 2_ |
 
-Индикатор **2** горит, когда идет заряд встроенного источника питания, и не горит, когда заряд не идет.
-Двухцветный индикатор **3** служит для отображения состояния питания системы. В **таблице 1** приведены все варианты возможных световых сигналов.
-Тумблер **4** предназначен для включения питания устройства.
+Indicator **2** is on when the built-in power supply is being charged and off when it is not being charged.
+The two-color indicator **3** is used to show the power status of the system. **Table 1** lists all options for possible light signals.
+Toggle switch **4** is designed to turn on the power of the device.
 
-Предохранители **5** и **6** защищают цепи встроенного АКБ и внешнего питания соответственно. Применяются предохранители типоразмера **5.2х20** номиналом 5А.
+Fuses **5** and **6** protect the built-in battery and external power circuits, respectively. Fuses of size **5.2x20** with a nominal value of 5A are used.
 
-Разъем  **7** предназначен для подключения сетевого адаптера, посредством которого осуществляется заряд встроенного источника питания и питание прибора от сети переменного тока.
+Connector **7** is intended for connecting a network adapter, through which the built-in power supply is charged and the device is powered from the AC mains.
 
-### Таблица 1 - Сигналы световой индикации
+### Table 1 - Indicator **3** states
 
 | № | Напряжение встроенной АКБ |	Внешнее напряжение | Состояние индикатора |
 | :---: | :--- | :--- | :--- |
@@ -60,89 +60,87 @@ The appearance of the front panel of the device is shown in **Figure 1**. In the
 | 9 | Выше нормы | Выше нормы | Непрерывно горит красный |
 
 _____________
-<a name="footnote21"><sup>1</sup></a> Группа 8 присутствует только в расширенном исполнении. Стандартное исполнение содержит только группу 1.  
-<a name="footnote22"><sup>2</sup></a> На устройствах, выпущенных до июля 2020 года разъемы предохранителей и подключения внешнего источника питания могут располагаться на боковых и/или задней поверхности кейса устройства.
+<a name="footnote21"><sup>1</sup></a> Group 8 is present only in the extended version. The standard version contains only group 1.  
+<a name="footnote22"><sup>2</sup></a> On devices manufactured before July 2020, the fuse and external power supply connectors may be located on the side and/or back of the device case.
 
-## 3. Распиновки разъемов
+## 3. Connector pinouts
 
-### Таблица 2 - Контакты разъема 7 для подключения сетевого адаптера
+### Table 2 - Connector pins **7** for connecting a network adapter
 
-| № | Номер контакта | Напряжение, В |
+| № | Pin number | Function |
 | :---: | :--- | :--- |
 | 1 | 1, 3 | +U CHARGE |
 | 2 | 2, 4 | GND CHARGE |
 
-### Таблица 3 - Контакты раъема X1 (группа 1)
-#### Указаны номера контактов для разъема на кабеле
+### Table 3 - Connector pins X1 (Group 1)
 
-| Номер контакта | Функция |
+| Pin number | Function |
 | :---: | :--- |
-| 1 | плюс питания |
-| 2 | общий питания |
-| 3 | Rx+ |
-| 4 | Rx- |
-| 5 | Tx+ |
-| 6 | Tx- |
+| 1 | +U |
+| 2 | GND |
+| 3 | Tx+ |
+| 4 | NC |
+| 5 | Tx- |
+| 6 | Rx+ |
+| 7 | Rx- |
 
 <div style="page-break-after: always;"></div>
 
-### Таблица 4 - Контакты разъема X3 (группа 8)
-#### Указаны номера контактов для разъема на кабеле
+### Table 4 - Connector pins X3 (Group 8)
 
-| Номер контакта | Функция |
 | :---: | :--- |
-| 1 | плюс питания |
-| 2 | общий питания |
-| 3 | Rx+ | 
-| 4 | не подключен |
-| 5 | Rx- |
-| 6 | Tx+ |
-| 7 | Tx- |
+| 1 | +U |
+| 2 | GND |
+| 3 | Tx+ |
+| 4 | NC |
+| 5 | Tx- |
+| 6 | Rx+ |
+| 7 | Rx- |
   
 <div style="page-break-after: always;"></div>
 
 ## 4. Работа с устройством
-Перед использованием устройство должно быть расположено на устойчивом горизонтальном основании. При работе на судах и подвижных объктах рекомендуется фиксировать устройство за ручку кейса при помощи шнура.  
+Before use, the device must be placed on a stable horizontal base. When working on ships and moving objects, it is recommended to fix the device by the handle of the case with a cord.
 
-Подключение и отключение разъемов рекомендуется производить когда тумблер **4** находится в положении **OFF**. 
+Connecting and disconnecting connectors is recommended to be done when the toggle switch **4** is in the **OFF** position.
 
-После завершения подключения и перевода тубмлера **4** в положение **ON**. Состояние устройства отображается при помощи индикатора **3** в соответствие с [таблицей 1]().
-
-<div style="page-break-after: always;"></div>
-
-## 5. Хранение и обслуживание
-- Хранение устройства допускается только в выключенном состоянии (тумблер **4** в положение **OFF**), при закрытой крышке кейса и закрытых разъемах;
-- При длительном (более месяца) хранении рекомендуется периодически проверять состояние встроенного АКБ и при необходимости заряжать его для исключения деградации встроенного АКБ;
-- Загрязнения с корпуса устройства (кейса) допускается удалять при закрытой крышке помощи бытовых мыльных растворов, с последующим тщательным их удалением;
-- Загрязнения на лицевой панели допускается устранять при помощи влажной ветоши, избегая попадания влаги и загрязнений в разъемы и гнезда предохранителей;
-- Не допускается использование сторонних зарядных устройств;
+After the connection is completed and the toggle switch **4** is turned to the **ON** position. The status of the device is displayed using the indicator **3** in accordance with [table 1]().
 
 <div style="page-break-after: always;"></div>
 
-## 6. Обязательства и отказ от ответственности
-### 6.1 Условия замены и бесплатного гарантийного обслуживания
-Гарантия производителя распространяется только на заводские дефекты, выявивщиеся при эксплуатации устройства в соответствие с настоящим руководством в течении гарантийного срока (2 года с момента покупки).  
-
-Производитель гарантирует бесплатный ремонт или замену неисправного оборудования из комплекта поставки, вышедшего из строя по причине заводского дефекта.  
-
-К поводам для отказа от бесплатного гарантийного обслуживания, бесплатного ремонта и замены относятся:
-- любые **механические повреждения** оборудования из комплекта поставки, в т.ч. нарушение изоляции проводов и кабелей;
-- любые **повреждения, вызванные воздействием влаги и загрязнейний**, вследствие неправильной эксплуатации оборудования из комплекта поставки;
-- любые **электрические повреждения**, вызванные **использованием некомплектных аксессуаров**; к некомплектным не отностятся аксессуары, поставленные производителем или его представителем в замен неисправных или утраченых;
-- любые **следы самостоятельного ремонта и/или вскрытия** оборудования из комплекта поставки.
+## 5. Storage and maintenance
+- Storage of the device is allowed only in the off state (toggle switch **4** to the **OFF** position), with the case lid closed and the connectors closed;
+- During long-term (more than a month) storage, it is recommended to periodically check the condition of the built-in battery and, if necessary, charge it to prevent degradation of the built-in battery;
+- Contaminants from the body of the device (case) can be removed with the lid closed using household soap solutions, followed by their thorough removal;
+- Dirt on the front panel can be removed with a damp cloth, avoiding moisture and dirt getting into the connectors and fuse sockets;
+- It is not allowed to use third-party chargers;
 
 <div style="page-break-after: always;"></div>
 
-### 6.2 Ограничение ответственности производителя
+## 6. Liability and Disclaimer
+### 6.1 Terms of replacement and free warranty service
+The manufacturer's warranty covers only factory defects that appear during the operation of the device in accordance with this manual during the warranty period (2 years from the date of purchase).
+
+The manufacturer guarantees free repair or replacement of faulty equipment from the delivery set that has failed due to a manufacturing defect.
+
+Reasons for refusing free warranty service, free repair and replacement include:
+- any **mechanical damage** of the equipment from the delivery set, incl. violation of the insulation of wires and cables;
+- any **damage caused by exposure to moisture and dirt** due to improper use of the equipment supplied;
+- any **electrical damage** caused by **use of incomplete accessories**; Incomplete accessories do not include accessories supplied by the manufacturer or its representative in exchange for faulty or lost ones;
+- any **traces of self-repair and/or opening** of the equipment supplied.
+
+<div style="page-break-after: always;"></div>
+
+### 6.2 Manufacturer Liability Limitation
 
 _____________
 
-_**ЛЮБАЯ ИЗ ЧАСТЕЙ КОМПЛЕКТА ПОСТАВКИ В ОТДЕЛЬНОСТИ И В СОСТАВЕ СИСТЕМЫ, ИМЕНУЕМЫЕ ДАЛЕЕ "ПОСТАВЛЯЕМОЕ ОБОРУДОВАНИЕ":**_
+_**ANY OF THE PARTS OF THE SUPPLY KIT, INDIVIDUALLY AND AS A PART OF THE SYSTEM, HEREINHERALL Referred to as the "SUPPLIED EQUIPMENT":**_
 
-_**- НЕ РАЗРАБАТЫВАЛОСЬ КАК СРЕДСТВО СПАСЕНИЯ**_  
-_**- НЕ ТЕСТИРОВАЛОСЬ, КАК СРЕДСТВО СПАСЕНИЯ**_  
-_**- НЕ ЯВЛЯЕТСЯ СРЕДСТВОМ СПАСЕНИЯ**_  
-_**- ПРОИЗВОДИТЕЛЬ ЗАЯВЛЯЕТ, ЧТО ПОСТАВЛЯЕМОЕ ОБОРУДОВАНИЕ БЕЗОПАСНО ПРИ ЭКСПЛУАТАЦИИ СОГЛАСНО НАСТОЯЩЕЙ ИНСТРУКЦИИ И НЕ ОТВЕЧАЕТ ЗА ЛЮБЫЕ ПОСЛЕДСТВИЯ ИСПОЛЬЗОВАНИЯ ПОСТАВЛЯЕМОГО ОБОРУДОВАНИЯ**_
+_**- NOT DEVELOPED AS A MEANS OF RESCUE**_
+_**- NOT TESTED AS A RESCUE**_
+_**- IS NOT A RESCUE**_
+_**- THE MANUFACTURER DECLARES THAT THE SUPPLIED EQUIPMENT IS SAFE WHEN USE ACCORDING TO THESE INSTRUCTIONS AND IS NOT RESPONSIBLE FOR ANY CONSEQUENCES OF THE USE OF THE SUPPLIED EQUIPMENT**_
 
 <div style="page-break-after: always;"></div>
 
