@@ -47,17 +47,12 @@ Connector **7** is intended for connecting a network adapter, through which the 
 
 ### Table 1 - Indicator **3** states
 
-| № | Напряжение встроенной АКБ |	Внешнее напряжение | Состояние индикатора |
+| № | Indicator state |	Description | Action to be taken |
 | :---: | :--- | :--- | :--- |
-| 1 | Ниже нормы | Ниже нормы | Часто загорается зеленый |
-| 2 | Ниже нормы | Норма | Поочередно загораются зеленый и красный ( по 1 сек) |
-| 3 | Ниже нормы | Выше нормы | Загорается и гаснет красный (на 1 сек) |
-| 4 | Норма | Ниже нормы | Горит зеленый с короткими вспышками красного |
-| 5 | Норма | Норма | Непрерывно горит зеленый |
-| 6 | Норма | Выше нормы | Поочередно загораются зеленый и красный (по 200 мсек) |
-| 7 | Выше нормы | Ниже нормы | Короткие вспышки красного |
-| 8 | Выше нормы | Норма | Горит красный с короткими вспышками зеленого |
-| 9 | Выше нормы | Выше нормы | Непрерывно горит красный |
+| 1 | Green on | OK | |
+| 2 | Green blinking | Built-in battery low | Charge the battery |
+| 3 | Red on | Output short circuit | Shutdown the device, check connected consuming devices, cables, connectors |
+| 4 | Red blinking | External power circuit error | Shutdown the device, check the AC/DC adaptor, cables, connectors |
 
 _____________
 <a name="footnote21"><sup>1</sup></a> Group 8 is present only in the extended version. The standard version contains only group 1.  
@@ -70,7 +65,8 @@ _____________
 | № | Pin number | Function |
 | :---: | :--- | :--- |
 | 1 | 1, 3 | +U CHARGE |
-| 2 | 2, 4 | GND CHARGE |
+| 2 | 2 | GND CHARGE |
+| 3 | 4 | RESERVED |
 
 ### Table 3 - Connector pins X1 (Group 1)
 
