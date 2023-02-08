@@ -35,7 +35,7 @@ The appearance of the front panel of the device is shown in **Figure 1**. In the
 | ![Bat&Link Box panel](/documentation/batlinkbox_panel2ch.png) |
 | :---: |
 | **Fig. 1 - Control panel** | 
-| _1 - Line 1, 2 - Charger (AC/DC adaptor) connector, 3 - индикатор, 4 - тумблер питания, 5 - предохранитель линии аккумулятора<sup>[2](#footnote22)</sup>, 6 - предохранитель линии внешнего питания<sup>[2](#footnote22)</sup>, 7 - разъем подключения внешнего источника питания<sup>[2](#footnote22)</sup>, 8 - линия 2_ |
+| _1 - Line 1, 2 - Charger (AC/DC adaptor) connector, 3 - indicator, 4 - power switch, 5 - battery line fuse<sup>[2](#footnote22)</sup>, 6 - external power line fuse<sup>[2](#footnote22)</sup>, 7 - external power supply connector<sup>[2](#footnote22)</sup>, 8 - line 2_ |
 
 Разъем **2** служит для подключения комплектного зарядного устройства. Двухцветный индикатор **3** служит для отображения состояния питания системы. В **таблице 1** приведены все варианты возможных световых сигналов. Тумблер **4** предназначен для подачи и отключения питания устройства. 
 
