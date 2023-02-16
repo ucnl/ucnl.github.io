@@ -101,6 +101,51 @@ of this precision technology, the device allows you to set an adequate value for
 
 The devices are designed for a maximum immersion depth of 300 meters.
 
+### 4.1. Locally available parameters 
+
+Parameters that can be received locally from the device, i.e. when connected to it by cable.
+
+|  | [uWave](uWAVE_Specification_en.md) | [uWave Max](uWAVE_Max_Specification_en.md) | [uWave Max OEM](uWAVE_Max_OEM_Specification_en.md) | [uWave USBL Modem](uWAVE_USBL_Modem_Specification_en.md) |
+| :--- | :--- | :--- | :--- | :--- |
+| Pressure           | ✓ | ✓ | ✘ | ✓ |
+| Temperature        | ✓ | ✓ | ✘ | ✓ |
+| Depth              | ✓ | ✓ | ✘ | ✓ |
+| Supply voltage     | ✓ | ✓ | ✓ | ✘ |
+| Pitch               | ✘ | ✘ | ✘ | ✓ |
+| Roll          | ✘ | ✘ | ✘ | ✓ |
+
+### 4.2. Remotely available parameters
+
+Parameters that can be requested from the device remotely, i.e. via a hydroacoustic communication channel, using any other modem from the **uWave** family.
+
+|  | [uWave](uWAVE_Specification_en.md) | [uWave Max](uWAVE_Max_Specification_en.md) | [uWave Max OEM](uWAVE_Max_OEM_Specification_en.md) | [uWave USBL Modem](uWAVE_USBL_Modem_Specification_en.md) |
+| :--- | :--- | :--- | :--- | :--- |
+| Temperature        | ✓ | ✓ | ✘ | ✓ |
+| Depth              | ✓ | ✓ | ✘ | ✓ |
+| Supply voltage     | ✓ | ✓ | ✓ | ✘ |
+
+### 4.3. Measuring ranges
+
+| Parameter          | Min | Max | Units | 
+| :---               | :--- | :--- | :--- |
+| Pressure           | 0 | 30000 | mBar |
+| Temperature        | -4 | 46 | °С |
+| Depth              | 0 | 300 | m |
+| Supply voltage     | 0 | 15 | V |
+| Pitch              | -180 | 180 | ° |
+| Roll               | -180 | 180 | ° |
+
+### 4.4. Resolution of readings of built-in sensors
+
+| Parameter          | Resolution <br/> locally | Resolution <br/> remotely |
+| :---               | :--- | :--- |
+| Pressure           | 0.1 mBar | - |
+| Temperature        | 0.1 °С | 0.1 °С |
+| Depth              | 0.01 m | 0.1 m |
+| Supply voltage     | 0.1 V | 0.1 V |
+| Pitch              | 0.1 ° | - |
+| Roll               | 0.1 ° | - |
+
 <div style="page-break-after: always;"></div>
 
 ## 5. Application and integration
