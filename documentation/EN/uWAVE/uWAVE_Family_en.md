@@ -106,20 +106,20 @@ The devices are designed for a maximum immersion depth of 300 meters.
 Parameters that can be received locally from the device, i.e. when connected to it by cable.
 
 |  | [uWave](uWAVE_Specification_en.md) | [uWave Max](uWAVE_Max_Specification_en.md) | [uWave Max OEM](uWAVE_Max_OEM_Specification_en.md) | [uWave USBL Modem](uWAVE_USBL_Modem_Specification_en.md) |
-| :--- | :--- | :--- | :--- | :--- |
+| :--- | :---: | :---: | :---: | :---: |
 | Pressure           | ✓ | ✓ | ✘ | ✓ |
 | Temperature        | ✓ | ✓ | ✘ | ✓ |
 | Depth              | ✓ | ✓ | ✘ | ✓ |
 | Supply voltage     | ✓ | ✓ | ✓ | ✘ |
-| Pitch               | ✘ | ✘ | ✘ | ✓ |
-| Roll          | ✘ | ✘ | ✘ | ✓ |
+| Pitch              | ✘ | ✘ | ✘ | ✓ |
+| Roll               | ✘ | ✘ | ✘ | ✓ |
 
 ### 4.2. Remotely available parameters
 
 Parameters that can be requested from the device remotely, i.e. via a hydroacoustic communication channel, using any other modem from the **uWave** family.
 
 |  | [uWave](uWAVE_Specification_en.md) | [uWave Max](uWAVE_Max_Specification_en.md) | [uWave Max OEM](uWAVE_Max_OEM_Specification_en.md) | [uWave USBL Modem](uWAVE_USBL_Modem_Specification_en.md) |
-| :--- | :--- | :--- | :--- | :--- |
+| :--- | :---: | :---: | :---: | :---: |
 | Temperature        | ✓ | ✓ | ✘ | ✓ |
 | Depth              | ✓ | ✓ | ✘ | ✓ |
 | Supply voltage     | ✓ | ✓ | ✓ | ✘ |
