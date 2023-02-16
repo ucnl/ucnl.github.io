@@ -103,7 +103,7 @@
 Параметры, которые могут быть получены от устройства локально, т.е. при подключении к нему по кабелю.
 
 |  | [uWave](uWAVE_Specification_ru.md) | [uWave Max](uWAVE_Max_Specification_ru.md) | [uWave Max OEM](uWAVE_Max_OEM_Specification_ru.md) | [uWave USBL Modem](uWAVE_USBL_Modem_Specification_ru.md) |
-| :--- | :--- | :--- | :--- | :--- |
+| :--- | :---: | :---: | :---: | :---: |
 | Давление           | ✓ | ✓ | ✘ | ✓ |
 | Температура        | ✓ | ✓ | ✘ | ✓ |
 | Глубина            | ✓ | ✓ | ✘ | ✓ |
@@ -116,7 +116,7 @@
 Параметры, которые могут быть запрошены у устройства удаленно, т.е. по гидроакустическому каналу связи, при помощи любого другого модема из семейства **uWave**.
 
 |  | [uWave](uWAVE_Specification_ru.md) | [uWave Max](uWAVE_Max_Specification_ru.md) | [uWave Max OEM](uWAVE_Max_OEM_Specification_ru.md) | [uWave USBL Modem](uWAVE_USBL_Modem_Specification_ru.md) |
-| :--- | :--- | :--- | :--- | :--- |
+| :--- | :---: | :---: | :---: | :---: |
 | Температура        | ✓ | ✓ | ✘ | ✓ |
 | Глубина            | ✓ | ✓ | ✘ | ✓ |
 | Напряжение питания | ✓ | ✓ | ✓ | ✘ |
