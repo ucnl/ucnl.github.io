@@ -67,6 +67,7 @@
 * [Приложение для RedNAV (Исходный код)](https://github.com/ucnl/RedNavHost)
 * [Приложение для RedNAV (Скачать релиз)](https://github.com/ucnl/RedNavHost/releases/download/1.1/RedNAVHost.zip)
 * [Программа и методики испытаний (Водолазный вариант)](/documentation/RU/RedWAVE/RedNAV_PM_ru.md)
+* [RedWave: Технический паспорт (шаблон)](/documentation/RU/RedWAVE/RedWave_tech_pass_ru.md)
 
 ### RWLT
 #### Длиннобазисная трекинговая система
