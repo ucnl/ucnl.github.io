@@ -19,7 +19,7 @@
 * [Zima2-B (пеленгационная антенна): Спецификация устройства:](/documentation/RU/Zima/Zima2B_Specification_ru.md)
 * [Zima2-R (маяк-ответчик): Спецификация устройства](/documentation/RU/Zima/Zima2R_Specification_ru.md)
 * [Zima2-BK (пеленгационная антенна для маяков Zima2-RK): Спецификация устройства:](/documentation/RU/Zima/Zima2BK_Specification_ru.md)
-* [Zima2-RK (маяк-ответчик на глубину до 1000 м): Спецификация устройства](/documentation/RU/Zima/Zima2R_Specification_ru.md)
+* [Zima2-RK (маяк-ответчик на глубину до 1000 м): Спецификация устройства](/documentation/RU/Zima/Zima2RK_Specification_ru.md)
 * [Zima2 USBL: Протокол информационного сопряжения](/documentation/RU/Zima/Zima2_Protocol_Specification_ru.md)
 * [🐙 AzimuthSuite: Пультовое приложение для Zima2 USBL (Исходный код)](https://github.com/ucnl/AzimuthSuite)
 * [🐙 AzimuthSuite: Пультовое приложение для Zima2 USBL (Скачать релиз)](https://github.com/ucnl/AzimuthSuite/releases/download/beta/AzimuthSuite.zip)
