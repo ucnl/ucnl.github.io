@@ -1,4 +1,4 @@
-[Main](/../../) ❯ [Navigation & tracking systems](/navigation_and_tracking_systems_en) ❯ **Zima2-R: Device specification**
+[Main](/../../) ❯ [Navigation & tracking systems](/navigation_and_tracking_systems_en) ❯ **Zima2-RK: Device specification**
 
 <div style="page-break-after: always;"></div>
 
@@ -13,12 +13,11 @@
 * **Reliable and noise-immune technology of digital broadband acoustic communication**
 * **Subscribers code division - up to 16 responders**
 * **Low power consumption (Rx/Tx) 0.33/25 W**
-* **Patented monoblock design**
 * **Built-in depth/temperature sensor**
 
 ## DESCRIPTION
 
-**Zima2-R** - responder of ultrashort baseline navigation system [Zima2 USBL](Zima2_DataBrief_en.md).
+**Zima2-RK** - responder of ultrashort baseline navigation system [Zima2 USBL](Zima2_DataBrief_en.md).
 
 The device is designed to be placed on an underwater object in order to determine the location of this object in real time using a direction-finding antenna [Zima2-B](Zima2B_Specification_en.md).
 
@@ -50,7 +49,7 @@ Extremely small size, ease of use and low power consumption make the direction f
 | INTERFACE | USB(COM) 9600 bit/s |
 | PROTOCOL | NMEA 0183 [PAZM](Zima2_Protocol_Specification_en.md) |
 | CABLE LENGTH<sup>[4](#footnote4)</sup> | 1 m |
-| MAX. NUMBER OF ADRESSES | 16 |
+| MAX. NUMBER OF ADDRESSES | 16 |
   
 ________________
 <a name="footnote1"><sup>1</sup></a> Without the presence of a multipath effect. A parameter that determines the maximum range at which a signal can be received, based on electro-acoustic parameters of the transmitter and receiver, spatial decrease in the intensity of sound energy, attenuation in the medium and the acoustic noise level.   
