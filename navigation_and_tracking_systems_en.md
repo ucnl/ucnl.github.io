@@ -19,7 +19,7 @@ Since June 2022
 * [Zima2-B (Direction-finding antenna): Device specification](/documentation/EN/Zima/Zima2B_Specification_en.md)
 * [Zima2-R (Responder-beacon): Device specification](/documentation/EN/Zima/Zima2R_Specification_en.md)
 * [Zima2-BK (Direction-finding antenna): Device specification](/documentation/EN/Zima/Zima2BK_Specification_en.md)
-* [Zima2-RK (1000 m depth rating responder beacon): Device specification](/documentation/EN/Zima/Zima2RK_Specification_en.md)
+* [Zima2-RK (1000 m depth rating responder-beacon): Device specification](/documentation/EN/Zima/Zima2RK_Specification_en.md)
 * [Zima2 USBL: Communication protocol](/documentation/EN/Zima/Zima2_Protocol_Specification_en.md)
 * [🐙 AzimuthSuite: Host application for Zima2 USBL (source code)](https://github.com/ucnl/AzimuthSuite)
 * [🐙 AzimuthSuite: Host application for Zima2 USBL (dowload release)](https://github.com/ucnl/AzimuthSuite/releases/download/beta/AzimuthSuite.zip)
