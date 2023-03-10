@@ -1,4 +1,4 @@
-[Main](/../../) ❯ [Navigation & tracking systems](/navigation_and_tracking_systems_en) ❯ **Zima2-RK: Device specification**
+[Main](/../../) ❯ [Navigation & tracking systems](/navigation_and_tracking_systems_en) ❯ **Zima2-R: Device specification**
 
 <div style="page-break-after: always;"></div>
 
