@@ -2,7 +2,7 @@
 
 <div style="page-break-after: always;"></div>
 
-| ![logo](/documentation/sm_logo.png) | ![logo](/documentation/zima_r.png) |
+| ![logo](/documentation/sm_logo.png) | ![logo](/documentation/zima2rk.png) |
 | :---: | ---: |
 | [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **Zima2-RK** - **Zima2 USBL** responder beacon <br/> Device specification |
 
