@@ -1,5 +1,10 @@
 [Главная](/README_RU) ❯ [Голосовая подводная связь (водолазная телефония)](/underwater_wireless_voice_systems_ru) ❯ **Инструкция по эксплуатации: RedPhone-OS**
 
+> ℹ Этот документ можно распечатать прямо из браузера. 
+> Для лучшего результата:
+> - выберите диапазон страниц для печати, исключая первую и последнюю
+> - в дополнительных настройках отключите нижние и верхние колонтитулы
+
 <div style="page-break-after: always;"></div>
 
 | ![logo](/documentation/sm_logo.png) | ![redphone_os](/documentation/redphone_os_manual_qr_ru.png) |
