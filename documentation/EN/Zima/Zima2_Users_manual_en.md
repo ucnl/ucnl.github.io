@@ -84,7 +84,7 @@ The system includes:
 ## 2. Working with Zima2 USBL system
 
 ### 2.0. Before start
-Specialized software [🐙 AzimuthSiute](https://github.com/ucnl/AzimuthSuite/releases/download/beta/AzimuthSuit.zip) is required to work with the system.
+Specialized software [🐙 AzimuthSiute](https://github.com/ucnl/AzimuthSuite/releases/download/beta/AzimuthSuite.zip) is required to work with the system.
 
 Download the necessary software in advance. Installation is not required - just unzip the contents of the archive to a location convenient for you.
 Make sure all equipment is fully charged before heading out to the water and charge all devices if necessary.
