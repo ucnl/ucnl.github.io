@@ -21,6 +21,7 @@
 * [Versions & changes](/documentation/EN/uWAVE/uWAVE_version_history_en.md)
 * [uWaveCommander: demo host application (Source code)](https://github.com/ucnl/uWaveCommander)
 * [uWaveCommander: demo host application (Download release)](https://github.com/ucnl/uWaveCommander/releases/download/1.0/uWaveCommander.zip)
+* [uWaveCommander: brief user's manual](https://github.com/ucnl/uWaveCommander/blob/main/README.md)
 * [Arduino library with examples](https://github.com/ucnl/uWAVE_ALib)
 * [Examples for Arduino (Old)](https://github.com/ucnl/uWAVE_Arduino)
 * [uWave: videos, tutorials, etc.](/documentation/EN/uWAVE/media)
