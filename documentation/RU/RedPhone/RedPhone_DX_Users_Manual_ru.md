@@ -1,5 +1,10 @@
 [Главная](/README_RU) ❯ [Голосовая подводная связь (водолазная телефония)](/underwater_wireless_voice_systems_ru) ❯ **Инструкция по эксплуатации: RedPhone-DX**
 
+> ℹ Этот документ можно распечатать прямо из браузера. 
+> Для лучшего результата:
+> - выберите диапазон страниц для печати, исключая первую и последнюю
+> - в дополнительных настройках отключите нижние и верхние колонтитулы
+
 <div style="page-break-after: always;"></div>
 
 | ![logo](/documentation/sm_logo.png) | ![RedPhone-DX](/documentation/redphone_dx_qr_manual_ru.png) |
