@@ -2,9 +2,10 @@
 
 <div style="page-break-after: always;"></div>
 
-| ![logo](/documentation/sm_logo.png) |  Версия 1 <br/> 20.02.2022 |
+| ![logo](/documentation/sm_logo.png) | ![qr](/documentation/batlink_msds_ru_qr.png) |
 | :---: | ---: |
 | [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | Аккумулятор высокотоковый литий-железофосфатный <br/> в составе Bat&Link ПМВР.348290.001 <br/> Паспорт безопасности химической продукции (MSDS) |
+| | Версия 1 <br/> 20.02.2022 |
 
 ## Аккумулятор высокотоковый литий-железофосфатный <br/> в составе Bat&Link ПМВР.348290.001
 ### Паспорт безопасности химической продукции (MSDS)
