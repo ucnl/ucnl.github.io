@@ -1,12 +1,12 @@
-[Главная](/README_RU) ❯ [Гидроакустические навигационные и трекинговые системы](/navigation_and_tracking_systems_ru) ❯ **Описание протокола сопряжения: RedNODE**
+[Главная](/README_RU) ❯ [Гидроакустические навигационные и трекинговые системы](/navigation_and_tracking_systems_ru) ❯ **Описание протокола сопряжения: RedNode**
 
 <div style="page-break-after: always;"></div>
 
 | ![logo](/documentation/sm_logo.png) |  |
 | :---: | ---: |
-| [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **RedWAVE** - гидроакустическая навигационная система <br/> Протокол информационного сопряжения c навигационным приемником RedNODE |  
+| [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **RedWave** - гидроакустическая навигационная система <br/> Протокол информационного сопряжения c навигационным приемником RedNode |  
 
-# RedWAVE <br/> протокол информационного сопряжения c навигационными приемниками RedNODE
+# RedWave <br/> протокол информационного сопряжения c навигационными приемниками RedNode
 
 <div style="page-break-after: always;"></div>
 
@@ -44,7 +44,7 @@
 
 ## 1. Введение
 ### 1.1. Протокол физического уровеня
-Гидроакустические навигационные приемники **[RedNODE](RedNODE_Specification_ru.md)** поддерживают информационное сопряжение при помощи 
+Гидроакустические навигационные приемники **[RedNode](RedNODE_Specification_ru.md)** поддерживают информационное сопряжение при помощи 
 стандарта физического уровня RS-232 для асинхронного интерфейса (UART) c напряжением линии данных 3.3В. Подключение производится при помощи 
 четырехпроводного кабеля, с жилами Tx (трансмиттер), Rx (ресивер), Vcc (питание)  и GND (земля). Без применения дополнительных повторителей 
 и преобразователей интерфейса максимальная длинна шины данных, для которой гарантируется корректная работа интерфейса, составляет не более 2 метров.  
@@ -102,9 +102,9 @@ ________
 | 4 | Longitude |	Географическая долгота, dddmm.mmmmmm |
 | 5 | E|W | Идентификатор полушария, E - восточное, W - западное |
 | 6 | Fix Type | Тип навигационного решения | 
-| 7 | Satellites in view | Число доступных спутников (в RedWAVE всегда равно 4) |
-| 8 | HDOP | Horizontal dilution of precision, метры. (в RedWAVE данное поле передает радиальную ошибку, значение функции невязки в конце решения) |
-| 9 | Altitude | Altitude, метры. (в RedWAVE данное поле передает глубину, т.е. высоту со знаком "-") |
+| 7 | Satellites in view | Число доступных спутников (в RedWave всегда равно 4) |
+| 8 | HDOP | Horizontal dilution of precision, метры. (в RedWave данное поле передает радиальную ошибку, значение функции невязки в конце решения) |
+| 9 | Altitude | Altitude, метры. (в RedWave данное поле передает глубину, т.е. высоту со знаком "-") |
 | 10 | M |	М - метры |
 | 11 | Geoidal separation | Поле не поддерживается и остается пустым |
 | 12 | Age of data |  Поле не поддерживается и остается пустым |
@@ -170,14 +170,14 @@ ________
 | 2 | Own location - longitude | Геогрфчиеская долгота, ° |
 | 3 | Own location - depth | Глубина, м |
 | 4 | Radial error | Радиальная ошибка, м |
-| 5 | Buoy #1 latitude | RedBASE №1 геогрфическая широта, ° |
-| 6 | Buoy #1 longitude | RedBASE №1 геогрфическая долгота, ° |
-| 7 | Buoy #2 latitude | RedBASE №2 геогрфическая широта, ° |
-| 8 | Buoy #2 longitude | RedBASE №2 геогрфическая долгота, ° |
-| 9 | Buoy #3 latitude | RedBASE №3 геогрфическая широта, ° |
-| 10 | Buoy #3 longitude | RedBASE №3 геогрфическая долгота, ° |
-| 11 | Buoy #4 latitude | RedBASE №4 геогрфическая широта, ° |
-| 12 | Buoy #4 longitude | RedBASE №4 геогрфическая долгота, ° |
+| 5 | Buoy #1 latitude | RedBase №1 геогрфическая широта, ° |
+| 6 | Buoy #1 longitude | RedBase №1 геогрфическая долгота, ° |
+| 7 | Buoy #2 latitude | RedBase №2 геогрфическая широта, ° |
+| 8 | Buoy #2 longitude | RedBase №2 геогрфическая долгота, ° |
+| 9 | Buoy #3 latitude | RedBase №3 геогрфическая широта, ° |
+| 10 | Buoy #3 longitude | RedBase №3 геогрфическая долгота, ° |
+| 11 | Buoy #4 latitude | RedBase №4 геогрфическая широта, ° |
+| 12 | Buoy #4 longitude | RedBase №4 геогрфическая долгота, ° |
 | 13 | Temperature | Температура воды, ˚C |
 |  | *	| Разделитель контрольной суммы NMEA |
 |  | hh	| Контрольная сумма NMEA |
@@ -211,22 +211,22 @@ ________
 |  | P | Проприетарный код |
 |  | TNT | Система команд TNT |
 |  | M | Sentence identifier |
-| 1 | Buoy #1 latitude | RedBASE №1 геогрфическая широта, ° |
-| 2 | Buoy #1 longitude | RedBASE №1 геогрфическая долгота, ° |
-| 3 | Buoy #1 SNR | RedBASE №1 MSR<sup>[2](#footnote2)</sup>, dB |
-| 4 | Buoy #1 status | RedBASE №1 Статус<sup>[3](#footnote3)</sup> |
-| 5 | Buoy #2 latitude | RedBASE №2 геогрфическая широта, ° |
-| 6 | Buoy #2 longitude | RedBASE №2 геогрфическая долгота, ° |
-| 7 | Buoy #2 SNR | RedBASE №2 MSR<sup>[2](#footnote2)</sup>, dB |
-| 8 | Buoy #2 status | RedBASE №2 Статус<sup>[3](#footnote3)</sup> |
-| 9 | Buoy #3 latitude | RedBASE №3 геогрфическая широта, ° |
-| 10 | Buoy #3 longitude | RedBASE №3 геогрфическая долгота, ° |
-| 11 | Buoy #3 SNR | RedBASE №3 MSR<sup>[2](#footnote2)</sup>, dB |
-| 12 | Buoy #3 status | RedBASE №3 Статус<sup>[3](#footnote3)</sup> |
-| 13 | Buoy #4 latitude | RedBASE №4 геогрфическая широта, ° |
-| 14 | Buoy #4 longitude | RedBASE №4 геогрфическая долгота, ° |
-| 15 | Buoy #4 SNR | RedBASE №4 MSR<sup>[2](#footnote2)</sup>, dB |
-| 16 | Buoy #4 status | RedBASE №4 Статус<sup>[3](#footnote3)</sup> |
+| 1 | Buoy #1 latitude | RedBase №1 геогрфическая широта, ° |
+| 2 | Buoy #1 longitude | RedBase №1 геогрфическая долгота, ° |
+| 3 | Buoy #1 SNR | RedBase №1 MSR<sup>[2](#footnote2)</sup>, dB |
+| 4 | Buoy #1 status | RedBase №1 Статус<sup>[3](#footnote3)</sup> |
+| 5 | Buoy #2 latitude | RedBase №2 геогрфическая широта, ° |
+| 6 | Buoy #2 longitude | RedBase №2 геогрфическая долгота, ° |
+| 7 | Buoy #2 SNR | RedBase №2 MSR<sup>[2](#footnote2)</sup>, dB |
+| 8 | Buoy #2 status | RedBase №2 Статус<sup>[3](#footnote3)</sup> |
+| 9 | Buoy #3 latitude | RedBase №3 геогрфическая широта, ° |
+| 10 | Buoy #3 longitude | RedBase №3 геогрфическая долгота, ° |
+| 11 | Buoy #3 SNR | RedBase №3 MSR<sup>[2](#footnote2)</sup>, dB |
+| 12 | Buoy #3 status | RedBase №3 Статус<sup>[3](#footnote3)</sup> |
+| 13 | Buoy #4 latitude | RedBase №4 геогрфическая широта, ° |
+| 14 | Buoy #4 longitude | RedBase №4 геогрфическая долгота, ° |
+| 15 | Buoy #4 SNR | RedBase №4 MSR<sup>[2](#footnote2)</sup>, dB |
+| 16 | Buoy #4 status | RedBase №4 Статус<sup>[3](#footnote3)</sup> |
 |  | *	| Разделитель контрольной суммы NMEA |
 |  | hh	| Контрольная сумма NMEA |
 |  | \<CR\>\<LF\> | Конец сообщения |
@@ -393,9 +393,9 @@ ________
 
 | Значение | Наименование | Описание |
 | :--- | :--- | :--- |
-| '0' | DEVICE_REDBASE | RedBASE гидроакустический буй-ретранслятор |
-| '1' | DEVICE_REDNODE | RedNODE навигационный приемник |
-| '2' | DEVICE_REDNAV | RedNAV навигационный приемник водолаза |
+| '0' | DEVICE_REDBASE | RedBase гидроакустический буй-ретранслятор |
+| '1' | DEVICE_REDNODE | RedNode навигационный приемник |
+| '2' | DEVICE_REDNAV | RedNav навигационный приемник водолаза |
 | '3' | DEVICE_REDGTR | RedGTR модем кодовой связи |
 
 ### 3.2. Коды ошибок
