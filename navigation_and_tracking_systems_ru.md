@@ -49,7 +49,7 @@
 * [Zima-R, Zima2-R: Кронштейн на баллон (3D-модель STEP)](/documentation/msize_tank_holder.STEP)
 * [Zima-R, Zima2-R: Схема включения устройства](/documentation/RU/Zima/ZimaR_wiring_diagram_ru.md)
 
-### RedWAVE
+### RedWave
 #### Подводный GPS (LBL)
 * [RedWave: Краткое описание](/documentation/RU/RedWAVE/RedWAVE_DataBrief_ru.md)
 * [RedWave: медиаматериалы, видео с испытаний, треки и т.п.](/documentation/RU/RedWAVE/media)
@@ -59,7 +59,7 @@
 * [AQUATAB-S (Водолазный планшет): Спецификация устройства](/documentation/RU/RedWAVE/Aquatab_s_specification_ru.md)
 * [RedNode: Описание протокола сопряжения](/documentation/RU/RedWAVE/RedWAVE_Protocol_Specification_ru.md)
 * [RedWave: Рукводство пользователя](/documentation/RU/RedWAVE/RedWAVE_Users_Manual_ru.md)
-* [ПО RedNAV Host: Руководство пользователя](/documentation/RU/RedWAVE/RedNAV_Host_Users_Manual_ru.md)
+* [ПО RedNav Host: Руководство пользователя](/documentation/RU/RedWAVE/RedNAV_Host_Users_Manual_ru.md)
 * [RedNode: Схема включения устройства](/documentation/RU/RedWAVE/RedNODE_wiring_diagram_ru.md)
 * [RedNode: Кронштейн на баллон (3D-модель STEP)](/documentation/msize_tank_holder.STEP)
 * [RedBase: 3D-модель (STEP) ](/documentation/RedBase_v2.0_3D.STEP)
@@ -67,8 +67,8 @@
 * [RedNav с навигационной панелью: 3D-модель (STEP)](/documentation/RedNav_with_compass_3D.step) 
 * [Приложение для работы с навигационными приемниками UGPSHub (Исходный код)](https://github.com/ucnl/UGPSHub)
 * [Приложение для работы с навигационными приемниками  UGPSHub (Скачать релиз)](https://github.com/ucnl/UGPSHub/releases/download/1.0/UGPSHub.zip)
-* [Приложение для RedNAV (Исходный код)](https://github.com/ucnl/RedNavHost)
-* [Приложение для RedNAV (Скачать релиз)](https://github.com/ucnl/RedNavHost/releases/download/1.1/RedNAVHost.zip)
+* [Приложение для RedNav (Исходный код)](https://github.com/ucnl/RedNavHost)
+* [Приложение для RedNav (Скачать релиз)](https://github.com/ucnl/RedNavHost/releases/download/1.1/RedNAVHost.zip)
 * [Программа и методики испытаний (Водолазный вариант)](/documentation/RU/RedWAVE/RedNAV_PM_ru.md)
 * [RedWave: Технический паспорт (шаблон)](/documentation/RU/RedWAVE/RedWave_tech_pass_ru.md)
 
