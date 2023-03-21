@@ -43,6 +43,7 @@ Extremely small size, low power consumption and ease of use make the direction f
 | SLANT RANGE RESOLUTION | 0.15 m |
 | MAX. TILT COMPENSATED BY THE BUILT-IN INCLINOMETER RELATED TO VERTICAL AXIS (pitch/roll) | +/- 30° |
 | WORKING VERTICAL ANGLES (RELATIVE TO HORIZONTAL PLANE)<sup>[3](#footnote3)</sup> | 0 .. 85° |
+| CARRIER FREQUENCY | 20100 Hz |
 | BANDWIDTH | 10 .. 30 kHz |
 | BUILT-IN TEMPERATURE SENSOR ACCURACY | 0.1°С |
 | BIT ERROR RATE | 10<sup>-6</sup> |
