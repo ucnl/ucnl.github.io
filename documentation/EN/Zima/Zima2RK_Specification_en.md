@@ -34,6 +34,7 @@ The device is designed to be placed on an underwater object in order to determin
 | DEPTH RESOLUTION | 2 m |
 | MAX. OPERATING RANGE<sup>[1](#footnote1)</sup> |	3000 m |
 | ACOUSIC SOURCE LEVEL |	170 dB re 1 μPa @ 1 m |
+| CARRIER FREQUENCY | 20100 Hz |
 | BANDWIDTH | 10 .. 30 kHz |
 | BUILT-IN TEMPERATURE SENSOR ACCURACY | 0.1°С |
 | BIT ERROR RATE | 10<sup>-6</sup> |
