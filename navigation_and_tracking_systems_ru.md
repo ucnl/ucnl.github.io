@@ -95,6 +95,7 @@
 * [WAYU Pinger: Спецификация устройства](/documentation/RU/WAYU/WAYU_Pinger_Specification_ru.md)
 * [WAYU GIB: Спецификация устройства](/documentation/RU/WAYU/WAYU_GIB_Specification_ru.md)
 * [WAYU Radio dongle: Спецификация устройства](/documentation/RU/WAYU/WAYU_RF_Dongle_Specification_ru.md)
+* [WAYU: Протокол сопряжения](/documentation/RU/WAYU/WAYU_Protocol_specification_ru.md)
 * [ОЖИДАЕТСЯ WAYU: Руководство пользователя]()
 * [Приложение для работы с системой WAYU (Исходный код)](https://github.com/ucnl/WAYU)
 * [Приложение для работы с системой WAYU (Скачать релиз)](https://github.com/ucnl/WAYU/releases/download/1.0/WAYU.zip)
