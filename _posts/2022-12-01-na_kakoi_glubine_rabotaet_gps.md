@@ -25,6 +25,8 @@ title: На какой глубине работает GPS?
 ![image](https://user-images.githubusercontent.com/24439946/227212178-b1c4a27a-08b3-439d-a74d-27f976249c1f.png)  
 ![image](https://user-images.githubusercontent.com/24439946/229112264-9757e79f-c41b-4023-8ab1-9508e1f76601.png)  
 
+> Обновление от 04.04.2023
+![image](https://user-images.githubusercontent.com/24439946/229750263-e2c62e9a-97b4-4491-84d0-41b0eb73a2fe.png)  
 
 
 ...и короткий ответ такой: 
