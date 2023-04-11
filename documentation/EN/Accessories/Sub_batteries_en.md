@@ -61,8 +61,8 @@ The assemblies are equipped with a connector designed for diving to depths of up
 | :---: | :--- | :--- | :--- |
 | 1 | 🟩 Green | 🟥 Red | U<sub>out</sub>, Charge |
 | 2 | ⬛ Black | 🟩 Green | NC |
-| 3 | ⬜ White/Transparent | ⬜ White/Transparent | Charge key |
-| 4 | 🟫 Brown | 🟨 Yellow | NC |
+| 3 | ⬜ White/Transparent | ⬜ White/Transparent | NC |
+| 4 | 🟫 Brown | 🟨 Yellow | Charge key |
 | 5 | Shield | Shield | GND |
 
 ________________  
