@@ -25,6 +25,7 @@
 * [🐙 AzimuthSuite: Пультовое приложение для Zima2 USBL (Скачать релиз)](https://github.com/ucnl/AzimuthSuite/releases/download/beta/AzimuthSuite.zip)
 * [Zima2 USBL: технический паспорт (шаблон)](/documentation/RU/Zima/Zima2_technical_passport_ru.md)
 * [Zima2K USBL: технический паспорт (шаблон)](/documentation/RU/Zima/Zima2K_technical_passport_ru.md)
+* [Zima2: История версий и изменений](/documentation/RU/Zima/Zima2_version_history_ru.md)
 
 ##### Zima
 Поставлялась с 05.2016 по 05.2022 г.
