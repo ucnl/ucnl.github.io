@@ -20,27 +20,27 @@
 
 ## DESCRIPTION
 
-**[RedWave](RedWAVE_DataBrief_en.md)** - единственная на сегодняшний день система, созданная по патентованной<sup>[*](#footnote_a1)</sup> технологии и реализующая т.н. "подводный GPS": в точности повторяя идеологию GPS и других спутниковых систем, позволяет неограниченному числу подводных объектов определять свое географическое положение одновременно. Водолазный планшет **Aquatab S** позволят использовать возможности системы **[RedWave](RedWAVE_DataBrief_en.md)** по максимуму, обеспечивая такое же удобство для работы с навигацией и картами под водой также, как и на суше.
+**[RedWave](RedWAVE_DataBrief_en.md)** - is the only system to date created using patented <sup>[*](#footnote_a1)</sup> technology and implementing the so-called "underwater GPS": exactly following the ideology of GPS and other satellite systems, it allows an unlimited number of underwater objects to determine their geographical position simultaneously. The **Aquatab S** diving tablet will allow you to use the **[RedWave](RedWAVE_DataBrief_en.md)** system to the maximum, providing the same convenience for working with navigation and maps underwater as well as on land.
 
-**[Aquatab S](https://duslate.com/products/aquatab-s/)** — это полноценный подводный планшетный компьютер, имеющий компактный размер, с полнофункциональным экраном для ввода и отображения информации, который работает со специальным запатентованным стилусом или специальной накладкой на перчатку, что позволяет дайверам работать в перчатках и очень точно вводить данные, нажимать маленькие иконки на рабочем столе, рисовать любые схемы или делать заметки.
+**[Aquatab S](https://duslate.com/products/aquatab-s/)** — it is a complete underwater tablet computer in a compact size, with a full screen for entering and displaying information, which works with a special patented stylus or a special glove pad, which allows divers to work with gloves and very accurately enter data, press small icons on the desktop, draw any diagrams or take notes.
 
-В качестве основы для **[Aquatab S](https://duslate.com/products/aquatab-s/)** может быть применена модифицированная версия современных смартфонов Samsung Galaxy Note 10 lite, Samsung Galaxy Note 20 Ultra или Samsung Galaxy S21 Ultra по выбору покупателя. Такое решение позволяет запускать любые приложения для ОС Android, а выбор конкретной модели смартфона зависит от требований покупателя к производительности, памяти, разрешению дисплея и камеры.
+**[Aquatab S](https://duslate.com/products/aquatab-s/)** can be based on a modified version of modern smartphones Samsung Galaxy Note 10 lite, Samsung Galaxy Note 20 Ultra or Samsung Galaxy S21 Ultra at the choice of the buyer. This solution allows you to run any application for the Android OS, and the choice of a specific smartphone model depends on the buyer's requirements for performance, memory, display resolution and camera.
 
-Одно из самых больших преимуществ — наличие задней камеры, обеспечивающей высокое разрешение фото и видеосъемки.
+One of the biggest advantages is the presence of a rear camera that provides high resolution photos and videos that can be taken underwater during dives.
 
-**[Aquatab S](https://duslate.com/products/aquatab-s/)** — это устройство без кнопок, что исключает риск протечки воды. Чтобы включить его, необходимо прикоснуться к дисплею с помощью магнита, размещенного в стилусе, и датчик, установленный внутри планшета, активирует устройство. Кроме того, он оснащен дополнительным аккумулятором и обеспечивает более 12 часов непрерывной работы, чего более чем достаточно для подводных работ.
+**[Aquatab S](https://duslate.com/products/aquatab-s/)** is a device without buttons, which eliminates the risk of water leakage. To turn it on, you need to touch the display with the stylus, that has a built-in magnet, and a sensor installed inside the tablet activates the device. In addition, it is equipped with an additional battery and provides more than 12 hours of continuous operation, which is more than enough for underwater work.
 
-Корпус **[Aquatab S](https://duslate.com/products/aquatab-s/)** выполнен из специального сплава алюминия, а дисплей защищен ударопрочным стеклом, которое защищает устройство от случайного повреждения острыми или твердыми предметами. Для дополнительной защиты стекла от царапин целесообразно использовать специальное защитное покрытие (пленку).
+The body of the **[Aquatab S](https://duslate.com/products/aquatab-s/)** is made of a special aluminum alloy and the display is protected by an impact-resistant glass that protects the device from accidental damage from sharp or hard objects. For additional protection of glass from scratches, it is advisable to use a special protective coating (film).
 
-Подводный планшет **[Aquatab S](https://duslate.com/products/aquatab-s/)** имеет внутри специально разработанный предустановленный модуль, обеспечивающий получение пакетных данных с навигационного приемника, который позволяет дайверам использовать GPS-навигацию и отмечать точное местоположение объектов на предварительно загруженных офлайн-картах или геолокацию самого дайвера под водой. Функция подводной GPS-навигации работает как неотъемлемая часть системы, которая включает в себя легкие плавучие буи **[RedBase](RedBASE_Specification_en.md)** и акустический навигационный приемник **[RedNode](RedNODE_Specification_en.md)**, подключенный к **[Aquatab S](https://duslate.com/products/aquatab-s/)**.
+The underwater tablet **[Aquatab S](https://duslate.com/products/aquatab-s/)** allows divers to use GPS navigation and mark the exact location of objects on preloaded offline maps or the geolocation of the diver himself **underwater**. The underwater GPS navigation function works as an integral part of the system, which includes lightweight floating buoys **[RedBase](RedBASE_Specification_en.md)** and an acoustic navigation receiver **[RedNode](RedNODE_Specification_en.md)** connected to **[Aquatab S](https://duslate.com/products/aquatab-s/)**.
 
 Features depend on features of a device used in **[Aquatab S](https://duslate.com/products/aquatab-s/)**:
 * Samsung Galaxy Note 10 lite
 * Samsung Galaxy Note 20 Ultra
 * Samsung Galaxy S21 Ultra
 
-С характеристиками смартфонов можно детально ознакомиться на сайте производителя.
-Ниже указаны характеристики для версии планшета на основе Samsung Galaxy Note 10 lite.
+The characteristics of smartphones can be found in detail on the manufacturer's website.
+Below are the specifications for the tablet version based on the Samsung Galaxy Note 10 lite.
 
 _________
 <a name="footnote_a1"><sup>*</sup></a> Patents US10989815B2, WO2017044012A1, EP3349040A4, RU2599902C1.  
