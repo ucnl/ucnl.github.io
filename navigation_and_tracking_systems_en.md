@@ -54,6 +54,7 @@ May 2016 - May 2022
 * [Device specification: RedBASE - GNSS-equipped sonobuoy](/documentation/EN/RedWAVE/RedBASE_Specification_en.md)
 * [Device specification: RedNODE - navigation receiver for ROVs and AUVs](/documentation/EN/RedWAVE/RedNODE_Specification_en.md)
 * [Device specification: RedNAV - navigation receiver for divers](/documentation/EN/RedWAVE/RedNAV_Specification_en.md)
+* [Device specification: Aquatab S - diver's tablet](/documentation/EN/RedWAVE/Aquatab_s_specification_en.md)
 * [Communication protocol description: RedNODE](/documentation/EN/RedWAVE/RedWAVE_Protocol_Specification_en.md)
 * [User's manual: RedWAVE](/documentation/EN/RedWAVE/RedWAVE_Users_Manual_en.md)
 * [User's manual: RedNav Host application](/documentation/EN/RedWAVE/RedNAV_Host_Users_Manual_en.md)
