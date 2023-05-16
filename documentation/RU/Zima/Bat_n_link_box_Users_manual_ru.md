@@ -2,7 +2,7 @@
 
 <div style="page-break-after: always;"></div>
 
-| ![logo](/documentation/sm_logo.png) | ![Bat&Link Box](/documentation/batnlinkbox.png) |
+| ![logo](/documentation/sm_logo.png) | ![Bat&Link Box](/documentation/batlink_w_qr.png) |
 | :---: | ---: |
 | [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **Bat & Link Box** - источник питания и преобразователь интерфейса <br/> Руководство пользователя |
 
