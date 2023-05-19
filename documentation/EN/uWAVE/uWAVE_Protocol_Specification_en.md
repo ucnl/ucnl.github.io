@@ -433,7 +433,7 @@ Sentence format: **`$PUWVL,x,x*hh <CR><LF>`**
 | :--- | :--- |
 | $	| Sentence start '$' |
 | PUWV | UWV |
-| K | Sentence identifier |
+| L | Sentence identifier |
 | target_ptAddress | Address of a remote modem, 0 .. 254 |
 | dataID | Requested paramter ID (0 - depth, 1 - temperature, 2 - supply voltage) |
 | *	| Checksum separator NMEA |
@@ -449,7 +449,7 @@ Sentence format: **`$PUWVM,x,x,x.x,x.x,x.x*hh <CR><LF>`**
 | :--- | :--- |
 | $	| Sentence start '$' |
 | PUWV | UWV |
-| K | Sentence identifier |
+| M | Sentence identifier |
 | target_ptAddress | Address of a remote modem, 0 .. 254 |
 | dataID | Requested paramter ID (0 - depth, 1 - temperature, 2 - supply voltage) |
 | dataValue | Requested paramter value |
