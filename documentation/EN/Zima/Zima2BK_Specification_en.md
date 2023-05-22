@@ -12,7 +12,7 @@
 * **Operating range up to 3000<sup>[1](#footnote1)</sup> m**
 * **Reliable and noise-immune technology of digital broadband acoustic communication**
 * **Subscribers code division - up to 16 responders**
-* **Low power consumption (Rx/Tx) 0.33/25 W**
+* **Low power consumption (Rx/Tx) 0.5/10 W**
 * **Patented monoblock design**
 * **Built-in depth/temperature sensor**
 
@@ -52,6 +52,7 @@ Extremely small size, low power consumption and ease of use make the direction f
 | RATED STARTUP TIME | 100 msec |
 | WORKING TEMPERATURE RANGE | -5 .. 50 °C |
 | BATTERY LIFE<sup>[4](#footnote4)</sup> (WHEN SUPPLIED FROM [BAT&LINK BOX](Bat_n_link_box_Specification_en.md)) | 8 h |
+| POWER CONSUMPTION (Rx/Tx) | 0.5 / 10 W |
 | INTERFACE | USB(COM) 9600 bit/s |
 | COMMUNICATION PROTOCOL | NMEA 0183 [PAZM](Zima2_Protocol_Specification_en.md) |
 | CABLE LENGTH<sup>[5](#footnote5)</sup> | 10 m |
