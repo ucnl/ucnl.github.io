@@ -12,7 +12,7 @@
 * **Operating range up to 3000<sup>[1](#footnote1)</sup> m**
 * **Reliable and noise-immune technology of digital broadband acoustic communication**
 * **Subscribers code division - up to 16 responders**
-* **Low power consumption (Rx/Tx) 0.33/25 W**
+* **Low power consumption (Rx/Tx) 0.33/10 W**
 * **Patented monoblock design**
 * **Built-in depth/temperature sensor**
 
@@ -44,6 +44,7 @@ The device is designed to be placed on an underwater object in order to determin
 | SUPPLY VOLTAGE | 12 V |
 | DATA LINES VOLTAGE | 0 .. 3.3 V |
 | WORKING TEMPERATURE RANGE | -5 .. 50 °C |
+| POWER CONSUMPTION (Rx/Tx) | 0.33 / 10 W |
 | INTERFACE | USB(COM) 9600 bit/s |
 | PROTOCOL | NMEA 0183 [PAZM](Zima2_Protocol_Specification_en.md) |
 | CABLE LENGTH<sup>[4](#footnote4)</sup> | 0.5 m |
