@@ -13,7 +13,27 @@ title: На какой глубине работает GPS?
 
 Это вообще не что-то из ряда вон выходящее, мы с коллегами подобное наблюдаем с завидной регулярностью:
 
-Пруфы:
+Пруфы:  
+
+> Обновление от 05.06.2023
+
+![image](https://github.com/ucnl/ucnl.github.io/assets/24439946/c0efb779-9417-43ed-871f-ddfae544a5b0)  
+
+> Обновление от 18.05.2023
+
+![image](https://github.com/ucnl/ucnl.github.io/assets/24439946/0eeb29de-448d-4a1a-ad0a-a73a5a08a518)
+  
+> Обновление от 04.04.2023  
+
+![image](https://user-images.githubusercontent.com/24439946/229750263-e2c62e9a-97b4-4491-84d0-41b0eb73a2fe.png)  
+
+> Обновление от 23.03.2023  
+
+![image](https://user-images.githubusercontent.com/24439946/227211922-6bacd1c4-9731-4bc0-8270-bd240d454a60.png)  
+![image](https://user-images.githubusercontent.com/24439946/227212178-b1c4a27a-08b3-439d-a74d-27f976249c1f.png)  
+![image](https://user-images.githubusercontent.com/24439946/229112264-9757e79f-c41b-4023-8ab1-9508e1f76601.png)  
+
+> И первичный набор, побудивший написать этот пост:  
 
 ![image](https://user-images.githubusercontent.com/24439946/204535390-0123b1b7-1d5e-4758-a9d9-7eda5fc5496b.png)  
 ![image](https://user-images.githubusercontent.com/24439946/204535418-435887f6-9ee4-4391-be9e-824e3a2645a3.png)  
@@ -22,20 +42,10 @@ title: На какой глубине работает GPS?
 ![image](https://user-images.githubusercontent.com/24439946/204535612-5922a902-454c-4830-bedd-db7cdae49984.png)  
 ![image](https://user-images.githubusercontent.com/24439946/204535452-b6dae5bb-a9e6-47c8-81a0-40bba7f3d8d6.png)  
 
-> Обновление от 23.03.2023  
 
-![image](https://user-images.githubusercontent.com/24439946/227211922-6bacd1c4-9731-4bc0-8270-bd240d454a60.png)  
-![image](https://user-images.githubusercontent.com/24439946/227212178-b1c4a27a-08b3-439d-a74d-27f976249c1f.png)  
-![image](https://user-images.githubusercontent.com/24439946/229112264-9757e79f-c41b-4023-8ab1-9508e1f76601.png)  
 
-> Обновление от 04.04.2023  
 
-![image](https://user-images.githubusercontent.com/24439946/229750263-e2c62e9a-97b4-4491-84d0-41b0eb73a2fe.png)  
 
-> Обновление от 18.05.2023
-
-![image](https://github.com/ucnl/ucnl.github.io/assets/24439946/0eeb29de-448d-4a1a-ad0a-a73a5a08a518)
-  
 
 
 ...и короткий ответ такой: 
