@@ -29,9 +29,6 @@
 | CABLE DIAMETER | 5 +/- 0.5 mm |
 | WORKING TEMPERATURE RANGE | -40..+60 °С |
 
-* As an option, antennas can be supplied with pre-amplifier with following gains: **100**, **1000**, **10000**
-* As an option, antennas can be supplied with a band-pass filter with default band **10..30 kHz**. The band can be changed by a special request.
-
 <div style="page-break-after: always;"></div>
 
 ## DRAWINGS
