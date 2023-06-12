@@ -50,7 +50,7 @@ If you change these settings just restart (disconnect power supply, wait 1-2 sec
 
 | Description | Status |
 | :--- | :--- |
-| Devices accepts all hexadecimal values only in upper-case. This affects all packet mode related commands | Not fixed |
+| Device accepts all hexadecimal values only in upper-case. This affects all packet mode related commands | Not fixed |
 
 ________  
                     
