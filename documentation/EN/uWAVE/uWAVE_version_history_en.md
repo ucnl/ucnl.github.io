@@ -12,13 +12,13 @@
 
 ## 0. Changes and versions
 
-| Actual FW version | **uWave [JULY] 1.32** from 18-OCT-2022 |
+| Actual FW version | **uWave [JULY] 1.33** from 12-JUN-2023 |
 | :--- | :--- |
 | | |
   
-  
 | Date | Firmware version | Description |
 | :--- | :--- | :--- |
+| 12-JUN-2023 | System: (all) <br/> Core: uWAVE [JULY] v1.33 | - BUGFIX: fixed a bug with packet processing and the absence of a message about unsuccessful transmission in some cases |
 | 18-OCT-2022 | System: (all) <br/> Core: uWAVE [JULY] v1.32 | - BUGFIX: Fixed a bug due to which the device could not accept for transmission packets larger than 54 bytes |
 | 31-JAN-2022 | System: (all) <br/> Core: uWAVE [JULY] v1.31 | - BUGFIX: Fixed a bug due to which the message about the delivered package came along with the ACK message to the previous command <br/> - The size of firmware has been reduced by almost 4 times due to extensive refactoring |
 | 10-DEC-2021 | System: (all, except uWave USBL) <br/> Core: uWAVE [JULY] v1.30 | From this version, with the active setting of **IsCmdModeByDefault**, the CMD wire becomes not an input, but an output. It transmits a digital strobe signal synchronized with the moment of emission and reception. |
@@ -45,6 +45,12 @@ A modem that receives a message in the packet mode immediately sends the ACK, so
 
 ### 1.4. Code channels settings update should be followed with device restart
 If you change these settings just restart (disconnect power supply, wait 1-2 seconds and connect power supply) the device to apply new settings.
+
+## 2. Known issues
+
+| Description | Status |
+| :--- | :--- |
+| Devices accepts all hexadecimal values only in upper-case. This affects all packet mode related commands | Not fixed |
 
 ________  
                     
