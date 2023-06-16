@@ -10,12 +10,12 @@
 
 * **Extremely small size and weight**
 * **Can be used in underwater wireless sensors networks**
-* **Communication range is up to 1000<sup>[1](#footnote1),[*](#footnote_a1)</sup> м**
+* **Communication range is up to 1000<sup>[1](#footnote1),[*](#footnote_a1)</sup> m**
 * **Reliable data transmission on speed up to 634<sup>[2](#footnote2)</sup> bit/s**
 * **Code subscribers division**
 * **Signal propagation time measurement feature**
 * **State of the art digital broadband underwater acoustic communication technology**
-* **Low power consumption (Rx/Tx) 0.33/6 Вт**
+* **Low power consumption (Rx/Tx) 0.33/6 W**
 * **Easy and open interfacing protocol**
 * **Built-in pressure/temperature sensor**
 * **Packet mode with guaranteed delivery (ALO - At-least-once)**
