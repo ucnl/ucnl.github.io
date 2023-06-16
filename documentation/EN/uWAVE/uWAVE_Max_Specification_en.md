@@ -53,7 +53,7 @@ _________
 | DATA LINES VOLTAGE | 0 .. 3.3 V |
 | DATA LINES OUTPUT IMPEDANCE | 1 kOhm |
 | BANDWIDTH | 10 .. 30 kHz |
-| MAX. ACOUSTIC SOURCE LEVEL (in band) | 180 dB re 1 uPa @ 1 m |
+| MAX. ACOUSTIC SOURCE LEVEL (in band) | 175 dB re 1 uPa @ 1 m |
 | BIT ERROR RATE | 10<sup>-6</sup> |
 | SNR<sup>[5](#footnote5)</sup> | -2 дБ |
 | MAX RELATIVE VELOCITY | +/- 1 m/s |
