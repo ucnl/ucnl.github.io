@@ -15,7 +15,7 @@
 |      | ![](https://raw.githubusercontent.com/ucnl/ucnl.github.io/master/documentation/RT_1_332820_1.png) | ![](https://raw.githubusercontent.com/ucnl/ucnl.github.io/master/documentation/utro_pcb_rt_1_524525_1_2.png) | ![](https://raw.githubusercontent.com/ucnl/ucnl.github.io/master/documentation/def_modem_black.png) | ![](https://raw.githubusercontent.com/ucnl/ucnl.github.io/master/documentation/def_zima_b_ant.png) |
 | Status | **Active** | **Active** | **Active** | **Active** |
 | Max. acoustic range, m | 1000<sup>[1](#footnote1)</sup> | 3000<sup>[1](#footnote1),[2](#footnote2)</sup> | 3000<sup>[1](#footnote1),[2](#footnote2)</sup> | 3000<sup>[1](#footnote1),[2](#footnote2)</sup> |
-| Baudrate, bps | 78 / 156<sup>[3](#footnote3)</sup> / 314<sup>[3](#footnote3)</sup> | 78 / 156<sup>[3](#footnote3)</sup> / 314<sup>[3](#footnote3)</sup> | 78 / 156<sup>[3](#footnote3)</sup> / 314<sup>[3](#footnote3)</sup> | 78 / 156<sup>[3](#footnote3)</sup> / 314<sup>[3](#footnote3)</sup> |
+| Baudrate, bps | 78 / 156<sup>[3](#footnote3)</sup> / 314<sup>[3](#footnote3)</sup> / 634<sup>[3](#footnote3)</sup> | 78 / 156<sup>[3](#footnote3)</sup> / 314<sup>[3](#footnote3)</sup> / 634<sup>[3](#footnote3)</sup> | 78 / 156<sup>[3](#footnote3)</sup> / 314<sup>[3](#footnote3)</sup> / 634<sup>[3](#footnote3)</sup> |78 / 156<sup>[3](#footnote3)</sup> / 314<sup>[3](#footnote3)</sup> / 634<sup>[3](#footnote3)</sup> |
 | Dimensions, mm | **Ф41 x 45** | 80 х 43 х 29 (PCB) <br/> Ф64 x 62 (transducer) | Ф64 x 62 | Ф64 х 128 |
 | Weight (dry), g | **160** | (PCB) 54 <br/> (transducer) 360 | 360 | 440 |
 | Depth rating, m | 300 | **400 / 1000** <sup>[4](#footnote4),[5](#footnote5)</sup> | 300 | 300 |
@@ -31,11 +31,11 @@
 All devices of the family can work with alternative firmware supporting different communication speed modes.
 The modes are not compatible with each other. Mode change is made by [flashing the device](uWAVE_FW_Updating_en.md).
 
-|      | STRONG | EASY   | LITE   |
-| :--- | :---:  | :---:  | :---:  |
-| Baudrate, bps | 78 | 156 | 314 |
-| Max. acoustic range, m | 1000/3000<sup>[1](#footnote1),[2](#footnote2)</sup> | 700<sup>[1](#footnote1)</sup> | 500<sup>[1](#footnote1)</sup> |
-| Number of code channels | 20 | 14 | 7 | 
+|      | STRONG | EASY   | LITE   | HASTE |
+| :--- | :---:  | :---:  | :---:  | :---:  |
+| Baudrate, bps | 78 | 156 | 314 | 634 |
+| Max. acoustic range, m | 1000/3000<sup>[1](#footnote1),[2](#footnote2)</sup> | 800<sup>[1](#footnote1)</sup> | 700<sup>[1](#footnote1)</sup> | 500<sup>[1](#footnote1)</sup> |
+| Number of code channels | 20 | 14 | 7 | 3 |
 
 
 <div style="page-break-after: always;"></div>
