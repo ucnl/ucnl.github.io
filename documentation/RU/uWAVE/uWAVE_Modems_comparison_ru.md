@@ -15,7 +15,7 @@
 |      | ![](/documentation/RT_1_332820_1.png) | ![](/documentation/utro_pcb_rt_1_524525_1_2.png) | ![](/documentation/def_modem_black.png) | ![](/documentation/def_zima_b_ant.png) |
 | Текущий статус | **Поставляется** | **Поставляется** | **Поставляется** | **Поставляется** |
 | Максимальная дальность связи, м | 1000<sup>[1](#footnote1)</sup> | 3000<sup>[1](#footnote1),[2](#footnote2)</sup> | 3000<sup>[1](#footnote1),[2](#footnote2)</sup> | 3000<sup>[1](#footnote1),[2](#footnote2)</sup> |
-| Скорость передачи данных, бит/с | 78 / 156<sup>[3](#footnote3)</sup> / 314<sup>[3](#footnote3)</sup> | 78 / 156<sup>[3](#footnote3)</sup> / 314<sup>[3](#footnote3)</sup> | 78 / 156<sup>[3](#footnote3)</sup> / 314<sup>[3](#footnote3)</sup> | 78 / 156<sup>[3](#footnote3)</sup> / 314<sup>[3](#footnote3)</sup> |
+| Скорость передачи данных, бит/с | 78 / 156<sup>[3](#footnote3)</sup> / 314<sup>[3](#footnote3)</sup> / 634<sup>[3](#footnote3)</sup> | 78 / 156<sup>[3](#footnote3)</sup> / 314<sup>[3](#footnote3)</sup> / 634<sup>[3](#footnote3)</sup> | 78 / 156<sup>[3](#footnote3)</sup> / 314<sup>[3](#footnote3)</sup> / 634<sup>[3](#footnote3)</sup> | 78 / 156<sup>[3](#footnote3)</sup> / 314<sup>[3](#footnote3)</sup> / 634<sup>[3](#footnote3)</sup> |
 | Габариты, мм | **Ф41 x 45** | 80 х 43 х 29 (плата) <br/> Ф64 x 62 (антенна) |  Ф64 x 62 | Ф64 х 128 |
 | Вес (сухой), г | **160** | 54 (плата) <br/> 360 (aнтенна) | 360 | 440 |
 | Максимальная рабочая глубина, м | 300 | **400 / 1000** <sup>[4](#footnote4),[5](#footnote5)</sup> | 300 | 300 |
@@ -31,11 +31,11 @@
 Все устройства семейства могут работать с альтернативными прошивками, поддерживающие разные скоростные режимы связи.
 Режимы не совместимы между собой. Смена режима производится путем [перепрошивки устройства](uWAVE_FW_Updating_ru.md).
 
-|      | STRONG | EASY   | LITE   |
-| :--- | :---:  | :---:  | :---:  |
-| Скорость передачи, бит/с | 78 | 156 | 314 |
-| Максимальная дальность, м | 1000/3000<sup>[1](#footnote1),[2](#footnote2)</sup> | 700<sup>[1](#footnote1)</sup> | 500<sup>[1](#footnote1)</sup> |
-| Число кодовых каналов | 20 | 14 | 7 | 
+|      | STRONG | EASY   | LITE   | HASTE |
+| :--- | :---:  | :---:  | :---:  | :---:  |
+| Скорость передачи, бит/с | 78 | 156 | 314 | 634 |
+| Максимальная дальность, м | 1000/3000<sup>[1](#footnote1),[2](#footnote2)</sup> | 800<sup>[1](#footnote1)</sup> | 700<sup>[1](#footnote1)</sup> | 500<sup>[1](#footnote1)</sup> |
+| Число кодовых каналов | 20 | 14 | 7 | 3 |
 
 
 <div style="page-break-after: always;"></div>
