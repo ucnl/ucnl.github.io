@@ -11,7 +11,7 @@
 * **Simultaneous data transmission & USBL navigation**
 * **Extremely small size and weight**
 * **Can be used in underwater wireless sensors networks**
-* **Communication range is up to 3000<sup>[1](#footnote1) m**
+* **Communication range is up to 3000<sup>[1](#footnote1)</sup> m**
 * **Reliable data transmission on speed up to 634<sup>[2](#footnote2)</sup> bit/s**
 * **Code subscribers division**
 * **Signal propagation time measurement feature**
