@@ -15,7 +15,7 @@
 * **Code subscribers division**
 * **Signal propagation time measurement feature**
 * **State of the art digital broadband underwater acoustic communication technology**
-* **Low power consumption (Rx/Tx) 0.33/25 W**
+* **Low power consumption (Rx/Tx) 0.33/15 W**
 * **Easy and open interfacing protocol**
 * **Built-in pressure/temperature sensor**
 * **Packet mode with guaranteed delivery (ALO - At-least-once)**
@@ -48,12 +48,12 @@ _________
 | DEPTH RATING | 300 m |
 | MAX. ACOUSTIC COMMUNICATION RANGE<sup>[1](#footnote1)</sup> | 3000 m |
 | PAYLOAD DATA RATE<sup>[2](#footnote2)</sup> | 78/156/314/634 bps |
-| POWER CONSUMPTION Rx/Tx | 0.33/25 W |
+| POWER CONSUMPTION Rx/Tx | 0.33/15 W |
 | SUPPLY VOLTAGE<sup>[3](#footnote3),[4](#footnote4)</sup> | 5 .. 12 V |
 | DATA LINES VOLTAGE | 0 .. 3.3 V |
 | DATA LINES OUTPUT IMPEDANCE | 1 kOhm |
 | BANDWIDTH | 10 .. 30 kHz |
-| MAX. ACOUSTIC SOURCE LEVEL (in band) | 169 dB re 1 uPa @ 1 m |
+| MAX. ACOUSTIC SOURCE LEVEL (in band) | 180 dB re 1 uPa @ 1 m |
 | BIT ERROR RATE | 10<sup>-6</sup> |
 | SNR<sup>[5](#footnote5)</sup> | -2 дБ |
 | MAX RELATIVE VELOCITY | +/- 1 m/s |
