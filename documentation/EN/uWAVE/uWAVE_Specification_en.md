@@ -74,7 +74,7 @@ _________
 | DEPTH SENSOR RESOLUTION (remote)<sup>[8](#footnote8)</sup> | 0.1 m |
   
 ________________
-<a name="footnote1"><sup>1</sup></a> A parameter that determines the maximum range at which a signal can be received based on the electro-acoustic parameters of the transmitter and receiver, spatial decrease in the intensity of sound energy, attenuation in the medium and acoustic noise level. In 78 bps speed mode.
+<a name="footnote1"><sup>1</sup></a> A parameter that determines the maximum range at which a signal can be received based on the electro-acoustic parameters of the transmitter and receiver, spatial decrease in the intensity of sound energy, attenuation in the medium and acoustic noise level. In 78 bps speed mode.  
 <a name="footnote2"><sup>2</sup></a> **78 bps** speed mode used as a default. This mode provide the maximum noise and multipath immunity, reliability and number of code channels. Different speed modes are not compatible, and can be set by [reflashing](uWAVE_FW_Updating_en.md) the modem's firmware.  
 <a name="footnote3"><sup>3</sup></a> The maximum output power can be achieved with 12 V supply voltage only.  
 <a name="footnote4"><sup>4</sup></a> The device has a built-in overvoltage protection of the amplifying circuit. At voltages above 12.8-13 volts, the device does not turn on the power amplifier, i.e. it does not allow data transfer.  
