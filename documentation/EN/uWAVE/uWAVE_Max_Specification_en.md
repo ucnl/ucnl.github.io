@@ -45,7 +45,6 @@ _________
 | DIMENSIONS (Ф х h)                     | 64 x 62 mm |
 | WEIGHT (dry)                           | 0.36 kg |
 | DEPTH RATING                           | 300 m |
-| DEPTH RATING | 300 m |
 | MAX. ACOUSTIC COMMUNICATION RANGE<sup>[1](#footnote1)</sup> | 3000 m |
 | PAYLOAD DATA RATE<sup>[2](#footnote2)</sup> | 78/156/314/634 bps |
 | POWER CONSUMPTION Rx/Tx | 0.33/15 W |
