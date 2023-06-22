@@ -76,7 +76,7 @@ _"Всегда ведь есть какое-то "но", правда?" (С)_
 На этом разрешите откланяться,
 
 Ваш, до **глубины** души,  
-@AlekUnderwater
+[@AlekUnderwater](https://github.com/AlekUnderwater)
 
 
 
