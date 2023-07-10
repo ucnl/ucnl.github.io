@@ -2,7 +2,7 @@
 
 <div style="page-break-after: always;"></div>
 
-| ![logo](/documentation/sm_logo.png) | ![qr](/documentation/sb_23_64_li_msds_ru_qr.png)  |
+| ![logo](/documentation/sm_logo.png) | ![qr](/documentation/sb_24_48_lf_msds_ru_qr.png)  |
 | :---: | ---: |
 | [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | Аккумулятор литий-железофосфатный <br/> в составе сборки SB-24-48-LF ПМВР.134098.002 <br/> Паспорт безопасности химической продукции (MSDS) |
 | | Версия 1 <br/> 10.06.2023 |
