@@ -39,7 +39,7 @@
 | ВРЕМЯ ЗАРЯДА, ч | уточняется | уточняется | уточняется |
 | САМОРАЗРЯД, %/год | 3 | 20 | 3 |
 | ВКЛЮЧЕНИЕ ПРИ ПОГРУЖЕНИИ В ВОДУ | ✔ | ✔ | ✔ |
-| MSDS (Паспорт безопасности химической продукции) | [SB-24-48-LI MSDS RU](/documentation/RU/Misc/SB_24_48_LF_MSDS_ru) | [SB-23-64-LI MSDS RU](/documentation/RU/Misc/SB_23_64_LI_MSDS_ru) | |
+| MSDS (Паспорт безопасности химической продукции) | [SB-24-48-LF MSDS RU](/documentation/RU/Misc/SB_24_48_LF_MSDS_ru) | [SB-23-64-LI MSDS RU](/documentation/RU/Misc/SB_23_64_LI_MSDS_ru) | |
 
 
 ## ДОПОЛНИТЕЛЬНЫЕ ПАРАМЕТРЫ
