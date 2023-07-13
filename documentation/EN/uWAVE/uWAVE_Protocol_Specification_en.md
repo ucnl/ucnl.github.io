@@ -232,6 +232,8 @@ Sentence format: **`$PUWV6,x,x,x,x,x,x*hh <CR><LF>`**
 | hh	| Checksum NMEA |
 | \<CR\>\<LF\> | Sentence end |
 
+If the parameter **PeriodMs** equals to 0 but one or more parameters **IsPressure/IsTemperature/IsDepth/IsVCC** is/are set, the device will send [IC_D2H_AMB_DTA](#28-ic_h2d_amb_dta) message with the requested parameters once.
+
 ### 2.8. IC_H2D_AMB_DTA
 Ambient parameters and supply voltage.  
 
