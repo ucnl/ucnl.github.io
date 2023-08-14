@@ -18,7 +18,7 @@
 | ![](/documentation/wayu_trionix_10_AUG_valaam_zoomin.png) |
 | ![](/documentation/wayu_trionix_11_AUG_valaam.png) |
 | ![](/documentation/wayu_trionix_11_AUG_valaam_zoomin.png) |
-| <a href="https://youtu.be/D0yE_BCyEi8?t=927" target="_blank"><img scr="http://img.youtube.com/vi/D0yE_BCyEi8?t/0.jpg" alt="WAYU Underwater acoustic tracking system on Trionix ROV. Ladoga lake, 10 AUG 2023." width="240" height="180" border="10"/></a> |
+| [![WAYU Underwater acoustic tracking system on Trionix ROV. Ladoga lake, 10 AUG 2023. Navigation software screen capture](https://img.youtube.com/vi/D0yE_BCyEi8?t=927/0.jpg)](https://youtu.be/D0yE_BCyEi8?t=927) |
 
 | Первое испытание системы (в статике, GIB и пингер расположены на поверхности льда) |
 | :--- |
