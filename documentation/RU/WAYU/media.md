@@ -7,6 +7,19 @@
 
 ## WAYU медиаматериалы: видео, треки, и т.п.
 
+| Работа системы на ТНПА Trionix |
+| :--- |
+| 10-11 Августа 2023 |
+| [Ладожское озеро, о. Никоновский (Yandex карты)](https://yandex.ru/maps/-/C-Fr5nA) |
+| [Скачать трек 1 (KML)](/documentation/WAYU_Trionix_10_AUG_Valaam.kml) |
+| [Скачать трек 2 (KML)](/documentation/WAYU_Trionix_11_AUG_Valaam.kml) |
+| ![](/documentation/wayu_trionix_10_11_AUG_valaam.png) |
+| ![](/documentation/wayu_trionix_10_AUG_valaam.png) |
+| ![](/documentation/wayu_trionix_10_AUG_valaam_zoomin.png) |
+| ![](/documentation/wayu_trionix_11_AUG_valaam.png) |
+| ![](/documentation/wayu_trionix_11_AUG_valaam_zoomin.png) |
+
+
 | Первое испытание системы (в статике, GIB и пингер расположены на поверхности льда) |
 | :--- |
 | 09 Декабря 2020 |
