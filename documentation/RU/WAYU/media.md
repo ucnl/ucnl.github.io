@@ -18,6 +18,8 @@
 | ![](/documentation/wayu_trionix_10_AUG_valaam_zoomin.png) |
 | ![](/documentation/wayu_trionix_11_AUG_valaam.png) |
 | ![](/documentation/wayu_trionix_11_AUG_valaam_zoomin.png) |
+| ![](https://youtu.be/D0yE_BCyEi8) |
+
 
 
 | Первое испытание системы (в статике, GIB и пингер расположены на поверхности льда) |
