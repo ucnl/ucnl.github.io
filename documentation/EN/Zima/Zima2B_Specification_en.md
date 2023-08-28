@@ -43,7 +43,7 @@ Extremely small size, low power consumption and ease of use make the direction f
 | SLANT RANGE RESOLUTION | 0.15 m |
 | MAX. TILT COMPENSATED BY THE BUILT-IN INCLINOMETER RELATED TO VERTICAL AXIS (pitch/roll) | +/- 30° |
 | WORKING VERTICAL ANGLES (RELATIVE TO HORIZONTAL PLANE)<sup>[3](#footnote3)</sup> | 0 .. 85° |
-| CARRIER FREQUENCY | 20100 Hz | <!-- | BANDWIDTH | 10 .. 30 kHz | -->
+| CARRIER FREQUENCY | 20100 Hz |
 | BUILT-IN TEMPERATURE SENSOR ACCURACY | 0.1°С |
 | BIT ERROR RATE | 10<sup>-6</sup> |
 | SNR<sup>[2](#footnote2)</sup> | -3 dB |
@@ -56,7 +56,8 @@ Extremely small size, low power consumption and ease of use make the direction f
 | COMMUNICATION PROTOCOL | NMEA 0183 [PAZM](Zima2_Protocol_Specification_en.md) |
 | CABLE LENGTH<sup>[5](#footnote5)</sup> | 10 m |
 | MAX. NUMBER OF RESPONDERS | 16 |
-  
+
+<!-- | BANDWIDTH | 10 .. 30 kHz | -->
 ________________
 <a name="footnote1"><sup>1</sup></a> A parameter that determines the maximum range at which a signal can be received, based on electro-acoustic parameters of the transmitter and receiver, spatial decrease in the intensity of sound energy, attenuation in the medium and the acoustic noise level.  
 <a name="footnote2"><sup>2</sup></a> Withoud cable and interface converter.  
