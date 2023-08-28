@@ -37,8 +37,7 @@ Extremely small size, ease of use and low power consumption make the direction f
 | DEPTH RESOLUTION | 0.6 m |
 | MAX. OPERATING RANGE<sup>[1](#footnote1)</sup> |	3000 m |
 | ACOUSIC SOURCE LEVEL |	170 dB re 1 μPa @ 1 m |
-| CARRIER FREQUENCY | 20100 Hz |
-| BANDWIDTH | 10 .. 30 kHz |
+| CARRIER FREQUENCY | 20100 Hz | <!-- | BANDWIDTH | 10 .. 30 kHz | -->
 | BUILT-IN TEMPERATURE SENSOR ACCURACY | 0.1°С |
 | BIT ERROR RATE | 10<sup>-6</sup> |
 | SNR<sup>[3](#footnote3)</sup> | -3 dB |
