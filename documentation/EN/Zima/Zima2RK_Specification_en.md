@@ -35,7 +35,6 @@ The device is designed to be placed on an underwater object in order to determin
 | MAX. OPERATING RANGE<sup>[1](#footnote1)</sup> |	3000 m |
 | ACOUSIC SOURCE LEVEL |	170 dB re 1 μPa @ 1 m |
 | CARRIER FREQUENCY | 20100 Hz |
-| BANDWIDTH | 10 .. 30 kHz |
 | BUILT-IN TEMPERATURE SENSOR ACCURACY | 0.1°С |
 | BIT ERROR RATE | 10<sup>-6</sup> |
 | SNR<sup>[3](#footnote3)</sup> | -3 dB |
@@ -49,6 +48,8 @@ The device is designed to be placed on an underwater object in order to determin
 | PROTOCOL | NMEA 0183 [PAZM](Zima2_Protocol_Specification_en.md) |
 | CABLE LENGTH<sup>[4](#footnote4)</sup> | 0.5 m |
 | MAX. NUMBER OF ADRESSES | 16 |
+
+<!-- | BANDWIDTH | 10 .. 30 kHz | -->
   
 ________________
 <a name="footnote1"><sup>1</sup></a> Without the presence of a multipath effect. A parameter that determines the maximum range at which a signal can be received, based on electro-acoustic parameters of the transmitter and receiver, spatial decrease in the intensity of sound energy, attenuation in the medium and the acoustic noise level.   
