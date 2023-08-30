@@ -37,7 +37,6 @@ Extremely small size, low power consumption and ease of use make the [Zima USBL]
 | NOMINAL DEPTH ACCURACY | 0.1 m |
 | MAX. OPERATING RANGE<sup>[1](#footnote1)</sup> |	3000 m |
 | ACOUSIC SOURCE LEVEL |	170 dB re 1 μPa @ 1 m |
-| BANDWIDTH | 6 .. 18 kHz |
 | BUILT-IN TEMPERATURE SENSOR ACCURACY | 0.1°С |
 | BIT ERROR RATE | 10<sup>-6</sup> |
 | SNR<sup>[3](#footnote3)</sup> | -3 dB |
@@ -52,6 +51,8 @@ Extremely small size, low power consumption and ease of use make the [Zima USBL]
 | SUBSCRIBER DIVISION SCHEME (commands/subscribers) | 32/23 |
 | HORIZONTAL ANGLE OF ARRIVAL ESTIMATION ACCURACY (typ.)<sup>[3](#footnote3)</sup> | 1° |
 | NOMINAL DISTANCE ESTIMATION ACCURACY<sup>[3](#footnote3)</sup> | 0.3 m |
+
+<!-- | BANDWIDTH | 6 .. 18 kHz | -->
   
 ________________
 <a name="footnote1"><sup>1</sup></a> Without the presence of a multipath effect. A parameter that determines the maximum range at which a signal can be received, based on electro-acoustic parameters of the transmitter and receiver, spatial decrease in the intensity of sound energy, attenuation in the medium and the acoustic noise level.   
