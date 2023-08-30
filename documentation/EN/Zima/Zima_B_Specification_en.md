@@ -44,7 +44,6 @@ working with autonomous and remote-controlled devices, as well as determining th
 | NOMINAL DISTANCE ESTIMATION ACCURACY | 0.3 m |
 | MAX. TILT COMPENSATED BY THE BUILT-IN INCLINOMETER RELATED TO VERTICAL AXIS (pitch/roll) | +/- 30° |
 | WORKING VERTICAL ANGLES (RELATIVE TO HORIZONTAL PLANE)<sup>[3](#footnote3)</sup> | +/-30° |
-| BANDWIDTH | 6 .. 18 kHz |
 | BUILT-IN TEMPERATURE SENSOR ACCURACY | 0.1°С |
 | BIT ERROR RATE | 10<sup>-6</sup> |
 | SNR<sup>[3](#footnote3)</sup> | -3 dB |
@@ -56,6 +55,8 @@ working with autonomous and remote-controlled devices, as well as determining th
 | PROTOCOL | NMEA 0183 [PZMA](Zima_Protocol_Specification_en.md) |
 | CABLE LENGTH<sup>[5](#footnote5)</sup> | 10 m |
 | SUBSCRIBER DIVISION SCHEME (commands/subscribers) | 32/23 |
+
+<!-- | BANDWIDTH | 6 .. 18 kHz | -->
   
 ________________
 <a name="footnote1"><sup>1</sup></a> A parameter that determines the maximum range at which a signal can be received, based on electro-acoustic parameters of the transmitter and receiver, spatial decrease in the intensity of sound energy, attenuation in the medium and the acoustic noise level.  
