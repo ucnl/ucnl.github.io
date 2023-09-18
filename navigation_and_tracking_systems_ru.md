@@ -55,6 +55,7 @@
 * [RedWave: Краткое описание](/documentation/RU/RedWAVE/RedWAVE_DataBrief_ru.md)
 * [RedWave: медиаматериалы, видео с испытаний, треки и т.п.](/documentation/RU/RedWAVE/media)
 * [RedBase (Буй-ретранслятор): Спецификация устройства](/documentation/RU/RedWAVE/RedBASE_Specification_ru.md)
+* [RedBase (Буй-ретранслятор старая версия): Спецификация устройства](/documentation/RU/RedWAVE/RedBASE_old_Specification_ru.md)
 * [RedNode (Навигационный приемник для ТНПА/АНПА): Спецификация устройства](/documentation/RU/RedWAVE/RedNODE_Specification_ru.md)
 * [RedNav (Навигационный приемник для водолазов): Спецификация устройства](/documentation/RU/RedWAVE/RedNAV_Specification_ru.md)
 * [Aquatab S (Водолазный планшет): Спецификация устройства](/documentation/RU/RedWAVE/Aquatab_s_specification_ru.md)
