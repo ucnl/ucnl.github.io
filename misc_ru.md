@@ -15,7 +15,7 @@
 | [RedPhone-DX](/documentation/RU/RedPhone/RedPhone_DX_Specification_ru.md) | [RedPhone-DX MSDS RU](/documentation/RU/Misc/RedPhone_DX_MSDS_ru.md) |
 | [Bat&Link Box](/documentation/RU/Zima/Bat_n_link_box_Specification_ru.md) | [Bat&Link Box MSDS RU](/documentation/RU/Misc/BatLinkBox_MSDS_ru.md) |
 | [RedBase (v3)](), [RWLT GIB (v3)]() | [RedBase/RWLT GIB (v3) MSDS RU](/documentation/RU/Misc/RedBase_v3_LiFEPO4_msds_ru.md) |
-| [RedBASE (v1, v2)](/documentation/RU/RedWAVE/RedBASE_Specification_ru.md), [RWLT GIB (v2)]() | [Открыть файл \(pdf\)](\documentation\msds_delta12v4_5ah.pdf) |
+| [RedBase (v1, v2)](/documentation/RU/RedWAVE/RedBASE_Specification_ru.md), [RWLT GIB (v2)]() | [Открыть файл \(pdf\)](\documentation\msds_delta12v4_5ah.pdf) |
 | [Zima-R (батарейная канистра, автономное исполнение)](/documentation/RU/Zima/Zima_R_Specification_ru.md) | [Открыть файл \(pdf\)](\documentation\material-safety-datasheet-nimh-batteries-ru-material-safety-datasheet.pdf) |
 
 
