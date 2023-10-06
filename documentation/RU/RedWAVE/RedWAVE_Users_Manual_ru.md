@@ -207,7 +207,7 @@ __________
 | |
 | :---: |
 | ![RedBASE old_topcap](/documentation/def_redbase_cover_scheme.png)|
-| **Рисунок 9 - Расположение органов управления и индикации на крышке буя [RedBASE](RedBASE_Specification_ru.md)** |
+| **Рисунок 9 - Расположение органов управления и индикации на крышке буя [RedBASE](RedBASE_old_Specification_ru.md)** |
 | _1 - тумблер питания, 2 - лампы световой индикации, 3 - разъем зарядки_ |
 
 > _**ВНИМАНИЕ!**_  
