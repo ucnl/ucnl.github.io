@@ -17,10 +17,10 @@
 | Number of positioning objects | **∞** | 1 | up to 255<sup>[1](#footnote1)</sup> | up to 16<sup>[1](#footnote1)</sup> | up to 20<sup>[1](#footnote1)</sup> | 1 | 
 | Nominal navigation data update period | 1 sec | 2 sec | at the end of each voice message from a diver | ≥ 1<sup>[2](#footnote2)</sup> sec | ≥ 3.6<sup>[2](#footnote2)</sup> sec | 2 sec |
 | Maximum work area size | 700 х 700 m  | 1500 x 1500 m | 1500 x 1500 m | Circle R = 3000 m | Circle R = 1000 m | 300 x 300 m |
-| Nominal accuracy | 2DRMS 0.84 m | 2DRMS 0.84 m | 2DRMS 1.5 m | 1° (≈17 m at a distance of 1000 m) | 2° (≈35 m at a distance of 1000 m) | 2DRMS 2 m |
+| Nominal accuracy | 2DRMS 0.84 m | 2DRMS 0.84 m | 2DRMS 0.84 m | 1° (≈17 m at a distance of 1000 m) | 2° (≈35 m at a distance of 1000 m) | 2DRMS 1.48 m |
 | Maximal depth | 300<sup>[3](#footnote3)</sup> m | 300<sup>[3](#footnote3)</sup> m | 70 m | 300 m | 300 m | 100 m |
 | Navigation data | Latitude, <br/> Longitude, <br/> Depth, <br/> Temperature, <br/> Time UTC<sup>[6](#footnote6)</sup>, <br/> Course | Latitude, <br/> Longitude, <br/> Depth<sup>[4](#footnote4)</sup>, <br/> Temperature<sup>[4](#footnote4)</sup>, <br/> Course | Latitude, <br/> Longitude | Distance, <br/> Azimuth, <br/> Depth, <br/> Battery voltage, <br/> Latitude<sup>[5](#footnote5)</sup>, <br/> Longitude<sup>[5](#footnote5)</sup> | Distance, <br/> Azimuth, <br/> Depth, <br/> Battery voltage, <br/> Latitude<sup>[4](#footnote5)</sup>, <br/> Longitude<sup>[5](#footnote4)</sup> | Latitude, <br/> Longitude, <br/> Course |
-| Maximal relative velocity | ±1.8 m/s | ±1.8 m/s | ±1.8 m/s | ±2 m/s | ±1 m/s | ±1 m/s |
+| Maximal relative velocity | ±1.8 m/s | ±1.8 m/s | ±1.8 m/s | ±2 m/s | ±1 m/s | ±2 m/s |
 | Deployment features | Requires 4 floating buoys to be deployed | Requires 4 floating buoys to be deployed | Requires 4 floating buoys to be deployed | Requires fixing the base station on a rigid rod and connecting an external GPS and compass | Requires fixing the base station on a rigid rod and connecting an external GPS and compass | Requires 4 floating buoys to be deployed |
 | Distinctive feature | - Unlimited number of simultaneously positioned devices, <br/> - Ability to connect to [AQUATAB-S](https://duslate.com/products/aquatab-s/) diver's tablet | Divers positioning simultaneously with voice transmission | Divers positioning simultaneously with voice transmission | Automatic tracking | Two-way data transmission | The most affordable solution for amateurs |
 
