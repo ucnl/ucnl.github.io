@@ -36,7 +36,6 @@ The assemblies are equipped with a connector designed for diving to depths of up
 | BATTERY TYPE | LiFePO4 | Li-Ion | LiFePO4 |
 | WORKING TEMPERATURE RANGE, °С | -10 .. 35 | 10 .. 35 | -10 .. 35 |
 | CHARGING TEMPERATURE RANGE, °С | 10 .. 35 | 10 .. 35 | 10 .. 35 |
-| CHARGE TIME, h | coming soon | coming soon | coming soon |
 | SELF DISCHARGE, %/year | 3 | 20 | 3 |
 | AUTOMATIC POWER-ON IN WATER | ✔ | ✔ | ✔ |
 | MSDS (Material safety datasheet) | | [SB-23-64-LI MSDS EN](/documentation/EN/Misc/SB_23_64_LI_MSDS_en) | |
