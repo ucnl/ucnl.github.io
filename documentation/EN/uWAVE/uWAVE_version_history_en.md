@@ -18,6 +18,7 @@
   
 | Date | Firmware version | Description |
 | :--- | :--- | :--- |
+| 22-NOV-2023 | System: (all) <br/> Core: uWAVE [JULY] v1.34 |- BUGFIX: invalid pressure/temperature readings in some rare cases |
 | 12-JUN-2023 | System: (all) <br/> Core: uWAVE [JULY] v1.33 | + 634 bps speed mode <br/>- BUGFIX: fixed a bug with packet processing and the absence of a message about unsuccessful transmission in some cases |
 | 18-OCT-2022 | System: (all) <br/> Core: uWAVE [JULY] v1.32 | - BUGFIX: Fixed a bug due to which the device could not accept for transmission packets larger than 54 bytes |
 | 31-JAN-2022 | System: (all) <br/> Core: uWAVE [JULY] v1.31 | - BUGFIX: Fixed a bug due to which the message about the delivered package came along with the ACK message to the previous command <br/> - The size of firmware has been reduced by almost 4 times due to extensive refactoring |
