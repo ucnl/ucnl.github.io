@@ -69,7 +69,7 @@ in which the transmission was performed.
 ### 3.2. Command mode
 In command mode, devices analyze data coming from the control system and interact with them within very simple 
 [NMEA-like ASCII protocol](uWAVE_Protocol_Specification_en.md). In this mode, devices allow you to send short code requests to other 
-devices: request of depth, temperature, power supply voltage and transmit 8 user commands.
+devices: request of depth, temperature, power supply voltage and transmit 9 user commands.
 Code requests have fixed lengths of request and response signals, which allows the requesting system to estimate the propagation time 
 (and slant range) to the requested system.
 
