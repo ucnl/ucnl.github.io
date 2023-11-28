@@ -70,6 +70,8 @@
 * [RedNav с навигационной панелью: 3D-модель (STEP)](/documentation/RedNav_with_compass_3D.step) 
 * [Приложение для работы с навигационными приемниками UGPSHub (Исходный код)](https://github.com/ucnl/UGPSHub)
 * [Приложение для работы с навигационными приемниками  UGPSHub (Скачать релиз)](https://github.com/ucnl/UGPSHub/releases/download/1.0/UGPSHub.zip)
+* [Приложение для настройки буев RedBase_Config (Исходный код)](https://github.com/ucnl/RedBASE_Config/)
+* [Приложение для настройки буев RedBase_Config (Скачать релиз)](https://github.com/ucnl/RedBASE_Config/releases/download/1.0/RedBASE_Config.zip)
 * [Приложение для RedNav (Исходный код)](https://github.com/ucnl/RedNavHost)
 * [Приложение для RedNav (Скачать релиз)](https://github.com/ucnl/RedNavHost/releases/download/1.1/RedNAVHost.zip)
 * [Программа и методики испытаний (Водолазный вариант)](/documentation/RU/RedWAVE/RedNAV_PM_ru.md)
