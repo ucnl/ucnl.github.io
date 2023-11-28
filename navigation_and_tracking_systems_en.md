@@ -65,6 +65,8 @@ May 2016 - May 2022
 * [3D-model (STEP): RedNode tank holder](/documentation/msize_tank_holder.STEP)
 * [UGPSHub application (Source code)](https://github.com/ucnl/UGPSHub)
 * [UGPSHub application (Download release)](https://github.com/ucnl/UGPSHub/releases/download/1.0/UGPSHub.zip)
+* [RedBase_Config application (Source code)](https://github.com/ucnl/RedBASE_Config/)
+* [RedBase_Config application (Download release)](https://github.com/ucnl/RedBASE_Config/releases/download/1.0/RedBASE_Config.zip)
 * [RedNAV host application (Source code)](https://github.com/ucnl/RedNavHost)
 * [RedNAV host application (Download release)](https://github.com/ucnl/RedNavHost/releases/download/1.1/RedNAVHost.zip)
 
