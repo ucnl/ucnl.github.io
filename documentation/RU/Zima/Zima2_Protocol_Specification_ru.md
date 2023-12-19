@@ -25,6 +25,8 @@
   - [2.7. D2H_RBCAST](#27-d2h_rbcast)
   - [2.8. H2D_DINFO_GET](#28-h2d_dinfo_get)
   - [2.9. D2H_DINFO](#29-d2h_dinfo)
+  - [2.10. H2D_CREQ](#210-h2d_creq)
+  - [2.11. H2D_CSET](#211-h2d_cset)
 - [3. Таблицы идентификаторов](#3-%D1%82%D0%B0%D0%B1%D0%BB%D0%B8%D1%86%D1%8B-%D0%B8%D0%B4%D0%B5%D0%BD%D1%82%D0%B8%D1%84%D0%B8%D0%BA%D0%B0%D1%82%D0%BE%D1%80%D0%BE%D0%B2)
   - [3.1. Коды ошибок](#31-%D0%BA%D0%BE%D0%B4%D1%8B-%D0%BE%D1%88%D0%B8%D0%B1%D0%BE%D0%BA)
   - [3.2. Статус сообщения NDTA](#32-%D1%81%D1%82%D0%B0%D1%82%D1%83%D1%81-%D1%81%D0%BE%D0%BE%D0%B1%D1%89%D0%B5%D0%BD%D0%B8%D1%8F-ndta)
