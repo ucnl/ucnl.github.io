@@ -83,15 +83,12 @@
 * [RWLT: медиаматериалы, видео испытаний, треки и т.п.](/documentation/RU/RWLT/media.md)
 * [RWLT Pinger: Спецификация устройства](/documentation/RU/RWLT/RWLT_Pinger_Specification_ru.md)
 * [RWLT GIB: Спецификация устройства](/documentation/RU/RWLT/RWLT_GIB_Specification_ru.md)
-* [ОЖИДАЕТСЯ Спецификация устройства: RWLT Radio dongle](/documentation/RU/RWLT/RWLT_RF_Dongle_ru.md)
 * [В ПРОЦЕССЕ ДОПОЛНЕНИЯ Руководство пользователя](/documentation/RU/RWLT/RWLT_Users_Manual_ru.md)
-* [uTrack: Проект приложений для RWLT (Исходный код)](https://github.com/ucnl/uTrack)
+* [ОЖИДАЕТСЯ Спецификация устройства: uNav Radio dongle](/documentation/RU/RWLT/RWLT_RF_Dongle_ru.md)
+* [uNav: протокол информационного сопряжения](/documentation/RU/RWLT/uNav_protocol_specification_ru.md)
+* [ОЖИДАЕТСЯ uNav: приложения для настройки uNav Radio dongle (Исходный код))()
+* [ОЖИДАЕТСЯ uNav: приложения для настройки uNav Radio dongle (Скачать релиз))()
 * [🤿 uTrackDiver: Трекинг водолазов, оснащенных приборами RedPhone-DX (Скачать релиз)](https://github.com/ucnl/uTrack/releases/download/beta/uTrackDiver.zip)
-* [🐠 uTrack: Трекинг подводного объекта, оснащенного пингером RWLT (Скачать релиз)](https://github.com/ucnl/uTrack/releases/download/beta1/uTrack.zip)
-* [СТАРАЯ ВЕРСИЯ Приложение для работы с системой RWLT Host (Исходный код)](https://github.com/ucnl/RWLT_Host)
-* [СТАРАЯ ВЕРСИЯ Приложение для работы с системой RWLT Host (Скачать релиз)](https://github.com/ucnl/RWLT_Host/releases/download/1.0/RWLT_Host.zip)
-* [СТАРАЯ ВЕРСИЯ Приложение для трекинга приборов водолазной телефонии RWLT_RedPhone (Исходный код)](https://github.com/ucnl/RWLT_RedPhone)
-* [СТАРАЯ ВЕРСИЯ Приложение для трекинга приборов водолазной телефонии RWLT_RedPhone (Скачать релиз)](https://github.com/ucnl/RWLT_RedPhone/releases/download/1.0/RWLT_RedPhone.zip)
 
 ### WAYU
 #### Длиннобазисная трекинговая система любительского сегмента
@@ -99,9 +96,11 @@
 * [WAYU: медиаматериалы, видео испытаний, треки и т.п.](/documentation/RU/WAYU/media)
 * [WAYU Pinger: Спецификация устройства](/documentation/RU/WAYU/WAYU_Pinger_Specification_ru.md)
 * [WAYU GIB: Спецификация устройства](/documentation/RU/WAYU/WAYU_GIB_Specification_ru.md)
-* [WAYU Radio dongle: Спецификация устройства](/documentation/RU/WAYU/WAYU_RF_Dongle_Specification_ru.md)
-* [WAYU: Протокол сопряжения](/documentation/RU/WAYU/WAYU_Protocol_specification_ru.md)
+* [ОЖИДАЕТСЯ Спецификация устройства: uNav Radio dongle](/documentation/RU/RWLT/RWLT_RF_Dongle_ru.md)
 * [ОЖИДАЕТСЯ WAYU: Руководство пользователя]()
+* [uNav: протокол информационного сопряжения](/documentation/RU/RWLT/uNav_protocol_specification_ru.md)
+* [ОЖИДАЕТСЯ uNav: приложения для настройки uNav Radio dongle (Исходный код))()
+* [ОЖИДАЕТСЯ uNav: приложения для настройки uNav Radio dongle (Скачать релиз))()
 * [Приложение для работы с системой WAYU (Исходный код)](https://github.com/ucnl/WAYU)
 * [Приложение для работы с системой WAYU (Скачать релиз)](https://github.com/ucnl/WAYU/releases/download/1.0/WAYU.zip)
 
