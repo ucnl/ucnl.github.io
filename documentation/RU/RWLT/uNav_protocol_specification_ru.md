@@ -22,11 +22,11 @@
    - [2.4. UNV4 - Параметры относительно опорной точки](#24-unv4---%D0%BF%D0%B0%D1%80%D0%B0%D0%BC%D0%B5%D1%82%D1%80%D1%8B-%D0%BE%D1%82%D0%BD%D0%BE%D1%81%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%BE-%D0%BE%D0%BF%D0%BE%D1%80%D0%BD%D0%BE%D0%B9-%D1%82%D0%BE%D1%87%D0%BA%D0%B8)
    - [2.5. UNV5 - Данные от встроенного GNSS-приемника](#25-unv5---%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D0%B5-%D0%BE%D1%82-%D0%B2%D1%81%D1%82%D1%80%D0%BE%D0%B5%D0%BD%D0%BD%D0%BE%D0%B3%D0%BE-gnss-%D0%BF%D1%80%D0%B8%D0%B5%D0%BC%D0%BD%D0%B8%D0%BA%D0%B0)
    - [2.6. UNV6 - Данные от пингера RWLT](#26-unv6---%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D0%B5-%D0%BE%D1%82-%D0%BF%D0%B8%D0%BD%D0%B3%D0%B5%D1%80%D0%B0-rwlt)
- - [3. Прочие сообщения]
-   - [3.1. GGA]()
-   - [3.2. RMC]()
-   - [3.3. APLA]()
-   - [3.4. RWLA]()
+ - [3. Прочие сообщения](#3-%D0%BF%D1%80%D0%BE%D1%87%D0%B8%D0%B5-%D1%81%D0%BE%D0%BE%D0%B1%D1%89%D0%B5%D0%BD%D0%B8%D1%8F)
+   - [3.1. GGA](#31-gga)
+   - [3.2. RMC](#32-rmc)
+   - [3.3. APLA - Пакет данных от навигационного буя WAYU](#33-apla---%D0%BF%D0%B0%D0%BA%D0%B5%D1%82-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85-%D0%BE%D1%82-%D0%BD%D0%B0%D0%B2%D0%B8%D0%B3%D0%B0%D1%86%D0%B8%D0%BE%D0%BD%D0%BD%D0%BE%D0%B3%D0%BE-%D0%B1%D1%83%D1%8F-wayu)
+   - [3.4. RWLA - Пакет данных от навигационного буя RWLT](#34-rwla---%D0%BF%D0%B0%D0%BA%D0%B5%D1%82-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85-%D0%BE%D1%82-%D0%BD%D0%B0%D0%B2%D0%B8%D0%B3%D0%B0%D1%86%D0%B8%D0%BE%D0%BD%D0%BD%D0%BE%D0%B3%D0%BE-%D0%B1%D1%83%D1%8F-rwlt)
 
 <div style="page-break-after: always;"></div>
 
