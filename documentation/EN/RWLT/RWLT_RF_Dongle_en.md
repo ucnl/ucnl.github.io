@@ -2,33 +2,40 @@
 
 <div style="page-break-after: always;"></div>
 
-| ![logo](/documentation/sm_logo.png) | ![RWLT RF dongle]() |
+| ![logo](/documentation/sm_logo.png) | ![RWLT RF dongle](/documentation/uNav_rf_dongle.png) |
 | :---: | ---: |
-| [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **RWLT RF dongle** - Navigation buoys receiver <br/> Device specification |
+| [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **uNav RWLT RF dongle** - Приемник сигнала навигационных буев <br/> Спецификация устройства |
 
-## KEY FEATURES
+## КЛЮЧЕВЫЕ ОСОБЕННОСТИ
 
-* **Minimum dimensions and weight**
-* **IP67**
-* **Magnetic base for easy fit**
+* **Исполнение IP68**
+* **Эмуляция протокола GNSS-приемников**
+* **Встроенный GNSS-модуль**
 
-## DESCRIPTION
+## ОПИСАНИЕ
 
-The receiver of the navigation signal of the system buoys **[RWLT](RWLT_DataBrief_en.md)** is designed to transmit data from the navigation buoys to the ** [RWLT Host](https://github.com/ucnl/RWLT_Host)** application. The receiver has IP67 protection class and has a built-in neodymium magnet for easy fixation on magnetic bases.
+Приемник навигационного сигнала буев системы **[RWLT](RWLT_DataBrief_ru.md)** принимает сигналы от навигационных буев [RWLT GIB](RWLT_GIB_Specification_ru.md) и определяет местоположение подводного объекта, на котором расположен пингер [RWLT Pinger](RWLT_Pinger_Specification_ru.md). Приемник выполнен в виде необслуживаемого моноблока на кабеле.
 
 <div style="page-break-after: always;"></div>
 
-## TECHNICAL SPECIFICATIONS 
+## ТЕХНИЧЕСКИЕ ХАРАКТЕРИСТИКИ
 
-| PARAMETER | VALUE |
+| ПАРАМЕТР | ЗНАЧЕНИЕ |
 | :--- | :--- |
-| DIMENSTIONS (Ф х h) | XX x XXX mm |
-| WEIGHT (dry) | X kg |
-| WORKING TEMPERATURE RANGE | -10 .. 50 °С |
-| RF RANGE<sup>[1](#footnote1)</sup> | 1000 m |
-| CONNECTION | To a PC USB port using the supplied USB-B cable |
+| ГАБАРИТЫ (Ф х h, без кабеля) | 90 x 330 мм |
+| ВЕС (с кабелем 10 м) | 1.4 кг |
+| ДЛИНА КАБЕЛЯ | 10 м |
+| ДИАМЕТР КАБЕЛЯ | 10 ± 0.5 мм |
+| ДИАПАЗОН РАБОЧИХ ТЕМПЕРАТУР | -10 .. 50 °С |
+| МАКСИМАЛЬНАЯ ДАЛЬНОСТЬ РАДИОСВЯЗИ<sup>[1](#footnote1)</sup> | 1000 м |
+| РАДИОСВЯЗЬ | 433 МГц, только прием |
+| ПОДКЛЮЧЕНИЕ | К USB-порту ПК при помощи [Bat&Link Box](documentation/RU/Zima/Bat_n_link_box_Specification_ru) |
+| ИНТЕРФЕЙС | RS-422, 38400 бод |
+| ПРОТОКОЛ | [NMEA0183 (GGA, RMC), UNV](/uNav_protocol_specification_ru) |
+| ВТСРОЕННЫЙ GNSS-модуль | GPS/GLONASS |
+| МАТЕРИАЛ КОРПУСА | Полиуретан |
 
 ________________
-<a name="footnote1"><sup>1</sup></a>Achieved in the absence of interference, in an open area.  
+<a name="footnote1"><sup>1</sup></a> Достигается при отсутствие помех, на открытой местности.  
 
 <div style="page-break-after: always;"></div>
