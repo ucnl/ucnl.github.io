@@ -29,9 +29,9 @@
 | ДИАПАЗОН РАБОЧИХ ТЕМПЕРАТУР | -10 .. 50 °С |
 | МАКСИМАЛЬНАЯ ДАЛЬНОСТЬ РАДИОСВЯЗИ<sup>[1](#footnote1)</sup> | 1000 м |
 | РАДИОСВЯЗЬ | 433 МГц, только прием |
-| ПОДКЛЮЧЕНИЕ | К USB-порту ПК при помощи [Bat&Link Box](documentation/RU/Zima/Bat_n_link_box_Specification_ru.md) |
+| ПОДКЛЮЧЕНИЕ | К USB-порту ПК при помощи [Bat&Link Box](documentation/RU/Zima/Bat_n_link_box_Specification_ru) |
 | ИНТЕРФЕЙС | RS-422, 38400 бод |
-| ПРОТОКОЛ | [NMEA0183 (GGA, RMC), UNV](documentation/RU/RWLT/uNav_protocol_specification_ru.md) |
+| ПРОТОКОЛ | [NMEA0183 (GGA, RMC), UNV](documentation/RU/RWLT/uNav_protocol_specification_ru) |
 | ВТСРОЕННЫЙ GNSS-модуль | GPS/GLONASS |
 | МАТЕРИАЛ КОРПУСА | Полиуретан |
 
