@@ -83,7 +83,7 @@
 * [RWLT: медиаматериалы, видео испытаний, треки и т.п.](/documentation/RU/RWLT/media.md)
 * [RWLT Pinger: Спецификация устройства](/documentation/RU/RWLT/RWLT_Pinger_Specification_ru.md)
 * [RWLT GIB: Спецификация устройства](/documentation/RU/RWLT/RWLT_GIB_Specification_ru.md)
-* [Спецификация устройства: uNav Radio dongle](/documentation/RU/RWLT/RWLT_RF_Dongle_ru.md)
+* [uNav RWLT Radio dongle: Спецификация устройства](/documentation/RU/RWLT/RWLT_RF_Dongle_ru.md)
 * [uNav: протокол информационного сопряжения](/documentation/RU/RWLT/uNav_protocol_specification_ru.md)
 * [В ПРОЦЕССЕ ДОПОЛНЕНИЯ Руководство пользователя](/documentation/RU/RWLT/RWLT_Users_Manual_ru.md)
 * [uNav: приложения для настройки uNav Radio dongle (Исходный код)](https://github.com/ucnl/uNav)
