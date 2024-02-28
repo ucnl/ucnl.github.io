@@ -1,41 +1,41 @@
-[Main](/../../) ❯ [Navigation & tracking systems](/navigation_and_tracking_systems_en) ❯ **Device specification: RWLT Radio dongle**
+[Main](/../../) ❯ [Navigation & tracking systems](/navigation_and_tracking_systems_en) ❯ **Device specification: uNav RWLT RF dongle**
 
 <div style="page-break-after: always;"></div>
 
 | ![logo](/documentation/sm_logo.png) | ![RWLT RF dongle](/documentation/uNav_rf_dongle.png) |
 | :---: | ---: |
-| [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **uNav RWLT RF dongle** - Приемник сигнала навигационных буев <br/> Спецификация устройства |
+| [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **uNav RWLT RF dongle** - Navigation receiver <br/> Device specification |
 
-## КЛЮЧЕВЫЕ ОСОБЕННОСТИ
+## KEY FEATURES
 
-* **Исполнение IP68**
-* **Эмуляция протокола GNSS-приемников**
-* **Встроенный GNSS-модуль**
+* **IP68**
+* **GNSS protocol emulation**
+* **Built-in GNSS receiver**
 
-## ОПИСАНИЕ
+## DESCRIPTION
 
-Приемник навигационного сигнала буев системы **[RWLT](RWLT_DataBrief_ru.md)** принимает сигналы от навигационных буев [RWLT GIB](RWLT_GIB_Specification_ru.md) и определяет местоположение подводного объекта, на котором расположен пингер [RWLT Pinger](RWLT_Pinger_Specification_ru.md). Приемник выполнен в виде необслуживаемого моноблока на кабеле.
+The receiver of the navigation signal of the buoys of the system [RWLT](RWLT_DataBrief_en.md) receives signals from the [RWLT GIB](RWLT_GIB_Specification_ru.md) navigation buoys and determines the location of the underwater object on which the [RWLT Pinger](RWLT_Pinger_Specification_ru.md) pinger is located. The receiver is designed as a maintenance-free monoblock on a cable.
 
 <div style="page-break-after: always;"></div>
 
-## ТЕХНИЧЕСКИЕ ХАРАКТЕРИСТИКИ
+## TECHNICAL SPECIFICATIONS
 
-| ПАРАМЕТР | ЗНАЧЕНИЕ |
+| PARAMETER | VALUE |
 | :--- | :--- |
-| ГАБАРИТЫ (Ф х h, без кабеля) | 90 x 330 мм |
-| ВЕС (с кабелем 10 м) | 1.4 кг |
-| ДЛИНА КАБЕЛЯ | 10 м |
-| ДИАМЕТР КАБЕЛЯ | 10 ± 0.5 мм |
-| ДИАПАЗОН РАБОЧИХ ТЕМПЕРАТУР | -10 .. 50 °С |
-| МАКСИМАЛЬНАЯ ДАЛЬНОСТЬ РАДИОСВЯЗИ<sup>[1](#footnote1)</sup> | 1000 м |
-| РАДИОСВЯЗЬ | 433 МГц, только прием |
-| ПОДКЛЮЧЕНИЕ | К USB-порту ПК при помощи [Bat&Link Box](documentation/RU/Zima/Bat_n_link_box_Specification_ru) |
-| ИНТЕРФЕЙС | RS-422, 38400 бод |
-| ПРОТОКОЛ | [NMEA0183 (GGA, RMC), UNV](/uNav_protocol_specification_ru) |
-| ВТСРОЕННЫЙ GNSS-модуль | GPS/GLONASS |
-| МАТЕРИАЛ КОРПУСА | Полиуретан |
+| DIMENSIONS (Ф х h, w/o cable) | 90 x 330 mm |
+| WEIGHT (w/ 10 m cable) | 1.4 kg |
+| CABLE LENGTH | 10 m |
+| CABLE DIAMETER | 10 ± 0.5 mm |
+| WORKING TEMPERATURE RANGE | -10 .. 50 °С |
+| MAX. RF RANGE<sup>[1](#footnote1)</sup> | 1000 m |
+| RADIO COMMUNICATION | 433 MHz, receiving only |
+| CONNECTION | to a PC USB-port via [Bat&Link Box](documentation/EN/Zima/Bat_n_link_box_Specification_en) |
+| INTERFACE | RS-422, 38400 baud |
+| PROTOCOL | [NMEA0183 (GGA, RMC), UNV](/uNav_protocol_specification_en) |
+| BUILT-IN GNSS UNIT | GPS/GLONASS |
+| BODY MATERIAL | Polyurethane |
 
 ________________
-<a name="footnote1"><sup>1</sup></a> Достигается при отсутствие помех, на открытой местности.  
+<a name="footnote1"><sup>1</sup></a>Achieved in the absence of interference, in open areas.  
 
 <div style="page-break-after: always;"></div>
