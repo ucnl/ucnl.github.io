@@ -20,7 +20,7 @@ A distinctive feature of the system is the ability to work simultaneously with w
 | :---: | :--- |
 | ![RWLT GIB](/documentation/RWLT_GIB.png) | [RWLT GIB](RWLT_GIB_Specification_en.md) <br/> Hydroacoustic navigation buoy |
 | ![RWLT Pinger](/documentation/RWLT_Pinger.png) | [RWLT Pinger](RWLT_Pinger_Specification_en.md) <br/> Pinger beacon |
-| ![RWLT RF Dongle](/documentation/RWLT_RF_Dongle.png) | [RWLT RF Dongle](RWLT_RF_Dongle_Specification_en.md) <br/> Digital RF dongle |
+| ![RWLT RF dongle](/documentation/uNav_rf_dongle.png) | [RWLT RF Dongle](RWLT_RF_Dongle_Specification_en.md) <br/> Digital RF dongle |
 
 The minimum composition of the system includes four sonar buoys [RWLT GIB](RWLT_GIB_Specification_en.md) and one transmitting device, depending on the user's task:
 * If it is required to provide a diver with navigation data simultaneously with voice communication, then the diving telephone exchange [RedPhone-DX](https://docs.unavlab.com/documentation/EN/RedPhone/RedPhone_DX_Specification_en.html) is used; In this case, the geo-position of the diver will be determined at the moment when he releases the PTT button, i.e. ends the transmission of a voice message;
