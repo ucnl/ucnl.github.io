@@ -20,7 +20,7 @@
 | :---: | :--- |
 | ![RWLT GIB](/documentation/RWLT_GIB.png) | [RWLT GIB](RWLT_GIB_Specification_ru.md) <br/> Навигационный гидроакустический буй-приемник |
 | ![RWLT Pinger](/documentation/RWLT_Pinger.png) | [RWLT Pinger](RWLT_Pinger_Specification_ru.md) <br/> Маяк-пингер |
-| ![RWLT RF Dongle](/documentation/RWLT_RF_Dongle.png) | [RWLT RF Dongle](RWLT_RF_Dongle_Specification_ru.md) <br/> Цифровой радиоприемник |
+| ![RWLT RF dongle](/documentation/uNav_rf_dongle.png) | [RWLT RF Dongle](RWLT_RF_Dongle_Specification_ru.md) <br/> Цифровой радиоприемник |
 
 Минимальный состав системы включает четыре гидроакустических буя [RWLT GIB](RWLT_GIB_Specification_ru.md) и одно передающее устройство, в зависимости от пользовательской задачи:
 * Если требуется обеспечить навигационными данными водолаза одновременно с голосовой связью, то используется водолазная телефонная станция [RedPhone-DX](https://docs.unavlab.com/documentation/RU/RedPhone/RedPhone_DX_Specification_ru.html); В этом случае геопозиция водолаза будет определяться в момент, когда он отпускает кнопку PTT, т.е. завершает передачу голосового сообщения;
