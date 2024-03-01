@@ -2,7 +2,7 @@
 
 <div style="page-break-after: always;"></div>
 
-| ![logo](/documentation/sm_logo.png) |  |
+| ![logo](/documentation/sm_logo.png) | ![def_RedWave_package.png](/documentation/def_RedWave_package.png) |
 | :---: | ---: |
 | [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **RedWave**<br/> Краткое описание |
 
