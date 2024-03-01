@@ -26,7 +26,7 @@ _________
 
 |  |  |
 | :---: | :--- |
-| ![RedBase](/documentation/def_redbase_yellow.png) | [RedBase](RedBASE_Specification_ru.md) <br/> Навигационный гидроакустический буй-ретранслятор |
+| ![RedBase](/documentation/def_redbase_v2_horiz.png) | [RedBase](RedBASE_Specification_ru.md) <br/> Навигационный гидроакустический буй-ретранслятор |
 | ![RedNode](/documentation/def_modem_black.png) | [RedNode](RedNODE_Specification_ru.md) <br/> Универсальный навигационный приемник |
 | ![RedNav](/documentation/def_rednav_yellow.png) | [RedNav](RedNAV_Specification_ru.md) <br/> Водолазный навигатор |
 
