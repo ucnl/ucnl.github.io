@@ -20,7 +20,7 @@
 
 |  |  |
 | :---: | :--- |
-| ![RWLT GIB](/documentation/RWLT_GIB.png) | [RWLT GIB](RWLT_GIB_Specification_ru.md) <br/> Навигационный гидроакустический буй-приемник |
+| ![RWLT GIB](/documentation/def_redbase_v2_horiz.png) | [RWLT GIB](RWLT_GIB_Specification_ru.md) <br/> Навигационный гидроакустический буй-приемник |
 | ![RWLT Pinger](/documentation/RWLT_Pinger.png) | [RWLT Pinger](RWLT_Pinger_Specification_ru.md) <br/> Маяк-пингер |
 | ![RWLT RF dongle](/documentation/uNav_rf_dongle.png) | [uNav RWLT RF Dongle](RWLT_RF_Dongle_Specification_ru.md) <br/> Цифровой радиоприемник |
 
