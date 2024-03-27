@@ -4,7 +4,7 @@
 
 | ![logo](/documentation/sm_logo.png) | ![qr](/documentation/RedBase_v3_LiFEPO4_msds_en_qr.png)  |
 | :---: | ---: |
-| [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | Аккумулятор литий-железофосфатный <br/> в составе в составе навигационного буя RedBase/RWLT GIB (v3) ПМВР.467154.077 <br/> Паспорт безопасности химической продукции (MSDS) |
+| [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | LiFePO4 battery pack <br/> as part of RedBase/RWLT GIB (v3) PMVR.467154.077 <br/> Material safety datasheet |
 | | Version 1 <br/> 27.09.2023 |
 
 ## PMVR.467154.077 LiFePO4 battery pack <br/> as part of RedBase/RWLT GIB (v3) 
