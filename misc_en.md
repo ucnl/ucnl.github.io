@@ -13,8 +13,8 @@
 | [RedPhone-DX](/documentation/EN/RedPhone/RedPhone_DX_Specification_en.md) | [RedPhone-DX MSDS EN](/documentation/EN/Misc/RedPhone_DX_MSDS_en.md) |
 | [RedPhone-OS](/documentation/EN/RedPhone/RedPhone_OS_Specification_en.md) | [RedPhone-OS MSDS EN](/documentation/EN/Misc/RedPhone_OS_MSDS_en.md) |
 | [Bat&Link Box](/documentation/EN/Zima/Bat_n_link_box_Specification_en.md) | [Bat&Link Box MSDS EN](/documentation/EN/Misc/BatLinkBox_MSDS_en.md) |
-| [RedBASE v3](/documentation/EN/RedWAVE/RedBASE_Specification_en.md) | [RedBASE v3 MSDS EN](/documentation/EN/Misc/RedBase_v3_LiFEPO4_msds_ru.md) |
-| [RedBASE](/documentation/EN/RedWAVE/RedBASE_Specification_en.md) | [Open file \(pdf\)](/documentation/msds_delta12v4_5ah.pdf) |
+| [RedBase/RWLT GIB v3](/documentation/EN/RedWAVE/RedBASE_Specification_en.md) | [RedBASE v3 MSDS EN](/documentation/EN/Misc/RedBase_v3_LiFEPO4_msds_ru.md) |
+| [RedBase](/documentation/EN/RedWAVE/RedBASE_Specification_en.md) | [Open file \(pdf\)](/documentation/msds_delta12v4_5ah.pdf) |
 
 ## Info sheets & additional
 * [QR links sheet](/documentation/EN/Misc/l2c.md)
