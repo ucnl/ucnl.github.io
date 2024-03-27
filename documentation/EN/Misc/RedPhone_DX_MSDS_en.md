@@ -29,8 +29,8 @@
 
 | |
 | :--- |
-| Limited Liability Company "LiFors" |
-| Mailing address: 634055, Tomsk, Tomsk g, Vavilova St., Building 10a <br/> Legal address: 634055, Tomsk, Tomsk g, Vavilova St., Building 10a |
+| Limited Liability Company "Underwater communication & navigation laboratory" |
+| Mailing address: 121205, Moscow, Skolkovo innovation center, Bolshoy bld, 42, building 1, office 1098/10 |
 
 | | |
 | :--- | :--- |
