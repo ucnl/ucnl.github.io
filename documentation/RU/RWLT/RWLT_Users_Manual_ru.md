@@ -76,7 +76,9 @@
 
 - Автономный блок питания и преобразователь интерфейса [Bat&Link Box](https://docs.unavlab.com/documentation/RU/Zima/Bat_n_link_box_Specification_ru.html), к которому подключается радиомодем/донгл.
 
-| ![Bat&Link Box](/documentation/batnlinkbox.png) | [Bat&Link Box](https://docs.unavlab.com/documentation/RU/Zima/Bat_n_link_box_Specification_ru.html) <br/> Автономный блок питания и преобразователь интерфейса |
+| ![Bat&Link Box](/documentation/batnlinkbox.png) | 
+| :---: |
+| [Bat&Link Box](https://docs.unavlab.com/documentation/RU/Zima/Bat_n_link_box_Specification_ru.html) <br/> Автономный блок питания и преобразователь интерфейса |
 
 
 И, в зависимости от пользовательской задачи:  
