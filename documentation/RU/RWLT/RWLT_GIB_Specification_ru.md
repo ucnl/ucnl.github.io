@@ -2,7 +2,7 @@
 
 <div style="page-break-after: always;"></div>
 
-| ![logo](/documentation/sm_logo.png) | ![RWLT GIB](/documentation/def_redbase_v2.png) |
+| ![logo](/documentation/sm_logo.png) | ![RWLT GIB](/documentation/rwlt_gib_h_small.png) |
 | :---: | ---: |
 | [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **RWLT GIB** - Навигационный буй <br/> Спецификация устройства |
 
