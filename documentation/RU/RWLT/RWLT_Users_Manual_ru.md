@@ -68,11 +68,16 @@
 | :---: |
 | [RWLT GIB](RWLT_GIB_Specification_ru.md) <br/> Навигационный гидроакустический буй-приемник |
 
-- Радиомодем [RWLT RF Dongle](RWLT_RF_Dongle_Specification_ru.md), для приема навигационной информации от буев:
+- Радиомодем/донгл [uNav RWLT RF Dongle](RWLT_RF_Dongle_Specification_ru.md), для приема навигационной информации от буев:
 
 | ![RWLT RF Dongle](/documentation/uNav_rf_dongle.png) | 
 | :---: |
 | [RWLT RF Dongle](RWLT_RF_Dongle_Specification_ru.md) <br/> Цифровой радиоприемник |
+
+- Автономный блок питания и преобразователь интерфейса [Bat&Link Box](https://docs.unavlab.com/documentation/RU/Zima/Bat_n_link_box_Specification_ru.html), к которому подключается радиомодем/донгл.
+
+| ![Bat&Link Box](/documentation/batnlinkbox.png) | [Bat&Link Box](https://docs.unavlab.com/documentation/RU/Zima/Bat_n_link_box_Specification_ru.html) <br/> Автономный блок питания и преобразователь интерфейса |
+
 
 И, в зависимости от пользовательской задачи:  
 * Если требуется определять местоположение водолазов одновременно с голосовой связью, то используется **до 255** водолазных телефонных станций [RedPhone-DX](https://docs.unavlab.com/documentation/RU/RedPhone/RedPhone_DX_Specification_ru.html); 
