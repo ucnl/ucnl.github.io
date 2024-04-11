@@ -21,7 +21,7 @@
 |  |  |
 | :---: | :--- |
 | ![RWLT GIB](/documentation/def_redbase_v2_horiz.png) | [RWLT GIB](RWLT_GIB_Specification_ru.md) <br/> Навигационный гидроакустический буй-приемник |
-| ![RWLT Pinger](/documentation/RWLT_Pinger.png) | [RWLT Pinger](RWLT_Pinger_Specification_ru.md) <br/> Маяк-пингер |
+| ![RWLT Pinger](/documentation/dev_big_wbat_li_small.png) | [RWLT Pinger](RWLT_Pinger_Specification_ru.md) <br/> Маяк-пингер |
 | ![RWLT RF dongle](/documentation/uNav_rf_dongle.png) | [uNav RWLT RF Dongle](RWLT_RF_Dongle_Specification_ru.md) <br/> Цифровой радиоприемник |
 
 Минимальный состав системы включает четыре гидроакустических буя [RWLT GIB](RWLT_GIB_Specification_ru.md) и одно передающее устройство, в зависимости от пользовательской задачи:
