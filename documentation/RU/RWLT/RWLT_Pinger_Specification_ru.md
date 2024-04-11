@@ -2,7 +2,7 @@
 
 <div style="page-break-after: always;"></div>
 
-| ![logo](/documentation/sm_logo.png) | ![logo](/documentation/RWLT_Pinger.png) |
+| ![logo](/documentation/sm_logo.png) | ![logo](/documentation/dev_big_wbat_li_small.png) |
 | :---: | ---: |
 | [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **RWLT Pinger** - Навигационный маяк - пингер <br/> Спецификация устройства |
 
