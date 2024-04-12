@@ -8,8 +8,7 @@
 
 <div style="page-break-after: always;"></div>
 
-| ![logo](/documentation/sm_logo.png) | ![image](https://github.com/ucnl/ucnl.github.io/assets/24439946/88cc0587-952c-4a67-9504-3bb63afc86f7)
-  |
+| ![logo](/documentation/sm_logo.png) | ![image](https://github.com/ucnl/ucnl.github.io/assets/24439946/88cc0587-952c-4a67-9504-3bb63afc86f7) |
 | :---: | ---: |
 | [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **uTrackDiver** - Приложение для трекинга водолазов при помощи системы RWLT <br/> Руководство пользователя |
 
