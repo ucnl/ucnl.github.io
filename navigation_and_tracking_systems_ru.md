@@ -84,11 +84,13 @@
 * [RWLT Pinger: Спецификация устройства](/documentation/RU/RWLT/RWLT_Pinger_Specification_ru.md)
 * [RWLT GIB: Спецификация устройства](/documentation/RU/RWLT/RWLT_GIB_Specification_ru.md)
 * [uNav RWLT Radio dongle: Спецификация устройства](/documentation/RU/RWLT/RWLT_RF_Dongle_ru.md)
-* [uNav: протокол информационного сопряжения](/documentation/RU/RWLT/uNav_protocol_specification_ru.md)
-* [В ПРОЦЕССЕ ДОПОЛНЕНИЯ Руководство пользователя](/documentation/RU/RWLT/RWLT_Users_Manual_ru.md)
-* [uNav: приложения для настройки uNav Radio dongle (Исходный код)](https://github.com/ucnl/uNav)
-* [uNav: приложения для настройки uNav Radio dongle (Скачать релиз)](https://github.com/ucnl/uNav/releases/download/1.0/uNav.zip)
+* [RWLT: Руководство пользователя](/documentation/RU/RWLT/RWLT_Users_Manual_ru.md)
+* [uNav RWLT Radio dongle: протокол информационного сопряжения](/documentation/RU/RWLT/uNav_protocol_specification_ru.md)
+* [💧 uNav: приложения для настройки uNav Radio dongle (Исходный код)](https://github.com/ucnl/uNav)
+* [💧 uNav: приложения для настройки uNav Radio dongle (Скачать релиз)]
+* [💧 uNav: Руководство пользователя](documentation/RU/RWLT/uNav_application_Users_manual_ru.md)
 * [🤿 uTrackDiver: Трекинг водолазов, оснащенных приборами RedPhone-DX (Скачать релиз)](https://github.com/ucnl/uTrack/releases/download/beta/uTrackDiver.zip)
+* [🤿 uTrackDiver: Руководство пользователя](documentation/RU/RWLT/uTrackDiver_Users_Manual_ru.md)
 
 ### WAYU
 #### Длиннобазисная трекинговая система любительского сегмента
@@ -96,10 +98,11 @@
 * [WAYU: медиаматериалы, видео испытаний, треки и т.п.](/documentation/RU/WAYU/media)
 * [WAYU Pinger: Спецификация устройства](/documentation/RU/WAYU/WAYU_Pinger_Specification_ru.md)
 * [WAYU GIB: Спецификация устройства](/documentation/RU/WAYU/WAYU_GIB_Specification_ru.md)
-* [Спецификация устройства: uNav Radio dongle](/documentation/RU/RWLT/RWLT_RF_Dongle_ru.md)
+* [uNav WAYU Radio dongle: Спецификация устройства](/documentation/RU/RWLT/RWLT_RF_Dongle_ru.md)
+* [uNav WAYU Radio dongle: протокол информационного сопряжения](/documentation/RU/RWLT/uNav_protocol_specification_ru.md)
 * [ОЖИДАЕТСЯ WAYU: Руководство пользователя]()
-* [uNav: протокол информационного сопряжения](/documentation/RU/RWLT/uNav_protocol_specification_ru.md)
-* [uNav: приложения для настройки uNav Radio dongle (Исходный код)](https://github.com/ucnl/uNav)
-* [uNav: приложения для настройки uNav Radio dongle (Скачать релиз)](https://github.com/ucnl/uNav/releases/download/1.0/uNav.zip)
+* [💧 uNav: Руководство пользователя](documentation/RU/RWLT/uNav_application_Users_manual_ru.md)
+* [💧 uNav: приложения для настройки uNav Radio dongle (Исходный код)](https://github.com/ucnl/uNav)
+* [💧 uNav: приложения для настройки uNav Radio dongle (Скачать релиз)](https://github.com/ucnl/uNav/releases/download/1.0/uNav.zip)
 
 ## [На главную](README_RU.md)
