@@ -87,7 +87,7 @@
 * [RWLT: Руководство пользователя](/documentation/RU/RWLT/RWLT_Users_Manual_ru.md)
 * [uNav RWLT Radio dongle: протокол информационного сопряжения](/documentation/RU/RWLT/uNav_protocol_specification_ru.md)
 * [💧 uNav: приложения для настройки uNav Radio dongle (Исходный код)](https://github.com/ucnl/uNav)
-* [💧 uNav: приложения для настройки uNav Radio dongle (Скачать релиз)]
+* [💧 uNav: приложения для настройки uNav Radio dongle (Скачать релиз)](https://github.com/ucnl/uNav/releases/download/1.0/uNav.zip)
 * [💧 uNav: Руководство пользователя](documentation/RU/RWLT/uNav_application_Users_manual_ru.md)
 * [🤿 uTrackDiver: Трекинг водолазов, оснащенных приборами RedPhone-DX (Скачать релиз)](https://github.com/ucnl/uTrack/releases/download/beta/uTrackDiver.zip)
 * [🤿 uTrackDiver: Руководство пользователя](documentation/RU/RWLT/uTrackDiver_Users_Manual_ru.md)
