@@ -212,7 +212,7 @@ __________
 
 Подготовка подводного оборудования различается для разных конфигураций системы:
 
-- Для конфигурации с отслеживанием местоположения водолазов, оснащенных водолазными станциями беспроводной голосовой связи [RedPhone-DX](https://docs.unavlab.com/documentation/RU/RedPhone/RedPhone_DX_Specification_ru.html) обратитесь к [инструкции по эксплуатации водолазных станций RedPhone-DX](https://docs.unavlab.com/documentation/RU/RedPhone/RedPhone_DX_Users_Manual_ru.html);
+- Для конфигурации с отслеживанием местоположения водолазов, оснащенных водолазными станциями беспроводной голосовой связи [RedPhone-DX](https://docs.unavlab.com/documentation/RU/RedPhone/RedPhone_DX_Specification_ru.html) обратитесь к [инструкции по эксплуатации водолазных станций RedPhone-DX](https://docs.unavlab.com/documentation/RU/RedPhone/RedPhone_DX_Users_Manual_ru.html).
 Следует помнить, что:
   - на станциях должен быть включен режим **RWLT Pinger** (настройка **RWLT Pinger enabled**);
   - при использовании нескольких станций голосовой связи в одном водоеме им должны быть заданы **разные** адреса (**RWLT Diver's ID**).
