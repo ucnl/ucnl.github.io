@@ -72,19 +72,19 @@ May 2016 - May 2022
 
 ### RWLT
 #### LBL Tracking system
-* [RWLT: Data brief](/documentation/EN/RWLT/RWLT_DataBrief_en.md)
-* [RWLT: tracks, videos, tutorials, etc.](/documentation/EN/RWLT/media.md)
-* [Device specification: RWLT Pinger](/documentation/EN/RWLT/RWLT_Pinger_Specification_en.md)
-* [Device specification: RWLT GIB](/documentation/EN/RWLT/RWLT_GIB_Specification_en.md)
-* [COMING SOON Device specification: RWLT Radio dongle](/documentation/EN/RWLT/RWLT_RF_Dongle_Specification_en.md)
-* [DOCUMENT IS UNDER DEVELOPMENT RWLT: User's manual](/documentation/EN/RWLT/RWLT_Users_Manual_en.md)
-* [uTrack: RWLT Host package (Source code)](https://github.com/ucnl/uTrack)
-* [uTrackDiver: Tracking RedPhone-DX devices with RWLT (Release)](https://github.com/ucnl/uTrack/releases/download/beta/uTrackDiver.zip)
-* [uTrack: Tracking any underwater object equipped with a RWLT-Pinger (Release)](https://github.com/ucnl/uTrack/releases/download/beta1/uTrack.zip)
-* [OBSOLETE: Host Application RWLT Host (Source code)](https://github.com/ucnl/RWLT_Host)
-* [OBSOLETE: Host Application RWLT Host (Download release)](https://github.com/ucnl/RWLT_Host/releases/download/1.0/RWLT_Host.zip)
-* [OBSOLETE: Diver's tracking with RWLT_RedPhone (Source code)](https://github.com/ucnl/RWLT_RedPhone)
-* [OBSOLETE: Diver's tracking with RWLT_RedPhone (Download release)](https://github.com/ucnl/RWLT_RedPhone/releases/download/1.0/RWLT_RedPhone.zip)
+* [RWLT: Data Brief](/documentation/RU/RWLT/RWLT_DataBrief_en.md)
+* [RWLT: tracks, videos, media etc.](/documentation/EN/RWLT/media.md)
+* [RWLT Pinger: Device specification](/documentation/EN/RWLT/RWLT_Pinger_Specification_en.md)
+* [RWLT Pinger-K: Device specification](/documentation/EN/RWLT/RWLT_Pinger_K_Specification_en.md)
+* [RWLT GIB: Device specification](/documentation/EN/RWLT/RWLT_GIB_Specification_en.md)
+* [uNav RWLT Radio dongle: Device specification](/documentation/EN/RWLT/RWLT_RF_Dongle_en.md)
+* [RWLT: User's manual](/documentation/EN/RWLT/RWLT_Users_Manual_ru.md)
+* [uNav RWLT Radio dongle: Interfacing protocol](/documentation/EN/RWLT/uNav_protocol_specification_en.md)
+* [💧 uNav: uNav Radio dongle setup utility (source)](https://github.com/ucnl/uNav)
+* [💧 uNav: uNav Radio dongle setup utility (download release)](https://github.com/ucnl/uNav/releases/download/1.0/uNav.zip)
+* [💧 uNav: User's manual](documentation/EN/RWLT/uNav_application_Users_manual_en.md)
+* [🤿 uTrackDiver: Application for tracking divers equipped with RedPhone-DX (download release)](https://github.com/ucnl/uTrack/releases/download/beta/uTrackDiver.zip)
+* [🤿 uTrackDiver: User's manual](documentation/EN/RWLT/uTrackDiver_Users_Manual_en.md)
 
 ### WAYU
 #### Sensibly priced amateur LBL tracking system
