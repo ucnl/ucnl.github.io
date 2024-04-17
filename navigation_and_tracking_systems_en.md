@@ -72,7 +72,7 @@ May 2016 - May 2022
 
 ### RWLT
 #### LBL Tracking system
-* [RWLT: Data Brief](/documentation/RU/RWLT/RWLT_DataBrief_en.md)
+* [RWLT: Data Brief](/documentation/EN/RWLT/RWLT_DataBrief_en.md)
 * [RWLT: tracks, videos, media etc.](/documentation/EN/RWLT/media.md)
 * [RWLT Pinger: Device specification](/documentation/EN/RWLT/RWLT_Pinger_Specification_en.md)
 * [RWLT Pinger-K: Device specification](/documentation/EN/RWLT/RWLT_Pinger_K_Specification_en.md)
