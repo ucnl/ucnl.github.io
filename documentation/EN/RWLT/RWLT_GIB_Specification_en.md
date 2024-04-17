@@ -2,23 +2,22 @@
 
 <div style="page-break-after: always;"></div>
 
-| ![logo](/documentation/sm_logo.png) | ![RWLT GIB](https://ucnl.github.io/documentation/RWLT_GIB.png) |
+| ![logo](/documentation/sm_logo.png) | ![RWLT GIB](/documentation/rwlt_gib_h_small.png) |
 | :---: | ---: |
 | [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **RWLT GIB** - Navigation buoy <br/> Device specification |
 
 ## KEY FEATURES
 
 * **High performance combined GPS/GLONASS receiver**
-* **Robust, durable, highly visible body**
+* **Rugged, durable and easy to see body**
+* **Automatic activation in water**
 * **Long battery life up to 24 hours**
-* **Reliable and robust digital broadband hydroacoustic communication technology**
+* **Reliable and noise-resistant digital broadband hydroacoustic communication technology**
 
 ## DESCRIPTION
 
-Navigation buoy **RWLT GIB** of the system **[RWLT](RWLT_DataBrief_en.md)** as part of a set of four such devices forms a floating long navigation base, with the support of which positioning of the pinger **[RWLT Pinger](RWLT_Pinger_Specification_ru. md)** or underwater wireless telephone **[RedPhone](https://docs.unavlab.com/documentation/EN/RedPhone/RedPhone_Specification_en.html)** is provided.  
-The device is made in the form of a plastic cylinder with dimensions Ф150х600 mm with a receiving hydroacoustic antenna on a cable.
-
-The device has positive buoyancy and a load-carrying eye for anchor attachment.
+The navigation sonobuoy **RWLT GIB** of the **[RWLT](RWLT_DataBrief_en.md)** system, as part of a set of four such devices, forms a long floating navigation base, with the support of which the positioning of the pinger **[RWLT Pinger](RWLT_Pinger_Specification_en.md)** or diving telephone exchange **[RedPhone](https://docs.unavlab.com/documentation/EN/RedPhone/RedPhone_Specification_en.html)**.
+The device is made according to the float-feather scheme, has no air cavities and controls: it turns on automatically when immersed in water, and when the buoy is removed from the water, it automatically turns off.
 
 <div style="page-break-after: always;"></div>
 
