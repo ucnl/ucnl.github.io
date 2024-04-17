@@ -82,6 +82,7 @@
 * [RWLT: Краткое описание](/documentation/RU/RWLT/RWLT_DataBrief_ru.md)
 * [RWLT: медиаматериалы, видео испытаний, треки и т.п.](/documentation/RU/RWLT/media.md)
 * [RWLT Pinger: Спецификация устройства](/documentation/RU/RWLT/RWLT_Pinger_Specification_ru.md)
+* [RWLT Pinger-K: Спецификация устройства](/documentation/RU/RWLT/RWLT_Pinger_K_Specification_ru.md)
 * [RWLT GIB: Спецификация устройства](/documentation/RU/RWLT/RWLT_GIB_Specification_ru.md)
 * [uNav RWLT Radio dongle: Спецификация устройства](/documentation/RU/RWLT/RWLT_RF_Dongle_ru.md)
 * [RWLT: Руководство пользователя](/documentation/RU/RWLT/RWLT_Users_Manual_ru.md)
