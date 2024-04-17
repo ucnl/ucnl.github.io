@@ -4,65 +4,73 @@
 
 | ![logo](/documentation/sm_logo.png) |  |
 | :---: | ---: |
-| [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **RWLT** - Underwater tracking system <br/> Data brief|
+| [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **RWLT** - Underwater tracking system <br/> Data brief |
 
 <div style="page-break-after: always;"></div>
 
 ## General information
-**RWLT** system is **the easiest to use** and at the same time accurate solution for tracking an underwater object. The system **does not require any calibrations** and integration: it is enough to place an autonomous pinger beacon [RWLT Pinger](RWLT_Pinger_Specification_en.md) on an underwater object (ROV, AUV, diver, etc.), and four navigation buoys on the water surface [RWLT GIB](RWLT_GIB_Specification_en.md). This configuration allows real-time tracking of the movement of an underwater object in 3D: absolute geographic coordinates + depth.
-A distinctive feature of the system is the ability to work simultaneously with wireless underwater telephone [RedPhone-DX](https://docs.unavlab.com/documentation/EN/RedPhone/RedPhone_DX_Specification_en.html) as a pinger, thus combining two-way voice communication and navigation.
+Система **RWLT** является **наиболее простым в применени** и в то же время точным решением для слежения за подводным объектом. Система **не требует никаких калибровок** и интеграции: достаточно разместить на подводном объекте (ТНПА, АНПА, водолаз и т.п.) автономный маяк-пингер [RWLT Pinger](RWLT_Pinger_Specification_en.md), а на поверхности воды четыре навигационных буя [RWLT GIB](RWLT_GIB_Specification_en.md). Такая конфигурация позволяет в реальном времени следить за перемещением подводного объекта в 3D: абсолютные географические координаты + глубина. 
+Отличительной чертой системы является возможность работы с водолазными телефонными станциями [RedPhone-DX](https://docs.unavlab.com/documentation/EN/RedPhone/RedPhone_DX_Specification_en.html) в качестве пингера, совмещая таким образом двухстороннюю голосовую связи и навигацию.
+
+При работе с пингером, навигационный приемник [uNav RWLT RF Dongle](RWLT_RF_Dongle_Specification_en.md) эмулирует протокол обычных GNSS-приемников, и его можно подключить к любому ПО, поддерживающему отображение положения GNSS-приемника на карте. Например, GoogleEarth, SAS.Planet и т.п.
 
 <div style="page-break-after: always;"></div>
 
-## System composition
+## Состав системы
 
 |  |  |
 | :---: | :--- |
-| ![RWLT GIB](/documentation/RWLT_GIB.png) | [RWLT GIB](RWLT_GIB_Specification_en.md) <br/> Hydroacoustic navigation buoy |
-| ![RWLT Pinger](/documentation/RWLT_Pinger.png) | [RWLT Pinger](RWLT_Pinger_Specification_en.md) <br/> Pinger beacon |
-| ![RWLT RF dongle](/documentation/uNav_rf_dongle.png) | [RWLT RF Dongle](RWLT_RF_Dongle_Specification_en.md) <br/> Digital RF dongle |
+| ![RWLT GIB](/documentation/rwlt_gib_h_small.png) | [RWLT GIB](RWLT_GIB_Specification_en.md) <br/> Навигационный гидроакустический буй-приемник |
+| ![RWLT Pinger](/documentation/dev_big_wbat_li_small.png) | [RWLT Pinger](RWLT_Pinger_Specification_en.md) <br/> Маяк-пингер |
+| ![RWLT RF dongle](/documentation/uNav_rf_dongle.png) | [uNav RWLT RF Dongle](RWLT_RF_Dongle_Specification_en.md) <br/> Цифровой радиоприемник |
 
-The minimum composition of the system includes four sonar buoys [RWLT GIB](RWLT_GIB_Specification_en.md) and one transmitting device, depending on the user's task:
-* If it is required to provide a diver with navigation data simultaneously with voice communication, then the diving telephone exchange [RedPhone-DX](https://docs.unavlab.com/documentation/EN/RedPhone/RedPhone_DX_Specification_en.html) is used; In this case, the geo-position of the diver will be determined at the moment when he releases the PTT button, i.e. ends the transmission of a voice message;
-* If it is required to determine the location of a remotely controlled vehicle (ROV, AUV), or a diver without the need to use voice communication, then a pinger beacon [RWLT Pinger](RWLT_Pinger_Specification_en.md) is used. The pinger works autonomously and the location of the object on which the pinger is attached will be updated every two seconds.
+Минимальный состав системы включает четыре гидроакустических буя [RWLT GIB](RWLT_GIB_Specification_en.md) и одно передающее устройство, в зависимости от пользовательской задачи:
+* Если требуется обеспечить навигационными данными водолаза одновременно с голосовой связью, то используется водолазная телефонная станция [RedPhone-DX](https://docs.unavlab.com/documentation/EN/RedPhone/RedPhone_DX_Specification_en.html); В этом случае геопозиция водолаза будет определяться в момент, когда он отпускает кнопку PTT, т.е. завершает передачу голосового сообщения;
+* Если требуется определять местоположение телеуправляемого аппарата (ТНПА, ROV), или водолаза без необходимости использования голосовой связи, то применяется маяк-пингер [RWLT Pinger](RWLT_Pinger_Specification_en.md). Пингер работает автономно и геопозиция объекта, на котором закреплен пингер будет обновляться каждые две секунды.
 
-To work on a PC, specialized open-source software is installed [uTrack](https://github.com/ucnl/uTrack), which displays:
-- current geographic position of the underwater object (longitude, latitude)
-- depth
-- water temperature
-- the voltage of the built-in battery
-- the geographic location of the buoys and voltages of their built-in batteries
-- when an external GPS is connected, the position of the surface tracking point, distance and course to the underwater object is displayed
+### При работе с пингером 
 
-<div style="page-break-after: always;"></div>
+Достаточно просто подключить навигационный приемник к любому card-plotter-у, поддерживающему сообщения [NMEA0183 RMC и GGA](uNav_protocol_specification_en.md). В этом варианте пользователю доступны:
+- географическое положение объекта, на котором закреплен пингер
+- курс движения объекта
 
-## Tasks to be solved
-* Tracking the position of an underwater object in real time (divers, ROV, AUV, etc.);
-* Determination of the course of movement of an underwater object;
-* Assistance in driving the underwater object to the surface control point and vice versa;
+При использовании приложения с открытым исходным кодом [uNav](https://github.com/ucnl/uNav/releases/download/1.0/uNav.zip), дополнительно становятся доступны:
+- положения навигационных буев и заряд их встроенных источников питания;
+- курс и дальность до опорной точки, в качестве которой пользователем может быть выбран один из четырех буев, встроенный навигационный приемник [uNav RWLT RF Dongle](RWLT_RF_Dongle_Specification_en.md) или точка с произвольно задаваемой координатой;
+- температура воды;
+- напряжение питания пингера;
 
-<div style="page-break-after: always;"></div>
+### При работе с водолазными станциями RedPhone-DX
 
-## Distinctive features
-* Work in absolute geographic coordinates;
-* A floating base of four sonar devices provides security both behind the pinger [RWLT Pinger](RWLT_Pinger_Specification_en.md), and behind the diving telephone exchange [RedPhone-DX](https://docs.unavlab.com/documentation/EN/RedPhone/RedPhone_DX_Specification_en.html);
-* No preliminary setup and calibration of the system and its components is required;
-* No informational pairing of the object with the pinger is required - the pinger is mechanically fixed on the underwater carrier;
-* Transfer of the calculated position of the underwater object to third-party software via the serial port using the NMEA0183 protocol;
-* Recording the track of the movement of an underwater object;
-* Ability to connect an additional GPS receiver to record the track of a surface tracking location (vessel).
+Требуется приложение с открытым исходным кодом [uTrackDiver](https://github.com/ucnl/uTrack/releases/download/beta/uTrackDiver.zip). В этом случае пользователю доступны положения до 255 водолазов, определяемые в конце каждой голосовой передачи от водолаза. 
+
 
 <div style="page-break-after: always;"></div>
 
-## Geometric limitations
-* _From each to each of the buoys there must be no more than 1500 meters and no less than 30 meters_
-* _Buys should be located in apexes of a convex quadrilateral so that its sides are approximately equal and differ by no more than 2 times_
-* _Maximum pinger immersion depth should not exceed the size of the navigation base_
-* _The greatest system accuracy is achieved inside the buoy figure, and work should always start inside this figure. It is possible to go beyond the figure, but the accuracy can be significantly reduced as the positioned object moves away from the buoy figure_
+## Решаемые задачи
+* Слежение за положением подводного объекта в реальном времени (водолазы, ТНПА, АНПА и т.п.);
+* Определение курса движения подводного объекта;
+* Помощь в приводе подводного объекта к надводному пункту контроля и наоборот;
+
+<div style="page-break-after: always;"></div>
+
+## Отличительные черты
+* Работа в абсолютных географических координатах;
+* Плавучая базы из четырех гидроакустических буев позволяет следить как за пингером [RWLT Pinger](RWLT_Pinger_Specification_en.md), так и за водолазной телефонной станцией [RedPhone-DX](https://docs.unavlab.com/documentation/EN/RedPhone/RedPhone_DX_Specification_en.html);
+* Не требуется никакой предварительной настройки и калибровки системы и ее составных частей;
+* Не требуется никакого информационного сопряжения объекта с пингером - пингер механически закрепляется на подводном носителе;
+* Передача вычисленнго положения подводного объекта в стороннее ПО через последовательный порт посредством протокола NMEA0183;
+* Запись трека передвижения подводного объекта;
+
+<div style="page-break-after: always;"></div>
+
+## Геометрические ограничения
+* _От каждого до каждого из буев должно быть не более 1500 метров и не менее 30 метров_
+* _Буи должны располагаться выпуклым четырехугольником, чтобы его стороны были примерно равны и отличались не более чем в 2 раза_
+* _Максимальная глубина погружения пингера не должна превышать размеры навигационной базы_
+* _Наибольшая точность системы достигается внутри фигуры буев, и работа всегда должна начинаться внутри этой фигуры. Выход за пределы фигуры возможен, однако точность при этом может значительно снижаться по мере удаления позиционируемого объекта от фигуры буев_
 
 <div style="page-break-after: always;"></div>
 
 _________  
-
-<div style="page-break-after: always;"></div>
 
