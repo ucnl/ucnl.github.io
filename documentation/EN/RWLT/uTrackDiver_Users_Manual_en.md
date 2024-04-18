@@ -15,21 +15,22 @@
 
 <div style="page-break-after: always;"></div>
 
-## Содержание
-- [1. Introduction]()
-- [2. Application interface and functions]()
-  - [2.1. Application Settings]()
-  - [2.2. Main window]()
-    - [2.2.1. Main toolbar]()
-    - [2.2.2. Map Toolbar]()
-    - [2.2.3. Map panel]()
-    - [2.2.4. Additional information field]()
-    - [2.2.5. Log field]()
-    - [2.2.7. List of divers]()
-    - [2.2.8. Legend field]()
-    - [2.2.9. Scale bar]()
-    - [2.2.10. Panel of switches for displayed diver parameters]()
-    - [2.2.11. Status line]()
+## Contents
+- [1. Introduction](#1-introduction)
+- [2. Application interface and functions](#2-application-interface-and-functions)
+  - [2.1. Application Settings](#21-application-settings)
+  - [2.2. Main window](#22-main-window)
+    - [2.2.1. Main toolbar](#221-main-toolbar)
+    - [2.2.2. Map Toolbar](#222-map-toolbar)
+    - [2.2.3. Map panel](#223-map-panel)
+    - [2.2.4. Additional information field](#224-additional-information-field)
+    - [2.2.5. Log field](#225-log-field)
+    - [2.2.6. Diver list toolbar](#226-diver-list-toolbar)
+    - [2.2.7. List of divers](#227-list-of-divers)
+    - [2.2.8. Legend field](#228-legend-field)
+    - [2.2.9. Scale bar](#229-scale-bar)
+    - [2.2.10. Panel of switches for displayed diver parameters](#2210-panel-of-switches-for-displayed-diver-parameters)
+    - [2.2.11. Status line](#2211-status-line)
 
 <div style="page-break-after: always;"></div>
 
