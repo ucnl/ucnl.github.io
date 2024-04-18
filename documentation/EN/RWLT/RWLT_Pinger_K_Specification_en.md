@@ -8,15 +8,14 @@
 
 ## KEY FEATURES
 
-* **Does not require connection - just mechanical fixation on a ROV/AUV/diver/etc.**
-* **Maximum ease of use and maintenance**
-* **Automatic turn-on in water**
+* **Easy media integration**
+* **Easy to maintain**
 * **Minimum dimensions and weight**
 
 ## DESCRIPTION
 
-Navigational pinger beacon  **RWLT Pinger** of the system **[RWLT](RWLT_DataBrief_en.md)** is placed on the positioned object: ROV, AUV, diver or other underwater object and emits a periodic navigation signal, which is received by four floating navigation buoys **[RWLT GIB](RWLT_GIB_Specification_en.md)**, according to the navigation signal, the geographic position of the pinger is determined, the transmission of telemetric information from the pinger combined with navigation allows determining its depth, water temperature and battery voltage.
-The pinger does not require any pairing with the positioned object; it is enough to simply attach it to the object.
+The navigation beacon-pinger **RWLT Pinger-K** of the **[RWLT](RWLT_DataBrief_en.md)** system is placed on a positioned object: an ROV, AUV or other underwater object and emits a periodic navigation signal, which is received by four floating navigation buoys **[RWLT GIB](RWLT_GIB_Specification_en.md)** the geographic position of the pinger is determined by the navigation signal; transmission of telemetric information from the pinger in combination with navigation allows you to determine its depth, water temperature and battery voltage. Unlike the basic version of the device, **RWLT Pinger-K** is designed to operate at a maximum depth of up to 1000 m.
+The device is powered by the carrier.
 
 <div style="page-break-after: always;"></div>
 
@@ -24,25 +23,22 @@ The pinger does not require any pairing with the positioned object; it is enough
 
 | PARAMETER | VALUE |
 | :--- | :--- |
-| DIMENSIONS (W/O battery unit, Ф х h) | 41 x 45 mm |
-| BATTERY UNIT DIMENSIONS | Ф50 х 165 mm |
-| WEIGHT (dry, W/O battery unit) | 0.16 kg |
-| BATTERY PACK | [SB-24-48-LF](/documentation/EN/Accessories/Sub_batteries_en.md#sb2448lf) |
-| BATTERY PACK WEIGHT (dry) | 0.75 kg |
-| BATTERY LIFE<sup>[1](#footnote1)</sup> | 10 h |
-| BANDWIDTH | 10 .. 30 kHz |
-| ACOUSTIC TRANSMISSION PERIOD | 2 seconds |
+| DIMENSIONS<sup>[1](#footnote1)</sup> (Ф х h) | 80 x 147 mm |
+| WEIGHT (dry)<sup>[1](#footnote1)</sup> | 1130 г |
+| MAX. OPERATING DEPTH | 1000 m |
+| DEPTH RESOLUTION | 0.6 m for 500 m version, 1.2 m for 1000 m version |
+| CARRIER FREQUENCY | 20050 Hz |
+| NAVIGATION SIGNAL EMITTING PERIOD | 2 seconds |
 | NAVIGATION SIGNAL DURATION | 0.2 seconds |
 | TELEMETRY | Depth, Temperature, Supply voltage |
 | MAX. ACOUSTIC RANGE<sup>[2](#footnote2)</sup> | 1500 m |
 | ACOUSTIC SOURCE LEVEL | 160 dB re 1 uPa @ 1 m |
-| MAX. RELATIVE VELOCITY | ± 1.8 m/s  |
-| DEPTH RATING | 300 m |
+| MAX. RELATIVE SPEED | ± 1.8 m/s  |
 | WORKING TEMPERATURE RANGE | -10 .. 50 °С |
-| CHARGING | By special cradle |
+<!-- | ПОЛОСА ЧАСТОТ | 10 .. 30 кГц | -->
 
 ________________
-<a name="footnote1"><sup>1</sup></a> With a new, fully charged battery, at an ambient temperature of 20 °C.  
-<a name="footnote2"><sup>2</sup></a> A parameter that determines the maximum range at which signal reception is possible, based on electroacoustic parameters of the transmitter and receiver, spatial decrease in the intensity of sound energy, attenuation in the environment and the level of hydroacoustic noise.  
+<a name="footnote1"><sup>1</sup></a> Without taking into account the weight and dimensions of the antenna. The device is equipped with an antenna [RT-1.524525-1-FF](/documentation/EN/Transducers/RT_1_524525_1_FF_Specification_en).   
+<a name="footnote2"><sup>2</sup></a> A parameter that determines the maximum range at which signal reception is possible, based on the electroacoustic parameters of the transmitter and receiver, the spatial decrease in the intensity of sound energy, attenuation in the medium and the noise level.  
 
 <div style="page-break-after: always;"></div>
