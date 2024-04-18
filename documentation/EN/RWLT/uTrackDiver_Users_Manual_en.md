@@ -16,8 +16,20 @@
 <div style="page-break-after: always;"></div>
 
 ## Содержание
-
-
+- [1. Introduction]()
+- [2. Application interface and functions]()
+  - [2.1. Application Settings]()
+  - [2.2. Main window]()
+    - [2.2.1. Main toolbar]()
+    - [2.2.2. Map Toolbar]()
+    - [2.2.3. Map panel]()
+    - [2.2.4. Additional information field]()
+    - [2.2.5. Log field]()
+    - [2.2.7. List of divers]()
+    - [2.2.8. Legend field]()
+    - [2.2.9. Scale bar]()
+    - [2.2.10. Panel of switches for displayed diver parameters]()
+    - [2.2.11. Status line]()
 
 <div style="page-break-after: always;"></div>
 
