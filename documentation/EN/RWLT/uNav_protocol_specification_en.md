@@ -1,4 +1,4 @@
-[Main](/../../) ❯ [Navigation & tracking systems](/navigation_and_tracking_systems_en) ❯ **RWLT: User’s manual**
+[Main](/../../) ❯ [Navigation & tracking systems](/navigation_and_tracking_systems_en) ❯ **uNav: protocol specification**
 
 > ℹ This document can be printed directly from your browser.
 > For best results:
@@ -7,302 +7,275 @@
 
 <div style="page-break-after: always;"></div>
 
-| ![logo](/documentation/sm_logo.png) | ![image](https://github.com/ucnl/ucnl.github.io/assets/24439946/5fde4435-b2a6-4875-b7fc-cd11ccbc9fb5) |
+| ![logo](/documentation/sm_logo.png) | ![image](https://github.com/ucnl/ucnl.github.io/assets/24439946/074871c4-ccf6-4423-b90f-ec9b4383b879) |
 | :---: | ---: |
-| [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **RWLT** - Underwater acoustic tracking system <br/> User's manual |
-
-
-
-[Главная](/README_RU) ❯ [Гидроакустические навигационные и трекинговые системы](/navigation_and_tracking_systems_ru) ❯ **Описание протокола сопряжения: uNav**
-
-<div style="page-break-after: always;"></div>
-
-| ![logo](/documentation/sm_logo.png) |  |
-| :---: | ---: |
-| [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **uNav** - навигационный приемник для трекинговых систем RWLT/WAYU <br/> Протокол информационного сопряжения |
+| [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **uNav** - navigation solver/radio modem for RWLT/WAYU systems <br/> Communication protocol |
   
-# uNav <br/> протокол информационного сопряжения
+# uNav <br/> Communication protocol
 
 <div style="page-break-after: always;"></div>
 
-## Содержание
+## Contents
 
-- [1. Введение](#1-%D0%B2%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5)
-  - [1.1. Протокол физического уровня](#11-%D0%BF%D1%80%D0%BE%D1%82%D0%BE%D0%BA%D0%BE%D0%BB-%D1%84%D0%B8%D0%B7%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%BE%D0%B3%D0%BE-%D1%83%D1%80%D0%BE%D0%B2%D0%BD%D1%8F)
-  - [1.2. Стандарт протокола диалогового уровня NMEA0183](#12-%D1%81%D1%82%D0%B0%D0%BD%D0%B4%D0%B0%D1%80%D1%82-%D0%BF%D1%80%D0%BE%D1%82%D0%BE%D0%BA%D0%BE%D0%BB%D0%B0-%D0%B4%D0%B8%D0%B0%D0%BB%D0%BE%D0%B3%D0%BE%D0%B2%D0%BE%D0%B3%D0%BE-%D1%83%D1%80%D0%BE%D0%B2%D0%BD%D1%8F-nmea0183)
-- [2. Система команд UNV](#2-%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%B0-%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4-unv)
-   - [2.1. UNV0 - Настройки](#21-unv0---%D0%BD%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B8)
-   - [2.2. UNV1 - Опорная точка](#22-unv1---%D0%BE%D0%BF%D0%BE%D1%80%D0%BD%D0%B0%D1%8F-%D1%82%D0%BE%D1%87%D0%BA%D0%B0)
-   - [2.3. UNV2 - Глубина и температура воды](#23-unv2---%D0%B3%D0%BB%D1%83%D0%B1%D0%B8%D0%BD%D0%B0-%D0%B8-%D1%82%D0%B5%D0%BC%D0%BF%D0%B5%D1%80%D0%B0%D1%82%D1%83%D1%80%D0%B0-%D0%B2%D0%BE%D0%B4%D1%8B)
-   - [2.4. UNV4 - Параметры относительно опорной точки](#24-unv4---%D0%BF%D0%B0%D1%80%D0%B0%D0%BC%D0%B5%D1%82%D1%80%D1%8B-%D0%BE%D1%82%D0%BD%D0%BE%D1%81%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%BE-%D0%BE%D0%BF%D0%BE%D1%80%D0%BD%D0%BE%D0%B9-%D1%82%D0%BE%D1%87%D0%BA%D0%B8)
-   - [2.5. UNV5 - Данные от встроенного GNSS-приемника](#25-unv5---%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D0%B5-%D0%BE%D1%82-%D0%B2%D1%81%D1%82%D1%80%D0%BE%D0%B5%D0%BD%D0%BD%D0%BE%D0%B3%D0%BE-gnss-%D0%BF%D1%80%D0%B8%D0%B5%D0%BC%D0%BD%D0%B8%D0%BA%D0%B0)
-   - [2.6. UNV6 - Данные от пингера RWLT](#26-unv6---%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D0%B5-%D0%BE%D1%82-%D0%BF%D0%B8%D0%BD%D0%B3%D0%B5%D1%80%D0%B0-rwlt)
- - [3. Прочие сообщения](#3-%D0%BF%D1%80%D0%BE%D1%87%D0%B8%D0%B5-%D1%81%D0%BE%D0%BE%D0%B1%D1%89%D0%B5%D0%BD%D0%B8%D1%8F)
-   - [3.1. GGA](#31-gga)
-   - [3.2. RMC](#32-rmc)
-   - [3.3. APLA - Пакет данных от навигационного буя WAYU](#33-apla---%D0%BF%D0%B0%D0%BA%D0%B5%D1%82-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85-%D0%BE%D1%82-%D0%BD%D0%B0%D0%B2%D0%B8%D0%B3%D0%B0%D1%86%D0%B8%D0%BE%D0%BD%D0%BD%D0%BE%D0%B3%D0%BE-%D0%B1%D1%83%D1%8F-wayu)
-   - [3.4. RWLA - Пакет данных от навигационного буя RWLT](#34-rwla---%D0%BF%D0%B0%D0%BA%D0%B5%D1%82-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85-%D0%BE%D1%82-%D0%BD%D0%B0%D0%B2%D0%B8%D0%B3%D0%B0%D1%86%D0%B8%D0%BE%D0%BD%D0%BD%D0%BE%D0%B3%D0%BE-%D0%B1%D1%83%D1%8F-rwlt)
 
 <div style="page-break-after: always;"></div>
 
-## 0. История версий и список изменений
-[История версий и изменений](uNav_version_history_ru.md)
+## 0. Version history
+[Version history](uNav_version_history_en.md)
 
 <div style="page-break-after: always;"></div>
 
-## 1. Введение
-### 1.1. Протокол физического уровня
+## 1. Introduction
+### 1.1. Physical layer protocol
    
-Устройства uNav поддерживают информационное сопряжение при помощи последовательного интерфейса.
+uNav devices support data pairing using a serial interface.
 
-Настройки порта подключения по умолчанию:  
-> _Baudrate: 38400 bit/s_  
-> _Data bits: 8_  
-> _Stop bits: 1_  
-> _Parity: No_  
-> _Hardware flow control: No_  
+Default connection port settings:
+> _Baudrate: 38400 bit/s_
+> _Data bits: 8_
+> _Stop bits: 1_
+>_Parity: No_
+> _Hardware flow control: No_
 
 
-### 1.2. Стандарт протокола диалогового уровня NMEA0183
-Стандарт NMEA0183 описывает формат текстовых (ASCII) сообщений диалогового уровня.  
+### 1.2. NMEA0183 Conversational Layer Protocol Standard
+The NMEA0183 standard describes the format of text (ASCII) dialog-level messages.
 
-Пример сообщения:  **`$PUNA0,1,0*hh<СR><LF>`**  
+Example message:  **`$PUNA0,1,0*hh<СR><LF>`**  
 
-Основные элементы посылки (сообщения, sentence) NMEА0183:
-* '$' - начало сообщения,
-* 'P' - Proprietary, проприетарный код
-* 'UNV' - трехбуквенный идентификатор
-* '0' - идентификатор сообщения
-* ',' - запятая (разделитель параметров)  
-* '*' - разделитель контрольной суммы
-* 'hh' - контрольная сумма в шестнадцатеричном формате (например FF, 01). Рассчитывается как побитовый XOR всех байт между '$' и '*'.
-* \<CR\>\<LF\> - конец сообщения (перевод строки)
+Basic elements of a message (message, sentence) NMEA0183:
+* '$' - start of message,
+* 'P' - Proprietary, proprietary code
+* 'UNV' is a three-letter identifier
+* '0' - message identifier
+* ',' - comma (parameter separator)
+* '*' - checksum separator
+* 'hh' - checksum in hexadecimal format (for example FF, 01). Calculated as a bitwise XOR of all bytes between '$' and '*'.
+* \<CR\>\<LF\> - end of message (line feed)
 
 
 <div style="page-break-after: always;"></div>
 
-## 2. Система команд UNV
+## 2. UNV command system
 
-Устройство и система команд для взаимодействия с ним спроектированы так, чтобы его можно было единожды настроив, подключать к различным пиложениям, предназначенным для работы с приемниками GNSS. В большей части устройство использует стандартные сообщения протокола NMEA: RMC и GGA. 
+The device and the system of commands for interacting with it are designed so that, once configured, it can be connected to various applications designed to work with GNSS receivers. For the most part, the device uses standard NMEA protocol messages: RMC and GGA.
 
-### 2.1. UNV0 - Настройки
-Сообщение UNV0 служит для задания настроек устройству, запроса текущих настроек и передачи текущих настроек от устройства.
+### 2.1. UNV0 - Settings
+The UNV0 message is used to specify settings for the device, request current settings, and transfer current settings from the device.
 
-Формат сообщения: **`$PUNV0,x.x,x.x,x.x,x.x,x,x.x,x,x.x,x,x*hh<CR><LF>`**  
+Message format: **`$PUNV0,x.x,x.x,x.x,x.x,x,x.x,x,x.x,x,x*hh<CR><LF>`**
 
-| № | Поле/Параметр |	Описание |
+| No. | Field/Parameter | Description |
 | :--- | :--- | :--- |
-| | $	| Начало сообщения '$' |
-| | PUNV	| UNV |
-| | 0	| Идентификатор сообщения |
-| 1 | sty_PSU	| Соленость воды в PSU, 0 .. 40 PSU |
-| 2 | wtmp_C	| Температура воды в °C, -4 .. 46 °С |
-| 3 | sos_mps	| Скорость звука в воде в м/с, 1300 .. 1600 м/с |
-| 4 | max_tspd_mps | Максимальная скорость движения в м/с, 0.5 .. 5 м/с |
-| 5 | sf_FIFO_size | Размер буфера сглаживающего фильтра, 2 .. 64 |
-| 6 | sf_rthld_m | Порог сброса сглаживающего фильтра, 5 .. 1000 м |
-| 7 | dhf_FIFO_size | Размер буфера-классификатора, 2 .. 64 |
-| 8 | dhf_rthld | Порог буфера-классификатора, 5 .. 1000 м |
-| 9 | ce_FIFO_size | Размер буфера определителя курса движения, 2 .. 64 |
-| 10 | brate | Скорость порта (см. ..) |
-| 11 | rwlt_mode | Режим работы (для системы RWLT). Пустое поле или 0 - пингер, 1 - дайверы |
-| 12 | rwlt_drating | Максимальная глубина пингера (для системы RWLT). 0 - 300, 1 - 500, 2 - 1000 м |
-| *	| Разделитель контрольной суммы NMEA |
-| hh	| Контрольная сумма NMEA |
-| \<CR\>\<LF\> | Конец сообщения |
+| | $ | Message start '$' |
+| | PUNV | UNV |
+| | 0 | Message ID |
+| 1 | sty_PSU | Water salinity in PSU, 0 .. 40 PSU |
+| 2 | wtmp_C | Water temperature in °C, -4 .. 46 °C |
+| 3 | sos_mps | Speed of sound in water in m/s, 1300 .. 1600 m/s |
+| 4 | max_tspd_mps | Maximum movement speed in m/s, 0.5 .. 5 m/s |
+| 5 | sf_FIFO_size | Anti-aliasing filter buffer size, 2 .. 64 |
+| 6 | sf_rthld_m | Smoothing filter reset threshold, 5 .. 1000 m |
+| 7 | dhf_FIFO_size | Classifier buffer size, 2 .. 64 |
+| 8 | dhf_rthld | Classifier buffer threshold, 5 .. 1000 m |
+| 9 | ce_FIFO_size | Course estimator buffer size, 2 .. 64 |
+| 10 | brate | Port speed (see...) |
+| 11 | rwlt_mode | Operating mode (for RWLT system). Empty field or 0 - pinger, 1 - divers |
+| 12 | rwlt_drating | Maximum pinger depth (for RWLT system). 0 - 300, 1 - 500, 2 - 1000 m |
+| * | NMEA checksum separator |
+| hh | NMEA checksum |
+| \<CR\>\<LF\> | End of message |
 
-### 2.2. UNV1 - Опорная точка
-Команда служит для задания опорной точки, относительно которой устройство может рассчитывать курс и дальность до позиционируемого объекта.
+### 2.2. UNV1 - Reference point
+The command is used to set a reference point, relative to which the device can calculate the course and distance to the positioned object.
  
-Формат сообщения: **`$PUWV1,x,x.x,x.x*hh<CR><LF>`**
+Message format: **`$PUWV1,x,x.x,x.x*hh<CR><LF>`**
 
-| № | Поле/Параметр |	Описание |
+| No. | Field/Parameter | Description |
 | :--- | :--- | :--- |
-| | $	| Начало сообщения '$' |
-| | PUNV	| UNV |
-| | 1	| Идентификатор сообщения |
+| | $ | Message start '$' |
+| | PUNV | UNV |
+| | 1 | Message ID |
 | 1 | ref_point_type | 0 - AUX GNSS, 1-4 base points, empty - user defined |
-| 2 | ref_point_lat	| широта, -90.0 .. 90.0 ° |
-| 3 | ref_point_lon	| долгота, -180.0 .. 180.0 ° |
-| *	| Разделитель контрольной суммы NMEA |
-| hh	| Контрольная сумма NMEA |
-| \<CR\>\<LF\> | Конец сообщения |
+| 2 | ref_point_lat | latitude, -90.0 .. 90.0° |
+| 3 | ref_point_lon | longitude, -180.0 .. 180.0° |
+| * | NMEA checksum separator |
+| hh | NMEA checksum |
+| \<CR\>\<LF\> | End of message |
 
-### 2.3. UNV2 - Глубина и температура воды
-Команда служит для задания глубины позиционируемого объекта (только для WAYU) и температуры воды.
+### 2.3. UNV2 - Water depth and temperature
+The command is used to set the depth of the positioned object (WAYU only) and water temperature.
 
-Формат сообщения: **`$PUWV2,x.x,x.x*hh<CR><LF>`**
+Message format: **`$PUWV2,x.x,x.x*hh<CR><LF>`**
 
-| № | Поле/Параметр |	Описание |
+| No. | Field/Parameter | Description |
 | :--- | :--- | :--- |
-| | $	| Начало сообщения '$' |
-| | PUNV	| UNV |
-| | 2	| Идентификатор сообщения |
-| 1 | tDpt_m | Глубина позиционируемого объекта, м |
-| 2 | wTmp_С	| Температура воды, -4 .. 46 °C |
-| *	| Разделитель контрольной суммы NMEA |
-| hh	| Контрольная сумма NMEA |
-| \<CR\>\<LF\> | Конец сообщения |
+| | $ | Message start '$' |
+| | PUNV | UNV |
+| | 2 | Message ID |
+| 1 | tDpt_m | Depth of the positioned object, m |
+| 2 | wTmp_С | Water temperature, -4 .. 46 °C |
+| * | NMEA checksum separator |
+| hh | NMEA checksum |
+| \<CR\>\<LF\> | End of message |
 
-### 2.4. UNV4 - Параметры относительно опорной точки
-Сообщение содержит вычисленные навигационные параметры позиционируемого объекта, относительно настроенной опорной точки. 
+### 2.4. UNV4 - Parameters relative to the reference point
+The message contains the calculated navigation parameters of the positioned object, relative to the configured reference point.
 
-Формат сообщения: **`$PUWV4,x,x.x,x.x,x.x,x.x,x.x,x.x*hh<CR><LF>`**
+Message format: **`$PUWV4,x,x.x,x.x,x.x,x.x,x.x,x.x*hh<CR><LF>`**
 
-| № | Поле/Параметр |	Описание |
+| No. | Field/Parameter | Description |
 | :--- | :--- | :--- |
-| | $	| Начало сообщения '$' |
-| | PUNV	| UNV |
-| | 4	| Идентификатор сообщения |
-| 1 | tID | Идентификатор объекта. Для всех случаев кроме работы RWLT в режиме с водолазами, поле остается пустым |
-| 2 | rpLt	| Широта опорной точки, -90.0 .. 90.0 ° |
-| 3 | rpLn	| Долгота опорной точки, -180.0 .. 180.0 ° |
-| 4 | dst2rp	| Дальность до опорной точки на плоскости, м |
-| 5 | crs2rp	| Курс от объекта на опорную точку, 0 .. 360.0 ° |
-| 6 | crs4rp	| Курс от опорной точки на объект, 0 .. 360.0 ° |
-| 7 | Age	| Возраст навигационных данных, сек |
-| *	| Разделитель контрольной суммы NMEA |
-| hh	| Контрольная сумма NMEA |
-| \<CR\>\<LF\> | Конец сообщения |
+| | $ | Message start '$' |
+| | PUNV | UNV |
+| | 4 | Message ID |
+| 1 | tID | Object ID. For all cases except RWLT operation in diver mode, the field remains empty |
+| 2 | rpLt | Reference point latitude, -90.0 .. 90.0 ° |
+| 3 | rpLn | Longitude of reference point, -180.0 .. 180.0 ° |
+| 4 | dst2rp | Distance to the reference point on the plane, m |
+| 5 | crs2rp | Course from object to reference point, 0 .. 360.0 ° |
+| 6 | crs4rp | Course from the reference point to the object, 0 .. 360.0 ° |
+| 7 | Age | Navigation data age, sec |
+| * | NMEA checksum separator |
+| hh | NMEA checksum |
+| \<CR\>\<LF\> | End of message |
 
-### 2.5. UNV5 - Данные от встроенного GNSS-приемника
-Сообщение содержит навигационные данные от встроенного GNSS-приемника. 
+### 2.5. UNV5 - Data from built-in GNSS receiver
+The message contains navigation data from the built-in GNSS receiver.
 
-Формат сообщения: **`$PUWV5,x.x,x.x,x.x,x.x*hh<CR><LF>`**
+Message format: **`$PUWV5,x.x,x.x,x.x,x.x*hh<CR><LF>`**
 
-| № | Поле/Параметр |	Описание |
+| No. | Field/Parameter | Description |
 | :--- | :--- | :--- |
-| | $	| Начало сообщения '$' |
-| | PUNV	| UNV |
-| | 5	| Идентификатор сообщения |
-| 1 | gnssLt | Географическая широта, -90.0 .. 90.0 ° |
-| 2 | gnssLn | Географическая долгота, -180.0 .. 180.0 ° |
-| 3 | gnssCrs	| Курс, 0 .. 360.0 ° |
-| 4 | gnssSog | Скорость, км/ч |
-| *	| Разделитель контрольной суммы NMEA |
-| hh	| Контрольная сумма NMEA |
-| \<CR\>\<LF\> | Конец сообщения |
+| | $ | Message start '$' |
+| | PUNV | UNV |
+| | 5 | Message ID |
+| 1 | gnssLt | Geographic latitude, -90.0 .. 90.0 ° |
+| 2 | gnssLn | Geographic longitude, -180.0 .. 180.0 ° |
+| 3 | gnssCrs | Heading, 0 .. 360.0 ° |
+| 4 | gnssSog | Speed, km/h |
+| * | NMEA checksum separator |
+| hh | NMEA checksum |
+| \<CR\>\<LF\> | End of message |
 
-### 2.6. UNV6 - Данные от пингера RWLT
-Сообщение содержит данные, полученные от пингера RWLT. 
+### 2.6. UNV6 - Data from RWLT pinger
+The message contains data received from the RWLT pinger.
 
-Формат сообщения: **`$PUWV6,x,x.x*hh<CR><LF>`**
+Message format: **`$PUWV6,x,x.x*hh<CR><LF>`**
 
-| № | Поле/Параметр |	Описание |
+| No. | Field/Parameter | Description |
 | :--- | :--- | :--- |
-| | $	| Начало сообщения '$' |
-| | PUNV	| UNV |
-| | 6	| Идентификатор сообщения |
-| 1 | dataID | Идентификатор данных |
-| 2 | dataValue | Данные |
-| *	| Разделитель контрольной суммы NMEA |
-| hh	| Контрольная сумма NMEA |
-| \<CR\>\<LF\> | Конец сообщения |
+| | $ | Message start '$' |
+| | PUNV | UNV |
+| | 6 | Message ID |
+| 1 | dataID | Data ID |
+| 2 | dataValue | Data |
+| * | NMEA checksum separator |
+| hh | NMEA checksum |
+| \<CR\>\<LF\> | End of message |
 
 <div style="page-break-after: always;"></div>
 
-## 3. Прочие сообщения
+## 3. Other messages
 
 ### 3.1. GGA
-Стандартное сообщение NMEA0183 - Global positioning system fix data.
+Standard message NMEA0183 - Global positioning system fix data.
 
-Формат сообщения: **`$GNGGA,hhmmss.sss,ddmm.mmm,N|S,yyymm.mmm,E|W,x,xx,x.x,x.x,M,x.x,M,xx,xxxx*hh<CR><LF>`**  
+Message format: **`$GNGGA,hhmmss.sss,ddmm.mmm,N|S,yyymm.mmm,E|W,x,xx,x.x,x.x,M,x.x,M,xx,xxxx*hh<CR ><LF>`**
 
-| № | Поле/Параметр |	Описание |
+| No. | Field/Parameter | Description |
 | :--- | :--- | :--- |
-| | $	| Начало сообщения '$' |
-| | GN | Стандартный источник данных - Global navigation |
-| | GGA |	Стандартный идентификатор сообщения - Globap positioning system fix data |
-| 1 | UTC Time |	UTC, ччммсс.ссс (по встроенному GNSS-приемнику) |
-| 2 | Latitude |	Географическая широта, ddmm.mmmmmm |
-| 3 | N|S | Идентификатор полушария, N - северное, S - южное |
-| 4 | Longitude |	Географическая долгота, dddmm.mmmmmm |
-| 5 | E|W | Идентификатор полушария, E - восточное, W - западное |
-| 6 | Fix Type | Тип навигационного решения | 
-| 7 | Satellites in view | Число доступных спутников (всегда равно 4) |
-| 8 | HDOP | Horizontal dilution of precision, метры. (данное поле передает радиальную ошибку, значение функции невязки в конце решения) |
-| 9 | Altitude | Altitude, метры. (данное поле передает глубину, т.е. высоту со знаком "-") |
-| 10 | M |	М - метры |
-| 11 | Geoidal separation | Поле не поддерживается и остается пустым |
-| 12 | Age of data |  Поле не поддерживается и остается пустым |
-| 13 | Reference station ID | Поле не поддерживается и остается пустым |
-| | *	| Разделитель контрольной суммы NMEA |
-| | hh	| Контрольная сумма NMEA |
-| | \<CR\>\<LF\> | Конец сообщения |
+| | $ | Message start '$' |
+| | GN | Standard data source - Global navigation |
+| | GGA | Standard Message ID - Globap positioning system fix data |
+| 1 | UTC Time | UTC, hhmmss.sss (via built-in GNSS receiver) |
+| 2 | Latitude | Geographic latitude, ddmm.mmmmmm |
+| 3 | N|S | Hemisphere identifier, N - northern, S - southern |
+| 4 | Longitude | Geographic longitude, dddmm.mmmmmm |
+| 5 | E|W | Hemisphere identifier, E - eastern, W - western |
+| 6 | Fix Type | Type of navigation solution |
+| 7 | Satellites in view | Number of available satellites (always 4) |
+| 8 | HDOP | Horizontal dilution of precision, meters. (this field conveys the radial error, the value of the residual function at the end of the solution) |
+| 9 | Altitude | Altitude, meters. (this field conveys depth, i.e. height with a "-" sign) |
+| 10 | M | M - meters |
+| 11 | Geoidal separation | The field is not supported and remains empty |
+| 12 | Age of data | The field is not supported and remains empty |
+| 13 | Reference station ID | The field is not supported and remains empty |
+| | * | NMEA checksum separator |
+| | hh | NMEA checksum |
+| | \<CR\>\<LF\> | End of message |
 
-### 3.2. RMC
-Стандартное сообщение NMEA0183 - Recommended minimum, sentence 'C'.
+### 3.2. R.M.C.
+Standard message NMEA0183 - Recommended minimum, sentence 'C'.
 
-Формат сообщения: **`$GNRMC,hhmmss.sss,A|V,ddmm.mmm,N|S,dddmm.mmm,E|W,x.x,x.x,ddmmyy,,,A|D|V*hh<CR><LF>`**  
+Message format: **`$GNRMC,hhmmss.sss,A|V,ddmm.mmm,N|S,dddmm.mmm,E|W,x.x,x.x,ddmmyy,,,A|D|V*hh<CR ><LF>`**
 
-| № | Поле/Параметр |	Описание |
+| No. | Field/Parameter | Description |
 | :--- | :--- | :--- |
-|  | $	| Начало сообщения '$' |
-|  | GN | Стандартный источник данных - Global navigation |
-|  | RMC | Стандартный идентификатор сообщения - Recommended minimum, sentence 'C' |
-| 1 | UTC Time |	UTC, ччммсс.ссс |
-| 2 | Data quality indicator |	A - данные о времени (по встроенному GNSS-приемнику) верны |
-| 3 | Latitude |	Географическая широта, ddmm.mmmmmm |
-| 4 | N|S | Идентификатор полушария, N - северное, S - южное |
-| 5 | Longitude |	Географическая долгота, dddmm.mmmmmm |
-| 6 | E|W | Идентификатор полушария, E - восточное, W - западное |
-| 7 | Speed |	Поле не поддерживается |
-| 8 | Course | Курс движения, градусы |
-| 9 | Date | По данным встроенного GNSS-приемника |
-| 10 | Magnetic variation | Поле не поддерживается |
-| 11 | E|W | Поле не поддерживается |
-| 12 | A | Режим, A - GNSS |
-|  | *	| Разделитель контрольной суммы NMEA |
-|  | hh	| Контрольная сумма NMEA |
-|  | \<CR\>\<LF\> | Конец сообщения |
+| | $ | Message start '$' |
+| | GN | Standard data source - Global navigation |
+| | RMC | Standard message identifier - Recommended minimum, sentence 'C' |
+| 1 | UTC Time | UTC, hhmmss.ss |
+| 2 | Data quality indicator | A - time data (based on built-in GNSS receiver) is correct |
+| 3 | Latitude | Geographic latitude, ddmm.mmmmmm |
+| 4 | N|S | Hemisphere identifier, N - northern, S - southern |
+| 5 | Longitude | Geographic longitude, dddmm.mmmmmm |
+| 6 | E|W | Hemisphere identifier, E - eastern, W - western |
+| 7 | Speed | Field not supported |
+| 8 | Course | Course of movement, degrees |
+| 9 | Date | According to the built-in GNSS receiver |
+| 10 | Magnetic variation | Field not supported |
+| 11 | E|W | Field not supported |
+| 12 | A | Mode, A - GNSS |
+| | * | NMEA checksum separator |
+| | hh | NMEA checksum |
+| | \<CR\>\<LF\> | End of message |
 
-### 3.3. APLA - Пакет данных от навигационного буя WAYU
-Данные, полученные от навигационного буя cистемы WAYU (APostLe, сообщение "A").
+### 3.3. APLA - Data packet from WAYU navigation buoy
+Data received from the navigation buoy of the WAYU system (APostLe, message "A").
 
-Формат сообщения: **`$PAPLA,x,x.x,x.x,x,x.x,x.x*hh<CR><LF>`**
+Message format: **`$PAPLA,x,x.x,x.x,x,x.x,x.x*hh<CR><LF>`**
 
-| № | Поле/Параметр |	Описание |
+| No. | Field/Parameter | Description |
 | :--- | :--- | :--- |
-| | $	| Начало сообщения '$' |
-| | PAPLA	| APL |
-| | A	| Идентификатор сообщения |
-| 1 | bID | Номер (адрес) буя, 1 .. 4 |
-| 2 | bLt	| Широта буя, -90.0 .. 90.0 ° |
-| 3 | bLn	| Долгота буя, -180.0 .. 180.0 ° |
-| 4 | bDpt_m | Глубина погружения акустической антенны, м |
-| 5 | bBat | Напряжение питания встроенного источника буя, В |
-| 6 | bTOA | Время прихода сигнала на буй, сек, 0 .. 62 |
-| *	| Разделитель контрольной суммы NMEA |
-| hh	| Контрольная сумма NMEA |
-| \<CR\>\<LF\> | Конец сообщения |
+| | $ | Message start '$' |
+| | PAPLA | APL |
+| | A | Message ID |
+| 1 | bID | Buoy number (address), 1 .. 4 |
+| 2 | bLt | Buoy latitude, -90.0 .. 90.0 ° |
+| 3 | bLn | Buoy longitude, -180.0 .. 180.0 ° |
+| 4 | bDpt_m | Acoustic antenna immersion depth, m |
+| 5 | bBat | Supply voltage of the built-in buoy source, V |
+| 6 | bTOA | Time of signal arrival at the buoy, sec, 0 .. 62 |
+| * | NMEA checksum separator |
+| hh | NMEA checksum |
+| \<CR\>\<LF\> | End of message |
 
 
-### 3.4. RWLA - Пакет данных от навигационного буя RWLT
-Данные, полученные от навигационного буя системы RWLT (RWLT, сообщение "A")
+### 3.4. RWLA - Data packet from RWLT navigation buoy
+Data received from an RWLT navigation buoy (RWLT message "A")
 
-Формат сообщения: **`$PRWLA,x,x.x,x.x,x,x.x,x,x.x,x.x*hh<CR><LF>`**
+Message format: **`$PRWLA,x,x.x,x.x,x,x.x,x,x.x,x.x*hh<CR><LF>`**
 
-| № | Поле/Параметр |	Описание |
+| No. | Field/Parameter | Description |
 | :--- | :--- | :--- |
-| | $	| Начало сообщения '$' |
-| | PRWLA	| RWL |
-| | A	| Идентификатор сообщения |
-| 1 | bID | Номер (адрес) буя, 1 .. 4 |
-| 2 | bLt	| Широта буя, -90.0 .. 90.0 ° |
-| 3 | bLn	| Долгота буя, -180.0 .. 180.0 ° |
-| 4 | bDpt_m | Глубина погружения акустической антенны, м |
-| 5 | bBat | Напряжение питания встроенного источника буя, В |
-| 6 | pData | Пакет данных от позиционируемого объекта |
-| 7 | bTOA | Время прихода сигнала на буй, сек, 0 .. 62 |
+| | $ | Message start '$' |
+| | PRWLA | RWL |
+| | A | Message ID |
+| 1 | bID | Buoy number (address), 1 .. 4 |
+| 2 | bLt | Buoy latitude, -90.0 .. 90.0 ° |
+| 3 | bLn | Buoy longitude, -180.0 .. 180.0 ° |
+| 4 | bDpt_m | Acoustic antenna immersion depth, m |
+| 5 | bBat | Supply voltage of the built-in buoy source, V |
+| 6 | pData | Data packet from positioned object |
+| 7 | bTOA | Time of signal arrival at the buoy, sec, 0 .. 62 |
 | 8 | bMSR | Main peak to side lobe ratio, dB |
-| *	| Разделитель контрольной суммы NMEA |
-| hh	| Контрольная сумма NMEA |
-| \<CR\>\<LF\> | Конец сообщения |
-
-
-<div style="page-break-after: always;"></div>
+| * | NMEA checksum separator |
+| hh | NMEA checksum |
+| \<CR\>\<LF\> | End of message |
 
 <div style="page-break-after: always;"></div>
   
-[Вернуться к содержанию](#%D1%81%D0%BE%D0%B4%D0%B5%D1%80%D0%B6%D0%B0%D0%BD%D0%B8%D0%B5)
+[Back to contents]()
 
+<div style="page-break-after: always;"></div>
