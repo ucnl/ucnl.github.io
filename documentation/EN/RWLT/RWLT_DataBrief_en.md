@@ -55,7 +55,7 @@ Requires open source application [uTrackDiver](https://github.com/ucnl/uTrack/re
 
 ## Distinctive features
 * Work in absolute geographical coordinates;
-* A floating base of four sonobuoys allows you to monitor both the pinger [RWLT Pinger](RWLT_Pinger_Specification_en.md) and the diving telephone exchange [RedPhone-DX](https://docs.unavlab.com/documentation/EN/RedPhone/ RedPhone_DX_Specification_en.html);
+* A floating base of four sonobuoys allows you to monitor both the pinger [RWLT Pinger](RWLT_Pinger_Specification_en.md) and the diving telephone exchange [RedPhone-DX](https://docs.unavlab.com/documentation/EN/RedPhone/RedPhone_DX_Specification_en.html);
 * No preliminary configuration and calibration of the system and its components is required;
 * No information connection between the object and the pinger is required - the pinger is mechanically attached to the underwater carrier;
 * Transferring the calculated position of an underwater object to third-party software via a serial port using the NMEA0183 protocol;
