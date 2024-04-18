@@ -16,6 +16,22 @@
 <div style="page-break-after: always;"></div>
 
 ## Contents
+## 0. Version history
+## 1. Introduction
+### 1.1. Physical layer protocol
+### 1.2. NMEA0183 Conversational Layer Protocol Standard
+## 2. UNV command system
+### 2.1. UNV0 - Settings
+### 2.2. UNV1 - Reference point
+### 2.3. UNV2 - Water depth and temperature
+### 2.4. UNV4 - Parameters relative to the reference point
+### 2.5. UNV5 - Data from built-in GNSS receiver
+### 2.6. UNV6 - Data from RWLT pinger
+## 3. Other messages
+### 3.1. GGA
+### 3.2. RMC
+### 3.3. APLA - Data packet from WAYU navigation buoy
+### 3.4. RWLA - Data packet from RWLT navigation buoy
 
 
 <div style="page-break-after: always;"></div>
@@ -205,7 +221,7 @@ Message format: **`$GNGGA,hhmmss.sss,ddmm.mmm,N|S,yyymm.mmm,E|W,x,xx,x.x,x.x,M,x
 | | hh | NMEA checksum |
 | | \<CR\>\<LF\> | End of message |
 
-### 3.2. R.M.C.
+### 3.2. RMC
 Standard message NMEA0183 - Recommended minimum, sentence 'C'.
 
 Message format: **`$GNRMC,hhmmss.sss,A|V,ddmm.mmm,N|S,dddmm.mmm,E|W,x.x,x.x,ddmmyy,,,A|D|V*hh<CR ><LF>`**
