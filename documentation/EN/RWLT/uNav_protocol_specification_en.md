@@ -16,23 +16,22 @@
 <div style="page-break-after: always;"></div>
 
 ## Contents
-## 0. Version history
-## 1. Introduction
-### 1.1. Physical layer protocol
-### 1.2. NMEA0183 Conversational Layer Protocol Standard
-## 2. UNV command system
-### 2.1. UNV0 - Settings
-### 2.2. UNV1 - Reference point
-### 2.3. UNV2 - Water depth and temperature
-### 2.4. UNV4 - Parameters relative to the reference point
-### 2.5. UNV5 - Data from built-in GNSS receiver
-### 2.6. UNV6 - Data from RWLT pinger
-## 3. Other messages
-### 3.1. GGA
-### 3.2. RMC
-### 3.3. APLA - Data packet from WAYU navigation buoy
-### 3.4. RWLA - Data packet from RWLT navigation buoy
-
+- [0. Version history](#0-version-history)
+- [1. Introduction](#1-introduction)
+  - [1.1. Physical layer protocol](#11-physical-layer-protocol)
+  - [1.2. NMEA0183 Conversational Layer Protocol Standard](#12-nmea0183-conversational-layer-protocol-standard)
+- [2. UNV command system](#2-unv-command-system)
+  - [2.1. UNV0 - Settings](#21-unv0---settings)
+  - [2.2. UNV1 - Reference point](#22-unv1---reference-point)
+  - [2.3. UNV2 - Water depth and temperature](#23-unv2---water-depth-and-temperature)
+  - [2.4. UNV4 - Parameters relative to the reference point](#24-unv4---parameters-relative-to-the-reference-point)
+  - [2.5. UNV5 - Data from built-in GNSS receiver](#25-unv5---data-from-built-in-gnss-receiver)
+  - [2.6. UNV6 - Data from RWLT pinger](#26-unv6---data-from-rwlt-pinger)
+- [3. Other messages](#3-other-messages)
+  - [3.1. GGA](#31-gga)
+  - [3.2. RMC](#32-rmc)
+  - [3.3. APLA - Data packet from WAYU navigation buoy](#33-apla---data-packet-from-wayu-navigation-buoy)
+  - [3.4. RWLA - Data packet from RWLT navigation buoy](#34-rwla---data-packet-from-rwlt-navigation-buoy)
 
 <div style="page-break-after: always;"></div>
 
