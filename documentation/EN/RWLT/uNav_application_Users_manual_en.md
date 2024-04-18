@@ -17,6 +17,23 @@
 <div style="page-break-after: always;"></div>
 
 ## Contents
+- [1. Introduction](#1-introduction)
+- [2. Application interface and functions](#2-application-interface-and-functions)
+  - [2.1. Application Settings](#21-application-settings)
+    - [2.1.1. Tab 🧪 PHYSICS](#211-tab--physics)
+    - [2.1.2. ❗ CONNECTION tab](#212--connection-tab)
+    - [2.1.3. Tab 🛸 EXTRA](#213-tab--extra)
+- [2.2. Main application window](#22-main-application-window)
+    - [2.2.1. Main toolbar](#221-main-toolbar)
+    - [2.2.2. Map Toolbar](#222-map-toolbar)
+    - [2.2.3. Map panel](#223-map-panel)
+    - [2.2.4. Additional information panel](#224-additional-information-panel)
+    - [2.2.5. Log panel](#225-log-panel)
+    - [2.2.6. Additional panel No. 1](#226-additional-panel-no-1)
+    - [2.2.7. Additional panel No. 2](#227-additional-panel-no-2)
+    - [2.2.8. Status line](#228-status-line)
+    - [2.2.9. Legend field](#229-legend-field)
+    - [2.2.10. Scale bar](#2210-scale-bar)
 
 <div style="page-break-after: always;"></div>
 
@@ -92,7 +109,7 @@ The appearance of the tab controls is shown in the figure below:
 - **Tile size, px** - sets the size of map tiles in pixels. This parameter depends on the tile server.
 - **Tile servers** - list of tile server addresses for downloading map tiles.
 - **Enable tile download** - when checked, the application will try to download the necessary tiles from the specified servers.
-- **RWLT Mode** - This parameter determines the operating mode of the system [RWLT](RWLT_DataBrief_en.md): working with a pinger or with diving telephone stations [RedPhone-DX](https://docs.unavlab.com/documentation/EN /RedPhone/RedPhone_EN_Specification_ru.html). It is not recommended to change this parameter without consulting the manufacturer.
+- **RWLT Mode** - This parameter determines the operating mode of the system [RWLT](RWLT_DataBrief_en.md): working with a pinger or with diving telephone stations [RedPhone-DX](https://docs.unavlab.com/documentation/EN/RedPhone/RedPhone_EN_Specification_ru.html). It is not recommended to change this parameter without consulting the manufacturer.
 - **RWLT Pinger depth rating** - Determines the maximum depth for which the pinger is designed. It is not recommended to change this parameter without consulting the manufacturer.
   
 ### 2.2. Main application window
@@ -124,7 +141,7 @@ This function is designed to play back a log file. During the playback process, 
 ###### **🧹 Clear empty entries**
 The procedure for deleting all log files that are less than 2 KB in size, as well as empty folders.
 ###### **🗜 Archive all entries...**
-Archiving all log files. After creating the archive, a link to it will appear in [status line (8)]().
+Archiving all log files. After creating the archive, a link to it will appear in [status line (8)](#228-status-line).
 ###### **🗑 Delete all entries**
 Deletes all contents of the LOG folder.
 ###### **🧹+🗜+🗑 Do them all**
@@ -196,7 +213,7 @@ The map panel also contains:
 - scale ruler (10)
 
 #### 2.2.4. Additional information panel
-The display of this element is switched by the **👽** button on the [map toolbar (2)](). This panel displays various system parameters in text form. To the right of each value you can see how long ago that value was updated.
+The display of this element is switched by the **👽** button on the [map toolbar (2)](#222-map-toolbar). This panel displays various system parameters in text form. To the right of each value you can see how long ago that value was updated.
 For clarity, all possible parameters are summarized in the tables below.
 
 Title **TGT - TarGeT**
@@ -232,7 +249,7 @@ Header **GNSS - data from built-in GNSS receiver**
 | SPD | Travel speed, m/s and km/h |
 
 #### 2.2.5. Log panel
-The display of this element is switched by the **📜** button on the [map toolbar (2)](). This element displays the last few lines of the application log: data exchange with the device, errors that occur, etc.
+The display of this element is switched by the **📜** button on the [map toolbar (2)](#222-map-toolbar). This element displays the last few lines of the application log: data exchange with the device, errors that occur, etc.
 
 #### 2.2.6. Additional panel No. 1
 The panel contains controls for output ports and buttons for zooming in and out of the map display.
@@ -245,7 +262,7 @@ The **🔍➖** (Ctrl -) and **🔍➕** (Ctrl +) buttons are designed to increa
 #### 2.2.7. Additional panel No. 2
 The input field on the left side of the panel is intended for creating records while working: the user can quickly type explanatory text and press **Enter**, after which the comment will appear at the top of the map field and will be saved to the current log file. When playing the log, this comment will also be displayed at the appropriate time.
 
-The **📸** button (Ctrl + P) allows you to take a snapshot of the application window and save it in the SNAPSHOTS subfolder in the application root folder. After saving the snapshot, a link to it will appear in [status line (8)]().
+The **📸** button (Ctrl + P) allows you to take a snapshot of the application window and save it in the SNAPSHOTS subfolder in the application root folder. After saving the snapshot, a link to it will appear in [status line (8)](#228-status-line).
 
 The **🎞** button is designed to start and stop automatic saving of snapshots of the main application window with a period of 1 second. The snapshots will be saved to the AUTOSNAPSHOTS subfolder in the application root folder.
 
@@ -253,7 +270,7 @@ The **🎞** button is designed to start and stop automatic saving of snapshots 
 The left side of the status bar displays the connection status. The middle section displays links to the last screenshot you saved or the log archive you created.
 
 #### 2.2.9. Legend field
-A list of tracks with sample markers that correspond to them is displayed here. You can turn on or off the display of the legend field using the **⁞** button on the [map toolbar (2)]().
+A list of tracks with sample markers that correspond to them is displayed here. You can turn on or off the display of the legend field using the **⁞** button on the [map toolbar (2)](#222-map-toolbar).
 
 #### 2.2.10. Scale bar
 The vertical ruler is used to display the map scale. The upper part of it shows the level (Z) of the scale and the size of the ruler in meters on the map.
@@ -261,8 +278,8 @@ The vertical ruler is used to display the map scale. The upper part of it shows 
 If necessary, the user can take measurements between arbitrary points on the map using the right mouse button: to mark the starting point, press and release the right mouse button. After this, the tape measure will be displayed with the specified starting point. Clicking the right mouse button again will set the end point of the measurement. A subsequent right-click will reset the measurement.
 
 The measurement is also reset when the map center is moved, so before taking a measurement, you must disable automatic centering of the map relative to the current position of the positioned object, if it is enabled.
-The **🡹** (Ctrl + F) button on the [map toolbar (2)]() is used to turn on/off automatic map centering.
+The **🡹** (Ctrl + F) button on the [map toolbar (2)](#222-map-toolbar) is used to turn on/off automatic map centering.
 
-[Back to contents]()
+[Back to contents](#contents)
 
 <div style="page-break-after: always;"></div>
