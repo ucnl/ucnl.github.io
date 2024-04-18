@@ -17,7 +17,25 @@
 
 ## Contents
 
-
+- [1. Introduction](#1-introduction)
+  - [1.1. Purpose](#11-purpose)
+  - [1.2. Distinctive features](#12-distinctive-features)
+  - [1.3. System composition](#13-system-composition)
+- [2. Working with the RWLT system](#2-working-with-the-rwlt-system)
+  - [2.0. Before work](#20-before-work)
+  - [2.1. Preparing for work and checking equipment](#21-preparing-for-work-and-checking-equipment)
+   - [2.1.2. Checking the buoy set](#212-checking-the-buoy-set)
+     - [2.1.2.1. Charging the built-in power supply](#2121-charging-the-built-in-power-supply)
+     - [2.1.2.2. Connecting the service cable](#2122-connecting-the-service-cable)
+   - [2.1.3. Location of buoys on the water surface](#213-location-of-buoys-on-the-water-surface)
+   - [2.1.4. Preparation of underwater equipment](#214-preparation-of-underwater-equipment)
+   - [2.1.5. Preparing RF dongle for operation](#215-preparing-rf-dongle-for-operation)
+   - [2.1.6. Choosing a location for the operator console](#216-choosing-a-location-for-the-operator-console)
+  - [2.2. Working with the system](#22-working-with-the-system)
+  - [2.3. Upon completion of work](#23-upon-completion-of-work)
+- [3. Obligations and Disclaimer](#3-obligations-and-disclaimer)
+  - [3.1. Conditions for replacement and free warranty service](#31-conditions-for-replacement-and-free-warranty-service)
+  - [3.2. Manufacturer disclaimer](#32-manufacturer-disclaimer)
 
 <div style="page-break-after: always;"></div>
 
