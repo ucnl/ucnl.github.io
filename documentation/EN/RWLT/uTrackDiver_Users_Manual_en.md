@@ -11,194 +11,182 @@
 | :---: | ---: |
 | [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **uTrackDiver application <br/> User's manual** |
 
-# uTrackDiver <br/> Руководство пользователя
+# uTrackDiver <br/> User's manual
 
 <div style="page-break-after: always;"></div>
 
 ## Содержание
 
-- [1. Введение](#1-%D0%B2%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5)
-- [2. Интерфейс и функции приложения](#2-%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D1%84%D0%B5%D0%B9%D1%81-%D0%B8-%D1%84%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D0%B8-%D0%BF%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F)
-  - [2.1. Настройки приложения](#21-%D0%BD%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B8-%D0%BF%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F)
-  - [2.2. Главное окно](#22-%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D0%BE%D0%B5-%D0%BE%D0%BA%D0%BD%D0%BE)
-    - [2.2.2. Панель инструментов карты](#222-%D0%BF%D0%B0%D0%BD%D0%B5%D0%BB%D1%8C-%D0%B8%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D0%BE%D0%B2-%D0%BA%D0%B0%D1%80%D1%82%D1%8B) 
-    - [2.2.3. Панель карты](#223-%D0%BF%D0%B0%D0%BD%D0%B5%D0%BB%D1%8C-%D0%BA%D0%B0%D1%80%D1%82%D1%8B)
-    - [2.2.4. Поле дополнительной информации](#224-%D0%BF%D0%BE%D0%BB%D0%B5-%D0%B4%D0%BE%D0%BF%D0%BE%D0%BB%D0%BD%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%BE%D0%B9-%D0%B8%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%86%D0%B8%D0%B8)
-    - [2.2.5. Поле журнала](#225-%D0%BF%D0%BE%D0%BB%D0%B5-%D0%B6%D1%83%D1%80%D0%BD%D0%B0%D0%BB%D0%B0)
-    - [2.2.6. Панель инструментов списка водолазов](#226-%D0%BF%D0%B0%D0%BD%D0%B5%D0%BB%D1%8C-%D0%B8%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D0%BE%D0%B2-%D1%81%D0%BF%D0%B8%D1%81%D0%BA%D0%B0-%D0%B2%D0%BE%D0%B4%D0%BE%D0%BB%D0%B0%D0%B7%D0%BE%D0%B2)
-    - [2.2.7. Список водолазов](#227-%D1%81%D0%BF%D0%B8%D1%81%D0%BE%D0%BA-%D0%B2%D0%BE%D0%B4%D0%BE%D0%BB%D0%B0%D0%B7%D0%BE%D0%B2)
-    - [2.2.8. Поле легенды](#228-%D0%BF%D0%BE%D0%BB%D0%B5-%D0%BB%D0%B5%D0%B3%D0%B5%D0%BD%D0%B4%D1%8B)
-    - [2.2.9. Линейка масштаба](#229-%D0%BB%D0%B8%D0%BD%D0%B5%D0%B9%D0%BA%D0%B0-%D0%BC%D0%B0%D1%81%D1%88%D1%82%D0%B0%D0%B1%D0%B0)
-    - [2.2.10. Панель переключателей отображаемых параметров водолазов](#2210-%D0%BF%D0%B0%D0%BD%D0%B5%D0%BB%D1%8C-%D0%BF%D0%B5%D1%80%D0%B5%D0%BA%D0%BB%D1%8E%D1%87%D0%B0%D1%82%D0%B5%D0%BB%D0%B5%D0%B9-%D0%BE%D1%82%D0%BE%D0%B1%D1%80%D0%B0%D0%B6%D0%B0%D0%B5%D0%BC%D1%8B%D1%85-%D0%BF%D0%B0%D1%80%D0%B0%D0%BC%D0%B5%D1%82%D1%80%D0%BE%D0%B2-%D0%B2%D0%BE%D0%B4%D0%BE%D0%BB%D0%B0%D0%B7%D0%BE%D0%B2)
-    - [2.2.11. Строка статуса](#2211-%D1%81%D1%82%D1%80%D0%BE%D0%BA%D0%B0-%D1%81%D1%82%D0%B0%D1%82%D1%83%D1%81%D0%B0)
+
 
 <div style="page-break-after: always;"></div>
 
-## 1. Введение
+## 1. Introduction
 
-Для отслеживание положения водолазов, оснащенных водолазными станциями беспроводной голосовой связи [RedPhone-DX](https://docs.unavlab.com/documentation/RU/RedPhone/RedPhone_DX_Specification_ru.html), на ПК оператора должно быть установлено приложение [🤿 uTrackDiver](https://github.com/ucnl/uTrack/releases/download/beta/uTrackDiver.zip)
+The [🤿 uTrackDiver](https://github.com/ucnl/uTrack/releases/download/beta/uTrackDiver.zip) application is designed to track the position of divers equipped with wireless voice communication diving stations [RedPhone-DX](https://docs.unavlab.com/documentation/EN/RedPhone/RedPhone_DX_Specification_en.html).
 
-Заранее скачайте необходимое ПО. Установка не требуется - достаточно просто распаковать содержимое архива в удобное для вас место.
+Download the necessary software in advance. No installation is required - just unzip the contents of the archive to a location convenient for you.
 
-## 2. Интерфейс и функции приложения
+## 2. Application interface and functions
 
-### 2.1. Настройки приложения
+### 2.1. Application Settings
 
-Знакомство с приложением предлагаем начать с его настроек. На рисунке ниже представлен общий вид окна настроек, его можно вызвать, нажав на кнопку **'⚙ SETTINGS'** на главной панели инструментов главного окна приложения.
+We suggest starting your acquaintance with the application with its settings. The figure below shows a general view of the settings window; it can be called up by clicking the **'⚙ SETTINGS'** button on the main toolbar of the main application window.
 
 | |
 | :---: |
 | ![1](/documentation/uTrackDiver_settingswindow_1.png)|
-| Элементы управления окна настроек |
-| _1 - Признак использования дополнительного источника навигационных данных (GNSS-приемника), 2 - Выпадающий список скорости порта дополнительного источника навигационных данных, 3 - Признак использования первого буя в качестве дополнительного источника навигационных данных, 4 - Список серверов-источников тайлов карты, 5 - Кнопка сброса настроек в настройки по умолчанию, 6 - Признак автоматического выбора солености (из базы данных), 7 - Поле ввода солености, 8 - Признак автовычисления скорости звука, 9 - Поле ввода скорости звука, 10 - Поле ввода температуры воды, 11 - Количество точек трека для отображения, 12 - Поле ввода порога радиальной ошибки, 13 - Выпадащий список выбора размера тайлов карты, 14 - Кнопки принятия настроек и отмены_ |
+| Settings window controls |
+| _1 - Indicator of using an additional source of navigation data (GNSS receiver), 2 - Drop-down list of port speed of an additional source of navigation data, 3 - Indicator of using the first buoy as an additional source of navigation data, 4 - List of servers-sources of map tiles, 5 - Button reset settings to default settings, 6 - Indicator for automatic selection of salinity (from the database), 7 - Input field for salinity, 8 - Indicator for auto-calculation of sound speed, 9 - Input field for sound speed, 10 - Input field for water temperature, 11 - Number of points track for display, 12 - Radial error threshold input field, 13 - Drop-down list for selecting the size of map tiles, 14 - Buttons for accepting settings and cancel_ |
 
-Приемный радиомодем подключается к ПК через порт USB. Приложение само производит поиск виртуального последовательного порта и это не требует от пользователя задания каких-либо настроек.
+The receiving radio modem is connected to the PC via a USB port. The application itself searches for a virtual serial port and does not require the user to specify any settings.
 
-- В некоторых ситуациях оператору удобно видеть на карте собственное местоположение, это можно обеспечить двумя способами: первый состоит в подключении дополнительного GNSS-приемника к ПК. В этом случае приложению нужно указать, что такой способ используется, поставив галочку в окошке 1 **Use AUX GNSS**. Так же в этом случае требуется указать скорость последовательного порта, на которой работает внешний GNSS-приемник. Сам порт указывать не требуется, приложение обнаружит его само.
+- In some situations, it is convenient for the operator to see his own location on the map; this can be achieved in two ways: the first is to connect an additional GNSS receiver to the PC. In this case, the application needs to indicate that this method is used by checking the box 1 **Use AUX GNSS**. Also in this case, you need to specify the speed of the serial port at which the external GNSS receiver operates. The port itself does not need to be specified; the application will detect it itself.
 
-- Если внешнего GNSS-приемника нет, но оператору желательно видеть собственное местоположение на карте, можно воспользоваться вторым способом: в качестве внешнего GNSS может быть использован буй №1. Этот способ имеет некоторые ограничения, например, не всегда есть возможность расположить оператора рядом с буем, от буев идет ограниченный по сравнению с внешним GNSS-приемником набор навигационной информации. Если такой способ применим в текущей задаче, то следует поставить галочку в окошко 3 **Base 1 as AUX GNSS Source**. В этом случае галочка в окошке 1 будет автоматически снята.
+- If there is no external GNSS receiver, but the operator would like to see his own location on the map, you can use the second method: buoy No. 1 can be used as an external GNSS. This method has some limitations, for example, it is not always possible to position the operator next to the buoy; the buoys provide a limited set of navigation information compared to an external GNSS receiver. If this method is applicable to the current task, then you should check box 3 **Base 1 as AUX GNSS Source**. In this case, the checkbox in box 1 will be automatically unchecked.
+  
+- The application allows you to display tracks on top of a map, the tiles of which can be downloaded via HTTPS. The Open Street Maps service is currently supported. Field 4 **Tile servers** indicates the server addresses, and field 13 **Tile size** indicates the size of the tiles in pixels. To download tiles, the application needs access to the Internet.
 
-- Приложение позволяет отображать треки поверх карты, тайлы которой могут скачиваться по протоколу HTTPS. На данный момент поддерживаются сервис Open Street Maps. В поле 4 **Tile servers** указываются адреса серверов, а в поле 13 **Tile size** указывается размер тайлов в пикселях. Для загрузки тайлов приложению нужен доступ к сети Интернет.
+- Button 5 **SET DEFAULTS** allows you to reset the settings to their default state.
 
-- Кнопка 5 **SET DEFAULTS** позволяет сбросить настройки в состояние по умолчанию.
+- Checkbox 6 **Auto salinity** means that the application will try to determine salinity from the database using the current geographic coordinates. The application contains a database of salinity of the surface of the world's oceans in increments of 1 degree in latitude and longitude. Use this setting only in large bodies of water: seas and oceans. If you work in small inland reservoirs, it is recommended to uncheck 6 and set the appropriate water salinity value in field 7 **Salinity, PSU**. In most cases, for inland freshwater bodies, a value of 0 PSU is adequate. If you have accurate data on the salinity of the reservoir or it can be measured directly, you can also enter it in field 7. The salinity value is used to calculate the speed of sound.
 
-- Установленная галочка 6 **Auto salinity** означает, что приложение будет пытаться определить соленость из базы данных по текущим географическим координатам. Приложение содержит базу солености поверхности мирового океана с шагом в 1 градус по широте и долготе. Используйте эту настройку только в крупных водоемах: морях и океанах. Если вы работает в небольших внутренних водоемах рекомендуется снять галочку 6 и задать соответствующее значение солености воды в поле 7 **Salinity, PSU**. В большинстве случаев, для внутренних пресных водоемов значение 0 PSU является адекватным. Если у вас есть точные данные о солености водоема или она может быть непосредственно измерена, вы также можете задать ее в поле 7. Значение солености используется для рассчета скорости звука.
+- Unchecking 7 **Auto speed of sound** and the corresponding field 9 **Speed of sound, m/s** allows you to set the application a known value for the speed of sound. If you have a direct measurement, otherwise it is recommended to set the checkbox to 7.
 
-- Снятая галочка 7 **Auto speed of sound** и соответствующее поле 9 **Speed of sound, m/s** позволяет задать приложению известное значение скорости звука. Если у вас есть прямое измерение, в противном случае рекомендуется установить галочку 7.
+- Field 10 **Water temperature, °C** allows you to specify the relevant water temperature value to the application. Water temperature is included in the calculation of the speed of sound if the 9 **Auto speed of sound** checkbox is checked. If you are measuring water temperature, it is recommended to take samples some distance from the surface.
 
-- Поле 10 **Water temperature, °C** позволяет указать приложению релевантное значение температуры воды. Температура воды участвтует в расчете скорости звука, если галочка 9 **Auto speed of sound** установлена. Если вы измеряете температуру воды, рекомендуется брать пробы на некотором расстоянии от поверхности.
+- Field 11 **Track points to show** tells the application how many points (calculated positions) for each track should be displayed simultaneously. This parameter affects display only. The application additionally stores all received points, which can then be saved.
 
-- Поле 11 **Track points to show** указывает приложению сколько точек (вычисленных положений) для каждого трека следует одновременно отображать. Данный параметр влияет только на отображение. Приложение дополнительно хранит все полученные точки, которые затем могут быть сохранены.
+- Field 12 **Radial error threshold, m** indicates the radial error threshold (the value of the residual function at the end of solving the navigation problem), above which the calculated location is considered erroneous and discarded. It is recommended to set this value within 10 meters.
 
-- Поле 12 **Radial error threshold, m** указывает порог радиальной ошибки (значения функции невязки в конце решения навигационной задачи), выше которого вычисленное местоположение считается ошибочным и отбрасывается. Рекомендуется задавать это значение в пределах 10 метров.
+- Buttons 14 **OK** and **CANCEL** are responsible for saving settings and canceling changes, respectively. After changing and saving the settings, the application will request a restart for the settings to take effect.
 
-- Копки 14 **OK** и **CANCEL** отвечают за сохранение настроек и отмену изменений соответственно. После изменения и сохранения настроек приложение запросит перезапуск для того, чтобы настройки вступили в силу.
+### 2.2. Main window
 
-
-### 2.2. Главное окно
-
-Рассмотрим теперь главное окно приложения. Его общий вид с указанием основных элементов управления представлен на рисунке ниже.
+Let's now look at the main application window. Its general view, indicating the main controls, is shown in the figure below.
 
 | |
 | :---: |
 | ![1](/documentation/uTrackDiver_mainwindow_1.png)|
-| Основные элементы главного окна приложения |
-| _1 - Главная панель инструментов, 2 - Панель инструментов карты, 3 - Поле карты, 4 - Поле дополнительной информации, 5 - Поле журнала, 6 - Панель инструментов списка водолазов, 7 - Список водолазов, 8 - Поле обозначений треков, 9 - Линейка масштаба, 10 - Панель переключателей отображаемых параметров водолазов, 11 - Строка статуса_ |
+| Main elements of the main application window |
+| _1 - Main toolbar, 2 - Map toolbar, 3 - Map field, 4 - Additional information field, 5 - Log field, 6 - Diver list toolbar, 7 - Diver list, 8 - Track designation field, 9 - Scale bar , 10 - Panel of switches for the displayed parameters of divers, 11 - Status line_ |
 
-#### 2.2.1. Главная панель инструментов
+#### 2.2.1. Main toolbar
 
-- 1 - Главная панель инструментов располагается в верхней части окна и содержит следующие элементы:
-  - Кнопка **🔌 LINK** - управляет соединением с приемным радиомодемом и внешним GNSS-приемником. 
-  - Кнопка **⚙ SETTINGS** - вызов редактора настроек. Данная кнопка недоступна при включенном соединении или при проигрывании файла журнала
-  - Меню **📖 LOG** - содержит функции для работы с файлами журналов
-    - Пункт **👀 View current** - открыть текущий файл журнала в приложении, ассоциированном с расширением 'log' (как правило это Notepad)
-    - Пункт **▶ Playback...** - выбор файла журнала для воспроизведения в реальном масштабе времени. Данная функция позволяет практически полностью восстановить ход проведенных работ и, к примеру, восстановить трек, который не был сохранен.
-    - Пункт **🧹 Remove empty entries** - очистка директории LOG в папке приложения: будут удалены все файлы журналов, размером менее 2 килобайт и все пустые папки
-    - Пункт **🗜 Archive all entries...** - упаковка всей папки с файлами журналов в Zip-архив.
-    - Пункт **🗑 Clear all** - удаление всех файлов журналов приложения. **Будьте внимательны! Все файлы будут удалены без возможности восстановления!!!**
-    - Пункт **🧹+🗜+🗑 Do them all...** - Удаление всех пустых папок, файлов журналов меньше 2 килобайт, упаковка остальных файлов журналов в Zip-архим и удаление оригиналов в папке LOG приложения.
-  - Меню **🛠 UTILS** - содержит дополнительные функции
-    - Подменю **🗺 TRACKS** - функции для работы с треками
-      - Пункт **💾 Export...** - сохранение треков в одном из поддерживаемых форматов через системный диалог
-      - Пункт **🗑 Clear** - очистка треков, содержащихся в памяти приложения
-  - Поле ввода и кнопка **📝 ADD NOTE** служат для ввода комментариев в файл журнала. Вы можете просто набирать текстовый комментарий и нажимать клавишу **Enter** независимо от того, на каком элементе управления находится фокус. Комментарии сохраняются с временной меткой, и в дальнейшем, при проигрывании файла журнала комментарии будут отображаться в соответствующий момент времени. Данная функция позволяет быстро сохранить какие-либо текстовые заметки о ходе работы.
-  - Кнопка **ℹ INFO** - вызывает диалог с информацией о приложении и ссылками на дополнительную информацию по системе.
+- 1 - The main toolbar is located at the top of the window and contains the following elements:
+   - **🔌 LINK** button - controls the connection to the receiving radio modem and external GNSS receiver.
+   - Button **⚙ SETTINGS** - calls the settings editor. This button is not available when the connection is on or when playing a log file
+   - Menu **📖 LOG** - contains functions for working with log files
+     - Item **👀 View current** - open the current log file in the application associated with the 'log' extension (usually Notepad)
+     - Item **▶ Playback...** - select a log file for playback in real time. This function allows you to almost completely restore the progress of work performed and, for example, restore a track that was not saved.
+     - Item **🧹Remove empty entries** - clearing the LOG directory in the application folder: all log files smaller than 2 kilobytes in size and all empty folders will be deleted
+     - Item **🗜 Archive all entries...** - packing the entire folder with log files into a Zip archive.
+     - Item **🗑 Clear all** - deletes all application log files. **Be careful! All files will be deleted without the possibility of recovery!!!**
+     - Point **🧹+🗜+🗑 Do them all...** - Deleting all empty folders, log files less than 2 kilobytes, packing the remaining log files into a Zip archive and deleting the originals in the LOG folder of the application.
+   - Menu **🛠 UTILS** - contains additional functions
+     - Submenu **🗺 TRACKS** - functions for working with tracks
+       - Item **💾 Export...** - saving tracks in one of the supported formats through the system dialog
+       - Item **🗑 Clear** - clearing tracks contained in the application memory
+   - The input field and the **📝 ADD NOTE** button are used to enter comments into the log file. You can simply type a text comment and press **Enter** regardless of which control has focus. Comments are saved with a timestamp, and in the future, when the log file is played back, the comments will be displayed at the corresponding point in time. This function allows you to quickly save any text notes about the progress of work.
+   - Button **ℹ INFO** - calls up a dialog with information about the application and links to additional information on the system.
+     
+#### 2.2.2. Map Toolbar
 
-#### 2.2.2. Панель инструментов карты
+- 2 - The map toolbar is located below the main toolbar on the left and contains the following elements:
+   - Button **⛯** - enable/disable display of base points (buoys). Sometimes it may be necessary to turn off the display of buoy positions on the map in order to zoom in and be able to view the divers' movements in more detail. Changes in the state of this button are automatically saved and played back when playing log files.
+   - Button **📜** - enable/disable display of the log text field (5). Changes in the state of this button are automatically saved and played back when playing log files.
+   - Button **⋮** - enable/disable display of 'legend' - list of track designations (8). Changes in the state of this button are automatically saved and played back when playing log files.
+   - Button **📑** - enable/disable display of the comments field (NOTES). Changes in the state of this button are automatically saved and played back when playing log files.
+   - Button **👽** - enable/disable display of the additional information field (4). Changes in the state of this button are automatically saved and played back when playing log files.
+   - Button **⎙** - used to save a screenshot of the main application window. Screenshots are saved in the **SCREENSHOTS** directory in the application folder. The name of the last saved screenshot is displayed in the status bar (11).
+   - The **♻ RESET VIEW** button allows you to reset the current view and displayed tracks.
+- 3 - Map field - serves to display divers’ movement tracks, buoy positions on the base map, as well as:
+   - vertical scale bar (9)
+   - application log (5). This field displays the last 4 lines of the application log from bottom to top.
+   - legends (8). The legend matches the color and size of the dots and the name of the track.
+   - comments. To create comments about the progress of work on the fly, the operator simply needs to type them on the keyboard, and the typed text will be displayed in the input field on the main toolbar. By pressing the 'Enter' key, the text will be saved to the log and will be displayed on the right in the map field (if the corresponding switch **'📑'** on the map toolbar is active).
+   - additional navigation information (4).
 
-- 2 - Панель инструментов карты располагается под главной панелью инструментов слева и содержит следующие элементы:
-  - Кнопка **⛯** - включение/отключение отображения базовых точек (буев). Иногда может потребоваться отключить отображение положения буев на карте, чтобы увеличить масштаб и иметь возможность рассмотреть треки движения водолазов более детально. Изменение состояния этой кнопки автоматически сохраняется и воспроизводится при проигрывании файлов журнала.
-  - Кнопка **📜** - включение/отключение отображения текстового поля журнала (5). Изменение состояния этой кнопки автоматически сохраняется и воспроизводится при проигрывании файлов журнала.
-  - Кнопка **⋮** - включение/отключение отображения 'легенды' - списка обозначения треков (8). Изменение состояния этой кнопки автоматически сохраняется и воспроизводится при проигрывании файлов журнала.
-  - Кнопка **📑** - включение/отключение отображения поля комментариев (NOTES). Изменение состояния этой кнопки автоматически сохраняется и воспроизводится при проигрывании файлов журнала.
-  - Кнопка **👽** - включение/отключение отображения поля дополнительной информации (4). Изменение состояния этой кнопки автоматически сохраняется и воспроизводится при проигрывании файлов журнала.
-  - Кнопка **⎙** - служит для сохранения скриншота главного окна приложения. Скриншоты сохраняются в директории **SCREENSHOTS** в папке приложения. Имя последнего сохраненного скриншота отображается в строке статуса (11).
-  - Кнопка **♻ RESET VIEW** позволяет сбросить текущий вид и отображаемые треки.
-- 3 - Поле карты - служит для отображения треков движения водолазов, положения буев на карте-подложке, а также:
-  - вертикальной линейки масштаба (9)
-  - журнала приложения (5). В этом поле снизу вверх отображаются последние 4 строки журнала приложения.
-  - легенды (8). Легенда дает соответствие цвету и размеру точек и наименованию трека. 
-  - комментариев. Для создания комментариев о ходе работы налету, оператору достаточно просто набрать их на клавиатуре, при этом набранный текст будет отображаться в поле ввода на главной панели инструментов. По нажатии клавиши 'Enter' текст сохранится в журнал и будет отображен справа в поле карты (если соотствующий переключатель **'📑'** на панели инструментов карты находится в активном состоянии).
-  - дополнительной навигационной информации (4).
-
-#### 2.2.3. Панель карты
+#### 2.2.3. Map panel
   
-- 3 - Панель карты предназначена для отображения карты, местоположений буев, вычисленных местоположений водолазов и некоторой дополнительной информации
+- 3 - The map panel is designed to display the map, buoy locations, calculated diver positions and some additional information
 
-#### 2.2.4. Поле дополнительной информации
+#### 2.2.4. Additional information field
 
-- 4 - Поле дополнительной информации располагается в левой верхней части панели карты и служит для отображения дополнительной информации. Отображение этого поля может переключаться при помощи кнопки **👽** на панели инструментов карты (2). Каждый параметр отображается в отдельной строке, начинающейся с трехбуквенного идентификатора параметра и двоеточия, затем отображается значение параметра и единицы измерения. Время в формате (MM:SS), отображаемое рядом с параметром, показывает как давно значение параметра было обновлено. Ниже в таблице представлен список всех возможных идентификаторов и их описание:
+- 4 - The additional information field is located in the upper left part of the map panel and serves to display additional information. The display of this field can be switched using the **👽** button on the map toolbar (2). Each parameter appears on a separate line, starting with a three-letter parameter identifier and a colon, followed by the parameter value and unit of measurement. The time in (MM:SS) format displayed next to the parameter shows how long ago the parameter value was updated. The table below provides a list of all possible identifiers and their descriptions:
 
-| Идентификатор | Описание | Единицы измерения | Диапазон | 
+| ID | Description | Units of measurement | Range |
 | :--- | :--- | :--- | :--- |
-| CRS | Курс по данным внешнего GNSS | ° | 0 .. 360 |
-| SPD | Скорость по данным внешнего GNSS | km/h (m/s) | >= 0 | 
-| LAT | Широта по данным внешнего GNSS | ° | -90 .. 90 |
-| LON | Долгота по данным внешнего GNSS  | ° | -180 .. 180 |
-| STY | Значение солености (из настроек или из базы данных) | PSU | 0 .. 40 |
-| WTM | Занчение температуры воды (из настроек) | °C | -10 .. +40 |
-| SOS | Значение скорости звука (из настроек или вычисленное) | m/s | 1300 .. 1600 |
-| B1V | Напряжение встроенного АКБ буя №1 | V | 10 .. 13 |
-| B2V | Напряжение встроенного АКБ буя №2 | V | 10 .. 13 |
-| B3V | Напряжение встроенного АКБ буя №3 | V | 10 .. 13 |
-| B4V | Напряжение встроенного АКБ буя №4 | V | 10 .. 13 |
-| B1M | Уровень сигнала на буе №1 | dB | 14 .. 36 |
-| B2M | Уровень сигнала на буе №2 | dB | 14 .. 36 |
-| B3M | Уровень сигнала на буе №3 | dB | 14 .. 36 |
-| B4M | Уровень сигнала на буе №4 | dB | 14 .. 36 |
+| CRS | Course based on external GNSS data | ° | 0 .. 360 |
+| SPD | Speed according to external GNSS | km/h (m/s) | >= 0 |
+| LAT | Latitude according to external GNSS | ° | -90 .. 90 |
+| LON | Longitude according to external GNSS data | ° | -180 .. 180 |
+| STY | Salinity value (from settings or from database) | PSU | 0 .. 40 |
+| WTM | Water temperature value (from settings) | °C | -10 .. +40 |
+| SOS | Sound speed value (from settings or calculated) | m/s | 1300 .. 1600 |
+| B1V | Voltage of the built-in battery of buoy No. 1 | V | 10 .. 13 |
+| B2V | Voltage of the built-in battery of buoy No. 2 | V | 10 .. 13 |
+| B3V | Voltage of the built-in battery of buoy No. 3 | V | 10 .. 13 |
+| B4V | Voltage of the built-in battery of buoy No. 4 | V | 10 .. 13 |
+| B1M | Signal level on buoy No. 1 | dB | 14 .. 36 |
+| B2M | Signal level at buoy No. 2 | dB | 14 .. 36 |
+| B3M | Signal level at buoy No. 3 | dB | 14 .. 36 |
+| B4M | Signal level at buoy No. 4 | dB | 14 .. 36 |
 
-#### 2.2.5. Поле журнала
+#### 2.2.5. Log field
 
-- 5 - Поле журнала располагается в нижней части панели карты и отображает последние 4 строки журнала приложения. Видимость этого поля переключается кнопкой **📜** на панели инструментов карты (2).
+- 5 - The log field is located at the bottom of the map panel and displays the last 4 lines of the application log. The visibility of this field is toggled with the **📜** button on the map toolbar (2).
 
-#### 2.2.6. Панель инструментов списка водолазов
+#### 2.2.6. Diver list toolbar
   
-- 6 - Панель инструментов списка водолазов **DIVERS** расположена над списком водолазов в левой части главного окна приложения. Панель содержит следующие элементы:
-  - Кнопка **🎢** - сортировка списка водолазов по номеру.
-  - Кнопка **▼** - свернуть все элементы списка.
-  - Кнопка **▲** - развернуть все элементы списка.
+- 6 - The **DIVERS** diver list toolbar is located above the diver list on the left side of the main application window. The panel contains the following elements:
+   - Button **🎢** - sorting the list of divers by number.
+   - Button **▼** - collapse all list items.
+   - Button **▲** - expand all list elements.
 
-#### 2.2.7. Список водолазов
+#### 2.2.7. List of divers
   
-- 7 - Список водолазов **DIVERS** расположен в левой части главного окна приложения. Список имеет древовидную структуру, узлы верхнего уровня имеются в формате **Diver #N**, где N - это идентификатор водолаза, который задается в настройках водолазной станции связи [RedPhone-DX](https://docs.unavlab.com/documentation/RU/RedPhone/RedPhone_DX_Specification_ru.html) (настройка **RWLT Diver's ID**, за более подробной информацией обратитесь к [инструкции по эксплуатации водолазных станций RedPhone-DX](https://docs.unavlab.com/documentation/RU/RedPhone/RedPhone_DX_Users_Manual_ru.html)). Дочерние узлы содержат известную системе информацию о данном водолазе. Каждый отдельный параметр представлен строчкой, которая начинается с идентификатора параметра, через двоеточие следует значение параметра. Если значение данного параметра было обновлено более 3-х секунд назад, то в скобках указывается время, прошедшее с момента обновления параметра в формате (MM:SS). Ниже представлен список возможных параметров:
+- 7 - The list of divers **DIVERS** is located on the left side of the main application window. The list has a tree structure, top-level nodes are in the format **Diver #N**, where N is the diver’s identifier, which is set in the settings of the diving communication station [RedPhone-DX](https://docs.unavlab.com/documentation/EN/RedPhone/RedPhone_DX_Specification_en.html) (setting up **RWLT Diver's ID**, for more detailed information please refer to [RedPhone-DX diving station operating instructions](https://docs.unavlab.com/documentation/EN/RedPhone/RedPhone_DX_Users_Manual_en.html)). Child nodes contain information about a given diver known to the system. Each individual parameter is represented by a line that begins with the parameter identifier, followed by the parameter value, separated by a colon. If the value of this parameter was updated more than 3 seconds ago, then the time elapsed since the parameter was updated in the format (MM:SS) is indicated in parentheses. Below is a list of possible parameters:
 
-| Идентификатор | Описание | Единицы измерения | Диапазон | 
+| ID | Description | Units of measurement | Range |
 | :--- | :--- | :--- | :--- |
-| LAT | Вычисленная широта | ° | -90 .. 90 |
-| LON | Вычисленная долгота | ° | -180 .. 180 |
-| RER | Радиальная ошибка | м | 0 .. 99 |
-| DOP | Геометрический фактор снижения точности | - | - |
-| TBA | Качество взаимного расположения позиционируемого объекта и опорных точек | - | - |
-| DST | Дистанция до водолаза от положения по данным внешнего GNSS | м | 0 .. 1500 |
-| AZM | Направление (курс) на водолаза из положения по данным внешнего GNSS | ° | 0 .. 360 |
-| RAZ | Обратное направление (курс) от водолаза на положение по данным внешнего GNSS | ° | 0 .. 360 |
+| LAT | Calculated latitude | ° | -90 .. 90 |
+| LON | Calculated longitude | ° | -180 .. 180 |
+| RER | Radial error | m | 0 .. 99 |
+| DOP | Geometric factor reducing accuracy | - | - |
+| TBA | The quality of the relative position of the positioned object and reference points | - | - |
+| DST | Distance to diver from position according to external GNSS data | m | 0 .. 1500 |
+| AZM | Direction (course) towards the diver from the position according to external GNSS data | ° | 0 .. 360 |
+| RAZ | Reverse direction (course) from the diver to the position according to external GNSS data | ° | 0 .. 360 |
 
-Наиболее важными параметрами здесь являются **AZM**, **DST** и **RAZ**: по азимуту и дистанции оператор всегда может понять где относительно него располагается тот или иной водолаз, а параметр **RAZ** он может сообщить водолазу по голосовой связи, для того, чтобы тот, придерживаясь данного курса, смог осуществить привод.
+The most important parameters here are **AZM**, **DST** and **RAZ**: by azimuth and distance the operator can always understand where a particular diver is located relative to him, and he can report the **RAZ** parameter to the diver via voice communication, so that he, adhering to this course, can carry out the drive.
 
-Отображение различных параметров переключается кнопками на панели (10). Следует понимать, что параметры, связанные с взаимным расположением водолаза и надводного пункта (дальность, прямой и обратный курс) могут быть определены только при наличии внешнего источника навигационных данных - внешнего GNSS-приемника, задающего системе местоположение надводного пункта слежения за водолазами или при включенной настройке **Base 1 as AUX GNSS** - когда все параметры определяются относительно буя №1.
+The display of various parameters is switched using the buttons on the panel (10). It should be understood that the parameters associated with the relative position of the diver and the surface point (range, forward and reverse course) can only be determined if there is an external source of navigation data - an external GNSS receiver that sets the system the location of the surface point for tracking divers or when the setting is turned on **Base 1 as AUX GNSS** - when all parameters are determined relative to buoy No. 1.
 
-#### 2.2.8. Поле легенды
+#### 2.2.8. Legend field
 
-- 8 - Поле легенды. Отображается в правом верхнем углу поля карты. В нем отображется список треков с примерами точек треков.
+- 8 - Legend field. Displayed in the upper right corner of the map field. It will display a list of tracks with example track points.
 
-#### 2.2.9. Линейка масштаба
+#### 2.2.9. Scale bar
 
-- 9 - Линейка масштаба отображается в нижнем правом углу поля карты и показывает масштаб карты в метрах.
+- 9 - The scale bar is displayed in the lower right corner of the map field and shows the map scale in meters.
 
-#### 2.2.10. Панель переключателей отображаемых параметров водолазов
+#### 2.2.10. Panel of switches for displayed diver parameters
 
-- 10 - Панель переключателей отображаемых параметров водолазов расположена под списком водолазов и переключает видимость параметров в списке:
-  - Кнопка **DST** - включает/выключает отображение дистанции до водолаза. Изменение состояния этой кнопки автоматически сохраняется и воспроизводится при проигрывании файлов журнала.
-  - Кнопка **AZM** - включает/выключает отображение направления **на** водолаза. Изменение состояния этой кнопки автоматически сохраняется и воспроизводится при проигрывании файлов журнала.
-  - Кнопка **RAZ** - включает/выключает отображение направления **от** водолаза на положение согласно внешнему GNSS-приемнику. Изменение состояния этой кнопки автоматически сохраняется и воспроизводится при проигрывании файлов журнала.
-  - Кнопка **LOC** - включает/выключает отображение местоположения водолаза (широты и долготы). Изменение состояния этой кнопки автоматически сохраняется и воспроизводится при проигрывании файлов журнала.
-  - Кнопка **RER** - включает/выключает отображение радиальной ошибки - значения функции невязки, на котором закончилось решение задачи об определении местоположения водолаза. Изменение состояния этой кнопки автоматически сохраняется и воспроизводится при проигрывании файлов журнала.
-  - Кнопка **DOP** - включает/отключает отображение параметров **DOP** и **TBA**.
+- 10 - The panel of switches for the displayed parameters of divers is located below the list of divers and switches the visibility of parameters in the list:
+   - **DST** button - turns on/off the display of the distance to the diver. Changes in the state of this button are automatically saved and played back when playing log files.
+   - Button **AZM** - turns on/off the display of the direction **to** the diver. Changes in the state of this button are automatically saved and played back when playing log files.
+   - Button **RAZ** - turns on/off the display of the direction **from** the diver to the position according to the external GNSS receiver. Changes in the state of this button are automatically saved and played back when playing log files.
+   - **LOC** button - turns on/off the display of the diver’s location (latitude and longitude). Changes in the state of this button are automatically saved and played back when playing log files.
+   - Button **RER** - turns on/off the display of the radial error - the value of the residual function at which the solution to the problem of determining the location of the diver ended. Changes in the state of this button are automatically saved and played back when playing log files.
+   - **DOP** button - turns on/off the display of the **DOP** and **TBA** parameters.
 
-#### 2.2.11. Строка статуса
+#### 2.2.11. Status line
 
-- 11 - Строка статуса. В строке отображаются статусы портов радиомодема и внешнего источника навигационных данных (внешнего GNSS-приемника), имя последнего сохраненного скриншота или Zip-архива, в который были упакованы файлы журнала.
+- 11 - Status line. The line displays the status of the radio modem ports and the external source of navigation data (external GNSS receiver), the name of the last saved screenshot or Zip archive into which the log files were packed.
 
-[Вернуться к содержанию](#%D1%81%D0%BE%D0%B4%D0%B5%D1%80%D0%B6%D0%B0%D0%BD%D0%B8%D0%B5)
+<div style="page-break-after: always;"></div>
+  
+[Back to contents]()
 
 <div style="page-break-after: always;"></div>
