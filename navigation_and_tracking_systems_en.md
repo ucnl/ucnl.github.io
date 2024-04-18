@@ -78,7 +78,7 @@ May 2016 - May 2022
 * [RWLT Pinger-K: Device specification](/documentation/EN/RWLT/RWLT_Pinger_K_Specification_en.md)
 * [RWLT GIB: Device specification](/documentation/EN/RWLT/RWLT_GIB_Specification_en.md)
 * [uNav RWLT Radio dongle: Device specification](/documentation/EN/RWLT/RWLT_RF_Dongle_en.md)
-* [RWLT: User's manual](/documentation/EN/RWLT/RWLT_Users_Manual_ru.md)
+* [RWLT: User's manual](/documentation/EN/RWLT/RWLT_Users_Manual_en.md)
 * [uNav RWLT Radio dongle: Interfacing protocol](/documentation/EN/RWLT/uNav_protocol_specification_en.md)
 * [💧 uNav: uNav Radio dongle setup utility (source)](https://github.com/ucnl/uNav)
 * [💧 uNav: uNav Radio dongle setup utility (download release)](https://github.com/ucnl/uNav/releases/download/1.0/uNav.zip)
