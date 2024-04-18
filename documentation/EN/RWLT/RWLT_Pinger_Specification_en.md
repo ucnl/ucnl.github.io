@@ -2,7 +2,7 @@
 
 <div style="page-break-after: always;"></div>
 
-| ![logo](/documentation/sm_logo.png) | ![pic](/documentation/RWLT_Pinger.png) |
+| ![logo](/documentation/sm_logo.png) | ![logo](/documentation/dev_big_wbat_li_small.png) |
 | :---: | ---: |
 | [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **RWLT Pinger** - Pinger beacon <br/> Device specification |
 
@@ -42,9 +42,7 @@ The pinger does not require any pairing with the positioned object; it is enough
 | CHARGING | By special cradle |
 
 ________________
-<a name="footnote1"><sup>1</sup></a>  With a new, fully charged battery, at an ambient temperature of 20 °C.  
-<a name="footnote2"><sup>2</sup></a> A parameter that determines the maximum range at which signal reception is possible, based on
-electroacoustic parameters of the transmitter and receiver, spatial decrease in the intensity of sound energy, attenuation in the environment
-and the level of hydroacoustic noise.  
+<a name="footnote1"><sup>1</sup></a> With a new, fully charged battery, at an ambient temperature of 20 °C.  
+<a name="footnote2"><sup>2</sup></a> A parameter that determines the maximum range at which signal reception is possible, based on electroacoustic parameters of the transmitter and receiver, spatial decrease in the intensity of sound energy, attenuation in the environment and the level of hydroacoustic noise.  
 
 <div style="page-break-after: always;"></div>
