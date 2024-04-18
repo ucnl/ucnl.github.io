@@ -82,9 +82,9 @@ May 2016 - May 2022
 * [uNav RWLT Radio dongle: Interfacing protocol](/documentation/EN/RWLT/uNav_protocol_specification_en.md)
 * [💧 uNav: uNav Radio dongle setup utility (source)](https://github.com/ucnl/uNav)
 * [💧 uNav: uNav Radio dongle setup utility (download release)](https://github.com/ucnl/uNav/releases/download/1.0/uNav.zip)
-* [💧 uNav: User's manual](documentation/EN/RWLT/uNav_application_Users_manual_en.md)
+* [💧 uNav: User's manual](/documentation/EN/RWLT/uNav_application_Users_manual_en.md)
 * [🤿 uTrackDiver: Application for tracking divers equipped with RedPhone-DX (download release)](https://github.com/ucnl/uTrack/releases/download/beta/uTrackDiver.zip)
-* [🤿 uTrackDiver: User's manual](documentation/EN/RWLT/uTrackDiver_Users_Manual_en.md)
+* [🤿 uTrackDiver: User's manual](/documentation/EN/RWLT/uTrackDiver_Users_Manual_en.md)
 
 ### WAYU
 #### Sensibly priced amateur LBL tracking system
