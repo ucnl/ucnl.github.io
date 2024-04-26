@@ -1,4 +1,4 @@
-[Главная](/README_RU) ❯ [Аксессуары](/accessories_ru) ❯ **Микрофон защищенный для водолазных масок uSpeak**
+[Главная](/README_RU) ❯ [Аксессуары](/accessories_ru) ❯ **uSpeak - микрофон защищенный для водолазных масок**
 
 <div style="page-break-after: always;"></div>
 
