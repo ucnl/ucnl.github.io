@@ -16,8 +16,8 @@
 
 |  |  |
 | :---: | :--- |
-| ![Zima2-B](/documentation/def_zima_b_ant.png) | [Zima2-B](Zima2B_Specification_en.md) <br/> Direction-finding antenna |
-| ![Zima2-R](/documentation/zima_r.png) | [Zima2-R](Zima2R_Specification_en.md) <br/> Responder-beacons (one base station can work with a maximum of 16 transponders in sequence) |
+| ![Zima2-B](/documentation/zima_b.png) | [Zima2-B](Zima2B_Specification_en.md) <br/> Direction-finding antenna |
+| ![Zima2-R](/documentation/zima_r_wbat.png) | [Zima2-R](Zima2R_Specification_en.md) <br/> Responder-beacons (one base station can work with a maximum of 16 transponders in sequence) |
 | ![Bat&Link Box](/documentation/batnlinkbox.png) | [Bat&Link Box](Bat_n_link_box_Specification_en.md) <br/> Autonomous power supply |
 
 <div style="page-break-after: always;"></div>
