@@ -2,7 +2,7 @@
 
 <div style="page-break-after: always;"></div>
 
-| ![logo](/documentation/sm_logo.png) | ![logo](/documentation/zima_r_wbat.png) |
+| ![logo](/documentation/sm_logo.png) | ![zima_r_wbat](/documentation/zima_r_wbat.png) |
 | :---: | ---: |
 | [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **Zima2-R** - маяк-ответчик навигационной системы **Zima2 USBL** <br/> спецификация устройства |
 
