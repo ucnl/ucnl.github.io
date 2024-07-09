@@ -17,7 +17,7 @@
 
 |  |  |
 | :---: | :--- |
-| ![Zima2-B](/documentation/zima_b_wcable.png) | [Zima2-B](Zima2B_Specification_ru.md) <br/> Базовая станция пеленгования |
+| ![Zima2-B](/documentation/zima_b_wcable.png) | [Zima2-B](Zima2B_Specification_ru.md) <br/> Базовая станция пеленгования (с удлинителем [UART-RS422](/documentation/RU/Accessories/RS422_extension_cable_ru.html)) |
 | ![Zima2-R](/documentation/zima_r_wbat.png) | [Zima2-R](Zima2R_Specification_ru.md) <br/> Маяки-ответчики (одня базовая станция может последовательно работать максимум с 16 ответчиками) |
 | ![Bat&Link Box](/documentation/batnlinkbox.png) | [Bat&Link Box](Bat_n_link_box_Specification_ru.md) <br/> Автономный блок питания и коммутации базовой станции |
 
