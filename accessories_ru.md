@@ -8,6 +8,7 @@
 ## Аксессуары
 * [Кнопка подводная uPress](/documentation/RU/Accessories/uPress_Specification_ru.md)
 * [Микрофон для водолазных масок uSpeak](/documentation/RU/Accessories/uSpeak_specification_ru.md)
+* [Удлинительный кабель UART-RS422](/documentation/RU/Accessories/RS422_extension_cable_ru.md)
 
 ## Источники питания
 * [Подводные аккумуляторные сборки](/documentation/RU/Accessories/Sub_batteries_ru.md)
