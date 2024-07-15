@@ -71,7 +71,7 @@
 - От 1 до 16 маяков-ответчиков [Zima2-R](Zima2R_Specification_ru.md)
 - Блок питания и коммутации [Bat&Link Box](Bat_n_link_box_Specification_ru.md).
 
-| ![Zima2-B](/documentation/def_zima_b_ant.png) |
+| ![Zima2-B](/documentation/zima_b.png) |
 | :---: |
 | [Zima2-B](Zima2B_Specification_ru.md)|
 | *Пеленгационная антенна* |
