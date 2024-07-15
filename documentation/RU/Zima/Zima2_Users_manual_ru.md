@@ -81,6 +81,9 @@
 | ![Zima2-R](/documentation/zima_r.png) | 
 | [Zima2-R](Zima2R_Specification_ru.md) |
 | *Маяк-ответчик (интегрируемое исполнение)* |
+| ![Zima2-R](/documentation/zima_r_wbat.png) | 
+| [Zima2-R](Zima2R_Specification_ru.md) |
+| *Маяк-ответчик с батарейным блоком (автономное исполнение)* |
 | ![Bat&Link Box](/documentation/batnlinkbox.png) | 
 | [Bat&Link Box](Bat_n_link_box_Specification_ru.md) |
 | *Блок питания и коммутации* |
