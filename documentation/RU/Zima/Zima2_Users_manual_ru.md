@@ -73,14 +73,14 @@
 
 | ![Zima2-B](/documentation/zima_b.png) |
 | :---: |
-| [Zima2-B](Zima2B_Specification_ru.md)|
+| [Zima2-B](Zima2B_Specification_ru.md) |
 | *Пеленгационная антенна* |
-| ![Zima2-B-Interface-cable](/documentation/def_zima_b_int_cable.png) |
-| |
+| ![Zima2-B-Interface-cable](/documentation/rs422_cable.png) |
+| [RS-422 extension cable](/documentation/RU/Accessories/RS422_extension_cable_ru.html) |
 | *Кабель с интегрированным преобразователем интерфейса* |
 | ![Zima2-R](/documentation/zima_r.png) | 
 | [Zima2-R](Zima2R_Specification_ru.md) |
-| *Маяк-ответчик* |
+| *Маяк-ответчик (интегрируемое исполнение)* |
 | ![Bat&Link Box](/documentation/batnlinkbox.png) | 
 | [Bat&Link Box](Bat_n_link_box_Specification_ru.md) |
 | *Блок питания и коммутации* |
