@@ -73,20 +73,20 @@
 
 | ![Zima2-B](/documentation/zima_b.png) |
 | :---: |
-| [Zima2-B](Zima2B_Specification_ru.md) |
-| *Пеленгационная антенна* |
+| *Пеленгационная антенна [Zima2-B](Zima2B_Specification_ru.md)* |
+|  |
 | ![Zima2-B-Interface-cable](/documentation/rs422_cable.png) |
-| [RS-422 extension cable](/documentation/RU/Accessories/RS422_extension_cable_ru.html) |
-| *Кабель с интегрированным преобразователем интерфейса* |
+| *Кабель [UART-RS422](/documentation/RU/Accessories/RS422_extension_cable_ru.html) с интегрированным преобразователем интерфейса* |
+|  |
 | ![Zima2-R](/documentation/zima_r.png) | 
-| [Zima2-R](Zima2R_Specification_ru.md) |
-| *Маяк-ответчик (интегрируемое исполнение)* |
+| *Маяк-ответчик [Zima2-R](Zima2R_Specification_ru.md) (интегрируемое исполнение)* |
+|  |
 | ![Zima2-R](/documentation/zima_r_wbat.png) | 
-| [Zima2-R](Zima2R_Specification_ru.md) |
-| *Маяк-ответчик с [батарейным блоком](/documentation/RU/Accessories/Sub_batteries_ru.html#sb2448lf) (автономное исполнение)* |
+| *Маяк-ответчик [Zima2-R](Zima2R_Specification_ru.md) с [батарейным блоком](/documentation/RU/Accessories/Sub_batteries_ru.html#sb2448lf) (автономное исполнение)* |
+|  |
 | ![Bat&Link Box](/documentation/batnlinkbox.png) | 
-| [Bat&Link Box](Bat_n_link_box_Specification_ru.md) |
-| *Блок питания и коммутации* |
+| *Блок питания и коммутации [Bat&Link Box](Bat_n_link_box_Specification_ru.md)* |
+|  |
 
 <div style="page-break-after: always;"></div>
 
