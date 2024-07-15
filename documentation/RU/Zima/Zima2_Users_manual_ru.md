@@ -83,7 +83,7 @@
 | *Маяк-ответчик (интегрируемое исполнение)* |
 | ![Zima2-R](/documentation/zima_r_wbat.png) | 
 | [Zima2-R](Zima2R_Specification_ru.md) |
-| *Маяк-ответчик с батарейным блоком (автономное исполнение)* |
+| *Маяк-ответчик с [батарейным блоком](/documentation/RU/Accessories/Sub_batteries_ru.html#sb2448lf) (автономное исполнение)* |
 | ![Bat&Link Box](/documentation/batnlinkbox.png) | 
 | [Bat&Link Box](Bat_n_link_box_Specification_ru.md) |
 | *Блок питания и коммутации* |
