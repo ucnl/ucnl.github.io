@@ -70,7 +70,7 @@ ________________
 <a name="footnote2"><sup>2</sup></a> Без учета веса преобразователя и кабеля.  
 <a name="footnote3"><sup>3</sup></a> Значение получено без учета эффекта многолучевого распространения в лабораторном статическом эксперименте.  
 <a name="footnote4"><sup>4</sup></a> При режиме работы станции 1 запрос в 3 секунды.  
-<a name="footnote5"><sup>5</sup></a> С учетом преобразователя интерфейса и удлиняющего кабеля до прибора [Bat&Link Box](Bat_n_link_box_Specification_ru.md). Опционально возможно увеличение до 20 метров.  
+<a name="footnote5"><sup>5</sup></a> С учетом [преобразователя интерфейса и удлиняющего кабеля](/documentation/RU/Accessories/RS422_extension_cable_ru.html) до прибора [Bat&Link Box](Bat_n_link_box_Specification_ru.md). Опционально возможно увеличение до 20 метров.  
 
 <div style="page-break-after: always;"></div>
 
