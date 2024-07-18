@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/83d833f5-731b-4ee5-af90-8c46c5c38e11)---
+!---
 layout: post
 title: Погадаем на научной статье?
 ---
