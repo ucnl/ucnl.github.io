@@ -55,7 +55,7 @@ Differences from the basic version [uWave](/documentation/EN/uWAVE/uWAVE_Specifi
 | SUPPLY VOLTAGE<sup>[3](#footnote3),[4](#footnote4)</sup> | 5 .. 12 V |
 | DATA LINES VOLTAGE | 0 .. 3.3 V |
 | DATA LINES OUTPUT IMPEDANCE | 1 kOhm |
-| BANDWIDTH | 10 .. 30 kHz |
+| CARRIER | 20050 Hz |
 | MAX. ACOUSTIC SOURCE LEVEL (in band) | 175 dB re 1 uPa @ 1 m |
 | BIT ERROR RATE | 10<sup>-6</sup> |
 | SNR<sup>[5](#footnote5)</sup> | -2 дБ |
