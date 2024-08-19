@@ -48,7 +48,7 @@ simplicity of integration.
 | DEPTH RATING | 300 m |
 | MAX SIZE OF WORKING AREA |	700 х 700 m inside a polygon of buoys |
 | ACOUSTIC RANGE (ENEGRY)<sup>[2](#footnote2)</sup> | 3000 m |
-| BANDWIDTH | 10 .. 30 kHz |
+| CARRIER | 20100 Hz |
 | SNR<sup>[3](#footnote3)</sup> | -6 dB |
 | REFERENCE ELLIPSOID | WGS-84 |
 | NOMINAL 2D-ACCURACY <sup>[4](#footnote4)</sup> (2DRMS) | 0.84 m |
