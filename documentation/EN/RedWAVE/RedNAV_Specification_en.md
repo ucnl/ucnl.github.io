@@ -55,7 +55,7 @@ Fully wireless pairing with PC via Bluetooth and wireless charging makes it extr
 | DEPTH RATING | 70 m |
 | MAX SIZE OF WORKING AREA | 700 х 700 m inside a polygon of buoys |
 | ACOUSTIC RANGE (ENEGRY)<sup>[1](#footnote1)</sup> | 3000 m |
-| BANDWIDTH | 10 .. 30 kHz |
+| CARRIER | 20100 Hz |
 | SNR<sup>[2](#footnote2)</sup> | -6 dB |
 | REFERENCE ELLIPSOID | WGS-84 |
 | NOMINAL 2D-ACCURACY<sup>[3](#footnote3)</sup> (2DRMS) | 0.84 m |
