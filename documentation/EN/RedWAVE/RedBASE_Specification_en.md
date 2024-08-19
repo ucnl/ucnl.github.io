@@ -31,7 +31,7 @@ It has positive buoyancy, has a load-carrying eye for anchoring.
 | DIMENSIONS (Ф х h) | 146 x 597 mm |
 | WEIGHT(dry) | 4.8 kg |
 | REDUNDANT BUOYANCY | 1 kg |
-| BANDWIDTH | 10 .. 30 kHz |
+| CARRIER | 20100 Hz |
 | BATTERY LIFE | 24 hours |
 | ACOUSTIC RANGE (ENEGRY)<sup>[1](#footnote1)</sup> | 3000 m |
 | ACOUSTIC SOURCE LEVEL (IN BAND) | 170 dB re 1 μPa @ 1 m |
