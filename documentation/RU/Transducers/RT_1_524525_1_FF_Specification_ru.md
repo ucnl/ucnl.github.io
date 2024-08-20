@@ -34,6 +34,8 @@
 
 ![RT_1_524525_1_FF_drawings](/documentation/RT_1_524525_1_FF_drawings.png)
 
+[3D-модель антенны (STEP)](/documentation/RT_1_524525_1_FF.STEP)
+
 ### Назначение жил кабеля
 
 | № | Цвет | Назначение |
