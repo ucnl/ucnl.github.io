@@ -49,5 +49,15 @@
 | 4 | ВИНТ ISO 7380-2 A2/A4 M6х20 мм | 4 |
 | 5 | ВИНТ DIN 7991 A2/A4 M6х40 мм | 4 |
 
+![image](https://github.com/user-attachments/assets/0f09167c-659f-4971-8aed-dcfa6d1c8a1a)
+
+При монтаже антенн Zima2-B и uWave USBL, круглая выборка на крышке должна соответствовать нулевому направлению антенны.
+
+## РАСПОЛОЖЕНИЕ КРЕПЕЖНЫХ ОТВЕРСТИЙ
+
+![image](https://github.com/user-attachments/assets/0f4869cf-61df-44b9-9ae9-4bc98443b29f)
+
+
+
 <div style="page-break-after: always;"></div>
 
