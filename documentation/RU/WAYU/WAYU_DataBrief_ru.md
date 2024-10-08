@@ -20,7 +20,7 @@
 
 |  |  |
 | :---: | :--- |
-| ![WAYU Pinger](/documentation/RWLT_Pinger.png) | [WAYU Pinger](WAYU_Pinger_Specification_ru.md) <br/> Навигационный гидроакустический маяк-пингер |
+| ![wayu_pinger](/documentation/RT_1_332820_1.png) | [WAYU Pinger](WAYU_Pinger_Specification_ru.md) <br/> Навигационный гидроакустический маяк-пингер |
 | ![WAYU GIB]() | [WAYU GIB](WAYU_GIB_Specification_ru.md) <br/> Навигационный буй |
 | ![WAYU Radio dongle](/documentation/wayu_rf_dongle.png) | [WAYU Radio dongle](WAYU_RF_Dongle_Specification_ru.md) <br/> Радиодонгл - приемник навигационныйх буев |
 
