@@ -35,6 +35,7 @@ The device allows:
 
 [uWave family](uWAVE_Family_en.md) devices use a simple [NMEA-like protocol](uWAVE_Protocol_Specification_en.md) settings, and the supplied open-source libraries [**uWaveLib**](https://github.com/ucnl/uWAVELib ) (.NET) and [**uWave ALibs**](https://github.com/ucnl/UCNL_ALibs) (Arduino) allow you to make the integration of modems into custom solutions as simple and fast as possible.  
 _________
+
 <a name="footnote_a1"><sup>\*</sup></a> According to tests in a real water body, with the help of **uWave** devices, a practical communication range of **1092 m** was achieved.  
 <a name="footnote_a2"><sup>\*\*</sup></a> *Patents RU2659299C1, US11257472B2*.  
 <a name="footnote_a3"><sup>\*\*\*</sup></a> *According to open sources, November 2024*.  
