@@ -67,9 +67,9 @@ _________
 | **Дополнительная информация** |
 | :--- |
 | [Видео испытаний системы, треки полученные при работе в реальных условиях](media.md) |
-| [RedWave - гидроакустическая навигационная система: руководство пользователя](/documentation/RU/RedWAVE/RedWAVE_Users_Manual_ru.md) |
-| [RedNav Host - приложение для конфигурации водолазного навигационного приемника: руководство пользователя](/documentation/RU/RedWAVE/RedNAV_Host_Users_Manual_ru.md) |
-| [RedBase - гидроакустический навигационный буй-ретранслятор: спецификация устройства](RedBASE_Specification_ru.md) |
-| [RedNav - водолазный навигатор: спецификация устройства](RedNAV_Specification_ru.md) |
-| [RedNode - универсальный (интегрируемый) навигационный приемник: спецификация устройства](RedNODE_Specification_ru.md) |
+| [RedWave - гидроакустическая навигационная система: руководство пользователя](/documentation/RU/RedWAVE/RedWAVE_Users_Manual_ru) |
+| [RedNav Host - приложение для конфигурации водолазного навигационного приемника: руководство пользователя](/documentation/RU/RedWAVE/RedNAV_Host_Users_Manual_ru) |
+| [RedBase - гидроакустический навигационный буй-ретранслятор: спецификация устройства](RedBASE_Specification_ru) |
+| [RedNav - водолазный навигатор: спецификация устройства](RedNAV_Specification_ru) |
+| [RedNode - универсальный (интегрируемый) навигационный приемник: спецификация устройства](RedNODE_Specification_ru) |
 | [RedWave - описание протокола сопряжения с приемниками RedNode](RedWAVE_Protocol_Specification_ru.html) |
