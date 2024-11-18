@@ -1,8 +1,9 @@
-[Главная](/README_RU) ❯ [Дополнительные материалы](/misc_ru) ❯ **RedBase (v3) MSDS RU**
+[Главная](/README_RU) ❯ [Дополнительные материалы](/misc_ru) ❯ **WAYU GIB MSDS RU**
 
 <div style="page-break-after: always;"></div>
 
-| ![logo](/documentation/sm_logo.png) |   |
+| ![logo](/documentation/sm_logo.png) | ![image](https://github.com/user-attachments/assets/8234ff0a-fbee-4eb3-969d-0469ac18c81b)
+  |
 | :---: | ---: |
 | [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | Аккумулятор литий-железофосфатный <br/> в составе в составе навигационного буя WAYU GIB ПМВР.467154.080 <br/> Паспорт безопасности химической продукции (MSDS) |
 | | Версия 1 <br/> 18.11.2024 |
