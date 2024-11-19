@@ -1,4 +1,4 @@
-[Главная](/README) ❯ [Other equipment](/underwater_bespoke_systems_en) ❯ **Device specification: F4105-SU**
+[Main](/README) ❯ [Other equipment](/underwater_bespoke_systems_en) ❯ **Device specification: F4105-SU**
 
 <div style="page-break-after: always;"></div>
 
