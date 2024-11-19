@@ -6,7 +6,7 @@
 | :---: | ---: |
 | [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **F4105-SU** <br/> Acoustic release control unit <br/> Device specification |
 
-## FEATURES
+## KEY FEATURES
 
 * 64 unique addresses for acoustic realses
 * Programming the address of releases and issuing commands in one device
