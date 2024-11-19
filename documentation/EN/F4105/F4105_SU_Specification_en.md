@@ -38,22 +38,16 @@ The device is made in accordance with the protection class IP67<sup>[1](#footnot
 | BUILT-IN BATTERY CAPACITY | 48 W·h |
 | BUILT-IN BATTERY TYPE | LiFePO4 |
 | MAX. BATTERY LIFE IN ASCENT COMMAND TRANSMISSION MODE<sup>[4](#footnote4)</sup> | up to 6 hours |
-| ДИАПАЗОН РАБОЧИХ ТЕМПЕРАТУР | -5 .. 40 °С |
-| ИСПОЛНЕНИЕ | IP67<sup>[1](#footnote1)</sup> |
-| ТИП И НОМИНАЛ ПРЕДОХРАНИТЕЛЯ | 5х20 мм, 5 А |
+| WORKING TEMPERATURES | -5 .. 40 °С |
+| DUST/WATERPROOF | IP67<sup>[1](#footnote1)</sup> |
+| FUSE | 5х20 mm, 5 A |
 
 <div style="page-break-after: always;"></div>
 
 ________________
-<a name="footnote1"><sup>1</sup></a> При закрытой крышке. При открытой крышке кейса но закрытых разъемах допускается воздействие осадков.  
-<a name="footnote2"><sup>2</sup></a> Параметр, определяющий максимальную дальность, на которой возможен прием сигнала, исходя из электроакустических параметров передатчика и приемника, пространственного убывания интенсивности звуковой энергии, затухания в среде и уровня гидроакустических помех.  
-<a name="footnote3"><sup>3</sup></a> По договоренности длина кабеля может быть изменена.  
-<a name="footnote4"><sup>4</sup></a> При полностью заряженном АКБ. Как правило, время инициации размыкателя не превышает минуты, при условии, что он находится в зоне действия сигнала.  
-
-<div style="page-break-after: always;"></div>
-
-
-________________
-<a name="footnote1"><sup>1</sup></a> Параметр, определяющий максимальную дальность, на которой возможен прием сигнала, исходя из электроакустических параметров передатчика и приемника, пространственного убывания интенсивности звуковой энергии, затухания в среде и уровня гидроакустических помех.  
+<a name="footnote1"><sup>1</sup></a> With the lid closed. With the case lid open but the connectors closed, exposure to precipitation is permitted.  
+<a name="footnote2"><sup>2</sup></a> A parameter that determines the maximum range at which a signal can be received, based on the electroacoustic parameters of the transmitter and receiver, the spatial decrease in the intensity of sound energy, attenuation in the environment, and the level of hydroacoustic interference.  
+<a name="footnote3"><sup>3</sup></a> The cable length can be changed by additional agreement.  
+<a name="footnote4"><sup>4</sup></a> With a fully charged battery. As a rule, the initiation time of the release does not exceed 1 minute, provided that it is within the signal coverage area.  
 
 <div style="page-break-after: always;"></div>
