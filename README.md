@@ -12,6 +12,7 @@
 * [Underwater Wireless voice systems (Underwater telephone)](underwater_wireless_voice_systems_en.md)
 * [Hydrophones & transducers](underwater_acoustic_antennas_en.md)
 * [Accessories](accessories_en.md)
+* [Other equipment](underwater_bespoke_systems_en.md)
 
 ## Media, educational project and other things
 * [Media](media_videos_en.md)
