@@ -6,9 +6,11 @@
 | [EN](accessories_en.md) \| [RU](accessories_ru.md) |
 
 ## Accessories
-* [Underwater button uPress](/documentation/EN/Accessories/uPress_Specification_en.md)
-* [Underwater battery packs](/documentation/EN/Accessories/Sub_batteries_en.md)
+* [Underwater button uPress: Device specification](/documentation/EN/Accessories/uPress_Specification_en.md)
+* [Underwater battery packs: Device specifications](/documentation/EN/Accessories/Sub_batteries_en.md)
 
-* [Extension cable with UART-RS422 converter](/documentation/EN/Accessories/RS422_extension_cable_en.md)
+* [Extension cable with UART-RS422 converter: Device specification](/documentation/EN/Accessories/RS422_extension_cable_en.md)
+
+* [Flange rod mount: Device specification](Flange_rod_mound_Specification_en.md)
 
 ## [Back to main](README.md)
