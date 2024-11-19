@@ -9,4 +9,6 @@
 * [Underwater button uPress](/documentation/EN/Accessories/uPress_Specification_en.md)
 * [Underwater battery packs](/documentation/EN/Accessories/Sub_batteries_en.md)
 
+* [Extension cable with UART-RS422 converter](/documentation/EN/Accessories/RS422_extension_cable_en.md)
+
 ## [Back to main](README.md)
