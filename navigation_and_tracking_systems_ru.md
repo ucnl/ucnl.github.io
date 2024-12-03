@@ -106,5 +106,6 @@
 * [💧 uNav: Руководство пользователя](documentation/RU/RWLT/uNav_application_Users_manual_ru.md)
 * [💧 uNav: приложения для настройки uNav Radio dongle (Исходный код)](https://github.com/ucnl/uNav)
 * [💧 uNav: приложения для настройки uNav Radio dongle (Скачать релиз)](https://github.com/ucnl/uNav/releases/download/1.0/uNav.zip)
+* [Технический паспорт (шаблон)](documentation/RU/WAYU/WAYU_tech_pass_ru.md)
 
 ## [На главную](README_RU.md)
