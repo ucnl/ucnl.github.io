@@ -2,7 +2,7 @@
 
 <div style="page-break-after: always;"></div>
 
-| ![logo](/documentation/sm_logo.png) | ![WAYU GIB]() |
+| ![logo](/documentation/sm_logo.png) | ![WAYU_GIB_1(1)(1)](https://github.com/user-attachments/assets/2adaa0a0-2f97-4ba9-897c-cd4edc409028) |
 | :---: | ---: |
 | [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **WAYU GIB** - Навигационный буй <br/> Спецификация устройства |
 
