@@ -2,7 +2,7 @@
 
 <div style="page-break-after: always;"></div>
 
-| ![logo](/documentation/sm_logo.png) |  |
+| ![logo](/documentation/sm_logo.png) | ![photo_2024-12-04_12-17-33](https://github.com/user-attachments/assets/27a11cd4-0ba7-432b-833b-efdbe565ea6a) |
 | :---: | ---: |
 | [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **uNav WAYU RF dongle** - Приемник сигнала навигационных буев <br/> Спецификация устройства |
 
