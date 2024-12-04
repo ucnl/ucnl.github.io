@@ -22,7 +22,7 @@
 | :---: | :--- |
 | ![wayu_pinger](/documentation/RT_1_332820_1.png) | [WAYU Pinger](WAYU_Pinger_Specification_ru.md) <br/> Навигационный гидроакустический маяк-пингер |
 | ![WAYU_GIB_1(1)(1)](https://github.com/user-attachments/assets/2adaa0a0-2f97-4ba9-897c-cd4edc409028) | [WAYU GIB](WAYU_GIB_Specification_ru.md) <br/> Навигационный буй |
-| ![WAYU Radio dongle](/documentation/wayu_rf_dongle.png) | [WAYU Radio dongle](WAYU_RF_Dongle_Specification_ru.md) <br/> Радиодонгл - приемник навигационныйх буев |
+| ![uNav_WAYU_RF_Dongle](https://github.com/user-attachments/assets/0ec0811b-8283-460a-9036-9460f6c780c3) | [WAYU Radio dongle](WAYU_RF_Dongle_Specification_ru.md) <br/> Радиодонгл - приемник навигационныйх буев |
 
 
 <div style="page-break-after: always;"></div>
