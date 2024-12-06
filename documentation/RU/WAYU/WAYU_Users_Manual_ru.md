@@ -58,13 +58,13 @@
 
 - **Четыре гидроакустических буя** [WAYU GIB](WAYU_GIB_Specification_ru.md):
 
-| ![WAYU GIB](/documentation/rwlt_gib_h_small.png) |
+| ![WAYU_GIB_1](https://github.com/user-attachments/assets/2adaa0a0-2f97-4ba9-897c-cd4edc409028) |
 | :---: |
 | [WAYU GIB](WAYU_GIB_Specification_ru.md) <br/> Навигационный гидроакустический буй-приемник |
 
 - Навигационный решатель/радиомодем/донгл со встроенныйм GNSS-приемником [uNav WAYU RF Dongle](WAYU_RF_Dongle_Specification_ru.md), для приема навигационной информации от буев:
 
-| ![WAYU RF Dongle](/documentation/uNav_rf_dongle.png) | 
+| ![uNav_WAYU_RF_Dongle](https://github.com/user-attachments/assets/0ec0811b-8283-460a-9036-9460f6c780c3) | 
 | :---: |
 | [WAYU RF Dongle](WAYU_RF_Dongle_Specification_ru.md) <br/> Цифровой радиоприемник |
 
