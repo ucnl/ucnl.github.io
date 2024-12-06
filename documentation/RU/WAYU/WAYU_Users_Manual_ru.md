@@ -70,7 +70,7 @@
 
 - маяк-пингер [WAYU Pinger](WAYU_Pinger_Specification_ru.md). Пингер работает независимо и геопозиция объекта, на котором закреплен пингер будет обновляться каждые две секунды.
 
-| ![WAYU Pinger](/documentation/dev_big_wbat_li_small.png) | 
+| ![wayu_pinger](/documentation/RT_1_332820_1.png) | 
 | :---: |
 | [WAYU Pinger](WAYU_Pinger_Specification_ru.md) <br/> Маяк-пингер |
 
