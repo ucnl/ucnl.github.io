@@ -2,7 +2,7 @@
 
 <div style="page-break-after: always;"></div>
 
-| ![logo](/documentation/sm_logo.png) |  |
+| ![logo](/documentation/sm_logo.png) | ![image](https://github.com/user-attachments/assets/bddf7931-4682-4c58-b804-9f3aab1e8d4b) |
 | :---: | ---: |
 | [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **WAYU** - Гидроакустическая трекинговая система <br/> Краткое описание |
 
