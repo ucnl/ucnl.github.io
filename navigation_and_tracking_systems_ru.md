@@ -102,7 +102,7 @@
 * [WAYU GIB: Спецификация устройства](/documentation/RU/WAYU/WAYU_GIB_Specification_ru.md)
 * [uNav WAYU Radio dongle: Спецификация устройства](/documentation/RU/RWLT/RWLT_RF_Dongle_Specification_ru.md)
 * [uNav WAYU Radio dongle: протокол информационного сопряжения](/documentation/RU/RWLT/uNav_protocol_specification_ru.md)
-* [Руководство пользователя](/documentation/RU/WAYU/WAYU_Users_Manual_ru.md)
+* [WAYU: Руководство пользователя](documentation/RU/WAYU/WAYU_Users_Manual_ru.md)
 * [💧 uNav: Руководство пользователя](documentation/RU/RWLT/uNav_application_Users_manual_ru.md)
 * [💧 uNav: приложения для настройки uNav Radio dongle (Исходный код)](https://github.com/ucnl/uNav)
 * [💧 uNav: приложения для настройки uNav Radio dongle (Скачать релиз)](https://github.com/ucnl/uNav/releases/download/1.0/uNav.zip)
