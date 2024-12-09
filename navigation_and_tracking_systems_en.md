@@ -87,14 +87,13 @@ May 2016 - May 2022
 * [🤿 uTrackDiver: User's manual](/documentation/EN/RWLT/uTrackDiver_Users_Manual_en.md)
 
 ### WAYU
-### !!! THIS PART IS UNDER CONSTRUCTION !!!
 #### Sensibly priced amateur LBL tracking system
 * [WAYU: Data brief](/documentation/EN/WAYU/WAYU_DataBrief_en.md)
 * [WAYU: tracks, videos, tutorials, etc.](/documentation/EN/WAYU/media)
 * [Device specification: WAYU Pinger](/documentation/EN/WAYU/WAYU_Pinger_Specification_en.md)
 * [Device specification: WAYU GIB](/documentation/EN/WAYU/WAYU_GIB_Specification_en.md)
 * [Device specification: WAYU Radio dongle](/documentation/EN/WAYU/WAYU_RF_Dongle_Specification_en.md)
-* [COMING SOON User's manual]()
+* [COMING SOON User's manual](/documentation/EN/WAYU/WAYU_Users_Manual_en.md)
 * [Host Application WAYU (Source code)](https://github.com/ucnl/WAYU)
 * [Host Application WAYU (Download release)](https://github.com/ucnl/WAYU/releases/download/1.0/WAYU.zip)
 
