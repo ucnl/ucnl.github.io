@@ -17,9 +17,24 @@
 
 ## Contents
 
-
-
-
+ - [1. Introduction]()
+   - [1.1. Purpose]()
+   - [1.2. Features]()
+   - [1.3. System composition]()
+ - [2. Working with the system]()
+   - [2.0. Before work]()
+   - [ 2.1. Preparation for work and equipment check]()
+     - [2.1.1. Checking the buoy set]()
+     - [2.1.2 Charging the built-in power source]()
+     - [2.1.3. Positioning buoys on the water surface]()
+     - [2.1.4. Preparing the underwater equipment]()
+     - [2.1.5. Preparing the radio dongle for operation]()
+     - [2.1.6. Selecting a location for the operator console]()
+   - [2.2. Working with the system]()
+   - [2.3. Upon completion of work]()
+  - [3. Obligations and Disclaimer]()
+   - [3.1. Terms of Replacement and Free Warranty Service]()
+   - [3.2. Limitation of Manufacturer's Liability]()
 
 
 <div style="page-break-after: always;"></div>
@@ -73,7 +88,7 @@ Since the devices have built-in power sources based on **LiFePO4**, they have a 
 
 ### 2.1. Preparation for work and equipment check
 
-#### 2.1.2. Checking the buoy set
+#### 2.1.1. Checking the buoy set
 
 - Make sure all buoys in the set are intact, paying special attention to the hydroacoustic antenna cable;
 - Make sure all buoys are operational and their built-in power sources are sufficiently charged by turning them on by placing the bottom of the buoy in water: if there is a GNSS signal, even if there is no ping signal, each buoy transmits a status message in the radio channel containing information about its address, the voltage of the built-in power source and its geographic location.
@@ -86,7 +101,7 @@ If everything is done correctly, and the tops of the buoys have a good view of t
 
 After that, you can place the buoys on the surface of the water.
 
-#### 2.1. Charging the built-in power source
+#### 2.1.2 Charging the built-in power source
 
 The device is charged using the included accessory and only when the device is turned off and completely dry.
 
@@ -149,14 +164,16 @@ Buoys should be positioned in a convex quadrangle covering the entire intended w
 > The buoys are not underwater devices and are designed to operate on the water surface. Although the protection class implies a short-term overlap of the device by a wave, it is worth remembering that the built-in radio equipment (GNSS module and radio modem) cannot operate in such conditions!
 
 It is not recommended to throw buoys overboard. It is necessary to carefully lower them to the surface of the water, while making sure that the length of the anchor rope is sufficient and its weight is supported by the unloading fender, and the buoy is located vertically on the surface of the water and does not experience any additional loads.
-#### 2.1.4. Подготовка подводного оборудования
 
-Не требуется никаких предварительных действий кроме предварительной зарядки встроенного источника питания (батарейного блока) для исполнения с автономным маяком-пингером. 
-При наличии разъемного соединения маяка-пингера и батарейного блока необходимо предварительно убедиться в том, что герморазъем плотно закрыт и обслужен (для резьбовых разъемов убедиться что уплотнительные кольца смазаны силиконовой смазкой, для разъемов типа SUBCONN и подобных - убедиться, что на обе части разъема нанесена смазка, рекомендованная производителем разъемов).
+#### 2.1.4. Preparing the underwater equipment
 
-Включение маяка-пингера в автономном исполнении происходит автоматически, при попадании его в воду (контакты для включения от воды расположены на разъеме). 
+No preliminary actions are required other than pre-charging the built-in power source (battery pack) for the version with a stand-alone pinger beacon.
 
-Маяк-пингер должен крепиться только за специальный паз мягким хомутом таким образом, чтобы исключить любое неравномерное нагружение корпуса маяка, излишнее сдавливание и затенение/экранирование корпуса маяка. Ниже на рисунке представлены базовые требования по монтажу акустической части маяка-пингера на носителе:
+If there is a detachable connection between the pinger beacon and the battery pack, it is necessary to first make sure that the sealed connector is tightly closed and serviced (for threaded connectors, make sure that the sealing rings are lubricated with silicone grease, for SUBCONN type connectors and similar ones - make sure that both parts of the connector are coated with the lubricant recommended by the connector manufacturer).
+
+The pinger beacon in the stand-alone version turns on automatically when it gets into water (the contacts for turning on from water are located on the connector).
+
+The pinger beacon should be fastened only by a special groove with a soft clamp in such a way as to exclude any uneven loading of the beacon body, excessive compression and shading/shielding of the beacon body. The figure below shows the basic requirements for mounting the acoustic part of the pinger beacon on the carrier:
 
 | |
 | :---: |
