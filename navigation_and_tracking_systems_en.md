@@ -94,5 +94,8 @@ May 2016 - May 2022
 * [Device specification: WAYU GIB](/documentation/EN/WAYU/WAYU_GIB_Specification_en.md)
 * [Device specification: WAYU Radio dongle](/documentation/EN/WAYU/WAYU_RF_Dongle_Specification_en.md)
 * [User's manual](/documentation/EN/WAYU/WAYU_Users_Manual_en.md)
+* [💧 uNav: User's manual](documentation/EN/RWLT/uNav_application_Users_manual_en.md)
+* [💧 uNav: uNav Radio dongle application (Source code)](https://github.com/ucnl/uNav)
+* [💧 uNav: uNav Radio dongle application (Download release)](https://github.com/ucnl/uNav/releases/download/1.0/uNav.zip)
 
 ## [Back to main](README.md)
