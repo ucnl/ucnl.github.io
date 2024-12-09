@@ -93,8 +93,6 @@ May 2016 - May 2022
 * [Device specification: WAYU Pinger](/documentation/EN/WAYU/WAYU_Pinger_Specification_en.md)
 * [Device specification: WAYU GIB](/documentation/EN/WAYU/WAYU_GIB_Specification_en.md)
 * [Device specification: WAYU Radio dongle](/documentation/EN/WAYU/WAYU_RF_Dongle_Specification_en.md)
-* [COMING SOON User's manual](/documentation/EN/WAYU/WAYU_Users_Manual_en.md)
-* [Host Application WAYU (Source code)](https://github.com/ucnl/WAYU)
-* [Host Application WAYU (Download release)](https://github.com/ucnl/WAYU/releases/download/1.0/WAYU.zip)
+* [User's manual](/documentation/EN/WAYU/WAYU_Users_Manual_en.md)
 
 ## [Back to main](README.md)
