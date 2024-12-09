@@ -2,21 +2,20 @@
 
 <div style="page-break-after: always;"></div>
 
-| ![logo](/documentation/sm_logo.png) | ![WAYU GIB]() |
+| ![logo](/documentation/sm_logo.png) | ![WAYU_GIB_1(1)(1)](https://github.com/user-attachments/assets/2adaa0a0-2f97-4ba9-897c-cd4edc409028) |
 | :---: | ---: |
 | [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **WAYU GIB** - Navigation buoy <br/> Device specification |
 
 ## KEY FEATURES
 
 * **Minimum dimensions and weight**
-* **Strong and durable moulded case made of polyurethane**
-* **Automatic turn-on in water**
-* **Charging from USB port**
+* **Strong and durable maintenance-free housing**
+* **Automatic switching on from water**
 
 ## DESCRIPTION
 
-Navigation hydroacoustic buoy **WAYU GIB** of the system **[WAYU](WAYU_DataBrief_en.md)** as part of a set of four such devices forms a floating long navigation base, with the support of which positioning of the pinger is provided **[WAYU Pinger](WAYU_Pinger_Specification_en.md)**.
-The device has a monoblock one-piece construction and is made of high-strength polyurethane, automatically turns off when it gets into the water and is charged from the USB port. Doesn't require any adjustments and calibrations.
+The navigation hydroacoustic buoy **WAYU GIB** of the **[WAYU](WAYU_DataBrief_en.md)** system, as part of a set of four such devices, forms a floating long navigation base, with the support of which the positioning of the **[WAYU Pinger](WAYU_Pinger_Specification_en.md)** pinger is ensured.
+The device has a non-separable design and is made of high-strength polyurethane and polypropylene, it automatically switches on when it hits the water. It does not require any settings or calibrations. Buoyancy is provided by an easily visible float made of ethyl vinyl acetate (EVA).
 
 <div style="page-break-after: always;"></div>
 
@@ -24,27 +23,28 @@ The device has a monoblock one-piece construction and is made of high-strength p
 
 | PARAMETER | VALUE |
 | :--- | :--- |
-| DIMENSIONS<sup>[1](#footnote1)</sup> (Ф х h) | 70 x 450 mm |
-| WEIGHT (dry) | X kg |
-| BATTERY LIFE<sup>[2](#footnote2)</sup> | 12 hours |
-| MAX.RELATIVE VELOCITY | +/- 2 m/s  |
-| WORKING TEMPERATURE RANGE | -10 .. 50 °С |
-| MAX. ACOUSTIC RANGE<sup>[3](#footnote3)</sup> | 300 m |
-| SIGNAL FREQUENCY | 28400 Hz |
+| DIMENSIONS<sup>[1](#footnote1)</sup> (Ф x h) | 55 x 1000 mm |
+| WEIGHT (dry) | 1.55 kg |
+| MAXIMUM TIME<sup>[2](#footnote2)</sup> OF AUTONOMOUS WORK | 12 hours |
+| MAXIMUM SPEED RELATIVELY TO PINGER | +/- 2 m/s |
+| RANGE OF OPERATING TEMPERATURES | -10 .. 50 °С |
+| MAXIMUM ACOUSTIC COMMUNICATION RANGE<sup>[3](#footnote3)</sup> | 300 m |
+| ACOUSTIC SIGNAL FREQUENCY | 28400 Hz |
 | REFERENCE ELLIPSOID | WGS-84 |
-| BUILT-IN BATTERY TYPE | Li-Ion |
+| BUILT-IN BATTERY TYPE | LiFePO4 |
+| BUILT-IN BATTERY CAPACITY | 18 W h |
 | ACOUSTIC ANTENNA CABLE LENGTH | 1.5 m |
-| BUILT-IN RF UNIT TYPE | GFSK 433 MHz |
-| BUILT-IN RF UNIT MAX. OUTPUT POWER | 100 mW |
-| RF RANGE<sup>[4](#footnote4)</sup> | 300 m |
-| BUILT-IN BATTERY CHARGING | Through the built-in connector with a bundled USB cable |
+| BUILT-IN RADIO MODULE TYPE | 433 MHz |
+| MAXIMUM RADIO MODULE POWER | 100 mW |
+| MAXIMUM RADIO COMMUNICATION RANGE<sup>[4](#footnote4)</sup> | 300 m |
+| CHARGING THE BUILT-IN BATTERY | With the included charger |
+| CHARGING TIME OF THE BUILT-IN BATTERY | 8 h |
 
 ________________
-<a name="footnote1"><sup>1</sup></a> Without taking into account the height of the radio antenna (180 mm) and the acoustic receiving antenna on a cable 1.5 m long.  
-<a name="footnote2"><sup>2</sup></a> On a new battery, at an ambient temperature of 20 ° C.  
-<a name="footnote3"><sup>3</sup></a> A parameter that determines the maximum range at which signal reception is possible, based on
-electroacoustic parameters of the transmitter and receiver, spatial decrease in the intensity of sound energy, attenuation in the environment
-and the level of hydroacoustic noise.  
-<a name="footnote4"><sup>4</sup></a>Achieved in the absence of interference, in an open area.  
+<a name="footnote1"><sup>1</sup></a> Excluding the hydroacoustic receiving antenna on a 1.5 m cable, excluding the float (Ф x h) 125 x 160 mm.  
+<a name="footnote2"><sup>2</sup></a> With a new battery, at an ambient temperature of 20°C.  
+<a name="footnote3"><sup>3</sup></a> The parameter that determines the maximum range at which signal reception is possible, based on the electroacoustic parameters of the transmitter and receiver, spatial decrease in the intensity of sound energy, attenuation in the environment and the level of hydroacoustic interference.  
+<a name="footnote4"><sup>4</sup></a> Achieved in the absence of interference, in open areas. The receiving antenna may need to be raised several meters higher.  
 
 <div style="page-break-after: always;"></div>
+
