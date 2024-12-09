@@ -6,7 +6,7 @@
 | :---: | ---: |
 | [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **WAYU Pinger** - Underwater pinger beacon <br/> Device specification |
 
-## КЛЮЧЕВЫЕ ОСОБЕННОСТИ
+## KEY FEATURES
 
 * **Maximum ease of maintenance**
 * **Automatic switching on from water<sup>[1](#footnote1)</sup>**
