@@ -1,13 +1,13 @@
 [Main](/../../) ❯ [Navigation & tracking systems](/navigation_and_tracking_systems_en) ❯ **WAYU: User’s manual**
 
-> ℹ Этот документ можно распечатать прямо из браузера. 
-> Для лучшего результата:
-> - выберите диапазон страниц для печати, исключая первую и последнюю
-> - в дополнительных настройках отключите нижние и верхние колонтитулы
+> ℹ This document can be printed directly from the browser.
+> For best results:
+> - select a range of pages to print, excluding the first and last
+> - in the advanced settings, turn off footers and headers
 
 <div style="page-break-after: always;"></div>
 
-| ![logo](/documentation/sm_logo.png) | ![image](https://github.com/user-attachments/assets/39fce8cb-6f97-4697-a1ab-6dcd68e56239) |
+| ![logo](/documentation/sm_logo.png) | ![image](https://github.com/user-attachments/assets/0d0ae1c9-f4c6-4d08-b62a-43de058d37a4) |
 | :---: | ---: |
 | [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **WAYU** - Underwater acoustic tracking system <br/> User's manual |
 
@@ -16,6 +16,9 @@
 <div style="page-break-after: always;"></div>
 
 ## Contents
+
+
+
 
 
 
