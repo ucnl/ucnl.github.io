@@ -29,7 +29,7 @@ _________
 | :--- | :--- |
 | DIMENSIONS (Ф x h) | 41 x 45 mm |
 | WEIGHT (dry) | 0.15 kg |
-| ACOUSTIC SIGNAL FREQUENCY | 28400 ± 100 Hz |
+| ACOUSTIC SIGNAL FREQUENCY | 25000 ± 100 Hz |
 | ACOUSTIC SIGNAL RADIATION PERIOD | 2 ± 0.1 seconds |
 | MAXIMUM ACOUSTIC COMMUNICATION RANGE<sup>[2](#footnote2)</sup> | 300 m |
 | MAXIMUM ACOUSTIC PRESSURE | 163 dB re 1 μPa @ 1 m |
@@ -58,7 +58,7 @@ In the autonomous version, the device is supplied with a connector for connectin
 | BATTERY TYPE | MAXIMUM TIME<sup>[5](#footnote5)</sup> OF OPERATION, h |
 | :--- | :--- |
 | [SB-23-64-LI](/documentation/RU/Accessories/Sub_batteries_ru#sb2364li) | up to 32 |
-| [SB-34-140-LF](/documentation/RU/Accessories/Sub_batteries_ru#sb2448lf) | up to 24 |
+| [SB-24-48-LF](/documentation/RU/Accessories/Sub_batteries_ru#sb2448lf) | up to 24 |
 
 ________________
 <a name="footnote1"><sup>1</sup></a> For autonomous operation  
