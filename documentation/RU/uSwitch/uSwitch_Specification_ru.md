@@ -31,9 +31,9 @@
 Устройство поставляется в виде сборки печатных плат и гидроакустической антенны на кабеле. 
 
 В качестве антенны могут применятся:
-- [RT-1.332820-1](https://docs.unavlab.com/documentation/RU/Transducers/RT_1_332820_1_Specification_ru.html)
-- [RT-2.332820-1](https://docs.unavlab.com/documentation/RU/Transducers/RT_2_332820_1_Specification_ru.html)
-- [RT-1.524525-1](https://docs.unavlab.com/documentation/RU/Transducers/RT-1.524525-1_specification_ru.html)
+- [RT-1.332820-1](https://docs.unavlab.com/documentation/RU/Transducers/RT_1_332820_1_Specification_ru.html) - доступное решение с минимальными габаритами
+- [RT-2.332820-1](https://docs.unavlab.com/documentation/RU/Transducers/RT_2_332820_1_Specification_ru.html) - двухэлементная антенна с повышенной чувствительностью для работы с поверхности
+- [RT-1.524525-1](https://docs.unavlab.com/documentation/RU/Transducers/RT-1.524525-1_specification_ru.html) - антенна с повышенной чувствительностью
 
 <div style="page-break-after: always;"></div>
 
