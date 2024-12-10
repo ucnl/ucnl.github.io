@@ -36,6 +36,10 @@
 * [Технический паспорт (шаблон): uWave](/documentation/RU/uWAVE/uWave_technical_passport_ru.md)
 * [Руководство по обновлению прошивки: uWave](/documentation/RU/uWAVE/uWAVE_FW_Updating_ru.md)
 
+### uSwitch
+#### гидроакустический модем
+* [uSwitch](documentation/RU/uSwitch/uSwitch_Specification_ru.md)
+
 ### RedLine
 #### гидроакустический модем
 * [Спецификация устройства: RedLine](/documentation/RU/RedLINE/RedLine_Specification_ru.md)
