@@ -41,7 +41,7 @@ The device has a non-separable design and is made of high-strength polyurethane 
 | CHARGING TIME OF THE BUILT-IN BATTERY | 8 h |
 
 ________________
-<a name="footnote1"><sup>1</sup></a> Excluding the hydroacoustic receiving antenna on a 1.5 m cable, excluding the float (Ф x h) 125 x 160 mm.  
+<a name="footnote1"><sup>1</sup></a> Excluding the hydroacoustic receiving antenna on a 1 m cable, excluding the float (Ф x h) 125 x 160 mm.  
 <a name="footnote2"><sup>2</sup></a> With a new battery, at an ambient temperature of 20°C.  
 <a name="footnote3"><sup>3</sup></a> The parameter that determines the maximum range at which signal reception is possible, based on the electroacoustic parameters of the transmitter and receiver, spatial decrease in the intensity of sound energy, attenuation in the environment and the level of hydroacoustic interference.  
 <a name="footnote4"><sup>4</sup></a> Achieved in the absence of interference, in open areas. The receiving antenna may need to be raised several meters higher.  
