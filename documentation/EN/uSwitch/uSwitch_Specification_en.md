@@ -1,4 +1,4 @@
-[Main](/../../) ❯ [Underwater acoustic modems](/underwater_acoustic_modems_en) ❯ **Device specification: uWave**
+[Main](/../../) ❯ [Underwater acoustic modems](/underwater_acoustic_modems_en) ❯ **Device specification: uSwitch**
 
 <div style="page-break-after: always;"></div>
 
