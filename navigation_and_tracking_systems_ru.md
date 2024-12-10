@@ -100,7 +100,7 @@
 * [WAYU: медиаматериалы, видео испытаний, треки и т.п.](/documentation/RU/WAYU/media)
 * [WAYU Pinger: Спецификация устройства](/documentation/RU/WAYU/WAYU_Pinger_Specification_ru.md)
 * [WAYU GIB: Спецификация устройства](/documentation/RU/WAYU/WAYU_GIB_Specification_ru.md)
-* [uNav WAYU Radio dongle: Спецификация устройства](/documentation/RU/RWLT/RWLT_RF_Dongle_Specification_ru.md)
+* [uNav WAYU Radio dongle: Спецификация устройства](/documentation/RU/WAYU/WAYU_RF_Dongle_Specification_ru.md)
 * [uNav WAYU Radio dongle: протокол информационного сопряжения](/documentation/RU/RWLT/uNav_protocol_specification_ru.md)
 * [WAYU: Руководство пользователя](documentation/RU/WAYU/WAYU_Users_Manual_ru.md)
 * [💧 uNav: Руководство пользователя](documentation/RU/RWLT/uNav_application_Users_manual_ru.md)
