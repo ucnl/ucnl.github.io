@@ -30,6 +30,11 @@
 
 Устройство поставляется в виде сборки печатных плат и гидроакустической антенны на кабеле. 
 
+В качестве антенны могут применятся:
+- [RT-1.332820-1](https://docs.unavlab.com/documentation/RU/Transducers/RT_1_332820_1_Specification_ru.html)
+- [RT-2.332820-1](https://docs.unavlab.com/documentation/RU/Transducers/RT_2_332820_1_Specification_ru.html)
+- [RT-1.524525-1](https://docs.unavlab.com/documentation/RU/Transducers/RT-1.524525-1_specification_ru.html)
+
 <div style="page-break-after: always;"></div>
 
 ## ТЕХНИЧЕСКИЕ ХАРАКТЕРИСТИКИ
@@ -76,6 +81,7 @@ ________________
 | 10          | +U<sub>пит.</sub> | I | - | Питание |
 | X1          | ANT               | - | - | Подключение гидроакустической антенны |
 | X2          | WATER_DET         | - | - | Контакты детектора воды |
+
 
 
 <div style="page-break-after: always;"></div>
