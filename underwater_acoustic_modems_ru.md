@@ -38,7 +38,7 @@
 
 ### uSwitch
 #### гидроакустический модем
-* [uSwitch](documentation/RU/uSwitch/uSwitch_Specification_ru.md)
+* [Спецификация устройства: uSwitch](documentation/RU/uSwitch/uSwitch_Specification_ru.md)
 
 ### RedLine
 #### гидроакустический модем
