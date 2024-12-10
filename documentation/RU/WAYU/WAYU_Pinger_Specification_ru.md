@@ -57,7 +57,7 @@ _________
 | ТИП АКБ | МАКСИМАЛЬНОЕ ВРЕМЯ<sup>[5](#footnote5)</sup> АВТОНОМНОЙ РАБОТЫ, ч |
 | :--- | :--- |
 | [SB-23-64-LI](/documentation/RU/Accessories/Sub_batteries_ru#sb2364li) | до 32 |
-| [SB-34-140-LF](/documentation/RU/Accessories/Sub_batteries_ru#sb2448lf) | до 24 |
+| [SB-24-48-LF](/documentation/RU/Accessories/Sub_batteries_ru#sb2448lf) | до 24 |
 
 ________________
 <a name="footnote1"><sup>1</sup></a> При автономном исполнении  
