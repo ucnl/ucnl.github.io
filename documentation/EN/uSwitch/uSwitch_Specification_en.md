@@ -30,9 +30,9 @@ For example, for testing various network algorithms, prototyping and building sp
 The device is supplied as an assembly of printed circuit boards and a hydroacoustic antenna on a cable.
 
 The following items can be used as an antenna:
-- [RT-1.332820-1](https://docs.unavlab.com/documentation/RU/Transducers/RT_1_332820_1_Specification_ru.html) - Affordable solution with minimal dimensions
-- [RT-2.332820-1](https://docs.unavlab.com/documentation/RU/Transducers/RT_2_332820_1_Specification_ru.html) - Dual-element antenna with increased sensitivity for surface operation
-- [RT-1.524525-1](https://docs.unavlab.com/documentation/RU/Transducers/RT-1.524525-1_specification_ru.html) - High sensitivity antenna
+- [RT-1.332820-1](https://docs.unavlab.com/documentation/EN/Transducers/RT_1_332820_1_Specification_en.html) - Affordable solution with minimal dimensions
+- [RT-2.332820-1](https://docs.unavlab.com/documentation/EN/Transducers/RT_2_332820_1_Specification_en.html) - Dual-element antenna with increased sensitivity for surface operation
+- [RT-1.524525-1](https://docs.unavlab.com/documentation/EN/Transducers/RT-1.524525-1_specification_en.html) - High sensitivity antenna
 
 <div style="page-break-after: always;"></div>
 
@@ -54,33 +54,32 @@ The following items can be used as an antenna:
 | INTERFACE | UART 9600 bps |
 
 ________________
-<a name="footnote1"><sup>1</sup></a> Параметр, определяющий максимальную дальность, на которой возможен прием сигнала, исходя из электроакустических параметров передатчика и приемника, пространственного убывания интенсивности звуковой энергии, затухания в среде и уровня гидроакустических помех.  
-<a name="footnote2"><sup>2</sup></a> Максимальная выходная мощность достигается при питании модема напряжением 12 В.  
-<a name="footnote3"><sup>3</sup></a> При использовании антенны [RT-1.332820-1](https://docs.unavlab.com/documentation/RU/Transducers/RT_1_332820_1_Specification_ru.html).  
+<a name="footnote1"><sup>1</sup></a> A parameter that determines the maximum range at which a signal can be received, based on the electroacoustic parameters of the transmitter and receiver, the spatial decrease in the intensity of sound energy, attenuation in the environment, and the level of hydroacoustic interference.  
+<a name="footnote2"><sup>2</sup></a> Maximum output power is achieved when the modem is powered by 12 V.  
+<a name="footnote3"><sup>3</sup></a> When using an [RT-1.332820-1](https://docs.unavlab.com/documentation/ENTransducers/RT_1_332820_1_Specification_en.html) antenna.  
 
 <div style="page-break-after: always;"></div>
 
-## РАСПИНОВКА И ПОДКЛЮЧЕНИЕ
+## PINOUT AND CONNECTION
 
 | ![image](https://github.com/user-attachments/assets/058c5ff9-68f8-4139-831d-2092fda60fd2) |
 | :---: |
-| Модем **uSwitch**</br>*расположение и функции контактных площадок* |
+| Modem **uSwitch**</br>*location and functions of contact pads* |
 
-| ОБОЗНАЧЕНИЕ | НАИМЕНОВАНИЕ      | I/O | АКТИВНОЕ СОСТОЯНИЕ | ФУНКЦИЯ |
-| :---        | :---              | :---: | :---: |:--- |
-| 1           | GND               | - | - | Земля/Общий |
-| 2           | STR_TRX           | O | 1 | Строб при начале передачи/приема, не менее 10 мс |
-| 3           | GND               | - | - | Земля/Общий |
-| 4           | TX_OVF            | O | 0 | Если буфер передачи полон, выставляется 0 |
-| 5           | GND               | - | - | Земля/Общий |
-| 6           | TX                | O | - | Tx приемника |
-| 7           | GND               | - | - | Земля/Общий |
-| 8           | RX                | I | - | Rx передатчика |
-| 9           | +U<sub>пит.</sub> | I | - | Питание |
-| 10          | +U<sub>пит.</sub> | I | - | Питание |
-| X1          | ANT               | - | - | Подключение гидроакустической антенны |
-| X2          | WATER_DET         | - | - | Контакты детектора воды |
-
+| DESIGNATION | NAME | I/O | ACTIVE STATE | FUNCTION |
+| :--- | :--- | :---: | :---: |:--- |
+| 1 | GND | - | - | Ground/Common |
+| 2 | STR_TRX | O | 1 | Strobe at the beginning of transmission/reception, not less than 10 ms |
+| 3 | GND | - | - | Ground/Common |
+| 4 | TX_OVF | O | 0 | If the transmit buffer is full, 0 is set |
+| 5 | GND | - | - | Ground/Common |
+| 6 | TX | O | - | Receiver Tx |
+| 7 | GND | - | - | Ground/Common |
+| 8 | RX | I | - | Transmitter Rx |
+| 9 | +U<sub>power</sub> | I | - | Power |
+| 10 | +U<sub>power</sub> | I | - | Power |
+| X1 | ANT | - | - | Hydroacoustic antenna connection |
+| X2 | WATER_DET | - | - | Water detector contacts |
 
 
 <div style="page-break-after: always;"></div>
