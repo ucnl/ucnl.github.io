@@ -16,7 +16,7 @@
 * **Signal propagation time measurement function**
 * **Water contact switch function**
 * **Can be used as a pinger for the [WAYU](documentation/navigation_and_tracking_systems_en#wayu) system**
-* **Low power consumption (Rx/Tx) 20 mA / 2.5 A **
+* **Low power consumption (Rx/Tx) 20 mA / 2.5 A**
 * **Ideal solution for educational projects and training**
 
 <div style="page-break-after: always;"></div>
