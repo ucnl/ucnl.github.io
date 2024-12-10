@@ -35,6 +35,10 @@
 * [3D-model (Fusion360 f3d): uWave flat holder](/documentation/uWAVE_holder_flat.f3d)
 * [Instructions for firmware updating: uWave family](/documentation/EN/uWAVE/uWAVE_FW_Updating_en.md)
 
+### uSwitch
+#### underwater acoustic modem
+* [Device specification: uSwitch](documentation/EN/uSwitch/uSwitch_Specification_en.md)
+
 ### RedLine
 #### underwater acoustic modem
 * [Device specification: RedLine](/documentation/EN/RedLINE/RedLine_Specification_en.md)
