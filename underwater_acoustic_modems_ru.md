@@ -6,6 +6,9 @@
 | [EN](underwater_acoustic_modems_en.md) \| [RU](underwater_acoustic_modems_ru.md) |
 
 ## Гидроакустические модемы
+
+* [Таблица сравнения модемов](modems_comparison_ru.md)
+
 ### uWave
 #### гидроакустический модем
 * [Краткое описание семейства устройств uWave](/documentation/RU/uWAVE/uWAVE_Family_ru.md)
