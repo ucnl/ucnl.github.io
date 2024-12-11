@@ -6,7 +6,7 @@
 | [EN](underwater_acoustic_modems_en.md) \| [RU](underwater_acoustic_modems_ru.md) |
 
 ## Underwater acoustic modems
-* [Modems comparison](modems_comparison_en.md)
+* [Modems comparison table](modems_comparison_en.md)
 
 ### uWave
 #### underwater acoustic modem
