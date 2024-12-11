@@ -32,7 +32,7 @@ _________
 | ACOUSTIC SIGNAL FREQUENCY | 25000 ± 100 Hz |
 | ACOUSTIC SIGNAL RADIATION PERIOD | 2 ± 0.1 seconds |
 | MAXIMUM ACOUSTIC COMMUNICATION RANGE<sup>[2](#footnote2)</sup> | 300 m |
-| MAXIMUM ACOUSTIC PRESSURE | 163 dB re 1 μPa @ 1 m |
+| ACOUSTIC POWER SOURCE (In-band) | 163 dB re 1 μPa @ 1 m |
 | SUPPLY VOLTAGE<sup>[3](#footnote3)</sup> | 7 .. 13.5 V |
 | CURRENT CONSUMPTION (Idle/Transmitt) | 20 mA / 2.5 A |
 | MAXIMUM SPEED RELATIVE TO BUOYS | ± 2 m/s |
