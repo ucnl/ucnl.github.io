@@ -47,7 +47,7 @@ The following items can be used as an antenna:
 | POWER CONSUMPTION Rx/Tx | 20 mA / 2.5 A |
 | SUPPLY VOLTAGE<sup>[2](#footnote2)</sup> | 7 .. 13 V |
 | DATA LINE VOLTAGE | 0 .. 3.3 V |
-| FREQUENCY RANGE | 23000 .. 27000 Hz |
+| FREQUENCY RANGE | 24000 .. 26000 Hz |
 | MAXIMUM ACOUSTIC PRESSURE<sup>[3](#footnote3)</sup> (In-band) | 165 dB re 1 µPa @ 1 m |
 | MAXIMUM RELATIVE VELOCITY | +/- 2 m/s |
 | OPERATING TEMPERATURE RANGE | -5 .. 50 °C |
