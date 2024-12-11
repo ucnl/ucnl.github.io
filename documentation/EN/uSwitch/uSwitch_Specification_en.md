@@ -90,10 +90,10 @@ The device allows you to switch the maximum power of the transmitting circuit fo
 Switching between modes is carried out by soldering the corresponding jumper (0 Ohm resistor, 1206 package).
 
 - for operation at maximum range:
-- R1 is not soldered, R2 is soldered
+  - R1 is not soldered, R2 is soldered
 
 - for operation in swimming pools:
-- R1 is soldered, R2 is not soldered
+  - R1 is soldered, R2 is not soldered
 
 > IMPORTANT! Soldering both jumpers R1 and R2 at the same time will lead to failure of the devices and non-warranty breakdown
 
