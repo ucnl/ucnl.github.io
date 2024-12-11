@@ -14,7 +14,7 @@
 | :--- | :---: | :---: | :---: | :---: | :---: | 
 |      | | ![](/documentation/RT_1_332820_1.png) | ![](/documentation/utro_pcb_rt_1_524525_1_2.png) | ![](/documentation/def_modem_black.png) | ![](/documentation/zima_b.png) |
 | Текущий статус | **Поставляется** | **Поставляется** | **Поставляется** | **Поставляется** | **Поставляется** |
-| Максимальная дальность связи, м | 300 | 1000<sup>[1](#footnote1)</sup> | 3000<sup>[1](#footnote1),[2](#footnote2)</sup> | 3000<sup>[1](#footnote1),[2](#footnote2)</sup> | 3000<sup>[1](#footnote1),[2](#footnote2)</sup> |
+| Максимальная дальность связи, м | 300<sup>[1](#footnote1) | 1000<sup>[1](#footnote1)</sup> | 3000<sup>[1](#footnote1),[2](#footnote2)</sup> | 3000<sup>[1](#footnote1),[2](#footnote2)</sup> | 3000<sup>[1](#footnote1),[2](#footnote2)</sup> |
 | Скорость передачи данных, бит/с | 100 | 78 / 156<sup>[3](#footnote3)</sup> / 314<sup>[3](#footnote3)</sup> / 634<sup>[3](#footnote3)</sup> | 78 / 156<sup>[3](#footnote3)</sup> / 314<sup>[3](#footnote3)</sup> / 634<sup>[3](#footnote3)</sup> | 78 / 156<sup>[3](#footnote3)</sup> / 314<sup>[3](#footnote3)</sup> / 634<sup>[3](#footnote3)</sup> | 78 / 156<sup>[3](#footnote3)</sup> / 314<sup>[3](#footnote3)</sup> / 634<sup>[3](#footnote3)</sup> |
 | Габариты, мм | 100 x 19 х 25 (плата) <br/> Ф41 x 45 (антенна)  | **Ф41 x 45** | 80 х 43 х 29 (плата) <br/> Ф64 x 62 (антенна) |  Ф64 x 62 | Ф64 х 128 |
 | Вес (сухой), г | 30 (плата) <br/> 150 (антенна) | **160** | 54 (плата) <br/> 360 (aнтенна) | 360 | 440 |
@@ -30,4 +30,9 @@
 | Двухосевой инклинометр | **✘** | **✘** | **✘** | **✘** | **✓** |
 | Определение горизонтального угла прихода сигнала | **✘** | **✘** | **✘** | **✘** | **✓** |
 
-<div style="page-break-after: always;"></div>
+________________
+<a name="footnote1"><sup>1</sup></a> Параметр, определяющий максимальную дальность, на которой возможен прием сигнала, исходя из электроакустических параметров передатчика и приемника, пространственного убывания интенсивности звуковой энергии, затухания в среде и уровня гидроакустических помех.   
+<a name="footnote2"><sup>2</sup></a> При работе [uWave Max OEM](/documentation/RU/uWAVE/uWAVE_Max_OEM_Specification_ru.md), [uWave Max](/documentation/RU/uWAVE/uWAVE_Max_Specification_ru.md) и [uWave USBL Modem](/documentation/RU/uWAVE/uWAVE_USBL_Modem_Specification_ru.md) в любых сочетаниях. Максимальная дальность связи со стандартными модемами [uWave](uWAVE_Specification_ru.md) составляет 1000 метров. Параметр указан для стандартного скоростного режима - 78 бит/с.  
+<a name="footnote3"><sup>3</sup></a> Стандартный скоростной режим 78 бит/с обеспечивает максимальную дальность связи и помехоустойчивость. Другие режимы обеспечиваются [перепрошивкой устройств](/documentation/RU/uWAVE/uWAVE_FW_Updating_ru.md).  
+<a name="footnote4"><sup>4</sup></a> Максимальная глубина определяется антенной. Печатная плата модема должна располагаться в нормобарическом корпусе пользователя.  
+<a name="footnote5"><sup>5</sup></a> Рабочая глубина 1000 метров обеспечивается при работе с антенной [RT-1.524525-1-FF](/documentation/RU/Transducers/RT_1_524525_1_FF_Specification_ru).   
