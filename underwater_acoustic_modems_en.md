@@ -6,6 +6,8 @@
 | [EN](underwater_acoustic_modems_en.md) \| [RU](underwater_acoustic_modems_ru.md) |
 
 ## Underwater acoustic modems
+* [Modems comparison](modems_comparison_en.md)
+
 ### uWave
 #### underwater acoustic modem
 * [Data brief: uWave devices family](/documentation/EN/uWAVE/uWAVE_Family_en.md)
