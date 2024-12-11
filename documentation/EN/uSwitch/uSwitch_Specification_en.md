@@ -64,7 +64,7 @@ ________________
 
 | ![image](https://github.com/user-attachments/assets/058c5ff9-68f8-4139-831d-2092fda60fd2) |
 | :---: |
-| Modem **uSwitch**</br>*location and functions of contact pads* |
+| Modem **uSwitch** <br/> *location and functions of contact pads* |
 
 | DESIGNATION | NAME | I/O | ACTIVE STATE | FUNCTION |
 | :--- | :--- | :---: | :---: |:--- |
