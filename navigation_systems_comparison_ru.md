@@ -2,7 +2,7 @@
 
 <div style="page-break-after: always;"></div>
 
-| ![logo](/documentation/sm_logo.png) | |
+| ![logo](/documentation/sm_logo.png) | ![image](https://github.com/user-attachments/assets/602851ac-ea91-4de4-84fe-6667a0cbea45) |
 | :---: | ---: |
 | [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | Сравнение навигационных и трекинговых систем |
 
