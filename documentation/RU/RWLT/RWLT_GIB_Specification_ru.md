@@ -47,7 +47,7 @@
 
 ## ДОПОЛНИТЕЛЬНАЯ ИНФОРМАЦИЯ
 
-| [MSDS ВСТРОЕННОГО ИСТОЧНИКА ПИТАНИЯ](https://docs.unavlab.com/documentation/RU/Misc/RedBase_v3_LiFEPO4_msds_ru.html) | [ЭЛЕКТРОННАЯ ВЕРСИЯ ЭТОГО ДОКУМЕНТА](https://docs.unavlab.com/documentation/RU/WAYU/WAYU_GIB_Specification_ru.html) |
+| [MSDS ВСТРОЕННОГО ИСТОЧНИКА ПИТАНИЯ](https://docs.unavlab.com/documentation/RU/Misc/RedBase_v3_LiFEPO4_msds_ru.html) | [ЭЛЕКТРОННАЯ ВЕРСИЯ ЭТОГО ДОКУМЕНТА](https://docs.unavlab.com/documentation/RU/RWLT/RWLT_GIB_Specification_ru.html) |
 | :---: | :---: |
 | ![image](https://github.com/user-attachments/assets/eb6e547e-70d5-4f68-85a9-7575d14608ea) | ![image](https://github.com/user-attachments/assets/4a38f0a1-693c-4fab-a54d-6b317600bdd2) |
 
