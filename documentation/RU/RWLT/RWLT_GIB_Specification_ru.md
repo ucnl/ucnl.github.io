@@ -45,6 +45,12 @@
 | МАКСИМАЛЬНАЯ МОЩНОСТЬ РАДИОМОДУЛЯ | 100 мВт |
 | МАКСИМАЛЬНАЯ ДАЛЬНОСТЬ РАДИОСВЯЗИ<sup>[6](#footnote4)</sup> | 1000 м |
 
+## ДОПОЛНИТЕЛЬНАЯ ИНФОРМАЦИЯ
+
+| [MSDS ВСТРОЕННОГО ИСТОЧНИКА ПИТАНИЯ](https://docs.unavlab.com/documentation/RU/Misc/RedBase_v3_LiFEPO4_msds_ru.html) | [ЭЛЕКТРОННАЯ ВЕРСИЯ ЭТОГО ДОКУМЕНТА](https://docs.unavlab.com/documentation/RU/WAYU/WAYU_GIB_Specification_ru.html) |
+| :---: | :---: |
+| ![image](https://github.com/user-attachments/assets/eb6e547e-70d5-4f68-85a9-7575d14608ea) | ![image](https://github.com/user-attachments/assets/4a38f0a1-693c-4fab-a54d-6b317600bdd2) |
+
 ________________
 <a name="footnote1"><sup>1</sup></a> Без учета гидроакустической приемной антенны на кабеле, общей длиной 1.6 м.  
 <a name="footnote2"><sup>2</sup></a> На новом, полностью заряженном АКБ, при температуре окружающей среды 20°С.  
