@@ -4,7 +4,7 @@
 
 | ![logo](/documentation/sm_logo.png) | ![Bat&Link Box](/documentation/batnlinkbox.png) |
 | :---: | ---: |
-| [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **Bat & Link Box** - источник питания и преобразователь интерфейса **Zima 2 USBL** и **Zima USBL** <br/> спецификация устройства |
+| [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **Bat & Link Box** - источник питания и преобразователь интерфейса <br/> спецификация устройства |
 
 ## КЛЮЧЕВЫЕ ОСОБЕННОСТИ
 
@@ -40,8 +40,10 @@
 | | ВНЕШНЕЕ ПИТАНИЕ |
 | | РАЗЪЕМ ЗАРЯДКИ |
 
+## ДОПОЛНИТЕЛЬНАЯ ИНФОРМАЦИЯ
+
+| [MSDS ВСТРОЕННОГО ИСТОЧНИКА ПИТАНИЯ](https://docs.unavlab.com/documentation/RU/Misc/BatLinkBox_MSDS_ru.html) | [ЭЛЕКТРОННАЯ ВЕРСИЯ ЭТОГО ДОКУМЕНТА](https://docs.unavlab.com/documentation/RU/Zima/Bat_n_link_box_Specification_ru.html) |
+| :---: | :---: |
+| ![image](https://github.com/user-attachments/assets/2d9e526f-2584-42c7-9ef5-b59772eb5a8b) | ![image](https://github.com/user-attachments/assets/40aa5816-eab2-4c1d-b045-cc03cc3e4fab) |
+
 <div style="page-break-after: always;"></div>
-
-## ДОПОЛНИТЕЛЬНО
-
-[Паспорт безопасности для встроенного источника питания, Material Safety Data Sheet (MSDS)](/documentation/RU/Misc/BatLinkBox_MSDS_ru)  
