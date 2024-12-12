@@ -42,9 +42,9 @@
 
 ## ДОПОЛНИТЕЛЬНАЯ ИНФОРМАЦИЯ
 
-| MSDS ВСТРОЕННОГО ИСТОЧНИКА ПИТАНИЯ (Паспорт безопасности химической продукции) |
-| :---: |
-| ![image](https://github.com/user-attachments/assets/31f5c30c-a1fd-40f2-b195-f94ab890920b) |
+| [MSDS ВСТРОЕННОГО ИСТОЧНИКА ПИТАНИЯ](https://docs.unavlab.com/documentation/RU/Misc/WAYU_GIB_MSDS_ru.html) | [ЭЛЕКТРОННАЯ ВЕРСИЯ ЭТОГО ДОКУМЕНТА](https://docs.unavlab.com/documentation/RU/WAYU/WAYU_GIB_Specification_ru.html) |
+| :---: | :---: |
+| ![image](https://github.com/user-attachments/assets/31f5c30c-a1fd-40f2-b195-f94ab890920b) | ![image](https://github.com/user-attachments/assets/ca0dc364-79db-4d50-981c-93f8ae57ec4b) |
 
 ________________
 <a name="footnote1"><sup>1</sup></a> Без учета гидроакустической приемной антенны на кабеле длиной 1 м, без учета поплавка (Ф х h) 125 х 160 мм.  
