@@ -38,7 +38,7 @@
 | ДИАПАЗОН ТЕМПЕРАТУР ПРИ ЗАРЯДЕ, °С | 10 .. 35 | 10 .. 35 | 10 .. 35 |
 | САМОРАЗРЯД, %/год | 3 | 20 | 3 |
 | ВКЛЮЧЕНИЕ ПРИ ПОГРУЖЕНИИ В ВОДУ | ✔ | ✔ | ✔ |
-| MSDS (Паспорт безопасности химической продукции) | [SB-24-48-LF MSDS RU](/documentation/RU/Misc/SB_24_48_LF_MSDS_ru) | [SB-23-64-LI MSDS RU](/documentation/RU/Misc/SB_23_64_LI_MSDS_ru) | |
+| MSDS (Паспорт безопасности химической продукции) | [SB-24-48-LF MSDS RU](/documentation/RU/Misc/SB_24_48_LF_MSDS_ru) <br/> ![image](https://github.com/user-attachments/assets/0525f66b-bde2-4f99-bf3c-1441e81a243f) | [SB-23-64-LI MSDS RU](/documentation/RU/Misc/SB_23_64_LI_MSDS_ru) <br/> ![image](https://github.com/user-attachments/assets/1667071a-fc31-4f3f-8356-d6bf65288721) | |
 
 
 ## ДОПОЛНИТЕЛЬНЫЕ ПАРАМЕТРЫ
