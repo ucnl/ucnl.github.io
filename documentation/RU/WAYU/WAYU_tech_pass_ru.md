@@ -53,6 +53,8 @@
 
 Навигационный приемник uNav WAYU выполнен в виде полностью залитого в полиуретаноый компаунд моноблока. Имеет встроенный приемник спутникового навигационного сигнала, приёмный радиочастотный тракт.
 
+<div style="page-break-after: always;"></div>
+
 ### 1.1. АКУСТИЧЕСКИЕ ПАРАМЕТРЫ
 
 | Параметр | Значение |
@@ -79,14 +81,14 @@
 
 <div style="page-break-after: always;"></div>
 
-### 1.1. Технические характеристики и документация
+### 1.4. ДОКУМЕНТАЦИЯ И ПОЛНЫЕ ТЕХНИЧЕСКИЕ ХАРАКТЕРИСТИКИ
 
 Полные технические характеристики устройства, описание протокола сопряжения, библиотеки для интеграции и электронный адрес технической поддержки:    
 
 | Сайт технической <br/> документации | Техническая поддержка |
 | :---: | :---: |
 | [docs.unavlab.com](https://www.docs.unavlab.com/) | [support@unavlab.com](mailto:support@unavlab.com) |
-| ![](/documentation/docs_unavlab_web_qr.png) | ![](/documentation/unavlab_support_email_qr.png) |
+| ![image](https://github.com/user-attachments/assets/b7c7c046-0d4e-4258-a5f1-8a51f4ae6fbb) | ![image](https://github.com/user-attachments/assets/a81ae1df-b0f9-4d11-a0dc-1aa55d2e4d24) |
 
 <div style="page-break-after: always;"></div>
 
