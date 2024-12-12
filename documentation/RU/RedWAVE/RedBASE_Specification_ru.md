@@ -50,6 +50,12 @@ _________
 | ДЛИНА КАБЕЛЯ ГИДРОАКУСТИЧЕСКОГО ПЕРЕДАТЧИКА | 1 м |
 | ВРЕМЯ ПОЛНОЙ ЗАРЯДКИ ОТ СЕТИ 220 В / 50 Гц | 5 ч |
 
+## ДОПОЛНИТЕЛЬНАЯ ИНФОРМАЦИЯ
+
+| [MSDS ВСТРОЕННОГО ИСТОЧНИКА ПИТАНИЯ](https://docs.unavlab.com/documentation/RU/Misc/RedBase_v3_LiFEPO4_msds_ru.html) | [ЭЛЕКТРОННАЯ ВЕРСИЯ ЭТОГО ДОКУМЕНТА](https://docs.unavlab.com/documentation/RU/RedWAVE/RedBASE_Specification_ru.html) |
+| :---: | :---: |
+| ![image](https://github.com/user-attachments/assets/eb6e547e-70d5-4f68-85a9-7575d14608ea) | ![image](https://github.com/user-attachments/assets/2b34fa2d-9c74-4496-aaea-238a7556d6e5) |
+
 ________________
 <a name="footnote1"><sup>1</sup></a> Параметр, определяющий максимальную дальность, на которой возможен прием сигнала, исходя из 
 электроакустических параметров передатчика и приемника, пространственного убывания интенсивности звуковой энергии, затухания в среде 
