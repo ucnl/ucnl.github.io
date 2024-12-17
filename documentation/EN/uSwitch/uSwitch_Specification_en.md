@@ -12,7 +12,7 @@
 
 * **Simple and affordable solution**
 * **Communication range up to 300<sup>[1](#footnote1)</sup> m**
-* **Data transmission speed 100 bit/s**
+* **Data transmission speed 40 bit/s**
 * **Signal propagation time measurement function**
 * **Water contact switch function**
 * **Can be used as a pinger for the [WAYU](documentation/navigation_and_tracking_systems_en#wayu) system**
@@ -43,7 +43,7 @@ The following items can be used as an antenna:
 | DIMENSIONS | 100 x 19 x 25 mm |
 | WEIGHT | 0.03 kg |
 | MAXIMUM ACOUSTIC COMMUNICATION RANGE<sup>[1](#footnote1)</sup> | 300 m |
-| DATA TRANSFER RATE | 100 bps |
+| DATA TRANSFER RATE | 40 bps |
 | POWER CONSUMPTION Rx/Tx | 20 mA / 2.5 A |
 | SUPPLY VOLTAGE<sup>[2](#footnote2)</sup> | 7 .. 13 V |
 | DATA LINE VOLTAGE | 0 .. 3.3 V |
