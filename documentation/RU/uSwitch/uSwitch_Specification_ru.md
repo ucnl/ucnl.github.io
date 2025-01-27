@@ -3,7 +3,7 @@
 
 <div style="page-break-after: always;"></div>
 
-| ![logo](/documentation/sm_logo.png) |  |
+| ![logo](/documentation/sm_logo.png) | ![image](https://github.com/user-attachments/assets/f8f639cc-327c-4561-8040-318befd29b4a) |
 | :---: | ---: |
 | [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **uSwitch** - Гидроакустический модем <br/> Спецификация устройства |
 
