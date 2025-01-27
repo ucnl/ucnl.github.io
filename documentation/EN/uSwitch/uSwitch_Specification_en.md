@@ -12,7 +12,7 @@
 
 * **Simple and affordable solution**
 * **Communication range up to 300<sup>[1](#footnote1)</sup> m**
-* **Data transmission speed 24 bit/s**
+* **Data transmission speed 32 bit/s**
 * **Signal propagation time measurement function**
 * **Water contact switch function**
 * **Can be used as a pinger for the [WAYU](documentation/navigation_and_tracking_systems_en#wayu) system**
