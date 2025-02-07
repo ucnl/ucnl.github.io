@@ -12,10 +12,10 @@
 
 |  | [uSwitch](/documentation/EN/uSwitch/uSwitch_Specification_en.md) | [uWave](/documentation/EN/uWAVE/uWAVE_Specification_en.md) | [uWave Max OEM](/documentation/EN/uWAVE/uWAVE_Max_OEM_Specification_en.md) | [uWave Max](/documentation/EN/uWAVE/uWAVE_Max_Specification_en.md) | [uWave USBL Modem](/documentation/EN/uWAVE/uWAVE_USBL_Modem_Specification_en.md) | 
 | :--- | :---: | :---: | :---: | :---: | :---: | 
-|      | | ![](/documentation/RT_1_332820_1.png) | ![](/documentation/utro_pcb_rt_1_524525_1_2.png) | ![](/documentation/def_modem_black.png) | ![](/documentation/zima_b.png) |
+|      | ![image](https://github.com/user-attachments/assets/7ec2e40f-854d-4fee-96d5-8fc714a8de52) | ![](/documentation/RT_1_332820_1.png) | ![](/documentation/utro_pcb_rt_1_524525_1_2.png) | ![](/documentation/def_modem_black.png) | ![](/documentation/zima_b.png) |
 | Status | **Active** | **Active** | **Active** | **Active** | **Active** |
 | Max. acoustic range, m | 300<sup>[1](#footnote1) | 1000<sup>[1](#footnote1)</sup> | 3000<sup>[1](#footnote1),[2](#footnote2)</sup> | 3000<sup>[1](#footnote1),[2](#footnote2)</sup> | 3000<sup>[1](#footnote1),[2](#footnote2)</sup> |
-| Baudrate, bps | 24 | 78 / 156<sup>[3](#footnote3)</sup> / 314<sup>[3](#footnote3)</sup> / 634<sup>[3](#footnote3)</sup> | 78 / 156<sup>[3](#footnote3)</sup> / 314<sup>[3](#footnote3)</sup> / 634<sup>[3](#footnote3)</sup> | 78 / 156<sup>[3](#footnote3)</sup> / 314<sup>[3](#footnote3)</sup> / 634<sup>[3](#footnote3)</sup> | 78 / 156<sup>[3](#footnote3)</sup> / 314<sup>[3](#footnote3)</sup> / 634<sup>[3](#footnote3)</sup> |
+| Baudrate, bps | 32 | 78 / 156<sup>[3](#footnote3)</sup> / 314<sup>[3](#footnote3)</sup> / 634<sup>[3](#footnote3)</sup> | 78 / 156<sup>[3](#footnote3)</sup> / 314<sup>[3](#footnote3)</sup> / 634<sup>[3](#footnote3)</sup> | 78 / 156<sup>[3](#footnote3)</sup> / 314<sup>[3](#footnote3)</sup> / 634<sup>[3](#footnote3)</sup> | 78 / 156<sup>[3](#footnote3)</sup> / 314<sup>[3](#footnote3)</sup> / 634<sup>[3](#footnote3)</sup> |
 | Dimensions, mm | 100 x 19 х 25 (плата) <br/> Ф41 x 45 (антенна)  | **Ф41 x 45** | 80 х 43 х 29 (плата) <br/> Ф64 x 62 (антенна) |  Ф64 x 62 | Ф64 х 128 |
 | Weight (dry), g | 30 (плата) <br/> 150 (антенна) | **160** | 54 (плата) <br/> 360 (aнтенна) | 360 | 440 |
 | Depth rating, m | 400<sup>[4](#footnote4)</sup> | 300 | **400 / 1000** <sup>[4](#footnote4),[5](#footnote5)</sup> | 300 | 300 |
