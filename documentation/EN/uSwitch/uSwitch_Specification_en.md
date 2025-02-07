@@ -43,7 +43,7 @@ The following items can be used as an antenna:
 | DIMENSIONS | 100 x 19 x 25 mm |
 | WEIGHT | 0.03 kg |
 | MAXIMUM ACOUSTIC COMMUNICATION RANGE<sup>[1](#footnote1)</sup> | 300 m |
-| DATA TRANSFER RATE | 40 bps |
+| DATA TRANSFER RATE | 32 bps |
 | POWER CONSUMPTION Rx/Tx | 20 mA / 2.5 A |
 | SUPPLY VOLTAGE<sup>[2](#footnote2)</sup> | 7 .. 13 V |
 | DATA LINE VOLTAGE | 0 .. 3.3 V |
