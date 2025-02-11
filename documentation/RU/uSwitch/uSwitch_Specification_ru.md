@@ -7,8 +7,6 @@
 | :---: | ---: |
 | [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **uSwitch** - Гидроакустический модем <br/> Спецификация устройства |
 
-<div style="page-break-after: always;"></div>
-
 ## КЛЮЧЕВЫЕ ОСОБЕННОСТИ
 
 * **Простое и доступное решение**
@@ -19,8 +17,6 @@
 * **Может использоваться в качестве пингера системы [WAYU](documentation/navigation_and_tracking_systems_ru#wayu)**
 * **Низкое энергопотребление (Rx/Tx) 30 мА / 2.5 А**
 * **Идеальное решение для образовательных проектов и обучения**
-
-<div style="page-break-after: always;"></div>
 
 ## ОПИСАНИЕ
 
