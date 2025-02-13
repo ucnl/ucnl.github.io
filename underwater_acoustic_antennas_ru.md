@@ -11,6 +11,6 @@
 * [Приемопередающая антенна RT-1.524525-1](/documentation/RU/Transducers/RT-1.524525-1_specification_ru.md)
 * [Приемопередающая антенна RT-1.524525-1-FF](/documentation/RU/Transducers/RT_1_524525_1_FF_Specification_ru.md)
 * [Приемопередающая антенна RT-1.332820-2 с полосовым фильтром](/documentation/RU/Transducers/RT_1_332820_2_Specification_ru.md)
-* [Приемопередающая антенна RT-1.524525-1 с полосовым фильтром](/documentation/RU/Transducers/RT-1.524525-1_specification_ru.md)
+* [Приемопередающая антенна RT-1.524525-2 с полосовым фильтром](/documentation/RU/Transducers/RT-1.524525-2_specification_ru.md)
 
 ## [На главную](README_RU.md)
