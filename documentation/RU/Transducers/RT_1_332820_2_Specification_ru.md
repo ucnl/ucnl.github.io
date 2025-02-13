@@ -62,6 +62,6 @@
 
 <div style="page-break-after: always;"></div>
 
-![image](https://github.com/user-attachments/assets/03dcebdc-da8f-4290-ba3a-ad360b0ad2b3)
+![image](https://github.com/user-attachments/assets/79088e59-4da4-4ea6-9396-4cf6c2005d08)
 
 <div style="page-break-after: always;"></div>
