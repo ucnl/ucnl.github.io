@@ -56,9 +56,11 @@
 
 ## ДОПОЛНИТЕЛЬНЫЕ ПАРАМЕТРЫ
 
+![image](https://github.com/user-attachments/assets/d954d60a-574d-4077-baf1-380681e7cf62)
 
 <div style="page-break-after: always;"></div>
 
+![image](https://github.com/user-attachments/assets/89e1f59c-9cf0-4620-8c8f-f0c4104c2fbe)
 
 
 <div style="page-break-after: always;"></div>
