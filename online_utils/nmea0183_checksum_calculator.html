@@ -29,7 +29,9 @@ function nmeaSnt_onKey() {
   el = document.getElementById("snt_input");
   el.style.width = ((el.value.length + 3) * 8);
   chk_sum = NMEA0183_getChecksum(el.value);
-  document.getElementById("chk_sum").innerText = Number(chk_sum).toString(16).padStart(2, "0").toUpperCase();
+  chk_sum_str = Number(chk_sum).toString(16).padStart(2, "0").toUpperCase();
+  document.getElementById("chk_sum").innerText = chk_sum_str;
+  document.getElementById("snt_result").innerText = "$" + el.value + "*" + chk_sum_str;
 }
 
 </script>
@@ -46,8 +48,19 @@ function nmeaSnt_onKey() {
 </big>
 </tt>
 </p>
+<p>
+<i> 
+<b>The result sentence (without <CR><LF> at the end):</b>
+</i>
 <br>
-<i>
+<tt>
+<big>
+<b><a id="snt_result">$GNGLL,4443.1365,N,03749.8815,E,071803.000,A,A*41</a></b>
+</big>
+</tt>
+</p>
+<br>
+<i> 
 <b>Brief description:</b> NMEA0183 checksum is just a simple byte-by-byte XOR of
 all the bytes between <b>$</b> and <b>*</b> signs exclusively.
 </i>
@@ -56,7 +69,7 @@ all the bytes between <b>$</b> and <b>*</b> signs exclusively.
 <a href="https://docs.unavlab.com/online_utilities_en.html">Back to Online Utilities page</a>
    
 <hr>
-(C) Alek Dikarev, 2020<br>
+(C) Alek Dikarev, 2020-2025<br>
 For bug reports, suggestions and questions, please feel free to <a href="https://github.com/AlekUnderwater">reach me</a><br>
 
 <script type="text/javascript">
