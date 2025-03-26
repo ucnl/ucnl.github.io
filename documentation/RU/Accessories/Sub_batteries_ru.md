@@ -4,7 +4,7 @@
 
 | ![logo](/documentation/sm_logo.png) | ![sub_batpacks](/documentation/sub_batpacks.png) |
 | :---: | ---: |
-| [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | Подводные аккумуляторы |
+| [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **uBat** <br/> Подводные аккумуляторные сборки |
 
 ## ОСОБЕННОСТИ
 
