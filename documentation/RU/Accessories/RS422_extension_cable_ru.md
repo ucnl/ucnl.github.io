@@ -1,10 +1,10 @@
-[Главная](/README_RU) ❯ [Аксессуары](/accessories_ru) ❯ **Удлинительный кабель с преобразователем UART-RS422**
+[Главная](/README_RU) ❯ [Аксессуары](/accessories_ru) ❯ **uWire - удлинительный кабель с преобразователем UART-RS422**
 
 <div style="page-break-after: always;"></div>
 
 | ![logo](/documentation/sm_logo.png) | ![logo](/documentation/rs422_cable.png) |
 | :---: | ---: |
-| [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | Удлинительный кабель с преобразователем UART-RS422 <br/> Спецификация устройства |
+| [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **uWire** <br/> Удлинительный кабель с преобразователем UART-RS422 <br/> Спецификация устройства |
 
 ## ОСОБЕННОСТИ
 
@@ -14,7 +14,7 @@
 
 ## ОПИСАНИЕ
 
-Удлинительный кабель с преобразователем UART-RS422 предназначен для питания и информационного сопряжения устройств Zima-B/Zima2-B, Zima2-R в стандартной комплектации, а также может использоваться для работы с модемами uWave/uWave MAX.
+Удлинительный кабель с преобразователем UART-RS422 **uWire** предназначен для питания и информационного сопряжения устройств Zima-B/Zima2-B, Zima2-R в стандартной комплектации, а также может использоваться для работы с модемами uWave/uWave MAX.
 Нижняя часть кабеля имеет герметичный разъем, рядом с разъемом расположен преобразователь интерфейса UART-RS422, залитый в полиуретановый компаунд.
   
 <div style="page-break-after: always;"></div>
