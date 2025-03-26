@@ -1,10 +1,10 @@
-[Главная](/README_RU) ❯ [Аксессуары](/accessories_ru) ❯ **Фланцевый кронштейн**
+[Главная](/README_RU) ❯ [Аксессуары](/accessories_ru) ❯ **uClamp-S - Фланцевый кронштейн**
 
 <div style="page-break-after: always;"></div>
 
 | ![logo](/documentation/sm_logo.png) | ![flange_rod_mount_zima2b](https://github.com/user-attachments/assets/e265e8d7-a215-47e2-b314-4d65db8d39f7) |
 | :---: | ---: |
-| [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | Фланцевый кронштейн <br/> Спецификация |
+| [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **uClamp-S** <br/> Фланцевый кронштейн <br/> Спецификация |
 
 ## ОСОБЕННОСТИ
 
