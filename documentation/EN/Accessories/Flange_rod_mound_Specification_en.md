@@ -1,11 +1,11 @@
 
-[Main](/README) ❯ [Accessories](/accessories) ❯ **Flange rod mount: Device specification**
+[Main](/README) ❯ [Accessories](/accessories) ❯ **uClamp-S - Flange rod mount: Device specification**
 
 <div style="page-break-after: always;"></div>
 
 | ![logo](/documentation/sm_logo.png) | ![flange_rod_mount_zima2b](https://github.com/user-attachments/assets/e265e8d7-a215-47e2-b314-4d65db8d39f7) |
 | :---: | ---: |
-| [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | Flange rod mount <br/>  Device specification |
+| [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **uClamp-S** <br/> Flange rod mount <br/> Device specification |
 
 ## KEY FEATURES
 
