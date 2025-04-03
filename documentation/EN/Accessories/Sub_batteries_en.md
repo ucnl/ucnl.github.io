@@ -1,10 +1,10 @@
-[Main](/README) ❯ [Accessories](/accessories_en) ❯ **Underwater battery packs**
+[Main](/README) ❯ [Accessories](/accessories_en) ❯ **uBat - Underwater battery packs**
 
 <div style="page-break-after: always;"></div>
 
 | ![logo](/documentation/sm_logo.png) | ![sub_batpacks](/documentation/sub_batpacks.png) |
 | :---: | ---: |
-| [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | Underwater battery packs |
+| [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **uBat**  <br/> Underwater battery packs  <br/> Device specifications |
 
 ## FEATURES
 
