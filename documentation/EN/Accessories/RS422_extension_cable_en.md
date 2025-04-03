@@ -1,10 +1,10 @@
-[Main](/README) ❯ [Accessories](/accessories_en) ❯ **Extension cable with UART-RS422 converter**
+[Main](/README) ❯ [Accessories](/accessories_en) ❯ **uWire - Extension cable with UART-RS422 converter**
 
 <div style="page-break-after: always;"></div>
 
 | ![logo](/documentation/sm_logo.png) | ![logo](/documentation/rs422_cable.png) |
 | :---: | ---: |
-| [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | Extension cable with UART-RS422 converter <br/> Device specification |
+| [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **uWire** <br/> Extension cable with UART-RS422 converter <br/> Device specification |
 
 ## KEY FEATURES
 
