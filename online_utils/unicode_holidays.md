@@ -120,7 +120,7 @@ A list of holidays and unicode symbols related to them
 | 0808 | 🏔 | International Mountaineering Day |
 | 1308 | 👋 | International Day of Lefties |
 | 1408 | 🦎 | World Lizard Day |
-| 1508 | 🏺 | Archeologist Day |
+| 1508 | 🏺⛏ | Archeologist Day |
 | 1908 | 📸📷 | World Photography Day |
 | 2008 | 🦟 | World Mosquito Day |
 | 2708 | 🥊 | International Boxing Day |
