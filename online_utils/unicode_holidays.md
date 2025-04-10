@@ -8,7 +8,7 @@ A list of holidays and unicode symbols related to them
 | 0201 | 👽 | International Science Fiction Day |
 | 0301 | 🥤 | Drinking Straw Day |
 | 0401 | 🍎 | Newton's Day |
-| 0501 | 👦 | Boyscout Day | 🧗‍🚣🏼‍🏕🌦🐾 |
+| 0501 | 👦🧗‍🚣🏼‍🏕🌦🐾 | Boyscout Day | 
 | 0701 | 🎅🎄🎁 | Merry Orthodox Christmas! |
 | 0901 | 🕺✨💃 | Choreographer's Day | 
 | 1001 | 🎂 | Happy birthday! |
@@ -156,7 +156,8 @@ A list of holidays and unicode symbols related to them
 | 0812 | 👨‍🎨🎨 | Artists' Day |
 | 1112 | 💃🏼 | International Day of Tango |
 | 1412 | 🐒🙈🙉🙊 | Monkey Day |
-| 1512 | ☕ | Tea Day | 🎂 | Happy birthday! |
+| 1512 | ☕ | Tea Day | 
+|      | 🎂 | Happy birthday! |
 | 1612 | 🌄 | Summit Day |
 | 2212 | 🔌 | Energy Industry Day |
 | 2512 | 🎅🎄🧦🎁 | Merry Christmas! |
