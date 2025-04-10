@@ -6,6 +6,7 @@
 | [EN](underwater_bespoke_systems_en.md) \| [RU](underwater_bespoke_systems_ru.md) |
 
 ## Гидроакустический размыкатель F4105
+* [F4105: Краткое описание](documentation/RU/F4105/F4105_DataBrief_ru.md)
 * [F4105-SU Модуль управления гидроакустическими размыкателями: спецификация](/documentation/RU/F4105/F4105_SU_Specification_ru.md)
 * [F4105-BU Актуатор-размыкатель: спецификация](/documentation/RU/F4105/F4105_BU_Specification_ru.md)
 * [F4105-AU Гидроакустический пробудитель: спецификация](/documentation/RU/F4105/F4105_AU_Specification_ru.md)
