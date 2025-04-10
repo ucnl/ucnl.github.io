@@ -14,7 +14,7 @@
 | 1001 | 🎂&#124;Happy birthday! |
 | 1101 | 🙏&#124;International Thank You Day |
 | 1401 | 🎄&#124;Happy Old New year! |
-| 1501 | 🥙&#124;Shawarma Day |
+| 1501 | 🌯&#124;Shawarma Day |
 | 1701 | 🧑🏼‍🔬&#124;Children's Invention Day |
 | 1801 | ☃&#124;World Snowman Day |
 | 1901 | ❄️☃️🌨&#124;World Snow Day |
@@ -119,10 +119,35 @@
 | 0109 | 🏫📚&#124;International Knowledge Day |
 | 0409 | 🏹&#124;International Archery Day |
 | 0609 | 🦰&#124;Day of the Redheads |
-
-
-
+| 0909 | 💃🏻&#124;International Beauty Day |
+| 1809 | 🚰🚱&#124;World Water Monitoring Day |
+| 1909 | 🙂&#124;Birthay of smiley |
+| 2209 | 🚗⛔&#124;World Carfree Day |
+| 2909 | ♥🫀&#124;World Heart Day |
+| 0110 | 🎶🎼🎻&#124;International Music Day |
+| 0310 | 🍷⛔&#124;World Day of Sobriety and Fight against Alcoholism |
+| 0410 | 🐼🦤🐸🐋&#124;World Animal Day |
+| 1010 | 🍲&#124;World Porridge Day |
+| 1510 | 🧼&#124;World Hand Washing Day |
+| 1610 | 🍞🥖&#124;World Bread Day |
+| 1810 | 👔&#124;Necktie Day&#124;🍬&#124;World Candy Day |
+| 2010 | 👨‍🍳&#124;International Chefs Day |
+| 2510 | 🍝&#124;World Pasta Day |
+| 2710 | 🧸&#124;International Teddy Bear Day |
 | 3110 | 🔪🎃🕯😈|Happy Halloween Day! |
+| 0811 | 🛜⛔&#124;World Day Without Wifi |
+| 1011 | 📒&#124;International Accounting Day |
+| 1211 | 🫁&#124;World Pneumonia Day |
+| | |
+| | |
+| | |
+| | |
+| | |
+| | |
+| | |
+| | |
+| | |
+
 
 
 | 1512 | 🎂&#124;Happy birthday! |
