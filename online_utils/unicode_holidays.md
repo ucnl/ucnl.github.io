@@ -138,19 +138,19 @@
 | 0811 | 🛜⛔&#124;World Day Without Wifi |
 | 1011 | 📒&#124;International Accounting Day |
 | 1211 | 🫁&#124;World Pneumonia Day |
-| | |
-| | |
-| | |
-| | |
-| | |
-| | |
-| | |
-| | |
-| | |
-
-
-
-| 1512 | 🎂&#124;Happy birthday! |
-| 2812 | 🎂&#124;Happy birthday! |
+| 1911 | 🚹&#124;International Men's Day |
+| 2111 | 👋&#124;World Hello Day |
+| 2211 | 👶&#124;International Sons Day |
+| 0212 | 👨‍🎨🎨&#124;2D Artists' Day |
+| 0512 | 🥷&#124;Day of the Ninja|
+| 0812 | 👨‍🎨🎨&#124;Artists' Day |
+| 1112 | 💃🏼&#124;International Day of Tango |
+| 1412 | 🐒🙈🙉🙊&#124;Monkey Day |
+| 1512 | ☕&#124;Tea Day&#124;🎂&#124;Happy birthday! |
+| 1612 | 🌄&#124;Summit Day |
+| 2212 | 🔌&#124;Energy Industry Day |
 | 2512 | 🎅🎄🧦🎁&#124;Merry Christmas! |
+| 2612 | 🎁&#124;Boxing Day |
+| 2812 | 🎦&#124;Cinema Day&#124;🎂&#124;Happy birthday! |
+| 2912 | 🎻&#124;International Cello Day |
 | 3112 | 🎅🎄🎁&#124;Happy New Year! |
