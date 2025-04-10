@@ -28,6 +28,7 @@ A list of holidays and unicode symbols related to them
 | 0102 | 🧕 | World Hijab Day |
 | 0302 | 🤬 | World Day Against Profanity |
 | 0602 | 🍸🍻🍷​🍺​​🍹 | International Bartender's Day |
+|      | 📵 | Mobile Phone Waiver Day |
 | 0902 | 👨‍⚕️🦷 | International Day of dentist | 
 |      | 🍕 | World Pizza Day |
 | 1102 | 🤒😷 | World Day of the Sick |
