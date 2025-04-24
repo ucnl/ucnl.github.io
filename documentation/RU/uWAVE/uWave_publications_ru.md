@@ -1,12 +1,12 @@
-[Главная](/README_RU) ❯ [Гидроакустические модемы](/underwater_acoustic_modems_ru) ❯ Упоминания об устройства **uWave**
+[Главная](/README_RU) ❯ [Гидроакустические модемы](/underwater_acoustic_modems_ru) ❯ Упоминания об устройствах **uWave**
 
 <div style="page-break-after: always;"></div>
 
 | ![logo](/documentation/sm_logo.png) |  |
 | :---: | ---: |
-| [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | Упоминания об устройства **uWave**  |
+| [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | Упоминания об устройствах **uWave**  |
     
-# Упоминания об устройства **uWave**
+# Упоминания об устройствах **uWave**
 
 <div style="page-break-after: always;"></div>
 
