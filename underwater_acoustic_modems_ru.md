@@ -28,6 +28,7 @@
 * [Библиотека для Arduino с примерами](https://github.com/ucnl/uWAVE_ALib)
 * [Примеры для Arduino (Старая версия)](https://github.com/ucnl/uWAVE_Arduino)
 * [uWave: медиаматериалы, видео и т.п.](/documentation/RU/uWAVE/media)
+* [uWave: публикации, где упоминаются устройства семейства](documentation/RU/uWAVE/uWave_publications_ru)
 * [3D-модель (STEP): uWave](/documentation/uWave.step)
 * [3D-модель (STL): uWave](/documentation/uWave.stl)
 * [3D-модель (STEP): uWave Max/Антенна uWave Max OEM](/documentation/uWave_Max.step)
