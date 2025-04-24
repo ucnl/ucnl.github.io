@@ -38,7 +38,7 @@ The assemblies are equipped with a connector designed for diving to depths of up
 | CHARGING TEMPERATURE RANGE, °С | 10 .. 35 | 10 .. 35 | 10 .. 35 |
 | SELF DISCHARGE, %/year | 3 | 20 | 3 |
 | AUTOMATIC POWER-ON IN WATER | ✔ | ✔ | ✔ |
-| MSDS (Material safety datasheet) | | [SB-23-64-LI MSDS EN](/documentation/EN/Misc/SB_23_64_LI_MSDS_en) | |
+| MSDS (Material safety datasheet) | [SB-24-48-LF MSDS EN](documentation/EN/Misc/SB_24_48_LF_MSDS_en.md) | [SB-23-64-LI MSDS EN](/documentation/EN/Misc/SB_23_64_LI_MSDS_en) | |
 
 
 ## ADDITIONAL SPECIFICATIONS
