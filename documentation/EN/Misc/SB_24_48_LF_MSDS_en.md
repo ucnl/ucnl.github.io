@@ -7,7 +7,7 @@
 | [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | LiFePO4 battery pack 48 W·h<br/> as part of PMVR.134096.002 SB-24-48-LF Submersible battery pack <br/> Material safety datasheet (MSDS) |
 | | Version 1 <br/> 27.09.2023 |
 
-## PMVR.134096.002 LiFePO4 battery pack <br/> as part of RedBase/RWLT GIB (v3) 
+## LiFePO4 battery pack 48 W·h<br/> as part of PMVR.134096.002 SB-24-48-LF Submersible battery pack
 ### Material safety datasheet (MSDS)
 
 ## 1. IDENTIFICATION OF THE PRODUCT AND OF THE COMPANY OR THE SUPPLIER
