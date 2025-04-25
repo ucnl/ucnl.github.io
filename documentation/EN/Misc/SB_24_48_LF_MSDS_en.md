@@ -5,7 +5,7 @@
 | ![logo](/documentation/sm_logo.png) | ![image](https://github.com/user-attachments/assets/69b86bf5-450b-496e-8b59-9a04c71e9027) |
 | :---: | ---: |
 | [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | LiFePO4 battery pack 48 W·h<br/> as part of PMVR.134096.002 SB-24-48-LF Submersible battery pack <br/> Material safety datasheet (MSDS) |
-| | Version 1 <br/> 27.09.2023 |
+| | Version 1 <br/> 10.06.2023 |
 
 ## LiFePO4 battery pack 48 W·h<br/> as part of PMVR.134096.002 SB-24-48-LF Submersible battery pack
 ### Material safety datasheet (MSDS)
