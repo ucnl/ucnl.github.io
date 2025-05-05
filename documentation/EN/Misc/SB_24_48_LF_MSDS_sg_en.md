@@ -5,7 +5,7 @@
 | ![image](https://github.com/user-attachments/assets/8afca984-9bf5-4bb4-ae55-c3805017f051) | |
 | :---: | ---: |
 | [www.seaguild.ae](https://seaguild.ae) <br/> [hello@seaguild.ae](mailto:hello@seaguild.ae) | LiFePO4 battery pack 48 W·h<br/> as part of SB-24-48-LF Submersible battery pack <br/> Material safety datasheet (MSDS) |
-| | Version 1 <br/> 10.06.2023 |
+| | Version 1 <br/> 10.01.2025 |
 
 ## LiFePO4 battery pack 48 W·h<br/> as part of SB-24-48-LF Submersible battery pack
 ### Material safety datasheet (MSDS)
