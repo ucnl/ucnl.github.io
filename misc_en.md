@@ -21,6 +21,4 @@
 * [QR links sheet](/documentation/EN/Misc/l2c.md)
 * [Small box sticker](/documentation/EN/Misc/package_sticker.md)
 
-* [SB-24-48-LF MSDS SG](documentation/EN/Misc/SB_24_48_LF_MSDS_sg_en.md)
-
 ## [Back to main](README.md)
