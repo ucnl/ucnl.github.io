@@ -261,9 +261,9 @@ There are no
 
 | | |
 | --- | --- |
-| **14.1.** UN number | (Not subject to transport regulations) |
-| **14.2.** UN proper shipping name | not applicable |
-| **14.3.** Transport hazard class(es) <br/> Class | not applicable <br/> - |
+| **14.1.** UN number | UN 3481 |
+| **14.2.** UN proper shipping name | Lithium Ion batteries Contained in equipment |
+| **14.3.** Transport hazard class(es) <br/> Class | Class 9 |
 | **14.4.** Packaging group <br/> **14.5** Environmental hazards | not applicable <br/> no (not dangerous for the environment acc. to technical regulations) |
 
 ### 14.6 Special precautions for user
