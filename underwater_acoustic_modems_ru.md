@@ -23,7 +23,7 @@
 * [Схема подключения: uWave](/documentation/RU/uWAVE/uWAVE_wiring_diagram_ru.md)
 * [История версий и изменений](/documentation/RU/uWAVE/uWAVE_version_history_ru.md)
 * [uWaveCommander: Демонстрационное приложение (Исходный код)](https://github.com/ucnl/uWaveCommander)
-* [uWaveCommander: Демонстрационное приложение (Скачать релиз)](https://github.com/ucnl/uWaveCommander/releases/download/1.1/uWaveCommander.zip)
+* [uWaveCommander: Демонстрационное приложение (Скачать релиз)](https://github.com/ucnl/uWaveCommander/releases/download/1.2/uWaveCommander.zip)
 * [uWaveCommander: Демонстрационное приложение (Краткая инструкция)](https://github.com/ucnl/uWaveCommander/blob/main/README_RU.MD)
 * [Библиотека для Arduino с примерами](https://github.com/ucnl/uWAVE_ALib)
 * [Примеры для Arduino (Старая версия)](https://github.com/ucnl/uWAVE_Arduino)
