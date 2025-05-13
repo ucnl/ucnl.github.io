@@ -19,7 +19,8 @@
 * [Простая оценка дальности связи по чувствительности передатчика и затуханию](/online_utils/simple_prop_distance_estimation.html)
 
 ### Online утилиты для протокола NMEA0183
-* [Online NMEA0183 калькулятор контрольной суммы](/online_utils/nmea0183_checksum_calculator.html)
+* [NMEA0183 Онлайн калькулятор контрольной суммы](/online_utils/nmea0183_checksum_calculator.html)
+* [NMEA0183 Онлайн парсер](/online_utils/nmea0183_parser.html)
 
 ### Прочее
 * [Unicode holidays: Список праздников с символами юникода](/online_utils/unicode_holidays.md)
