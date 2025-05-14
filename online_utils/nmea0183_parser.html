@@ -40,7 +40,7 @@ function onParseBtnPressed() {
       pResult_description = "Talker ID: " + pResult.TalkerID + " (" + UCNLNMEAParser.GetTalkerDescription(pResult.TalkerID) + ")\r\n";
       pResult_description = pResult_description + "Sentence ID: " + pResult.SentenceID + " (" + UCNLNMEAParser.GetSentenceDescription(pResult.SentenceID) + ")\r\n";
        
-   } else if (pResult.constructor.name === "NMEAProperietarySentence") {
+   } else if (pResult.constructor.name === "NMEAProprietarySentence") {
    
       pResult_description = "Proprietary sentence\r\n";
       pResult_description = pResult_description + "Manufacturer ID: " + pResult.Manufacturer + "\r\n";
