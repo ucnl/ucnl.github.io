@@ -16,7 +16,7 @@
 </script>
 <noscript><div><img src="https://mc.yandex.ru/watch/28716631" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 <!-- /Yandex.Metrika counter -->
-   
+
 <script src="https://ucnl.github.io/UCNLPhysics/JS/ucnlnmeaparser.js" type="text/javascript"></script>
 
 <script type="text/javascript">
@@ -30,28 +30,47 @@ function onParseBtnPressed() {
    var input_sentence = document.getElementById("snt_input").value + "\r\n";
 
    try {
-
-   var pResult = UCNLNMEAParser.Parse(input_sentence);
-
-   var pResult_description = "";
    
-   if (pResult.constructor.name === "NMEAStandardSentence") {
-      
-      pResult_description = "Talker ID: " + pResult.TalkerID + " (" + UCNLNMEAParser.GetTalkerDescription(pResult.TalkerID) + ")\r\n";
+    var pResult = UCNLNMEAParser.Parse(input_sentence);
+    var pResult_description = "";
+   
+    if (pResult.constructor.name === "NMEAStandardSentence") {
+	
+	  pResult_description = "Talker ID: " + pResult.TalkerID + " (" + UCNLNMEAParser.GetTalkerDescription(pResult.TalkerID) + ")\r\n";
       pResult_description = pResult_description + "Sentence ID: " + pResult.SentenceID + " (" + UCNLNMEAParser.GetSentenceDescription(pResult.SentenceID) + ")\r\n";
-       
-   } else if (pResult.constructor.name === "NMEAProprietarySentence") {
+	  
+	  pResult_description = pResult_description + "\r\nParameters:\r\n\r\n";
+	  
+	  for (i = 0; i < pResult.parameters.length; i++)
+  	    pResult_description = pResult_description + (i + 1) + ": " + pResult.parameters[i] + "\r\n";
+    
+	} else if (pResult.constructor.name === "NMEAProprietarySentence") {
    
       pResult_description = "Proprietary sentence\r\n";
       pResult_description = pResult_description + "Manufacturer ID: " + pResult.Manufacturer + "\r\n";
-      pResult_description = pResult_description + "Sentence ID: " + pResult.SentenceIDString + "\r\n";
+      pResult_description = pResult_description + "Sentence ID: " + pResult.SentenceIDString + "\r\n";	  
+	  
+	  var sentence_description = UCNLNMEAParser.GetProprietarySentenceDescription(pResult.Manufacturer, pResult.SentenceIDString);
+	  if (sentence_description != "")
+	     pResult_description = pResult_description + "Sentence description: " + sentence_description + "\r\n";
+		 
+		 
+	  pResult_description = pResult_description + "\r\nParameters:\r\n\r\n";
+		 
+	  var sentence_parameters_description = UCNLNMEAParser.GetProprietarySentenceParametersDescription(pResult.Manufacturer, pResult.SentenceIDString);
+	  if (sentence_parameters_description != "") {  
+   	    
+	    for (i = 0; i < pResult.parameters.length; i++)
+		   pResult_description = pResult_description + (i + 1) + ": " + sentence_parameters_description[i] + " = " +  pResult.parameters[i] + "\r\n";
+	  
+	  } else {  
+	  	    
+	    for (i = 0; i < pResult.parameters.length; i++)
+		   pResult_description = pResult_description + (i + 1) + ": " + pResult.parameters[i] + "\r\n";
+		  
+	  }
+	  
    }
-
-   pResult_description = pResult_description + "\r\nParameters:\r\n\r\n";
-   for (i = 0; i < pResult.parameters.length; i++) {
-      pResult_description = pResult_description + (i + 1) + ": " + pResult.parameters[i] + "\r\n";
-   }
-
 
    document.getElementById("snt_result").innerText = pResult_description;
 
@@ -60,10 +79,6 @@ function onParseBtnPressed() {
       document.getElementById("snt_result").innerText = ex + input_sentence;
 
    }
-
-
-   
-
 
 }
 
