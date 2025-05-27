@@ -175,7 +175,7 @@ The operability of the beacon-responder can be easily checked by turning it on: 
 
 #### 2.1.3. Testing responder beacons
 
-A serviceable transponder beacon emits a navigation signal when power is applied. In a noisy environment, you may not hear it, so keep it no more than 20 cm away from your ear when powering up. When using an autonomous beacon-responder, you can also use this test to check the battery's performance: connect the beacon-responder to its battery and simultaneously touch both metal parts of the connector with a wet hand. If both beacon-responder and its battery is functioning properly a brief (~0.1 sec) hiss will be emmited by the beacon-responder.
+A functioning responder beacon emits a navigation signal when power is applied. In a noisy environment, you may not hear it, so keep it no more than 20 cm away from your ear when powering up. When using an autonomous beacon-responder, you can also use this test to check the battery's performance: connect the beacon-responder to its battery and simultaneously touch both metal parts of the connector with a wet hand. If both beacon-responder and its battery is functioning properly a brief (~0.1 sec) hiss will be emmited by the beacon-responder.
 
 <div style="page-break-after: always;"></div>
 
