@@ -21,6 +21,7 @@
   - [2.1. Preparing for work and equipment testing](#21-preparing-for-work-and-equipment-testing)
     - [2.1.1. DF Antenna mounting and setup](#211-df-antenna-mounting-and-setup)
     - [2.1.2. Mounting of the responder beacon on the carrier](#212-mounting-of-the-responder-beacon-on-the-carrier)
+    - [2.1.3. Testing responder beacons](#213-testing-responder-beacons)
   - [2.2. Working with the system](#22-working-with-the-system)
     - [2.2.1. Interface and functions of the AzimuthSuite application](#221-interface-and-functions-of-the-azimuthsuite-application)
       - [2.2.1.1. Application settings](#2211-application-settings)
@@ -171,6 +172,10 @@ The standalone beacon is turned on automatically when it falls into water (conta
 The integrated version of the responder beacon is switched on when power is supplied from an external system. Once turned on, the responder detects barometric pressure for **5** seconds for more accurate depth measurement. If the current value of the external pressure is more than 1200 mbar, then the beacon considers that it was switched on in the submerged position, and the atmospheric pressure calibration does not take place.
 
 The operability of the beacon-responder can be easily checked by turning it on: after the power is turned on, after 2 seconds, a navigation signal is emitted once.
+
+#### 2.1.3. Testing responder beacons
+
+A serviceable transponder beacon emits a navigation signal when power is applied. In a noisy environment, you may not hear it, so keep it no more than 20 cm away from your ear when powering up. When using an autonomous beacon-responder, you can also use this test to check the battery's performance: connect the beacon-responder to its battery and simultaneously touch both metal parts of the connector with a wet hand. If both beacon-responder and its battery is functioning properly a brief (~0.1 sec) hiss will be emmited by the beacon-responder.
 
 <div style="page-break-after: always;"></div>
 
