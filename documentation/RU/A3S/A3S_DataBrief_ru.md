@@ -1,5 +1,5 @@
 
-[Главная](/README_RU) ❯ [Продукция для образования](/education_etc_ru) ❯ **ACoubes: пополняемое описание**
+[Главная](/README_RU) ❯ [Наши проекты для образования](/educational_projects_ru) ❯ **ACoubes: пополняемое описание**
 
 <div style="page-break-after: always;"></div>
 
