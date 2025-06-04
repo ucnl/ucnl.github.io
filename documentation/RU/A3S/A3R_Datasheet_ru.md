@@ -3,7 +3,7 @@
 
 <div style="page-break-after: always;"></div>
 
-| ![logo](/documentation/sm_logo.png) |  |
+| ![logo](/documentation/sm_logo.png) | ![image](https://github.com/user-attachments/assets/b3b28b79-613e-4149-9b05-c916b2075334) |
 | :---: | ---: |
 | [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **ACoubes A<sup>3</sup>R** <br/> Спецификация |
 
