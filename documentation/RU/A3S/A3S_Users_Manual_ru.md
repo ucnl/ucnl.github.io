@@ -1,14 +1,14 @@
 
-[Главная](/README_RU) ❯ [Наши проекты для образования](/educational_projects_ru) ❯ **ACoubes: пополняемое описание**
+[Главная](/README_RU) ❯ [Наши проекты для образования](/educational_projects_ru) ❯ **ACoubes: Руководство пользователя**
 
 <div style="page-break-after: always;"></div>
 
 | ![logo](/documentation/sm_logo.png) |  |
 | :---: | ---: |
-| [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **A<sup>3</sup>S** **ACoubes** <br/> Пополняемое описание |
+| [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **A<sup>3</sup>S** **ACoubes** <br/> Руководство пользователя |
 
 
-# Семейство устройств **A<sup>3</sup>S** <br/> Пополняемое описание
+# Семейство устройств **A<sup>3</sup>S** <br/> Руководство пользователя
 
 <div style="page-break-after: always;"></div>
 
