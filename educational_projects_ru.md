@@ -26,6 +26,20 @@
 * [uSound CR - малошумящий гидрофон для средних частот: Спецификация]()
 * [uSound DR - малошумящий гидрофон для низких частот: Спецификация]()
 
+### WAYU
+Длиннобазисная трекинговая система любительского сегмента. Кстати, ее можно сделать из "Акустических кубиков"
+* [WAYU: Краткое описание](/documentation/RU/WAYU/WAYU_DataBrief_ru.md)
+* [WAYU: медиаматериалы, видео испытаний, треки и т.п.](/documentation/RU/WAYU/media)
+* [WAYU Pinger: Спецификация устройства](/documentation/RU/WAYU/WAYU_Pinger_Specification_ru.md)
+* [WAYU GIB: Спецификация устройства](/documentation/RU/WAYU/WAYU_GIB_Specification_ru.md)
+* [uNav WAYU Radio dongle: Спецификация устройства](/documentation/RU/WAYU/WAYU_RF_Dongle_Specification_ru.md)
+* [uNav WAYU Radio dongle: протокол информационного сопряжения](/documentation/RU/RWLT/uNav_protocol_specification_ru.md)
+* [WAYU: Руководство пользователя](documentation/RU/WAYU/WAYU_Users_Manual_ru.md)
+* [💧 uNav: Руководство пользователя](documentation/RU/RWLT/uNav_application_Users_manual_ru.md)
+* [💧 uNav: приложения для настройки uNav Radio dongle (Исходный код)](https://github.com/ucnl/uNav)
+* [💧 uNav: приложения для настройки uNav Radio dongle (Скачать релиз)](https://github.com/ucnl/uNav/releases/download/1.0/uNav.zip)
+* [Технический паспорт (шаблон)](documentation/RU/WAYU/WAYU_tech_pass_ru.md)
+
 ### Прочее
 * [DIY.unavlab.com: Простые проекты для самостоятельной сборки](https://diy.unavlab.com/README_RU.html)
 * [Online-утилиты: Расчет глубины, скорости звука, трассировка лучей, работа с NMEA0183 и пр.](online_utilities_ru.md)
