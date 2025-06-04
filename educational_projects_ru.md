@@ -8,7 +8,7 @@
 ## Наши проекты для образования
 
 ### В РАЗРАБОТКЕ: A<sup>3</sup>S - "Акустические кубики"
-* [A<sup>3</sup>S ACoubes: Описание](/documentation/RU/A3S/A3S_Users_Manual_ru)
+* [A<sup>3</sup>S ACoubes: Руководство пользователя](/documentation/RU/A3S/A3S_Users_Manual_ru)
 * [A<sup>3</sup>T - Импульсный одночастотный гидроакустической передатчик: Спецификация](/documentation/RU/A3S/A3T_Datasheet_ru)
 * [A<sup>3</sup>R - Одночастотный гидроакустический приемник: Спецификация](/documentation/RU/A3S/A3R_Datasheet_ru)
 
