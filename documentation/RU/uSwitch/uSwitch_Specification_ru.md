@@ -1,5 +1,5 @@
 
-[Главная](/README_RU) ❯ [Гидроакустические модемы](/underwater_acoustic_modems_ru) ❯ **Спецификация устройства: uSwitch**
+[Главная](/README_RU) ❯ [Наши проекты для образования](/educational_projects_ru) ❯ **uSwitch: Спецификация устройства: uSwitch**
 
 <div style="page-break-after: always;"></div>
 
