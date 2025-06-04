@@ -1,4 +1,4 @@
-[Главная](/README_RU) ❯ [Гидроакустические навигационные и трекинговые системы](/navigation_and_tracking_systems_ru) ❯ **Спецификация устройства: WAYU Pinger**
+[Главная](/README_RU) ❯ [Наши проекты для образования](/educational_projects_ru) ❯ **Спецификация устройства: WAYU Pinger**
 
 <div style="page-break-after: always;"></div>
 
