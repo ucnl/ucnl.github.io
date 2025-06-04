@@ -5,7 +5,7 @@
 
 | ![logo](/documentation/sm_logo.png) |  |
 | :---: | ---: |
-| [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **ACoubes A<sup>3</sup>R** </br> Спецификация |
+| [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **ACoubes A<sup>3</sup>R** <br/> Спецификация |
 
 
 ## КЛЮЧЕВЫЕ ОСОБЕННОСТИ
@@ -13,7 +13,6 @@
 * **Идеальное решение для образовательных проектов и обучения**
 * **Совместимость с модулями [A<sup>3</sup>T](A3T_Datasheet_ru.md)**
 * **Низкое энергопотребление - 20 мА**
-
 
 ## ОПИСАНИЕ
 
