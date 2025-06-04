@@ -1,5 +1,5 @@
 
-[Главная](/README_RU) ❯ [Продукция для образования](/education_etc_ru) ❯ **ACoubes A<sup>3</sup>T: Спецификация устройства **
+[Главная](/README_RU) ❯ [Продукция для образования](/education_etc_ru) ❯ **ACoubes A<sup>3</sup>T: Спецификация устройства**
 
 <div style="page-break-after: always;"></div>
 
