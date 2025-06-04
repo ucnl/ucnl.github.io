@@ -5,7 +5,7 @@
 
 | ![logo](/documentation/sm_logo.png) |  |
 | :---: | ---: |
-| [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **ACoubes A<sup>3</sup>T** </br> Спецификация |
+| [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **ACoubes A<sup>3</sup>T** <br/> Спецификация |
 
 
 ## КЛЮЧЕВЫЕ ОСОБЕННОСТИ
