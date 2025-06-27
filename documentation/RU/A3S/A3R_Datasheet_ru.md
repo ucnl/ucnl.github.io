@@ -22,7 +22,7 @@
 
 В качестве антенны могут применятся:
 - [R-1.d3505-1](/documentation/RU/Transducers/R_1.d3505_1_Specification_ru.md) - приемная антенна на основе пластинчатого пьезоэлемента
-- [RT-1.332820-1](https://docs.unavlab.com/documentation/RU/Transducers/RT_1_332820_1_Specification_ru.html) - доступное решение с минимальными габаритами
+- [RT-1.332820-1](https://docs.unavlab.com/documentation/RU/Transducers/RT_1_332820_1_Specification_ru.html) - малогабаритная приемопередающая антенна
 - [RT-2.332820-1](https://docs.unavlab.com/documentation/RU/Transducers/RT_2_332820_1_Specification_ru.html) - двухэлементная антенна с повышенной чувствительностью для работы с поверхности
 - [RT-1.524525-1](https://docs.unavlab.com/documentation/RU/Transducers/RT-1.524525-1_specification_ru.html) - антенна с повышенной чувствительностью
 
