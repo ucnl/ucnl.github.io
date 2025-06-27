@@ -50,14 +50,34 @@
 
 ### Сценарий №1 - Передаем и принемаем 
 
+Самый простой сценарий, в которм задействованы один приемник и один передатчик. 
+
 #### Требуемый набор оборудования
 
 | №    | Наименование | Количество | Примечание |
 | :--- | :--- | :--- | :--- |
 | 1    | Модуль [A<sup>3</sup>R](A3R_Datasheet_ru.md) | 1 |  |
-| 2    | Модуль [A<sup>3</sup>T](A3T_Datasheet_ru.md) | 1 | |
+| 2    | Модуль [A<sup>3</sup>T](A3T_Datasheet_ru.md) | 1 |  |
 | 3    | Антенна приемная [R-1.d3505-1](/documentation/RU/Transducers/R_1.d3505_1_Specification_ru.md) | 1 |  |
 | 4    | Антенна приемопередающая [RT-1.332820-1](/documentation/RU/Transducers/RT_1_332820_1_Specification_ru.md) | 1 |  |
+| 5    | Любая плата с МК, например, Arduino Nano | 1 | |
+| 6    | Провода Dupont Female-Female, 25+ см | 4 | |
+
+Сначала необходимо подключить гидроакустические антенны к модулям. 
+Приемную [R-1.d3505-1](/documentation/RU/Transducers/R_1.d3505_1_Specification_ru.md) к [A<sup>3</sup>R](A3R_Datasheet_ru.md):
+
+| ![image](https://github.com/user-attachments/assets/7cedae37-16d1-4a18-8254-a32e16ff09b4) |
+| :---: |
+| |
+
+и приемопередающую [RT-1.332820-1](/documentation/RU/Transducers/RT_1_332820_1_Specification_ru.md) к [A<sup>3</sup>T](A3T_Datasheet_ru.md):
+
+| ![image](https://github.com/user-attachments/assets/c3f2d99a-9efd-4d3a-8e49-2add970014aa) |
+| :---: |
+| |
+
+Инициация передачи на плате [A<sup>3</sup>T](A3T_Datasheet_ru.md) осуществляется изменением логического уровня на пине 4 (разъем XS2) с высокого на низкой, т.е. подтяжкой его к земле (GND), которая присутствует в изобилии на разъеме XS2 - это все нечетные пины. 
+Таким образом, для того, чтобы плата излучила сигнал требуется соединить пин 4 c любым нечетным пином на этом же разъеме, например, с пином 3. 
 
 
 
