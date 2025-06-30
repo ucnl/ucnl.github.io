@@ -60,8 +60,8 @@
 | 2    | Модуль [A<sup>3</sup>T](A3T_Datasheet_ru.md) | 1 |  |
 | 3    | Антенна приемная [R-1.d3505-1](/documentation/RU/Transducers/R_1.d3505_1_Specification_ru.md) | 1 |  |
 | 4    | Антенна приемопередающая [RT-1.332820-1](/documentation/RU/Transducers/RT_1_332820_1_Specification_ru.md) | 1 |  |
-| 5    | Любая плата с МК, например, Arduino Nano | 1 | |
-| 6    | Провода Dupont Female-Female, 25+ см | 4 | |
+| 5    | Любая плата с МК, например, Arduino Nano | 2 | Плату для инициации передачи можно заменить кнопкой |
+| 6    | Провода Dupont Female-Female или Male-Female, 25+ см | 4 | |
 
 Сначала необходимо подключить гидроакустические антенны к модулям. 
 Приемную [R-1.d3505-1](/documentation/RU/Transducers/R_1.d3505_1_Specification_ru.md) к [A<sup>3</sup>R](A3R_Datasheet_ru.md):
@@ -79,12 +79,132 @@
 Инициация передачи на плате [A<sup>3</sup>T](A3T_Datasheet_ru.md) осуществляется изменением логического уровня на пине 4 (разъем XS2) с высокого на низкой, т.е. подтяжкой его к земле (GND), которая присутствует в изобилии на разъеме XS2 - это все нечетные пины. 
 Таким образом, для того, чтобы плата излучила сигнал требуется соединить пин 4 c любым нечетным пином на этом же разъеме, например, с пином 3. 
 
+Это можно сделать при помощи обычной кнопки, или платы с МК. Вот пример простого скетча для Arduino, который переключает пин D4 в низкий логический уровень на 10 мс раз в секунду:
+
+<details>
+  <summary>Скетч №1 - Инициация передачи 1 раз в секунду</summary>
+  
+```c
+/* 
+ * На пине A3T_TX_ENGAGE_PIN генерирует уровень A3T_TX_ACTIVE_STATE на DURATION_TKS микросекунд
+ * через каждые PERIOD_TKS микросекунд. Изменение дублируется на встроенный светодиод
+*/
+
+#define A3T_TX_ENGAGE_PIN     (4)     // Этот пин необходимо соединить с пином 4 (разъем XS2) на модуле передатчика
+                                      // Так же необходимо соединить пин GND на Arduino с пином 3 (разъем XS2)
+#define A3T_TX_ACTIVE_STATE   (LOW)
+#define A3T_TX_INACTIVE_STATE (HIGH)
+#define LED_PIN               (13)
+#define DURATION_TKS          (10000)
+#define PERIOD_TKS            (1000000 - DURATION_TKS)
+
+bool state;
+uint32_t switch_tks;
+uint32_t tks;
+
+void setup() {
+  pinMode(LED_PIN, OUTPUT);
+  pinMode(A3T_TX_ENGAGE_PIN, OUTPUT);
+  digitalWrite(A3T_TX_ENGAGE_PIN, A3T_TX_INACTIVE_STATE);
+
+  for (int i = 0; i < 10; i++) {
+    digitalWrite(LED_PIN, HIGH);
+    delay(100);
+    digitalWrite(LED_PIN, LOW);
+    delay(100);
+  }
+}
+
+void loop() {  
+
+  tks = micros();
+
+  if (state) {
+    if (tks - switch_tks > DURATION_TKS) {
+      digitalWrite(A3T_TX_ENGAGE_PIN, A3T_TX_INACTIVE_STATE);
+      digitalWrite(LED_PIN, LOW);
+      switch_tks = tks;
+      state = false;
+    }
+  } else {
+    if (tks - switch_tks > PERIOD_TKS) {        
+      digitalWrite(A3T_TX_ENGAGE_PIN, A3T_TX_ACTIVE_STATE);
+      digitalWrite(LED_PIN, HIGH);
+      switch_tks = tks;
+      state = true;
+    }
+  }
+}
+```
+</details>
+
 После перевода пина 4 в состояние низкого логического уровня модуль излучит акустический сигнал. Повторное излучение возможно не ранее чем через 40 мсек.
 
 Если при этом модуль приемника детектирует переданный сигнал, он переведет пин 1 на разъеме XS3 в состояние низкого логического уровня на 2 мсек. 
 В этом примере, факт приема сигнала будем определять при помощи платы Arduino Nano, но при наличии осциллографа в этом можно легко убедиться и без платы с микроконтроллером.
 
+<details>
+  <summary>Скетч №2 - Зажигаем светодио по факту приема акустического сигнала</summary>
+
+```c
+/* По внешнему прерыванию на A3R_STATE_PIN (по спаду) включается встроенный светодиод, который гаснет через 
+ * LED_DURATION_TKS микросекунд
+*/
+
+#define A3R_STATE_PIN    (2)      // Этот пин необходимо соединить с пином 1 (разъем XS3) на модуле приемника
+                                  // Так же необходимо соединить пин GND на Arduino с пином 1 на модуле приемника
+#define LED_PIN          (13)
+#define LED_DURATION_TKS (10000)
+
+bool led_state;
+uint32_t led_on_tks;
+uint32_t tks;
+
+void a3r_state_changed_interrupt_handler() {
+
+  led_state = true;
+  digitalWrite(LED_PIN, HIGH);
+  led_on_tks = micros();
+}
+
+void setup() {
+  
+  pinMode(LED_PIN, OUTPUT);
+  pinMode(A3R_STATE_PIN, INPUT);
+  attachInterrupt(digitalPinToInterrupt(A3R_STATE_PIN), a3r_state_changed_interrupt_handler, FALLING);
+
+  for (int i = 0; i < 10; i++) {
+    digitalWrite(LED_PIN, HIGH);
+    delay(100);
+    digitalWrite(LED_PIN, LOW);
+    delay(100);
+  }
+}
+
+void loop() {  
+
+  if (led_state) {
+    tks = micros();
+    if (tks - led_on_tks > LED_DURATION_TKS) {
+      digitalWrite(LED_PIN, LOW);
+      led_state = false;
+    }
+  }
+}
+```
+</details>
+
+Итак, к обоим модулям подключены платы с МК, модули и платы Arduino запитаны. В результате передатчик будет инициироваться каждую секунду, на подключенной к нему плате Arduino синхронно с передачей будет загораться светодиод, а гидроакустическая антенна будет щелкать.
+
 Для того, чтобы проверить передачу сигнала на воздухе, достаточно расположить излучающую и приемные антенны в непосредственной близости друг от друга, как правило устойчивая работа обеспечивается, если между антеннами не более 10-15 см.
+
+При успешном приеме акустического сигнала, приемный модуль будет инициировать прерывание на плате Arduino и на ней тоже будет загораться светодиод.
+
+Вот как может выглядеть вся лабораторная установка:
+
+| ![image](https://github.com/user-attachments/assets/76dd271a-f87e-45c2-bbad-dad94bc4ccd2) |
+| :---: |
+| |
 
 При работе на водоеме или в бассейне крайне желательно обеспечивать достаточное заглубление антенн - и излучающая и приемные антенны должны быть опущены не менее 1 метра ниже поверхности воды.
 
