@@ -64,6 +64,7 @@
 * [RedNode: Описание протокола сопряжения](/documentation/RU/RedWAVE/RedWAVE_Protocol_Specification_ru.md)
 * [RedWave: Рукводство пользователя](/documentation/RU/RedWAVE/RedWAVE_Users_Manual_ru.md)
 * [ПО RedNav Host: Руководство пользователя](/documentation/RU/RedWAVE/RedNAV_Host_Users_Manual_ru.md)
+* [ПО uGPSHub: Руководство пользователя](/documentation/RU/RedWAVE/uGPSHub_Users_manual_ru.md)
 * [RedNode: Схема включения устройства](/documentation/RU/RedWAVE/RedNODE_wiring_diagram_ru.md)
 * [RedNode: Кронштейн на баллон (3D-модель STEP)](/documentation/msize_tank_holder.STEP)
 * [RedBase: 3D-модель (STEP) ](/documentation/RedBase_v2.0_3D.STEP)
