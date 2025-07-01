@@ -12,9 +12,9 @@
 
 | ![logo](/documentation/sm_logo.png) | ![image](https://github.com/user-attachments/assets/632ccb76-3d24-48f0-adad-b53ccf7d6d7e) |
 | :---: | ---: |
-| [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **⚓ uGPSHub** - Приложение для работы с навигационными приемниками RedNode <br/> Руководство пользователя |
+| [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **⚓ uGPSHub** </br> Приложение для работы с навигационными приемниками RedNode <br/> Руководство пользователя |
 
-# ⚓ uGPSHub <br/> Руководство пользователя
+# ⚓ uGPSHub </br> Руководство пользователя
 
 <div style="page-break-after: always;"></div>
 
