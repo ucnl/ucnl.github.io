@@ -246,8 +246,9 @@ void loop() {
 | 1    | Модуль [A<sup>3</sup>R](A3R_Datasheet_ru.md) | 2 |  |
 | 2    | Модуль [A<sup>3</sup>T](A3T_Datasheet_ru.md) | 2 |  |
 | 3    | Антенна приемопередающая [RT-1.332820-1](/documentation/RU/Transducers/RT_1_332820_1_Specification_ru.md) | 2 |  |
-| 4    | Любая плата с МК, например, Arduino Nano | 2 | Плату для инициации передачи можно заменить кнопкой |
-| 5    | Провода Dupont Female-Female или Male-Female, 25+ см | 4 | |
+| 4    | Любая плата с МК, например, Arduino Nano | 1 |  |
+| 5    | LCD-экран, например MT-204S | 1 | Для отображения измеренного времени и дальности, но можно выводить и в COM-порт |
+| 6    | Провода Dupont Female-Female или Male-Female, 25+ см | 4 | |
 
 
 
