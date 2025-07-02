@@ -1,5 +1,5 @@
 
-[Главная](/README_RU) ❯ [Наши проекты для образования](/educational_projects_ru) ❯ **ACoubes: Руководство пользователя**
+[Главная](/README_RU) ❯ [Наши проекты для образования](/educational_projects_ru) ❯ **ACubes: Руководство пользователя**
 
 <div style="page-break-after: always;"></div>
 
