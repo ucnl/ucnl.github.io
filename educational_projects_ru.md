@@ -15,7 +15,7 @@
 
 ### В РАЗРАБОТКЕ: A<sup>3</sup>S - "Акустические кубики"
 Набор элементарных элементов для прототипирования систем гидроакустической связи и навигации
-* [A<sup>3</sup>S ACoubes: Руководство пользователя](/documentation/RU/A3S/A3S_Users_Manual_ru)
+* [A<sup>3</sup>S ACubes: Руководство пользователя](/documentation/RU/A3S/A3S_Users_Manual_ru)
 * [A<sup>3</sup>T - Импульсный одночастотный гидроакустической передатчик: Спецификация](/documentation/RU/A3S/A3T_Datasheet_ru)
 * [A<sup>3</sup>R - Одночастотный гидроакустический приемник: Спецификация](/documentation/RU/A3S/A3R_Datasheet_ru)
 
