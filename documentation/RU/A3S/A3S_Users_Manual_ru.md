@@ -305,7 +305,7 @@ void loop() {
 Ниже представлен скетч для управляющей платы Arduino: 
 
 <details>
-  <summary>Скетч #1 - Инициирует передачу и измеряет время между запросом и ответом</summary>
+  <summary>Скетч #3 - Инициирует передачу и измеряет время между запросом и ответом</summary>
 
 Если использование экрана не планируется, необходимо закомментировать строчку `#define USE_LCD`. Скорость звука задана константой 1500.0, для более точного значения предлагаем обратиться к нашему онлайн-калькулятору скорости звука в воде: [Толковый калькулятор скорости звука в воде](https://docs.unavlab.com/online_utils/proper_speed_of_sound_calculator.html)
 
@@ -489,6 +489,57 @@ void loop() {
 | 4 / Инициация передачи импульса | 10 |
 | 6 / Строб приемника №1 | 2 / INT0 |
 
+Вот так может выглядеть незамысловатый скетч, который ожидает приема сигнала, выдерживает паузу и излучает ответный сигнал:
+
+<details>
+  <summary>Скетч #3 - Инициирует передачу и измеряет время между запросом и ответом</summary>
+  
+```с
+
+#define A3R_STATE_PIN     (2)
+#define A3T_TX_ENGAGE_PIN (10)
+#define LED_PIN           (13)
+
+#define ANSWER_DELAY_MS    (100L) // Фиксированная задержка ответа на ответчике, [мс]
+
+#define TX_STROBE_DURATION_MS  (10L)
+
+int prev_state = HIGH;
+int curr_state = HIGH;
+
+void setup() {
+
+  pinMode(LED_PIN, OUTPUT);
+  digitalWrite(LED_PIN, LOW);
+
+  pinMode(A3T_TX_ENGAGE_PIN, OUTPUT);
+  digitalWrite(A3T_TX_ENGAGE_PIN, HIGH);
+
+  pinMode(A3R_STATE_PIN, INPUT);
+
+  Serial.begin(9600);
+
+  Serial.print(ANSWER_DELAY_TKS);
+}
+
+void loop() {
+
+  curr_state = digitalRead(A3R_STATE_PIN);
+
+  if ((curr_state == LOW) && (prev_state == HIGH)) {
+    
+    delay(ANSWER_DELAY_MS);
+    digitalWrite(A3T_TX_ENGAGE_PIN, LOW);
+    delay(TX_STROBE_DURATION_MS);
+    digitalWrite(A3T_TX_ENGAGE_PIN, HIGH);
+    delay(TX_STROBE_DURATION_MS);
+  }
+
+  prev_state = curr_state;
+}
+
+```
+</details>
 
 
 <div style="page-break-after: always;"></div>
