@@ -310,8 +310,8 @@ void loop() {
 Если использование экрана не планируется, необходимо закомментировать строчку `#define USE_LCD`. Скорость звука задана константой 1500.0, для более точного значения предлагаем обратиться к нашему онлайн-калькулятору скорости звука в воде: [Толковый калькулятор скорости звука в воде](https://docs.unavlab.com/online_utils/proper_speed_of_sound_calculator.html)
 
 ```c
-#define USE_LCD
 
+#define USE_LCD
 
 #ifdef USE_LCD
 #include "LiquidCrystal.h"
@@ -326,19 +326,19 @@ int c_idx = 0;
 #define A3T_STATE_PIN      (3)  // Пин, куда заводится строб от передатчика
 #define A3T_TX_ENGAGE_PIN  (10) // Пин, управляющий началом передачи на модуле передатчика
 
-#define TKS_PER_S          (1000314) // Число "микросекунд" в одной секунде на плате Arduino Nano
+#define TKS_PER_S          (1000314L) // Число "микросекунд" в одной секунде на плате Arduino Nano
 
-#define RX_DT_MS           (6) // Защитный интервал для отсеивания сигнала локального передатчика, [мс]
+#define RX_DT_MS           (80L) // Защитный интервал для отсеивания сигнала локального передатчика, [мс]
 #define RX_DT_TKS          (RX_DT_MS * 1000)
 
-#define ANSWER_DELAY_MS    (0) // Фиксированная задержка ответа на ответчике, [мс]
+#define ANSWER_DELAY_MS    (100L) // Фиксированная задержка ответа на ответчике, [мс]
 #define ANSWER_DELAY_TKS   (ANSWER_DELAY_MS * 1000)
 
 #define SOS_MPS            (1500.0) // Скорость звука, [м/с]
-#define MAX_DIST_M         (500)    // Максимальная дальность, м
+#define MAX_DIST_M         (500L)    // Максимальная дальность, м
 
-#define TIMEOUT_TKS        (ANSWER_DELAY_TKS + TKS_PER_S * (MAX_DIST_M * 2.0) / SOS_MPS) // Длительность интервала ожидвания ответа
-#define STATE_TIMEOUT_TKS  (TIMEOUT_TKS * 4)                                              
+#define TIMEOUT_TKS        (ANSWER_DELAY_TKS + TKS_PER_S * (MAX_DIST_M * 2) / SOS_MPS) // Длительность интервала ожидвания ответа
+#define STATE_TIMEOUT_TKS  (TIMEOUT_TKS * 3)                                              
 #define TKS_PER_CHAR       ((TIMEOUT_TKS) / (X_MAX))
 
 volatile int      state = 0; // Состояние
@@ -370,8 +370,10 @@ void setup() {
 
 #ifdef USE_LCD
   lcd.begin(20, 4);
-  Serial.begin(9600);
+  lcd.clear();
 #endif
+
+  Serial.begin(9600);
 
   pinMode(A3T_TX_ENGAGE_PIN, OUTPUT);
   digitalWrite(A3T_TX_ENGAGE_PIN, HIGH);
@@ -394,6 +396,7 @@ void loop() {
 #ifdef USE_LCD
       lcd.setCursor(0, W_LINE);
       lcd.print("                    ");
+      
       digitalWrite(A3T_TX_ENGAGE_PIN, LOW);
 #endif
     break;
@@ -420,7 +423,7 @@ void loop() {
 #endif
 
         Serial.print("TIMEOUT\r\n");
-        state = 0;
+        state = 5;
 
       } else {
 
@@ -437,8 +440,10 @@ void loop() {
     break;
 
     case 4:
-      tof = (toa - tor - ANSWER_DELAY_TKS) / 2.0f;
-      tof = tof / TKS_PER_S;
+
+      tof = (int32_t)(toa - tor) - (int32_t)ANSWER_DELAY_TKS;
+      tof /= 2.0;
+      tof /= (float)TKS_PER_S;
       srn = tof * SOS_MPS;
 
 #ifdef USE_LCD
@@ -459,8 +464,8 @@ void loop() {
   if (tks - tot > STATE_TIMEOUT_TKS) {
     state = 0;
   }
-
 }
+
 ```
 </details>
 
@@ -496,15 +501,16 @@ void loop() {
   
 ```с
 
+
 #define A3R_STATE_PIN     (2)
 #define A3T_TX_ENGAGE_PIN (10)
 #define LED_PIN           (13)
 
 #define ANSWER_DELAY_MS    (100L) // Фиксированная задержка ответа на ответчике, [мс]
+#define DEAD_TIME_MS       (100L) // Защитный интервал после излучения
 
 #define TX_STROBE_DURATION_MS  (10L)
 
-int prev_state = HIGH;
 int curr_state = HIGH;
 
 void setup() {
@@ -515,27 +521,23 @@ void setup() {
   pinMode(A3T_TX_ENGAGE_PIN, OUTPUT);
   digitalWrite(A3T_TX_ENGAGE_PIN, HIGH);
 
-  pinMode(A3R_STATE_PIN, INPUT);
-
-  Serial.begin(9600);
-
-  Serial.print(ANSWER_DELAY_TKS);
+  pinMode(A3R_STATE_PIN, INPUT_PULLUP);
 }
 
 void loop() {
 
   curr_state = digitalRead(A3R_STATE_PIN);
 
-  if ((curr_state == LOW) && (prev_state == HIGH)) {
+  if ((curr_state == LOW)) {
     
     delay(ANSWER_DELAY_MS);
     digitalWrite(A3T_TX_ENGAGE_PIN, LOW);
+    digitalWrite(LED_PIN, HIGH);
     delay(TX_STROBE_DURATION_MS);
     digitalWrite(A3T_TX_ENGAGE_PIN, HIGH);
-    delay(TX_STROBE_DURATION_MS);
+    delay(DEAD_TIME_MS);
+    digitalWrite(LED_PIN, LOW);    
   }
-
-  prev_state = curr_state;
 }
 
 ```
