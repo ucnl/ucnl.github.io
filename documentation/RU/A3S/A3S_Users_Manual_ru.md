@@ -313,7 +313,6 @@ void loop() {
 Если использование экрана не планируется, необходимо закомментировать строчку `#define USE_LCD`. Скорость звука задана константой 1500.0, для более точного значения предлагаем обратиться к нашему онлайн-калькулятору скорости звука в воде: [Толковый калькулятор скорости звука в воде](https://docs.unavlab.com/online_utils/proper_speed_of_sound_calculator.html)
 
 ```c
-
 #define USE_LCD
 
 #ifdef USE_LCD
@@ -503,7 +502,6 @@ void loop() {
   <summary>Скетч #3 - Инициирует передачу и измеряет время между запросом и ответом</summary>
   
 ```с
-
 #define A3R_STATE_PIN     (2)
 #define A3T_TX_ENGAGE_PIN (10)
 #define LED_PIN           (13)
@@ -543,6 +541,7 @@ void loop() {
 }
 
 ```
+
 </details>
 
 
