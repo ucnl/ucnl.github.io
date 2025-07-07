@@ -502,6 +502,7 @@ void loop() {
   <summary>Скетч #3 - Инициирует передачу и измеряет время между запросом и ответом</summary>
   
 ```с
+
 #define A3R_STATE_PIN     (2)
 #define A3T_TX_ENGAGE_PIN (10)
 #define LED_PIN           (13)
