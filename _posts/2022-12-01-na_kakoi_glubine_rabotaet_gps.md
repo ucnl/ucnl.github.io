@@ -15,8 +15,6 @@ title: На какой глубине работает GPS?
 
 <details>
   
-<summary>Пруфы</summary>
-
 | ![image](https://github.com/user-attachments/assets/e3da6438-5ae7-4d21-ba26-c0c104914a06) |
 | :---: |
 | Обновление от 08.07.2025   |
