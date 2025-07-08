@@ -19,17 +19,17 @@ title: На какой глубине работает GPS?
 Обновление от 08.07.2025  
 ![image](https://github.com/user-attachments/assets/e3da6438-5ae7-4d21-ba26-c0c104914a06)  
 
-Обновление от 20.06.2023
+Обновление от 20.06.2023  
 ![image](https://github.com/ucnl/ucnl.github.io/assets/24439946/89428b6e-7e83-4a18-a60d-40caaafa9c59)  
 ![image](https://github.com/ucnl/ucnl.github.io/assets/24439946/d785e396-0de1-4288-8d21-a3b592d568d7)  
 
-Обновление от 07.06.2023
+Обновление от 07.06.2023  
 ![image](https://github.com/ucnl/ucnl.github.io/assets/24439946/b8ea5578-3e51-4bb6-9352-b054a75bcf87)  
 
-Обновление от 05.06.2023
+Обновление от 05.06.2023  
 ![image](https://github.com/ucnl/ucnl.github.io/assets/24439946/c0efb779-9417-43ed-871f-ddfae544a5b0)  
 
-Обновление от 18.05.2023
+Обновление от 18.05.2023  
 ![image](https://github.com/ucnl/ucnl.github.io/assets/24439946/0eeb29de-448d-4a1a-ad0a-a73a5a08a518)
   
 Обновление от 04.04.2023  
