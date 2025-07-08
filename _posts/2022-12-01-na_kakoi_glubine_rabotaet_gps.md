@@ -13,7 +13,13 @@ title: На какой глубине работает GPS?
 
 Это вообще не что-то из ряда вон выходящее, мы с коллегами подобное наблюдаем с завидной регулярностью:
 
-Пруфы:  
+<details>
+<summary>Пруфы:</summary>
+
+> Обновление от 08.07.2025
+
+![image](https://github.com/user-attachments/assets/e3da6438-5ae7-4d21-ba26-c0c104914a06)
+
 
 > Обновление от 20.06.2023
 
@@ -51,11 +57,7 @@ title: На какой глубине работает GPS?
 ![image](https://user-images.githubusercontent.com/24439946/204535612-5922a902-454c-4830-bedd-db7cdae49984.png)  
 ![image](https://user-images.githubusercontent.com/24439946/204535452-b6dae5bb-a9e6-47c8-81a0-40bba7f3d8d6.png)  
 
-
-
-
-
-
+</details>
 
 ...и короткий ответ такой: 
 
