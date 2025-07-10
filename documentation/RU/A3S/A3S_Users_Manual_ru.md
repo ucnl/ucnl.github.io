@@ -298,7 +298,7 @@ void loop() {
 **Рекомендации по настройке:**
 1. Начинайте с интервала 50-100 мс для небольших акваторий
 2. Постепенно увеличивайте интервал до исчезновения ложных срабатываний
-3. Для точных измерений проводите калибровку в рабочих условиях
+3. Для точных измерений может потребоваться калибровка статической ошибки
 
 *Примечание: В профессиональных системах используются более сложные методы (разнесённые частоты, кодирование сигналов, адаптивные алгоритмы), но они выходят за рамки данного руководства.*
 
@@ -368,146 +368,161 @@ void loop() {
 #define USE_LCD
 
 #ifdef USE_LCD
-#include <LiquidCrystal.h>
+#include "LiquidCrystal.h"
 LiquidCrystal lcd(8, 9, 4, 5, 6, 7); // RS, E, D4-D7
 #define X_MAX              (20) // Число символов на строчку экрана
-#define MSG_LINE           (1)  // Номер строки для сообщения
-#define W_LINE             (0)  // Номер строки для отображения прогресса
-int c_idx = 0;
+#define MSG_LINE           (3)  // Номер строки для сообщения
+#define W_LINE             (0)  // Номер стоки для отображения прогресса
 #endif
 
-#define A3R_STATE_PIN      (2)  // Пин, куда заводится строб от приемника
-#define A3T_STATE_PIN      (3)  // Пин, куда заводится строб от передатчика
-#define A3T_TX_ENGAGE_PIN  (10) // Пин, управляющий началом передачи на модуле передатчика
+// Пин-назначения
+#define TX_CONTROL_PIN     10   // Пин управления передатчиком (активный HIGH)
+#define TX_STROBE_PIN      3    // Пин строба передатчика (ожидаем FALLING edge)
+#define RX_STROBE_PIN      2    // Пин строба приемника (ожидаем FALLING edge)
 
-#define TKS_PER_S          (1000000L) // Число микросекунд в одной секунде на плате Arduino Nano
+// Параметры системы
+#define ANSWER_DELAY_MS    500    // Фиксированная задержка ответа маяка [мс]
+#define SOS_MPS            1500   // Скорость звука в воде [м/с]
+#define MAX_DISTANCE_M     500    // Максимальная измеряемая дальность [м]
+#define PULSE_WIDTH_MS     10     // Длительность управляющего импульса [мс]
 
-#define RX_DT_MS           (80L) // Защитный интервал для отсеивания сигнала локального передатчика, [мс]
-#define RX_DT_TKS          (RX_DT_MS * 1000L)
+#define PAUSE_MS           (1000) // Пауза между измерениями
+#define TIMEOUT            (2 * 1000000L * MAX_DISTANCE_M / SOS_MPS + ANSWER_DELAY_MS * 1000L)
 
-#define ANSWER_DELAY_MS    (100L) // Фиксированная задержка ответа на ответчике, [мс]
-#define ANSWER_DELAY_TKS   (ANSWER_DELAY_MS * 1000L)
+#ifdef USE_LCD
+#define TKS_PER_CHAR       ((TIMEOUT - ANSWER_DELAY_MS * 1000L) / X_MAX)
+#endif
 
-#define SOS_MPS            (1500.0) // Скорость звука, [м/с]
-#define MAX_DIST_M         (500L)   // Максимальная дальность, м
 
-#define TIMEOUT_TKS        (ANSWER_DELAY_TKS + (long)(TKS_PER_S * (MAX_DIST_M * 2) / SOS_MPS)) // Длительность интервала ожидания ответа
-#define STATE_TIMEOUT_TKS  (TIMEOUT_TKS * 3)                                              
-#define TKS_PER_CHAR       ((TIMEOUT_TKS) / (X_MAX))
+// Глобальные переменные
+volatile uint32_t tor = 0;  // Время излучения сигнала
+volatile uint32_t toa = 0;   // Время приема ответного сигнала
+volatile bool rx_strobe = false; // Флаг получения строба
 
-volatile int      state = 0; // Состояние
-volatile uint32_t tks;       // Переменная для текущего времени, [мкс]
-volatile uint32_t tot;       // Time of Transaction start, время начала транзакции, [мкс]
-volatile uint32_t tor;       // Time of Radiation start - время начала излучения запросного сигнала, [мкс]
-volatile uint32_t toa;       // Time of arrival - момент прихода ответного сигнала, [мкс]
-
-float    tof; // Time of flight - переменная для времени распространения
-float    srn; // Slant range - наклонная дальность
-
-void a3t_state_changed_interrupt_handler() {
+// Обработчик прерывания по стробу передатчика
+void txStrobeISR() {
   tor = micros();
-  digitalWrite(A3T_TX_ENGAGE_PIN, HIGH);
-  state = 2;
 }
 
-void a3r_state_changed_interrupt_handler() {
-  if (state == 3) {
-    toa = micros();
-    state = 4;
-  }
+// Обработчик прерывания по стробу приемника
+void rxStrobeISR() {
+  toa = micros();
+  rx_strobe = true;
 }
 
 void setup() {
+  
 #ifdef USE_LCD
   lcd.begin(20, 4);
   lcd.clear();
+  lcd.print(F("Starting..."));  
 #endif
 
   Serial.begin(9600);
+  Serial.println(F("Starting..."));
+  
+  // Настройка пинов
+  pinMode(TX_CONTROL_PIN, OUTPUT);
+  digitalWrite(TX_CONTROL_PIN, HIGH);
+ 
+  pinMode(TX_STROBE_PIN, INPUT);
+  pinMode(RX_STROBE_PIN, INPUT);
 
-  pinMode(A3T_TX_ENGAGE_PIN, OUTPUT);
-  digitalWrite(A3T_TX_ENGAGE_PIN, HIGH);
+  // Настройка прерываний
+  attachInterrupt(digitalPinToInterrupt(TX_STROBE_PIN), txStrobeISR, FALLING);
+  attachInterrupt(digitalPinToInterrupt(RX_STROBE_PIN), rxStrobeISR, FALLING);
 
-  pinMode(A3T_STATE_PIN, INPUT);
-  attachInterrupt(digitalPinToInterrupt(A3T_STATE_PIN), a3t_state_changed_interrupt_handler, FALLING);
-
-  pinMode(A3R_STATE_PIN, INPUT);
-  attachInterrupt(digitalPinToInterrupt(A3R_STATE_PIN), a3r_state_changed_interrupt_handler, FALLING);
+  delay(1000);
 }
 
-void loop() {  
-  switch (state) {
-    case 0: 
-      state = 1;
-      tot = micros();
-    
+void loop() {
+
 #ifdef USE_LCD
-      lcd.setCursor(0, W_LINE);
-      lcd.print("                    ");
+  lcd.setCursor(0, W_LINE);
+  lcd.print("                    ");
+#endif
+
+  // 0. Сброс
+  tor = 0;
+
+  // 1. Инициируем передачу
+  digitalWrite(TX_CONTROL_PIN, LOW);
+  
+  // 2. Ждем строб передатчика (прерывание установит tor)
+  while (tor == 0) {
+    // Ожидание...
+  }
+
+  // 3. Возвращаем состояние пина, управляющего передачей
+  digitalWrite(TX_CONTROL_PIN, HIGH);
+  
+  // 4. В течение фиксированной задержки ответа не обрабатываем приемник
+  delay(ANSWER_DELAY_MS);
+
+  toa = 0;
+  rx_strobe = false;
+
+  // 5. Ждем строб приемника с таймаутом
+#ifdef USE_LCD
+  int c_idx = 0;
+  uint32_t tks = micros();
+#endif
+
+  while (!rx_strobe && (micros() - tor < TIMEOUT)) {
+    // Ожидание...
+
+#ifdef USE_LCD
+    
+    if ((micros() - tks) >= TKS_PER_CHAR) {
       
-      digitalWrite(A3T_TX_ENGAGE_PIN, LOW);
-#endif
-    break;
+      lcd.setCursor(c_idx, W_LINE);
+      lcd.print(")");
 
-    case 1:
-      // Ожидание изменения состояния
-    break;
-
-    case 2:
+      if (c_idx < X_MAX) c_idx++;
       tks = micros();
-      if (tks - tor > RX_DT_TKS)
-        state = 3;
-    break;
-
-    case 3:
-      tks = micros();
-
-      if (tks - tor > TIMEOUT_TKS) {
-#ifdef USE_LCD
-        lcd.setCursor(0, MSG_LINE);
-        lcd.print("      TIMEOUT       ");
-#endif
-
-        Serial.print("TIMEOUT\r\n");
-        state = 5;
-      } else {
-#ifdef USE_LCD
-        c_idx = (int)((tks - tor)/TKS_PER_CHAR);
-        if (c_idx > 20) 
-          c_idx = 20;
-        lcd.setCursor(c_idx, W_LINE);
-        lcd.print(")");
-#endif
-      }
-    break;
-
-    case 4:
-      tof = (int32_t)(toa - tor) - (int32_t)ANSWER_DELAY_TKS;
-      tof /= 2.0;
-      tof /= (float)TKS_PER_S;
-      srn = tof * SOS_MPS;
-
-#ifdef USE_LCD
-      lcd.setCursor(0, MSG_LINE);
-      lcd.print("                    ");
-      lcd.setCursor(0, MSG_LINE);
-      lcd.print(srn, 1);    
-      lcd.print(" m");
-#endif
-
-      Serial.println(srn, 1);
-      state = 5;
-    break;
+    }
     
-    case 5:
-      // Ожидание таймаута для следующего измерения
-    break;
+#endif
   }
+  
+  // 6. Если сигнал получен - вычисляем дальность
+  if (rx_strobe) {
+    // Корректно обрабатываем переполнение micros()
+    uint32_t tof;
+    if (toa > tor) {
+      tof = toa - tor;
+    } else {
+      tof = (0xFFFFFFFF - tor) + toa;
+    }
+    
+    // Вычитаем фиксированную задержку маяка и делим на 2 (туда и обратно)
+    tof = (tof - ANSWER_DELAY_MS * 1000L) / 2;
+    
+    // Рассчитываем дальность
+    float srn = tof * 1e-6 * SOS_MPS;
+    
+#ifdef USE_LCD
+    lcd.setCursor(0, MSG_LINE);
+    lcd.print("                    ");
+    lcd.setCursor(0, MSG_LINE);
+    lcd.print(srn, 1);    
+    lcd.print(" m");
+#endif
 
-  tks = micros();
-  if (tks - tot > STATE_TIMEOUT_TKS) {
-    state = 0;
+    Serial.println(srn, 1);
+
+  } else {
+
+#ifdef USE_LCD
+    lcd.setCursor(0, MSG_LINE);
+    lcd.print("      TIMEOUT       ");
+#endif
+
+    Serial.println("TIMEOUT");
   }
+  
+  // Пауза между измерениями
+  delay(1000);
 }
 ```
 
@@ -522,7 +537,7 @@ void loop() {
 Отметим, что питание и в случае запрашивающего устройства, и в случае маяка-ответчика необходимо подавать на передающий модуль, чтобы избежать прохождения существенных токов по шине в момент излучения.
 
 #### 1.4.4. Маяк-ответчик. Вариант 2 - с Arduino и фиксированной задержкой
-В этом случае в скетче для Arduino запрашивающего устройства необходимо задать какое-то ненулевое значение `ANSWER_DELAY_MS`. И у платы приемника, и у платы передатчика длительность защитного интервала составляет 40 мсек. Соответственно, выбираемая длительность фиксированной задержки должна быть больше этого значения. 
+В этом случае в скетче для Arduino запрашивающего устройства необходимо задать какое-то ненулевое значение `ANSWER_DELAY_MS`. И у платы приемника, и у платы передатчика длительность защитного интервала составляет 40 мсек. Соответственно, выбираемая длительность фиксированной задержки должна быть больше этого значения. В нашем примере мы установили значение 500 мс, что подойдет для большинства небольших акваторий с длительным "хвостом" отражений.
 
 Кроме изменения значения `ANSWER_DELAY_MS` в скетче запрашивающего устройства не потребуется никаких изменений. А к маяку-ответчику теперь необходимо убрать джампер **P0** и подключить вторую плату Arduino Nano, согласно следующей таблице:
 
@@ -541,8 +556,8 @@ void loop() {
 #define A3T_TX_ENGAGE_PIN (10)
 #define LED_PIN           (13)
 
-#define ANSWER_DELAY_MS    (100L) // Фиксированная задержка ответа на ответчике, [мс]
-#define DEAD_TIME_MS       (100L) // Защитный интервал после излучения
+#define ANSWER_DELAY_MS    (500L) // Фиксированная задержка ответа на ответчике, [мс]
+#define DEAD_TIME_MS       (500L) // Защитный интервал после излучения
 
 #define TX_STROBE_DURATION_MS  (10L)
 
