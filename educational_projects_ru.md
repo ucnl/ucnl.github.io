@@ -48,12 +48,13 @@
 * [DIY.unavlab.com: Простые проекты для самостоятельной сборки](https://diy.unavlab.com/README_RU.html)
 * [Online-утилиты: Расчет глубины, скорости звука, трассировка лучей, работа с NMEA0183 и пр.](online_utilities_ru.md)
 
-### Библиотеки с открытым исходным кодом
+### Библиотеки и утилиты с открытым исходным кодом
 * [UCNLNav: Библиотека навигационных алгоритмов *(C#/Rust/Matlab/GNU Octave)*](https://github.com/ucnl/UCNLNav)
 * [UCNLPhysics: Библиотека для определения фундаментальных свойств морской воды *(C#/Rust/C/Matlab/GNU Octave/JavaScript)*](https://github.com/ucnl/UCNLPhysics)
 * [UCNLNMEA: Библиотека для парсигна и формирования NMEA-сообщений *(C#)*](https://github.com/ucnl/UCNLNMEA)
 * [uMCPIno: Протокол с гарантированной доставкой и очередностью сообщений *(C#/C/Arduino)*](https://github.com/AlekUnderwater/uMCPIno)
 * [uRayTracerDemo: Трассировка лучей через слоистую среду](https://github.com/ucnl/uRayTracerDemo)
+* [uConsole: Простой терминал для последовательного порта](https://github.com/ucnl/uConsole)
 
 ## [На главную](README_RU.md)
 
