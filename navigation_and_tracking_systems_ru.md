@@ -18,6 +18,8 @@
 * [Zima2 USBL: Руководство пользователя](/documentation/RU/Zima/Zima2_Users_manual_ru.md)
 * [Zima2-B (пеленгационная антенна): Спецификация устройства:](/documentation/RU/Zima/Zima2B_Specification_ru.md)
 * [Zima2-R (маяк-ответчик): Спецификация устройства](/documentation/RU/Zima/Zima2R_Specification_ru.md)
+* [Zima2-B35 (пеленгационная антенна): Спецификация устройства:](/documentation/RU/Zima/Zima2B35_Specification_ru.md)
+* [Zima2-R35 (маяк-ответчик): Спецификация устройства](/documentation/RU/Zima/Zima2R35_Specification_ru.md)
 * [Zima2-BK (пеленгационная антенна для маяков Zima2-RK): Спецификация устройства:](/documentation/RU/Zima/Zima2BK_Specification_ru.md)
 * [Zima2-RK (маяк-ответчик на глубину до 1000 м): Спецификация устройства](/documentation/RU/Zima/Zima2RK_Specification_ru.md)
 * [Zima2 USBL: Протокол информационного сопряжения](/documentation/RU/Zima/Zima2_Protocol_Specification_ru.md)
@@ -109,3 +111,4 @@
 * [Технический паспорт (шаблон)](documentation/RU/WAYU/WAYU_tech_pass_ru.md)
 
 ## [На главную](README_RU.md)
+
