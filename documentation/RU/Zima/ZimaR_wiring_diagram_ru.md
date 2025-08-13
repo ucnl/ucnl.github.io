@@ -4,7 +4,7 @@
 
 | ![logo](/documentation/sm_logo.png) |  |
 | :---: | ---: |
-| [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **Zima-R, Zima2-R** Маяк-ответчик <br/> Назначение жил кабеля и габариты |
+| [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **Zima-R, Zima2-R, Zima2-R35** Маяк-ответчик <br/> Назначение жил кабеля и габариты |
 
 ## НАЗНАЧЕНИЕ ЖИЛ КАБЕЛЯ
 
