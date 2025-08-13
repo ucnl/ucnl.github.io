@@ -51,7 +51,7 @@
 * [Zima-R, Zima2-R: Кронштейн плоский (3D-модель STEP)](/documentation/ZIMA-R_holder_flat.step)
 * [Zima-R, Zima2-R: Кронштейн плоский (3D-модель Fusion360 f3d)](/documentation/ZIMA-R_holder_flat.f3d)
 * [Zima-R, Zima2-R: Кронштейн на баллон (3D-модель STEP)](/documentation/msize_tank_holder.STEP)
-* [Zima-R, Zima2-R: Схема включения устройства](/documentation/RU/Zima/ZimaR_wiring_diagram_ru.md)
+* [Zima-R, Zima2-R, Zima2-R35: Схема включения устройства](/documentation/RU/Zima/ZimaR_wiring_diagram_ru.md)
 * [Удлинительный кабель UART-RS422](/documentation/RU/Accessories/RS422_extension_cable_ru.md)
 
 ### RedWave
@@ -111,4 +111,5 @@
 * [Технический паспорт (шаблон)](documentation/RU/WAYU/WAYU_tech_pass_ru.md)
 
 ## [На главную](README_RU.md)
+
 
