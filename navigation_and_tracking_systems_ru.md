@@ -46,11 +46,11 @@
 * [Bat&Link Box (блок питания и коммутации): Спецификация устройства](/documentation/RU/Zima/Bat_n_link_box_Specification_ru.md)
 * [Bat&Link Box (блок питания и коммутации): Руководство пользователя](/documentation/RU/Zima/Bat_n_link_box_Users_manual_ru.md)
 * [Информационный лист по совместимости для систем определения положения и курса](/documentation/RU/Zima/Zima_GNSS_requirements_ru.md)
-* [Zima-B, Zima2-B: 3D-модель (STEP)](/documentation/Zima_B_3D.step)
-* [Zima-R, Zima2-R: 3D-модель (STEP)](/documentation/Zima_R_3D.step)
-* [Zima-R, Zima2-R: Кронштейн плоский (3D-модель STEP)](/documentation/ZIMA-R_holder_flat.step)
-* [Zima-R, Zima2-R: Кронштейн плоский (3D-модель Fusion360 f3d)](/documentation/ZIMA-R_holder_flat.f3d)
-* [Zima-R, Zima2-R: Кронштейн на баллон (3D-модель STEP)](/documentation/msize_tank_holder.STEP)
+* [Zima-B, Zima2-B, Zima2-R35: 3D-модель (STEP)](/documentation/Zima_B_3D.step)
+* [Zima-R, Zima2-R, Zima2-R35: 3D-модель (STEP)](/documentation/Zima_R_3D.step)
+* [Zima-R, Zima2-R, Zima2-R35: Кронштейн плоский (3D-модель STEP)](/documentation/ZIMA-R_holder_flat.step)
+* [Zima-R, Zima2-R, Zima2-R35: Кронштейн плоский (3D-модель Fusion360 f3d)](/documentation/ZIMA-R_holder_flat.f3d)
+* [Zima-R, Zima2-R, Zima2-R35: Кронштейн на баллон (3D-модель STEP)](/documentation/msize_tank_holder.STEP)
 * [Zima-R, Zima2-R, Zima2-R35: Схема включения устройства](/documentation/RU/Zima/ZimaR_wiring_diagram_ru.md)
 * [Удлинительный кабель UART-RS422](/documentation/RU/Accessories/RS422_extension_cable_ru.md)
 
@@ -111,5 +111,6 @@
 * [Технический паспорт (шаблон)](documentation/RU/WAYU/WAYU_tech_pass_ru.md)
 
 ## [На главную](README_RU.md)
+
 
 
