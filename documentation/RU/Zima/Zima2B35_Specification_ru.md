@@ -4,7 +4,7 @@
 
 | ![logo](/documentation/sm_logo.png) | ![logo](/documentation/zima_b.png) |
 | :---: | ---: |
-| [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **Zima2-B** - станция пеленгования **Zima2 USBL** <br/> спецификация устройства |
+| [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **Zima2-B35** - станция пеленгования **Zima2 USBL** <br/> спецификация устройства |
 
 ## КЛЮЧЕВЫЕ ОСОБЕННОСТИ
 
