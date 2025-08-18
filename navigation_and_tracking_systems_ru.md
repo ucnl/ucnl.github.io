@@ -28,6 +28,7 @@
 * [Zima2 USBL: технический паспорт (шаблон)](/documentation/RU/Zima/Zima2_technical_passport_ru.md)
 * [Zima2K USBL: технический паспорт (шаблон)](/documentation/RU/Zima/Zima2K_technical_passport_ru.md)
 * [Zima2-OEM35 USBL: технический паспорт (шаблон)](/documentation/RU/Zima/Zima2-OEM35_technical_passport_ru.md)
+* [Zima2-35 USBL: технический паспорт (шаблон)](/documentation/RU/Zima/Zima2-35_technical_passport_ru.md)
 * [Zima2: История версий и изменений](/documentation/RU/Zima/Zima2_version_history_ru.md)
 
 ##### Zima
@@ -111,6 +112,7 @@
 * [Технический паспорт (шаблон)](documentation/RU/WAYU/WAYU_tech_pass_ru.md)
 
 ## [На главную](README_RU.md)
+
 
 
 
