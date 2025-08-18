@@ -98,8 +98,30 @@
 
 #### 1.4.1. Стандартное исполнение 
 
+В стандартном исполнении система позволяет работать на глубинах до 300 м. Доступны варианты питания маяка-ответчика как от носителя, так и от автономного источника.
 
+| Устройство | Техническая спецификация |
+| :--- | :--- |
+| Пеленгационная антенна Zima2-B | [![Спецификация устройства: Zima2-B - пеленгационная антенна](https://github.com/user-attachments/assets/696ef046-4b15-489f-8576-adea91bcb5e8)](https://docs.unavlab.com/documentation/RU/Zima/Zima2B_Specification_ru.html) |
+| Маяк-ответчик Zima2-R | [![Zima2-R - маяк-ответчик: Спецификация устройства](https://github.com/user-attachments/assets/ec9a4cfc-e256-486a-84e4-eaaf51ad0298)](https://docs.unavlab.com/documentation/RU/Zima/Zima2R_Specification_ru.html) |
 
+#### 1.4.2. Исполнение 35
+
+В этом исполнении система позволяет работать с маяками-ответчиками, находящимися на глубинах до 350 м. Встроенные датчики давления в маяках-ответчиках имеют защитную металлическую мембрану. Доступны варианты питания маяка-ответчика как от носителя, так и от автономного источника.
+
+| Устройство | Техническая спецификация |
+| :--- | :--- |
+| Пеленгационная антенна Zima2-B35 | [![Спецификация устройства: Zima2-B35 - пеленгационная антенна](https://github.com/user-attachments/assets/496c0dd8-79f6-4247-b085-1b13179f4fa6)](https://docs.unavlab.com/documentation/RU/Zima/Zima2B35_Specification_ru.html) |
+| Маяк-ответчик Zima2-R35 | [![Zima2-R35 - маяк-ответчик: Спецификация устройства](https://github.com/user-attachments/assets/d086915b-ba1b-4ec3-9906-c9341024409d)](https://docs.unavlab.com/documentation/RU/Zima/Zima2R35_Specification_ru.html) |
+
+#### 1.4.3. Исполнение K
+
+В этом исполнении система позволяет работать с маяками-ответчиками, находящимися на глубинах до 1000 м. Маяк-ответчик поставляется в металлическом нормобарическом корпусе с антенной на кабеле. Доступен только вариант с питанием от носителя.
+
+| Устройство | Техническая спецификация |
+| :--- | :--- |
+| Пеленгационная антенна Zima2-BK | [![Спецификация устройства: Zima2-BK - пеленгационная антенна](https://github.com/user-attachments/assets/2e8dec84-abb4-42c1-81ba-38fd8c6b6362)](https://docs.unavlab.com/documentation/RU/Zima/Zima2BK_Specification_ru.html) |
+| Маяк-ответчик Zima2-RK | [![Zima2-RK - маяк-ответчик: Спецификация устройства](https://github.com/user-attachments/assets/10ab9aea-3eb2-4ef8-8e32-28316e6e4527)](https://docs.unavlab.com/documentation/RU/Zima/Zima2RK_Specification_ru.html) |
 
 <div style="page-break-after: always;"></div>
 
