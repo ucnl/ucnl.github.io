@@ -71,9 +71,10 @@
 Система включает в себя:
 
 - Пеленгационную антенну [Zima2-B](Zima2B_Specification_ru.md) 
-- Кабель с интегрированным преобразвателем интерфейса
-- От 1 до 16 маяков-ответчиков [Zima2-R](Zima2R_Specification_ru.md)
-- Блок питания и коммутации [Bat&Link Box](Bat_n_link_box_Specification_ru.md).
+- Кабель с интегрированным преобразвателем интерфейса RS-422 [uWire](/documentation/RU/Accessories/RS422_extension_cable_ru.html)
+- Маяк-ответчик [Zima2-R](Zima2R_Specification_ru.md)
+- Блок питания и коммутации [Bat&Link Box](Bat_n_link_box_Specification_ru.md)
+- Подводная аккумуляторная сборка (батарейный блок) [SB-24-48-LF](/documentation/RU/Accessories/Sub_batteries_ru.html#sb2448lf).
 
 | ![Zima2-B](/documentation/zima_b.png) |
 | :---: |
@@ -151,6 +152,8 @@
 > В ОТЛИЧИЕ ОТ ПРЕДЫДУЩЕЙ ВЕРСИИ СИСТЕМЫ ПОЛОЖЕНИЕ НУЛЕВОГО НАПРАВЛЕНИЯ АНТЕННЫ БЫЛО ИЗМЕНЕНО!
 
 Нулевое направление антенны совпадает с литьевым швом со стороны, где антенная решетка ближе к поверхности цилиндра (см. рис. ниже). Ось Z направлена вниз, азимутальный угол отсчитывается от нулевого направления по часовой стрелке, если смотреть на антенну со стороны кабеля.
+
+Крепление антенны должно осуществляться комплектным кронштейном [uClamp-S](/documentation/RU/Accessories/Flange_rod_mound_Specification_ru.html). Верхняя часть кронштейна имеет выборку, обозначающую ноль антенны.
 
 | ![zima2_zero_direction](/documentation/zima2_zero_direction_1.png) | 
 | :---: |
