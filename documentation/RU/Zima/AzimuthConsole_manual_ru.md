@@ -17,22 +17,36 @@
 
 ## 1. Введение
 
-## 2. Команды управления
+### 2. Команды управления
 
-## 2.1. Аргументы командной строки
-
-
-## 2.2. Команды терминала
+### 2.1. Аргументы командной строки
 
 
-## 2.3. Команды управления по протоколу UDP
+### 2.2. Команды терминала
+
+
+### 2.3. Команды управления по протоколу UDP
 
 
 ## 3. Выходные данные
 
+### 3.1. AZMLOC - локальные параметры
 
-@AZMREM,rem_addr,SRange_m,Azimuth_deg,PTime_s,MSR_dB,MSR_dB_age,Depth_m,Depth_m_age,SRangeProjection_m,SRangeProjection_m_age,ADistance_m,ADistance_m_age,AAzimuth_deg,AAzimuth_deg_age,Elevation_deg,Elevation_deg_age,VCC_V,VCC_V_age,WaterTemp_C,WaterTemp_C_age,Lat_deg,Lat_deg,Lat_deg_age,RAzimuth_deg,RAzimuth_deg_age,Message,Message_age,IsTimeout
-@AZMLOC,stPressure_mBar,stDepth_m,waterTemp_C,stPitch_deg,stRoll_deg,stRoll_deg_age,lat_deg,lon_deg,course_deg,speed_mps,speed_mps_age,heading_deg,heading_deg_age,
+Сообщение передается ~1 раз в секунду, когда открыто соединение с пеленгационной антенной.
+
+Формат сообщения:
+```@AZMLOC,stPressure_mBar,stDepth_m,waterTemp_C,stPitch_deg,stRoll_deg,age,lat_deg,lon_deg,course_deg,speed_mps,age,heading_deg,age,```
+
+| № | Наименование парамера  | Тип | Единицы измерения | Диапазон значений | Описание |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| 1 | stPressure_mBar | f32 | мБар | 0 .. 30 | Давление по встроенному датчику |
+| 1 | stDepth_m | f32 | м | 0 .. 300 | Глубина погружения устройства |
+
+
+
+### 3.2. AZMREM - данные маяка-ответчика
+
+@AZMREM,rem_addr,SRange_m,Azimuth_deg,PTime_s,MSR_dB,age,Depth_m,age,SRangeProjection_m,age,ADistance_m,age,AAzimuth_deg,age,Elevation_deg,age,VCC_V,age,WaterTemp_C,age,Lat_deg,Lat_deg,age,RAzimuth_deg,age,Message,age,IsTimeout
 
 
 
