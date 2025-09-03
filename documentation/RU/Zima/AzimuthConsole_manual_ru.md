@@ -6,7 +6,7 @@
 | :---: | ---: |
 | [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **AzimuthConsole** - Кросплатформенное приложение для работы с системой Zima2 USBL <br/> Руководство пользователя |
 
-# *AzimuthConsole <br/> Руководство пользователя
+# AzimuthConsole <br/> Руководство пользователя
 
 <div style="page-break-after: always;"></div>
 
@@ -16,6 +16,19 @@
 <div style="page-break-after: always;"></div>
 
 ## 1. Введение
+
+## 2. Команды управления
+
+## 2.1. Аргументы командной строки
+
+
+## 2.2. Команды терминала
+
+
+## 2.3. Команды управления по протоколу UDP
+
+
+## 3. Выходные данные
 
 
 @AZMREM,rem_addr,SRange_m,Azimuth_deg,PTime_s,MSR_dB,MSR_dB_age,Depth_m,Depth_m_age,SRangeProjection_m,SRangeProjection_m_age,ADistance_m,ADistance_m_age,AAzimuth_deg,AAzimuth_deg_age,Elevation_deg,Elevation_deg_age,VCC_V,VCC_V_age,WaterTemp_C,WaterTemp_C_age,Lat_deg,Lat_deg,Lat_deg_age,RAzimuth_deg,RAzimuth_deg_age,Message,Message_age,IsTimeout
