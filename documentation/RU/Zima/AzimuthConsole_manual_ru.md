@@ -48,6 +48,8 @@
 
 ### 3.2. AZMREM - данные маяка-ответчика
 
+Сообщение передается отдельно для каждого из маяков при обновлении информации - получении ответа маяка или при возникновении таймаута.
+
 Формат сообщения:
 ```@AZMREM,rem_addr,SRange_m,Azimuth_deg,PTime_s,MSR_dB,age,Depth_m,age,SRangeProjection_m,age,ADistance_m,age,AAzimuth_deg,age,Elevation_deg,age,VCC_V,age,WaterTemp_C,age,Lat_deg,Lon_deg,age,RAzimuth_deg,age,Message,age,IsTimeout```
 
