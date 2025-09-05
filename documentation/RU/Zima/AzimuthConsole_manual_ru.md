@@ -35,9 +35,9 @@
 - [3. Выходные данные](#3-%D0%B2%D1%8B%D1%85%D0%BE%D0%B4%D0%BD%D1%8B%D0%B5-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D0%B5)
   - [3.1. AZMLOC - локальные параметры](#31-azmloc---%D0%BB%D0%BE%D0%BA%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B5-%D0%BF%D0%B0%D1%80%D0%B0%D0%BC%D0%B5%D1%82%D1%80%D1%8B)
   - [3.2. AZMREM - данные маяка-ответчика](#32-azmrem---%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D0%B5-%D0%BC%D0%B0%D1%8F%D0%BA%D0%B0-%D0%BE%D1%82%D0%B2%D0%B5%D1%82%D1%87%D0%B8%D0%BA%D0%B0)
-- [4. Вспомогательные утилиты]()
-  - [4.1. AzimuthUDPRemote - UDP-терминал]()
-  - [4.2. AzimuthUDPListener - UDP-приемник]()
+- [4. Вспомогательные утилиты](#4-%D0%B2%D1%81%D0%BF%D0%BE%D0%BC%D0%BE%D0%B3%D0%B0%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D1%8B%D0%B5-%D1%83%D1%82%D0%B8%D0%BB%D0%B8%D1%82%D1%8B)
+  - [4.1. AzimuthUDPRemote - UDP-терминал](#41-azimuthudpremote---udp-%D1%82%D0%B5%D1%80%D0%BC%D0%B8%D0%BD%D0%B0%D0%BB)
+  - [4.2. AzimuthUDPListener - UDP-приемник](#42-azimuthudplistener---udp-%D0%BF%D1%80%D0%B8%D0%B5%D0%BC%D0%BD%D0%B8%D0%BA)
 - [5. Примеры]()
 
 <div style="page-break-after: always;"></div>
@@ -513,7 +513,7 @@ Message,age,IsTimeout
 
 Т.к. все пользовательские команды передаются по UPD, для управления самим приложением предусмотрены две дополнительные команды:
 
-- xclc - очистка экрана
+- xcls - очистка экрана
 - xexit - завершение приложения
 
 ### 4.2. AzimuthUDPListener - UDP-приемник
@@ -526,6 +526,6 @@ Message,age,IsTimeout
 
 Для закрытия приложения необходимо нажать клавишу **Enter**.
 
-
+## 5. Примеры
 
 <div style="page-break-after: always;"></div>
