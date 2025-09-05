@@ -35,6 +35,9 @@
 - [3. Выходные данные](#3-%D0%B2%D1%8B%D1%85%D0%BE%D0%B4%D0%BD%D1%8B%D0%B5-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D0%B5)
   - [3.1. AZMLOC - локальные параметры](#31-azmloc---%D0%BB%D0%BE%D0%BA%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B5-%D0%BF%D0%B0%D1%80%D0%B0%D0%BC%D0%B5%D1%82%D1%80%D1%8B)
   - [3.2. AZMREM - данные маяка-ответчика](#32-azmrem---%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D0%B5-%D0%BC%D0%B0%D1%8F%D0%BA%D0%B0-%D0%BE%D1%82%D0%B2%D0%B5%D1%82%D1%87%D0%B8%D0%BA%D0%B0)
+- [4. Вспомогательные утилиты]()
+  - [4.1. AzimuthUDPRemote - UDP-терминал]()
+  - [4.2. AzimuthUDPListener - UDP-приемник]()
 
 <div style="page-break-after: always;"></div>
 
