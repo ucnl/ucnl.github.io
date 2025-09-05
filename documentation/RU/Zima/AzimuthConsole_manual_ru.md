@@ -40,7 +40,7 @@
 
 ## 1. Введение
 
-Приложение предназначено для работы с системами [Zima2](/documentation/RU/Zima/Zima2_DataBrief_ru.md): конфигурирование пеленгационных антенн Zima2B, Zima2B-35, Zima2BK, обработки поступающей от них информации и передачи результатов по последовательному соединению и/или по UDP-соединению.
+Приложение предназначено для работы с системами [Zima2](/documentation/RU/Zima/Zima2_DataBrief_ru.md): конфигурирование пеленгационных антенн [Zima2B](/documentation/RU/Zima/Zima2B_Specification_ru.md), [Zima2B-35](/documentation/RU/Zima/Zima2B35_Specification_ru.md), [Zima2BK](/documentation/RU/Zima/Zima2BK_Specification_ru.md), обработки поступающей от них информации и передачи результатов по последовательному соединению и/или по UDP-соединению.
 
 Поддерживаемые платформы:
 - Windows x64
