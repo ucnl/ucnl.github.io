@@ -4,7 +4,7 @@
 
 | ![logo](/documentation/sm_logo.png) |  |
 | :---: | ---: |
-| [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **AzimuthConsole** - Кросплатформенное приложение для работы с системой Zima2 USBL <br/> Руководство пользователя |
+| [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **AzimuthConsole** - Кроссплатформенное приложение для работы с системой Zima2 USBL <br/> Руководство пользователя |
 
 # AzimuthConsole <br/> Руководство пользователя
 
