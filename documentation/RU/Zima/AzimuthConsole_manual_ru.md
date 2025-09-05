@@ -38,6 +38,7 @@
 - [4. Вспомогательные утилиты]()
   - [4.1. AzimuthUDPRemote - UDP-терминал]()
   - [4.2. AzimuthUDPListener - UDP-приемник]()
+- [5. Примеры]()
 
 <div style="page-break-after: always;"></div>
 
