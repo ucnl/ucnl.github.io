@@ -25,11 +25,11 @@
 * [Zima2 USBL: Протокол информационного сопряжения](/documentation/RU/Zima/Zima2_Protocol_Specification_ru.md)
 * [🐙 AzimuthSuite: Пультовое приложение для Zima2 USBL (Win, Исходный код)](https://github.com/ucnl/AzimuthSuite)
 * [🐙 AzimuthSuite: Пультовое приложение для Zima2 USBL (Win, Скачать релиз)](https://github.com/ucnl/AzimuthSuite/releases/download/beta/AzimuthSuite.zip)
-* [AzimuthConsole: Консольное пультовое приложение для Zima2 USBL (Win, Linux) - Руководство пользователя](/documentation/RU/Zima/AzimuthConsole_manual_ru.md)
-* [AzimuthConsole: Репозиторий](https://github.com/ucnl/AzimuthConsole)
-* [AzimuthConsole: Скачать релиз (Win x64)](https://github.com/ucnl/AzimuthConsole/releases/download/1.0/AzimuthConsole_win_x64.zip)
-* [AzimuthConsole: Скачать релиз (Linux x64)](https://github.com/ucnl/AzimuthConsole/releases/download/1.0/AzimuthConsole_linux_x64.zip)
-* [AzimuthConsole: Все платформы](https://github.com/ucnl/AzimuthConsole/releases)
+* [🖵 AzimuthConsole: Консольное пультовое приложение для Zima2 USBL (Win, Linux) - Руководство пользователя](/documentation/RU/Zima/AzimuthConsole_manual_ru.md)
+* [🖵 AzimuthConsole: Репозиторий](https://github.com/ucnl/AzimuthConsole)
+* [🖵 AzimuthConsole: Скачать релиз (Win x64)](https://github.com/ucnl/AzimuthConsole/releases/download/1.0/AzimuthConsole_win_x64.zip)
+* [🖵 AzimuthConsole: Скачать релиз (Linux x64)](https://github.com/ucnl/AzimuthConsole/releases/download/1.0/AzimuthConsole_linux_x64.zip)
+* [🖵 AzimuthConsole: Все платформы](https://github.com/ucnl/AzimuthConsole/releases)
 * [Zima2 USBL: технический паспорт (шаблон)](/documentation/RU/Zima/Zima2_technical_passport_ru.md)
 * [Zima2K USBL: технический паспорт (шаблон)](/documentation/RU/Zima/Zima2K_technical_passport_ru.md)
 * [Zima2-OEM35 USBL: технический паспорт (шаблон)](/documentation/RU/Zima/Zima2-OEM35_technical_passport_ru.md)
@@ -117,6 +117,7 @@
 * [Технический паспорт (шаблон)](documentation/RU/WAYU/WAYU_tech_pass_ru.md)
 
 ## [На главную](README_RU.md)
+
 
 
 
