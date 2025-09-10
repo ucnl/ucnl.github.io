@@ -73,7 +73,7 @@
 
 - Windows x64
 - Linux x64
-- - Linux arm64
+- Linux arm64
 - Linux arm
 
 
