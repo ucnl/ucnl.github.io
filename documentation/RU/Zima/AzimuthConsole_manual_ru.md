@@ -562,7 +562,7 @@ Message,age,IsTimeout
 
 
 
-Пока их нет, вы можете задать их нам на [support@unavlab.com](mailto:support@unavlab.com) и мы поместим их сюда вместе с ответами.
+Вы можете задать вопросы нам на [support@unavlab.com](mailto:support@unavlab.com) и мы поместим их сюда вместе с ответами.
 
 
 <div style="page-break-after: always;"></div>
