@@ -160,19 +160,19 @@ A³S (или ACubes, «Акустические кубики») — это ко�
 |---|--------------|------------|------------|
 | 1 | Модуль [A³R](A3R_Datasheet_ru.md) | 1 | |
 | 2 | Модуль [A³T](A3T_Datasheet_ru.md) | 1 | |
-| 3 | Антенна приёмная [R-1.d3505-1](/documentation/RU/Transducers/R_1.d3505_1_Specification_ru.md) | 1 | |
-| 4 | Антенна приёмо-передающая [RT-1.332820-1](/documentation/RU/Transducers/RT_1_332820_1_Specification_ru.md) | 1 | |
+| 3 | Антенна приёмная [R-1.d3505-1](/documentation/RU/Transducers/R_1.d3505_1_Specification_ru) | 1 | |
+| 4 | Антенна приёмо-передающая [RT-1.332820-1](/documentation/RU/Transducers/RT_1_332820_1_Specification_ru) | 1 | |
 | 5 | Плата с микроконтроллером (например, Arduino Nano) | 2 | Можно заменить кнопкой для инициации передачи |
 | 6 | Провода Dupont Female-Female или Male-Female, 25+ см | 4 | |
 
 #### Подключение антенн
-1. Подключите приёмную антенну [R-1.d3505-1](/documentation/RU/Transducers/R_1.d3505_1_Specification_ru.md) к модулю [A³R](A3R_Datasheet_ru.md):
+1. Подключите приёмную антенну [R-1.d3505-1](/documentation/RU/Transducers/R_1.d3505_1_Specification_ru) к модулю [A³R](A3R_Datasheet_ru.md):
 
 | ![image](https://github.com/user-attachments/assets/7cedae37-16d1-4a18-8254-a32e16ff09b4) |
 | :---: |
 | _Подключение приемной антенны_ |
 
-2. Подключите приёмо-передающую антенну [RT-1.332820-1](/documentation/RU/Transducers/RT_1_332820_1_Specification_ru.md) к модулю [A³T](A3T_Datasheet_ru.md):
+2. Подключите приёмо-передающую антенну [RT-1.332820-1](/documentation/RU/Transducers/RT_1_332820_1_Specification_ru) к модулю [A³T](A3T_Datasheet_ru.md):
 
 | ![image](https://github.com/user-attachments/assets/c3f2d99a-9efd-4d3a-8e49-2add970014aa) |
 | :---: |
@@ -320,7 +320,7 @@ void loop() {
 | :--- | :--- | :--- | :--- |
 | 1    | Модуль [A<sup>3</sup>R](A3R_Datasheet_ru.md) | 2 |  |
 | 2    | Модуль [A<sup>3</sup>T](A3T_Datasheet_ru.md) | 2 |  |
-| 3    | Антенна приемопередающая [RT-1.332820-1](/documentation/RU/Transducers/RT_1_332820_1_Specification_ru.md) | 2 |  |
+| 3    | Антенна приемопередающая [RT-1.332820-1](/documentation/RU/Transducers/RT_1_332820_1_Specification_ru) | 2 |  |
 | 4    | Любая плата с МК, например, Arduino Nano | 2 |  |
 | 5    | LCD-экран, например MT-204S | 1 | Для отображения измеренного времени и дальности, но можно выводить и в COM-порт |
 | 6    | Провода Dupont Female-Female или Male-Female, 25+ см | 15 | |
