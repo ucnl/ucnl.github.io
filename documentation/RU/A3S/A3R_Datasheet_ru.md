@@ -1,11 +1,11 @@
 
-[Главная](/README_RU) ❯ [Наши проекты для образования](/educational_projects_ru) ❯ **ACoubes A<sup>3</sup>R: Спецификация устройства**
+[Главная](/README_RU) ❯ [Наши проекты для образования](/educational_projects_ru) ❯ **ACubes A<sup>3</sup>R: Спецификация устройства**
 
 <div style="page-break-after: always;"></div>
 
 | ![logo](/documentation/sm_logo.png) | ![image](https://github.com/user-attachments/assets/b3b28b79-613e-4149-9b05-c916b2075334) |
 | :---: | ---: |
-| [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **ACoubes A<sup>3</sup>R** <br/> Спецификация |
+| [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **ACubes A<sup>3</sup>R** <br/> Спецификация |
 
 
 ## КЛЮЧЕВЫЕ ОСОБЕННОСТИ
@@ -16,12 +16,12 @@
 
 ## ОПИСАНИЕ
 
-**ACoubes A<sup>3</sup>R** - модуль гидроакустического одночастотного приемника с логическим выходом. 
+**ACubes A<sup>3</sup>R** - модуль гидроакустического одночастотного приемника с логическим выходом. 
 Устройства **A<sup>3</sup>R** могут объединятся с импульсным передатчиком **[A<sup>3</sup>T](A3T_Datasheet_ru.md)** и совместно использовать одну гидроакустическую приемопередающую антенну.
 Также устройства могут объединятся в стек до 12 шт, и каждый такой стек может объединяться с одним передатчиком. В этом случае каждый приемник и передатчик использует отдельную антенну.
 
 В качестве антенны могут применятся:
-- [R-1.d3505-1](/documentation/RU/Transducers/R_1.d3505_1_Specification_ru.md) - приемная антенна на основе пластинчатого пьезоэлемента
+- [R-1.d3505-1](/documentation/RU/Transducers/R_1.d3505_1_Specification_ru) - приемная антенна на основе пластинчатого пьезоэлемента
 - [RT-1.332820-1](https://docs.unavlab.com/documentation/RU/Transducers/RT_1_332820_1_Specification_ru.html) - малогабаритная приемопередающая антенна
 - [RT-2.332820-1](https://docs.unavlab.com/documentation/RU/Transducers/RT_2_332820_1_Specification_ru.html) - двухэлементная антенна с повышенной чувствительностью для работы с поверхности
 - [RT-1.524525-1](https://docs.unavlab.com/documentation/RU/Transducers/RT-1.524525-1_specification_ru.html) - антенна с повышенной чувствительностью
