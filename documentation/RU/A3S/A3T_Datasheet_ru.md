@@ -1,10 +1,10 @@
-[Главная](/README_RU) ❯ [Наши проекты для образования](/educational_projects_ru) ❯ **ACoubes A<sup>3</sup>T: Спецификация устройства**
+[Главная](/README_RU) ❯ [Наши проекты для образования](/educational_projects_ru) ❯ **ACubes A<sup>3</sup>T: Спецификация устройства**
 
 <div style="page-break-after: always;"></div>
 
 | ![logo](/documentation/sm_logo.png) | ![image](https://github.com/user-attachments/assets/8c524cae-93f6-450d-a30b-7fd8835d5bb5) |
 | :---: | ---: |
-| [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **ACoubes A<sup>3</sup>T** <br/> Спецификация |
+| [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **ACubes A<sup>3</sup>T** <br/> Спецификация |
 
 
 ## КЛЮЧЕВЫЕ ОСОБЕННОСТИ
