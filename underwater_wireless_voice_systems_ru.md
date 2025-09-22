@@ -5,8 +5,8 @@
 | [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) |
 | [EN](underwater_wireless_voice_systems_en.md) \| [RU](underwater_wireless_voice_systems_ru.md) |
 
-## Голосовая подводная связь (водолазная телефония)
-### RedPhone - Подводная телефония
+# Голосовая подводная связь (водолазная телефония)
+## RedPhone - Подводная телефония
 * [Спецификация устройства: RedPhone-OS](/documentation/RU/RedPhone/RedPhone_OS_Specification_ru.md)
 * [Инструкция по эксплуатации: RedPhone-OS](/documentation/RU/RedPhone/RedPhone_OS_Users_manual_ru.md)
 * [Спецификация устройства: RedPhone-DX](/documentation/RU/RedPhone/RedPhone_DX_Specification_ru.md)
@@ -19,8 +19,9 @@
 * [Комплект Phone-S: технический паспорт (шаблон)](/documentation/RU/RedPhone/Phone_S_package_tech_passport_ru.md)
 * [Медиаматериалы: видео c испытаний, видеоинструкции и т.п.](/documentation/RU/RedPhone/media.md)
 
-### Предыдущие версии
+## Предыдущие версии
 * [Спецификация устройства: RedPhone-D](/documentation/RU/RedPhone/RedPhone_Specification_ru.md)  
 * [Инструкция по эксплуатации: RedPhone-D](/documentation/RU/RedPhone/RedPhone_Users_Manual_ru.md)
 
 ## [На главную](README_RU.md)
+
