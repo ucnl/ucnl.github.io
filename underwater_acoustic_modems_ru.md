@@ -5,12 +5,12 @@
 | [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) |
 | [EN](underwater_acoustic_modems_en.md) \| [RU](underwater_acoustic_modems_ru.md) |
 
-## Гидроакустические модемы
+# Гидроакустические модемы
 
 * [Таблица сравнения модемов](modems_comparison_ru.md)
 
-### uWave
-#### гидроакустический модем
+## uWave
+### гидроакустический модем
 * [Краткое описание семейства устройств uWave](/documentation/RU/uWAVE/uWAVE_Family_ru.md)
 * [Сравнительная таблица модемов семейства uWave](/documentation/RU/uWAVE/uWAVE_Modems_comparison_ru.md)
 * [Спецификация устройства: uWave](/documentation/RU/uWAVE/uWAVE_Specification_ru.md)
@@ -40,22 +40,23 @@
 * [Технический паспорт (шаблон): uWave](/documentation/RU/uWAVE/uWave_technical_passport_ru.md)
 * [Руководство по обновлению прошивки: uWave](/documentation/RU/uWAVE/uWAVE_FW_Updating_ru.md)
 
-### uSwitch
+## uSwitch
 гидроакустический модем начального уровня
 * [uSwitch: Спецификация устройства](documentation/RU/uSwitch/uSwitch_Specification_ru.md)
 
-### RedLine
-#### гидроакустический модем
+## RedLine
+### гидроакустический модем
 * [Спецификация устройства: RedLine](/documentation/RU/RedLINE/RedLine_Specification_ru.md)
 * [Спецификация протокола сопряжения: RedLine](/documentation/RU/RedLINE/RedLINE_Protocol_Specifications_ru.md)
 * [Схема подключения: RedLine](/documentation/RU/RedLINE/RedLINE_wiring_diagram_ru.md)
 * [Демонстрационное приложение: RedLine Host (Репозиторий)](https://github.com/ucnl/RedLINE_Host)
 * [Демонстрационное приложение: RedLine Host (Скачать релиз)](https://github.com/ucnl/RedLINE_Host/releases/download/1.0/RedLINE_Host.zip)
 
-### RedGTR
-#### гидроакустический модем кодовой связи
+## RedGTR
+### гидроакустический модем кодовой связи
 * [Спецификация устройства: RedGTR](/documentation/RU/RedGTR/RedGTR_Specifications_ru.md)
 * [Спецификация протокола сопряжения: RedGTR](/documentation/RU/RedGTR/RedGTR_Protocol_Specifications_ru.md)
 * [Схема подключения: RedGTR](/documentation/redgtr_drawings_ru.png)
 
 ## [На главную](README_RU.md)
+
