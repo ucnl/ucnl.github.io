@@ -52,7 +52,7 @@ ________________
 
 ## РАСПИНОВКА И ПОДКЛЮЧЕНИЕ
 
-| ![image](https://github.com/user-attachments/assets/3dd5a976-9bb8-47c7-9afb-61cfa50476d4) |
+| ![image](https://github.com/user-attachments/assets/67e403c9-931f-49bc-a5ef-5a9b37c97076) |
 | :---: |
 | **A<sup>3</sup>T** <br/> *расположение и функции контактных площадок* |
 
