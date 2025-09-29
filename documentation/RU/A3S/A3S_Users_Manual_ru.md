@@ -168,7 +168,7 @@ A³S (или ACubes, «Акустические кубики») — это ко�
 #### Подключение антенн
 1. Подключите приёмную антенну [R-1.d3505-1](/documentation/RU/Transducers/R_1.d3505_1_Specification_ru) к модулю [A³R](A3R_Datasheet_ru.md):
 
-| ![image](https://github.com/user-attachments/assets/7cedae37-16d1-4a18-8254-a32e16ff09b4) |
+| ![image](https://github.com/user-attachments/assets/bf67aad3-81d2-4186-aa74-c13dac7334d2) |
 | :---: |
 | _Подключение приемной антенны_ |
 
