@@ -174,7 +174,7 @@ A³S (или ACubes, «Акустические кубики») — это ко�
 
 2. Подключите приёмо-передающую антенну [RT-1.332820-1](/documentation/RU/Transducers/RT_1_332820_1_Specification_ru) к модулю [A³T](A3T_Datasheet_ru.md):
 
-| ![image](https://github.com/user-attachments/assets/c3f2d99a-9efd-4d3a-8e49-2add970014aa) |
+| ![image](https://github.com/user-attachments/assets/899591f9-cf9d-46a4-bc6c-e9853faeea05) |
 | :---: |
 | _Подключение приемопередающей антенны_ |
 
