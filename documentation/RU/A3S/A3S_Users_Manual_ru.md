@@ -969,6 +969,59 @@ void loop() {
 
 Естественно, дополнительно потребуются два источника питания, кабель для прошивки и получения данных от Arduino.
 
+В ходе этого проекта нам предстоит сделать приемную и передающую части, причем, приемная будет ощутимо сложнее, а передающая очень простой. Передающая необходима для проверки и отладки приемной, поэтому начнем именно с нее.
+
+#### 1.6.3. Пингер
+
+Пожалуй, это будет самое простое устройство из тех, что мы сделаем на протяжении этого курса. Вся его задача состоит в том, чтобы раз в некоторый временной период инициировать передачу.
+Соединение платы передатчика с платой Arduino Nano сделаем согласно таблице:
+
+| Номер/Наименование контакта на XS2 | Номер/Наименование контакта на Arduino Nano |
+| :--- | :--- |
+| 1 / GND  | GND |
+| 4 / Инициация передачи импульса | 10 |
+| 20 / VCC | Vin |
+
+> ОЧЕНЬ ВАЖНО! В таблице выше указано, что выход напряжения питания с платы предатчика заводится на пин Vin платы Arduino Nano - это делается только после того, как плата будет прошита и отключена от ПК!!! В противном случае, она скорее всего выйдет из строя!
+
+К плате передатчика, также, не забываем подключить приемопередающую антенну. 
+
+Простейший скетч даже не будем выносить в отдельную главу, а приведем прямо тут:
+
+```
+
+#define A3T_TX_ENGAGE_PIN      (10)
+#define LED_PIN                (13)
+#define PING_HALF_PERIOD_MS    (2000L) 
+#define TX_STROBE_DURATION_MS  (10L)
+
+void setup() {
+
+  pinMode(LED_PIN, OUTPUT);
+  digitalWrite(LED_PIN, LOW);
+
+  pinMode(A3T_TX_ENGAGE_PIN, OUTPUT);
+  digitalWrite(A3T_TX_ENGAGE_PIN, HIGH);
+}
+
+void loop() {
+
+    delay(PING_HALF_PERIOD_MS);
+    digitalWrite(A3T_TX_ENGAGE_PIN, LOW);
+    digitalWrite(LED_PIN, HIGH);
+    delay(TX_STROBE_DURATION_MS);
+    digitalWrite(A3T_TX_ENGAGE_PIN, HIGH);
+    delay(PING_HALF_PERIOD_MS);    
+    digitalWrite(LED_PIN, LOW);    
+
+}
+
+```
+
+Его единственная задача состоит в том, чтобы через заданный промежуток времени притягивать ножку, управляющую передатчиком на 10 миллисекунд к земле, инициируя тем самым передачу сигнала.
+
+
+
 #### 1.6.3. Приемник
 
 Четыре платы приемника мы оъединим в стопку - сделаем то, для чего они и были предназначены. Но перед этим нужно подключить антенны и задать адреса, чтобы сигналы от разных приемников были разнесены по шине.
@@ -995,10 +1048,151 @@ void loop() {
 | :---: |
 | _Стопка из четырех приемников подключена к плате Arduino Nano_ |
 
+##### 1.6.3.1. Скетч для обработки антенной решетки
 
-#### 1.6.3. Пингер
+По задумке, скетч должен передавать на ПК четыре времени прихода сигнала на каждый из приемников. Важно отслеживать разные ложные срабатывания и основным критерием того, что мы принимаем наш сигнал будет тот факт, что все времена прихода находятся в некотором диапазоне, определяемом размерами нашей антенной решетки. 
 
-Сделаем простейший пингер.
+```
+
+#include "Limits.h"
+
+#define A3R1_STATE_PIN (2)
+#define A3R2_STATE_PIN (3)
+#define A3R3_STATE_PIN (4)
+#define A3R4_STATE_PIN (5)
+
+#define LED_PIN (13)
+
+const uint8_t inputPinsMasks[] = { B00100000,
+                                   B00010000,
+                                   B00001000,
+                                   B00000100 };
+
+
+const uint8_t inputPins[] = { A3R1_STATE_PIN, A3R2_STATE_PIN, A3R3_STATE_PIN, A3R4_STATE_PIN };
+const int numPins = 4;
+
+bool lastPinState[numPins];
+bool pinFallen[numPins];  
+unsigned long fallTime[numPins];
+
+const unsigned long DETECTION_WINDOW = 2000;
+
+bool is_any_pin = false;
+unsigned long pin_minTime = 0;
+unsigned long pin_maxTime = 0;
+uint8_t fallen_pins = 0;
+
+
+void checkPinTimes() {
+
+  is_any_pin = false;
+  fallen_pins = 0;
+
+  for (int i = 0; i < numPins; i++) {
+    if (pinFallen[i]) {
+      fallen_pins++;
+
+      if (!is_any_pin) {
+        is_any_pin = true;
+        pin_minTime = fallTime[i];
+        pin_maxTime = pin_minTime;
+      }
+    }
+  }
+
+  if (is_any_pin) {
+
+    for (int i = 0; i < numPins; i++) {
+
+      if (pinFallen[i]) {
+        if (fallTime[i] > pin_maxTime)
+          pin_maxTime = fallTime[i];
+        if (fallTime[i] < pin_minTime)
+          pin_minTime = fallTime[i];
+      }
+    }
+  }  
+}
+
+
+void resetAllFlags() {
+
+  for (int i = 0; i < numPins; i++) {
+    pinFallen[i] = false;
+  }
+}
+
+void setup() {
+
+  Serial.begin(9600);
+
+  for (int i = 0; i < numPins; i++) {
+    pinMode(inputPins[i], INPUT_PULLUP);
+
+    // lastPinState[i] = digitalRead(inputPins[i]);
+    lastPinState[i] = (PIND & inputPinsMasks[i]) > 0;
+    pinFallen[i] = false;
+    fallTime[i] = 0;
+  }
+}
+
+
+void loop() {
+
+  unsigned long currentTime = micros();
+
+  uint8_t cPIND = PIND;  
+  for (int i = 0; i < numPins; i++) {
+
+    bool currentState = (cPIND & inputPinsMasks[i]) > 0;
+    if (!currentState && lastPinState[i]) {
+      pinFallen[i] = true;
+      fallTime[i] = currentTime;
+    }
+
+    lastPinState[i] = currentState;
+  }
+
+  checkPinTimes();
+
+  if (is_any_pin) {
+
+    if (fallen_pins == numPins) {
+
+      if ((pin_maxTime - pin_minTime) <= DETECTION_WINDOW) {
+
+          /**/
+          for (int i = 0; i < numPins; i++) {
+            Serial.print(fallTime[i] - pin_minTime);
+            Serial.print(", ");
+          }
+          /**/
+
+          Serial.println();
+          delay(500);
+        }
+
+      resetAllFlags();
+
+    } else {
+
+      if (currentTime - pin_minTime > DETECTION_WINDOW * 100) {
+
+        resetAllFlags();
+        delay(100);
+      }
+    }
+  }
+}
+
+```
+
+Забегая вперед, отметим, что в скетче пришлось отказаться от стандартных функций `digitalRead` и перейти к прямой работе с регистрами для ускорения. Это некоторым образом делает скетч менее гибким.
+
+
+
+
 
 
 
