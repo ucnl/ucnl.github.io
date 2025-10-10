@@ -2142,9 +2142,6 @@ $$ tg \phi = cos \alpha $$
 
 
 
-<img width="500" height="321" alt="image" src="https://github.com/user-attachments/assets/7af2b9ec-dce7-4cec-bfc5-5f0202f55c1b" />
-
-
 
 
 
