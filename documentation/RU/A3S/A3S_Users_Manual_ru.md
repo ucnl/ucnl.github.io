@@ -718,11 +718,11 @@ void loop() {
 
 На этом же водоеме проводились эксперименты с обсуждаемым макетом оборудования. Маяк-ответчик располагался на заякоренном плоту из плотного вспененного материала сначала на удалении порядка 80 метров от лодочной пристани, а потом был перемещен на расстояние 156 метров. В обоих случаях расстояние фиксировалось при помощи лазерного дальномера. 
 
-| <img width="392" height="456" alt="image" src="https://github.com/user-attachments/assets/b6e0cfac-675d-47b5-9c78-6c2ca1135ffb" /> <img width="391" height="422" alt="image" src="https://github.com/user-attachments/assets/4342aed6-f203-4b7d-b750-91f8be2b23ff" /> |
+| ![image](https://github.com/user-attachments/assets/b6e0cfac-675d-47b5-9c78-6c2ca1135ffb) ![image](https://github.com/user-attachments/assets/4342aed6-f203-4b7d-b750-91f8be2b23ff) |
 | :---: |
 | _Дальность 80 м. Хорошая согласованность непосредственного измерения с акустическими_ |
 
-| <img width="393" height="499" alt="image" src="https://github.com/user-attachments/assets/7892fc1c-cb70-4ec2-b445-5d2ed1002eff" /> <img width="391" height="398" alt="image" src="https://github.com/user-attachments/assets/24f3f6ab-b904-4735-b621-0decf85a8260" /> |
+| ![image](https://github.com/user-attachments/assets/7892fc1c-cb70-4ec2-b445-5d2ed1002eff) ![image](https://github.com/user-attachments/assets/24f3f6ab-b904-4735-b621-0decf85a8260) |
 | :---: |
 | _Дальность 156 м. Хорошая согласованность непосредственного измерения с акустическими_ |
 
@@ -735,11 +735,11 @@ void loop() {
 [10-06-2025, Красноармейский затон, г. Волгоград. A³S наклонная дальность, 156 м](https://github.com/user-attachments/assets/5a3092e3-a290-4727-81cf-9193621417a8)
 
 
-| <img width="1951" height="1357" alt="image" src="https://github.com/user-attachments/assets/aac68173-1779-454e-aa46-c7b138221c94" /> |
+| ![image](https://github.com/user-attachments/assets/aac68173-1779-454e-aa46-c7b138221c94) |
 | :---: |
 | _Дальность 80 м. Фрагмент записи из положения запрашивающей системы_ |
 
-| <img width="1955" height="1355" alt="image" src="https://github.com/user-attachments/assets/706ab1b1-e68b-4366-ab5c-3b4ba7a5e06d" /> |
+| ![image](https://github.com/user-attachments/assets/706ab1b1-e68b-4366-ab5c-3b4ba7a5e06d) |
 | :---: |
 | _Дальность 156 м. Фрагмент записи из положения запрашивающей системы_ |
 
@@ -755,7 +755,7 @@ void loop() {
 
 Также примечательна дительность послезвучания, составляющая около четверти секунды:
 
-| <img width="1074" height="1348" alt="image" src="https://github.com/user-attachments/assets/3b3d379f-6ee7-4697-bacf-fdecfad4b3ed" /> |
+| ![image](https://github.com/user-attachments/assets/3b3d379f-6ee7-4697-bacf-fdecfad4b3ed) |
 | :---: |
 | _4-х миллисекундный сигнал "гуляет" по акватории еще 250 миллисекунд_ |
 
@@ -1035,7 +1035,7 @@ void loop() {
 
 Четыре платы приемника мы объединим в стопку - сделаем то, для чего они и были предназначены. Но перед этим нужно подключить антенны и задать адреса, чтобы сигналы от разных приемников были разнесены по шине.
 
-| <img width="640" height="853" alt="image" src="https://github.com/user-attachments/assets/8eaacc7e-516a-4180-8df2-056bf69282f8" /> |
+| ![image](https://github.com/user-attachments/assets/8eaacc7e-516a-4180-8df2-056bf69282f8) |
 | :---: |
 | _Задание адресов приемникам при помощи установки джамперов_ |
 
@@ -1053,7 +1053,7 @@ void loop() {
 
 У нас это получилось вот так:
 
-| <img width="640" height="853" alt="image" src="https://github.com/user-attachments/assets/bfb02dac-9c5a-4650-8cd3-424ec85962d5" /> |
+| ![image](https://github.com/user-attachments/assets/bfb02dac-9c5a-4650-8cd3-424ec85962d5) |
 | :---: |
 | _Стопка из четырех приемников подключена к плате Arduino Nano_ |
 
@@ -1204,7 +1204,7 @@ void loop() {
 
 Экспериментальная установка в нашем случае выглядит вот так: 
 
-| <img width="640" height="853" alt="image" src="https://github.com/user-attachments/assets/d5ccbea9-d34e-4dfb-8015-4ae33906072f" /> |
+| ![image](https://github.com/user-attachments/assets/d5ccbea9-d34e-4dfb-8015-4ae33906072f) |
 | :---: |
 | _Ведро не обязательно должно быть синим =)_ |
 
@@ -1423,7 +1423,7 @@ void loop() {
 
 Для наглядности нанесем эти времена на график:
 
-| <img width="628" height="387" alt="image" src="https://github.com/user-attachments/assets/7c279546-244b-4e05-82c5-ebf7ce242d84" /> |
+| ![image](https://github.com/user-attachments/assets/7c279546-244b-4e05-82c5-ebf7ce242d84) |
 | :---: |
 | _Большая часть значений не превышает 300 мкс_ |
 
@@ -1439,7 +1439,7 @@ void loop() {
 
 Если у вас есть возможность каким-либо простым способом развесить 4 приемные антенны через 1 метр - очень хорошо, вам почти ничего не придется делать, у нас же такой возможности нет и мы собрали такую конструкцию из водопроводных полипропиленовых труб:
 
-| <img width="640" height="853" alt="image" src="https://github.com/user-attachments/assets/4f83bbf1-cee1-4bb4-8bc8-9d188ff52e59" /> |
+| ![image](https://github.com/user-attachments/assets/4f83bbf1-cee1-4bb4-8bc8-9d188ff52e59) |
 | :---: |
 | _Простейшая конструкция для размещения четырех приемных антенн через метр друг от друга_ |
 
@@ -1450,13 +1450,13 @@ void loop() {
 
 Без доработок, кабелей приемных антенн хватит чтобы свесить антенны вниз примерно на 15-20 см.
 
-| <img width="853" height="639" alt="image" src="https://github.com/user-attachments/assets/e153663a-4163-43bb-9bf2-2a4f8f1ac977" /> |
+| ![image](https://github.com/user-attachments/assets/e153663a-4163-43bb-9bf2-2a4f8f1ac977) |
 | :---: |
 | _Отметки делаются при помощи изоленты_ |
 
 Разложим все на полу и прикинем, как это все выглядит в сборе и какой у нас есть запас по длине кабеля.
 
-| <img width="639" height="853" alt="image" src="https://github.com/user-attachments/assets/50a4f879-4174-4035-86a0-b380e2bf2350" /> |
+| ![image](https://github.com/user-attachments/assets/50a4f879-4174-4035-86a0-b380e2bf2350) |
 | :---: |
 | _Запаса по длине кабеля практически нет_ |
 
@@ -1468,7 +1468,7 @@ void loop() {
 
 Для начала определимся с тем, где "лево" и где "право": слева находится антенна №1 а справа - антенна №4:
 
-| <img width="640" height="853" alt="image" src="https://github.com/user-attachments/assets/ffc94e53-bc17-49a5-93b0-0b3085f66b18" /> |
+| ![image](https://github.com/user-attachments/assets/ffc94e53-bc17-49a5-93b0-0b3085f66b18) |
 | :---: |
 | _Порядок расположения антенн в решетке_ |
 
@@ -1482,7 +1482,7 @@ void loop() {
 
 Вот наша схема эксперимента:
 
-| <img width="1234" height="854" alt="image" src="https://github.com/user-attachments/assets/a4def20b-3364-4cca-940c-6eb6321206ec" /> |
+| ![image](https://github.com/user-attachments/assets/a4def20b-3364-4cca-940c-6eb6321206ec) |
 | :---: |
 | _№1 .. №4 - положения источника сигнала, R1 .. R4 - положения элементов приемной антенной решетки_ |
 
@@ -1494,7 +1494,7 @@ void loop() {
 Например, если источник строго слева, то сначала сигнал должен прийти на антенну №1, затем на №2 и так далее, а наш скетч передает времена прихода в обратном порядке, и мы ожидаем увидеть четыре подряд убывающие числа, например `1936, 1284, 724, 0, `.
 Крайне рекомендуем перед проведением эксперимента представить себе, какие примерно данные вы ожидаете получить. Это хорошая практика не только для этого конкретного эксперимента, но и для любого другого, и вообще _хорошая практика по жизни_.
 
-| <img width="640" height="853" alt="image" src="https://github.com/user-attachments/assets/19bba39b-e685-4690-939e-434d7be7e843" /> |
+| ![image](https://github.com/user-attachments/assets/19bba39b-e685-4690-939e-434d7be7e843) |
 | :---: |
 | _Держим руку на пульсе_ |
 
@@ -2082,7 +2082,7 @@ receiver_4,receiver_3,receiver_2,receiver_1<br/>
 
 Сначала рассмотрим простой вариант, когда плоский фронт волны падает на два элемента антенной решетки:
 
-| <img width="499" height="226" alt="image" src="https://github.com/user-attachments/assets/bae6a922-551a-4cc1-80db-9da77cfceff5" /> |
+| ![image](https://github.com/user-attachments/assets/bae6a922-551a-4cc1-80db-9da77cfceff5) |
 | :---: |
 | _Иллюстрация падения плоского фронта волны на два приемника_ |
 
@@ -2104,7 +2104,7 @@ $$ \frac{\Delta t * V}{\Delta X} = cos(\alpha) $$
 
 Сначала сделаем допущение, что на нашу антенну падает _плоский_ фронт волны. То есть, если смотреть сверху, то он является линией. Такое вполне можно допустить, если расстояние от источника сильно больше, чем размер нашей антенны. Конечно, в бассейне это не соблюдается, но нам все-таки надо от чего-то отталкивать, верно?
 
-| <img width="737" height="600" alt="image" src="https://github.com/user-attachments/assets/3fc62e4f-d9db-4b2b-86bb-5239f44c4b64" /> |
+| ![image](https://github.com/user-attachments/assets/3fc62e4f-d9db-4b2b-86bb-5239f44c4b64) |
 | :---: |
 | _К определению угла прихода сигнала на линейную антенную решетку_ |
 
@@ -2120,7 +2120,7 @@ $$ \frac{\Delta t * V}{\Delta X} = cos(\alpha) $$
 
 В 1929 году Эдвин Хаббл именно таким образом и сформулировал свой знаменитый закон, проведя линию по совокупности измерений.
 
-| <img width="500" height="321" alt="image" src="https://github.com/user-attachments/assets/b5b264dc-accc-4877-af43-346200343728" /> |
+| ![image](https://github.com/user-attachments/assets/b5b264dc-accc-4877-af43-346200343728) |
 | :---: |
 | _График из оригинальной работы Хаббла 1929 года_ |
 
@@ -2336,19 +2336,19 @@ fprintf('Размах: %.2f°\n', max_alpha - min_alpha);
 
 Итак, для угла 180° - источник строго слева от антенной решетки:
 
-| <img width="1301" height="863" alt="image" src="https://github.com/user-attachments/assets/b6d81073-5b88-4ce3-9fda-f60392da5c36" /> |
+| ![image](https://github.com/user-attachments/assets/b6d81073-5b88-4ce3-9fda-f60392da5c36) |
 | :---: |
 | _Фактический угол 180°_ |
 
-| <img width="1287" height="862" alt="image" src="https://github.com/user-attachments/assets/7c58e653-6212-4c85-8a65-5f1beb1349bb" /> |
+| ![image](https://github.com/user-attachments/assets/7c58e653-6212-4c85-8a65-5f1beb1349bb) |
 | :---: |
 | _Фактический угол 135°_ |
 
-| <img width="1279" height="855" alt="image" src="https://github.com/user-attachments/assets/183bc4bb-ef78-4f40-b0cf-b55865812a9f" /> |
+| ![image](https://github.com/user-attachments/assets/183bc4bb-ef78-4f40-b0cf-b55865812a9f) |
 | :---: |
 | _Фактический угол 90°_ |
 
-| <img width="1276" height="858" alt="image" src="https://github.com/user-attachments/assets/be7b7f95-b4f0-4d2f-afc5-b3719bbe9006" /> |
+| ![image](https://github.com/user-attachments/assets/be7b7f95-b4f0-4d2f-afc5-b3719bbe9006) |
 | :---: |
 | _Фактический угол 45°_ |
 
@@ -2356,17 +2356,15 @@ fprintf('Размах: %.2f°\n', max_alpha - min_alpha);
 | :---: |
 | _Фактический угол 0°_ |
 
-<img width="1295" height="930" alt="image" src="https://github.com/user-attachments/assets/e65d0bfb-8300-4bc1-9c08-fd884cce6246" />
-
 Из полученной нами статистики можно заключить, что в целом макет полностью рабочий, особенно с учетом того, что малый бассейн - чрезвычайно сложная "акватория" для подобных систем.
 
 Мы видим, что в среднем СКО (среднеквадратичное отклонение) определения угла прихода составляет порядка 6°. Среднее значение по выборке соответствует фактическому углу во всех экспериментах, кроме эксперимента №2 (135°). Особенно хороший результат получился при 90° и при 45°.
 
 _Как можно улучшить эту систему?_ 
 Во-первых, обеспечить фиксированное положение антенных элементов (приемников), нарастив им кабеля и усовершенствовав раму.
-А во-вторых, было бы интересно посмотреть на результат в более щадащих условиях, например в небольшом естественном водоеме. 
+А во-вторых, было бы интересно посмотреть на результат в более щадящих условиях, например в небольшом естественном водоеме. 
 
-> Предлагаем продвинутому пользователю самому разобраться вот в каком вопросе: мы сделали допущение, что в наших экспериментах фронт мы считаем плоским. Но в действительности считать его таковым можно только в случае углов 180° и 0°, когда источник находится на оси антенной решетки. А если посмотреть на график с измирениями для угла 90°, то невооруженным глазом видно, что вместо линии лучше бы подошла дуга окружности.
+> Предлагаем продвинутому пользователю самому разобраться вот в каком вопросе: мы сделали допущение, что в наших экспериментах фронт мы считаем плоским. Но в действительности считать его таковым можно только в случае углов 180° и 0°, когда источник находится на оси антенной решетки. А если посмотреть на график с измерениями для угла 90°, то невооруженным глазом видно, что вместо линии лучше бы подошла дуга окружности.
 > Да, это скорее задача с двумя звездочками для начинающих, но успешно решив ее, можно совершенно заслуженно поставить самому себе плюсик в карму.
 
 Ну и давайте подытожим:
