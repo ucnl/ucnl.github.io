@@ -2142,13 +2142,212 @@ $$ \frac{\Delta t * V}{\Delta X} = cos(\alpha) $$
 
 Получается интересная вещь, что:
 
-$$ tg \phi = cos \alpha $$ = \frac{\Delta t * V}{\Delta X} $$
+$$ tg \phi = cos \alpha = \frac{\Delta t * V}{\Delta X} $$
 
 Отсюда мы легко можем посчитать угол $\alpha$ - угол прихода сигнала. Еще раз, вот вся последовательность измерений и вычислений:
 
 1. Определяем времена прихода на все пэлементы антенной решетки
 2. При попомщи линейной аппроксимации находим коэффициент $k$ уравнения прямой - это по определению и есть тангенс угла наклона этой прямой
 3. Угол прихода сигнала определяем как акросинус от $k$
+
+Все эти данные затруднительно представить при помощи графика в Excel или в чем-то похожем, поэтому придется прибегнуть к Matlab, точнее к его свободному аналогу - [GNU Octave](https://octave.org).
+
+Данные для обработки удобно сохранить в отдельные файлы "как есть" - то есть в формате CSV. 
+Мы сохраним их под именами `data1.csv`, `data2.csv`, `data3.csv`, `data4.csv` и `data5.csv`.
+
+Для их обработки мы подготовили следующий скрипт:
+
+```
+
+clc;
+clear all;
+close all;
+
+% Параметры обработки
+Num = 5;  % Номер набора данных (1-5)
+
+% Загрузка данных
+data_1 = csvread('data1.csv');
+data_2 = csvread('data2.csv');
+data_3 = csvread('data3.csv');
+data_4 = csvread('data4.csv');
+data_5 = csvread('data5.csv');
+
+actual_angles = [180, 135, 90, 45, 0];  % Фактические углы для каждого набора
+
+% Выбор данных для обработки
+if (Num == 1) src_data = data_1;
+elseif (Num == 2) src_data = data_2;
+elseif (Num == 3) src_data = data_3;
+elseif (Num == 4) src_data = data_4;
+elseif (Num == 5) src_data = data_5;
+endif
+
+% Физические параметры
+v = 1503.6;  % Скорость звука в воде, м/с
+t_scale = 1 / 1000000;  % Масштаб времени (мкс в секунды)
+
+% Координаты приемников антенной решетки (ULA)
+ula4_xs = [3 2 1 0];
+ula4_ys = [0 0 0 0];
+
+% Создание одного окна с двумя subplot
+figure('Position', [100, 100, 1200, 600]);  % Увеличенный размер окна
+
+%% Первый график: измерения и аппроксимация
+subplot(1, 2, 1);  % 1 строка, 2 столбца, позиция 1
+axis equal
+hold on
+grid on
+
+% Предварительные вычисления для линейной регрессии
+x_sum = sum(ula4_xs);
+x2_sum = sum(ula4_xs .^ 2);
+x_sum2 = x_sum ^ 2;
+rec_num = length(ula4_xs);
+
+% Инициализация массивов
+k = zeros(length(src_data), 1);  % Коэффициенты наклона
+b = zeros(length(src_data), 1);  % Свободные члены
+alpha = zeros(length(src_data), 1);  % Углы прихода
+
+% Обработка каждого измерения
+for n = 1:length(src_data)
+    % Преобразование временных задержек в расстояния
+    ys = src_data(n, :) .* t_scale .* v;
+
+    % Проверка данных на корректность
+    if ~all(isfinite(ys))
+        warning('Обнаружены некорректные данные в строке %d. Пропускаю.', n);
+        continue;
+    end
+
+    % Построение графиков измерений
+    if n == 1
+        plot(ula4_xs, ys, 'b.', 'DisplayName', 'Измерения V·t', 'MarkerSize', 4);
+    else
+        plot(ula4_xs, ys, 'b.', 'HandleVisibility', 'off', 'MarkerSize', 4);
+    end
+
+    % Вычисление коэффициентов прямой (метод наименьших квадратов)
+    y_sum = sum(ys);
+    xy_sum = sum(ula4_xs .* ys);
+
+    denominator = (rec_num * x2_sum - x_sum2);
+    if denominator == 0
+        warning('Вырожденная система в строке %d. Пропускаю.', n);
+        continue;
+    end
+
+    k(n) = (rec_num * xy_sum - x_sum * y_sum) / denominator;
+    b(n) = (y_sum - k(n) * x_sum) / rec_num;
+
+    % Построение линии аппроксимации
+    x_range = [0, 3];
+    y_range = k(n) * x_range + b(n);
+
+    if n == 1
+        line(x_range, y_range, 'Color', 'red', 'LineWidth', 0.5, 'DisplayName', 'Линейная аппроксимация');
+    else
+        line(x_range, y_range, 'Color', 'red', 'LineWidth', 0.5, 'HandleVisibility', 'off');
+    end
+
+    % Вычисление угла прихода через арккосинус
+    k_bound = max(min(k(n), 1), -1);  % Ограничение для области определения acos
+    alpha(n) = acos(-k_bound);
+end
+
+% Отображение позиций приемников
+plot(ula4_xs, ula4_ys, 'go', 'MarkerSize', 8, 'MarkerFaceColor', 'g', 'DisplayName', 'Элементы антенны');
+
+% Настройка первого графика
+tstr = sprintf("Линейная аппроксимация tgφ=cosα\nФактический угол: %d°, выборка: %d",...
+               actual_angles(Num), length(src_data));
+title(tstr, "fontsize", 14);
+xlabel('X, m', "fontsize", 14);
+ylabel('V·t, m', "fontsize", 14);
+
+lh = legend('show');
+set(lh, "fontsize", 12);
+
+%% Второй график: гистограмма углов
+subplot(1, 2, 2);  % 1 строка, 2 столбца, позиция 2
+
+alpha_deg = rad2deg(alpha);  % Преобразование радиан в градусы
+
+% Статистика углов
+mean_alpha = mean(alpha_deg);
+std_alpha = std(alpha_deg);
+max_alpha = max(alpha_deg);
+min_alpha = min(alpha_deg);
+
+% Построение гистограммы
+nbins = 20;
+[counts, bins] = hist(alpha_deg, nbins);
+hist(alpha_deg, nbins, 'DisplayName', 'α, °');
+colormap(summer());
+
+hold on;
+y_limits = ylim;
+
+% Линии статистик на гистограмме
+plot([mean_alpha, mean_alpha], y_limits, 'r-', 'LineWidth', 2,...
+     'DisplayName', sprintf('Среднее = %.1f°', mean_alpha));
+
+plot([mean_alpha - std_alpha, mean_alpha - std_alpha], y_limits, 'g--',...
+     'LineWidth', 1.5, 'DisplayName', sprintf('±1 СКО (%.1f°)', std_alpha));
+plot([mean_alpha + std_alpha, mean_alpha + std_alpha], y_limits, 'g--',...
+     'LineWidth', 1.5, 'HandleVisibility', 'off');
+
+% Настройка второго графика
+llh = legend('show');
+set(llh, "fontsize", 12);
+
+tstr = sprintf("Определение угла прихода\nФактический угол: %d°, выборка: %d",...
+               actual_angles(Num), length(src_data));
+title(tstr, "fontsize", 14);
+xlabel('Угол α, °', "fontsize", 14);
+ylabel('Частота', "fontsize", 14);
+
+% Вывод статистики в консоль
+fprintf('\n=== СТАТИСТИКА УГЛОВ ===\n');
+fprintf('Среднее: %.2f°\n', mean_alpha);
+fprintf('СКО: %.2f°\n', std_alpha);
+fprintf('Минимум: %.2f°\n', min_alpha);
+fprintf('Максимум: %.2f°\n', max_alpha);
+fprintf('Размах: %.2f°\n', max_alpha - min_alpha);
+
+```
+
+Напомним пару моментов:
+- углы мы отсчитываем против часовой стрелки от горизонтали.
+- у нас есть 5 наборов данных, полученных для углов 180, 135, 90, 45 и 0°.
+
+Теперь давайте посмотрим на результаты.
+
+Для каждого взаимного расположения антенной решетки и источника мы получим два графика, на одном будем отображать измеренные времена прихода и линию, аппроксимирующую эти ихмерения, а на втором гистограмму распределения вычисленного угла прихрда. 
+
+Итак, для угла 180° - источник строго слева от антенной решетки:
+
+| <img width="2055" height="1408" alt="image" src="https://github.com/user-attachments/assets/d3adde53-833b-458d-af5c-c3f29c6b08e5" /> |
+| :---: |
+| _Фактический угол 180°_ |
+
+| <img width="2054" height="1406" alt="image" src="https://github.com/user-attachments/assets/6fbd5463-e53a-4bec-a6ed-58496de87ca6" /> |
+| :---: |
+| _Фактический угол 135°_ |
+
+| <img width="2062" height="1408" alt="image" src="https://github.com/user-attachments/assets/339a932d-22af-4749-9975-37c5de5bc596" /> |
+| :---: |
+| _Фактический угол 90°_ |
+
+| <img width="2062" height="1406" alt="image" src="https://github.com/user-attachments/assets/ee47b5bf-f791-4324-876b-e1b5f7027dc2" /> |
+| :---: |
+| _Фактический угол 45°_ |
+
+| <img width="2076" height="1403" alt="image" src="https://github.com/user-attachments/assets/b6f10286-ba22-4470-8ebf-e3b7b956d090" /> |
+| :---: |
+| _Фактический угол 0°_ |
 
 
 
