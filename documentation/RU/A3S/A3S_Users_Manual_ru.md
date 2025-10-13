@@ -929,7 +929,7 @@ void loop() {
 
 У нас же получился такой результат на воздухе, при расстоянии порядка 70 см между антеннами:
 
-| <img src="https://github.com/user-attachments/assets/90311d52-16f3-44df-a0d1-0cfce6aef984" width="480"/> |
+| <img src="https://github.com/user-attachments/assets/90311d52-16f3-44df-a0d1-0cfce6aef984" width="480" /> |
 | :---: |
 | _Жрунал обмена между двумя модемами_ |
 
