@@ -2337,15 +2337,15 @@ fprintf('Размах: %.2f°\n', max_alpha - min_alpha);
 | :---: |
 | _Фактический угол 135°_ |
 
-| <img width="2062" height="1408" alt="image" src="https://github.com/user-attachments/assets/339a932d-22af-4749-9975-37c5de5bc596" /> |
+| <img width="1279" height="855" alt="image" src="https://github.com/user-attachments/assets/183bc4bb-ef78-4f40-b0cf-b55865812a9f" /> |
 | :---: |
 | _Фактический угол 90°_ |
 
-| <img width="2062" height="1406" alt="image" src="https://github.com/user-attachments/assets/ee47b5bf-f791-4324-876b-e1b5f7027dc2" /> |
+| <img width="1276" height="858" alt="image" src="https://github.com/user-attachments/assets/be7b7f95-b4f0-4d2f-afc5-b3719bbe9006" /> |
 | :---: |
 | _Фактический угол 45°_ |
 
-| <img width="2076" height="1403" alt="image" src="https://github.com/user-attachments/assets/b6f10286-ba22-4470-8ebf-e3b7b956d090" /> |
+| <img width="1295" height="930" alt="image" src="https://github.com/user-attachments/assets/e65d0bfb-8300-4bc1-9c08-fd884cce6246" /> |
 | :---: |
 | _Фактический угол 0°_ |
 
