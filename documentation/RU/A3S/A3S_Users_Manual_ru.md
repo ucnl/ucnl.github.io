@@ -2329,11 +2329,11 @@ fprintf('Размах: %.2f°\n', max_alpha - min_alpha);
 
 Итак, для угла 180° - источник строго слева от антенной решетки:
 
-| <img width="2055" height="1408" alt="image" src="https://github.com/user-attachments/assets/d3adde53-833b-458d-af5c-c3f29c6b08e5" /> |
+| <img width="1301" height="863" alt="image" src="https://github.com/user-attachments/assets/b6d81073-5b88-4ce3-9fda-f60392da5c36" /> |
 | :---: |
 | _Фактический угол 180°_ |
 
-| <img width="2054" height="1406" alt="image" src="https://github.com/user-attachments/assets/6fbd5463-e53a-4bec-a6ed-58496de87ca6" /> |
+| <img width="1287" height="862" alt="image" src="https://github.com/user-attachments/assets/7c58e653-6212-4c85-8a65-5f1beb1349bb" /> |
 | :---: |
 | _Фактический угол 135°_ |
 
