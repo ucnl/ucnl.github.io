@@ -2352,10 +2352,11 @@ fprintf('Размах: %.2f°\n', max_alpha - min_alpha);
 | :---: |
 | _Фактический угол 45°_ |
 
-| <img width="1295" height="930" alt="image" src="https://github.com/user-attachments/assets/e65d0bfb-8300-4bc1-9c08-fd884cce6246" /> |
+| ![image](https://github.com/user-attachments/assets/e65d0bfb-8300-4bc1-9c08-fd884cce6246) |
 | :---: |
 | _Фактический угол 0°_ |
 
+<img width="1295" height="930" alt="image" src="https://github.com/user-attachments/assets/e65d0bfb-8300-4bc1-9c08-fd884cce6246" />
 
 Из полученной нами статистики можно заключить, что в целом макет полностью рабочий, особенно с учетом того, что малый бассейн - чрезвычайно сложная "акватория" для подобных систем.
 
