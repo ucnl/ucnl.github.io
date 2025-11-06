@@ -109,8 +109,6 @@ The appearance of the tab controls is shown in the figure below:
 - **Tile size, px** - sets the size of map tiles in pixels. This parameter depends on the tile server.
 - **Tile servers** - list of tile server addresses for downloading map tiles.
 - **Enable tile download** - when checked, the application will try to download the necessary tiles from the specified servers.
-- **RWLT Mode** - This parameter determines the operating mode of the system [RWLT](RWLT_DataBrief_en.md): working with a pinger or with diving telephone stations [RedPhone-DX](https://docs.unavlab.com/documentation/EN/RedPhone/RedPhone_EN_Specification_ru.html). It is not recommended to change this parameter without consulting the manufacturer.
-- **RWLT Pinger depth rating** - Determines the maximum depth for which the pinger is designed. It is not recommended to change this parameter without consulting the manufacturer.
   
 ### 2.2. Main application window
 
