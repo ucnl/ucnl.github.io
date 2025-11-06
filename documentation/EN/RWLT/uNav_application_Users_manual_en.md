@@ -71,7 +71,7 @@ The appearance of the tab controls is shown in the figure below:
 
 | |
 | :---: |
-| ![image](https://github.com/ucnl/ucnl.github.io/assets/24439946/5592ffc3-a1c3-4c38-b518-328b385bff52) |
+| ![image](https://github.com/user-attachments/assets/f7f3f344-ae2d-4b7c-9520-1e7b3510fe60) |
 | **🧪PHYSICS** tab of the settings editor |
 
 - **Salinity, PSU** - field for entering water salinity. Salinity is required to accurately calculate the speed of sound, as well as to recalculate the pressure transmitted by the pinger to depth. When **Auto** is checked, the application will try to find salinity from the geographic location database. The auto salinity detection function is recommended to be used only for seas, oceans and large bodies of water. Do not use this function when working in small inland bodies of water such as rivers, lakes, ponds, etc. Salinity can also be found manually in the database by clicking on the appropriate link **🔎**.
@@ -90,7 +90,7 @@ The figure below shows the tab view:
 
 | |
 | :---: |
-| ![image](https://github.com/ucnl/ucnl.github.io/assets/24439946/9027d4e3-0dd5-4c7a-9d45-5e3d6f2aa112) |
+| ![image](https://github.com/user-attachments/assets/07f5ed71-8b2c-41c8-a671-22d93d249325) |
 | **❗CONNECTION** tab of the settings editor |
 
 - **Input port baudrate** - connection speed to the device [uNav](RWLT_RF_Dongle_Specification_en.md).
@@ -102,7 +102,7 @@ The appearance of the tab controls is shown in the figure below:
 
 | |
 | :---: |
-| ![image](https://github.com/ucnl/ucnl.github.io/assets/24439946/a900432f-c9c3-4cee-b986-d7594e93f763) |
+| ![image](https://github.com/user-attachments/assets/fe2dcc3a-aa2b-47e2-a1fd-4614920745fc) |
 | **🛸 EXTRA** tab of the settings editor |
 
 - **Number if track points to show** - This input field specifies the maximum number of track points to display.
