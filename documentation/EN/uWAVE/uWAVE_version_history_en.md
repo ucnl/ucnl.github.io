@@ -12,7 +12,7 @@
 
 ## 0. Changes and versions
 
-| Actual FW version | **uWave [JULY] 1.33** from 12-JUN-2023 |
+| Actual FW version | **uWave [JULY] 1.34** from 12-JUN-2023 |
 | :--- | :--- |
 | | |
   
