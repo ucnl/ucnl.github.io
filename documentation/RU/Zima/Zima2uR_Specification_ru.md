@@ -1,10 +1,10 @@
-[Главная](/README_RU) ❯ [Гидроакустические навигационные и трекинговые системы](/navigation_and_tracking_systems_ru) ❯ **Zima2-Ru - микро маяк-ответчик: Спецификация устройства**
+[Главная](/README_RU) ❯ [Гидроакустические навигационные и трекинговые системы](/navigation_and_tracking_systems_ru) ❯ **Zima2-uR - микро маяк-ответчик: Спецификация устройства**
 
 <div style="page-break-after: always;"></div>
 
 | ![logo](/documentation/sm_logo.png) | <img width="229" height="399" alt="image" src="https://github.com/user-attachments/assets/b64ae5ab-bec0-4ade-921c-d9bd39c95ed3" /> |
 | :---: | ---: |
-| [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **Zima2-Ru** - микро маяк-ответчик навигационной системы **Zima2 USBL** <br/> спецификация устройства |
+| [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **Zima2-uR** - микро маяк-ответчик навигационной системы **Zima2 USBL** <br/> спецификация устройства |
 
 ## КЛЮЧЕВЫЕ ОСОБЕННОСТИ
 
@@ -18,7 +18,7 @@
 
 ## ОПИСАНИЕ
 
-**Zima2-Ru** - миниатюрная версия маяка-ответчика ультракороткобазисной навигационной системы [Zima2 USBL](Zima2_DataBrief_ru.md).  
+**Zima2-uR** - миниатюрная версия маяка-ответчика ультракороткобазисной навигационной системы [Zima2 USBL](Zima2_DataBrief_ru.md).  
 
 Устройство предназначено для размещения на самых малых подводных объектах с целью определения их местоположения в реальном времени при помощи пеленгационной антенны [Zima2-B](Zima2B_Specification_ru.md). 
 
