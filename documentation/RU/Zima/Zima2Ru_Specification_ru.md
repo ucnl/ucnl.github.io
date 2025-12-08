@@ -2,7 +2,7 @@
 
 <div style="page-break-after: always;"></div>
 
-| ![logo](/documentation/sm_logo.png) | <img width="458" height="797" alt="image" src="https://github.com/user-attachments/assets/b64ae5ab-bec0-4ade-921c-d9bd39c95ed3" /> |
+| ![logo](/documentation/sm_logo.png) | <img width="229" height="399" alt="image" src="https://github.com/user-attachments/assets/b64ae5ab-bec0-4ade-921c-d9bd39c95ed3" /> |
 | :---: | ---: |
 | [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **Zima2-Ru** - микро маяк-ответчик навигационной системы **Zima2 USBL** <br/> спецификация устройства |
 
