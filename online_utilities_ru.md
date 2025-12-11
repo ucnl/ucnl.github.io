@@ -21,6 +21,7 @@
 ## Online утилиты для протокола NMEA0183
 * [NMEA0183 Онлайн калькулятор контрольной суммы](/online_utils/nmea0183_checksum_calculator.html)
 * [NMEA0183 Онлайн парсер](/online_utils/nmea0183_parser.html)
+* [NMEA0183 Онлайн демо для алгоритма на С](ucnl_nmea_embedded_js2.html)
 
 ## Прочее
 * [Unicode holidays: Список праздников с символами юникода](/online_utils/unicode_holidays.md)
@@ -30,4 +31,5 @@
 -->
 
 ## [Назад](educational_projects_ru.md)
+
 
