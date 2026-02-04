@@ -52,7 +52,12 @@
 
 ## 1. Введение
 
-Приложение предназначено для работы с системами [Zima2](/documentation/RU/Zima/Zima2_DataBrief_ru.md): конфигурирование пеленгационных антенн [Zima2B](/documentation/RU/Zima/Zima2B_Specification_ru.md), [Zima2B-35](/documentation/RU/Zima/Zima2B35_Specification_ru.md), [Zima2BK](/documentation/RU/Zima/Zima2BK_Specification_ru.md), обработки поступающей от них информации и передачи результатов по последовательному соединению и/или по UDP-соединению.
+Приложение предназначено для работы с системами [Zima2](/documentation/RU/Zima/Zima2_DataBrief_ru.md), в частности:
+- для конфигурирования
+  - пеленгационных антенн [Zima2B](/documentation/RU/Zima/Zima2B_Specification_ru.md), [Zima2B-35](/documentation/RU/Zima/Zima2B35_Specification_ru.md), [Zima2BK](/documentation/RU/Zima/Zima2BK_Specification_ru.md),
+  - LBL-трансиверов [Zima2L](), [Zima2L-35](), [Zima2LK](), [Zima2uL](),
+  - Маяков-ответчиков [Zima2R](), [Zima2R-35], [Zima2RK](), [Zima2uR](),
+- обработки поступающей от них информации и передачи результатов по последовательному соединению и/или по UDP-соединению.
 
 Основные настройки приложения задаются при помощи командной строки, управление может осуществлятся как при помощи ввода команд с консоли, так с удаленного терминала - по протоколу UDP.
 
