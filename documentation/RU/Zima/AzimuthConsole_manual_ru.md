@@ -106,15 +106,15 @@
   - [Zima2B-35](/documentation/RU/Zima/Zima2B35_Specification_ru.md)
   - [Zima2BK](/documentation/RU/Zima/Zima2BK_Specification_ru.md)
 - Маяки-ответчики
-  - *Планируется* [Zima2R]()
-  - *Планируется* [Zima2R-35]()
-  - *Планируется* [Zima2RK]() 
-  - *Планируется* [Zima2uR]()
+  - [Zima2R](/documentation/RU/Zima/Zima2R_Specification_ru.md)
+  - [Zima2R-35](/documentation/RU/Zima/Zima2R35_Specification_ru.md)
+  - [Zima2RK](/documentation/RU/Zima/Zima2RK_Specification_ru.md) 
+  - [Zima2uR](/documentation/RU/Zima/Zima2uR_Specification_ru.md)
 - LBL-трансиверы
   - [Zima2L]()
-  - *Планируется* [Zima2L-35]()
-  - *Планируется* [Zima2LK]()
-  - *Планируется* [Zima2uL]()
+  - [Zima2L-35]()
+  - [Zima2LK]()
+  - [Zima2uL]()
 
 
 ## 2. Команды управления
