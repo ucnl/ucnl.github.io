@@ -4,9 +4,9 @@
 
 | ![logo](/documentation/sm_logo.png) |  Version 1 <br/> 20.02.2022 |
 | :---: | ---: |
-| [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | PMVR.348290.001 LiFePO4 battery pack <br/> as part of Bat&Link Box <br/> Material safety datasheet (MSDS) |
+| [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | PMVR.348290.001 LiFePO4 40 W·h battery pack <br/> as part of Bat&Link Box <br/> Material safety datasheet (MSDS) |
 
-## PMVR.348290.001 LiFePO4 battery pack <br/> as part of Bat&Link Box
+## PMVR.348290.001 LiFePO4 40 W·h battery pack <br/> as part of Bat&Link Box
 ### Material safety datasheet (MSDS)
 
 ## 1. IDENTIFICATION OF THE PRODUCT AND OF THE COMPANY OR THE SUPPLIER
