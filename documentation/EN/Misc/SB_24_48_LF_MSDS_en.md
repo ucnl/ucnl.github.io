@@ -340,6 +340,14 @@ None of the chemical safety assessment was not carried out for this substance.
 **List of relevant R-phrases (full text of the Code and, as mentioned in chapter 2 and 3)**
 absent  
 
+## Cell Configuration
+
+* **Chemistry:** LiFePO₄
+* **Form Factor:** 18650
+* **Number of Cells:** 8
+* **Weight per Cell:** 42 g
+* **Total Cell Weight:** 336 g
+
 ## Renunciation
 The information contained in this material safety data sheet corresponds to the level of knowledge at the moment and the current legislation. Material Safety Data Sheet contains reference data for health security, health and the environment during use of the product; it is in any case does not contain any guarantees concerning technical characteristics or fitness for a particular use conditions.
 
