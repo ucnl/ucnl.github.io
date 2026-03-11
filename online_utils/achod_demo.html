@@ -1,0 +1,1361 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACHOD (Adaptive Concurring Hypotheses Outlier Detector) - Демо</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #0a4c6e 0%, #1a6d9e 100%);
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.98);
+            border-radius: 20px;
+            padding: 25px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+        
+        h1 {
+            text-align: center;
+            color: #0a4c6e;
+            margin: 0 0 10px 0;
+            font-size: 2.5em;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+        
+        h1 span {
+            background: #0a4c6e;
+            color: white;
+            font-size: 0.4em;
+            padding: 5px 15px;
+            border-radius: 20px;
+        }
+        
+        .subtitle {
+            text-align: center;
+            color: #7f8c8d;
+            margin-bottom: 25px;
+        }
+        
+        .mode-switch {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .mode-btn {
+            padding: 12px 30px;
+            border: none;
+            border-radius: 30px;
+            font-size: 1.1em;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .mode-btn.active {
+            background: #0a4c6e;
+            color: white;
+            box-shadow: 0 5px 15px rgba(10, 76, 110, 0.3);
+        }
+        
+        .mode-btn:not(.active) {
+            background: #ecf0f1;
+            color: #7f8c8d;
+        }
+        
+        .mode-btn:hover {
+            transform: translateY(-2px);
+        }
+        
+        .main-panel {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .canvas-container {
+            flex: 2;
+            min-width: 600px;
+            background: #e6f3ff;
+            border-radius: 15px;
+            padding: 15px;
+        }
+        
+        #trajectoryCanvas {
+            width: 100%;
+            height: 500px;
+            background: #fff;
+            border: 2px solid #0a4c6e;
+            border-radius: 12px;
+            cursor: crosshair;
+            display: block;
+            box-shadow: inset 0 0 20px rgba(0,0,0,0.03);
+        }
+        
+        .canvas-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        
+        .hint {
+            background: #d4e9ff;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            color: #0a4c6e;
+        }
+        
+        .controls {
+            flex: 1;
+            min-width: 300px;
+            background: #f8f9fa;
+            border-radius: 15px;
+            padding: 20px;
+        }
+        
+        .control-group {
+            margin-bottom: 25px;
+            padding: 20px;
+            background: white;
+            border-radius: 12px;
+            border: 1px solid #e0e0e0;
+        }
+        
+        .control-group h3 {
+            margin: 0 0 20px 0;
+            color: #0a4c6e;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            border-bottom: 2px solid #0a4c6e;
+            padding-bottom: 10px;
+        }
+        
+        .slider-container {
+            margin-bottom: 20px;
+        }
+        
+        .slider-container label {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 8px;
+            color: #34495e;
+            font-weight: 500;
+        }
+        
+        .slider-container label output {
+            color: #0a4c6e;
+            font-weight: 600;
+            background: #d4e9ff;
+            padding: 2px 10px;
+            border-radius: 15px;
+        }
+        
+        .slider-container input[type="range"] {
+            width: 100%;
+            height: 6px;
+            border-radius: 3px;
+            background: #d0d0d0;
+            outline: none;
+            -webkit-appearance: none;
+        }
+        
+        .slider-container input[type="range"]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: #0a4c6e;
+            cursor: pointer;
+            border: 2px solid white;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+        
+        .button-group {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        
+        .btn {
+            padding: 12px 24px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.2s;
+            flex: 1;
+            min-width: 120px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+        
+        .btn-primary {
+            background: #0a4c6e;
+            color: white;
+        }
+        
+        .btn-primary:hover {
+            background: #06344b;
+            transform: translateY(-2px);
+        }
+        
+        .btn-success {
+            background: #2ecc71;
+            color: white;
+        }
+        
+        .btn-success:hover {
+            background: #27ae60;
+            transform: translateY(-2px);
+        }
+        
+        .btn-warning {
+            background: #e67e22;
+            color: white;
+        }
+        
+        .btn-warning:hover {
+            background: #d35400;
+            transform: translateY(-2px);
+        }
+        
+        .btn-danger {
+            background: #e74c3c;
+            color: white;
+        }
+        
+        .btn-danger:hover {
+            background: #c0392b;
+        }
+        
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            margin: 25px 0 15px 0;
+        }
+        
+        .stat-card {
+            background: white;
+            padding: 15px 10px;
+            border-radius: 12px;
+            text-align: center;
+            border: 1px solid #e0e0e0;
+        }
+        
+        .stat-card .value {
+            font-size: 2em;
+            font-weight: bold;
+            color: #0a4c6e;
+        }
+        
+        .stat-card .label {
+            font-size: 0.8em;
+            color: #7f8c8d;
+            text-transform: uppercase;
+        }
+        
+        .legend {
+            display: flex;
+            gap: 20px;
+            padding: 15px;
+            background: white;
+            border-radius: 10px;
+            border: 1px solid #e0e0e0;
+            flex-wrap: wrap;
+            margin-top: 15px;
+        }
+        
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .legend-color {
+            width: 30px;
+            height: 4px;
+            border-radius: 2px;
+        }
+        
+        .legend-color.original { background: #7f8c8d; }
+        .legend-color.filtered { background: #0a4c6e; }
+        .legend-color.median { background: #e74c3c; }
+        .legend-color.outlier { 
+            background: #e67e22;
+            height: 8px;
+            width: 8px;
+            border-radius: 50%;
+        }
+        
+        .checkbox-group {
+            display: flex;
+            gap: 20px;
+            margin: 15px 0;
+            padding: 15px;
+            background: white;
+            border-radius: 10px;
+            border: 1px solid #e0e0e0;
+            flex-wrap: wrap;
+        }
+        
+        .checkbox-group label {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            cursor: pointer;
+        }
+        
+        .info-box {
+            margin-top: 20px;
+            padding: 15px;
+            background: #d4e9ff;
+            border-radius: 10px;
+            font-size: 0.95em;
+            border-left: 4px solid #0a4c6e;
+        }
+        
+        .sim-status {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            font-weight: 600;
+        }
+        
+        .sim-status.running {
+            background: #2ecc71;
+            color: white;
+        }
+        
+        .sim-status.stopped {
+            background: #95a5a6;
+            color: white;
+        }
+        
+        .physics-note {
+            background: #fff3cd;
+            border-left: 4px solid #e67e22;
+            padding: 10px;
+            margin-top: 15px;
+            font-size: 0.9em;
+        }
+        
+        .default-note {
+            font-size: 0.8em;
+            color: #666;
+            margin-top: 5px;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>
+            ⚓ ACHOD 
+            <span>для ТНПА</span>
+        </h1>
+        <div class="subtitle">🤿 ACHOD Фильтр/Детектор выбросов</div>
+        
+        <div class="mode-switch">
+            <button id="drawModeBtn" class="mode-btn active">
+                ✏️ Режим рисования
+            </button>
+            <button id="simModeBtn" class="mode-btn">
+                🤿 Симуляция ТНПА
+            </button>
+        </div>
+        
+        <div class="main-panel">
+            <div class="canvas-container">
+                <div class="canvas-header">
+                    <span>🌊 Подводная траектория</span>
+                    <span class="hint" id="scaleHint">🐳 1 пиксель = 0.50 м</span>
+                </div>
+                <canvas id="trajectoryCanvas" width="800" height="500"></canvas>
+                
+                <div class="legend">
+                    <div class="legend-item">
+                        <div class="legend-color original"></div>
+                        <span>Сырые данные УКБ</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-color filtered"></div>
+                        <span>ACHOD фильтр</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-color median"></div>
+                        <span>Медиана</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-color outlier"></div>
+                        <span>Выбросы (аномальные измерения)</span>
+                    </div>
+                </div>
+                
+                <div class="checkbox-group">
+                    <label>
+                        <input type="checkbox" id="showOriginal" checked> Показать сырые данные
+                    </label>
+                    <label>
+                        <input type="checkbox" id="showFiltered" checked> Показать ACHOD
+                    </label>
+                    <label>
+                        <input type="checkbox" id="showMedian" checked> Показать медиану
+                    </label>
+                    <label>
+                        <input type="checkbox" id="showOutliers" checked> Показать выбросы
+                    </label>
+                </div>
+            </div>
+            
+            <div class="controls">
+                <div class="control-group">
+                    <h3>⚙️ Параметры ACHOD</h3>
+                    
+                    <div class="slider-container">
+                        <label>
+                            <span>🚤 Макс. скорость ТНПА (м/с)</span>
+                            <output id="maxSpeedVal">2.0</output>
+                        </label>
+                        <input type="range" id="maxSpeed" min="0.5" max="5.0" value="2.0" step="0.1">
+                        <div class="default-note">~7.2 км/ч - типично для ТНПА</div>
+                    </div>
+                    
+                    <div class="slider-container">
+                        <label>
+                            <span>📏 Порог расстояния (м)</span>
+                            <output id="thresholdVal">3.0</output>
+                        </label>
+                        <input type="range" id="threshold" min="1" max="30" value="3.0" step="0.5">
+                    </div>
+                    
+                    <div class="slider-container">
+                        <label>
+                            <span>💾 Размер FIFO</span>
+                            <output id="fifoSizeVal">8</output>
+                        </label>
+                        <input type="range" id="fifoSize" min="3" max="20" value="8" step="1">
+                    </div>
+                    
+                    <div class="slider-container">
+                        <label>
+                            <span>📊 Окно медианы</span>
+                            <output id="medianWindowVal">7</output>
+                        </label>
+                        <input type="range" id="medianWindow" min="3" max="15" value="7" step="2">
+                    </div>
+                </div>
+                
+                <div class="control-group">
+                    <h3>🔍 Масштаб</h3>
+                    <div class="scale-indicator" id="scaleValue">0.50 м/пиксель</div>
+                    <div class="slider-container">
+                        <label>
+                            <span>🐳 Масштаб</span>
+                            <output id="scaleVal">0.50</output>
+                        </label>
+                        <input type="range" id="scale" min="0.05" max="2.0" value="0.50" step="0.05">
+                    </div>
+                </div>
+                
+                <div id="simControls" class="control-group" style="display: none;">
+                    <h3>🤿 Параметры симуляции ТНПА</h3>
+                    
+                    <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 15px;">
+                        <span>Состояние:</span>
+                        <span id="simStatus" class="sim-status stopped">На поверхности</span>
+                    </div>
+                    
+                    <div class="slider-container">
+                        <label>
+                            <span>📡 Частота выбросов УКБ</span>
+                            <output id="outlierFreqVal">Средне</output>
+                        </label>
+                        <input type="range" id="outlierFreq" min="1" max="10" value="5" step="1">
+                        <div style="display: flex; justify-content: space-between; font-size:0.8em;">
+                            <span>Чистое дно</span>
+                            <span>Сложный рельеф</span>
+                        </div>
+                    </div>
+                    
+                    <div class="slider-container">
+                        <label>
+                            <span>💥 Амплитуда выброса (м)</span>
+                            <output id="outlierAmpVal">65</output>
+                        </label>
+                        <input type="range" id="outlierAmp" min="10" max="150" value="65" step="1">
+                    </div>
+                    
+                    <div class="slider-container">
+                        <label>
+                            <span>🔄 Скорость симуляции</span>
+                            <output id="simSpeedVal">1.0x</output>
+                        </label>
+                        <input type="range" id="simSpeed" min="0.5" max="3.0" value="1.0" step="0.1">
+                    </div>
+                    
+                    <div class="button-group">
+                        <button class="btn btn-success" id="startSimBtn">
+                            ▶️ Погружение
+                        </button>
+                        <button class="btn btn-warning" id="stopSimBtn">
+                            ⏹️ Всплытие
+                        </button>
+                        <button class="btn btn-danger" id="clearSimBtn">
+                            🗑️ Очистить
+                        </button>
+                    </div>
+                    
+                    <div class="physics-note">
+                        <strong>🔊 УКБ гидроакустика:</strong> 1 измерение в секунду. Выбросы возникают из-за отражений сигнала от элементов подводного ландшафта, судов, подводной инфрастуктуры и т.п.
+                    </div>
+                </div>
+                
+                <div class="button-group" id="drawControls">
+                    <button class="btn btn-primary" id="applyFilterBtn">
+                        🔄 Применить фильтр
+                    </button>
+                    <button class="btn btn-warning" id="clearBtn">
+                        🗑️ Очистить
+                    </button>
+                </div>
+                
+                <div class="stats">
+                    <div class="stat-card">
+                        <div class="value" id="pointCount">0</div>
+                        <div class="label">Измерений УКБ</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="value" id="rejectedCount">0</div>
+                        <div class="label">Отброшено ACHOD</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="value" id="distanceCount">0</div>
+                        <div class="label">Пройдено (м)</div>
+                    </div>
+                </div>
+                
+                <div class="info-box" id="modeHint">
+                    <strong>✏️ Режим рисования:</strong> Нарисуйте траекторию движения ТНПА
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+    <a href="https://docs.unavlab.com/online_utilities_ru.html">К странице с утилитами</a>
+    <hr> 
+    (C) <a href="https://docs.unavlab.com/README_RU.html">UC&NL, Лаборатория подводной связи и навигации</a>, 2025<br>    
+
+    <script>
+        class MPoint3DTd {
+            constructor(x, y, z, timestamp, prevPoint = null, isOutlier = false) {
+                this.x = x;
+                this.y = y;
+                this.z = z;
+                this.timestamp = timestamp;
+                this.isOutlier = isOutlier;
+                
+                if (prevPoint) {
+                    this.dist2Prev = Math.sqrt(
+                        Math.pow(x - prevPoint.x, 2) + 
+                        Math.pow(y - prevPoint.y, 2)
+                    );
+                    this.time2Prev = (timestamp - prevPoint.timestamp) / 1000;
+                } else {
+                    this.dist2Prev = NaN;
+                    this.time2Prev = NaN;
+                }
+            }
+        }
+
+        class DHTrackFilterCartesian {
+            constructor(fifoSize = 8, maxSpeedMps = 2.0, dstThreshold_m = 3.0) {
+                this.fifoSize = fifoSize;
+                this.maxSpeedMps = maxSpeedMps;
+                this.dstThreshold_m = dstThreshold_m;
+                
+                this.sides = [[], []];
+                this.pSideIdx = 0;
+                this.rejectedCount = 0;
+            }
+            
+            get sSideIdx() {
+                return this.pSideIdx === 0 ? 1 : 0;
+            }
+            
+            addPoint(listIdx, point) {
+                if (this.sides[listIdx].length >= this.fifoSize) {
+                    this.sides[listIdx].shift();
+                }
+                this.sides[listIdx].push(point);
+            }
+            
+            updateStatistics() {
+                if (this.sides[0].length === this.fifoSize && this.sides[1].length === this.fifoSize) {
+                    let meanDst = [0, 0];
+                    
+                    for (let i = 0; i < 2; i++) {
+                        for (let j = 0; j < this.fifoSize; j++) {
+                            meanDst[i] += this.sides[i][j].dist2Prev || 0;
+                        }
+                        meanDst[i] /= this.fifoSize;
+                    }
+                    
+                    let sigmas = [0, 0];
+                    for (let i = 0; i < 2; i++) {
+                        for (let j = 0; j < this.fifoSize; j++) {
+                            sigmas[i] += Math.pow((this.sides[i][j].dist2Prev || 0) - meanDst[i], 2);
+                        }
+                        sigmas[i] = Math.sqrt(sigmas[i]);
+                    }
+                    
+                    if (sigmas[this.pSideIdx] > sigmas[this.sSideIdx]) {
+                        this.pSideIdx = this.sSideIdx;
+                    }
+                }
+            }
+            
+            process(x, y, z, timestamp) {
+                if (this.sides[this.pSideIdx].length === 0) {
+                    const point = new MPoint3DTd(x, y, z, timestamp);
+                    this.addPoint(this.pSideIdx, point);
+                    return { accepted: true, point: point };
+                }
+                
+                this.updateStatistics();
+                
+                const lastPoint = this.sides[this.pSideIdx][this.sides[this.pSideIdx].length - 1];
+                const testPoint = new MPoint3DTd(x, y, z, timestamp, lastPoint);
+                
+                if ((testPoint.dist2Prev < testPoint.time2Prev * this.maxSpeedMps) ||
+                    (testPoint.dist2Prev < this.dstThreshold_m)) {
+                    this.addPoint(this.pSideIdx, testPoint);
+                    return { accepted: true, point: testPoint };
+                } else {
+                    let newPoint;
+                    if (this.sides[this.sSideIdx].length > 0) {
+                        const sLastPoint = this.sides[this.sSideIdx][this.sides[this.sSideIdx].length - 1];
+                        newPoint = new MPoint3DTd(x, y, z, timestamp, sLastPoint);
+                    } else {
+                        newPoint = new MPoint3DTd(x, y, z, timestamp);
+                    }
+                    this.addPoint(this.sSideIdx, newPoint);
+                    this.rejectedCount++;
+                    return { accepted: false, point: newPoint };
+                }
+            }
+            
+            reset() {
+                this.sides = [[], []];
+                this.pSideIdx = 0;
+                this.rejectedCount = 0;
+            }
+        }
+
+        class ACHODDemo {
+            constructor() {
+                this.canvas = document.getElementById('trajectoryCanvas');
+                this.ctx = this.canvas.getContext('2d');
+                
+                this.canvas.width = 800;
+                this.canvas.height = 500;
+                
+                this.points = [];
+                this.filteredPoints = [];
+                this.medianPoints = [];
+                this.isDrawing = false;
+                this.baseTime = Date.now();
+                this.lastPoint = null;
+                
+                // Настройки по умолчанию
+                this.filter = new DHTrackFilterCartesian(8, 2.0, 3.0);
+                
+                this.mouseX = 0;
+                this.mouseY = 0;
+                this.lastAddTime = 0;
+                
+                // Масштаб по умолчанию 0.5 м/пиксель
+                this.scale = 0.5;
+                
+                // Режимы
+                this.isSimMode = false;
+                this.simInterval = null;
+                
+                // Параметры симуляции ТНПА
+                this.bounds = {
+                    minX: 50,
+                    maxX: 750,
+                    minY: 50,
+                    maxY: 450
+                };
+                
+                // Физика ТНПА
+                this.tnpa = {
+                    position: { x: 400, y: 250 },
+                    velocity: { x: 0, y: 0 },
+                    acceleration: { x: 0, y: 0 },
+                    maxSpeed: 2.0,
+                    maxAcceleration: 0.5,
+                    heading: 0,
+                    angularSpeed: 0.1
+                };
+                
+                // Состояние УКБ
+                this.ukb = {
+                    outlierState: false,
+                    outlierCounter: 0,
+                    outlierDuration: 0,
+                    outlierOffset: { x: 0, y: 0 },
+                    noiseLevel: 0.5
+                };
+                
+                this.setupEventListeners();
+                this.setupControls();
+                this.draw();
+            }
+            
+            setupEventListeners() {
+                this.canvas.addEventListener('mousemove', (e) => {
+                    const rect = this.canvas.getBoundingClientRect();
+                    const scaleX = this.canvas.width / rect.width;
+                    const scaleY = this.canvas.height / rect.height;
+                    
+                    this.mouseX = (e.clientX - rect.left) * scaleX;
+                    this.mouseY = (e.clientY - rect.top) * scaleY;
+                    
+                    this.mouseX = Math.max(0, Math.min(this.canvas.width, this.mouseX));
+                    this.mouseY = Math.max(0, Math.min(this.canvas.height, this.mouseY));
+                    
+                    if (this.isDrawing && !this.isSimMode) {
+                        const now = Date.now();
+                        if (now - this.lastAddTime > 30) {
+                            this.addPoint(this.mouseX, this.mouseY, false);
+                            this.lastAddTime = now;
+                        }
+                    }
+                    
+                    this.draw();
+                });
+                
+                this.canvas.addEventListener('mousedown', (e) => {
+                    if (this.isSimMode) return;
+                    
+                    e.preventDefault();
+                    this.isDrawing = true;
+                    
+                    const rect = this.canvas.getBoundingClientRect();
+                    const scaleX = this.canvas.width / rect.width;
+                    const scaleY = this.canvas.height / rect.height;
+                    
+                    const x = (e.clientX - rect.left) * scaleX;
+                    const y = (e.clientY - rect.top) * scaleY;
+                    
+                    this.addPoint(x, y, false);
+                    this.lastAddTime = Date.now();
+                });
+                
+                this.canvas.addEventListener('mouseup', () => {
+                    this.isDrawing = false;
+                    this.lastPoint = null;
+                });
+                
+                this.canvas.addEventListener('mouseleave', () => {
+                    this.isDrawing = false;
+                    this.lastPoint = null;
+                    this.draw();
+                });
+                
+                this.canvas.addEventListener('contextmenu', (e) => {
+                    e.preventDefault();
+                });
+            }
+            
+            setupControls() {
+                document.getElementById('drawModeBtn').addEventListener('click', () => {
+                    this.setMode(false);
+                });
+                
+                document.getElementById('simModeBtn').addEventListener('click', () => {
+                    this.setMode(true);
+                });
+                
+                document.getElementById('maxSpeed').addEventListener('input', (e) => {
+                    const val = parseFloat(e.target.value);
+                    document.getElementById('maxSpeedVal').textContent = val.toFixed(1);
+                });
+                
+                document.getElementById('threshold').addEventListener('input', (e) => {
+                    document.getElementById('thresholdVal').textContent = parseFloat(e.target.value).toFixed(1);
+                });
+                
+                document.getElementById('fifoSize').addEventListener('input', (e) => {
+                    document.getElementById('fifoSizeVal').textContent = e.target.value;
+                });
+                
+                document.getElementById('medianWindow').addEventListener('input', (e) => {
+                    document.getElementById('medianWindowVal').textContent = e.target.value;
+                });
+                
+                document.getElementById('scale').addEventListener('input', (e) => {
+                    this.scale = parseFloat(e.target.value);
+                    document.getElementById('scaleVal').textContent = this.scale.toFixed(2);
+                    document.getElementById('scaleValue').textContent = this.scale.toFixed(2) + ' м/пиксель';
+                    document.getElementById('scaleHint').innerHTML = `🐳 1 пиксель = ${this.scale.toFixed(2)} м`;
+                    
+                    this.updateStats();
+                    this.draw();
+                });
+                
+                document.getElementById('outlierFreq').addEventListener('input', (e) => {
+                    const val = parseInt(e.target.value);
+                    const freqText = ['Очень чисто', 'Чисто', 'Средне', 'Грязно', 'Шумно'][Math.floor(val/2)];
+                    document.getElementById('outlierFreqVal').textContent = freqText;
+                });
+                
+                document.getElementById('outlierAmp').addEventListener('input', (e) => {
+                    document.getElementById('outlierAmpVal').textContent = e.target.value;
+                });
+                
+                document.getElementById('simSpeed').addEventListener('input', (e) => {
+                    document.getElementById('simSpeedVal').textContent = parseFloat(e.target.value).toFixed(1) + 'x';
+                });
+                
+                document.getElementById('startSimBtn').addEventListener('click', () => {
+                    this.startSimulation();
+                });
+                
+                document.getElementById('stopSimBtn').addEventListener('click', () => {
+                    this.stopSimulation();
+                });
+                
+                document.getElementById('clearSimBtn').addEventListener('click', () => {
+                    this.clear();
+                });
+                
+                document.getElementById('applyFilterBtn').addEventListener('click', () => {
+                    this.applyFilter();
+                });
+                
+                document.getElementById('clearBtn').addEventListener('click', () => {
+                    this.clear();
+                });
+                
+                ['showOriginal', 'showFiltered', 'showMedian', 'showOutliers'].forEach(id => {
+                    document.getElementById(id).addEventListener('change', () => {
+                        this.draw();
+                    });
+                });
+            }
+            
+            setMode(isSim) {
+                this.isSimMode = isSim;
+                
+                document.getElementById('drawModeBtn').classList.toggle('active', !isSim);
+                document.getElementById('simModeBtn').classList.toggle('active', isSim);
+                
+                document.getElementById('simControls').style.display = isSim ? 'block' : 'none';
+                document.getElementById('drawControls').style.display = isSim ? 'none' : 'flex';
+                
+                const hint = document.getElementById('modeHint');
+                if (isSim) {
+                    hint.innerHTML = '<strong>🤿 Симуляция ТНПА:</strong> Аппарат движется, УКБ дает 1 измерение/сек. Иногда - выбросы.';
+                } else {
+                    hint.innerHTML = '<strong>✏️ Режим рисования:</strong> Нарисуйте траекторию движения ТНПА';
+                }
+                
+                if (!isSim) {
+                    this.stopSimulation();
+                } else {
+                    this.resetTNPA();
+                }
+                
+                this.clear();
+            }
+            
+            resetTNPA() {
+                this.tnpa.position = { 
+                    x: (this.bounds.minX + this.bounds.maxX) / 2, 
+                    y: (this.bounds.minY + this.bounds.maxY) / 2 
+                };
+                
+                this.tnpa.velocity = { x: 0.5, y: 0.3 };
+                this.tnpa.acceleration = { x: 0, y: 0 };
+                this.tnpa.heading = Math.atan2(this.tnpa.velocity.y, this.tnpa.velocity.x);
+                
+                this.ukb.outlierState = false;
+                this.ukb.outlierCounter = 0;
+            }
+            
+            startSimulation() {
+                if (this.simInterval) {
+                    clearInterval(this.simInterval);
+                }
+                
+                this.resetTNPA();
+                
+                document.getElementById('simStatus').textContent = 'Под водой';
+                document.getElementById('simStatus').className = 'sim-status running';
+                
+                this.addTNPApoint(false);
+                
+                const simSpeed = parseFloat(document.getElementById('simSpeed').value);
+                const intervalTime = 1000 / simSpeed;
+                
+                this.simInterval = setInterval(() => {
+                    this.simulateTNPAstep();
+                }, intervalTime);
+            }
+            
+            stopSimulation() {
+                if (this.simInterval) {
+                    clearInterval(this.simInterval);
+                    this.simInterval = null;
+                }
+                
+                document.getElementById('simStatus').textContent = 'На поверхности';
+                document.getElementById('simStatus').className = 'sim-status stopped';
+            }
+            
+            simulateTNPAstep() {
+                this.updateTNPAphysics();
+                
+                const trueX = this.tnpa.position.x;
+                const trueY = this.tnpa.position.y;
+                
+                const measurement = this.simulateUKBmeasurement(trueX, trueY);
+                
+                this.addPoint(measurement.x, measurement.y, measurement.isOutlier);
+            }
+            
+            updateTNPAphysics() {
+                this.tnpa.heading += (Math.random() - 0.5) * 0.1;
+                
+                const targetSpeed = this.tnpa.maxSpeed * (0.7 + Math.random() * 0.3);
+                
+                const targetVx = Math.cos(this.tnpa.heading) * targetSpeed;
+                const targetVy = Math.sin(this.tnpa.heading) * targetSpeed;
+                
+                this.tnpa.velocity.x += (targetVx - this.tnpa.velocity.x) * 0.1;
+                this.tnpa.velocity.y += (targetVy - this.tnpa.velocity.y) * 0.1;
+                
+                this.tnpa.position.x += this.tnpa.velocity.x;
+                this.tnpa.position.y += this.tnpa.velocity.y;
+                
+                if (this.tnpa.position.x < this.bounds.minX) {
+                    this.tnpa.position.x = this.bounds.minX;
+                    this.tnpa.velocity.x *= -0.7;
+                    this.tnpa.heading = Math.atan2(this.tnpa.velocity.y, this.tnpa.velocity.x);
+                }
+                if (this.tnpa.position.x > this.bounds.maxX) {
+                    this.tnpa.position.x = this.bounds.maxX;
+                    this.tnpa.velocity.x *= -0.7;
+                    this.tnpa.heading = Math.atan2(this.tnpa.velocity.y, this.tnpa.velocity.x);
+                }
+                if (this.tnpa.position.y < this.bounds.minY) {
+                    this.tnpa.position.y = this.bounds.minY;
+                    this.tnpa.velocity.y *= -0.7;
+                    this.tnpa.heading = Math.atan2(this.tnpa.velocity.y, this.tnpa.velocity.x);
+                }
+                if (this.tnpa.position.y > this.bounds.maxY) {
+                    this.tnpa.position.y = this.bounds.maxY;
+                    this.tnpa.velocity.y *= -0.7;
+                    this.tnpa.heading = Math.atan2(this.tnpa.velocity.y, this.tnpa.velocity.x);
+                }
+            }
+            
+            simulateUKBmeasurement(trueX, trueY) {
+                const freq = parseInt(document.getElementById('outlierFreq').value);
+                const amp = parseInt(document.getElementById('outlierAmp').value);
+                
+                const baseProb = freq / 50;
+                
+                let x = trueX;
+                let y = trueY;
+                let isOutlier = false;
+                
+                if (this.ukb.outlierState) {
+                    this.ukb.outlierCounter++;
+                    
+                    x += this.ukb.outlierOffset.x;
+                    y += this.ukb.outlierOffset.y;
+                    
+                    x += (Math.random() - 0.5) * this.ukb.noiseLevel;
+                    y += (Math.random() - 0.5) * this.ukb.noiseLevel;
+                    
+                    isOutlier = true;
+                    
+                    if (this.ukb.outlierCounter >= this.ukb.outlierDuration) {
+                        this.ukb.outlierState = false;
+                    }
+                    
+                } else if (Math.random() < baseProb) {
+                    this.ukb.outlierState = true;
+                    this.ukb.outlierCounter = 0;
+                    
+                    this.ukb.outlierDuration = 1 + Math.floor(Math.random() * 3);
+                    
+                    const angle = Math.random() * 2 * Math.PI;
+                    
+                    const actualAmp = amp * (0.5 + Math.random() * 0.5) / this.scale;
+                    
+                    this.ukb.outlierOffset = {
+                        x: Math.cos(angle) * actualAmp,
+                        y: Math.sin(angle) * actualAmp
+                    };
+                    
+                    x += this.ukb.outlierOffset.x;
+                    y += this.ukb.outlierOffset.y;
+                    
+                    x += (Math.random() - 0.5) * this.ukb.noiseLevel;
+                    y += (Math.random() - 0.5) * this.ukb.noiseLevel;
+                    
+                    isOutlier = true;
+                    
+                } else {
+                    x += (Math.random() - 0.5) * this.ukb.noiseLevel;
+                    y += (Math.random() - 0.5) * this.ukb.noiseLevel;
+                }
+                
+                return { x, y, isOutlier };
+            }
+            
+            addTNPApoint(isOutlier) {
+                this.addPoint(this.tnpa.position.x, this.tnpa.position.y, isOutlier);
+            }
+            
+            addPoint(screenX, screenY, isOutlier = false) {
+                if (screenX < -100 || screenX > this.canvas.width + 100 || 
+                    screenY < -100 || screenY > this.canvas.height + 100) return;
+                
+                const worldX = screenX * this.scale;
+                const worldY = (this.canvas.height - screenY) * this.scale;
+                
+                const timeGap = this.isSimMode ? 1000 : 200;
+                const now = this.baseTime + this.points.length * timeGap;
+                const timestamp = new Date(now);
+                
+                if (this.lastPoint) {
+                    const dist = Math.sqrt(
+                        Math.pow(worldX - this.lastPoint.x, 2) + 
+                        Math.pow(worldY - this.lastPoint.y, 2)
+                    );
+                    
+                    if (!isOutlier && dist < this.scale * 2) return;
+                }
+                
+                const point = new MPoint3DTd(worldX, worldY, 0, timestamp, this.lastPoint, isOutlier);
+                this.points.push(point);
+                this.lastPoint = point;
+                
+                this.applyFilter();
+                this.updateStats();
+                this.draw();
+            }
+            
+            applyFilter() {
+                // Обновляем параметры фильтра из UI
+                this.filter.maxSpeedMps = parseFloat(document.getElementById('maxSpeed').value);
+                this.filter.dstThreshold_m = parseFloat(document.getElementById('threshold').value);
+                this.filter.fifoSize = parseInt(document.getElementById('fifoSize').value);
+                
+                // Сбрасываем и применяем фильтр заново ко всем точкам
+                this.filter.reset();
+                const newFilteredPoints = [];
+                
+                for (let i = 0; i < this.points.length; i++) {
+                    const point = this.points[i];
+                    const result = this.filter.process(point.x, point.y, point.z, point.timestamp);
+                    if (result.accepted) {
+                        newFilteredPoints.push(result.point);
+                    }
+                }
+                
+                // Обновляем filteredPoints только если они изменились
+                if (JSON.stringify(this.filteredPoints) !== JSON.stringify(newFilteredPoints)) {
+                    this.filteredPoints = newFilteredPoints;
+                }
+                
+                // Медианный фильтр - вычисляем один раз и сохраняем
+                const windowSize = parseInt(document.getElementById('medianWindow').value);
+                const newMedianPoints = this.calculateMedian(windowSize);
+                
+                // Обновляем medianPoints только если они реально изменились
+                if (JSON.stringify(this.medianPoints) !== JSON.stringify(newMedianPoints)) {
+                    this.medianPoints = newMedianPoints;
+                }
+                
+                this.draw();
+            }
+            
+            calculateMedian(windowSize) {
+                if (this.points.length < windowSize) return [];
+                
+                const result = [];
+                const half = Math.floor(windowSize / 2);
+                
+                for (let i = 0; i < this.points.length; i++) {
+                    const start = Math.max(0, i - half);
+                    const end = Math.min(this.points.length, i + half + 1);
+                    const window = this.points.slice(start, end);
+                    
+                    // Важно: создаем копии массивов для сортировки
+                    const xs = window.map(p => p.x).slice().sort((a, b) => a - b);
+                    const ys = window.map(p => p.y).slice().sort((a, b) => a - b);
+                    
+                    const midIndex = Math.floor(window.length / 2);
+                    
+                    result.push({
+                        x: xs[midIndex],
+                        y: ys[midIndex],
+                        z: 0,
+                        timestamp: this.points[i].timestamp,
+                        isOutlier: false
+                    });
+                }
+                
+                return result;
+            }
+            
+            clear() {
+                this.points = [];
+                this.filteredPoints = [];
+                this.medianPoints = [];
+                this.lastPoint = null;
+                this.filter.reset();
+                this.baseTime = Date.now();
+                
+                this.resetTNPA();
+                
+                this.updateStats();
+                this.draw();
+            }
+            
+            updateStats() {
+                document.getElementById('pointCount').textContent = this.points.length;
+                document.getElementById('rejectedCount').textContent = this.filter.rejectedCount;
+                
+                let totalDist = 0;
+                for (let i = 1; i < this.points.length; i++) {
+                    totalDist += this.points[i].dist2Prev || 0;
+                }
+                document.getElementById('distanceCount').textContent = Math.round(totalDist);
+            }
+            
+            draw() {
+                this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
+                
+                this.ctx.fillStyle = '#e6f3ff';
+                this.ctx.fillRect(0, 0, this.canvas.width, this.canvas.height);
+                
+                this.ctx.strokeStyle = '#b0d4ff';
+                this.ctx.lineWidth = 1;
+                
+                const gridSize = 50;
+                
+                for (let x = 0; x <= this.canvas.width; x += gridSize) {
+                    this.ctx.beginPath();
+                    this.ctx.moveTo(x, 0);
+                    this.ctx.lineTo(x, this.canvas.height);
+                    this.ctx.stroke();
+                    
+                    if (x % 100 === 0 && x > 0 && x < this.canvas.width) {
+                        const meters = (x * this.scale).toFixed(1);
+                        this.ctx.fillStyle = '#0a4c6e';
+                        this.ctx.font = '10px Arial';
+                        this.ctx.fillText(meters + 'м', x + 2, 15);
+                    }
+                }
+                
+                for (let y = 0; y <= this.canvas.height; y += gridSize) {
+                    this.ctx.beginPath();
+                    this.ctx.moveTo(0, y);
+                    this.ctx.lineTo(this.canvas.width, y);
+                    this.ctx.stroke();
+                    
+                    if (y % 100 === 0 && y > 0 && y < this.canvas.height) {
+                        const meters = ((this.canvas.height - y) * this.scale).toFixed(1);
+                        this.ctx.fillStyle = '#0a4c6e';
+                        this.ctx.font = '10px Arial';
+                        this.ctx.fillText(meters + 'м', 5, y - 5);
+                    }
+                }
+                
+                const toScreen = (x, y) => ({
+                    x: x / this.scale,
+                    y: this.canvas.height - (y / this.scale)
+                });
+                
+                if (document.getElementById('showOutliers').checked) {
+                    for (let point of this.points) {
+                        if (point.isOutlier) {
+                            const p = toScreen(point.x, point.y);
+                            
+                            this.ctx.fillStyle = '#e67e22';
+                            this.ctx.beginPath();
+                            this.ctx.arc(p.x, p.y, 8, 0, 2 * Math.PI);
+                            this.ctx.fill();
+                            
+                            this.ctx.strokeStyle = 'white';
+                            this.ctx.lineWidth = 2;
+                            this.ctx.stroke();
+                            
+                            this.ctx.strokeStyle = '#e67e22';
+                            this.ctx.lineWidth = 1;
+                            this.ctx.beginPath();
+                            this.ctx.arc(p.x, p.y, 12, 0, 2 * Math.PI);
+                            this.ctx.stroke();
+                        }
+                    }
+                }
+                
+                if (document.getElementById('showOriginal').checked && this.points.length > 0) {
+                    this.ctx.beginPath();
+                    this.ctx.strokeStyle = '#7f8c8d';
+                    this.ctx.lineWidth = 2;
+                    
+                    const first = toScreen(this.points[0].x, this.points[0].y);
+                    this.ctx.moveTo(first.x, first.y);
+                    
+                    for (let i = 1; i < this.points.length; i++) {
+                        const p = toScreen(this.points[i].x, this.points[i].y);
+                        this.ctx.lineTo(p.x, p.y);
+                    }
+                    this.ctx.stroke();
+                }
+                
+                if (document.getElementById('showFiltered').checked && this.filteredPoints.length > 0) {
+                    this.ctx.beginPath();
+                    this.ctx.strokeStyle = '#0a4c6e';
+                    this.ctx.lineWidth = 4;
+                    
+                    const first = toScreen(this.filteredPoints[0].x, this.filteredPoints[0].y);
+                    this.ctx.moveTo(first.x, first.y);
+                    
+                    for (let i = 1; i < this.filteredPoints.length; i++) {
+                        const p = toScreen(this.filteredPoints[i].x, this.filteredPoints[i].y);
+                        this.ctx.lineTo(p.x, p.y);
+                    }
+                    this.ctx.stroke();
+                }
+                
+                if (document.getElementById('showMedian').checked && this.medianPoints.length > 0) {
+                    this.ctx.beginPath();
+                    this.ctx.strokeStyle = '#e74c3c';
+                    this.ctx.lineWidth = 2.5;
+                    this.ctx.setLineDash([5, 3]);
+                    
+                    const first = toScreen(this.medianPoints[0].x, this.medianPoints[0].y);
+                    this.ctx.moveTo(first.x, first.y);
+                    
+                    for (let i = 1; i < this.medianPoints.length; i++) {
+                        const p = toScreen(this.medianPoints[i].x, this.medianPoints[i].y);
+                        this.ctx.lineTo(p.x, p.y);
+                    }
+                    this.ctx.stroke();
+                    this.ctx.setLineDash([]);
+                }
+                
+                if (this.points.length > 0) {
+                    const first = toScreen(this.points[0].x, this.points[0].y);
+                    this.ctx.fillStyle = '#27ae60';
+                    this.ctx.beginPath();
+                    this.ctx.arc(first.x, first.y, 8, 0, 2 * Math.PI);
+                    this.ctx.fill();
+                    this.ctx.fillStyle = 'white';
+                    this.ctx.font = 'bold 12px Arial';
+                    this.ctx.fillText('Старт', first.x + 12, first.y - 12);
+                }
+                
+                if (this.points.length > 0) {
+                    const last = toScreen(this.points[this.points.length-1].x, this.points[this.points.length-1].y);
+                    this.ctx.fillStyle = '#e67e22';
+                    this.ctx.beginPath();
+                    this.ctx.arc(last.x, last.y, 8, 0, 2 * Math.PI);
+                    this.ctx.fill();
+                    this.ctx.fillStyle = 'white';
+                    this.ctx.font = 'bold 12px Arial';
+                    this.ctx.fillText('Финиш', last.x + 12, last.y - 12);
+                }
+                
+                if (!this.isSimMode && this.mouseX >= 0 && this.mouseX <= this.canvas.width && 
+                    this.mouseY >= 0 && this.mouseY <= this.canvas.height) {
+                    
+                    this.ctx.strokeStyle = '#0a4c6e';
+                    this.ctx.lineWidth = 1;
+                    
+                    this.ctx.beginPath();
+                    this.ctx.moveTo(this.mouseX - 15, this.mouseY);
+                    this.ctx.lineTo(this.mouseX - 5, this.mouseY);
+                    this.ctx.moveTo(this.mouseX + 5, this.mouseY);
+                    this.ctx.lineTo(this.mouseX + 15, this.mouseY);
+                    this.ctx.moveTo(this.mouseX, this.mouseY - 15);
+                    this.ctx.lineTo(this.mouseX, this.mouseY - 5);
+                    this.ctx.moveTo(this.mouseX, this.mouseY + 5);
+                    this.ctx.lineTo(this.mouseX, this.mouseY + 15);
+                    this.ctx.stroke();
+                    
+                    const worldX = (this.mouseX * this.scale).toFixed(2);
+                    const worldY = ((this.canvas.height - this.mouseY) * this.scale).toFixed(2);
+                    this.ctx.fillStyle = '#0a4c6e';
+                    this.ctx.font = 'bold 12px monospace';
+                    this.ctx.fillText(`⚓ ${worldX} м, ${worldY} м`, this.mouseX + 20, this.mouseY - 15);
+                }
+                
+                if (this.isSimMode && this.tnpa.position) {
+                    this.ctx.fillStyle = '#0a4c6e';
+                    this.ctx.beginPath();
+                    this.ctx.arc(this.tnpa.position.x, this.tnpa.position.y, 12, 0, 2 * Math.PI);
+                    this.ctx.fill();
+                    
+                    this.ctx.strokeStyle = 'white';
+                    this.ctx.lineWidth = 3;
+                    this.ctx.beginPath();
+                    this.ctx.moveTo(this.tnpa.position.x, this.tnpa.position.y);
+                    this.ctx.lineTo(
+                        this.tnpa.position.x + Math.cos(this.tnpa.heading) * 20,
+                        this.tnpa.position.y + Math.sin(this.tnpa.heading) * 20
+                    );
+                    this.ctx.stroke();
+                    
+                    if (this.ukb.outlierState) {
+                        this.ctx.fillStyle = '#e67e22';
+                        this.ctx.font = 'bold 12px Arial';
+                        this.ctx.fillText('⚠️ Выброс!', this.tnpa.position.x + 15, this.tnpa.position.y - 20);
+                    }
+                    
+                    this.ctx.fillStyle = 'white';
+                    this.ctx.font = 'bold 10px Arial';
+                    this.ctx.fillText('ТНПА', this.tnpa.position.x - 15, this.tnpa.position.y - 15);
+                }
+            }
+        }
+
+        window.addEventListener('load', () => {
+            new ACHODDemo();
+        });
+    </script>
+</body>
+</html>
