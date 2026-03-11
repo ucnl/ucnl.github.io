@@ -12,6 +12,8 @@
 * [Калькулятор точки замерзания морской воды](/online_utils/seawater_freezing_point_calculator.html)
 * [Online база данных солености мирового океана](/online_utils/world_salinity_db.html)
 
+## Фильтрация
+* [ACHOD Демо - Адаптивный детектор выбросов](/online_utils/achod_demo.html)
 
 ## Гидроакустическая связь
 * [Толковый калькулятор вертикального пути звука по слоистой среде](/online_utils/proper_vsound_distance_calculator.html)
@@ -31,6 +33,7 @@
 -->
 
 ## [Назад](educational_projects_ru.md)
+
 
 
 
