@@ -22,7 +22,7 @@ Devices can also be stacked up to 12 units, and each such stack can be combined 
 The following antennas can be used:
 - [R-1.d3505-1](/documentation/EN/Transducers/R_1.d3505_1_Specification_en) - receiving antenna based on plate piezoelectric element
 - [RT-1.332820-1](https://docs.unavlab.com/documentation/EN/Transducers/RT_1_332820_1_Specification_en.html) - compact transceiving antenna
-- [RT-2.332820-1](https://docs.unavlab.com/documentation/EN/Transducers/RT_2_332820_1_Specification_en.html) - dual-element antenna with enhanced sensitivity for surface operation
+- [RT-2.332820-1](https://docs.unavlab.com/documentation/EN/Transducers/RT_2_332820_1_specification_en.html) - dual-element antenna with enhanced sensitivity for surface operation
 - [RT-1.524525-1](https://docs.unavlab.com/documentation/EN/Transducers/RT-1.524525-1_specification_en.html) - antenna with enhanced sensitivity
 
 <div style="page-break-after: always;"></div>
