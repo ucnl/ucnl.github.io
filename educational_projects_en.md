@@ -13,9 +13,9 @@
 underwater acoustic modem
 * [uSwitch: Device specifications](documentation/EN/uSwitch/uSwitch_Specification_en.md)
 
-### UNDER CONSTRUCTION: A<sup>3</sup>S - "Acoustic coubes"
+### A<sup>3</sup>S - "Acoustic coubes"
 A set of basic elements for prototyping hydroacoustic communication and navigation systems
-* [A<sup>3</sup>S ACoubes: User's guide](/documentation/EN/A3S/A3S_Users_Manual_en)
+* UNDER CONSTRUCTION [A<sup>3</sup>S ACoubes: User's guide](/documentation/EN/A3S/A3S_Users_Manual_en)
 * [A<sup>3</sup>T - Pulse single frequency acoustic Transmitter: Device specification](/documentation/EN/A3S/A3T_Datasheet_en)
 * [A<sup>3</sup>R - Signle frequency acoustic receiver](/documentation/EN/A3S/A3R_Datasheet_en)
 
