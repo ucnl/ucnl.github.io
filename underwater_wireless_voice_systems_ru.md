@@ -11,6 +11,7 @@
 * [Инструкция по эксплуатации: RedPhone-OS](/documentation/RU/RedPhone/RedPhone_OS_Users_manual_ru.md)
 * [Спецификация устройства: RedPhone-DX](/documentation/RU/RedPhone/RedPhone_DX_Specification_ru.md)
 * [Инструкция по эксплуатации: RedPhone-DX](/documentation/RU/RedPhone/RedPhone_DX_Users_Manual_ru.md)
+* [Протокол информационного сопряжения: RedPhone-DX](/documentation/RU/RedPhone/RedPhone-DX_protocol_specification_ru.md)
 * [Приложение для конфигурирования устройства RedPhone-DX (Репозиторий)](https://github.com/ucnl/RedPhoneDXConfig)
 * [Приложение для конфигурирования устройства RedPhone-DX (Скачать релиз)](https://github.com/ucnl/RedPhoneDXConfig/releases/download/1.0/RedPhoneDXConfig.zip)
 * [Спецификация устройства: RedPhone RF Dongle](/documentation/RU/RedPhone/RedPhone_RF_Dongle_Specification_ru.md)
