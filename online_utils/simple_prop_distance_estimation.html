@@ -19,7 +19,7 @@
 
 /**
  * Расчет коэффициента поглощения звука в морской воде
- * Модель Francois & Garrison (1982)
+ * Модель Francois & Garrison (1982) - ИСПРАВЛЕННАЯ ВЕРСИЯ
  * 
  * @param f - частота (кГц)
  * @param T - температура (°C)
@@ -34,85 +34,46 @@ function calculateAbsorptionCoefficient(f, T, S, h, pH) {
         console.warn("Выход за пределы валидности модели Francois & Garrison");
     }
     
-    // Преобразование глубины в километры для поправочных коэффициентов
-    const depthKm = h / 1000;
+    // Абсолютная температура (Кельвин)
+    const Tk = T + 273.15;
     
-    // === Компонент 1: Бор (B(OH)3) ===
-    const A1 = 0.106 * Math.exp((pH - 8) / 0.56);
-    const f1 = 0.78 * Math.sqrt(S / 35) * Math.exp(T / 26);
-    const P1 = 1 - 0.005 * depthKm;
+    // Скорость звука (м/с) - формула из Francois & Garrison
+    const c = 1412 + 3.21 * T + 1.19 * S + 0.0167 * h;
     
-    const term1 = (A1 * P1 * f1 * f * f) / (f1 * f1 + f * f);
+    // Частота в кГц
+    const f_kHz = f;
+    const f2 = f_kHz * f_kHz;
     
-    // === Компонент 2: Сульфат магния (MgSO4) ===
-    const A2 = 0.52 * (1 + T / 43) * (S / 35);
-    const f2 = 42 * Math.exp(T / 17);
-    const P2 = 1 - 0.002 * depthKm;
+    // Поправка на глубину (давление)
+    const D = h / 1000; // глубина в км
     
-    const term2 = (A2 * P2 * f2 * f * f) / (f2 * f2 + f * f);
+    // === 1. Вклад бора (B(OH)3) ===
+    const A1 = (8.86 / c) * Math.pow(10, 0.78 * pH - 5.0);
+    const P1 = 1;
+    const f1 = 2.8 * Math.sqrt(S / 35) * Math.pow(10, 4.0 - 1245 / Tk);
+    const term1 = (A1 * P1 * f1 * f2) / (f2 + f1 * f1);
     
-    // === Компонент 3: Чистая вода (вязкость) ===
-    const A3 = 0.0003 * Math.exp(-T / 22);
-    const P3 = 1 - 0.003 * depthKm;
+    // === 2. Вклад сульфата магния (MgSO4) ===
+    // Исправленная формула для A2
+    const A2 = 21.44 * (S / 35) * (1 + 0.025 * T) / c;
+    const P2 = 1 - 1.37e-4 * h + 6.2e-9 * h * h;
+    const f2_relax = (8.17 * Math.pow(10, 8 - 1990 / Tk)) / (1 + 0.0018 * (S - 35));
+    const term2 = (A2 * P2 * f2_relax * f2) / (f2 + f2_relax * f2_relax);
     
-    const term3 = A3 * P3 * f * f;
+    // === 3. Вклад чистой воды (вязкость) ===
+    let A3;
+    if (T <= 20) {
+        A3 = 4.937e-4 - 2.59e-5 * T + 9.11e-7 * T * T - 1.5e-8 * T * T * T;
+    } else {
+        A3 = 3.964e-4 - 1.146e-5 * T + 1.45e-7 * T * T - 6.5e-10 * T * T * T;
+    }
+    const P3 = 1 - 3.83e-5 * h + 4.9e-10 * h * h;
+    const term3 = A3 * P3 * f2;
     
     // Суммарный коэффициент поглощения (дБ/км)
     const alpha = term1 + term2 + term3;
     
     return alpha;
-}
-   
-function Alpha_e_FrancoisGarrison_calc(f, t, s, h, pH) {
-
-    // For f = 1..500 kHz:
-    // -2 < T < 22 °C
-    // 30 < S < 35 PSU
-    // 0 < D < 3.5 km
-
-    // For f > 500 kHz:
-
-    // 0 < T < 30 °C
-    // 0 < S < 40 PSU
-    // 0 < D < 10 km
-
-    // Total absorption = Boric Acid Contrib. + Magnesium Sulphate Contrib. + Pure Water Contrib.
-
-    // Measured ambient temp
-    t_kel = t + 273.15;
-    fsq = f * f;
-
-    // Calculate speed of sound (according to Francois & Garrison, JASA 72 (6) p1886)
-    c = 1412 + 3.21 * t + 1.19 * s + 0.0167 * h;
-
-    // Boric acid contribution
-    A1 = (8.86 / c) * Math.pow(10, 0.78 * pH - 5.0);
-    P1 = 1;
-    f1 = 2.8 * Math.sqrt(s / 35) * Math.pow(10, 4.0 - 1245 / t_kel);
-    Boric = (A1 * P1 * f1 * fsq) / (fsq + f1 * f1);
-
-    // MgSO4 contribution
-    A2 = 21.44 * (s / c) * (1 + 0.025 * t);
-    P2 = 1 - 1.37E-4 * h + 6.2E-9 * h * h;
-    f2 = (8.17 * Math.pow(10, 8 - 1990 / t_kel)) / (1 + 0.0018 * (s - 35));
-    MgSO4 = (A2 * P2 * f2 * fsq) / (fsq + f2 * f2);
-
-    // Pure water contribution
-    var A3;
-    if (t <= 20)
-    {
-        A3 = 4.937E-4 - 2.59E-5 * t + 9.11E-7 * t * t - 1.5E-8 * t * t * t;
-    }
-    else
-    {
-        A3 = 3.964E-4 - 1.146E-5 * t + 1.45E-7 * t * t - 6.5E-10 * t * t * t;
-    }
-
-    P3 = 1 - 3.83E-5 * h + 4.9E-10 * h * h;
-    H2O = A3 * P3 * fsq;
-
-    // Total absorption
-    return Boric + MgSO4 + H2O;
 }
 
 function onUpdate_alpha_e() {
