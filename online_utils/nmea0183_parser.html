@@ -1,6 +1,5 @@
-
 <head>
-<title>NMEA0183 Parser</title>
+<title>Парсер NMEA0183</title>
 <link href="style.css" rel="stylesheet" type="text/css">
 <!-- Yandex.Metrika counter -->
 
@@ -41,24 +40,24 @@ function onParseBtnPressed() {
    
     if (pResult.constructor.name === "NMEAStandardSentence") {
 	
-	  pResult_description = "Talker ID: " + pResult.TalkerID + " (" + UCNLNMEAParser.GetTalkerDescription(pResult.TalkerID) + ")\r\n";
-          pResult_description = pResult_description + "Sentence ID: " + pResult.SentenceID + " (" + UCNLNMEAParser.GetSentenceDescription(pResult.SentenceID) + ")\r\n";
+	  pResult_description = "Идентификатор передатчика: " + pResult.TalkerID + " (" + UCNLNMEAParser.GetTalkerDescription(pResult.TalkerID) + ")\r\n";
+          pResult_description = pResult_description + "Идентификатор предложения: " + pResult.SentenceID + " (" + UCNLNMEAParser.GetSentenceDescription(pResult.SentenceID) + ")\r\n";
 	  sentence_parameters_description = UCNLNMEAParser.GetSentenceParametersDescription(pResult.SentenceID);
 	  
 	} else if (pResult.constructor.name === "NMEAProprietarySentence") {
    
-      pResult_description = "Proprietary sentence\r\n";
-      pResult_description = pResult_description + "Manufacturer ID: " + pResult.Manufacturer + "\r\n";
-      pResult_description = pResult_description + "Sentence ID: " + pResult.SentenceIDString + "\r\n";	  
+      pResult_description = "Собственное предложение\r\n";
+      pResult_description = pResult_description + "Идентификатор производителя: " + pResult.Manufacturer + "\r\n";
+      pResult_description = pResult_description + "Идентификатор предложения: " + pResult.SentenceIDString + "\r\n";	  
 	  
 	  var sentence_description = UCNLNMEAParser.GetProprietarySentenceDescription(pResult.Manufacturer, pResult.SentenceIDString);
 	  if (sentence_description != "")
-	     pResult_description = pResult_description + "Sentence description: " + sentence_description + "\r\n";
+	     pResult_description = pResult_description + "Описание предложения: " + sentence_description + "\r\n";
 		 
 	  sentence_parameters_description = UCNLNMEAParser.GetProprietarySentenceParametersDescription(pResult.Manufacturer, pResult.SentenceIDString);
 	}
 	  	  
-	pResult_description = pResult_description + "\r\nParameters:\r\n\r\n";
+	pResult_description = pResult_description + "\r\nПараметры:\r\n\r\n";
 	  
 	if (sentence_parameters_description != "") {  
    	    
@@ -87,7 +86,7 @@ function onParseBtnPressed() {
 </head>
 
 <body>
-<h1>NMEA0183 Parser</h1>
+<h1>Парсер NMEA0183</h1>
 
 <hr>
 
@@ -98,7 +97,7 @@ function onParseBtnPressed() {
 <input id="snt_input" type="text" size="64" maxlength="255" oninput="nmeaSnt_onKey()" value="$GNGLL,4443.1365,N,03749.8815,E,071803.000,A,A*41">
 </big>
 </tt>
-<button id="parseBtn" onclick="onParseBtnPressed()">Parse</button>
+<button id="parseBtn" onclick="onParseBtnPressed()">Разобрать</button>
 </p>
 <br>
 
@@ -106,15 +105,12 @@ function onParseBtnPressed() {
 <b><a id="snt_result"></a></b>
 </tt>
 
-
-
-
 <hr>
-<a href="https://docs.unavlab.com/online_utilities_en.html">Back to Online Utilities page</a>
+<a href="https://docs.unavlab.com/online_utilities_en.html">Назад к онлайн-утилитам</a>
    
 <hr>
 (C) Alek Dikarev, 2020-2025<br>
-For bug reports, suggestions and questions, please feel free to <a href="https://github.com/AlekUnderwater">reach me</a><br>
+По вопросам, предложениям и сообщениям об ошибках пишите <a href="https://github.com/AlekUnderwater">сюда</a><br>
 
 <script type="text/javascript">
 
