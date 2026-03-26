@@ -2,7 +2,7 @@
 
 <div style="page-break-after: always;"></div>
 
-| ![logo](/documentation/sm_logo.png) | ![](https://github.com/user-attachments/assets/fbb50dfc-7bf2-43e2-bcec-77deea1f1eb4") |
+| ![logo](/documentation/sm_logo.png) | ![](https://github.com/user-attachments/assets/fbb50dfc-7bf2-43e2-bcec-77deea1f1eb4) |
 | :---: | ---: |
 | [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **RedPhone-MDX** <br/> Водолазная станция беспроводной голосовой связи с увеличенной дальностью связи <br/> Спецификация устройства |
 
