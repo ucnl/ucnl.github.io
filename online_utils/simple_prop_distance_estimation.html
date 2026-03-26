@@ -1,5 +1,5 @@
 <head>
-<title>Simple sound propagation distance estimation</title>
+<title>Оценка дальности распространения звука</title>
 <link href="style.css" rel="stylesheet" type="text/css">
 <!-- Yandex.Metrika counter -->
 <script type="text/javascript" >
@@ -194,7 +194,7 @@ function calculate() {
     } while ((eps > epsilon) && (itc < itc_max));
     
     if (itc >= itc_max) {
-        document.getElementById("r_max_out").innerText = "No convergence";
+        document.getElementById("r_max_out").innerText = "Нет сходимости";
         document.getElementById("N_i_out").innerText = itc.toString();
         document.getElementById("eps_out").innerText = eps.toExponential(3);
         document.getElementById("P_R_out").innerText = "error";
@@ -215,7 +215,7 @@ function calculate() {
 </head>
 
 <body>
-<h1>Simple sound propagation distance estimation</h1>
+<h1>Оценка дальности распространения звука</h1>
 <hr>
 
 <h2>0. Краткое описание. Основная теория</h2>
@@ -248,224 +248,225 @@ function calculate() {
 
 <p>Уравнение (4) в общем виде не решается аналитически, поэтому используется численный метод Ньютона.</p>
 
-<h2>1. Calculation</h2>
+
+<h2>1. Расчет</h2>
 
 <table id="values1_tbl">
-<caption><b>Table 1. Absorption due to the medium</b></caption>
+<caption><b>Таблица 1. Поглощение звука средой</b></caption>
 <thead>
-   <th>Parameter</th>
-   <th>Notation</th>
-   <th>Value</th>
-   <th>Range</th>
-   <th>Units</th>
+   <th>Параметр</th>
+   <th>Обозначение</th>
+   <th>Значение</th>
+   <th>Диапазон</th>
+   <th>Ед. изм.</th>
 </thead>
 <tr>
-    <td>Frequency</td>
-    <td><b><i>f</i></b></td>
-    <td><input type="number" step="1" value="28" min="1" max="1000" name="f_kHz" id="f_kHz_input" oninput="onUpdate_alpha_e()"></td>
-    <td>1 .. 1000</td>
-    <td>kHz</td>
+     <td>Частота</td>
+     <td><b><i>f</i></b></td>
+     <td><input type="number" step="1" value="28" min="1" max="1000" name="f_kHz" id="f_kHz_input" oninput="onUpdate_alpha_e()"></td>
+     <td>1 .. 1000</td>
+     <td>кГц</td>
 </tr>
 <tr>
-    <td>Water temperature</td>
-    <td><b><i>t</i></b></td>
-    <td><input type="number" step="0.1" value="20" min="-2" max="40" name="t_C" id="t_C_input" oninput="onUpdate_alpha_e()"></td>
-    <td>-2 .. 40</td>
-    <td>°C</td>
+     <td>Температура воды</td>
+     <td><b><i>t</i></b></td>
+     <td><input type="number" step="0.1" value="20" min="-2" max="40" name="t_C" id="t_C_input" oninput="onUpdate_alpha_e()"></td>
+     <td>-2 .. 40</td>
+     <td>°C</td>
 </tr>
 <tr>
-    <td>Depth</td>
-    <td><b><i>h</i></b></td>
-    <td><input type="number" step="1" value="1" min="1" max="10000" name="h_m" id="h_m_input" oninput="onUpdate_alpha_e()"></td>
-    <td>1 .. 10<sup>4</sup></td>
-    <td>m</td>
+     <td>Глубина</td>
+     <td><b><i>h</i></b></td>
+     <td><input type="number" step="1" value="1" min="1" max="10000" name="h_m" id="h_m_input" oninput="onUpdate_alpha_e()"></td>
+     <td>1 .. 10<sup>4</sup></td>
+     <td>м</td>
 </tr>
 <tr>
-    <td>Water salinity</td>
-    <td><b><i>s</i></b></td>
-    <td><input type="number" step="0.1" value="35" min="0" max="42" name="s_PSU" id="s_PSU_input" oninput="onUpdate_alpha_e()"></td>
-    <td>0 .. 42</td>
-    <td>PSU</td>
+     <td>Соленость воды</td>
+     <td><b><i>s</i></b></td>
+     <td><input type="number" step="0.1" value="35" min="0" max="42" name="s_PSU" id="s_PSU_input" oninput="onUpdate_alpha_e()"></td>
+     <td>0 .. 42</td>
+     <td>PSU</td>
 </tr>
 <tr>
-    <td>Acidity</td>
-    <td><b><i>pH</i></b></td>
-    <td><input type="number" step="0.1" value="8" min="7.7" max="8.3" name="pH_" id="pH_input" oninput="onUpdate_alpha_e()"></td>
-    <td>7.7 .. 8.3</td>
-    <td></td>
+     <td>Кислотность</td>
+     <td><b><i>pH</i></b></td>
+     <td><input type="number" step="0.1" value="8" min="7.7" max="8.3" name="pH_" id="pH_input" oninput="onUpdate_alpha_e()"></td>
+     <td>7.7 .. 8.3</td>
+     <td></td>
 </tr>
 <tr>
-    <td>Absorption coefficient<sup><a href="#footnote1">[1]</a></sup></td>
-    <td><b><i>&alpha;<sub>e</sub></i></b></td>
-    <td><b><a id="alpha_e"></a></b></td>
-    <td></td>
-    <td>dB/km</td>
+     <td>Коэффициент поглощения<sup><a href="#footnote1">[1]</a></sup></td>
+     <td><b><i>&alpha;<sub>e</sub></i></b></td>
+     <td><b><a id="alpha_e"></a></b></td>
+     <td></td>
+     <td>дБ/км</td>
 </tr>
 </table>
 <br>
 
 <table id="values2_tbl">
-<caption><b>Table 2. Transmitter and noise parameters</b></caption>
+<caption><b>Таблица 2. Параметры передатчика и шума</b></caption>
 <thead>
-   <th>Parameter</th>
-   <th>Notation</th>
-   <th>Value</th>
-   <th>Range</th>
-   <th>Units</th>
-   <th>Description</th>
+   <th>Параметр</th>
+   <th>Обозначение</th>
+   <th>Значение</th>
+   <th>Диапазон</th>
+   <th>Ед. изм.</th>
+   <th>Описание</th>
 </thead>
 <tr>
-    <td>Transmission sensitivity</td>
-    <td><b><i>P<sub>T</sub></i></b></td>
-    <td><input type="number" step="0.5" value="5" min="0.5" max="10000" name="P_T_pa_V" id="P_T_pa_V_input" oninput="onPtx_update()"></td>
-    <td>0.5 .. 10000</td>
-    <td>Pa/V</td>
-    <td>On specified frequency <b><i>f</i></b></td>
+     <td>Чувствительность передатчика</td>
+     <td><b><i>P<sub>T</sub></i></b></td>
+     <td><input type="number" step="0.5" value="5" min="0.5" max="10000" name="P_T_pa_V" id="P_T_pa_V_input" oninput="onPtx_update()"></td>
+     <td>0.5 .. 10000</td>
+     <td>Па/В</td>
+     <td>На заданной частоте <b><i>f</i></b></td>
 </tr>
 <tr>
-    <td>Voltage on the antenna</td>
-    <td><b><i>U<sub>a</sub></i></b></td>
-    <td><input type="number" step="1" value="73" min="1" max="1000" name="U_a_V" id="U_a_V_input" oninput="onPtx_update()"></td>
-    <td>1 .. 1000</td>
-    <td>V</td>
-    <td>RMS</td>
+     <td>Напряжение на антенне</td>
+     <td><b><i>U<sub>a</sub></i></b></td>
+     <td><input type="number" step="1" value="73" min="1" max="1000" name="U_a_V" id="U_a_V_input" oninput="onPtx_update()"></td>
+     <td>1 .. 1000</td>
+     <td>В</td>
+     <td>Действующее значение</td>
 </tr>
 <tr>
-    <td>Spectral noise level</td>
-    <td><b><i>NL<sub>0</sub></i></b></td>
-    <td><input type="number" step="1" value="65" min="20" max="120" name="NL0" id="NL0_input" oninput="updateTargetPressure()"></td>
-    <td>20 .. 120</td>
-    <td>dB re 1 μPa/√Hz</td>
-    <td>Spectral noise density</td>
+     <td>Спектральная плотность шума</td>
+     <td><b><i>NL<sub>0</sub></i></b></td>
+     <td><input type="number" step="1" value="65" min="20" max="120" name="NL0" id="NL0_input" oninput="updateTargetPressure()"></td>
+     <td>20 .. 120</td>
+     <td>дБ re 1 мкПа/√Гц</td>
+     <td>Спектральная плотность шума</td>
 </tr>
 <tr>
-    <td>Receiver bandwidth</td>
-    <td><b><i>Δf</i></b></td>
-    <td><input type="number" step="100" value="4000" min="1" max="100000" name="bandwidth" id="bandwidth_input" oninput="updateTargetPressure()"></td>
-    <td>1 .. 100000</td>
-    <td>Hz</td>
-    <td>Noise bandwidth of receiver</td>
+     <td>Полоса пропускания приемника</td>
+     <td><b><i>Δf</i></b></td>
+     <td><input type="number" step="100" value="4000" min="1" max="100000" name="bandwidth" id="bandwidth_input" oninput="updateTargetPressure()"></td>
+     <td>1 .. 100000</td>
+     <td>Гц</td>
+     <td>Шумовая полоса приемника</td>
 </tr>
 <tr>
-    <td>Effective noise pressure</td>
-    <td><b><i>P<sub>N</sub></i></b></td>
-    <td><b><a id="Pn_effective_out"></a></b></td>
-    <td></td>
-    <td>Pa</td>
-    <td>P<sub>N</sub> = NL<sub>0</sub> × √Δf</td>
+     <td>Эффективное шумовое давление</td>
+     <td><b><i>P<sub>N</sub></i></b></td>
+     <td><b><a id="Pn_effective_out"></a></b></td>
+     <td></td>
+     <td>Па</td>
+     <td>P<sub>N</sub> = NL<sub>0</sub> × √Δf</td>
 </tr>
 <tr>
-    <td>Desired SNR</td>
-    <td><b><i>SNR</i></b></td>
-    <td><input type="number" step="0.01" value="10" min="-5" max="20" name="SNR_dB" id="SNR_dB_input" oninput="onSNRt_update()"></td>
-    <td>-5 .. 20</td>
-    <td>dB</td>
-    <td>On the receiving point</td>
+     <td>Требуемое ОСШ</td>
+     <td><b><i>SNR</i></b></td>
+     <td><input type="number" step="0.01" value="10" min="-5" max="20" name="SNR_dB" id="SNR_dB_input" oninput="onSNRt_update()"></td>
+     <td>-5 .. 20</td>
+     <td>дБ</td>
+     <td>В точке приема</td>
 </tr>
 <tr>
-    <td>Geometric spreading coefficient</td>
-    <td><b><i>K</i></b></td>
-    <td><input type="number" step="0.1" value="1" min="0.1" max="10" name="K" id="K_input" oninput="updateTL()"></td>
-    <td>0.1 .. 10</td>
-    <td></td>
-    <td>1 - cylindrical, 2 - spherical</td>
+     <td>Коэффициент геометрического расширения</td>
+     <td><b><i>K</i></b></td>
+     <td><input type="number" step="0.1" value="1" min="0.1" max="10" name="K" id="K_input" oninput="updateTL()"></td>
+     <td>0.1 .. 10</td>
+     <td></td>
+     <td>1 — цилиндрический, 2 — сферический</td>
 </tr>
 <tr>
-    <td>Transmission Loss at 100 m</td>
-    <td><b><i>TL<sub>100</sub></i></b></td>
-    <td><b><a id="tl_100_out"></a></b></td>
-    <td></td>
-    <td>dB</td>
-    <td>For reference</td>
+     <td>Потери распространения на 100 м</td>
+     <td><b><i>TL<sub>100</sub></i></b></td>
+     <td><b><a id="tl_100_out"></a></b></td>
+     <td></td>
+     <td>дБ</td>
+     <td>Справочное значение</td>
 </tr>
 <tr>
-    <td>Transmission Loss at 1000 m</td>
-    <td><b><i>TL<sub>1000</sub></i></b></td>
-    <td><b><a id="tl_1000_out"></a></b></td>
-    <td></td>
-    <td>dB</td>
-    <td>For reference</td>
+     <td>Потери распространения на 1000 м</td>
+     <td><b><i>TL<sub>1000</sub></i></b></td>
+     <td><b><a id="tl_1000_out"></a></b></td>
+     <td></td>
+     <td>дБ</td>
+     <td>Справочное значение</td>
 </tr>
 <tr>
-    <td>Transmitter pressure</td>
-    <td><b><i>P<sub>TX</sub></i></b></td>
-    <td><b><a id="P_Tx_out"></a></b></td>
-    <td></td>
-    <td>Pa</td>
-    <td></td>
+     <td>Давление передатчика</td>
+     <td><b><i>P<sub>TX</sub></i></b></td>
+     <td><b><a id="P_Tx_out"></a></b></td>
+     <td></td>
+     <td>Па</td>
+     <td></td>
 </tr>
 <tr>
-    <td>Desired SNR (pressure ratio)</td>
-    <td><b><i>SNR<sub>t</sub></i></b></td>
-    <td><b><a id="SNR_t_out"></a></b></td>
-    <td></td>
-    <td>times</td>
-    <td>10<sup>SNR<sub>dB</sub>/20</sup></td>
+     <td>Требуемое ОСШ (по давлению)</td>
+     <td><b><i>SNR<sub>t</sub></i></b></td>
+     <td><b><a id="SNR_t_out"></a></b></td>
+     <td></td>
+     <td>раз</td>
+     <td>10<sup>SNR<sub>дБ</sub>/20</sup></td>
 </tr>
 <tr>
-    <td>Target received pressure</td>
-    <td><b><i>P<sub>target</sub></i></b></td>
-    <td><b><a id="P_target_out"></a></b></td>
-    <td></td>
-    <td>Pa</td>
-    <td>P<sub>N</sub> × 10<sup>SNR<sub>dB</sub>/20</sup></td>
+     <td>Требуемое давление на приемнике</td>
+     <td><b><i>P<sub>target</sub></i></b></td>
+     <td><b><a id="P_target_out"></a></b></td>
+     <td></td>
+     <td>Па</td>
+     <td>P<sub>N</sub> × 10<sup>SNR<sub>дБ</sub>/20</sup></td>
 </tr>
 </table>
 <br>
 
 <div>
-    <button id="calculate_btn" onclick="calculate()">CALCULATE</button>
+    <button id="calculate_btn" onclick="calculate()">РАССЧИТАТЬ</button>
 </div>
 
 <table id="values3_tbl">
-<caption><b>Table 3. Results</b></caption>
+<caption><b>Таблица 3. Результаты</b></caption>
 <thead>
-   <th>Parameter</th>
-   <th>Notation</th>
-   <th>Value</th>
-   <th>Range</th>
-   <th>Units</th>
-   <th>Description</th>
+   <th>Параметр</th>
+   <th>Обозначение</th>
+   <th>Значение</th>
+   <th>Диапазон</th>
+   <th>Ед. изм.</th>
+   <th>Описание</th>
 </thead>
 <tr>
-    <td>Maximal distance</td>
-    <td><b><i>r<sub>max</sub></i></b></td>
-    <td><b><a id="r_max_out"></a></b></td>
-    <td></td>
-    <td>m</td>
-    <td></td>
+     <td>Максимальная дальность</td>
+     <td><b><i>r<sub>max</sub></i></b></td>
+     <td><b><a id="r_max_out"></a></b></td>
+     <td></td>
+     <td>м</td>
+     <td></td>
 </tr>
 <tr>
-    <td>Number of iterations taken</td>
-    <td><b><i>N<sub>i</sub></i></b></td>
-    <td><b><a id="N_i_out"></a></b></td>
-    <td>1 .. 1000</td>
-    <td></td>
-    <td></td>
+     <td>Число итераций</td>
+     <td><b><i>N<sub>i</sub></i></b></td>
+     <td><b><a id="N_i_out"></a></b></td>
+     <td>1 .. 1000</td>
+     <td></td>
+     <td></td>
 </tr>
 <tr>
-    <td>Residual</td>
-    <td><b><i>&epsilon;</i></b></td>
-    <td><b><a id="eps_out"></a></b></td>
-    <td></td>
-    <td>m</td>
-    <td></td>
+     <td>Невязка</td>
+     <td><b><i>&epsilon;</i></b></td>
+     <td><b><a id="eps_out"></a></b></td>
+     <td></td>
+     <td>м</td>
+     <td></td>
 </tr>
 <tr>
-    <td>Transmission Loss at r<sub>max</sub></td>
-    <td><b><i>TL</i></b></td>
-    <td><b><a id="TL_at_r_out"></a></b></td>
-    <td></td>
-    <td>dB</td>
-    <td>Total loss at calculated distance</td>
+     <td>Потери распространения на r<sub>max</sub></td>
+     <td><b><i>TL</i></b></td>
+     <td><b><a id="TL_at_r_out"></a></b></td>
+     <td></td>
+     <td>дБ</td>
+     <td>Суммарные потери на расчетной дальности</td>
 </tr>
 <tr>
-    <td>Received pressure</td>
-    <td><b><i>P<sub>R</sub></i></b></td>
-    <td><b><a id="P_R_out"></a></b></td>
-    <td></td>
-    <td>Pa</td>
-    <td>At distance r<sub>max</sub></td>
+     <td>Давление на приемнике</td>
+     <td><b><i>P<sub>R</sub></i></b></td>
+     <td><b><a id="P_R_out"></a></b></td>
+     <td></td>
+     <td>Па</td>
+     <td>На дальности r<sub>max</sub></td>
 </tr>
 </table>
 
@@ -476,11 +477,11 @@ function calculate() {
 </ol>
 
 <hr>
-<a href="https://docs.unavlab.com/online_utilities_en.html">Back to Online Utilities page</a>
+<a href="https://docs.unavlab.com/online_utilities_en.html">Назад к онлайн-утилитам</a>
    
 <hr>
 (C) Alek Dikarev, 2020<br>
-For bug reports, suggestions and questions, please feel free to <a href="https://github.com/AlekUnderwater">reach me</a><br>
+По вопросам, предложениям и сообщениям об ошибках пишите <a href="https://github.com/AlekUnderwater">сюда</a><br>
 
 <script type="text/javascript">
 onUpdate_alpha_e();
