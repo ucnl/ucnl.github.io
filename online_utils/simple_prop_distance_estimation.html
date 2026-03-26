@@ -20,61 +20,39 @@
 /**
  * Расчет коэффициента поглощения звука в морской воде
  * Модель Francois & Garrison (1982)
- * 
- * @param f - частота (кГц)
- * @param T - температура (°C)
- * @param S - соленость (PSU)
- * @param h - глубина (м)
- * @param pH - кислотность (7.7-8.3)
- * @returns коэффициент поглощения (дБ/км)
+ * Возвращает значение в дБ/км
  */
 function calculateAbsorptionCoefficient(f, T, S, h, pH) {
-    // Проверка валидности входных данных
-    if (f <= 0 || T < -2 || T > 40 || S < 0 || S > 42 || h < 0 || pH < 7.7 || pH > 8.3) {
-        console.warn("Выход за пределы валидности модели Francois & Garrison");
-    }
-    
-    // Абсолютная температура (Кельвин)
     const Tk = T + 273.15;
-    
-    // Скорость звука (м/с) - формула из Francois & Garrison
     const c = 1412 + 3.21 * T + 1.19 * S + 0.0167 * h;
-    
-    // Частота в кГц
     const f_kHz = f;
     const f2 = f_kHz * f_kHz;
     
-    // Поправка на глубину (давление)
-    const D = h / 1000; // глубина в км
-    
-    // === 1. Вклад бора (B(OH)3) ===
-    const A1 = (8.86 / c) * Math.pow(10, 0.78 * pH - 5.0);
+    // === 1. Борная кислота ===
+    const A1 = (8.86 / c) * Math.pow(10, 0.78 * pH - 5) * 1000;
+    const f1 = 2.8 * Math.sqrt(S / 35) * Math.pow(10, 4 - 1245 / Tk);
     const P1 = 1;
-    const f1 = 2.8 * Math.sqrt(S / 35) * Math.pow(10, 4.0 - 1245 / Tk);
     const term1 = (A1 * P1 * f1 * f2) / (f2 + f1 * f1);
     
-    // === 2. Вклад сульфата магния (MgSO4) ===
-    // Исправленная формула для A2
-    const A2 = 21.44 * (S / 35) * (1 + 0.025 * T) / c;
-    const P2 = 1 - 1.37e-4 * h + 6.2e-9 * h * h;
+    // === 2. Сульфат магния ===
+    const A2 = 21.44 * (S / 35) * (1 + 0.025 * T) / c * 1000;
     const f2_relax = (8.17 * Math.pow(10, 8 - 1990 / Tk)) / (1 + 0.0018 * (S - 35));
+    const P2 = 1 - 1.37e-4 * h + 6.2e-9 * h * h;
     const term2 = (A2 * P2 * f2_relax * f2) / (f2 + f2_relax * f2_relax);
     
-    // === 3. Вклад чистой воды (вязкость) ===
+    // === 3. Чистая вода ===
     let A3;
     if (T <= 20) {
-        A3 = 4.937e-4 - 2.59e-5 * T + 9.11e-7 * T * T - 1.5e-8 * T * T * T;
+        A3 = (4.937e-4 - 2.59e-5 * T + 9.11e-7 * T * T - 1.5e-8 * T * T * T) * 1000;
     } else {
-        A3 = 3.964e-4 - 1.146e-5 * T + 1.45e-7 * T * T - 6.5e-10 * T * T * T;
+        A3 = (3.964e-4 - 1.146e-5 * T + 1.45e-7 * T * T - 6.5e-10 * T * T * T) * 1000;
     }
     const P3 = 1 - 3.83e-5 * h + 4.9e-10 * h * h;
     const term3 = A3 * P3 * f2;
     
-    // Суммарный коэффициент поглощения (дБ/км)
-    const alpha = term1 + term2 + term3;
-    
-    return alpha;
+    return term1 + term2 + term3;
 }
+
 
 function onUpdate_alpha_e() {
   var f_in = document.getElementById("f_kHz_input");
