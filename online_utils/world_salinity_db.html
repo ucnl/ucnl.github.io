@@ -1,5 +1,5 @@
 <head>
-<title>World ocean salinity database</title>
+<title>База данных солености Мирового океана</title>
 <link href="style.css" rel="stylesheet" type="text/css">
 <!-- Yandex.Metrika counter -->
 <script type="text/javascript" >
@@ -85,7 +85,7 @@ function onSearch() {
        
   document.getElementById("s_PSU_out").innerText = wosDB[ln_key_s][lt_key_s].toFixed(3);
   
-  linkText = "LAT: " + lt_key_s + ", LON: " + ln_key_s;
+  linkText = "Широта: " + lt_key_s + ", Долгота: " + ln_key_s;
   linkLink = "https://www.google.com/maps/search/?api=1&query=" + lt_key_s + "," + ln_key_s;
     
   document.getElementById("npoint_out").innerHTML = '<a href="' + linkLink + '">' + linkText + '</a>';
@@ -97,52 +97,52 @@ function onSearch() {
 </head>
 
 <body>
-<h1>World ocean salinity database</h1>
+<h1>База данных солености Мирового океана</h1>
 <hr>
 
-<i>Warning! All the salinity data presented in this demo are taken from the NOAA World
- ocean database<a href="#footnote1">[1]</a> for educational purposes only!<br>
-Here are presented only salinity on the water surface</i>
+<i>Внимание! Все представленные данные о солености взяты из базы данных Мирового океана NOAA<a href="#footnote1">[1]</a> только в образовательных целях!<br>
+Здесь представлена только соленость на поверхности воды</i>
 <br>
 <br>
 
 <table id="in_values_tbl">
- <tr>
-   <th>Parameter</th>
-   <th>Value</th>
-   <th>Range</th>
-   <th>Units</th>
- </tr>
- <tr>
-   <td>Geographic longitude</td>
-   <td><input type="number" step="0.5" value="48.5" min="-175" max="175" name="lon_deg" id="lon_deg_input"></td>
-   <td>-180 .. 180</td>
-   <td>°</td>
- </tr>
- <tr>
-   <td>Geographic latitude</td>
-   <td><input type="number" step="0.5" value="44.5" min="-85" max="85" name="lat_deg" id="lat_deg_input"></td>
-   <td>-90 .. 90</td>
-   <td>°</td>
- </tr>
- <tr>
-   <td>Nearest point (lon, lat)</td>
-   <td><b><a id="npoint_out"></a></b></td>
-   <td></td>
-   <td></td>
- </tr>
- <tr>
-   <td>Salinity</td>
-   <td><b><a id="s_PSU_out"></a></b></td>
-   <td>0 .. 42</td>
-   <td>PSU</td>
- </tr>
-</table>
+<caption><b>Таблица. Поиск солености по координатам</b></caption>
+  <thead>
+   <th>Параметр</th>
+   <th>Значение</th>
+   <th>Диапазон</th>
+   <th>Ед. изм.</th>
+  </thead>
+   <tr>
+     <td>Географическая долгота</td>
+     <td><input type="number" step="0.5" value="48.5" min="-175" max="175" name="lon_deg" id="lon_deg_input"></td>
+     <td>-180 .. 180</td>
+     <td>°</td>
+   </tr>
+   <tr>
+     <td>Географическая широта</td>
+     <td><input type="number" step="0.5" value="44.5" min="-85" max="85" name="lat_deg" id="lat_deg_input"></td>
+     <td>-90 .. 90</td>
+     <td>°</td>
+   </tr>
+   <tr>
+     <td>Ближайшая точка (долгота, широта)</td>
+     <td><b><a id="npoint_out"></a></b></td>
+     <td></td>
+     <td></td>
+   </tr>
+   <tr>
+     <td>Соленость</td>
+     <td><b><a id="s_PSU_out"></a></b></td>
+     <td>0 .. 42</td>
+     <td>PSU</td>
+   </tr>
+ </table>
 <br>
 <hr>
 
 <div>
-    <button id="search" onclick="onSearch()">Search</button>
+    <button id="search" onclick="onSearch()">Найти</button>
 </div>
 
 <ol>
@@ -151,7 +151,7 @@ Here are presented only salinity on the water surface</i>
 
 <hr>
 (C) Alek Dikarev, 2020<br>
-For bug reports, suggestions and questions, please feel free to <a href="https://github.com/AlekUnderwater">reach me</a><br>
+По вопросам, предложениям и сообщениям об ошибках пишите <a href="https://github.com/AlekUnderwater">сюда</a><br>
 
 </body>
 </html>
