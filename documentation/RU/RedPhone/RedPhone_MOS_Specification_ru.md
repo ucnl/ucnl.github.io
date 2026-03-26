@@ -2,7 +2,8 @@
 
 <div style="page-break-after: always;"></div>
 
-| ![logo](/documentation/sm_logo.png) |  |
+| ![logo](/documentation/sm_logo.png) | <img width="855" height="863" alt="image" src="https://github.com/user-attachments/assets/572cc433-8544-4d02-8c1c-7e02434f4c1e" />
+ |
 | :---: | ---: |
 | [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **RedPhone-MOS** <br/> Надводная станция водолазной беспроводной голосовой связи с увеличенной дальностью связи <br/> Спецификация устройства |
 
