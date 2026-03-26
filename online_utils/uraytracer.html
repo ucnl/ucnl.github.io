@@ -1,5 +1,5 @@
 <head>
-<title>uRayTracer - Online underwater acoustic propagation simulator</title>
+<title>uRayTracer - Онлайн-симулятор распространения звука под водой</title>
 <link href="style.css" rel="stylesheet" type="text/css">
 <!-- Yandex.Metrika counter -->
 <script type="text/javascript">
@@ -196,7 +196,7 @@ function redraw()
   var maxZLblWidth = ctx.measureText("99999").width;
   var maxZLblHeight = 10;
   var zLblHeight2 = 3;
-  var zAxisTitle = "Z, m";
+  var zAxisTitle = "Глубина Z, м";
   var zAxisTitleWidth = ctx.measureText(zAxisTitle).width;
 
   tsWidth = cnv.width / 5;
@@ -217,13 +217,13 @@ function redraw()
   ctx.fillText(tsProfileDescription, gLeft + gWidth / 2 - gTitleWidth / 2, gPaddingTop + maxZLblHeight);
 
   ctx.fillStyle = "lightgreen";
-  ctx.fillText("Vmin = " + vmin.toFixed(1) + " m/s", tLeft, gPaddingTop + maxZLblHeight);
-  ctx.fillText("Vmax = " + vmax.toFixed(1) + " m/s", tLeft, gPaddingTop * 2 + maxZLblHeight * 2);
+  ctx.fillText("Vmin = " + vmin.toFixed(1) + " м/с", tLeft, gPaddingTop + maxZLblHeight);
+  ctx.fillText("Vmax = " + vmax.toFixed(1) + " м/с", tLeft, gPaddingTop * 2 + maxZLblHeight * 2);
 
   ctx.fillStyle = "white";
   var sWidth;
   var str;
-  str = "Ray tracing";
+  str = "Трассировка лучей";
   sWidth = ctx.measureText(str).width;
   ctx.fillText(str, tLeft + tWidth / 2 - sWidth / 2, gPaddingTop + maxZLblHeight);
 
@@ -231,7 +231,7 @@ function redraw()
   sWidth = ctx.measureText(str).width;
   ctx.fillText(str, tRight - sWidth, gPaddingTop + maxZLblHeight);
 
-  var xLbl = "X, m";
+  var xLbl = "Дальность X, м";
   var xLblWidth = ctx.measureText(xLbl).width;
   ctx.fillText(xLbl, tRight - xLblWidth, tBottom + axisTickSize + gPaddingBottom + maxZLblHeight);
 
@@ -321,7 +321,7 @@ function redraw()
   tsvLbl = tmax.toFixed(1);
   tsvLblWidth = ctx.measureText(tsvLbl).width;
   ctx.fillText(tsvLbl, gRight - tsvLblWidth / 2, gTop - axisTickSize - gPaddingTop);
-  tsvLbl = "t, °";
+  tsvLbl = "t, °C";
   tsvLblWidth = ctx.measureText(tsvLbl).width;
   ctx.fillText(tsvLbl, gRight - gWidth / 2 - tsvLblWidth / 2, gTop - axisTickSize - gPaddingTop);
   ctx.stroke();
@@ -440,7 +440,7 @@ function run()
                       theta_sign = -theta_sign;
                       z = Zmax * 2 - z;
                       e *= etaBottom;
-                      // bottom reflection
+                      // отражение от дна
                   }
               }
               else
@@ -451,7 +451,7 @@ function run()
                       theta_sign = -theta_sign;
                       z = -z;
                       e *= etaSurface;
-                      // surface reflection
+                      // отражение от поверхности
                   }
               }
 
@@ -568,10 +568,10 @@ function parseTSProfile(lines)
 
   document.getElementById("Ztx_range").innerText = "0 .. " + Zmax.toFixed(0);
   document.getElementById("Ztx_input").max = Zmax;
-  document.getElementById("tsProfileDescriptor").innerText = "Loaded profile: " +
-     tsProfileDescription + " (" + tsProfile.length + " points)\n" +
-     "Latitude: " + tsProfileLat.toFixed(6) + ", Longitude: " + tsProfileLon.toFixed(6) + "\n" +
-     "Profile depth: " + Zmax.toFixed(0) + " m\n";
+  document.getElementById("tsProfileDescriptor").innerText = "Загружен профиль: " +
+     tsProfileDescription + " (" + tsProfile.length + " точек)\n" +
+     "Широта: " + tsProfileLat.toFixed(6) + ", Долгота: " + tsProfileLon.toFixed(6) + "\n" +
+     "Глубина профиля: " + Zmax.toFixed(0) + " м\n";
 
   onInput();
   buildVSSP();
@@ -604,7 +604,7 @@ function readSingleFile(evt)
     }
     else
     {
-      alert("Failed to load file");
+      alert("Не удалось загрузить файл");
     }
 }
 
@@ -695,71 +695,71 @@ function onInput()
 </head>
 
 <body>
-<h1>uRayTracer: underwater acoustic propagation simulator</h1>
+<h1>uRayTracer: Онлайн-симулятор распространения звука под водой</h1>
 <hr>
 
-<h2>1. Parameters</h2>
+<h2>1. Параметры</h2>
 <table id="in_values_tbl">
- <tr>
-   <th>Notation</th>
+  <thead>
+   <th>Обозначение</th>
    <th><b><i>&alpha;</i></b></th>
    <th><b><i>n<sub>r</sub></i></b></th>
    <th><b><i>&delta;<sub>Z</sub></i></b></th>
    <th><b><i>Z<sub>TX</sub></i></b></th>
    <th><b><i>X<sub>max</sub></i></b></th>
    <th><b><i>S<sub>max</sub></i></b></th>
-   <th><b><i>&eta;<sub>bottom</sub></i></b></th>
-   <th><b><i>&eta;<sub>surface</sub></i></b></th>
- </tr>
- <tr>
-   <td>Value</td>
-   <td><input type="number" size="3" step="1" value="90" min="5" max="179" name="alpha" id="alpha_input" oninput="onInput()"></td>
-   <td><input type="number" size="3" step="1" value="64" min="4" max="256" name="nr" id="nr_input" oninput="onInput()"></td>
-   <td><input type="number" size="3" step="0.1" value="1" min="0.1" max="10" name="dZ" id="dZ_input" oninput="onInput()"></td>
-   <td><input type="number" size="4" step="1" value="2" min="0" max="1000" name="Ztx" id="Ztx_input" oninput="onInput()"></td>
-   <td><input type="number" size="6" step="1" value="1000" min="100" max="99999" name="Xmax" id="Xmax_input" oninput="onInput()"></td>
-   <td><input type="number" size="6" step="1" value="1000" min="100" max="99999" name="Smax" id="Smax_input" oninput="onInput()"></td>
-   <td><input type="number" size="4" step="0.01" value="0.3" min="0" max="1" name="etaBottom" id="etaBottom_input" oninput="onInput()"></td>
-   <td><input type="number" size="4" step="0.01" value="0.5" min="0" max="1" name="etaSurface" id="etaSurface_input" oninput="onInput()"></td>
- </tr>
- <tr>
-   <td>Units</td>
-   <td>°</td>
-   <td></td>
-   <td>m</td>
-   <td>m</td>
-   <td>m</td>
-   <td>m</td>
-   <td></td>
-   <td></td>
- </tr>
- <tr>
-   <td>Range</td>
-   <td>5 .. 179</td>
-   <td>4 .. 256</td>
-   <td>0.1 .. 10</td>
-   <td><p id="Ztx_range">0 .. 1000</p></td>
-   <td>100 .. 100000</td>
-   <td>100 .. 100000</td>
-   <td>0 .. 1</td>
-   <td>0 .. 1</td>
- </tr>
- <tr>
-   <td>Description</td>
-   <td>Beam angle</td>
-   <td>Rays number</td>
-   <td>Delta Z</td>
-   <td>TX depth</td>
-   <td>X axis max</td>
-   <td>Max path</td>
-   <td>Bottom absorbtion</td>
-   <td>Surface absorbtion</td>
- </tr>
+   <th><b><i>&eta;<sub>дно</sub></i></b></th>
+   <th><b><i>&eta;<sub>поверхность</sub></i></b></th>
+  </thead>
+  <tr>
+    <td>Значение</td>
+    <td><input type="number" size="3" step="1" value="90" min="5" max="179" name="alpha" id="alpha_input" oninput="onInput()"></td>
+    <td><input type="number" size="3" step="1" value="64" min="4" max="256" name="nr" id="nr_input" oninput="onInput()"></td>
+    <td><input type="number" size="3" step="0.1" value="1" min="0.1" max="10" name="dZ" id="dZ_input" oninput="onInput()"></td>
+    <td><input type="number" size="4" step="1" value="2" min="0" max="1000" name="Ztx" id="Ztx_input" oninput="onInput()"></td>
+    <td><input type="number" size="6" step="1" value="1000" min="100" max="99999" name="Xmax" id="Xmax_input" oninput="onInput()"></td>
+    <td><input type="number" size="6" step="1" value="1000" min="100" max="99999" name="Smax" id="Smax_input" oninput="onInput()"></td>
+    <td><input type="number" size="4" step="0.01" value="0.3" min="0" max="1" name="etaBottom" id="etaBottom_input" oninput="onInput()"></td>
+    <td><input type="number" size="4" step="0.01" value="0.5" min="0" max="1" name="etaSurface" id="etaSurface_input" oninput="onInput()"></td>
+  </tr>
+  <tr>
+    <td>Единицы</td>
+    <td>°</td>
+    <td></td>
+    <td>м</td>
+    <td>м</td>
+    <td>м</td>
+    <td>м</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Диапазон</td>
+    <td>5 .. 179</td>
+    <td>4 .. 256</td>
+    <td>0.1 .. 10</td>
+    <td><p id="Ztx_range">0 .. 1000</p></td>
+    <td>100 .. 100000</td>
+    <td>100 .. 100000</td>
+    <td>0 .. 1</td>
+    <td>0 .. 1</td>
+  </tr>
+  <tr>
+    <td>Описание</td>
+    <td>Угол луча</td>
+    <td>Количество лучей</td>
+    <td>Шаг по Z</td>
+    <td>Глубина передатчика</td>
+    <td>Макс. дальность X</td>
+    <td>Макс. путь</td>
+    <td>Поглощение дна</td>
+    <td>Поглощение поверхности</td>
+  </tr>
 </table>
 <br>
 
-<h3>TS-profile</h3>
-Select one of following TS-profiles:<br>
+<h3>TS-профиль</h3>
+Выберите один из следующих TS-профилей:<br>
 <input type="button" id="std_profile_1" value="GR-553" onclick="loadStdProfile1()"/>
 <input type="button" id="std_profile_2" value="NA-35" onclick="loadStdProfile2()"/>
 <input type="button" id="std_profile_3" value="US-32437" onclick="loadStdProfile3()"/>
@@ -767,21 +767,21 @@ Select one of following TS-profiles:<br>
 <input type="button" id="std_profile_5" value="CA-13414" onclick="loadStdProfile5()"/>
 <br>
 <br>
-Or open a TS-profile in CSV <a href="#csvformatfootnote">format</a>: <input type="file" id="tsProfile_input"/>
+Или откройте TS-профиль в формате CSV <a href="#csvformatfootnote">формате</a>: <input type="file" id="tsProfile_input"/>
 <br>
 <hr>
 <p id = "tsProfileDescriptor"/>
 <hr>
 
-<h2>2. Simulator</h2>
+<h2>2. Симулятор</h2>
 
-<p><input type="button" id="run_btn" value="RUN SIMULATION" onclick="run()"/></p>
+<p><input type="button" id="run_btn" value="ЗАПУСТИТЬ СИМУЛЯЦИЮ" onclick="run()"/></p>
 
 <canvas id="canvas" width="1024" height="1"></canvas>
 <hr>
 
-<a name="csvformatfootnote"><h2>Notes on CSV format specification for TS-profiles</h2></a>
-The format is taken from <a href="https://www.nodc.noaa.gov/">NOAA</a> and data typically looks like:<br>
+<a name="csvformatfootnote"><h2>Примечания по формату CSV для TS-профилей</h2></a>
+Формат взят из <a href="https://www.nodc.noaa.gov/">NOAA</a> и данные обычно выглядят так:<br>
 <xmp>
   #--------------------------------------------------------------------------------,
   CAST                        ,,        3390163,WOD Unique Cast Number,WOD code,
@@ -815,19 +815,19 @@ The format is taken from <a href="https://www.nodc.noaa.gov/">NOAA</a> and data 
            7,       8.9,0, , 0.0855800,0, ,  32.97132,0, ,        9.,0, ,
 </xmp>
 
-The minimal dataset should contain 7 columns as follows:<br>
-- depth in meters in column 1,<br>
-- temperature in °C in column 4,<br>
-- salinity in PSU in column 7<br>
-A line with "Prof-Flag" in column 0 should be before the data.<br>
-Optionally, you can add "NODC Cruise ID", "Latitude" and "Longitude" in the file header.<br>
+Минимальный набор данных должен содержать 7 столбцов следующим образом:<br>
+- глубина в метрах в столбце 1,<br>
+- температура в °C в столбце 4,<br>
+- соленость в PSU в столбце 7<br>
+Строка с "Prof-Flag" в столбце 0 должна предшествовать данным.<br>
+Дополнительно можно добавить "NODC Cruise ID", "Latitude" и "Longitude" в заголовок файла.<br>
 
 <hr>
-<a href="https://docs.unavlab.com/online_utilities_en.html">Back to Online Utilities page</a>
+<a href="https://docs.unavlab.com/online_utilities_en.html">Назад к онлайн-утилитам</a>
 	
 <hr>
-(C) <a href="https://github.com/AlekUnderwater">Alek Dikarev</a>, 2021<br>
-For bug reports, suggestions and questions, please feel free to reach me<br>
+(C) <a href="https://github.com/AlekUnderwater">Алексей Дикарев</a>, 2021<br>
+По вопросам, предложениям и сообщениям об ошибках пишите сюда<br>
 
 <script type="text/javascript">
   document.getElementById('tsProfile_input').addEventListener('change', readSingleFile, false);
