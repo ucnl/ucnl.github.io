@@ -218,40 +218,35 @@ function calculate() {
 <h1>Simple sound propagation distance estimation</h1>
 <hr>
 
-<h2>0. Brief description. Very basic theory</h2>
-<p>We want to estimate the distance at which, for a given pressure <b><i>P<sub>TX</sub></i></b>
-developed by an underwater acoustic transmitting antenna at a given frequency
-<b><i>f</i></b>, and a given noise pressure <b><i>P<sub>N</sub></i></b> at the
-receiving point, the residual pressure arriving at the receiver will have a
-given signal-to-noise ratio <b><i>SNR</i></b>.</p>
+<h2>0. Краткое описание. Основная теория</h2>
 
-<p>The pressure <b><i>P<sub>TX</sub></i></b> developed by the transmitting antenna is defined as:</p>
+<p>Мы хотим оценить расстояние, на котором при заданном давлении <b><i>P<sub>TX</sub></i></b>, развиваемом гидроакустической передающей антенной на частоте <b><i>f</i></b>, и заданном шумовом давлении <b><i>P<sub>N</sub></i></b> в точке приема, остаточное давление, приходящее на приемник, обеспечит заданное отношение сигнал/шум <b><i>SNR</i></b>.</p>
+
+<p>Давление <b><i>P<sub>TX</sub></i></b>, развиваемое передающей антенной, определяется как:</p>
 <p><b><i>P<sub>TX</sub> = P<sub>T</sub> &middot; U<sub>a</sub></i></b><i>&nbsp;&nbsp;&nbsp;&nbsp;(1)</i></p>
-<p>Where <b><i>P<sub>T</sub></i></b> - antenna's transmitting sensitivity, Pa/V,
-<b><i>U<sub>a</sub></i></b> - RMS voltage applied to the antenna.</p>
+<p>где <b><i>P<sub>T</sub></i></b> — чувствительность передающей антенны, Па/В, <b><i>U<sub>a</sub></i></b> — действующее напряжение на антенне.</p>
 
-<p>In this simplified calculation, we assume that there are only two types of losses:
-the first, associated with the absorption of sound in the medium, described by
-the absorption coefficient <b><i>&alpha;<sub>e</sub></i></b>. The absorption coefficient
-in the general case is a function of the parameters of the medium: temperature <b><i>t</i></b>,
-salinity <b><i>s</i></b>, acidity <b><i>pH</i></b>, depth <b><i>h</i></b> and
-frequency of the signal <b><i>f</i></b>. The dependence of the absorption coefficient
-is described, for example, in the work of Francois-Harrison<sup><a href="#footnote1">[1]</a></sup>.</p>
+<p>В данном упрощенном расчете предполагается, что существуют только два типа потерь: потери, связанные с поглощением звука в среде, описываемые коэффициентом поглощения <b><i>&alpha;<sub>e</sub></i></b>, и потери, связанные с геометрическим расширением волнового фронта.</p>
 
-<p>The second type of loss is associated with the geometric spreading of the signal energy
-and is described as follows:</p>
+<p>Коэффициент поглощения в общем случае является функцией параметров среды: температуры <b><i>t</i></b>, солености <b><i>s</i></b>, кислотности <b><i>pH</i></b>, глубины <b><i>h</i></b> и частоты сигнала <b><i>f</i></b>. Зависимость коэффициента поглощения описывается, например, в работе Francois & Garrison<sup><a href="#footnote1">[1]</a></sup>.</p>
+
+<p>Потери на геометрическое расширение описываются следующим образом:</p>
 <p><b><i>&alpha;<sub>g</sub> = k &middot; 10 &middot; log<sub>10</sub>(r)</i></b><i>&nbsp;&nbsp;&nbsp;&nbsp;(2)</i></p>
-<p>where <b><i>r</i></b> - propagation distance in meters, <b><i>k</i></b> - coefficient of
-the signal's front shape (1 - for cylindrical, 2 - for spherical).</p>
+<p>где <b><i>r</i></b> — расстояние распространения в метрах, <b><i>k</i></b> — коэффициент формы фронта сигнала (1 — для цилиндрического, 2 — для сферического).</p>
 
-<p>The total path loss can now be described as follows:</p>
-<p><b><i>TL = k &middot; 10 &middot; log<sub>10</sub>(r) + 0.001 &middot; &alpha;<sub>e</sub> &middot; r</i></b><i>&nbsp;&nbsp;&nbsp;&nbsp;(3)</i></p>
-<p>A factor of 0.001 is used to convert dB/km to dB/m.</p>
+<p>Суммарные потери при распространении (Transmission Loss) описываются следующим образом:</p>
+<p><b><i>TL = k &middot; 10 &middot; log<sub>10</sub>(r) + 0,001 &middot; &alpha;<sub>e</sub> &middot; r</i></b><i>&nbsp;&nbsp;&nbsp;&nbsp;(3)</i></p>
+<p>Множитель 0,001 используется для перевода дБ/км в дБ/м.</p>
 
-<p>The sonar equation for active system (simplified) is:</p>
+<p>Уравнение гидролокации для активного режима (в упрощенной форме) выглядит следующим образом:</p>
 <p><b><i>SL - TL = NL - DI + DT</i></b></p>
-<p>For omnidirectional receiver (DI=0) and in terms of pressure:</p>
-<p><b><i>P<sub>TX</sub> &middot; 10<sup>-TL/20</sup> = P<sub>N</sub> &middot; 10<sup>SNR<sub>dB</sub>/20</sup></i></b><i>&nbsp;&nbsp;&nbsp;&nbsp;(4)</i></p>
+<p>Для ненаправленного приемника (DI = 0) и в пересчете на давление:</p>
+<p><b><i>P<sub>TX</sub> &middot; 10<sup>-TL/20</sup> = P<sub>N</sub> &middot; 10<sup>SNR<sub>дБ</sub>/20</sup></i></b><i>&nbsp;&nbsp;&nbsp;&nbsp;(4)</i></p>
+<p>где <b><i>P<sub>N</sub></i></b> — эффективное шумовое давление в полосе приемника (Па), <b><i>SNR<sub>дБ</sub></i></b> — требуемое отношение сигнал/шум в децибелах.</p>
+
+<p>Подставляя (3) в (4), получаем уравнение, из которого определяется искомое расстояние <b><i>r</i></b>.</p>
+
+<p>Уравнение (4) в общем виде не решается аналитически, поэтому используется численный метод Ньютона.</p>
 
 <h2>1. Calculation</h2>
 
