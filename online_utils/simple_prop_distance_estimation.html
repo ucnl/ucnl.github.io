@@ -63,6 +63,7 @@ function calculateAbsorptionCoefficient(f, T, S, h, pH) {
 }
 
 
+
 function onUpdate_alpha_e() {
   var f_in = document.getElementById("f_kHz_input");
   var t_in = document.getElementById("t_C_input");
@@ -86,6 +87,32 @@ function onUpdate_alpha_e() {
   }
 
   document.getElementById("alpha_e").innerText = res;
+
+  updateTL();
+}
+
+/**
+ * Обновление полей Transmission Loss для 100 м и 1000 м
+ */
+function updateTL() {
+    var alpha_e = parseFloat(document.getElementById("alpha_e").innerText);
+    var k = parseFloat(document.getElementById("K_input").value);
+    
+    if (isNaN(alpha_e) || isNaN(k)) {
+        document.getElementById("tl_100_out").innerText = "error";
+        document.getElementById("tl_1000_out").innerText = "error";
+        return;
+    }
+    
+    // Расчет TL для 100 м
+    var r_100 = 100;
+    var tl_100 = k * 10 * Math.log10(r_100) + 0.001 * alpha_e * r_100;
+    document.getElementById("tl_100_out").innerText = tl_100.toFixed(2);
+    
+    // Расчет TL для 1000 м
+    var r_1000 = 1000;
+    var tl_1000 = k * 10 * Math.log10(r_1000) + 0.001 * alpha_e * r_1000;
+    document.getElementById("tl_1000_out").innerText = tl_1000.toFixed(2);
 }
 
 function onPtx_update() {
@@ -162,6 +189,8 @@ function calculate() {
   document.getElementById("N_i_out").innerText = itc.toString();
   document.getElementById("eps_out").innerText = eps.toExponential(3);
 }
+
+
 
 </script>
 
@@ -331,11 +360,27 @@ numerical methods is required. In this document, Newton's method is used.
  <tr>
    <td>Geometric spreading coefficient</td>
    <td><b><i>K</i></b></td>
-   <td><input type="number" step="0.1" value="2" min="0.1" max="10" name="K" id="K_input"></td>
+   <td><input type="number" step="0.1" value="2" min="0.1" max="10" name="K" id="K_input" oninput="updateTL()"></td>
    <td>0.1 .. 10</td>
    <td></td>
    <td>1 - cilyndrical, 2 - spheric</td>
  </tr>
+<tr>
+    <td>Transmission Loss at 100 m</td>
+    <td><b><i>TL(100)</i></b></td>
+    <td><b><a id="tl_100_out"></a></b></td>
+    <td></td>
+    <td>dB</td>
+    <td>For reference</td>
+</tr>
+<tr>
+    <td>Transmission Loss at 1000 m</td>
+    <td><b><i>TL(1000)</i></b></td>
+    <td><b><a id="tl_1000_out"></a></b></td>
+    <td></td>
+    <td>dB</td>
+    <td>For reference</td>
+</tr>
  <tr>
    <td>Transmitter pressure</td>
    <td><b><i>P<sub>TX</sub></i></b></td>
@@ -413,6 +458,7 @@ For bug reports, suggestions and questions, please feel free to <a href="https:/
 onUpdate_alpha_e();
 onPtx_update();
 onSNRt_update();
+updateTL();
 calculate();
 </script>
    
