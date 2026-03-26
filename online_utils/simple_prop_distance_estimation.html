@@ -24,21 +24,19 @@
  */
 function calculateAbsorptionCoefficient(f, T, S, h, pH) {
     const Tk = T + 273.15;
+    const D = h / 1000;
     const c = 1412 + 3.21 * T + 1.19 * S + 0.0167 * h;
     const f2 = f * f;
     
-    // 1. Борная кислота
     const A1 = (8.86 / c) * Math.pow(10, 0.78 * pH - 5);
     const f1 = 2.8 * Math.sqrt(S / 35) * Math.pow(10, 4 - 1245 / Tk);
     const term1 = (A1 * f1 * f2) / (f2 + f1 * f1);
     
-    // 2. Сульфат магния
     const A2 = 21.44 * (S / 35) * (1 + 0.025 * T) / c;
     const f2_relax = (8.17 * Math.pow(10, 8 - 1990 / Tk)) / (1 + 0.0018 * (S - 35));
     const P2 = 1 - 1.37e-4 * h + 6.2e-9 * h * h;
     const term2 = (A2 * P2 * f2_relax * f2) / (f2 + f2_relax * f2_relax);
     
-    // 3. Чистая вода
     let A3;
     if (T <= 20) {
         A3 = 4.937e-4 - 2.59e-5 * T + 9.11e-7 * T * T - 1.5e-8 * T * T * T;
@@ -50,6 +48,9 @@ function calculateAbsorptionCoefficient(f, T, S, h, pH) {
     
     return term1 + term2 + term3;
 }
+
+// Проверка
+console.log(calculateAbsorptionCoefficient(28, 20, 35, 0, 8));
 
 
 function onUpdate_alpha_e() {
