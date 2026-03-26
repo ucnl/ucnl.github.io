@@ -23,23 +23,14 @@
  * Возвращает значение в дБ/км
  */
 function calculateAbsorptionCoefficient(f, T, S, h, pH) {
-    // f - частота (кГц)
-    // T - температура (°C)
-    // S - соленость (PSU)
-    // h - глубина (м)
-    // pH - кислотность
-    
     const t_kel = 273.15 + T;
     const fsq = f * f;
-    
-    // Calculate speed of sound (according to Francois & Garrison, JASA 72 (6) p1886)
     const c = 1412 + 3.21 * T + 1.19 * S + 0.0167 * h;
     
     // Boric acid contribution
     const A1 = (8.86 / c) * Math.pow(10, 0.78 * pH - 5.0);
-    const P1 = 1;
     const f1 = 2.8 * Math.sqrt(S / 35) * Math.pow(10, 4.0 - 1245 / t_kel);
-    const boric = (A1 * P1 * f1 * fsq) / (fsq + f1 * f1);
+    const boric = (A1 * f1 * fsq) / (fsq + f1 * f1);
     
     // MgSO4 contribution
     const A2 = 21.44 * (S / c) * (1 + 0.025 * T);
@@ -54,46 +45,36 @@ function calculateAbsorptionCoefficient(f, T, S, h, pH) {
     } else {
         A3 = 3.964e-4 - 1.146e-5 * T + 1.45e-7 * T * T - 6.5e-10 * T * T * T;
     }
-    
     const P3 = 1 - 3.83e-5 * h + 4.9e-10 * h * h;
     const h2o = A3 * P3 * fsq;
     
-    // Total absorption
     return boric + mgso4 + h2o;
 }
 
-
-
 function onUpdate_alpha_e() {
-  var f_in = document.getElementById("f_kHz_input");
-  var t_in = document.getElementById("t_C_input");
-  var h_in = document.getElementById("h_m_input")
-  var s_in = document.getElementById("s_PSU_input");
-  var ph_in = document.getElementById("pH_input");
-
-  var res;
-
-  if ((f_in.validity.valid) && (t_in.validity.valid) &&
-     (h_in.validity.valid) && (s_in.validity.valid) &&
-     (ph_in.validity.valid)) {
-    res = calculateAbsorptionCoefficient(parseFloat(f_in.value),
-    parseFloat(t_in.value),
-    parseFloat(s_in.value),
-    parseFloat(h_in.value),
-    parseFloat(ph_in.value)).toFixed(3);
-  }
-  else {
-    res = "error";
-  }
-
-  document.getElementById("alpha_e").innerText = res;
-
-  updateTL();
+    var f_in = document.getElementById("f_kHz_input");
+    var t_in = document.getElementById("t_C_input");
+    var h_in = document.getElementById("h_m_input");
+    var s_in = document.getElementById("s_PSU_input");
+    var ph_in = document.getElementById("pH_input");
+    
+    var res;
+    if ((f_in.validity.valid) && (t_in.validity.valid) &&
+        (h_in.validity.valid) && (s_in.validity.valid) &&
+        (ph_in.validity.valid)) {
+        res = calculateAbsorptionCoefficient(parseFloat(f_in.value),
+            parseFloat(t_in.value),
+            parseFloat(s_in.value),
+            parseFloat(h_in.value),
+            parseFloat(ph_in.value)).toFixed(3);
+    } else {
+        res = "error";
+    }
+    
+    document.getElementById("alpha_e").innerText = res;
+    updateTL();
 }
 
-/**
- * Обновление полей Transmission Loss для 100 м и 1000 м
- */
 function updateTL() {
     var alpha_e = parseFloat(document.getElementById("alpha_e").innerText);
     var k = parseFloat(document.getElementById("K_input").value);
@@ -104,96 +85,133 @@ function updateTL() {
         return;
     }
     
-    // Расчет TL для 100 м
-    var r_100 = 100;
-    var tl_100 = k * 10 * Math.log10(r_100) + 0.001 * alpha_e * r_100;
-    document.getElementById("tl_100_out").innerText = tl_100.toFixed(2);
+    var tl_100 = k * 10 * Math.log10(100) + 0.001 * alpha_e * 100;
+    var tl_1000 = k * 10 * Math.log10(1000) + 0.001 * alpha_e * 1000;
     
-    // Расчет TL для 1000 м
-    var r_1000 = 1000;
-    var tl_1000 = k * 10 * Math.log10(r_1000) + 0.001 * alpha_e * r_1000;
+    document.getElementById("tl_100_out").innerText = tl_100.toFixed(2);
     document.getElementById("tl_1000_out").innerText = tl_1000.toFixed(2);
 }
 
+function updateTargetPressure() {
+    var NL0_dB = parseFloat(document.getElementById("NL0_input").value);
+    var bandwidth = parseFloat(document.getElementById("bandwidth_input").value);
+    var SNR_dB = parseFloat(document.getElementById("SNR_dB_input").value);
+    
+    if (isNaN(NL0_dB) || isNaN(bandwidth) || isNaN(SNR_dB)) {
+        document.getElementById("Pn_effective_out").innerText = "error";
+        document.getElementById("P_target_out").innerText = "error";
+        return;
+    }
+    
+    // Спектральная плотность шума в Па/√Гц (0 dB = 1 μPa/√Hz = 1e-6 Pa/√Hz)
+    var Pn_spectral = Math.pow(10, NL0_dB / 20) * 1e-6;
+    // Эффективное шумовое давление в полосе
+    var Pn_effective = Pn_spectral * Math.sqrt(bandwidth);
+    // Целевое давление сигнала для заданного SNR
+    var P_target = Pn_effective * Math.pow(10, SNR_dB / 20);
+    
+    document.getElementById("Pn_effective_out").innerText = Pn_effective.toExponential(4);
+    document.getElementById("P_target_out").innerText = P_target.toExponential(4);
+}
+
 function onPtx_update() {
-  p_t_in = document.getElementById("P_T_pa_V_input");
-  u_a_in = document.getElementById("U_a_V_input");
-
-  var res;
-  if ((p_t_in.validity.valid) && (u_a_in.validity.valid)) {
-    res = (p_tx = parseFloat(p_t_in.value) * parseFloat(u_a_in.value)).toFixed(3);
-  }
-  else {
-    res = "error";
-  }
-
-  document.getElementById("P_Tx_out").innerText = res;
+    var p_t_in = document.getElementById("P_T_pa_V_input");
+    var u_a_in = document.getElementById("U_a_V_input");
+    
+    var res;
+    if ((p_t_in.validity.valid) && (u_a_in.validity.valid)) {
+        res = (parseFloat(p_t_in.value) * parseFloat(u_a_in.value)).toFixed(3);
+    } else {
+        res = "error";
+    }
+    
+    document.getElementById("P_Tx_out").innerText = res;
 }
 
 function onSNRt_update() {
-  snr_db_in = document.getElementById("SNR_dB_input");
-
-  var res;
-  if (snr_db_in.validity.valid) {
-    res = Math.pow(10, parseFloat(snr_db_in.value) / 10.0).toFixed(3);
-  }
-  else {
-    res = "error";
-  }
-  document.getElementById("SNR_t_out").innerText = res;
+    var snr_db_in = document.getElementById("SNR_dB_input");
+    
+    var res;
+    if (snr_db_in.validity.valid) {
+        // Отношение по давлению: 10^(dB/20)
+        res = Math.pow(10, parseFloat(snr_db_in.value) / 20.0).toFixed(3);
+    } else {
+        res = "error";
+    }
+    document.getElementById("SNR_t_out").innerText = res;
+    updateTargetPressure();
 }
 
 function calculate() {
-
-  alpha_e = parseFloat(document.getElementById("alpha_e").innerText);
-  k = parseFloat(document.getElementById("K_input").value);
-  Ptx = parseFloat(document.getElementById("P_Tx_out").innerText);
-  Pn = parseFloat(document.getElementById("P_N_pa_input").value);
-  SNR = parseFloat(document.getElementById("SNR_t_out").innerText);
-
-  a = -0.001 * alpha_e;
-  b = -k;
-  c = Pn * SNR / Ptx;
-  d = 10*Math.log(10);
-
-  d1 = Math.log(10);
-  d = 10*d1;
-  a1 = a / 10;
-  epsilon = 1E-8;
-
-  var finished = false;
-  var r = 1;
-  var r_prev = r;
-  var itc = 0;
-  var lr;
-  var pf;
-  var eps;
-
-  itc_max = 1000;
-
-  do {
-
-     lr = Math.log(r);
-     pf = Math.pow(10, a1*r + b*lr/d);
-     f  = pf - c;
-     f1 = pf * d1 * (a1 + b/(r*d));
-
-     r = r_prev - f / f1;
-
-     eps = Math.abs(r_prev - r);
-     r_prev = r;
-     itc++;
-  } while ((eps > epsilon) && (itc < itc_max));
-
-  document.getElementById("r_max_out").innerText = r.toFixed(3);
-  document.getElementById("N_i_out").innerText = itc.toString();
-  document.getElementById("eps_out").innerText = eps.toExponential(3);
+    var alpha_e = parseFloat(document.getElementById("alpha_e").innerText);
+    var k = parseFloat(document.getElementById("K_input").value);
+    var Ptx = parseFloat(document.getElementById("P_Tx_out").innerText);
+    var Pn_effective = parseFloat(document.getElementById("Pn_effective_out").innerText);
+    var SNR_dB = parseFloat(document.getElementById("SNR_dB_input").value);
+    
+    if (isNaN(alpha_e) || isNaN(k) || isNaN(Ptx) || isNaN(Pn_effective) || isNaN(SNR_dB)) {
+        return;
+    }
+    
+    updateTargetPressure();
+    
+    var P_target = Pn_effective * Math.pow(10, SNR_dB / 20);
+    var target_ratio = P_target / Ptx;
+    
+    function TL(r) {
+        return k * 10 * Math.log10(r) + 0.001 * alpha_e * r;
+    }
+    
+    function F(r) {
+        return Math.pow(10, -TL(r) / 20) - target_ratio;
+    }
+    
+    function dFdr(r) {
+        var TL_val = TL(r);
+        var dTL_dr = (k * 10) / (r * Math.log(10)) + 0.001 * alpha_e;
+        return -Math.pow(10, -TL_val / 20) * (Math.log(10) / 20) * dTL_dr;
+    }
+    
+    var r = 1000;
+    var r_prev = r;
+    var itc = 0;
+    var eps;
+    var epsilon = 1e-6;
+    var itc_max = 100;
+    
+    do {
+        var f_val = F(r);
+        var f1_val = dFdr(r);
+        
+        if (Math.abs(f1_val) < 1e-12) break;
+        
+        r = r_prev - f_val / f1_val;
+        if (r < 1) r = 1;
+        
+        eps = Math.abs(r_prev - r);
+        r_prev = r;
+        itc++;
+    } while ((eps > epsilon) && (itc < itc_max));
+    
+    if (itc >= itc_max) {
+        document.getElementById("r_max_out").innerText = "No convergence";
+        document.getElementById("N_i_out").innerText = itc.toString();
+        document.getElementById("eps_out").innerText = eps.toExponential(3);
+        document.getElementById("P_R_out").innerText = "error";
+        return;
+    }
+    
+    var TL_final = TL(r);
+    var P_R = Ptx * Math.pow(10, -TL_final / 20);
+    
+    document.getElementById("r_max_out").innerText = r.toFixed(1);
+    document.getElementById("N_i_out").innerText = itc.toString();
+    document.getElementById("eps_out").innerText = eps.toExponential(3);
+    document.getElementById("TL_at_r_out").innerText = TL_final.toFixed(2);
+    document.getElementById("P_R_out").innerText = P_R.toExponential(4);
 }
 
-
-
 </script>
-
 </head>
 
 <body>
@@ -201,173 +219,165 @@ function calculate() {
 <hr>
 
 <h2>0. Brief description. Very basic theory</h2>
-
-We want to estimate the distance at which, for a given pressure <b><i>P<sub>TX</sub></i></b>
+<p>We want to estimate the distance at which, for a given pressure <b><i>P<sub>TX</sub></i></b>
 developed by an underwater acoustic transmitting antenna at a given frequency
 <b><i>f</i></b>, and a given noise pressure <b><i>P<sub>N</sub></i></b> at the
 receiving point, the residual pressure arriving at the receiver will have a
-given signal-to-noise ratio <b><i>SNR</i></b>.<br>
-The pressure <b><i>P<sub>TX</sub></i></b> developed by the transmitting antenna is defined as:
-<br>
-<br>
-<b><i>P<sub>TX</sub> = P<sub>T</sub> &middot; U<sub>a</sub></i></b><i>&nbsp;&nbsp;&nbsp;&nbsp;(1)</i>
-<br>
-<br>
-Where <b><i>P<sub>T</sub></i></b> - antenna's transmitting sensitivity, Pa/V,
-<b><i>U<sub>a</sub></i></b> - RMS voltage applied to the antenna.<br>
-<br>
-In this simplified calculation, we assume that there are only two types of losses:
+given signal-to-noise ratio <b><i>SNR</i></b>.</p>
+
+<p>The pressure <b><i>P<sub>TX</sub></i></b> developed by the transmitting antenna is defined as:</p>
+<p><b><i>P<sub>TX</sub> = P<sub>T</sub> &middot; U<sub>a</sub></i></b><i>&nbsp;&nbsp;&nbsp;&nbsp;(1)</i></p>
+<p>Where <b><i>P<sub>T</sub></i></b> - antenna's transmitting sensitivity, Pa/V,
+<b><i>U<sub>a</sub></i></b> - RMS voltage applied to the antenna.</p>
+
+<p>In this simplified calculation, we assume that there are only two types of losses:
 the first, associated with the absorption of sound in the medium, described by
 the absorption coefficient <b><i>&alpha;<sub>e</sub></i></b>. The absorption coefficient
 in the general case is a function of the parameters of the medium: temperature <b><i>t</i></b>,
 salinity <b><i>s</i></b>, acidity <b><i>pH</i></b>, depth <b><i>h</i></b> and
 frequency of the signal <b><i>f</i></b>. The dependence of the absorption coefficient
-is described, for example, in the work of Francois-Harrison<sup><a href="#footnote1">[1]</a></sup>.<br>
-<br>
-The second type of loss is associated with the geometric spreading of the signal energy
-and is described as follows:
-<br>
-<br>
-<b><i>&alpha;<sub>g</sub> = k &middot; 10 &middot; log<sub>10</sub>(r)</i></b><i>&nbsp;&nbsp;&nbsp;&nbsp;(2)</i>
-<br>
-<br>
-where <b><i>r</i></b> - propagation distance in meters, <b><i>k</i></b> - coefficient of
-the signal's front shape (1 - for cylindrical, 2 - for spherical).<br>
-<br>
-The total path loss can now be described as follows:
-<br>
-<br>
-<b><i>&alpha; = k &middot; 10 &middot; log<sub>10</sub>(r) + 0.001 &middot; &alpha;<sub>e</sub> &middot; r</i></b><i>&nbsp;&nbsp;&nbsp;&nbsp;(3)</i>
-<br>
-<br>
-A factor of 0.001 is used to convert dB/km to dB/m.<br>
-<br>
-Now we can write the equation from which we define <b><i>r</i></b>:
-<br>
-<br>
-<b><i>P<sub>TX</sub> &middot; 10<sup>&alpha;/10</sup> = P<sub>N</sub> &middot; SNR</i></b><i>&nbsp;&nbsp;&nbsp;&nbsp;(4)</i>
-<br>
-<br>
-Or, substituting (3) into (4):
-<br>
-<br>
-<b><i>10<sup>(-k &middot; log(r)/(10 &middot; log(10)) - 0.0001 &middot; &alpha;<sub>e</sub> &middot; r)</sup> = P<sub>N</sub> &middot; SNR / P<sub>TX</sub></i></b><i>&nbsp;&nbsp;&nbsp;&nbsp;(5)</i>
-<br>
-<br>
+is described, for example, in the work of Francois-Harrison<sup><a href="#footnote1">[1]</a></sup>.</p>
 
-Obviously, <b><i>r</i></b>, for which equality (5) holds, is the desired distance.<br>
-Equation (5) in its general form cannot be solved analytically, and the use of
-numerical methods is required. In this document, Newton's method is used.
+<p>The second type of loss is associated with the geometric spreading of the signal energy
+and is described as follows:</p>
+<p><b><i>&alpha;<sub>g</sub> = k &middot; 10 &middot; log<sub>10</sub>(r)</i></b><i>&nbsp;&nbsp;&nbsp;&nbsp;(2)</i></p>
+<p>where <b><i>r</i></b> - propagation distance in meters, <b><i>k</i></b> - coefficient of
+the signal's front shape (1 - for cylindrical, 2 - for spherical).</p>
+
+<p>The total path loss can now be described as follows:</p>
+<p><b><i>TL = k &middot; 10 &middot; log<sub>10</sub>(r) + 0.001 &middot; &alpha;<sub>e</sub> &middot; r</i></b><i>&nbsp;&nbsp;&nbsp;&nbsp;(3)</i></p>
+<p>A factor of 0.001 is used to convert dB/km to dB/m.</p>
+
+<p>The sonar equation for active system (simplified) is:</p>
+<p><b><i>SL - TL = NL - DI + DT</i></b></p>
+<p>For omnidirectional receiver (DI=0) and in terms of pressure:</p>
+<p><b><i>P<sub>TX</sub> &middot; 10<sup>-TL/20</sup> = P<sub>N</sub> &middot; 10<sup>SNR<sub>dB</sub>/20</sup></i></b><i>&nbsp;&nbsp;&nbsp;&nbsp;(4)</i></p>
 
 <h2>1. Calculation</h2>
 
 <table id="values1_tbl">
 <caption><b>Table 1. Absorption due to the medium</b></caption>
- <tr>
+<thead>
    <th>Parameter</th>
    <th>Notation</th>
    <th>Value</th>
    <th>Range</th>
    <th>Units</th>
- </tr>
- <tr>
-   <td>Frequency</td>
-   <td><b><i>f</i></b></td>
-   <td><input type="number" step="1" value="20" min="1" max="1000" name="f_kHz" id="f_kHz_input" oninput="onUpdate_alpha_e()"></td>
-   <td>1 .. 1000</td>
-   <td>kHz</td>
- </tr>
- <tr>
-   <td>Water temperature</td>
-   <td><b><i>t</i></b></td>
-   <td><input type="number" step="0.1" value="8" min="-2" max="40" name="t_C" id="t_C_input" oninput="onUpdate_alpha_e()"></td>
-   <td>-2 .. 40</td>
-   <td>°</td>
- </tr>
- <tr>
-   <td>Depth</td>
-   <td><b><i>h</i></b></td>
-   <td><input type="number" step="1" value="100" min="1" max="10000" name="h_m" id="h_m_input" oninput="onUpdate_alpha_e()"></td>
-   <td>1 .. 10<sup>4</sup></td>
-   <td>m</td>
- </tr>
- <tr>
-   <td>Water salinity</td>
-   <td><b><i>s</i></b></td>
-   <td><input type="number" step="0.1" value="35" min="0" max="42" name="s_PSU" id="s_PSU_input" oninput="onUpdate_alpha_e()"></td>
-   <td>0 .. 42</td>
-   <td>PSU</td>
- </tr>
- <tr>
-   <td>Acidity</td>
-   <td><b><i>pH</i></b></td>
-   <td><input type="number" step="0.1" value="8" min="7.7" max="8.3" name="pH_" id="pH_input" oninput="onUpdate_alpha_e()"></td>
-   <td>7.7 .. 8.3</td>
-   <td></td>
- </tr>
- <tr>
-   <td>Absorption coefficient<sup><a href="#footnote1">[1]</a></sup></td>
-   <td><b><i>&alpha;<sub>e</sub></i></b></td>
-   <td><b><a id="alpha_e"></a></b></td>
-   <td></td>
-   <td>dB/km</td>
- </tr>
+</thead>
+<tr>
+    <td>Frequency</td>
+    <td><b><i>f</i></b></td>
+    <td><input type="number" step="1" value="28" min="1" max="1000" name="f_kHz" id="f_kHz_input" oninput="onUpdate_alpha_e()"></td>
+    <td>1 .. 1000</td>
+    <td>kHz</td>
+</tr>
+<tr>
+    <td>Water temperature</td>
+    <td><b><i>t</i></b></td>
+    <td><input type="number" step="0.1" value="20" min="-2" max="40" name="t_C" id="t_C_input" oninput="onUpdate_alpha_e()"></td>
+    <td>-2 .. 40</td>
+    <td>°C</td>
+</tr>
+<tr>
+    <td>Depth</td>
+    <td><b><i>h</i></b></td>
+    <td><input type="number" step="1" value="1" min="1" max="10000" name="h_m" id="h_m_input" oninput="onUpdate_alpha_e()"></td>
+    <td>1 .. 10<sup>4</sup></td>
+    <td>m</td>
+</tr>
+<tr>
+    <td>Water salinity</td>
+    <td><b><i>s</i></b></td>
+    <td><input type="number" step="0.1" value="35" min="0" max="42" name="s_PSU" id="s_PSU_input" oninput="onUpdate_alpha_e()"></td>
+    <td>0 .. 42</td>
+    <td>PSU</td>
+</tr>
+<tr>
+    <td>Acidity</td>
+    <td><b><i>pH</i></b></td>
+    <td><input type="number" step="0.1" value="8" min="7.7" max="8.3" name="pH_" id="pH_input" oninput="onUpdate_alpha_e()"></td>
+    <td>7.7 .. 8.3</td>
+    <td></td>
+</tr>
+<tr>
+    <td>Absorption coefficient<sup><a href="#footnote1">[1]</a></sup></td>
+    <td><b><i>&alpha;<sub>e</sub></i></b></td>
+    <td><b><a id="alpha_e"></a></b></td>
+    <td></td>
+    <td>dB/km</td>
+</tr>
 </table>
 <br>
 
 <table id="values2_tbl">
-<caption><b>Table 2. Transmitter antenna and ambient noise parameters</b></caption>
- <tr>
+<caption><b>Table 2. Transmitter and noise parameters</b></caption>
+<thead>
    <th>Parameter</th>
    <th>Notation</th>
    <th>Value</th>
    <th>Range</th>
    <th>Units</th>
    <th>Description</th>
- </tr>
- <tr>
-   <td>Transmission sensitivity</td>
-   <td><b><i>P<sub>T</sub></i></b></td>
-   <td><input type="number" step="0.5" value="5" min="0.5" max="10000" name="P_T_pa_V" id="P_T_pa_V_input" oninput="onPtx_update()"></td>
-   <td>0.5 .. 10000</td>
-   <td>Pa/V</td>
-   <td>On specified frequency <b><i>f</i><b></td>
- </tr>
- <tr>
-   <td>Voltage on the antenna</td>
-   <td><b><i>U<sub>a</sub></i></b></td>
-   <td><input type="number" step="1" value="100" min="1" max="1000" name="U_a_V" id="U_a_V_input" oninput="onPtx_update()"></td>
-   <td>1 .. 1000</td>
-   <td>V</td>
-   <td>RMS</td>
- </tr>
- <tr>
-   <td>Noise pressure</td>
-   <td><b><i>P<sub>N</sub></i></b></td>
-   <td><input type="number" step="0.0001" value="0.01" min="0.0001" max="1000" name="P_N_pa" id="P_N_pa_input"></td>
-   <td>0.001 .. 10<sup>3</sup></td>
-   <td>Pa</td>
-   <td>On the receiving antenna</td>
- </tr>
- <tr>
-   <td>Desired SNR</td>
-   <td><b><i>SNR</i></b></td>
-   <td><input type="number" step="0.01" value="4.77" min="-5" max="20" name="SNR_dB" id="SNR_dB_input" oninput="onSNRt_update()"></td>
-   <td>-5 .. 20</td>
-   <td>dB</td>
-   <td>On the receiving point</td>
- </tr>
- <tr>
-   <td>Geometric spreading coefficient</td>
-   <td><b><i>K</i></b></td>
-   <td><input type="number" step="0.1" value="2" min="0.1" max="10" name="K" id="K_input" oninput="updateTL()"></td>
-   <td>0.1 .. 10</td>
-   <td></td>
-   <td>1 - cilyndrical, 2 - spheric</td>
- </tr>
+</thead>
+<tr>
+    <td>Transmission sensitivity</td>
+    <td><b><i>P<sub>T</sub></i></b></td>
+    <td><input type="number" step="0.5" value="5" min="0.5" max="10000" name="P_T_pa_V" id="P_T_pa_V_input" oninput="onPtx_update()"></td>
+    <td>0.5 .. 10000</td>
+    <td>Pa/V</td>
+    <td>On specified frequency <b><i>f</i></b></td>
+</tr>
+<tr>
+    <td>Voltage on the antenna</td>
+    <td><b><i>U<sub>a</sub></i></b></td>
+    <td><input type="number" step="1" value="73" min="1" max="1000" name="U_a_V" id="U_a_V_input" oninput="onPtx_update()"></td>
+    <td>1 .. 1000</td>
+    <td>V</td>
+    <td>RMS</td>
+</tr>
+<tr>
+    <td>Spectral noise level</td>
+    <td><b><i>NL<sub>0</sub></i></b></td>
+    <td><input type="number" step="1" value="94" min="20" max="120" name="NL0" id="NL0_input" oninput="updateTargetPressure()"></td>
+    <td>20 .. 120</td>
+    <td>dB re 1 μPa/√Hz</td>
+    <td>Spectral noise density</td>
+</tr>
+<tr>
+    <td>Receiver bandwidth</td>
+    <td><b><i>Δf</i></b></td>
+    <td><input type="number" step="100" value="1000" min="1" max="100000" name="bandwidth" id="bandwidth_input" oninput="updateTargetPressure()"></td>
+    <td>1 .. 100000</td>
+    <td>Hz</td>
+    <td>Noise bandwidth of receiver</td>
+</tr>
+<tr>
+    <td>Effective noise pressure</td>
+    <td><b><i>P<sub>N</sub></i></b></td>
+    <td><b><a id="Pn_effective_out"></a></b></td>
+    <td></td>
+    <td>Pa</td>
+    <td>P<sub>N</sub> = NL<sub>0</sub> × √Δf</td>
+</tr>
+<tr>
+    <td>Desired SNR</td>
+    <td><b><i>SNR</i></b></td>
+    <td><input type="number" step="0.01" value="10" min="-5" max="20" name="SNR_dB" id="SNR_dB_input" oninput="onSNRt_update()"></td>
+    <td>-5 .. 20</td>
+    <td>dB</td>
+    <td>On the receiving point</td>
+</tr>
+<tr>
+    <td>Geometric spreading coefficient</td>
+    <td><b><i>K</i></b></td>
+    <td><input type="number" step="0.1" value="1" min="0.1" max="10" name="K" id="K_input" oninput="updateTL()"></td>
+    <td>0.1 .. 10</td>
+    <td></td>
+    <td>1 - cylindrical, 2 - spherical</td>
+</tr>
 <tr>
     <td>Transmission Loss at 100 m</td>
-    <td><b><i>TL(100)</i></b></td>
+    <td><b><i>TL<sub>100</sub></i></b></td>
     <td><b><a id="tl_100_out"></a></b></td>
     <td></td>
     <td>dB</td>
@@ -375,28 +385,36 @@ numerical methods is required. In this document, Newton's method is used.
 </tr>
 <tr>
     <td>Transmission Loss at 1000 m</td>
-    <td><b><i>TL(1000)</i></b></td>
+    <td><b><i>TL<sub>1000</sub></i></b></td>
     <td><b><a id="tl_1000_out"></a></b></td>
     <td></td>
     <td>dB</td>
     <td>For reference</td>
 </tr>
- <tr>
-   <td>Transmitter pressure</td>
-   <td><b><i>P<sub>TX</sub></i></b></td>
-   <td><b><a id="P_Tx_out"></a></b></td>
-   <td></td>
-   <td>Pa</td>
-   <td></td>
- </tr>
- <tr>
-   <td>Desired SNR</td>
-   <td><b><i>SNR<sub>t</sub></i></b></td>
-   <td><b><a id="SNR_t_out"></a></b></td>
-   <td></td>
-   <td>times</td>
-   <td></td>
- </tr>
+<tr>
+    <td>Transmitter pressure</td>
+    <td><b><i>P<sub>TX</sub></i></b></td>
+    <td><b><a id="P_Tx_out"></a></b></td>
+    <td></td>
+    <td>Pa</td>
+    <td></td>
+</tr>
+<tr>
+    <td>Desired SNR (pressure ratio)</td>
+    <td><b><i>SNR<sub>t</sub></i></b></td>
+    <td><b><a id="SNR_t_out"></a></b></td>
+    <td></td>
+    <td>times</td>
+    <td>10<sup>SNR<sub>dB</sub>/20</sup></td>
+</tr>
+<tr>
+    <td>Target received pressure</td>
+    <td><b><i>P<sub>target</sub></i></b></td>
+    <td><b><a id="P_target_out"></a></b></td>
+    <td></td>
+    <td>Pa</td>
+    <td>P<sub>N</sub> × 10<sup>SNR<sub>dB</sub>/20</sup></td>
+</tr>
 </table>
 <br>
 
@@ -406,40 +424,55 @@ numerical methods is required. In this document, Newton's method is used.
 
 <table id="values3_tbl">
 <caption><b>Table 3. Results</b></caption>
- <tr>
+<thead>
    <th>Parameter</th>
    <th>Notation</th>
    <th>Value</th>
    <th>Range</th>
    <th>Units</th>
    <th>Description</th>
- </tr>
- <tr>
-   <td>Maximal distance</td>
-   <td><b><i>r<sub>max</sub></i></b></td>
-   <td><b><a id="r_max_out"></a></b></td>
-   <td></td>
-   <td>m</td>
-   <td></td>
- </tr>
- <tr>
-   <td>Number of iterations taken</td>
-   <td><b><i>N<sub>i</sub></i></b></td>
-   <td><b><a id="N_i_out"></a></b></td>
-   <td>1 .. 1000</td>
-   <td></td>
-   <td></td>
- </tr>
- <tr>
-   <td>Residual</td>
-   <td><b><i>&epsilon;</i></b></td>
-   <td><b><a id="eps_out"></a></b></td>
-   <td></td>
-   <td>m</td>
-   <td></td>
- </tr>
+</thead>
+<tr>
+    <td>Maximal distance</td>
+    <td><b><i>r<sub>max</sub></i></b></td>
+    <td><b><a id="r_max_out"></a></b></td>
+    <td></td>
+    <td>m</td>
+    <td></td>
+</tr>
+<tr>
+    <td>Number of iterations taken</td>
+    <td><b><i>N<sub>i</sub></i></b></td>
+    <td><b><a id="N_i_out"></a></b></td>
+    <td>1 .. 1000</td>
+    <td></td>
+    <td></td>
+</tr>
+<tr>
+    <td>Residual</td>
+    <td><b><i>&epsilon;</i></b></td>
+    <td><b><a id="eps_out"></a></b></td>
+    <td></td>
+    <td>m</td>
+    <td></td>
+</tr>
+<tr>
+    <td>Transmission Loss at r<sub>max</sub></td>
+    <td><b><i>TL</i></b></td>
+    <td><b><a id="TL_at_r_out"></a></b></td>
+    <td></td>
+    <td>dB</td>
+    <td>Total loss at calculated distance</td>
+</tr>
+<tr>
+    <td>Received pressure</td>
+    <td><b><i>P<sub>R</sub></i></b></td>
+    <td><b><a id="P_R_out"></a></b></td>
+    <td></td>
+    <td>Pa</td>
+    <td>At distance r<sub>max</sub></td>
+</tr>
 </table>
-
 
 <hr>
 
@@ -459,6 +492,7 @@ onUpdate_alpha_e();
 onPtx_update();
 onSNRt_update();
 updateTL();
+updateTargetPressure();
 calculate();
 </script>
    
