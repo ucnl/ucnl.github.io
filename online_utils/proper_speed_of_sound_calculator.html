@@ -1,5 +1,5 @@
 <head>
-<title>Proper speed of sound in water calculator</title>
+<title>Калькулятор скорости звука в воде</title>
 <link href="style.css" rel="stylesheet" type="text/css">
 <!-- Yandex.Metrika counter -->
 <script type="text/javascript" >
@@ -40,67 +40,69 @@ function onInput() {
 </head>
 
 <body>
-<h1>Proper water properties calculator: Speed of sound in water</h1>
+<h1>Расчет скорости звука в воде</h1>
 <hr>
 <p>
-<i>God speed on your way! (C) An archaic expression<br></i>
+<i>God speed! (C) Старинное выражение<br></i>
 </p>
 
-<h2>0. Brief description. Very basic theory.</h2>
+<h2>0. Краткое описание. Основная теория.</h2>
 
-In real-world applications, speed of sound in water is a function of water
-temperature <b><i>t</i></b>, water salinity <b><i>s</i></b> and hydrostatic
-pressure <b><i>P</i></b>. The range of these three parameters in most of Earth's
-water bodies varies from -2 to 40°C for temperature, 0..42 PSU for salinity, and
- from ~1 to 1100 bar for pressure. So, the speed of sound varies from approximately
-1400 m/s in cold freshwater under low pressure to up to 1700 m/s in warm saline
-water under high pressure. There is a lot slightly different empiric equations
-for estimation of the speed of sound in water, obtained from big datasets of
-measurements.  One can find it in works, listed
-<a href="http://resource.npl.co.uk/acoustics/techguides/soundseawater/refs.html">here</a>.
-Here we use the equation from the work of Chen and Millero<a href="#footnote1">[1]</a>
-pp 1129-1135, so-called UNESCO Equation. It uses pressure rather than depth as a parameter.
-It is more convenient since the depth itself cannot be measured directly in most cases.
+В реальных приложениях скорость звука в воде является функцией температуры воды
+<b><i>t</i></b>, солености воды <b><i>s</i></b> и гидростатического давления
+<b><i>P</i></b>. Диапазон этих трех параметров в большинстве водоемов Земли
+варьируется от -2 до 40°C для температуры, от 0 до 42 PSU для солености и
+от ~1 до 1100 бар для давления. Таким образом, скорость звука изменяется
+примерно от 1400 м/с в холодной пресной воде при низком давлении до 1700 м/с
+в теплой соленой воде при высоком давлении. Существует множество различных
+эмпирических уравнений для оценки скорости звука в воде, полученных из больших
+наборов измерений. Их можно найти в работах, перечисленных
+<a href="http://resource.npl.co.uk/acoustics/techguides/soundseawater/refs.html">здесь</a>.
+Здесь мы используем уравнение из работы Chen и Millero<a href="#footnote1">[1]</a>
+стр. 1129-1135, так называемое Уравнение ЮНЕСКО. В нем используется давление,
+а не глубина, в качестве параметра. Это удобнее, поскольку глубина в большинстве
+случаев не может быть измерена непосредственно.
 
-<h2>1. Calculation</h2>
+<h2>1. Расчет</h2>
 
 <table id="in_values_tbl">
- <tr>
-   <th>Parameter</th>
-   <th>Notation</th>
-   <th>Value</th>
-   <th>Range</th>
-   <th>Units</th>
- </tr>
- <tr>
-   <td>Water temperature</td>
-   <td><b><i>t</i></b></td>
-   <td><input type="number" step="0.01" value="10" min="-2" max="40" name="t_C" id="t_C_input" oninput="onInput()"></td>
-   <td>-2 .. 40</td>
-   <td>°C</td>
- </tr>
- <tr>
-   <td>Hydrostatic pressure</td>
-   <td><b><i>P</i></b></td>
-   <td><input type="number" step="0.01" value="100000" min="1000" max="1200000" name="P_mBar" id="P_mBar_input" oninput="onInput()"></td>
-   <td>10<sup>3</sup> .. 10<sup>6</sup></td>
-   <td>mBar</td>
- </tr>
- <tr>
-   <td>Water salinity</td>
-   <td><b><i>s</i></b></td>
-   <td><input type="number" step="0.1" value="38" min="0" max="42" name="s_PSU" id="s_PSU_input" oninput="onInput()"></td>
-   <td>0 .. 42</td>
-   <td>PSU</td>
- </tr>
- <tr>
-   <td>Speef of sound</td>
-   <td><b><i>v</i></b></td>
-   <td><b><a id="v_mps_out"></a></b></td>
-   <td></td>
-   <td>m/s</td>
- </tr>
-</table>
+<caption><b>Таблица. Входные параметры и результат</b></caption>
+  <thead>
+   <th>Параметр</th>
+   <th>Обозначение</th>
+   <th>Значение</th>
+   <th>Диапазон</th>
+   <th>Ед. изм.</th>
+  </thead>
+   <tr>
+     <td>Температура воды</td>
+     <td><b><i>t</i></b></td>
+     <td><input type="number" step="0.01" value="10" min="-2" max="40" name="t_C" id="t_C_input" oninput="onInput()"></td>
+     <td>-2 .. 40</td>
+     <td>°C</td>
+   </tr>
+   <tr>
+     <td>Гидростатическое давление</td>
+     <td><b><i>P</i></b></td>
+     <td><input type="number" step="0.01" value="100000" min="1000" max="1200000" name="P_mBar" id="P_mBar_input" oninput="onInput()"></td>
+     <td>10<sup>3</sup> .. 10<sup>6</sup></td>
+     <td>мБар</td>
+   </tr>
+   <tr>
+     <td>Соленость воды</td>
+     <td><b><i>s</i></b></td>
+     <td><input type="number" step="0.1" value="38" min="0" max="42" name="s_PSU" id="s_PSU_input" oninput="onInput()"></td>
+     <td>0 .. 42</td>
+     <td>PSU</td>
+   </tr>
+   <tr>
+     <td>Скорость звука</td>
+     <td><b><i>v</i></b></td>
+     <td><b><a id="v_mps_out"></a></b></td>
+     <td></td>
+     <td>м/с</td>
+   </tr>
+ </table>
 <br>
 <hr>
 
@@ -108,14 +110,14 @@ It is more convenient since the depth itself cannot be measured directly in most
 <li id="footnote1"><a href="https://asa.scitation.org/doi/10.1121/1.381646">C-T. Chen and F.J. Millero, Speed of sound in seawater at high pressures (1977) J. Acoust. Soc. Am. 62(5)</a>.
 </ol>
 
-<p>This calculator is made with <a href="https://github.com/ucnl/UCNLPhysics">UCNLPhysics</a> free and open source library.</p>
+<p>Этот калькулятор использует свободную библиотеку <a href="https://github.com/ucnl/UCNLPhysics">UCNLPhysics</a>.</p>
 
 <hr>
-<a href="https://docs.unavlab.com/online_utilities_en.html">Back to Online Utilities page</a>
+<a href="https://docs.unavlab.com/online_utilities_en.html">Назад к онлайн-утилитам</a>
    
 <hr>
 (C) Alek Dikarev, 2020<br>
-For bug reports, suggestions and questions, please feel free to <a href="https://github.com/AlekUnderwater">reach me</a><br>
+По вопросам, предложениям и сообщениям об ошибках пишите <a href="https://github.com/AlekUnderwater">сюда</a><br>
 
 <script type="text/javascript">
 onInput();
