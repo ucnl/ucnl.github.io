@@ -17,6 +17,52 @@
 <!-- /Yandex.Metrika counter -->
 <script type="text/javascript">
 
+/**
+ * Расчет коэффициента поглощения звука в морской воде
+ * Модель Francois & Garrison (1982)
+ * 
+ * @param f - частота (кГц)
+ * @param T - температура (°C)
+ * @param S - соленость (PSU)
+ * @param h - глубина (м)
+ * @param pH - кислотность (7.7-8.3)
+ * @returns коэффициент поглощения (дБ/км)
+ */
+function calculateAbsorptionCoefficient(f, T, S, h, pH) {
+    // Проверка валидности входных данных
+    if (f <= 0 || T < -2 || T > 40 || S < 0 || S > 42 || h < 0 || pH < 7.7 || pH > 8.3) {
+        console.warn("Выход за пределы валидности модели Francois & Garrison");
+    }
+    
+    // Преобразование глубины в километры для поправочных коэффициентов
+    const depthKm = h / 1000;
+    
+    // === Компонент 1: Бор (B(OH)3) ===
+    const A1 = 0.106 * Math.exp((pH - 8) / 0.56);
+    const f1 = 0.78 * Math.sqrt(S / 35) * Math.exp(T / 26);
+    const P1 = 1 - 0.005 * depthKm;
+    
+    const term1 = (A1 * P1 * f1 * f * f) / (f1 * f1 + f * f);
+    
+    // === Компонент 2: Сульфат магния (MgSO4) ===
+    const A2 = 0.52 * (1 + T / 43) * (S / 35);
+    const f2 = 42 * Math.exp(T / 17);
+    const P2 = 1 - 0.002 * depthKm;
+    
+    const term2 = (A2 * P2 * f2 * f * f) / (f2 * f2 + f * f);
+    
+    // === Компонент 3: Чистая вода (вязкость) ===
+    const A3 = 0.0003 * Math.exp(-T / 22);
+    const P3 = 1 - 0.003 * depthKm;
+    
+    const term3 = A3 * P3 * f * f;
+    
+    // Суммарный коэффициент поглощения (дБ/км)
+    const alpha = term1 + term2 + term3;
+    
+    return alpha;
+}
+   
 function Alpha_e_FrancoisGarrison_calc(f, t, s, h, pH) {
 
     // For f = 1..500 kHz:
@@ -81,7 +127,7 @@ function onUpdate_alpha_e() {
   if ((f_in.validity.valid) && (t_in.validity.valid) &&
      (h_in.validity.valid) && (s_in.validity.valid) &&
      (ph_in.validity.valid)) {
-    res = Alpha_e_FrancoisGarrison_calc(parseFloat(f_in.value),
+    res = calculateAbsorptionCoefficient(parseFloat(f_in.value),
     parseFloat(t_in.value),
     parseFloat(s_in.value),
     parseFloat(h_in.value),
