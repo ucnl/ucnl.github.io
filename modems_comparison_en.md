@@ -36,7 +36,7 @@ ________________
 
 <a name="footnote1"><sup>1</sup></a> A parameter that determines the maximum range at which a signal can be received based on the electro-acoustic parameters of the transmitter and receiver, spatial decrease in the intensity of sound energy, attenuation in the medium and acoustic noise level.  
 <a name="footnote2"><sup>2</sup></a> When communicating [uWave Max OEM](/documentation/EN/uWAVE/uWAVE_Max_OEM_Specification_en.md), [uWave Max](/documentation/EN/uWAVE/uWAVE_Max_Specification_en.md) and [uWave USBL Modem](/documentation/EN/uWAVE/uWAVE_USBL_Modem_Specification_en.md) in any combination. The maximum communication range with standard modems [uWave](/documentation/EN/uWAVE/uWAVE_Specification_en.md) is 1000 meters. The parameter is specified for the standard speed mode - 78 bps.  
-<a name="footnote3"><sup>3</sup></a> Standard speed mode 78 bps provides maximum communication range and noise immunity. Other modes are available by [re-flashing devices](uWAVE_FW_Updating_en.md).  
+<a name="footnote3"><sup>3</sup></a> Standard speed mode 78 bps provides maximum communication range and noise immunity. Other modes are available by [re-flashing devices](/documentation/EN/uWAVE/uWAVE_FW_Updating_en.md).  
 <a name="footnote4"><sup>4</sup></a> The maximum depth is determined by the transducer. The modem's printed circuit board must be located in the user's normobaric enclosure.  
 <a name="footnote5"><sup>5</sup></a> Working depth of 1000 meters is ensured when working with [RT-1.524525-1-FF](/documentation/EN/Transducers/RT_1_524525_1_FF_Specification_en) transducer.   
 <a name="footnote6"><sup>6</sup></a> Maximum power and communication range is provided at a supply voltage of 12 V.
