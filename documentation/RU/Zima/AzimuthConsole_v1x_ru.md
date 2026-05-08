@@ -1,9 +1,51 @@
-## ПРИЛОЖЕНИЕ A. Этот раздел описывает команды AzimuthConsole v1.x.
+[Главная](/README_RU) ❯ [Гидроакустические навигационные и трекинговые системы](/navigation_and_tracking_systems_ru) ❯ **AzimuthConsole v1.x: Руководство пользователя**
 
-> ⚠️ Данный раздел будет исключен из документа
+<div style="page-break-after: always;"></div>
+
+| ![logo](/documentation/sm_logo.png) |  |
+| :---: | ---: |
+| [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **AzimuthConsole v1.x** - Кроссплатформенное приложение для работы с системой Zima2 USBL <br/> Руководство пользователя |
+
+# AzimuthConsole v1.x <br/> Руководство пользователя
+
+<div style="page-break-after: always;"></div>
 
 <details>
-<summary>Система команд v1.x. </summary>
+<summary>Содержание</summary>
+
+  - [A.1.1. HELP](#a11-help)
+  - [A.1.2. SETM](#a12-setm)
+  - [A.1.3. SETA](#a13-seta)
+  - [A.1.4. SETO](#a14-seto)
+  - [A.1.5. SARP](#a15-sarp)
+  - [A.1.6. CLS](#a16-cls)
+  - [A.1.7. EXIT](#a17-exit)
+  - [A.1.8. OCON](#a18-ocon)
+  - [A.1.9. CCON](#a19-ccon)
+  - [A.1.10. CNA?](#a110-cna)
+  - [A.1.11. ITG?](#a111-itg)
+  - [A.1.12. DET?](#a112-det)
+  - [A.1.13. CREQ](#a113-creq)
+  - [A.1.14. LHO?](#a114-lho)
+  - [A.1.15. OFMT?](#a115-ofmt)
+  - [A.1.16. PITG](#a116-pitg)
+  - [A.1.17. RITG](#a117-ritg)
+  - [A.1.18. LHOV](#a118-lhov)
+  - [A.1.19. SRC3](#a119-src3)
+  - [A.1.20. HKEYS](#a120-hkeys)
+  - [A.1.21. PLAY](#a121-play)
+  - [A.1.22. RRA?](#a122-rra)
+  - [A.1.23. SRRA](#a123-srra)
+  - [A.1.24. SIOC](#a124-sioc)
+  - [A.1.25. FLTS](#a125-flts)
+  - [A.1.26. FLTS](#a126-flts)
+  - [A.1.27. NWEB](#a127-nweb)
+- [A.2. Примеры](#a2-%D0%BF%D1%80%D0%B8%D0%BC%D0%B5%D1%80%D1%8B)
+  - [A.2.1. Параметры командной строки](#a21-%D0%BF%D0%B0%D1%80%D0%B0%D0%BC%D0%B5%D1%82%D1%80%D1%8B-%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D0%BD%D0%BE%D0%B9-%D1%81%D1%82%D1%80%D0%BE%D0%BA%D0%B8)
+  - [A.2.2. Часто используемые команды](#a22-%D1%87%D0%B0%D1%81%D1%82%D0%BE-%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D1%83%D0%B5%D0%BC%D1%8B%D0%B5-%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B)
+- [A.3. Часто задаваемые вопросы](#a3-%D1%87%D0%B0%D1%81%D1%82%D0%BE-%D0%B7%D0%B0%D0%B4%D0%B0%D0%B2%D0%B0%D0%B5%D0%BC%D1%8B%D0%B5-%D0%B2%D0%BE%D0%BF%D1%80%D0%BE%D1%81%D1%8B)
+
+</details>
 
 ___
 
