@@ -21,6 +21,16 @@
   - [2.1. Характеристики](#21-%D1%85%D0%B0%D1%80%D0%B0%D0%BA%D1%82%D0%B5%D1%80%D0%B8%D1%81%D1%82%D0%B8%D0%BA%D0%B8)
   - [2.2. Примеры](#22-%D0%BF%D1%80%D0%B8%D0%BC%D0%B5%D1%80%D1%8B)
   - [2.3. Описание команд](#23-%D0%BE%D0%BF%D0%B8%D1%81%D0%B0%D0%BD%D0%B8%D0%B5-%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4)
+    - [2.3.1. Соединение](#231-%D1%81%D0%BE%D0%B5%D0%B4%D0%B8%D0%BD%D0%B5%D0%BD%D0%B8%D0%B5)
+    - [2.3.2. Порты](#232-%D0%BF%D0%BE%D1%80%D1%82%D1%8B)
+    - [2.3.3. Запрос маяков](#233-%D0%B7%D0%B0%D0%BF%D1%80%D0%BE%D1%81-%D0%BC%D0%B0%D1%8F%D0%BA%D0%BE%D0%B2)
+    - [2.3.4. Трансивер](#234-%D1%82%D1%80%D0%B0%D0%BD%D1%81%D0%B8%D0%B2%D0%B5%D1%80)
+    - [2.3.5. Позиция](#235-%D0%BF%D0%BE%D0%B7%D0%B8%D1%86%D0%B8%D1%8F)
+    - [2.3.6. Конфигурация маяков](#236-%D0%BA%D0%BE%D0%BD%D1%84%D0%B8%D0%B3%D1%83%D1%80%D0%B0%D1%86%D0%B8%D1%8F-%D0%BC%D0%B0%D1%8F%D0%BA%D0%BE%D0%B2)
+    - [2.3.7. Сервис](#237-%D1%81%D0%B5%D1%80%D0%B2%D0%B8%D1%81)
+    - [2.3.8. Управление файлами журналов](#238-%D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D1%84%D0%B0%D0%B9%D0%BB%D0%B0%D0%BC%D0%B8-%D0%B6%D1%83%D1%80%D0%BD%D0%B0%D0%BB%D0%BE%D0%B2)
+    - [2.3.9. Конфигурация выходных данных](#239-%D0%BA%D0%BE%D0%BD%D1%84%D0%B8%D0%B3%D1%83%D1%80%D0%B0%D1%86%D0%B8%D1%8F-%D0%B2%D1%8B%D1%85%D0%BE%D0%B4%D0%BD%D1%8B%D1%85-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85)
+    - [2.3.10. Калибровки](#2310-%D0%BA%D0%B0%D0%BB%D0%B8%D0%B1%D1%80%D0%BE%D0%B2%D0%BA%D0%B8)
 - [3. Выходные данные](#3-%D0%B2%D1%8B%D1%85%D0%BE%D0%B4%D0%BD%D1%8B%D0%B5-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D0%B5)
   - [3.1. AZMLOC - локальные параметры](#31-azmloc---%D0%BB%D0%BE%D0%BA%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B5-%D0%BF%D0%B0%D1%80%D0%B0%D0%BC%D0%B5%D1%82%D1%80%D1%8B)
   - [3.2. AZMREM - данные маяка-ответчика](#32-azmrem---%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D0%B5-%D0%BC%D0%B0%D1%8F%D0%BA%D0%B0-%D0%BE%D1%82%D0%B2%D0%B5%D1%82%D1%87%D0%B8%D0%BA%D0%B0)
@@ -32,10 +42,25 @@
 - [6. Настройка RaspberryPi с автозапуском приложения](#6-%D0%BD%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0-raspberrypi-%D1%81-%D0%B0%D0%B2%D1%82%D0%BE%D0%B7%D0%B0%D0%BF%D1%83%D1%81%D0%BA%D0%BE%D0%BC-%D0%BF%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F)
   - [6.1. Что потребуется](#61-%D1%87%D1%82%D0%BE-%D0%BF%D0%BE%D1%82%D1%80%D0%B5%D0%B1%D1%83%D0%B5%D1%82%D1%81%D1%8F)
   - [6.2. Подготовка системы](#62-%D0%BF%D0%BE%D0%B4%D0%B3%D0%BE%D1%82%D0%BE%D0%B2%D0%BA%D0%B0-%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D1%8B)
+    - [6.2.1. Запись образа на SD карту](#621-%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D1%8C-%D0%BE%D0%B1%D1%80%D0%B0%D0%B7%D0%B0-%D0%BD%D0%B0-sd-%D0%BA%D0%B0%D1%80%D1%82%D1%83)
+    - [6.2.2 Первый запуск и базовая настройка](#622-%D0%BF%D0%B5%D1%80%D0%B2%D1%8B%D0%B9-%D0%B7%D0%B0%D0%BF%D1%83%D1%81%D0%BA-%D0%B8-%D0%B1%D0%B0%D0%B7%D0%BE%D0%B2%D0%B0%D1%8F-%D0%BD%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0)
+    - [6.2.3 Обновление пакетов](#623-%D0%BE%D0%B1%D0%BD%D0%BE%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%BF%D0%B0%D0%BA%D0%B5%D1%82%D0%BE%D0%B2)
   - [6.3. Установка приложения](#63-%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0-%D0%BF%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F)
+    - [6.3.1 Создание директории](#631-%D1%81%D0%BE%D0%B7%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5-%D0%B4%D0%B8%D1%80%D0%B5%D0%BA%D1%82%D0%BE%D1%80%D0%B8%D0%B8)
+    - [6.3.2 Копирование файлов с флешки](#632-%D0%BA%D0%BE%D0%BF%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-%D1%84%D0%B0%D0%B9%D0%BB%D0%BE%D0%B2-%D1%81-%D1%84%D0%BB%D0%B5%D1%88%D0%BA%D0%B8)
+    - [6.3.3 Альтернатива: копирование по SCP с компьютера](#633-%D0%B0%D0%BB%D1%8C%D1%82%D0%B5%D1%80%D0%BD%D0%B0%D1%82%D0%B8%D0%B2%D0%B0-%D0%BA%D0%BE%D0%BF%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-%D0%BF%D0%BE-scp-%D1%81-%D0%BA%D0%BE%D0%BC%D0%BF%D1%8C%D1%8E%D1%82%D0%B5%D1%80%D0%B0)
   - [6.4. Создание скриптов запуска](#64-%D1%81%D0%BE%D0%B7%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5-%D1%81%D0%BA%D1%80%D0%B8%D0%BF%D1%82%D0%BE%D0%B2-%D0%B7%D0%B0%D0%BF%D1%83%D1%81%D0%BA%D0%B0)
+    - [6.4.1 Скрипт для ручного запуска `start.sh`](#641-%D1%81%D0%BA%D1%80%D0%B8%D0%BF%D1%82-%D0%B4%D0%BB%D1%8F-%D1%80%D1%83%D1%87%D0%BD%D0%BE%D0%B3%D0%BE-%D0%B7%D0%B0%D0%BF%D1%83%D1%81%D0%BA%D0%B0-startsh)
+    - [6.4.2. Скрипт для демона `dstart.sh`](#642-%D1%81%D0%BA%D1%80%D0%B8%D0%BF%D1%82-%D0%B4%D0%BB%D1%8F-%D0%B4%D0%B5%D0%BC%D0%BE%D0%BD%D0%B0-dstartsh)
+    - [6.4.3. Права на выполнение](#643-%D0%BF%D1%80%D0%B0%D0%B2%D0%B0-%D0%BD%D0%B0-%D0%B2%D1%8B%D0%BF%D0%BE%D0%BB%D0%BD%D0%B5%D0%BD%D0%B8%D0%B5)
   - [6.5. Настройка автозапуска (systemd)](#65-%D0%BD%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0-%D0%B0%D0%B2%D1%82%D0%BE%D0%B7%D0%B0%D0%BF%D1%83%D1%81%D0%BA%D0%B0-systemd)
+    - [6.5.1. Создание службы](#651-%D1%81%D0%BE%D0%B7%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5-%D1%81%D0%BB%D1%83%D0%B6%D0%B1%D1%8B)
+    - [6.5.2. Активация службы](#652-%D0%B0%D0%BA%D1%82%D0%B8%D0%B2%D0%B0%D1%86%D0%B8%D1%8F-%D1%81%D0%BB%D1%83%D0%B6%D0%B1%D1%8B)
   - [6.6. Проверка работы](#66-%D0%BF%D1%80%D0%BE%D0%B2%D0%B5%D1%80%D0%BA%D0%B0-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%8B)
+    - [6.6.1. Статус службы](#661-%D1%81%D1%82%D0%B0%D1%82%D1%83%D1%81-%D1%81%D0%BB%D1%83%D0%B6%D0%B1%D1%8B)
+    - [6.6.2. Просмотр логов](#662-%D0%BF%D1%80%D0%BE%D1%81%D0%BC%D0%BE%D1%82%D1%80-%D0%BB%D0%BE%D0%B3%D0%BE%D0%B2)
+    - [6.6.3. Узнать IP-адрес](#663-%D1%83%D0%B7%D0%BD%D0%B0%D1%82%D1%8C-ip-%D0%B0%D0%B4%D1%80%D0%B5%D1%81)
+    - [6.6.4. Доступ из браузера](#664-%D0%B4%D0%BE%D1%81%D1%82%D1%83%D0%BF-%D0%B8%D0%B7-%D0%B1%D1%80%D0%B0%D1%83%D0%B7%D0%B5%D1%80%D0%B0)
   - [6.7. Управление приложением](#67-%D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%BF%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5%D0%BC)
   - [6.8. Обновление приложения](#68-%D0%BE%D0%B1%D0%BD%D0%BE%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%BF%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F)
   - [6.9. Полезные команды](#69-%D0%BF%D0%BE%D0%BB%D0%B5%D0%B7%D0%BD%D1%8B%D0%B5-%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B)
@@ -152,82 +177,100 @@
 
 ### 2.3. Описание команд
 
-#### 2.3.1. Основные команды
+#### 2.3.1. Соединение
 
-| Команда | Каналы | Параметры | Ответ    | Описание |
-|---------|--------|-----------|----------|-------------|
-| CCON    | T,R,W  | -         | CCON,OK  | Закрыть все соединения |
-| CNA?    | T,R,W  | -         | CNA?,OK,active=TRUE/FALSE | Получить статус соединения |
-| ITG?    | T,R,W  | -         | ITG?,OK,active=TRUE/FALSE | Получить статус запроса маяков |
-| OCON    | T,R,W  | -         | OCON,OK | Открыть все соединения (AZM, AUX1, AUX2, RDT) |
-| PITG    | T,R,W  | -         | PITG,OK | Приостановить запрос маяков |
-| RITG    | T,R,W  | -         | RITG,OK | Возобновить запрос маяков |
-
-#### 2.3.2. Управление каналами передачи
-
-| Команда | Каналы | Параметры | Ответ    | Описание |
+| Команда | Каналы | Параметры | Ответ | Описание |
 |---------|---------|------------|----------|-------------|
-| AUX1 | T,R,W | proto=NMEA/BP,port=COMx/AUTO/OFF,baud=N | AUX1,OK | Конфигурация порта AUX1 (GNSS NMEA / Binary protocol) |
-| AUX2 | T,R,W | port=COMx/AUTO/OFF,baud=N | AUX2,OK | Конфигурация порта AUX2 (Магнитный компас, NMEA) |
-| AZM | T,R,W | port=COMx/AUTO,baud=N | AZM,OK | Конфигурация порта AZM |
-| OUTS | T,R,W | port=COMx/OFF,baud=N | OUTS,OK | Конфигурация выходного последовательного порта |
-| OUTU | T,R,W | addr=ip:port/OFF | OUTU,OK | Конфигурация выходного канала UDP |
-| PORTS | T,R,W | - | PORTS,OK,port0=id\|port\|status,... | Получить статус всех соединений |
-| RCTRL | T,R,W | in=port,out=ip:port | RCTRL,OK | Конфигурация удаленного терминала UDP |
-| RDT | T,R,W | port=COMx/AUTO/OFF,baud=N | RDT,OK | Конфигурация порта поворотного устройства Radant |
-| SIOC | T,R,W | addr=N,ep=ip:port/OFF | SIOC,OK | Конфигурация UDP выходных соединений для отдельных маяков |
+| CCON | T,R,W | - | CCON,OK | Close all connections |
+| CNA? | T,R,W | - | CNA?,OK,active=TRUE/FALSE | Check connection status |
+| DET? | T,R,W | id=AZM/AUX1/AUX2/RDT | DET?,OK,detected=TRUE/FALSE | Check device detection status |
+| OCON | T,R,W | - | OCON,OK | Open connections (AZM >> AUX1 >> AUX2 chain) |
 
-#### 2.3.3. Ручное управление положением и ориентацией антенны
+#### 2.3.2. Порты
 
-| Команда | Каналы | Параметры | Ответ    | Описание |
+| Команда | Каналы | Параметры | Ответ | Описание |
 |---------|---------|------------|----------|-------------|
-| LHO? | T,R,W | - | LHO?,OK,active=TRUE/FALSE | Получить статус ручного управления положением и ориентацией |
-| LHOV | T,R,W | lat=N,lon=N,hdg=N | LHOV,OK | Задать географическое положение антенны и ориентацию ее нулевого направления относительно сторон света (пустые параметры - отключить функцию) |
+| AUX1 | T,R,W | proto=NMEA/BP,port=COMx/AUTO/OFF,baud=N | AUX1,OK | Configure AUX1 port (GNSS or BP) |
+| AUX2 | T,R,W | port=COMx/AUTO/OFF,baud=N | AUX2,OK | Configure AUX2 magnetic compass port |
+| AZM | T,R,W | port=COMx/AUTO,baud=N | AZM,OK | Configure AZM transceiver port |
+| OUTS | T,R,W | port=COMx/OFF,baud=N | OUTS,OK | Configure serial data output |
+| OUTU | T,R,W | addr=ip:port/OFF | OUTU,OK | Configure UDP broadcast data output |
+| PORTS | T,R,W | - | PORTS,OK,port0=id\|port\|status,... | Show all ports status |
+| RCTRL | T,R,W | in=port,out=ip:port | RCTRL,OK | Configure remote control UDP channels |
+| RDT | T,R,W | port=COMx/AUTO/OFF,baud=N | RDT,OK | Configure antenna rotator port |
+| SIOC | T,R,W | addr=N,ep=ip:port/OFF | SIOC,OK | Set individual UDP output channel for beacon |
 
-#### 2.3.4. Сервисные команды
+#### 2.3.3. Запрос маяков
 
-| Команда | Каналы | Параметры | Ответ    | Описание |
+| Команда | Каналы | Параметры | Ответ | Описание |
 |---------|---------|------------|----------|-------------|
-| DET? | T,R,W | id=AZM/AUX1/AUX2/RDT | DET?,OK,detected=TRUE/FALSE | Получить статус устройства |
-| EXIT | T,R,W | - | EXIT,OK | Закрыть приложение |
-| EXPCR | T,R,W | file=path | EXPCR,OK | Экспорт описания команд в формате Markdown |
-| HELP | T,R,W | cmd=? | HELP,OK,commands=... | Показать подсказку по командам (или по заданной команде) |
-| HKEYS | T,R,W | - | HKEYS,OK,hotkeys=... | Показать подсказку по горячим клавишам |
-| OFMT? | T,R,W | - | OFMT?,OK,format=... | Получить подсказку по выходному формату данных |
-| PLAY | T,R,W | speed=0\|1,file=path | PLAY,OK | Проиграть файл журнала (0=без realtime, 1=realtime, пустые параметры=остановить воспроизведение) |
-| SCRIPT | T | file=path | SCRIPT,OK | Выполнить скрипт (файл со списком команд по строкам) |
-| STAT | T,R,W | - | STAT,OK,azm_status=...,interrogation=...,... | Получить статус системы |
-| VER | T,R,W | - | VER,OK,version=... | Получить информацию о версии приложения |
-| WEBLOG | T,R,W | on=TRUE/FALSE | WEBLOG,OK | Переключение логгирования обмена с веб-интерфейсом (по умолчанию on=FALSE) |
-| PSIMSSB | T,R,W | on=TRUE/FALSE | PSIMSSB,OK,on=TRUE/FALSE | Получить/Задать режим эмуляции протокола PSSIMSSB (Simrad/HiPAP) |
+| ITG? | T,R,W | - | ITG?,OK,active=TRUE/FALSE | Check interrogation status |
+| PITG | T,R,W | - | PITG,OK | Pause responders interrogation |
+| RITG | T,R,W | - | RITG,OK | Resume responders interrogation |
 
-#### 2.3.5. Управление трансивером
+#### 2.3.4. Трансивер
 
-| Команда | Каналы | Параметры | Ответ    | Описание |
+| Команда | Каналы | Параметры | Ответ | Описание |
 |---------|---------|------------|----------|-------------|
-| MDST | T,R,W | val=N | MDST,OK,val=N | Получить/задать максимальную дальность (влияет на длительность интервала ожидания ответа маяка) |
-| MSK | T,R,W | mask=N | MSK,OK,mask=N | Получить/задать маску адресов опрашиваемых маяков |
-| OFS | T,R,W | x=N,y=N,phi=N | OFS,OK,x=N,y=N,phi=N | Получить/Задать смещение точки топопривязки антенны и смещение ее нуля относительно нуля компаса (X,Y - метры, Phi - градусы) |
-| SLN | T,R,W | val=N | SLN,OK,val=N | Получить/Задать соленость, PSU |
-| SOS | T,R,W | val=N | SOS,OK,val=N | Получить/Задать скорость звука (в м/с), пустое значение - автоматический расчет |
+| CREQ | T,R,W | addr=N,code=N | CREQ,OK | Send custom data request to beacon (addr=1-16, code=3-30) |
+| MDST | T,R,W | val=N | MDST,OK,val=N | Get/set max distance in meters (restarts interrogation on change) |
+| MSK | T,R,W | mask=N | MSK,OK,mask=N | Get/set address mask (restarts interrogation on change) |
+| SLN | T,R,W | val=N | SLN,OK,val=N | Get/set salinity (PSU) |
+| SOS | T,R,W | val=N | SOS,OK,val=N | Get/set speed of sound (m/s). Empty/NaN = auto |
 
-#### 2.3.6. Управление маяком
+#### 2.3.5. Позиция
 
-| Команда | Каналы | Параметры | Ответ    | Описание |
+| Команда | Каналы | Параметры | Ответ | Описание |
 |---------|---------|------------|----------|-------------|
-| CREQ | T,R,W | addr=N,code=N | CREQ,OK | Послать специальный запрос маяку (addr=1-16, code=3-30) |
-| RRA? | T,R,W | - | RRA?,OK | Запросить текущий адрес маяка (локальное устройство) |
-| SRC3 | T,R,W | mode=0/1/2,c0..c5=N | SRC3,OK | Задать координаты (х и y в метрах) для трех опорных маяков в режиме LBL, c0 - x1, c1 - y1 и т.д. (mode 0=discard,1=cartesian,2=geographic) |
-| SRRA | T,R,W | addr=N | SRRA,OK | Задать адрес маяка (локальное устройство) |
+| LHO? | T,R,W | - | LHO?,OK,active=TRUE/FALSE | Check location override status |
+| LHOV | T,R,W | lat=N,lon=N,hdg=N | LHOV,OK | Override location and heading (empty params = disable override) |
+| OFS | T,R,W | x=N,y=N,phi=N | OFS,OK,x=N,y=N,phi=N | Get/set antenna offsets (X,Y in meters, Phi in degrees) |
+| SRC3 | T,R,W | mode=0/1/2,c0..c5=N | SRC3,OK | Set 3 LBL responder coordinates (0=discard,1=cartesian,2=geographic) |
 
-#### 2.3.7. Управление калибровками
+#### 2.3.6. Конфигурация маяков
 
-| Команда | Каналы | Параметры | Ответ    | Описание |
+| Команда | Каналы | Параметры | Ответ | Описание |
 |---------|---------|------------|----------|-------------|
-| ACAL | T,R,W | start=N,end=N,step=N,n=N,addr=N | ACAL,OK | Начать угловую калибровку (определение углового смещения осей антенны и компаса) |
-| CAL? | T,R,W | - | CAL?,OK,state=...,points=N,total=N,angle=N | Получить статус калибровки антенны на поворотном устройстве |
-| FCAL | T,R,W | - | FCAL,OK | Остановить калибровку антенны на поворотном устройстве |
-| SCAL | T,R,W | start=N,step=N,n=N | SCAL,OK | Начать калибровку антенны на поворотном устройстве (параметры по умолчанию: start=0,step=15,n=20) |
+| RRA? | T,R,W | - | RRA?,OK | Request current responder local address |
+| SRRA | T,R,W | addr=N | SRRA,OK | Set responder local address |
+
+#### 2.3.7. Сервис
+
+| Команда | Каналы | Параметры | Ответ | Описание |
+|---------|---------|------------|----------|-------------|
+| EXIT | T,R,W | - | EXIT,OK | Terminate application |
+| EXPCR | T,R,W | file=path | EXPCR,OK | Export command reference to Markdown file |
+| HELP | T,R,W | cmd=? | HELP,OK,commands=... | Show help for all commands or specific command |
+| HKEYS | T,R,W | - | HKEYS,OK,hotkeys=... | Show hotkeys hint |
+| PLAY | T,R,W | speed=0\|1,file=path | PLAY,OK | Playback log file (0=instant, 1=realtime, no params=stop) |
+| SAVE | T,R,W | file=path | SAVE,OK | Save current settings as init script |
+| SCRIPT | T | file=path | SCRIPT,OK | Execute script from file |
+| STAT | T,R,W | - | STAT,OK,azm_status=...,interrogation=...,... | Show system status summary |
+| VER | T,R,W | - | VER,OK,version=... | Show version info |
+| WAIT | T | for=ACAL\|OCON\|DETECTED\|N,timeout=N,port=id | WAIT,OK | Wait for event: ACAL=calibration complete, OCON=connection, DETECTED=port detected, N=ms |
+
+#### 2.3.8. Управление файлами журналов
+
+| Команда | Каналы | Параметры | Ответ | Описание |
+|---------|---------|------------|----------|-------------|
+| DELGS | T,R,W | - | DELGS,OK | Delete all old log files (current log preserved) |
+| WEBLOG | T,R,W | on=TRUE/FALSE | WEBLOG,OK | Toggle web command logging to file (default OFF) |
+
+#### 2.3.9. Конфигурация выходных данных
+
+| Команда | Каналы | Параметры | Ответ | Описание |
+|---------|---------|------------|----------|-------------|
+| OFMT? | T,R,W | - | OFMT?,OK,format=... | Get output messages format description |
+| PSIMSSB | T,R,W | on=TRUE/FALSE | PSIMSSB,OK | Enable/disable PSIMSSB (Simrad/HiPAP) output format |
+
+#### 2.3.10. Калибровки
+
+| Команда | Каналы | Параметры | Ответ | Описание |
+|---------|---------|------------|----------|-------------|
+| ACAL | T,R,W | start=N,end=N,step=N,n=N,addr=N | ACAL,OK | Start angular calibration (compass/antenna zero alignment) |
+| CAL? | T,R,W | - | CAL?,OK,state=...,points=N,total=N,angle=N | Get calibration status |
+| FCAL | T,R,W | - | FCAL,OK | Stop/abort antenna calibration |
+| SCAL | T,R,W | start=N,step=N,n=N | SCAL,OK | Start antenna calibration with rotator (default: start=0,step=15,n=20) |
 
 ---
 *Каналы: T=Terminal, R=RCTRL (UDP), W=Web*
