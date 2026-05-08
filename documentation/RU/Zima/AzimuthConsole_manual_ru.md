@@ -10,7 +10,8 @@
 
 <div style="page-break-after: always;"></div>
 
-<a name="toc"></a>
+<div id="toc">
+
 <details>
 <summary>Содержание</summary>
 
@@ -710,6 +711,6 @@ sc create "AzimuthConsoleService" binPath= "C:\opt\ac\dstart.bat" start= auto
 
 <div style="page-break-after: always;"></div>
 
-[К содержанию]((#toc))
+[К содержанию](#toc)
 
 <div style="page-break-after: always;"></div>
