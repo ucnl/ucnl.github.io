@@ -309,6 +309,328 @@
 
 Для закрытия приложения необходимо нажать клавишу **Enter**.
 
+## 5. Сценарии развертывания приложения
+
+## 5.1. Настройка доступа из локальной сети
+
+- Запустить приложение от имени администратора
+- Определить ip адрес машины:
+  - Win: `cmd > ipconfig, в строке с IPv4 Address`
+  - Linux: `ip a или hostname -I`
+- Проверить доступность машины: `ping <ip-адресс>`
+- Открыть в браузере `http://<ip-адресс>:8080`
+
+Если приложение запущено на Win-машине и нет доступа к серверу в локальной сети, выполнить:
+- Запустить терминал от имени администратора и выполнить:
+   `New-NetFirewallRule -DisplayName "WebServer 8080" -Direction Inbound -LocalPort 8080 -Protocol TCP -Action Allow`
+
+## 6. Настройка RaspberryPi с автозапуском приложения
+
+### 6.1. Что потребуется
+
+- Raspberry Pi (любая модель)
+- MicroSD карта (от 8 ГБ, Class 10)
+- Блок питания
+- Доступ в интернет (Wi-Fi или Ethernet)
+- Скомпилированное self-contained .NET приложение под ARM32 (`linux-arm`) или ARM64 (`linux-arm64`)
+
+### 6.2. Подготовка системы
+
+#### 6.2.1. Запись образа на SD карту
+
+1. Скачать **Raspberry Pi Imager** с [официального сайта](https://www.raspberrypi.com/software/)
+2. Выбрать: **Raspberry Pi OS Lite** — без рабочего стола, легче и быстрее
+3. В настройках (шестерёнка) можно сразу задать:
+   - Имя хоста: `myapp-server`
+   - Включить SSH
+   - Логин/пароль
+   - Wi-Fi сеть
+4. Записать образ на карту
+
+#### 6.2.2 Первый запуск и базовая настройка
+
+```bash
+# Подключение по SSH или напрямую и выполнить
+sudo raspi-config
+```
+
+**Что настроить:**
+- `System Options` → `Password` — сменить пароль
+- `System Options` → `Hostname` — задать удобное имя в сети
+- `System Options` → `Boot / Auto Login` → `Console Autologin`
+- `Localisation Options` → `Timezone` — установить часовой пояс
+- `Interface Options` → `SSH` — включить если не включено
+
+После выхода — перезагрузка.
+
+#### 6.2.3 Обновление пакетов
+
+```bash
+sudo apt update && sudo apt upgrade -y
+```
+
+
+### 6.3. Установка приложения
+
+#### 6.3.1 Создание директории
+
+```bash
+sudo mkdir -p /opt/ac
+sudo chown $USER:$USER /opt/ac
+```
+
+#### 6.3.2 Копирование файлов с флешки
+
+```bash
+# Посмотреть список устройств
+lsblk
+
+# Примонтировать флешку (обычно /dev/sda1)
+sudo mkdir -p /mnt/usb
+sudo mount /dev/sda1 /mnt/usb
+
+# Скопировать содержимое
+cp -r /mnt/usb/* /opt/ac/
+
+# Дать права на выполнение исполняемому файлу
+chmod +x /opt/ac/MyApp
+
+# Отмонтировать флешку
+sudo umount /mnt/usb
+```
+
+#### 6.3.3 Альтернатива: копирование по SCP с компьютера
+
+```bash
+# Выполняется НА КОМПЬЮТЕРЕ, не на Raspberry Pi
+scp -r ./publish/* pi@192.168.1.XXX:/opt/ac/
+```
+
+### 6.4. Создание скриптов запуска
+
+#### 6.4.1 Скрипт для ручного запуска `start.sh` (один маяк, без AUX)
+
+```bash
+nano /opt/ac/start.sh
+```
+
+```bash
+#!/bin/bash
+cd /opt/ac
+./AzimuthConsole "setm,auto,,255.255.255.255:28127,255.255.255.255:28129,1,0,1000" "seto,,,255.255.255.255:28128" 
+```
+
+#### 6.4.2. Скрипт для демона `dstart.sh`
+
+```bash
+nano /opt/ac/dstart.sh
+```
+
+```bash
+#!/bin/bash
+cd /opt/ac
+./AzimuthConsole "daemon" "setm,AUTO,,255.255.255.255:28127,255.255.255.255:28129,1,0,1000" "seto,,,255.255.255.255:28128"
+```
+
+#### 6.4.3. Права на выполнение
+
+```bash
+chmod +x /opt/ac/start.sh
+chmod +x /opt/ac/dstart.sh
+```
+
+
+### 6.5. Настройка автозапуска (systemd)
+
+#### 6.5.1. Создание службы
+
+```bash
+sudo nano /etc/systemd/system/ac.service
+```
+
+```ini
+[Unit]
+Description=AzimuthConsole
+After=network.target
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/opt/ac
+ExecStart=/opt/ac/dstart.sh
+Restart=on-failure
+RestartSec=10
+TimeoutStopSec=30
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target
+```
+
+#### 6.5.2. Активация службы
+
+```bash
+sudo systemctl daemon-reload
+sudo systemctl enable ac.service
+sudo systemctl start ac.service
+```
+
+### 6.6. Проверка работы
+
+#### 6.6.1. Статус службы
+
+```bash
+sudo systemctl status ac.service
+```
+
+Должно быть: `Active: active (running)`
+
+#### 6.6.2. Просмотр логов
+
+```bash
+# Последние 50 строк
+sudo journalctl -u ac.service -n 50 --no-pager
+
+# В реальном времени
+sudo journalctl -u ac.service -f
+```
+
+#### 6.6.3. Узнать IP-адрес
+
+```bash
+hostname -I
+```
+
+#### 6.6.4. Доступ из браузера
+
+С любого устройства в сети: `http://IP_АДРЕС:5000`
+
+
+### 6️.7. Управление приложением
+
+| Действие | Команда |
+|----------|---------|
+| Запустить | `sudo systemctl start ac.service` |
+| Остановить | `sudo systemctl stop ac.service` |
+| Перезапустить | `sudo systemctl restart ac.service` |
+| Статус | `sudo systemctl status ac.service` |
+| Включить автозапуск | `sudo systemctl enable ac.service` |
+| Отключить автозапуск | `sudo systemctl disable ac.service` |
+| Логи | `sudo journalctl -u ac.service -f` |
+
+
+### 6.8. Обновление приложения
+
+```bash
+# 1. Остановить службу
+sudo systemctl stop ac.service
+
+# 2. Скопировать новые файлы (с флешки или SCP) в /opt/ac/
+
+# 3. Обновить права
+chmod +x /opt/ac/MyApp
+
+# 4. Запустить службу
+sudo systemctl start ac.service
+
+# 5. Проверить статус
+sudo systemctl status ac.service
+```
+
+
+### 6.9. Полезные команды
+
+```bash
+# Перезагрузка Raspberry Pi
+sudo reboot
+
+# Выключение
+sudo shutdown -h now
+
+# Информация о системе
+uname -a
+cat /etc/os-release
+
+# Свободное место
+df -h
+
+# Процессы
+htop  # если установлен, иначе top
+```
+
+
+### 6.10. Возможные проблемы и решения
+
+| Проблема | Решение |
+|----------|---------|
+| Служба падает с `exited` | Проверить логи: `journalctl -u ac.service -n 50` |
+| `failed to determine user credentials` | Исправить `User=root` в `/etc/systemd/system/ac.service` |
+| Приложение не запускается вручную | Проверить права: `chmod +x /opt/ac/AzimuthConsole` |
+| Не та архитектура | Собрать под `linux-arm`: `dotnet publish -r linux-arm` |
+
+
+Дополнительная информация:
+- **IP сервера:** `hostname -I`
+- **Директория приложения:** `/opt/ac/`
+- **Файл службы:** `/etc/systemd/system/ac.service`
+
+*Гайд актуален на 2026 год для Raspberry Pi OS Lite*
+
+
+
+## 7. Запуск в качестве слубжы Windows
+
+### 7.1. Пошаговая инструкция
+
+1.  **Открыть командную строку от имени администратора**:
+    Нажми `Win`, введи `cmd`, кликни правой кнопкой мыши и выбери "Запуск от имени администратора".
+
+2.  **Создать службу (заменить пути на свои)**:
+    Выполнить следующую команду. Здесь `binPath=` — это путь к `.exe` файлу, а `start= auto` означает автоматический запуск при старте системы .
+    ```cmd
+    sc create "AzimuthConsoleService" binPath= "\"C:\opt\ac\AzimuthConsole.exe\" daemon start= auto
+    ```
+    *Важно:* Пробел после `=` в параметрах `binPath=` и `start=` обязателен.
+
+3.  **Настроить службу**:
+    Чтобы она перезапускалась при сбоях (как `Restart=on-failure` в systemd юните):
+    ```cmd
+    sc failure "AzimuthConsoleService" reset= 86400 actions= restart/60000/restart/60000/restart/60000
+    ```
+    *   `reset= 86400` — сброс счётчика ошибок через сутки.
+    *   `actions= restart/60000` — перезапуск через 60 секунд после падения (и так до трёх раз).
+
+4.  **Запустить службу**:
+    ```cmd
+    sc start "AzimuthConsoleService"
+
+### 7.2. Альтернативный вариант через bat-файл
+
+1. Создаnm файл `C:\opt\ac\dstart.bat`
+
+```
+C:\opt\ac\AzimuthConsole.exe daemon
+```
+
+2. Команда инициализации сервиса
+```
+sc create "AzimuthConsoleService" binPath= "C:\opt\ac\dstart.bat" start= auto
+```
+
+### 7.3. Управление и проверка
+
+*   **Посмотреть статус службы**:
+    ```cmd
+    sc query "AzimuthConsoleService"
+    ```
+*   **Графический интерфейс**: Нажать `Win + R`, ввести `services.msc` и нажать Enter. В открывшемся окне найти службу "MyAppService", где можно будет запустить, остановить или изменить её свойства вручную .
+
+**Ключевое отличие от Linux**:
+Если приложение имеет графический интерфейс (GUI), создавать службу не нужно — Windows Service не предназначены для взаимодействия с рабочим столом. В этом случае достаточно добавить ярлык приложения в папку автозагрузки (`shell:startup`), и оно будет запускаться при входе пользователя в систему.
+
+
+
 <div style="page-break-after: always;"></div>
 
 [К содержанию](#%D1%81%D0%BE%D0%B4%D0%B5%D1%80%D0%B6%D0%B0%D0%BD%D0%B8%D0%B5)
