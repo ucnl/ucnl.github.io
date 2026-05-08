@@ -21,11 +21,11 @@
   - [2.2. Примеры](#22-%D0%BF%D1%80%D0%B8%D0%BC%D0%B5%D1%80%D1%8B)
   - [2.3. Описание команд](#23-%D0%BE%D0%BF%D0%B8%D1%81%D0%B0%D0%BD%D0%B8%D0%B5-%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4)
 - [3. Выходные данные](#3-%D0%B2%D1%8B%D1%85%D0%BE%D0%B4%D0%BD%D1%8B%D0%B5-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D0%B5)
-  - [3.1. AZMLOC - локальные параметры](#31-azmloc-%D0%BB%D0%BE%D0%BA%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B5-%D0%BF%D0%B0%D1%80%D0%B0%D0%BC%D0%B5%D1%82%D1%80%D1%8B)
-  - [3.2. AZMREM - данные маяка-ответчика](#32-azmrem-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D0%B5-%D0%BC%D0%B0%D1%8F%D0%BA%D0%B0-%D0%BE%D1%82%D0%B2%D0%B5%D1%82%D1%87%D0%B8%D0%BA%D0%B0)
+  - [3.1. AZMLOC - локальные параметры](#31-azmloc---%D0%BB%D0%BE%D0%BA%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B5-%D0%BF%D0%B0%D1%80%D0%B0%D0%BC%D0%B5%D1%82%D1%80%D1%8B)
+  - [3.2. AZMREM - данные маяка-ответчика](#32-azmrem---%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D0%B5-%D0%BC%D0%B0%D1%8F%D0%BA%D0%B0-%D0%BE%D1%82%D0%B2%D0%B5%D1%82%D1%87%D0%B8%D0%BA%D0%B0)
 - [4. Вспомогательные утилиты](#4-%D0%B2%D1%81%D0%BF%D0%BE%D0%BC%D0%BE%D0%B3%D0%B0%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D1%8B%D0%B5-%D1%83%D1%82%D0%B8%D0%BB%D0%B8%D1%82%D1%8B)
-  - [4.1. AzimuthUDPRemote - UDP-терминал](#41-azimuthudpremote-udp-%D1%82%D0%B5%D1%80%D0%BC%D0%B8%D0%BD%D0%B0%D0%BB)
-  - [4.2. AzimuthUDPListener - UDP-приемник](#42-azimuthudplistener-udp-%D0%BF%D1%80%D0%B8%D0%B5%D0%BC%D0%BD%D0%B8%D0%BA)
+  - [4.1. AzimuthUDPRemote - UDP-терминал](#41-azimuthudpremote---udp-%D1%82%D0%B5%D1%80%D0%BC%D0%B8%D0%BD%D0%B0%D0%BB)
+  - [4.2. AzimuthUDPListener - UDP-приемник](#42-azimuthudplistener---udp-%D0%BF%D1%80%D0%B8%D0%B5%D0%BC%D0%BD%D0%B8%D0%BA)
 - [5. Сценарии развертывания приложения](#5-%D1%81%D1%86%D0%B5%D0%BD%D0%B0%D1%80%D0%B8%D0%B8-%D1%80%D0%B0%D0%B7%D0%B2%D0%B5%D1%80%D1%82%D1%8B%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F-%D0%BF%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F)
 - [5.1. Настройка доступа из локальной сети](#51-%D0%BD%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0-%D0%B4%D0%BE%D1%81%D1%82%D1%83%D0%BF%D0%B0-%D0%B8%D0%B7-%D0%BB%D0%BE%D0%BA%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B9-%D1%81%D0%B5%D1%82%D0%B8)
 - [6. Настройка RaspberryPi с автозапуском приложения](#6-%D0%BD%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0-raspberrypi-%D1%81-%D0%B0%D0%B2%D1%82%D0%BE%D0%B7%D0%B0%D0%BF%D1%83%D1%81%D0%BA%D0%BE%D0%BC-%D0%BF%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F)
@@ -35,7 +35,7 @@
   - [6.4. Создание скриптов запуска](#64-%D1%81%D0%BE%D0%B7%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5-%D1%81%D0%BA%D1%80%D0%B8%D0%BF%D1%82%D0%BE%D0%B2-%D0%B7%D0%B0%D0%BF%D1%83%D1%81%D0%BA%D0%B0)
   - [6.5. Настройка автозапуска (systemd)](#65-%D0%BD%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0-%D0%B0%D0%B2%D1%82%D0%BE%D0%B7%D0%B0%D0%BF%D1%83%D1%81%D0%BA%D0%B0-systemd)
   - [6.6. Проверка работы](#66-%D0%BF%D1%80%D0%BE%D0%B2%D0%B5%D1%80%D0%BA%D0%B0-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%8B)
-  - [6️.7. Управление приложением](#67-%D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%BF%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5%D0%BC)
+  - [6.7. Управление приложением](#67-%D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%BF%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5%D0%BC)
   - [6.8. Обновление приложения](#68-%D0%BE%D0%B1%D0%BD%D0%BE%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%BF%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F)
   - [6.9. Полезные команды](#69-%D0%BF%D0%BE%D0%BB%D0%B5%D0%B7%D0%BD%D1%8B%D0%B5-%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B)
   - [6.10. Возможные проблемы и решения](#610-%D0%B2%D0%BE%D0%B7%D0%BC%D0%BE%D0%B6%D0%BD%D1%8B%D0%B5-%D0%BF%D1%80%D0%BE%D0%B1%D0%BB%D0%B5%D0%BC%D1%8B-%D0%B8-%D1%80%D0%B5%D1%88%D0%B5%D0%BD%D0%B8%D1%8F)
@@ -527,7 +527,7 @@ hostname -I
 С любого устройства в сети: `http://IP_АДРЕС:5000`
 
 
-### 6️.7. Управление приложением
+### 6.7. Управление приложением
 
 | Действие | Команда |
 |----------|---------|
