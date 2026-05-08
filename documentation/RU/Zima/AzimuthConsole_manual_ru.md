@@ -250,7 +250,7 @@
 | PLAY | T,R,W | speed=0\|1,file=path | PLAY,OK | Проиграть файл журнала (0=instant, 1=realtime, no params=stop) |
 | SAVE | T,R,W | file=path | SAVE,OK | Сохранить текущие настройки в скрипт |
 | SCRIPT | T | file=path | SCRIPT,OK | Выполнить скрипт из указанного файла |
-| STAT | T,R,W | - | STAT,OK,azm_status=...,interrogation=...,... | Получить краткий статус системы |
+| STAT | T,R,W | - | STAT,OK,azm_status=...,<br/>interrogation=...,... | Получить краткий статус системы |
 | VER | T,R,W | - | VER,OK,version=... | Получить информацию о версии приложения |
 | WAIT | T | for=ACAL\|OCON\|DETECTED\|N,<br/>timeout=N,port=id | WAIT,OK | Ожидание события: ACAL=заврешение угловой калибровки, OCON=установка соединения, DETECTED=определение порта, N=таймаут ms |
 
