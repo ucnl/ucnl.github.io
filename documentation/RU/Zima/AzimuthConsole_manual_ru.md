@@ -10,7 +10,7 @@
 
 <div style="page-break-after: always;"></div>
 
-<div id="toc"></div>
+<a name="toc"></a>
 <details>
 <summary>Содержание</summary>
 
