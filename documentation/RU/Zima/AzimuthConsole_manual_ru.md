@@ -437,7 +437,7 @@ scp -r ./publish/* pi@192.168.1.XXX:/opt/ac/
 
 ### 6.4. Создание скриптов запуска
 
-#### 6.4.1 Скрипт для ручного запуска `start.sh` (один маяк, без AUX)
+#### 6.4.1 Скрипт для ручного запуска `start.sh`
 
 ```bash
 nano /opt/ac/start.sh
@@ -446,7 +446,7 @@ nano /opt/ac/start.sh
 ```bash
 #!/bin/bash
 cd /opt/ac
-./AzimuthConsole "setm,auto,,255.255.255.255:28127,255.255.255.255:28129,1,0,1000" "seto,,,255.255.255.255:28128" 
+./AzimuthConsole 
 ```
 
 #### 6.4.2. Скрипт для демона `dstart.sh`
@@ -458,7 +458,7 @@ nano /opt/ac/dstart.sh
 ```bash
 #!/bin/bash
 cd /opt/ac
-./AzimuthConsole "daemon" "setm,AUTO,,255.255.255.255:28127,255.255.255.255:28129,1,0,1000" "seto,,,255.255.255.255:28128"
+./AzimuthConsole "daemon"
 ```
 
 #### 6.4.3. Права на выполнение
