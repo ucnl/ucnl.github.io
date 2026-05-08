@@ -71,6 +71,8 @@
   - [7.2. Альтернативный вариант через bat-файл](#72-%D0%B0%D0%BB%D1%8C%D1%82%D0%B5%D1%80%D0%BD%D0%B0%D1%82%D0%B8%D0%B2%D0%BD%D1%8B%D0%B9-%D0%B2%D0%B0%D1%80%D0%B8%D0%B0%D0%BD%D1%82-%D1%87%D0%B5%D1%80%D0%B5%D0%B7-bat-%D1%84%D0%B0%D0%B9%D0%BB)
   - [7.3. Управление и проверка](#73-%D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B8-%D0%BF%D1%80%D0%BE%D0%B2%D0%B5%D1%80%D0%BA%D0%B0)
  
+  - [Система команд AzimuthConsole v1.x](AzimuthConsole_v1x_ru.md)
+ 
 </details>
 
 <div style="page-break-after: always;"></div>
@@ -184,96 +186,96 @@
 
 | Команда | Каналы | Параметры | Ответ | Описание |
 |---------|---------|------------|----------|-------------|
-| CCON | T,R,W | - | CCON,OK | Close all connections |
-| CNA? | T,R,W | - | CNA?,OK,active=TRUE/FALSE | Check connection status |
-| DET? | T,R,W | id=AZM/AUX1/AUX2/RDT | DET?,OK,detected=TRUE/FALSE | Check device detection status |
-| OCON | T,R,W | - | OCON,OK | Open connections (AZM >> AUX1 >> AUX2 chain) |
+| CCON | T,R,W | - | CCON,OK | Закрыть все соединения |
+| CNA? | T,R,W | - | CNA?,OK,active=TRUE/FALSE | Получить статус соединения |
+| DET? | T,R,W | id=AZM/AUX1/AUX2/RDT | DET?,OK,detected=TRUE/FALSE | Получить статус было ли определено устройство |
+| OCON | T,R,W | - | OCON,OK | Открыть все соединения (Цепочка AZM >> AUX1 >> AUX2 >> RDT) |
 
 #### 2.3.2. Порты
 
 | Команда | Каналы | Параметры | Ответ | Описание |
 |---------|---------|------------|----------|-------------|
-| AUX1 | T,R,W | proto=NMEA/BP,port=COMx/AUTO/OFF,baud=N | AUX1,OK | Configure AUX1 port (GNSS or BP) |
-| AUX2 | T,R,W | port=COMx/AUTO/OFF,baud=N | AUX2,OK | Configure AUX2 magnetic compass port |
-| AZM | T,R,W | port=COMx/AUTO,baud=N | AZM,OK | Configure AZM transceiver port |
-| OUTS | T,R,W | port=COMx/OFF,baud=N | OUTS,OK | Configure serial data output |
-| OUTU | T,R,W | addr=ip:port/OFF | OUTU,OK | Configure UDP broadcast data output |
-| PORTS | T,R,W | - | PORTS,OK,port0=id\|port\|status,... | Show all ports status |
-| RCTRL | T,R,W | in=port,out=ip:port | RCTRL,OK | Configure remote control UDP channels |
-| RDT | T,R,W | port=COMx/AUTO/OFF,baud=N | RDT,OK | Configure antenna rotator port |
-| SIOC | T,R,W | addr=N,ep=ip:port/OFF | SIOC,OK | Set individual UDP output channel for beacon |
+| AUX1 | T,R,W | proto=NMEA/BP,port=COMx/AUTO/OFF,baud=N | AUX1,OK | Конфигурация порта AUX1 (GNSS/GNSS компас) |
+| AUX2 | T,R,W | port=COMx/AUTO/OFF,baud=N | AUX2,OK | Конфигурация порта AUX2 (Магнитный компас) |
+| AZM | T,R,W | port=COMx/AUTO,baud=N | AZM,OK | Конфигурация порта AZM (трансивер) |
+| OUTS | T,R,W | port=COMx/OFF,baud=N | OUTS,OK | Конфигурация последовательного выходного порта |
+| OUTU | T,R,W | addr=ip:port/OFF | OUTU,OK | Конфигурация выходного UDP канала |
+| PORTS | T,R,W | - | PORTS,OK,port0=id\|port\|status,... | Получить статус всех соединений |
+| RCTRL | T,R,W | in=port,out=ip:port | RCTRL,OK | Конфигурация удаленного UDP терминала |
+| RDT | T,R,W | port=COMx/AUTO/OFF,baud=N | RDT,OK | Конфигурация последовательного порта поворотного устройства Радант |
+| SIOC | T,R,W | addr=N,ep=ip:port/OFF | SIOC,OK | Конфигурация индивидуальных UDP каналов для маяков |
 
 #### 2.3.3. Запрос маяков
 
 | Команда | Каналы | Параметры | Ответ | Описание |
 |---------|---------|------------|----------|-------------|
-| ITG? | T,R,W | - | ITG?,OK,active=TRUE/FALSE | Check interrogation status |
-| PITG | T,R,W | - | PITG,OK | Pause responders interrogation |
-| RITG | T,R,W | - | RITG,OK | Resume responders interrogation |
+| ITG? | T,R,W | - | ITG?,OK,active=TRUE/FALSE | Получить статус запросов |
+| PITG | T,R,W | - | PITG,OK | Приостановить запрос маяков |
+| RITG | T,R,W | - | RITG,OK | Возобновить запрос маяков |
 
 #### 2.3.4. Трансивер
 
 | Команда | Каналы | Параметры | Ответ | Описание |
 |---------|---------|------------|----------|-------------|
-| CREQ | T,R,W | addr=N,code=N | CREQ,OK | Send custom data request to beacon (addr=1-16, code=3-30) |
-| MDST | T,R,W | val=N | MDST,OK,val=N | Get/set max distance in meters (restarts interrogation on change) |
-| MSK | T,R,W | mask=N | MSK,OK,mask=N | Get/set address mask (restarts interrogation on change) |
-| SLN | T,R,W | val=N | SLN,OK,val=N | Get/set salinity (PSU) |
-| SOS | T,R,W | val=N | SOS,OK,val=N | Get/set speed of sound (m/s). Empty/NaN = auto |
+| CREQ | T,R,W | addr=N,code=N | CREQ,OK | Запрос пользовательских значений от маяка (addr=1-16, code=3-30) |
+| MDST | T,R,W | val=N | MDST,OK,val=N | Задать/получить максимальную дальность, м |
+| MSK | T,R,W | mask=N | MSK,OK,mask=N | Задать/получить маску адресов маяков |
+| SLN | T,R,W | val=N | SLN,OK,val=N | Задать/получить соленость, PSU |
+| SOS | T,R,W | val=N | SOS,OK,val=N | Задать/получить скорость звука (м/с). Пустое значение/NaN = автоматический расчет |
 
 #### 2.3.5. Позиция
 
 | Команда | Каналы | Параметры | Ответ | Описание |
 |---------|---------|------------|----------|-------------|
-| LHO? | T,R,W | - | LHO?,OK,active=TRUE/FALSE | Check location override status |
-| LHOV | T,R,W | lat=N,lon=N,hdg=N | LHOV,OK | Override location and heading (empty params = disable override) |
-| OFS | T,R,W | x=N,y=N,phi=N | OFS,OK,x=N,y=N,phi=N | Get/set antenna offsets (X,Y in meters, Phi in degrees) |
-| SRC3 | T,R,W | mode=0/1/2,c0..c5=N | SRC3,OK | Set 3 LBL responder coordinates (0=discard,1=cartesian,2=geographic) |
+| LHO? | T,R,W | - | LHO?,OK,active=TRUE/FALSE | Получить статус ручного задания положения и ориентации |
+| LHOV | T,R,W | lat=N,lon=N,hdg=N | LHOV,OK | Задачть положение и ориентацию антенны вручную (пустые параметры - отдключение функции) |
+| OFS | T,R,W | x=N,y=N,phi=N | OFS,OK,x=N,y=N,phi=N | Получить/задать смещение антенны от точки топопривязки и угловое смещение нуля антенны от нуля компаса (X,Y в м, Phi в градусах) |
+| SRC3 | T,R,W | mode=0/1/2,c0..c5=N | SRC3,OK | Задать координаты опорных маяков для LBL режима (0=discard,1=cartesian,2=geographic) |
 
 #### 2.3.6. Конфигурация маяков
 
 | Команда | Каналы | Параметры | Ответ | Описание |
 |---------|---------|------------|----------|-------------|
-| RRA? | T,R,W | - | RRA?,OK | Request current responder local address |
-| SRRA | T,R,W | addr=N | SRRA,OK | Set responder local address |
+| RRA? | T,R,W | - | RRA?,OK | Получить текущий адрес маяка |
+| SRRA | T,R,W | addr=N | SRRA,OK | Задать адрес маяка |
 
 #### 2.3.7. Сервис
 
 | Команда | Каналы | Параметры | Ответ | Описание |
 |---------|---------|------------|----------|-------------|
-| EXIT | T,R,W | - | EXIT,OK | Terminate application |
-| EXPCR | T,R,W | file=path | EXPCR,OK | Export command reference to Markdown file |
-| HELP | T,R,W | cmd=? | HELP,OK,commands=... | Show help for all commands or specific command |
-| HKEYS | T,R,W | - | HKEYS,OK,hotkeys=... | Show hotkeys hint |
-| PLAY | T,R,W | speed=0\|1,file=path | PLAY,OK | Playback log file (0=instant, 1=realtime, no params=stop) |
-| SAVE | T,R,W | file=path | SAVE,OK | Save current settings as init script |
-| SCRIPT | T | file=path | SCRIPT,OK | Execute script from file |
-| STAT | T,R,W | - | STAT,OK,azm_status=...,interrogation=...,... | Show system status summary |
-| VER | T,R,W | - | VER,OK,version=... | Show version info |
-| WAIT | T | for=ACAL\|OCON\|DETECTED\|N,timeout=N,port=id | WAIT,OK | Wait for event: ACAL=calibration complete, OCON=connection, DETECTED=port detected, N=ms |
+| EXIT | T,R,W | - | EXIT,OK | Завершить работу приложения |
+| EXPCR | T,R,W | file=path | EXPCR,OK | Экспорт описания команд приложения в формате Markdown |
+| HELP | T,R,W | cmd=? | HELP,OK,commands=... | Показать подсказку для всех или указанной команды |
+| HKEYS | T,R,W | - | HKEYS,OK,hotkeys=... | Получить подсказку по горячим клавишам |
+| PLAY | T,R,W | speed=0\|1,file=path | PLAY,OK | Проиграть файл журнала (0=instant, 1=realtime, no params=stop) |
+| SAVE | T,R,W | file=path | SAVE,OK | Сохранить текущие настройки в скрипт |
+| SCRIPT | T | file=path | SCRIPT,OK | Выполнить скрипт из указанного файла |
+| STAT | T,R,W | - | STAT,OK,azm_status=...,interrogation=...,... | Получить краткий статус системы |
+| VER | T,R,W | - | VER,OK,version=... | Получить информацию о версии приложения |
+| WAIT | T | for=ACAL\|OCON\|DETECTED\|N,timeout=N,port=id | WAIT,OK | Ожидание события: ACAL=заврешение угловой калибровки, OCON=установка соединения, DETECTED=определение порта, N=таймаут ms |
 
 #### 2.3.8. Управление файлами журналов
 
 | Команда | Каналы | Параметры | Ответ | Описание |
 |---------|---------|------------|----------|-------------|
-| DELGS | T,R,W | - | DELGS,OK | Delete all old log files (current log preserved) |
-| WEBLOG | T,R,W | on=TRUE/FALSE | WEBLOG,OK | Toggle web command logging to file (default OFF) |
+| DELGS | T,R,W | - | DELGS,OK | Удалить все файлы журналов и папки, кроме текущего |
+| WEBLOG | T,R,W | on=TRUE/FALSE | WEBLOG,OK | Управление логгированием обмена с Веб-интерфейсом (по умолчанию OFF) |
 
 #### 2.3.9. Конфигурация выходных данных
 
 | Команда | Каналы | Параметры | Ответ | Описание |
 |---------|---------|------------|----------|-------------|
-| OFMT? | T,R,W | - | OFMT?,OK,format=... | Get output messages format description |
-| PSIMSSB | T,R,W | on=TRUE/FALSE | PSIMSSB,OK | Enable/disable PSIMSSB (Simrad/HiPAP) output format |
+| OFMT? | T,R,W | - | OFMT?,OK,format=... | Получить описание формата выходных сообщений |
+| PSIMSSB | T,R,W | on=TRUE/FALSE | PSIMSSB,OK | Вкл/Выкл эмуляцию протокола PSIMSSB (Simrad/HiPAP) |
 
 #### 2.3.10. Калибровки
 
 | Команда | Каналы | Параметры | Ответ | Описание |
 |---------|---------|------------|----------|-------------|
-| ACAL | T,R,W | start=N,end=N,step=N,n=N,addr=N | ACAL,OK | Start angular calibration (compass/antenna zero alignment) |
-| CAL? | T,R,W | - | CAL?,OK,state=...,points=N,total=N,angle=N | Get calibration status |
-| FCAL | T,R,W | - | FCAL,OK | Stop/abort antenna calibration |
-| SCAL | T,R,W | start=N,step=N,n=N | SCAL,OK | Start antenna calibration with rotator (default: start=0,step=15,n=20) |
+| ACAL | T,R,W | start=N,end=N,step=N,n=N,addr=N | ACAL,OK | Начать калибровку углового смещения нулевого напрвления антенны и компаса |
+| CAL? | T,R,W | - | CAL?,OK,state=...,points=N,total=N,angle=N | Получить статус калибровки |
+| FCAL | T,R,W | - | FCAL,OK | Прервать калибровку |
+| SCAL | T,R,W | start=N,step=N,n=N | SCAL,OK | Начать калибровку антенны на поворотном устройстве (default: start=0,step=15,n=20) |
 
 ---
 *Каналы: T=Terminal, R=RCTRL (UDP), W=Web*
