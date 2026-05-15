@@ -234,9 +234,14 @@
 
 <div style="page-break-after: always;"></div>
 
-## 2.2. Приложение AzimuthConsole
+## 2.2. Приложение AzimuthConsole (РАЗДЕЛ В РАЗРАБОТКЕ)
 
-> Раздел в стадии разработки
+Подробное руководство пользователя по приложению AzimuthConsole доступно в виде отдельного документа:
+[![AzimuthConsole: Руководство пользователя](https://github.com/user-attachments/assets/2a70ad5c-db4d-4dee-8c26-5c8cf04a91b6)](documentation/RU/Zima/AzimuthConsole_manual_ru.md)
+
+
+
+### 2.2.1. 
 
 
 <div style="page-break-after: always;"></div>
