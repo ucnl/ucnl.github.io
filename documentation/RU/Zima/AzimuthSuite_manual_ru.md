@@ -2,7 +2,7 @@
 
 <div style="page-break-after: always;"></div>
 
-| ![logo](/documentation/sm_logo.png) |  |
+| ![logo](/documentation/sm_logo.png) | [![AzimuthSuite: Руководство пользователя](https://github.com/user-attachments/assets/ca59ab7b-870c-4946-8342-ab7b6eb52d1c)](documentation/RU/Zima/AzimuthSuite_manual_ru) |
 | :---: | ---: |
 | [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **AzimuthSuite** - Приложение для работы с системой Zima2 USBL <br/> Руководство пользователя |
 
