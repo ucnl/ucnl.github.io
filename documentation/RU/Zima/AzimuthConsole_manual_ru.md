@@ -2,7 +2,7 @@
 
 <div style="page-break-after: always;"></div>
 
-| ![logo](/documentation/sm_logo.png) |  |
+| ![logo](/documentation/sm_logo.png) | [![AzimuthConsole: Руководство пользователя](https://github.com/user-attachments/assets/2a70ad5c-db4d-4dee-8c26-5c8cf04a91b6)](documentation/RU/Zima/AzimuthConsole_manual_ru)  |
 | :---: | ---: |
 | [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **AzimuthConsole** - Кроссплатформенное приложение для работы с системой Zima2 USBL <br/> Руководство пользователя |
 
