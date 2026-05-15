@@ -311,18 +311,18 @@
 
 | Документ | QR |
 | :--- | :--- |
-| AzimuthConsole: руководство пользователя | [![AzimuthConsole: Руководство пользователя](https://github.com/user-attachments/assets/2a70ad5c-db4d-4dee-8c26-5c8cf04a91b6)](documentation/RU/Zima/AzimuthConsole_manual_ru) |
+| AzimuthConsole: руководство пользователя | [![AzimuthConsole: Руководство пользователя](https://github.com/user-attachments/assets/2a70ad5c-db4d-4dee-8c26-5c8cf04a91b6)](/documentation/RU/Zima/AzimuthConsole_manual_ru) |
 
 
 ## 2.3. Приложение AzimuthSuite (устаревшее)
 
 > **ℹ Информация**
 > 
-> Приложение **AzimuthSuite** более не поддерживается. Рекомендуется использовать [AzimuthConsole](documentation/RU/Zima/AzimuthConsole_manual_ru).
+> Приложение **AzimuthSuite** более не поддерживается. Рекомендуется использовать [AzimuthConsole](/documentation/RU/Zima/AzimuthConsole_manual_ru).
 
 | Документ | QR |
 | :--- | :--- |
-| AzimuthSuite: руководство пользователя | [![AzimuthSuite: Руководство пользователя](https://github.com/user-attachments/assets/ca59ab7b-870c-4946-8342-ab7b6eb52d1c)](documentation/RU/Zima/AzimuthSuite_manual_ru) |
+| AzimuthSuite: руководство пользователя | [![AzimuthSuite: Руководство пользователя](https://github.com/user-attachments/assets/ca59ab7b-870c-4946-8342-ab7b6eb52d1c)](/documentation/RU/Zima/AzimuthSuite_manual_ru) |
 
 <div style="page-break-after: always;"></div>
 
