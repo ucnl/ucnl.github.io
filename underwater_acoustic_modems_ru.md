@@ -17,6 +17,8 @@
 * [Спецификация устройства: uWave Max](/documentation/RU/uWAVE/uWAVE_Max_Specification_ru.md)
 * [Спецификация устройства: uWave Max OEM](/documentation/RU/uWAVE/uWAVE_Max_OEM_Specification_ru.md)
 * [Спецификация устройства: uWave USBL Modem](/documentation/RU/uWAVE/uWAVE_USBL_Modem_Specification_ru.md)
+* [uWaver: Онлайн приложение для работы с модемами uWave](https://docs.unavlab.com/uWaver/)
+* [uWaver: Онлайн приложение для работы с модемами uWave (Репозиторий)](https://github.com/ucnl/uWaver)
 * [uBear: Приложение для работы с uWave USBL Modem (Репозиторий)](https://github.com/ucnl/uBear)
 * [uBear: Приложение для работы с uWave USBL Modem (Скачать релиз)](https://github.com/ucnl/uBear/releases/download/1.0/uBear.zip)
 * [Описание протокола сопряжения: uWave](/documentation/RU/uWAVE/uWAVE_Protocol_Specification_ru.md)
