@@ -53,6 +53,7 @@
 * [UCNLNMEA: Библиотека для парсигна и формирования NMEA-сообщений *(C#)*](https://github.com/ucnl/UCNLNMEA)
 * [uMCPIno: Протокол с гарантированной доставкой и очередностью сообщений *(C#/C/Arduino)*](https://github.com/AlekUnderwater/uMCPIno)
 * [uRayTracerDemo: Трассировка лучей через слоистую среду](https://github.com/ucnl/uRayTracerDemo)
+* [uConsole: Простой терминал для последовательного порта (веб-версия)](http://docs.unavlab.com/uConsole/)
 * [uConsole: Простой терминал для последовательного порта](https://github.com/ucnl/uConsole)
 
 ## [На главную](README_RU.md)
