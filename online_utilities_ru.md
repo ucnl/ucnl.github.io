@@ -21,6 +21,7 @@
 * [Простая оценка дальности связи по чувствительности передатчика и затуханию](/online_utils/simple_prop_distance_estimation.html)
 
 ## Online утилиты для протокола NMEA0183
+* [Онлайн GNSS-монитор (WEB Serial)](https://docs.unavlab.com/uGNSS-Monitor/)
 * [NMEA0183 Онлайн калькулятор контрольной суммы](/online_utils/nmea0183_checksum_calculator.html)
 * [NMEA0183 Онлайн парсер](/online_utils/nmea0183_parser.html)
 * [NMEA0183 Онлайн демо для алгоритма на С](/online_utils/ucnl_nmea_embedded_js2.html)
