@@ -1,6 +1,18 @@
 
 [Главная](/README_RU) ❯ [Наши проекты для образования](/educational_projects_ru) ❯ **uSwitch: Спецификация устройства: uSwitch**
 
+<details>
+<summary><b>ℹ Рекомендации для печати/сохранения в PDF</b></summary>
+
+1. Нажмите **Ctrl+P** (macOS: **Cmd+P**)
+2. В настройках принтера выберите **«Сохранить как PDF»** (Microsoft Print to PDF)
+3. В поле **«Страницы»** укажите диапазон, исключая первую и последнюю страницу
+4. Отключите **верхние и нижние колонтитулы** (заголовки/URL/page numbers)
+5. В **Chrome/Edge**: в доп. настройках → «Поля» → **Нет** | в **Firefox**: «Поля и колонтитулы» → **Нет**
+6. Нажмите **Печать** и укажите куда сохранить PDF
+
+</details>
+
 <div style="page-break-after: always;"></div>
 
 | ![logo](/documentation/sm_logo.png) | ![image](https://github.com/user-attachments/assets/f8f639cc-327c-4561-8040-318befd29b4a) |
