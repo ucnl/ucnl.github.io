@@ -1,5 +1,17 @@
 [Главная](/README_RU) ❯ [Гидроакустические навигационные и трекинговые системы](/navigation_and_tracking_systems_ru) ❯ **AzimuthConsole: Руководство пользователя**
 
+<details>
+<summary><b>ℹ Рекомендации для печати/сохранения в PDF</b></summary>
+
+1. Нажмите **Ctrl+P** (macOS: **Cmd+P**)
+2. В настройках принтера выберите **«Сохранить как PDF»** (Microsoft Print to PDF)
+3. В поле **«Страницы»** укажите диапазон, исключая первую и последнюю страницу
+4. Отключите **верхние и нижние колонтитулы** (заголовки/URL/page numbers)
+5. В **Chrome/Edge**: в доп. настройках → «Поля» → **Нет** | в **Firefox**: «Поля и колонтитулы» → **Нет**
+6. Нажмите **Печать** и укажите куда сохранить PDF
+
+</details>
+
 <div style="page-break-after: always;"></div>
 
 | ![logo](/documentation/sm_logo.png) | [![AzimuthConsole: Руководство пользователя](https://github.com/user-attachments/assets/2a70ad5c-db4d-4dee-8c26-5c8cf04a91b6)](documentation/RU/Zima/AzimuthConsole_manual_ru)  |
