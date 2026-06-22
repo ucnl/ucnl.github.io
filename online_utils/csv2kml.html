@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Конвертер табличных данных в KML трек</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f0f2f5;
+            color: #333;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            padding: 30px;
+        }
+        h1 {
+            font-size: 1.6em;
+            margin-bottom: 20px;
+            color: #1a1a2e;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        h1 .icon {
+            font-size: 1.4em;
+        }
+        .step-row {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+        .step-card {
+            flex: 1;
+            min-width: 280px;
+            background: #f8f9fa;
+            border-radius: 10px;
+            padding: 20px;
+            border: 1px solid #e0e0e0;
+        }
+        .step-card h3 {
+            font-size: 0.9em;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #888;
+            margin-bottom: 12px;
+        }
+        textarea {
+            width: 100%;
+            min-height: 120px;
+            font-family: 'Consolas', 'Monaco', monospace;
+            font-size: 0.8em;
+            padding: 12px;
+            border: 1px solid #d0d0d0;
+            border-radius: 8px;
+            resize: vertical;
+            background: #fff;
+            transition: border-color 0.2s;
+        }
+        textarea:focus {
+            outline: none;
+            border-color: #4a90d9;
+            box-shadow: 0 0 0 3px rgba(74,144,217,0.1);
+        }
+        .columns-row {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin: 15px 0;
+        }
+        .col-group {
+            flex: 1;
+            min-width: 140px;
+        }
+        .col-group label {
+            display: block;
+            font-weight: 600;
+            font-size: 0.85em;
+            margin-bottom: 5px;
+            color: #555;
+        }
+        .col-group select, .col-group input {
+            width: 100%;
+            padding: 8px 10px;
+            border: 1px solid #d0d0d0;
+            border-radius: 6px;
+            font-size: 0.9em;
+            background: #fff;
+        }
+        .preview-section {
+            margin-top: 20px;
+        }
+        .preview-section h3 {
+            margin-bottom: 10px;
+            color: #555;
+            font-size: 0.95em;
+        }
+        .preview-table-wrapper {
+            max-height: 300px;
+            overflow: auto;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+        }
+        table.preview-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.8em;
+        }
+        table.preview-table th {
+            background: #4a90d9;
+            color: #fff;
+            padding: 8px 10px;
+            text-align: left;
+            position: sticky;
+            top: 0;
+            z-index: 2;
+            font-weight: 500;
+            white-space: nowrap;
+        }
+        table.preview-table th.highlight-lat {
+            background: #27ae60;
+        }
+        table.preview-table th.highlight-lon {
+            background: #2980b9;
+        }
+        table.preview-table th.highlight-alt {
+            background: #8e44ad;
+        }
+        table.preview-table td {
+            padding: 6px 10px;
+            border-bottom: 1px solid #f0f0f0;
+            white-space: nowrap;
+        }
+        table.preview-table tr:nth-child(even) td {
+            background: #fafafa;
+        }
+        table.preview-table tr:hover td {
+            background: #e8f0fe;
+        }
+        .legend {
+            display: flex;
+            gap: 20px;
+            margin: 10px 0;
+            font-size: 0.8em;
+            flex-wrap: wrap;
+        }
+        .legend span {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        .legend .dot {
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            border-radius: 3px;
+        }
+        .legend .dot.lat { background: #27ae60; }
+        .legend .dot.lon { background: #2980b9; }
+        .legend .dot.alt { background: #8e44ad; }
+        .format-options {
+            margin: 15px 0;
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+        .format-options label {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 0.9em;
+            cursor: pointer;
+        }
+        .track-name-row {
+            margin: 15px 0;
+        }
+        .track-name-row label {
+            font-weight: 600;
+            font-size: 0.85em;
+            display: block;
+            margin-bottom: 5px;
+            color: #555;
+        }
+        .track-name-row input {
+            width: 100%;
+            max-width: 400px;
+            padding: 8px 10px;
+            border: 1px solid #d0d0d0;
+            border-radius: 6px;
+            font-size: 0.9em;
+        }
+        .btn-row {
+            display: flex;
+            gap: 12px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+        button {
+            padding: 10px 24px;
+            font-size: 0.95em;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.2s;
+        }
+        .btn-primary {
+            background: #4a90d9;
+            color: #fff;
+        }
+        .btn-primary:hover {
+            background: #357abd;
+        }
+        .btn-secondary {
+            background: #e0e0e0;
+            color: #333;
+        }
+        .btn-secondary:hover {
+            background: #ccc;
+        }
+        .btn-success {
+            background: #27ae60;
+            color: #fff;
+        }
+        .btn-success:hover {
+            background: #219a52;
+        }
+        .status {
+            margin-top: 15px;
+            padding: 10px 15px;
+            border-radius: 8px;
+            font-size: 0.9em;
+            display: none;
+        }
+        .status.success {
+            background: #d4edda;
+            color: #155724;
+            display: block;
+        }
+        .status.error {
+            background: #f8d7da;
+            color: #721c24;
+            display: block;
+        }
+        .status.info {
+            background: #d1ecf1;
+            color: #0c5460;
+            display: block;
+        }
+        .separator-select {
+            width: auto;
+            display: inline-block;
+            padding: 8px 10px;
+            border: 1px solid #d0d0d0;
+            border-radius: 6px;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>
+            <span class="icon">🗺️</span> Конвертер табличных данных → KML трек
+        </h1>
+        <p style="color: #888; margin-bottom: 20px; font-size: 0.9em;">
+            Поддерживает форматы координат: NMEA (ddmm.mmmm) и десятичные градусы (dd.dddddd).
+            Автоматически определяет формат по наличию запятой/точки в целой части.
+        </p>
+
+        <!-- Шаг 1: Вставка данных -->
+        <div class="step-card">
+            <h3>📋 Шаг 1. Вставьте табличные данные</h3>
+            <textarea id="rawData" placeholder="Вставьте сюда данные (CSV, TSV, скопированные из Excel и т.п.)&#10;&#10;Пример:&#10;630563.64,5164541.07,4637.3031707,N,14242.3227870,E,-14.59&#10;630561.35,5164542.78,4637.3041188,N,14242.3210206,E,-12.29"></textarea>
+            <div style="margin-top: 10px; display: flex; gap: 15px; align-items: center; flex-wrap: wrap;">
+                <span style="font-size: 0.85em; color: #555;">Разделитель:</span>
+                <select id="separator" class="separator-select">
+                    <option value="auto" selected>Авто (запятая/табуляция)</option>
+                    <option value=",">Запятая (,)</option>
+                    <option value="\t">Табуляция (Tab)</option>
+                    <option value=";">Точка с запятой (;)</option>
+                    <option value=" ">Пробел</option>
+                </select>
+                <span style="font-size: 0.8em; color: #aaa;">Строк обнаружено: <strong id="rowCount">0</strong></span>
+            </div>
+        </div>
+
+        <!-- Шаг 2: Выбор столбцов -->
+        <div class="step-card" style="margin-top: 20px;">
+            <h3>🎯 Шаг 2. Укажите столбцы с координатами</h3>
+            <div class="columns-row">
+                <div class="col-group">
+                    <label for="latCol">🟢 Столбец широты (Lat)</label>
+                    <select id="latCol"></select>
+                </div>
+                <div class="col-group">
+                    <label for="lonCol">🔵 Столбец долготы (Lon)</label>
+                    <select id="lonCol"></select>
+                </div>
+                <div class="col-group">
+                    <label for="altCol">🟣 Столбец высоты/глубины (Alt)</label>
+                    <select id="altCol">
+                        <option value="-1">— Не использовать —</option>
+                    </select>
+                </div>
+            </div>
+            <div class="format-options">
+                <label>
+                    <input type="radio" name="coordFormat" value="auto" checked> Автоопределение формата
+                </label>
+                <label>
+                    <input type="radio" name="coordFormat" value="nmea"> NMEA (ddmm.mmmm)
+                </label>
+                <label>
+                    <input type="radio" name="coordFormat" value="decimal"> Десятичные градусы
+                </label>
+            </div>
+            <div class="track-name-row">
+                <label for="trackName">📛 Название трека</label>
+                <input type="text" id="trackName" value="My Track" placeholder="Название трека в KML">
+            </div>
+        </div>
+
+        <!-- Превью -->
+        <div class="preview-section">
+            <h3>👁️ Предпросмотр данных (первые 20 строк)</h3>
+            <div class="legend">
+                <span><span class="dot lat"></span> Широта</span>
+                <span><span class="dot lon"></span> Долгота</span>
+                <span><span class="dot alt"></span> Высота</span>
+            </div>
+            <div class="preview-table-wrapper">
+                <table class="preview-table" id="previewTable">
+                    <thead></thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+            <div id="previewEmpty" style="padding: 30px; text-align: center; color: #aaa;">
+                Вставьте данные, чтобы увидеть предпросмотр
+            </div>
+        </div>
+
+        <!-- Кнопки -->
+        <div class="btn-row">
+            <button class="btn-primary" onclick="generateKML()">📥 Сгенерировать KML</button>
+            <button class="btn-secondary" onclick="downloadKML()" id="btnDownload" disabled>💾 Скачать KML-файл</button>
+            <button class="btn-secondary" onclick="copyToClipboard()" id="btnCopy" disabled>📋 Копировать KML</button>
+        </div>
+        <div id="status" class="status"></div>
+
+        <!-- Скрытое поле для хранения сгенерированного KML -->
+        <textarea id="kmlOutput" style="display:none;"></textarea>
+    </div>
+
+    <script>
+        let parsedRows = [];
+        let headers = [];
+        let generatedKML = '';
+
+        // При изменении данных или разделителя — перепарсиваем
+        document.getElementById('rawData').addEventListener('input', parseData);
+        document.getElementById('separator').addEventListener('change', parseData);
+
+        // При изменении выбора столбцов — обновляем превью
+        document.getElementById('latCol').addEventListener('change', updatePreview);
+        document.getElementById('lonCol').addEventListener('change', updatePreview);
+        document.getElementById('altCol').addEventListener('change', updatePreview);
+
+        function detectSeparator(text, selectedSep) {
+            if (selectedSep !== 'auto') {
+                return selectedSep === '\t' ? '\t' : selectedSep;
+            }
+            const firstLine = text.split('\n')[0];
+            if (!firstLine) return ',';
+            const counts = {
+                ',': (firstLine.match(/,/g) || []).length,
+                '\t': (firstLine.match(/\t/g) || []).length,
+                ';': (firstLine.match(/;/g) || []).length
+            };
+            const best = Object.entries(counts).sort((a, b) => b[1] - a[1])[0];
+            return best[1] > 0 ? best[0] : ',';
+        }
+
+        function parseData() {
+            const raw = document.getElementById('rawData').value.trim();
+            const sepSelect = document.getElementById('separator').value;
+            
+            if (!raw) {
+                parsedRows = [];
+                headers = [];
+                document.getElementById('rowCount').textContent = '0';
+                updateColumnSelectors();
+                updatePreview();
+                return;
+            }
+
+            const separator = detectSeparator(raw, sepSelect);
+            const lines = raw.split('\n').filter(line => line.trim() !== '');
+            
+            // Пытаемся определить, есть ли заголовок
+            const firstLine = lines[0].split(separator);
+            const secondLine = lines.length > 1 ? lines[1].split(separator) : null;
+            
+            let hasHeader = false;
+            if (secondLine && firstLine.length === secondLine.length) {
+                // Если в первой строке есть нечисловые значения, которых нет во второй — считаем заголовком
+                const firstNumeric = firstLine.every(v => !isNaN(parseFloat(v.replace(',', '.'))) || v.trim() === '');
+                const secondNumeric = secondLine.every(v => !isNaN(parseFloat(v.replace(',', '.'))) || v.trim() === '');
+                if (!firstNumeric && secondNumeric) {
+                    hasHeader = true;
+                }
+                // Также проверяем на буквы N/S/E/W в первой строке
+                const hasCoordLetters = firstLine.some(v => /[NSWE]/.test(v.toUpperCase()));
+                if (hasCoordLetters && firstNumeric === false) {
+                    hasHeader = true;
+                }
+            }
+
+            if (hasHeader) {
+                headers = firstLine.map(h => h.trim());
+                parsedRows = lines.slice(1).map(line => line.split(separator).map(v => v.trim()));
+            } else {
+                headers = firstLine.map((_, i) => `Col ${i + 1}`);
+                parsedRows = lines.map(line => line.split(separator).map(v => v.trim()));
+            }
+
+            document.getElementById('rowCount').textContent = parsedRows.length;
+            updateColumnSelectors();
+            updatePreview();
+        }
+
+        function updateColumnSelectors() {
+            const latSelect = document.getElementById('latCol');
+            const lonSelect = document.getElementById('lonCol');
+            const altSelect = document.getElementById('altCol');
+
+            const currentLat = latSelect.value;
+            const currentLon = lonSelect.value;
+            const currentAlt = altSelect.value;
+
+            latSelect.innerHTML = '';
+            lonSelect.innerHTML = '';
+            altSelect.innerHTML = '<option value="-1">— Не использовать —</option>';
+
+            headers.forEach((header, i) => {
+                const text = `${i}: ${header}`;
+                latSelect.add(new Option(text, i));
+                lonSelect.add(new Option(text, i));
+                altSelect.add(new Option(text, i));
+            });
+
+            // Пытаемся умно выбрать столбцы по названиям
+            let latIdx = currentLat || '-1';
+            let lonIdx = currentLon || '-1';
+            let altIdx = currentAlt || '-1';
+
+            if (currentLat === undefined || currentLat === null || currentLat === '') {
+                latIdx = findColumnIndex(['lat', 'latitude', 'широта', 'north', 'northing', 'n', 'x', 'шир']);
+            }
+            if (currentLon === undefined || currentLon === null || currentLon === '') {
+                lonIdx = findColumnIndex(['lon', 'long', 'longitude', 'долгота', 'east', 'easting', 'e', 'y', 'долг']);
+            }
+            if (currentAlt === undefined || currentAlt === null || currentAlt === '') {
+                altIdx = findColumnIndex(['alt', 'altitude', 'height', 'depth', 'высота', 'глубина', 'z', 'h', 'elev']);
+            }
+
+            latSelect.value = latIdx !== '-1' ? latIdx : (headers.length > 0 ? '0' : '-1');
+            lonSelect.value = lonIdx !== '-1' ? lonIdx : (headers.length > 1 ? '1' : '-1');
+            altSelect.value = altIdx !== '-1' ? altIdx : '-1';
+
+            // Если не нашли — оставляем как есть или сбрасываем
+            if (!latSelect.value) latSelect.value = '0';
+            if (!lonSelect.value) lonSelect.value = headers.length > 1 ? '1' : '0';
+        }
+
+        function findColumnIndex(keywords) {
+            for (const kw of keywords) {
+                const idx = headers.findIndex(h => h.toLowerCase().includes(kw.toLowerCase()));
+                if (idx >= 0) return String(idx);
+            }
+            return '-1';
+        }
+
+        function updatePreview() {
+            const latIdx = parseInt(document.getElementById('latCol').value);
+            const lonIdx = parseInt(document.getElementById('lonCol').value);
+            const altIdx = parseInt(document.getElementById('altCol').value);
+
+            const table = document.getElementById('previewTable');
+            const emptyMsg = document.getElementById('previewEmpty');
+            const thead = table.querySelector('thead');
+            const tbody = table.querySelector('tbody');
+
+            if (parsedRows.length === 0) {
+                thead.innerHTML = '';
+                tbody.innerHTML = '';
+                emptyMsg.style.display = 'block';
+                table.style.display = 'none';
+                return;
+            }
+
+            emptyMsg.style.display = 'none';
+            table.style.display = 'table';
+
+            // Заголовок таблицы
+            let headerHTML = '<tr>';
+            headers.forEach((h, i) => {
+                let cls = '';
+                if (i === latIdx) cls = 'highlight-lat';
+                else if (i === lonIdx) cls = 'highlight-lon';
+                else if (i === altIdx) cls = 'highlight-alt';
+                headerHTML += `<th class="${cls}">${i}: ${escapeHTML(h)}</th>`;
+            });
+            headerHTML += '</tr>';
+            thead.innerHTML = headerHTML;
+
+            // Тело таблицы (первые 20 строк)
+            const previewRows = parsedRows.slice(0, 20);
+            let bodyHTML = '';
+            previewRows.forEach(row => {
+                bodyHTML += '<tr>';
+                row.forEach((cell, i) => {
+                    bodyHTML += `<td>${escapeHTML(cell)}</td>`;
+                });
+                // Дополняем если строка короче заголовка
+                for (let i = row.length; i < headers.length; i++) {
+                    bodyHTML += '<td></td>';
+                }
+                bodyHTML += '</tr>';
+            });
+            tbody.innerHTML = bodyHTML;
+        }
+
+        function escapeHTML(str) {
+            const div = document.createElement('div');
+            div.textContent = str;
+            return div.innerHTML;
+        }
+
+        // Конвертация NMEA в десятичные градусы
+        function nmeaToDecimal(nmeaStr, direction) {
+            // Формат: ddmm.mmmm или dddmm.mmmm
+            const cleaned = nmeaStr.replace(',', '.').trim();
+            const num = parseFloat(cleaned);
+            if (isNaN(num)) return NaN;
+            
+            // Определяем количество градусов: если >= 10000 — 3 знака на градусы (для долготы), иначе 2 (для широты)
+            // Но надёжнее: ищем точку, всё что левее минус 2 цифры = градусы
+            const str = cleaned;
+            const dotIndex = str.indexOf('.');
+            let degreesPart, minutesPart;
+            
+            if (dotIndex >= 0) {
+                const beforeDot = str.substring(0, dotIndex);
+                if (beforeDot.length <= 2) {
+                    // Не может быть такого для NMEA, считаем как есть
+                    return num;
+                }
+                degreesPart = beforeDot.substring(0, beforeDot.length - 2);
+                minutesPart = beforeDot.substring(beforeDot.length - 2) + '.' + str.substring(dotIndex + 1);
+            } else {
+                // Без точки — целое число
+                if (cleaned.length <= 2) return num;
+                degreesPart = cleaned.substring(0, cleaned.length - 2);
+                minutesPart = cleaned.substring(cleaned.length - 2);
+            }
+            
+            const degrees = parseInt(degreesPart, 10);
+            const minutes = parseFloat(minutesPart);
+            let decimal = degrees + minutes / 60.0;
+            
+            if (direction === 'S' || direction === 'W') {
+                decimal = -decimal;
+            }
+            return decimal;
+        }
+
+        function isNMEAFormat(value) {
+            // NMEA формат: число с точкой, где целая часть > 100 для широты или > 1000 для долготы
+            const cleaned = value.replace(',', '.').trim();
+            const num = parseFloat(cleaned);
+            if (isNaN(num)) return false;
+            // Если целая часть > 180 — скорее всего NMEA
+            const intPart = Math.floor(num);
+            return intPart > 180;
+        }
+
+        function parseCoordinate(value, directionValue, format) {
+            if (!value || value.trim() === '') return NaN;
+            
+            // Если есть отдельное значение направления (N/S/E/W)
+            let dir = '';
+            if (directionValue && /^[NSWE]$/i.test(directionValue.trim())) {
+                dir = directionValue.trim().toUpperCase();
+            }
+            
+            // Проверяем, может ли значение само содержать направление (например "4637.3031707,N")
+            const combinedMatch = value.match(/^([\d.,]+)\s*[,;]?\s*([NSWE])$/i);
+            if (combinedMatch) {
+                value = combinedMatch[1];
+                dir = combinedMatch[2].toUpperCase();
+            }
+            
+            const useNMEA = format === 'nmea' || (format === 'auto' && isNMEAFormat(value));
+            
+            if (useNMEA) {
+                return nmeaToDecimal(value, dir);
+            } else {
+                // Десятичные градусы
+                const cleaned = value.replace(',', '.').trim();
+                let num = parseFloat(cleaned);
+                if (isNaN(num)) return NaN;
+                if (dir === 'S' || dir === 'W') num = -num;
+                return num;
+            }
+        }
+
+        function generateKML() {
+            const latIdx = parseInt(document.getElementById('latCol').value);
+            const lonIdx = parseInt(document.getElementById('lonCol').value);
+            const altIdx = parseInt(document.getElementById('altCol').value);
+            const trackName = document.getElementById('trackName').value || 'My Track';
+            const format = document.querySelector('input[name="coordFormat"]:checked').value;
+            
+            const statusDiv = document.getElementById('status');
+            
+            if (isNaN(latIdx) || isNaN(lonIdx)) {
+                statusDiv.className = 'status error';
+                statusDiv.textContent = '❌ Выберите столбцы для широты и долготы';
+                return;
+            }
+            if (parsedRows.length === 0) {
+                statusDiv.className = 'status error';
+                statusDiv.textContent = '❌ Нет данных для обработки';
+                return;
+            }
+
+            const coordinates = [];
+            let errors = 0;
+            const maxErrors = 5;
+
+            for (let i = 0; i < parsedRows.length; i++) {
+                const row = parsedRows[i];
+                if (row.length <= Math.max(latIdx, lonIdx)) continue;
+                
+                const latRaw = row[latIdx] || '';
+                const lonRaw = row[lonIdx] || '';
+                
+                // Ищем соседние столбцы с направлением (N/S/E/W)
+                let latDir = '';
+                let lonDir = '';
+                
+                // Проверяем столбец latIdx+1 на N/S
+                if (latIdx + 1 < row.length && /^[NS]$/i.test(row[latIdx + 1].trim())) {
+                    latDir = row[latIdx + 1].trim().toUpperCase();
+                }
+                // Проверяем столбец lonIdx+1 на E/W
+                if (lonIdx + 1 < row.length && /^[EW]$/i.test(row[lonIdx + 1].trim())) {
+                    lonDir = row[lonIdx + 1].trim().toUpperCase();
+                }
+                
+                const lat = parseCoordinate(latRaw, latDir, format);
+                const lon = parseCoordinate(lonRaw, lonDir, format);
+                
+                let alt = 0;
+                if (altIdx >= 0 && altIdx < row.length) {
+                    const altRaw = row[altIdx].replace(',', '.').trim();
+                    alt = parseFloat(altRaw);
+                    if (isNaN(alt)) alt = 0;
+                }
+                
+                if (isNaN(lat) || isNaN(lon)) {
+                    errors++;
+                    if (errors <= maxErrors) {
+                        console.warn(`Строка ${i + 1}: не удалось распарсить координаты`, { latRaw, lonRaw, latDir, lonDir });
+                    }
+                    continue;
+                }
+                
+                // Проверка диапазона
+                if (lat < -90 || lat > 90 || lon < -180 || lon > 180) {
+                    errors++;
+                    if (errors <= maxErrors) {
+                        console.warn(`Строка ${i + 1}: координаты вне диапазона`, { lat, lon });
+                    }
+                    continue;
+                }
+                
+                coordinates.push({ lon, lat, alt });
+            }
+
+            if (coordinates.length === 0) {
+                statusDiv.className = 'status error';
+                statusDiv.textContent = '❌ Не удалось извлечь ни одной корректной координаты. Проверьте столбцы и формат.';
+                return;
+            }
+
+            // Генерируем KML
+            const coordStrings = coordinates.map(c => `${c.lon.toFixed(8)},${c.lat.toFixed(8)},${c.alt.toFixed(2)}`).join('\n          ');
+            
+            generatedKML = `<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>${escapeXML(trackName)}</name>
+    <Style id="trackStyle">
+      <LineStyle>
+        <color>ff0000ff</color>
+        <width>4</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>7f0000ff</color>
+      </PolyStyle>
+    </Style>
+    <Placemark>
+      <name>${escapeXML(trackName)}</name>
+      <styleUrl>#trackStyle</styleUrl>
+      <LineString>
+        <extrude>1</extrude>
+        <tessellate>1</tessellate>
+        <altitudeMode>absolute</altitudeMode>
+        <coordinates>
+          ${coordStrings}
+        </coordinates>
+      </LineString>
+    </Placemark>
+  </Document>
+</kml>`;
+
+            document.getElementById('kmlOutput').value = generatedKML;
+            document.getElementById('btnDownload').disabled = false;
+            document.getElementById('btnCopy').disabled = false;
+            
+            const skipped = parsedRows.length - coordinates.length - (errors > maxErrors ? errors - maxErrors : 0);
+            let msg = `✅ Успешно! Обработано ${coordinates.length} точек из ${parsedRows.length} строк.`;
+            if (errors > 0) {
+                msg += ` Пропущено строк с ошибками: ${errors}.`;
+            }
+            statusDiv.className = 'status success';
+            statusDiv.textContent = msg;
+        }
+
+        function escapeXML(str) {
+            return str.replace(/&/g, '&amp;')
+                      .replace(/</g, '&lt;')
+                      .replace(/>/g, '&gt;')
+                      .replace(/"/g, '&quot;')
+                      .replace(/'/g, '&apos;');
+        }
+
+        function downloadKML() {
+            if (!generatedKML) {
+                generateKML();
+                if (!generatedKML) return;
+            }
+            const trackName = document.getElementById('trackName').value || 'My Track';
+            const blob = new Blob([generatedKML], { type: 'application/vnd.google-earth.kml+xml' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = trackName.replace(/[^a-zA-Zа-яА-Я0-9_-]/g, '_') + '.kml';
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+        }
+
+        function copyToClipboard() {
+            if (!generatedKML) {
+                generateKML();
+                if (!generatedKML) return;
+            }
+            navigator.clipboard.writeText(generatedKML).then(() => {
+                const statusDiv = document.getElementById('status');
+                statusDiv.className = 'status info';
+                statusDiv.textContent = '📋 KML скопирован в буфер обмена';
+            }).catch(() => {
+                const statusDiv = document.getElementById('status');
+                statusDiv.className = 'status error';
+                statusDiv.textContent = '❌ Не удалось скопировать в буфер обмена';
+            });
+        }
+
+        // Инициализация при загрузке
+        window.addEventListener('DOMContentLoaded', () => {
+            // Если в textarea уже есть данные (например, из кэша браузера) — парсим
+            if (document.getElementById('rawData').value.trim()) {
+                parseData();
+            }
+        });
+    </script>
+</body>
+</html>

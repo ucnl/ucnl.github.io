@@ -1,0 +1,959 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Фильтр KML треков — удаление выбросов по расстоянию от центроида</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f0f2f5;
+            color: #333;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1300px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .card {
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            padding: 24px;
+        }
+        h1 {
+            font-size: 1.5em;
+            color: #1a1a2e;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        h2 {
+            font-size: 1.1em;
+            color: #444;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .upload-area {
+            border: 2px dashed #ccc;
+            border-radius: 12px;
+            padding: 30px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.2s;
+            background: #fafafa;
+        }
+        .upload-area:hover {
+            border-color: #4a90d9;
+            background: #f0f6ff;
+        }
+        .upload-area.drag-over {
+            border-color: #27ae60;
+            background: #eafaf1;
+        }
+        .upload-area input {
+            display: none;
+        }
+        .upload-icon {
+            font-size: 2.5em;
+            margin-bottom: 8px;
+        }
+        .upload-text {
+            color: #666;
+            font-size: 0.95em;
+        }
+        .upload-hint {
+            color: #999;
+            font-size: 0.8em;
+            margin-top: 5px;
+        }
+        .two-columns {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .col-left {
+            flex: 1;
+            min-width: 300px;
+            max-width: 450px;
+        }
+        .col-right {
+            flex: 2;
+            min-width: 400px;
+        }
+        .track-list {
+            max-height: 300px;
+            overflow-y: auto;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+        }
+        .track-item {
+            padding: 12px 15px;
+            border-bottom: 1px solid #f0f0f0;
+            cursor: pointer;
+            transition: background 0.15s;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .track-item:hover {
+            background: #f5f8fc;
+        }
+        .track-item.active {
+            background: #dbeafe;
+            border-left: 4px solid #4a90d9;
+            padding-left: 11px;
+        }
+        .track-item:last-child {
+            border-bottom: none;
+        }
+        .track-name {
+            font-weight: 600;
+            font-size: 0.9em;
+            word-break: break-word;
+        }
+        .track-points {
+            font-size: 0.8em;
+            color: #888;
+            white-space: nowrap;
+            margin-left: 10px;
+        }
+        .no-tracks {
+            padding: 30px;
+            text-align: center;
+            color: #aaa;
+        }
+        .slider-group {
+            margin: 15px 0;
+        }
+        .slider-group label {
+            display: flex;
+            justify-content: space-between;
+            font-weight: 600;
+            font-size: 0.85em;
+            color: #555;
+            margin-bottom: 5px;
+        }
+        .slider-group input[type="range"] {
+            width: 100%;
+            accent-color: #4a90d9;
+        }
+        .slider-value {
+            font-weight: 700;
+            color: #4a90d9;
+        }
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+            gap: 10px;
+            margin: 15px 0;
+        }
+        .stat-box {
+            background: #f8f9fa;
+            border-radius: 8px;
+            padding: 12px;
+            text-align: center;
+        }
+        .stat-value {
+            font-size: 1.3em;
+            font-weight: 700;
+            color: #1a1a2e;
+        }
+        .stat-label {
+            font-size: 0.75em;
+            color: #888;
+            text-transform: uppercase;
+            letter-spacing: 0.3px;
+        }
+        .stat-box.highlight {
+            background: #e8f0fe;
+        }
+        .stat-box.highlight .stat-value {
+            color: #4a90d9;
+        }
+        .btn-row {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-top: 15px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 0.9em;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.2s;
+        }
+        .btn-primary {
+            background: #4a90d9;
+            color: #fff;
+        }
+        .btn-primary:hover {
+            background: #357abd;
+        }
+        .btn-secondary {
+            background: #e0e0e0;
+            color: #333;
+        }
+        .btn-secondary:hover {
+            background: #ccc;
+        }
+        .btn-success {
+            background: #27ae60;
+            color: #fff;
+        }
+        .btn-success:hover {
+            background: #219a52;
+        }
+        .btn-outline {
+            background: #fff;
+            color: #4a90d9;
+            border: 2px solid #4a90d9;
+        }
+        .btn-outline:hover {
+            background: #f0f6ff;
+        }
+        .btn:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+        .canvas-container {
+            position: relative;
+            width: 100%;
+            height: 400px;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            overflow: hidden;
+            background: #fdfdfd;
+        }
+        canvas {
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+        .status {
+            margin-top: 12px;
+            padding: 10px 15px;
+            border-radius: 8px;
+            font-size: 0.85em;
+            display: none;
+        }
+        .status.success {
+            background: #d4edda;
+            color: #155724;
+            display: block;
+        }
+        .status.error {
+            background: #f8d7da;
+            color: #721c24;
+            display: block;
+        }
+        .status.info {
+            background: #d1ecf1;
+            color: #0c5460;
+            display: block;
+        }
+        .legend-row {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin: 8px 0;
+            font-size: 0.8em;
+        }
+        .legend-dot {
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            margin-right: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <h1>🎯 Фильтр KML треков</h1>
+            <p style="color: #888; font-size: 0.85em; margin-top: 5px;">
+                Удаление выбросов: точки сортируются по расстоянию от центроида, заданный процент наиболее удалённых удаляется.
+            </p>
+        </div>
+
+        <!-- Загрузка KML -->
+        <div class="card">
+            <h2>📂 Загрузка KML-файла</h2>
+            <div class="upload-area" id="uploadArea">
+                <input type="file" id="fileInput" accept=".kml,.xml">
+                <div class="upload-icon">📁</div>
+                <div class="upload-text">Нажмите или перетащите KML-файл сюда</div>
+                <div class="upload-hint">Поддерживаются файлы с одним или несколькими треками (LineString)</div>
+            </div>
+            <div id="fileInfo" style="margin-top: 8px; font-size: 0.85em; color: #666;"></div>
+        </div>
+
+        <!-- Основная рабочая область -->
+        <div class="two-columns">
+            <!-- Левая колонка: список треков и настройки -->
+            <div class="col-left">
+                <div class="card">
+                    <h2>📋 Треки в файле</h2>
+                    <div class="track-list" id="trackList">
+                        <div class="no-tracks">Загрузите KML-файл</div>
+                    </div>
+                </div>
+                <div class="card" style="margin-top: 20px;">
+                    <h2>⚙️ Параметры фильтрации</h2>
+                    <div class="slider-group">
+                        <label>
+                            <span>Процент удаляемых точек</span>
+                            <span class="slider-value" id="percentValue">5%</span>
+                        </label>
+                        <input type="range" id="percentSlider" min="0" max="50" value="5" step="0.5">
+                    </div>
+                    <p style="font-size: 0.8em; color: #888;">
+                        Удаляются точки, наиболее удалённые от центроида.
+                        0% — без изменений, 50% — удалить половину самых дальних точек.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Правая колонка: визуализация и статистика -->
+            <div class="col-right">
+                <div class="card">
+                    <h2>📊 Визуализация и статистика</h2>
+                    <div class="stats-grid" id="statsGrid">
+                        <div class="stat-box">
+                            <div class="stat-value" id="statTotal">-</div>
+                            <div class="stat-label">Всего точек</div>
+                        </div>
+                        <div class="stat-box">
+                            <div class="stat-value" id="statRemove">-</div>
+                            <div class="stat-label">Будет удалено</div>
+                        </div>
+                        <div class="stat-box highlight">
+                            <div class="stat-value" id="statRemain">-</div>
+                            <div class="stat-label">Останется</div>
+                        </div>
+                        <div class="stat-box">
+                            <div class="stat-value" id="statMaxDist">-</div>
+                            <div class="stat-label">Макс. расстояние</div>
+                        </div>
+                    </div>
+                    <div class="legend-row">
+                        <span><span class="legend-dot" style="background:#4a90d9;"></span> Оставшиеся точки</span>
+                        <span><span class="legend-dot" style="background:#e74c3c;"></span> Удаляемые точки</span>
+                        <span><span class="legend-dot" style="background:#f39c12;"></span> Центроид</span>
+                        <span style="color:#888;">• Размер = расстояние от центроида</span>
+                    </div>
+                    <div class="canvas-container" id="canvasContainer">
+                        <canvas id="mainCanvas"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Кнопки действий -->
+        <div class="card">
+            <div class="btn-row">
+                <button class="btn-primary" id="btnFilter" disabled>🔄 Применить фильтр</button>
+                <button class="btn-outline" id="btnReset" disabled>↩️ Сбросить фильтр</button>
+                <button class="btn-success" id="btnDownload" disabled>💾 Скачать отфильтрованный KML</button>
+                <button class="btn-secondary" id="btnCopy" disabled>📋 Копировать KML</button>
+            </div>
+            <div id="status" class="status"></div>
+        </div>
+    </div>
+
+    <script>
+        // ==================== Глобальное состояние ====================
+        let allTracks = [];               // Все треки из файла: [{name, coordinates: [{lon, lat, alt}], rawPlacemark}]
+        let selectedTrackIndex = -1;      // Индекс выбранного трека
+        let filteredCoordinates = null;   // Отфильтрованные координаты (null = без фильтрации)
+        let centroidCache = null;         // Кэш центроида для текущего трека
+        let distancesCache = null;        // Кэш расстояний для текущего трека
+
+        // ==================== DOM-элементы ====================
+        const uploadArea = document.getElementById('uploadArea');
+        const fileInput = document.getElementById('fileInput');
+        const fileInfo = document.getElementById('fileInfo');
+        const trackList = document.getElementById('trackList');
+        const percentSlider = document.getElementById('percentSlider');
+        const percentValue = document.getElementById('percentValue');
+        const canvas = document.getElementById('mainCanvas');
+        const canvasContainer = document.getElementById('canvasContainer');
+        const statusDiv = document.getElementById('status');
+        const btnFilter = document.getElementById('btnFilter');
+        const btnReset = document.getElementById('btnReset');
+        const btnDownload = document.getElementById('btnDownload');
+        const btnCopy = document.getElementById('btnCopy');
+
+        // ==================== Загрузка файла ====================
+        uploadArea.addEventListener('click', () => fileInput.click());
+        fileInput.addEventListener('change', handleFileSelect);
+
+        uploadArea.addEventListener('dragover', (e) => {
+            e.preventDefault();
+            uploadArea.classList.add('drag-over');
+        });
+        uploadArea.addEventListener('dragleave', () => {
+            uploadArea.classList.remove('drag-over');
+        });
+        uploadArea.addEventListener('drop', (e) => {
+            e.preventDefault();
+            uploadArea.classList.remove('drag-over');
+            const file = e.dataTransfer.files[0];
+            if (file) processFile(file);
+        });
+
+        function handleFileSelect(e) {
+            const file = e.target.files[0];
+            if (file) processFile(file);
+        }
+
+        function processFile(file) {
+            if (!file.name.toLowerCase().endsWith('.kml') && !file.name.toLowerCase().endsWith('.xml')) {
+                showStatus('error', '❌ Пожалуйста, выберите файл с расширением .kml или .xml');
+                return;
+            }
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                parseKML(e.target.result, file.name);
+            };
+            reader.onerror = function() {
+                showStatus('error', '❌ Ошибка чтения файла');
+            };
+            reader.readAsText(file);
+        }
+
+        // ==================== Парсинг KML ====================
+        function parseKML(kmlText, fileName) {
+            const parser = new DOMParser();
+            const kmlDoc = parser.parseFromString(kmlText, 'text/xml');
+            
+            // Проверка на ошибки парсинга
+            const parseError = kmlDoc.querySelector('parsererror');
+            if (parseError) {
+                showStatus('error', '❌ Ошибка парсинга KML. Проверьте формат файла.');
+                return;
+            }
+
+            // Извлекаем все LineString
+            const lineStrings = kmlDoc.querySelectorAll('LineString');
+            allTracks = [];
+
+            lineStrings.forEach((ls, index) => {
+                // Ищем родительский Placemark
+                let placemark = ls.closest('Placemark');
+                let name = 'Track ' + (index + 1);
+                
+                if (placemark) {
+                    const nameEl = placemark.querySelector('name');
+                    if (nameEl && nameEl.textContent.trim()) {
+                        name = nameEl.textContent.trim();
+                    }
+                }
+
+                const coordText = ls.querySelector('coordinates')?.textContent?.trim();
+                if (!coordText) return;
+
+                const coordLines = coordText.split(/\s+/).filter(s => s.trim().length > 0);
+                const coordinates = [];
+
+                coordLines.forEach(line => {
+                    const parts = line.split(',');
+                    if (parts.length >= 2) {
+                        const lon = parseFloat(parts[0]);
+                        const lat = parseFloat(parts[1]);
+                        const alt = parts.length >= 3 ? parseFloat(parts[2]) : 0;
+                        if (!isNaN(lon) && !isNaN(lat)) {
+                            coordinates.push({ lon, lat, alt: isNaN(alt) ? 0 : alt });
+                        }
+                    }
+                });
+
+                if (coordinates.length > 0) {
+                    allTracks.push({
+                        name: name,
+                        coordinates: coordinates,
+                        rawPlacemark: placemark ? placemark.cloneNode(true) : null,
+                        rawLineString: ls.cloneNode(true)
+                    });
+                }
+            });
+
+            // Также ищем треки внутри MultiGeometry
+            const multiGeoms = kmlDoc.querySelectorAll('MultiGeometry');
+            multiGeoms.forEach(mg => {
+                const placemark = mg.closest('Placemark');
+                let baseName = 'MultiTrack';
+                if (placemark) {
+                    const nameEl = placemark.querySelector('name');
+                    if (nameEl && nameEl.textContent.trim()) {
+                        baseName = nameEl.textContent.trim();
+                    }
+                }
+                const lsList = mg.querySelectorAll('LineString');
+                lsList.forEach((ls, i) => {
+                    const coordText = ls.querySelector('coordinates')?.textContent?.trim();
+                    if (!coordText) return;
+                    const coordLines = coordText.split(/\s+/).filter(s => s.trim().length > 0);
+                    const coordinates = [];
+                    coordLines.forEach(line => {
+                        const parts = line.split(',');
+                        if (parts.length >= 2) {
+                            const lon = parseFloat(parts[0]);
+                            const lat = parseFloat(parts[1]);
+                            const alt = parts.length >= 3 ? parseFloat(parts[2]) : 0;
+                            if (!isNaN(lon) && !isNaN(lat)) {
+                                coordinates.push({ lon, lat, alt: isNaN(alt) ? 0 : alt });
+                            }
+                        }
+                    });
+                    if (coordinates.length > 0) {
+                        allTracks.push({
+                            name: lsList.length > 1 ? `${baseName} (часть ${i + 1})` : baseName,
+                            coordinates: coordinates,
+                            rawPlacemark: placemark ? placemark.cloneNode(true) : null,
+                            rawLineString: ls.cloneNode(true)
+                        });
+                    }
+                });
+            });
+
+            if (allTracks.length === 0) {
+                showStatus('error', '❌ В файле не найдено треков (LineString) с координатами.');
+                trackList.innerHTML = '<div class="no-tracks">Треки не найдены</div>';
+                fileInfo.textContent = '';
+                resetState();
+                return;
+            }
+
+            fileInfo.textContent = `✅ Загружен: ${fileName} | Найдено треков: ${allTracks.length} | Всего точек: ${allTracks.reduce((sum, t) => sum + t.coordinates.length, 0)}`;
+            renderTrackList();
+            showStatus('success', `✅ Загружено ${allTracks.length} треков. Выберите трек для фильтрации.`);
+        }
+
+        // ==================== Список треков ====================
+        function renderTrackList() {
+            if (allTracks.length === 0) {
+                trackList.innerHTML = '<div class="no-tracks">Треки не найдены</div>';
+                return;
+            }
+            trackList.innerHTML = allTracks.map((track, i) => `
+                <div class="track-item ${i === selectedTrackIndex ? 'active' : ''}" data-index="${i}">
+                    <span class="track-name">${escapeHTML(track.name)}</span>
+                    <span class="track-points">${track.coordinates.length} точек</span>
+                </div>
+            `).join('');
+
+            // Обработчики кликов
+            trackList.querySelectorAll('.track-item').forEach(item => {
+                item.addEventListener('click', () => {
+                    const idx = parseInt(item.dataset.index);
+                    selectTrack(idx);
+                });
+            });
+        }
+
+        function selectTrack(index) {
+            if (index < 0 || index >= allTracks.length) return;
+            selectedTrackIndex = index;
+            filteredCoordinates = null;
+            centroidCache = null;
+            distancesCache = null;
+            
+            renderTrackList();
+            computeCentroidAndDistances();
+            updateStats();
+            drawVisualization();
+            updateButtons();
+        }
+
+        // ==================== Вычисления ====================
+        function computeCentroidAndDistances() {
+            if (selectedTrackIndex < 0) return;
+            const coords = allTracks[selectedTrackIndex].coordinates;
+            if (coords.length === 0) return;
+
+            // Центроид (среднее арифметическое)
+            let sumLon = 0, sumLat = 0;
+            coords.forEach(c => {
+                sumLon += c.lon;
+                sumLat += c.lat;
+            });
+            const centroidLon = sumLon / coords.length;
+            const centroidLat = sumLat / coords.length;
+            centroidCache = { lon: centroidLon, lat: centroidLat };
+
+            // Расстояния от центроида (приближённо, в метрах)
+            distancesCache = coords.map(c => {
+                return haversineDistance(centroidLat, centroidLon, c.lat, c.lon);
+            });
+        }
+
+        function haversineDistance(lat1, lon1, lat2, lon2) {
+            const R = 6371000; // радиус Земли в метрах
+            const dLat = (lat2 - lat1) * Math.PI / 180;
+            const dLon = (lon2 - lon1) * Math.PI / 180;
+            const a = Math.sin(dLat / 2) ** 2 +
+                      Math.cos(lat1 * Math.PI / 180) * Math.cos(lat2 * Math.PI / 180) *
+                      Math.sin(dLon / 2) ** 2;
+            const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+            return R * c;
+        }
+
+        function getFilteredCoordinates() {
+            if (selectedTrackIndex < 0) return [];
+            const coords = allTracks[selectedTrackIndex].coordinates;
+            if (!distancesCache || distancesCache.length !== coords.length) {
+                computeCentroidAndDistances();
+            }
+            if (!distancesCache) return [...coords];
+
+            const percent = parseFloat(percentSlider.value);
+            if (percent <= 0) return [...coords];
+
+            // Сортируем индексы по расстоянию (по возрастанию)
+            const indexed = distancesCache.map((d, i) => ({ dist: d, index: i }));
+            indexed.sort((a, b) => a.dist - b.dist);
+
+            // Количество точек, которые нужно удалить (с конца отсортированного списка)
+            const removeCount = Math.floor(coords.length * percent / 100);
+            const keepCount = coords.length - removeCount;
+            
+            // Индексы точек, которые оставляем (keepCount ближайших к центроиду)
+            const keepIndices = new Set();
+            for (let i = 0; i < keepCount; i++) {
+                keepIndices.add(indexed[i].index);
+            }
+
+            // Возвращаем точки в исходном порядке, но только оставленные
+            return coords.filter((_, i) => keepIndices.has(i));
+        }
+
+        // ==================== Статистика ====================
+        function updateStats() {
+            if (selectedTrackIndex < 0) {
+                document.getElementById('statTotal').textContent = '-';
+                document.getElementById('statRemove').textContent = '-';
+                document.getElementById('statRemain').textContent = '-';
+                document.getElementById('statMaxDist').textContent = '-';
+                return;
+            }
+            const coords = allTracks[selectedTrackIndex].coordinates;
+            const total = coords.length;
+            const percent = parseFloat(percentSlider.value);
+            const removeCount = Math.floor(total * percent / 100);
+            const remainCount = total - removeCount;
+            const maxDist = distancesCache && distancesCache.length > 0 ? Math.max(...distancesCache) : 0;
+
+            document.getElementById('statTotal').textContent = total;
+            document.getElementById('statRemove').textContent = removeCount;
+            document.getElementById('statRemain').textContent = remainCount;
+            document.getElementById('statMaxDist').textContent = maxDist.toFixed(1) + ' м';
+        }
+
+        // ==================== Визуализация ====================
+        function drawVisualization() {
+            const containerWidth = canvasContainer.clientWidth;
+            const containerHeight = canvasContainer.clientHeight;
+            
+            // Устанавливаем физический размер canvas с учётом devicePixelRatio
+            const dpr = window.devicePixelRatio || 1;
+            canvas.width = containerWidth * dpr;
+            canvas.height = containerHeight * dpr;
+            canvas.style.width = containerWidth + 'px';
+            canvas.style.height = containerHeight + 'px';
+            
+            const ctx = canvas.getContext('2d');
+            ctx.setTransform(1, 0, 0, 1, 0, 0);
+            ctx.scale(dpr, dpr);
+            ctx.clearRect(0, 0, containerWidth, containerHeight);
+
+            if (selectedTrackIndex < 0 || allTracks[selectedTrackIndex].coordinates.length === 0) {
+                ctx.fillStyle = '#aaa';
+                ctx.font = '14px Segoe UI, sans-serif';
+                ctx.textAlign = 'center';
+                ctx.fillText('Выберите трек для отображения', containerWidth / 2, containerHeight / 2);
+                return;
+            }
+
+            const coords = allTracks[selectedTrackIndex].coordinates;
+            const percent = parseFloat(percentSlider.value);
+            
+            // Определяем, какие точки будут удалены
+            let removeSet = new Set();
+            if (percent > 0 && distancesCache && distancesCache.length === coords.length) {
+                const indexed = distancesCache.map((d, i) => ({ dist: d, index: i }));
+                indexed.sort((a, b) => a.dist - b.dist);
+                const removeCount = Math.floor(coords.length * percent / 100);
+                for (let i = coords.length - removeCount; i < coords.length; i++) {
+                    removeSet.add(indexed[i].index);
+                }
+            }
+
+            // Находим границы для отображения
+            let minLon = Infinity, maxLon = -Infinity, minLat = Infinity, maxLat = -Infinity;
+            coords.forEach(c => {
+                if (c.lon < minLon) minLon = c.lon;
+                if (c.lon > maxLon) maxLon = c.lon;
+                if (c.lat < minLat) minLat = c.lat;
+                if (c.lat > maxLat) maxLat = c.lat;
+            });
+            
+            // Добавляем небольшой отступ
+            const lonRange = maxLon - minLon || 0.001;
+            const latRange = maxLat - minLat || 0.001;
+            const padding = 40;
+            const plotWidth = containerWidth - padding * 2;
+            const plotHeight = containerHeight - padding * 2;
+
+            function toX(lon) { return padding + (lon - minLon) / lonRange * plotWidth; }
+            function toY(lat) { return padding + plotHeight - (lat - minLat) / latRange * plotHeight; }
+
+            // Рисуем линии трека (соединяем оставшиеся точки)
+            ctx.strokeStyle = 'rgba(180,180,180,0.5)';
+            ctx.lineWidth = 1;
+            ctx.beginPath();
+            let firstPoint = true;
+            coords.forEach((c, i) => {
+                if (removeSet.has(i)) return;
+                const x = toX(c.lon);
+                const y = toY(c.lat);
+                if (firstPoint) {
+                    ctx.moveTo(x, y);
+                    firstPoint = false;
+                } else {
+                    ctx.lineTo(x, y);
+                }
+            });
+            ctx.stroke();
+
+            // Размер точек в зависимости от расстояния
+            const maxDist = distancesCache ? Math.max(...distancesCache) : 1;
+            const minRadius = 3;
+            const maxRadius = 12;
+
+            // Рисуем точки
+            coords.forEach((c, i) => {
+                const x = toX(c.lon);
+                const y = toY(c.lat);
+                const dist = distancesCache ? distancesCache[i] : 0;
+                const radius = maxDist > 0 ? minRadius + (dist / maxDist) * (maxRadius - minRadius) : minRadius;
+                const isRemoved = removeSet.has(i);
+
+                ctx.beginPath();
+                ctx.arc(x, y, radius, 0, Math.PI * 2);
+                
+                if (isRemoved) {
+                    ctx.fillStyle = 'rgba(231, 76, 60, 0.6)';
+                    ctx.strokeStyle = 'rgba(192, 57, 43, 0.8)';
+                } else {
+                    ctx.fillStyle = 'rgba(74, 144, 217, 0.7)';
+                    ctx.strokeStyle = 'rgba(41, 128, 185, 0.9)';
+                }
+                ctx.lineWidth = 1;
+                ctx.fill();
+                ctx.stroke();
+            });
+
+            // Рисуем центроид
+            if (centroidCache) {
+                const cx = toX(centroidCache.lon);
+                const cy = toY(centroidCache.lat);
+                
+                // Крестик
+                ctx.strokeStyle = '#e67e22';
+                ctx.lineWidth = 2;
+                const crossSize = 8;
+                ctx.beginPath();
+                ctx.moveTo(cx - crossSize, cy);
+                ctx.lineTo(cx + crossSize, cy);
+                ctx.moveTo(cx, cy - crossSize);
+                ctx.lineTo(cx, cy + crossSize);
+                ctx.stroke();
+                
+                // Кружок
+                ctx.beginPath();
+                ctx.arc(cx, cy, 6, 0, Math.PI * 2);
+                ctx.fillStyle = 'rgba(243, 156, 18, 0.8)';
+                ctx.fill();
+                ctx.strokeStyle = '#d68910';
+                ctx.lineWidth = 2;
+                ctx.stroke();
+            }
+        }
+
+        // ==================== Обработчики ====================
+        percentSlider.addEventListener('input', () => {
+            const val = parseFloat(percentSlider.value);
+            percentValue.textContent = val + '%';
+            updateStats();
+            drawVisualization();
+            updateButtons();
+        });
+
+        btnFilter.addEventListener('click', () => {
+            if (selectedTrackIndex < 0) return;
+            filteredCoordinates = getFilteredCoordinates();
+            updateStats();
+            drawVisualization();
+            updateButtons();
+            
+            const total = allTracks[selectedTrackIndex].coordinates.length;
+            const remain = filteredCoordinates.length;
+            showStatus('success', `✅ Фильтр применён. Оставлено ${remain} из ${total} точек (удалено ${total - remain}).`);
+        });
+
+        btnReset.addEventListener('click', () => {
+            filteredCoordinates = null;
+            updateStats();
+            drawVisualization();
+            updateButtons();
+            showStatus('info', '↩️ Фильтр сброшен. Показаны все точки.');
+        });
+
+        btnDownload.addEventListener('click', downloadFilteredKML);
+        btnCopy.addEventListener('click', copyFilteredKML);
+
+        function updateButtons() {
+            const hasTrack = selectedTrackIndex >= 0;
+            const hasFiltered = filteredCoordinates !== null;
+            btnFilter.disabled = !hasTrack;
+            btnReset.disabled = !hasFiltered;
+            btnDownload.disabled = !hasTrack;
+            btnCopy.disabled = !hasTrack;
+        }
+
+        // ==================== Экспорт KML ====================
+        function buildFilteredKML() {
+            if (selectedTrackIndex < 0) return '';
+            const track = allTracks[selectedTrackIndex];
+            const coords = filteredCoordinates || track.coordinates;
+            
+            const coordStrings = coords.map(c => `${c.lon.toFixed(8)},${c.lat.toFixed(8)},${c.alt.toFixed(2)}`).join('\n          ');
+            const trackName = filteredCoordinates ? `${track.name} (filtered)` : track.name;
+
+            return `<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>${escapeXML(trackName)}</name>
+    <Style id="trackStyle">
+      <LineStyle>
+        <color>ff0000ff</color>
+        <width>4</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>7f0000ff</color>
+      </PolyStyle>
+    </Style>
+    <Placemark>
+      <name>${escapeXML(trackName)}</name>
+      <styleUrl>#trackStyle</styleUrl>
+      <LineString>
+        <extrude>1</extrude>
+        <tessellate>1</tessellate>
+        <altitudeMode>absolute</altitudeMode>
+        <coordinates>
+          ${coordStrings}
+        </coordinates>
+      </LineString>
+    </Placemark>
+  </Document>
+</kml>`;
+        }
+
+        function downloadFilteredKML() {
+            const kml = buildFilteredKML();
+            if (!kml) return;
+            const track = allTracks[selectedTrackIndex];
+            const name = filteredCoordinates ? `${track.name}_filtered` : track.name;
+            const blob = new Blob([kml], { type: 'application/vnd.google-earth.kml+xml' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = name.replace(/[^a-zA-Zа-яА-Я0-9_-]/g, '_') + '.kml';
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+            showStatus('success', `💾 Файл сохранён: ${a.download}`);
+        }
+
+        function copyFilteredKML() {
+            const kml = buildFilteredKML();
+            if (!kml) return;
+            navigator.clipboard.writeText(kml).then(() => {
+                showStatus('info', '📋 KML скопирован в буфер обмена');
+            }).catch(() => {
+                showStatus('error', '❌ Не удалось скопировать в буфер обмена');
+            });
+        }
+
+        // ==================== Вспомогательные функции ====================
+        function resetState() {
+            allTracks = [];
+            selectedTrackIndex = -1;
+            filteredCoordinates = null;
+            centroidCache = null;
+            distancesCache = null;
+            updateStats();
+            drawVisualization();
+            updateButtons();
+        }
+
+        function showStatus(type, message) {
+            statusDiv.className = 'status ' + type;
+            statusDiv.textContent = message;
+            // Автоскрытие через 8 секунд
+            clearTimeout(statusDiv._timeout);
+            statusDiv._timeout = setTimeout(() => {
+                statusDiv.className = 'status';
+                statusDiv.textContent = '';
+            }, 8000);
+        }
+
+        function escapeHTML(str) {
+            const div = document.createElement('div');
+            div.textContent = str;
+            return div.innerHTML;
+        }
+
+        function escapeXML(str) {
+            return str.replace(/&/g, '&amp;')
+                      .replace(/</g, '&lt;')
+                      .replace(/>/g, '&gt;')
+                      .replace(/"/g, '&quot;')
+                      .replace(/'/g, '&apos;');
+        }
+
+        // ==================== Resize canvas ====================
+        let resizeTimeout;
+        window.addEventListener('resize', () => {
+            clearTimeout(resizeTimeout);
+            resizeTimeout = setTimeout(() => {
+                drawVisualization();
+            }, 200);
+        });
+
+        // ==================== Инициализация ====================
+        function init() {
+            updateStats();
+            drawVisualization();
+            updateButtons();
+        }
+        init();
+    </script>
+</body>
+</html>
