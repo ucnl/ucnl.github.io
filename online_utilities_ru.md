@@ -33,7 +33,7 @@
 
 ## Прочее
 
-* [Unicode holidays: Список праздников с символами юникода](/online_utils/unicode_holidays.md)
+* [Unicode holidays: Список праздников с символами юникода](/online_utils/unicode_holidays.html)
 * [CSV2KML: Конвертер табличных данных в треки KML](/online_utils/csv2kml.html)
 * [KMLShrink: Фильтрация статичного облака точек](/online_utils/kmlShrink.html)
 * [MDContentBuilder: Автогенерация содержания для Markdown](/online_utils/mdcontentbuilder.html)
