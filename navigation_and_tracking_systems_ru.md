@@ -19,6 +19,7 @@
 * [Zima2-B (пеленгационная антенна): Спецификация устройства:](/documentation/RU/Zima/Zima2B_Specification_ru.md)
 * [Zima2-R (маяк-ответчик): Спецификация устройства](/documentation/RU/Zima/Zima2R_Specification_ru.md)
 * [Zima2-uR (микро маяк-ответчик): Спецификация устройства](/documentation/RU/Zima/Zima2uR_Specification_ru.md)
+* [Zima2 LBL: Краткое описание](/documentation/RU/Zima/Zima2_LBL_DataBrief_ru.md)
 * [Zima2-L (LBL-трансивер): Спецификация устройства](/documentation/RU/Zima/Zima2L_Specification_ru.md)
 * [Zima2-B35 (пеленгационная антенна): Спецификация устройства:](/documentation/RU/Zima/Zima2B35_Specification_ru.md)
 * [Zima2-R35 (маяк-ответчик): Спецификация устройства](/documentation/RU/Zima/Zima2R35_Specification_ru.md)
