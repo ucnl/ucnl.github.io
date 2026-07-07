@@ -15,7 +15,7 @@
 
 <div style="page-break-after: always;"></div>
 
-| ![logo](/documentation/sm_logo.png) | ![zima_r]() |
+| ![logo](/documentation/sm_logo.png) | ![zima2_l](https://github.com/user-attachments/assets/f411b587-392e-4afc-ba97-8a111bf24cf1) |
 | :---: | ---: |
 | [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **Zima2-L** - LBL-трансивер навигационной системы **Zima2 LBL** <br/> спецификация устройства |
 
