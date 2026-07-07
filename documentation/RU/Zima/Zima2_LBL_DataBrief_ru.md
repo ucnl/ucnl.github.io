@@ -15,7 +15,7 @@
 
 <div style="page-break-after: always;"></div>
 
-| ![logo](/documentation/sm_logo.png) | ![logo](/documentation/zima_package.png) |
+| ![logo](/documentation/sm_logo.png) |  |
 | :---: | ---: |
 | [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **Zima 2 LBL** <br/> Краткое описание |
 
@@ -30,7 +30,7 @@
 
 |  |  |
 | :---: | :--- |
-| ![Zima2-L]() | [Zima2-L](Zima2L_Specification_ru.md) <br/> LBL-Трансивер |
+| ![Zima2-L](https://github.com/user-attachments/assets/4f28d018-0d80-4355-a7e2-eb72aa14cfc0) | [Zima2-L](Zima2L_Specification_ru.md) <br/> LBL-Трансивер |
 | ![Zima2-R](/documentation/zima_r_wbat.png) | [Zima2-R](Zima2R_Specification_ru.md) <br/> Опорные маяки-ответчики (измерительная база формируется тремя маяками-ответчиками) |
 
 <div style="page-break-after: always;"></div>
