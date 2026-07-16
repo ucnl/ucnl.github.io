@@ -18,25 +18,31 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: center;
       min-height: 100vh;
-      padding: 2rem 1rem;
+      padding: 0;
       color: #e0e0e0;
+      height: 100vh;
+      overflow: hidden;
     }
 
-    .container {
-      max-width: 700px;
+    /* Верхняя фиксированная часть */
+    .header-fixed {
+      flex-shrink: 0;
       width: 100%;
-      display: flex;
-      flex-direction: column;
-      gap: 2rem;
+      max-width: 700px;
+      padding: 1.5rem 1rem 0.5rem 1rem;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background: #1a1a2e;
+      background-image: radial-gradient(circle at 20% 10%, #16213e 0%, #0f0f1a 90%);
     }
 
     .today-card {
       background: linear-gradient(145deg, #2d2d44 0%, #1f1f33 100%);
       border: 1px solid rgba(255, 215, 0, 0.3);
       border-radius: 2.5rem;
-      padding: 2rem 1.5rem;
+      padding: 1.8rem 1.5rem;
       text-align: center;
       box-shadow: 0 20px 35px rgba(0, 0, 0, 0.5), 0 0 25px rgba(255, 200, 50, 0.1);
       backdrop-filter: blur(10px);
@@ -53,31 +59,31 @@
     }
 
     .today-date {
-      font-size: 1.2rem;
+      font-size: 1.1rem;
       font-weight: 500;
       color: #c0c0c0;
-      margin-bottom: 1.2rem;
+      margin-bottom: 1rem;
       background: rgba(0, 0, 0, 0.2);
       display: inline-block;
-      padding: 0.3rem 1.2rem;
+      padding: 0.2rem 1.2rem;
       border-radius: 2rem;
     }
 
     .today-emoji {
-      font-size: 4rem;
+      font-size: 3.5rem;
       line-height: 1.3;
-      margin-bottom: 0.5rem;
+      margin-bottom: 0.3rem;
       filter: drop-shadow(0 8px 12px black);
     }
 
     .today-title {
-      font-size: 2rem;
+      font-size: 1.8rem;
       font-weight: 700;
       background: linear-gradient(to right, #f9d423, #fda085);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-clip: text;
-      margin-bottom: 0.3rem;
+      margin-bottom: 0.2rem;
       word-break: break-word;
     }
 
@@ -85,11 +91,37 @@
       opacity: 0.8;
       font-style: italic;
       color: #b0b0b0;
-      font-size: 1.5rem;
+      font-size: 1.3rem;
       font-weight: 400;
-      margin: 1rem 0;
+      margin: 0.5rem 0;
       background: none;
       -webkit-text-fill-color: #b0b0b0;
+    }
+
+    /* Нижняя прокручиваемая часть */
+    .scrollable-list {
+      flex: 1;
+      width: 100%;
+      max-width: 700px;
+      overflow-y: auto;
+      padding: 0.5rem 1rem 2rem 1rem;
+      scroll-behavior: smooth;
+    }
+
+    /* Скрываем скроллбар для чистоты (но можно оставить) */
+    .scrollable-list::-webkit-scrollbar {
+      width: 6px;
+    }
+    .scrollable-list::-webkit-scrollbar-track {
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 10px;
+    }
+    .scrollable-list::-webkit-scrollbar-thumb {
+      background: rgba(255, 215, 0, 0.3);
+      border-radius: 10px;
+    }
+    .scrollable-list::-webkit-scrollbar-thumb:hover {
+      background: rgba(255, 215, 0, 0.5);
     }
 
     .full-list-header {
@@ -97,12 +129,13 @@
       align-items: baseline;
       justify-content: space-between;
       margin-bottom: 1rem;
-      padding: 0 0.5rem;
+      padding: 0 0.3rem;
+      flex-shrink: 0;
     }
 
     .full-list-header h2 {
       font-weight: 500;
-      font-size: 1.3rem;
+      font-size: 1.2rem;
       color: #ddd;
       letter-spacing: 0.5px;
     }
@@ -135,77 +168,107 @@
 
     .holiday-date {
       font-weight: 600;
-      font-size: 0.9rem;
+      font-size: 0.85rem;
       background: #2a2a40;
-      padding: 0.4rem 0.7rem;
+      padding: 0.3rem 0.7rem;
       border-radius: 1rem;
       color: #f0c040;
-      min-width: 3.2rem;
+      min-width: 3rem;
       text-align: center;
       letter-spacing: 0.5px;
+      flex-shrink: 0;
     }
 
     .holiday-emoji {
-      font-size: 1.8rem;
+      font-size: 1.6rem;
       line-height: 1.2;
-      min-width: 3rem;
+      min-width: 2.8rem;
       text-align: center;
+      flex-shrink: 0;
     }
 
     .holiday-name {
       font-weight: 500;
-      font-size: 1rem;
+      font-size: 0.95rem;
       color: #f0f0f0;
       word-break: break-word;
     }
 
-    @media (max-width: 500px) {
-      .today-emoji {
-        font-size: 3rem;
-      }
-      .today-title {
-        font-size: 1.6rem;
-      }
-      .holiday-item {
-        gap: 0.8rem;
-        padding: 0.8rem 1rem;
-      }
-      .holiday-emoji {
-        font-size: 1.5rem;
-        min-width: 2.5rem;
-      }
+    .today-highlight {
+      background: rgba(255, 215, 0, 0.15);
+      border: 1px solid rgba(255, 215, 0, 0.4);
+      box-shadow: 0 0 25px rgba(255, 215, 0, 0.1);
+      scroll-margin-top: 0.5rem;
     }
 
     footer {
-      margin-top: 2rem;
-      font-size: 0.7rem;
+      flex-shrink: 0;
+      padding: 0.5rem 0 0.8rem 0;
+      font-size: 0.65rem;
       color: #5a5a7a;
       text-align: center;
+      width: 100%;
+      max-width: 700px;
+    }
+
+    @media (max-width: 500px) {
+      .today-emoji {
+        font-size: 2.8rem;
+      }
+      .today-title {
+        font-size: 1.4rem;
+      }
+      .today-card {
+        padding: 1.2rem 1rem;
+      }
+      .holiday-item {
+        gap: 0.6rem;
+        padding: 0.7rem 0.9rem;
+      }
+      .holiday-emoji {
+        font-size: 1.4rem;
+        min-width: 2.2rem;
+      }
+      .holiday-date {
+        font-size: 0.75rem;
+        min-width: 2.6rem;
+        padding: 0.2rem 0.5rem;
+      }
+      .holiday-name {
+        font-size: 0.85rem;
+      }
+      .header-fixed {
+        padding: 1rem 0.8rem 0.3rem 0.8rem;
+      }
+      .scrollable-list {
+        padding: 0.3rem 0.8rem 1.5rem 0.8rem;
+      }
     }
   </style>
 </head>
 <body>
-  <div class="container">
+  <!-- Верхняя фиксированная часть -->
+  <div class="header-fixed">
     <div class="today-card" id="todayCard">
       <div class="today-label">Сегодня</div>
       <div class="today-date" id="todayDateDisplay"></div>
       <div class="today-emoji" id="todayEmoji"></div>
       <div class="today-title" id="todayTitle"></div>
     </div>
+  </div>
 
-    <div>
-      <div class="full-list-header">
-        <h2>📅 Все праздники</h2>
-        <span style="font-size:0.8rem; color:#888;" id="totalCount"></span>
-      </div>
-      <div class="holiday-grid" id="holidayList"></div>
+  <!-- Нижняя прокручиваемая часть -->
+  <div class="scrollable-list" id="scrollableList">
+    <div class="full-list-header">
+      <h2>📅 Все праздники</h2>
+      <span style="font-size:0.8rem; color:#888;" id="totalCount"></span>
     </div>
+    <div class="holiday-grid" id="holidayList"></div>
     <footer>✨ Unicode Holiday Calendar — русская версия (расширенная)</footer>
   </div>
 
   <script>
     (function () {
-      // Ключи: MMDD (месяц, день). Сортировка будет по этому ключу.
       const holidays = {
         // ========== ЯНВАРЬ ==========
         "0101": "🎅🎄🎁 | С Новым годом!",
@@ -506,7 +569,6 @@
       // Поиск сегодняшних праздников
       const todayEntries = [];
       Object.keys(holidays).forEach(key => {
-        // Ключ начинается с MMDD (4 цифры)
         const keyDate = key.substring(0, 4);
         if (keyDate === todayKey) {
           todayEntries.push(holidays[key]);
@@ -535,24 +597,30 @@
         titleEl.classList.add('no-holiday');
       }
 
-      // Сортировка по ключу MMDD (лексикографически, но т.к. формат единый — работает как числовая)
       const allKeys = Object.keys(holidays).sort();
       const listContainer = document.getElementById('holidayList');
       document.getElementById('totalCount').textContent = `${allKeys.length} записей`;
+
+      let todayElement = null;
 
       allKeys.forEach(key => {
         const entry = holidays[key];
         const [emojiPart, namePart] = entry.split('|').map(s => s.trim());
         if (!emojiPart || !namePart) return;
 
-        // Извлекаем месяц и день из ключа (первые 4 символа: MMDD)
         const dateStr = key.substring(0, 4);
         const mm = dateStr.substring(0, 2);
         const dd = dateStr.substring(2, 4);
-        const displayDate = `${dd}.${mm}`; // Показываем как ДД.ММ
+        const displayDate = `${dd}.${mm}`;
 
         const itemDiv = document.createElement('div');
         itemDiv.className = 'holiday-item';
+
+        if (dateStr === todayKey) {
+          itemDiv.classList.add('today-highlight');
+          todayElement = itemDiv;
+        }
+
         itemDiv.innerHTML = `
           <span class="holiday-date">${displayDate}</span>
           <span class="holiday-emoji">${emojiPart}</span>
@@ -560,6 +628,20 @@
         `;
         listContainer.appendChild(itemDiv);
       });
+
+      // Прокрутка к сегодняшнему дню в прокручиваемом контейнере
+      const scrollContainer = document.getElementById('scrollableList');
+
+      if (todayElement) {
+        requestAnimationFrame(() => {
+          setTimeout(() => {
+            const containerRect = scrollContainer.getBoundingClientRect();
+            const elementRect = todayElement.getBoundingClientRect();
+            const offset = elementRect.top - containerRect.top - containerRect.height / 2 + elementRect.height / 2;
+            scrollContainer.scrollBy({ top: offset, behavior: 'smooth' });
+          }, 150);
+        });
+      }
     })();
   </script>
 </body>
