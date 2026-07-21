@@ -15,7 +15,7 @@
 
 <div style="page-break-after: always;"></div>
 
-| ![logo](/documentation/sm_logo.png) | ![RedPhone-DX](/documentation/redphone_dx_qr_ru.png) |
+| ![logo](/documentation/sm_logo.png) | ![RedPhone-DX](/documentation/redphone_dx.png) |
 | :---: | ---: |
 | [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **RedPhone-DX** <br/> Водолазная станция беспроводной голосовой связи <br/> Спецификация устройства |
 
@@ -26,7 +26,7 @@
 * **Полностью литой неразборный и необслуживаемый полиуретановый корпус**
 * **Встроенная функция трекинга водолаза<sup>[1](#footnote1)</sup>**
 * **Дальность связи до 1000<sup>[2](#footnote2)</sup> м**
-* **До 30 часов работы в режиме приема**
+* **До 20 часов работы в режиме приема**
 * **Автоматически включается при погружении в воду**
 * **Встроенный детектор речи / автоматический сквелч**
 
