@@ -15,15 +15,18 @@
 
 <div style="page-break-after: always;"></div>
 
-| ![logo](/documentation/sm_logo.png) | ![logo](/documentation/zima_package.png) |
-| :---: | ---: |
-| [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **Zima 2 USBL** <br/> Быстрый старт |
-
-<div style="page-break-after: always;"></div>
-
 | | |
 | :---: | :---: |
-| 
-
+| <img width="270" height="270" alt="image" src="https://github.com/user-attachments/assets/c0a22a3d-62e5-4caa-aec3-13fcf4fd3b6c" /> | Раздел документации по системе Zima2 |
+| | |
+| <img width="270" height="270" alt="image" src="https://github.com/user-attachments/assets/fa6a0172-cee7-4125-81dc-d418897799ad" /> | Zima 2 USBL: Краткое опсиание |
+| | |
+| <img width="270" height="270" alt="image" src="https://github.com/user-attachments/assets/4b8154a4-70e3-4ab3-bcb1-176caa6537d4" /> | Zima2 USBL: Рукводство пользователя |
+| | |
+| <img width="222" height="222" alt="image" src="https://github.com/user-attachments/assets/c759e956-bf05-4e0a-8893-d5c84562f85e" /> | AzimuthWebSuite: Браузерное приложение для работы системой |
+| | |
+| <img width="270" height="270" alt="image" src="https://github.com/user-attachments/assets/6863dad7-2d09-4227-adc9-1cd5c59d51d0" />  | UNCLLauncher: Приложение для работы на Android/HarmonyOS |
+| | |
+| <img width="198" height="198" alt="image" src="https://github.com/user-attachments/assets/aad9970a-ab44-4935-a216-a33386c39c47" /> | support@unavlab.com |
 
 <div style="page-break-after: always;"></div>
