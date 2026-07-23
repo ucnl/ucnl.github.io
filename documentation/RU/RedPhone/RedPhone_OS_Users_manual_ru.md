@@ -97,7 +97,7 @@
 
 ### **Таблица 2** - Ссылки на актуальную спецификацию устройства
 
-| ![image](<img width="180" height="180" alt="image" src="https://github.com/user-attachments/assets/cf9a102b-7bb6-48b5-8aeb-db88d2603e47" />) |
+| ![image](https://github.com/user-attachments/assets/cf9a102b-7bb6-48b5-8aeb-db88d2603e47) |
 | :---: |
 | [Спецификация устройства: RedPhone-OS](RedPhone_OS_Specification_ru.md)
 
