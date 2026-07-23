@@ -103,7 +103,7 @@
 
 ### **Таблица 2** - Ссылки на актуальную спецификацию устройства
 
-| ![image](<img width="180" height="180" alt="image" src="https://github.com/user-attachments/assets/3d9ee331-1160-48b8-8645-438efc6a7910" />) |
+| ![image](https://github.com/user-attachments/assets/3d9ee331-1160-48b8-8645-438efc6a7910) |
 | :---: |
 | [Спецификация устройства: RedPhone-DX](RedPhone_DX_Specification_ru.md)
 
