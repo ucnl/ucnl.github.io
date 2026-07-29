@@ -33,6 +33,7 @@
 
 ## Прочее
 
+* [UCNL FW Update: Онлайн утилита для обновления прошивок устройств UC&NL](/online_utils/ucnl_fw_update.html)
 * [Unicode holidays: Список праздников с символами юникода](/online_utils/unicode_holidays.html)
 * [CSV2KML: Конвертер табличных данных в треки KML](/online_utils/csv2kml.html)
 * [KMLShrink: Фильтрация статичного облака точек](/online_utils/kmlShrink.html)
