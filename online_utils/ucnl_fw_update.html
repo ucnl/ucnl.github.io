@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UCNL FW Update</title>
+    <link rel="manifest" href="data:application/manifest+json,{"name":"UCNL%20FW%20Update","short_name":"FWUpdate","start_url":".","display":"standalone","background_color":"%231a1a2e","theme_color":"%23e83e8c"}">
+    <meta name="theme-color" content="#e83e8c">
+    <style>
+        :root {
+            --bg-primary: #1a1a2e;
+            --bg-secondary: #16213e;
+            --bg-tertiary: #0f3460;
+            --bg-input: #0a0a1a;
+            --border-primary: #0f3460;
+            --border-accent: #e83e8c;
+            --text-primary: #e0e0e0;
+            --text-secondary: #aaa;
+            --text-muted: #666;
+            --text-accent: #4ec9b0;
+            --text-success: #4caf50;
+            --text-error: #f44336;
+            --text-warning: #ff9800;
+            --shadow: 0 4px 20px rgba(0,0,0,0.3);
+            --radius: 8px;
+            --radius-sm: 6px;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            padding: 20px;
+            min-height: 100vh;
+        }
+        .container { max-width: 700px; margin: 0 auto; }
+        .header { display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 10px; margin-bottom: 5px; }
+        h1 { font-size: 1.5em; color: var(--text-accent); display: flex; align-items: center; gap: 10px; }
+        .subtitle { color: var(--text-secondary); margin-bottom: 20px; font-size: 0.9em; }
+
+        .lang-switch { display: flex; gap: 4px; }
+        .lang-btn {
+            padding: 4px 10px; font-size: 0.8em; border: 1px solid var(--border-primary);
+            border-radius: var(--radius-sm); cursor: pointer; background: transparent; color: var(--text-secondary);
+        }
+        .lang-btn.active { background: var(--border-accent); color: #fff; border-color: var(--border-accent); }
+
+        .card { background: var(--bg-secondary); border-radius: var(--radius); padding: 20px; border: 1px solid var(--border-primary); margin-bottom: 20px; }
+        .card h3 { font-size: 0.85em; text-transform: uppercase; letter-spacing: 0.5px; color: var(--text-secondary); margin-bottom: 12px; }
+
+        .row { display: flex; gap: 12px; flex-wrap: wrap; align-items: center; margin-bottom: 12px; }
+        .row label { font-weight: 600; font-size: 0.85em; color: var(--text-secondary); min-width: 80px; }
+        select, input[type="text"] {
+            padding: 8px 12px; border: 1px solid var(--border-primary); border-radius: var(--radius-sm);
+            background: var(--bg-input); color: var(--text-primary); font-size: 0.9em;
+        }
+        select:focus, input:focus { outline: none; border-color: var(--border-accent); }
+
+        .file-area {
+            border: 2px dashed var(--border-accent); border-radius: var(--radius); padding: 20px;
+            text-align: center; cursor: pointer; background: rgba(232,62,140,0.05); margin-bottom: 12px;
+        }
+        .file-area:hover { background: rgba(232,62,140,0.1); }
+        .file-area input[type="file"] { display: none; }
+        .file-name { color: var(--border-accent); font-weight: 600; margin-top: 5px; display: block; }
+
+        .log-box {
+            width: 100%; height: 250px; font-family: 'Consolas', 'Monaco', monospace; font-size: 0.8em;
+            padding: 12px; border: 1px solid var(--border-primary); border-radius: var(--radius-sm);
+            background: var(--bg-input); color: var(--text-primary); resize: vertical;
+            overflow-y: auto; white-space: pre-wrap;
+        }
+        .log-box .success { color: var(--text-success); }
+        .log-box .error { color: var(--text-error); }
+        .log-box .warning { color: var(--text-warning); }
+        .log-box .info { color: var(--text-accent); }
+
+        .progress-bar {
+            width: 100%; height: 24px; background: var(--bg-tertiary); border-radius: var(--radius-sm);
+            overflow: hidden; margin: 12px 0;
+        }
+        .progress-fill {
+            height: 100%; background: var(--border-accent); transition: width 0.1s;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 0.75em; font-weight: 600; color: #fff;
+        }
+
+        .btn-row { display: flex; gap: 10px; flex-wrap: wrap; }
+        button {
+            padding: 10px 24px; font-size: 0.9em; border: none; border-radius: var(--radius-sm);
+            cursor: pointer; font-weight: 600; transition: all 0.2s;
+        }
+        button:disabled { opacity: 0.4; cursor: not-allowed; }
+        .btn-primary { background: var(--border-accent); color: #fff; }
+        .btn-primary:hover:not(:disabled) { background: #c03070; }
+        .btn-success { background: #27ae60; color: #fff; }
+        .btn-success:hover:not(:disabled) { background: #219a52; }
+        .btn-secondary { background: var(--bg-tertiary); color: var(--text-primary); }
+        .btn-secondary:hover:not(:disabled) { background: #1a4a80; }
+
+        .status { padding: 8px 14px; border-radius: var(--radius-sm); font-size: 0.85em; margin-top: 10px; }
+        .status.idle { background: #1a2a3a; color: #64b5f6; }
+        .status.working { background: #2a2a1a; color: #ffd740; }
+        .status.success { background: #1a3a1a; color: #4caf50; }
+        .status.error { background: #3a1a1a; color: #f44336; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 data-t="title">🔧 UCNL FW Update</h1>
+            <div class="lang-switch">
+                <button class="lang-btn active" onclick="setLang('ru')" id="btnRu">🇷🇺 RU</button>
+                <button class="lang-btn" onclick="setLang('en')" id="btnEn">🇬🇧 EN</button>
+            </div>
+        </div>
+        <p class="subtitle" data-t="subtitle">Обновление прошивки устройств UC&NL через Web Serial API</p>
+
+        <div class="card">
+            <h3 data-t="connection">📡 Подключение</h3>
+            <div class="row">
+                <label data-t="port">Порт:</label>
+                <button class="btn-primary" id="btnConnect" onclick="connectPort()" data-t="selectPort">🔌 Выбрать порт</button>
+                <span id="portInfo" style="color:var(--text-muted);" data-t="notConnected">Не подключен</span>
+            </div>
+            <div class="row">
+                <label data-t="speed">Скорость:</label>
+                <select id="baudRate">
+                    <option value="9600" selected>9600</option>
+                    <option value="115200">115200</option>
+                    <option value="57600">57600</option>
+                    <option value="38400">38400</option>
+                    <option value="19200">19200</option>
+                </select>
+            </div>
+            <div class="row">
+                <label><input type="checkbox" id="isEmptyDevice" style="width:auto;"> <span data-t="emptyDevice">Устройство без прошивки</span></label>
+            </div>
+        </div>
+
+        <div class="card">
+            <h3 data-t="firmwareFile">📦 Файл прошивки</h3>
+            <div class="file-area" onclick="document.getElementById('fwFile').click()">
+                <span style="font-size:2em;">📁</span>
+                <span data-t="clickToSelect">Нажмите для выбора файла .ucnlfw</span>
+                <span class="file-name" id="fileName"></span>
+                <input type="file" id="fwFile" accept=".ucnlfw" onchange="handleFwFile(event)">
+            </div>
+            <div id="fwInfo" style="font-size:0.8em; color:var(--text-muted);"></div>
+        </div>
+
+        <div class="card">
+            <h3 data-t="progress">📊 Прогресс</h3>
+            <div class="progress-bar">
+                <div class="progress-fill" id="progressFill" style="width:0%;">0%</div>
+            </div>
+            <div id="statusBox" class="status idle" data-t="waiting">Ожидание...</div>
+        </div>
+
+        <div class="btn-row">
+            <button class="btn-success" id="btnStart" onclick="startUpdate()" disabled data-t="start">▶ Начать обновление</button>
+            <button class="btn-secondary" id="btnStop" onclick="stopUpdate()" disabled data-t="cancel">⏹ Отмена</button>
+        </div>
+
+        <div class="card" style="margin-top:20px;">
+            <h3 data-t="log">📋 Лог</h3>
+            <div class="log-box" id="logBox"></div>
+            <div class="btn-row" style="margin-top:8px;">
+                <button class="btn-secondary" onclick="copyLog()" data-t="copy">📋 Копировать</button>
+                <button class="btn-secondary" onclick="clearLog()" data-t="clear">🗑 Очистить</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // ======== ЛОКАЛИЗАЦИЯ ========
+        const LOCALE = {
+            title: { ru: '🔧 UCNL FW Update', en: '🔧 UCNL FW Update' },
+            subtitle: { ru: 'Обновление прошивки устройств UC&NL через Web Serial API', en: 'Firmware update for UC&NL devices via Web Serial API' },
+            connection: { ru: '📡 Подключение', en: '📡 Connection' },
+            port: { ru: 'Порт:', en: 'Port:' },
+            selectPort: { ru: '🔌 Выбрать порт', en: '🔌 Select port' },
+            disconnect: { ru: '⏏ Отключить', en: '⏏ Disconnect' },
+            notConnected: { ru: 'Не подключен', en: 'Not connected' },
+            speed: { ru: 'Скорость:', en: 'Baud rate:' },
+            emptyDevice: { ru: 'Устройство без прошивки', en: 'Device without firmware' },
+            firmwareFile: { ru: '📦 Файл прошивки', en: '📦 Firmware file' },
+            clickToSelect: { ru: 'Нажмите для выбора файла .ucnlfw', en: 'Click to select .ucnlfw file' },
+            progress: { ru: '📊 Прогресс', en: '📊 Progress' },
+            waiting: { ru: 'Ожидание...', en: 'Waiting...' },
+            start: { ru: '▶ Начать обновление', en: '▶ Start update' },
+            cancel: { ru: '⏹ Отмена', en: '⏹ Cancel' },
+            logTitle: { ru: '📋 Лог', en: '📋 Log' },
+            copy: { ru: '📋 Копировать', en: '📋 Copy' },
+            clear: { ru: '🗑 Очистить', en: '🗑 Clear' },
+            portOpened: { ru: 'Порт открыт', en: 'Port opened' },
+            portClosed: { ru: 'Порт закрыт', en: 'Port closed' },
+            baud: { ru: 'бод', en: 'baud' },
+            fileLoaded: { ru: 'Загружен файл', en: 'File loaded' },
+            bytes: { ru: 'байт', en: 'bytes' },
+            packets: { ru: 'пакетов', en: 'packets' },
+            errorFileSmall: { ru: 'Ошибка: файл слишком маленький', en: 'Error: file too small' },
+            errorNoPort: { ru: 'Ошибка: нет порта или файла прошивки', en: 'Error: no port or firmware file' },
+            updateStart: { ru: '=== Начало обновления ===', en: '=== Update started ===' },
+            queryingDevice: { ru: 'Запрос информации об устройстве...', en: 'Querying device info...' },
+            invokingFW: { ru: 'Запрос режима обновления...', en: 'Invoking firmware update mode...' },
+            sendingSize: { ru: 'Отправка размера прошивки...', en: 'Sending firmware size...' },
+            sendingPacket: { ru: 'Отправка пакета', en: 'Sending packet' },
+            lastPacket: { ru: 'Последний пакет', en: 'Last packet' },
+            data: { ru: 'данных', en: 'data' },
+            reopening: { ru: 'Переподключение на 115200 (raw mode)...', en: 'Reopening at 115200 (raw mode)...' },
+            reopened: { ru: 'Порт открыт на 115200 (raw mode)', en: 'Port opened at 115200 (raw mode)' },
+            deviceInfo: { ru: 'Информация об устройстве:', en: 'Device info:' },
+            deviceInFWMode: { ru: 'Устройство в режиме обновления', en: 'Device in firmware update mode' },
+            deviceReqPacket: { ru: 'Устройство: следующий пакет', en: 'Device: next packet' },
+            deviceBadPacket: { ru: 'Устройство: плохой пакет, переотправка...', en: 'Device: bad packet, resending...' },
+            updateSuccess: { ru: 'Обновление завершено успешно!', en: 'Update completed successfully!' },
+            updateCancelled: { ru: 'Отменено пользователем', en: 'Cancelled by user' },
+            timeout: { ru: 'Таймаут устройства', en: 'Device timeout' },
+            errorIntegrity: { ru: 'Ошибка: целостность прошивки. Попробуйте с опцией "Устройство без прошивки"', en: 'Error: firmware integrity. Try "Device without firmware" option' },
+            errorTimeout4: { ru: 'Ошибка: таймаут устройства (4)', en: 'Error: device timeout (4)' },
+            unknownResponse: { ru: 'Неизвестный ответ:', en: 'Unknown response:' },
+            errorPort: { ru: 'Ошибка:', en: 'Error:' },
+            errorRead: { ru: 'Ошибка чтения:', en: 'Read error:' },
+            deviceNAK: { ru: 'Устройство ответило NAK', en: 'Device responded NAK' },
+            rawResponse: { ru: 'Ответ на размер', en: 'Response to size' },
+            rawTimeout: { ru: 'таймаут', en: 'timeout' },
+        };
+
+        let currentLang = 'ru';
+        function t(key) { return LOCALE[key]?.[currentLang] || key; }
+        function setLang(lang) {
+            currentLang = lang;
+            document.getElementById('btnRu').classList.toggle('active', lang === 'ru');
+            document.getElementById('btnEn').classList.toggle('active', lang === 'en');
+            applyLocale();
+        }
+        function applyLocale() {
+            document.querySelectorAll('[data-t]').forEach(el => { el.textContent = t(el.dataset.t); });
+        }
+
+        // ======== CRC32 ========
+        const CRC32 = (() => {
+            const table = [0x00000000,0x04C11DB7,0x09823B6E,0x0D4326D9,0x130476DC,0x17C56B6B,0x1A864DB2,0x1E475005,0x2608EDB8,0x22C9F00F,0x2F8AD6D6,0x2B4BCB61,0x350C9B64,0x31CD86D3,0x3C8EA00A,0x384FBDBD,0x4C11DB70,0x48D0C6C7,0x4593E01E,0x4152FDA9,0x5F15ADAC,0x5BD4B01B,0x569796C2,0x52568B75,0x6A1936C8,0x6ED82B7F,0x639B0DA6,0x675A1011,0x791D4014,0x7DDC5DA3,0x709F7B7A,0x745E66CD,0x9823B6E0,0x9CE2AB57,0x91A18D8E,0x95609039,0x8B27C03C,0x8FE6DD8B,0x82A5FB52,0x8664E6E5,0xBE2B5B58,0xBAEA46EF,0xB7A96036,0xB3687D81,0xAD2F2D84,0xA9EE3033,0xA4AD16EA,0xA06C0B5D,0xD4326D90,0xD0F37027,0xDDB056FE,0xD9714B49,0xC7361B4C,0xC3F706FB,0xCEB42022,0xCA753D95,0xF23A8028,0xF6FB9D9F,0xFBB8BB46,0xFF79A6F1,0xE13EF6F4,0xE5FFEB43,0xE8BCCD9A,0xEC7DD02D,0x34867077,0x30476DC0,0x3D044B19,0x39C556AE,0x278206AB,0x23431B1C,0x2E003DC5,0x2AC12072,0x128E9DCF,0x164F8078,0x1B0CA6A1,0x1FCDBB16,0x018AEB13,0x054BF6A4,0x0808D07D,0x0CC9CDCA,0x7897AB07,0x7C56B6B0,0x71159069,0x75D48DDE,0x6B93DDDB,0x6F52C06C,0x6211E6B5,0x66D0FB02,0x5E9F46BF,0x5A5E5B08,0x571D7DD1,0x53DC6066,0x4D9B3063,0x495A2DD4,0x44190B0D,0x40D816BA,0xACA5C697,0xA864DB20,0xA527FDF9,0xA1E6E04E,0xBFA1B04B,0xBB60ADFC,0xB6238B25,0xB2E29692,0x8AAD2B2F,0x8E6C3698,0x832F1041,0x87EE0DF6,0x99A95DF3,0x9D684044,0x902B669D,0x94EA7B2A,0xE0B41DE7,0xE4750050,0xE9362689,0xEDF73B3E,0xF3B06B3B,0xF771768C,0xFA325055,0xFEF34DE2,0xC6BCF05F,0xC27DEDE8,0xCF3ECB31,0xCBFFD686,0xD5B88683,0xD1799B34,0xDC3ABDED,0xD8FBA05A,0x690CE0EE,0x6DCDFD59,0x608EDB80,0x644FC637,0x7A089632,0x7EC98B85,0x738AAD5C,0x774BB0EB,0x4F040D56,0x4BC510E1,0x46863638,0x42472B8F,0x5C007B8A,0x58C1663D,0x558240E4,0x51435D53,0x251D3B9E,0x21DC2629,0x2C9F00F0,0x285E1D47,0x36194D42,0x32D850F5,0x3F9B762C,0x3B5A6B9B,0x0315D626,0x07D4CB91,0x0A97ED48,0x0E56F0FF,0x1011A0FA,0x14D0BD4D,0x19939B94,0x1D528623,0xF12F560E,0xF5EE4BB9,0xF8AD6D60,0xFC6C70D7,0xE22B20D2,0xE6EA3D65,0xEBA91BBC,0xEF68060B,0xD727BBB6,0xD3E6A601,0xDEA580D8,0xDA649D6F,0xC423CD6A,0xC0E2D0DD,0xCDA1F604,0xC960EBB3,0xBD3E8D7E,0xB9FF90C9,0xB4BCB610,0xB07DABA7,0xAE3AFBA2,0xAAFBE615,0xA7B8C0CC,0xA379DD7B,0x9B3660C6,0x9FF77D71,0x92B45BA8,0x9675461F,0x8832161A,0x8CF30BAD,0x81B02D74,0x857130C3,0x5D8A9099,0x594B8D2E,0x5408ABF7,0x50C9B640,0x4E8EE645,0x4A4FFBF2,0x470CDD2B,0x43CDC09C,0x7B827D21,0x7F436096,0x7200464F,0x76C15BF8,0x68860BFD,0x6C47164A,0x61043093,0x65C52D24,0x119B4BE9,0x155A565E,0x18197087,0x1CD86D30,0x029F3D35,0x065E2082,0x0B1D065B,0x0FDC1BEC,0x3793A651,0x3352BBE6,0x3E119D3F,0x3AD08088,0x2497D08D,0x2056CD3A,0x2D15EBE3,0x29D4F654,0xC5A92679,0xC1683BCE,0xCC2B1D17,0xC8EA00A0,0xD6AD50A5,0xD26C4D12,0xDF2F6BCB,0xDBEE767C,0xE3A1CBC1,0xE760D676,0xEA23F0AF,0xEEE2ED18,0xF0A5BD1D,0xF464A0AA,0xF9278673,0xFDE69BC4,0x89B8FD09,0x8D79E0BE,0x803AC667,0x84FBDBD0,0x9ABC8BD5,0x9E7D9662,0x933EB0BB,0x97FFAD0C,0xAFB010B1,0xAB710D06,0xA6322BDF,0xA2F33668,0xBCB4666D,0xB8757BDA,0xB5365D03,0xB1F740B4];
+			
+			function compute(data) {
+				let crc = 0xFFFFFFFF;
+				for (let i = 0; i < data.length; i++) {
+					crc = (crc << 8) ^ table[((crc >>> 24) ^ data[i]) & 0xFF];
+					crc = (crc << 8) ^ table[((crc >>> 24) ^ 0) & 0xFF];
+					crc = (crc << 8) ^ table[((crc >>> 24) ^ 0) & 0xFF];
+					crc = (crc << 8) ^ table[((crc >>> 24) ^ 0) & 0xFF];
+				}
+				return crc ^ 0xFFFFFFFF;
+			}
+			
+			// Точный порт C# CRC32(0, byte[])
+			function computeCSharp(data) {
+				let alignedLen = data.length;
+				if (data.length % 4 !== 0) alignedLen += (4 - data.length % 4);
+				const aligned = new Uint8Array(alignedLen);
+				aligned.set(data);
+				
+				let crc = 0xFFFFFFFF;
+				for (let i = 0; i < alignedLen; i += 4) {
+					const v = (aligned[i] << 24) | (aligned[i+1] << 16) | (aligned[i+2] << 8) | aligned[i+3];
+					crc = (crc << 8) ^ table[0xFF & ((crc >>> 24) ^ (v))];
+					crc = (crc << 8) ^ table[0xFF & ((crc >>> 24) ^ (v >>> 8))];
+					crc = (crc << 8) ^ table[0xFF & ((crc >>> 24) ^ (v >>> 16))];
+					crc = (crc << 8) ^ table[0xFF & ((crc >>> 24) ^ (v >>> 24))];
+				}
+				return (crc ^ 0xFFFFFFFF) >>> 0;
+			}
+			
+			return { compute, computeCSharp };
+        })();
+		
+		function crc32_csharp(data) {
+			// Таблица та же, используется crc32_table из C# (прямая, не реверсивная)
+			const table = CRC32_TABLE; // та же таблица что у нас
+			
+			// Выравнивание до 4 байт
+			let alignedLen = data.length;
+			if (data.length % 4 !== 0) alignedLen += (4 - data.length % 4);
+			
+			const aligned = new Uint8Array(alignedLen);
+			aligned.set(data);
+			
+			let crc = 0xFFFFFFFF;
+			
+			for (let i = 0; i < alignedLen; i += 4) {
+				// Читаем 4 байта как uint32 (big-endian как в C# HostToNetworkOrder для little-endian)
+				const v = (aligned[i] << 24) | (aligned[i+1] << 16) | (aligned[i+2] << 8) | aligned[i+3];
+				
+				crc = (crc << 8) ^ table[0xFF & ((crc >>> 24) ^ (v))];
+				crc = (crc << 8) ^ table[0xFF & ((crc >>> 24) ^ (v >>> 8))];
+				crc = (crc << 8) ^ table[0xFF & ((crc >>> 24) ^ (v >>> 16))];
+				crc = (crc << 8) ^ table[0xFF & ((crc >>> 24) ^ (v >>> 24))];
+			}
+			
+			return (crc ^ 0xFFFFFFFF) >>> 0; // uint32
+		}
+		
+
+        // ======== NMEA HELPERS ========
+        function nmeaChecksum(str) { let cs = 0; for (let i = 0; i < str.length; i++) cs ^= str.charCodeAt(i); return cs.toString(16).toUpperCase().padStart(2, '0'); }
+        function buildPUCNL(cmdId, param, value) { const body = `PUCNL,${cmdId},${param},${value}`; return `$${body}*${nmeaChecksum(body)}`; }
+
+        // ======== СОСТОЯНИЕ ========
+        let serialPort = null, reader = null, writer = null;
+        let isRunning = false, readLoopRunning = false;
+        let fwBytes = null, fwTableOffsets = null;
+        let packetSize = 256;
+        let packetIdx = 0, totalPackets = 0, fwBytesPos = 0;
+        let currentAction = 'IDLE', repeats = 0;
+        let maxRepeats = 5, timerId = null;
+        let initialBaudRate = 9600, isRawMode = false;
+
+        // ======== ЛОГ ========
+        function log(msg, cls = '') { const box = document.getElementById('logBox'); const span = document.createElement('span'); span.className = cls; span.textContent = new Date().toLocaleTimeString() + ' ' + msg + '\n'; box.appendChild(span); box.scrollTop = box.scrollHeight; }
+        function copyLog() { navigator.clipboard.writeText(document.getElementById('logBox').textContent); }
+        function clearLog() { document.getElementById('logBox').textContent = ''; }
+
+        // ======== СТАТУС ========
+        function setStatus(msg, cls) { const box = document.getElementById('statusBox'); box.textContent = msg; box.className = 'status ' + cls; }
+        function setProgress(pct) { const fill = document.getElementById('progressFill'); fill.style.width = pct + '%'; fill.textContent = pct + '%'; }
+
+        // ======== ПОРТ ========
+        async function connectPort() {
+            try {
+                serialPort = await navigator.serial.requestPort();
+                initialBaudRate = parseInt(document.getElementById('baudRate').value);
+                await serialPort.open({ baudRate: initialBaudRate });
+                reader = serialPort.readable.getReader();
+                writer = serialPort.writable.getWriter();
+                document.getElementById('portInfo').textContent = '✓ ' + (serialPort.getInfo().usbProductName || 'COM');
+                document.getElementById('portInfo').style.color = 'var(--text-success)';
+                document.getElementById('btnConnect').textContent = t('disconnect');
+                document.getElementById('btnConnect').onclick = disconnectPort;
+                if (fwBytes) document.getElementById('btnStart').disabled = false;
+                log(t('portOpened') + ': ' + initialBaudRate + ' ' + t('baud'), 'success');
+            } catch (e) { log(t('errorPort') + ' ' + e.message, 'error'); }
+        }
+
+        async function disconnectPort() {
+            stopTimer(); isRunning = false; readLoopRunning = false;
+            try {
+                if (reader) { await reader.cancel(); reader.releaseLock(); reader = null; }
+                if (writer) { await writer.close(); writer.releaseLock(); writer = null; }
+                if (serialPort) { await serialPort.close(); serialPort = null; }
+            } catch (e) { log(t('errorPort') + ' ' + e.message, 'error'); }
+            document.getElementById('portInfo').textContent = t('notConnected');
+            document.getElementById('portInfo').style.color = 'var(--text-muted)';
+            document.getElementById('btnConnect').textContent = t('selectPort');
+            document.getElementById('btnConnect').onclick = connectPort;
+            document.getElementById('btnStart').disabled = true;
+            document.getElementById('btnStop').disabled = true;
+            log(t('portClosed'), 'warning');
+        }
+
+        async function reopenPortAt115200() {
+            log(t('reopening'), 'info');
+            readLoopRunning = false;
+            try {
+                if (reader) { await reader.cancel(); reader.releaseLock(); reader = null; }
+                if (writer) { await writer.close(); writer.releaseLock(); writer = null; }
+                if (serialPort) { await serialPort.close(); }
+                await serialPort.open({ baudRate: 115200 });
+                reader = serialPort.readable.getReader();
+                writer = serialPort.writable.getWriter();
+                isRawMode = true;
+                log(t('reopened'), 'success');
+                return true;
+            } catch (e) { log(t('errorPort') + ' ' + e.message, 'error'); return false; }
+        }
+
+        // ======== ОТПРАВКА / ПРИЁМ ========
+        async function sendRaw(bytes) { if (!writer) return; await writer.write(new Uint8Array(bytes)); }
+        async function sendNMEA(str) { if (!writer) return; const enc = new TextEncoder(); await writer.write(enc.encode(str + '\r\n')); }
+
+        async function readRawByte(timeout = 1000) {
+            if (!reader) return null;
+            const startTime = Date.now();
+            while (Date.now() - startTime < timeout) {
+                try { const { value, done } = await reader.read(); if (done) return null; if (value && value.length > 0) return value[0]; } catch (e) { return null; }
+                await new Promise(r => setTimeout(r, 10));
+            }
+            return null;
+        }
+
+        async function readNMEALine(timeout = 1000) {
+            if (!reader) return null;
+            const startTime = Date.now();
+            let buffer = ''; const decoder = new TextDecoder();
+            while (Date.now() - startTime < timeout) {
+                try {
+                    const { value, done } = await reader.read(); if (done) return null;
+                    if (value) { buffer += decoder.decode(value, { stream: true }); const lines = buffer.split('\n'); if (lines.length > 1) { buffer = lines.slice(1).join('\n'); return lines[0].trim(); } }
+                } catch (e) { return null; }
+                await new Promise(r => setTimeout(r, 10));
+            }
+            return null;
+        }
+
+        // ======== ФАЙЛ ========
+        function handleFwFile(event) {
+            const file = event.target.files[0]; if (!file) return;
+            document.getElementById('fileName').textContent = '📄 ' + file.name;
+            const fr = new FileReader();
+            fr.onload = function(e) {
+                const bytes = new Uint8Array(e.target.result);
+                if (bytes.length > 4) {
+                    fwTableOffsets = bytes.slice(bytes.length - 4);
+                    fwBytes = bytes.slice(0, bytes.length - 4);
+                    totalPackets = Math.ceil(fwBytes.length / packetSize);
+                    document.getElementById('fwInfo').textContent = `${t('fileLoaded')}: ${fwBytes.length} ${t('bytes')}, ${totalPackets} ${t('packets')}`;
+                    if (serialPort) document.getElementById('btnStart').disabled = false;
+                    log(`${t('fileLoaded')}: ${file.name} (${fwBytes.length} ${t('bytes')}, ${totalPackets} ${t('packets')})`, 'success');
+                } else { log(t('errorFileSmall'), 'error'); }
+            };
+            fr.readAsArrayBuffer(file);
+        }
+
+        // ======== ТАЙМЕР ========
+        function startTimer(action) { stopTimer(); currentAction = action; repeats = 0; timerId = setInterval(() => timerTick(), 6000); }
+        function stopTimer() { if (timerId) { clearInterval(timerId); timerId = null; } currentAction = 'IDLE'; repeats = 0; }
+
+        function finishUpdate(description, success) {
+            stopTimer(); isRunning = false; readLoopRunning = false;
+            setStatus(description, success ? 'success' : 'error');
+            log((success ? '✓ ' : '✗ ') + description, success ? 'success' : 'error');
+            document.getElementById('btnStart').disabled = false;
+            document.getElementById('btnStop').disabled = true;
+        }
+
+        // ======== ОСНОВНЫЕ ДЕЙСТВИЯ ========
+        async function requestDevInfo() {
+            setStatus(t('queryingDevice'), 'working');
+            const cmd = buildPUCNL(0, 0, '');
+            log('>> ' + cmd, 'info');
+            await sendNMEA(cmd);
+            // Ждём ответ
+            const line = await readNMEALine(10000);
+            if (line) await processNMEAResponse(line);
+            else { finishUpdate(t('timeout'), false); }
+        }
+
+        async function requestFWUpdate() {
+            setStatus(t('invokingFW'), 'working');
+            const cmd = buildPUCNL(1, 0, '');
+            log('>> ' + cmd, 'info');
+            await sendNMEA(cmd);
+            const line = await readNMEALine(10000);
+            if (line) await processNMEAResponse(line);
+            else { finishUpdate(t('timeout'), false); }
+        }
+
+        async function requestTransferSize() {
+            setStatus(t('sendingSize'), 'working');
+            const sizeBytes = new Uint8Array(5);
+            sizeBytes[0] = 0x31;
+            const len = fwBytes.length;
+            sizeBytes[1] = len & 0xFF; sizeBytes[2] = (len >> 8) & 0xFF;
+            sizeBytes[3] = (len >> 16) & 0xFF; sizeBytes[4] = (len >> 24) & 0xFF;
+            log('>> [RAW] Transfer size: ' + len + ' ' + t('bytes') + ' [' + Array.from(sizeBytes).join(',') + ']', 'info');
+            await sendRaw(sizeBytes);
+        }
+
+        async function requestTransferBlock() {
+            setStatus(`${t('sendingPacket')} ${packetIdx + 1}/${totalPackets}...`, 'working');
+            const packet = new Uint8Array(packetSize + 4);
+            let dataLen = 0;
+            for (let i = 0; i < packetSize && fwBytesPos < fwBytes.length; i++) { packet[i] = fwBytes[fwBytesPos++]; dataLen++; }
+            const crc = CRC32.computeCSharp(packet.slice(0, dataLen));
+            packet[packetSize] = crc & 0xFF; packet[packetSize+1] = (crc>>8) & 0xFF;
+            packet[packetSize+2] = (crc>>16) & 0xFF; packet[packetSize+3] = (crc>>24) & 0xFF;
+
+            if (fwBytesPos >= fwBytes.length) {
+                const finalPacket = new Uint8Array(dataLen + 4 + fwTableOffsets.length + 8);
+                finalPacket.set(packet.slice(0, dataLen + 4));
+                finalPacket.set(fwTableOffsets, dataLen + 4);
+                finalPacket.set([1,2,3,4], dataLen + 4 + fwTableOffsets.length);
+                finalPacket.set([5,6,7,8], dataLen + 4 + fwTableOffsets.length + 4);
+                await sendRaw(finalPacket);
+                log(`>> [RAW] ${t('lastPacket')} #${packetIdx + 1}/${totalPackets}`, 'info');
+            } else {
+                await sendRaw(packet);
+                log(`>> [RAW] ${t('sendingPacket')} #${packetIdx + 1}/${totalPackets}`, 'info');
+            }
+        }
+
+        async function reopenAndInit() {
+            setStatus(t('reopening'), 'working');
+            if (await reopenPortAt115200()) {
+                await new Promise(r => setTimeout(r, 2000));
+                await requestTransferSize();
+                startRawReadLoop();
+            } else {
+                finishUpdate(t('errorPort'), false);
+            }
+        }
+
+        // ======== ОБРАБОТКА ОТВЕТОВ ========
+        async function processNMEAResponse(line) {
+            log('<< ' + line);
+            if (!line.startsWith('$PUCNL')) return;
+            const body = line.substring(1).split('*')[0];
+            const parts = body.split(',');
+            if (parts.length < 3) return;
+            const cmdId = parseInt(parts[1]);
+            stopTimer(); repeats = 0;
+
+            if (cmdId === 2) { // DEV_INFO_VAL
+                log(t('deviceInfo') + ' ' + (parts.slice(3).join(',') || ''), 'success');
+                await requestFWUpdate();
+            } else if (cmdId === 4) { // ACK
+				log(t('deviceInFWMode'), 'success');
+				// Ждём перезагрузку устройства в бутлоадер
+				await new Promise(r => setTimeout(r, 1000));
+				
+				if (initialBaudRate !== 115200) {
+					await reopenAndInit();
+				} else {
+					isRawMode = true;
+					currentAction = 'FW_INIT';
+					startTimer('FW_INIT');
+					await requestTransferSize();
+					startRawReadLoop();
+				}
+			} else if (cmdId === 3) { // NAK
+                finishUpdate(t('deviceNAK'), false);
+            }
+        }
+
+		async function processRawResponse(byte) {
+			stopTimer(); repeats = 0;
+			
+			if (byte === 49) {
+				log(`<< [RAW] ${t('deviceReqPacket')} (${byte})`, 'info');
+				
+				if (packetIdx >= totalPackets) { 
+					finishUpdate(t('updateSuccess'), true); 
+					return; 
+				}
+				
+				if (packetIdx === 0) setProgress(0);
+				else setProgress(Math.round(packetIdx / totalPackets * 100));
+				
+				// Сначала отправляем текущий пакет
+				await requestTransferBlock();
+				
+				// Потом увеличиваем счётчик
+				packetIdx++;
+				
+			} else if (byte === 50) {
+				log(`<< [RAW] ${t('deviceBadPacket')}`, 'warning');
+				// Откатываем позицию для переотправки того же пакета
+				fwBytesPos -= packetSize;
+				if (fwBytesPos < 0) fwBytesPos = 0;
+				// Не меняем packetIdx — отправляем тот же пакет повторно
+				await requestTransferBlock();
+				
+			} else if (byte === 51) {
+				finishUpdate(t('updateSuccess'), true);
+			} else if (byte === 52) {
+				finishUpdate(t('errorTimeout4'), false);
+			} else if (byte === 53) {
+				finishUpdate(t('errorIntegrity'), false);
+			} else {
+				finishUpdate(t('unknownResponse') + ' ' + byte, false);
+			}
+		}
+
+        // ======== RAW READ LOOP ========
+        async function startRawReadLoop() {
+            readLoopRunning = true;
+            while (isRunning && reader && readLoopRunning) {
+                const byte = await readRawByte(1000);
+                if (byte !== null) {
+                    await processRawResponse(byte);
+                    if (!isRunning) break;
+                }
+            }
+            readLoopRunning = false;
+        }
+
+        // ======== ТАЙМЕР ТИК ========
+        async function timerTick() {
+            if (repeats++ >= maxRepeats) { finishUpdate(t('timeout'), false); return; }
+            switch (currentAction) {
+                case 'FW_INIT': await requestTransferSize(); break;
+                case 'FW_BLOCK': await requestTransferBlock(); break;
+            }
+        }
+
+        // ======== СТАРТ / СТОП ========
+        async function startUpdate() {
+            if (!serialPort || !fwBytes) { log(t('errorNoPort'), 'error'); return; }
+            isRunning = true; isRawMode = false; packetIdx = 0; fwBytesPos = 0; repeats = 0; setProgress(0);
+            document.getElementById('btnStart').disabled = true; document.getElementById('btnStop').disabled = false;
+            log(t('updateStart'), 'info');
+
+            if (document.getElementById('isEmptyDevice').checked) {
+                isRawMode = true;
+                currentAction = 'FW_INIT';
+                startTimer('FW_INIT');
+                await requestTransferSize();
+                startRawReadLoop();
+            } else {
+                currentAction = 'REQUEST_DEVICE_INFO';
+                startTimer('REQUEST_DEVICE_INFO');
+                await requestDevInfo();
+            }
+        }
+
+        function stopUpdate() {
+            stopTimer(); isRunning = false; readLoopRunning = false;
+            finishUpdate(t('updateCancelled'), false);
+            document.getElementById('btnStart').disabled = false; document.getElementById('btnStop').disabled = true;
+        }
+
+        // ======== PWA ========
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                const swBlob = new Blob([`const C='fw-update-v3';self.addEventListener('install',e=>e.waitUntil(caches.open(C).then(c=>c.addAll(['/']))));self.addEventListener('fetch',e=>e.respondWith(caches.match(e.request).then(r=>r||fetch(e.request))));`], {type:'application/javascript'});
+                navigator.serviceWorker.register(URL.createObjectURL(swBlob)).catch(()=>{});
+            });
+        }
+    </script>
+</body>
+</html>
