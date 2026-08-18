@@ -9,6 +9,12 @@
 
 ## Общие сведения
 * [Таблица сравнения навигационных систем](navigation_systems_comparison_ru.md)
+### Разъемы и автономные источники питания
+* [Подводная батарея вместе с разъемом (3D-модель STEP)](/documentation/sb_w_connector.STEP)
+* [Разъем (мама, 3D-модель STEP)](/documentation/ns_connector_f.STEP)
+* [Разъем (папа, 3D-модель STEP)](/documentation/ns_connector_m.STEP)
+* [Разъем (в сборе, 3D-модель STEP)](/documentation/ns_m-f.STEP)
+* [Разъем (в сборе, pdf)](/documentation/ns_connector_m-f.pdf)
 
 ## Zima
 ### Ультракороткобазисная (USBL) / Длиннобазисная (LBL) дальномерная система
