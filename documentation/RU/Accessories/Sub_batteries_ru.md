@@ -62,6 +62,7 @@
 | ДЛИНА КАБЕЛЯ | 0.25 м |
 | МАКСИМАЛЬНАЯ РАБОЧАЯ ГЛУБИНА<sup>[1](#fn1)</sup> | 400 м |
 | ЗАРЯДКА | Через разъем |
+| 3D-модель вместе с раpъемом (STEP) | [sb_w_connector](/documentation/sb_w_connector.STEP) |
 | ЭЛЕКТРОННАЯ ВЕРСИЯ ЭТОГО ДОКУМЕНТА | ![image](https://github.com/user-attachments/assets/b89fbc00-34ba-4d39-a154-8ecfb0c1c5d5) |
 
 ________________  
