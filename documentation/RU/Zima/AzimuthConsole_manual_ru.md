@@ -320,7 +320,7 @@
 | Команда | Каналы | Параметры | Ответ | Описание |
 | :--- | :--- | :--- | :--- | :--- |
 | OFMT? | T,R,W | - | OFMT?,OK,format=... | Получить описание формата выходных сообщений |
-| PSIMSSB | T,R,W | on=TRUE/FALSE | PSIMSSB,OK | Вкл/Выкл эмуляцию протокола PSIMSSB (Simrad/HiPAP) |
+| PSIMSSB | T,R,W | on=TRUE/FALSE,mode=H|NE | PSIMSSB,OK | Вкл/Выкл эмуляцию протокола PSIMSSB (Simrad/HiPAP) |
 
 #### 2.3.10. Калибровки
 
