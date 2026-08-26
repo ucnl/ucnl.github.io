@@ -57,7 +57,9 @@
 
 ![image](https://github.com/user-attachments/assets/0f4869cf-61df-44b9-9ae9-4bc98443b29f)
 
+## ДОПОЛНИТЕЛЬНО
 
+[Кронштейн в сборе (3D-Модель, STEP)](/documentation/uClamp.step)
 
 <div style="page-break-after: always;"></div>
 
