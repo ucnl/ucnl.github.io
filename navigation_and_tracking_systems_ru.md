@@ -32,6 +32,8 @@
 * [Zima2-R35 (маяк-ответчик): Спецификация устройства](/documentation/RU/Zima/Zima2R35_Specification_ru.md)
 * [Zima2-BK (пеленгационная антенна для маяков Zima2-RK): Спецификация устройства:](/documentation/RU/Zima/Zima2BK_Specification_ru.md)
 * [Zima2-RK (маяк-ответчик на глубину до 1000 м): Спецификация устройства](/documentation/RU/Zima/Zima2RK_Specification_ru.md)
+* [Zima2-RK корпус: 3D-модель (STEP)](/documentation/Zima2_RK.STEP)
+* [Zima2-RK антенна: 3D-модель (STEP)](/documentation/RT_1.524525_1_FF.STEP)
 * [Zima2 USBL: Протокол информационного сопряжения](/documentation/RU/Zima/Zima2_Protocol_Specification_ru.md)
 * [🐙 AzimuthWebSuite: Пультовое онлайн приложение для Zima2 USBL](https://docs.unavlab.com/AzimuthWebSuite/)
 * [🐙 AzimuthWebSuite: Пультовое онлайн приложение для Zima2 USBL (репозиторий)](https://github.com/ucnl/AzimuthWebSuite)
