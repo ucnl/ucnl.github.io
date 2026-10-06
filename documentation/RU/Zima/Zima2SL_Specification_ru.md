@@ -59,8 +59,8 @@ ________________
 | НОМИНАЛЬНАЯ ТОЧНОСТЬ ОПРЕДЕЛЕНИЯ МЕСТОПОЛОЖЕНИЯ (СКО)<sup>[2](#footnote2)</sup> | ОЖИДАЕТСЯ |
 
 ________________
-<a name="footnote1"><sup>1</sup></a> Определяется скоростью последовательного опроса маяков трансивером [Zima2-LX](Zima2LX_Specification_ru.md) и числом маяков в наборе.
-<a name="footnote2"><sup>2</sup></a> ОЖИДАЕТСЯ.
+- <a name="footnote1"><sup>1</sup></a> Определяется скоростью последовательного опроса маяков трансивером [Zima2-LX](Zima2LX_Specification_ru.md) и числом маяков в наборе.
+- <a name="footnote2"><sup>2</sup></a> ОЖИДАЕТСЯ.
 
 <div style="page-break-after: always;"></div>
 
