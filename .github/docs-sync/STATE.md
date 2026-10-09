@@ -57,7 +57,7 @@ Merging notes:
 - Every batch appends its own `## Added in batch <slug>` section to `.github/docs-sync/glossary.md`. Merging one PR makes the others conflict in that file. Resolve the conflict by keeping all sections.
 - #3 also carries the latest `docsync.py` (heading numbers with NBSP, extensionless links to file names with dots).
 
-## Batch pushed without a PR yet
+## F4105 batch completed in this session
 
 `docs-sync/f4105-1` (F4105, 3 documents):
 
@@ -129,3 +129,10 @@ Items already known for Phase 4:
 - Glossary `CONFLICT` rows, e.g. anchor rope / anchor line.
 - Beam-angle `(3 dB)` wording in the transducer specifications that were not in a batch.
 - Cyrillic residue in the existing EN MSDS files.
+
+## Session update: 2026-10-09
+
+- Draft PR #30 (docs-sync/agents-md): exact maintainer AGENTS.md, Jekyll exclusion, Codex translator/reviewer definitions.
+- Draft PR #31 (docs-sync/f4105-1): all three documents complete and pushed after review. Numeric/structural checks pass; source questions and Russian-panel images recorded in the PR.
+- The remaining batches are still misc-1, misc-2, redline-1 and a3s-2. RedPhone-OS MSDS translation is in controller review; other documents have no completed review yet.
+- PRs #3–#27 remain open. No Phase 3 or 4 work started.
