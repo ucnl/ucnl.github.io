@@ -88,7 +88,7 @@ A general view of the [RedBase](RedBASE_Specification_en.md) relay sonobuoy is s
 The buoys are placed on the water surface in the operating area and held in position by anchors.
 
 > Keep in mind that although the buoys have a small positive buoyancy, they are not designed to be attached directly to
-> the anchor rope. To relieve the buoy of the weight of the anchor rope, fenders (or floats) matched to the weight of the rope must be used.
+> the anchor line. To relieve the buoy of the weight of the anchor line, fenders (or floats) matched to the weight of the line must be used.
 
 **Figure 2**<sup>[1](#footnote1)</sup> shows the recommended layout for installing the buoy on a body of water.
 
@@ -96,7 +96,7 @@ The buoys are placed on the water surface in the operating area and held in posi
 | :---: |
 | ![RedBase deployment scheme](/documentation/def_redbase_dep_scheme.png) |
 | **Figure 2 - Recommended installation layout of the [RedBase](RedBASE_Specification_en.md) buoy** |
-| _1 - GNSS-equipped sonobuoy [RedBase](RedBASE_Specification_en.md), 2 - additional weight<sup>[2](#footnote2)</sup>, 3 - float, 4 - anchor rope, 5 - anchor_ |
+| _1 - GNSS-equipped sonobuoy [RedBase](RedBASE_Specification_en.md), 2 - additional weight<sup>[2](#footnote2)</sup>, 3 - float, 4 - anchor line, 5 - anchor_ |
 
 __________
 <a name="footnote1"><sup>1</sup></a> The images may differ slightly from the supplied products,
@@ -405,7 +405,7 @@ Deploying a long navigation base generally consists of placing four [RedBase](Re
 These three conditions are considered in more detail below:
 
 ### 3.1. Ensuring a safe and stable position of buoys on the water
-To satisfy the first condition, the floating buoys must be installed on anchors that keep the buoys in position against the effects of wind and currents. In this case, the weight of the anchor rope must be carried by an additional float, and the buoy must not bear any additional vertical load. **Figure 2** shows the recommended layout for anchoring the [RedBase](RedBASE_Specification_en.md) buoy.
+To satisfy the first condition, the floating buoys must be installed on anchors that keep the buoys in position against the effects of wind and currents. In this case, the weight of the anchor line must be carried by an additional float, and the buoy must not bear any additional vertical load. **Figure 2** shows the recommended layout for anchoring the [RedBase](RedBASE_Specification_en.md) buoy.
 
 Use of the system in a sea state of more than **1.5** is not recommended. In a sea state of **2 or more**, use of the system is _strongly discouraged_, and the manufacturer is not responsible for damage to individual devices of the system, their loss, malfunction, etc.
 
@@ -426,7 +426,7 @@ The worst placement from the point of view of a long navigation base is one in w
 When placing the buoys and planning their placement, also avoid arrangements in which the water depth (the distance from the water surface to the bottom) at the buoys differs significantly from the water depth at the positioned objects, for example, when the work is to be performed in a narrow stretch of a river with one gently sloping bank. In such cases the buoys should be placed in the deep part of the river.  
 However, keep in mind that a navigation base figure that is too small (less than **30 meters**) and/or strongly elongated (the aspect ratio of the quadrilateral is more than 4–5) leads to reduced accuracy and/or lower sensitivity in some directions, respectively.  
 Placing the buoys in ice holes is allowed, provided that the housing of the device is not squeezed by the ice and that the acoustic transducer has sufficient draft (the transmitting transducer of the buoy must be located deeper than the lower edge of the ice by at least 0.5 meters).  
-Long-term operation of the acoustic transducer in air is not recommended. Also make sure that the acoustic transducer hangs freely in the working position, without touching the anchor rope or any other objects.
+Long-term operation of the acoustic transducer in air is not recommended. Also make sure that the acoustic transducer hangs freely in the working position, without touching the anchor line or any other objects.
 
 ## 4. Troubleshooting
 
