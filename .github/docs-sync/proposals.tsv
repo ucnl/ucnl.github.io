@@ -1,0 +1,53 @@
+path	kind	recommendation	reason
+documentation/RU/Zima/Zima2_technical_passport_ru.md	DECIDE	translate	Product passport: template shipped with every unit (delivery set, serial numbers, warranty, storage); international customers and distributors need it in English; GOST-style approval block kept per rule 6
+documentation/RU/Zima/Zima2K_technical_passport_ru.md	DECIDE	translate	Product passport: same as Zima2 passport; listed in the RU index
+documentation/RU/Zima/Zima2-OEM35_technical_passport_ru.md	DECIDE	translate	Product passport: same as Zima2 passport; listed in the RU index
+documentation/RU/Zima/Zima2-35_technical_passport_ru.md	DECIDE	translate	Product passport: same as Zima2 passport; listed in the RU index
+documentation/RU/uWAVE/uWave_technical_passport_ru.md	DECIDE	translate	Product passport: uWave is sold internationally; listed in the RU index
+documentation/RU/F4105/F4105_tech_pass_ru.md	DECIDE	translate	Product passport: listed in the RU index next to the F4105 specifications that already exist in EN
+documentation/RU/RWLT/RWLT_tech_pass_ru.md	DECIDE	translate	Product passport: listed in the RU index
+documentation/RU/WAYU/WAYU_tech_pass_ru.md	DECIDE	translate	Product passport: listed in two RU index pages
+documentation/RU/RedWAVE/RedWave_tech_pass_ru.md	DECIDE	translate	Product passport: listed in the RU index
+documentation/RU/RedPhone/Phone_S_package_tech_passport_ru.md	DECIDE	translate	Product passport: Phone-S kit passport, listed in the RU index
+documentation/RU/RedPhone/Phone_T_package_tech_passport_ru.md	DECIDE	translate	Product passport: Phone-T kit passport, listed in the RU index
+documentation/RU/Misc/BatLinkBox_MSDS_ru.md	DECIDE	translate	Safety data sheet: required for shipping lithium batteries abroad; EN exists and is current
+documentation/RU/Misc/RedBase_v3_LiFEPO4_msds_ru.md	DECIDE	translate	Safety data sheet: EN exists, one small RU change (3 lines) since
+documentation/RU/Misc/RedPhone_DX_MSDS_ru.md	DECIDE	translate	Safety data sheet: EN exists, one small RU change (3 lines) since
+documentation/RU/Misc/RedPhone_OS_MSDS_ru.md	DECIDE	translate	Safety data sheet: EN exists, one small RU change (3 lines) since
+documentation/RU/Misc/SB_23_64_LI_MSDS_ru.md	DECIDE	translate	Safety data sheet: EN exists and is current
+documentation/RU/Misc/SB_24_48_LF_MSDS_ru.md	DECIDE	translate	Safety data sheet: EN exists and is current
+documentation/RU/Misc/WAYU_GIB_MSDS_ru.md	DECIDE	translate	Safety data sheet: the only MSDS without EN; 96 % identical to the RedBASE v3 MSDS, so cheap
+documentation/RU/RedWAVE/RedBASE_old_Specification_ru.md	DECIDE	translate	Legacy: RedBASE v1/v2 are still in the field; listed in the RU navigation index and in the MSDS table; 5 KB
+documentation/RU/Zima/Zima_B_Specification_ru.md	DECIDE	translate	Legacy: first-generation Zima, listed (supplied 05.2016–05.2022); EN exists, RU change since is only the printing block
+documentation/RU/Zima/Zima_R_Specification_ru.md	DECIDE	translate	Legacy: first-generation Zima, listed; EN exists, RU change since is only the printing block
+documentation/RU/Zima/Zima_R_OEM_Specification_ru.md	DECIDE	translate	Legacy: first-generation Zima, listed; EN exists, RU change since is only the printing block
+documentation/RU/Zima/Zima_DataBrief_ru.md	DECIDE	translate	Legacy: first-generation Zima, listed; EN exists, small RU changes since (17 lines)
+documentation/RU/Zima/Zima_Protocol_Specification_ru.md	DECIDE	translate	Legacy: first-generation Zima, listed; EN exists, small RU changes since (25 lines)
+documentation/RU/Zima/Zima_Users_manual_ru.md	DECIDE	translate	Legacy: first-generation Zima, listed; EN exists, moderate RU changes since (57 lines of 74 KB)
+documentation/RU/Zima/Zima_GNSS_requirements_ru.md	DECIDE	translate	Not legacy: matches the Zima_* pattern but is listed under the documents common to Zima and Zima2; RU updated 2026-08
+documentation/RU/RedGTR/RedGTR_Specifications_ru.md	DECIDE	translate	Legacy: listed in the RU modems index; EN exists and is current, no work now
+documentation/RU/RedGTR/RedGTR_Protocol_Specifications_ru.md	DECIDE	translate	Legacy: listed in the RU modems index; EN exists and is current, no work now
+documentation/RU/RedLINE/RedLine_Specification_ru.md	DECIDE	translate	Legacy: listed in the RU modems index; EN exists, 3-line RU change since 2022
+documentation/RU/RedLINE/RedLINE_Protocol_Specifications_ru.md	DECIDE	translate	Legacy: listed in the RU modems index; EN exists, 6-line RU change since 2022
+documentation/RU/RedLINE/RedLINE_wiring_diagram_ru.md	DECIDE	translate	Legacy: listed in the RU modems index; EN exists, 8-line RU change since 2021
+documentation/RU/Zima/AzimuthConsole_v1x_ru.md	DECIDE	translate	Legacy: AzimuthConsole v1.x command set, created 2026-05; not in the index but linked from the current AzimuthConsole manual (listed), otherwise that link stays RU
+documentation/RU/Misc/ucnl_nav_systems_brochure_ru.md	DECIDE	skip	Brochure: unfinished stub (RU title image and RU QR code only); needs EN artwork before an EN page makes sense
+documentation/RU/Misc/ucnl_wireless_voice_ru.md	DECIDE	skip	Brochure: empty stub (header table only)
+documentation/RU/uWAVE/uWave_publications_ru.md	DECIDE	translate	List: publications mentioning uWave, half of them already in English; listed; 3.7 KB; Russian paper titles get an English translation with "(in Russian)"
+documentation/RU/A3S/A3S_packages_ru.md	DECIDE	translate	List: A3S standard kits and what can be built with them; listed; A3R/A3T datasheets already exist in EN
+documentation/RU/Transducers/Transducers_info_ru.md	DECIDE	skip	List: transducer options sheet, unlisted, not linked from anywhere, last changed 2022-04, no breadcrumb
+documentation/RU/Accessories/crimea_300_Datasheet_ru.md	DECIDE	translate	Datasheet: Crimea-300 pressure sensor, current product listed in the RU accessories index
+documentation/RU/Accessories/crimea_300_OS_Datasheet_ru.md	DECIDE	translate	Datasheet: Crimea-300 OS interface module, current product listed in the RU accessories index
+documentation/RU/Accessories/Batpacks_ru.md	DECIDE	translate	List: custom conformal battery packs service page, listed in the RU accessories index; 3 KB
+documentation/RU/RWLT/RWLT_RF_Dongle_Specification_ru.md	DECIDE	translate	Naming variant: EN file is RWLT_RF_Dongle_en.md; update it in place (rule 9, no rename); the EN index currently links a non-existent RWLT_RF_Dongle_Specification_en.md, Phase 3 fixes the link
+documentation/RU/Transducers/RT_2_332820_1_Specification_ru.md	DECIDE	translate	Naming variant: EN file is RT_2_332820_1_specification_en.md (lower-case s); keep the existing name (rule 9); currently OK
+documentation/EN/Misc/SB_24_48_LF_MSDS_sg_en.md	DECIDE	skip	Orphan: EN-only SeaGuild-branded variant of SB-24-48-LF MSDS (distributor contacts); not a duplicate, has no RU source; leave untouched and out of the sync
+documentation/RU/RedPhone/RedPhone_MOS_Specification_ru.md	DECIDE	translate	Unlisted: new extended-range RedPhone-MOS (created 2026-03, updated 2026-06); 80 % text shared with RedPhone-OS but a distinct product; EN index will link it only when RU does
+documentation/RU/RedPhone/RedPhone_MDX_Specification_ru.md	DECIDE	translate	Unlisted: new extended-range RedPhone-MDX (created 2026-03, updated 2026-06); 75 % text shared with RedPhone-DX but a distinct product; EN index will link it only when RU does
+documentation/RU/RedPhone/RedPhone_Articulation_tables_ru.md	DECIDE	skip	Unlisted: Russian word lists for speech-intelligibility tests (linked from RedPhone_PM); a translated list is not phonetically valid; the EN test program keeps the link to the RU forms
+documentation/RU/Zima/Zima2LX_Specification_ru.md	DECIDE	translate	Unlisted: new Zima2-LX LBL transceiver (2026-10), linked from the listed Zima2 LBL data brief
+documentation/RU/Zima/Zima2SL_Specification_ru.md	DECIDE	translate	Unlisted: new Zima2-SL LBL solver (2026-10), linked from the listed Zima2 LBL data brief; product image still a placeholder
+documentation/RU/Zima/AzimuthSuite_manual_ru.md	DECIDE	translate	Unlisted: AzimuthSuite manual moved out of the Zima2 user's manual (2026-05) and linked from it; AzimuthSuite downloads are still listed
+documentation/RU/WAYU/WAYU_Protocol_specification_ru.md	DECIDE	skip	Unlisted: not linked from anywhere, empty table of contents (looks like a draft); 17.8 KB
+documentation/RU/Transducers/R_1.d3505_1_Specification_ru.md	DECIDE	translate	Unlisted: R-1.d3505-1 receiving antenna, linked from the A3S documents; EN exists and is current, no work now
+documentation/RU/RWLT/uTrackDiver_Users_Manual_ru.md	DECIDE	translate	Unlisted: linked from the RWLT user's manual and listed in the EN index; EN exists and is current, no work now
