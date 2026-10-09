@@ -42,7 +42,7 @@ The device has a one-piece design, is made of high-strength polyurethane and pol
 
 ## ADDITIONAL INFORMATION
 
-| [MSDS OF THE BUILT-IN POWER SUPPLY](https://docs.unavlab.com/documentation/RU/Misc/WAYU_GIB_MSDS_ru.html) | [ELECTRONIC VERSION OF THIS DOCUMENT](https://docs.unavlab.com/documentation/EN/WAYU/WAYU_GIB_Specification_en.html) |
+| [MSDS OF THE BUILT-IN POWER SUPPLY](https://docs.unavlab.com/documentation/EN/Misc/WAYU_GIB_MSDS_en.html) | [ELECTRONIC VERSION OF THIS DOCUMENT](https://docs.unavlab.com/documentation/EN/WAYU/WAYU_GIB_Specification_en.html) |
 | :---: | :---: |
 | ![image](https://github.com/user-attachments/assets/31f5c30c-a1fd-40f2-b195-f94ab890920b) | ![image](https://github.com/user-attachments/assets/ca0dc364-79db-4d50-981c-93f8ae57ec4b) |
 
