@@ -1,6 +1,6 @@
 # docs-sync: current state
 
-State on 2026-10-09. Master HEAD: `3b6b94b5f86f9406524d4f591ac3b7ed346670a8` (all Phase 2 batches and repository rules merged).
+State on 2026-10-09. Master HEAD: `ee5bf833e0ca57c04c48c22d923bbefc3446d8fc` (all Phase 2 batches, repository rules and Phase 3 merged).
 
 This branch (`docs-sync/state`) is a progress record and is not intended for merge.
 
@@ -10,8 +10,8 @@ This branch (`docs-sync/state`) is a progress record and is not intended for mer
 |---|---|
 | 1. Inventory and plan | Completed and merged (#2) |
 | 2. Translation batches | 30 of 30 batches merged; 107 EN documents |
-| 3. Index pages, README and deferred links | In progress on docs-sync/indexes: 13 root pages and deferred links |
-| 4. Final QA | Follows Phase 3 |
+| 3. Index pages, README and deferred links | Completed and merged (#36): 13 root pages, 29 deferred links in 8 documents |
+| 4. Final QA | In progress on docs-sync/qa: 27 legacy documents and whole-tree validation |
 
 ## Batch pull requests
 
