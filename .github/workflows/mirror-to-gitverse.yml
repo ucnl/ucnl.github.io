@@ -47,6 +47,20 @@ jobs:
           git remote add gitverse "$DST"
 
           # Пушим только ветки и теги, удалённые в GitHub — удаляем и на GitVerse
-          git push --prune gitverse \
-            "+refs/heads/*:refs/heads/*" \
-            "+refs/tags/*:refs/tags/*"
+          # Повторяем отправку при временных сбоях GitVerse (например, HTTP 504).
+          for attempt in 1 2 3; do
+            if git push --prune gitverse \
+              "+refs/heads/*:refs/heads/*" \
+              "+refs/tags/*:refs/tags/*"; then
+              exit 0
+            fi
+
+            if (( attempt < 3 )); then
+              delay=$((15 * attempt))
+              echo "::warning::GitVerse push attempt ${attempt}/3 failed; retrying in ${delay}s"
+              sleep "$delay"
+            fi
+          done
+
+          echo "::error::GitVerse push failed after 3 attempts"
+          exit 1
