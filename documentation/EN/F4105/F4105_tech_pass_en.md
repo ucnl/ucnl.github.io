@@ -40,7 +40,7 @@ UCNL LLC
 
 ## 1. GENERAL INFORMATION ABOUT THE PRODUCT
 
-The system is designed to ensure the removal of various autonomous bottom stations. 
+The system is designed to enable the recovery of various autonomous bottom stations.
 The system consists of three main devices:
 - **F4105-SU** programming and command transmission unit. It is made as a plastic case with a stainless steel front panel on which the controls and connectors are located. The device contains a built-in power source based on LiFePO4 batteries. It is designed for setting (programming) one of the 64 possible addresses of the **F4105-AU** acoustic wake-up unit, as well as for issuing remote addressed commands to the wake-up units.
 - **F4105-AU** acoustic wake-up unit. It is made as a monoblock with a cable and a watertight connector. The wake-up unit is an underwater acoustic receiver designed for long-term (up to 2 months) standby for a special underwater acoustic signal, the parameters of which are set when the wake-up unit is connected to the **F4105-SU** programming and control unit. Upon receiving the specified command, the wake-up unit generates a logic control signal, which is fed to the actuating device, the **F4105-BU** release unit, ensuring uncoupling of the device from the anchor and its ascent.
@@ -107,7 +107,7 @@ No factory number is provided for the other components of the kit.
 | 15 | Line ____ mm |  |
 | 16 | Rigging shackle | |
 | 17 | Carabiner |  |
-| 18 | Locking pin | |
+| 18 | Lock pin | |
 
 
 <div style="page-break-after: always;"></div>
