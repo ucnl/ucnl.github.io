@@ -14,7 +14,7 @@ SIZE_RATIO = 0.6
 SYNC_DIR = ".github/docs-sync"
 MARKER_RE = re.compile(r"<!-- docs-sync: source=(\S+) commit=([0-9a-f]{40}) date=(\d{4}-\d{2}-\d{2}) -->")
 CYR_RE = re.compile(r"[А-Яа-яЁё]")
-FENCE_RE = re.compile(r"^\s{0,3}(```|~~~)")
+FENCE_RE = re.compile(r"^\s{0,3}(`{3,}|~{3,})(.*)$")
 HEADING_RE = re.compile(r"^ {0,3}(#{1,6})[ \t]+(.*?)[ \t#]*$")
 TABLE_RE = re.compile(r"^\s*\|")
 IMG_MD_RE = re.compile(r"!\[[^\]]*\]\(")
@@ -69,13 +69,16 @@ class Repo:
 
 def strip_fences(text):
     out = []
-    inside = False
+    fence = None
     for line in text.splitlines():
-        if FENCE_RE.match(line):
-            inside = not inside
-            continue
-        if not inside:
+        m = FENCE_RE.match(line)
+        if fence is None:
+            if m and not (m.group(1)[0] == "`" and "`" in m.group(2)):
+                fence = m.group(1)
+                continue
             out.append(line)
+        elif m and m.group(1)[0] == fence[0] and len(m.group(1)) >= len(fence) and not m.group(2).strip():
+            fence = None
     return out
 
 
