@@ -12,7 +12,7 @@
 * Free-flooded center section for pressure compensation
 * Complete absence of corroding elements
 * Single-element transducer - a balance between sensitivity in receiving and transmitting modes, weight and dimensions
-* High-quality shielded cable in polyurethane insulation
+* High-quality shielded cable with polyurethane insulation
 * Mounting groove
 
 ## TECHNICAL SPECIFICATIONS
