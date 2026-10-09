@@ -126,8 +126,8 @@ In this version, the system can work with responder-beacons located at depths of
 
 | Device | Technical specification |
 | :--- | :--- |
-| Direction-finding antenna Zima2-B35 | [![Device specification: Zima2-B35 - direction-finding antenna](https://github.com/user-attachments/assets/496c0dd8-79f6-4247-b085-1b13179f4fa6)](https://docs.unavlab.com/documentation/RU/Zima/Zima2B35_Specification_ru.html) |
-| Responder-beacon Zima2-R35 | [![Zima2-R35 - responder-beacon: Device specification](https://github.com/user-attachments/assets/d086915b-ba1b-4ec3-9906-c9341024409d)](https://docs.unavlab.com/documentation/RU/Zima/Zima2R35_Specification_ru.html) |
+| Direction-finding antenna Zima2-B35 | [![Device specification: Zima2-B35 - direction-finding antenna](https://github.com/user-attachments/assets/496c0dd8-79f6-4247-b085-1b13179f4fa6)](https://docs.unavlab.com/documentation/EN/Zima/Zima2B35_Specification_en.html) |
+| Responder-beacon Zima2-R35 | [![Zima2-R35 - responder-beacon: Device specification](https://github.com/user-attachments/assets/d086915b-ba1b-4ec3-9906-c9341024409d)](https://docs.unavlab.com/documentation/EN/Zima/Zima2R35_Specification_en.html) |
 
 ### 1.4.3. Version K
 
@@ -320,18 +320,18 @@ A detailed user's manual for the AzimuthConsole application is available as a se
 
 | Document | QR |
 | :--- | :--- |
-| AzimuthConsole: user's manual | [![AzimuthConsole: User's manual](https://github.com/user-attachments/assets/2a70ad5c-db4d-4dee-8c26-5c8cf04a91b6)](/documentation/RU/Zima/AzimuthConsole_manual_ru) |
+| AzimuthConsole: user's manual | [![AzimuthConsole: User's manual](https://github.com/user-attachments/assets/2a70ad5c-db4d-4dee-8c26-5c8cf04a91b6)](/documentation/EN/Zima/AzimuthConsole_manual_en) |
 
 
 ## 2.3. AzimuthSuite application (obsolete)
 
 > **ℹ Information**
 > 
-> The **AzimuthSuite** application is no longer supported. It is recommended to use [AzimuthConsole](/documentation/RU/Zima/AzimuthConsole_manual_ru).
+> The **AzimuthSuite** application is no longer supported. It is recommended to use [AzimuthConsole](/documentation/EN/Zima/AzimuthConsole_manual_en).
 
 | Document | QR |
 | :--- | :--- |
-| AzimuthSuite: user's manual | [![AzimuthSuite: User's manual](https://github.com/user-attachments/assets/ca59ab7b-870c-4946-8342-ab7b6eb52d1c)](/documentation/RU/Zima/AzimuthSuite_manual_ru) |
+| AzimuthSuite: user's manual | [![AzimuthSuite: User's manual](https://github.com/user-attachments/assets/ca59ab7b-870c-4946-8342-ab7b6eb52d1c)](/documentation/EN/Zima/AzimuthSuite_manual_en) |
 
 <div style="page-break-after: always;"></div>
 
