@@ -1079,3 +1079,13 @@ Section headings follow the standard 16-section layout of GHS/REACH Annex II saf
 | ретрансляция | relaying | RedLINE/RedLINE_Protocol_Specifications_en.md | isRTX field |
 | прямой / обратный канал | forward / reverse channel | RedLINE/RedLINE_Protocol_Specifications_en.md | isRVRS field |
 | шина данных | data bus | RedLINE/RedLINE_Protocol_Specifications_en.md | |
+
+## Added in batch misc-1
+
+| RU | EN | Source EN file | Note |
+|---|---|---|---|
+| герметично закрытые ячейки | hermetically sealed cells | Misc/RedPhone_OS_MSDS_en.md (+1) | |
+| водяная струя мелкого разбрызгивания | fine water spray | Misc/RedPhone_OS_MSDS_en.md (+1) | |
+| автономный дыхательный аппарат; автономный ВДА | self-contained breathing apparatus; self-contained breathing apparatus (SCBA) | Misc/RedPhone_OS_MSDS_en.md (+1) | |
+| статическая электризация | static electricity buildup | Misc/RedPhone_OS_MSDS_en.md (+1) | |
+| отслужившие аккумуляторные элементы | spent battery cells | Misc/RedPhone_OS_MSDS_en.md (+1) | |
