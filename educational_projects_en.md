@@ -1,52 +1,61 @@
-[Main](/README.md) ❯ **Our educational projects**
+[Main](/) ❯ **Educational projects**
 
 | ![logo](/documentation/sm_logo.png) |
 | :---: |
 | [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) |
 | [EN](educational_projects_en.md) \| [RU](educational_projects_ru.md) |
 
-## Our projects for education
+# Educational projects
 
-> In this section we have collected our products intended for education purposes. Some of them can be purchased, some - to make yourself according to open instructions. In addition, here are online utilities and libraries with open source code, which we ourselves use in our projects and you can also use them absolutely free of charge.
+> In this section we have collected our products intended for education. Some can be purchased (with substantial discounts for educational institutions), while others can be built using openly available instructions. In addition, this section includes online utilities and open-source libraries that we use in our own projects and that you can also use completely free of charge.
 
-### uSwitch
+## uSwitch
 underwater acoustic modem
-* [uSwitch: Device specifications](documentation/EN/uSwitch/uSwitch_Specification_en.md)
+* [uSwitch: Device specification](documentation/EN/uSwitch/uSwitch_Specification_en.md)
 
-### A<sup>3</sup>S - "Acoustic coubes"
-A set of basic elements for prototyping hydroacoustic communication and navigation systems
-* UNDER CONSTRUCTION [A<sup>3</sup>S ACoubes: User's guide](/documentation/EN/A3S/A3S_Users_Manual_en)
-* [A<sup>3</sup>T - Pulse single frequency acoustic Transmitter: Device specification](/documentation/EN/A3S/A3T_Datasheet_en)
-* [A<sup>3</sup>R - Pulse single frequency acoustic Receiver: Device specification](/documentation/EN/A3S/A3R_Datasheet_en)
+## A<sup>3</sup>S - "Acoustic cubes"
+A set of basic functional elements for prototyping underwater acoustic communication and navigation systems
+* [A<sup>3</sup>S ACubes: Standard kits and what you can do with them](/documentation/EN/A3S/A3S_packages_en.md)
+* [A<sup>3</sup>S ACubes: User's manual](/documentation/EN/A3S/A3S_Users_Manual_en)
+* [A<sup>3</sup>T - Single-frequency pulse underwater acoustic transmitter: Specification](/documentation/EN/A3S/A3T_Datasheet_en)
+* [A<sup>3</sup>R - Single-frequency underwater acoustic receiver: Specification](/documentation/EN/A3S/A3R_Datasheet_en)
 
-### UNDER CONSTRUCTION: uSound
-Low noise hydrophones
-* [uSound - Underwater Sound Recording Equipment Kit: Description]()
-* [uSound Box - Autonomous power supply and signal converter: Device specification]()
-* [uSound CR - Mid frequency low noise hydrophone: Device specification]()
-* [uSound DR - Low frequency low noise hydrophone: Device specification]()
+## uSound
+Low-noise hydrophones
+> SECTION UNDER CONSTRUCTION  
 
-### WAYU
-#### Sensibly priced amateur LBL tracking system. By the way, it can be build with "Acoustic cubes"
+* uSound - Underwater sound recording equipment kit: Description
+* uSound Box - Power supply and converter: Specification
+* uSound CR - Low-noise hydrophone for mid frequencies: Specification
+* uSound DR - Low-noise hydrophone for low frequencies: Specification
+
+## WAYU
+Long baseline tracking system for the amateur segment. By the way, it can be built with "Acoustic cubes"
 * [WAYU: Data brief](/documentation/EN/WAYU/WAYU_DataBrief_en.md)
-* [WAYU: tracks, videos, tutorials, etc.](/documentation/EN/WAYU/media)
-* [Device specification: WAYU Pinger](/documentation/EN/WAYU/WAYU_Pinger_Specification_en.md)
-* [Device specification: WAYU GIB](/documentation/EN/WAYU/WAYU_GIB_Specification_en.md)
-* [Device specification: WAYU Radio dongle](/documentation/EN/WAYU/WAYU_RF_Dongle_Specification_en.md)
-* [User's manual](/documentation/EN/WAYU/WAYU_Users_Manual_en.md)
+* [WAYU: media, test videos, tracks, etc.](/documentation/EN/WAYU/media)
+* [WAYU Pinger: Device specification](/documentation/EN/WAYU/WAYU_Pinger_Specification_en.md)
+* [WAYU GIB: Device specification](/documentation/EN/WAYU/WAYU_GIB_Specification_en.md)
+* [uNav WAYU Radio dongle: Device specification](/documentation/EN/WAYU/WAYU_RF_Dongle_Specification_en.md)
+* [uNav WAYU Radio dongle: Communication protocol specification](/documentation/EN/RWLT/uNav_protocol_specification_en.md)
+* [WAYU: User's manual](documentation/EN/WAYU/WAYU_Users_Manual_en.md)
 * [💧 uNav: User's manual](documentation/EN/RWLT/uNav_application_Users_manual_en.md)
-* [💧 uNav: uNav Radio dongle application (Source code)](https://github.com/ucnl/uNav)
-* [💧 uNav: uNav Radio dongle application (Download release)](https://github.com/ucnl/uNav/releases/download/1.0/uNav.zip)
+* [💧 uNav: Applications for configuring uNav Radio dongle (Source code)](https://github.com/ucnl/uNav)
+* [💧 uNav: Applications for configuring uNav Radio dongle (Download release)](https://github.com/ucnl/uNav/releases/download/1.0/uNav.zip)
+* [Product passport (template)](documentation/EN/WAYU/WAYU_tech_pass_en.md)
 
-### Misc.
-* [DIY.unavlab.com: Easy to repeat projects for DIY](https://diy.unavlab.com/)
-* [Online-utilities:Depth, Speed of sound, raytracing, NMEA0183 etc.](online_utilities_en.md)
+## Miscellaneous
+* [DIY.unavlab.com: Simple projects to build yourself](https://diy.unavlab.com/README_RU.html)
+* [Online utilities: Depth and speed of sound calculation, ray tracing, working with NMEA0183, etc.](online_utilities_en.md)
 
-### Open-source libraries
-* [UCNLNav: A library for solving geodetic and navigation problems *(C#/Rust/Matlab/GNU Octave)*](https://github.com/ucnl/UCNLNav)
-* [UCNLPhysics: A library for estimation of fundamental properties of seawater *(C#/Rust/C/Matlab/GNU Octave/JavaScript)*](https://github.com/ucnl/UCNLPhysics)
-* [UCNLNMEA: A library for parsing/building NMEA sentences *(C#)*](https://github.com/ucnl/UCNLNMEA)
-* [uMCPIno: A lightweight communication protocol with guaranteed delivery *(C#/C/Arduino)*](https://github.com/AlekUnderwater/uMCPIno)
-* [uRayTracerDemo: Underwater sound propagation through layered medium](https://github.com/ucnl/uRayTracerDemo)
+## Open-source libraries and utilities
+* [UCNLNav: Navigation algorithm library *(C#/Rust/Matlab/GNU Octave)*](https://github.com/ucnl/UCNLNav)
+* [UCNLPhysics: A library for determining fundamental properties of seawater *(C#/Rust/C/Matlab/GNU Octave/JavaScript)*](https://github.com/ucnl/UCNLPhysics)
+* [UCNLNMEA: A library for parsing and generating NMEA sentences *(C#)*](https://github.com/ucnl/UCNLNMEA)
+* [uMCPIno: A protocol with guaranteed message delivery and ordering *(C#/C/Arduino)*](https://github.com/AlekUnderwater/uMCPIno)
+* [uRayTracerDemo: Ray tracing through a layered medium](https://github.com/ucnl/uRayTracerDemo)
+* [uConsole: A simple serial port terminal (web version)](http://docs.unavlab.com/uConsole/)
+* [uConsole: A simple serial port terminal](https://github.com/ucnl/uConsole)
 
 ## [Back to main](README.md)
+
+<!-- docs-sync: source=educational_projects_ru.md commit=43c464662e99305778581a71fc585e65c6a8a00b date=2026-05-21 -->
