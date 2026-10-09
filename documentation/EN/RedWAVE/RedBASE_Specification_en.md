@@ -1,57 +1,66 @@
-[Main](/../../) ❯ [Navigation & tracking systems](/navigation_and_tracking_systems_en) ❯ **Device specification: RedBASE - GNSS-equipped sonobuoy**
+[Main](/) ❯ [Navigation & tracking systems](/navigation_and_tracking_systems_en) ❯ **RedBase: Device specification**
 
 <div style="page-break-after: always;"></div>
 
-| ![logo](/documentation/sm_logo.png) | ![logo](/documentation/def_redbase_yellow.png) |
+| ![logo](/documentation/sm_logo.png) | ![def_redbase_v2](/documentation/def_redbase_v2.png) |
 | :---: | ---: |
-| [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **RedBASE** - GNSS-equipped sonobuoy <br/> Device specification |
+| [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **RedBase** - GNSS-equipped sonobuoy <br/> Device specification |
 
 ## KEY FEATURES
 
-* **Simultaneous positioning for an unlimited number of devices [RedNODE](RedNODE_Specification_en.md) / [RedNAV](RedNAV_Specification_en.md)**
 * **High-performance combined GPS/GLONASS receiver**
-* **Strong, durable, easily visible housing**
-* **Long battery life up to 24 hours**
-* **Reliable and noise-immune technology of digital broadband acoustic communication**
+* **Rugged, durable, easily noticeable, maintenance-free housing**
+* **Simultaneous positioning for an unlimited number of [RedNode](RedNODE_Specification_en.md)/[RedNav](RedNAV_Specification_en.md) devices**
+* **Long battery life of up to 48 hours**
+* **Automatic activation in water**
+* **Reliable and noise-resistant digital broadband underwater acoustic communication technology**
 
 ## DESCRIPTION
 
-GNSS-equipped sonobuoy **RedBASE** as part of a set of four such devices forms a floating long navigation base,
-which supports the simultaneous positioning of an unlimited number of navigation receivers [RedNODE](RedNODE_Specification_en.md)/[RedNAV](RedNAV_Specification_en.md).
-The device is made in the form of a plastic cylinder with dimensions Ф150х600 mm with a hydroacoustic transmitting antenna on the cable.
+The **RedBase** GNSS-equipped sonobuoy, in a set of four such devices, forms a floating long navigation base, 
+which supports the simultaneous positioning of an unlimited<sup>[*](#footnote_a1)</sup> number of [RedNode](RedNODE_Specification_en.md)/[RedNav](RedNAV_Specification_en.md) navigation receivers.  
 
-It has positive buoyancy, has a load-carrying eye for anchoring.
+The device consists of two blocks potted in a polyurethane compound: an underwater block, which houses the LiFePO4 battery, and a surface block, which houses the underwater acoustic transmitter and the GNSS receiver. The blocks are connected to each other by a plastic tube on which additional buoyancy blocks are mounted. The device is equipped with a light indication system for the status and the sequence number of the buoy in the set: the light sources are located in the upper part of the surface block, which is made of transparent polymer with the addition of a phosphor.
+RedBase buoys switch on automatically when immersed in water and switch off automatically when taken out of the water. 
+For attachment to an anchor line, load-bearing eyes are provided in the lower part of the battery block.
+
+_________
+<a name="footnote_a1"><sup>*</sup></a> Patents US10989815B2, WO2017044012A1, EP3349040A4, RU2599902C1.  
 
 <div style="page-break-after: always;"></div>
 
-## TECHNICAL SPECIFICATION
+## TECHNICAL SPECIFICATIONS
 
 | PARAMETER | VALUE |
 | :--- | :--- |
-| DIMENSIONS (Ф х h) | 146 x 597 mm |
-| WEIGHT(dry) | 4.8 kg |
-| REDUNDANT BUOYANCY | 1 kg |
-| CARRIER | 20100 Hz |
-| BATTERY LIFE | 24 hours |
-| ACOUSTIC RANGE (ENEGRY)<sup>[1](#footnote1)</sup> | 3000 m |
-| ACOUSTIC SOURCE LEVEL (IN BAND) | 170 dB re 1 μPa @ 1 m |
-| ACOUSTIC SOURCE LEVEL (IN 1 Hz BAND) | 88 dB re 1 μPa @ 1 m |
-| MAX. ALLOWED DISTANCE TO OTHER BUOYS FROM THE SET<sup>[2](#footnote2),[3](#footnote3)</sup> | 700 m |
-| MIN. ALLOWED DISTANCE TO OTHER BUOYS FROM THE SET<sup>[3](#footnote3)</sup> | 30 m |
-| MAX. RELATIVE VELOCITY | +/- 1.8 m/s  |
-| WORKING TEMPERATURE RANGE | -10 .. 50 °С |
+| DIMENSIONS (Ø x h) | 125 x 790 mm |
+| WEIGHT (dry) | 3.8 kg |
+| EXCESS BUOYANCY | 1 kg |
+| CARRIER FREQUENCY | 20100 Hz |
+| MAXIMUM BATTERY LIFE | 48 hours |
+| MAXIMUM ACOUSTIC COMMUNICATION RANGE<sup>[1](#footnote1)</sup> | 3000 m |
+| MAXIMUM ACOUSTIC SOURCE LEVEL | 170 dB re 1 μPa @ 1 m |
+| MAXIMUM PERMISSIBLE DISTANCE TO OTHER BUOYS OF THE SET<sup>[2](#footnote2),[3](#footnote3)</sup> | 700 m |
+| MINIMUM PERMISSIBLE DISTANCE TO OTHER BUOYS OF THE SET<sup>[3](#footnote3)</sup> | 30 m |
+| MAXIMUM VELOCITY RELATIVE TO RECEIVERS | +/- 1.8 m/s  |
+| OPERATING TEMPERATURE RANGE | -10 .. 50 °C |
 | REFERENCE ELLIPSOID | WGS-84 |
-| BUILT-IN BATTERY TYPE | Lead-acid |
-| TRANSDUCER CABLE LENGTH | 1.1 m |
-| CHARGE TIME 220 V | 10 hours |
+| BUILT-IN BATTERY TYPE | LiFePO4 |
+| BUILT-IN BATTERY CAPACITY | 76 W·h |
+| UNDERWATER ACOUSTIC TRANSMITTER CABLE LENGTH | 1 m |
+| FULL CHARGE TIME FROM 220 V / 50 Hz MAINS | 5 h |
+
+## ADDITIONAL INFORMATION
+
+| [MSDS OF THE BUILT-IN POWER SUPPLY](https://docs.unavlab.com/documentation/EN/Misc/RedBase_v3_LiFEPO4_msds_en.html) | [ELECTRONIC VERSION OF THIS DOCUMENT](https://docs.unavlab.com/documentation/EN/RedWAVE/RedBASE_Specification_en.html) |
+| :---: | :---: |
+| ![image](https://github.com/user-attachments/assets/eb6e547e-70d5-4f68-85a9-7575d14608ea) | ![image](https://github.com/user-attachments/assets/2b34fa2d-9c74-4496-aaea-238a7556d6e5) |
 
 ________________
-<a name="footnote1"><sup>1</sup></a> A parameter that determines the maximum range at which a signal can be received, based on
-electro-acoustic parameters of the transmitter and receiver, spatial decrease in the intensity of sound energy, attenuation in the medium
-and the acoustic noise level.  
-<a name="footnote2"><sup>2</sup></a> Buoys are located on the surface of the water as a convex polygon so that the distance from each buoy
-before any other did not exceed the specified value.  
-<a name="footnote3"><sup>3</sup></a> The immersion depth of the navigation receivers should not exceed the size of the navigation base.  
+<a name="footnote1"><sup>1</sup></a> A parameter that determines the maximum range at which signal reception is possible, based on the electro-acoustic parameters of the transmitter and receiver, the spatial decrease in the intensity of sound energy, attenuation in the medium and the acoustic noise level.  
+<a name="footnote2"><sup>2</sup></a> The buoys are placed on the water surface in a convex polygon so that the distance from each buoy to any other does not exceed the specified value.  
+<a name="footnote3"><sup>3</sup></a> The immersion depth of the navigation receivers must not exceed the dimensions of the navigation base.  
 
 <div style="page-break-after: always;"></div>
 
+<!-- docs-sync: source=documentation/RU/RedWAVE/RedBASE_Specification_ru.md commit=183207200b939eea64d7be305068cf1d7adc96a3 date=2024-12-12 -->
