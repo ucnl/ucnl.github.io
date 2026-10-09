@@ -63,7 +63,7 @@
 
 ## 1. Introduction
 The underwater acoustic navigation system **Zima** is designed to determine, in real time, the horizontal angle and the distance
-to underwater objects equipped with underwater acoustic responder-beacons [Zima-R](Zima_R_Specification_en.md). The responder-beacons
+to underwater objects equipped with [Zima-R](Zima_R_Specification_en.md) underwater acoustic responder-beacons. The responder-beacons
 (hereinafter, beacons) can be installed on remotely operated underwater vehicles (ROVs), human-occupied vehicles (HOVs), autonomous
 unmanned underwater vehicles (AUVs), as well as on recreational and technical divers (when the standalone version of the beacon is used).
 
@@ -78,22 +78,22 @@ The system also makes it possible to transmit remote control signals to the beac
 ## 2. System composition
 ### 2.1. Zima-B: Underwater acoustic direction-finding station
 #### 2.1.1. General information
-The underwater acoustic direction-finding station [Zima-B](Zima_B_Specification_en.md) (hereinafter, the base station) is designed to transmit control acoustic signals to the beacons, to determine the signal propagation time to the beacons, to determine the horizontal angle of arrival of the beacons' response signals, to transmit remote control commands and to receive telemetry information from the beacons by means of specialized underwater acoustic signals.
+The [Zima-B](Zima_B_Specification_en.md) underwater acoustic direction-finding station (hereinafter, the base station) is designed to transmit acoustic control signals to the beacons, to determine the signal propagation time to the beacons, to determine the horizontal angle of arrival of the beacons' response signals, to transmit remote control commands and to receive telemetry information from the beacons by means of specialized underwater acoustic signals.
 
 | ![Zima-B](/documentation/def_zima_b_ant.png) |
 | :---: |
-| **Figure 1 - Base station [Zima-B](Zima_B_Specification_en.md)** | 
+| **Figure 1 - [Zima-B](Zima_B_Specification_en.md) base station** | 
 | _external view_ |
 
-The base station is designed as a maintenance-free monoblock on a cable, potted in a high-strength polyurethane compound. The station has a phased antenna array, a transmitting antenna and a built-in depth/temperature sensor. As an additional option, the base station is supplied with a heading and position determination system. In the general case, the base station is mounted on a rigid vertical pole, taking into account the directivity of the antenna - the determined angles of arrival are given in the antenna coordinate system.
+The base station is designed as a maintenance-free monoblock on a cable, potted in a high-strength polyurethane compound. The station has a phased antenna array, a transmitting antenna and a built-in depth/temperature sensor. As an additional option, the base station is supplied with a heading and position determination system. In the general case, the base station is mounted on a rigid vertical pole, taking into account the orientation of the antenna - the determined angles of arrival are given in the antenna coordinate system.
 
 | ![Zima-B placement](/documentation/zima_boat_placement.png) |
 | :---: |
 | **Figure 2 - Installation diagram of the [Zima-B](Zima_B_Specification_en.md) antenna** |
-| _1-pole, 2-vessel, 3-water surface, 4-cable, 5-antenna [Zima-B](Zima_B_Specification_en.md), 6-zero direction of the antenna_ |
+| _1-pole, 2-vessel, 3-water surface, 4-cable, 5-[Zima-B](Zima_B_Specification_en.md) antenna, 6-zero direction of the antenna_ |
 
-Figure 3 shows the dimensional drawing of the base station [Zima-B](Zima_B_Specification_en.md).
-The base station has a cable entry for the cable of the power and data interface and an opening for the pressure/temperature sensor. Structurally, the base station is divided into the following parts: the cable entry (in the upper part of the station) and a mounting groove for securing the station with a clamp. Below is the cylindrical surface of the transmitting piezoelectric element, under which the receiving phased antenna array is located. During installation, the surfaces of the transmitting element and of the receiving array must not be covered or shielded. 
+Figure 3 shows the dimensional drawing of the [Zima-B](Zima_B_Specification_en.md) base station.
+The base station has an entry for the power and data cable and an opening for the pressure/temperature sensor. Structurally, the base station is divided into the following parts: the cable entry (in the upper part of the station) and a mounting groove for securing the station with a clamp. Below it is the cylindrical surface of the transmitting piezoelectric element, under which the receiving phased antenna array is located. During installation, the surfaces of the transmitting element and of the receiving array must not be covered or shielded. 
 For correct operation of the station, a direct line of sight is required between the working surfaces of the station and the transducer of the responder-beacon.
 
 | ![Zima-B drawings](/documentation/Zima_B_drawings.png) |
@@ -102,7 +102,7 @@ For correct operation of the station, a direct line of sight is required between
 |  _dimensional drawing_ |
 
 In the standard configuration, [Zima-B](Zima_B_Specification_en.md) is supplied with a UART<->RS-422 interface converter and a cable
-10 meters long, which is connected to the power supply and switching unit [Bat&Link Box](Bat_n_link_box_Specification_en.md). Thus,
+10 meters long, which is connected to the [Bat&Link Box](Bat_n_link_box_Specification_en.md) power supply and switching unit. Thus,
 through the switching unit, the station is connected to the host PC via the USB interface (serial port).
 
 #### 2.1.2. Technical specifications
@@ -141,14 +141,14 @@ ________________
 There are no special storage and maintenance requirements for the base station, with the exception of the following:
 - When used in salt and/or heavily polluted water, desalination (soaking and rinsing in fresh water) is necessary
 - The use of any organic solvents, strong acids, alkalis and other aggressive substances is not allowed
-- If necessary, washing in household soap solutions is possible, avoiding liquid getting on the connector
+- If necessary, the station can be washed in household soap solutions; keep the liquid away from the connector
 - Impact or significant static loads are not allowed
 - Strong bending of the cable (with a radius of less than 5 cm) is not allowed
 
 
 ### 2.2. Zima-R: responder-beacon
 #### 2.2.1. General information
-The responder-beacon is designed as a maintenance-free monoblock on a cable, potted in a high-strength polyurethane compound. The appearance of the responder-beacon [Zima-R](Zima_R_Specification_en.md) is shown in Figure 4. Structurally, the beacon includes a cable entry, a mounting groove, a pressure sensor opening and a working surface. The pressure sensor opening and the working surfaces (the cylinder and the end face of the cylinder opposite the cable entry) must not be covered or shielded. For correct operation of acoustic communication, a direct line of sight is required between the base station and the responder-beacon.
+The responder-beacon is designed as a maintenance-free monoblock on a cable, potted in a high-strength polyurethane compound. The appearance of the [Zima-R](Zima_R_Specification_en.md) responder-beacon is shown in Figure 4. Structurally, the beacon includes a cable entry, a mounting groove, a pressure sensor opening and a working surface. The pressure sensor opening and the working surfaces (the cylinder and the end face of the cylinder opposite the cable entry) must not be covered or shielded. For correct operation of acoustic communication, a direct line of sight is required between the base station and the responder-beacon.
 
 | ![Zima-R](/documentation/zima_r.png) |
 | :---: |
@@ -185,7 +185,7 @@ The responder-beacon is designed as a maintenance-free monoblock on a cable, pot
 | PARAMETER | VALUE |
 | :--- | :--- |
 | BUILT-IN BATTERY TYPE | Ni-MH |
-| ELECTRICAL CAPACITY | 2.9 A·h |
+| CAPACITY | 2.9 A·h |
 | NOMINAL VOLTAGE | 12 V |
 | NUMBER OF CELLS IN THE PACK | 10 pcs |
 | HOUSING MATERIAL | Delrin |
@@ -200,9 +200,9 @@ Operating time with the standard battery pack in standby mode - up to 70 hours, 
 <a name="footnote2225"><sup>5</sup></a> Standard delivery set, subject to change without notice.  
 
 #### 2.2.3. Configuration options
-The beacon [Zima-R](Zima_R_Specification_en.md) is a transceiver for underwater acoustic digital wideband communication and can be interfaced with the control system for both power and data. In this case, if the control system has a magnetic compass, it is possible to determine the distance and the relative bearing to the base station, as well as to receive remote control code commands from the base station.
+The [Zima-R](Zima_R_Specification_en.md) beacon is a transceiver for underwater acoustic digital wideband communication and can be interfaced with the control system for both power and data. In this case, if the control system has a magnetic compass, it is possible to determine the distance and the relative bearing to the base station, as well as to receive remote control code commands from the base station.
 In the standalone version, the beacon is supplied with a battery canister, as shown in Figure 4. In this case it is fully autonomous and does not need to be interfaced with the carrier.
-In the [OEM](Zima_R_OEM_Specification_en.md) version, the beacon is supplied as a set of electronic boards to be installed by the user in the user's own 
+In the [OEM](Zima_R_OEM_Specification_en.md) version, the beacon is supplied as a set of electronic boards to be installed by the user in their own 
 one-atmosphere (normobaric) housing. The beacon is supplied with a deep-water underwater acoustic transducer. Routing the transducer cable into the one-atmosphere housing 
 and connecting it to the beacon electronics is, in this case, done by the user.
 
@@ -214,7 +214,7 @@ In the standalone version, the beacon is fully autonomous. For operation, it mus
 | **Figure 5 - Connecting the responder-beacon to the battery pack** |
 
 In this version, the beacon is supplied with a 10-cell nickel-metal hydride battery pack. 
-The one-atmosphere (normobaric) housing (canister) has a lid with a double seal and a four-start thread, which allows the canister lid to be closed in 3/4 of a turn. Before immersion in water, make sure that the canister lid is screwed on tightly (by hand).
+The one-atmosphere (normobaric) housing (canister) has a lid with a double seal and a four-start thread, which allows the canister lid to be closed in 3/4 of a turn. Before immersion in water, make sure that the canister lid is screwed on hand-tight.
 After the beacon connector is connected to the battery pack, the device calibrates the atmospheric pressure during the first ten seconds; therefore, do not apply any pressure (negative or positive) other than atmospheric to it during the first ten seconds after the device is switched on - this will result in incorrect depth measurement by the responder-beacon.
 In the standalone version, the Tx and Rx wires of the beacon cable are shorted (see Figure 6). This automatically disables the UART module to save power.
 
@@ -231,15 +231,15 @@ In the standalone version, the Tx and Rx wires of the beacon cable are shorted (
 | _Cable wire assignment_ |
 
 #### 2.2.5. Working with the device (integrated version)
-When interfaced with the carrier for both power and data, the beacon transmits to the carrier the distance to the base station and the azimuth to the beacon (only when a magnetic compass is connected to the base station). In addition, in this case the base station can transmit up to 28 code commands, of which the responder-beacon notifies the carrier in accordance with the [communication protocol](Zima_Protocol_Specification_en.md).
+When interfaced with the carrier for both power and data, the beacon transmits to the carrier the distance to the base station and the azimuth to the beacon (only when a magnetic compass is connected to the base station). In addition, in this case the base station can transmit up to 28 code commands, and the responder-beacon reports them to the carrier in accordance with the [communication protocol](Zima_Protocol_Specification_en.md).
 
 #### 2.2.6. Storage and maintenance
 The responder-beacon does not require any special maintenance procedures, except for desalination and rinsing in running fresh water after use in salt and/or contaminated water.
-In this case, the use of any lubricants or solvents, aggressive detergents, etc. to remove contamination from the responder-beacon and its cable is not allowed.
+Note that the use of any lubricants or solvents, aggressive detergents, etc. to remove contamination from the responder-beacon and its cable is not allowed.
 
 If the beacon is used in the standalone version, additional requirements apply and maintenance measures are prescribed for the battery pack and the canister. In particular:
 - long-term (more than one day) storage of the battery pack while it is connected to the beacon is not allowed;
-- long-term storage of the battery pack without scheduled recharging (1 time per month) is not recommended;
+- long-term storage of the battery pack without scheduled recharging (once a month) is not recommended;
 - if contaminated, the O-rings and the thread of the battery canister must be cleaned with water, a soft brush and a soap solution, followed by rinsing in running fresh water and lubricating the O-rings with silicone grease;
 - the canister is stored with the lid closed;
 - when the device is used in salt and/or contaminated water, it must be desalinated in running fresh water after the work is finished.
@@ -253,7 +253,7 @@ The specialized software [ZHost](https://github.com/ucnl/ZHost) (hereinafter, th
 The software is portable, is distributed as a [zip archive \(Download the latest version\)](https://github.com/ucnl/ZHost/releases/download/2.2/ZHost.zip) and does not require any installation other than unpacking it on the user's PC. 
 
 The executable file ZHost.exe, the settings file ZHost.settings and the required libraries are located in the root directory of the application. Localization resources are located in subdirectories corresponding to the localization language (e.g. \ru, \ru-RU, etc.).
-While running, the application keeps log files. The logs are stored in the \LOG subdirectory, which contains subdirectories named with the current date (for example, \LOG\2020-01-21), which contain .log files with names corresponding to the file creation time (HH-MM-SS). A new log file is created each time the application starts. The log files are in text format and contain all the information exchange of the host software with the devices connected to it, as well as all errors that occur during the operation of the software.
+While running, the application keeps log files. The logs are stored in the \LOG subdirectory, which contains subdirectories named with the current date (for example, \LOG\2020-01-21), which contain .log files with names corresponding to the file creation time (HH-MM-SS). A new log file is created each time the application starts. The log files are in text format and contain all data exchanged between the host software and the connected devices, as well as all errors that occur during the operation of the software.
 
 When the AUTOSNAPSHOT function is enabled, screenshots of the application window are saved in the \SNAPSHOTS directory, which also contains subdirectories named with the creation date; the window screenshot files are named with the current time (HH-MM-SS) and are in PNG (Portable Network Graphics) format.
 
@@ -288,8 +288,8 @@ The **"STATION"** menu item becomes active only after the connection to the base
 ##### 3.2.1.3. RESPONDER menu item
 This menu item becomes active only after the connection to the base station is open and the device information has been successfully received from it, and the **"AUTOQUERY"** function is not active. The item contains the following subitems:
 - **"SEND A COMMAND..."** to open the remote command dialog box, in which the user can select the address of the responder-beacon to which a user command is to be sent, and the command identifier.
-- **"CHANGE ADDRESS..."** to open the dialog box for changing the address of a remote responder-beacon. In the dialog box, the user must specify the current address of the beacon whose address is to be changed, and the new address. *Be careful when using this function. It is intended only for setting beacon addresses before immersion.*
-- **"SET CURRENT DEPTH AS ZERO"** to open the atmospheric pressure calibration dialog box. In the dialog box, the user must specify the address of the beacon. On receiving the command to calibrate the atmospheric pressure, the responder-beacon will take the current pressure readings of its built-in sensor as atmospheric. *Be careful when using this function. It is intended only for setting up beacons before immersion.*
+- **"CHANGE ADDRESS..."** to open the dialog box for changing the address of a remote responder-beacon. In the dialog box, specify the current address of the beacon whose address is to be changed, and the new address. *Be careful when using this function. It is intended only for setting beacon addresses before immersion.*
+- **"SET CURRENT DEPTH AS ZERO"** to open the atmospheric pressure calibration dialog box. In the dialog box, specify the address of the beacon. On receiving the command to calibrate the atmospheric pressure, the responder-beacon will take the current pressure readings of its built-in sensor as atmospheric. *Be careful when using this function. It is intended only for setting up beacons before immersion.*
 
 ##### 3.2.1.4. LOG menu item
 The **"LOG"** menu item contains functions for working with the application log files and contains the following subitems:
@@ -318,13 +318,13 @@ The **"CONNECTION"** tab contains the settings of the connection ports. Its appe
 | ![ZHost settings window view](/documentation/zhost_setts_1.png) |
 | :---: |
 | **Figure 8 - Settings window** |
-| _Tab "CONNECTION"_ |
+| _"CONNECTION" tab_ |
 
-The **"ZMA Port"** group is always active and is responsible for the settings of the connection to the base station [Zima-B](Zima_B_Specification_en.md). In commercially produced devices, only the speed of 9600 bit/s is supported. 
+The **"ZMA Port"** group is always active and is responsible for the settings of the connection to the [Zima-B](Zima_B_Specification_en.md) base station. In commercially produced devices, only a baud rate of 9600 bit/s is supported. 
 
 The other groups, **"AUX1 Port"**, **"AUX2 Port"** and **"Output Port"**, become active only if the corresponding checkbox is selected. 
 
-- If the [Zima USBL](Zima_DataBrief_en.md) system is used with a GNSS receiver with an azimuth determination function, only one of the AUX ports must be used, through which the data from this receiver enter the system
+- If the [Zima USBL](Zima_DataBrief_en.md) system is used with a GNSS receiver with an azimuth determination function, use only one of the AUX ports, through which the data from this receiver enter the system
 
 - If the [Zima USBL](Zima_DataBrief_en.md) system is used with a standard GNSS receiver and the direction data are supplied by a magnetic compass, both AUX ports must be used: the GNSS receiver is connected to one of them and the magnetic compass to the other.
 
@@ -332,7 +332,7 @@ If the **"Save AUX input to log"** checkbox is not selected, the data coming fro
 
 If the system operates in absolute coordinates (i.e., it receives data on the geographic location of the base station and its orientation relative to the cardinal directions) and the absolute geographic coordinates of the responder-beacons are calculated, it becomes possible to emulate GNSS **RMC** and **GGA** sentences based on the geographic position of the beacon and transmit them to the output port. 
 
-This can be, for example, a virtual COM port, to the other end of which mapping software (for example, SAS.Planet) can be connected to display the location of the beacon on the map in real time. To enable this function, select the **"Use output port"** checkbox, set the required port settings, and also specify the address of the beacon on the basis of whose coordinates the GNSS data will be emulated. 
+This can be, for example, a virtual COM port, to the other end of which mapping software (for example, SAS.Planet) can be connected to display the location of the beacon on the map in real time. To enable this function, select the **"Use output port"** checkbox, set the required port settings, and also specify the address of the beacon whose coordinates will be used to emulate the GNSS data. 
 
 If the **"Save separately"** checkbox is selected, the data transmitted to the output port will be saved in a separate log.
 
@@ -342,18 +342,18 @@ The **"COMMON"** tab contains the settings of the addresses of the beacons in us
 | ![ZHost settings window view](/documentation/zhost_setts_2.png) |
 | :---: |
 | **Figure 9 - Settings window** |
-| _Tab "COMMON"_ |
+| _"COMMON" tab_ |
 
 The **"Responders in use"** group contains the list of all possible beacon addresses. The system will automatically poll the beacons whose addresses are checked in this list. 
 
 The **"Timings"** group contains the settings:
 - the data obsolescence threshold (in seconds). If a value has not been updated for longer than the specified time interval, the symbols OBS (Obsolete) are displayed in parentheses next to it, indicating to the operator that this particular parameter (for example, the water temperature or the beacon supply voltage) has not been updated for a long time
-- Max distance. This parameter tells the system the maximum distance at which the responder-beacon may be located. This parameter determines how long the base station will wait for a beacon response. If for some reason the station does not receive the response signal of the beacon, it waits for it for a certain time, called the timeout time. It makes sense to set the minimum possible values based on the requirements of the task, in order to limit the idle time of the system while it waits for a missed beacon response.
+- Max distance. This parameter tells the system the maximum distance at which the responder-beacon may be located. This parameter determines how long the base station will wait for a beacon response. If for some reason the station does not receive the response signal of the beacon, it waits for it for a certain time, called the timeout. It is advisable to set the smallest possible value based on the requirements of the task, in order to limit the idle time of the system while it waits for a missed beacon response.
 
 The **"Salinity"** group makes it possible to set the water salinity value (in PSU) either directly or by selecting it from the world ocean salinity database (by opening the salinity selection dialog via the **". . ."** link). It is not recommended to take the salinity from the database for small inland water bodies: rivers, lakes, ponds, etc. In this case, if the exact value is not known, set the salinity to zero (fresh water).
 The salinity value is used by the system for more accurate determination of the depth and of the speed of sound.
 
-The **"Sound speed autocalculation"** checkbox and the corresponding group controlled by it determine where the system takes the speed of sound in water from. If this value is known directly from a measurement, it is worth disabling the automatic calculation function and specifying the value directly. In all other cases the checkbox must be selected. In this case, the system calculates the speed of sound from the pressure, temperature and salinity. As a rule, the calculated value is in good agreement with the actual one.
+The **"Sound speed autocalculation"** checkbox and the corresponding group controlled by it determine where the system takes the speed of sound in water from. If this value is known directly from a measurement, disable the automatic calculation function and specify the value directly. In all other cases the checkbox must be selected. In this case, the system calculates the speed of sound from the pressure, temperature and salinity. As a rule, the calculated value is in good agreement with the actual one.
 
 The **"Misc."** group contains:
 - The **"Rough depth (faster)"** checkbox. If this function is enabled, the beacon transmits the depth with a lower resolution (~40 cm), but the depth is transmitted in a single "request-response" transaction, and the simultaneous navigation function (sending to the beacon the reverse azimuth to the base station and measuring by the beacon the distance to the base station) is unavailable. If the simultaneous navigation function is not required (for example, if the beacon is used in the standalone version) and an accuracy of 40 cm in depth is sufficient, select this checkbox.
@@ -364,7 +364,7 @@ The **"MISC."** tab contains the settings of the orientation of the base station
 | ![ZHost settings window view](/documentation/zhost_setts_3.png) |
 | :---: |
 | **Figure 10 - Settings window** |
-| _Tab "MISC."_ |
+| _"MISC." tab_ |
 
 - The **"&Delta;X"** and **"&Delta;Y"** parameters (in meters) define the location of the base station in a rectangular coordinate system associated with the antenna of the GNSS receiver (according to the figure)
 - The **"&delta;"** parameter (in degrees) sets the rotation of the zero of the base station antenna relative to the zero of the magnetic or GNSS compass
@@ -372,13 +372,13 @@ The **"MISC."** tab contains the settings of the orientation of the base station
 
 ##### 3.2.1.7. AUTOQUERY menu item
 This menu item controls the **"AUTOQUERY"** mode. When this mode is enabled, the software automatically polls the responder-beacons at the highest possible rate according to the **"Responders in use"** list on the **"COMMON"** tab of the application settings window.
-The **"AUTOQUERY"** mode is the main operating mode of the system and must be disabled only when navigation data is not required or when a user command must be sent to one or more beacons (this function is unavailable while the **"AUTOQUERY"** mode is enabled).
+The **"AUTOQUERY"** mode is the main operating mode of the system and should be disabled only when navigation data is not required or when a user command must be sent to one or more beacons (this function is unavailable while the **"AUTOQUERY"** mode is enabled).
 
 ##### 3.2.1.8. AUTOSNAPSHOT menu item
 If this function is enabled, the software automatically saves an image of the main window when the data is updated. The files are located in the **"\SNAPSHOTS\YYYY-DD-MM\"** directory, where **"YYYY-DD-MM"** is the current date. Each file is named according to the current time in the format **"HH-MM-SS"** and is in the Portable Network Graphics (\*.png) format.
 
 #### 3.2.2 PPI panel
-On this panel (see Fig. 7), the position of the base station is displayed in the center in the form of a yellow arrow, which points from bottom to top when working in relative coordinates and changes its orientation when heading data is available. In the latter case, the symbol **"N"** (North) is displayed at the top of the limb.
+On this panel (see Fig. 7), the position of the base station is displayed in the center in the form of a yellow arrow, which points from bottom to top when working in relative coordinates and changes its orientation when heading data is available. In the latter case, the symbol **"N"** (North) is displayed at the top of the dial.
 The **"PPI"** panel displays the position of the beacons relative to the base station. The beacons are displayed as circles with the beacon address inside. When a timeout occurs (the waiting interval for the beacon response is exceeded), the corresponding beacons are displayed with a dashed line.
 
 The current state of the base station is displayed in the upper left corner:
@@ -390,10 +390,10 @@ Additional data received by the system via the AUX ports is displayed in the low
 - **LAT, LON**: geographic latitude and longitude (from **RMC** sentences)
 - **AZM**: azimuth angle (from **HDG** or **HDT** sentences)
 - **SPD**: speed (from **VTG** sentences)
-- **VTG**: course (direction of motion) (from **VTG** sentences)
+- **VTG**: course over ground (from **VTG** sentences)
 
 #### 3.2.3 RESPONDERS panel
-Displays the data of the responder-beacons as a tree structure, where the first-level nodes denote the beacons (**"RESPONDER #XX"**), each of which has a set of nodes denoting various parameters and characteristics of the beacons in the form `Parameter identifier: Value`. Below is a list of possible parameter identifiers and their descriptions.
+This panel displays the data of the responder-beacons as a tree structure, where the first-level nodes denote the beacons (**"RESPONDER #XX"**), each of which has a set of nodes denoting various parameters and characteristics of the beacons in the form `Parameter identifier: Value`. Below is a list of possible parameter identifiers and their descriptions.
 
 | Parameter identifier | Units | Description | Source |
 | :--- | :--- | :--- | :--- |
@@ -413,7 +413,7 @@ Displays the data of the responder-beacons as a tree structure, where the first-
 To the right of each value, the age of the data is displayed - the time that has passed since the parameter value was last updated. The age is displayed only if it exceeds 7 seconds.
 
 #### 3.2.3 Status panel
-Located at the bottom of the window and displays the state of the corresponding devices:
+This panel is located at the bottom of the window and displays the state of the corresponding devices:
 - **ZMA**: base station
 - **GNSS**: geographic position
 - **HDG**: azimuth data source
@@ -422,20 +422,20 @@ Located at the bottom of the window and displays the state of the corresponding 
 
 ## 4. Effective use of the Zima USBL navigation system
 The [Zima USBL](Zima_DataBrief_en.md) system is an underwater acoustic ultra-short baseline system that determines the relative location of the responder-beacons from the propagation time of the acoustic signal in water and the angle of arrival of the response signal of the responder-beacons.  
-In this regard, its effective use is based on compliance with the following conditions:
+Therefore, its effective use requires compliance with the following conditions:
 - **ensuring a stable position of the base station during operation**; This condition is ensured by reliably securing the base station on a vertical pole, taking into account the direction of the zero of the direction-finding antenna. Angular deviations of the vertical axis of the station from the vertical, as well as deviations and oscillations of its zero, adversely affect the accuracy of determining the angle of arrival of the response signal;
 - **ensuring a direct line of sight between the base station and the responder-beacon;** Since the distance to the responder-beacon is determined from the propagation time of the underwater acoustic signal in water, any obstacles in the signal path strongly distort the measured propagation time and, consequently, the determined distance to the responder-beacon; obstacles include both natural ones, associated with the bottom relief and/or the shore profile, and artificial ones - piers, quay walls, deep-draft vessels, bridge supports and other engineering structures;
 - **the working surfaces must be free of various contaminants** (silt, dirt, algae, etc.);
 
-Owing to the specifics of the propagation of sound vibrations in the aquatic environment, the base station should not be located at a depth of less than **2 - 3** meters and should be at least **1.5** meters from the lower part of the keel for small boats and not less than **2 - 3** meters for large boats. 
+Owing to the specifics of the propagation of sound vibrations in the aquatic environment, the base station should not be located at a depth of less than **2–3** meters and should be at least **1.5** meters from the lowest point of the keel for small boats and not less than **2–3** meters for large boats. 
 
 The antenna array of the base station is designed to determine the horizontal angle of arrival of the signal of the responder-beacons, so keep in mind that with such a mutual arrangement of the antenna and the responder-beacon in which they are located practically on the same vertical axis, the accuracy of determining the location of the responder will be minimal. A good mutual arrangement of the antenna and the responder-beacon is one in which the projection of the slant range onto the water surface significantly exceeds its projection onto the vertical axis.
-The working vertical angles of the base station [Zima-B](Zima_B_Specification_en.md) are the angles of +/- 30° from the horizontal plane passing through the antenna array of the base station. This is illustrated in Figure 11:
+The working vertical angles of the [Zima-B](Zima_B_Specification_en.md) base station are the angles of +/- 30° from the horizontal plane passing through the antenna array of the base station. This is illustrated in Figure 11:
 
 | ![Zima-B angular zones](/documentation/zima_dir.png) |
 | :---: |
 | **Figure 11 - Geometric limitations of [Zima-B](Zima_B_Specification_en.md)** |
-| _1 - working zone (+/- 30°), 2 - accuracy reduction zone (30 .. 45°), 3 - shadow zone ( > 45°), 4 - direction-finding antenna. The deviation is indicated from the horizontal plane passing through the center of the antenna array_ |
+| _1 - working zone (+/- 30°), 2 - accuracy reduction zone (30 .. 45°), 3 - shadow zone ( > 45°), 4 - direction-finding antenna. The deviation is measured from the horizontal plane passing through the center of the antenna array_ |
 
 <div style="page-break-after: always;"></div>
 
@@ -444,7 +444,7 @@ The working vertical angles of the base station [Zima-B](Zima_B_Specification_en
 | No. | Symptoms | Possible cause | Remedy |
 | :---: | :--- | :--- | :--- |
 | 1 | Unable to establish a connection between ZHost and Zima-B (error “COM port access denied”) | A peculiarity of the operation of the RS422-USB converter drivers in Win8-10 systems | 1. Disconnect power from the Zima-B station <br/> 2. Unplug the USB connector <br/> 3. Close the ZHost application <br/> 4. Plug in the USB connector <br/> 5. Launch the ZHost application <br/> 6. Click the **CONNECTION** button in ZHost <br/> 7. Apply power to the Zima-B station |
-| 2 | The station emits a request signal, but the beacon does not respond | Hydrological conditions do not allow stable communication to be provided | Check the serviceability of the beacon at a short distance (0.5–10 meters) in line of sight |
+| 2 | The station emits a request signal, but the beacon does not respond | Hydrological conditions prevent stable communication | Check that the beacon works at a short distance (0.5–10 meters) with a direct line of sight |
 |   |   | The power connector on the beacon is not connected | Plug in the connector | 
 |   |   | The battery pack of the beacon is discharged	| Charge or replace the battery pack |
 |   |   | The requested beacon address does not match its actual address | In the ZHost settings, select all available addresses; the station will go through all of them in turn, and thus the beacon address will be determined |
@@ -452,7 +452,7 @@ The working vertical angles of the base station [Zima-B](Zima_B_Specification_en
 | 3 | There is no communication with the Zima-B station; the port is open, but the station does not transmit data | No power reaches the station | Check the power supply and the connecting cables |
 |   |   | The station is faulty | Replace the station |
 | 4 | The determined angle of arrival has a static error | The zero directions of the station and of the compass (or of the longitudinal axis of the vessel) are at an angle to each other - the station is rotated in the clamp | Align the zero direction of the station with the longitudinal axis of the vessel and/or the zero direction of the compass, and prevent accidental rotation of the antenna in the clamp |
-| 5 | The system works, the beacon responds, but the absolute location of the beacon is not calculated (with an external GNSS receiver, compass or GNSS compass connected) | The data on the geographic position and heading of the vessel is not updated | Check that the GNSS receiver, the magnetic/GNSS compass, the connecting cables and the port settings are in working order |
+| 5 | The system works, the beacon responds, but the absolute location of the beacon is not calculated (with an external GNSS receiver, compass or GNSS compass connected) | The data on the geographic position and heading of the vessel is not updated | Check that the GNSS receiver and the magnetic/GNSS compass are working, and check the connecting cables and the port settings |
 
 <div style="page-break-after: always;"></div>
 
