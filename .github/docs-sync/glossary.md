@@ -463,3 +463,40 @@ Section headings follow the standard 16-section layout of GHS/REACH Annex II saf
 | отсутствует | not applicable | Misc/*_MSDS_en.md (3) | Existing is absent |
 | Литий / Фосфат железа | Lithium / Iron phosphate | Misc/*_MSDS_en.md (3) | |
 | Аккумулятор высокотоковый литий-железофосфатный | High-current lithium iron phosphate (LiFePO4) battery | Misc/RedBase_v3_LiFEPO4_msds_en.md | Header cell |
+
+## Added in batch zima-1
+
+| RU | EN | Source EN file | Note |
+|---|---|---|---|
+| штанга; опускная штанга | pole; deployment pole | Zima/Zima2_DataBrief_en.md (+1) | Antenna mounting pole over the side of a vessel; not `rod`/`boom` |
+| точка топопривязки | position reference point | Zima/Zima2_DataBrief_en.md (+1) | |
+| угловое смещение нуля антенны и GNSS-компаса | angular offset between the antenna zero and the GNSS compass | Zima/Zima2_DataBrief_en.md | |
+| Базовая станция пеленгования | direction-finding base station | Zima/Zima2_DataBrief_en.md | |
+| удлинитель UART-RS422 | UART-RS422 extension cable | Zima/Zima2_DataBrief_en.md | |
+| провис (кабеля) | slack | Zima/Zima2_Users_manual_en.md | Not `sag` |
+| струи движетелей | thruster/propeller wash | Zima/Zima2_Users_manual_en.md | |
+| обитаемые подводные аппараты (ОПА) | human-occupied vehicles (HOVs) | Zima/Zima2_Users_manual_en.md | |
+| дайверы и технические водолазы | recreational and technical divers | Zima/Zima2_Users_manual_en.md | |
+| нормобарический корпус | one-atmosphere (normobaric) housing | Zima/Zima2_Users_manual_en.md | |
+| антенна маяка | transducer (of the beacon) | Zima/Zima2_Users_manual_en.md | The direction-finding antenna stays `antenna` |
+| надводный / подводный разъем | topside / underwater connector | Zima/Zima2_Users_manual_en.md | |
+| состыковать / разомкнуть разъем | mate / unmate the connector | Zima/Zima2_Users_manual_en.md | |
+| литьевой шов | molding seam | Zima/Zima2_Users_manual_en.md | |
+| выборка (на кронштейне) | cutout | Zima/Zima2_Users_manual_en.md | |
+| транспортировочные заглушки | transport plugs | Zima/Zima2_Users_manual_en.md | |
+| транспортировочная тара | transport case | Zima/Zima2_Users_manual_en.md | |
+| самостоятельный ремонт | unauthorized repair | Zima/Zima2_Users_manual_en.md | Warranty wording |
+| круговое вероятное отклонение | circular error probable | Zima/Zima2_Users_manual_en.md | RU uses it to define DRMS; translated as written, question raised |
+| угловая поправка | angular correction | Zima/Zima2_Users_manual_en.md | AzimuthSuite field label, not confirmed against the English UI |
+| Взаимодействие с системой | Interacting with the system | Zima/Zima2_Users_manual_en.md | |
+| Ручное задание координат и направления | Manual setting of coordinates and direction | Zima/Zima2_Users_manual_en.md | |
+| (устаревшее) приложение | obsolete application | Zima/Zima2_Users_manual_en.md | AzimuthSuite |
+| РАБОЧИЙ КОНУС (ОТНОСИТЕЛЬНО ГОРИЗОНТАЛИ) | OPERATING CONE (RELATIVE TO THE HORIZONTAL) | Zima/Zima2B_Specification_en.md | Other Zima EN files still say WORKING VERTICAL ANGLES |
+| РАЗВИВАЕМОЕ АКУСТИЧЕСКОЕ ДАВЛЕНИЕ | ACOUSTIC SOURCE LEVEL | Zima/Zima2B_Specification_en.md | RU has no `МАКСИМАЛЬНОЕ` here |
+| ВРЕМЯ АВТОНОМНОЙ РАБОТЫ | BATTERY LIFE | Zima/Zima2B_Specification_en.md | |
+| (КРЕН/ДИФФЕРЕНТ) | (ROLL/PITCH) | Zima/Zima2B_Specification_en.md | `дифферент` = pitch (trim) |
+| МАКСИМАЛЬНЫЙ КОМПЕНСИРУЕМЫЙ ВСТРОЕННЫМ ИНКЛИНОМЕТРОМ НАКЛОН ПРИБОРА ОТНОСИТЕЛЬНО ВЕРТИКАЛИ | MAXIMUM DEVICE TILT RELATIVE TO THE VERTICAL COMPENSATED BY THE BUILT-IN INCLINOMETER | Zima/Zima2B_Specification_en.md | |
+| НОМИНАЛЬНАЯ ТОЧНОСТЬ ИЗМЕРЕНИЯ НАКЛОННОЙ ДАЛЬНОСТИ | NOMINAL SLANT RANGE MEASUREMENT ACCURACY | Zima/Zima2B_Specification_en.md | RU spells `ТОЧНСТЬ` |
+| мсек | ms | Zima/Zima2B_Specification_en.md | SI symbol |
+| Раздел документации по системе | Documentation section for the … system | Zima/Zima2_fast_start_en.md | |
+| Браузерное приложение | Browser-based application | Zima/Zima2_fast_start_en.md | AzimuthWebSuite |
