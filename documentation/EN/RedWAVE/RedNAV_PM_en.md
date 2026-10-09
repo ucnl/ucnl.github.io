@@ -48,7 +48,7 @@ The RedWave underwater acoustic navigation system was developed by UCNL LLC; the
 
 ### 3.2. Procedure for using additional equipment and transport cases
 Additional equipment means any devices and accessories that are not an integral part of the ES instruments, in particular:
-- rigging accessories: anchors, carabiners, anchor ropes, cables, floats, etc.;
+- rigging accessories: anchors, carabiners, anchor ropes, lines, floats, etc.;
 - additional light signaling equipment: retroreflective markers, reflectors, light beacons, lamps, etc.;
 - personal computers (PCs), laptops, tablets and other computing equipment on which the specialized ES software is intended to run;
 - various devices: salinity, temperature and voltage meters;  
@@ -66,9 +66,9 @@ By separate agreement, acceptance tests according to this procedure or according
 
 | No. | Name | Quantity | Note |
 | :--- | :--- | :--- | :--- |
-| 1 | Navigation buoy [RedBase](RedBASE_Specification_en.md) | 4 | . . . |
+| 1 | [RedBase](RedBASE_Specification_en.md) navigation buoy | 4 | . . . |
 | 2 | Charger for [RedBase](RedBASE_Specification_en.md) | 4 | . . . |
-| 3 | Diver's navigation instrument [RedNav](RedNAV_Specification_en.md) | 1 | The number of instruments participating in the tests may be increased by additional agreement with the customer and/or in accordance with the size of the purchased set |
+| 3 | [RedNav](RedNAV_Specification_en.md) diver's navigation instrument | 1 | The number of instruments participating in the tests may be increased by additional agreement with the customer and/or in accordance with the size of the purchased set |
 | 4 | Charger for [RedNav](RedNAV_Specification_en.md) | 1 | Supplied in the set; the number of sets corresponds to the number of [RedNav](RedNAV_Specification_en.md) instruments participating in the tests |
 
 
@@ -79,8 +79,8 @@ This list includes the additional equipment required for testing and may differ 
 | No. | Name | Quantity | Note |
 | :--- | :--- | :--- | :--- |
 | 1 | Anchor | 4 | At least 1.5 kg |
-| 2 | Anchor rope | - | Depending on the conditions of the water body. Breaking force of at least 80 kg. Braided synthetic. Twisted. |
-| 3 | Float | 4 | With a buoyancy exceeding the weight of the anchor rope by at least a factor of 2. Maximum size of no more than 400 mm. |
+| 2 | Anchor rope | - | Depending on the conditions of the water body. Breaking strength of at least 80 kg. Braided synthetic. Twisted. |
+| 3 | Float | 4 | Buoyancy at least 2 times the weight of the anchor rope. Maximum size no more than 400 mm. |
 | 4 | Compass | 1 | Required only when divers take part |
 | 5 | Watercraft | 1 | With a load capacity of at least 3 persons and the ability to be anchored |
 | 6 | PC with Windows 7/8/10 OS and a Bluetooth module | 1 | With the ability to install the [RedNav Host software](https://api.github.com/repos/ucnl/RedNavHost/zipball) on it. |
@@ -90,10 +90,10 @@ The test site for testing according to this test program and procedures must mee
 - fresh or salt water body;
 - sea state no more than 0.5;
 - no currents with a speed of more than 1 m/s;
-- water depth at the site not less than 3 and not more than 40 m (the lower limit is determined by the difficulty of securing the buoys with anchors);
+- water depth at the site not less than 3 and not more than 40 m (the lower limit is determined by the difficulty of anchoring the buoys);
 - line-of-sight conditions must be ensured in accordance with [section 3 of the User's manual](RedWAVE_Users_Manual_en.md#3-effective-deployment-of-a-long-navigation-base);
 
-The test site must have free access to the water so that it is possible to launch the watercraft and to board/disembark people without hindrance, as well as to deploy and recover the long base consisting of four [RedBase](RedBASE_Specification_en.md) buoys.
+The test site must have free access to the water so that the watercraft can be launched, people can board and disembark, and the long base consisting of four [RedBase](RedBASE_Specification_en.md) buoys can be deployed and recovered without hindrance.
 Preference is given to water bodies with a relatively flat bottom composed of sandy and/or silty soils and a depth of about 10–15 m, with the size of the water body not less than 100 x 100 m.
 
 ## 6. Test plan
@@ -120,7 +120,7 @@ The deployment of the long base is described in detail in [section 3 of the User
 #### 6.1.4. Preliminary operability tests
 This stage may be performed without the participation of a diver, and its purpose is to reject obviously inoperable equipment.  
 
-To do this, on the water body within the figure of the long base, with the buoys operating, an arbitrarily selected [RedNav](RedNAV_Specification_en.md) device from the ES is lowered from the watercraft on a rope to a depth of not less than 1.5 m from the surface and not less than 1.5 m from the bottom of the water body.  
+To do this, with the buoys operating, an arbitrarily selected [RedNav](RedNAV_Specification_en.md) device from the ES is lowered on a rope from the watercraft within the figure of the long base so that it is at least 1.5 m below the surface and at least 1.5 m above the bottom of the water body.  
 
 The device remains submerged for at least 10 and at most 30 minutes; during this time the engine of the watercraft (if any) must be switched off and the position of the watercraft must be fixed with an anchor.  
 
@@ -141,11 +141,11 @@ The presence of the downloaded data confirms the operability of both the instrum
 * The [RedNav](RedNAV_Specification_en.md) device under test is synchronized with the PC using the specialized software included in the ES.  
 * All saved data are erased on the [RedNav](RedNAV_Specification_en.md) device under test: the track, waypoints and route points.
 * A previously selected point is loaded into the device under test (see the [User's manual](https://github.com/ucnl/ucnl.github.io/blob/master/documentation/EN/RedWAVE/RedWAVE_Users_Manual_en.md#23-rednav---divers-navigation-receiver)); the point must be located within the figure of the long base.
-By agreement, the point may be marked with a small buoy on an anchor. It is also necessary to take into account the presence of a significant discrepancy when position referencing in different coordinate systems is used. The preferable option is when the small buoy is set from the watercraft and its position is recorded using a portable GPS/GLONASS navigator.
+By agreement, the point may be marked with an anchored marker buoy. Keep in mind that there is a significant discrepancy between positions referenced to different coordinate systems. Preferably, the marker buoy is set from the watercraft and its position is recorded with a portable GPS/GLONASS navigator.
 * The [RedNav](RedNAV_Specification_en.md) instrument is handed over to the diver taking part in the tests, together with a compass (attached to the diver or to the diving console). The starting point of the dive is chosen arbitrarily, but not farther than 20 m from the figure of the navigation base.
 * After waiting for the instrument to receive navigation data, the diver selects waypoint No. 1 as the target (see the [User's manual](https://github.com/ucnl/ucnl.github.io/blob/master/documentation/EN/RedWAVE/RedWAVE_Users_Manual_en.md#23-rednav---divers-navigation-receiver)) and, following the instrument's readings of azimuth and distance to the target, tries to reach the specified point.
-* If the instrument is unable to obtain navigation data for more than 10 minutes, this is considered a failure to pass the tests.
-* While moving, the diver must mark 1–2 points in places with visually distinct objects and/or may leave them on the bottom on their own.
+* If the instrument is unable to obtain navigation data for more than 10 minutes, the instrument is considered to have failed the tests.
+* While moving, the diver must mark 1–2 points at places with clearly visually distinguishable objects and/or may personally place such objects on the bottom.
 * Next, upon reaching a position where the distance to the target becomes no more than 2–3 m, the diver must signal that the target has been reached and confirm visual and/or tactile contact with the target.
 * Next, the diver ascends to the surface.
 * The instrument is synchronized with the PC, and the track is downloaded for subsequent analysis (loading the track into Google Earth software or similar).
@@ -155,17 +155,17 @@ By agreement, the point may be marked with a small buoy on an anchor. It is also
 
 #### 6.1.6. Procedure 2 "Reaching a saved point"
 * The device is synchronized with the PC and its track is cleared; the saved points are not deleted.
-* The device and the compass are handed over to a second diver, and after diving, the second diver tries to reach one of the points saved by the first diver.
-* The procedure is generally similar to procedure 1, with the only difference that the target is a point saved by the first diver.
+* The device and the compass are handed over to a second diver, and after descending, the second diver tries to reach one of the points saved by the first diver.
+* The procedure is generally similar to procedure 1, the only difference being that the target is a point saved by the first diver.
 * The tests are considered passed if the second diver can confidently confirm that the target has been reached.
-* After the second diver has ascended and the track has been downloaded, the track is analyzed for instances of the second diver reaching the targets designated by the first diver.
+* After the second diver has ascended and the track has been downloaded, the track is analyzed to determine whether the second diver reached the targets designated by the first diver.
 
 #### 6.1.7. Procedure 3 "Reaching a predefined point as a group"
 * This procedure describes a test conducted by at least two divers simultaneously.
-* It generally fully corresponds to procedure 1, with the only difference that all the divers have different dive points.
+* It corresponds to procedure 1 in full, the only difference being that all the divers have different dive entry points.
 
 #### 6.1.8. Completion of the tests
-Completion of the tests consists of removing the long navigation base and desalinating the equipment if the tests were conducted in a salt water body. Equipment maintenance is described in more detail in [section 3 of the User's manual](https://github.com/ucnl/ucnl.github.io/blob/master/documentation/EN/RedWAVE/RedWAVE_Users_Manual_en.md#3-effective-deployment-of-a-long-navigation-base).
+Completion of the tests consists of recovering the long navigation base and desalinating the equipment if the tests were conducted in a salt water body. Equipment maintenance is described in more detail in [section 3 of the User's manual](https://github.com/ucnl/ucnl.github.io/blob/master/documentation/EN/RedWAVE/RedWAVE_Users_Manual_en.md#3-effective-deployment-of-a-long-navigation-base).
 
 
 ### 6.2. Reliability tests
@@ -190,7 +190,7 @@ This stage consists of charging the built-in batteries of the equipment taking p
 #### 6.2.5. Procedure 6 "RedNav instrument battery life check"
 * A fully charged, arbitrarily selected device (or the entire ES) is switched on and left switched on at an ambient temperature of 20 °C (fresh water or air) for 8 hours.
 * After the specified time has elapsed, the operability of the instrument(s) is checked.
-* Samples are considered operable if their battery charge allows them to be switched on and they can remain switched on for at least 5 minutes.
+* Units are considered operable if their battery charge allows them to be switched on and they can remain switched on for at least 5 minutes.
 * **Instruments whose operability is confirmed are considered to have passed the tests successfully.**
 
 
