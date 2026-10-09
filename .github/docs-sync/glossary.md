@@ -468,7 +468,7 @@ Section headings follow the standard 16-section layout of GHS/REACH Annex II saf
 
 | RU | EN | Source EN file | Note |
 |---|---|---|---|
-| Комплект ЗИП | Spare parts kit | RedPhone/RedPhone_Users_Manual_en.md | Old EN "SPTA kit" |
+| Комплект ЗИП | Spare parts and tools kit | RedPhone/RedPhone_Users_Manual_en.md | Old EN "SPTA kit" |
 | кредл; зарядный кредл (шасси) | cradle; charging cradle (chassis) | RedPhone/RedPhone_Users_Manual_en.md | |
 | наживить (гайки, винты) | hand-thread | RedPhone/RedPhone_Users_Manual_en.md | Not "tighten" |
 | Выбор канала связи - бит N | Communication channel selection - bit N | RedPhone/RedPhone_Users_Manual_en.md | DIP-switch table |
