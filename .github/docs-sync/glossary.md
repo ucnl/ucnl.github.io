@@ -52,13 +52,13 @@ Column `Source EN file`: the EN document(s) where the variant occurs (paths rela
 
 ## 2. Do not translate
 
-Keep verbatim, including letter case as written in the RU sentence at hand (the RU text itself mixes `uWAVE`/`uWave`, `RedWAVE`/`RedWave`, `RedBASE`/`RedBase`; keep what RU has, but in breadcrumbs, titles and header cells use the spelling of the product family: `uWave`, `RedWAVE`, `RedBASE`, `RedNODE`, `RedNAV`, `RedLINE`).
+Keep verbatim. **Maintainer decision (2026-10-09): product names are always written in mixed case in EN text** — `uWave`, `uWave Max`, `uWave Max OEM`, `uWave USBL Modem`, `RedWave`, `RedBase`, `RedNode`, `RedNav`, `RedLine`, `Zima`, `Zima-B` — never `uWAVE`, `RedWAVE`, `RedBASE`, `RedNODE`, `RedNAV`, `RedLINE`, `ZIMA`, even where RU writes them in capitals (running text, link texts, breadcrumbs, titles, header cells). Acronym names stay as they are (`RWLT`, `WAYU`, `A3S`, `F4105`, `RedGTR`, `GIB`). File names, directory names, link targets, URLs, image paths, code blocks and identifiers (`uWAVE_ALib`, `uWAVELib`, `RedBASE_Config`) are not changed. Labels that RU writes entirely in ALL CAPS stay ALL CAPS. `docsync.py check` reports violations as `product name case`.
 
-**Systems and devices:** Zima, Zima USBL, Zima-B, Zima-R, Zima-R 1000, Zima2, Zima2 USBL, Zima2 LBL, Zima2-B, Zima2-R, Zima2-uR, Zima2-L, Zima2-LX, Zima2-SL, Zima2-B35, Zima2-R35, Zima2-BK, Zima2-RK, Zima2K, Zima2-35, Zima2-OEM35, Bat&Link Box, uWave (uWAVE), uWave Max, uWave Max OEM, uWave USBL Modem, uSwitch, RedLINE (RedLine), RedGTR, RedWAVE, RedBASE, RedNODE, RedNAV, Aquatab S, RedPhone, RedPhone-OS, RedPhone-DX, RedPhone-D, RedPhone-MOS, RedPhone-MDX, RedPhone RF Dongle, Phone-T, Phone-S, RWLT, RWLT Pinger, RWLT Pinger-K, RWLT GIB, uNav RWLT Radio dongle, uNav WAYU Radio dongle, WAYU, WAYU Pinger, WAYU GIB, ACubes A<sup>3</sup>S (A3S), A³R (ACubes AR), A³T (ACubes AT), F4105, F4105-SU, F4105-BU, F4105-AU, uPress, uSpeak, uWire, uClamp, uClamp-S, uBat, Crimea-300, Crimea-300 OS.
+**Systems and devices:** Zima, Zima USBL, Zima-B, Zima-R, Zima-R 1000, Zima2, Zima2 USBL, Zima2 LBL, Zima2-B, Zima2-R, Zima2-uR, Zima2-L, Zima2-LX, Zima2-SL, Zima2-B35, Zima2-R35, Zima2-BK, Zima2-RK, Zima2K, Zima2-35, Zima2-OEM35, Bat&Link Box, uWave, uWave Max, uWave Max OEM, uWave USBL Modem, uSwitch, RedLine, RedGTR, RedWave, RedBase, RedNode, RedNav, Aquatab S, RedPhone, RedPhone-OS, RedPhone-DX, RedPhone-D, RedPhone-MOS, RedPhone-MDX, RedPhone RF Dongle, Phone-T, Phone-S, RWLT, RWLT Pinger, RWLT Pinger-K, RWLT GIB, uNav RWLT Radio dongle, uNav WAYU Radio dongle, WAYU, WAYU Pinger, WAYU GIB, ACubes A<sup>3</sup>S (A3S), A³R (ACubes AR), A³T (ACubes AT), F4105, F4105-SU, F4105-BU, F4105-AU, uPress, uSpeak, uWire, uClamp, uClamp-S, uBat, Crimea-300, Crimea-300 OS.
 
 **Model codes and part numbers:** SB-23-64-LI, SB-24-48-LF, RT-1.332820-1, RT-1.332820-2, RT-2.332820-1, RT-2.332820-2, RT-1.524525-1, RT-1.524525-1-FF, RT-1.524525-2, R-1.d3505-1, PMVR.134097.002, PMVR.134098.002, patent numbers (`RU2659299C1`), connector designators (`XS1`, `XP2`), and every other alphanumeric code exactly as in RU.
 
-**Software:** AzimuthSuite, AzimuthConsole, AzimuthConsole v1.x, AzimuthWebSuite, ZHost, uGPSHub (repository and release `UGPSHub`), RedBASE_Config, RedNAV Host (repository `RedNavHost`), uNav, uNav application, uTrackDiver, uWaver, uBear, uWaveCommander, uWAVE_ALib, uWAVE_Arduino, uConsole, uGNSS-Monitor, RedPhoneDXConfig, RedPhoneDXConfig-Web, RedLINE_Host, WAYU (host application).
+**Software:** AzimuthSuite, AzimuthConsole, AzimuthConsole v1.x, AzimuthWebSuite, ZHost, uGPSHub (repository and release `UGPSHub`), RedBASE_Config, RedNav Host (repository `RedNavHost`), uNav, uNav application, uTrackDiver, uWaver, uBear, uWaveCommander, uWAVE_ALib, uWAVE_Arduino, uConsole, uGNSS-Monitor, RedPhoneDXConfig, RedPhoneDXConfig-Web, RedLINE_Host, WAYU (host application).
 
 **Protocols and identifiers:** NMEA 0183 / NMEA0183 (as written in RU); proprietary sentence prefixes `$PAZM`, `$PZMA`, `$PUWV`, `$PTNT`, `$PRPH`, `$PUNV`, `$PRWL`, `$PNTN`, `$PAPL`, `$PUNA`; standard sentences (`GGA`, `RMC`, `MTW`, `HDT`, `HDG`, …); command systems `AZM`, `ZMA`, `UWV`, `UNV`, `RPH`, `TNT`; every command mnemonic (`IC_D2H_ACK`, `IC_H2D_SETTINGS_WRITE`, …), field name, enum value, error code, hex value and code block content; firmware version strings (`uWave [JULY] 1.34`).
 
@@ -128,7 +128,7 @@ Keep verbatim, including letter case as written in the RU sentence at hand (the 
 | семейство устройств гидроакустической связи; семейство устройств гидроакустической цифровой связи | family of underwater acoustic (digital) communication devices | uWAVE/uWAVE_Family_en.md | CONFLICT: **family of underwater acoustic communication devices** / underwater communication system / underwater acoustic modem |
 | Гидроакустический модем кодовой связи; модем кодовой гидроакустической связи | underwater acoustic code communication modem | RedGTR/RedGTR_Specifications_en.md (+1) | Variant code communication underwater acoustic modem |
 | гидроакустический модем начального уровня | entry-level underwater acoustic modem | — | uSwitch |
-| Буй-ретранслятор; Навигационный гидроакустический буй | GNSS-equipped sonobuoy | RedWAVE/RedBASE_Specification_en.md | RedBASE; established EN product description |
+| Буй-ретранслятор; Навигационный гидроакустический буй | GNSS-equipped sonobuoy | RedWAVE/RedBASE_Specification_en.md | RedBase; established EN product description |
 | Навигационный буй | Navigation buoy | WAYU/WAYU_GIB_Specification_en.md (+1) | GIB |
 | Навигационный приемник для ТНПА/АНПА; Универсальный навигационный приемник | navigation receiver for ROVs and AUVs; universal navigation receiver | RedWAVE/RedNODE_Specification_en.md | RedNODE |
 | Навигационный приемник для водолазов; Водолазный навигационный приемник | diver's navigation receiver | RedWAVE/RedNAV_Specification_en.md | RedNAV |
@@ -463,6 +463,432 @@ Section headings follow the standard 16-section layout of GHS/REACH Annex II saf
 | отсутствует | not applicable | Misc/*_MSDS_en.md (3) | Existing is absent |
 | Литий / Фосфат железа | Lithium / Iron phosphate | Misc/*_MSDS_en.md (3) | |
 | Аккумулятор высокотоковый литий-железофосфатный | High-current lithium iron phosphate (LiFePO4) battery | Misc/RedBase_v3_LiFEPO4_msds_en.md | Header cell |
+
+## Added in batch zima-1
+
+| RU | EN | Source EN file | Note |
+|---|---|---|---|
+| штанга; опускная штанга | pole; deployment pole | Zima/Zima2_DataBrief_en.md (+1) | Antenna mounting pole over the side of a vessel; not `rod`/`boom` |
+| точка топопривязки | position reference point | Zima/Zima2_DataBrief_en.md (+1) | |
+| угловое смещение нуля антенны и GNSS-компаса | angular offset between the antenna zero and the GNSS compass | Zima/Zima2_DataBrief_en.md | |
+| Базовая станция пеленгования | direction-finding base station | Zima/Zima2_DataBrief_en.md | |
+| удлинитель UART-RS422 | UART-RS422 extension cable | Zima/Zima2_DataBrief_en.md | |
+| провис (кабеля) | slack | Zima/Zima2_Users_manual_en.md | Not `sag` |
+| струи движетелей | thruster/propeller wash | Zima/Zima2_Users_manual_en.md | |
+| обитаемые подводные аппараты (ОПА) | human-occupied vehicles (HOVs) | Zima/Zima2_Users_manual_en.md | |
+| дайверы и технические водолазы | recreational and technical divers | Zima/Zima2_Users_manual_en.md | |
+| нормобарический корпус | one-atmosphere (normobaric) housing | Zima/Zima2_Users_manual_en.md | |
+| антенна маяка | transducer (of the beacon) | Zima/Zima2_Users_manual_en.md | The direction-finding antenna stays `antenna` |
+| надводный / подводный разъем | topside / underwater connector | Zima/Zima2_Users_manual_en.md | |
+| состыковать / разомкнуть разъем | mate / unmate the connector | Zima/Zima2_Users_manual_en.md | |
+| литьевой шов | molding seam | Zima/Zima2_Users_manual_en.md | |
+| выборка (на кронштейне) | cutout | Zima/Zima2_Users_manual_en.md | |
+| транспортировочные заглушки | transport plugs | Zima/Zima2_Users_manual_en.md | |
+| транспортировочная тара | transport case | Zima/Zima2_Users_manual_en.md | |
+| самостоятельный ремонт | unauthorized repair | Zima/Zima2_Users_manual_en.md | Warranty wording |
+| круговое вероятное отклонение | circular error probable | Zima/Zima2_Users_manual_en.md | RU uses it to define DRMS; translated as written, question raised |
+| угловая поправка | angular correction | Zima/Zima2_Users_manual_en.md | AzimuthSuite field label, not confirmed against the English UI |
+| Взаимодействие с системой | Interacting with the system | Zima/Zima2_Users_manual_en.md | |
+| Ручное задание координат и направления | Manual setting of coordinates and direction | Zima/Zima2_Users_manual_en.md | |
+| (устаревшее) приложение | obsolete application | Zima/Zima2_Users_manual_en.md | AzimuthSuite |
+| РАБОЧИЙ КОНУС (ОТНОСИТЕЛЬНО ГОРИЗОНТАЛИ) | OPERATING CONE (RELATIVE TO THE HORIZONTAL) | Zima/Zima2B_Specification_en.md | Other Zima EN files still say WORKING VERTICAL ANGLES |
+| РАЗВИВАЕМОЕ АКУСТИЧЕСКОЕ ДАВЛЕНИЕ | ACOUSTIC SOURCE LEVEL | Zima/Zima2B_Specification_en.md | RU has no `МАКСИМАЛЬНОЕ` here |
+| ВРЕМЯ АВТОНОМНОЙ РАБОТЫ | BATTERY LIFE | Zima/Zima2B_Specification_en.md | |
+| (КРЕН/ДИФФЕРЕНТ) | (ROLL/PITCH) | Zima/Zima2B_Specification_en.md | `дифферент` = pitch (trim) |
+| МАКСИМАЛЬНЫЙ КОМПЕНСИРУЕМЫЙ ВСТРОЕННЫМ ИНКЛИНОМЕТРОМ НАКЛОН ПРИБОРА ОТНОСИТЕЛЬНО ВЕРТИКАЛИ | MAXIMUM DEVICE TILT RELATIVE TO THE VERTICAL COMPENSATED BY THE BUILT-IN INCLINOMETER | Zima/Zima2B_Specification_en.md | |
+| НОМИНАЛЬНАЯ ТОЧНОСТЬ ИЗМЕРЕНИЯ НАКЛОННОЙ ДАЛЬНОСТИ | NOMINAL SLANT RANGE MEASUREMENT ACCURACY | Zima/Zima2B_Specification_en.md | RU spells `ТОЧНСТЬ` |
+| мсек | ms | Zima/Zima2B_Specification_en.md | SI symbol |
+| Раздел документации по системе | Documentation section for the … system | Zima/Zima2_fast_start_en.md | |
+| Браузерное приложение | Browser-based application | Zima/Zima2_fast_start_en.md | AzimuthWebSuite |
+
+## Added in batch zima-2
+
+| RU | EN | Source EN file | Note |
+|---|---|---|---|
+| ДОПОЛНИТЕЛЬНО (heading) | ADDITIONAL INFORMATION | Zima/Zima2R_Specification_en.md (+2) | Same as `ДОПОЛНИТЕЛЬНАЯ ИНФОРМАЦИЯ` |
+| ПЕРИОД ОПРОСА, сек / ВРЕМЯ РАБОТЫ, ч / ПРИМЕЧАНИЕ | POLLING PERIOD, s / OPERATING TIME, h / NOTE | Zima/Zima2R_Specification_en.md (+2) | Battery life tables |
+| Без опроса, в режиме приема / Минимально возможный период опроса | Without polling, in receiving mode / Shortest possible polling period | Zima/Zima2R_Specification_en.md (+2) | |
+| опрос / опрашивать (маяки-ответчики) | polling / poll; interrogation / interrogate | Zima/Zima2R_Specification_en.md, Zima/Zima2_LBL_DataBrief_en.md | `polling` for USBL polling periods and cycles; `interrogation` for the LBL transceiver interrogating the navigation base. Both are standard |
+| общий (широковещательный) запрос / последовательный опрос | common (broadcast) request / sequential interrogation | Zima/Zima2_LBL_DataBrief_en.md | Zima2-L vs Zima2-LX modes |
+| U<sub>пит.</sub> | U<sub>supply</sub> | Zima/Zima2R_Specification_en.md (+3) | Wire assignment tables |
+| Экран (жила кабеля) | Shield | Zima/Zima2R_Specification_en.md (+3) | |
+| до 16 изолирующих адресов | up to 16 isolating addresses | Zima/Zima2R_Specification_en.md (+3) | Literal; meaning queried with the maintainer |
+| навигационная база | navigation base | Zima/Zima2L_Specification_en.md (+1) | LBL |
+| опорные маяки-ответчики / опорные точки | reference responder-beacons / reference points | Zima/Zima2_LBL_DataBrief_en.md (+1) | |
+| НОМИНАЛЬНАЯ ТОЧНОСТЬ ОПРЕДЕЛЕНИЯ МЕСТОПОЛОЖЕНИЯ (СКО) | NOMINAL POSITIONING ACCURACY (RMS) | Zima/Zima2L_Specification_en.md | `СКО` → RMS |
+| МАКСИМАЛЬНАЯ ЧАСТОТА ОБНОВЛЕНИЯ МЕСТОПОЛОЖЕНИЯ | MAXIMUM POSITION UPDATE RATE | Zima/Zima2L_Specification_en.md | |
+| натурный (статический) эксперимент | full-scale (static) experiment | Zima/Zima2L_Specification_en.md | |
+| РАЗЪЕМЫ | CONNECTORS | Zima/Zima2RK_Specification_en.md | `(Питание и данные)` → `(Power and data)`, `(Антенна)` → `(Transducer)` |
+| Рабочая глубина до … / Глубина погружения до … | Operating depth up to … / Immersion depth up to … | Zima/Zima2RK_Specification_en.md, Zima/Zima2R35_Specification_en.md | Key features |
+| РАЗРЕШЕНИЕ ПО ГЛУБИНЕ МАЯКОВ-ОТВЕТЧИКОВ | DEPTH RESOLUTION OF RESPONDER-BEACONS | Zima/Zima2B35_Specification_en.md | |
+| мембрана (датчика давления) | diaphragm | Zima/Zima2R35_Specification_en.md | Consistent with the Zima2 user's manual |
+| Самый маленький маяк-ответчик в мире | The world's smallest responder-beacon | Zima/Zima2uR_Specification_en.md | |
+| миниатюрная версия | miniature version | Zima/Zima2uR_Specification_en.md | |
+| Варианты построения системы | System configuration options | Zima/Zima2_LBL_DataBrief_en.md | |
+| Сравнение режимов / Схема опроса / Расчет положения / Выход | Comparison of modes / Interrogation scheme / Position calculation / Output | Zima/Zima2_LBL_DataBrief_en.md | |
+| энергетическая дальность акустической связи | acoustic communication range determined by the link budget | Zima/Zima2_LBL_DataBrief_en.md | |
+| единая аппаратная платформа | single hardware platform | Zima/Zima2_LBL_DataBrief_en.md | |
+
+## Added in batch zima-3
+
+| RU | EN | Source EN file | Note |
+|---|---|---|---|
+| Идентификаторы адресных запросов | Addressed request identifiers | Zima/Zima2_Protocol_Specification_en.md | The section 7 row "адресных … команд" covers a different phrase; RU table entries are `CDS_REQ_*` |
+| управляющая система (Host) | control system (Host) | Zima/Zima2_Protocol_Specification_en.md | Prefixes: D2H = Device to Host, H2D = Host to Device |
+| LBL-решатель | LBL solver | Zima/Zima2_Protocol_Specification_en.md | |
+| пользовательский параметр | user parameter | Zima/Zima2_Protocol_Specification_en.md | H2D_CREQ / H2D_CSET |
+| сглаживающий фильтр | smoothing filter | Zima/Zima2_Protocol_Specification_en.md | |
+| датчик глубины | depth sensor | Zima/Zima2_Protocol_Specification_en.md | |
+| телеуправление | remote control | Zima/Zima2_Protocol_Specification_en.md (+1) | |
+| интервал ожидания ответа маяка-ответчика | responder-beacon response waiting interval | Zima/Zima2_Protocol_Specification_en.md | Timeout |
+| Элемент / Дескриптор | Element / Descriptor | Zima/Zima2_Protocol_Specification_en.md | NMEA sentence structure table |
+| См. Таблица 3.x | See Table 3.x | Zima/Zima2_Protocol_Specification_en.md | |
+| вещественное значение | real (floating-point) value | Zima/Zima2_Protocol_Specification_en.md | |
+| Дата релиза / Устройство / Истории версий по устройствам | Release date / Device / Version histories by device | Zima/Zima2_version_history_en.md | |
+| мелкие доработки | minor improvements | Zima/Zima2_version_history_en.md | |
+| авторасчет скорости звука | automatic speed of sound calculation | Zima/Zima2_version_history_en.md | |
+| уровень солености | salinity level | Zima/Zima2_technical_passport_en.md (+2) | |
+| энергетически сопрягаются с носителем | are power-interfaced with the carrier | Zima/Zima2_technical_passport_en.md (+2) | |
+| Моноблочные устройства | monoblock devices | Zima/Zima2_technical_passport_en.md (+2) | |
+| Поставщик за свой счет устраняет | the Supplier shall eliminate … at its own expense | Zima/Zima2_technical_passport_en.md (+2) | Contractual `shall` |
+| за счет сил и средств Заказчика | using the Customer's own resources | Zima/Zima2_technical_passport_en.md (+2) | |
+| Гарантийные обязательства не распространяются на … | The warranty obligations do not apply to … | Zima/Zima2_technical_passport_en.md (+2) | |
+| Не допускается хранение в неопресненном и влажном виде | Storage of the devices without rinsing in fresh water or while damp is not allowed | Zima/Zima2_technical_passport_en.md (+2) | |
+| (опция) | (optional) | Zima/Zima2-OEM35_technical_passport_en.md | |
+| Бар | bar | Zima/Zima2_technical_passport_en.md (+2) | Lowercase unit symbol |
+| метров водного (водяного) столба | meters of water column | Zima/Zima2_technical_passport_en.md (+2) | |
+| сборка печатных плат | printed circuit board assembly | Zima/Zima2-OEM35_technical_passport_en.md | |
+| полимерная самоклеящаяся бирка | polymer self-adhesive tag | Zima/Zima2-OEM35_technical_passport_en.md | |
+| Версия ПО (в паспорте) | Firmware version | Zima/Zima2_technical_passport_en.md (+2) | Device firmware, consistent with the version history |
+
+## Added in batch zima-4
+
+| RU | EN | Source EN file | Note |
+|---|---|---|---|
+| опорный маяк | reference beacon | Zima/AzimuthConsole_manual_en.md | `RBADD`/`RBLST`; see also "опорные маяки-ответчики" |
+| Режим по опорным маякам | Reference beacon mode | Zima/AzimuthConsole_manual_en.md | `AMODE,mode=beacon_referenced` |
+| искомые (не опорные) маяки | target (non-reference) beacons | Zima/AzimuthConsole_manual_en.md | |
+| Запрос маяков | Beacon interrogation | Zima/AzimuthConsole_manual_en.md | Command group `Interrogation` in AzimuthConsole |
+| поворотное устройство | rotator | Zima/AzimuthConsole_manual_en.md | Radant rotator (RDT port) |
+| калибровка на поворотном устройстве | rotator calibration | Zima/AzimuthConsole_manual_en.md | `SCAL`; angular calibration = `ACAL` |
+| возраст / давность данных | age of the data | Zima/AzimuthConsole_manual_en.md | `age` fields |
+| угол места | elevation angle | Zima/AzimuthConsole_manual_en.md | `Elevation_deg` |
+| Курс движения | Course (direction of motion) | Zima/AzimuthConsole_manual_en.md | `course_deg`; heading = `heading_deg` |
+| Азимутальный угол | Azimuth angle | Zima/AzimuthConsole_manual_en.md | |
+| Наименование параметра | Parameter name | Zima/AzimuthConsole_manual_en.md | Output data tables |
+| Диапазон значений | Value range | Zima/AzimuthConsole_manual_en.md | |
+| Встроенный сенсор | Built-in sensor | Zima/AzimuthConsole_manual_en.md | |
+| Внешний источник | External source | Zima/AzimuthConsole_manual_en.md | |
+| Расчетное значение | Calculated value | Zima/AzimuthConsole_manual_en.md | |
+| Заданное пользователем | Set by the user | Zima/AzimuthConsole_manual_en.md | |
+| веб-интерфейс | web interface | Zima/AzimuthConsole_manual_en.md | Lowercase in running text |
+| инициализирующий скрипт | initialization script | Zima/AzimuthConsole_manual_en.md | `init.cmd` |
+| DH-фильтр | DH filter | Zima/AzimuthConsole_manual_en.md | |
+| мБар | mbar | Zima/AzimuthConsole_manual_en.md | Unit column; identifiers such as `stPressure_mBar` unchanged |
+| Запуск от имени администратора | Run as administrator | Zima/AzimuthConsole_manual_en.md | Real Windows UI string |
+| UI labels of AzimuthConsole | as in `src/wwwroot/i18n.js` (`en:` block) | Zima/AzimuthConsole_manual_en.md | e.g. Zoom In, Auto Scale, Interrogate/Pause, Apply & Restart, Save as default settings |
+
+## Added in batch zima-5
+
+| RU | EN | Source EN file | Note |
+|---|---|---|---|
+| коммутационный хаб | switching hub | Zima/Bat_n_link_box_Specification_en.md (+1) | Bat&Link Box |
+| Выключатель питания | Power switch | Zima/Bat_n_link_box_Users_manual_en.md | Front panel legend |
+| Индикатор заряда / Индикатор питания | Charge indicator / Power indicator | Zima/Bat_n_link_box_Users_manual_en.md | |
+| сетевой адаптер (зарядное устройство) | mains adapter (charger) | Zima/Bat_n_link_box_Users_manual_en.md | |
+| горит постоянно / мигает | on continuously / blinking | Zima/Bat_n_link_box_Users_manual_en.md | Indicator states |
+| Ударопрочное исполнение | Impact-resistant design | Zima/Bat_n_link_box_Specification_en.md | Also "ударопрочный кейс" = impact-resistant case |
+| РАЗЪЕМЫ И ИНТЕРФЕЙСЫ | CONNECTORS AND INTERFACES | Zima/Bat_n_link_box_Specification_en.md | |
+| РАЗЪЕМ ЗАРЯДКИ | CHARGING CONNECTOR | Zima/Bat_n_link_box_Specification_en.md | |
+| MSDS ВСТРОЕННОГО ИСТОЧНИКА ПИТАНИЯ | MSDS OF THE BUILT-IN POWER SUPPLY | Zima/Bat_n_link_box_Specification_en.md | |
+| ЭЛЕКТРОННАЯ ВЕРСИЯ ЭТОГО ДОКУМЕНТА | ELECTRONIC VERSION OF THIS DOCUMENT | Zima/Bat_n_link_box_Specification_en.md | Also in RedBASE, RWLT GIB, WAYU GIB |
+| технология одновременной навигации | simultaneous navigation technology | Zima/Zima_B_Specification_en.md (+2) | Patent RU156897U1 |
+| информационно сопрягается (маяк с носителем) | data-interfaced (beacon with the carrier) | Zima/Zima_DataBrief_en.md | "энергетически и информационно" = for both power and data |
+| НОМИНАЛЬНАЯ ТОЧНОСТЬ ОПРЕДЕЛЕНИЯ ГОРИЗОНТАЛЬНОГО УГЛА | NOMINAL HORIZONTAL ANGLE DETERMINATION ACCURACY | Zima/Zima_R_Specification_en.md (+1) | Without "ПРИХОДА СИГНАЛА" |
+| НОМИНАЛЬНАЯ ТОЧНОСТЬ ОПРЕДЕЛЕНИЯ ДИСТАНЦИИ | NOMINAL DISTANCE DETERMINATION ACCURACY | Zima/Zima_R_Specification_en.md (+1) | |
+| ИСПОЛНЕНИЕ ДО 350 М | VERSION UP TO 350 m | Zima/Zima2-35_technical_passport_en.md | Passport title |
+| специализированное ПО | specialized software | Zima/Zima_GNSS_requirements_en.md | |
+| стороны света | cardinal directions | Zima/Zima_GNSS_requirements_en.md | |
+| частота обновления | update rate | Zima/Zima_GNSS_requirements_en.md | |
+| Требования по совместимости для систем определения курса и положения | Compatibility requirements for heading and position determination systems | Zima/Zima_GNSS_requirements_en.md (+1) | Breadcrumb: "Compatibility information sheet for positioning and heading systems" |
+
+## Added in batch zima-6
+
+| RU | EN | Source EN file | Note |
+|---|---|---|---|
+| Пультовое ПО ZHost | ZHost host software | Zima/Zima_Users_manual_en.md | First-generation Zima |
+| UI labels of ZHost | as in `ZHost/MainForm.resx` and `ZHost/CustomUI/SettingsEditor.resx` (neutral = English) | Zima/Zima_Users_manual_en.md | e.g. CONNECTION, RESPONDER, AUTOQUERY, AUTOSNAPSHOT, PPI, SET DEFAULTS, Responders in use |
+| Панель статуса | Status panel | Zima/Zima_Users_manual_en.md | |
+| лимб (индикатора) | dial | Zima/Zima_Users_manual_en.md | PPI panel |
+| курсовой угол | relative bearing | Zima/Zima_Users_manual_en.md | |
+| опреснение | desalination (soaking and rinsing in fresh water) | Zima/Zima_Users_manual_en.md | |
+| ЭЛЕКТРИЧЕСКАЯ ЕМКОСТЬ (А·ч) | CAPACITY | Zima/Zima_Users_manual_en.md | W·h → ENERGY CAPACITY; transducers → CAPACITANCE |
+| КОЛИЧЕСТВО ЭЛЕМЕНТОВ В СБОРКЕ | NUMBER OF CELLS IN THE PACK | Zima/Zima_Users_manual_en.md | |
+| Симптомы / Возможная причина / Устранение | Symptoms / Possible cause / Remedy | Zima/Zima_Users_manual_en.md | Troubleshooting table |
+| Гидрология | Hydrological conditions | Zima/Zima_Users_manual_en.md | |
+| курс (VTG) | course over ground | Zima/Zima_Users_manual_en.md | NMEA VTG |
+| решатель | solver | Zima/Zima2SL_Specification_en.md | Zima2-SL |
+| потребитель (навигационных данных) | data consumer | Zima/Zima2SL_Specification_en.md | |
+| ОЖИДАЕТСЯ | PENDING | Zima/Zima2SL_Specification_en.md | Placeholder for images and values not yet published |
+
+## Added in batch zima-7
+
+| RU | EN | Source EN file | Note |
+|---|---|---|---|
+| Идентификаторы удаленных команд | Remote command identifiers | Zima/Zima_Protocol_Specification_en.md | First-generation Zima protocol |
+| настроечное поле | configuration field | Zima/Zima_Protocol_Specification_en.md | |
+| акустическое ядро | acoustic core | Zima/Zima_Protocol_Specification_en.md | |
+| Управление энергосберегающим режимом | Power-saving mode control | Zima/Zima_Protocol_Specification_en.md | |
+| «Теплая» перезагрузка | 'Warm' reboot | Zima/Zima_Protocol_Specification_en.md | |
+| Глубина … от поверхности | depth below the surface | Zima/Zima_Protocol_Specification_en.md | |
+| Доступно: (командная строка / терминал / удаленный терминал) | Available via: (command line / terminal / remote terminal (UDP)) | Zima/AzimuthConsole_v1x_en.md | |
+| перегрузка (координат и курса) | override | Zima/AzimuthConsole_v1x_en.md | LHO?/LHOV = location and heading override |
+| ACHOD-фильтр | ACHOD filter | Zima/AzimuthConsole_v1x_en.md | Not the DH filter of 2.x |
+| длинная навигационная база | long navigation base | Zima/AzimuthConsole_v1x_en.md | SRC3 |
+| МАКСИМАЛЬНОЕ ЧИСЛО МАЯКОВ В БАЗЕ | MAXIMUM NUMBER OF BEACONS IN THE BASE | Zima/Zima2LX_Specification_en.md | |
+| МАКСИМАЛЬНАЯ ЧАСТОТА ОБНОВЛЕНИЯ ДАЛЬНОСТЕЙ | MAXIMUM RANGE UPDATE RATE | Zima/Zima2LX_Specification_en.md | Cf. MAXIMUM POSITION UPDATE RATE (Zima2-SL) |
+| НОМИНАЛЬНАЯ ТОЧНОСТЬ ИЗМЕРЕНИЯ ДАЛЬНОСТИ (СКО) | NOMINAL RANGE MEASUREMENT ACCURACY (RMS) | Zima/Zima2LX_Specification_en.md | |
+
+## Added in batch zima-8
+
+| RU | EN | Source EN file | Note |
+|---|---|---|---|
+| UI labels of AzimuthSuite | as in `MainForm.resx`, `SettingsEditor.resx`, `Dialogs/*.resx` of AzimuthSuite (neutral = English) | Zima/AzimuthSuite_manual_en.md | RU already quotes most labels in English |
+| Угловая поправка (настройки AzimuthSuite) | Angular correction | Zima/AzimuthSuite_manual_en.md | Real UI label: "Antenna angle adjust, °" (`SettingsEditor.resx`, `groupBox6`) |
+| Поле карты | Map field | Zima/AzimuthSuite_manual_en.md | |
+| Текстовое поле дополнительных параметров | Additional parameters text field | Zima/AzimuthSuite_manual_en.md | |
+| привод носителя (на маяк) | homing of the carrier | Zima/AzimuthSuite_manual_en.md | RAZ parameter |
+| точка привязки | reference point | Zima/AzimuthSuite_manual_en.md | |
+| Пункт (меню) **X** - … | The **X** item/menu … | Zima/AzimuthSuite_manual_en.md | Sentence pattern for menu items and buttons |
+
+## Added in batch uwave-1
+
+| RU | EN | Source EN file | Note |
+|---|---|---|---|
+| Устройства семейства | Devices of the family | uWAVE/uWAVE_Family_en.md | |
+| Оснащение устройств | Device equipment | uWAVE/uWAVE_Family_en.md | |
+| Диапазоны измеряемых значений | Ranges of measured values | uWAVE/uWAVE_Family_en.md | |
+| Основные параметры устройств | Main device parameters | uWAVE/uWAVE_Modems_comparison_en.md | |
+| Текущий статус / Поставляется | Current status / Available | uWAVE/uWAVE_Modems_comparison_en.md | |
+| Модуль измерения напряжения питания | Supply voltage measurement module | uWAVE/uWAVE_Modems_comparison_en.md | |
+| Двухосевой инклинометр | Two-axis inclinometer | uWAVE/uWAVE_Family_en.md (+1) | |
+| Отличия от базовой версии | Differences from the base version of | uWAVE/uWAVE_Max_Specification_en.md (+1) | |
+| НЕСУЩАЯ | CARRIER | uWAVE/uWAVE_Specification_en.md | |
+| РАЗМЕР БУФЕРА ПЕРЕДАТЧИКА | TRANSMITTER BUFFER SIZE | uWAVE/uWAVE_Specification_en.md (+3) | |
+| ПАКЕТНЫЙ РЕЖИМ | PACKET MODE | uWAVE/uWAVE_Specification_en.md (+3) | ALO = At-least-once |
+| КОМАНДНЫЙ РЕЖИМ | COMMAND MODE | uWAVE/uWAVE_Specification_en.md (+3) | |
+| кОм | kΩ | uWAVE/uWAVE_Specification_en.md (+3) | |
+| Передача данных совмещенная с УКБ навигацией | Data transmission combined with USBL navigation | uWAVE/uWAVE_USBL_Modem_Specification_en.md | |
+| Упоминания об устройствах uWave; Научные публикации | Mentions of uWave devices; Scientific publications | uWAVE/uWave_publications_en.md | Russian-language citations are quoted verbatim |
+
+## Added in batch uwave-3
+
+| RU | EN | Source EN file | Note |
+|---|---|---|---|
+| Инструкция по обновлению прошивки модемов uWave | Firmware update guide for uWave modems | uWAVE/uWAVE_FW_Updating_en.md | Header cell; breadcrumb: Firmware update guide |
+| Рисунок N / рис. N | Figure N / Fig. N | uWAVE/uWAVE_FW_Updating_en.md | |
+| перепрошивка | reflashing | uWAVE/uWAVE_FW_Updating_en.md | |
+| выпадающий список | drop-down list | uWAVE/uWAVE_FW_Updating_en.md | |
+| Запустите приложение/утилиту | Launch the application/utility | uWAVE/uWAVE_FW_Updating_en.md | "Press **X**" is reserved for buttons |
+| медиаматериалы: видео с испытаний, видеоинструкции | media: test videos, video tutorials | uWAVE/media.md | |
+| Волгодонской судоходный канал | Volga-Don Shipping Canal | uWAVE/media.md | |
+
+## Added in batch uwave-2
+
+| RU | EN | Source EN file | Note |
+|---|---|---|---|
+| Система команд UWV | UWV command system | uWAVE/uWAVE_Protocol_Specification_en.md | |
+| канал передачи / приема | transmit / receive channel | uWAVE/uWAVE_Protocol_Specification_en.md | |
+| параметры среды и питания | ambient and power supply parameters | uWAVE/uWAVE_Protocol_Specification_en.md | |
+| уведомление о получении | receipt notification | uWAVE/uWAVE_Protocol_Specification_en.md | Packet mode |
+| режим пакетной передачи | packet transmission mode | uWAVE/uWAVE_Protocol_Specification_en.md | |
+| превышен интервал ожидания ответа | response timeout | uWAVE/uWAVE_Protocol_Specification_en.md | |
+| НЕУСТРАНИМАЯ и НЕ ГАРАНТИЙНАЯ поломка | IRREPARABLE damage … NOT COVERED BY THE WARRANTY | uWAVE/uWAVE_Protocol_Specification_en.md | Caution notes |
+| жила … притянута к | wire … pulled to | uWAVE/uWAVE_Protocol_Specification_en.md | SVC/CMD |
+| Рецепт N | Recipe N | uWAVE/uWAVE_Protocol_Specification_en.md | |
+| через толщу воды | through the water column | uWAVE/uWave_technical_passport_en.md | |
+| встроенная схема измерения напряжения питания | built-in supply voltage measurement circuit | uWAVE/uWave_technical_passport_en.md | |
+
+## Added in batch redphone-1
+
+| RU | EN | Source EN file | Note |
+|---|---|---|---|
+| тангента | PTT button; PTT handset | RedPhone/RedPhone_OS_Users_manual_en.md, RedPhone/Phone_T_package_tech_passport_en.md | `Микрофон с тангентой` → `Microphone with PTT button`; a separate surface-station handset → `PTT handset`. Never "tangent" |
+| п. N.N (ссылка на раздел) | section N.N | RedPhone/RedPhone_OS_Users_manual_en.md | Not `p.` (reads as "page") |
+| Прием! (конец голосового сообщения) | Over! | RedPhone/RedPhone_OS_Users_manual_en.md | Radio procedure word; maintainer question open for all three RedPhone manuals |
+| полудуплексная схема связи | half-duplex | RedPhone/RedPhone_OS_Users_manual_en.md | `Связь работает по полудуплексной схеме` → `communication is half-duplex` |
+| Верхняя / Нижняя (боковая полоса) | Upper / Lower | RedPhone/RedPhone_OS_Specification_en.md (+3) | Old EN `High` / `Low` |
+| Хорошее / Удовлетворительное / Отличное (соответствие тракту) | Good / Satisfactory / Excellent | RedPhone/RedPhone_OS_Users_manual_en.md | Table 1 column `Match with the characteristics of the transceiver path` |
+| однополосная амплитудная модуляция | single-sideband amplitude modulation (SSB) | RedPhone/RedPhone_OS_Users_manual_en.md | |
+| детектор речи; автоматический сквелч | voice activity detector; automatic squelch | RedPhone/RedPhone_DX_Specification_en.md (+1) | |
+| неразборный и необслуживаемый (корпус, конструкция) | one-piece, maintenance-free | RedPhone/RedPhone_DX_Specification_en.md (+1) | `моноблочная неразборная конструкция` → `one-piece monoblock design` |
+| приборная панель | front panel; control panel | RedPhone/RedPhone_OS_Users_manual_en.md, RedPhone/RedPhone_OS_Specification_en.md | |
+| надводный пункт контроля за (водолазными) спусками | surface dive control point; surface dive monitoring point | RedPhone/RedPhone_OS_Users_manual_en.md, RedPhone/Phone_T_package_tech_passport_en.md | |
+| головной телефон (наушники); головные телефоны | headphones | RedPhone/RedPhone_OS_Users_manual_en.md (+1) | Do not add "(earphones)" |
+| гермомешок; транспортировочный мешок | waterproof bag; transport bag | RedPhone/RedPhone_OS_Users_manual_en.md | |
+| громкоговоритель; динамик | speaker | RedPhone/RedPhone_OS_Users_manual_en.md | Matches the panel label **"Speaker"** |
+| грузонесущая проушина | load-bearing eye | RedPhone/RedPhone_OS_Users_manual_en.md | `фиксация кабеля за грузонесущую проушину` → `secured by its load-bearing eye` |
+| ЗАПРЕЩАЕТСЯ | PROHIBITED | RedPhone/RedPhone_OS_Users_manual_en.md | |
+| зарядное шасси | charging chassis | RedPhone/Phone_T_package_tech_passport_en.md | Literal; the delivery-set table says `Зарядное устройство` = charger |
+| герморазъем | watertight connector | RedPhone/Phone_T_package_tech_passport_en.md | |
+| баллон | tank | RedPhone/Phone_T_package_tech_passport_en.md | As `Кронштейн на баллон` → `Tank bracket` |
+| спортивный дайвинг | recreational diving | RedPhone/Phone_T_package_tech_passport_en.md | |
+| Приемник телеметрии RWLT RF Dongle | RWLT RF Dongle telemetry receiver | RedPhone/Phone_T_package_tech_passport_en.md | |
+| Система команд RPH | RPH command system | RedPhone/RedPhone-DX_protocol_specification_en.md | |
+| Протокол диалогового уровня | dialog layer protocol | RedPhone/RedPhone-DX_protocol_specification_en.md | Same as the Zima2 and uWave protocols |
+| Поле/Параметр / Описание | Field/Parameter / Description | RedPhone/RedPhone-DX_protocol_specification_en.md | |
+
+## Added in batch rwlt-1
+
+| RU | EN | Source EN file | Note |
+|---|---|---|---|
+| Курс (движения) в навигационных сообщениях (tCrs, gnssCrs, crs2rp, crs4rp, RMC) | Course | RWLT/uNav_protocol_specification_en.md | Course over ground / direction to a point; the fixed `курс` → `heading` applies to vessel/antenna orientation |
+| сообщение (протокол NMEA) | sentence | RWLT/uNav_protocol_specification_en.md (+2) | As in the Zima2 and RedPhone-DX protocols |
+| сглаживающий фильтр | smoothing filter | RWLT/uNav_protocol_specification_en.md | Old EN "anti-aliasing filter" was wrong |
+| буфер-классификатор | classifier buffer | RWLT/uNav_protocol_specification_en.md | |
+| определитель курса движения | course estimator | RWLT/uNav_protocol_specification_en.md | |
+| опорная точка | reference point | RWLT/uNav_protocol_specification_en.md | |
+| нумерованный объект / цель | numbered object / target | RWLT/uNav_protocol_specification_en.md | |
+| Возраст навигационных данных | Navigation data age | RWLT/uNav_protocol_specification_en.md | |
+| Радиальная ошибка | Radial error | RWLT/uNav_protocol_specification_en.md | |
+| навигационный гидроакустический буй (RWLT GIB) | navigation sonobuoy | RWLT/RWLT_GIB_Specification_en.md | Header cell keeps `Navigation buoy`; consistent with RWLT_DataBrief_en and RWLT_Users_Manual_en |
+| плавучая (длинная) навигационная база | floating (long) navigation base | RWLT/RWLT_GIB_Specification_en.md, RWLT/RWLT_tech_pass_en.md | |
+| схема поплавок-перо | float-and-spar (spar buoy) design | RWLT/RWLT_GIB_Specification_en.md | |
+| ИЗБЫТОЧНАЯ ПЛАВУЧЕСТЬ | EXCESS BUOYANCY | RWLT/RWLT_GIB_Specification_en.md | |
+| ОСАДКА; ВЫСОТА НАД ВОДОЙ | DRAFT; HEIGHT ABOVE WATER | RWLT/RWLT_GIB_Specification_en.md | |
+| МАКСИМАЛЬНАЯ СКОРОСТЬ ОТНОСИТЕЛЬНО ПИНГЕРА / БУЕВ | MAXIMUM VELOCITY RELATIVE TO PINGER / BUOYS | RWLT/RWLT_GIB_Specification_en.md, RWLT/RWLT_Pinger_K_Specification_en.md | |
+| МАКСИМАЛЬНО / МИНИМАЛЬНО ДОПУСТИМОЕ РАССТОЯНИЕ ДО ДРУГИХ БУЕВ КОМПЛЕКТА | MAXIMUM / MINIMUM PERMISSIBLE DISTANCE TO OTHER BUOYS OF THE SET | RWLT/RWLT_GIB_Specification_en.md | |
+| ТИП ВСТРОЕННОГО РАДИОМОДУЛЯ; МАКСИМАЛЬНАЯ МОЩНОСТЬ РАДИОМОДУЛЯ | BUILT-IN RADIO MODULE TYPE; MAXIMUM RADIO MODULE POWER | RWLT/RWLT_GIB_Specification_en.md | |
+| РЕФЕРЕНСНЫЙ ЭЛЛИПСОИД | REFERENCE ELLIPSOID | RWLT/RWLT_GIB_Specification_en.md | |
+| ПЕРИОД ИЗЛУЧЕНИЯ АКУСТИЧЕСКОГО СИГНАЛА | ACOUSTIC SIGNAL EMISSION PERIOD | RWLT/RWLT_Pinger_K_Specification_en.md | |
+| ТЕЛЕМЕТРИЧЕСКАЯ ИНФОРМАЦИЯ | TELEMETRY INFORMATION | RWLT/RWLT_Pinger_K_Specification_en.md | RWLT_Pinger_Specification_en (OK in master) says `TELEMETRY`; align in Phase 4 |
+| носитель (ТНПА, АНПА) | carrier (ROV, AUV) | RWLT/RWLT_Pinger_K_Specification_en.md, RWLT/RWLT_tech_pass_en.md | Old EN "media" was wrong |
+| Исполнение IP68 | IP68 protection class | RWLT/RWLT_RF_Dongle_en.md | |
+| Эмуляция протокола GNSS-приемников | GNSS receiver protocol emulation | RWLT/RWLT_RF_Dongle_en.md | |
+| только прием (радиосвязь) | receive only | RWLT/RWLT_RF_Dongle_en.md | |
+| Автономный блок питания и коммутации Bat&Link Box | Bat&Link Box autonomous power supply and switching unit | RWLT/RWLT_tech_pass_en.md | |
+| батарейная сборка | battery pack | RWLT/RWLT_tech_pass_en.md | |
+| сростки (аксессуары) | splices | RWLT/RWLT_tech_pass_en.md | |
+| хранение в неопресненном и влажном виде | storage without rinsing in fresh water or while damp | RWLT/RWLT_tech_pass_en.md | |
+
+## Added in batch redphone-2
+
+| RU | EN | Source EN file | Note |
+|---|---|---|---|
+| Устройство (раздел руководства) | Device design | RedPhone/RedPhone_DX_Users_Manual_en.md | Section heading describing the construction |
+| Настройка станции | Station configuration | RedPhone/RedPhone_DX_Users_Manual_en.md | |
+| № Контакта; Общий (контакт) | Pin No.; Common | RedPhone/RedPhone_DX_Users_Manual_en.md | Pinout tables |
+| ремень; резиновый жгут | strap; rubber bungee cord | RedPhone/RedPhone_DX_Users_Manual_en.md | Mounting on the tank; "belt" is the diver's belt |
+| металлическая скоба | metal clamp | RedPhone/RedPhone_DX_Users_Manual_en.md | |
+| мокрая салфетка | wet wipe | RedPhone/RedPhone_DX_Users_Manual_en.md | |
+| транспортировочная тара | transport case | RedPhone/RedPhone_DX_Users_Manual_en.md | |
+| сервисный кабель | USB service cable | RedPhone/RedPhone_DX_Users_Manual_en.md | |
+| с увеличенной дальностью связи (RedPhone-MDX, RedPhone-MOS) | Extended-range … | RedPhone/RedPhone_MDX_Specification_en.md, RedPhone/RedPhone_MOS_Specification_en.md | `Extended-range diver station …`, `Extended-range surface station …` |
+| В надводном положении (переключение каналов) | In the surface position | RedPhone/RedPhone_Specification_en.md | As in the Zima2 user's manual |
+| USB-радиодонгл | USB radio dongle | RedPhone/RedPhone_Specification_en.md | |
+| ВСТРОЕННЫЙ ИСТОЧНИК ПИТАНИЯ | BUILT-IN POWER SUPPLY | RedPhone/RedPhone_Specification_en.md | |
+| RedPhone DX Config UI (web tool) | Connection, Connect, Device type, Serial number, Firmware version, SETS2 Settings, RWLT Mode, RWLT Diver ID, Flags, Bit 0 (PinsPrevail), Bit 7 (CH Indicator), Save Settings, Write to Flash | RedPhone/RedPhone_DX_Users_Manual_en.md | Real English strings from `i18n.js` of github.com/ucnl/RedPhoneDXConfig-Web |
+
+## Added in batch redphone-4
+
+| RU | EN | Source EN file | Note |
+|---|---|---|---|
+| Комплект ЗИП | Spare parts and tools kit | RedPhone/RedPhone_Users_Manual_en.md | Old EN "SPTA kit" |
+| кредл; зарядный кредл (шасси) | cradle; charging cradle (chassis) | RedPhone/RedPhone_Users_Manual_en.md | |
+| наживить (гайки, винты) | hand-thread | RedPhone/RedPhone_Users_Manual_en.md | Not "tighten" |
+| Выбор канала связи - бит N | Communication channel selection - bit N | RedPhone/RedPhone_Users_Manual_en.md | DIP-switch table |
+| Станция RedPhone с креплением на ремень | RedPhone station with a strap mount | RedPhone/RedPhone_Users_Manual_en.md | |
+| ПРИМЕНЯЕМЫЕ ИСТОЧНИКИ ПИТАНИЯ | POWER SOURCES USED | RedPhone/RedPhone_Users_Manual_en.md, RedPhone/RedPhone_DX_Specification_en.md | |
+| Испытания в мелководном водоеме | Tests in a shallow body of water | RedPhone/media.md | |
+| при отсутствии прямой видимости | without a direct line of sight | RedPhone/media.md | |
+| Фиксация (кабеля антенны) при помощи карабина | Securing the transducer with a carabiner | RedPhone/media.md | US spelling `carabiner` |
+| Проверка исправности | Checking the serviceability | RedPhone/media.md | |
+
+## Added in batch redphone-3
+
+| RU | EN | Source EN file | Note |
+|---|---|---|---|
+| Программа и методики испытаний | Test program and procedures | RedPhone/RedPhone_PM_en.md | |
+| Объект испытаний / Цель испытаний | Test object / Test objective | RedPhone/RedPhone_PM_en.md | |
+| Комплект оборудования (КО) | equipment set (ES) | RedPhone/RedPhone_PM_en.md | Distinct from `Комплект поставки` = delivery set |
+| Комплект ЗИП | Spare parts and tools kit | RedPhone/RedPhone_PM_en.md, RedPhone/RedPhone_Users_Manual_en.md | |
+| Приборный состав | Instrument composition | RedPhone/RedPhone_PM_en.md | |
+| Частота проведения испытаний | Frequency of testing | RedPhone/RedPhone_PM_en.md | |
+| полигон (испытательный) | test site | RedPhone/RedPhone_PM_en.md | |
+| натурные испытания | full-scale tests | RedPhone/RedPhone_PM_en.md | |
+| сдаточные испытания / приемочные испытания | delivery tests / acceptance tests | RedPhone/RedPhone_PM_en.md | |
+| волнение (моря) … баллов | sea state … | RedPhone/RedPhone_PM_en.md | Bare code number, no "points" |
+| разборчивость; процент разборчивости | intelligibility; intelligibility percentage | RedPhone/RedPhone_PM_en.md | |
+| артикуляционные списки | articulation lists | RedPhone/RedPhone_PM_en.md | The Russian word lists themselves are kept in Cyrillic (phonetically balanced test material) |
+| Испытание на автономность | battery life test | RedPhone/RedPhone_PM_en.md | |
+| надводный пост | surface post | RedPhone/RedPhone_PM_en.md | |
+| станция связи (надводная / водолазная) | (surface / diver) communication station | RedPhone/RedPhone_PM_en.md | |
+| Кранец (буек) | Fender (small buoy) | RedPhone/RedPhone_PM_en.md | |
+| Как меня поняли? Прием | How do you read me? Over | RedPhone/RedPhone_PM_en.md | Radio check; `Слышу вас на X баллов из 10` → `I hear you X out of 10` |
+| по телефонной связи (повторить слово) | over the underwater telephone link | RedPhone/RedPhone_PM_en.md | |
+| Н/п | N/A | RedPhone/RedPhone_PM_en.md | |
+
+## Added in batch wayu-1
+
+| RU | EN | Source EN file | Note |
+|---|---|---|---|
+| Наши проекты для образования (раздел) | Educational projects | WAYU/*_en.md | Breadcrumb section of the WAYU documents, index page `/educational_projects_en` |
+| Автоматическое включение от воды / в воде | Automatic activation in water | WAYU/WAYU_DataBrief_en.md (+3), RWLT/RWLT_GIB_Specification_en.md | |
+| Навигационный гидроакустический маяк-пингер | Underwater acoustic navigation pinger beacon | WAYU/WAYU_DataBrief_en.md | |
+| Радиодонгл - приемник навигационных буев | Radio dongle - navigation buoy receiver | WAYU/WAYU_DataBrief_en.md | |
+| Решаемые задачи | Tasks to be solved | WAYU/WAYU_DataBrief_en.md, RedWAVE/RedWAVE_DataBrief_en.md | |
+| Отличительные черты | Distinctive features | WAYU/WAYU_DataBrief_en.md | |
+| От каждого до каждого из буев должно быть не более … | The distance between any two buoys must be no more than … | WAYU/WAYU_DataBrief_en.md | |
+| НАЗНАЧЕНИЕ ЖИЛ КАБЕЛЯ И РАСПИНОВКА | CABLE WIRE ASSIGNMENT AND PINOUT | WAYU/WAYU_Pinger_Specification_en.md | |
+| № КОНТАКТА РАЗЪЕМА | CONNECTOR PIN No. | WAYU/WAYU_Pinger_Specification_en.md | |
+| интегрируемое / автономное исполнение | integrated / standalone version | WAYU/WAYU_Pinger_Specification_en.md | |
+| неразделанный кабель | unterminated cable | WAYU/WAYU_Pinger_Specification_en.md | |
+| подводные аккумуляторные сборки | underwater battery packs | WAYU/WAYU_Pinger_Specification_en.md | |
+| U<sub>пит.</sub> | U<sub>supply</sub> | WAYU/WAYU_Pinger_Specification_en.md | |
+| этилвинилацетат (EVA) | ethylene-vinyl acetate (EVA) | WAYU/WAYU_GIB_Specification_en.md | |
+| ЗАРЯДКА / ВРЕМЯ ЗАРЯДА ВСТРОЕННОЙ АКБ | CHARGING / CHARGING TIME OF THE BUILT-IN BATTERY | WAYU/WAYU_GIB_Specification_en.md | |
+| разгрузочный кранец | relief fender | WAYU/WAYU_Users_Manual_en.md | |
+| в акватории | in the operating area | WAYU/WAYU_Users_Manual_en.md | |
+| выпуклый четырехугольник | convex quadrilateral | WAYU/WAYU_Users_Manual_en.md | |
+| Горит красным / Не горит (индикатор) | Lit red / Off | WAYU/WAYU_Users_Manual_en.md | |
+| схема установки | installation layout | WAYU/WAYU_Users_Manual_en.md | |
+| шлюз (канала) | lock | WAYU/media.md | Old EN "Gateway" |
+| Yandex карты | Yandex Maps | WAYU/media.md | |
+
+## Added in batch redwave-4
+
+| RU | EN | Source EN file | Note |
+|---|---|---|---|
+| водолазный навигатор; навигатор водолаза | diver's navigator | RedWAVE/RedWave_tech_pass_en.md, RedWAVE/RedWAVE_DataBrief_en.md | RedNav |
+| водолазный планшет Aquatab | Aquatab diver's tablet | RedWAVE/RedWave_tech_pass_en.md | |
+| в водолазном исполнении | in the diver version | RedWAVE/RedWave_tech_pass_en.md | |
+| гидроакустический навигационный приемник RedNode | RedNode underwater acoustic navigation receiver | RedWAVE/RedWave_tech_pass_en.md | |
+| методом лазерной гравировки | by laser engraving | RedWAVE/RedWave_tech_pass_en.md | Factory numbers; hot stamping = горячее клеймение |
+
+## Added in batch redwave-1
+
+| RU | EN | Source EN file | Note |
+|---|---|---|---|
+| Буй-ретранслятор; Навигационный гидроакустический буй (RedBase) | GNSS-equipped sonobuoy; relay sonobuoy | RedWAVE/RedBASE_Specification_en.md, RedWAVE/RedNAV_Specification_en.md | RedBase header cell keeps `GNSS-equipped sonobuoy`; `буи-ретрансляторы` in running text = `relay sonobuoys` |
+| Водолазный навигационный приемник (RedNav) | diver's navigation receiver | RedWAVE/RedNAV_Specification_en.md | Header cell; `Водолазный навигатор` = `diver's navigator` |
+| Универсальный (интегрируемый) навигационный приемник (RedNode) | universal (integrated) navigation receiver | RedWAVE/RedWAVE_DataBrief_en.md | |
+| плавучая длинная (навигационная) база | floating long (navigation) base | RedWAVE/RedWAVE_DataBrief_en.md (+2) | |
+| ВЫНОСНОЙ БЛОК; ИНТЕРФЕЙСНЫЙ БЛОК | REMOTE UNIT; INTERFACE UNIT | RedWAVE/RedNAV_Specification_en.md | |
+| СИНХРОНИЗАЦИЯ С ПК | SYNCHRONIZATION WITH PC | RedWAVE/RedNAV_Specification_en.md | |
+| МАРШРУТНЫЕ ФУНКЦИИ; загружаемые точки | ROUTE FUNCTIONS; uploadable points | RedWAVE/RedNAV_Specification_en.md | |
+| ПРЕДЕЛЬНОЕ СООТНОШЕНИЕ СИГНАЛ/ШУМ В ПОЛОСЕ | MINIMUM SIGNAL-TO-NOISE RATIO (IN BAND) | RedWAVE/RedNAV_Specification_en.md | |
+| МАКСИМАЛЬНАЯ СКОРОСТЬ ОТНОСИТЕЛЬНО ПРИЕМНИКОВ | MAXIMUM VELOCITY RELATIVE TO RECEIVERS | RedWAVE/RedBASE_Specification_en.md | |
+| ДЛИНА КАБЕЛЯ ГИДРОАКУСТИЧЕСКОГО ПЕРЕДАТЧИКА | UNDERWATER ACOUSTIC TRANSMITTER CABLE LENGTH | RedWAVE/RedBASE_Specification_en.md | |
+| ВРЕМЯ ПОЛНОЙ ЗАРЯДКИ ОТ СЕТИ 220 В / 50 Гц | FULL CHARGE TIME FROM 220 V / 50 Hz MAINS | RedWAVE/RedBASE_Specification_en.md | |
+| блоки дополнительной плавучести; якорная веревка; батарейный блок | additional buoyancy blocks; anchor line; battery block | RedWAVE/RedBASE_Specification_en.md | |
+| залитый в полиуретановый компаунд | potted in a polyurethane compound | RedWAVE/RedBASE_Specification_en.md | |
+| Свинцово-кислотный (АКБ) | Lead-acid | RedWAVE/RedBASE_old_Specification_en.md | |
+| зарядная площадка | charging pad | RedWAVE/RedNAV_Host_Users_Manual_en.md | |
+| RedNav Host UI | Search in base, Search, OK, Save, Download, Upload to device, Waypoints, Right-handed device, State: connected | RedWAVE/RedNAV_Host_Users_Manual_en.md | Real English strings (`MainForm.resx`, `MainFormStrings.resx` of github.com/ucnl/RedNavHost); RU "Переворот экрана" = `Right-handed device` |
+| Windows 10 Bluetooth UI | Start -> Settings -> Devices, On, + Add Bluetooth or other device, Pair, Next, Connected | RedWAVE/RedNAV_Host_Users_Manual_en.md | |
+| Управление выдачей сообщений | Sentence output control | RedWAVE/RedWAVE_Protocol_Specification_en.md | |
+| Превышен интервал ожидания | Waiting interval exceeded | RedWAVE/RedWAVE_Protocol_Specification_en.md | |
+| Ускорение свободного падения | Gravitational acceleration | RedWAVE/RedWAVE_Protocol_Specification_en.md | As in the uWave protocol |
 
 ## Added in batch a3s-1
 
