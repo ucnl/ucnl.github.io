@@ -45,9 +45,9 @@
 
 ## 1.1. Interface and functions
 
-The host application [🐙 AzimuthSuite](https://github.com/ucnl/AzimuthSuite/releases/download/beta/AzimuthSuite.zip) is designed to run under the Windows OS, version 10 or later, with .NET Framework 4.8 installed.
+The host application [🐙 AzimuthSuite](https://github.com/ucnl/AzimuthSuite/releases/download/beta/AzimuthSuite.zip) is designed to run on Windows 10 or later with .NET Framework 4.8 installed.
 The application is portable and does not require installation. Simply unpack the archive to a location convenient for the operator.
-The application and all the libraries it uses were developed by UCNL LLC and are open source (with publicly available source code).
+The application and all the libraries it uses were developed by UCNL LLC and are open source.
 
 The host application communicates with the system devices over a serial port according to the open [NMEA-like protocol](Zima2_Protocol_Specification_en.md).
 
@@ -57,16 +57,16 @@ The application uses two types of settings:
 - basic system settings, which are stored in the `AzimuthSuite.settings` file in the application directory. These settings are read by the application at startup and saved at the user's command from the settings editor.
 - interface settings, which are stored in the `AzimuthSuite.uisettings` file in the application directory. These settings are read by the application at startup and saved automatically when the application exits.
 
-The appearance of the application settings editor window is shown in the figure below.
+The application settings editor window is shown in the figure below.
 
 | ![0](/documentation/azimuthsuite_settings_editor_1.png)|
 | :---: |
 | Application settings editor |
 | *1 - List of the responder-beacons in use, 2 - External GNSS compass usage option, 3 - External GNSS compass port baud rate, 4 - Offset of the antenna position from the GNSS compass position in the transverse direction, 5 - Offset of the antenna position from the GNSS compass position in the longitudinal direction, 6 - Angular correction (the angle between the zero direction of the GNSS compass and the zero direction of the antenna), 7 - Output port usage option, 8 - Output port baud rate, 9 - Accept and cancel buttons, 10 - Button to reset the settings to their default values, 11 - Maximum distance to the responder-beacons, 12 - Water salinity* |
 
-The system supports **sequential operation with 16 responder-beacons**. The operator can select the required beacon addresses in window **1** by checking the corresponding checkboxes. Always check only the boxes next to the addresses that will be used in the current work; otherwise the system will waste time polling beacons that are absent from the water area.
+The system supports **sequential operation with 16 responder-beacons**. The operator can select the required beacon addresses in list **1** by checking the corresponding checkboxes. Always check only the boxes next to the addresses that will be used in the current job; otherwise the system will waste time polling beacons that are not present in the water area.
 
-**Connection of an external GNSS compass** is supported via a serial port. To enable it, check box **2** and specify the port baud rate. The port itself will be detected by the system automatically. If the compass is not installed coaxially with the antenna (not on the pole), you will need to specify the position of the antenna relative to the position of the GNSS compass: the position of the GNSS compass is taken as the origin of a Cartesian coordinate system, and the transverse **4** and longitudinal **5** offsets of the antenna from this point are specified (transverse in the port side - starboard direction, longitudinal in the stern - bow direction). If the zero directions of the compass and the antenna do not coincide, you must specify the angular correction **6** - the angle between the zero directions of the compass and the antenna, measured clockwise from the zero direction of the compass.
+**Connection of an external GNSS compass** is supported via a serial port. To enable it, check box **2** and specify the port baud rate. The port itself will be detected by the system automatically. If the compass is not installed coaxially with the antenna (not on the pole), you will need to specify the position of the antenna relative to the position of the GNSS compass: the position of the GNSS compass is taken as the origin of a Cartesian coordinate system, and the transverse **4** and longitudinal **5** offsets of the antenna from this point are specified (transverse in the port-to-starboard direction, longitudinal in the stern-to-bow direction). If the zero directions of the compass and the antenna do not coincide, you must specify the angular correction **6** - the angle between the zero directions of the compass and the antenna, measured clockwise from the zero direction of the compass.
 
 The position of the direction-finding antenna relative to the reference point is illustrated below:
 
@@ -75,7 +75,7 @@ The position of the direction-finding antenna relative to the reference point is
 | Setting the position of the direction-finding antenna relative to the reference point and the zero direction of the compass |
 | _Offsets of the antenna relative to the GNSS compass: **transverse ΔX** and **longitudinal ΔY**; angular misalignment between the zero directions of the compass and the direction-finding antenna **𝛿**_ |
 
-**When working in sea water**, specify the salinity using the group of elements **12**: either enter a known value in the input field or use the built-in database of world ocean salinities by pressing the **🔎** button and specifying the current geographic coordinates.
+**When working in sea water**, specify the salinity using the controls of group **12**: either enter a known value in the input field or use the built-in database of world ocean salinities by pressing the **🔎** button and specifying the current geographic coordinates.
 
 **When working in inland fresh water bodies**, set the water salinity to **0.0 PSU**.
 The salinity value is needed for the system to determine the depth and the speed of sound more accurately.
@@ -98,39 +98,39 @@ The main application window is shown in the figure below.
 - **1. Main toolbar** is located at the top of the application window and contains the following elements:
   - The **🔌 LINK** button enables and disables communication with all devices. When the connection is enabled, the application will search for the connected Zima2-B direction-finding antenna and the external GNSS compass (if the setting is enabled). This function is also available via the `Ctrl + L` key combination.
   - The **⚙ SETTINGS** button opens the settings editor. It becomes unavailable while the connection is active and while a log file is being played back
-  - Menu **📖 LOG** - contains functions for working with log files
-    - Item **👀 View current** - open the current log file in the application associated with the 'log' extension (usually Notepad). This function is also available via the `Ctrl + H` key combination
-    - Item **▶ Playback...** - select a log file for playback in real time. This function allows you to restore the course of the work performed almost completely and, for example, to restore a track that was not saved.
-    - Item **🧹 Clear empty entries** - cleaning up the LOG directory in the application folder: all log files smaller than 2 kilobytes and all empty folders will be deleted
-    - Item **🗜 Archive all entries...** - packing the entire folder with the log files into a Zip archive.
-    - Item **🗑 Delete all entries** - deleting all application log files. **Be careful! All files will be deleted permanently and cannot be recovered!!!**
-    - Item **🧹+🗜+🗑 Do them all...** - deleting all empty folders and all log files smaller than 2 kilobytes, packing the remaining log files into a Zip archive and deleting the originals in the application's LOG folder.
-  - Menu **🛠 UTILS**
-    - Submenu **🗺 TRACKS** contains functions for working with tracks
-      - Item **💾 Export...** is used to save tracks in Google KML or CSV (comma-separated values) format. This function is available via the `Ctrl + S` key combination
-      - Submenu **🤖 DEVICE**
-        - Item **View info...** is active only when the connection is active and a device (a direction-finding antenna or a responder-beacon) is connected, and opens a window with information about the device: its type, firmware version and serial number
-        - Item **Responder settings...** is active only when the connection is active and a responder-beacon is connected. It opens the responder-beacon settings editor. The function is also available via the `Ctrl + R` key combination
+  - The **📖 LOG** menu contains functions for working with log files
+    - The **👀 View current** item opens the current log file in the application associated with the 'log' extension (usually Notepad). This function is also available via the `Ctrl + H` key combination
+    - The **▶ Playback...** item lets you select a log file for playback in real time. This function allows you to reconstruct the course of the work almost completely and, for example, to recover a track that was not saved.
+    - The **🧹 Clear empty entries** item cleans up the LOG directory in the application folder: all log files smaller than 2 kilobytes and all empty folders will be deleted
+    - The **🗜 Archive all entries...** item packs the entire folder with the log files into a Zip archive.
+    - The **🗑 Delete all entries** item deletes all application log files. **Be careful! All files will be deleted permanently and cannot be recovered!!!**
+    - The **🧹+🗜+🗑 Do them all...** item deletes all empty folders and all log files smaller than 2 kilobytes, packs the remaining log files into a Zip archive and deletes the originals in the application's LOG folder.
+  - The **🛠 UTILS** menu
+    - The **🗺 TRACKS** submenu contains functions for working with tracks
+      - The **💾 Export...** item is used to save tracks in Google KML or CSV (comma-separated values) format. This function is available via the `Ctrl + S` key combination
+      - The **🤖 DEVICE** submenu
+        - The **View info...** item is available only while the connection is active and a device (a direction-finding antenna or a responder-beacon) is connected, and opens a window with information about the device: its type, firmware version and serial number
+        - The **Responder settings...** item is available only while the connection is active and a responder-beacon is connected. It opens the responder-beacon settings editor. The function is also available via the `Ctrl + R` key combination
   - The group of elements for controlling the output port contains:
-    - Button **🔄** - refresh the available serial ports
+    - The **🔄** button refreshes the list of available serial ports
     - Drop-down list of the available ports for use as the output port
     - Drop-down list of the addresses of the responder-beacons whose coordinates are to be transmitted to the output port
-    - Button **📣** - enable/disable the output port
+    - The **📣** button enables/disables the output port
   - The **ℹ INFO** button opens a window with information about the application
 
 - **2. Map toolbar** is located above the map field (3) and contains the following elements:
-  - Button **⛯** - enable/disable display of the dial. A change of this button's state is saved automatically and reproduced when log files are played back
-  - Button **📜** - enable/disable display of the log text field (5). A change of this button's state is saved automatically and reproduced when log files are played back
-  - Button **📑** - enable/disable display of the comments field (NOTES). A change of this button's state is saved automatically and reproduced when log files are played back
-  - Button **👽** - enable/disable display of the additional parameters field (4). A change of this button's state is saved automatically and reproduced when log files are played back
-  - Menu **🎨** contains the list of available color schemes. A change of the color scheme is saved automatically
+  - The **⛯** button turns the display of the dial on/off. Changes to this button's state are saved automatically and reproduced when log files are played back
+  - The **📜** button turns the display of the log text field (5) on/off. Changes to this button's state are saved automatically and reproduced when log files are played back
+  - The **📑** button turns the display of the comments field (NOTES) on/off. Changes to this button's state are saved automatically and reproduced when log files are played back
+  - The **👽** button turns the display of the additional parameters field (4) on/off. Changes to this button's state are saved automatically and reproduced when log files are played back
+  - The **🎨** menu contains the list of available color schemes. The selected color scheme is saved automatically
 
 - **3. Map field** is used to display the relative position of the antenna and the responder-beacons to scale, as well as various additional information:
-  - The additional parameters text field (4) is located in the upper left part of the map panel. The display of this field can be toggled with the **👽** button on the map toolbar (2). Each parameter is displayed on a separate line that starts with a three-letter parameter identifier and a colon, followed by the parameter value and the unit of measurement. The time in (MM:SS) format displayed next to a parameter shows how long ago the parameter value was updated. The table below lists all possible identifiers and their descriptions:
+  - The additional parameters text field (4) is located in the upper-left part of the map panel. The display of this field can be toggled with the **👽** button on the map toolbar (2). Each parameter is displayed on a separate line that starts with a three-letter parameter identifier and a colon, followed by the parameter value and the unit of measurement. The time in (MM:SS) format displayed next to a parameter shows how long ago the parameter value was updated. The table below lists all possible identifiers and their descriptions:
 
 | ID | Description | Units | Range | 
 | :--- | :--- | :--- | :--- |
-| DPT | Immersion depth of the antennas | m | 0 .. 300 |
+| DPT | Antenna immersion depth | m | 0 .. 300 |
 | WTM | Water temperature value | °C | -10 .. +40 |
 | PTC | Antenna pitch | ° | -90 .. +90 |
 | ROL | Antenna roll | ° | -90 .. +90 |
@@ -144,7 +144,7 @@ The main application window is shown in the figure below.
 
 - **6. Additional toolbar** is located below the map panel and contains the following elements:
   - The input field and the **📝 ADD NOTE** button are used to enter comments into the log file. You can simply type a text comment and press the **Enter** key regardless of which control has focus. Comments are saved with a timestamp, and later, when the log file is played back, the comments will be displayed at the corresponding moment. This function allows you to quickly save any text notes about the progress of the work
-  - The **📸 SCREENSHOT** button is used to save a snapshot of the main application window to a graphic file. Screenshots are saved in the **SCREENSHOTS** directory in the application folder. The name of the last saved screenshot is displayed in the status line (7). This function is also available via the `Ctrl + P` key combination
+  - The **📸 SCREENSHOT** button is used to save a snapshot of the main application window to an image file. Screenshots are saved in the **SCREENSHOTS** directory in the application folder. The name of the last saved screenshot is displayed in the status line (7). This function is also available via the `Ctrl + P` key combination
 
 - **7. Status line** The line displays the statuses of the ports of the direction-finding antenna and of the external navigation data source (the external GNSS compass), the name of the last saved screenshot or of the Zip archive into which the log files were packed
 
@@ -152,7 +152,7 @@ The main application window is shown in the figure below.
   - Button **▼** - collapse all list items (`Ctrl + Down`)
   - Button **▲** - expand all list items (`Ctrl + Up`)
 
-- **9. Responder-beacon list** **REMOTES** is located in the left part of the main application window. The list has a tree structure; the top-level nodes are named after the addresses of the responder-beacons. The child nodes contain the information known to the system about the given responder-beacon. Each individual parameter is represented by a line that starts with the parameter identifier, followed after a colon by the parameter value. If the value of this parameter was updated more than 3 seconds ago, the time elapsed since the parameter was updated is given in parentheses in (MM:SS) format. The list of possible parameters is given below:
+- **9. Responder-beacon list** **REMOTES** is located in the left part of the main application window. The list has a tree structure; the top-level nodes are named after the addresses of the responder-beacons. The child nodes contain the information known to the system about that responder-beacon. Each individual parameter is represented by a line that starts with the parameter identifier, followed by a colon and the parameter value. If the value of this parameter was updated more than 3 seconds ago, the time elapsed since the parameter was updated is given in parentheses in (MM:SS) format. The list of possible parameters is given below:
 
 | ID | Description | Units | Range | 
 | :--- | :--- | :--- | :--- |
@@ -166,21 +166,21 @@ The main application window is shown in the figure below.
 | LAT | Calculated latitude | ° | -90 .. 90 |
 | LON | Calculated longitude | ° | -180 .. 180 |
 
-The most important parameters here are **AZM**, **DST** and **RAZ**: from the azimuth and the distance the operator can always tell where a particular responder-beacon is located relative to him or her, and the **RAZ** parameter will allow the carrier to be guided onto the beacon.
+The most important parameters here are **AZM**, **DST** and **RAZ**: from the azimuth and the distance, the operator can always tell where a particular responder-beacon is located relative to their own position, and the **RAZ** parameter enables homing of the carrier.
 The display of the various parameters is switched with the buttons on panel (10). 
 
 - **10. Switch panel for the parameters displayed in the responder-beacon list** switches the visibility of the parameters in the list:
-  - The **DST/AZM** button turns on/off the display of the distance and direction to the responder-beacons. A change of this button's state is saved automatically and reproduced when log files are played back
-  - The **DPT** button turns on/off the display of the depth of the responder-beacons. A change of this button's state is saved automatically and reproduced when log files are played back
-  - The **RAZ** button turns on/off the display of the direction **from** the responder-beacons. A change of this button's state is saved automatically and reproduced when log files are played back
-  - The **ELV** button turns on/off the display of the vertical direction to the responder-beacons. A change of this button's state is saved automatically and reproduced when log files are played back
-  - The **MISC** button turns on/off the display of the signal propagation time **PTM** and the link quality parameter **MSR**. A change of this button's state is saved automatically and reproduced when log files are played back
-  - Button **LOC** - turns on/off the display of the location of the responder-beacons (latitude and longitude). A change of this button's state is saved automatically and reproduced when log files are played back
+  - The **DST/AZM** button turns on/off the display of the distance and direction to the responder-beacons. Changes to this button's state are saved automatically and reproduced when log files are played back
+  - The **DPT** button turns on/off the display of the depth of the responder-beacons. Changes to this button's state are saved automatically and reproduced when log files are played back
+  - The **RAZ** button turns on/off the display of the direction **from** the responder-beacons. Changes to this button's state are saved automatically and reproduced when log files are played back
+  - The **ELV** button turns on/off the display of the vertical direction to the responder-beacons. Changes to this button's state are saved automatically and reproduced when log files are played back
+  - The **MISC** button turns on/off the display of the signal propagation time **PTM** and the link quality parameter **MSR**. Changes to this button's state are saved automatically and reproduced when log files are played back
+  - The **LOC** button turns on/off the display of the location of the responder-beacons (latitude and longitude). Changes to this button's state are saved automatically and reproduced when log files are played back
 
 ### 1.1.3. Configuring responder-beacons
 
-If you are working with more than one responder-beacon, it is absolutely necessary that their addresses are different. 
-To set the address of a responder-beacon, it must be connected to a PC. For a standalone responder-beacon, it must be disconnected from the battery pack and connected through the supplied USB adapter.
+If you are working with more than one responder-beacon, it is essential that their addresses be different. 
+To set the address of a responder-beacon, connect it to a PC. For the standalone version of the responder-beacon, disconnect it from the battery pack and connect it through the supplied USB adapter.
 
 For the integrated version, use a USB-UART converter according to the pinout:
 
@@ -195,7 +195,7 @@ For the integrated version, use a USB-UART converter according to the pinout:
 After connecting the responder-beacon to the PC, launch the **AzimuthSuite** application and establish a connection by pressing the **🔌 LINK** button (or the `Ctrl + L` key combination).
 The application will search for the port; the progress and result of the search are displayed in the status line.
 
-Once the connection has been successfully established, the menu item **🛠 UTILS** ⯈ **🤖 DEVICE** ⯈ **Responder settings...** becomes available.  
+Once the connection has been successfully established, the **🛠 UTILS** ⯈ **🤖 DEVICE** ⯈ **Responder settings...** menu item becomes available.  
 In the address setup dialog box that opens, the following functions are available:
 - determining the current beacon address (the **📤 QUERY** button)
 - setting the specified beacon address (the **📥 APPLY** button)
