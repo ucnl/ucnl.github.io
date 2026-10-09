@@ -7,8 +7,8 @@ Other subcommands: `marker <RU path>` prints the sync marker line for a RU file;
 | Item | Value |
 |---|---|
 | Snapshot date | 2026-10-09 |
-| Content HEAD commit | `3a0fdea8914460b4ac041342fcb04fd6ec63276a` |
-| History | full history (5219 commits up to the content HEAD commit), dates and commit counts are reliable |
+| Content HEAD commit | `f705157a9ac5cf4c8fc612dd0525deefd44e3477` |
+| History | full history (5262 commits up to the content HEAD commit), dates and commit counts are reliable |
 | Staleness rule | `STALE` = RU has commits after the EN file's last commit (or after its sync marker), or headings differ by more than 1, or EN lacks the printing block RU has, or EN has fewer than 60 % of the RU characters |
 
 Legend. `Listed`: linked from `README_RU.md` or a root `*_ru.md` page. `Notes`: `changed` RU changed after EN, `headings` heading count differs by more than 1, `print` printing block missing in EN, `size` EN under 60 % of RU characters, `marker` EN carries a sync marker, `alias`/`case` EN name differs from the canonical name. `Proposal`: `DECIDE-translate` / `DECIDE-skip` awaiting the maintainer, `SKIP`/`TRANSLATE` decided.
@@ -35,12 +35,12 @@ Batch plan: **0 batches**, **0 documents**, **0.0 KB** of RU source (MISSING and
 
 | Status | RU file | EN file | RU last | EN last | RU commits after EN | RU KB | EN KB | Headings RU/EN | Listed | Rows RU/EN | Images RU/EN | Print RU/EN | Notes | Proposal |
 |---|---|---|---|---|---:|---:|---:|---|---|---|---|---|---|---|
-| OK | `AzimuthConsole_manual_ru.md` | `AzimuthConsole_manual_en.md` | 2026-09-25 | 2026-10-09 | 0 | 78.4 | 49.8 | 75/75 | yes | 197/197 | 2/2 | y/y | marker |  |
+| OK | `AzimuthConsole_manual_ru.md` | `AzimuthConsole_manual_en.md` | 2026-09-25 | 2026-10-09 | 0 | 78.4 | 49.9 | 75/75 | yes | 197/197 | 2/2 | y/y | marker |  |
 | OK | `AzimuthConsole_v1x_ru.md` | `AzimuthConsole_v1x_en.md` | 2026-06-10 | 2026-10-09 | 0 | 29.5 | 20.0 | 32/32 | no | 209/209 | 1/1 | y/y | marker | TRANSLATE |
 | OK | `AzimuthSuite_manual_ru.md` | `AzimuthSuite_manual_en.md` | 2026-06-10 | 2026-10-09 | 0 | 31.5 | 19.0 | 7/7 | no | 40/40 | 6/6 | y/y | marker | TRANSLATE |
 | OK | `Bat_n_link_box_Specification_ru.md` | `Bat_n_link_box_Specification_en.md` | 2026-06-10 | 2026-10-09 | 0 | 5.0 | 3.4 | 4/4 | yes | 21/21 | 4/4 | y/y | marker |  |
 | OK | `Bat_n_link_box_Users_manual_ru.md` | `Bat_n_link_box_Users_manual_en.md` | 2026-06-10 | 2026-10-09 | 0 | 16.1 | 9.0 | 14/14 | yes | 36/36 | 3/3 | y/y | marker |  |
-| OK | `media.md` | `media.md` | 2022-10-25 | 2022-10-25 | 0 | 1.6 | 1.0 | 2/2 | yes | 14/14 | 3/3 | n/n | cyrillic-in-EN(8) |  |
+| OK | `media.md` | `media.md` | 2022-10-25 | 2026-10-09 | 0 | 1.6 | 1.3 | 2/2 | yes | 14/14 | 3/3 | n/n | marker |  |
 | OK | `Zima2-35_technical_passport_ru.md` | `Zima2-35_technical_passport_en.md` | 2025-11-10 | 2026-10-09 | 0 | 13.7 | 8.4 | 10/10 | yes | 30/30 | 2/2 | n/n | marker | TRANSLATE |
 | OK | `Zima2-OEM35_technical_passport_ru.md` | `Zima2-OEM35_technical_passport_en.md` | 2025-08-18 | 2026-10-09 | 0 | 12.9 | 7.9 | 10/10 | yes | 26/26 | 2/2 | n/n | marker | TRANSLATE |
 | OK | `Zima2_DataBrief_ru.md` | `Zima2_DataBrief_en.md` | 2026-06-10 | 2026-10-09 | 0 | 11.4 | 7.7 | 8/8 | yes | 27/27 | 9/9 | y/y | marker |  |
@@ -85,7 +85,7 @@ Batch plan: **0 batches**, **0 documents**, **0.0 KB** of RU source (MISSING and
 | OK | `uWAVE_Specification_ru.md` | `uWAVE_Specification_en.md` | 2026-06-10 | 2026-10-09 | 0 | 10.7 | 6.9 | 3/3 | yes | 32/32 | 2/2 | y/y | marker |  |
 | OK | `uWave_technical_passport_ru.md` | `uWave_technical_passport_en.md` | 2025-09-10 | 2026-10-09 | 0 | 11.5 | 6.9 | 10/10 | yes | 17/17 | 2/2 | n/n | marker | TRANSLATE |
 | OK | `uWAVE_USBL_Modem_Specification_ru.md` | `uWAVE_USBL_Modem_Specification_en.md` | 2026-06-10 | 2026-10-09 | 0 | 10.6 | 7.0 | 3/3 | yes | 34/34 | 2/2 | y/y | marker |  |
-| OK | `uWAVE_version_history_ru.md` | `uWAVE_version_history_en.md` | 2025-11-26 | 2025-11-26 | 0 | 10.8 | 5.5 | 9/8 | yes | 24/24 | 1/1 | n/n |  |  |
+| OK | `uWAVE_version_history_ru.md` | `uWAVE_version_history_en.md` | 2025-11-26 | 2026-10-09 | 0 | 10.8 | 6.3 | 9/9 | yes | 24/24 | 1/1 | n/n | marker |  |
 | OK | `uWAVE_wiring_diagram_ru.md` | `uWAVE_wiring_diagram_en.md` | 2026-06-10 | 2026-10-09 | 0 | 1.9 | 1.6 | 3/3 | yes | 3/3 | 4/4 | y/y | marker |  |
 
 ### RedPhone
@@ -104,7 +104,7 @@ Batch plan: **0 batches**, **0 documents**, **0.0 KB** of RU source (MISSING and
 | OK | `RedPhone_OS_Specification_ru.md` | `RedPhone_OS_Specification_en.md` | 2026-06-10 | 2026-10-09 | 0 | 7.2 | 4.8 | 5/5 | yes | 30/30 | 2/2 | y/y | marker |  |
 | OK | `RedPhone_OS_Users_manual_ru.md` | `RedPhone_OS_Users_manual_en.md` | 2026-07-23 | 2026-10-09 | 0 | 39.1 | 20.8 | 30/30 | yes | 43/43 | 8/8 | y/y | marker |  |
 | OK | `RedPhone_PM_ru.md` | `RedPhone_PM_en.md` | 2021-04-21 | 2026-10-09 | 0 | 53.2 | 30.4 | 44/44 | yes | 48/48 | 2/2 | n/n | marker, cyrillic-in-EN(2327) |  |
-| OK | `RedPhone_RF_Dongle_Specification_ru.md` | `RedPhone_RF_Dongle_Specification_en.md` | 2022-04-21 | 2022-04-21 | 0 | 1.8 | 1.2 | 3/3 | yes | 12/12 | 2/2 | n/n | cyrillic-in-EN(10) |  |
+| OK | `RedPhone_RF_Dongle_Specification_ru.md` | `RedPhone_RF_Dongle_Specification_en.md` | 2022-04-21 | 2026-10-09 | 0 | 1.8 | 1.5 | 3/3 | yes | 12/12 | 2/2 | n/n | marker |  |
 | OK | `RedPhone_Specification_ru.md` | `RedPhone_Specification_en.md` | 2021-10-11 | 2026-10-09 | 0 | 6.2 | 4.2 | 4/4 | yes | 33/33 | 2/2 | n/n | marker |  |
 | OK | `RedPhone_Users_Manual_ru.md` | `RedPhone_Users_Manual_en.md` | 2021-04-21 | 2026-10-09 | 0 | 30.5 | 16.6 | 26/26 | yes | 58/58 | 5/5 | n/n | marker |  |
 
@@ -112,17 +112,17 @@ Batch plan: **0 batches**, **0 documents**, **0.0 KB** of RU source (MISSING and
 
 | Status | RU file | EN file | RU last | EN last | RU commits after EN | RU KB | EN KB | Headings RU/EN | Listed | Rows RU/EN | Images RU/EN | Print RU/EN | Notes | Proposal |
 |---|---|---|---|---|---:|---:|---:|---|---|---|---|---|---|---|
-| OK | `media.md` | `media.md` | 2022-10-21 | 2022-10-21 | 0 | 1.5 | 1.1 | 2/2 | yes | 16/16 | 3/3 | n/n |  |  |
-| OK | `RWLT_DataBrief_ru.md` | `RWLT_DataBrief_en.md` | 2024-04-11 | 2024-04-18 | 0 | 9.1 | 5.9 | 7/7 | yes | 8/8 | 5/5 | n/n |  |  |
+| OK | `media.md` | `media.md` | 2022-10-21 | 2026-10-09 | 0 | 1.5 | 1.2 | 2/2 | yes | 16/16 | 3/3 | n/n | marker |  |
+| OK | `RWLT_DataBrief_ru.md` | `RWLT_DataBrief_en.md` | 2024-04-11 | 2026-10-09 | 0 | 9.1 | 5.8 | 7/7 | yes | 8/8 | 5/5 | n/n | marker |  |
 | OK | `RWLT_GIB_Specification_ru.md` | `RWLT_GIB_Specification_en.md` | 2025-02-26 | 2026-10-09 | 0 | 6.0 | 4.0 | 4/4 | yes | 27/27 | 4/4 | n/n | marker |  |
 | OK | `RWLT_Pinger_K_Specification_ru.md` | `RWLT_Pinger_K_Specification_en.md` | 2025-02-26 | 2026-10-09 | 0 | 4.1 | 2.8 | 3/3 | yes | 17/17 | 2/2 | n/n | marker |  |
-| OK | `RWLT_Pinger_Specification_ru.md` | `RWLT_Pinger_Specification_en.md` | 2024-04-11 | 2024-04-18 | 0 | 4.4 | 2.6 | 3/3 | yes | 19/21 | 2/2 | n/n | cyrillic-in-EN(5) |  |
+| OK | `RWLT_Pinger_Specification_ru.md` | `RWLT_Pinger_Specification_en.md` | 2024-04-11 | 2026-10-09 | 0 | 4.4 | 2.9 | 3/3 | yes | 19/19 | 2/2 | n/n | marker |  |
 | OK | `RWLT_RF_Dongle_Specification_ru.md` | `RWLT_RF_Dongle_en.md` | 2024-04-11 | 2026-10-09 | 0 | 2.6 | 2.0 | 3/3 | yes | 17/17 | 2/2 | n/n | marker, alias | TRANSLATE |
 | OK | `RWLT_tech_pass_ru.md` | `RWLT_tech_pass_en.md` | 2025-09-23 | 2026-10-09 | 0 | 15.9 | 9.7 | 14/14 | yes | 48/48 | 2/2 | n/n | marker | TRANSLATE |
-| OK | `RWLT_Users_Manual_ru.md` | `RWLT_Users_Manual_en.md` | 2024-04-18 | 2024-04-18 | 0 | 44.5 | 25.0 | 21/21 | yes | 44/44 | 13/13 | n/n |  |  |
-| OK | `uNav_application_Users_manual_ru.md` | `uNav_application_Users_manual_en.md` | 2025-11-06 | 2025-11-06 | 0 | 32.5 | 18.4 | 47/47 | yes | 43/43 | 6/6 | n/n |  |  |
+| OK | `RWLT_Users_Manual_ru.md` | `RWLT_Users_Manual_en.md` | 2024-04-18 | 2026-10-09 | 0 | 44.5 | 25.2 | 21/21 | yes | 44/44 | 13/13 | n/n | marker |  |
+| OK | `uNav_application_Users_manual_ru.md` | `uNav_application_Users_manual_en.md` | 2025-11-06 | 2026-10-09 | 0 | 32.5 | 18.8 | 47/47 | yes | 43/43 | 6/6 | n/n | marker |  |
 | OK | `uNav_protocol_specification_ru.md` | `uNav_protocol_specification_en.md` | 2026-03-11 | 2026-10-09 | 0 | 20.4 | 12.8 | 19/19 | yes | 167/167 | 2/2 | n/n | marker |  |
-| OK | `uTrackDiver_Users_Manual_ru.md` | `uTrackDiver_Users_Manual_en.md` | 2024-04-18 | 2024-04-18 | 0 | 33.5 | 19.0 | 17/17 | no | 40/40 | 4/4 | n/n |  | TRANSLATE |
+| OK | `uTrackDiver_Users_Manual_ru.md` | `uTrackDiver_Users_Manual_en.md` | 2024-04-18 | 2026-10-09 | 0 | 33.5 | 17.9 | 17/17 | no | 40/40 | 4/4 | n/n | marker | TRANSLATE |
 
 ### WAYU
 
@@ -131,7 +131,7 @@ Batch plan: **0 batches**, **0 documents**, **0.0 KB** of RU source (MISSING and
 | OK | `media.md` | `media.md` | 2025-06-04 | 2026-10-09 | 0 | 2.1 | 1.8 | 2/2 | yes | 23/23 | 8/8 | n/n | marker |  |
 | OK | `WAYU_DataBrief_ru.md` | `WAYU_DataBrief_en.md` | 2025-06-04 | 2026-10-09 | 0 | 5.9 | 4.0 | 5/5 | yes | 11/11 | 5/5 | n/n | marker |  |
 | OK | `WAYU_GIB_Specification_ru.md` | `WAYU_GIB_Specification_en.md` | 2025-06-04 | 2026-10-09 | 0 | 4.9 | 3.4 | 4/4 | yes | 24/24 | 4/4 | n/n | marker |  |
-| OK | `WAYU_Pinger_Specification_ru.md` | `WAYU_Pinger_Specification_en.md` | 2025-06-04 | 2026-10-09 | 0 | 5.2 | 3.6 | 5/5 | yes | 27/27 | 2/2 | n/n | marker |  |
+| OK | `WAYU_Pinger_Specification_ru.md` | `WAYU_Pinger_Specification_en.md` | 2025-06-04 | 2026-10-09 | 0 | 5.2 | 3.5 | 5/5 | yes | 27/27 | 2/2 | n/n | marker |  |
 | MISSING | `WAYU_Protocol_specification_ru.md` | — | 2025-06-04 | — | — | 17.8 | — | 12/— | no | 150/— | 1/— | n/— |  | SKIP |
 | OK | `WAYU_RF_Dongle_Specification_ru.md` | `WAYU_RF_Dongle_Specification_en.md` | 2025-06-04 | 2026-10-09 | 0 | 2.5 | 1.9 | 3/3 | yes | 18/18 | 2/2 | n/n | marker |  |
 | OK | `WAYU_tech_pass_ru.md` | `WAYU_tech_pass_en.md` | 2024-12-12 | 2026-10-09 | 0 | 13.9 | 8.5 | 13/13 | yes | 42/42 | 2/2 | n/n | marker | TRANSLATE |
@@ -141,15 +141,15 @@ Batch plan: **0 batches**, **0 documents**, **0.0 KB** of RU source (MISSING and
 
 | Status | RU file | EN file | RU last | EN last | RU commits after EN | RU KB | EN KB | Headings RU/EN | Listed | Rows RU/EN | Images RU/EN | Print RU/EN | Notes | Proposal |
 |---|---|---|---|---|---:|---:|---:|---|---|---|---|---|---|---|
-| OK | `Aquatab_s_specification_ru.md` | `Aquatab_s_specification_en.md` | 2023-03-19 | 2023-04-18 | 0 | 8.9 | 5.4 | 3/3 | yes | 25/25 | 2/2 | n/n | cyrillic-in-EN(4) |  |
-| OK | `media.md` | `media.md` | 2022-10-24 | 2022-10-24 | 0 | 5.4 | 4.6 | 2/2 | yes | 66/66 | 15/15 | n/n |  |  |
+| OK | `Aquatab_s_specification_ru.md` | `Aquatab_s_specification_en.md` | 2023-03-19 | 2026-10-09 | 0 | 8.9 | 5.6 | 3/3 | yes | 25/25 | 2/2 | n/n | marker |  |
+| OK | `media.md` | `media.md` | 2022-10-24 | 2026-10-09 | 0 | 5.4 | 4.6 | 2/2 | yes | 66/66 | 15/15 | n/n | marker |  |
 | OK | `RedBASE_old_Specification_ru.md` | `RedBASE_old_Specification_en.md` | 2024-08-19 | 2026-10-09 | 0 | 5.0 | 3.2 | 3/3 | yes | 21/21 | 2/2 | n/n | marker | TRANSLATE |
 | OK | `RedBASE_Specification_ru.md` | `RedBASE_Specification_en.md` | 2024-12-12 | 2026-10-09 | 0 | 6.7 | 4.3 | 4/4 | yes | 24/24 | 4/4 | n/n | marker |  |
 | OK | `RedNAV_Host_Users_Manual_ru.md` | `RedNAV_Host_Users_Manual_en.md` | 2025-09-18 | 2026-10-09 | 0 | 12.4 | 7.7 | 5/5 | yes | 44/44 | 11/11 | n/n | marker |  |
 | OK | `RedNAV_PM_ru.md` | `RedNAV_PM_en.md` | 2023-03-19 | 2026-10-09 | 0 | 36.0 | 18.2 | 30/30 | yes | 17/17 | 1/1 | n/n | marker |  |
 | OK | `RedNAV_Specification_ru.md` | `RedNAV_Specification_en.md` | 2025-06-26 | 2026-10-09 | 0 | 7.9 | 4.9 | 3/3 | yes | 30/30 | 2/2 | n/n | marker |  |
-| OK | `RedNODE_Specification_ru.md` | `RedNODE_Specification_en.md` | 2024-08-19 | 2024-08-19 | 0 | 7.3 | 4.0 | 3/3 | yes | 29/29 | 2/2 | n/n | cyrillic-in-EN(4) |  |
-| OK | `RedNODE_wiring_diagram_ru.md` | `RedNODE_wiring_diagram_en.md` | 2022-04-21 | 2022-04-21 | 0 | 0.9 | 0.7 | 2/2 | yes | 3/3 | 3/3 | n/n |  |  |
+| OK | `RedNODE_Specification_ru.md` | `RedNODE_Specification_en.md` | 2024-08-19 | 2026-10-09 | 0 | 7.3 | 4.7 | 3/3 | yes | 29/29 | 2/2 | n/n | marker |  |
+| OK | `RedNODE_wiring_diagram_ru.md` | `RedNODE_wiring_diagram_en.md` | 2022-04-21 | 2026-10-09 | 0 | 0.9 | 0.9 | 2/2 | yes | 3/3 | 3/3 | n/n | marker |  |
 | OK | `RedWAVE_DataBrief_ru.md` | `RedWAVE_DataBrief_en.md` | 2024-11-13 | 2026-10-09 | 0 | 9.3 | 5.9 | 5/5 | yes | 17/17 | 5/5 | n/n | marker |  |
 | OK | `RedWAVE_Protocol_Specification_ru.md` | `RedWAVE_Protocol_Specification_en.md` | 2023-03-19 | 2026-10-09 | 0 | 30.3 | 18.9 | 30/30 | yes | 263/263 | 1/1 | n/n | marker |  |
 | OK | `RedWave_tech_pass_ru.md` | `RedWave_tech_pass_en.md` | 2025-06-10 | 2026-10-09 | 0 | 12.9 | 7.7 | 10/10 | yes | 27/27 | 2/2 | n/n | marker | TRANSLATE |
@@ -169,13 +169,13 @@ Batch plan: **0 batches**, **0 documents**, **0.0 KB** of RU source (MISSING and
 
 | Status | RU file | EN file | RU last | EN last | RU commits after EN | RU KB | EN KB | Headings RU/EN | Listed | Rows RU/EN | Images RU/EN | Print RU/EN | Notes | Proposal |
 |---|---|---|---|---|---:|---:|---:|---|---|---|---|---|---|---|
-| OK | `R_1.d3505_1_Specification_ru.md` | `R_1.d3505_1_Specification_en.md` | 2025-11-20 | 2026-03-13 | 0 | 2.2 | 1.5 | 5/5 | no | 18/18 | 2/2 | n/n |  | TRANSLATE |
-| OK | `RT-1.524525-1_specification_ru.md` | `RT-1.524525-1_specification_en.md` | 2023-06-06 | 2023-06-06 | 0 | 3.0 | 2.0 | 5/5 | yes | 22/23 | 6/6 | n/n | cyrillic-in-EN(3) |  |
+| OK | `R_1.d3505_1_Specification_ru.md` | `R_1.d3505_1_Specification_en.md` | 2025-11-20 | 2026-10-09 | 0 | 2.2 | 1.7 | 5/5 | no | 18/18 | 2/2 | n/n | marker | TRANSLATE |
+| OK | `RT-1.524525-1_specification_ru.md` | `RT-1.524525-1_specification_en.md` | 2023-06-06 | 2026-10-09 | 0 | 3.0 | 2.2 | 5/5 | yes | 22/22 | 6/6 | n/n | marker |  |
 | OK | `RT-1.524525-2_specification_ru.md` | `RT-1.524525-2_specification_en.md` | 2025-02-13 | 2026-10-09 | 0 | 3.5 | 2.5 | 5/5 | yes | 27/27 | 5/5 | n/n | marker |  |
 | OK | `RT_1_332820_1_Specification_ru.md` | `RT_1_332820_1_Specification_en.md` | 2025-10-29 | 2026-10-09 | 0 | 3.0 | 2.2 | 5/5 | yes | 22/22 | 6/6 | n/n | marker |  |
 | OK | `RT_1_332820_2_Specification_ru.md` | `RT_1_332820_2_Specification_en.md` | 2025-02-13 | 2026-10-09 | 0 | 3.4 | 2.5 | 5/5 | yes | 27/27 | 5/5 | n/n | marker |  |
 | OK | `RT_1_524525_1_FF_Specification_ru.md` | `RT_1_524525_1_FF_Specification_en.md` | 2024-08-20 | 2026-10-09 | 0 | 2.9 | 2.2 | 5/5 | yes | 20/20 | 6/6 | n/n | marker |  |
-| OK | `RT_2_332820_1_Specification_ru.md` | `RT_2_332820_1_specification_en.md` | 2023-06-06 | 2023-06-06 | 0 | 3.0 | 2.0 | 5/5 | yes | 22/23 | 6/6 | n/n | case, cyrillic-in-EN(5) | TRANSLATE |
+| OK | `RT_2_332820_1_Specification_ru.md` | `RT_2_332820_1_specification_en.md` | 2023-06-06 | 2026-10-09 | 0 | 3.0 | 2.1 | 5/5 | yes | 22/22 | 6/6 | n/n | marker, case | TRANSLATE |
 | OK | `RT_2_332820_2_Specification_ru.md` | `RT_2_332820_2_Specification_en.md` | 2025-03-03 | 2026-10-09 | 0 | 3.5 | 2.5 | 5/5 | yes | 27/27 | 5/5 | n/n | marker |  |
 | MISSING | `Transducers_info_ru.md` | — | 2022-04-13 | — | — | 1.5 | — | 3/— | no | 3/— | 1/— | n/— |  | SKIP |
 
@@ -187,7 +187,7 @@ Batch plan: **0 batches**, **0 documents**, **0.0 KB** of RU source (MISSING and
 | OK | `crimea_300_Datasheet_ru.md` | `crimea_300_Datasheet_en.md` | 2022-09-30 | 2026-10-09 | 0 | 21.0 | 13.1 | 29/29 | yes | 136/136 | 3/3 | n/n | marker | TRANSLATE |
 | OK | `crimea_300_OS_Datasheet_ru.md` | `crimea_300_OS_Datasheet_en.md` | 2022-11-10 | 2026-10-09 | 0 | 14.7 | 9.2 | 13/13 | yes | 41/41 | 6/6 | n/n | marker | TRANSLATE |
 | OK | `Flange_rod_mound_Specification_ru.md` | `Flange_rod_mound_Specification_en.md` | 2026-08-18 | 2026-10-09 | 0 | 3.0 | 2.3 | 6/6 | yes | 16/16 | 4/4 | n/n | marker |  |
-| OK | `RS422_extension_cable_ru.md` | `RS422_extension_cable_en.md` | 2025-03-26 | 2025-04-03 | 0 | 2.4 | 1.6 | 4/4 | yes | 19/19 | 2/2 | n/n | cyrillic-in-EN(7) |  |
+| OK | `RS422_extension_cable_ru.md` | `RS422_extension_cable_en.md` | 2025-03-26 | 2026-10-09 | 0 | 2.4 | 1.8 | 4/4 | yes | 19/19 | 2/2 | n/n | marker |  |
 | OK | `Sub_batteries_ru.md` | `Sub_batteries_en.md` | 2026-08-18 | 2026-10-09 | 0 | 5.3 | 3.8 | 5/5 | yes | 34/34 | 5/5 | n/n | marker |  |
 | OK | `uPress_Specification_ru.md` | `uPress_Specification_en.md` | 2025-02-06 | 2026-10-09 | 0 | 3.4 | 2.4 | 3/3 | yes | 23/23 | 2/2 | n/n | marker |  |
 | OK | `uSpeak_specification_ru.md` | `uSpeak_specification_en.md` | 2025-02-06 | 2026-10-09 | 0 | 2.9 | 2.1 | 3/3 | yes | 14/14 | 2/2 | n/n | marker |  |
@@ -202,10 +202,10 @@ Batch plan: **0 batches**, **0 documents**, **0.0 KB** of RU source (MISSING and
 
 | Status | RU file | EN file | RU last | EN last | RU commits after EN | RU KB | EN KB | Headings RU/EN | Listed | Rows RU/EN | Images RU/EN | Print RU/EN | Notes | Proposal |
 |---|---|---|---|---|---:|---:|---:|---|---|---|---|---|---|---|
-| OK | `F4105_AU_Specification_ru.md` | `F4105_AU_Specification_en.md` | 2022-09-13 | 2024-11-19 | 0 | 3.8 | 2.3 | 4/4 | yes | 24/24 | 2/2 | n/n | cyrillic-in-EN(11) |  |
-| OK | `F4105_BU_Specification_ru.md` | `F4105_BU_Specification_en.md` | 2022-12-20 | 2024-11-19 | 0 | 4.6 | 2.3 | 4/4 | yes | 29/23 | 2/2 | n/n | cyrillic-in-EN(5) |  |
+| OK | `F4105_AU_Specification_ru.md` | `F4105_AU_Specification_en.md` | 2022-09-13 | 2026-10-09 | 0 | 3.8 | 2.5 | 4/4 | yes | 24/24 | 2/2 | n/n | marker |  |
+| OK | `F4105_BU_Specification_ru.md` | `F4105_BU_Specification_en.md` | 2022-12-20 | 2026-10-09 | 0 | 4.6 | 2.9 | 4/4 | yes | 29/29 | 2/2 | n/n | marker |  |
 | OK | `F4105_DataBrief_ru.md` | `F4105_DataBrief_en.md` | 2025-04-10 | 2026-10-09 | 0 | 6.4 | 3.7 | 6/6 | yes | 12/12 | 4/4 | n/n | marker |  |
-| OK | `F4105_SU_Specification_ru.md` | `F4105_SU_Specification_en.md` | 2022-09-20 | 2024-11-19 | 0 | 4.2 | 2.7 | 3/3 | yes | 18/18 | 2/2 | n/n | cyrillic-in-EN(2) |  |
+| OK | `F4105_SU_Specification_ru.md` | `F4105_SU_Specification_en.md` | 2022-09-20 | 2026-10-09 | 0 | 4.2 | 2.8 | 3/3 | yes | 18/18 | 2/2 | n/n | marker |  |
 | OK | `F4105_tech_pass_ru.md` | `F4105_tech_pass_en.md` | 2022-11-16 | 2026-10-09 | 0 | 13.3 | 7.9 | 11/11 | yes | 54/54 | 2/2 | n/n | marker | TRANSLATE |
 | OK | `F4105_Users_manual_ru.md` | `F4105_Users_manual_en.md` | 2022-12-20 | 2026-10-09 | 0 | 51.3 | 28.4 | 22/22 | yes | 105/105 | 19/19 | n/n | marker |  |
 
@@ -213,14 +213,14 @@ Batch plan: **0 batches**, **0 documents**, **0.0 KB** of RU source (MISSING and
 
 | Status | RU file | EN file | RU last | EN last | RU commits after EN | RU KB | EN KB | Headings RU/EN | Listed | Rows RU/EN | Images RU/EN | Print RU/EN | Notes | Proposal |
 |---|---|---|---|---|---:|---:|---:|---|---|---|---|---|---|---|
-| OK | `BatLinkBox_MSDS_ru.md` | `BatLinkBox_MSDS_en.md` | 2026-02-25 | 2026-02-25 | 0 | 28.9 | 15.4 | 54/54 | yes | 107/100 | 2/1 | n/n | cyrillic-in-EN(46) | TRANSLATE |
-| OK | `l2c.md` | `l2c.md` | 2022-04-21 | 2022-04-21 | 0 | 1.5 | 1.4 | 0/0 | yes | 0/0 | 8/8 | n/n |  |  |
-| OK | `package_sticker.md` | `package_sticker.md` | 2022-04-21 | 2022-04-21 | 0 | 1.5 | 1.3 | 0/0 | yes | 12/12 | 12/12 | n/n |  |  |
+| OK | `BatLinkBox_MSDS_ru.md` | `BatLinkBox_MSDS_en.md` | 2026-02-25 | 2026-10-09 | 0 | 28.9 | 15.7 | 54/54 | yes | 107/107 | 2/2 | n/n | marker | TRANSLATE |
+| OK | `l2c.md` | `l2c.md` | 2022-04-21 | 2026-10-09 | 0 | 1.5 | 1.5 | 0/0 | yes | 0/0 | 8/8 | n/n | marker |  |
+| OK | `package_sticker.md` | `package_sticker.md` | 2022-04-21 | 2026-10-09 | 0 | 1.5 | 1.4 | 0/0 | yes | 12/12 | 12/12 | n/n | marker |  |
 | OK | `RedBase_v3_LiFEPO4_msds_ru.md` | `RedBase_v3_LiFEPO4_msds_en.md` | 2025-05-12 | 2026-10-09 | 0 | 28.7 | 15.6 | 53/53 | yes | 101/101 | 2/2 | n/n | marker | TRANSLATE |
 | OK | `RedPhone_DX_MSDS_ru.md` | `RedPhone_DX_MSDS_en.md` | 2025-05-12 | 2026-10-09 | 0 | 28.6 | 15.6 | 53/53 | yes | 101/101 | 2/2 | n/n | marker | TRANSLATE |
 | OK | `RedPhone_OS_MSDS_ru.md` | `RedPhone_OS_MSDS_en.md` | 2025-05-12 | 2026-10-09 | 0 | 28.6 | 15.6 | 53/53 | yes | 101/101 | 2/2 | n/n | marker | TRANSLATE |
-| OK | `SB_23_64_LI_MSDS_ru.md` | `SB_23_64_LI_MSDS_en.md` | 2026-02-25 | 2026-02-25 | 0 | 29.3 | 15.8 | 54/54 | yes | 112/105 | 2/1 | n/n | cyrillic-in-EN(50) | TRANSLATE |
-| OK | `SB_24_48_LF_MSDS_ru.md` | `SB_24_48_LF_MSDS_en.md` | 2026-02-25 | 2026-02-25 | 0 | 28.9 | 15.6 | 54/54 | yes | 107/101 | 2/2 | n/n | cyrillic-in-EN(46) | TRANSLATE |
+| OK | `SB_23_64_LI_MSDS_ru.md` | `SB_23_64_LI_MSDS_en.md` | 2026-02-25 | 2026-10-09 | 0 | 29.3 | 16.1 | 54/54 | yes | 112/112 | 2/2 | n/n | marker | TRANSLATE |
+| OK | `SB_24_48_LF_MSDS_ru.md` | `SB_24_48_LF_MSDS_en.md` | 2026-02-25 | 2026-10-09 | 0 | 28.9 | 15.8 | 54/54 | yes | 107/107 | 2/2 | n/n | marker | TRANSLATE |
 | MISSING | `ucnl_nav_systems_brochure_ru.md` | — | 2022-11-18 | — | — | 1.2 | — | 0/— | yes | 3/— | 3/— | n/— |  | SKIP |
 | MISSING | `ucnl_wireless_voice_ru.md` | — | 2022-11-18 | — | — | 0.8 | — | 0/— | yes | 3/— | 1/— | n/— |  | SKIP |
 | OK | `WAYU_GIB_MSDS_ru.md` | `WAYU_GIB_MSDS_en.md` | 2025-05-12 | 2026-10-09 | 0 | 28.7 | 15.6 | 53/53 | yes | 101/101 | 2/2 | n/n | marker | TRANSLATE |
@@ -229,8 +229,8 @@ Batch plan: **0 batches**, **0 documents**, **0.0 KB** of RU source (MISSING and
 
 | Status | RU file | EN file | RU last | EN last | RU commits after EN | RU KB | EN KB | Headings RU/EN | Listed | Rows RU/EN | Images RU/EN | Print RU/EN | Notes | Proposal |
 |---|---|---|---|---|---:|---:|---:|---|---|---|---|---|---|---|
-| OK | `RedGTR_Protocol_Specifications_ru.md` | `RedGTR_Protocol_Specifications_en.md` | 2021-04-21 | 2022-04-13 | 0 | 28.8 | 15.2 | 25/25 | yes | 238/250 | 1/1 | n/n | cyrillic-in-EN(28) | TRANSLATE |
-| OK | `RedGTR_Specifications_ru.md` | `RedGTR_Specifications_en.md` | 2021-04-21 | 2022-04-13 | 0 | 5.0 | 3.0 | 3/3 | yes | 25/24 | 2/2 | n/n | cyrillic-in-EN(2) | TRANSLATE |
+| OK | `RedGTR_Protocol_Specifications_ru.md` | `RedGTR_Protocol_Specifications_en.md` | 2021-04-21 | 2026-10-09 | 0 | 28.8 | 16.6 | 25/25 | yes | 238/238 | 1/1 | n/n | marker, cyrillic-in-EN(1) | TRANSLATE |
+| OK | `RedGTR_Specifications_ru.md` | `RedGTR_Specifications_en.md` | 2021-04-21 | 2026-10-09 | 0 | 5.0 | 3.3 | 3/3 | yes | 25/25 | 2/2 | n/n | marker | TRANSLATE |
 
 ### RedLINE
 
