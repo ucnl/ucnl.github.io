@@ -31,14 +31,14 @@
 
 ## DESCRIPTION
 
-**Zima2-LX** is the transceiver of the long baseline navigation system [Zima2 LBL](/documentation/RU/Zima/Zima2_LBL_DataBrief_ru.md).
+**Zima2-LX** is the transceiver of the long baseline navigation system [Zima2 LBL](/documentation/EN/Zima/Zima2_LBL_DataBrief_en.md).
 
 The device is designed to be placed on an underwater object in order to measure the ranges to the [Zima2-R](Zima2R_Specification_en.md) responder-beacons, whose positions are known.
 
-Unlike [Zima2-L](/documentation/RU/Zima/Zima2L_Specification_ru.md), which works with a fixed navigation base of 3 or 4 beacons with addresses 1-4 using the common request scheme and is limited by a base size of 265 m, Zima2-LX provides sequential interrogation of 3 or 4 beacons with arbitrary addresses without restrictions on the geometry of the base. The only limitation is the acoustic communication range determined by the link budget (up to 3000 m).
-The position of the transceiver is calculated by the external [Zima2-SL](/documentation/RU/Zima/Zima2SL_Specification_ru.md) device based on the measured ranges and the known coordinates of the beacons.
+Unlike [Zima2-L](/documentation/EN/Zima/Zima2L_Specification_en.md), which works with a fixed navigation base of 3 or 4 beacons with addresses 1-4 using the common request scheme and is limited by a base size of 265 m, Zima2-LX provides sequential interrogation of 3 or 4 beacons with arbitrary addresses without restrictions on the geometry of the base. The only limitation is the acoustic communication range determined by the link budget (up to 3000 m).
+The position of the transceiver is calculated by the external [Zima2-SL](/documentation/EN/Zima/Zima2SL_Specification_en.md) device based on the measured ranges and the known coordinates of the beacons.
 
-**Zima2-LX** and [Zima2-L](/documentation/RU/Zima/Zima2L_Specification_ru.md) use **the same hardware platform**.
+**Zima2-LX** and [Zima2-L](/documentation/EN/Zima/Zima2L_Specification_en.md) use **the same hardware platform**.
 
 ________________
 <a name="footnote_a1"><sup>*</sup></a> Patent RU2659299C1.
@@ -76,7 +76,7 @@ ________________
 - <a name="footnote1"><sup>1</sup></a> A parameter that determines the maximum range at which a signal can be received, based on electro-acoustic parameters of the transmitter and receiver, spatial decrease in the intensity of sound energy, attenuation in the medium and the acoustic noise level. The maximum communication range is not equivalent to the maximum operating range of the navigation system.
 - <a name="footnote2"><sup>2</sup></a> The value was obtained in a laboratory static experiment, without taking into account the multipath propagation effect.
 - <a name="footnote3"><sup>3</sup></a> The value can be changed on request.
-- <a name="footnote4"><sup>4</sup></a> Depends on the number of beacons in the set and their addresses; with sequential interrogation the update rate is lower than that of [Zima2-L](/documentation/RU/Zima/Zima2L_Specification_ru.md).
+- <a name="footnote4"><sup>4</sup></a> Depends on the number of beacons in the set and their addresses; with sequential interrogation the update rate is lower than that of [Zima2-L](/documentation/EN/Zima/Zima2L_Specification_en.md).
 - <a name="footnote5"><sup>5</sup></a> PENDING.
 
 <div style="page-break-after: always;"></div>

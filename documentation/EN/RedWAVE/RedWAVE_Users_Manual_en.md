@@ -207,7 +207,7 @@ Before using devices of these versions, make sure that the rubber cap of the con
 | |
 | :---: |
 | ![RedBase old_topcap](/documentation/def_redbase_cover_scheme.png)|
-| **Figure 9 - Location of the controls and indicators on the cover of the [RedBase](/documentation/RU/RedWAVE/RedBASE_old_Specification_ru.md) buoy** |
+| **Figure 9 - Location of the controls and indicators on the cover of the [RedBase](/documentation/EN/RedWAVE/RedBASE_old_Specification_en.md) buoy** |
 | _1 - power toggle switch, 2 - light indication lamps, 3 - charging connector_ |
 
 > _**CAUTION!**_  
