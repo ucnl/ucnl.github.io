@@ -127,7 +127,7 @@ ________________
 | :--- | :--- | :--- | :--- |
 | 1 | RedPhone station with a strap mount and a headset connector | 1 pc. |  |
 | 2 | Mains charger with a cradle | 1 pc. | |
-| 3 | Spare parts kit (bit for a hex nut, set of bolts and nuts) | 1 pc. | |
+| 3 | Spare parts and tools kit (bit for a hex nut, set of bolts and nuts) | 1 pc. | |
 
 <div style="page-break-after: always;"></div>
 
