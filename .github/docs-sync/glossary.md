@@ -864,3 +864,28 @@ Section headings follow the standard 16-section layout of GHS/REACH Annex II saf
 | в водолазном исполнении | in the diver version | RedWAVE/RedWave_tech_pass_en.md | |
 | гидроакустический навигационный приемник RedNode | RedNode underwater acoustic navigation receiver | RedWAVE/RedWave_tech_pass_en.md | |
 | методом лазерной гравировки | by laser engraving | RedWAVE/RedWave_tech_pass_en.md | Factory numbers; hot stamping = горячее клеймение |
+
+## Added in batch redwave-1
+
+| RU | EN | Source EN file | Note |
+|---|---|---|---|
+| Буй-ретранслятор; Навигационный гидроакустический буй (RedBase) | GNSS-equipped sonobuoy; relay sonobuoy | RedWAVE/RedBASE_Specification_en.md, RedWAVE/RedNAV_Specification_en.md | RedBase header cell keeps `GNSS-equipped sonobuoy`; `буи-ретрансляторы` in running text = `relay sonobuoys` |
+| Водолазный навигационный приемник (RedNav) | diver's navigation receiver | RedWAVE/RedNAV_Specification_en.md | Header cell; `Водолазный навигатор` = `diver's navigator` |
+| Универсальный (интегрируемый) навигационный приемник (RedNode) | universal (integrated) navigation receiver | RedWAVE/RedWAVE_DataBrief_en.md | |
+| плавучая длинная (навигационная) база | floating long (navigation) base | RedWAVE/RedWAVE_DataBrief_en.md (+2) | |
+| ВЫНОСНОЙ БЛОК; ИНТЕРФЕЙСНЫЙ БЛОК | REMOTE UNIT; INTERFACE UNIT | RedWAVE/RedNAV_Specification_en.md | |
+| СИНХРОНИЗАЦИЯ С ПК | SYNCHRONIZATION WITH PC | RedWAVE/RedNAV_Specification_en.md | |
+| МАРШРУТНЫЕ ФУНКЦИИ; загружаемые точки | ROUTE FUNCTIONS; uploadable points | RedWAVE/RedNAV_Specification_en.md | |
+| ПРЕДЕЛЬНОЕ СООТНОШЕНИЕ СИГНАЛ/ШУМ В ПОЛОСЕ | MINIMUM SIGNAL-TO-NOISE RATIO (IN BAND) | RedWAVE/RedNAV_Specification_en.md | |
+| МАКСИМАЛЬНАЯ СКОРОСТЬ ОТНОСИТЕЛЬНО ПРИЕМНИКОВ | MAXIMUM VELOCITY RELATIVE TO RECEIVERS | RedWAVE/RedBASE_Specification_en.md | |
+| ДЛИНА КАБЕЛЯ ГИДРОАКУСТИЧЕСКОГО ПЕРЕДАТЧИКА | UNDERWATER ACOUSTIC TRANSMITTER CABLE LENGTH | RedWAVE/RedBASE_Specification_en.md | |
+| ВРЕМЯ ПОЛНОЙ ЗАРЯДКИ ОТ СЕТИ 220 В / 50 Гц | FULL CHARGE TIME FROM 220 V / 50 Hz MAINS | RedWAVE/RedBASE_Specification_en.md | |
+| блоки дополнительной плавучести; якорная веревка; батарейный блок | additional buoyancy blocks; anchor line; battery block | RedWAVE/RedBASE_Specification_en.md | |
+| залитый в полиуретановый компаунд | potted in a polyurethane compound | RedWAVE/RedBASE_Specification_en.md | |
+| Свинцово-кислотный (АКБ) | Lead-acid | RedWAVE/RedBASE_old_Specification_en.md | |
+| зарядная площадка | charging pad | RedWAVE/RedNAV_Host_Users_Manual_en.md | |
+| RedNav Host UI | Search in base, Search, OK, Save, Download, Upload to device, Waypoints, Right-handed device, State: connected | RedWAVE/RedNAV_Host_Users_Manual_en.md | Real English strings (`MainForm.resx`, `MainFormStrings.resx` of github.com/ucnl/RedNavHost); RU "Переворот экрана" = `Right-handed device` |
+| Windows 10 Bluetooth UI | Start -> Settings -> Devices, On, + Add Bluetooth or other device, Pair, Next, Connected | RedWAVE/RedNAV_Host_Users_Manual_en.md | |
+| Управление выдачей сообщений | Sentence output control | RedWAVE/RedWAVE_Protocol_Specification_en.md | |
+| Превышен интервал ожидания | Waiting interval exceeded | RedWAVE/RedWAVE_Protocol_Specification_en.md | |
+| Ускорение свободного падения | Gravitational acceleration | RedWAVE/RedWAVE_Protocol_Specification_en.md | As in the uWave protocol |
