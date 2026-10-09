@@ -630,3 +630,21 @@ Section headings follow the standard 16-section layout of GHS/REACH Annex II saf
 | решатель | solver | Zima/Zima2SL_Specification_en.md | Zima2-SL |
 | потребитель (навигационных данных) | data consumer | Zima/Zima2SL_Specification_en.md | |
 | ОЖИДАЕТСЯ | PENDING | Zima/Zima2SL_Specification_en.md | Placeholder for images and values not yet published |
+
+## Added in batch zima-7
+
+| RU | EN | Source EN file | Note |
+|---|---|---|---|
+| Идентификаторы удаленных команд | Remote command identifiers | Zima/Zima_Protocol_Specification_en.md | First-generation Zima protocol |
+| настроечное поле | configuration field | Zima/Zima_Protocol_Specification_en.md | |
+| акустическое ядро | acoustic core | Zima/Zima_Protocol_Specification_en.md | |
+| Управление энергосберегающим режимом | Power-saving mode control | Zima/Zima_Protocol_Specification_en.md | |
+| «Теплая» перезагрузка | 'Warm' reboot | Zima/Zima_Protocol_Specification_en.md | |
+| Глубина … от поверхности | depth below the surface | Zima/Zima_Protocol_Specification_en.md | |
+| Доступно: (командная строка / терминал / удаленный терминал) | Available via: (command line / terminal / remote terminal (UDP)) | Zima/AzimuthConsole_v1x_en.md | |
+| перегрузка (координат и курса) | override | Zima/AzimuthConsole_v1x_en.md | LHO?/LHOV = location and heading override |
+| ACHOD-фильтр | ACHOD filter | Zima/AzimuthConsole_v1x_en.md | Not the DH filter of 2.x |
+| длинная навигационная база | long navigation base | Zima/AzimuthConsole_v1x_en.md | SRC3 |
+| МАКСИМАЛЬНОЕ ЧИСЛО МАЯКОВ В БАЗЕ | MAXIMUM NUMBER OF BEACONS IN THE BASE | Zima/Zima2LX_Specification_en.md | |
+| МАКСИМАЛЬНАЯ ЧАСТОТА ОБНОВЛЕНИЯ ДАЛЬНОСТЕЙ | MAXIMUM RANGE UPDATE RATE | Zima/Zima2LX_Specification_en.md | Cf. MAXIMUM POSITION UPDATE RATE (Zima2-SL) |
+| НОМИНАЛЬНАЯ ТОЧНОСТЬ ИЗМЕРЕНИЯ ДАЛЬНОСТИ (СКО) | NOMINAL RANGE MEASUREMENT ACCURACY (RMS) | Zima/Zima2LX_Specification_en.md | |
