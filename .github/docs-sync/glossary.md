@@ -463,3 +463,21 @@ Section headings follow the standard 16-section layout of GHS/REACH Annex II saf
 | отсутствует | not applicable | Misc/*_MSDS_en.md (3) | Existing is absent |
 | Литий / Фосфат железа | Lithium / Iron phosphate | Misc/*_MSDS_en.md (3) | |
 | Аккумулятор высокотоковый литий-железофосфатный | High-current lithium iron phosphate (LiFePO4) battery | Misc/RedBase_v3_LiFEPO4_msds_en.md | Header cell |
+
+## Added in batch redphone-2
+
+| RU | EN | Source EN file | Note |
+|---|---|---|---|
+| Устройство (раздел руководства) | Device design | RedPhone/RedPhone_DX_Users_Manual_en.md | Section heading describing the construction |
+| Настройка станции | Station configuration | RedPhone/RedPhone_DX_Users_Manual_en.md | |
+| № Контакта; Общий (контакт) | Pin No.; Common | RedPhone/RedPhone_DX_Users_Manual_en.md | Pinout tables |
+| ремень; резиновый жгут | strap; rubber bungee cord | RedPhone/RedPhone_DX_Users_Manual_en.md | Mounting on the tank; "belt" is the diver's belt |
+| металлическая скоба | metal clamp | RedPhone/RedPhone_DX_Users_Manual_en.md | |
+| мокрая салфетка | wet wipe | RedPhone/RedPhone_DX_Users_Manual_en.md | |
+| транспортировочная тара | transport case | RedPhone/RedPhone_DX_Users_Manual_en.md | |
+| сервисный кабель | USB service cable | RedPhone/RedPhone_DX_Users_Manual_en.md | |
+| с увеличенной дальностью связи (RedPhone-MDX, RedPhone-MOS) | Extended-range … | RedPhone/RedPhone_MDX_Specification_en.md, RedPhone/RedPhone_MOS_Specification_en.md | `Extended-range diver station …`, `Extended-range surface station …` |
+| В надводном положении (переключение каналов) | In the surface position | RedPhone/RedPhone_Specification_en.md | As in the Zima2 user's manual |
+| USB-радиодонгл | USB radio dongle | RedPhone/RedPhone_Specification_en.md | |
+| ВСТРОЕННЫЙ ИСТОЧНИК ПИТАНИЯ | BUILT-IN POWER SUPPLY | RedPhone/RedPhone_Specification_en.md | |
+| RedPhone DX Config UI (web tool) | Connection, Connect, Device type, Serial number, Firmware version, SETS2 Settings, RWLT Mode, RWLT Diver ID, Flags, Bit 0 (PinsPrevail), Bit 7 (CH Indicator), Save Settings, Write to Flash | RedPhone/RedPhone_DX_Users_Manual_en.md | Real English strings from `i18n.js` of github.com/ucnl/RedPhoneDXConfig-Web |
