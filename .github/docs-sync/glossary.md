@@ -660,3 +660,23 @@ Section headings follow the standard 16-section layout of GHS/REACH Annex II saf
 | привод носителя (на маяк) | homing of the carrier | Zima/AzimuthSuite_manual_en.md | RAZ parameter |
 | точка привязки | reference point | Zima/AzimuthSuite_manual_en.md | |
 | Пункт (меню) **X** - … | The **X** item/menu … | Zima/AzimuthSuite_manual_en.md | Sentence pattern for menu items and buttons |
+
+## Added in batch uwave-1
+
+| RU | EN | Source EN file | Note |
+|---|---|---|---|
+| Устройства семейства | Devices of the family | uWAVE/uWAVE_Family_en.md | |
+| Оснащение устройств | Device equipment | uWAVE/uWAVE_Family_en.md | |
+| Диапазоны измеряемых значений | Ranges of measured values | uWAVE/uWAVE_Family_en.md | |
+| Основные параметры устройств | Main device parameters | uWAVE/uWAVE_Modems_comparison_en.md | |
+| Текущий статус / Поставляется | Current status / Available | uWAVE/uWAVE_Modems_comparison_en.md | |
+| Модуль измерения напряжения питания | Supply voltage measurement module | uWAVE/uWAVE_Modems_comparison_en.md | |
+| Двухосевой инклинометр | Two-axis inclinometer | uWAVE/uWAVE_Family_en.md (+1) | |
+| Отличия от базовой версии | Differences from the base version of | uWAVE/uWAVE_Max_Specification_en.md (+1) | |
+| НЕСУЩАЯ | CARRIER | uWAVE/uWAVE_Specification_en.md | |
+| РАЗМЕР БУФЕРА ПЕРЕДАТЧИКА | TRANSMITTER BUFFER SIZE | uWAVE/uWAVE_Specification_en.md (+3) | |
+| ПАКЕТНЫЙ РЕЖИМ | PACKET MODE | uWAVE/uWAVE_Specification_en.md (+3) | ALO = At-least-once |
+| КОМАНДНЫЙ РЕЖИМ | COMMAND MODE | uWAVE/uWAVE_Specification_en.md (+3) | |
+| кОм | kΩ | uWAVE/uWAVE_Specification_en.md (+3) | |
+| Передача данных совмещенная с УКБ навигацией | Data transmission combined with USBL navigation | uWAVE/uWAVE_USBL_Modem_Specification_en.md | |
+| Упоминания об устройствах uWave; Научные публикации | Mentions of uWave devices; Scientific publications | uWAVE/uWave_publications_en.md | Russian-language citations are quoted verbatim |
