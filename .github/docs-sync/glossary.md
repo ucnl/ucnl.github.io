@@ -737,3 +737,36 @@ Section headings follow the standard 16-section layout of GHS/REACH Annex II saf
 | Система команд RPH | RPH command system | RedPhone/RedPhone-DX_protocol_specification_en.md | |
 | Протокол диалогового уровня | dialog layer protocol | RedPhone/RedPhone-DX_protocol_specification_en.md | Same as the Zima2 and uWave protocols |
 | Поле/Параметр / Описание | Field/Parameter / Description | RedPhone/RedPhone-DX_protocol_specification_en.md | |
+
+## Added in batch rwlt-1
+
+| RU | EN | Source EN file | Note |
+|---|---|---|---|
+| Курс (движения) в навигационных сообщениях (tCrs, gnssCrs, crs2rp, crs4rp, RMC) | Course | RWLT/uNav_protocol_specification_en.md | Course over ground / direction to a point; the fixed `курс` → `heading` applies to vessel/antenna orientation |
+| сообщение (протокол NMEA) | sentence | RWLT/uNav_protocol_specification_en.md (+2) | As in the Zima2 and RedPhone-DX protocols |
+| сглаживающий фильтр | smoothing filter | RWLT/uNav_protocol_specification_en.md | Old EN "anti-aliasing filter" was wrong |
+| буфер-классификатор | classifier buffer | RWLT/uNav_protocol_specification_en.md | |
+| определитель курса движения | course estimator | RWLT/uNav_protocol_specification_en.md | |
+| опорная точка | reference point | RWLT/uNav_protocol_specification_en.md | |
+| нумерованный объект / цель | numbered object / target | RWLT/uNav_protocol_specification_en.md | |
+| Возраст навигационных данных | Navigation data age | RWLT/uNav_protocol_specification_en.md | |
+| Радиальная ошибка | Radial error | RWLT/uNav_protocol_specification_en.md | |
+| навигационный гидроакустический буй (RWLT GIB) | navigation sonobuoy | RWLT/RWLT_GIB_Specification_en.md | Header cell keeps `Navigation buoy`; consistent with RWLT_DataBrief_en and RWLT_Users_Manual_en |
+| плавучая (длинная) навигационная база | floating (long) navigation base | RWLT/RWLT_GIB_Specification_en.md, RWLT/RWLT_tech_pass_en.md | |
+| схема поплавок-перо | float-and-spar (spar buoy) design | RWLT/RWLT_GIB_Specification_en.md | |
+| ИЗБЫТОЧНАЯ ПЛАВУЧЕСТЬ | EXCESS BUOYANCY | RWLT/RWLT_GIB_Specification_en.md | |
+| ОСАДКА; ВЫСОТА НАД ВОДОЙ | DRAFT; HEIGHT ABOVE WATER | RWLT/RWLT_GIB_Specification_en.md | |
+| МАКСИМАЛЬНАЯ СКОРОСТЬ ОТНОСИТЕЛЬНО ПИНГЕРА / БУЕВ | MAXIMUM VELOCITY RELATIVE TO PINGER / BUOYS | RWLT/RWLT_GIB_Specification_en.md, RWLT/RWLT_Pinger_K_Specification_en.md | |
+| МАКСИМАЛЬНО / МИНИМАЛЬНО ДОПУСТИМОЕ РАССТОЯНИЕ ДО ДРУГИХ БУЕВ КОМПЛЕКТА | MAXIMUM / MINIMUM PERMISSIBLE DISTANCE TO OTHER BUOYS OF THE SET | RWLT/RWLT_GIB_Specification_en.md | |
+| ТИП ВСТРОЕННОГО РАДИОМОДУЛЯ; МАКСИМАЛЬНАЯ МОЩНОСТЬ РАДИОМОДУЛЯ | BUILT-IN RADIO MODULE TYPE; MAXIMUM RADIO MODULE POWER | RWLT/RWLT_GIB_Specification_en.md | |
+| РЕФЕРЕНСНЫЙ ЭЛЛИПСОИД | REFERENCE ELLIPSOID | RWLT/RWLT_GIB_Specification_en.md | |
+| ПЕРИОД ИЗЛУЧЕНИЯ АКУСТИЧЕСКОГО СИГНАЛА | ACOUSTIC SIGNAL EMISSION PERIOD | RWLT/RWLT_Pinger_K_Specification_en.md | |
+| ТЕЛЕМЕТРИЧЕСКАЯ ИНФОРМАЦИЯ | TELEMETRY INFORMATION | RWLT/RWLT_Pinger_K_Specification_en.md | RWLT_Pinger_Specification_en (OK in master) says `TELEMETRY`; align in Phase 4 |
+| носитель (ТНПА, АНПА) | carrier (ROV, AUV) | RWLT/RWLT_Pinger_K_Specification_en.md, RWLT/RWLT_tech_pass_en.md | Old EN "media" was wrong |
+| Исполнение IP68 | IP68 protection class | RWLT/RWLT_RF_Dongle_en.md | |
+| Эмуляция протокола GNSS-приемников | GNSS receiver protocol emulation | RWLT/RWLT_RF_Dongle_en.md | |
+| только прием (радиосвязь) | receive only | RWLT/RWLT_RF_Dongle_en.md | |
+| Автономный блок питания и коммутации Bat&Link Box | Bat&Link Box autonomous power supply and switching unit | RWLT/RWLT_tech_pass_en.md | |
+| батарейная сборка | battery pack | RWLT/RWLT_tech_pass_en.md | |
+| сростки (аксессуары) | splices | RWLT/RWLT_tech_pass_en.md | |
+| хранение в неопресненном и влажном виде | storage without rinsing in fresh water or while damp | RWLT/RWLT_tech_pass_en.md | |
