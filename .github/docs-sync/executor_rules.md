@@ -9,7 +9,7 @@ Reference files (approved EN of earlier batches, the current glossary) are named
 ## Read first, in full
 
 1. `CLAUDE.md` sections 2–6 (hard rules, document anatomy, links, style and terminology, sync marker).
-2. The glossary named in the brief (`$S/ref/glossary_current.md`, or `.github/docs-sync/glossary.md` once all batch PRs are merged) — the authoritative glossary including the rows added in earlier batches (section `## Added in batch …` at the end). Use the **bold** canonical variant of every CONFLICT row. Follow its "How to use" rules: ALL CAPS mirroring, `MAXIMUM` spelled out (not `MAX.`) unless RU abbreviates, `underwater acoustic` (never `hydroacoustic`), Cyrillic look-alikes. The product name case rule below overrides the glossary's older "keep the RU spelling" wording.
+2. The glossary named in the brief (`$S/ref/glossary_current.md`, or `.github/docs-sync/glossary.md` once all batch PRs are merged) — the authoritative glossary including the rows added in earlier batches (section `## Added in batch …` at the end). Use the canonical term in the EN column with its specified context. Follow its "How to use" rules: ALL CAPS mirroring, `MAXIMUM` spelled out (not `MAX.`) unless RU abbreviates, `underwater acoustic` (never `hydroacoustic`), Cyrillic look-alikes. Apply the product name case rule below.
 3. The reference EN files named in your brief (latest approved translations of sibling documents): reuse their wording for identical RU passages so that sibling documents read the same.
 
 ## Amendments to CLAUDE.md section 3 approved for this sync (they override section 3 where they differ)

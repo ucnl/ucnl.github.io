@@ -254,7 +254,7 @@ Keep verbatim. **Maintainer decision (2026-10-09): product names are always writ
 | МАКСИМАЛЬНОЕ ВРЕМЯ АВТОНОМНОЙ РАБОТЫ (В РЕЖИМЕ ПРИЕМА / В СМЕШАННОМ РЕЖИМЕ …) | MAXIMUM BATTERY LIFE (RX MODE / MIXED MODE …) | RedPhone/RedPhone_OS_Specification_en.md (+7) | Keep the RU qualifiers, e.g. `(20% TX, 80% RX)`; variant BATTERY LIFE / MAXIMUM TIME OF OPERATION |
 | МАКСИМАЛЬНОЕ ВНЕШНЕЕ ГИДРОСТАТИЧЕСКОЕ ДАВЛЕНИЕ | MAXIMUM EXTERNAL HYDROSTATIC PRESSURE | Transducers/R_1.d3505_1_Specification_en.md | |
 | НОМИНАЛЬНАЯ ПОГРЕШНОСТЬ ПО ГЛУБИНЕ | NOMINAL DEPTH ACCURACY | RedWAVE/RedNAV_Specification_en.md (+1) |  |
-| НОМИНАЛЬНАЯ ТОЧНОСТЬ ОПРЕДЕЛЕНИЯ ГОРИЗОНТАЛЬНОГО УГЛА ПРИХОДА СИГНАЛА | NOMINAL HORIZONTAL ANGLE OF ARRIVAL ACCURACY | Zima/Zima2B_Specification_en.md | RU source spells `СИНГНАЛА`; existing HORIZONTAL ANGLE OF ARRIVAL ESTIMATION ACCURACY (typ.) |
+| НОМИНАЛЬНАЯ ТОЧНОСТЬ ОПРЕДЕЛЕНИЯ ГОРИЗОНТАЛЬНОГО УГЛА ПРИХОДА СИГНАЛА | NOMINAL HORIZONTAL ANGLE OF ARRIVAL ACCURACY | Zima/Zima2B_Specification_en.md | |
 | НОМИНАЛЬНАЯ ГОРИЗОНТАЛЬНАЯ ПОГРЕШНОСТЬ (2DRMS) | NOMINAL HORIZONTAL ACCURACY (2DRMS) | RedWAVE/RedNAV_Specification_en.md (+1) | Variant NOMINAL 2D-ACCURACY |
 | НОМИНАЛЬНАЯ ЧАСТОТА ОБНОВЛЕНИЯ ГЕОГРАФИЧЕСКОГО ПОЛОЖЕНИЯ | NOMINAL POSITION UPDATE RATE | RedWAVE/RedNAV_Specification_en.md (+1) |  |
 | НОМИНАЛЬНОЕ ВРЕМЯ ДО ПЕРВОГО УТОЧНЕНИЯ МЕСТОПОЛОЖЕНИЯ | NOMINAL TIME TO FIRST FIX | RedWAVE/RedNAV_Specification_en.md (+1) | |
@@ -286,7 +286,7 @@ Keep verbatim. **Maintainer decision (2026-10-09): product names are always writ
 | ИНТЕРФЕЙС; ИНТЕРФЕЙС СОПРЯЖЕНИЯ | INTERFACE | RedWAVE/RedNODE_Specification_en.md (+5) |  |
 | ПРОТОКОЛ; ПРОТОКОЛ СОПРЯЖЕНИЯ; ИНФОРМАЦИОННЫЙ ПРОТОКОЛ | PROTOCOL; COMMUNICATION PROTOCOL | RWLT/RWLT_RF_Dongle_en.md (+4) |  |
 | ПОДКЛЮЧЕНИЕ; РАДИОСВЯЗЬ | CONNECTION; RADIO COMMUNICATION | RWLT/RWLT_RF_Dongle_en.md (+2) |  |
-| ВСТРОЕННЫЙ GNSS-модуль | BUILT-IN GNSS MODULE | RedWAVE/RedNAV_Specification_en.md (+1) | RU source spells `ВТСРОЕННЫЙ` |
+| ВСТРОЕННЫЙ GNSS-модуль | BUILT-IN GNSS MODULE | RedWAVE/RedNAV_Specification_en.md (+1) | |
 | ДЛИНА КАБЕЛЯ; ДИАМЕТР КАБЕЛЯ; ТИП КАБЕЛЯ | CABLE LENGTH; CABLE DIAMETER; CABLE TYPE | Transducers/R_1.d3505_1_Specification_en.md (+7) |  |
 | ДЛИНА КАБЕЛЯ ГИДРОАКУСТИЧЕСКОЙ АНТЕННЫ | TRANSDUCER CABLE LENGTH | F4105/F4105_SU_Specification_en.md (+1) |  |
 | МАТЕРИАЛ ИЗОЛЯЦИИ КАБЕЛЯ (КАБЕЛЕЙ) | CABLE INSULATION MATERIAL | Transducers/R_1.d3505_1_Specification_en.md (+1) |  |
@@ -444,7 +444,7 @@ Section headings follow the standard 16-section layout of GHS/REACH Annex II saf
 | Экологические меры предосторожности / Методы и материалы для локализации и очистки | Environmental precautions / Methods and material for containment and cleaning up | Misc/*_MSDS_en.md (6) | |
 | Меры предосторожности по безопасному обращению / Условия для безопасного хранения с учетом любых несовместимостей / Специфическое(ие) конечное(ые) применение(ия) | Precautions for safe handling / Conditions for safe storage, including any incompatibilities / Specific end use(s) | Misc/*_MSDS_en.md (6) | |
 | Инженерно-технические средства контроля / Средства индивидуальной защиты | Engineering controls / Personal protective equipment | Misc/*_MSDS_en.md (6) | |
-| Информация об основных физических и химических свойств | Information on basic physical and chemical properties | Misc/*_MSDS_en.md (6) | RU source has the ungrammatical `свойств` |
+| Информация об основных физических и химических свойств | Information on basic physical and chemical properties | Misc/*_MSDS_en.md (6) | |
 | Агрегатное состояние / Запах / Порог запаха / рН (значение) | Physical state / Odor / Odor threshold / pH (value) | Misc/*_MSDS_en.md (3) | US spelling `odor`; existing Smell |
 | Точка плавления/замерзания / Начальная температура кипения и интервал кипения / Температура вспышки в закрытом тигле | Melting point/freezing point / Initial boiling point and boiling range / Flash point (closed cup) | Misc/*_MSDS_en.md (3) | |
 | Интенсивность испарения / Воспламеняемость (твердое вещество, газ) / Пределы взрываемости | Evaporation rate / Flammability (solid, gas) / Explosive limits | Misc/*_MSDS_en.md (3) | Existing lammability (typo) |
@@ -487,7 +487,7 @@ Section headings follow the standard 16-section layout of GHS/REACH Annex II saf
 | транспортировочная тара | transport case | Zima/Zima2_Users_manual_en.md | |
 | самостоятельный ремонт | unauthorized repair | Zima/Zima2_Users_manual_en.md | Warranty wording |
 | круговое вероятное отклонение | circular error probable | Zima/Zima2_Users_manual_en.md |  |
-| угловая поправка | angular correction | Zima/Zima2_Users_manual_en.md | AzimuthSuite field label |
+| угловая поправка | angular correction | Zima/Zima2_Users_manual_en.md | Geometric correction; the AzimuthSuite UI label is "Antenna angle adjust, °" |
 | Взаимодействие с системой | Interacting with the system | Zima/Zima2_Users_manual_en.md | |
 | Ручное задание координат и направления | Manual setting of coordinates and direction | Zima/Zima2_Users_manual_en.md | |
 | (устаревшее) приложение | obsolete application | Zima/Zima2_Users_manual_en.md | AzimuthSuite |
@@ -496,7 +496,7 @@ Section headings follow the standard 16-section layout of GHS/REACH Annex II saf
 | ВРЕМЯ АВТОНОМНОЙ РАБОТЫ | BATTERY LIFE | Zima/Zima2B_Specification_en.md | |
 | (КРЕН/ДИФФЕРЕНТ) | (ROLL/PITCH) | Zima/Zima2B_Specification_en.md | `дифферент` = pitch (trim) |
 | МАКСИМАЛЬНЫЙ КОМПЕНСИРУЕМЫЙ ВСТРОЕННЫМ ИНКЛИНОМЕТРОМ НАКЛОН ПРИБОРА ОТНОСИТЕЛЬНО ВЕРТИКАЛИ | MAXIMUM DEVICE TILT RELATIVE TO THE VERTICAL COMPENSATED BY THE BUILT-IN INCLINOMETER | Zima/Zima2B_Specification_en.md | |
-| НОМИНАЛЬНАЯ ТОЧНОСТЬ ИЗМЕРЕНИЯ НАКЛОННОЙ ДАЛЬНОСТИ | NOMINAL SLANT RANGE MEASUREMENT ACCURACY | Zima/Zima2B_Specification_en.md | RU spells `ТОЧНСТЬ` |
+| НОМИНАЛЬНАЯ ТОЧНОСТЬ ИЗМЕРЕНИЯ НАКЛОННОЙ ДАЛЬНОСТИ | NOMINAL SLANT RANGE MEASUREMENT ACCURACY | Zima/Zima2B_Specification_en.md | |
 | мсек | ms | Zima/Zima2B_Specification_en.md | SI symbol |
 | Раздел документации по системе | Documentation section for the … system | Zima/Zima2_fast_start_en.md | |
 | Браузерное приложение | Browser-based application | Zima/Zima2_fast_start_en.md | AzimuthWebSuite |
@@ -654,7 +654,7 @@ Section headings follow the standard 16-section layout of GHS/REACH Annex II saf
 | RU | EN | Source EN file | Note |
 |---|---|---|---|
 | UI labels of AzimuthSuite | as in `MainForm.resx`, `SettingsEditor.resx`, `Dialogs/*.resx` of AzimuthSuite (neutral = English) | Zima/AzimuthSuite_manual_en.md | RU already quotes most labels in English |
-| Угловая поправка (настройки AzimuthSuite) | Angular correction | Zima/AzimuthSuite_manual_en.md | Real UI label: "Antenna angle adjust, °" (`SettingsEditor.resx`, `groupBox6`) |
+| Угловая поправка (настройки AzimuthSuite) | Antenna angle adjust, ° | Zima/AzimuthSuite_manual_en.md | Real UI label (`SettingsEditor.resx`, `groupBox6`); descriptive prose uses "angular correction" |
 | Поле карты | Map field | Zima/AzimuthSuite_manual_en.md | |
 | Текстовое поле дополнительных параметров | Additional parameters text field | Zima/AzimuthSuite_manual_en.md | |
 | привод носителя (на маяк) | homing of the carrier | Zima/AzimuthSuite_manual_en.md | RAZ parameter |
@@ -921,7 +921,7 @@ Section headings follow the standard 16-section layout of GHS/REACH Annex II saf
 | Тор, соосный с цилиндром | Torus coaxial with the cylinder | Transducers/RT_1_332820_1_Specification_en.md (+3) | |
 | УГОЛ РАСТВОРА ДИАГРАММЫ (… кГц) | BEAM ANGLE (… kHz) | Transducers/RT_1_332820_1_Specification_en.md (+3) | |
 | АЧХ 3 дБ; АЧХ < 3 дБ | frequency response 3 dB; frequency response < 3 dB | Transducers/RT_1_332820_2_Specification_en.md (+3) | Literal; RT-1.524525-1 and RT-2.332820-1 EN (not in this batch) have only "(3 dB)" in the beam angle row |
-| РАБОЧАЯ ПОЛОСА (прием) / (излучение) | OPERATING BANDWIDTH (receive) / (transmit) | Transducers/RT_1_332820_2_Specification_en.md (+2) | RU writes `(изучение)`, a typo |
+| РАБОЧАЯ ПОЛОСА (прием) / (излучение) | OPERATING BANDWIDTH (receive) / (transmit) | Transducers/RT_1_332820_2_Specification_en.md (+2) | |
 | НАПРЯЖЕНИЕ ПИТАНИЯ (прием) | SUPPLY VOLTAGE (receive) | Transducers/RT_1_332820_2_Specification_en.md (+1) | |
 | + 5 В питание предусилителя | + 5 V preamplifier power supply | Transducers/RT_1_332820_2_Specification_en.md (+2) | |
 | Встроенный полосовой фильтр | Built-in band-pass filter | Transducers/RT_1_332820_2_Specification_en.md (+2) | |
@@ -1104,3 +1104,19 @@ No new terms. This batch reuses the approved MSDS and navigation buoy terminolog
 | послезвучание; реверберация | reverberation | A3S/A3S_Users_Manual_en.md | |
 | линейная аппроксимация | linear approximation | A3S/A3S_Users_Manual_en.md | |
 | среднеквадратичное отклонение; СКО | standard deviation; SD | A3S/A3S_Users_Manual_en.md | Statistical dispersion of angle-of-arrival measurements |
+
+## Added in batch qa
+
+| RU | EN | Source EN file | Note |
+|---|---|---|---|
+| оболочка (кабеля) | sheath | Accessories/RS422_extension_cable_en.md | |
+| грузонесущая жила | load-bearing core | Accessories/RS422_extension_cable_en.md | |
+| Брызгозащитное исполнение | Splash-proof design | RedPhone/RedPhone_RF_Dongle_Specification_en.md | |
+| цифровой радиоприемник | digital radio receiver | RWLT/RWLT_DataBrief_en.md | |
+| навигационный гидроакустический буй-приемник | navigation sonobuoy (receiver) | RWLT/RWLT_DataBrief_en.md | |
+| Особенности и сложные вопросы | Features and complex issues | uWAVE/uWAVE_version_history_en.md | |
+| общая область энергонезависимой памяти | shared area of nonvolatile memory | uWAVE/uWAVE_version_history_en.md | |
+| рабочая область экрана | active screen area | RedWAVE/Aquatab_s_specification_en.md | |
+| предустановленный модуль | preinstalled module | RedWAVE/Aquatab_s_specification_en.md | |
+| пакетные данные | packet data | RedWAVE/Aquatab_s_specification_en.md | |
+| ударопрочное стекло | impact-resistant glass | RedWAVE/Aquatab_s_specification_en.md | |
