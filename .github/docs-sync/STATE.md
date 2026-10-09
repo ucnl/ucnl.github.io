@@ -1,6 +1,6 @@
 # docs-sync: current state
 
-State on 2026-10-09. Master HEAD: `ee5bf833e0ca57c04c48c22d923bbefc3446d8fc` (all Phase 2 batches, repository rules and Phase 3 merged).
+State on 2026-10-09. Master HEAD: `e1d71f91be1b0de27684cbde64ac9aeb55c10928` (all four phases completed and merged).
 
 This branch (`docs-sync/state`) is a progress record and is not intended for merge.
 
@@ -11,7 +11,9 @@ This branch (`docs-sync/state`) is a progress record and is not intended for mer
 | 1. Inventory and plan | Completed and merged (#2) |
 | 2. Translation batches | 30 of 30 batches merged; 107 EN documents |
 | 3. Index pages, README and deferred links | Completed and merged (#36): 13 root pages, 29 deferred links in 8 documents |
-| 4. Final QA | In progress on docs-sync/qa: 27 legacy documents and whole-tree validation |
+| 4. Final QA | Completed and merged (#37): 27 legacy documents reviewed, 11 targeted document updates, whole-tree validation |
+
+Final inventory: 134 synchronized documents and 13 synchronized root pages; 147 exact current source markers. No missing or stale in-scope translations remain. Five approved SKIP documents and the excluded EN orphan are unchanged. All root-page link targets match the approved scope. Final checks passed on PR head `5d8df12f6da0c74f92797b6457f4171b82bb79b3` before merge.
 
 ## Batch pull requests
 
@@ -62,8 +64,8 @@ All 30 translation batches are complete and merged. Progress PR #28 is closed; t
 
 1. Read CLAUDE.md, the approved executor rules, the full glossary and the maintainer's latest instructions.
 2. Fetch origin and inspect the current PR and branch state.
-3. Continue the remaining batch work, if any, with one document per commit and push after each reviewed document.
+3. The initial synchronization is complete. For subsequent updates, find RU commits newer than the corresponding EN sync marker and review one document per commit, pushing after each reviewed document.
 4. Keep all `Added in batch` glossary sections when merging master into batch branches; do not rebase or rewrite history.
-5. Start Phase 3 only after all batch PRs are merged. Then update indexes, README and deferred links, and perform Phase 4 QA.
+5. Update affected indexes and references after document changes; regenerate the inventory and repeat checks for the changed scope.
 
 The complete glossary through the completed batches is stored in `glossary_all_batches.md`. The latest checker, executor rules and complete glossary are on master.
