@@ -463,3 +463,15 @@ Section headings follow the standard 16-section layout of GHS/REACH Annex II saf
 | отсутствует | not applicable | Misc/*_MSDS_en.md (3) | Existing is absent |
 | Литий / Фосфат железа | Lithium / Iron phosphate | Misc/*_MSDS_en.md (3) | |
 | Аккумулятор высокотоковый литий-железофосфатный | High-current lithium iron phosphate (LiFePO4) battery | Misc/RedBase_v3_LiFEPO4_msds_en.md | Header cell |
+
+## Added in batch zima-8
+
+| RU | EN | Source EN file | Note |
+|---|---|---|---|
+| UI labels of AzimuthSuite | as in `MainForm.resx`, `SettingsEditor.resx`, `Dialogs/*.resx` of AzimuthSuite (neutral = English) | Zima/AzimuthSuite_manual_en.md | RU already quotes most labels in English |
+| Угловая поправка (настройки AzimuthSuite) | Angular correction | Zima/AzimuthSuite_manual_en.md | Real UI label: "Antenna angle adjust, °" (`SettingsEditor.resx`, `groupBox6`) |
+| Поле карты | Map field | Zima/AzimuthSuite_manual_en.md | |
+| Текстовое поле дополнительных параметров | Additional parameters text field | Zima/AzimuthSuite_manual_en.md | |
+| привод носителя (на маяк) | homing of the carrier | Zima/AzimuthSuite_manual_en.md | RAZ parameter |
+| точка привязки | reference point | Zima/AzimuthSuite_manual_en.md | |
+| Пункт (меню) **X** - … | The **X** item/menu … | Zima/AzimuthSuite_manual_en.md | Sentence pattern for menu items and buttons |
