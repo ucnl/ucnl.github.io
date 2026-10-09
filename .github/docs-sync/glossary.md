@@ -938,3 +938,35 @@ Section headings follow the standard 16-section layout of GHS/REACH Annex II saf
 | № / Цвет / Назначение (cable table) | No. / Color / Function | Transducers/RT_1_332820_1_Specification_en.md (+4) | |
 | Оплетка / Экран | Braid / Shield | Transducers/RT_1_332820_2_Specification_en.md (+2) | |
 | Общий (выход) / Сигнал (вход) / Сигнал (выход) | Common (output) / Signal (input) / Signal (output) | Transducers/RT_1_332820_2_Specification_en.md (+2) | |
+
+## Added in batch redwave-3
+
+| RU | EN | Source EN file | Note |
+|---|---|---|---|
+| Программа и методика испытаний (RedWave) | test program and procedures | RedWAVE/RedNAV_PM_en.md | As in RedPhone/RedPhone_PM_en.md |
+| Методика N | Procedure N | RedWAVE/RedNAV_PM_en.md | |
+| Выход на заданную точку / на сохраненную точку / на заданную точку группой | Reaching a predefined point / a saved point / a predefined point as a group | RedWAVE/RedNAV_PM_en.md | |
+| Полевые испытания / Испытания надежности | Field tests / Reliability tests | RedWAVE/RedNAV_PM_en.md | |
+| Предварительные испытания работоспособности | Preliminary operability tests | RedWAVE/RedNAV_PM_en.md | |
+| Постановка длинной базы / Завершение испытаний | Deployment of the long base / Completion of the tests | RedWAVE/RedNAV_PM_en.md | |
+| Проверка времени автономности буя / прибора RedNav | Buoy battery life check / RedNav instrument battery life check | RedWAVE/RedNAV_PM_en.md | |
+| Проверка корпуса буя на соответствие IP68 | Checking the buoy housing for IP68 compliance | RedWAVE/RedNAV_PM_en.md | |
+| Буй навигационный / Водолазный навигационный прибор / Устройство зарядное | navigation buoy / diver's navigation instrument / charger | RedWAVE/RedNAV_PM_en.md | Product name first: `[RedBase](…) navigation buoy` |
+| плавсредство | watercraft | RedWAVE/RedNAV_PM_en.md | |
+| якорная веревка / канаты | anchor rope / lines | RedWAVE/RedNAV_PM_en.md | CONFLICT with redwave-1 `anchor line` (RedBase specification); the RedWave user's manual uses anchor rope — resolve in Phase 4 |
+| разрывное усилие | breaking strength | RedWAVE/RedNAV_PM_en.md | |
+| буек на якоре | anchored marker buoy | RedWAVE/RedNAV_PM_en.md | |
+| путевая точка / маршрутная точка / сохраненная точка | waypoint / route point / saved point | RedWAVE/RedNAV_PM_en.md | |
+| топопривязка | position referencing | RedWAVE/RedNAV_PM_en.md | |
+| водолазная консоль | diving console | RedWAVE/RedNAV_PM_en.md | |
+| внешние признаки разгерметизации | external signs of seal failure | RedWAVE/RedNAV_PM_en.md | |
+| Образцы считаются работоспособными | Units are considered operable | RedWAVE/RedNAV_PM_en.md | |
+| Google Планета Земля; GoogleEarth | Google Earth | RedWAVE/RedNAV_PM_en.md, RedWAVE/uGPSHub_Users_manual_en.md | |
+| Главная панель инструментов / Панель инструментов карты / Панель дополнительной информации / Панель легенды (caption) | Main toolbar / Map toolbar / Additional information panel / Legend panel | RedWAVE/uGPSHub_Users_manual_en.md | The headings keep `Legend field` (RU: Поле легенды) |
+| рулетка (измерение расстояний на карте) | tape measure | RedWAVE/uGPSHub_Users_manual_en.md | `ruler` is the scale bar |
+| функция невязки | residual function | RedWAVE/uGPSHub_Users_manual_en.md | |
+| исполнение (сведения об устройстве) | device version | RedWAVE/uGPSHub_Users_manual_en.md | |
+| горячие клавиши | keyboard shortcuts | RedWAVE/uGPSHub_Users_manual_en.md | |
+| по часовой стрелке от направления на север | clockwise from north | RedWAVE/uGPSHub_Users_manual_en.md | |
+| взаимное расположение (объекта и навигационной базы) | relative position | RedWAVE/uGPSHub_Users_manual_en.md | |
+| Track Filter FIFO size; Screenshot names ty time (RU quotes) | Track filter FIFO size; Screenshots names by time | RedWAVE/uGPSHub_Users_manual_en.md | Real strings of the UGPSHub application; labels absent from the application stay as RU quotes them |
