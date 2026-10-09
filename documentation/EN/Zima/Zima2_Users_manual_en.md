@@ -310,7 +310,7 @@ In both cases the physical principle is the same: measurements must be obtained 
 
 > **ℹ Note**
 > 
-> The procedure is supported only in **AzimuthConsole**. If you are using the obsolete AzimuthSuite application, the angular correction must be measured manually and entered in the settings (the "Angular correction" field).
+> The procedure is supported only in **AzimuthConsole**. If you are using the obsolete AzimuthSuite application, the angular correction must be measured manually and entered in the settings (the "Antenna angle adjust, °" field).
 
 <div style="page-break-after: always;"></div>
 
