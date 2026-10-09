@@ -854,3 +854,13 @@ Section headings follow the standard 16-section layout of GHS/REACH Annex II saf
 | схема установки | installation layout | WAYU/WAYU_Users_Manual_en.md | |
 | шлюз (канала) | lock | WAYU/media.md | Old EN "Gateway" |
 | Yandex карты | Yandex Maps | WAYU/media.md | |
+
+## Added in batch redwave-4
+
+| RU | EN | Source EN file | Note |
+|---|---|---|---|
+| водолазный навигатор; навигатор водолаза | diver's navigator | RedWAVE/RedWave_tech_pass_en.md, RedWAVE/RedWAVE_DataBrief_en.md | RedNav |
+| водолазный планшет Aquatab | Aquatab diver's tablet | RedWAVE/RedWave_tech_pass_en.md | |
+| в водолазном исполнении | in the diver version | RedWAVE/RedWave_tech_pass_en.md | |
+| гидроакустический навигационный приемник RedNode | RedNode underwater acoustic navigation receiver | RedWAVE/RedWave_tech_pass_en.md | |
+| методом лазерной гравировки | by laser engraving | RedWAVE/RedWave_tech_pass_en.md | Factory numbers; hot stamping = горячее клеймение |
