@@ -995,7 +995,10 @@ def cmd_marker_line(repo, ru):
 
 def main():
     repo = Repo()
-    if len(sys.argv) < 2 or sys.argv[1] == "report":
+    if len(sys.argv) < 2:
+        print("usage: docsync.py report | json | terms | brief <RU path> [<batch RU path> ...] | marker <RU path> | check <RU path> <EN path>")
+        sys.exit(2)
+    elif sys.argv[1] == "report":
         cmd_report(repo)
     elif sys.argv[1] == "json":
         cmd_json(repo)
