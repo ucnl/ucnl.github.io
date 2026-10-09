@@ -14,6 +14,9 @@ SIZE_RATIO = 0.6
 SYNC_DIR = ".github/docs-sync"
 MARKER_RE = re.compile(r"<!-- docs-sync: source=(\S+) commit=([0-9a-f]{40}) date=(\d{4}-\d{2}-\d{2}) -->")
 CYR_RE = re.compile(r"[А-Яа-яЁё]")
+CASE_NAMES = {"uWAVE": "uWave", "RedWAVE": "RedWave", "RedNODE": "RedNode", "RedBASE": "RedBase", "RedNAV": "RedNav", "RedLINE": "RedLine", "ZIMA": "Zima"}
+CASE_RE = re.compile(r"(?<![\w/.\-])(" + "|".join(CASE_NAMES) + r")(?!\w)")
+CASE_STRIP_RES = [re.compile(r"\]\([^)]*\)"), re.compile(r"`[^`]*`"), re.compile(r"\b(?:href|src)\s*=\s*\"[^\"]*\"", re.I), re.compile(r"https?://\S+"), re.compile(r"<!--.*?-->")]
 FENCE_RE = re.compile(r"^\s{0,3}(`{3,}|~{3,})(.*)$")
 HEADING_RE = re.compile(r"^ {0,3}(#{1,6})[ \t]+(.*?)[ \t#]*$")
 TABLE_RE = re.compile(r"^\s*\|")
@@ -723,6 +726,32 @@ def cmd_marker(repo, ru):
     print("<!-- docs-sync: source=%s commit=%s date=%s -->" % (ru, sha, date))
 
 
+def case_problems(text):
+    out = []
+    fence = None
+    for i, line in enumerate(text.splitlines(), 1):
+        m = FENCE_RE.match(line)
+        if fence is None:
+            if m and not (m.group(1)[0] == "`" and "`" in m.group(2)):
+                fence = m.group(1)
+                continue
+        else:
+            if m and m.group(1)[0] == fence[0] and len(m.group(1)) >= len(fence) and not m.group(2).strip():
+                fence = None
+            continue
+        clean = line
+        for r in CASE_STRIP_RES:
+            clean = r.sub(" ", clean)
+        segments = clean.split("|") if TABLE_RE.match(clean) else [clean]
+        for seg in segments:
+            for cm in CASE_RE.finditer(seg):
+                rest = CASE_RE.sub(" ", seg)
+                if not re.search(r"[a-z]", rest):
+                    continue
+                out.append("product name case line %d: %s -> %s" % (i, cm.group(1), CASE_NAMES[cm.group(1)]))
+    return out
+
+
 def cmd_check(repo, ru, en):
     mr, me = metrics(ru), metrics(en)
     text = read(en)
@@ -730,6 +759,7 @@ def cmd_check(repo, ru, en):
     for i, line in enumerate(text.splitlines(), 1):
         if CYR_RE.search(line):
             problems.append("cyrillic line %d: %s" % (i, line.strip()[:120]))
+    problems.extend(case_problems(text))
     for k in ("headings", "rows", "images", "pagebreaks"):
         if mr[k] != me[k]:
             problems.append("%s RU=%d EN=%d" % (k, mr[k], me[k]))
