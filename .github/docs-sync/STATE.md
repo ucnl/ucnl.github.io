@@ -9,7 +9,7 @@ This branch (`docs-sync/state`) is a progress record and is not intended for mer
 | Phase | Status |
 |---|---|
 | 1. Inventory and plan | Completed and merged (#2) |
-| 2. Translation batches | 27 of 30 batches completed; 102 EN documents in completed batches |
+| 2. Translation batches | 28 of 30 batches completed; 104 EN documents in completed batches |
 | 3. Index pages, README and deferred links | Starts after all batch PRs are merged |
 | 4. Final QA | Follows Phase 3 |
 
@@ -46,6 +46,7 @@ All batch PRs below are drafts targeting master. Each document passed the contro
 | #27 | `docs-sync/accessories-1` | 7 | uPress, uSpeak, uClamp-S (Flange_rod_mound), Sub_batteries, Batpacks, Crimea-300, Crimea-300 OS |
 | #31 | `docs-sync/f4105-1` | 3 | F4105_DataBrief, F4105_tech_pass, F4105_Users_manual |
 | #32 | `docs-sync/redline-1` | 3 | RedLine_Specification, RedLINE_Protocol_Specifications, RedLINE_wiring_diagram |
+| #33 | `docs-sync/misc-1` | 2 | RedPhone_OS_MSDS, RedPhone_DX_MSDS |
 
 ## Repository instructions
 
@@ -53,7 +54,7 @@ Draft PR #30 (`docs-sync/agents-md`) adds the maintainer-supplied AGENTS.md, the
 
 ## Remaining Phase 2 work
 
-Batches: `misc-1`, `misc-2`, `a3s-2`.
+Batches: `misc-2`, `a3s-2`.
 
 ## Resuming
 
