@@ -1,4 +1,4 @@
-[Main](/) ❯ [Navigation & tracking systems](/navigation_and_tracking_systems_en) ❯ **Zima2-R: Device specification**
+[Main](/) ❯ [Navigation & tracking systems](/navigation_and_tracking_systems_en) ❯ **Zima2-uR: Device specification**
 
 <details>
   <summary><b>ℹ Recommendations for printing / saving as PDF</b></summary>
@@ -15,25 +15,25 @@
 
 <div style="page-break-after: always;"></div>
 
-| ![logo](/documentation/sm_logo.png) | ![zima_r_wbat](/documentation/zima_r_wbat.png) |
+| ![logo](/documentation/sm_logo.png) | <img width="229" height="399" alt="image" src="https://github.com/user-attachments/assets/b64ae5ab-bec0-4ade-921c-d9bd39c95ed3" /> |
 | :---: | ---: |
-| [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **Zima2-R** - **Zima2 USBL** responder-beacon <br/> Device specification |
+| [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **Zima2-uR** - **Zima2 USBL** micro responder-beacon <br/> Device specification |
 
 ## KEY FEATURES
 
-* **Extremely small size and weight**
-* **Communication range up to 3000<sup>[1](#footnote1)</sup> m**
-* **Highly reliable digital underwater acoustic communication resistant to multipath propagation**
+* **The world's smallest responder-beacon**
+* **Communication range up to 1000<sup>[1](#footnote1)</sup> m**
+* **Reliable digital underwater acoustic communication resistant to multipath propagation**
 * **Code division multiple access - up to 16 isolating addresses**
-* **Low power consumption (Rx/Tx) 0.33/10 W**
+* **Low power consumption (Rx/Tx) 0.33/6 W**
 * **Built-in pressure/temperature sensor**
 * **Patented<sup>[*](#footnote_a1)</sup> monoblock design**
 
 ## DESCRIPTION
 
-**Zima2-R** - responder-beacon of the ultra-short baseline navigation system [Zima2 USBL](Zima2_DataBrief_en.md).  
+**Zima2-uR** - miniature version of the responder-beacon of the ultra-short baseline navigation system [Zima2 USBL](Zima2_DataBrief_en.md).  
 
-The device is designed to be placed on an underwater object in order to determine the location of this object in real time using the direction-finding antenna [Zima2-B](Zima2B_Specification_en.md). 
+The device is designed to be placed on the smallest underwater objects in order to determine their location in real time using the direction-finding antenna [Zima2-B](Zima2B_Specification_en.md). 
 
 The device can be either standalone (with an additional [battery pack](/documentation/EN/Accessories/Sub_batteries_en#sb2448lf)) or interfaced with the carrier for power. 
 
@@ -48,12 +48,12 @@ ________________
 
 | PARAMETER | VALUE |
 | :--- | :--- |
-| DIMENSIONS (Ø x h) | 64 x 62 mm |
-| WEIGHT (dry)<sup>[2](#footnote2)</sup> | 0.3 kg |
+| DIMENSIONS (Ø x h) | 41 x 45 mm |
+| WEIGHT (dry)<sup>[2](#footnote2)</sup> | 0.16 kg |
 | MAXIMUM DEPTH | 300 m |
 | DEPTH RESOLUTION | 0.6 m |
-| MAXIMUM ACOUSTIC COMMUNICATION RANGE<sup>[1](#footnote1)</sup> | 3000 m |
-| ACOUSTIC SOURCE LEVEL | 170 dB re 1 μPa @ 1 m |
+| MAXIMUM ACOUSTIC COMMUNICATION RANGE<sup>[1](#footnote1)</sup> | 1000 m |
+| ACOUSTIC SOURCE LEVEL | 169 dB re 1 μPa @ 1 m |
 | CARRIER FREQUENCY | 20100 Hz | 
 | BUILT-IN TEMPERATURE SENSOR ACCURACY | 0.1°C |
 | SUPPLY VOLTAGE | 12 V |
@@ -63,13 +63,12 @@ ________________
 | MAXIMUM RELATIVE VELOCITY | ± 2 m/s |
 | STARTUP TIME | 100 ms |
 | OPERATING TEMPERATURE RANGE | -5 .. 50 °C |
-| POWER CONSUMPTION (Rx/Tx) | 0.33 / 10 W |
+| POWER CONSUMPTION (Rx/Tx) | 0.33 / 6 W |
 | INTERFACE | UART 9600 bit/s |
 | COMMUNICATION PROTOCOL | NMEA 0183 [PAZM](Zima2_Protocol_Specification_en.md) |
 | CABLE LENGTH<sup>[4](#footnote4)</sup> | 0.5 m |
 | MAXIMUM NUMBER OF ADDRESSES | 16 |
 
-<!-- | BANDWIDTH | 10 .. 30 kHz | -->
 ________________
 - <a name="footnote1"><sup>1</sup></a> A parameter that determines the maximum range at which a signal can be received, based on electro-acoustic parameters of the transmitter and receiver, spatial decrease in the intensity of sound energy, attenuation in the medium and the acoustic noise level.  
 - <a name="footnote2"><sup>2</sup></a> Excluding the weight of the battery pack. Standard battery pack [SB-24-48-LF](/documentation/EN/Accessories/Sub_batteries_en#sb2448lf).  
@@ -110,4 +109,4 @@ The operating time of the responder-beacon on the battery pack depends on the in
 
 <div style="page-break-after: always;"></div>
 
-<!-- docs-sync: source=documentation/RU/Zima/Zima2R_Specification_ru.md commit=2b17417450cfa3cfcbfa17c0eb055c768aa356fd date=2026-10-06 -->
+<!-- docs-sync: source=documentation/RU/Zima/Zima2uR_Specification_ru.md commit=8d30754692bbe7fa16ad8351d6e5934ba50ddf5e date=2026-10-06 -->
