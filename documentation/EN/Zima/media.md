@@ -1,4 +1,4 @@
-[Main](/) ❯ [Navigation & tracking systems](/navigation_and_tracking_systems_en) ❯ **Zima: Media**
+[Main](/) ❯ [Navigation & tracking systems](/navigation_and_tracking_systems_en) ❯ **Zima USBL: Media**
 
 | ![logo](/documentation/sm_logo.png) |
 | :---: |
