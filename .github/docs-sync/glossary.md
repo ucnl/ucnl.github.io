@@ -463,3 +463,13 @@ Section headings follow the standard 16-section layout of GHS/REACH Annex II saf
 | отсутствует | not applicable | Misc/*_MSDS_en.md (3) | Existing is absent |
 | Литий / Фосфат железа | Lithium / Iron phosphate | Misc/*_MSDS_en.md (3) | |
 | Аккумулятор высокотоковый литий-железофосфатный | High-current lithium iron phosphate (LiFePO4) battery | Misc/RedBase_v3_LiFEPO4_msds_en.md | Header cell |
+
+## Added in batch redline-1
+
+| RU | EN | Source EN file | Note |
+|---|---|---|---|
+| МИНИМАЛЬНЫЙ РАЗМЕР ПАКЕТА ДЛЯ ПЕРЕДАЧИ | MINIMUM PACKET SIZE FOR TRANSMISSION | RedLINE/RedLine_Specification_en.md | |
+| локальная переменная | local variable | RedLINE/RedLINE_Protocol_Specifications_en.md | |
+| ретрансляция | relaying | RedLINE/RedLINE_Protocol_Specifications_en.md | isRTX field |
+| прямой / обратный канал | forward / reverse channel | RedLINE/RedLINE_Protocol_Specifications_en.md | isRVRS field |
+| шина данных | data bus | RedLINE/RedLINE_Protocol_Specifications_en.md | |
