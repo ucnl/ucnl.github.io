@@ -680,3 +680,15 @@ Section headings follow the standard 16-section layout of GHS/REACH Annex II saf
 | кОм | kΩ | uWAVE/uWAVE_Specification_en.md (+3) | |
 | Передача данных совмещенная с УКБ навигацией | Data transmission combined with USBL navigation | uWAVE/uWAVE_USBL_Modem_Specification_en.md | |
 | Упоминания об устройствах uWave; Научные публикации | Mentions of uWave devices; Scientific publications | uWAVE/uWave_publications_en.md | Russian-language citations are quoted verbatim |
+
+## Added in batch uwave-3
+
+| RU | EN | Source EN file | Note |
+|---|---|---|---|
+| Инструкция по обновлению прошивки модемов uWave | Firmware update guide for uWave modems | uWAVE/uWAVE_FW_Updating_en.md | Header cell; breadcrumb: Firmware update guide |
+| Рисунок N / рис. N | Figure N / Fig. N | uWAVE/uWAVE_FW_Updating_en.md | |
+| перепрошивка | reflashing | uWAVE/uWAVE_FW_Updating_en.md | |
+| выпадающий список | drop-down list | uWAVE/uWAVE_FW_Updating_en.md | |
+| Запустите приложение/утилиту | Launch the application/utility | uWAVE/uWAVE_FW_Updating_en.md | "Press **X**" is reserved for buttons |
+| медиаматериалы: видео с испытаний, видеоинструкции | media: test videos, video tutorials | uWAVE/media.md | |
+| Волгодонской судоходный канал | Volga-Don Shipping Canal | uWAVE/media.md | |
