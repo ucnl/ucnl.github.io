@@ -130,7 +130,7 @@ The test site for testing according to this test program and procedures must mee
 - fresh or salt water body;
 - for intelligibility tests, the size of the water body is not less than **100 x 50 m** (testing in a pool is possible, if each of its dimensions is **not less than L x W x D - 25 x 25 x 2 m**);
 - for maximum communication range tests, the size of the water body is not less than **200 x 1500 m**;
-- sea state **no more than 0.5 points** (according to the meteorological service);
+- sea state **no more than 0.5** (according to the meteorological service);
 - no currents with a speed of more than **1 m/s**;
 - water depth at the site **not less than 2** and **not more than 40 m**;
 - line-of-sight conditions between the communicating devices must be ensured;
