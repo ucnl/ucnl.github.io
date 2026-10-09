@@ -51,7 +51,7 @@ Differences from the base version of [uWave](/documentation/EN/uWAVE/uWAVE_Speci
 * Maximum range increased to 3000<sup>[1](#footnote1), [2](#footnote2)</sup> m
 
 _________
-<a name="footnote_a1"><sup>\*</sup></a> *Patents RU2659299C1, US11257472B2*.  
+<a name="footnote_a1"><sup>\*</sup></a> *Patent RU2659299C1*.  
 
 <div style="page-break-after: always;"></div>
 

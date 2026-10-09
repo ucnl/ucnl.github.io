@@ -1,4 +1,4 @@
-[Main](/../../) ❯ [Hydrophones & transducers](/underwater_acoustic_antennas_en) ❯ **Transducer RT-1.524525-1**
+[Main](/) ❯ [Hydrophones & transducers](/underwater_acoustic_antennas_en) ❯ **RT-1.524525-1: Device specification**
 
 <div style="page-break-after: always;"></div>
 
@@ -6,51 +6,48 @@
 | :---: | ---: |
 | [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **RT-1.524525-1** <br/> Underwater acoustic transducer <br/> Device specification |
 
-<div style="page-break-after: always;"></div>
+## KEY FEATURES
 
-### KEY FEATURES
-
-* Maintenance-free monoblock design, patented technology
-* The complete absence of corrosive elements
-* Single-element antenna - a balance between sensitivity in receiving and transmission modes, weight and dimensions
-* High quality shielded cable in polyurethane insulation
+* Maintenance-free monoblock design made using a patented technology
+* Complete absence of corroding elements
+* Single-element transducer - a balance between sensitivity in receiving and transmitting modes, weight and dimensions
+* High-quality shielded cable with polyurethane insulation
 * Mounting groove
 
-### TECHNICAL SPECIFICATIONS
+## TECHNICAL SPECIFICATIONS
 
 | PARAMETER | VALUE |
 | :--- | :--- |
-| DIMENSIONS (Ф х h) | 64 x 65 mm |
+| SIZE (Ø x h) | 64 x 65 mm |
 | WEIGHT (dry) | 0.28 kg |
-| MAX. INPUT VOLTAGE (peak) | 200 V |
-| ELECTRIC CAPACITY | 20 +/- 5 nF |
-| MAX. EXTERNAL HYDROSTATIC PRESSURE | 30 Bar |
+| MAXIMUM INPUT VOLTAGE (PEAK) | 200 V |
+| ELECTRICAL CAPACITANCE | 20 +/- 5 nF |
+| MAXIMUM EXTERNAL HYDROSTATIC PRESSURE | 30 bar |
 | STANDARD CABLE LENGTH | 1 m |
-| CABLE INSULATION | Polyurethane |
+| OPERATING TEMPERATURE RANGE | -40..+60 °C |
 | CABLE DIAMETER | 5 +/- 0.5 mm |
-| WORKING TEMPERATURE RANGE | -40..+60 °С |
 | BEAM PATTERN (10 .. 40 kHz) | Torus coaxial with the cylinder |
-| BEAM ANGLE (10 .. 40 kHz) | 120° (3 dB) |
+| BEAM ANGLE (10 .. 40 kHz) | 120° (frequency response 3 dB) |
 
 <div style="page-break-after: always;"></div>
 
-### DRAWINGS
+## DIMENSIONAL DRAWING
 
 ![RT_1_524525_1_drawings](/documentation/RT_1_524525_1_drawings.png)
 
-### Wire functions
+### Cable wire assignment
 
-| № | Color | Function |
+| No. | Color | Function |
 | :---: | :--- | :--- |
 | 1 | Green | "-" |
 | 2 | Red | "+" |
 | 3 | White/Transparent | NC |
-| 4 | Yello | NC |
+| 4 | Yellow | NC |
 | 5 | Shield | NC |
 
 <div style="page-break-after: always;"></div>
 
-## ADDITIONAL FEATURES
+## ADDITIONAL PARAMETERS
 
 ![RT_1_524525_1_impedance](/documentation/RT_1_524525_1_impedance_en.png)
 
@@ -63,3 +60,5 @@
 ![RT_1_524525_1_rx_sensitivity](/documentation/RT_1_524525_1_rx_sensitivity_en.png)
 
 <div style="page-break-after: always;"></div>
+
+<!-- docs-sync: source=documentation/RU/Transducers/RT-1.524525-1_specification_ru.md commit=90db50fa8bafae0dba31ff4d39217e1742c8fff5 date=2023-06-06 -->

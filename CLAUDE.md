@@ -9,7 +9,7 @@ In Phase 1 save this entire prompt verbatim as `CLAUDE.md` in the repository roo
 - **Independent reviewer (optional, fresh Opus subagent).** For documents larger than about 30 KB of RU source, spawn a second Opus subagent with only the RU and EN file paths and the review checklist, not your conclusions, and act on its findings.
 - **Concurrency.** Run up to 4 executors in parallel, all working on files of the same batch branch. Review each result before committing it.
 - **State lives in the repository, not in your context:** `REPORT.md` (inventory, Decisions, batch plan), sync markers at the end of EN files (section 6), and `docs-sync/*` branches and pull requests. After a context compaction or a restart: re-read `CLAUDE.md` and `REPORT.md`, list `docs-sync/*` branches and open PRs, and resume from the first batch that has no branch or whose files lack markers.
-- **Decision points with the maintainer:** the DECIDE list at the end of Phase 1 (ask in chat and wait), and the request to merge the Phase 1 PR before Phase 2 starts. Everything else: decide yourself, record in the PR description, keep going.
+- **Decision points with the maintainer:** the DECIDE list at the end of Phase 1 and any unresolved translation interpretation. The current maintainer authorization permits the controller to merge completed synchronization PRs after checks. Keep translation decisions and source findings private; continue independent work while awaiting an answer.
 
 ## 1. Repository facts
 
@@ -31,16 +31,16 @@ In Phase 1 save this entire prompt verbatim as `CLAUDE.md` in the repository roo
 
 ## 2. Hard rules
 
-1. Never modify Russian files, not even to fix a typo. Record problems under "Open questions" in the PR description instead.
+1. Never modify Russian files, not even to fix a typo. Record source findings only in the maintainer-designated private report outside the repository.
 2. Never create, edit, rename or delete binary assets. If a RU page uses `<name>_ru.png` and `<name>_en.png` exists, use the EN variant; otherwise keep the RU image and list it under "Needs EN image".
-3. No invented facts. Translate what the RU text says. If the RU text is ambiguous or contradicts itself, translate literally and record a question. Never "improve" specifications, numbers or procedures.
-4. Preserve exactly: numbers, units, tolerances, part numbers, model codes, pinouts, NMEA sentences and field names, command mnemonics (`D2H_ACK`), hex values, code blocks, URLs, e-mail addresses, HTML blocks, KaTeX math (`$...$`, `$$...$$`), image paths. Translate only human-language comments inside code blocks, never identifiers.
+3. No invented facts. Each individual RU document is the source of truth. Preserve its values, identifiers and claims, including contradictions and MSDS transport statements. Never harmonize it with EN or other RU documents. Record source findings privately; ask the maintainer immediately only if the translation interpretation remains unresolved. Never "improve" specifications, numbers or procedures.
+4. Preserve exactly: numbers, units, tolerances, part numbers, model codes, pinouts, NMEA sentences and field names, command mnemonics (`D2H_ACK`), hex values, code blocks, URLs, e-mail addresses, HTML blocks, KaTeX math (`$...$`, `$$...$$`), image paths. Equivalent date/number localization follows section 5. Translate only human-language comments inside code blocks, never identifiers. The maintainer-approved ACubes Octave exception also permits translating graph labels and program messages while preserving executable logic, identifiers, format specifiers and escape sequences.
 5. No Cyrillic in EN files. The only exception is a deliberately quoted Russian string, justified in the PR description.
-6. Market-specific content (prices in RUB, Russian certificates, GOST/TU references, Russian-only services) is translated and kept; add a note under "Open questions" suggesting whether to drop it from EN. Never remove it on your own.
+6. Market-specific content (prices in RUB, Russian certificates, GOST/TU references, Russian-only services) is translated and kept. Never remove it on your own.
 7. One batch = one branch `docs-sync/<slug>` created from the current `origin/master` = one pull request into `master`. One commit per document, message in English, imperative, prefixed `docs-sync:`. Never commit to `master`, never force-push, never rewrite history. Keep a PR reviewable: at most about 8 documents or about 80 KB of RU source.
 8. Helper scripts, if you write any: Python 3, standard library only, no comments in code, deterministic output, kept in `.github/docs-sync/` for reuse.
 9. Do not add front matter, do not rename or move existing EN files, do not restructure directories.
-10. Never block on an open question except at the two decision points of section 0. Finish everything that does not depend on the answer and record the rest in the PR description.
+10. Ask the maintainer immediately when a translation interpretation remains unresolved; continue work that does not depend on the answer. Keep all questions, reasoning and approved translation decisions in private files outside the repository. Public documentation, commits and PR descriptions contain only the finished work and validation results.
 
 ## 3. Anatomy of a document — mirror the RU structure 1:1
 
@@ -98,7 +98,7 @@ Section names and index pages for breadcrumbs (as in `README.md`):
 - UI labels in bold as in RU; use the real English strings of the software where known (AzimuthSuite, AzimuthConsole, uNav, RedNAV Host).
 - Do not translate product names: Zima, Zima2, uWAVE, uWave Max, RedWAVE, RedPhone, RWLT, WAYU, A3S, F4105, uSwitch, uPress, uSpeak, Bat&Link Box, AzimuthSuite, AzimuthConsole, AzimuthWebSuite, uNav, uTrackDiver, uGPSHub, RedNAV, RedNODE, RedBASE, Aquatab S, RedGTR, RedLINE. Keep model codes verbatim (`RT-1.524525-1`, `Zima2-B35`). Standards: `ГОСТ` → `GOST`, `ТУ` → `TU`, number unchanged.
 - Fix obvious typos in existing EN text whenever a file is edited (`Introducation`, `dowload`, `Wirind`).
-- Fidelity beats fluency. When in doubt, translate literally and record a question.
+- Fidelity beats fluency. Preserve source assertions literally. If the translation interpretation remains unresolved, ask the maintainer and record the answer privately outside the repository.
 - `.github/docs-sync/glossary.md` is authoritative once it exists. If it is silent, reuse the term already used in EN documents of the same family; otherwise use the standard industry term. Fixed terms:
 
 | RU | EN |
@@ -234,8 +234,7 @@ Checks: Cyrillic ✓ (0 hits) · structure ✓ · TOC ✓ · links ✓ · number
 Glossary additions: <n>
 Deferred links: <list or none>
 Needs EN image: <list or none>
-Open questions for the maintainer:
-- <RU file, line>: <question>
+EN-only content removed: <list or none>
 ```
 
 ## 12. Executor agent definition — `.claude/agents/docs-translator.md`

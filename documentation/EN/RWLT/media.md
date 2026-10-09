@@ -1,4 +1,4 @@
-[Main](/../../) ❯ [Navigation & tracking systems](/navigation_and_tracking_systems_en) ❯ **RWLT: tracks, videos, tutorials, etc.**
+[Main](/) ❯ [Navigation & tracking systems](/navigation_and_tracking_systems_en) ❯ **RWLT: Media**
 
 | ![logo](/documentation/sm_logo.png) |
 | :---: |
@@ -7,18 +7,20 @@
 
 ## RWLT media: videos, tracks, etc.
 
-| Towing pinger and tracking an ROV |
+| Tests with an ROV and towing |
 | :--- |
 | 27 July 2021 |
-| [🗺 6th Gateway of Volga-Don Canal, Volgograd (Google Maps)](https://goo.gl/maps/rmktnCWcauE4HbcZ6) |
+| [🗺 Sixth lock of the Volga-Don Shipping Canal, Volgograd (Google Maps)](https://goo.gl/maps/rmktnCWcauE4HbcZ6) |
 | [🡇 Download track (KML)](/documentation/RWLT_Tracks_27_JUL_2021_06-48-42.kml) |
 | ![](/documentation/RWLT_Tracks_27_JUL_2021_06-48-42.jpg) |
 
-| Static test (GIBs in ice holes, pinger is submerged on a rope) |
+| First system test (static, GIBs lowered into ice holes, pinger lowered on a rope) |
 | :--- | 
 | 09 February 2021 |
-| [🗺 Youzhny Pond, Volgograd (Google Maps)](https://goo.gl/maps/8hZFEP7M3Z8YtdAo6) |
+| [🗺 Yuzhny Pond, Volgograd (Google Maps)](https://goo.gl/maps/8hZFEP7M3Z8YtdAo6) |
 | [🡇 Download track (KML)](/documentation/09-02-2021_RWLT_static_ice.kml) |
 | ![](/documentation/09-02-2021_RWLT_static_ice.jpg) |
 
-## [To all media](/../../media_videos_en)
+## [Back to all media](/../../media_videos_en)
+
+<!-- docs-sync: source=documentation/RU/RWLT/media.md commit=2fcadfe991333c71bbaba2ad8e04cfb8689a9210 date=2022-10-21 -->

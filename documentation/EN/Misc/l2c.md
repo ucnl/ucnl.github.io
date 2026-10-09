@@ -1,4 +1,4 @@
-[Main](/../../) ❯ [Miscellaneous info](/misc_en.md) ❯ **QR links sheet**
+[Main](/) ❯ [Miscellaneous info](/misc_en) ❯ **QR links sheet**
 
 <div style="page-break-after: always;"></div>
 <p align="center"><img src="/documentation/sm_logo.png"/></p>
@@ -10,7 +10,7 @@ _______
 <br/>
 <br/>
 <br/>
-<p align="center">Our site <br/> <a href="https://www.unavlab.com/">unavlab.com</a></p>
+<p align="center">Our website <br/> <a href="https://www.unavlab.com/">unavlab.com</a></p>
 <p align="center"><img src="/documentation/unavlab_web_qr.png" /></p>
 
 
@@ -24,12 +24,12 @@ _______
 <br/>
 <br/>
 <br/>
-<p align="center">Online documentation <br/> <a href="https://www.docs.unavlab.com/">docs.unavlab.com</a></p>
+<p align="center">Documentation <br/> <a href="https://www.docs.unavlab.com/">docs.unavlab.com</a></p>
 <p align="center"><img src="/documentation/docs_unavlab_web_qr.png" /></p>
 
 
 <div style="page-break-after: always;"></div>
-<p align="center"><img src="https://ucnl.github.io/documentation/sm_logo.png"/></p>
+<p align="center"><img src="/documentation/sm_logo.png"/></p>
 
 _______  
 
@@ -38,7 +38,7 @@ _______
 <br/>
 <br/>
 <br/>
-<p align="center">Technical support<br/> <a href="mailto:support@unavlab.com">support@unavlab.com</a></p>
+<p align="center">Support <br/> <a href="mailto:support@unavlab.com">support@unavlab.com</a></p>
 <p align="center"><img src="/documentation/unavlab_support_email_qr.png" /></p>
 
 
@@ -56,3 +56,5 @@ _______
 <p align="center"><img src="/documentation/unavlab_github_qr.png" /></p>
 
 <div style="page-break-after: always;"></div>
+
+<!-- docs-sync: source=documentation/RU/Misc/l2c.md commit=b17506316307a3503d6c5b0b4f0a2986f90dd774 date=2022-04-21 -->

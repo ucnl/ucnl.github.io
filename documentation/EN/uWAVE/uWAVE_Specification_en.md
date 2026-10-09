@@ -54,7 +54,7 @@ The device allows you to:
 
 _________
 <a name="footnote_a1"><sup>\*</sup></a> According to the results of tests in a shallow water body, a practical communication range of **1092 m** was achieved using **uWave** devices.  
-<a name="footnote_a2"><sup>\*\*</sup></a> *Patents RU2659299C1, US11257472B2*.  
+<a name="footnote_a2"><sup>\*\*</sup></a> *Patent RU2659299C1*.  
 <a name="footnote_a3"><sup>\*\*\*</sup></a> *According to open sources as of November 2024*.  
 
 <div style="page-break-after: always;"></div>
