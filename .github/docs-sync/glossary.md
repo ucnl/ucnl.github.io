@@ -463,3 +463,30 @@ Section headings follow the standard 16-section layout of GHS/REACH Annex II saf
 | отсутствует | not applicable | Misc/*_MSDS_en.md (3) | Existing is absent |
 | Литий / Фосфат железа | Lithium / Iron phosphate | Misc/*_MSDS_en.md (3) | |
 | Аккумулятор высокотоковый литий-железофосфатный | High-current lithium iron phosphate (LiFePO4) battery | Misc/RedBase_v3_LiFEPO4_msds_en.md | Header cell |
+
+## Added in batch zima-4
+
+| RU | EN | Source EN file | Note |
+|---|---|---|---|
+| опорный маяк | reference beacon | Zima/AzimuthConsole_manual_en.md | `RBADD`/`RBLST`; see also "опорные маяки-ответчики" |
+| Режим по опорным маякам | Reference beacon mode | Zima/AzimuthConsole_manual_en.md | `AMODE,mode=beacon_referenced` |
+| искомые (не опорные) маяки | target (non-reference) beacons | Zima/AzimuthConsole_manual_en.md | |
+| Запрос маяков | Beacon interrogation | Zima/AzimuthConsole_manual_en.md | Command group `Interrogation` in AzimuthConsole |
+| поворотное устройство | rotator | Zima/AzimuthConsole_manual_en.md | Radant rotator (RDT port) |
+| калибровка на поворотном устройстве | rotator calibration | Zima/AzimuthConsole_manual_en.md | `SCAL`; angular calibration = `ACAL` |
+| возраст / давность данных | age of the data | Zima/AzimuthConsole_manual_en.md | `age` fields |
+| угол места | elevation angle | Zima/AzimuthConsole_manual_en.md | `Elevation_deg` |
+| Курс движения | Course (direction of motion) | Zima/AzimuthConsole_manual_en.md | `course_deg`; heading = `heading_deg` |
+| Азимутальный угол | Azimuth angle | Zima/AzimuthConsole_manual_en.md | |
+| Наименование параметра | Parameter name | Zima/AzimuthConsole_manual_en.md | Output data tables |
+| Диапазон значений | Value range | Zima/AzimuthConsole_manual_en.md | |
+| Встроенный сенсор | Built-in sensor | Zima/AzimuthConsole_manual_en.md | |
+| Внешний источник | External source | Zima/AzimuthConsole_manual_en.md | |
+| Расчетное значение | Calculated value | Zima/AzimuthConsole_manual_en.md | |
+| Заданное пользователем | Set by the user | Zima/AzimuthConsole_manual_en.md | |
+| веб-интерфейс | web interface | Zima/AzimuthConsole_manual_en.md | Lowercase in running text |
+| инициализирующий скрипт | initialization script | Zima/AzimuthConsole_manual_en.md | `init.cmd` |
+| DH-фильтр | DH filter | Zima/AzimuthConsole_manual_en.md | |
+| мБар | mbar | Zima/AzimuthConsole_manual_en.md | Unit column; identifiers such as `stPressure_mBar` unchanged |
+| Запуск от имени администратора | Run as administrator | Zima/AzimuthConsole_manual_en.md | Real Windows UI string |
+| UI labels of AzimuthConsole | as in `src/wwwroot/i18n.js` (`en:` block) | Zima/AzimuthConsole_manual_en.md | e.g. Zoom In, Auto Scale, Interrogate/Pause, Apply & Restart, Save as default settings |
