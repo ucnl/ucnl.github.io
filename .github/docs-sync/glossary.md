@@ -528,3 +528,35 @@ Section headings follow the standard 16-section layout of GHS/REACH Annex II saf
 | Сравнение режимов / Схема опроса / Расчет положения / Выход | Comparison of modes / Interrogation scheme / Position calculation / Output | Zima/Zima2_LBL_DataBrief_en.md | |
 | энергетическая дальность акустической связи | acoustic communication range determined by the link budget | Zima/Zima2_LBL_DataBrief_en.md | |
 | единая аппаратная платформа | single hardware platform | Zima/Zima2_LBL_DataBrief_en.md | |
+
+## Added in batch zima-3
+
+| RU | EN | Source EN file | Note |
+|---|---|---|---|
+| Идентификаторы адресных запросов | Addressed request identifiers | Zima/Zima2_Protocol_Specification_en.md | The section 7 row "адресных … команд" covers a different phrase; RU table entries are `CDS_REQ_*` |
+| управляющая система (Host) | control system (Host) | Zima/Zima2_Protocol_Specification_en.md | Prefixes: D2H = Device to Host, H2D = Host to Device |
+| LBL-решатель | LBL solver | Zima/Zima2_Protocol_Specification_en.md | |
+| пользовательский параметр | user parameter | Zima/Zima2_Protocol_Specification_en.md | H2D_CREQ / H2D_CSET |
+| сглаживающий фильтр | smoothing filter | Zima/Zima2_Protocol_Specification_en.md | |
+| датчик глубины | depth sensor | Zima/Zima2_Protocol_Specification_en.md | |
+| телеуправление | remote control | Zima/Zima2_Protocol_Specification_en.md (+1) | |
+| интервал ожидания ответа маяка-ответчика | responder-beacon response waiting interval | Zima/Zima2_Protocol_Specification_en.md | Timeout |
+| Элемент / Дескриптор | Element / Descriptor | Zima/Zima2_Protocol_Specification_en.md | NMEA sentence structure table |
+| См. Таблица 3.x | See Table 3.x | Zima/Zima2_Protocol_Specification_en.md | |
+| вещественное значение | real (floating-point) value | Zima/Zima2_Protocol_Specification_en.md | |
+| Дата релиза / Устройство / Истории версий по устройствам | Release date / Device / Version histories by device | Zima/Zima2_version_history_en.md | |
+| мелкие доработки | minor improvements | Zima/Zima2_version_history_en.md | |
+| авторасчет скорости звука | automatic speed of sound calculation | Zima/Zima2_version_history_en.md | |
+| уровень солености | salinity level | Zima/Zima2_technical_passport_en.md (+2) | |
+| энергетически сопрягаются с носителем | are power-interfaced with the carrier | Zima/Zima2_technical_passport_en.md (+2) | |
+| Моноблочные устройства | monoblock devices | Zima/Zima2_technical_passport_en.md (+2) | |
+| Поставщик за свой счет устраняет | the Supplier shall eliminate … at its own expense | Zima/Zima2_technical_passport_en.md (+2) | Contractual `shall` |
+| за счет сил и средств Заказчика | using the Customer's own resources | Zima/Zima2_technical_passport_en.md (+2) | |
+| Гарантийные обязательства не распространяются на … | The warranty obligations do not apply to … | Zima/Zima2_technical_passport_en.md (+2) | |
+| Не допускается хранение в неопресненном и влажном виде | Storage of the devices without rinsing in fresh water or while damp is not allowed | Zima/Zima2_technical_passport_en.md (+2) | |
+| (опция) | (optional) | Zima/Zima2-OEM35_technical_passport_en.md | |
+| Бар | bar | Zima/Zima2_technical_passport_en.md (+2) | Lowercase unit symbol |
+| метров водного (водяного) столба | meters of water column | Zima/Zima2_technical_passport_en.md (+2) | |
+| сборка печатных плат | printed circuit board assembly | Zima/Zima2-OEM35_technical_passport_en.md | |
+| полимерная самоклеящаяся бирка | polymer self-adhesive tag | Zima/Zima2-OEM35_technical_passport_en.md | |
+| Версия ПО (в паспорте) | Firmware version | Zima/Zima2_technical_passport_en.md (+2) | Device firmware, consistent with the version history |
