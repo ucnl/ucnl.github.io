@@ -27,7 +27,7 @@
 | OPERATING TEMPERATURE RANGE | -40..+60 °C |
 | CABLE DIAMETER | 5 +/- 0.5 mm |
 | BEAM PATTERN (10 .. 40 kHz) | Torus coaxial with the cylinder |
-| BEAM ANGLE (10 .. 40 kHz) | 120° (3 dB) |
+| BEAM ANGLE (10 .. 40 kHz) | 120° (frequency response 3 dB) |
 
 <div style="page-break-after: always;"></div>
 
