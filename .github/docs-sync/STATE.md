@@ -1,6 +1,6 @@
 # docs-sync: current state
 
-State on 2026-10-09. Master HEAD: `9e88c28a` (Phase 1 merged, PR #2).
+State on 2026-10-09. Master HEAD: `3b6b94b5f86f9406524d4f591ac3b7ed346670a8` (all Phase 2 batches and repository rules merged).
 
 This branch (`docs-sync/state`) is a progress record and is not intended for merge.
 
@@ -9,13 +9,13 @@ This branch (`docs-sync/state`) is a progress record and is not intended for mer
 | Phase | Status |
 |---|---|
 | 1. Inventory and plan | Completed and merged (#2) |
-| 2. Translation batches | 30 of 30 batches completed; 107 EN documents in completed batches |
-| 3. Index pages, README and deferred links | Starts after all batch PRs are merged |
+| 2. Translation batches | 30 of 30 batches merged; 107 EN documents |
+| 3. Index pages, README and deferred links | In progress on docs-sync/indexes: 13 root pages and deferred links |
 | 4. Final QA | Follows Phase 3 |
 
 ## Batch pull requests
 
-All batch PRs below are drafts targeting master. Each document passed the controller review and current mechanical checks. RU sources larger than 30 KB also received an independent line-by-line review.
+All batch PRs below are merged into master. Each document passed the controller review and current mechanical checks. RU sources larger than 30 KB also received an independent line-by-line review.
 
 | PR | Branch | Docs | EN files |
 |---|---|---|---|
@@ -52,11 +52,11 @@ All batch PRs below are drafts targeting master. Each document passed the contro
 
 ## Repository instructions
 
-Draft PR #30 (`docs-sync/agents-md`) adds AGENTS.md, the corresponding Jekyll exclusion, Codex translator/reviewer definitions, and the approved date/number localization rule in AGENTS.md and CLAUDE.md.
+Merged PR #30 (`docs-sync/agents-md`) adds AGENTS.md, the corresponding Jekyll exclusion, Codex translator/reviewer definitions, and the approved date/number localization rule in AGENTS.md and CLAUDE.md.
 
 ## Remaining Phase 2 work
 
-All 30 translation batches are complete. Progress PR #28 is closed; this branch remains available as a state record.
+All 30 translation batches are complete and merged. Progress PR #28 is closed; this branch remains available as a state record.
 
 ## Resuming
 
@@ -66,4 +66,4 @@ All 30 translation batches are complete. Progress PR #28 is closed; this branch 
 4. Keep all `Added in batch` glossary sections when merging master into batch branches; do not rebase or rewrite history.
 5. Start Phase 3 only after all batch PRs are merged. Then update indexes, README and deferred links, and perform Phase 4 QA.
 
-The complete glossary through the completed batches is stored in `glossary_all_batches.md`. The latest checker and executor rules are on `docs-sync/zima-1` until that PR is merged.
+The complete glossary through the completed batches is stored in `glossary_all_batches.md`. The latest checker, executor rules and complete glossary are on master.
