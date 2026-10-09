@@ -17,7 +17,7 @@ The system allows setting up to 64 unique addresses for acoustic wake-up units. 
 After uncoupling, the lifting line unwinds from the float-reel, while the lower end of the line remains connected to the anchor (and the bottom equipment). This makes it possible to raise the bottom equipment by the upper end of the line.
 
 ### 2. System composition
-In the current version, the system is structurally represented by three devices:
+The current version of the system consists of three devices:
 - setting device: a standalone surface module designed to issue ascent commands and to set the address;
 - control device: the acoustic wake-up unit, responsible for receiving the addressed signal and issuing the command to the actuator;
 - actuating device: the actuator, containing a screw mechanism for uncoupling from the anchor and a power source, which also powers the control device
