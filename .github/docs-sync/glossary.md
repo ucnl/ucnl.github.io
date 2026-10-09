@@ -463,3 +463,25 @@ Section headings follow the standard 16-section layout of GHS/REACH Annex II saf
 | отсутствует | not applicable | Misc/*_MSDS_en.md (3) | Existing is absent |
 | Литий / Фосфат железа | Lithium / Iron phosphate | Misc/*_MSDS_en.md (3) | |
 | Аккумулятор высокотоковый литий-железофосфатный | High-current lithium iron phosphate (LiFePO4) battery | Misc/RedBase_v3_LiFEPO4_msds_en.md | Header cell |
+
+## Added in batch redwave-2
+
+| RU | EN | Source EN file | Note |
+|---|---|---|---|
+| гидроакустический навигационный буй-ретранслятор (heading, captions); буи-ретрансляторы (running text) | GNSS-equipped sonobuoy; relay sonobuoys | RedWAVE/RedWAVE_Users_Manual_en.md | Applies the redwave-1 row |
+| порядковый номер (адрес) буя | sequence number (address) | RedWAVE/RedWAVE_Users_Manual_en.md | Not "serial number", which is the device serial number |
+| схема установки / постановки буя | installation layout | RedWAVE/RedWAVE_Users_Manual_en.md | As in WAYU/WAYU_Users_Manual_en.md |
+| кранцы (или поплавки), соответствующие весу веревки | fenders (or floats) matched to the weight of the rope | RedWAVE/RedWAVE_Users_Manual_en.md | As in WAYU/WAYU_Users_Manual_en.md |
+| Подготовка к использованию и проверка | Preparation for use and checks | RedWAVE/RedWAVE_Users_Manual_en.md | |
+| Требования к интеграции и расположению на носителе | Requirements for integration and placement on the carrier | RedWAVE/RedWAVE_Users_Manual_en.md | |
+| Работа с устройством | Working with the device | RedWAVE/RedWAVE_Users_Manual_en.md | |
+| световая индикация (лампы, источники света) | indicator lamps; indicator light sources | RedWAVE/RedWAVE_Users_Manual_en.md | |
+| зарядная площадка | charging pad | RedWAVE/RedWAVE_Users_Manual_en.md | |
+| интерфейсный модуль / интерфейсный блок / интерфейсное устройство | interface module / interface unit / interface device | RedWAVE/RedWAVE_Users_Manual_en.md | RU uses three names for one unit; kept literally |
+| выносные GPS-антенны на кабеле | remote GPS antennas on a cable | RedWAVE/RedWAVE_Users_Manual_en.md | As in RedWAVE/RedNAV_Specification_en.md |
+| подводно-технические работы | underwater engineering work | RedWAVE/RedWAVE_Users_Manual_en.md | As in RedWAVE/RedNAV_Specification_en.md |
+| пиктограмма | icon | RedWAVE/RedWAVE_Users_Manual_en.md | |
+| стоячая вода | slack water | RedWAVE/RedWAVE_Users_Manual_en.md | |
+| струи движителей | thruster wash | RedWAVE/RedWAVE_Users_Manual_en.md | |
+| густые заросли водорослей | dense algae growth | RedWAVE/RedWAVE_Users_Manual_en.md | |
+| Следует помнить, что | Keep in mind that | RedWAVE/RedWAVE_Users_Manual_en.md | |
