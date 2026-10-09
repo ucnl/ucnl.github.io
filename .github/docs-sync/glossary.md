@@ -788,3 +788,18 @@ Section headings follow the standard 16-section layout of GHS/REACH Annex II saf
 | USB-радиодонгл | USB radio dongle | RedPhone/RedPhone_Specification_en.md | |
 | ВСТРОЕННЫЙ ИСТОЧНИК ПИТАНИЯ | BUILT-IN POWER SUPPLY | RedPhone/RedPhone_Specification_en.md | |
 | RedPhone DX Config UI (web tool) | Connection, Connect, Device type, Serial number, Firmware version, SETS2 Settings, RWLT Mode, RWLT Diver ID, Flags, Bit 0 (PinsPrevail), Bit 7 (CH Indicator), Save Settings, Write to Flash | RedPhone/RedPhone_DX_Users_Manual_en.md | Real English strings from `i18n.js` of github.com/ucnl/RedPhoneDXConfig-Web |
+
+## Added in batch redphone-4
+
+| RU | EN | Source EN file | Note |
+|---|---|---|---|
+| Комплект ЗИП | Spare parts and tools kit | RedPhone/RedPhone_Users_Manual_en.md | Old EN "SPTA kit" |
+| кредл; зарядный кредл (шасси) | cradle; charging cradle (chassis) | RedPhone/RedPhone_Users_Manual_en.md | |
+| наживить (гайки, винты) | hand-thread | RedPhone/RedPhone_Users_Manual_en.md | Not "tighten" |
+| Выбор канала связи - бит N | Communication channel selection - bit N | RedPhone/RedPhone_Users_Manual_en.md | DIP-switch table |
+| Станция RedPhone с креплением на ремень | RedPhone station with a strap mount | RedPhone/RedPhone_Users_Manual_en.md | |
+| ПРИМЕНЯЕМЫЕ ИСТОЧНИКИ ПИТАНИЯ | POWER SOURCES USED | RedPhone/RedPhone_Users_Manual_en.md, RedPhone/RedPhone_DX_Specification_en.md | |
+| Испытания в мелководном водоеме | Tests in a shallow body of water | RedPhone/media.md | |
+| при отсутствии прямой видимости | without a direct line of sight | RedPhone/media.md | |
+| Фиксация (кабеля антенны) при помощи карабина | Securing the transducer with a carabiner | RedPhone/media.md | US spelling `carabiner` |
+| Проверка исправности | Checking the serviceability | RedPhone/media.md | |
