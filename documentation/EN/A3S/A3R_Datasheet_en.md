@@ -133,7 +133,7 @@ ________________
 | PIN NUMBER | I/O   | FUNCTION |
 | :---       | :---: | :--- |
 | 1          | O     | Preamplifier output |
-| 2          | O     | Connected to pin #1 |
+| 2          | O     | Connected to pin No. 1 |
 | 3          | -     | Reserved |
 
 
