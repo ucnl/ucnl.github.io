@@ -648,3 +648,15 @@ Section headings follow the standard 16-section layout of GHS/REACH Annex II saf
 | МАКСИМАЛЬНОЕ ЧИСЛО МАЯКОВ В БАЗЕ | MAXIMUM NUMBER OF BEACONS IN THE BASE | Zima/Zima2LX_Specification_en.md | |
 | МАКСИМАЛЬНАЯ ЧАСТОТА ОБНОВЛЕНИЯ ДАЛЬНОСТЕЙ | MAXIMUM RANGE UPDATE RATE | Zima/Zima2LX_Specification_en.md | Cf. MAXIMUM POSITION UPDATE RATE (Zima2-SL) |
 | НОМИНАЛЬНАЯ ТОЧНОСТЬ ИЗМЕРЕНИЯ ДАЛЬНОСТИ (СКО) | NOMINAL RANGE MEASUREMENT ACCURACY (RMS) | Zima/Zima2LX_Specification_en.md | |
+
+## Added in batch zima-8
+
+| RU | EN | Source EN file | Note |
+|---|---|---|---|
+| UI labels of AzimuthSuite | as in `MainForm.resx`, `SettingsEditor.resx`, `Dialogs/*.resx` of AzimuthSuite (neutral = English) | Zima/AzimuthSuite_manual_en.md | RU already quotes most labels in English |
+| Угловая поправка (настройки AzimuthSuite) | Angular correction | Zima/AzimuthSuite_manual_en.md | Real UI label: "Antenna angle adjust, °" (`SettingsEditor.resx`, `groupBox6`) |
+| Поле карты | Map field | Zima/AzimuthSuite_manual_en.md | |
+| Текстовое поле дополнительных параметров | Additional parameters text field | Zima/AzimuthSuite_manual_en.md | |
+| привод носителя (на маяк) | homing of the carrier | Zima/AzimuthSuite_manual_en.md | RAZ parameter |
+| точка привязки | reference point | Zima/AzimuthSuite_manual_en.md | |
+| Пункт (меню) **X** - … | The **X** item/menu … | Zima/AzimuthSuite_manual_en.md | Sentence pattern for menu items and buttons |
