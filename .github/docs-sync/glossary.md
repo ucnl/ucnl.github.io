@@ -463,3 +463,51 @@ Section headings follow the standard 16-section layout of GHS/REACH Annex II saf
 | отсутствует | not applicable | Misc/*_MSDS_en.md (3) | Existing is absent |
 | Литий / Фосфат железа | Lithium / Iron phosphate | Misc/*_MSDS_en.md (3) | |
 | Аккумулятор высокотоковый литий-железофосфатный | High-current lithium iron phosphate (LiFePO4) battery | Misc/RedBase_v3_LiFEPO4_msds_en.md | Header cell |
+
+## Added in batch accessories-1
+
+| RU | EN | Source EN file | Note |
+|---|---|---|---|
+| ОСОБЕННОСТИ (accessories) | FEATURES | Accessories/uPress_Specification_en.md (+6) | |
+| Отечественная разработка и производство | Domestic development and production | Accessories/uPress_Specification_en.md (+1) | Market-specific (rule 6), kept |
+| Патентованная конструкция; Патент RU… | Patented design; Patent RU… | Accessories/uPress_Specification_en.md (+1) | Patent numbers verbatim |
+| Возможно окрашивание в любой цвет по каталогу RAL при заказе от 50 шт. | Painting in any color from the RAL catalog is possible when ordering 50 pcs or more. | Accessories/uPress_Specification_en.md (+2) | |
+| С учетом кабеля стандартной длины | Including a cable of standard length | Accessories/uPress_Specification_en.md (+1) | |
+| Параметр может быть изменен по договоренности | The parameter can be changed by agreement | Accessories/uPress_Specification_en.md (+1) | |
+| СОСТОЯНИЕ ПО УМОЛЧАНИЮ / НОРМАЛЬНО РАЗОМКНУТ | DEFAULT STATE / NORMALLY OPEN | Accessories/uPress_Specification_en.md | |
+| ЦВЕТ КОРПУСА / ЦВЕТ НАЖИМНОГО ЭЛЕМЕНТА | HOUSING COLOR / PUSH ELEMENT COLOR | Accessories/uPress_Specification_en.md | |
+| ХОД НАЖАТИЯ ДО СРАБАТЫВАНИЯ / УСИЛИЕ СРАБАТЫВАНИЯ / КОЛИЧЕСТВО СРАБАТЫВАНИЙ | TRAVEL TO ACTUATION / ACTUATION FORCE / NUMBER OF ACTUATIONS | Accessories/uPress_Specification_en.md | |
+| МАКСИМАЛЬНАЯ КОММУТИРУЕМАЯ МОЩНОСТЬ; ДИАПАЗОН КОММУТИРУЕМЫХ ТОКОВ / НАПРЯЖЕНИЙ | MAXIMUM SWITCHING POWER; SWITCHING CURRENT / VOLTAGE RANGE | Accessories/uPress_Specification_en.md | |
+| РОД ТОКА: постоянный, переменный | CURRENT TYPE: DC, AC | Accessories/uPress_Specification_en.md | |
+| наработка на отказ | mean time between failures | Accessories/uPress_Specification_en.md | |
+| МАТЕРИАЛ ИЗОЛЯЦИИ КАБЕЛЯ | CABLE INSULATION MATERIAL | Accessories/uPress_Specification_en.md (+1) | |
+| МАТЕРИАЛ ЗАЩИТНОГО КОМПАУНДА / ТОЛЩИНА ЗАЩИТНОГО СЛОЯ КОМПАУНДА | POTTING COMPOUND MATERIAL / POTTING COMPOUND THICKNESS | Accessories/Sub_batteries_en.md (+2) | |
+| Герметичная заливка в полиуретановый компаунд | Hermetic potting in polyurethane compound | Accessories/Sub_batteries_en.md (+1) | |
+| ЕМКОСТЬ, Вт·ч; ЭЛЕКТРИЧЕСКАЯ ЕМКОСТЬ (Вт·ч) | ENERGY CAPACITY | Accessories/Sub_batteries_en.md (+1) | As in the glossary row `ЭЛЕКТРИЧЕСКАЯ ЕМКОСТЬ` |
+| ТИП ЭЛЕМЕНТОВ / САМОРАЗРЯД / ДИАПАЗОН ТЕМПЕРАТУР ПРИ ЗАРЯДЕ | CELL TYPE / SELF-DISCHARGE / CHARGING TEMPERATURE RANGE | Accessories/Sub_batteries_en.md | |
+| ВЕС (в воде) | WEIGHT (in water) | Accessories/Sub_batteries_en.md | |
+| уточняется | to be specified | Accessories/Sub_batteries_en.md | |
+| MSDS (Паспорт безопасности химической продукции) | MSDS (Material safety data sheet) | Accessories/Sub_batteries_en.md | |
+| ЭЛЕКТРОННАЯ ВЕРСИЯ ЭТОГО ДОКУМЕНТА | ELECTRONIC VERSION OF THIS DOCUMENT | Accessories/Sub_batteries_en.md (+1) | |
+| конформная аккумуляторная сборка; приборный кейс | conformal battery pack; instrument case | Accessories/Batpacks_en.md | |
+| микрофон защищенный для водолазных масок | protected microphone for diving masks | Accessories/uSpeak_specification_en.md | |
+| ДЭМШ | DEMSh | Accessories/uSpeak_specification_en.md | Transliterated Russian microphone type; queried |
+| ЧУВСТВИТЕЛЬНОСТЬ, мкВ/Па | SENSITIVITY, μV/Pa | Accessories/uSpeak_specification_en.md | |
+| Фланцевый кронштейн | Flange rod mount | Accessories/Flange_rod_mound_Specification_en.md | |
+| стакан / крышка / полукольцо; круглая выборка; нулевое направление | cup / cap / half-ring; round recess; zero direction | Accessories/Flange_rod_mound_Specification_en.md | |
+| крепеж из нержавеющей стали | stainless steel fasteners | Accessories/Flange_rod_mound_Specification_en.md | |
+| КОМПЛЕКТ (heading, parts list) | DELIVERY SET | Accessories/Flange_rod_mound_Specification_en.md | As `Комплект поставки` |
+| Датчик абсолютного давления (и температуры) | absolute pressure (and temperature) sensor | Accessories/crimea_300_Datasheet_en.md (+1) | |
+| ПРОТОКОЛ СОПРЯЖЕНИЯ | COMMUNICATION PROTOCOL | Accessories/crimea_300_Datasheet_en.md | |
+| ПОГРЕШНОСТЬ ИЗМЕРЕНИЯ ДАВЛЕНИЯ / ТЕМПЕРАТУРЫ | PRESSURE / TEMPERATURE MEASUREMENT ACCURACY | Accessories/crimea_300_Datasheet_en.md | |
+| РАЗРЕШЕНИЕ ПО ДАВЛЕНИЮ / ПО ТЕМПЕРАТУРЕ | PRESSURE / TEMPERATURE RESOLUTION | Accessories/crimea_300_Datasheet_en.md | |
+| ДИАПАЗОН ИЗМЕРЯЕМЫХ ДАВЛЕНИЙ / ТЕМПЕРАТУР | MEASURED PRESSURE / TEMPERATURE RANGE | Accessories/crimea_300_Datasheet_en.md | |
+| Система команд TNT; Префикс D2H / H2D | TNT command system; D2H / H2D prefix | Accessories/crimea_300_Datasheet_en.md | |
+| Настроечные поля / Идентификаторы сервисных операций / Идентификаторы локальных параметров | Configuration fields / Service action identifiers / Local parameter identifiers | Accessories/crimea_300_Datasheet_en.md | |
+| работа по запросу / циклическая передача (без запроса) | operation on request / cyclic transmission (without request) | Accessories/crimea_300_Datasheet_en.md (+1) | |
+| ОГРАНИЧЕНИЯ / ДОПОЛНИТЕЛЬНЫЕ МАТЕРИАЛЫ | LIMITATIONS / ADDITIONAL MATERIALS | Accessories/crimea_300_Datasheet_en.md | |
+| Интерфейсный модуль | interface module | Accessories/crimea_300_OS_Datasheet_en.md | |
+| ЖКИ ЭКРАН: Символьный | LCD SCREEN: Character-based | Accessories/crimea_300_OS_Datasheet_en.md | |
+| кнопки без фиксации | non-latching buttons | Accessories/crimea_300_OS_Datasheet_en.md | |
+| места пайки | soldering points | Accessories/crimea_300_OS_Datasheet_en.md | |
+| Калибровка Z0 (атмосферного давления); задание солености; сброс настроек | Z0 calibration (atmospheric pressure calibration); setting the salinity; resetting the settings | Accessories/crimea_300_OS_Datasheet_en.md | Device menu strings are Russian; EN translates them (queried) |
