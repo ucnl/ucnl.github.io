@@ -25,7 +25,7 @@
 
 **Zima 2 LBL** is an underwater acoustic long baseline (LBL) navigation system designed to determine the location of an underwater object using a navigation base formed by [Zima2-R](Zima2R_Specification_en.md) responder-beacons.
 
-The system is built on a **single hardware platform**: the [Zima2-L](Zima2L_Specification_en.md) and [Zima2-LX](/documentation/RU/Zima/Zima2LX_Specification_ru.md) transceivers can be reprogrammed into each other. This makes it possible to change the system configuration to suit the task without replacing the equipment.
+The system is built on a **single hardware platform**: the [Zima2-L](Zima2L_Specification_en.md) and [Zima2-LX](/documentation/EN/Zima/Zima2LX_Specification_en.md) transceivers can be reprogrammed into each other. This makes it possible to change the system configuration to suit the task without replacing the equipment.
 
 <div style="page-break-after: always;"></div>
 
@@ -34,8 +34,8 @@ The system is built on a **single hardware platform**: the [Zima2-L](Zima2L_Spec
 |  |  |
 | :---: | :--- |
 | ![Zima2-L](https://github.com/user-attachments/assets/4f28d018-0d80-4355-a7e2-eb72aa14cfc0) | [Zima2-L](Zima2L_Specification_en.md) <br/> LBL transceiver with a common request to the navigation base (3–4 responder-beacons with addresses 1-4) |
-| ![Zima2-LX](https://github.com/user-attachments/assets/4f28d018-0d80-4355-a7e2-eb72aa14cfc0) | [Zima2-LX](/documentation/RU/Zima/Zima2LX_Specification_ru.md) <br/> LBL transceiver with sequential interrogation of up to 4 responder-beacons with arbitrary addresses |
-| ![Zima2-SL](PENDING) | [Zima2-SL](/documentation/RU/Zima/Zima2SL_Specification_ru.md) <br/> Solver: position calculation and GNSS emulation |
+| ![Zima2-LX](https://github.com/user-attachments/assets/4f28d018-0d80-4355-a7e2-eb72aa14cfc0) | [Zima2-LX](/documentation/EN/Zima/Zima2LX_Specification_en.md) <br/> LBL transceiver with sequential interrogation of up to 4 responder-beacons with arbitrary addresses |
+| ![Zima2-SL](PENDING) | [Zima2-SL](/documentation/EN/Zima/Zima2SL_Specification_en.md) <br/> Solver: position calculation and GNSS emulation |
 | ![Zima2-R](/documentation/zima_r_wbat.png) | [Zima2-R](Zima2R_Specification_en.md) <br/> Reference responder-beacons |
 
 <div style="page-break-after: always;"></div>
@@ -53,14 +53,14 @@ The [Zima2-L](Zima2L_Specification_en.md) transceiver sends a **common (broadcas
 
 ### Mode 2. Zima2-LX – arbitrary set of responder-beacons
 
-The [Zima2-LX](/documentation/RU/Zima/Zima2LX_Specification_ru.md) transceiver **sequentially interrogates** 3 or 4 responder-beacons with arbitrary addresses and measures the range to each of them. The results are transmitted over UART to an external computing unit – the [Zima2-SL](/documentation/RU/Zima/Zima2SL_Specification_ru.md) module.
+The [Zima2-LX](/documentation/EN/Zima/Zima2LX_Specification_en.md) transceiver **sequentially interrogates** 3 or 4 responder-beacons with arbitrary addresses and measures the range to each of them. The results are transmitted over UART to an external computing unit – the [Zima2-SL](/documentation/EN/Zima/Zima2SL_Specification_en.md) module.
 
 - **Advantages:** flexibility – responder-beacons with arbitrary addresses.
 - **Limitations:** the update rate is lower than that of Zima2-L, because the interrogation is sequential.
 
 ### Mode 3. Zima2-LX + Zima2-SL – standalone position calculation
 
-The [Zima2-LX](/documentation/RU/Zima/Zima2LX_Specification_ru.md) + [Zima2-SL](/documentation/RU/Zima/Zima2SL_Specification_ru.md) combination provides a **ready-made solution**: LX measures the ranges, SL stores the coordinates of the responder-beacons, calculates the position and outputs it to the user in the form of standard **GNSS sentences** (GGA, RMC, MTW). This makes it possible to connect the system wherever a regular GNSS receiver is expected.
+The [Zima2-LX](/documentation/EN/Zima/Zima2LX_Specification_en.md) + [Zima2-SL](/documentation/EN/Zima/Zima2SL_Specification_en.md) combination provides a **ready-made solution**: LX measures the ranges, SL stores the coordinates of the responder-beacons, calculates the position and outputs it to the user in the form of standard **GNSS sentences** (GGA, RMC, MTW). This makes it possible to connect the system wherever a regular GNSS receiver is expected.
 
 - **Advantages:** no external software is needed, the output is a familiar GNSS stream.
 - **Limitations:** the update rate is determined by the rate of the sequential interrogation by LX.
@@ -115,8 +115,8 @@ _________
 | :--- |
 | [Responder-beacon **Zima 2-R**: device specification](Zima2R_Specification_en.md) |
 | [LBL transceiver **Zima 2-L**: device specification](Zima2L_Specification_en.md) |
-| [LBL transceiver **Zima 2-LX**: device specification](/documentation/RU/Zima/Zima2LX_Specification_ru.md) |
-| [Solver **Zima 2-SL**: device specification](/documentation/RU/Zima/Zima2SL_Specification_ru.md) |
+| [LBL transceiver **Zima 2-LX**: device specification](/documentation/EN/Zima/Zima2LX_Specification_en.md) |
+| [Solver **Zima 2-SL**: device specification](/documentation/EN/Zima/Zima2SL_Specification_en.md) |
 | [Communication protocol specification for the devices of the **Zima 2** system](Zima2_Protocol_Specification_en.md) |
 
 <!-- docs-sync: source=documentation/RU/Zima/Zima2_LBL_DataBrief_ru.md commit=bf13b8fd73f10e9e9187401418285536e751fe00 date=2026-10-06 -->

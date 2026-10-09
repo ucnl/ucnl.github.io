@@ -104,7 +104,7 @@
   - [9.1. Script examples](#91-script-examples)
   - [9.2. Tips for writing scripts](#92-tips-for-writing-scripts)
 
-- [AzimuthConsole v1.x command system](/documentation/RU/Zima/AzimuthConsole_v1x_ru.md)
+- [AzimuthConsole v1.x command system](/documentation/EN/Zima/AzimuthConsole_v1x_en.md)
 
 <div style="page-break-after: always;"></div>
 
@@ -146,13 +146,13 @@ For convenience, the application supports the following hotkeys for the most fre
 
 - Direction-finding antennas (USBL transceivers)
   - [Zima2B](/documentation/EN/Zima/Zima2B_Specification_en.md)
-  - [Zima2B-35](/documentation/RU/Zima/Zima2B35_Specification_ru.md)
+  - [Zima2B-35](/documentation/EN/Zima/Zima2B35_Specification_en.md)
   - [Zima2BK](/documentation/EN/Zima/Zima2BK_Specification_en.md)
 - Responder-beacons
   - [Zima2R](/documentation/EN/Zima/Zima2R_Specification_en.md)
-  - [Zima2R-35](/documentation/RU/Zima/Zima2R35_Specification_ru.md)
+  - [Zima2R-35](/documentation/EN/Zima/Zima2R35_Specification_en.md)
   - [Zima2RK](/documentation/EN/Zima/Zima2RK_Specification_en.md) 
-  - [Zima2uR](/documentation/RU/Zima/Zima2uR_Specification_ru.md)
+  - [Zima2uR](/documentation/EN/Zima/Zima2uR_Specification_en.md)
 - LBL transceivers
   - [Zima2L]()
   - [Zima2L-35]()
@@ -677,7 +677,7 @@ Since all user commands are transmitted over UDP, two additional commands are pr
 - xexit - exit the application
 
 ### 5.2. AzimuthUDPListener - UDP receiver
-This demo utility provides a quick way to try out the transmission of output data (see [4. Output data](#4-output-data)) over UDP.
+This demo utility provides a quick way to try out the transmission of output data (see [3. Output data](#4-output-data)) over UDP.
 
 By default, the application listens on port 28128 and outputs the received data to the console window.
 To specify a different port for receiving data from AzimuthConsole, specify the port number as a command line parameter when starting the application. Command line format:

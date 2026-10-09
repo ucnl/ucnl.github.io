@@ -6,9 +6,9 @@ Other subcommands: `marker <RU path>` prints the sync marker line for a RU file;
 
 | Item | Value |
 |---|---|
-| Snapshot date | 2026-10-06 |
-| Content HEAD commit | `d22d67599503e61f5b55ca94e3b987b14e22709f` |
-| History | full history (4961 commits up to the content HEAD commit), dates and commit counts are reliable |
+| Snapshot date | 2026-10-09 |
+| Content HEAD commit | `3a0fdea8914460b4ac041342fcb04fd6ec63276a` |
+| History | full history (5219 commits up to the content HEAD commit), dates and commit counts are reliable |
 | Staleness rule | `STALE` = RU has commits after the EN file's last commit (or after its sync marker), or headings differ by more than 1, or EN lacks the printing block RU has, or EN has fewer than 60 % of the RU characters |
 
 Legend. `Listed`: linked from `README_RU.md` or a root `*_ru.md` page. `Notes`: `changed` RU changed after EN, `headings` heading count differs by more than 1, `print` printing block missing in EN, `size` EN under 60 % of RU characters, `marker` EN carries a sync marker, `alias`/`case` EN name differs from the canonical name. `Proposal`: `DECIDE-translate` / `DECIDE-skip` awaiting the maintainer, `SKIP`/`TRANSLATE` decided.
@@ -17,8 +17,8 @@ Legend. `Listed`: linked from `README_RU.md` or a root `*_ru.md` page. `Notes`: 
 
 | Scope | Total | MISSING | STALE | OK |
 |---|---:|---:|---:|---:|
-| Documents under `documentation/RU/` | 139 | 48 | 64 | 27 |
-| Root pages (`README_RU.md`, `*_ru.md`; Phase 3) | 13 | 0 | 10 | 3 |
+| Documents under `documentation/RU/` | 139 | 5 | 0 | 134 |
+| Root pages (`README_RU.md`, `*_ru.md`; Phase 3) | 13 | 0 | 0 | 13 |
 
 | Proposal / decision | Documents |
 |---|---:|
@@ -27,7 +27,7 @@ Legend. `Listed`: linked from `README_RU.md` or a root `*_ru.md` page. `Notes`: 
 | TRANSLATE | 46 |
 | SKIP | 5 |
 
-Batch plan: **30 batches**, **107 documents**, **1759.0 KB** of RU source (MISSING and STALE documents, `DECIDE-skip` and `SKIP` excluded, root pages excluded).
+Batch plan: **0 batches**, **0 documents**, **0.0 KB** of RU source (MISSING and STALE documents, `DECIDE-skip` and `SKIP` excluded, root pages excluded).
 
 ## Inventory by family
 
@@ -35,78 +35,78 @@ Batch plan: **30 batches**, **107 documents**, **1759.0 KB** of RU source (MISSI
 
 | Status | RU file | EN file | RU last | EN last | RU commits after EN | RU KB | EN KB | Headings RU/EN | Listed | Rows RU/EN | Images RU/EN | Print RU/EN | Notes | Proposal |
 |---|---|---|---|---|---:|---:|---:|---|---|---|---|---|---|---|
-| MISSING | `AzimuthConsole_manual_ru.md` | — | 2026-09-25 | — | — | 78.4 | — | 75/— | yes | 197/— | 2/— | y/— |  |  |
-| MISSING | `AzimuthConsole_v1x_ru.md` | — | 2026-06-10 | — | — | 29.5 | — | 14/— | no | 114/— | 1/— | y/— |  | TRANSLATE |
-| MISSING | `AzimuthSuite_manual_ru.md` | — | 2026-06-10 | — | — | 31.5 | — | 7/— | no | 40/— | 6/— | y/— |  | TRANSLATE |
-| STALE | `Bat_n_link_box_Specification_ru.md` | `Bat_n_link_box_Specification_en.md` | 2026-06-10 | 2023-02-08 | 4 | 5.0 | 2.1 | 4/4 | yes | 21/18 | 4/2 | y/n | changed, print, cyrillic-in-EN(1) |  |
-| STALE | `Bat_n_link_box_Users_manual_ru.md` | `Bat_n_link_box_Users_manual_en.md` | 2026-06-10 | 2023-02-08 | 11 | 16.1 | 7.8 | 14/14 | yes | 36/36 | 3/3 | y/n | changed, print |  |
+| OK | `AzimuthConsole_manual_ru.md` | `AzimuthConsole_manual_en.md` | 2026-09-25 | 2026-10-09 | 0 | 78.4 | 49.8 | 75/75 | yes | 197/197 | 2/2 | y/y | marker |  |
+| OK | `AzimuthConsole_v1x_ru.md` | `AzimuthConsole_v1x_en.md` | 2026-06-10 | 2026-10-09 | 0 | 29.5 | 20.0 | 32/32 | no | 209/209 | 1/1 | y/y | marker | TRANSLATE |
+| OK | `AzimuthSuite_manual_ru.md` | `AzimuthSuite_manual_en.md` | 2026-06-10 | 2026-10-09 | 0 | 31.5 | 19.0 | 7/7 | no | 40/40 | 6/6 | y/y | marker | TRANSLATE |
+| OK | `Bat_n_link_box_Specification_ru.md` | `Bat_n_link_box_Specification_en.md` | 2026-06-10 | 2026-10-09 | 0 | 5.0 | 3.4 | 4/4 | yes | 21/21 | 4/4 | y/y | marker |  |
+| OK | `Bat_n_link_box_Users_manual_ru.md` | `Bat_n_link_box_Users_manual_en.md` | 2026-06-10 | 2026-10-09 | 0 | 16.1 | 9.0 | 14/14 | yes | 36/36 | 3/3 | y/y | marker |  |
 | OK | `media.md` | `media.md` | 2022-10-25 | 2022-10-25 | 0 | 1.6 | 1.0 | 2/2 | yes | 14/14 | 3/3 | n/n | cyrillic-in-EN(8) |  |
-| MISSING | `Zima2-35_technical_passport_ru.md` | — | 2025-11-10 | — | — | 13.7 | — | 10/— | yes | 30/— | 2/— | n/— |  | TRANSLATE |
-| MISSING | `Zima2-OEM35_technical_passport_ru.md` | — | 2025-08-18 | — | — | 12.9 | — | 10/— | yes | 26/— | 2/— | n/— |  | TRANSLATE |
-| STALE | `Zima2_DataBrief_ru.md` | `Zima2_DataBrief_en.md` | 2026-06-10 | 2024-07-09 | 4 | 11.4 | 6.6 | 8/8 | yes | 27/27 | 9/9 | y/n | changed, print |  |
-| MISSING | `Zima2_fast_start_ru.md` | — | 2026-07-21 | — | — | 2.4 | — | 0/— | yes | 13/— | 6/— | y/— |  |  |
-| MISSING | `Zima2_LBL_DataBrief_ru.md` | — | 2026-10-06 | — | — | 11.2 | — | 12/— | yes | 23/— | 5/— | y/— |  |  |
-| STALE | `Zima2_Protocol_Specification_ru.md` | `Zima2_Protocol_Specification_en.md` | 2026-10-06 | 2022-08-25 | 11 | 35.4 | 16.4 | 26/22 | yes | 282/218 | 1/1 | y/n | changed, headings, print, cyrillic-in-EN(3) |  |
-| MISSING | `Zima2_technical_passport_ru.md` | — | 2025-11-10 | — | — | 12.8 | — | 10/— | yes | 26/— | 2/— | n/— |  | TRANSLATE |
-| STALE | `Zima2_Users_manual_ru.md` | `Zima2_Users_manual_en.md` | 2026-06-10 | 2025-05-27 | 21 | 57.0 | 38.8 | 25/22 | yes | 52/61 | 17/12 | y/n | changed, headings, print |  |
-| MISSING | `Zima2_version_history_ru.md` | — | 2026-03-30 | — | — | 3.8 | — | 5/— | yes | 26/— | 1/— | n/— |  |  |
-| MISSING | `Zima2B35_Specification_ru.md` | — | 2026-06-10 | — | — | 7.4 | — | 3/— | yes | 29/— | 2/— | y/— |  |  |
-| STALE | `Zima2B_Specification_ru.md` | `Zima2B_Specification_en.md` | 2026-10-06 | 2024-07-09 | 6 | 8.4 | 3.8 | 3/3 | yes | 29/28 | 2/2 | y/n | changed, print, cyrillic-in-EN(3) |  |
-| STALE | `Zima2BK_Specification_ru.md` | `Zima2BK_Specification_en.md` | 2026-06-10 | 2024-07-09 | 2 | 7.3 | 3.7 | 3/3 | yes | 28/27 | 2/2 | y/n | changed, print, cyrillic-in-EN(3) |  |
-| MISSING | `Zima2K_technical_passport_ru.md` | — | 2023-03-06 | — | — | 13.0 | — | 10/— | yes | 26/— | 2/— | n/— |  | TRANSLATE |
-| MISSING | `Zima2L_Specification_ru.md` | — | 2026-10-06 | — | — | 6.9 | — | 4/— | yes | 33/— | 2/— | y/— |  |  |
-| MISSING | `Zima2LX_Specification_ru.md` | — | 2026-10-06 | — | — | 7.4 | — | 4/— | no | 34/— | 2/— | y/— |  | TRANSLATE |
-| MISSING | `Zima2R35_Specification_ru.md` | — | 2026-06-10 | — | — | 8.8 | — | 6/— | yes | 40/— | 2/— | y/— |  |  |
-| STALE | `Zima2R_Specification_ru.md` | `Zima2R_Specification_en.md` | 2026-10-06 | 2023-08-28 | 8 | 8.6 | 3.3 | 6/3 | yes | 40/25 | 2/2 | y/n | changed, headings, print, size, cyrillic-in-EN(3) |  |
-| STALE | `Zima2RK_Specification_ru.md` | `Zima2RK_Specification_en.md` | 2026-06-10 | 2023-08-29 | 3 | 5.6 | 2.9 | 3/3 | yes | 26/25 | 2/2 | y/n | changed, print, cyrillic-in-EN(3) |  |
-| MISSING | `Zima2SL_Specification_ru.md` | — | 2026-10-06 | — | — | 5.0 | — | 4/— | no | 24/— | 2/— | y/— |  | TRANSLATE |
-| MISSING | `Zima2uR_Specification_ru.md` | — | 2026-10-06 | — | — | 8.7 | — | 6/— | yes | 40/— | 2/— | y/— |  |  |
-| STALE | `Zima_B_Specification_ru.md` | `Zima_B_Specification_en.md` | 2026-06-10 | 2023-08-30 | 1 | 7.4 | 3.7 | 3/3 | yes | 24/26 | 2/2 | y/n | changed, print, cyrillic-in-EN(4) | TRANSLATE |
-| STALE | `Zima_DataBrief_ru.md` | `Zima_DataBrief_en.md` | 2026-06-10 | 2021-09-06 | 3 | 13.8 | 7.9 | 8/8 | yes | 28/28 | 9/9 | y/n | changed, print | TRANSLATE |
-| STALE | `Zima_GNSS_requirements_ru.md` | `Zima_GNSS_requirements_en.md` | 2026-08-20 | 2021-04-21 | 5 | 6.3 | 2.7 | 4/4 | yes | 3/3 | 1/1 | y/n | changed, print | TRANSLATE |
-| STALE | `Zima_Protocol_Specification_ru.md` | `Zima_Protocol_Specification_en.md` | 2026-06-10 | 2021-04-21 | 4 | 35.9 | 22.5 | 29/29 | yes | 379/396 | 1/1 | y/n | changed, print, cyrillic-in-EN(28) | TRANSLATE |
-| STALE | `Zima_R_OEM_Specification_ru.md` | `Zima_R_OEM_Specification_en.md` | 2026-06-10 | 2023-08-30 | 1 | 7.1 | 3.3 | 3/3 | yes | 24/25 | 2/2 | y/n | changed, print, cyrillic-in-EN(14) | TRANSLATE |
-| STALE | `Zima_R_Specification_ru.md` | `Zima_R_Specification_en.md` | 2026-06-10 | 2023-08-30 | 1 | 7.6 | 3.5 | 3/3 | yes | 24/25 | 2/2 | y/n | changed, print, cyrillic-in-EN(5) | TRANSLATE |
-| STALE | `Zima_Users_manual_ru.md` | `Zima_Users_manual_en.md` | 2026-06-10 | 2021-04-21 | 8 | 73.8 | 42.3 | 36/37 | yes | 128/127 | 13/12 | y/n | changed, print, cyrillic-in-EN(12) | TRANSLATE |
-| STALE | `ZimaR_wiring_diagram_ru.md` | `ZimaR_wiring_diagram_en.md` | 2026-06-10 | 2021-04-21 | 7 | 1.8 | 0.5 | 2/2 | yes | 3/3 | 3/3 | y/n | changed, print, size |  |
+| OK | `Zima2-35_technical_passport_ru.md` | `Zima2-35_technical_passport_en.md` | 2025-11-10 | 2026-10-09 | 0 | 13.7 | 8.4 | 10/10 | yes | 30/30 | 2/2 | n/n | marker | TRANSLATE |
+| OK | `Zima2-OEM35_technical_passport_ru.md` | `Zima2-OEM35_technical_passport_en.md` | 2025-08-18 | 2026-10-09 | 0 | 12.9 | 7.9 | 10/10 | yes | 26/26 | 2/2 | n/n | marker | TRANSLATE |
+| OK | `Zima2_DataBrief_ru.md` | `Zima2_DataBrief_en.md` | 2026-06-10 | 2026-10-09 | 0 | 11.4 | 7.7 | 8/8 | yes | 27/27 | 9/9 | y/y | marker |  |
+| OK | `Zima2_fast_start_ru.md` | `Zima2_fast_start_en.md` | 2026-07-21 | 2026-10-09 | 0 | 2.4 | 2.0 | 0/0 | yes | 13/13 | 6/6 | y/y | marker |  |
+| OK | `Zima2_LBL_DataBrief_ru.md` | `Zima2_LBL_DataBrief_en.md` | 2026-10-06 | 2026-10-09 | 0 | 11.2 | 8.1 | 12/12 | yes | 23/23 | 5/5 | y/y | marker |  |
+| OK | `Zima2_Protocol_Specification_ru.md` | `Zima2_Protocol_Specification_en.md` | 2026-10-06 | 2026-10-09 | 0 | 35.4 | 21.9 | 26/26 | yes | 282/282 | 1/1 | y/y | marker |  |
+| OK | `Zima2_technical_passport_ru.md` | `Zima2_technical_passport_en.md` | 2025-11-10 | 2026-10-09 | 0 | 12.8 | 7.8 | 10/10 | yes | 26/26 | 2/2 | n/n | marker | TRANSLATE |
+| OK | `Zima2_Users_manual_ru.md` | `Zima2_Users_manual_en.md` | 2026-06-10 | 2026-10-09 | 0 | 57.0 | 34.3 | 25/25 | yes | 52/52 | 17/17 | y/y | marker |  |
+| OK | `Zima2_version_history_ru.md` | `Zima2_version_history_en.md` | 2026-03-30 | 2026-10-09 | 0 | 3.8 | 2.9 | 5/5 | yes | 26/26 | 1/1 | n/n | marker |  |
+| OK | `Zima2B35_Specification_ru.md` | `Zima2B35_Specification_en.md` | 2026-06-10 | 2026-10-09 | 0 | 7.4 | 4.9 | 3/3 | yes | 29/29 | 2/2 | y/y | marker |  |
+| OK | `Zima2B_Specification_ru.md` | `Zima2B_Specification_en.md` | 2026-10-06 | 2026-10-09 | 0 | 8.4 | 5.4 | 3/3 | yes | 29/29 | 2/2 | y/y | marker |  |
+| OK | `Zima2BK_Specification_ru.md` | `Zima2BK_Specification_en.md` | 2026-06-10 | 2026-10-09 | 0 | 7.3 | 4.8 | 3/3 | yes | 28/28 | 2/2 | y/y | marker |  |
+| OK | `Zima2K_technical_passport_ru.md` | `Zima2K_technical_passport_en.md` | 2023-03-06 | 2026-10-09 | 0 | 13.0 | 7.9 | 10/10 | yes | 26/26 | 2/2 | n/n | marker | TRANSLATE |
+| OK | `Zima2L_Specification_ru.md` | `Zima2L_Specification_en.md` | 2026-10-06 | 2026-10-09 | 0 | 6.9 | 4.6 | 4/4 | yes | 33/33 | 2/2 | y/y | marker |  |
+| OK | `Zima2LX_Specification_ru.md` | `Zima2LX_Specification_en.md` | 2026-10-06 | 2026-10-09 | 0 | 7.4 | 5.1 | 4/4 | no | 34/34 | 2/2 | y/y | marker | TRANSLATE |
+| OK | `Zima2R35_Specification_ru.md` | `Zima2R35_Specification_en.md` | 2026-06-10 | 2026-10-09 | 0 | 8.8 | 5.8 | 6/6 | yes | 40/40 | 2/2 | y/y | marker |  |
+| OK | `Zima2R_Specification_ru.md` | `Zima2R_Specification_en.md` | 2026-10-06 | 2026-10-09 | 0 | 8.6 | 5.7 | 6/6 | yes | 40/40 | 2/2 | y/y | marker |  |
+| OK | `Zima2RK_Specification_ru.md` | `Zima2RK_Specification_en.md` | 2026-06-10 | 2026-10-09 | 0 | 5.6 | 3.9 | 3/3 | yes | 26/26 | 2/2 | y/y | marker |  |
+| OK | `Zima2SL_Specification_ru.md` | `Zima2SL_Specification_en.md` | 2026-10-06 | 2026-10-09 | 0 | 5.0 | 3.6 | 4/4 | no | 24/24 | 2/2 | y/y | marker | TRANSLATE |
+| OK | `Zima2uR_Specification_ru.md` | `Zima2uR_Specification_en.md` | 2026-10-06 | 2026-10-09 | 0 | 8.7 | 5.8 | 6/6 | yes | 40/40 | 2/2 | y/y | marker |  |
+| OK | `Zima_B_Specification_ru.md` | `Zima_B_Specification_en.md` | 2026-06-10 | 2026-10-09 | 0 | 7.4 | 4.9 | 3/3 | yes | 24/24 | 2/2 | y/y | marker | TRANSLATE |
+| OK | `Zima_DataBrief_ru.md` | `Zima_DataBrief_en.md` | 2026-06-10 | 2026-10-09 | 0 | 13.8 | 9.1 | 8/8 | yes | 28/28 | 9/9 | y/y | marker | TRANSLATE |
+| OK | `Zima_GNSS_requirements_ru.md` | `Zima_GNSS_requirements_en.md` | 2026-08-20 | 2026-10-09 | 0 | 6.3 | 4.1 | 4/4 | yes | 3/3 | 1/1 | y/y | marker | TRANSLATE |
+| OK | `Zima_Protocol_Specification_ru.md` | `Zima_Protocol_Specification_en.md` | 2026-06-10 | 2026-10-09 | 0 | 35.9 | 22.5 | 29/29 | yes | 379/379 | 1/1 | y/y | marker | TRANSLATE |
+| OK | `Zima_R_OEM_Specification_ru.md` | `Zima_R_OEM_Specification_en.md` | 2026-06-10 | 2026-10-09 | 0 | 7.1 | 4.7 | 3/3 | yes | 24/24 | 2/2 | y/y | marker | TRANSLATE |
+| OK | `Zima_R_Specification_ru.md` | `Zima_R_Specification_en.md` | 2026-06-10 | 2026-10-09 | 0 | 7.6 | 5.0 | 3/3 | yes | 24/24 | 2/2 | y/y | marker | TRANSLATE |
+| OK | `Zima_Users_manual_ru.md` | `Zima_Users_manual_en.md` | 2026-06-10 | 2026-10-09 | 0 | 73.8 | 43.2 | 36/36 | yes | 128/128 | 13/13 | y/y | marker | TRANSLATE |
+| OK | `ZimaR_wiring_diagram_ru.md` | `ZimaR_wiring_diagram_en.md` | 2026-06-10 | 2026-10-09 | 0 | 1.8 | 1.4 | 2/2 | yes | 3/3 | 3/3 | y/y | marker |  |
 
 ### uWAVE
 
 | Status | RU file | EN file | RU last | EN last | RU commits after EN | RU KB | EN KB | Headings RU/EN | Listed | Rows RU/EN | Images RU/EN | Print RU/EN | Notes | Proposal |
 |---|---|---|---|---|---:|---:|---:|---|---|---|---|---|---|---|
-| STALE | `media.md` | `media.md` | 2022-10-21 | 2022-04-21 | 1 | 2.4 | 1.7 | 2/5 | yes | 20/4 | 4/4 | n/n | changed, headings |  |
-| STALE | `uWAVE_Family_ru.md` | `uWAVE_Family_en.md` | 2026-06-10 | 2023-11-27 | 3 | 18.7 | 10.7 | 14/14 | yes | 32/32 | 1/1 | y/n | changed, print, cyrillic-in-EN(9) |  |
-| STALE | `uWAVE_FW_Updating_ru.md` | `uWAVE_FW_Updating_en.md` | 2026-06-10 | 2022-04-21 | 2 | 12.2 | 7.4 | 30/30 | yes | 36/36 | 12/12 | y/n | changed, print |  |
-| STALE | `uWAVE_Max_OEM_Specification_ru.md` | `uWAVE_Max_OEM_Specification_en.md` | 2026-06-10 | 2024-07-25 | 2 | 10.2 | 5.6 | 3/3 | yes | 31/32 | 2/2 | y/n | changed, print, cyrillic-in-EN(8) |  |
-| STALE | `uWAVE_Max_Specification_ru.md` | `uWAVE_Max_Specification_en.md` | 2026-06-10 | 2024-07-25 | 2 | 10.7 | 5.7 | 3/3 | yes | 32/32 | 2/2 | y/n | changed, print, cyrillic-in-EN(4) |  |
-| STALE | `uWAVE_Modems_comparison_ru.md` | `uWAVE_Modems_comparison_en.md` | 2026-06-10 | 2023-06-16 | 4 | 6.6 | 4.4 | 2/2 | yes | 23/23 | 5/5 | y/n | changed, print, cyrillic-in-EN(7) |  |
-| STALE | `uWAVE_Protocol_Specification_ru.md` | `uWAVE_Protocol_Specification_en.md` | 2026-06-10 | 2023-07-13 | 4 | 59.6 | 31.7 | 52/50 | yes | 325/295 | 4/4 | y/n | changed, headings, print, cyrillic-in-EN(47) |  |
-| MISSING | `uWave_publications_ru.md` | — | 2025-04-24 | — | — | 3.7 | — | 2/— | yes | 3/— | 2/— | n/— |  | TRANSLATE |
-| STALE | `uWAVE_Specification_ru.md` | `uWAVE_Specification_en.md` | 2026-06-10 | 2024-11-13 | 2 | 10.7 | 6.0 | 3/3 | yes | 32/32 | 2/2 | y/n | changed, print, cyrillic-in-EN(12) |  |
-| MISSING | `uWave_technical_passport_ru.md` | — | 2025-09-10 | — | — | 11.5 | — | 10/— | yes | 17/— | 2/— | n/— |  | TRANSLATE |
-| STALE | `uWAVE_USBL_Modem_Specification_ru.md` | `uWAVE_USBL_Modem_Specification_en.md` | 2026-06-10 | 2024-07-25 | 3 | 10.6 | 6.1 | 3/3 | yes | 34/35 | 2/2 | y/n | changed, print, cyrillic-in-EN(5) |  |
+| OK | `media.md` | `media.md` | 2022-10-21 | 2026-10-09 | 0 | 2.4 | 1.9 | 2/2 | yes | 20/20 | 4/4 | n/n | marker |  |
+| OK | `uWAVE_Family_ru.md` | `uWAVE_Family_en.md` | 2026-06-10 | 2026-10-09 | 0 | 18.7 | 11.8 | 14/14 | yes | 32/32 | 1/1 | y/y | marker |  |
+| OK | `uWAVE_FW_Updating_ru.md` | `uWAVE_FW_Updating_en.md` | 2026-06-10 | 2026-10-09 | 0 | 12.2 | 8.2 | 30/30 | yes | 36/36 | 12/12 | y/y | marker |  |
+| OK | `uWAVE_Max_OEM_Specification_ru.md` | `uWAVE_Max_OEM_Specification_en.md` | 2026-06-10 | 2026-10-09 | 0 | 10.2 | 6.6 | 3/3 | yes | 31/31 | 2/2 | y/y | marker |  |
+| OK | `uWAVE_Max_Specification_ru.md` | `uWAVE_Max_Specification_en.md` | 2026-06-10 | 2026-10-09 | 0 | 10.7 | 6.9 | 3/3 | yes | 32/32 | 2/2 | y/y | marker |  |
+| OK | `uWAVE_Modems_comparison_ru.md` | `uWAVE_Modems_comparison_en.md` | 2026-06-10 | 2026-10-09 | 0 | 6.6 | 5.0 | 2/2 | yes | 23/23 | 5/5 | y/y | marker |  |
+| OK | `uWAVE_Protocol_Specification_ru.md` | `uWAVE_Protocol_Specification_en.md` | 2026-06-10 | 2026-10-09 | 0 | 59.6 | 36.6 | 52/52 | yes | 325/325 | 4/4 | y/y | marker |  |
+| OK | `uWave_publications_ru.md` | `uWave_publications_en.md` | 2025-04-24 | 2026-10-09 | 0 | 3.7 | 3.7 | 2/2 | yes | 3/3 | 2/2 | n/n | marker, cyrillic-in-EN(634) | TRANSLATE |
+| OK | `uWAVE_Specification_ru.md` | `uWAVE_Specification_en.md` | 2026-06-10 | 2026-10-09 | 0 | 10.7 | 6.9 | 3/3 | yes | 32/32 | 2/2 | y/y | marker |  |
+| OK | `uWave_technical_passport_ru.md` | `uWave_technical_passport_en.md` | 2025-09-10 | 2026-10-09 | 0 | 11.5 | 6.9 | 10/10 | yes | 17/17 | 2/2 | n/n | marker | TRANSLATE |
+| OK | `uWAVE_USBL_Modem_Specification_ru.md` | `uWAVE_USBL_Modem_Specification_en.md` | 2026-06-10 | 2026-10-09 | 0 | 10.6 | 7.0 | 3/3 | yes | 34/34 | 2/2 | y/y | marker |  |
 | OK | `uWAVE_version_history_ru.md` | `uWAVE_version_history_en.md` | 2025-11-26 | 2025-11-26 | 0 | 10.8 | 5.5 | 9/8 | yes | 24/24 | 1/1 | n/n |  |  |
-| STALE | `uWAVE_wiring_diagram_ru.md` | `uWAVE_wiring_diagram_en.md` | 2026-06-10 | 2022-04-21 | 2 | 1.9 | 0.8 | 3/3 | yes | 3/3 | 4/4 | y/n | changed, print, size |  |
+| OK | `uWAVE_wiring_diagram_ru.md` | `uWAVE_wiring_diagram_en.md` | 2026-06-10 | 2026-10-09 | 0 | 1.9 | 1.6 | 3/3 | yes | 3/3 | 4/4 | y/y | marker |  |
 
 ### RedPhone
 
 | Status | RU file | EN file | RU last | EN last | RU commits after EN | RU KB | EN KB | Headings RU/EN | Listed | Rows RU/EN | Images RU/EN | Print RU/EN | Notes | Proposal |
 |---|---|---|---|---|---:|---:|---:|---|---|---|---|---|---|---|
-| STALE | `media.md` | `media.md` | 2022-10-21 | 2022-04-21 | 1 | 2.4 | 1.9 | 2/6 | yes | 20/4 | 5/5 | n/n | changed, headings |  |
-| MISSING | `Phone_S_package_tech_passport_ru.md` | — | 2022-10-03 | — | — | 12.8 | — | 11/— | yes | 46/— | 2/— | n/— |  | TRANSLATE |
-| MISSING | `Phone_T_package_tech_passport_ru.md` | — | 2022-10-03 | — | — | 15.1 | — | 11/— | yes | 50/— | 2/— | n/— |  | TRANSLATE |
-| MISSING | `RedPhone-DX_protocol_specification_ru.md` | — | 2026-06-10 | — | — | 10.2 | — | 10/— | yes | 64/— | 1/— | y/— |  |  |
+| OK | `media.md` | `media.md` | 2022-10-21 | 2026-10-09 | 0 | 2.4 | 2.0 | 2/2 | yes | 20/20 | 5/5 | n/n | marker |  |
+| OK | `Phone_S_package_tech_passport_ru.md` | `Phone_S_package_tech_passport_en.md` | 2022-10-03 | 2026-10-09 | 0 | 12.8 | 7.8 | 11/11 | yes | 46/46 | 2/2 | n/n | marker | TRANSLATE |
+| OK | `Phone_T_package_tech_passport_ru.md` | `Phone_T_package_tech_passport_en.md` | 2022-10-03 | 2026-10-09 | 0 | 15.1 | 9.1 | 11/11 | yes | 50/50 | 2/2 | n/n | marker | TRANSLATE |
+| OK | `RedPhone-DX_protocol_specification_ru.md` | `RedPhone-DX_protocol_specification_en.md` | 2026-06-10 | 2026-10-09 | 0 | 10.2 | 6.4 | 10/10 | yes | 64/64 | 1/1 | y/y | marker |  |
 | MISSING | `RedPhone_Articulation_tables_ru.md` | — | 2020-10-13 | — | — | 14.4 | — | 0/— | no | 248/— | 0/— | n/— |  | SKIP |
-| STALE | `RedPhone_DX_Specification_ru.md` | `RedPhone_DX_Specification_en.md` | 2026-07-21 | 2026-07-21 | 1 | 7.8 | 4.3 | 5/5 | yes | 33/34 | 2/2 | y/n | changed, print, cyrillic-in-EN(1) |  |
-| STALE | `RedPhone_DX_Users_Manual_ru.md` | `RedPhone_DX_Users_Manual_en.md` | 2026-07-23 | 2022-04-21 | 15 | 41.0 | 20.6 | 32/35 | yes | 55/74 | 9/10 | y/n | changed, headings, print, cyrillic-in-EN(9) |  |
-| MISSING | `RedPhone_MDX_Specification_ru.md` | — | 2026-06-10 | — | — | 7.9 | — | 5/— | no | 33/— | 2/— | y/— |  | TRANSLATE |
-| MISSING | `RedPhone_MOS_Specification_ru.md` | — | 2026-06-10 | — | — | 7.3 | — | 5/— | no | 30/— | 2/— | y/— |  | TRANSLATE |
-| STALE | `RedPhone_OS_Specification_ru.md` | `RedPhone_OS_Specification_en.md` | 2026-06-10 | 2022-09-30 | 6 | 7.2 | 3.8 | 5/5 | yes | 30/30 | 2/2 | y/n | changed, print, cyrillic-in-EN(3) |  |
-| STALE | `RedPhone_OS_Users_manual_ru.md` | `RedPhone_OS_Users_manual_en.md` | 2026-07-23 | 2022-04-21 | 11 | 39.1 | 20.6 | 30/30 | yes | 43/54 | 8/6 | y/n | changed, print, cyrillic-in-EN(3) |  |
-| MISSING | `RedPhone_PM_ru.md` | — | 2021-04-21 | — | — | 53.2 | — | 44/— | yes | 48/— | 2/— | n/— |  |  |
+| OK | `RedPhone_DX_Specification_ru.md` | `RedPhone_DX_Specification_en.md` | 2026-07-21 | 2026-10-09 | 0 | 7.8 | 5.4 | 5/5 | yes | 33/33 | 2/2 | y/y | marker |  |
+| OK | `RedPhone_DX_Users_Manual_ru.md` | `RedPhone_DX_Users_Manual_en.md` | 2026-07-23 | 2026-10-09 | 0 | 41.0 | 22.6 | 32/32 | yes | 55/55 | 9/9 | y/y | marker |  |
+| OK | `RedPhone_MDX_Specification_ru.md` | `RedPhone_MDX_Specification_en.md` | 2026-06-10 | 2026-10-09 | 0 | 7.9 | 5.4 | 5/5 | no | 33/33 | 2/2 | y/y | marker | TRANSLATE |
+| OK | `RedPhone_MOS_Specification_ru.md` | `RedPhone_MOS_Specification_en.md` | 2026-06-10 | 2026-10-09 | 0 | 7.3 | 4.9 | 5/5 | no | 30/30 | 2/2 | y/y | marker | TRANSLATE |
+| OK | `RedPhone_OS_Specification_ru.md` | `RedPhone_OS_Specification_en.md` | 2026-06-10 | 2026-10-09 | 0 | 7.2 | 4.8 | 5/5 | yes | 30/30 | 2/2 | y/y | marker |  |
+| OK | `RedPhone_OS_Users_manual_ru.md` | `RedPhone_OS_Users_manual_en.md` | 2026-07-23 | 2026-10-09 | 0 | 39.1 | 20.8 | 30/30 | yes | 43/43 | 8/8 | y/y | marker |  |
+| OK | `RedPhone_PM_ru.md` | `RedPhone_PM_en.md` | 2021-04-21 | 2026-10-09 | 0 | 53.2 | 30.4 | 44/44 | yes | 48/48 | 2/2 | n/n | marker, cyrillic-in-EN(2327) |  |
 | OK | `RedPhone_RF_Dongle_Specification_ru.md` | `RedPhone_RF_Dongle_Specification_en.md` | 2022-04-21 | 2022-04-21 | 0 | 1.8 | 1.2 | 3/3 | yes | 12/12 | 2/2 | n/n | cyrillic-in-EN(10) |  |
-| STALE | `RedPhone_Specification_ru.md` | `RedPhone_Specification_en.md` | 2021-10-11 | 2021-04-21 | 2 | 6.2 | 3.8 | 4/4 | yes | 33/33 | 2/2 | n/n | changed, cyrillic-in-EN(1) |  |
-| STALE | `RedPhone_Users_Manual_ru.md` | `RedPhone_Users_Manual_en.md` | 2021-04-21 | 2021-04-21 | 1 | 30.5 | 15.8 | 26/26 | yes | 58/58 | 5/5 | n/n | changed, cyrillic-in-EN(2) |  |
+| OK | `RedPhone_Specification_ru.md` | `RedPhone_Specification_en.md` | 2021-10-11 | 2026-10-09 | 0 | 6.2 | 4.2 | 4/4 | yes | 33/33 | 2/2 | n/n | marker |  |
+| OK | `RedPhone_Users_Manual_ru.md` | `RedPhone_Users_Manual_en.md` | 2021-04-21 | 2026-10-09 | 0 | 30.5 | 16.6 | 26/26 | yes | 58/58 | 5/5 | n/n | marker |  |
 
 ### RWLT
 
@@ -114,28 +114,28 @@ Batch plan: **30 batches**, **107 documents**, **1759.0 KB** of RU source (MISSI
 |---|---|---|---|---|---:|---:|---:|---|---|---|---|---|---|---|
 | OK | `media.md` | `media.md` | 2022-10-21 | 2022-10-21 | 0 | 1.5 | 1.1 | 2/2 | yes | 16/16 | 3/3 | n/n |  |  |
 | OK | `RWLT_DataBrief_ru.md` | `RWLT_DataBrief_en.md` | 2024-04-11 | 2024-04-18 | 0 | 9.1 | 5.9 | 7/7 | yes | 8/8 | 5/5 | n/n |  |  |
-| STALE | `RWLT_GIB_Specification_ru.md` | `RWLT_GIB_Specification_en.md` | 2025-02-26 | 2024-04-18 | 3 | 6.0 | 3.3 | 4/3 | yes | 27/23 | 4/2 | n/n | changed, cyrillic-in-EN(3) |  |
-| STALE | `RWLT_Pinger_K_Specification_ru.md` | `RWLT_Pinger_K_Specification_en.md` | 2025-02-26 | 2024-04-18 | 1 | 4.1 | 2.6 | 3/3 | yes | 17/17 | 2/2 | n/n | changed, cyrillic-in-EN(19) |  |
+| OK | `RWLT_GIB_Specification_ru.md` | `RWLT_GIB_Specification_en.md` | 2025-02-26 | 2026-10-09 | 0 | 6.0 | 4.0 | 4/4 | yes | 27/27 | 4/4 | n/n | marker |  |
+| OK | `RWLT_Pinger_K_Specification_ru.md` | `RWLT_Pinger_K_Specification_en.md` | 2025-02-26 | 2026-10-09 | 0 | 4.1 | 2.8 | 3/3 | yes | 17/17 | 2/2 | n/n | marker |  |
 | OK | `RWLT_Pinger_Specification_ru.md` | `RWLT_Pinger_Specification_en.md` | 2024-04-11 | 2024-04-18 | 0 | 4.4 | 2.6 | 3/3 | yes | 19/21 | 2/2 | n/n | cyrillic-in-EN(5) |  |
-| STALE | `RWLT_RF_Dongle_Specification_ru.md` | `RWLT_RF_Dongle_en.md` | 2024-04-11 | 2024-02-28 | 1 | 2.6 | 1.8 | 3/3 | yes | 17/17 | 2/2 | n/n | changed, alias, cyrillic-in-EN(3) | TRANSLATE |
-| MISSING | `RWLT_tech_pass_ru.md` | — | 2025-09-23 | — | — | 15.9 | — | 14/— | yes | 48/— | 2/— | n/— |  | TRANSLATE |
+| OK | `RWLT_RF_Dongle_Specification_ru.md` | `RWLT_RF_Dongle_en.md` | 2024-04-11 | 2026-10-09 | 0 | 2.6 | 2.0 | 3/3 | yes | 17/17 | 2/2 | n/n | marker, alias | TRANSLATE |
+| OK | `RWLT_tech_pass_ru.md` | `RWLT_tech_pass_en.md` | 2025-09-23 | 2026-10-09 | 0 | 15.9 | 9.7 | 14/14 | yes | 48/48 | 2/2 | n/n | marker | TRANSLATE |
 | OK | `RWLT_Users_Manual_ru.md` | `RWLT_Users_Manual_en.md` | 2024-04-18 | 2024-04-18 | 0 | 44.5 | 25.0 | 21/21 | yes | 44/44 | 13/13 | n/n |  |  |
 | OK | `uNav_application_Users_manual_ru.md` | `uNav_application_Users_manual_en.md` | 2025-11-06 | 2025-11-06 | 0 | 32.5 | 18.4 | 47/47 | yes | 43/43 | 6/6 | n/n |  |  |
-| STALE | `uNav_protocol_specification_ru.md` | `uNav_protocol_specification_en.md` | 2026-03-11 | 2024-04-18 | 7 | 20.4 | 11.6 | 19/18 | yes | 167/152 | 2/2 | n/n | changed, cyrillic-in-EN(2) |  |
+| OK | `uNav_protocol_specification_ru.md` | `uNav_protocol_specification_en.md` | 2026-03-11 | 2026-10-09 | 0 | 20.4 | 12.8 | 19/19 | yes | 167/167 | 2/2 | n/n | marker |  |
 | OK | `uTrackDiver_Users_Manual_ru.md` | `uTrackDiver_Users_Manual_en.md` | 2024-04-18 | 2024-04-18 | 0 | 33.5 | 19.0 | 17/17 | no | 40/40 | 4/4 | n/n |  | TRANSLATE |
 
 ### WAYU
 
 | Status | RU file | EN file | RU last | EN last | RU commits after EN | RU KB | EN KB | Headings RU/EN | Listed | Rows RU/EN | Images RU/EN | Print RU/EN | Notes | Proposal |
 |---|---|---|---|---|---:|---:|---:|---|---|---|---|---|---|---|
-| STALE | `media.md` | `media.md` | 2025-06-04 | 2023-08-14 | 1 | 2.1 | 1.7 | 2/2 | yes | 23/23 | 8/8 | n/n | changed |  |
-| STALE | `WAYU_DataBrief_ru.md` | `WAYU_DataBrief_en.md` | 2025-06-04 | 2024-12-09 | 1 | 5.9 | 3.8 | 5/5 | yes | 11/11 | 5/5 | n/n | changed |  |
-| STALE | `WAYU_GIB_Specification_ru.md` | `WAYU_GIB_Specification_en.md` | 2025-06-04 | 2024-12-10 | 3 | 4.9 | 2.9 | 4/3 | yes | 24/21 | 4/2 | n/n | changed, cyrillic-in-EN(3) |  |
-| STALE | `WAYU_Pinger_Specification_ru.md` | `WAYU_Pinger_Specification_en.md` | 2025-06-04 | 2024-12-11 | 2 | 5.2 | 3.4 | 5/5 | yes | 27/27 | 2/2 | n/n | changed, cyrillic-in-EN(1) |  |
+| OK | `media.md` | `media.md` | 2025-06-04 | 2026-10-09 | 0 | 2.1 | 1.8 | 2/2 | yes | 23/23 | 8/8 | n/n | marker |  |
+| OK | `WAYU_DataBrief_ru.md` | `WAYU_DataBrief_en.md` | 2025-06-04 | 2026-10-09 | 0 | 5.9 | 4.0 | 5/5 | yes | 11/11 | 5/5 | n/n | marker |  |
+| OK | `WAYU_GIB_Specification_ru.md` | `WAYU_GIB_Specification_en.md` | 2025-06-04 | 2026-10-09 | 0 | 4.9 | 3.4 | 4/4 | yes | 24/24 | 4/4 | n/n | marker |  |
+| OK | `WAYU_Pinger_Specification_ru.md` | `WAYU_Pinger_Specification_en.md` | 2025-06-04 | 2026-10-09 | 0 | 5.2 | 3.6 | 5/5 | yes | 27/27 | 2/2 | n/n | marker |  |
 | MISSING | `WAYU_Protocol_specification_ru.md` | — | 2025-06-04 | — | — | 17.8 | — | 12/— | no | 150/— | 1/— | n/— |  | SKIP |
-| STALE | `WAYU_RF_Dongle_Specification_ru.md` | `WAYU_RF_Dongle_Specification_en.md` | 2025-06-04 | 2024-12-09 | 1 | 2.5 | 1.8 | 3/3 | yes | 18/18 | 2/2 | n/n | changed, cyrillic-in-EN(1) |  |
-| MISSING | `WAYU_tech_pass_ru.md` | — | 2024-12-12 | — | — | 13.9 | — | 13/— | yes | 42/— | 2/— | n/— |  | TRANSLATE |
-| STALE | `WAYU_Users_Manual_ru.md` | `WAYU_Users_Manual_en.md` | 2025-06-04 | 2024-12-09 | 1 | 31.2 | 17.3 | 20/20 | yes | 35/35 | 9/9 | n/n | changed |  |
+| OK | `WAYU_RF_Dongle_Specification_ru.md` | `WAYU_RF_Dongle_Specification_en.md` | 2025-06-04 | 2026-10-09 | 0 | 2.5 | 1.9 | 3/3 | yes | 18/18 | 2/2 | n/n | marker |  |
+| OK | `WAYU_tech_pass_ru.md` | `WAYU_tech_pass_en.md` | 2024-12-12 | 2026-10-09 | 0 | 13.9 | 8.5 | 13/13 | yes | 42/42 | 2/2 | n/n | marker | TRANSLATE |
+| OK | `WAYU_Users_Manual_ru.md` | `WAYU_Users_Manual_en.md` | 2025-06-04 | 2026-10-09 | 0 | 31.2 | 17.6 | 20/20 | yes | 35/35 | 9/9 | n/n | marker |  |
 
 ### RedWAVE
 
@@ -143,27 +143,27 @@ Batch plan: **30 batches**, **107 documents**, **1759.0 KB** of RU source (MISSI
 |---|---|---|---|---|---:|---:|---:|---|---|---|---|---|---|---|
 | OK | `Aquatab_s_specification_ru.md` | `Aquatab_s_specification_en.md` | 2023-03-19 | 2023-04-18 | 0 | 8.9 | 5.4 | 3/3 | yes | 25/25 | 2/2 | n/n | cyrillic-in-EN(4) |  |
 | OK | `media.md` | `media.md` | 2022-10-24 | 2022-10-24 | 0 | 5.4 | 4.6 | 2/2 | yes | 66/66 | 15/15 | n/n |  |  |
-| MISSING | `RedBASE_old_Specification_ru.md` | — | 2024-08-19 | — | — | 5.0 | — | 3/— | yes | 21/— | 2/— | n/— |  | TRANSLATE |
-| STALE | `RedBASE_Specification_ru.md` | `RedBASE_Specification_en.md` | 2024-12-12 | 2024-08-19 | 1 | 6.7 | 2.9 | 4/3 | yes | 24/21 | 4/2 | n/n | changed, cyrillic-in-EN(5) |  |
-| STALE | `RedNAV_Host_Users_Manual_ru.md` | `RedNAV_Host_Users_Manual_en.md` | 2025-09-18 | 2022-04-21 | 2 | 12.4 | 7.0 | 5/5 | yes | 44/40 | 11/10 | n/n | changed |  |
-| MISSING | `RedNAV_PM_ru.md` | — | 2023-03-19 | — | — | 36.0 | — | 30/— | yes | 17/— | 1/— | n/— |  |  |
-| STALE | `RedNAV_Specification_ru.md` | `RedNAV_Specification_en.md` | 2025-06-26 | 2024-08-19 | 1 | 7.9 | 4.5 | 3/3 | yes | 30/30 | 2/2 | n/n | changed, cyrillic-in-EN(6) |  |
+| OK | `RedBASE_old_Specification_ru.md` | `RedBASE_old_Specification_en.md` | 2024-08-19 | 2026-10-09 | 0 | 5.0 | 3.2 | 3/3 | yes | 21/21 | 2/2 | n/n | marker | TRANSLATE |
+| OK | `RedBASE_Specification_ru.md` | `RedBASE_Specification_en.md` | 2024-12-12 | 2026-10-09 | 0 | 6.7 | 4.3 | 4/4 | yes | 24/24 | 4/4 | n/n | marker |  |
+| OK | `RedNAV_Host_Users_Manual_ru.md` | `RedNAV_Host_Users_Manual_en.md` | 2025-09-18 | 2026-10-09 | 0 | 12.4 | 7.7 | 5/5 | yes | 44/44 | 11/11 | n/n | marker |  |
+| OK | `RedNAV_PM_ru.md` | `RedNAV_PM_en.md` | 2023-03-19 | 2026-10-09 | 0 | 36.0 | 18.2 | 30/30 | yes | 17/17 | 1/1 | n/n | marker |  |
+| OK | `RedNAV_Specification_ru.md` | `RedNAV_Specification_en.md` | 2025-06-26 | 2026-10-09 | 0 | 7.9 | 4.9 | 3/3 | yes | 30/30 | 2/2 | n/n | marker |  |
 | OK | `RedNODE_Specification_ru.md` | `RedNODE_Specification_en.md` | 2024-08-19 | 2024-08-19 | 0 | 7.3 | 4.0 | 3/3 | yes | 29/29 | 2/2 | n/n | cyrillic-in-EN(4) |  |
 | OK | `RedNODE_wiring_diagram_ru.md` | `RedNODE_wiring_diagram_en.md` | 2022-04-21 | 2022-04-21 | 0 | 0.9 | 0.7 | 2/2 | yes | 3/3 | 3/3 | n/n |  |  |
-| STALE | `RedWAVE_DataBrief_ru.md` | `RedWAVE_DataBrief_en.md` | 2024-11-13 | 2022-04-21 | 4 | 9.3 | 5.2 | 5/5 | yes | 17/16 | 5/4 | n/n | changed |  |
-| STALE | `RedWAVE_Protocol_Specification_ru.md` | `RedWAVE_Protocol_Specification_en.md` | 2023-03-19 | 2022-04-21 | 1 | 30.3 | 17.9 | 30/30 | yes | 263/263 | 1/1 | n/n | changed, cyrillic-in-EN(37) |  |
-| MISSING | `RedWave_tech_pass_ru.md` | — | 2025-06-10 | — | — | 12.9 | — | 10/— | yes | 27/— | 2/— | n/— |  | TRANSLATE |
-| STALE | `RedWAVE_Users_Manual_ru.md` | `RedWAVE_Users_Manual_en.md` | 2025-07-22 | 2022-04-21 | 19 | 73.6 | 34.6 | 30/27 | yes | 91/67 | 20/13 | n/n | changed, headings |  |
-| MISSING | `uGPSHub_Users_manual_ru.md` | — | 2025-07-01 | — | — | 32.2 | — | 50/— | yes | 43/— | 6/— | n/— |  |  |
+| OK | `RedWAVE_DataBrief_ru.md` | `RedWAVE_DataBrief_en.md` | 2024-11-13 | 2026-10-09 | 0 | 9.3 | 5.9 | 5/5 | yes | 17/17 | 5/5 | n/n | marker |  |
+| OK | `RedWAVE_Protocol_Specification_ru.md` | `RedWAVE_Protocol_Specification_en.md` | 2023-03-19 | 2026-10-09 | 0 | 30.3 | 18.9 | 30/30 | yes | 263/263 | 1/1 | n/n | marker |  |
+| OK | `RedWave_tech_pass_ru.md` | `RedWave_tech_pass_en.md` | 2025-06-10 | 2026-10-09 | 0 | 12.9 | 7.7 | 10/10 | yes | 27/27 | 2/2 | n/n | marker | TRANSLATE |
+| OK | `RedWAVE_Users_Manual_ru.md` | `RedWAVE_Users_Manual_en.md` | 2025-07-22 | 2026-10-09 | 0 | 73.6 | 40.4 | 30/30 | yes | 91/91 | 20/20 | n/n | marker |  |
+| OK | `uGPSHub_Users_manual_ru.md` | `uGPSHub_Users_manual_en.md` | 2025-07-01 | 2026-10-09 | 0 | 32.2 | 18.7 | 50/50 | yes | 43/43 | 6/6 | n/n | marker |  |
 
 ### A3S
 
 | Status | RU file | EN file | RU last | EN last | RU commits after EN | RU KB | EN KB | Headings RU/EN | Listed | Rows RU/EN | Images RU/EN | Print RU/EN | Notes | Proposal |
 |---|---|---|---|---|---:|---:|---:|---|---|---|---|---|---|---|
-| STALE | `A3R_Datasheet_ru.md` | `A3R_Datasheet_en.md` | 2026-06-10 | 2026-03-13 | 2 | 10.5 | 6.5 | 12/12 | yes | 77/77 | 3/3 | y/n | changed, print |  |
-| MISSING | `A3S_packages_ru.md` | — | 2026-06-10 | — | — | 6.5 | — | 9/— | yes | 21/— | 1/— | y/— |  | TRANSLATE |
-| MISSING | `A3S_Users_Manual_ru.md` | — | 2026-06-10 | — | — | 146.2 | — | 67/— | yes | 231/— | 44/— | y/— |  |  |
-| STALE | `A3T_Datasheet_ru.md` | `A3T_Datasheet_en.md` | 2026-06-10 | 2026-03-13 | 2 | 9.0 | 5.7 | 8/8 | yes | 74/74 | 3/3 | y/n | changed, print |  |
+| OK | `A3R_Datasheet_ru.md` | `A3R_Datasheet_en.md` | 2026-06-10 | 2026-10-09 | 0 | 10.5 | 7.3 | 12/12 | yes | 77/77 | 3/3 | y/y | marker |  |
+| OK | `A3S_packages_ru.md` | `A3S_packages_en.md` | 2026-06-10 | 2026-10-09 | 0 | 6.5 | 4.3 | 9/9 | yes | 21/21 | 1/1 | y/y | marker | TRANSLATE |
+| OK | `A3S_Users_Manual_ru.md` | `A3S_Users_Manual_en.md` | 2026-06-10 | 2026-10-09 | 0 | 146.2 | 96.6 | 67/67 | yes | 231/231 | 44/44 | y/y | marker |  |
+| OK | `A3T_Datasheet_ru.md` | `A3T_Datasheet_en.md` | 2026-06-10 | 2026-10-09 | 0 | 9.0 | 6.6 | 8/8 | yes | 74/74 | 3/3 | y/y | marker |  |
 
 ### Transducers
 
@@ -171,32 +171,32 @@ Batch plan: **30 batches**, **107 documents**, **1759.0 KB** of RU source (MISSI
 |---|---|---|---|---|---:|---:|---:|---|---|---|---|---|---|---|
 | OK | `R_1.d3505_1_Specification_ru.md` | `R_1.d3505_1_Specification_en.md` | 2025-11-20 | 2026-03-13 | 0 | 2.2 | 1.5 | 5/5 | no | 18/18 | 2/2 | n/n |  | TRANSLATE |
 | OK | `RT-1.524525-1_specification_ru.md` | `RT-1.524525-1_specification_en.md` | 2023-06-06 | 2023-06-06 | 0 | 3.0 | 2.0 | 5/5 | yes | 22/23 | 6/6 | n/n | cyrillic-in-EN(3) |  |
-| MISSING | `RT-1.524525-2_specification_ru.md` | — | 2025-02-13 | — | — | 3.5 | — | 5/— | yes | 27/— | 5/— | n/— |  |  |
-| STALE | `RT_1_332820_1_Specification_ru.md` | `RT_1_332820_1_Specification_en.md` | 2025-10-29 | 2023-06-06 | 2 | 3.0 | 1.9 | 5/5 | yes | 22/23 | 6/6 | n/n | changed, cyrillic-in-EN(3) |  |
-| MISSING | `RT_1_332820_2_Specification_ru.md` | — | 2025-02-13 | — | — | 3.4 | — | 5/— | yes | 27/— | 5/— | n/— |  |  |
-| STALE | `RT_1_524525_1_FF_Specification_ru.md` | `RT_1_524525_1_FF_Specification_en.md` | 2024-08-20 | 2023-06-06 | 1 | 2.9 | 2.0 | 5/5 | yes | 20/21 | 6/6 | n/n | changed, cyrillic-in-EN(5) |  |
+| OK | `RT-1.524525-2_specification_ru.md` | `RT-1.524525-2_specification_en.md` | 2025-02-13 | 2026-10-09 | 0 | 3.5 | 2.5 | 5/5 | yes | 27/27 | 5/5 | n/n | marker |  |
+| OK | `RT_1_332820_1_Specification_ru.md` | `RT_1_332820_1_Specification_en.md` | 2025-10-29 | 2026-10-09 | 0 | 3.0 | 2.2 | 5/5 | yes | 22/22 | 6/6 | n/n | marker |  |
+| OK | `RT_1_332820_2_Specification_ru.md` | `RT_1_332820_2_Specification_en.md` | 2025-02-13 | 2026-10-09 | 0 | 3.4 | 2.5 | 5/5 | yes | 27/27 | 5/5 | n/n | marker |  |
+| OK | `RT_1_524525_1_FF_Specification_ru.md` | `RT_1_524525_1_FF_Specification_en.md` | 2024-08-20 | 2026-10-09 | 0 | 2.9 | 2.2 | 5/5 | yes | 20/20 | 6/6 | n/n | marker |  |
 | OK | `RT_2_332820_1_Specification_ru.md` | `RT_2_332820_1_specification_en.md` | 2023-06-06 | 2023-06-06 | 0 | 3.0 | 2.0 | 5/5 | yes | 22/23 | 6/6 | n/n | case, cyrillic-in-EN(5) | TRANSLATE |
-| MISSING | `RT_2_332820_2_Specification_ru.md` | — | 2025-03-03 | — | — | 3.5 | — | 5/— | yes | 27/— | 5/— | n/— |  |  |
+| OK | `RT_2_332820_2_Specification_ru.md` | `RT_2_332820_2_Specification_en.md` | 2025-03-03 | 2026-10-09 | 0 | 3.5 | 2.5 | 5/5 | yes | 27/27 | 5/5 | n/n | marker |  |
 | MISSING | `Transducers_info_ru.md` | — | 2022-04-13 | — | — | 1.5 | — | 3/— | no | 3/— | 1/— | n/— |  | SKIP |
 
 ### Accessories
 
 | Status | RU file | EN file | RU last | EN last | RU commits after EN | RU KB | EN KB | Headings RU/EN | Listed | Rows RU/EN | Images RU/EN | Print RU/EN | Notes | Proposal |
 |---|---|---|---|---|---:|---:|---:|---|---|---|---|---|---|---|
-| MISSING | `Batpacks_ru.md` | — | 2022-09-28 | — | — | 3.0 | — | 3/— | yes | 9/— | 3/— | n/— |  | TRANSLATE |
-| MISSING | `crimea_300_Datasheet_ru.md` | — | 2022-09-30 | — | — | 21.0 | — | 29/— | yes | 136/— | 3/— | n/— |  | TRANSLATE |
-| MISSING | `crimea_300_OS_Datasheet_ru.md` | — | 2022-11-10 | — | — | 14.7 | — | 13/— | yes | 41/— | 6/— | n/— |  | TRANSLATE |
-| STALE | `Flange_rod_mound_Specification_ru.md` | `Flange_rod_mound_Specification_en.md` | 2026-08-18 | 2025-04-03 | 1 | 3.0 | 2.1 | 6/5 | yes | 16/16 | 4/4 | n/n | changed, cyrillic-in-EN(9) |  |
+| OK | `Batpacks_ru.md` | `Batpacks_en.md` | 2022-09-28 | 2026-10-09 | 0 | 3.0 | 1.9 | 3/3 | yes | 9/9 | 3/3 | n/n | marker | TRANSLATE |
+| OK | `crimea_300_Datasheet_ru.md` | `crimea_300_Datasheet_en.md` | 2022-09-30 | 2026-10-09 | 0 | 21.0 | 13.1 | 29/29 | yes | 136/136 | 3/3 | n/n | marker | TRANSLATE |
+| OK | `crimea_300_OS_Datasheet_ru.md` | `crimea_300_OS_Datasheet_en.md` | 2022-11-10 | 2026-10-09 | 0 | 14.7 | 9.2 | 13/13 | yes | 41/41 | 6/6 | n/n | marker | TRANSLATE |
+| OK | `Flange_rod_mound_Specification_ru.md` | `Flange_rod_mound_Specification_en.md` | 2026-08-18 | 2026-10-09 | 0 | 3.0 | 2.3 | 6/6 | yes | 16/16 | 4/4 | n/n | marker |  |
 | OK | `RS422_extension_cable_ru.md` | `RS422_extension_cable_en.md` | 2025-03-26 | 2025-04-03 | 0 | 2.4 | 1.6 | 4/4 | yes | 19/19 | 2/2 | n/n | cyrillic-in-EN(7) |  |
-| STALE | `Sub_batteries_ru.md` | `Sub_batteries_en.md` | 2026-08-18 | 2025-04-24 | 2 | 5.3 | 3.2 | 5/5 | yes | 34/32 | 5/2 | n/n | changed, cyrillic-in-EN(7) |  |
-| STALE | `uPress_Specification_ru.md` | `uPress_Specification_en.md` | 2025-02-06 | 2022-09-30 | 3 | 3.4 | 1.9 | 3/3 | yes | 23/23 | 2/2 | n/n | changed, cyrillic-in-EN(4) |  |
-| MISSING | `uSpeak_specification_ru.md` | — | 2025-02-06 | — | — | 2.9 | — | 3/— | yes | 14/— | 2/— | n/— |  |  |
+| OK | `Sub_batteries_ru.md` | `Sub_batteries_en.md` | 2026-08-18 | 2026-10-09 | 0 | 5.3 | 3.8 | 5/5 | yes | 34/34 | 5/5 | n/n | marker |  |
+| OK | `uPress_Specification_ru.md` | `uPress_Specification_en.md` | 2025-02-06 | 2026-10-09 | 0 | 3.4 | 2.4 | 3/3 | yes | 23/23 | 2/2 | n/n | marker |  |
+| OK | `uSpeak_specification_ru.md` | `uSpeak_specification_en.md` | 2025-02-06 | 2026-10-09 | 0 | 2.9 | 2.1 | 3/3 | yes | 14/14 | 2/2 | n/n | marker |  |
 
 ### uSwitch
 
 | Status | RU file | EN file | RU last | EN last | RU commits after EN | RU KB | EN KB | Headings RU/EN | Listed | Rows RU/EN | Images RU/EN | Print RU/EN | Notes | Proposal |
 |---|---|---|---|---|---:|---:|---:|---|---|---|---|---|---|---|
-| STALE | `uSwitch_Specification_ru.md` | `uSwitch_Specification_en.md` | 2026-06-10 | 2025-02-07 | 4 | 8.3 | 4.8 | 5/5 | yes | 34/34 | 3/3 | y/n | changed, print |  |
+| OK | `uSwitch_Specification_ru.md` | `uSwitch_Specification_en.md` | 2026-06-10 | 2026-10-09 | 0 | 8.3 | 5.5 | 5/5 | yes | 34/34 | 3/3 | y/y | marker |  |
 
 ### F4105
 
@@ -204,10 +204,10 @@ Batch plan: **30 batches**, **107 documents**, **1759.0 KB** of RU source (MISSI
 |---|---|---|---|---|---:|---:|---:|---|---|---|---|---|---|---|
 | OK | `F4105_AU_Specification_ru.md` | `F4105_AU_Specification_en.md` | 2022-09-13 | 2024-11-19 | 0 | 3.8 | 2.3 | 4/4 | yes | 24/24 | 2/2 | n/n | cyrillic-in-EN(11) |  |
 | OK | `F4105_BU_Specification_ru.md` | `F4105_BU_Specification_en.md` | 2022-12-20 | 2024-11-19 | 0 | 4.6 | 2.3 | 4/4 | yes | 29/23 | 2/2 | n/n | cyrillic-in-EN(5) |  |
-| MISSING | `F4105_DataBrief_ru.md` | — | 2025-04-10 | — | — | 6.4 | — | 6/— | yes | 12/— | 4/— | n/— |  |  |
+| OK | `F4105_DataBrief_ru.md` | `F4105_DataBrief_en.md` | 2025-04-10 | 2026-10-09 | 0 | 6.4 | 3.7 | 6/6 | yes | 12/12 | 4/4 | n/n | marker |  |
 | OK | `F4105_SU_Specification_ru.md` | `F4105_SU_Specification_en.md` | 2022-09-20 | 2024-11-19 | 0 | 4.2 | 2.7 | 3/3 | yes | 18/18 | 2/2 | n/n | cyrillic-in-EN(2) |  |
-| MISSING | `F4105_tech_pass_ru.md` | — | 2022-11-16 | — | — | 13.3 | — | 11/— | yes | 54/— | 2/— | n/— |  | TRANSLATE |
-| MISSING | `F4105_Users_manual_ru.md` | — | 2022-12-20 | — | — | 51.3 | — | 22/— | yes | 105/— | 19/— | n/— |  |  |
+| OK | `F4105_tech_pass_ru.md` | `F4105_tech_pass_en.md` | 2022-11-16 | 2026-10-09 | 0 | 13.3 | 7.9 | 11/11 | yes | 54/54 | 2/2 | n/n | marker | TRANSLATE |
+| OK | `F4105_Users_manual_ru.md` | `F4105_Users_manual_en.md` | 2022-12-20 | 2026-10-09 | 0 | 51.3 | 28.4 | 22/22 | yes | 105/105 | 19/19 | n/n | marker |  |
 
 ### Misc
 
@@ -216,14 +216,14 @@ Batch plan: **30 batches**, **107 documents**, **1759.0 KB** of RU source (MISSI
 | OK | `BatLinkBox_MSDS_ru.md` | `BatLinkBox_MSDS_en.md` | 2026-02-25 | 2026-02-25 | 0 | 28.9 | 15.4 | 54/54 | yes | 107/100 | 2/1 | n/n | cyrillic-in-EN(46) | TRANSLATE |
 | OK | `l2c.md` | `l2c.md` | 2022-04-21 | 2022-04-21 | 0 | 1.5 | 1.4 | 0/0 | yes | 0/0 | 8/8 | n/n |  |  |
 | OK | `package_sticker.md` | `package_sticker.md` | 2022-04-21 | 2022-04-21 | 0 | 1.5 | 1.3 | 0/0 | yes | 12/12 | 12/12 | n/n |  |  |
-| STALE | `RedBase_v3_LiFEPO4_msds_ru.md` | `RedBase_v3_LiFEPO4_msds_en.md` | 2025-05-12 | 2025-05-12 | 1 | 28.7 | 15.4 | 53/53 | yes | 101/101 | 2/2 | n/n | changed, cyrillic-in-EN(46) | TRANSLATE |
-| STALE | `RedPhone_DX_MSDS_ru.md` | `RedPhone_DX_MSDS_en.md` | 2025-05-12 | 2025-05-12 | 1 | 28.6 | 15.3 | 53/53 | yes | 101/100 | 2/1 | n/n | changed, cyrillic-in-EN(46) | TRANSLATE |
-| STALE | `RedPhone_OS_MSDS_ru.md` | `RedPhone_OS_MSDS_en.md` | 2025-05-12 | 2025-05-12 | 1 | 28.6 | 15.3 | 53/53 | yes | 101/100 | 2/1 | n/n | changed, cyrillic-in-EN(46) | TRANSLATE |
+| OK | `RedBase_v3_LiFEPO4_msds_ru.md` | `RedBase_v3_LiFEPO4_msds_en.md` | 2025-05-12 | 2026-10-09 | 0 | 28.7 | 15.6 | 53/53 | yes | 101/101 | 2/2 | n/n | marker | TRANSLATE |
+| OK | `RedPhone_DX_MSDS_ru.md` | `RedPhone_DX_MSDS_en.md` | 2025-05-12 | 2026-10-09 | 0 | 28.6 | 15.6 | 53/53 | yes | 101/101 | 2/2 | n/n | marker | TRANSLATE |
+| OK | `RedPhone_OS_MSDS_ru.md` | `RedPhone_OS_MSDS_en.md` | 2025-05-12 | 2026-10-09 | 0 | 28.6 | 15.6 | 53/53 | yes | 101/101 | 2/2 | n/n | marker | TRANSLATE |
 | OK | `SB_23_64_LI_MSDS_ru.md` | `SB_23_64_LI_MSDS_en.md` | 2026-02-25 | 2026-02-25 | 0 | 29.3 | 15.8 | 54/54 | yes | 112/105 | 2/1 | n/n | cyrillic-in-EN(50) | TRANSLATE |
 | OK | `SB_24_48_LF_MSDS_ru.md` | `SB_24_48_LF_MSDS_en.md` | 2026-02-25 | 2026-02-25 | 0 | 28.9 | 15.6 | 54/54 | yes | 107/101 | 2/2 | n/n | cyrillic-in-EN(46) | TRANSLATE |
 | MISSING | `ucnl_nav_systems_brochure_ru.md` | — | 2022-11-18 | — | — | 1.2 | — | 0/— | yes | 3/— | 3/— | n/— |  | SKIP |
 | MISSING | `ucnl_wireless_voice_ru.md` | — | 2022-11-18 | — | — | 0.8 | — | 0/— | yes | 3/— | 1/— | n/— |  | SKIP |
-| MISSING | `WAYU_GIB_MSDS_ru.md` | — | 2025-05-12 | — | — | 28.7 | — | 53/— | yes | 101/— | 2/— | n/— |  | TRANSLATE |
+| OK | `WAYU_GIB_MSDS_ru.md` | `WAYU_GIB_MSDS_en.md` | 2025-05-12 | 2026-10-09 | 0 | 28.7 | 15.6 | 53/53 | yes | 101/101 | 2/2 | n/n | marker | TRANSLATE |
 
 ### RedGTR
 
@@ -236,27 +236,27 @@ Batch plan: **30 batches**, **107 documents**, **1759.0 KB** of RU source (MISSI
 
 | Status | RU file | EN file | RU last | EN last | RU commits after EN | RU KB | EN KB | Headings RU/EN | Listed | Rows RU/EN | Images RU/EN | Print RU/EN | Notes | Proposal |
 |---|---|---|---|---|---:|---:|---:|---|---|---|---|---|---|---|
-| STALE | `RedLINE_Protocol_Specifications_ru.md` | `RedLINE_Protocol_Specifications_en.md` | 2022-04-13 | 2022-04-13 | 1 | 15.2 | 9.0 | 17/17 | yes | 93/102 | 1/1 | n/n | changed, cyrillic-in-EN(24) | TRANSLATE |
-| STALE | `RedLine_Specification_ru.md` | `RedLine_Specification_en.md` | 2022-04-13 | 2022-04-13 | 1 | 4.9 | 3.0 | 3/3 | yes | 26/27 | 2/2 | n/n | changed, cyrillic-in-EN(2) | TRANSLATE |
-| STALE | `RedLINE_wiring_diagram_ru.md` | `RedLINE_wiring_diagram_en.md` | 2022-04-13 | 2021-04-21 | 2 | 0.7 | 0.5 | 2/2 | yes | 3/3 | 3/3 | n/n | changed | TRANSLATE |
+| OK | `RedLINE_Protocol_Specifications_ru.md` | `RedLINE_Protocol_Specifications_en.md` | 2022-04-13 | 2026-10-09 | 0 | 15.2 | 9.1 | 17/17 | yes | 93/93 | 1/1 | n/n | marker | TRANSLATE |
+| OK | `RedLine_Specification_ru.md` | `RedLine_Specification_en.md` | 2022-04-13 | 2026-10-09 | 0 | 4.9 | 3.3 | 3/3 | yes | 26/26 | 2/2 | n/n | marker | TRANSLATE |
+| OK | `RedLINE_wiring_diagram_ru.md` | `RedLINE_wiring_diagram_en.md` | 2022-04-13 | 2026-10-09 | 0 | 0.7 | 0.8 | 2/2 | yes | 3/3 | 3/3 | n/n | marker | TRANSLATE |
 
 ### Root pages (Phase 3)
 
 | Status | RU file | EN file | RU last | EN last | RU commits after EN | RU KB | EN KB | Headings RU/EN | Listed | Rows RU/EN | Images RU/EN | Print RU/EN | Notes | Proposal |
 |---|---|---|---|---|---:|---:|---:|---|---|---|---|---|---|---|
-| OK | `README_RU.md` | `README.md` | 2022-10-26 | 2024-11-19 | 0 | 1.1 | 0.8 | 3/3 | yes | 4/4 | 1/1 | n/n |  |  |
-| STALE | `accessories_ru.md` | `accessories_en.md` | 2025-03-26 | 2025-04-03 | 0 | 1.9 | 0.7 | 4/2 | yes | 4/4 | 1/1 | n/n | headings, size |  |
-| STALE | `educational_projects_ru.md` | `educational_projects_en.md` | 2026-05-21 | 2026-03-13 | 1 | 5.7 | 3.3 | 8/9 | yes | 4/4 | 1/1 | n/n | changed |  |
-| STALE | `media_videos_ru.md` | `media_videos_en.md` | 2022-10-21 | 2022-04-21 | 1 | 0.9 | 0.7 | 2/2 | yes | 4/4 | 1/1 | n/n | changed |  |
-| OK | `misc_ru.md` | `misc_en.md` | 2024-11-18 | 2025-05-05 | 0 | 2.5 | 1.5 | 3/3 | yes | 15/13 | 1/1 | n/n |  |  |
-| OK | `modems_comparison_ru.md` | `modems_comparison_en.md` | 2025-02-07 | 2026-04-23 | 0 | 6.3 | 4.7 | 1/1 | yes | 24/24 | 7/6 | n/n | cyrillic-in-EN(10) |  |
-| STALE | `navigation_and_tracking_systems_ru.md` | `navigation_and_tracking_systems_en.md` | 2026-09-16 | 2024-12-09 | 23 | 14.5 | 7.2 | 15/14 | yes | 4/4 | 1/1 | n/n | changed, cyrillic-in-EN(1) |  |
-| STALE | `navigation_systems_comparison_ru.md` | `navigation_systems_comparison_en.md` | 2024-12-11 | 2024-07-30 | 3 | 7.9 | 4.6 | 1/1 | yes | 16/16 | 2/1 | n/n | changed, cyrillic-in-EN(1) |  |
-| STALE | `online_utilities_ru.md` | `online_utilities_en.md` | 2026-07-29 | 2022-04-21 | 10 | 3.0 | 1.3 | 7/5 | yes | 4/4 | 1/1 | n/n | changed, headings, size |  |
-| STALE | `underwater_acoustic_antennas_ru.md` | `underwater_acoustic_antennas_en.md` | 2025-03-03 | 2022-04-21 | 3 | 1.5 | 0.7 | 2/2 | yes | 4/4 | 1/1 | n/n | changed |  |
-| STALE | `underwater_acoustic_modems_ru.md` | `underwater_acoustic_modems_en.md` | 2026-05-20 | 2025-05-12 | 5 | 5.4 | 3.6 | 9/10 | yes | 4/4 | 1/1 | n/n | changed |  |
-| STALE | `underwater_bespoke_systems_ru.md` | `underwater_bespoke_systems_en.md` | 2025-04-10 | 2024-11-19 | 2 | 1.3 | 0.9 | 2/2 | yes | 4/4 | 1/1 | n/n | changed |  |
-| STALE | `underwater_wireless_voice_systems_ru.md` | `underwater_wireless_voice_systems_en.md` | 2026-05-19 | 2022-12-23 | 4 | 3.1 | 1.4 | 4/4 | yes | 4/4 | 1/1 | n/n | changed |  |
+| OK | `README_RU.md` | `README.md` | 2022-10-26 | 2026-10-09 | 0 | 1.1 | 0.9 | 3/3 | yes | 4/4 | 1/1 | n/n | marker |  |
+| OK | `accessories_ru.md` | `accessories_en.md` | 2025-03-26 | 2026-10-09 | 0 | 1.9 | 1.5 | 4/4 | yes | 4/4 | 1/1 | n/n | marker |  |
+| OK | `educational_projects_ru.md` | `educational_projects_en.md` | 2026-05-21 | 2026-10-09 | 0 | 5.7 | 4.0 | 8/8 | yes | 4/4 | 1/1 | n/n | marker |  |
+| OK | `media_videos_ru.md` | `media_videos_en.md` | 2022-10-21 | 2026-10-09 | 0 | 0.9 | 0.8 | 2/2 | yes | 4/4 | 1/1 | n/n | marker |  |
+| OK | `misc_ru.md` | `misc_en.md` | 2024-11-18 | 2026-10-09 | 0 | 2.5 | 2.0 | 3/3 | yes | 15/15 | 1/1 | n/n | marker |  |
+| OK | `modems_comparison_ru.md` | `modems_comparison_en.md` | 2025-02-07 | 2026-10-09 | 0 | 6.3 | 5.0 | 1/1 | yes | 24/24 | 7/7 | n/n | marker |  |
+| OK | `navigation_and_tracking_systems_ru.md` | `navigation_and_tracking_systems_en.md` | 2026-09-16 | 2026-10-09 | 0 | 14.5 | 11.0 | 15/15 | yes | 4/4 | 1/1 | n/n | marker |  |
+| OK | `navigation_systems_comparison_ru.md` | `navigation_systems_comparison_en.md` | 2024-12-11 | 2026-10-09 | 0 | 7.9 | 5.5 | 1/1 | yes | 16/16 | 2/2 | n/n | marker |  |
+| OK | `online_utilities_ru.md` | `online_utilities_en.md` | 2026-07-29 | 2026-10-09 | 0 | 3.0 | 2.4 | 7/7 | yes | 4/4 | 1/1 | n/n | marker |  |
+| OK | `underwater_acoustic_antennas_ru.md` | `underwater_acoustic_antennas_en.md` | 2025-03-03 | 2026-10-09 | 0 | 1.5 | 1.2 | 2/2 | yes | 4/4 | 1/1 | n/n | marker |  |
+| OK | `underwater_acoustic_modems_ru.md` | `underwater_acoustic_modems_en.md` | 2026-05-20 | 2026-10-09 | 0 | 5.4 | 4.2 | 9/9 | yes | 4/4 | 1/1 | n/n | marker |  |
+| OK | `underwater_bespoke_systems_ru.md` | `underwater_bespoke_systems_en.md` | 2025-04-10 | 2026-10-09 | 0 | 1.3 | 1.1 | 2/2 | yes | 4/4 | 1/1 | n/n | marker |  |
+| OK | `underwater_wireless_voice_systems_ru.md` | `underwater_wireless_voice_systems_en.md` | 2026-05-19 | 2026-10-09 | 0 | 3.1 | 2.3 | 4/4 | yes | 4/4 | 1/1 | n/n | marker |  |
 
 ## Orphans (EN files without an RU counterpart)
 
@@ -271,142 +271,25 @@ For each root RU page: RU links to documents that have no corresponding link in 
 | RU page | EN page | RU document links | Missing in EN | of which EN exists | Broken links in EN page |
 |---|---|---:|---:|---:|---:|
 | `README_RU.md` | `README.md` | 10 | 0 | 0 | 0 |
-| `accessories_ru.md` | `accessories_en.md` | 11 | 6 | 2 | 1 |
-| `educational_projects_ru.md` | `educational_projects_en.md` | 17 | 4 | 1 | 1 |
-| `media_videos_ru.md` | `media_videos_en.md` | 8 | 1 | 1 | 0 |
-| `misc_ru.md` | `misc_en.md` | 21 | 6 | 2 | 0 |
+| `accessories_ru.md` | `accessories_en.md` | 11 | 0 | 0 | 0 |
+| `educational_projects_ru.md` | `educational_projects_en.md` | 17 | 0 | 0 | 0 |
+| `media_videos_ru.md` | `media_videos_en.md` | 8 | 0 | 0 | 0 |
+| `misc_ru.md` | `misc_en.md` | 21 | 2 | 0 | 0 |
 | `modems_comparison_ru.md` | `modems_comparison_en.md` | 9 | 0 | 0 | 0 |
-| `navigation_and_tracking_systems_ru.md` | `navigation_and_tracking_systems_en.md` | 65 | 20 | 2 | 1 |
+| `navigation_and_tracking_systems_ru.md` | `navigation_and_tracking_systems_en.md` | 65 | 0 | 0 | 0 |
 | `navigation_systems_comparison_ru.md` | `navigation_systems_comparison_en.md` | 9 | 0 | 0 | 0 |
 | `online_utilities_ru.md` | `online_utilities_en.md` | 3 | 0 | 0 | 0 |
-| `underwater_acoustic_antennas_ru.md` | `underwater_acoustic_antennas_en.md` | 9 | 3 | 0 | 0 |
-| `underwater_acoustic_modems_ru.md` | `underwater_acoustic_modems_en.md` | 22 | 2 | 0 | 0 |
-| `underwater_bespoke_systems_ru.md` | `underwater_bespoke_systems_en.md` | 8 | 3 | 0 | 1 |
-| `underwater_wireless_voice_systems_ru.md` | `underwater_wireless_voice_systems_en.md` | 14 | 4 | 0 | 0 |
-
-<details><summary><code>accessories_ru.md</code> → <code>accessories_en.md</code></summary>
-
-| RU target | EN equivalent | EN exists |
-|---|---|---|
-| `documentation/RU/Accessories/uSpeak_specification_ru.md` | `documentation/EN/Accessories/uSpeak_specification_en.md` | no |
-| `documentation/RU/Accessories/Flange_rod_mound_Specification_ru.md` | `documentation/EN/Accessories/Flange_rod_mound_Specification_en.md` | yes |
-| `documentation/RU/Zima/Bat_n_link_box_Specification_ru.md` | `documentation/EN/Zima/Bat_n_link_box_Specification_en.md` | yes |
-| `documentation/RU/Accessories/Batpacks_ru.md` | `documentation/EN/Accessories/Batpacks_en.md` | no |
-| `documentation/RU/Accessories/crimea_300_Datasheet_ru.md` | `documentation/EN/Accessories/crimea_300_Datasheet_en.md` | no |
-| `documentation/RU/Accessories/crimea_300_OS_Datasheet_ru.md` | `documentation/EN/Accessories/crimea_300_OS_Datasheet_en.md` | no |
-
-Broken or case-mismatched links in the EN page: `Flange_rod_mound_Specification_en.md` (broken)
-
-</details>
-
-<details><summary><code>educational_projects_ru.md</code> → <code>educational_projects_en.md</code></summary>
-
-| RU target | EN equivalent | EN exists |
-|---|---|---|
-| `documentation/RU/A3S/A3S_packages_ru.md` | `documentation/EN/A3S/A3S_packages_en.md` | no |
-| `documentation/RU/A3S/A3S_Users_Manual_ru.md` | `documentation/EN/A3S/A3S_Users_Manual_en.md` | no |
-| `documentation/RU/RWLT/uNav_protocol_specification_ru.md` | `documentation/EN/RWLT/uNav_protocol_specification_en.md` | yes |
-| `documentation/RU/WAYU/WAYU_tech_pass_ru.md` | `documentation/EN/WAYU/WAYU_tech_pass_en.md` | no |
-
-Broken or case-mismatched links in the EN page: `/documentation/EN/A3S/A3S_Users_Manual_en` (broken)
-
-</details>
-
-<details><summary><code>media_videos_ru.md</code> → <code>media_videos_en.md</code></summary>
-
-| RU target | EN equivalent | EN exists |
-|---|---|---|
-| `documentation/RU/RWLT/media.md` | `documentation/EN/RWLT/media.md` | yes |
-
-</details>
+| `underwater_acoustic_antennas_ru.md` | `underwater_acoustic_antennas_en.md` | 9 | 0 | 0 | 0 |
+| `underwater_acoustic_modems_ru.md` | `underwater_acoustic_modems_en.md` | 22 | 0 | 0 | 0 |
+| `underwater_bespoke_systems_ru.md` | `underwater_bespoke_systems_en.md` | 8 | 0 | 0 | 0 |
+| `underwater_wireless_voice_systems_ru.md` | `underwater_wireless_voice_systems_en.md` | 14 | 0 | 0 | 0 |
 
 <details><summary><code>misc_ru.md</code> → <code>misc_en.md</code></summary>
 
 | RU target | EN equivalent | EN exists |
 |---|---|---|
-| `documentation/RU/WAYU/WAYU_GIB_Specification_ru.md` | `documentation/EN/WAYU/WAYU_GIB_Specification_en.md` | yes |
-| `documentation/RU/Misc/WAYU_GIB_MSDS_ru.md` | `documentation/EN/Misc/WAYU_GIB_MSDS_en.md` | no |
-| `documentation/RU/RedWAVE/RedBASE_old_Specification_ru.md` | `documentation/EN/RedWAVE/RedBASE_old_Specification_en.md` | no |
-| `documentation/RU/Zima/Zima_R_Specification_ru.md` | `documentation/EN/Zima/Zima_R_Specification_en.md` | yes |
 | `documentation/RU/Misc/ucnl_nav_systems_brochure_ru.md` | `documentation/EN/Misc/ucnl_nav_systems_brochure_en.md` | no |
 | `documentation/RU/Misc/ucnl_wireless_voice_ru.md` | `documentation/EN/Misc/ucnl_wireless_voice_en.md` | no |
-
-</details>
-
-<details><summary><code>modems_comparison_ru.md</code> → <code>modems_comparison_en.md</code></summary>
-
-Broken or case-mismatched links in the RU page (report only, RU is never edited): `uWAVE_Specification_ru.md` (broken)
-
-</details>
-
-<details><summary><code>navigation_and_tracking_systems_ru.md</code> → <code>navigation_and_tracking_systems_en.md</code></summary>
-
-| RU target | EN equivalent | EN exists |
-|---|---|---|
-| `documentation/RU/Zima/Zima2_fast_start_ru.md` | `documentation/EN/Zima/Zima2_fast_start_en.md` | no |
-| `documentation/RU/Zima/Zima2uR_Specification_ru.md` | `documentation/EN/Zima/Zima2uR_Specification_en.md` | no |
-| `documentation/RU/Zima/Zima2_LBL_DataBrief_ru.md` | `documentation/EN/Zima/Zima2_LBL_DataBrief_en.md` | no |
-| `documentation/RU/Zima/Zima2L_Specification_ru.md` | `documentation/EN/Zima/Zima2L_Specification_en.md` | no |
-| `documentation/RU/Zima/Zima2B35_Specification_ru.md` | `documentation/EN/Zima/Zima2B35_Specification_en.md` | no |
-| `documentation/RU/Zima/Zima2R35_Specification_ru.md` | `documentation/EN/Zima/Zima2R35_Specification_en.md` | no |
-| `documentation/RU/Zima/AzimuthConsole_manual_ru.md` | `documentation/EN/Zima/AzimuthConsole_manual_en.md` | no |
-| `documentation/RU/Zima/Zima2_technical_passport_ru.md` | `documentation/EN/Zima/Zima2_technical_passport_en.md` | no |
-| `documentation/RU/Zima/Zima2K_technical_passport_ru.md` | `documentation/EN/Zima/Zima2K_technical_passport_en.md` | no |
-| `documentation/RU/Zima/Zima2-OEM35_technical_passport_ru.md` | `documentation/EN/Zima/Zima2-OEM35_technical_passport_en.md` | no |
-| `documentation/RU/Zima/Zima2-35_technical_passport_ru.md` | `documentation/EN/Zima/Zima2-35_technical_passport_en.md` | no |
-| `documentation/RU/Zima/Zima2_version_history_ru.md` | `documentation/EN/Zima/Zima2_version_history_en.md` | no |
-| `documentation/RU/Accessories/RS422_extension_cable_ru.md` | `documentation/EN/Accessories/RS422_extension_cable_en.md` | yes |
-| `documentation/RU/RedWAVE/RedBASE_old_Specification_ru.md` | `documentation/EN/RedWAVE/RedBASE_old_Specification_en.md` | no |
-| `documentation/RU/RedWAVE/uGPSHub_Users_manual_ru.md` | `documentation/EN/RedWAVE/uGPSHub_Users_manual_en.md` | no |
-| `documentation/RU/RedWAVE/RedNAV_PM_ru.md` | `documentation/EN/RedWAVE/RedNAV_PM_en.md` | no |
-| `documentation/RU/RedWAVE/RedWave_tech_pass_ru.md` | `documentation/EN/RedWAVE/RedWave_tech_pass_en.md` | no |
-| `documentation/RU/RWLT/RWLT_RF_Dongle_Specification_ru.md` | `documentation/EN/RWLT/RWLT_RF_Dongle_en.md` | yes |
-| `documentation/RU/RWLT/RWLT_tech_pass_ru.md` | `documentation/EN/RWLT/RWLT_tech_pass_en.md` | no |
-| `documentation/RU/WAYU/WAYU_tech_pass_ru.md` | `documentation/EN/WAYU/WAYU_tech_pass_en.md` | no |
-
-Broken or case-mismatched links in the EN page: `/documentation/EN/RWLT/RWLT_RF_Dongle_Specification_en.md` (broken)
-
-</details>
-
-<details><summary><code>underwater_acoustic_antennas_ru.md</code> → <code>underwater_acoustic_antennas_en.md</code></summary>
-
-| RU target | EN equivalent | EN exists |
-|---|---|---|
-| `documentation/RU/Transducers/RT_1_332820_2_Specification_ru.md` | `documentation/EN/Transducers/RT_1_332820_2_Specification_en.md` | no |
-| `documentation/RU/Transducers/RT_2_332820_2_Specification_ru.md` | `documentation/EN/Transducers/RT_2_332820_2_Specification_en.md` | no |
-| `documentation/RU/Transducers/RT-1.524525-2_specification_ru.md` | `documentation/EN/Transducers/RT-1.524525-2_specification_en.md` | no |
-
-</details>
-
-<details><summary><code>underwater_acoustic_modems_ru.md</code> → <code>underwater_acoustic_modems_en.md</code></summary>
-
-| RU target | EN equivalent | EN exists |
-|---|---|---|
-| `documentation/RU/uWAVE/uWave_publications_ru.md` | `documentation/EN/uWAVE/uWave_publications_en.md` | no |
-| `documentation/RU/uWAVE/uWave_technical_passport_ru.md` | `documentation/EN/uWAVE/uWave_technical_passport_en.md` | no |
-
-</details>
-
-<details><summary><code>underwater_bespoke_systems_ru.md</code> → <code>underwater_bespoke_systems_en.md</code></summary>
-
-| RU target | EN equivalent | EN exists |
-|---|---|---|
-| `documentation/RU/F4105/F4105_DataBrief_ru.md` | `documentation/EN/F4105/F4105_DataBrief_en.md` | no |
-| `documentation/RU/F4105/F4105_Users_manual_ru.md` | `documentation/EN/F4105/F4105_Users_manual_en.md` | no |
-| `documentation/RU/F4105/F4105_tech_pass_ru.md` | `documentation/EN/F4105/F4105_tech_pass_en.md` | no |
-
-Broken or case-mismatched links in the EN page: `/documentation/EN/F4105/F4105_Users_manual_en.md` (broken)
-
-</details>
-
-<details><summary><code>underwater_wireless_voice_systems_ru.md</code> → <code>underwater_wireless_voice_systems_en.md</code></summary>
-
-| RU target | EN equivalent | EN exists |
-|---|---|---|
-| `documentation/RU/RedPhone/RedPhone-DX_protocol_specification_ru.md` | `documentation/EN/RedPhone/RedPhone-DX_protocol_specification_en.md` | no |
-| `documentation/RU/RedPhone/RedPhone_PM_ru.md` | `documentation/EN/RedPhone/RedPhone_PM_en.md` | no |
-| `documentation/RU/RedPhone/Phone_T_package_tech_passport_ru.md` | `documentation/EN/RedPhone/Phone_T_package_tech_passport_en.md` | no |
-| `documentation/RU/RedPhone/Phone_S_package_tech_passport_ru.md` | `documentation/EN/RedPhone/Phone_S_package_tech_passport_en.md` | no |
 
 </details>
 
@@ -431,15 +314,15 @@ None.
 
 | Token variants | Files |
 |---|---|
-| Manual / manual | **Manual** (15): `RWLT_Users_Manual_en.md`, `uTrackDiver_Users_Manual_en.md`, `RedPhone_DX_Users_Manual_en.md`, `RedPhone_Users_Manual_en.md`, `RedNAV_Host_Users_Manual_en.md`, `RedWAVE_Users_Manual_en.md` …<br>**manual** (14): `uNav_application_Users_manual_en.md`, `RedPhone_OS_Users_manual_en.md`, `Bat_n_link_box_Users_manual_en.md`, `Zima2_Users_manual_en.md`, `Zima_Users_manual_en.md`, `F4105_Users_manual_ru.md` … |
+| Manual / manual | **Manual** (16): `A3S_Users_Manual_en.md`, `RWLT_Users_Manual_en.md`, `uTrackDiver_Users_Manual_en.md`, `RedPhone_DX_Users_Manual_en.md`, `RedPhone_Users_Manual_en.md`, `RedNAV_Host_Users_Manual_en.md` …<br>**manual** (18): `F4105_Users_manual_en.md`, `uNav_application_Users_manual_en.md`, `RedPhone_OS_Users_manual_en.md`, `uGPSHub_Users_manual_en.md`, `AzimuthConsole_manual_en.md`, `AzimuthSuite_manual_en.md` … |
 | Modems / modems | **Modems** (2): `uWAVE_Modems_comparison_en.md`, `uWAVE_Modems_comparison_ru.md`<br>**modems** (4): `modems_comparison_en.md`, `modems_comparison_ru.md`, `underwater_acoustic_modems_en.md`, `underwater_acoustic_modems_ru.md` |
-| MSDS / msds | **MSDS** (12): `BatLinkBox_MSDS_en.md`, `RedPhone_DX_MSDS_en.md`, `RedPhone_OS_MSDS_en.md`, `SB_23_64_LI_MSDS_en.md`, `SB_24_48_LF_MSDS_en.md`, `SB_24_48_LF_MSDS_sg_en.md` …<br>**msds** (2): `RedBase_v3_LiFEPO4_msds_en.md`, `RedBase_v3_LiFEPO4_msds_ru.md` |
-| Protocol / protocol | **Protocol** (13): `RedGTR_Protocol_Specifications_en.md`, `RedLINE_Protocol_Specifications_en.md`, `RedWAVE_Protocol_Specification_en.md`, `Zima2_Protocol_Specification_en.md`, `Zima_Protocol_Specification_en.md`, `uWAVE_Protocol_Specification_en.md` …<br>**protocol** (3): `uNav_protocol_specification_en.md`, `uNav_protocol_specification_ru.md`, `RedPhone-DX_protocol_specification_ru.md` |
-| RedBASE / RedBase | **RedBASE** (3): `RedBASE_Specification_en.md`, `RedBASE_Specification_ru.md`, `RedBASE_old_Specification_ru.md`<br>**RedBase** (2): `RedBase_v3_LiFEPO4_msds_en.md`, `RedBase_v3_LiFEPO4_msds_ru.md` |
+| MSDS / msds | **MSDS** (13): `BatLinkBox_MSDS_en.md`, `RedPhone_DX_MSDS_en.md`, `RedPhone_OS_MSDS_en.md`, `SB_23_64_LI_MSDS_en.md`, `SB_24_48_LF_MSDS_en.md`, `SB_24_48_LF_MSDS_sg_en.md` …<br>**msds** (2): `RedBase_v3_LiFEPO4_msds_en.md`, `RedBase_v3_LiFEPO4_msds_ru.md` |
+| Protocol / protocol | **Protocol** (13): `RedGTR_Protocol_Specifications_en.md`, `RedLINE_Protocol_Specifications_en.md`, `RedWAVE_Protocol_Specification_en.md`, `Zima2_Protocol_Specification_en.md`, `Zima_Protocol_Specification_en.md`, `uWAVE_Protocol_Specification_en.md` …<br>**protocol** (4): `uNav_protocol_specification_en.md`, `RedPhone-DX_protocol_specification_en.md`, `uNav_protocol_specification_ru.md`, `RedPhone-DX_protocol_specification_ru.md` |
+| RedBASE / RedBase | **RedBASE** (4): `RedBASE_Specification_en.md`, `RedBASE_old_Specification_en.md`, `RedBASE_Specification_ru.md`, `RedBASE_old_Specification_ru.md`<br>**RedBase** (2): `RedBase_v3_LiFEPO4_msds_en.md`, `RedBase_v3_LiFEPO4_msds_ru.md` |
 | RedLINE / RedLine | **RedLINE** (4): `RedLINE_Protocol_Specifications_en.md`, `RedLINE_wiring_diagram_en.md`, `RedLINE_Protocol_Specifications_ru.md`, `RedLINE_wiring_diagram_ru.md`<br>**RedLine** (2): `RedLine_Specification_en.md`, `RedLine_Specification_ru.md` |
-| RedWAVE / RedWave | **RedWAVE** (6): `RedWAVE_DataBrief_en.md`, `RedWAVE_Protocol_Specification_en.md`, `RedWAVE_Users_Manual_en.md`, `RedWAVE_DataBrief_ru.md`, `RedWAVE_Protocol_Specification_ru.md`, `RedWAVE_Users_Manual_ru.md`<br>**RedWave** (1): `RedWave_tech_pass_ru.md` |
-| Specification / specification | **Specification** (91): `Flange_rod_mound_Specification_en.md`, `uPress_Specification_en.md`, `F4105_AU_Specification_en.md`, `F4105_BU_Specification_en.md`, `F4105_SU_Specification_en.md`, `RWLT_GIB_Specification_en.md` …<br>**specification** (11): `uNav_protocol_specification_en.md`, `Aquatab_s_specification_en.md`, `RT-1.524525-1_specification_en.md`, `RT_2_332820_1_specification_en.md`, `uSpeak_specification_ru.md`, `uNav_protocol_specification_ru.md` … |
-| uWAVE / uWave | **uWAVE** (20): `uWAVE_FW_Updating_en.md`, `uWAVE_Family_en.md`, `uWAVE_Max_OEM_Specification_en.md`, `uWAVE_Max_Specification_en.md`, `uWAVE_Modems_comparison_en.md`, `uWAVE_Protocol_Specification_en.md` …<br>**uWave** (2): `uWave_publications_ru.md`, `uWave_technical_passport_ru.md` |
+| RedWAVE / RedWave | **RedWAVE** (6): `RedWAVE_DataBrief_en.md`, `RedWAVE_Protocol_Specification_en.md`, `RedWAVE_Users_Manual_en.md`, `RedWAVE_DataBrief_ru.md`, `RedWAVE_Protocol_Specification_ru.md`, `RedWAVE_Users_Manual_ru.md`<br>**RedWave** (2): `RedWave_tech_pass_en.md`, `RedWave_tech_pass_ru.md` |
+| Specification / specification | **Specification** (102): `Flange_rod_mound_Specification_en.md`, `uPress_Specification_en.md`, `F4105_AU_Specification_en.md`, `F4105_BU_Specification_en.md`, `F4105_SU_Specification_en.md`, `RWLT_GIB_Specification_en.md` …<br>**specification** (14): `uSpeak_specification_en.md`, `uNav_protocol_specification_en.md`, `RedPhone-DX_protocol_specification_en.md`, `Aquatab_s_specification_en.md`, `RT-1.524525-1_specification_en.md`, `RT-1.524525-2_specification_en.md` … |
+| uWAVE / uWave | **uWAVE** (20): `uWAVE_FW_Updating_en.md`, `uWAVE_Family_en.md`, `uWAVE_Max_OEM_Specification_en.md`, `uWAVE_Max_Specification_en.md`, `uWAVE_Modems_comparison_en.md`, `uWAVE_Protocol_Specification_en.md` …<br>**uWave** (4): `uWave_publications_en.md`, `uWave_technical_passport_en.md`, `uWave_publications_ru.md`, `uWave_technical_passport_ru.md` |
 
 ### RU documents with largely identical content
 
@@ -497,55 +380,55 @@ Jaccard similarity of distinct non-trivial lines ≥ 0.5.
 
 | # | File | Status | Listed | RU KB | Category | Recommendation | Reason | Decision |
 |---:|---|---|---|---:|---|---|---|---|
-| 1 | `documentation/RU/Zima/Zima2_technical_passport_ru.md` | MISSING | yes | 12.8 | Product passport | translate | template shipped with every unit (delivery set, serial numbers, warranty, storage); international customers and distributors need it in English; GOST-style approval block kept per rule 6 | translate |
-| 2 | `documentation/RU/Zima/Zima2K_technical_passport_ru.md` | MISSING | yes | 13.0 | Product passport | translate | same as Zima2 passport; listed in the RU index | translate |
-| 3 | `documentation/RU/Zima/Zima2-OEM35_technical_passport_ru.md` | MISSING | yes | 12.9 | Product passport | translate | same as Zima2 passport; listed in the RU index | translate |
-| 4 | `documentation/RU/Zima/Zima2-35_technical_passport_ru.md` | MISSING | yes | 13.7 | Product passport | translate | same as Zima2 passport; listed in the RU index | translate |
-| 5 | `documentation/RU/uWAVE/uWave_technical_passport_ru.md` | MISSING | yes | 11.5 | Product passport | translate | uWave is sold internationally; listed in the RU index | translate |
-| 6 | `documentation/RU/F4105/F4105_tech_pass_ru.md` | MISSING | yes | 13.3 | Product passport | translate | listed in the RU index next to the F4105 specifications that already exist in EN | translate |
-| 7 | `documentation/RU/RWLT/RWLT_tech_pass_ru.md` | MISSING | yes | 15.9 | Product passport | translate | listed in the RU index | translate |
-| 8 | `documentation/RU/WAYU/WAYU_tech_pass_ru.md` | MISSING | yes | 13.9 | Product passport | translate | listed in two RU index pages | translate |
-| 9 | `documentation/RU/RedWAVE/RedWave_tech_pass_ru.md` | MISSING | yes | 12.9 | Product passport | translate | listed in the RU index | translate |
-| 10 | `documentation/RU/RedPhone/Phone_S_package_tech_passport_ru.md` | MISSING | yes | 12.8 | Product passport | translate | Phone-S kit passport, listed in the RU index | translate |
-| 11 | `documentation/RU/RedPhone/Phone_T_package_tech_passport_ru.md` | MISSING | yes | 15.1 | Product passport | translate | Phone-T kit passport, listed in the RU index | translate |
+| 1 | `documentation/RU/Zima/Zima2_technical_passport_ru.md` | OK | yes | 12.8 | Product passport | translate | template shipped with every unit (delivery set, serial numbers, warranty, storage); international customers and distributors need it in English; GOST-style approval block kept per rule 6 | translate |
+| 2 | `documentation/RU/Zima/Zima2K_technical_passport_ru.md` | OK | yes | 13.0 | Product passport | translate | same as Zima2 passport; listed in the RU index | translate |
+| 3 | `documentation/RU/Zima/Zima2-OEM35_technical_passport_ru.md` | OK | yes | 12.9 | Product passport | translate | same as Zima2 passport; listed in the RU index | translate |
+| 4 | `documentation/RU/Zima/Zima2-35_technical_passport_ru.md` | OK | yes | 13.7 | Product passport | translate | same as Zima2 passport; listed in the RU index | translate |
+| 5 | `documentation/RU/uWAVE/uWave_technical_passport_ru.md` | OK | yes | 11.5 | Product passport | translate | uWave is sold internationally; listed in the RU index | translate |
+| 6 | `documentation/RU/F4105/F4105_tech_pass_ru.md` | OK | yes | 13.3 | Product passport | translate | listed in the RU index next to the F4105 specifications that already exist in EN | translate |
+| 7 | `documentation/RU/RWLT/RWLT_tech_pass_ru.md` | OK | yes | 15.9 | Product passport | translate | listed in the RU index | translate |
+| 8 | `documentation/RU/WAYU/WAYU_tech_pass_ru.md` | OK | yes | 13.9 | Product passport | translate | listed in two RU index pages | translate |
+| 9 | `documentation/RU/RedWAVE/RedWave_tech_pass_ru.md` | OK | yes | 12.9 | Product passport | translate | listed in the RU index | translate |
+| 10 | `documentation/RU/RedPhone/Phone_S_package_tech_passport_ru.md` | OK | yes | 12.8 | Product passport | translate | Phone-S kit passport, listed in the RU index | translate |
+| 11 | `documentation/RU/RedPhone/Phone_T_package_tech_passport_ru.md` | OK | yes | 15.1 | Product passport | translate | Phone-T kit passport, listed in the RU index | translate |
 | 12 | `documentation/RU/Misc/BatLinkBox_MSDS_ru.md` | OK | yes | 28.9 | Safety data sheet | translate | required for shipping lithium batteries abroad; EN exists and is current | translate |
-| 13 | `documentation/RU/Misc/RedBase_v3_LiFEPO4_msds_ru.md` | STALE | yes | 28.7 | Safety data sheet | translate | EN exists, one small RU change (3 lines) since | translate |
-| 14 | `documentation/RU/Misc/RedPhone_DX_MSDS_ru.md` | STALE | yes | 28.6 | Safety data sheet | translate | EN exists, one small RU change (3 lines) since | translate |
-| 15 | `documentation/RU/Misc/RedPhone_OS_MSDS_ru.md` | STALE | yes | 28.6 | Safety data sheet | translate | EN exists, one small RU change (3 lines) since | translate |
+| 13 | `documentation/RU/Misc/RedBase_v3_LiFEPO4_msds_ru.md` | OK | yes | 28.7 | Safety data sheet | translate | EN exists, one small RU change (3 lines) since | translate |
+| 14 | `documentation/RU/Misc/RedPhone_DX_MSDS_ru.md` | OK | yes | 28.6 | Safety data sheet | translate | EN exists, one small RU change (3 lines) since | translate |
+| 15 | `documentation/RU/Misc/RedPhone_OS_MSDS_ru.md` | OK | yes | 28.6 | Safety data sheet | translate | EN exists, one small RU change (3 lines) since | translate |
 | 16 | `documentation/RU/Misc/SB_23_64_LI_MSDS_ru.md` | OK | yes | 29.3 | Safety data sheet | translate | EN exists and is current | translate |
 | 17 | `documentation/RU/Misc/SB_24_48_LF_MSDS_ru.md` | OK | yes | 28.9 | Safety data sheet | translate | EN exists and is current | translate |
-| 18 | `documentation/RU/Misc/WAYU_GIB_MSDS_ru.md` | MISSING | yes | 28.7 | Safety data sheet | translate | the only MSDS without EN; 96 % identical to the RedBASE v3 MSDS, so cheap | translate |
-| 19 | `documentation/RU/RedWAVE/RedBASE_old_Specification_ru.md` | MISSING | yes | 5.0 | Legacy | translate | RedBASE v1/v2 are still in the field; listed in the RU navigation index and in the MSDS table; 5 KB | translate |
-| 20 | `documentation/RU/Zima/Zima_B_Specification_ru.md` | STALE | yes | 7.4 | Legacy | translate | first-generation Zima, listed (supplied 05.2016–05.2022); EN exists, RU change since is only the printing block | translate |
-| 21 | `documentation/RU/Zima/Zima_R_Specification_ru.md` | STALE | yes | 7.6 | Legacy | translate | first-generation Zima, listed; EN exists, RU change since is only the printing block | translate |
-| 22 | `documentation/RU/Zima/Zima_R_OEM_Specification_ru.md` | STALE | yes | 7.1 | Legacy | translate | first-generation Zima, listed; EN exists, RU change since is only the printing block | translate |
-| 23 | `documentation/RU/Zima/Zima_DataBrief_ru.md` | STALE | yes | 13.8 | Legacy | translate | first-generation Zima, listed; EN exists, small RU changes since (17 lines) | translate |
-| 24 | `documentation/RU/Zima/Zima_Protocol_Specification_ru.md` | STALE | yes | 35.9 | Legacy | translate | first-generation Zima, listed; EN exists, small RU changes since (25 lines) | translate |
-| 25 | `documentation/RU/Zima/Zima_Users_manual_ru.md` | STALE | yes | 73.8 | Legacy | translate | first-generation Zima, listed; EN exists, moderate RU changes since (57 lines of 74 KB) | translate |
-| 26 | `documentation/RU/Zima/Zima_GNSS_requirements_ru.md` | STALE | yes | 6.3 | Not legacy | translate | matches the Zima_* pattern but is listed under the documents common to Zima and Zima2; RU updated 2026-08 | translate |
+| 18 | `documentation/RU/Misc/WAYU_GIB_MSDS_ru.md` | OK | yes | 28.7 | Safety data sheet | translate | the only MSDS without EN; 96 % identical to the RedBASE v3 MSDS, so cheap | translate |
+| 19 | `documentation/RU/RedWAVE/RedBASE_old_Specification_ru.md` | OK | yes | 5.0 | Legacy | translate | RedBASE v1/v2 are still in the field; listed in the RU navigation index and in the MSDS table; 5 KB | translate |
+| 20 | `documentation/RU/Zima/Zima_B_Specification_ru.md` | OK | yes | 7.4 | Legacy | translate | first-generation Zima, listed (supplied 05.2016–05.2022); EN exists, RU change since is only the printing block | translate |
+| 21 | `documentation/RU/Zima/Zima_R_Specification_ru.md` | OK | yes | 7.6 | Legacy | translate | first-generation Zima, listed; EN exists, RU change since is only the printing block | translate |
+| 22 | `documentation/RU/Zima/Zima_R_OEM_Specification_ru.md` | OK | yes | 7.1 | Legacy | translate | first-generation Zima, listed; EN exists, RU change since is only the printing block | translate |
+| 23 | `documentation/RU/Zima/Zima_DataBrief_ru.md` | OK | yes | 13.8 | Legacy | translate | first-generation Zima, listed; EN exists, small RU changes since (17 lines) | translate |
+| 24 | `documentation/RU/Zima/Zima_Protocol_Specification_ru.md` | OK | yes | 35.9 | Legacy | translate | first-generation Zima, listed; EN exists, small RU changes since (25 lines) | translate |
+| 25 | `documentation/RU/Zima/Zima_Users_manual_ru.md` | OK | yes | 73.8 | Legacy | translate | first-generation Zima, listed; EN exists, moderate RU changes since (57 lines of 74 KB) | translate |
+| 26 | `documentation/RU/Zima/Zima_GNSS_requirements_ru.md` | OK | yes | 6.3 | Not legacy | translate | matches the Zima_* pattern but is listed under the documents common to Zima and Zima2; RU updated 2026-08 | translate |
 | 27 | `documentation/RU/RedGTR/RedGTR_Specifications_ru.md` | OK | yes | 5.0 | Legacy | translate | listed in the RU modems index; EN exists and is current, no work now | translate |
 | 28 | `documentation/RU/RedGTR/RedGTR_Protocol_Specifications_ru.md` | OK | yes | 28.8 | Legacy | translate | listed in the RU modems index; EN exists and is current, no work now | translate |
-| 29 | `documentation/RU/RedLINE/RedLine_Specification_ru.md` | STALE | yes | 4.9 | Legacy | translate | listed in the RU modems index; EN exists, 3-line RU change since 2022 | translate |
-| 30 | `documentation/RU/RedLINE/RedLINE_Protocol_Specifications_ru.md` | STALE | yes | 15.2 | Legacy | translate | listed in the RU modems index; EN exists, 6-line RU change since 2022 | translate |
-| 31 | `documentation/RU/RedLINE/RedLINE_wiring_diagram_ru.md` | STALE | yes | 0.7 | Legacy | translate | listed in the RU modems index; EN exists, 8-line RU change since 2021 | translate |
-| 32 | `documentation/RU/Zima/AzimuthConsole_v1x_ru.md` | MISSING | no | 29.5 | Legacy | translate | AzimuthConsole v1.x command set, created 2026-05; not in the index but linked from the current AzimuthConsole manual (listed), otherwise that link stays RU | translate |
+| 29 | `documentation/RU/RedLINE/RedLine_Specification_ru.md` | OK | yes | 4.9 | Legacy | translate | listed in the RU modems index; EN exists, 3-line RU change since 2022 | translate |
+| 30 | `documentation/RU/RedLINE/RedLINE_Protocol_Specifications_ru.md` | OK | yes | 15.2 | Legacy | translate | listed in the RU modems index; EN exists, 6-line RU change since 2022 | translate |
+| 31 | `documentation/RU/RedLINE/RedLINE_wiring_diagram_ru.md` | OK | yes | 0.7 | Legacy | translate | listed in the RU modems index; EN exists, 8-line RU change since 2021 | translate |
+| 32 | `documentation/RU/Zima/AzimuthConsole_v1x_ru.md` | OK | no | 29.5 | Legacy | translate | AzimuthConsole v1.x command set, created 2026-05; not in the index but linked from the current AzimuthConsole manual (listed), otherwise that link stays RU | translate |
 | 33 | `documentation/RU/Misc/ucnl_nav_systems_brochure_ru.md` | MISSING | yes | 1.2 | Brochure | skip | unfinished stub (RU title image and RU QR code only); needs EN artwork before an EN page makes sense | skip |
 | 34 | `documentation/RU/Misc/ucnl_wireless_voice_ru.md` | MISSING | yes | 0.8 | Brochure | skip | empty stub (header table only) | skip |
-| 35 | `documentation/RU/uWAVE/uWave_publications_ru.md` | MISSING | yes | 3.7 | List | translate | publications mentioning uWave, half of them already in English; listed; 3.7 KB; Russian paper titles get an English translation with "(in Russian)" | translate |
-| 36 | `documentation/RU/A3S/A3S_packages_ru.md` | MISSING | yes | 6.5 | List | translate | A3S standard kits and what can be built with them; listed; A3R/A3T datasheets already exist in EN | translate |
+| 35 | `documentation/RU/uWAVE/uWave_publications_ru.md` | OK | yes | 3.7 | List | translate | publications mentioning uWave, half of them already in English; listed; 3.7 KB; Russian paper titles get an English translation with "(in Russian)" | translate |
+| 36 | `documentation/RU/A3S/A3S_packages_ru.md` | OK | yes | 6.5 | List | translate | A3S standard kits and what can be built with them; listed; A3R/A3T datasheets already exist in EN | translate |
 | 37 | `documentation/RU/Transducers/Transducers_info_ru.md` | MISSING | no | 1.5 | List | skip | transducer options sheet, unlisted, not linked from anywhere, last changed 2022-04, no breadcrumb | skip |
-| 38 | `documentation/RU/Accessories/crimea_300_Datasheet_ru.md` | MISSING | yes | 21.0 | Datasheet | translate | Crimea-300 pressure sensor, current product listed in the RU accessories index | translate |
-| 39 | `documentation/RU/Accessories/crimea_300_OS_Datasheet_ru.md` | MISSING | yes | 14.7 | Datasheet | translate | Crimea-300 OS interface module, current product listed in the RU accessories index | translate |
-| 40 | `documentation/RU/Accessories/Batpacks_ru.md` | MISSING | yes | 3.0 | List | translate | custom conformal battery packs service page, listed in the RU accessories index; 3 KB | translate |
-| 41 | `documentation/RU/RWLT/RWLT_RF_Dongle_Specification_ru.md` | STALE | yes | 2.6 | Naming variant | translate | EN file is RWLT_RF_Dongle_en.md; update it in place (rule 9, no rename); the EN index currently links a non-existent RWLT_RF_Dongle_Specification_en.md, Phase 3 fixes the link | translate |
+| 38 | `documentation/RU/Accessories/crimea_300_Datasheet_ru.md` | OK | yes | 21.0 | Datasheet | translate | Crimea-300 pressure sensor, current product listed in the RU accessories index | translate |
+| 39 | `documentation/RU/Accessories/crimea_300_OS_Datasheet_ru.md` | OK | yes | 14.7 | Datasheet | translate | Crimea-300 OS interface module, current product listed in the RU accessories index | translate |
+| 40 | `documentation/RU/Accessories/Batpacks_ru.md` | OK | yes | 3.0 | List | translate | custom conformal battery packs service page, listed in the RU accessories index; 3 KB | translate |
+| 41 | `documentation/RU/RWLT/RWLT_RF_Dongle_Specification_ru.md` | OK | yes | 2.6 | Naming variant | translate | EN file is RWLT_RF_Dongle_en.md; update it in place (rule 9, no rename); the EN index currently links a non-existent RWLT_RF_Dongle_Specification_en.md, Phase 3 fixes the link | translate |
 | 42 | `documentation/RU/Transducers/RT_2_332820_1_Specification_ru.md` | OK | yes | 3.0 | Naming variant | translate | EN file is RT_2_332820_1_specification_en.md (lower-case s); keep the existing name (rule 9); currently OK | translate |
 | 43 | `documentation/EN/Misc/SB_24_48_LF_MSDS_sg_en.md` | ORPHAN | — | — | Orphan | skip | EN-only SeaGuild-branded variant of SB-24-48-LF MSDS (distributor contacts); not a duplicate, has no RU source; leave untouched and out of the sync | skip |
-| 44 | `documentation/RU/RedPhone/RedPhone_MOS_Specification_ru.md` | MISSING | no | 7.3 | Unlisted | translate | new extended-range RedPhone-MOS (created 2026-03, updated 2026-06); 80 % text shared with RedPhone-OS but a distinct product; EN index will link it only when RU does | translate |
-| 45 | `documentation/RU/RedPhone/RedPhone_MDX_Specification_ru.md` | MISSING | no | 7.9 | Unlisted | translate | new extended-range RedPhone-MDX (created 2026-03, updated 2026-06); 75 % text shared with RedPhone-DX but a distinct product; EN index will link it only when RU does | translate |
+| 44 | `documentation/RU/RedPhone/RedPhone_MOS_Specification_ru.md` | OK | no | 7.3 | Unlisted | translate | new extended-range RedPhone-MOS (created 2026-03, updated 2026-06); 80 % text shared with RedPhone-OS but a distinct product; EN index will link it only when RU does | translate |
+| 45 | `documentation/RU/RedPhone/RedPhone_MDX_Specification_ru.md` | OK | no | 7.9 | Unlisted | translate | new extended-range RedPhone-MDX (created 2026-03, updated 2026-06); 75 % text shared with RedPhone-DX but a distinct product; EN index will link it only when RU does | translate |
 | 46 | `documentation/RU/RedPhone/RedPhone_Articulation_tables_ru.md` | MISSING | no | 14.4 | Unlisted | skip | Russian word lists for speech-intelligibility tests (linked from RedPhone_PM); a translated list is not phonetically valid; the EN test program keeps the link to the RU forms | skip |
-| 47 | `documentation/RU/Zima/Zima2LX_Specification_ru.md` | MISSING | no | 7.4 | Unlisted | translate | new Zima2-LX LBL transceiver (2026-10), linked from the listed Zima2 LBL data brief | translate |
-| 48 | `documentation/RU/Zima/Zima2SL_Specification_ru.md` | MISSING | no | 5.0 | Unlisted | translate | new Zima2-SL LBL solver (2026-10), linked from the listed Zima2 LBL data brief; product image still a placeholder | translate |
-| 49 | `documentation/RU/Zima/AzimuthSuite_manual_ru.md` | MISSING | no | 31.5 | Unlisted | translate | AzimuthSuite manual moved out of the Zima2 user's manual (2026-05) and linked from it; AzimuthSuite downloads are still listed | translate |
+| 47 | `documentation/RU/Zima/Zima2LX_Specification_ru.md` | OK | no | 7.4 | Unlisted | translate | new Zima2-LX LBL transceiver (2026-10), linked from the listed Zima2 LBL data brief | translate |
+| 48 | `documentation/RU/Zima/Zima2SL_Specification_ru.md` | OK | no | 5.0 | Unlisted | translate | new Zima2-SL LBL solver (2026-10), linked from the listed Zima2 LBL data brief; product image still a placeholder | translate |
+| 49 | `documentation/RU/Zima/AzimuthSuite_manual_ru.md` | OK | no | 31.5 | Unlisted | translate | AzimuthSuite manual moved out of the Zima2 user's manual (2026-05) and linked from it; AzimuthSuite downloads are still listed | translate |
 | 50 | `documentation/RU/WAYU/WAYU_Protocol_specification_ru.md` | MISSING | no | 17.8 | Unlisted | skip | not linked from anywhere, empty table of contents (looks like a draft); 17.8 KB | skip |
 | 51 | `documentation/RU/Transducers/R_1.d3505_1_Specification_ru.md` | OK | no | 2.2 | Unlisted | translate | R-1.d3505-1 receiving antenna, linked from the A3S documents; EN exists and is current, no work now | translate |
 | 52 | `documentation/RU/RWLT/uTrackDiver_Users_Manual_ru.md` | OK | no | 33.5 | Unlisted | translate | linked from the RWLT user's manual and listed in the EN index; EN exists and is current, no work now | translate |
@@ -556,233 +439,6 @@ Families in the order of CLAUDE.md section 7. Within a family the documents are 
 
 | Batch | Family | Files | RU KB |
 |---|---|---:|---:|
-| `zima-1` | Zima | 4 | 79.3 |
-| `zima-2` | Zima | 8 | 64.5 |
-| `zima-3` | Zima | 6 | 79.6 |
-| `zima-4` | Zima | 1 | 78.4 |
-| `zima-5` | Zima | 8 | 76.9 |
-| `zima-6` | Zima | 2 | 78.8 |
-| `zima-7` | Zima | 3 | 72.8 |
-| `zima-8` | Zima | 1 | 31.5 |
-| `uwave-1` | uWAVE | 8 | 73.1 |
-| `uwave-2` | uWAVE | 2 | 71.1 |
-| `uwave-3` | uWAVE | 2 | 14.7 |
-| `redphone-1` | RedPhone | 5 | 79.5 |
-| `redphone-2` | RedPhone | 5 | 75.1 |
-| `redphone-3` | RedPhone | 1 | 53.2 |
-| `redphone-4` | RedPhone | 2 | 32.9 |
-| `rwlt-1` | RWLT | 5 | 48.9 |
-| `wayu-1` | WAYU | 7 | 65.7 |
-| `redwave-1` | RedWAVE | 6 | 71.5 |
-| `redwave-2` | RedWAVE | 1 | 73.6 |
-| `redwave-3` | RedWAVE | 2 | 68.2 |
-| `redwave-4` | RedWAVE | 1 | 12.9 |
-| `a3s-1` | A3S | 3 | 26.0 |
-| `a3s-2` | A3S | 1 | 146.2 |
-| `transducers-1` | Transducers | 5 | 16.3 |
-| `accessories-1` | Accessories | 7 | 53.4 |
-| `uswitch-1` | uSwitch | 1 | 8.3 |
-| `f4105-1` | F4105 | 3 | 70.9 |
-| `misc-1` | Misc | 2 | 57.2 |
-| `misc-2` | Misc | 2 | 57.4 |
-| `redline-1` | RedLINE | 3 | 20.8 |
-
-### `zima-1` — Zima, 4 files, 79.3 KB
-
-- `documentation/RU/Zima/Zima2_fast_start_ru.md` → `documentation/EN/Zima/Zima2_fast_start_en.md` (MISSING) — 2.4 KB
-- `documentation/RU/Zima/Zima2_DataBrief_ru.md` → `documentation/EN/Zima/Zima2_DataBrief_en.md` (STALE; changed, print) — 11.4 KB
-- `documentation/RU/Zima/Zima2_Users_manual_ru.md` → `documentation/EN/Zima/Zima2_Users_manual_en.md` (STALE; changed, headings, print) — 57.0 KB
-- `documentation/RU/Zima/Zima2B_Specification_ru.md` → `documentation/EN/Zima/Zima2B_Specification_en.md` (STALE; changed, print) — 8.4 KB
-
-### `zima-2` — Zima, 8 files, 64.5 KB
-
-- `documentation/RU/Zima/Zima2R_Specification_ru.md` → `documentation/EN/Zima/Zima2R_Specification_en.md` (STALE; changed, headings, print, size) — 8.6 KB
-- `documentation/RU/Zima/Zima2uR_Specification_ru.md` → `documentation/EN/Zima/Zima2uR_Specification_en.md` (MISSING) — 8.7 KB
-- `documentation/RU/Zima/Zima2_LBL_DataBrief_ru.md` → `documentation/EN/Zima/Zima2_LBL_DataBrief_en.md` (MISSING) — 11.2 KB
-- `documentation/RU/Zima/Zima2L_Specification_ru.md` → `documentation/EN/Zima/Zima2L_Specification_en.md` (MISSING) — 6.9 KB
-- `documentation/RU/Zima/Zima2B35_Specification_ru.md` → `documentation/EN/Zima/Zima2B35_Specification_en.md` (MISSING) — 7.4 KB
-- `documentation/RU/Zima/Zima2R35_Specification_ru.md` → `documentation/EN/Zima/Zima2R35_Specification_en.md` (MISSING) — 8.8 KB
-- `documentation/RU/Zima/Zima2BK_Specification_ru.md` → `documentation/EN/Zima/Zima2BK_Specification_en.md` (STALE; changed, print) — 7.3 KB
-- `documentation/RU/Zima/Zima2RK_Specification_ru.md` → `documentation/EN/Zima/Zima2RK_Specification_en.md` (STALE; changed, print) — 5.6 KB
-
-### `zima-3` — Zima, 6 files, 79.6 KB
-
-- `documentation/RU/Zima/Zima2_Protocol_Specification_ru.md` → `documentation/EN/Zima/Zima2_Protocol_Specification_en.md` (STALE; changed, headings, print) — 35.4 KB
-- `documentation/RU/Zima/Zima2_technical_passport_ru.md` → `documentation/EN/Zima/Zima2_technical_passport_en.md` (MISSING, TRANSLATE) — 12.8 KB
-- `documentation/RU/Zima/Zima2K_technical_passport_ru.md` → `documentation/EN/Zima/Zima2K_technical_passport_en.md` (MISSING, TRANSLATE) — 13.0 KB
-- `documentation/RU/Zima/Zima2-OEM35_technical_passport_ru.md` → `documentation/EN/Zima/Zima2-OEM35_technical_passport_en.md` (MISSING, TRANSLATE) — 12.9 KB
-- `documentation/RU/Zima/Zima2_version_history_ru.md` → `documentation/EN/Zima/Zima2_version_history_en.md` (MISSING) — 3.8 KB
-- `documentation/RU/Zima/ZimaR_wiring_diagram_ru.md` → `documentation/EN/Zima/ZimaR_wiring_diagram_en.md` (STALE; changed, print, size) — 1.8 KB
-
-### `zima-4` — Zima, 1 files, 78.4 KB
-
-- `documentation/RU/Zima/AzimuthConsole_manual_ru.md` → `documentation/EN/Zima/AzimuthConsole_manual_en.md` (MISSING) — 78.4 KB
-
-### `zima-5` — Zima, 8 files, 76.9 KB
-
-- `documentation/RU/Zima/Zima2-35_technical_passport_ru.md` → `documentation/EN/Zima/Zima2-35_technical_passport_en.md` (MISSING, TRANSLATE) — 13.7 KB
-- `documentation/RU/Zima/Bat_n_link_box_Specification_ru.md` → `documentation/EN/Zima/Bat_n_link_box_Specification_en.md` (STALE; changed, print) — 5.0 KB
-- `documentation/RU/Zima/Bat_n_link_box_Users_manual_ru.md` → `documentation/EN/Zima/Bat_n_link_box_Users_manual_en.md` (STALE; changed, print) — 16.1 KB
-- `documentation/RU/Zima/Zima_GNSS_requirements_ru.md` → `documentation/EN/Zima/Zima_GNSS_requirements_en.md` (STALE, TRANSLATE; changed, print) — 6.3 KB
-- `documentation/RU/Zima/Zima_DataBrief_ru.md` → `documentation/EN/Zima/Zima_DataBrief_en.md` (STALE, TRANSLATE; changed, print) — 13.8 KB
-- `documentation/RU/Zima/Zima_B_Specification_ru.md` → `documentation/EN/Zima/Zima_B_Specification_en.md` (STALE, TRANSLATE; changed, print) — 7.4 KB
-- `documentation/RU/Zima/Zima_R_Specification_ru.md` → `documentation/EN/Zima/Zima_R_Specification_en.md` (STALE, TRANSLATE; changed, print) — 7.6 KB
-- `documentation/RU/Zima/Zima_R_OEM_Specification_ru.md` → `documentation/EN/Zima/Zima_R_OEM_Specification_en.md` (STALE, TRANSLATE; changed, print) — 7.1 KB
-
-### `zima-6` — Zima, 2 files, 78.8 KB
-
-- `documentation/RU/Zima/Zima_Users_manual_ru.md` → `documentation/EN/Zima/Zima_Users_manual_en.md` (STALE, TRANSLATE; changed, print) — 73.8 KB
-- `documentation/RU/Zima/Zima2SL_Specification_ru.md` → `documentation/EN/Zima/Zima2SL_Specification_en.md` (MISSING, TRANSLATE) — 5.0 KB
-
-### `zima-7` — Zima, 3 files, 72.8 KB
-
-- `documentation/RU/Zima/Zima_Protocol_Specification_ru.md` → `documentation/EN/Zima/Zima_Protocol_Specification_en.md` (STALE, TRANSLATE; changed, print) — 35.9 KB
-- `documentation/RU/Zima/AzimuthConsole_v1x_ru.md` → `documentation/EN/Zima/AzimuthConsole_v1x_en.md` (MISSING, TRANSLATE) — 29.5 KB
-- `documentation/RU/Zima/Zima2LX_Specification_ru.md` → `documentation/EN/Zima/Zima2LX_Specification_en.md` (MISSING, TRANSLATE) — 7.4 KB
-
-### `zima-8` — Zima, 1 files, 31.5 KB
-
-- `documentation/RU/Zima/AzimuthSuite_manual_ru.md` → `documentation/EN/Zima/AzimuthSuite_manual_en.md` (MISSING, TRANSLATE) — 31.5 KB
-
-### `uwave-1` — uWAVE, 8 files, 73.1 KB
-
-- `documentation/RU/uWAVE/uWAVE_Family_ru.md` → `documentation/EN/uWAVE/uWAVE_Family_en.md` (STALE; changed, print) — 18.7 KB
-- `documentation/RU/uWAVE/uWAVE_Modems_comparison_ru.md` → `documentation/EN/uWAVE/uWAVE_Modems_comparison_en.md` (STALE; changed, print) — 6.6 KB
-- `documentation/RU/uWAVE/uWAVE_Specification_ru.md` → `documentation/EN/uWAVE/uWAVE_Specification_en.md` (STALE; changed, print) — 10.7 KB
-- `documentation/RU/uWAVE/uWAVE_Max_Specification_ru.md` → `documentation/EN/uWAVE/uWAVE_Max_Specification_en.md` (STALE; changed, print) — 10.7 KB
-- `documentation/RU/uWAVE/uWAVE_Max_OEM_Specification_ru.md` → `documentation/EN/uWAVE/uWAVE_Max_OEM_Specification_en.md` (STALE; changed, print) — 10.2 KB
-- `documentation/RU/uWAVE/uWAVE_USBL_Modem_Specification_ru.md` → `documentation/EN/uWAVE/uWAVE_USBL_Modem_Specification_en.md` (STALE; changed, print) — 10.6 KB
-- `documentation/RU/uWAVE/uWAVE_wiring_diagram_ru.md` → `documentation/EN/uWAVE/uWAVE_wiring_diagram_en.md` (STALE; changed, print, size) — 1.9 KB
-- `documentation/RU/uWAVE/uWave_publications_ru.md` → `documentation/EN/uWAVE/uWave_publications_en.md` (MISSING, TRANSLATE) — 3.7 KB
-
-### `uwave-2` — uWAVE, 2 files, 71.1 KB
-
-- `documentation/RU/uWAVE/uWAVE_Protocol_Specification_ru.md` → `documentation/EN/uWAVE/uWAVE_Protocol_Specification_en.md` (STALE; changed, headings, print) — 59.6 KB
-- `documentation/RU/uWAVE/uWave_technical_passport_ru.md` → `documentation/EN/uWAVE/uWave_technical_passport_en.md` (MISSING, TRANSLATE) — 11.5 KB
-
-### `uwave-3` — uWAVE, 2 files, 14.7 KB
-
-- `documentation/RU/uWAVE/uWAVE_FW_Updating_ru.md` → `documentation/EN/uWAVE/uWAVE_FW_Updating_en.md` (STALE; changed, print) — 12.2 KB
-- `documentation/RU/uWAVE/media.md` → `documentation/EN/uWAVE/media.md` (STALE; changed, headings) — 2.4 KB
-
-### `redphone-1` — RedPhone, 5 files, 79.5 KB
-
-- `documentation/RU/RedPhone/RedPhone_OS_Specification_ru.md` → `documentation/EN/RedPhone/RedPhone_OS_Specification_en.md` (STALE; changed, print) — 7.2 KB
-- `documentation/RU/RedPhone/RedPhone_OS_Users_manual_ru.md` → `documentation/EN/RedPhone/RedPhone_OS_Users_manual_en.md` (STALE; changed, print) — 39.1 KB
-- `documentation/RU/RedPhone/RedPhone_DX_Specification_ru.md` → `documentation/EN/RedPhone/RedPhone_DX_Specification_en.md` (STALE; changed, print) — 7.8 KB
-- `documentation/RU/RedPhone/RedPhone-DX_protocol_specification_ru.md` → `documentation/EN/RedPhone/RedPhone-DX_protocol_specification_en.md` (MISSING) — 10.2 KB
-- `documentation/RU/RedPhone/Phone_T_package_tech_passport_ru.md` → `documentation/EN/RedPhone/Phone_T_package_tech_passport_en.md` (MISSING, TRANSLATE) — 15.1 KB
-
-### `redphone-2` — RedPhone, 5 files, 75.1 KB
-
-- `documentation/RU/RedPhone/RedPhone_DX_Users_Manual_ru.md` → `documentation/EN/RedPhone/RedPhone_DX_Users_Manual_en.md` (STALE; changed, headings, print) — 41.0 KB
-- `documentation/RU/RedPhone/Phone_S_package_tech_passport_ru.md` → `documentation/EN/RedPhone/Phone_S_package_tech_passport_en.md` (MISSING, TRANSLATE) — 12.8 KB
-- `documentation/RU/RedPhone/RedPhone_Specification_ru.md` → `documentation/EN/RedPhone/RedPhone_Specification_en.md` (STALE; changed) — 6.2 KB
-- `documentation/RU/RedPhone/RedPhone_MDX_Specification_ru.md` → `documentation/EN/RedPhone/RedPhone_MDX_Specification_en.md` (MISSING, TRANSLATE) — 7.9 KB
-- `documentation/RU/RedPhone/RedPhone_MOS_Specification_ru.md` → `documentation/EN/RedPhone/RedPhone_MOS_Specification_en.md` (MISSING, TRANSLATE) — 7.3 KB
-
-### `redphone-3` — RedPhone, 1 files, 53.2 KB
-
-- `documentation/RU/RedPhone/RedPhone_PM_ru.md` → `documentation/EN/RedPhone/RedPhone_PM_en.md` (MISSING) — 53.2 KB
-
-### `redphone-4` — RedPhone, 2 files, 32.9 KB
-
-- `documentation/RU/RedPhone/RedPhone_Users_Manual_ru.md` → `documentation/EN/RedPhone/RedPhone_Users_Manual_en.md` (STALE; changed) — 30.5 KB
-- `documentation/RU/RedPhone/media.md` → `documentation/EN/RedPhone/media.md` (STALE; changed, headings) — 2.4 KB
-
-### `rwlt-1` — RWLT, 5 files, 48.9 KB
-
-- `documentation/RU/RWLT/RWLT_Pinger_K_Specification_ru.md` → `documentation/EN/RWLT/RWLT_Pinger_K_Specification_en.md` (STALE; changed) — 4.1 KB
-- `documentation/RU/RWLT/RWLT_GIB_Specification_ru.md` → `documentation/EN/RWLT/RWLT_GIB_Specification_en.md` (STALE; changed) — 6.0 KB
-- `documentation/RU/RWLT/RWLT_RF_Dongle_Specification_ru.md` → `documentation/EN/RWLT/RWLT_RF_Dongle_en.md` (STALE, TRANSLATE; changed) — 2.6 KB
-- `documentation/RU/RWLT/uNav_protocol_specification_ru.md` → `documentation/EN/RWLT/uNav_protocol_specification_en.md` (STALE; changed) — 20.4 KB
-- `documentation/RU/RWLT/RWLT_tech_pass_ru.md` → `documentation/EN/RWLT/RWLT_tech_pass_en.md` (MISSING, TRANSLATE) — 15.9 KB
-
-### `wayu-1` — WAYU, 7 files, 65.7 KB
-
-- `documentation/RU/WAYU/WAYU_DataBrief_ru.md` → `documentation/EN/WAYU/WAYU_DataBrief_en.md` (STALE; changed) — 5.9 KB
-- `documentation/RU/WAYU/WAYU_Pinger_Specification_ru.md` → `documentation/EN/WAYU/WAYU_Pinger_Specification_en.md` (STALE; changed) — 5.2 KB
-- `documentation/RU/WAYU/WAYU_GIB_Specification_ru.md` → `documentation/EN/WAYU/WAYU_GIB_Specification_en.md` (STALE; changed) — 4.9 KB
-- `documentation/RU/WAYU/WAYU_RF_Dongle_Specification_ru.md` → `documentation/EN/WAYU/WAYU_RF_Dongle_Specification_en.md` (STALE; changed) — 2.5 KB
-- `documentation/RU/WAYU/WAYU_Users_Manual_ru.md` → `documentation/EN/WAYU/WAYU_Users_Manual_en.md` (STALE; changed) — 31.2 KB
-- `documentation/RU/WAYU/WAYU_tech_pass_ru.md` → `documentation/EN/WAYU/WAYU_tech_pass_en.md` (MISSING, TRANSLATE) — 13.9 KB
-- `documentation/RU/WAYU/media.md` → `documentation/EN/WAYU/media.md` (STALE; changed) — 2.1 KB
-
-### `redwave-1` — RedWAVE, 6 files, 71.5 KB
-
-- `documentation/RU/RedWAVE/RedWAVE_DataBrief_ru.md` → `documentation/EN/RedWAVE/RedWAVE_DataBrief_en.md` (STALE; changed) — 9.3 KB
-- `documentation/RU/RedWAVE/RedBASE_Specification_ru.md` → `documentation/EN/RedWAVE/RedBASE_Specification_en.md` (STALE; changed) — 6.7 KB
-- `documentation/RU/RedWAVE/RedBASE_old_Specification_ru.md` → `documentation/EN/RedWAVE/RedBASE_old_Specification_en.md` (MISSING, TRANSLATE) — 5.0 KB
-- `documentation/RU/RedWAVE/RedNAV_Specification_ru.md` → `documentation/EN/RedWAVE/RedNAV_Specification_en.md` (STALE; changed) — 7.9 KB
-- `documentation/RU/RedWAVE/RedWAVE_Protocol_Specification_ru.md` → `documentation/EN/RedWAVE/RedWAVE_Protocol_Specification_en.md` (STALE; changed) — 30.3 KB
-- `documentation/RU/RedWAVE/RedNAV_Host_Users_Manual_ru.md` → `documentation/EN/RedWAVE/RedNAV_Host_Users_Manual_en.md` (STALE; changed) — 12.4 KB
-
-### `redwave-2` — RedWAVE, 1 files, 73.6 KB
-
-- `documentation/RU/RedWAVE/RedWAVE_Users_Manual_ru.md` → `documentation/EN/RedWAVE/RedWAVE_Users_Manual_en.md` (STALE; changed, headings) — 73.6 KB
-
-### `redwave-3` — RedWAVE, 2 files, 68.2 KB
-
-- `documentation/RU/RedWAVE/uGPSHub_Users_manual_ru.md` → `documentation/EN/RedWAVE/uGPSHub_Users_manual_en.md` (MISSING) — 32.2 KB
-- `documentation/RU/RedWAVE/RedNAV_PM_ru.md` → `documentation/EN/RedWAVE/RedNAV_PM_en.md` (MISSING) — 36.0 KB
-
-### `redwave-4` — RedWAVE, 1 files, 12.9 KB
-
-- `documentation/RU/RedWAVE/RedWave_tech_pass_ru.md` → `documentation/EN/RedWAVE/RedWave_tech_pass_en.md` (MISSING, TRANSLATE) — 12.9 KB
-
-### `a3s-1` — A3S, 3 files, 26.0 KB
-
-- `documentation/RU/A3S/A3S_packages_ru.md` → `documentation/EN/A3S/A3S_packages_en.md` (MISSING, TRANSLATE) — 6.5 KB
-- `documentation/RU/A3S/A3T_Datasheet_ru.md` → `documentation/EN/A3S/A3T_Datasheet_en.md` (STALE; changed, print) — 9.0 KB
-- `documentation/RU/A3S/A3R_Datasheet_ru.md` → `documentation/EN/A3S/A3R_Datasheet_en.md` (STALE; changed, print) — 10.5 KB
-
-### `a3s-2` — A3S, 1 files, 146.2 KB
-
-- `documentation/RU/A3S/A3S_Users_Manual_ru.md` → `documentation/EN/A3S/A3S_Users_Manual_en.md` (MISSING) — 146.2 KB
-
-### `transducers-1` — Transducers, 5 files, 16.3 KB
-
-- `documentation/RU/Transducers/RT_1_332820_1_Specification_ru.md` → `documentation/EN/Transducers/RT_1_332820_1_Specification_en.md` (STALE; changed) — 3.0 KB
-- `documentation/RU/Transducers/RT_1_524525_1_FF_Specification_ru.md` → `documentation/EN/Transducers/RT_1_524525_1_FF_Specification_en.md` (STALE; changed) — 2.9 KB
-- `documentation/RU/Transducers/RT_1_332820_2_Specification_ru.md` → `documentation/EN/Transducers/RT_1_332820_2_Specification_en.md` (MISSING) — 3.4 KB
-- `documentation/RU/Transducers/RT_2_332820_2_Specification_ru.md` → `documentation/EN/Transducers/RT_2_332820_2_Specification_en.md` (MISSING) — 3.5 KB
-- `documentation/RU/Transducers/RT-1.524525-2_specification_ru.md` → `documentation/EN/Transducers/RT-1.524525-2_specification_en.md` (MISSING) — 3.5 KB
-
-### `accessories-1` — Accessories, 7 files, 53.4 KB
-
-- `documentation/RU/Accessories/uPress_Specification_ru.md` → `documentation/EN/Accessories/uPress_Specification_en.md` (STALE; changed) — 3.4 KB
-- `documentation/RU/Accessories/uSpeak_specification_ru.md` → `documentation/EN/Accessories/uSpeak_specification_en.md` (MISSING) — 2.9 KB
-- `documentation/RU/Accessories/Flange_rod_mound_Specification_ru.md` → `documentation/EN/Accessories/Flange_rod_mound_Specification_en.md` (STALE; changed) — 3.0 KB
-- `documentation/RU/Accessories/Sub_batteries_ru.md` → `documentation/EN/Accessories/Sub_batteries_en.md` (STALE; changed) — 5.3 KB
-- `documentation/RU/Accessories/Batpacks_ru.md` → `documentation/EN/Accessories/Batpacks_en.md` (MISSING, TRANSLATE) — 3.0 KB
-- `documentation/RU/Accessories/crimea_300_Datasheet_ru.md` → `documentation/EN/Accessories/crimea_300_Datasheet_en.md` (MISSING, TRANSLATE) — 21.0 KB
-- `documentation/RU/Accessories/crimea_300_OS_Datasheet_ru.md` → `documentation/EN/Accessories/crimea_300_OS_Datasheet_en.md` (MISSING, TRANSLATE) — 14.7 KB
-
-### `uswitch-1` — uSwitch, 1 files, 8.3 KB
-
-- `documentation/RU/uSwitch/uSwitch_Specification_ru.md` → `documentation/EN/uSwitch/uSwitch_Specification_en.md` (STALE; changed, print) — 8.3 KB
-
-### `f4105-1` — F4105, 3 files, 70.9 KB
-
-- `documentation/RU/F4105/F4105_DataBrief_ru.md` → `documentation/EN/F4105/F4105_DataBrief_en.md` (MISSING) — 6.4 KB
-- `documentation/RU/F4105/F4105_Users_manual_ru.md` → `documentation/EN/F4105/F4105_Users_manual_en.md` (MISSING) — 51.3 KB
-- `documentation/RU/F4105/F4105_tech_pass_ru.md` → `documentation/EN/F4105/F4105_tech_pass_en.md` (MISSING, TRANSLATE) — 13.3 KB
-
-### `misc-1` — Misc, 2 files, 57.2 KB
-
-- `documentation/RU/Misc/RedPhone_OS_MSDS_ru.md` → `documentation/EN/Misc/RedPhone_OS_MSDS_en.md` (STALE, TRANSLATE; changed) — 28.6 KB
-- `documentation/RU/Misc/RedPhone_DX_MSDS_ru.md` → `documentation/EN/Misc/RedPhone_DX_MSDS_en.md` (STALE, TRANSLATE; changed) — 28.6 KB
-
-### `misc-2` — Misc, 2 files, 57.4 KB
-
-- `documentation/RU/Misc/WAYU_GIB_MSDS_ru.md` → `documentation/EN/Misc/WAYU_GIB_MSDS_en.md` (MISSING, TRANSLATE) — 28.7 KB
-- `documentation/RU/Misc/RedBase_v3_LiFEPO4_msds_ru.md` → `documentation/EN/Misc/RedBase_v3_LiFEPO4_msds_en.md` (STALE, TRANSLATE; changed) — 28.7 KB
-
-### `redline-1` — RedLINE, 3 files, 20.8 KB
-
-- `documentation/RU/RedLINE/RedLine_Specification_ru.md` → `documentation/EN/RedLINE/RedLine_Specification_en.md` (STALE, TRANSLATE; changed) — 4.9 KB
-- `documentation/RU/RedLINE/RedLINE_Protocol_Specifications_ru.md` → `documentation/EN/RedLINE/RedLINE_Protocol_Specifications_en.md` (STALE, TRANSLATE; changed) — 15.2 KB
-- `documentation/RU/RedLINE/RedLINE_wiring_diagram_ru.md` → `documentation/EN/RedLINE/RedLINE_wiring_diagram_en.md` (STALE, TRANSLATE; changed) — 0.7 KB
 
 ## Decisions
 
