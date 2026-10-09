@@ -12,3 +12,5 @@ twitter_username: unavlab
 github_username:  ucnl
   
 disqus:
+
+exclude: [CLAUDE.md]
