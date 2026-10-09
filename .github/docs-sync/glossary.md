@@ -611,3 +611,22 @@ Section headings follow the standard 16-section layout of GHS/REACH Annex II saf
 | стороны света | cardinal directions | Zima/Zima_GNSS_requirements_en.md | |
 | частота обновления | update rate | Zima/Zima_GNSS_requirements_en.md | |
 | Требования по совместимости для систем определения курса и положения | Compatibility requirements for heading and position determination systems | Zima/Zima_GNSS_requirements_en.md (+1) | Breadcrumb: "Compatibility information sheet for positioning and heading systems" |
+
+## Added in batch zima-6
+
+| RU | EN | Source EN file | Note |
+|---|---|---|---|
+| Пультовое ПО ZHost | ZHost host software | Zima/Zima_Users_manual_en.md | First-generation Zima |
+| UI labels of ZHost | as in `ZHost/MainForm.resx` and `ZHost/CustomUI/SettingsEditor.resx` (neutral = English) | Zima/Zima_Users_manual_en.md | e.g. CONNECTION, RESPONDER, AUTOQUERY, AUTOSNAPSHOT, PPI, SET DEFAULTS, Responders in use |
+| Панель статуса | Status panel | Zima/Zima_Users_manual_en.md | |
+| лимб (индикатора) | dial | Zima/Zima_Users_manual_en.md | PPI panel |
+| курсовой угол | relative bearing | Zima/Zima_Users_manual_en.md | |
+| опреснение | desalination (soaking and rinsing in fresh water) | Zima/Zima_Users_manual_en.md | |
+| ЭЛЕКТРИЧЕСКАЯ ЕМКОСТЬ (А·ч) | CAPACITY | Zima/Zima_Users_manual_en.md | W·h → ENERGY CAPACITY; transducers → CAPACITANCE |
+| КОЛИЧЕСТВО ЭЛЕМЕНТОВ В СБОРКЕ | NUMBER OF CELLS IN THE PACK | Zima/Zima_Users_manual_en.md | |
+| Симптомы / Возможная причина / Устранение | Symptoms / Possible cause / Remedy | Zima/Zima_Users_manual_en.md | Troubleshooting table |
+| Гидрология | Hydrological conditions | Zima/Zima_Users_manual_en.md | |
+| курс (VTG) | course over ground | Zima/Zima_Users_manual_en.md | NMEA VTG |
+| решатель | solver | Zima/Zima2SL_Specification_en.md | Zima2-SL |
+| потребитель (навигационных данных) | data consumer | Zima/Zima2SL_Specification_en.md | |
+| ОЖИДАЕТСЯ | PENDING | Zima/Zima2SL_Specification_en.md | Placeholder for images and values not yet published |
