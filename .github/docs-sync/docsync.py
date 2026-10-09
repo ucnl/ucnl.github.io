@@ -14,7 +14,10 @@ SIZE_RATIO = 0.6
 SYNC_DIR = ".github/docs-sync"
 MARKER_RE = re.compile(r"<!-- docs-sync: source=(\S+) commit=([0-9a-f]{40}) date=(\d{4}-\d{2}-\d{2}) -->")
 CYR_RE = re.compile(r"[А-Яа-яЁё]")
-FENCE_RE = re.compile(r"^\s{0,3}(```|~~~)")
+CASE_NAMES = {"uWAVE": "uWave", "RedWAVE": "RedWave", "RedNODE": "RedNode", "RedBASE": "RedBase", "RedNAV": "RedNav", "RedLINE": "RedLine", "ZIMA": "Zima"}
+CASE_RE = re.compile(r"(?<![\w/.\-])(" + "|".join(CASE_NAMES) + r")(?!\w)")
+CASE_STRIP_RES = [re.compile(r"\]\([^)]*\)"), re.compile(r"`[^`]*`"), re.compile(r"\b(?:href|src)\s*=\s*\"[^\"]*\"", re.I), re.compile(r"https?://\S+"), re.compile(r"<!--.*?-->")]
+FENCE_RE = re.compile(r"^\s{0,3}(`{3,}|~{3,})(.*)$")
 HEADING_RE = re.compile(r"^ {0,3}(#{1,6})[ \t]+(.*?)[ \t#]*$")
 TABLE_RE = re.compile(r"^\s*\|")
 IMG_MD_RE = re.compile(r"!\[[^\]]*\]\(")
@@ -69,13 +72,16 @@ class Repo:
 
 def strip_fences(text):
     out = []
-    inside = False
+    fence = None
     for line in text.splitlines():
-        if FENCE_RE.match(line):
-            inside = not inside
-            continue
-        if not inside:
+        m = FENCE_RE.match(line)
+        if fence is None:
+            if m and not (m.group(1)[0] == "`" and "`" in m.group(2)):
+                fence = m.group(1)
+                continue
             out.append(line)
+        elif m and m.group(1)[0] == fence[0] and len(m.group(1)) >= len(fence) and not m.group(2).strip():
+            fence = None
     return out
 
 
@@ -137,7 +143,7 @@ def resolve(repo, page, target):
     base, ext = posixpath.splitext(p)
     if ext.lower() == ".html":
         cands.append(base + ".md")
-    if ext == "":
+    if ext.lower() not in (".md", ".html"):
         cands += [p + ".md", p + "/README.md", p + "/index.md"]
     for c in cands:
         if c in repo.fileset:
@@ -720,6 +726,32 @@ def cmd_marker(repo, ru):
     print("<!-- docs-sync: source=%s commit=%s date=%s -->" % (ru, sha, date))
 
 
+def case_problems(text):
+    out = []
+    fence = None
+    for i, line in enumerate(text.splitlines(), 1):
+        m = FENCE_RE.match(line)
+        if fence is None:
+            if m and not (m.group(1)[0] == "`" and "`" in m.group(2)):
+                fence = m.group(1)
+                continue
+        else:
+            if m and m.group(1)[0] == fence[0] and len(m.group(1)) >= len(fence) and not m.group(2).strip():
+                fence = None
+            continue
+        clean = line
+        for r in CASE_STRIP_RES:
+            clean = r.sub(" ", clean)
+        segments = clean.split("|") if TABLE_RE.match(clean) else [clean]
+        for seg in segments:
+            for cm in CASE_RE.finditer(seg):
+                rest = CASE_RE.sub(" ", seg)
+                if not re.search(r"[a-z]", rest):
+                    continue
+                out.append("product name case line %d: %s -> %s" % (i, cm.group(1), CASE_NAMES[cm.group(1)]))
+    return out
+
+
 def cmd_check(repo, ru, en):
     mr, me = metrics(ru), metrics(en)
     text = read(en)
@@ -727,11 +759,12 @@ def cmd_check(repo, ru, en):
     for i, line in enumerate(text.splitlines(), 1):
         if CYR_RE.search(line):
             problems.append("cyrillic line %d: %s" % (i, line.strip()[:120]))
+    problems.extend(case_problems(text))
     for k in ("headings", "rows", "images", "pagebreaks"):
         if mr[k] != me[k]:
             problems.append("%s RU=%d EN=%d" % (k, mr[k], me[k]))
-    rn = [h[1].split(" ")[0] for h in mr["heads"] if re.match(r"^\d+(\.\d+)*\.?\s", h[1])]
-    en_n = [h[1].split(" ")[0] for h in me["heads"] if re.match(r"^\d+(\.\d+)*\.?\s", h[1])]
+    rn = [h[1].split()[0] for h in mr["heads"] if re.match(r"^\d+(\.\d+)*\.?\s", h[1])]
+    en_n = [h[1].split()[0] for h in me["heads"] if re.match(r"^\d+(\.\d+)*\.?\s", h[1])]
     if rn != en_n:
         problems.append("heading numbering differs: RU=%s EN=%s" % (rn, en_n))
     if mr["printing"] != me["printing"]:
@@ -747,18 +780,23 @@ def cmd_check(repo, ru, en):
         anchors.add(a)
     for a in re.findall(r"<div\s+id\s*=\s*\"([^\"]+)\"", text, re.I):
         anchors.add(a)
+    switch = set()
+    for line in text.splitlines():
+        if "[EN](" in line and "[RU](" in line:
+            switch.update(x.strip() for x in re.findall(r"\[RU\]\(([^)\s]+)\)", line))
     for t in extract_links(text):
         tt = t.strip()
         if tt.startswith("#"):
             if urllib.parse.unquote(tt[1:]) not in anchors:
                 problems.append("anchor not found: %s" % tt)
             continue
-        r, st = resolve(repo, en, tt)
+        m = SELF_RE.match(tt)
+        r, st = resolve(repo, en, (m.group(1) or "/") if m else tt)
         if r is None:
             continue
         if st != "ok":
             problems.append("local link %s: %s" % (st, tt))
-        if re.search(r"(_ru(\.md|\.html)?$|/RU/)", r, re.I):
+        if re.search(r"(_ru(\.md|\.html)?$|/RU/)", r, re.I) and tt not in switch:
             problems.append("RU link, must be a declared deferred link: %s" % tt)
     lines = text.rstrip("\n").splitlines()
     exp = "<!-- docs-sync: source=%s commit=%s date=%s -->" % ((ru,) + repo.last(ru))
@@ -929,20 +967,85 @@ def cmd_terms(repo):
     print("\n".join(out))
 
 
+SELF_RE = re.compile(r"^https?://(?:www\.)?docs\.unavlab\.com(/[^\s)\"]*)?", re.I)
+
+
+def cmd_brief(repo, ru, batch):
+    rows, orphans, index_links, en_claimed, pairs = inventory(repo)
+    row = [r for r in rows if r["ru"] == ru][0]
+    batch_ru = set(batch) | {ru}
+    text = read(ru)
+    print("RU source: %s" % ru)
+    print("EN target: %s (%s)" % (row["en"] or row["expected"], row["status"] + ("; " + ", ".join(row["reasons"]) if row["reasons"] else "")))
+    print("Printing <details> block in RU: %s" % ("yes" if row["ru_m"]["printing"] else "no"))
+    first = [l for l in text.splitlines()[:5] if "❯" in l]
+    print("RU breadcrumb: %s" % (first[0] if first else "none"))
+    if row["en"]:
+        sha, date = repo.last(row["en"])
+        print("EN last commit: %s %s; RU commits since: %s" % (sha, date, row["after"]))
+    print("Counts RU: headings=%d rows=%d images=%d pagebreaks=%d" % (row["ru_m"]["headings"], row["ru_m"]["rows"], row["ru_m"]["images"], row["ru_m"]["pagebreaks"]))
+    if row.get("en_m"):
+        print("Counts EN now: headings=%d rows=%d images=%d pagebreaks=%d" % (row["en_m"]["headings"], row["en_m"]["rows"], row["en_m"]["images"], row["en_m"]["pagebreaks"]))
+    print("Links:")
+    seen = set()
+    for t in extract_links(text):
+        tt = t.strip()
+        if tt in seen or not tt:
+            continue
+        seen.add(tt)
+        m = SELF_RE.match(tt)
+        target = (m.group(1) or "/") if m else tt
+        if not m and (SCHEME_RE.match(tt) or tt.startswith("#") or tt.startswith("//")):
+            continue
+        r, st = resolve(repo, ru, target)
+        if r is None:
+            continue
+        kind = "absolute docs.unavlab.com link" if m else "local link"
+        if r in pairs:
+            en = pairs[r]["en"] or pairs[r]["expected"]
+            if r in batch_ru:
+                state = "EN created in this batch"
+            elif pairs[r]["en"]:
+                state = "EN exists in master"
+            else:
+                state = "EN MISSING: deferred, keep the RU link"
+            print("  - %s `%s` -> RU `%s` -> EN `%s`: %s" % (kind, tt, r, en, state))
+        elif r.lower().endswith(".md"):
+            print("  - %s `%s` -> `%s` (%s)" % (kind, tt, r, st))
+        else:
+            print("  - %s `%s` -> asset `%s` (%s), keep unchanged" % (kind, tt, r, st))
+    print("Images with language variants:")
+    for img in sorted(set(re.findall(r"[/\\\w.\-]+_ru\.(?:png|jpe?g|gif|svg)", text, re.I))):
+        cand = re.sub(r"_ru\.", "_en.", img, flags=re.I)
+        base = cand.lstrip("/")
+        print("  - `%s`: EN variant `%s` %s" % (img, cand, "exists" if base in repo.fileset else "does not exist (keep RU image, list under Needs EN image)"))
+    print(cmd_marker_line(repo, ru))
+
+
+def cmd_marker_line(repo, ru):
+    sha, date = repo.last(ru)
+    return "Marker: <!-- docs-sync: source=%s commit=%s date=%s -->" % (ru, sha, date)
+
+
 def main():
     repo = Repo()
-    if len(sys.argv) < 2 or sys.argv[1] == "report":
+    if len(sys.argv) < 2:
+        print("usage: docsync.py report | json | terms | brief <RU path> [<batch RU path> ...] | marker <RU path> | check <RU path> <EN path>")
+        sys.exit(2)
+    elif sys.argv[1] == "report":
         cmd_report(repo)
     elif sys.argv[1] == "json":
         cmd_json(repo)
     elif sys.argv[1] == "terms":
         cmd_terms(repo)
+    elif sys.argv[1] == "brief":
+        cmd_brief(repo, sys.argv[2], sys.argv[3:])
     elif sys.argv[1] == "marker":
         cmd_marker(repo, sys.argv[2])
     elif sys.argv[1] == "check":
         cmd_check(repo, sys.argv[2], sys.argv[3])
     else:
-        print("usage: docsync.py report | json | terms | marker <RU path> | check <RU path> <EN path>")
+        print("usage: docsync.py report | json | terms | brief <RU path> [<batch RU path> ...] | marker <RU path> | check <RU path> <EN path>")
         sys.exit(2)
 
 
