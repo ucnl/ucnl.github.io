@@ -43,7 +43,7 @@
 - [3. Identifier tables](#3-identifier-tables)
   - [3.1. Error codes](#31-error-codes)
   - [3.2. NDTA sentence status](#32-ndta-sentence-status)
-  - [3.3. Addressed command identifiers](#33-addressed-command-identifiers)
+  - [3.3. Addressed request identifiers](#33-addressed-request-identifiers)
   - [3.4. Broadcast command identifiers](#34-broadcast-command-identifiers)
   - [3.5. Response identifiers](#35-response-identifiers)
   - [3.6. Pressure sensor types](#36-pressure-sensor-types)
@@ -53,10 +53,10 @@
 ## 1. Introduction
 ### 1.1. Physical layer protocol
 
-Devices of the [Zima2 USBL](Zima2_DataBrief_en.md) system support data interfacing using the RS-232 physical layer standard
-for an asynchronous interface (UART) with a data line voltage of 3.3 V. The connection is made with a four-wire cable with the cores Tx
-(transmitter), Rx (receiver), Vcc (power) and GND (ground). Without additional repeaters and interface converters,
-the maximum length of the data bus for which correct operation of the interface is guaranteed is no more than 2 m.
+Devices of the [Zima2 USBL](Zima2_DataBrief_en.md) system exchange data via the RS-232 physical layer standard
+for an asynchronous interface (UART) with a data line voltage of 3.3 V. The connection uses a four-wire cable with the wires Tx
+(transmitter), Rx (receiver), Vcc (power) and GND (ground). Without additional repeaters or interface converters,
+correct operation of the interface is guaranteed for a data bus length of up to 2 m.
 
 Connection port settings:  
 
@@ -106,19 +106,19 @@ The following is a list of possible parameter descriptors:
 | :--- | :--- |
 | x | Integer value |
 | xx | Integer value occupying exactly two characters: from 00 to 99 |
-| x.x | Real value |
+| x.x | Real (floating-point) value |
 | c--c | Character string |
 | hh | Hexadecimal value from 00 to FF |
 
 <div style="page-break-after: always;"></div>
 
 ## 2. AZM command system
-The **D2H** prefix in a sentence name means that the sentence is transmitted from the device (Device) to the control system (Host).
-The **H2D** prefix in a sentence name means that the sentence is transmitted from the control system (Host) to the device (Device).
-The **D2D** prefix in a sentence name means that the sentence can be transmitted in both directions: from the device to the control system as well as vice versa.
+The **D2H** prefix in a sentence name means that the sentence is sent from the Device to the Host (control system).
+The **H2D** prefix in a sentence name means that the sentence is sent from the Host (control system) to the Device.
+The **D2D** prefix in a sentence name means that the sentence can be transmitted in both directions: from the device to the control system and vice versa.
 
 ### 2.1. D2H_ACK
-The D2H_ACK sentence is the device response to a request received from the control system.  
+The D2H_ACK sentence is the device's response to a request received from the control system.  
 
 Sentence format: 
 **`
@@ -137,12 +137,12 @@ $PAZM0,[x],x*hh<CR><LF>
 | | \<CR\>\<LF\> | End of sentence |
 
 ### 2.2. D2D_STRSTP
-The D2D_STRSTP sentence is a sentence for setting the polling parameters of responder-beacons.
+The D2D_STRSTP sentence sets the polling parameters of responder-beacons.
 
 Transmitted from the control system to the direction-finding station to:
 - start polling the responder-beacons
 - stop polling the responder-beacons
-- change the polling parameters (address masks, maximum distance, water salinity)
+- change the polling parameters (address mask, maximum distance, water salinity)
 
 Transmitted from the direction-finding station to the control system as an echo confirmation that the command has been accepted. If the command is not accepted by the device, the device reports this using the [2.1. D2H_ACK](#21-d2h_ack) command with the corresponding error code.
 
@@ -159,14 +159,14 @@ $PAZM1,[x],[x.x],[x.x],[x]*hh<CR><LF>
 | 1 | addrMask | Address mask of the beacons to poll, 16-bit unsigned integer, each bit from 0 to 15 corresponds to one of the beacons, bit = 0 - the beacon does not participate in polling, bit = 1 - the beacon participates in polling. If the parameter is empty or equal to zero, polling stops. |
 | 2 | sty_PSU | Water salinity in PSU in the range from 0 to 40. If the parameter is empty, the default value (0 PSU) is used |
 | 3 | soundSpeed_mps | Speed of sound in water, in m/s, in the range from 1350 to 1600 m/s. If the parameter is empty, the speed of sound will be calculated automatically based on the salinity, temperature and pressure data |
-| 4 | max_dist_m | Maximum range, in meters, in the range from 500 to 5500. This parameter is used to calculate the maximum interval for waiting for a beacon response. |
+| 4 | max_dist_m | Maximum range in meters, from 500 to 5500. This parameter is used to calculate the maximum beacon response waiting interval. |
 | | * | NMEA checksum delimiter |
 | | hh | NMEA checksum |
 | | \<CR\>\<LF\> | End of sentence |
 
 
 ### 2.3. D2D_RSTS
-The D2D_RSTS sentence is a sentence for specifying the settings of responder-beacons.
+The D2D_RSTS sentence sets the settings of responder-beacons.
 
 Transmitted from the control system to a responder-beacon to set its address and the water salinity.
 Transmitted from the responder-beacon to the control system as an echo confirmation that the command has been accepted and the parameters have been set.
@@ -190,12 +190,12 @@ $PAZM2,[x],[x.x]*hh<CR><LF>
 
 
 ### 2.4. D2H_NDTA
-The D2H_NDTA sentence is the status of the direction-finding station.
+The D2H_NDTA sentence reports the status of the direction-finding station.
 
-This is the main sentence transmitted from the direction-finding station to the control system. With it, the station reports:
+This is the main sentence transmitted from the direction-finding station to the control system. The station uses it to report:
 - values of local parameters: temperature, pressure, roll, pitch
 - parameters of the response received from a responder-beacon: beacon address, signal propagation time, slant range and its projection, depth, horizontal and vertical angles, error code, communication quality
-- exceeding of the beacon response waiting interval (timeout)
+- that the beacon response waiting interval has been exceeded (timeout)
 
 Sentence format: 
 **`
@@ -209,9 +209,9 @@ $PAZM3,x,[x],[x],[x],[x.x],[x.x],[x.x],[x.x],[x.x],[x.x],[x.x],[x.x],[x.x],[x.x]
 | | 3 | Sentence ID |
 | 1 | status | Sentence status, [See Table 3.2. NDTA sentence status](#32-ndta-sentence-status) |
 | 2 | addr | Beacon address in the range from 0 to 15. The parameter is empty for sentences whose 'status' field contains '0' (local parameters only) |
-| 3 | rq_code | ID of the parameter requested from the beacon, [See Table 3.3. Addressed command identifiers](#33-addressed-command-identifiers) |
+| 3 | rq_code | ID of the parameter requested from the beacon, [See Table 3.3. Addressed request identifiers](#33-addressed-request-identifiers) |
 | 4 | rs_code | Beacon response code, [See Table 3.5. Response identifiers](#35-response-identifiers) |
-| 5 | msr_dB | Parameter that determines the reception quality of the beacon response signal, in dB. 14 - reception threshold, values above 20 dB mean good communication conditions |
+| 5 | msr_dB | Reception quality of the beacon response signal, in dB. 14 is the reception threshold; values above 20 dB indicate good communication conditions |
 | 6 | p_time_s | Signal propagation time in seconds. Multiplied by the speed of sound, it gives the slant range |
 | 7 | s_range_m | Slant range from the direction-finding antenna to the beacon in meters |
 | 8 | p_range_m | Projection of the slant range from the direction-finding antenna to the beacon onto the water surface, in meters |
@@ -229,7 +229,7 @@ $PAZM3,x,[x],[x],[x],[x.x],[x.x],[x.x],[x.x],[x.x],[x.x],[x.x],[x.x],[x.x],[x.x]
 
 
 ### 2.5. H2D_DPTOVR
-The H2D_DPTOVR sentence is a sentence for setting the depth for responder-beacons that do not have a built-in depth sensor.
+The H2D_DPTOVR sentence sets the depth for responder-beacons that do not have a built-in depth sensor.
 If the command is not accepted by the device, the device reports this using the [2.1. D2H_ACK](#21-d2h_ack) command with the corresponding error code.
 
 Sentence format: 
@@ -260,7 +260,7 @@ $PAZM5,x*hh<CR><LF>
 | | $ | Sentence start '$' |
 | | PAZM | AZM command system |
 | | 5 | Sentence ID |
-| 1 | cmdID | Command ID, [see Table 3.3. Addressed command identifiers](#33-addressed-command-identifiers) |
+| 1 | cmdID | Command ID, [see Table 3.3. Addressed request identifiers](#33-addressed-request-identifiers) |
 | | * | NMEA checksum delimiter |
 | | hh | NMEA checksum |
 | | \<CR\>\<LF\> | End of sentence |
@@ -302,7 +302,7 @@ $PAZM?,x*hh<CR><LF>
 | | \<CR\>\<LF\> | End of sentence |
 
 ### 2.9. D2H_DINFO
-The D2H_DINFO sentence is information about the device. 
+The D2H_DINFO sentence contains information about the device. 
 
 Sentence format: 
 **`
@@ -328,7 +328,7 @@ $PAZM!,x,x,c--c,c--c,x,x,x*hh<CR><LF>
 ### 2.10. H2D_CREQ
 > Supported since firmware version 1.33
 
-The H2D_CREQ sentence is a request for user parameters. The command is supported only by the direction-finding station. The polling will be performed once, after which the station will continue to request the depth of the responder-beacons. 
+The H2D_CREQ sentence is a request for user parameters. The command is supported only by the direction-finding station. The request is made once, after which the station continues to request the depth of the responder-beacons. 
 
 Sentence format: 
 **`
@@ -341,7 +341,7 @@ $PAZM7,x,x*hh<CR><LF>
 | | PAZM | AZM command system |
 | | 7 | Sentence ID |
 | 1 | addr | Responder-beacon address; if the field is empty, the specified parameter will be requested from all responder-beacons the station is currently working with |
-| 2 | user_data_id | User parameter ID [see Table 3.3. Addressed command identifiers](#33-addressed-command-identifiers) in the range from CDS_REQ_USER_CMD_27 to CDS_REQ_USER_CMD_0 |
+| 2 | user_data_id | User parameter ID [see Table 3.3. Addressed request identifiers](#33-addressed-request-identifiers) in the range from CDS_REQ_USER_CMD_27 to CDS_REQ_USER_CMD_0 |
 | | * | NMEA checksum delimiter |
 | | hh | NMEA checksum |
 | | \<CR\>\<LF\> | End of sentence |
@@ -349,7 +349,7 @@ $PAZM7,x,x*hh<CR><LF>
 ### 2.11. H2D_CSET
 > Supported since firmware version 1.33
 
-The H2D_CSET sentence is for setting the value of a user parameter. The command is supported only by responder-beacons. 
+The H2D_CSET sentence sets the value of a user parameter. The command is supported only by responder-beacons. 
 
 Sentence format: 
 **`
@@ -361,7 +361,7 @@ $PAZM8,x,x,x*hh<CR><LF>
 | | $ | Sentence start '$' |
 | | PAZM | AZM command system |
 | | 8 | Sentence ID |
-| 1 | user_data_id | User parameter ID [see Table 3.3. Addressed command identifiers](#33-addressed-command-identifiers) in the range from CDS_REQ_USER_CMD_27 to CDS_REQ_USER_CMD_0 |
+| 1 | user_data_id | User parameter ID [see Table 3.3. Addressed request identifiers](#33-addressed-request-identifiers) in the range from CDS_REQ_USER_CMD_27 to CDS_REQ_USER_CMD_0 |
 | 2 | user_data_value | If the parameter is empty, the responder-beacon will transmit the value of this parameter, if it has been set. Values in the range from 0 to 499 are accepted |
 | 3 | Leave the field empty. The parameter is reserved for future use | |
 | | * | NMEA checksum delimiter |
@@ -393,7 +393,7 @@ $PAZM9,x,x,x,x*hh<CR><LF>
 
 ### 2.13. IC_D2D_LBP_SETA
 
-The IC_D2D_LBP_SETA sentence is for setting the LBL solver parameters. 
+The IC_D2D_LBP_SETA sentence sets the LBL solver parameters. 
 
 Sentence format: 
 **`
@@ -405,7 +405,7 @@ $PAZMA,x,x,x.x,x.x,x,x,x.x,x,x.x,x.x,x.x,x,x.x,x.x,x,x.x,x.x,x,x.x,x.x,x,x.x,x.x
 | | $ | Sentence start '$' |
 | | PAZM | AZM command system |
 | | A | Sentence ID |
-| 1 | auto_output | 1 - when power is applied, the device immediately transmits data 1 time per second, 0 - only after this sentence is received |
+| 1 | auto_output | 1 - on power-up, the device immediately starts transmitting data every 1 s, 0 - only after this sentence is received |
 | 2 | autostart_on_poweron | 1 - when power is applied, the device immediately starts polling the beacons, if their parameters have been set previously, 0 - only after STRSTP is received |
 | 3 | sty | salinity, 0 .. 40 PSU, default value 0 |
 | 4 | sos | speed of sound, 1350 .. 1600 m/s, default value 1450 m/s |
@@ -457,9 +457,9 @@ $PAZMA,x,x,x.x,x.x,x,x,x.x,x,x.x,x.x,x.x,x,x.x,x.x,x,x.x,x.x,x,x.x,x.x,x,x.x,x.x
 | :--- | :--- | :--- |
 | 0 | NDTA_LOC_ONLY | The sentence contains only the local parameters of the direction-finding antenna |
 | 1 | NDTA_REMR | The sentence contains the response data of the responder-beacon and the local parameters of the direction-finding antenna |
-| 2 | NDTA_REMT | The sentence contains data on exceeding the waiting interval of the responder-beacon and the local parameters of the direction-finding antenna |
+| 2 | NDTA_REMT | The sentence contains data on the responder-beacon response waiting interval being exceeded and the local parameters of the direction-finding antenna |
 
-### 3.3. Addressed command identifiers
+### 3.3. Addressed request identifiers
 
 | Code | Name | Description |
 | :--- | :--- | :--- |
