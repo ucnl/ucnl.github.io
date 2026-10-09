@@ -463,3 +463,13 @@ Section headings follow the standard 16-section layout of GHS/REACH Annex II saf
 | отсутствует | not applicable | Misc/*_MSDS_en.md (3) | Existing is absent |
 | Литий / Фосфат железа | Lithium / Iron phosphate | Misc/*_MSDS_en.md (3) | |
 | Аккумулятор высокотоковый литий-железофосфатный | High-current lithium iron phosphate (LiFePO4) battery | Misc/RedBase_v3_LiFEPO4_msds_en.md | Header cell |
+
+## Added in batch redwave-4
+
+| RU | EN | Source EN file | Note |
+|---|---|---|---|
+| водолазный навигатор; навигатор водолаза | diver's navigator | RedWAVE/RedWave_tech_pass_en.md, RedWAVE/RedWAVE_DataBrief_en.md | RedNav |
+| водолазный планшет Aquatab | Aquatab diver's tablet | RedWAVE/RedWave_tech_pass_en.md | |
+| в водолазном исполнении | in the diver version | RedWAVE/RedWave_tech_pass_en.md | |
+| гидроакустический навигационный приемник RedNode | RedNode underwater acoustic navigation receiver | RedWAVE/RedWave_tech_pass_en.md | |
+| методом лазерной гравировки | by laser engraving | RedWAVE/RedWave_tech_pass_en.md | Factory numbers; hot stamping = горячее клеймение |
