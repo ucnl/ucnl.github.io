@@ -1069,3 +1069,13 @@ Section headings follow the standard 16-section layout of GHS/REACH Annex II saf
 | поплавок-катушка; поплавок-стабилизатор | float-reel; stabilizer float | F4105/F4105_Users_manual_en.md | |
 | мотор-редуктор; стопорный узел | geared motor; stopper knot | F4105/F4105_Users_manual_en.md | |
 | фал; грузонесущая проушина | line; load-bearing eye | F4105/F4105_Users_manual_en.md (+2) | |
+
+## Added in batch redline-1
+
+| RU | EN | Source EN file | Note |
+|---|---|---|---|
+| МИНИМАЛЬНЫЙ РАЗМЕР ПАКЕТА ДЛЯ ПЕРЕДАЧИ | MINIMUM PACKET SIZE FOR TRANSMISSION | RedLINE/RedLine_Specification_en.md | |
+| локальная переменная | local variable | RedLINE/RedLINE_Protocol_Specifications_en.md | |
+| ретрансляция | relaying | RedLINE/RedLINE_Protocol_Specifications_en.md | isRTX field |
+| прямой / обратный канал | forward / reverse channel | RedLINE/RedLINE_Protocol_Specifications_en.md | isRVRS field |
+| шина данных | data bus | RedLINE/RedLINE_Protocol_Specifications_en.md | |
