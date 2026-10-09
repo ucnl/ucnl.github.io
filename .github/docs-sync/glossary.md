@@ -500,3 +500,31 @@ Section headings follow the standard 16-section layout of GHS/REACH Annex II saf
 | мсек | ms | Zima/Zima2B_Specification_en.md | SI symbol |
 | Раздел документации по системе | Documentation section for the … system | Zima/Zima2_fast_start_en.md | |
 | Браузерное приложение | Browser-based application | Zima/Zima2_fast_start_en.md | AzimuthWebSuite |
+
+## Added in batch zima-2
+
+| RU | EN | Source EN file | Note |
+|---|---|---|---|
+| ДОПОЛНИТЕЛЬНО (heading) | ADDITIONAL INFORMATION | Zima/Zima2R_Specification_en.md (+2) | Same as `ДОПОЛНИТЕЛЬНАЯ ИНФОРМАЦИЯ` |
+| ПЕРИОД ОПРОСА, сек / ВРЕМЯ РАБОТЫ, ч / ПРИМЕЧАНИЕ | POLLING PERIOD, s / OPERATING TIME, h / NOTE | Zima/Zima2R_Specification_en.md (+2) | Battery life tables |
+| Без опроса, в режиме приема / Минимально возможный период опроса | Without polling, in receiving mode / Shortest possible polling period | Zima/Zima2R_Specification_en.md (+2) | |
+| опрос / опрашивать (маяки-ответчики) | polling / poll; interrogation / interrogate | Zima/Zima2R_Specification_en.md, Zima/Zima2_LBL_DataBrief_en.md | `polling` for USBL polling periods and cycles; `interrogation` for the LBL transceiver interrogating the navigation base. Both are standard |
+| общий (широковещательный) запрос / последовательный опрос | common (broadcast) request / sequential interrogation | Zima/Zima2_LBL_DataBrief_en.md | Zima2-L vs Zima2-LX modes |
+| U<sub>пит.</sub> | U<sub>supply</sub> | Zima/Zima2R_Specification_en.md (+3) | Wire assignment tables |
+| Экран (жила кабеля) | Shield | Zima/Zima2R_Specification_en.md (+3) | |
+| до 16 изолирующих адресов | up to 16 isolating addresses | Zima/Zima2R_Specification_en.md (+3) | Literal; meaning queried with the maintainer |
+| навигационная база | navigation base | Zima/Zima2L_Specification_en.md (+1) | LBL |
+| опорные маяки-ответчики / опорные точки | reference responder-beacons / reference points | Zima/Zima2_LBL_DataBrief_en.md (+1) | |
+| НОМИНАЛЬНАЯ ТОЧНОСТЬ ОПРЕДЕЛЕНИЯ МЕСТОПОЛОЖЕНИЯ (СКО) | NOMINAL POSITIONING ACCURACY (RMS) | Zima/Zima2L_Specification_en.md | `СКО` → RMS |
+| МАКСИМАЛЬНАЯ ЧАСТОТА ОБНОВЛЕНИЯ МЕСТОПОЛОЖЕНИЯ | MAXIMUM POSITION UPDATE RATE | Zima/Zima2L_Specification_en.md | |
+| натурный (статический) эксперимент | full-scale (static) experiment | Zima/Zima2L_Specification_en.md | |
+| РАЗЪЕМЫ | CONNECTORS | Zima/Zima2RK_Specification_en.md | `(Питание и данные)` → `(Power and data)`, `(Антенна)` → `(Transducer)` |
+| Рабочая глубина до … / Глубина погружения до … | Operating depth up to … / Immersion depth up to … | Zima/Zima2RK_Specification_en.md, Zima/Zima2R35_Specification_en.md | Key features |
+| РАЗРЕШЕНИЕ ПО ГЛУБИНЕ МАЯКОВ-ОТВЕТЧИКОВ | DEPTH RESOLUTION OF RESPONDER-BEACONS | Zima/Zima2B35_Specification_en.md | |
+| мембрана (датчика давления) | diaphragm | Zima/Zima2R35_Specification_en.md | Consistent with the Zima2 user's manual |
+| Самый маленький маяк-ответчик в мире | The world's smallest responder-beacon | Zima/Zima2uR_Specification_en.md | |
+| миниатюрная версия | miniature version | Zima/Zima2uR_Specification_en.md | |
+| Варианты построения системы | System configuration options | Zima/Zima2_LBL_DataBrief_en.md | |
+| Сравнение режимов / Схема опроса / Расчет положения / Выход | Comparison of modes / Interrogation scheme / Position calculation / Output | Zima/Zima2_LBL_DataBrief_en.md | |
+| энергетическая дальность акустической связи | acoustic communication range determined by the link budget | Zima/Zima2_LBL_DataBrief_en.md | |
+| единая аппаратная платформа | single hardware platform | Zima/Zima2_LBL_DataBrief_en.md | |
