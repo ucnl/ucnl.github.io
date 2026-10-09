@@ -1,4 +1,4 @@
-[Main](/../../) ❯ [Hydrophones & transducers](/underwater_acoustic_antennas_en) ❯ **Transducer RT-1.524525-1-FF**
+[Main](/) ❯ [Hydrophones & transducers](/underwater_acoustic_antennas_en) ❯ **Transducer RT-1.524525-1-FF**
 
 <div style="page-break-after: always;"></div>
 
@@ -8,39 +8,41 @@
 
 ## KEY FEATURES
 
-* Maintenance-free monoblock design, patented technology
-* Free-flooded ring design
-* The complete absence of corrosive elements
-* Single-element antenna - a balance between sensitivity in receiving and transmission modes, weight and dimensions
-* High quality shielded cable in polyurethane insulation
+* Maintenance-free monoblock design
+* Free-flooded center section for pressure compensation
+* Complete absence of corroding elements
+* Single-element transducer - a balance between sensitivity in receiving and transmitting modes, weight and dimensions
+* High-quality shielded cable with polyurethane insulation
 * Mounting groove
 
 ## TECHNICAL SPECIFICATIONS
 
 | PARAMETER | VALUE |
 | :--- | :--- |
-| DIMENSIONS (Ф х h) | 64 x 62 mm |
-| WEIGHT (dry) | 0.34 кг |
-| MAX. INPUT VOLTAGE (peak) | 200 V |
-| ELECTRIC CAPACITY | 20 +/- 5 nF |
-| MAX. EXTERNAL HYDROSTATIC PRESSURE | 100 Bar |
+| SIZE (Ø x h) | 64 x 62 mm |
+| WEIGHT (dry) | 0.34 kg |
+| MAXIMUM INPUT VOLTAGE (PEAK) | 200 V |
+| ELECTRICAL CAPACITANCE | 20 +/- 5 nF |
+| MAXIMUM EXTERNAL HYDROSTATIC PRESSURE | 100 bar |
 | STANDARD CABLE LENGTH | 1 m |
-| CABLE INSULATION | Polyurethane |
+| OPERATING TEMPERATURE RANGE | -40..+60 °C |
 | CABLE DIAMETER | 5 +/- 0.5 mm |
-| WORKING TEMPERATURE RANGE | -40..+60 °С |
 
 <div style="page-break-after: always;"></div>
 
-## DRAWINGS
+## DIMENSIONAL DRAWING
+
 ![RT_1_524525_1_FF_drawings](/documentation/RT_1_524525_1_FF_drawings.png)
 
-### Wire functions
+[3D model of the transducer (STEP)](/documentation/RT_1_524525_1_FF.STEP)
 
-| № | Color | Function |
+### Cable wire assignment
+
+| No. | Color | Function |
 | :---: | :--- | :--- |
 | 1 | Green | Signal |
 | 2 | Black | NC |
-| 3 | White/Transparent | NC |
+| 3 | White | NC |
 | 4 | Brown | Common |
 | 5 | Shield | NC |
 
@@ -59,3 +61,5 @@
 ![RT_1_524525_1_FF_en_rx_sensitivity](/documentation/RT_1_524525_1_FF_en_rx_sensitivity.png)
 
 <div style="page-break-after: always;"></div>
+
+<!-- docs-sync: source=documentation/RU/Transducers/RT_1_524525_1_FF_Specification_ru.md commit=ca4ac9354115503c803d3dd49def6f69046e9824 date=2024-08-20 -->
