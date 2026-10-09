@@ -40,7 +40,7 @@
 > **ℹ Information**
 > 
 > The **AzimuthSuite** application is no longer supported. 
-> It is recommended to use the console application [AzimuthConsole](/documentation/RU/Zima/AzimuthConsole_manual_ru.md).
+> It is recommended to use the console application [AzimuthConsole](/documentation/EN/Zima/AzimuthConsole_manual_en.md).
 > This section is retained for users who have not yet completed the transition to the new software.
 
 ## 1.1. Interface and functions
