@@ -26,7 +26,7 @@
 | MAXIMUM EXTERNAL HYDROSTATIC PRESSURE | 100 bar |
 | STANDARD CABLE LENGTH | 1 m |
 | OPERATING TEMPERATURE RANGE | -40..+60 °C |
-| CABLE CROSS-SECTION DIAMETER | 5 +/- 0.5 mm |
+| CABLE DIAMETER | 5 +/- 0.5 mm |
 
 <div style="page-break-after: always;"></div>
 
