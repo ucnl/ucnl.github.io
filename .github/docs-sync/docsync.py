@@ -929,6 +929,66 @@ def cmd_terms(repo):
     print("\n".join(out))
 
 
+SELF_RE = re.compile(r"^https?://(?:www\.)?docs\.unavlab\.com(/[^\s)\"]*)?", re.I)
+
+
+def cmd_brief(repo, ru, batch):
+    rows, orphans, index_links, en_claimed, pairs = inventory(repo)
+    row = [r for r in rows if r["ru"] == ru][0]
+    batch_ru = set(batch) | {ru}
+    text = read(ru)
+    print("RU source: %s" % ru)
+    print("EN target: %s (%s)" % (row["en"] or row["expected"], row["status"] + ("; " + ", ".join(row["reasons"]) if row["reasons"] else "")))
+    print("Printing <details> block in RU: %s" % ("yes" if row["ru_m"]["printing"] else "no"))
+    first = [l for l in text.splitlines()[:5] if "❯" in l]
+    print("RU breadcrumb: %s" % (first[0] if first else "none"))
+    if row["en"]:
+        sha, date = repo.last(row["en"])
+        print("EN last commit: %s %s; RU commits since: %s" % (sha, date, row["after"]))
+    print("Counts RU: headings=%d rows=%d images=%d pagebreaks=%d" % (row["ru_m"]["headings"], row["ru_m"]["rows"], row["ru_m"]["images"], row["ru_m"]["pagebreaks"]))
+    if row.get("en_m"):
+        print("Counts EN now: headings=%d rows=%d images=%d pagebreaks=%d" % (row["en_m"]["headings"], row["en_m"]["rows"], row["en_m"]["images"], row["en_m"]["pagebreaks"]))
+    print("Links:")
+    seen = set()
+    for t in extract_links(text):
+        tt = t.strip()
+        if tt in seen or not tt:
+            continue
+        seen.add(tt)
+        m = SELF_RE.match(tt)
+        target = (m.group(1) or "/") if m else tt
+        if not m and (SCHEME_RE.match(tt) or tt.startswith("#") or tt.startswith("//")):
+            continue
+        r, st = resolve(repo, ru, target)
+        if r is None:
+            continue
+        kind = "absolute docs.unavlab.com link" if m else "local link"
+        if r in pairs:
+            en = pairs[r]["en"] or pairs[r]["expected"]
+            if r in batch_ru:
+                state = "EN created in this batch"
+            elif pairs[r]["en"]:
+                state = "EN exists in master"
+            else:
+                state = "EN MISSING: deferred, keep the RU link"
+            print("  - %s `%s` -> RU `%s` -> EN `%s`: %s" % (kind, tt, r, en, state))
+        elif r.lower().endswith(".md"):
+            print("  - %s `%s` -> `%s` (%s)" % (kind, tt, r, st))
+        else:
+            print("  - %s `%s` -> asset `%s` (%s), keep unchanged" % (kind, tt, r, st))
+    print("Images with language variants:")
+    for img in sorted(set(re.findall(r"[/\\\w.\-]+_ru\.(?:png|jpe?g|gif|svg)", text, re.I))):
+        cand = re.sub(r"_ru\.", "_en.", img, flags=re.I)
+        base = cand.lstrip("/")
+        print("  - `%s`: EN variant `%s` %s" % (img, cand, "exists" if base in repo.fileset else "does not exist (keep RU image, list under Needs EN image)"))
+    print(cmd_marker_line(repo, ru))
+
+
+def cmd_marker_line(repo, ru):
+    sha, date = repo.last(ru)
+    return "Marker: <!-- docs-sync: source=%s commit=%s date=%s -->" % (ru, sha, date)
+
+
 def main():
     repo = Repo()
     if len(sys.argv) < 2 or sys.argv[1] == "report":
@@ -937,12 +997,14 @@ def main():
         cmd_json(repo)
     elif sys.argv[1] == "terms":
         cmd_terms(repo)
+    elif sys.argv[1] == "brief":
+        cmd_brief(repo, sys.argv[2], sys.argv[3:])
     elif sys.argv[1] == "marker":
         cmd_marker(repo, sys.argv[2])
     elif sys.argv[1] == "check":
         cmd_check(repo, sys.argv[2], sys.argv[3])
     else:
-        print("usage: docsync.py report | json | terms | marker <RU path> | check <RU path> <EN path>")
+        print("usage: docsync.py report | json | terms | brief <RU path> [<batch RU path> ...] | marker <RU path> | check <RU path> <EN path>")
         sys.exit(2)
 
 
