@@ -1089,3 +1089,7 @@ Section headings follow the standard 16-section layout of GHS/REACH Annex II saf
 | автономный дыхательный аппарат; автономный ВДА | self-contained breathing apparatus; self-contained breathing apparatus (SCBA) | Misc/RedPhone_OS_MSDS_en.md (+1) | |
 | статическая электризация | static electricity buildup | Misc/RedPhone_OS_MSDS_en.md (+1) | |
 | отслужившие аккумуляторные элементы | spent battery cells | Misc/RedPhone_OS_MSDS_en.md (+1) | |
+
+## Added in batch misc-2
+
+No new terms. This batch reuses the approved MSDS and navigation buoy terminology.

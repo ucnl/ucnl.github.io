@@ -1,20 +1,20 @@
-[Main](/) ❯ [Miscellaneous info](/misc_en) ❯ **RedBase (v3): Material safety data sheet**
+[Main](/) ❯ [Miscellaneous info](/misc_en) ❯ **WAYU GIB: Material safety data sheet**
 
 <div style="page-break-after: always;"></div>
 
-| ![logo](/documentation/sm_logo.png) | ![qr](/documentation/RedBase_v3_LiFEPO4_msds_en_qr.png) |
+| ![logo](/documentation/sm_logo.png) | ![image](https://github.com/user-attachments/assets/8234ff0a-fbee-4eb3-969d-0469ac18c81b) |
 | :---: | ---: |
-| [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | Lithium iron phosphate battery <br/> in the RedBase/RWLT GIB (v3) PMVR.467154.077 navigation buoy <br/> Material safety data sheet (MSDS) |
-| | Version 1 <br/> 27.09.2023 |
+| [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | Lithium iron phosphate battery <br/> in the WAYU GIB PMVR.467154.080 navigation buoy <br/> Material safety data sheet (MSDS) |
+| | Version 1 <br/> 18.11.2024 |
 
-## Lithium iron phosphate battery <br/> in the RedBase/RWLT GIB (v3) PMVR.467154.077 navigation buoy
+## Lithium iron phosphate battery <br/> in the WAYU GIB PMVR.467154.080 navigation buoy
 ### Material safety data sheet (MSDS)
 
 ## 1. IDENTIFICATION OF THE PRODUCT AND OF THE COMPANY OR SUPPLIER
 
 | | |
 | :--- | :--- |
-| Trade name | Battery of the RedBase/RWLT GIB (v3) PMVR.467154.077 navigation buoy |
+| Trade name | Battery of the WAYU GIB PMVR.467154.080 navigation buoy |
 | Article number |
 | Registration number (REACH) | This information is not available |
 | EC number | not applicable |
@@ -360,4 +360,4 @@ Place of seal
 
 <div style="page-break-after: always;"></div>
 
-<!-- docs-sync: source=documentation/RU/Misc/RedBase_v3_LiFEPO4_msds_ru.md commit=3c75356d8761594cd4b5354e56d67648a1a24ccb date=2025-05-12 -->
+<!-- docs-sync: source=documentation/RU/Misc/WAYU_GIB_MSDS_ru.md commit=371c1085abae237a398ccf728c28f80070ee595a date=2025-05-12 -->
