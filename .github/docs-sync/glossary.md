@@ -463,3 +463,19 @@ Section headings follow the standard 16-section layout of GHS/REACH Annex II saf
 | отсутствует | not applicable | Misc/*_MSDS_en.md (3) | Existing is absent |
 | Литий / Фосфат железа | Lithium / Iron phosphate | Misc/*_MSDS_en.md (3) | |
 | Аккумулятор высокотоковый литий-железофосфатный | High-current lithium iron phosphate (LiFePO4) battery | Misc/RedBase_v3_LiFEPO4_msds_en.md | Header cell |
+
+## Added in batch uwave-2
+
+| RU | EN | Source EN file | Note |
+|---|---|---|---|
+| Система команд UWV | UWV command system | uWAVE/uWAVE_Protocol_Specification_en.md | |
+| канал передачи / приема | transmit / receive channel | uWAVE/uWAVE_Protocol_Specification_en.md | |
+| параметры среды и питания | ambient and power supply parameters | uWAVE/uWAVE_Protocol_Specification_en.md | |
+| уведомление о получении | receipt notification | uWAVE/uWAVE_Protocol_Specification_en.md | Packet mode |
+| режим пакетной передачи | packet transmission mode | uWAVE/uWAVE_Protocol_Specification_en.md | |
+| превышен интервал ожидания ответа | response timeout | uWAVE/uWAVE_Protocol_Specification_en.md | |
+| НЕУСТРАНИМАЯ и НЕ ГАРАНТИЙНАЯ поломка | IRREPARABLE damage … NOT COVERED BY THE WARRANTY | uWAVE/uWAVE_Protocol_Specification_en.md | Caution notes |
+| жила … притянута к | wire … pulled to | uWAVE/uWAVE_Protocol_Specification_en.md | SVC/CMD |
+| Рецепт N | Recipe N | uWAVE/uWAVE_Protocol_Specification_en.md | |
+| через толщу воды | through the water column | uWAVE/uWave_technical_passport_en.md | |
+| встроенная схема измерения напряжения питания | built-in supply voltage measurement circuit | uWAVE/uWave_technical_passport_en.md | |
