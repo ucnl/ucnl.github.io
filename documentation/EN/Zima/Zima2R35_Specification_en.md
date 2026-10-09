@@ -1,4 +1,4 @@
-[Main](/) ❯ [Navigation & tracking systems](/navigation_and_tracking_systems_en) ❯ **Zima2-R: Device specification**
+[Main](/) ❯ [Navigation & tracking systems](/navigation_and_tracking_systems_en) ❯ **Zima2-R35: Device specification**
 
 <details>
   <summary><b>ℹ Recommendations for printing / saving as PDF</b></summary>
@@ -17,23 +17,24 @@
 
 | ![logo](/documentation/sm_logo.png) | ![zima_r_wbat](/documentation/zima_r_wbat.png) |
 | :---: | ---: |
-| [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **Zima2-R** - **Zima2 USBL** responder-beacon <br/> Device specification |
+| [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **Zima2-R35** - **Zima2 USBL** responder-beacon <br/> Device specification |
 
 ## KEY FEATURES
 
 * **Extremely small size and weight**
-* **Communication range up to 3000<sup>[1](#footnote1)</sup> m**
+* **Immersion depth up to 350 m**
+* **Communication range up to 1000<sup>[1](#footnote1)</sup> m**
 * **Highly reliable digital underwater acoustic communication resistant to multipath propagation**
 * **Code division multiple access - up to 16 isolating addresses**
 * **Low power consumption (Rx/Tx) 0.33/10 W**
-* **Built-in pressure/temperature sensor**
+* **Protected built-in pressure/temperature sensor**
 * **Patented<sup>[*](#footnote_a1)</sup> monoblock design**
 
 ## DESCRIPTION
 
-**Zima2-R** - responder-beacon of the ultra-short baseline navigation system [Zima2 USBL](Zima2_DataBrief_en.md).  
+**Zima2-R35** - responder-beacon of the ultra-short baseline navigation system [Zima2 USBL](Zima2_DataBrief_en.md). The device has a maximum immersion depth increased to 350 m and a pressure sensor protected by a metal diaphragm.
 
-The device is designed to be placed on an underwater object in order to determine the location of this object in real time using the direction-finding antenna [Zima2-B](Zima2B_Specification_en.md). 
+The device is designed to be placed on an underwater object in order to determine the location of this object in real time using the direction-finding antenna [Zima2-B35](Zima2B35_Specification_en.md). 
 
 The device can be either standalone (with an additional [battery pack](/documentation/EN/Accessories/Sub_batteries_en#sb2448lf)) or interfaced with the carrier for power. 
 
@@ -50,9 +51,9 @@ ________________
 | :--- | :--- |
 | DIMENSIONS (Ø x h) | 64 x 62 mm |
 | WEIGHT (dry)<sup>[2](#footnote2)</sup> | 0.3 kg |
-| MAXIMUM DEPTH | 300 m |
-| DEPTH RESOLUTION | 0.6 m |
-| MAXIMUM ACOUSTIC COMMUNICATION RANGE<sup>[1](#footnote1)</sup> | 3000 m |
+| MAXIMUM DEPTH | 350 m |
+| DEPTH RESOLUTION | 1.4 m |
+| MAXIMUM ACOUSTIC COMMUNICATION RANGE<sup>[1](#footnote1)</sup> | 1000 m |
 | ACOUSTIC SOURCE LEVEL | 170 dB re 1 μPa @ 1 m |
 | CARRIER FREQUENCY | 20100 Hz | 
 | BUILT-IN TEMPERATURE SENSOR ACCURACY | 0.1°C |
@@ -69,13 +70,12 @@ ________________
 | CABLE LENGTH<sup>[4](#footnote4)</sup> | 0.5 m |
 | MAXIMUM NUMBER OF ADDRESSES | 16 |
 
-<!-- | BANDWIDTH | 10 .. 30 kHz | -->
 ________________
-- <a name="footnote1"><sup>1</sup></a> A parameter that determines the maximum range at which a signal can be received, based on electro-acoustic parameters of the transmitter and receiver, spatial decrease in the intensity of sound energy, attenuation in the medium and the acoustic noise level.  
-- <a name="footnote2"><sup>2</sup></a> Excluding the weight of the battery pack. Standard battery pack [SB-24-48-LF](/documentation/EN/Accessories/Sub_batteries_en#sb2448lf).  
-- <a name="footnote3"><sup>3</sup></a> The value was obtained in a laboratory static experiment, without taking into account the multipath propagation effect.  
-- <a name="footnote4"><sup>4</sup></a> The value can be changed on request.  
-- <a name="footnote5"><sup>5</sup></a> Obtained in laboratory conditions in a static experiment.  
+<a name="footnote1"><sup>1</sup></a> A parameter that determines the maximum range at which a signal can be received, based on electro-acoustic parameters of the transmitter and receiver, spatial decrease in the intensity of sound energy, attenuation in the medium and the acoustic noise level.  
+<a name="footnote2"><sup>2</sup></a> Excluding the weight of the battery pack. Standard battery pack [SB-24-48-LF](/documentation/EN/Accessories/Sub_batteries_en#sb2448lf).  
+<a name="footnote3"><sup>3</sup></a> The value was obtained in a laboratory static experiment, without taking into account the multipath propagation effect.  
+<a name="footnote4"><sup>4</sup></a> The value can be changed on request.  
+<a name="footnote5"><sup>5</sup></a> Obtained in laboratory conditions in a static experiment.  
 
 <div style="page-break-after: always;"></div>
 
@@ -110,4 +110,4 @@ The operating time of the responder-beacon on the battery pack depends on the in
 
 <div style="page-break-after: always;"></div>
 
-<!-- docs-sync: source=documentation/RU/Zima/Zima2R_Specification_ru.md commit=2b17417450cfa3cfcbfa17c0eb055c768aa356fd date=2026-10-06 -->
+<!-- docs-sync: source=documentation/RU/Zima/Zima2R35_Specification_ru.md commit=5e5766e3d53d20c67730cbadfd0ac0e2d4f33a9b date=2026-06-10 -->
