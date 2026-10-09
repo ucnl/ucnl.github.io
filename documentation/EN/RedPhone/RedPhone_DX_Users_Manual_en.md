@@ -1,364 +1,355 @@
-[Main](/../../) ❯ [Underwater Wireless voice systems (Underwater telephone)](/underwater_wireless_voice_systems_en) ❯ ❯ **User’s manual: RedPhone-DX**
+[Main](/) ❯ [Underwater wireless voice systems](/underwater_wireless_voice_systems_en) ❯ **RedPhone-DX: User's manual**
+
+<details>
+  <summary><b>ℹ Recommendations for printing / saving as PDF</b></summary>
+  <br>
+  <ol>
+    <li>Press <b>Ctrl+P</b> (macOS: <b>Cmd+P</b>)</li>
+    <li>Select <b>"Save as PDF"</b> (Microsoft Print to PDF) as the printer</li>
+    <li>In <b>"Pages"</b>, enter a range that excludes the first and the last page</li>
+    <li>Disable <b>headers and footers</b> (title, URL, page numbers)</li>
+    <li>In <b>Chrome/Edge</b>: More settings → "Margins" → <b>None</b> | in <b>Firefox</b>: "Margins & Header/Footer" → <b>None</b></li>
+    <li>Click <b>Print</b> and choose where to save the PDF</li>
+  </ol>
+</details>
 
 <div style="page-break-after: always;"></div>
 
-| ![logo](/documentation/sm_logo.png) | ![RedPhone-DX](/documentation/redphone_dx.png) |
+| ![logo](/documentation/sm_logo.png) | ![RedPhone-DX](https://github.com/user-attachments/assets/4c197104-48d7-4f9a-b7c2-1c45063dd8fd) |
 | :---: | ---: |
-| [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **RedPhone-DX** <br/> Wireless telephone for divers <br/> **User's manual** |
+| [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **RedPhone-DX** <br/> Diver station for underwater acoustic voice communication <br/> **User's manual** |
 
-# **RedPhone-DX** <br/> Wireless telephone for divers
-## **User's manual**
+# **RedPhone-DX** <br/> Diver station for underwater acoustic voice communication <br/> **User's manual**
 
 <div style="page-break-after: always;"></div>
 
 ## Contents
 
-- [1. General information](#1-general-information)
+- [1. Description of the RedPhone-DX station](#1-description-of-the-redphone-dx-station)
   - [1.1. Purpose](#11-purpose)
-  - [1.2. Description](#12-description)
-  - [1.3. Specifications](#13specifications)
-  - [1.4. Equipment set](#14-equipment-set)  
+  - [1.2. Device design](#12-device-design)
+  - [1.3. Technical specifications](#13-technical-specifications)
+     - [**Table 1** - Correspondence of the channel number and signal parameters](#table-1---correspondence-of-the-channel-number-and-signal-parameters)
+     - [**Table 2** - Links to the current device specification](#table-2---links-to-the-current-device-specification)
+  - [1.4. Delivery set](#14-delivery-set)
+    - [**Table 3** - Delivery set](#table-3---delivery-set)
+    - [**Table 4** - Connector pinout](#table-4---connector-pinout)
 - [2. Working with the device](#2-working-with-the-device)
-  - [2.1. Preliminary checks](#21-preliminary-checks)
-  - [2.2. Work](#22-work)
-    - [2.2.1. Sound alerts](#221-sound-alerts)
+  - [2.1 Preliminary checks](#21-preliminary-checks)
+  - [2.2. Operation](#22-operation)
+    - [2.2.1. Sound signals](#221-sound-signals)
+      - [**Table 5** - Sound alerts](#table-5---sound-alerts)
     - [2.2.2. Receiving voice messages](#222-receiving-voice-messages)
     - [2.2.3. Sending voice messages](#223-sending-voice-messages)
   - [2.3. Shutdown](#23-shutdown)
 - [3. Storage and maintenance](#3-storage-and-maintenance)
-   - [3.1. Storage and maintenance conditions](#31-storage-and-maintenance-conditions)
-   - [3.2. Charging the device](#32-charging-the-device)
-   - [3.3. Configuration](#33-configuration)
-     - [3.3.1. Step 1](#331-step-1)
-     - [3.3.2. Step 2](#331-step-2)
-     - [3.3.3. Step 3](#331-step-3)
-     - [3.3.4. Step 4](#331-step-4)
-     - [3.3.5. Step 5](#331-step-5)
-     - [3.3.6. Step 6](#331-step-6)
-     - [3.3.7. Step 7](#331-step-7)
-     - [3.3.8 Station settings](#338-station-settings)
-- [4. Liability and disclaimer](#4-liability-and-disclaimer)
-  - [4.1 Terms of replacement and free warranty service](#41-terms-of-replacement-and-free-warranty-service)
-  - [4.2 Disclaimer of the manufacturer](#42-disclaimer-of-the-manufacturer)
+  - [3.1. Storage and maintenance conditions](#31-storage-and-maintenance-conditions)
+  - [3.2. Charging the built-in power supply](#32-charging-the-built-in-power-supply)
+  - [3.3. Station configuration](#33-station-configuration)
+    - [3.3.1. Step 1](#331-step-1)
+    - [3.3.2. Step 2](#332-step-2)
+    - [3.3.3. Step 3](#333-step-3)
+    - [3.3.4. Step 4](#334-step-4)
+    - [3.3.5. Step 5](#335-step-5)
+    - [3.3.6. Step 6](#336-step-6)
+- [4. Obligations and disclaimer](#4-obligations-and-disclaimer)
+  - [4.1. Terms of replacement and free warranty service](#41-terms-of-replacement-and-free-warranty-service)
+  - [4.2. Limitation of the manufacturer's liability](#42-limitation-of-the-manufacturers-liability)
+
+
 
 <div style="page-break-after: always;"></div>
 
-## 1. General information
+## 1. Description of the RedPhone-DX station
 ### 1.1. Purpose
-The diving station of voice hydroacoustic communication [RedPhone-DX](RedPhone_DX_Specification_en.md) (hereinafter referred to as the station) is intended for:
-- wireless exchange of voice messages between divers equipped with diving communication devices that support signal parameters common with the station;
-- wireless exchange of voice messages between divers and a surface control station equipped with a surface station [RedPhone-OS](RedPhone_OS_Specification_ru.md) or other diving communication devices that support signal parameters common with the station;
-- determining the location (tracking) of divers using the long-base navigation system [RWLT](/documentation/EN/RWLT/RWLT_DataBrief_en.md).
+The diver station for underwater acoustic voice communication [RedPhone-DX](RedPhone_DX_Specification_en.md) (hereinafter referred to as the station) is intended for:  
+- wireless exchange of voice messages between divers equipped with diver communication devices that support the same signal parameters as the station;  
+- wireless exchange of voice messages between divers and the surface dive control point equipped with the [RedPhone-OS](RedPhone_OS_Specification_en.md) surface station or other diver communication devices that support the same signal parameters as the station;  
+- determining the location (tracking) of divers using the long baseline navigation system [RWLT](/documentation/EN/RWLT/RWLT_DataBrief_en.md).
 
 The general view of the [RedPhone-DX](RedPhone_DX_Specification_en.md) station is shown in **Figure 1**.
 
 | ![RedPhone-DX](/documentation/redphone_dx.png) |
 | :---: |
-| **Fig 1 - [RedPhone-DX](RedPhone_DX_Specification_en.md): General view** |
+| **Figure 1 - General view of the [RedPhone-DX](RedPhone_DX_Specification_en.md) station** |
 
-### 1.2. Description
-The device is made in the form of a maintenance-free polyurethane monoblock, with built-in LiFePO4 batteries that provide more than 3000 charge-discharge cycles. On the top of the device in its upper part are located:
-- hydroacoustic transceiver antenna;
-- contacts for connecting the charging cradle;
-- contacts for automatic switching on when entering the water / switching off when removed from the water;
-- cable inlet with a connector and a PTT (Push-To-Talk) for connecting a communication headset.
+### 1.2. Device design
+The device is a maintenance-free polyurethane monoblock with built-in LiFePO4 batteries that provide more than 3000 "charge-discharge" cycles. The following are located in the upper part of the device housing:  
+- underwater acoustic transducer;
+- contacts that automatically switch the device on when it enters the water and off when it is removed from the water;
+- cable entry with a connector for the communication headset.
 
-> Standard devices are equipped with a connector and a PTT for connecting a headset that does not contain a PTT.
+Charging is performed with the supplied charger. Channel switching and enabling the compatibility mode with the [RWLT](/documentation/EN/RWLT/RWLT_DataBrief_en.md) navigation tracking system are performed using the supplied service cable.
 
-Charging is carried out with a complete cradle (chassis) with a charger. Switching channels and the compatibility mode with the navigation tracking system [RWLT](/documentation/EN/RWLT/RWLT_DataBrief_en.md) is carried out using the built-in radio transceiver and the bundled [USB radio dongle](RedPhone_RF_Dongle_Specification_en.md).
+To ensure the best operating conditions and communication quality, the transducers of the communicating devices must have a direct line of sight to each other. The recommended mounting location for the device is on the tank on the diver's back. The device must be fastened with a strap or a rubber bungee cord through the mounting eyes. Mounting with a metal clamp is also possible. The cables must not restrict the diver's movements.
 
-To ensure the best working conditions and communication quality, subscribers' acoustic antennas must have a direct line of sight. The recommended mounting location for the device is on the tank on the diver's back. Fastening should be carried out with a belt or rubber band through the fixing eyes. The cables must not restrict the diver's movements. The PTT has a special loop for attaching to the suit.
+### 1.3. Technical specifications
+The station uses single-sideband amplitude modulation (_SSB, Single side band_) and supports the bands most commonly used in such systems, which ensures compatibility with almost all similar systems. Any antenna, including an underwater acoustic transducer, has a frequency response that describes its sensitivity at different frequencies; therefore, the device provides slightly different receive and transmit sensitivities on different channels. **Table 1** shows the correspondence of the station channel numbers to frequency bands, as well as the degree to which each channel matches the characteristics of the transducer and the transceiver path. Unless there is a pressing need to use a particular channel, for example, to ensure compatibility with devices from other manufacturers, give preference to the channels that best match the characteristics of the transducer.
 
-### 1.3.Specifications
-The station uses single-sideband amplitude modulation (_English SSB, Single side band_) and supports the most commonly used bands in such systems, which ensures compatibility with almost all analogues.
-**Table 1** shows the correspondence between station channel numbers and frequency bands.
+### **Table 1** - Correspondence of the channel number and signal parameters
 
-### **Table 1** - Correspondence between channel number and signal parameters
+| Channel number | Carrier frequency, Hz | Sideband | Bandwidth, Hz | Match with the characteristics of the transceiver path |
+| :---: | :--- | :--- | :--- | :--- |
+| 1 | 32768 | Lower | 28468 .. 32468 | Good |
+| 2 | 32768 | Upper | 33068 .. 37068 | Satisfactory |
+| 3 | 31250 | Lower | 26950 .. 30950 | Excellent |
+| 4 | 31250 | Upper | 31550 .. 35550 | Good |
+| 5 | 28500 | Lower | 24200 .. 28200 | Excellent |
+| 6 | 28500 | Upper | 28800 .. 32800 | Excellent | 
+| 7 | 25000 | Lower | 20700 .. 24700 | Satisfactory |
+| 8 | 25000 | Upper | 25300 .. 29300 | Excellent |
 
-| Channel number | Carrier, Hz | Side band | Bandwidth, Hz |
-| :---: | :---: | :---: | :---: |
-| 1 | 32768 | Lower | 28468 .. 32468 |
-| 2 | 32768 | Upper | 33068 .. 37068 |
-| 3 | 31250 | Lower | 26950 .. 30950 |
-| 4 | 31250 | Upper | 31550 .. 35550 |
-| 5 | 28500 | Lower | 24200 .. 28200 |
-| 6 | 28500 | Upper | 28800 .. 32800 |
-| 7 | 25000 | Lower | 20700 .. 24700 |
-| 8 | 25000 | Upper | 25300 .. 29300 |
+The manufacturer is constantly improving the equipment, so the up-to-date technical specifications are given in the device specification:
 
-The general technical characteristics of the device are given in **Table 2**:
+### **Table 2** - Links to the current device specification
 
-### **Table 2** - Technical characteristics
-
-| PARAMETER | VALUE |
-| :--- | :--- |
-| DIMENSIONS<sup>[1](#footnote1)</sup> (l х w х h) | 203 x 105 x 45 mm |
-| WEIGHT<sup>[2](#footnote2)</sup> (dry) | 0.6 kg |
-| MAX. WORKING DEPTH | 70 m |
-| MAX. ACOUSTIC RANGE<sup>[3](#footnote3)</sup> | 1000 m |
-| MAX. ACOUSTIC PRESSURE | 150 dB re 1 uPa @ 1 m |
-| VOICE BANDWIDTH<sup>[4](#footnote4)</sup> | 300 .. 4300 Hz |
-| NUMBER OF CHANNELS | 8 |
-| BATTERY LIFE IN RECEIVING MODE<sup>[5](#footnote5)</sup> | up to 50 hours |
-| BATTERY LIFE IN MIXED MODE (20%)<sup>[5](#footnote5),[6](#footnote6)</sup> | up to 8 hours |
-| BATTERY LIFE IN MIXED MODE (50%)<sup>[5](#footnote5),[7](#footnote7)</sup> | up 2.5 hours |
-| WORKING TEMPERATURES | 0 .. 50° С |
-| BUILT-IN POWER SUPPLY | 28 W\*h, LiFePO4, up to 3000 charge-discharge cycles |
-| CHANNEL SWITCHING | Wireless, using a [USB-RF Dongle](RedPhone_RF_Dongle_Specification_en.md) |
-| BODY MATERIAL | Polyurethane |
-| CABLE INSULATION MATERIAL | Polyurethane |
-| NAVIGATION SIGNAL CARRIER<sup>[8](#footnote8)</sup> | 20050 Hz |
-| NAVIGATION SIGNAL MODULATION<sup>[8](#footnote8)</sup> | BPSK |
-| NAVIGATION SIGNAL DURATION<sup>[8](#footnote8)</sup> | 200 msec |
-
-________________
-<a name="footnote1"><sup>1</sup></a> Including hydroacoustic antenna.  
-<a name="footnote2"><sup>2</sup></a> With a PTT and mask connector, depending on the connector, the value may differ by the weight of the connector.  
-<a name="footnote3"><sup>3</sup></a> A parameter that determines the maximum range at which signal reception is possible, based on the electroacoustic parameters of the transmitter and receiver, the spatial decrease in the intensity of sound energy, attenuation in the medium and the level of hydroacoustic interference.  
-<a name="footnote4"><sup>4</sup></a> Actual frequency range depends on headset specifications.  
-<a name="footnote5"><sup>5</sup></a> With a new, fully charged battery, at an ambient temperature of 20°C.  
-<a name="footnote6"><sup>6</sup></a> In a mode 2 minutes transmit 8 minutes receive.  
-<a name="footnote7"><sup>7</sup></a> In a mode 5 minutes transmit 5 minutes receive.  
-<a name="footnote8"><sup>8</sup></a> The function is provided by buoys of the [RWLT](/documentation/EN/RWLT/RWLT_DataBrief_en.md) navigation system.  
-
-
-### 1.4. Equipment set
-
-### **Table 3** - Contents of delivery
-
-| № | Item | Number | Notes |
-| :--- | :--- | :--- | :--- |
-| 1 | [RedPhone-DX](RedPhone_DX_Specification_en.md) with a headset connector | 1 pcs. |  |
-| 2 | Charger with the cradle | 1 pcs. | |
-| 3 | [USB-RF dongle](RedPhone_RF_Dongle_Specification_en.md) for wireless connection to a PC | 1 pcs. | |
-
-
-Figure 2 shows the scope of delivery
-
-| ![RedPhone-DX](/documentation/redphone_dx_package.png) |
+| ![image](https://github.com/user-attachments/assets/3d9ee331-1160-48b8-8645-438efc6a7910) |
 | :---: |
-| **Fig 2 - Contents of delivery** |
-| The numbers indicate: *1 - charger, 2 - charging chassis (cradle), 3 - PTT, 4 - connector, 5 - USB radio dongle, 6 - RedPhone-DX station* |
+| [Device specification: RedPhone-DX](RedPhone_DX_Specification_en.md) |
 
-The pinout of the connector in the standard version is shown in **Table 4**
 
-### **Table 4** - Connector Pinout
+### 1.4. Delivery set
 
-| Pin number | Function |
+### **Table 3** - Delivery set
+
+| No. | Name | Quantity | Notes |
+| :--- | :--- | :--- | :--- |
+| 1 | [RedPhone-DX](RedPhone_DX_Specification_en.md) station with a headset connector | 1 pc. |  |
+| 2 | Mains charger | 1 pc. | |
+| 3 | USB dongle for connecting the station to a PC | 1 pc. | |
+
+
+Figure 2 shows the delivery set
+
+| ![RedPhone-DX](https://github.com/user-attachments/assets/44ad5fc5-e81a-4b22-9ee3-1137271a22be) |
+| :---: |
+| **Figure 2 - Delivery set** |
+| The numbers indicate: *1 - RedPhone-DX station, 2 - charger, 3 - Service cable* |
+
+The connector pinout in the standard version is given in **Table 4**
+
+### **Table 4** - Connector pinout
+
+| Pin No. | Function |
 | :--- | :--- |
-| 1 | MIC "+" |
-| 2 | SPEAKER "-" |
-| 3 | MIC "-" |
-| 4 | SPEAKER "+" |
-
+| 1 | Microphone |
+| 2 | PTT button |
+| 3 | Speaker "+" |
+| 4 | Speaker "-" |
+| 5 | Tx/Charge "+" |
+| 6 | Rx |
+| 7 | Common |
 
 <div style="page-break-after: always;"></div>
 
 ## 2. Working with the device
 ### 2.1 Preliminary checks
-Before immersing the device in water, the user must ensure that:
-- O-rings (if any) on the headset connector are not mechanically damaged, not dirty, properly lubricated (in accordance with the manufacturer's recommendations);
-- a headset is connected to the jack (the jack is connected);
+Before immersing the device in water, the user must make sure that:
+- the O-rings (if any) on the headset connector are not mechanically damaged, are not dirty, and are lubricated (in accordance with the manufacturer's recommendations);
+- a headset is connected to the connector (the connector is plugged in);
 - the device is securely fastened with a strap to the tank (**recommended mounting location**) or to the diver's belt.
 
 Before starting work, the user must:
-- check the correctness of the selected communication channels on all devices participating in the work in the immediate vicinity according to p.p. [2.2.2](#222-receiving-voice-messages) and [2.2.3.](#223-sending-voice-messages).
+- check that the communication channels are selected correctly on all devices operating in the immediate vicinity, in accordance with sections [2.2.2](#222-receiving-voice-messages) and [2.2.3.](#223-sending-voice-messages).
 
-### 2.2. Work
-Before work, all preparations and checks provided for in [p. 2.1](#21-preliminary-checks).
+### 2.2. Operation
+Before operation, all the preparations and checks provided for in [section 2.1](#21-preliminary-checks) must be carried out.
 
-Diver's hydroacoustic voice communication works on a half-duplex scheme: transmission and reception alternate, if the device is in transmit mode, it cannot receive incoming messages.
+Underwater acoustic voice communication with divers is half-duplex: transmission and reception alternate; while the device is in transmit mode, it cannot receive incoming messages.
 
-#### 2.2.1. Sound alerts
-Possible sound alerts are summarized in **Table 5**.
+#### 2.2.1. Sound signals
+The possible sound alerts are summarized in **Table 5**.
 
 ### **Table 5** - Sound alerts
 
-| Alert | Description |
+| Alert description | What it signals |
 | :--- | :--- |
-| A short rising and then falling tone | The station turned on |
-| A short rising tone | Switching to receive mode (when the navigation function is off) |
-| A short falling tone (~ every 30 seconds) | Low battery |
+| Short rising and then falling tone | The station is switched on |
+| Short rising tone | Switch to receive mode (when the navigation function is off) |
+| Short falling tone | Switch to transmit mode |
+| Short falling tone (~ every 30 seconds) | Low charge of the built-in power supply |
 
 #### 2.2.2. Receiving voice messages
-To receive voice messages from divers, the **PTT** button on the headset must be released. In this case, incoming messages will be played by the headset.
+To receive voice messages from divers, the **PTT** button on the headset must be released. Incoming messages are then played through the headset. 
 
-The volume of the replayed incoming voice messages depends on the distance between the subscriber's antennas, as well as on hydrological conditions. It can decrease when a diver enters the zone of acoustic shadow (when elements of the underwater landscape, parts of structures, vessels, algae, etc. are on the path of the signal).
+The volume of incoming voice messages depends on the distance between the station transducer and the diver, as well as on the hydrological conditions. It may decrease when a diver enters an acoustic shadow zone (when elements of the underwater landscape, parts of structures, vessels, algae, etc. are in the signal path). 
 
 #### 2.2.3. Sending voice messages
-To send voice messages, the following sequence of actions is performed:
-* Press PTT ;
-* The station emits a short beep, indicating that the device is entering transmission mode;
-* Wait a short pause (~**0.5** seconds) for the station to switch to transmit mode;
-* Speak voice messages with pronounced articulation; It is recommended to end a voice message with the phrase **"Do you copy?"**, signaling to the addressee that the message is over;
-* Sustain a short pause (~**0.5** seconds);
-* Release the **PTT**;
-* The station emits a short beep to indicate that the device has switched to receive mode if the [RWLT](/documentation/EN/RWLT/RWLT_DataBrief_en.md) navigation system compatibility mode is disabled or will emit a navigation signal using a hydroacoustic antenna if navigation compatibility mode [RWLT](/documentation/EN/RWLT/RWLT_DataBrief_en.md) is enabled.
+To send a voice message, perform the following steps:
+* Press the **PTT** button on the headset;
+* The station emits a short beep, indicating that the device is switching to transmit mode;
+* Pause briefly (~**0.5** seconds) to let the station switch to transmit mode;
+* Speak the voice message clearly, with distinct articulation; it is recommended to end the voice message with the word **"Over!"** to signal to the recipient that the message has ended;
+* Pause briefly (~**0.5** seconds);
+* Release the **PTT** button;
+* If the compatibility mode with the [RWLT](/documentation/EN/RWLT/RWLT_DataBrief_en.md) navigation system is disabled, the station emits a short beep, indicating that the device has switched to receive mode; if the compatibility mode with the [RWLT](/documentation/EN/RWLT/RWLT_DataBrief_en.md) navigation system is enabled, the station emits a navigation signal through the underwater acoustic transducer.
 
 ### 2.3. Shutdown
-Upon completion of the work, the diving station does not require any additional manipulations and turns off automatically when in the air. Before packing in a shipping container, it is necessary to rinse and/or desalinate in fresh water, followed by wiping with an absorbent cloth and air drying for at least 30 minutes.
+After operation, the diver station does not require any additional actions: it switches off automatically in air. Before placing the station in the transport case, rinse and/or desalinate it in fresh water, then wipe it with an absorbent cloth and let it dry in air for at least 30 minutes.
 
 <div style="page-break-after: always;"></div>
 
 ## 3. Storage and maintenance
 ### 3.1. Storage and maintenance conditions
-The station does not need special storage conditions, except for the following:
-- Storage at temperatures from -20 ° to 60 °C;
+The station has no special storage requirements, except for the following:
+- Storage at a temperature from -20 °C to 60 °C;
 - The headset connector must be disconnected;
-- In case of long-term storage (more than a month), it is recommended to recharge the station's built-in power supply;
-- To remove impurities from the body of the device and after working in seawater, rinsing in freshwater is required. It is allowed to use a weak solution of household detergents with the battery compartment cover closed; When flushing, avoid getting moisture and / or detergents into the open connector of the headset;
-- Bending of cables with a radius of less than 5 cm is not allowed;
-- The application of torsion forces to the acoustic antenna or cable entry is not allowed;
-- Before placing the device in the shipping container, moisture on the device **must be completely removed**.
+- For long-term storage (more than a month), it is recommended to recharge the built-in power supply of the station;
+- To remove contamination from the device housing and after working in seawater, rinsing in fresh water is necessary. A weak solution of household detergents may be used with the battery compartment cover closed; when rinsing, avoid getting moisture and/or detergents into the open headset connector;
+- Bending the cables to a radius of less than 5 cm is not allowed;
+- Applying torsional forces to the underwater acoustic transducer or the cable entry is not allowed;
+- Before placing the device in the transport case, **all moisture must be completely removed** from it.
 
-> **PROHIBITED:**  
->  
-> **- OPENING EQUIPMENT FROM THE DELIVERY SET ACCORDING TO [p. 1.4.](#14-equipment-set)**  
-> **- ACCESS TO USE OF EQUIPMENT FROM THE DELIVERY SET ACCORDING TO [p. 1.4.](#14-equipment-set) PERSONS WHO ARE NOT FAMILIAR WITH THESE INSTRUCTIONS**  
-> **- ACCESS TO USE OF EQUIPMENT FROM THE DELIVERY SET ACCORDING TO [p. 1.4.](#14-equipment-set) PERSONS UNDER THE ADVANCED**  
-
-
-### 3.2. Charging the device
-Charging the built-in power supply of the station is allowed only with the supplied charger when the headset is disconnected.
-Before using the charger, read the instruction manual for the charger.
-To charge the device, you must install it in the charging cradle and connect the supplied charger to the household electrical network.
-The end of the charge is determined by the indicator of the complete mains charger. It is recommended to leave the device on charge for another 1-1.5 hours after the end of charging according to the indicator on the network adapter.
-
-Charging chassis installation is shown in Figure 3:
-
-| ![RedPhone-DX](/documentation/redphone_dx_charging_cradle.png) |
-| :---: |
-| **Fig 3 - Charging chassis installation** |
+> **PROHIBITED:**
+>
+> **- OPENING THE EQUIPMENT FROM THE DELIVERY SET LISTED IN [section 1.4.](#14-delivery-set)**  
+> **- ALLOWING PERSONS WHO ARE NOT FAMILIAR WITH THESE INSTRUCTIONS TO USE THE EQUIPMENT FROM THE DELIVERY SET LISTED IN [section 1.4.](#14-delivery-set)**  
+> **- ALLOWING PERSONS WHO HAVE NOT REACHED THE AGE OF MAJORITY TO USE THE EQUIPMENT FROM THE DELIVERY SET LISTED IN [section 1.4.](#14-delivery-set)**  
 
 
-### 3.3. Configuration
+### 3.2. Charging the built-in power supply
+The built-in power supply of the station may be charged only with the supplied charger, connected via the connector.
+Before using the charger, read the charger's operating instructions.
+To charge the device, connect it to the supplied charger, then connect the charger to a household power outlet.
+The end of charging is shown by the indicator on the supplied mains charger. After the indicator on the mains adapter shows that charging has finished, it is recommended to leave the device on charge for another 1–1.5 hours.
 
-Station can be configured:
-- one of the supported communication channels from [Table 1](#table-1---correspondence-between-channel-number-and-signal-parameters)
-- compatibility mode with tracking system [RWLT](/documentation/EN/RWLT/RWLT_DataBrief_en.md)
-- Address (diver ID) for tracking system
-- System channel ID [RWLT](/documentation/EN/RWLT/RWLT_DataBrief_en.md) (Reserved for future versions, should be 0)
 
-To wirelessly connect the station to a PC, follow these steps:
+### 3.3. Station configuration
+
+The following can be configured on the station:
+- one of the supported communication channels from [Table 1](#table-1---correspondence-of-the-channel-number-and-signal-parameters)
+- compatibility mode with the [RWLT](/documentation/EN/RWLT/RWLT_DataBrief_en.md) tracking system
+- Address (diver identifier) for the tracking system
+- Channel identifier of the [RWLT](/documentation/EN/RWLT/RWLT_DataBrief_en.md) system (reserved for future versions, must be 0)
+- VAD (Voice Activity Detector) sensitivity and volume of the alert signals
+
+The station is configured by connecting it to a PC or using an Android-based device. In both cases, connect the station to the device using the USB service cable and switch the station on. 
+When connecting to a smartphone or tablet running Android or HarmonyOS, an additional USB adapter, which is not included in the delivery set, may be required.
 
 #### 3.3.1. Step 1
 
-Download the [RedPhoneDXConfig](https://github.com/ucnl/RedPhoneDXConfig/releases/download/1.0/RedPhoneDXConfig.zip) utility (requires PC with Windows 8 or higher).
-The application does not require installation: just unzip the archive to a location convenient for you.
+To configure the station using an Android or HarmonyOS device, download and install the latest version of the [UCNLLauncher](https://github.com/ucnl/UCNLLauncher/releases) application.
+
+To configure the station using a PC, use the online utility (PWA) [RedPhone DX Config](https://docs.unavlab.com/RedPhoneDXConfig-Web/). The online utility requires a *Chromium*-based browser, such as Google Chrome, Edge, Vivaldi or Opera. 
+If you need to configure the station using a PC without an Internet connection, you can save the application locally by downloading the [archive](https://github.com/ucnl/RedPhoneDXConfig-Web/archive/refs/heads/main.zip) and unpacking it to a convenient location. To launch it, open index.html.
 
 #### 3.3.2. Step 2
 
-Disconnect the USB dongle from the PC if connected.
+Disconnect the service cable from the PC or the Android/HarmonyOS device if it is connected.
 
 #### 3.3.3. Step 3
 
-Run the application **RedPhoneDXConfig.exe**
+If you are using a PC, open the [RedPhone DX Config](https://docs.unavlab.com/RedPhoneDXConfig-Web/) application page. If you are using an Android/HarmonyOS device, launch the [UCNLLauncher](https://github.com/ucnl/UCNLLauncher/releases) application.
 
 #### 3.3.4. Step 4
 
-In the **RedPhone DX Dongle PORT** combo box, pay attention to the ports already present:
+Connect the service cable to the RedPhone-DX station and switch the station on. 
+To switch the device on without immersing it in water, you can place a wet wipe on the contacts shown in the figure:
 
-| ![Step 4](/documentation/rpdx_cfg1.png) |
+| ![](/documentation/rpdx_cfg4.png) |
 | :---: |
-| Step 4 |
+| Contacts for switching the device on |
+
+You can short the contacts with a metal object, provided that the connection is reliable: if the contact between the conductors is lost, the station will switch off instantly.
+You can also put the device in a container of water with the transducer down so that only the transducer and the contacts are covered with water. 
+
+Make sure that the contact is reliable and the station is switched on: you will hear the switch-to-receive-mode tone in the headphones. If the channel number display setting is enabled, the seven-segment indicator on the top surface of the device will blink 1 time per second, showing the current communication channel number.
 
 #### 3.3.5. Step 5
 
-Connect USB dongle to PC, wait a few seconds and click **🗘** (Update) button.
-In some cases, you may need to install a driver on the USB converter.
-The new port that appears in the list corresponds to the port of the dongle. It must be selected:
+Connect the service cable to the PC or to the Android/HarmonyOS device.
+In some cases, it may be necessary to install a driver for the USB converter.
 
-| ![Step 5](/documentation/rpdx_cfg2.png) |
+On the PC, press the "Connect" button in the application, after which the browser will display a port selection dialog. Select the required port (usually USB Serial Port (COMXX), where XX is the port number). Then press the "Connect" button.
+
+| ![step 5](https://github.com/user-attachments/assets/d261cb76-f66b-4c0a-a5d9-efc5491eb119) |
 | :---: |
-| Step 5 |
+| Step 5a (PC) |
+
+On an Android/HarmonyOS device, in the **UCNLLauncher** application, press the **RedPhoneDXConfig** button. Then press the "Connect" button.
+
+> Allow the application to access USB. The application may request access to geolocation, which is required by other applications, for example AzimuthWebSuite. Access to geolocation is not required for configuring RedPhone-DX diver stations.
+
+| ![step 5a](https://github.com/user-attachments/assets/8eaed6c2-c524-41bc-b992-efe7007d0d6e) |
+| :---: |
+| Step 5b (Android/HarmonyOS) |
 
 #### 3.3.6. Step 6
 
-The wireless connection is established exclusively, which means that at one time the configuration work is carried out with only one device [RedPhone-DX](RedPhone_DX_Specification_en.md).
-Place the device to be configured up to 5 meters away from the USB dongle.
-To turn on telephony without immersing it in water: you can use a wet cloth by placing it on the contacts shown in the figure:
+If the station is switched on and the connection is established, the application screen will display information about the device:
 
-| ![Step 6](/documentation/rpdx_cfg4.png) |
+In the "Connection" section:
+
+- Device type
+- Serial number
+- Firmware version
+- Current settings
+
+| ![step 6](https://github.com/user-attachments/assets/f4c07b51-6d96-4d46-85fc-d31e400d4752) |
 | :---: |
 | Step 6 |
 
-You can close the contacts with a metal object, provided that the connection is reliable: if the contact between the conductors is lost, the station will instantly turn off.
-You can also put the device in a container of water with the antenna down so that only the antenna and contacts are covered with water. Otherwise, water will interfere with radio communication.
+In the "SETS2 Settings" section:
 
-#### 3.3.7. Step 7
+- Communication channel number from [Table 1](#table-1---correspondence-of-the-channel-number-and-signal-parameters)
+- Volume of the sound effects (when switching to receive/transmit mode, when the charge of the built-in power supply is low)
+- VAD (Voice Activity Detector) sensitivity
+- Threshold for the low charge alert of the built-in power supply
+- Tracking function enabled/disabled flag (RWLT Mode).
+  - diver's address (identifier) in the [RWLT](/documentation/EN/RWLT/RWLT_DataBrief_en.md) system.
+  - channel identifier of the [RWLT](/documentation/EN/RWLT/RWLT_DataBrief_en.md) system (reserved for future use, must always be 0)
 
-In the app, press the **CONNECTION** button. If everything is done correctly, then the text field **RedPhone DX Device Information** will display information about the device:
+The "Flags" subsection contains low-level device settings.
+- Bit 0 (PinsPrevail). If the function is active, the device will ignore the communication channel settings (the channel will always be 1).
+- Bits 1 to 6 are reserved for future versions
+- Bit 7 (CH Indicator). If the function is active, the device uses the seven-segment indicator to display the current communication channel number and to indicate a low charge of the built-in power supply. When the voltage is below the set threshold, the indicator blinks 2 times per second. At normal voltage, it blinks 1 time per second.
 
-- Serial number
-- The name of the system, its version, as well as the name and version of the communication subsystem
+After changing the settings, transfer them to the device by pressing the "Save Settings" button.
 
-The **RedPhone DX Device settings** field will display the current device settings:
+> CAUTION! For the settings to be saved in the internal flash memory of the device, the "Write to Flash" checkbox must be selected.
 
-- communication channel number from [Table 1](#table-1---correspondence-between-channel-number-and-signal-parameters)
-- indication of enabled/disabled tracking function
-- diver's address (identifier) in the [RWLT](/documentation/EN/RWLT/RWLT_DataBrief_en.md) tracking system
-- [RWLT](/documentation/EN/RWLT/RWLT_DataBrief_en.md) system channel identifier (reserved for future use, should always be 0)
+> We recommend using channel 8, because the frequency band used in this channel allows the most efficient use of the analog path of the [RedPhone-DX](RedPhone_DX_Specification_en.md) and [RedPhone-OS](RedPhone_OS_Specification_en.md) stations.
 
-| ![шаг 7](/documentation/rpdx_cfg3.png) |
-| :---: |
-| Step 7 |
+> **When diving together, always check carefully that all devices are set to the same channel!**
 
-#### 3.3.8 Station settings
+The **RWLT Mode** checkbox controls the built-in diver tracking function. When the tracking function is enabled, at the end of each voice transmission from a diver (after the PTT button is released), the station will emit a special navigation signal that is received by the buoys of the [RWLT](/documentation/EN/RWLT/RWLT_DataBrief_en.md) system, which makes it possible to determine the geographic position of the diver. 
 
-After the  wireless connection is established, in the **RedPhone DX Device settings** field, the user can set one of the communication channels supported by the station using the **Channel** input field.
+The **RWLT Diver ID** input field sets the address (identifier) of the diver that will be displayed on the map. 
 
-> We recommend using **channel number 8**, because the frequency band used in this channel allows the most efficient use of the analog circuitry of the [RedPhone-DX](RedPhone_DX_Specification_en.md) and [RedPhone-OS](RedPhone_OS_Specification_en.md) stations.
+> When working with the [RWLT](/documentation/EN/RWLT/RWLT_DataBrief_en.md) system, it is very important to set a different address on each diver station, otherwise the locations of different divers with the same addresses will be displayed as a single track.
 
-> **Always make sure that all devices are set to the same channel when diving together!**
-
-The **RWLT Pinger enabled** checkbox controls the built-in diver tracking feature. When the tracking function is enabled, at the end of each voice transmission from a diver (after releasing the PTT), the station will transmitt a special navigation signal that is received by the buoys of the [RWLT](/documentation/RU/RWLT/RWLT_DataBrief_en.md) system, which allows to determine the geographical position of the diver .
-
-The **RWLT Diver's ID** input field specifies the diver's address (identifier) to be displayed on the map.
-
-> When working with the [RWLT](/documentation/EN/RWLT/RWLT_DataBrief_en.md) system, it is very important to set different addresses for all diving stations, otherwise the locations of different divers with the same addresses will be displayed as a single track.
-
-If you do not plan to use the tracking system [RWLT](/documentation/EN/RWLT/RWLT_DataBrief_en.md) be sure to uncheck **RWLT Pinger enabled**, this will save battery power and eliminate an additional pause after a voice transmission during which navigation signal is being transmitted.
-
-The current version of the system does not use the **RWLT Channel** setting. Be sure to leave this field set to zero.
-
-To save the settings to a station, press the **APPLY SETTINGS** button. Based on the results, a pop-up window will be displayed confirming the successful recording of new settings:
-
-| ![шаг 8](/documentation/rpdx_cfg5.png) |
-| :---: |
-| Settings successfully updated |
-
-If it doesn't, check if the dongle and/or station has been disconnected and try again, make sure the station is not turned off or discharged.
-If the error persists, contact the developer.
-
+If you do not plan to use the [RWLT](/documentation/EN/RWLT/RWLT_DataBrief_en.md) tracking system, be sure to clear the **RWLT Mode** checkbox: this will save battery power and eliminate the additional pause after a voice transmission during which the navigation signal is emitted.
 
 <div style="page-break-after: always;"></div>
 
-## 4. Liability and disclaimer
-### 4.1 Terms of replacement and free warranty service
-The manufacturer’s warranty applies only to factory defects that were discovered during the operation of the device in accordance with this manual during the warranty period (2 years from the date of purchase).
+## 4. Obligations and disclaimer
+### 4.1. Terms of replacement and free warranty service
+The manufacturer's warranty applies exclusively to factory defects detected during operation of the device in accordance with this manual during the warranty period (2 years from the date of purchase).
 
-The manufacturer guarantees free repair or replacement of faulty equipment from the equipment set that has failed due to a factory defect.
+The manufacturer guarantees free repair or replacement of faulty equipment from the delivery set that has failed due to a factory defect.
 
-The reasons for refusing free warranty service, free repair and replacement include:
-- any **mechanical damage** of the equipment supplied according to [p. 1.4.](#14-equipment-set), Including violation of insulation of wires and cables;
-- any **damage caused by exposure to moisture and pollution** due to improper use of the equipment from the equipment set according to [p. 1.4.](#14-equipment-set);
-- any **electrical damage** caused by **use of not original accessories** (charger, headset etc.);  
-- any **signs of self-repair and/or opening** of the equipment from the equipment set according to [p. 1.4.](#14-equipment-set).
+The grounds for refusing free warranty service, free repair and replacement include:
+- any **mechanical damage** to the equipment from the delivery set specified in [section 1.4.](#14-delivery-set), including damage to the insulation of wires and cables;
+- any **damage caused by exposure to moisture and contamination** due to improper use of the equipment from the delivery set specified in [section 1.4.](#14-delivery-set);
+- any **electrical damage** caused by the use of accessories not included in the delivery set (charger), or by the use of poor-quality and/or failed batteries. Accessories supplied by the manufacturer or its representative to replace faulty or lost ones are not considered to be outside the delivery set;
+- any **traces of unauthorized repair and/or opening** of the equipment from the delivery set specified in [section 1.4.](#14-delivery-set).
 
-<div style = "page-break-after: always;"> </div>
+<div style="page-break-after: always;"></div>
 
-### 4.2 Disclaimer of the manufacturer
-_____________
-
-_**ANY OF THE PARTS OF THE EQUIPMENT SET ACCORDING TO [par. 1.4.](#14-equipment-set) SEPARATELY AND IN THE COMPOSITION OF THE SYSTEM, NAME FURTHER "DELIVERED EQUIPMENT":**_  
-
-_**- ARE NOT DESIGNED FOR WATER RESCUE USE**_  
-_**- NOT TESTED AS RESCUE EQUIPMENT**_  
-_**- NOT RESCUE EQUIPMENT**_  
-_**- THE MANUFACTURER DECLARES THAT THE DELIVERED EQUIPMENT IS SAFE WHEN OPERATING ACCORDING TO THESE INSTRUCTIONS AND IS NOT RESPONSIBLE FOR ANY CONSEQUENCES OF USE OF THE DELIVERED EQUIPMENT**_  
+### 4.2. Limitation of the manufacturer's liability
 
 _____________
 
-<div style = "page-break-after: always;"> </div>
+_**ANY PARTS OF THE DELIVERY SET LISTED IN [section 1.4.](#14-delivery-set), SEPARATELY AND AS PART OF A SYSTEM, HEREINAFTER REFERRED TO AS THE "SUPPLIED EQUIPMENT":**_
+
+_**- WERE NOT DEVELOPED AS A MEANS OF RESCUE;**_  
+_**- WERE NOT TESTED AS RESCUE EQUIPMENT;**_  
+_**- ARE NOT RESCUE EQUIPMENT.**_  
+
+_**THE MANUFACTURER DECLARES THAT THE SUPPLIED EQUIPMENT IS SAFE WHEN USED IN ACCORDANCE WITH THESE INSTRUCTIONS, AND IS NOT RESPONSIBLE FOR ANY CONSEQUENCES OF THE USE OF THE SUPPLIED EQUIPMENT.**_
+
+______________
 
 [Back to contents](#contents)
+
+<!-- docs-sync: source=documentation/RU/RedPhone/RedPhone_DX_Users_Manual_ru.md commit=ee96895e5bcf2f7966eeec37e534e3b2201d0ed1 date=2026-07-23 -->
