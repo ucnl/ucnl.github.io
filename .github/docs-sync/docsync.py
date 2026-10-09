@@ -753,7 +753,8 @@ def cmd_check(repo, ru, en):
             if urllib.parse.unquote(tt[1:]) not in anchors:
                 problems.append("anchor not found: %s" % tt)
             continue
-        r, st = resolve(repo, en, tt)
+        m = SELF_RE.match(tt)
+        r, st = resolve(repo, en, (m.group(1) or "/") if m else tt)
         if r is None:
             continue
         if st != "ok":
