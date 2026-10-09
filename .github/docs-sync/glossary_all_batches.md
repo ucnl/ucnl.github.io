@@ -1092,3 +1092,14 @@ Section headings follow the standard 16-section layout of GHS/REACH Annex II saf
 
 No new terms. This batch reuses the approved MSDS and navigation buoy terminology.
 
+
+## Added in batch a3s-2
+
+| RU | EN | Source EN file | Note |
+|---|---|---|---|
+| антенная решетка | transducer array | A3S/A3S_Users_Manual_en.md | |
+| кросс-плата | backplane | A3S/A3S_Users_Manual_en.md | |
+| статическая ошибка | static error | A3S/A3S_Users_Manual_en.md | |
+| послезвучание; реверберация | reverberation | A3S/A3S_Users_Manual_en.md | |
+| линейная аппроксимация | linear approximation | A3S/A3S_Users_Manual_en.md | |
+| среднеквадратичное отклонение; СКО | standard deviation; SD | A3S/A3S_Users_Manual_en.md | Statistical dispersion of angle-of-arrival measurements |

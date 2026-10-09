@@ -9,7 +9,7 @@ This branch (`docs-sync/state`) is a progress record and is not intended for mer
 | Phase | Status |
 |---|---|
 | 1. Inventory and plan | Completed and merged (#2) |
-| 2. Translation batches | 29 of 30 batches completed; 106 EN documents in completed batches |
+| 2. Translation batches | 30 of 30 batches completed; 107 EN documents in completed batches |
 | 3. Index pages, README and deferred links | Starts after all batch PRs are merged |
 | 4. Final QA | Follows Phase 3 |
 
@@ -48,6 +48,7 @@ All batch PRs below are drafts targeting master. Each document passed the contro
 | #32 | `docs-sync/redline-1` | 3 | RedLine_Specification, RedLINE_Protocol_Specifications, RedLINE_wiring_diagram |
 | #33 | `docs-sync/misc-1` | 2 | RedPhone_OS_MSDS, RedPhone_DX_MSDS |
 | #34 | `docs-sync/misc-2` | 2 | WAYU_GIB_MSDS, RedBase_v3_LiFEPO4_msds |
+| #35 | `docs-sync/a3s-2` | 1 | A3S_Users_Manual |
 
 ## Repository instructions
 
@@ -55,7 +56,7 @@ Draft PR #30 (`docs-sync/agents-md`) adds the maintainer-supplied AGENTS.md, the
 
 ## Remaining Phase 2 work
 
-Batches: `a3s-2`.
+All 30 translation batches are complete.
 
 ## Resuming
 
