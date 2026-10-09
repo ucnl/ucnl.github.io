@@ -827,3 +827,30 @@ Section headings follow the standard 16-section layout of GHS/REACH Annex II saf
 | Как меня поняли? Прием | How do you read me? Over | RedPhone/RedPhone_PM_en.md | Radio check; `Слышу вас на X баллов из 10` → `I hear you X out of 10` |
 | по телефонной связи (повторить слово) | over the underwater telephone link | RedPhone/RedPhone_PM_en.md | |
 | Н/п | N/A | RedPhone/RedPhone_PM_en.md | |
+
+## Added in batch wayu-1
+
+| RU | EN | Source EN file | Note |
+|---|---|---|---|
+| Наши проекты для образования (раздел) | Educational projects | WAYU/*_en.md | Breadcrumb section of the WAYU documents, index page `/educational_projects_en` |
+| Автоматическое включение от воды / в воде | Automatic activation in water | WAYU/WAYU_DataBrief_en.md (+3), RWLT/RWLT_GIB_Specification_en.md | |
+| Навигационный гидроакустический маяк-пингер | Underwater acoustic navigation pinger beacon | WAYU/WAYU_DataBrief_en.md | |
+| Радиодонгл - приемник навигационных буев | Radio dongle - navigation buoy receiver | WAYU/WAYU_DataBrief_en.md | |
+| Решаемые задачи | Tasks to be solved | WAYU/WAYU_DataBrief_en.md, RedWAVE/RedWAVE_DataBrief_en.md | |
+| Отличительные черты | Distinctive features | WAYU/WAYU_DataBrief_en.md | |
+| От каждого до каждого из буев должно быть не более … | The distance between any two buoys must be no more than … | WAYU/WAYU_DataBrief_en.md | |
+| НАЗНАЧЕНИЕ ЖИЛ КАБЕЛЯ И РАСПИНОВКА | CABLE WIRE ASSIGNMENT AND PINOUT | WAYU/WAYU_Pinger_Specification_en.md | |
+| № КОНТАКТА РАЗЪЕМА | CONNECTOR PIN No. | WAYU/WAYU_Pinger_Specification_en.md | |
+| интегрируемое / автономное исполнение | integrated / standalone version | WAYU/WAYU_Pinger_Specification_en.md | |
+| неразделанный кабель | unterminated cable | WAYU/WAYU_Pinger_Specification_en.md | |
+| подводные аккумуляторные сборки | underwater battery packs | WAYU/WAYU_Pinger_Specification_en.md | |
+| U<sub>пит.</sub> | U<sub>supply</sub> | WAYU/WAYU_Pinger_Specification_en.md | |
+| этилвинилацетат (EVA) | ethylene-vinyl acetate (EVA) | WAYU/WAYU_GIB_Specification_en.md | |
+| ЗАРЯДКА / ВРЕМЯ ЗАРЯДА ВСТРОЕННОЙ АКБ | CHARGING / CHARGING TIME OF THE BUILT-IN BATTERY | WAYU/WAYU_GIB_Specification_en.md | |
+| разгрузочный кранец | relief fender | WAYU/WAYU_Users_Manual_en.md | |
+| в акватории | in the operating area | WAYU/WAYU_Users_Manual_en.md | |
+| выпуклый четырехугольник | convex quadrilateral | WAYU/WAYU_Users_Manual_en.md | |
+| Горит красным / Не горит (индикатор) | Lit red / Off | WAYU/WAYU_Users_Manual_en.md | |
+| схема установки | installation layout | WAYU/WAYU_Users_Manual_en.md | |
+| шлюз (канала) | lock | WAYU/media.md | Old EN "Gateway" |
+| Yandex карты | Yandex Maps | WAYU/media.md | |
