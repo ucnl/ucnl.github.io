@@ -1,32 +1,32 @@
-[Main](/../../) ❯ [Navigation & tracking systems](/navigation_and_tracking_systems_en) ❯ **uTrackDiver application: User’s manual**
+[Main](/) ❯ [Navigation & tracking systems](/navigation_and_tracking_systems_en) ❯ **uTrackDiver: User's manual**
 
 > ℹ This document can be printed directly from your browser.
 > For best results:
-> - select the range of pages to print, excluding the first and last
-> - in advanced settings, disable footers and headers
+> - select the range of pages to print, excluding the first and last pages
+> - in the advanced settings, disable headers and footers
 
 <div style="page-break-after: always;"></div>
 
-| ![logo](/documentation/sm_logo.png) | ![image](https://github.com/ucnl/ucnl.github.io/assets/24439946/355e1ec3-e7b2-47fc-8498-decc0e868876) |
+| ![logo](/documentation/sm_logo.png) | ![image](https://github.com/ucnl/ucnl.github.io/assets/24439946/88cc0587-952c-4a67-9504-3bb63afc86f7) |
 | :---: | ---: |
-| [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **uTrackDiver application <br/> User's manual** |
+| [www.unavlab.com](https://www.unavlab.com/) <br/> [support@unavlab.com](mailto:support@unavlab.com) | **uTrackDiver** - Application for tracking divers using the RWLT system <br/> User's manual |
 
 # uTrackDiver <br/> User's manual
 
 <div style="page-break-after: always;"></div>
 
 ## Contents
+
 - [1. Introduction](#1-introduction)
 - [2. Application interface and functions](#2-application-interface-and-functions)
-  - [2.1. Application Settings](#21-application-settings)
+  - [2.1. Application settings](#21-application-settings)
   - [2.2. Main window](#22-main-window)
-    - [2.2.1. Main toolbar](#221-main-toolbar)
-    - [2.2.2. Map Toolbar](#222-map-toolbar)
+    - [2.2.2. Map toolbar](#222-map-toolbar)
     - [2.2.3. Map panel](#223-map-panel)
     - [2.2.4. Additional information field](#224-additional-information-field)
     - [2.2.5. Log field](#225-log-field)
     - [2.2.6. Diver list toolbar](#226-diver-list-toolbar)
-    - [2.2.7. List of divers](#227-list-of-divers)
+    - [2.2.7. Diver list](#227-diver-list)
     - [2.2.8. Legend field](#228-legend-field)
     - [2.2.9. Scale bar](#229-scale-bar)
     - [2.2.10. Panel of switches for displayed diver parameters](#2210-panel-of-switches-for-displayed-diver-parameters)
@@ -36,149 +36,150 @@
 
 ## 1. Introduction
 
-The [🤿 uTrackDiver](https://github.com/ucnl/uTrack/releases/download/beta/uTrackDiver.zip) application is designed to track the position of divers equipped with wireless voice communication diving stations [RedPhone-DX](https://docs.unavlab.com/documentation/EN/RedPhone/RedPhone_DX_Specification_en.html).
+To track the position of divers equipped with [RedPhone-DX](https://docs.unavlab.com/documentation/EN/RedPhone/RedPhone_DX_Specification_en.html) wireless voice communication diver stations, the [🤿 uTrackDiver](https://github.com/ucnl/uTrack/releases/download/beta/uTrackDiver.zip) application must be installed on the operator's PC.
 
-Download the necessary software in advance. No installation is required - just unzip the contents of the archive to a location convenient for you.
+Download the necessary software in advance. No installation is required - just unpack the contents of the archive to any convenient location.
 
 ## 2. Application interface and functions
 
-### 2.1. Application Settings
+### 2.1. Application settings
 
-We suggest starting your acquaintance with the application with its settings. The figure below shows a general view of the settings window; it can be called up by clicking the **'⚙ SETTINGS'** button on the main toolbar of the main application window.
+We suggest starting with the application settings. The figure below shows an overview of the settings window. To open it, click the **'⚙ SETTINGS'** button on the main toolbar of the main application window.
 
 | |
 | :---: |
 | ![1](/documentation/uTrackDiver_settingswindow_1.png)|
 | Settings window controls |
-| _1 - Indicator of using an additional source of navigation data (GNSS receiver), 2 - Drop-down list of port speed of an additional source of navigation data, 3 - Indicator of using the first buoy as an additional source of navigation data, 4 - List of servers-sources of map tiles, 5 - Button reset settings to default settings, 6 - Indicator for automatic selection of salinity (from the database), 7 - Input field for salinity, 8 - Indicator for auto-calculation of sound speed, 9 - Input field for sound speed, 10 - Input field for water temperature, 11 - Number of points track for display, 12 - Radial error threshold input field, 13 - Drop-down list for selecting the size of map tiles, 14 - Buttons for accepting settings and cancel_ |
+| _1 - Checkbox for using an additional source of navigation data (GNSS receiver), 2 - Drop-down list for the port speed of the additional navigation data source, 3 - Checkbox for using the first buoy as an additional source of navigation data, 4 - List of map tile servers, 5 - Button for resetting the settings to their defaults, 6 - Checkbox for automatic salinity selection (from the database), 7 - Salinity input field, 8 - Checkbox for automatic speed of sound calculation, 9 - Speed of sound input field, 10 - Water temperature input field, 11 - Number of track points to display, 12 - Radial error threshold input field, 13 - Drop-down list for selecting the map tile size, 14 - Buttons for accepting settings and canceling_ |
 
-The receiving radio modem is connected to the PC via a USB port. The application itself searches for a virtual serial port and does not require the user to specify any settings.
+The receiving radio modem connects to the PC via a USB port. The application automatically searches for the virtual serial port, so the user does not need to specify any settings.
 
-- In some situations, it is convenient for the operator to see his own location on the map; this can be achieved in two ways: the first is to connect an additional GNSS receiver to the PC. In this case, the application needs to indicate that this method is used by checking the box 1 **Use AUX GNSS**. Also in this case, you need to specify the speed of the serial port at which the external GNSS receiver operates. The port itself does not need to be specified; the application will detect it itself.
+- In some situations, it is convenient for the operator to see their own location on the map. This can be achieved in two ways. The first is to connect an additional GNSS receiver to the PC. To use this method, select checkbox 1 **Use AUX GNSS**. You also need to specify the serial port speed used by the external GNSS receiver. The port itself does not need to be specified; the application will detect it automatically.
 
-- If there is no external GNSS receiver, but the operator would like to see his own location on the map, you can use the second method: buoy No. 1 can be used as an external GNSS. This method has some limitations, for example, it is not always possible to position the operator next to the buoy; the buoys provide a limited set of navigation information compared to an external GNSS receiver. If this method is applicable to the current task, then you should check box 3 **Base 1 as AUX GNSS Source**. In this case, the checkbox in box 1 will be automatically unchecked.
-  
-- The application allows you to display tracks on top of a map, the tiles of which can be downloaded via HTTPS. The Open Street Maps service is currently supported. Field 4 **Tile servers** indicates the server addresses, and field 13 **Tile size** indicates the size of the tiles in pixels. To download tiles, the application needs access to the Internet.
+- If there is no external GNSS receiver, but the operator would like to see their own location on the map, use the second method: buoy No. 1 can serve as the external GNSS source. This method has some limitations. For example, it is not always possible to position the operator next to the buoy, and the buoys provide a more limited set of navigation information than an external GNSS receiver. If this method is suitable for the current task, select checkbox 3 **Base 1 as AUX GNSS Source**. Checkbox 1 will be cleared automatically.
 
-- Button 5 **SET DEFAULTS** allows you to reset the settings to their default state.
+- The application can display tracks over a map whose tiles can be downloaded via HTTPS. The Open Street Maps service is currently supported. Field 4 **Tile servers** specifies the server addresses, and field 13 **Tile size** specifies the tile size in pixels. The application needs Internet access to download tiles.
 
-- Checkbox 6 **Auto salinity** means that the application will try to determine salinity from the database using the current geographic coordinates. The application contains a database of salinity of the surface of the world's oceans in increments of 1 degree in latitude and longitude. Use this setting only in large bodies of water: seas and oceans. If you work in small inland reservoirs, it is recommended to uncheck 6 and set the appropriate water salinity value in field 7 **Salinity, PSU**. In most cases, for inland freshwater bodies, a value of 0 PSU is adequate. If you have accurate data on the salinity of the reservoir or it can be measured directly, you can also enter it in field 7. The salinity value is used to calculate the speed of sound.
+- Button 5 **SET DEFAULTS** resets the settings to their default values.
 
-- Unchecking 7 **Auto speed of sound** and the corresponding field 9 **Speed of sound, m/s** allows you to set the application a known value for the speed of sound. If you have a direct measurement, otherwise it is recommended to set the checkbox to 7.
+- When checkbox 6 **Auto salinity** is selected, the application will try to determine the salinity from the database using the current geographic coordinates. The application contains a database of ocean surface salinity with a resolution of 1 degree in latitude and longitude. Use this setting only in large bodies of water: seas and oceans. If you work in small inland bodies of water, it is recommended to clear checkbox 6 and enter the appropriate water salinity in field 7 **Salinity, PSU**. In most cases, a value of 0 PSU is adequate for inland freshwater bodies. If you have accurate salinity data for the body of water, or the salinity can be measured directly, you can also enter it in field 7. The salinity is used to calculate the speed of sound.
 
-- Field 10 **Water temperature, °C** allows you to specify the relevant water temperature value to the application. Water temperature is included in the calculation of the speed of sound if the 9 **Auto speed of sound** checkbox is checked. If you are measuring water temperature, it is recommended to take samples some distance from the surface.
+- Clear checkbox 7 **Auto speed of sound** and use the corresponding field 9 **Speed of sound, m/s** to enter a known speed of sound if you have a direct measurement. Otherwise, it is recommended to select checkbox 7.
 
-- Field 11 **Track points to show** tells the application how many points (calculated positions) for each track should be displayed simultaneously. This parameter affects display only. The application additionally stores all received points, which can then be saved.
+- Field 10 **Water temperature, °C** lets you enter the relevant water temperature. The water temperature is used to calculate the speed of sound when checkbox 9 **Auto speed of sound** is selected. If you measure the water temperature, it is recommended to take samples some distance from the surface.
 
-- Field 12 **Radial error threshold, m** indicates the radial error threshold (the value of the residual function at the end of solving the navigation problem), above which the calculated location is considered erroneous and discarded. It is recommended to set this value within 10 meters.
+- Field 11 **Track points to show** tells the application how many points (calculated positions) to display simultaneously for each track. This parameter affects the display only. The application also stores all received points, which can then be saved.
 
-- Buttons 14 **OK** and **CANCEL** are responsible for saving settings and canceling changes, respectively. After changing and saving the settings, the application will request a restart for the settings to take effect.
+- Field 12 **Radial error threshold, m** specifies the radial error threshold (the value of the residual function at the end of solving the navigation problem), above which the calculated position is considered erroneous and discarded. It is recommended to set this value within 10 meters.
+
+- Buttons 14 **OK** and **CANCEL** save the settings and cancel changes, respectively. After you change and save the settings, the application will request a restart for the settings to take effect.
+
 
 ### 2.2. Main window
 
-Let's now look at the main application window. Its general view, indicating the main controls, is shown in the figure below.
+An overview of the main application window, with its main controls labeled, is shown below.
 
 | |
 | :---: |
 | ![1](/documentation/uTrackDiver_mainwindow_1.png)|
 | Main elements of the main application window |
-| _1 - Main toolbar, 2 - Map toolbar, 3 - Map field, 4 - Additional information field, 5 - Log field, 6 - Diver list toolbar, 7 - Diver list, 8 - Track designation field, 9 - Scale bar , 10 - Panel of switches for the displayed parameters of divers, 11 - Status line_ |
+| _1 - Main toolbar, 2 - Map toolbar, 3 - Map field, 4 - Additional information field, 5 - Log field, 6 - Diver list toolbar, 7 - Diver list, 8 - Track designation field, 9 - Scale bar, 10 - Panel of switches for displayed diver parameters, 11 - Status line_ |
 
 #### 2.2.1. Main toolbar
 
 - 1 - The main toolbar is located at the top of the window and contains the following elements:
-   - **🔌 LINK** button - controls the connection to the receiving radio modem and external GNSS receiver.
-   - Button **⚙ SETTINGS** - calls the settings editor. This button is not available when the connection is on or when playing a log file
-   - Menu **📖 LOG** - contains functions for working with log files
-     - Item **👀 View current** - open the current log file in the application associated with the 'log' extension (usually Notepad)
-     - Item **▶ Playback...** - select a log file for playback in real time. This function allows you to almost completely restore the progress of work performed and, for example, restore a track that was not saved.
-     - Item **🧹Remove empty entries** - clearing the LOG directory in the application folder: all log files smaller than 2 kilobytes in size and all empty folders will be deleted
-     - Item **🗜 Archive all entries...** - packing the entire folder with log files into a Zip archive.
-     - Item **🗑 Clear all** - deletes all application log files. **Be careful! All files will be deleted without the possibility of recovery!!!**
-     - Point **🧹+🗜+🗑 Do them all...** - Deleting all empty folders, log files less than 2 kilobytes, packing the remaining log files into a Zip archive and deleting the originals in the LOG folder of the application.
-   - Menu **🛠 UTILS** - contains additional functions
-     - Submenu **🗺 TRACKS** - functions for working with tracks
-       - Item **💾 Export...** - saving tracks in one of the supported formats through the system dialog
-       - Item **🗑 Clear** - clearing tracks contained in the application memory
-   - The input field and the **📝 ADD NOTE** button are used to enter comments into the log file. You can simply type a text comment and press **Enter** regardless of which control has focus. Comments are saved with a timestamp, and in the future, when the log file is played back, the comments will be displayed at the corresponding point in time. This function allows you to quickly save any text notes about the progress of work.
-   - Button **ℹ INFO** - calls up a dialog with information about the application and links to additional information on the system.
-     
-#### 2.2.2. Map Toolbar
+  - The **🔌 LINK** button controls the connection to the receiving radio modem and the external GNSS receiver.
+  - The **⚙ SETTINGS** button opens the settings editor. This button is unavailable while the connection is active or a log file is being played back.
+  - The **📖 LOG** menu contains functions for working with log files:
+    - **👀 View current** opens the current log file in the application associated with the 'log' extension (usually Notepad).
+    - **▶ Playback...** selects a log file for playback in real time. This function allows you to reconstruct almost the entire course of an operation and, for example, recover a track that was not saved.
+    - **🧹 Remove empty entries** cleans up the LOG directory in the application folder: all log files smaller than 2 kilobytes and all empty folders will be deleted.
+    - **🗜 Archive all entries...** packs the entire folder of log files into a Zip archive.
+    - **🗑 Clear all** deletes all application log files. **Be careful! All files will be deleted without the possibility of recovery!!!**
+    - **🧹+🗜+🗑 Do them all...** deletes all empty folders and log files smaller than 2 kilobytes, packs the remaining log files into a Zip archive, and deletes the originals from the application's LOG folder.
+  - The **🛠 UTILS** menu contains additional functions:
+    - The **🗺 TRACKS** submenu contains functions for working with tracks:
+      - **💾 Export...** saves tracks in one of the supported formats through a system dialog.
+      - **🗑 Clear** clears the tracks stored in the application's memory.
+  - The input field and the **📝 ADD NOTE** button are used to enter comments into the log file. You can simply type a text comment and press **Enter** regardless of which control has focus. Comments are saved with a timestamp and are displayed at the corresponding time during log playback. This function allows you to quickly save text notes about the progress of an operation.
+  - The **ℹ INFO** button opens a dialog with information about the application and links to additional information about the system.
+
+#### 2.2.2. Map toolbar
 
 - 2 - The map toolbar is located below the main toolbar on the left and contains the following elements:
-   - Button **⛯** - enable/disable display of base points (buoys). Sometimes it may be necessary to turn off the display of buoy positions on the map in order to zoom in and be able to view the divers' movements in more detail. Changes in the state of this button are automatically saved and played back when playing log files.
-   - Button **📜** - enable/disable display of the log text field (5). Changes in the state of this button are automatically saved and played back when playing log files.
-   - Button **⋮** - enable/disable display of 'legend' - list of track designations (8). Changes in the state of this button are automatically saved and played back when playing log files.
-   - Button **📑** - enable/disable display of the comments field (NOTES). Changes in the state of this button are automatically saved and played back when playing log files.
-   - Button **👽** - enable/disable display of the additional information field (4). Changes in the state of this button are automatically saved and played back when playing log files.
-   - Button **⎙** - used to save a screenshot of the main application window. Screenshots are saved in the **SCREENSHOTS** directory in the application folder. The name of the last saved screenshot is displayed in the status bar (11).
-   - The **♻ RESET VIEW** button allows you to reset the current view and displayed tracks.
-- 3 - Map field - serves to display divers’ movement tracks, buoy positions on the base map, as well as:
-   - vertical scale bar (9)
-   - application log (5). This field displays the last 4 lines of the application log from bottom to top.
-   - legends (8). The legend matches the color and size of the dots and the name of the track.
-   - comments. To create comments about the progress of work on the fly, the operator simply needs to type them on the keyboard, and the typed text will be displayed in the input field on the main toolbar. By pressing the 'Enter' key, the text will be saved to the log and will be displayed on the right in the map field (if the corresponding switch **'📑'** on the map toolbar is active).
-   - additional navigation information (4).
+  - The **⛯** button shows/hides the base points (buoys). Sometimes you may need to hide the buoy positions on the map to zoom in and view the divers' tracks in more detail. Changes to this button's state are automatically saved and reproduced during log playback.
+  - The **📜** button shows/hides the log text field (5). Changes to this button's state are automatically saved and reproduced during log playback.
+  - The **⋮** button shows/hides the legend - the list of track designations (8). Changes to this button's state are automatically saved and reproduced during log playback.
+  - The **📑** button shows/hides the comments field (NOTES). Changes to this button's state are automatically saved and reproduced during log playback.
+  - The **👽** button shows/hides the additional information field (4). Changes to this button's state are automatically saved and reproduced during log playback.
+  - The **⎙** button saves a screenshot of the main application window. Screenshots are saved in the **SCREENSHOTS** directory in the application folder. The name of the last saved screenshot is displayed in the status line (11).
+  - The **♻ RESET VIEW** button resets the current view and displayed tracks.
+- 3 - The map field displays divers' tracks and buoy positions over the map background, as well as:
+  - the vertical scale bar (9)
+  - the application log (5). This field displays the last 4 lines of the application log from bottom to top.
+  - the legend (8). The legend associates each track name with the color and size of its points.
+  - comments. To create comments about the progress of an operation on the fly, simply type them on the keyboard. The text appears in the input field on the main toolbar. Pressing 'Enter' saves the text to the log and displays it on the right side of the map field (if the corresponding **'📑'** switch on the map toolbar is active).
+  - additional navigation information (4).
 
 #### 2.2.3. Map panel
-  
-- 3 - The map panel is designed to display the map, buoy locations, calculated diver positions and some additional information
+
+- 3 - The map panel displays the map, buoy locations, calculated diver positions and some additional information.
 
 #### 2.2.4. Additional information field
 
-- 4 - The additional information field is located in the upper left part of the map panel and serves to display additional information. The display of this field can be switched using the **👽** button on the map toolbar (2). Each parameter appears on a separate line, starting with a three-letter parameter identifier and a colon, followed by the parameter value and unit of measurement. The time in (MM:SS) format displayed next to the parameter shows how long ago the parameter value was updated. The table below provides a list of all possible identifiers and their descriptions:
+- 4 - The additional information field is located in the upper left part of the map panel and displays additional information. Its visibility can be toggled using the **👽** button on the map toolbar (2). Each parameter appears on a separate line, starting with a three-letter parameter ID and a colon, followed by the parameter value and units. The time in (MM:SS) format displayed next to a parameter shows how long ago its value was updated. The table below lists all possible IDs and their descriptions:
 
-| ID | Description | Units of measurement | Range |
+| ID | Description | Units | Range |
 | :--- | :--- | :--- | :--- |
-| CRS | Course based on external GNSS data | ° | 0 .. 360 |
-| SPD | Speed according to external GNSS | km/h (m/s) | >= 0 |
-| LAT | Latitude according to external GNSS | ° | -90 .. 90 |
-| LON | Longitude according to external GNSS data | ° | -180 .. 180 |
-| STY | Salinity value (from settings or from database) | PSU | 0 .. 40 |
-| WTM | Water temperature value (from settings) | °C | -10 .. +40 |
-| SOS | Sound speed value (from settings or calculated) | m/s | 1300 .. 1600 |
-| B1V | Voltage of the built-in battery of buoy No. 1 | V | 10 .. 13 |
-| B2V | Voltage of the built-in battery of buoy No. 2 | V | 10 .. 13 |
-| B3V | Voltage of the built-in battery of buoy No. 3 | V | 10 .. 13 |
-| B4V | Voltage of the built-in battery of buoy No. 4 | V | 10 .. 13 |
-| B1M | Signal level on buoy No. 1 | dB | 14 .. 36 |
+| CRS | Course from external GNSS data | ° | 0 .. 360 |
+| SPD | Speed from external GNSS data | km/h (m/s) | >= 0 |
+| LAT | Latitude from external GNSS data | ° | -90 .. 90 |
+| LON | Longitude from external GNSS data | ° | -180 .. 180 |
+| STY | Salinity value (from the settings or the database) | PSU | 0 .. 40 |
+| WTM | Water temperature value (from the settings) | °C | -10 .. +40 |
+| SOS | Speed of sound value (from the settings or calculated) | m/s | 1300 .. 1600 |
+| B1V | Built-in battery voltage of buoy No. 1 | V | 10 .. 13 |
+| B2V | Built-in battery voltage of buoy No. 2 | V | 10 .. 13 |
+| B3V | Built-in battery voltage of buoy No. 3 | V | 10 .. 13 |
+| B4V | Built-in battery voltage of buoy No. 4 | V | 10 .. 13 |
+| B1M | Signal level at buoy No. 1 | dB | 14 .. 36 |
 | B2M | Signal level at buoy No. 2 | dB | 14 .. 36 |
 | B3M | Signal level at buoy No. 3 | dB | 14 .. 36 |
 | B4M | Signal level at buoy No. 4 | dB | 14 .. 36 |
 
 #### 2.2.5. Log field
 
-- 5 - The log field is located at the bottom of the map panel and displays the last 4 lines of the application log. The visibility of this field is toggled with the **📜** button on the map toolbar (2).
+- 5 - The log field is located at the bottom of the map panel and displays the last 4 lines of the application log. Its visibility is toggled using the **📜** button on the map toolbar (2).
 
 #### 2.2.6. Diver list toolbar
-  
-- 6 - The **DIVERS** diver list toolbar is located above the diver list on the left side of the main application window. The panel contains the following elements:
-   - Button **🎢** - sorting the list of divers by number.
-   - Button **▼** - collapse all list items.
-   - Button **▲** - expand all list elements.
 
-#### 2.2.7. List of divers
-  
-- 7 - The list of divers **DIVERS** is located on the left side of the main application window. The list has a tree structure, top-level nodes are in the format **Diver #N**, where N is the diver’s identifier, which is set in the settings of the diving communication station [RedPhone-DX](https://docs.unavlab.com/documentation/EN/RedPhone/RedPhone_DX_Specification_en.html) (setting up **RWLT Diver's ID**, for more detailed information please refer to [RedPhone-DX diving station operating instructions](https://docs.unavlab.com/documentation/EN/RedPhone/RedPhone_DX_Users_Manual_en.html)). Child nodes contain information about a given diver known to the system. Each individual parameter is represented by a line that begins with the parameter identifier, followed by the parameter value, separated by a colon. If the value of this parameter was updated more than 3 seconds ago, then the time elapsed since the parameter was updated in the format (MM:SS) is indicated in parentheses. Below is a list of possible parameters:
+- 6 - The **DIVERS** diver list toolbar is located above the diver list on the left side of the main application window. It contains the following elements:
+  - The **🎢** button sorts the diver list by number.
+  - The **▼** button collapses all list items.
+  - The **▲** button expands all list items.
 
-| ID | Description | Units of measurement | Range |
+#### 2.2.7. Diver list
+
+- 7 - The **DIVERS** diver list is located on the left side of the main application window. The list has a tree structure. Top-level nodes have the format **Diver #N**, where N is the diver's ID, set in the [RedPhone-DX](https://docs.unavlab.com/documentation/EN/RedPhone/RedPhone_DX_Specification_en.html) diver communication station settings (**RWLT Diver's ID**; for more information, refer to the [RedPhone-DX diver station user's manual](https://docs.unavlab.com/documentation/EN/RedPhone/RedPhone_DX_Users_Manual_en.html)). Child nodes contain the information known to the system about that diver. Each parameter is represented by a line beginning with the parameter ID, followed by a colon and the parameter value. If the value was last updated more than 3 seconds ago, the elapsed time is shown in parentheses in (MM:SS) format. The possible parameters are listed below:
+
+| ID | Description | Units | Range |
 | :--- | :--- | :--- | :--- |
 | LAT | Calculated latitude | ° | -90 .. 90 |
 | LON | Calculated longitude | ° | -180 .. 180 |
 | RER | Radial error | m | 0 .. 99 |
-| DOP | Geometric factor reducing accuracy | - | - |
-| TBA | The quality of the relative position of the positioned object and reference points | - | - |
-| DST | Distance to diver from position according to external GNSS data | m | 0 .. 1500 |
-| AZM | Direction (course) towards the diver from the position according to external GNSS data | ° | 0 .. 360 |
-| RAZ | Reverse direction (course) from the diver to the position according to external GNSS data | ° | 0 .. 360 |
+| DOP | Geometric dilution of precision | - | - |
+| TBA | Quality of the relative position of the positioned object and reference points | - | - |
+| DST | Distance to the diver from the position provided by external GNSS data | m | 0 .. 1500 |
+| AZM | Direction (course) to the diver from the position provided by external GNSS data | ° | 0 .. 360 |
+| RAZ | Reverse direction (course) from the diver to the position provided by external GNSS data | ° | 0 .. 360 |
 
-The most important parameters here are **AZM**, **DST** and **RAZ**: by azimuth and distance the operator can always understand where a particular diver is located relative to him, and he can report the **RAZ** parameter to the diver via voice communication, so that he, adhering to this course, can carry out the drive.
+The most important parameters here are **AZM**, **DST** and **RAZ**: the azimuth and distance tell the operator where a particular diver is located relative to them. The operator can relay the **RAZ** parameter to the diver via voice communication so that the diver can home in by following that course.
 
-The display of various parameters is switched using the buttons on the panel (10). It should be understood that the parameters associated with the relative position of the diver and the surface point (range, forward and reverse course) can only be determined if there is an external source of navigation data - an external GNSS receiver that sets the system the location of the surface point for tracking divers or when the setting is turned on **Base 1 as AUX GNSS** - when all parameters are determined relative to buoy No. 1.
+Use the buttons on panel (10) to toggle the display of individual parameters. Parameters describing the relative position of the diver and the surface point (range, forward and reverse course) can only be determined when an external navigation data source is available: either an external GNSS receiver provides the system with the position of the surface diver tracking point, or the **Base 1 as AUX GNSS Source** setting is enabled, in which case all parameters are determined relative to buoy No. 1.
 
 #### 2.2.8. Legend field
 
-- 8 - Legend field. Displayed in the upper right corner of the map field. It will display a list of tracks with example track points.
+- 8 - The legend field is displayed in the upper right corner of the map field. It lists the tracks with examples of their points.
 
 #### 2.2.9. Scale bar
 
@@ -186,20 +187,22 @@ The display of various parameters is switched using the buttons on the panel (10
 
 #### 2.2.10. Panel of switches for displayed diver parameters
 
-- 10 - The panel of switches for the displayed parameters of divers is located below the list of divers and switches the visibility of parameters in the list:
-   - **DST** button - turns on/off the display of the distance to the diver. Changes in the state of this button are automatically saved and played back when playing log files.
-   - Button **AZM** - turns on/off the display of the direction **to** the diver. Changes in the state of this button are automatically saved and played back when playing log files.
-   - Button **RAZ** - turns on/off the display of the direction **from** the diver to the position according to the external GNSS receiver. Changes in the state of this button are automatically saved and played back when playing log files.
-   - **LOC** button - turns on/off the display of the diver’s location (latitude and longitude). Changes in the state of this button are automatically saved and played back when playing log files.
-   - Button **RER** - turns on/off the display of the radial error - the value of the residual function at which the solution to the problem of determining the location of the diver ended. Changes in the state of this button are automatically saved and played back when playing log files.
-   - **DOP** button - turns on/off the display of the **DOP** and **TBA** parameters.
+- 10 - The panel of switches for displayed diver parameters is located below the diver list and toggles the visibility of parameters in the list:
+  - The **DST** button shows/hides the distance to the diver. Changes to this button's state are automatically saved and reproduced during log playback.
+  - The **AZM** button shows/hides the direction **to** the diver. Changes to this button's state are automatically saved and reproduced during log playback.
+  - The **RAZ** button shows/hides the direction **from** the diver to the position provided by the external GNSS receiver. Changes to this button's state are automatically saved and reproduced during log playback.
+  - The **LOC** button shows/hides the diver's location (latitude and longitude). Changes to this button's state are automatically saved and reproduced during log playback.
+  - The **RER** button shows/hides the radial error - the value of the residual function at the end of solving the diver positioning problem. Changes to this button's state are automatically saved and reproduced during log playback.
+  - The **DOP** button shows/hides the **DOP** and **TBA** parameters.
 
 #### 2.2.11. Status line
 
-- 11 - Status line. The line displays the status of the radio modem ports and the external source of navigation data (external GNSS receiver), the name of the last saved screenshot or Zip archive into which the log files were packed.
+- 11 - The status line displays the status of the ports for the radio modem and the external navigation data source (external GNSS receiver), and the name of the last saved screenshot or Zip archive containing the log files.
 
 <div style="page-break-after: always;"></div>
-  
-[Back to contents]()
+
+[Back to contents](#contents)
 
 <div style="page-break-after: always;"></div>
+
+<!-- docs-sync: source=documentation/RU/RWLT/uTrackDiver_Users_Manual_ru.md commit=9be58e1dd04a9dd18922aadc7ef61b7e4e52ef8e date=2024-04-18 -->
