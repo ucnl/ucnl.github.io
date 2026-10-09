@@ -463,3 +463,13 @@ Section headings follow the standard 16-section layout of GHS/REACH Annex II saf
 | отсутствует | not applicable | Misc/*_MSDS_en.md (3) | Existing is absent |
 | Литий / Фосфат железа | Lithium / Iron phosphate | Misc/*_MSDS_en.md (3) | |
 | Аккумулятор высокотоковый литий-железофосфатный | High-current lithium iron phosphate (LiFePO4) battery | Misc/RedBase_v3_LiFEPO4_msds_en.md | Header cell |
+
+## Added in batch misc-1
+
+| RU | EN | Source EN file | Note |
+|---|---|---|---|
+| герметично закрытые ячейки | hermetically sealed cells | Misc/RedPhone_OS_MSDS_en.md (+1) | |
+| водяная струя мелкого разбрызгивания | fine water spray | Misc/RedPhone_OS_MSDS_en.md (+1) | |
+| автономный дыхательный аппарат; автономный ВДА | self-contained breathing apparatus; self-contained breathing apparatus (SCBA) | Misc/RedPhone_OS_MSDS_en.md (+1) | |
+| статическая электризация | static electricity buildup | Misc/RedPhone_OS_MSDS_en.md (+1) | |
+| отслужившие аккумуляторные элементы | spent battery cells | Misc/RedPhone_OS_MSDS_en.md (+1) | |
