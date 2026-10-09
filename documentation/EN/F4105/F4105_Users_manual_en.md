@@ -40,7 +40,7 @@
 The system is an easy-to-use and functional solution for raising the line of bottom equipment deployed for a long period (up to 2 months). Uncoupling from the anchor is performed by a reliable screw mechanism, initiated by an addressed command transmitted over the underwater acoustic channel from the water surface (by means of a lowered transducer).
 After uncoupling, the lifting line unwinds from the float-reel, while the lower end of the line remains connected to the anchor (and the bottom equipment). This makes it possible to raise the bottom equipment by the upper end of the line.
 ### 1.2. System composition
-In the current version, the system is structurally represented by three devices:
+The current version of the system consists of three devices:
 - setting device: a standalone surface module designed to issue ascent commands and to set the address;
 - control device: the acoustic wake-up unit, responsible for receiving the addressed signal and issuing the command to the actuator;
 - actuating device: the actuator, containing a screw mechanism for uncoupling from the anchor and a power source, which also powers the control device
@@ -101,7 +101,7 @@ The standard delivery set includes:
 | *Mains charger for the release unit* | *1 pc.* |
 | *Spare sealing ring (O-ring) for the lock nut* | *1 pc.* |
 | *Reel* | *1 pc.* |
-| *Reel lid* | *1 pc.* |
+| *Reel cover* | *1 pc.* |
 | *Line 4 mm* | *50 m* |
 | *Lock nut pin* | *1 pc.* |
 | | |
@@ -112,7 +112,7 @@ The standard delivery set includes:
 
 ## 2. Working with the system
 
-The main scenario of operation of the system consists of the following stages:
+The typical operating sequence consists of the following stages:
 - programming the address of the wake-up unit
 - preparing the actuator with the wake-up unit for deployment together with the bottom equipment
 - deploying the bottom equipment at the required point
@@ -177,7 +177,7 @@ Procedure for checking the wake-up unit and the actuator:
 3. Make sure that toggle switch (11) **Request** is in the **Off** position
 4. Connect the wake-up unit via the adapter to connector (3) **Receiver**
 5. Connect the release unit via the adapter to connector (2) **Actuator**; the lock nut of the actuator must be screwed in
-6. Connect the connected wake-up unit and actuator to each other by the metal parts of their connectors using the jumper with clamps
+6. With the wake-up unit and actuator connected, use the jumper with clamps to connect the metal parts of their connectors to each other
 7. Connect the transducer to the programming and control unit via connector (1) **Antenna**
 8. Place the transducer and the body of the wake-up unit no more than 4 cm from each other, for example on the surface of a table
 9. Switch on the programming and control unit by setting toggle switch (7) **Power** to the **On** position
@@ -251,7 +251,7 @@ Preparation for deployment consists of the following steps:
 | :---: |
 |  Figure 7 - The cord is passed through the hole in the bottom of the reel |
 
-- Step 6. Secure the let-out end of the cord to the lock pin, forming a loop for attaching the anchor, as shown in the figure
+- Step 6. Secure the end of the cord that extends from the reel to the lock pin, forming a loop for attaching the anchor, as shown in the figure
 
 | ![F4105-BU](/documentation/F4105_uman_5.jpg) |
 | :---: |
@@ -367,7 +367,7 @@ After the equipment has been raised, it is necessary to:
 
 The built-in power supplies are charged with the supplied chargers. Chargers from different equipment sets are compatible with each other for devices of the same type.
 
-The chargers are designed to be connected to the AC mains and have indication of two states: 
+The chargers are designed for connection to the AC mains and indicate two states:
 - Charging
 - Not charging
 
