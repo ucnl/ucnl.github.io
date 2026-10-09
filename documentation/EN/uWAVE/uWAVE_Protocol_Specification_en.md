@@ -44,7 +44,7 @@
    - [2.13. IC_H2D_PT_SETTINGS_WRITE - write packet mode settings](#213-ic_h2d_pt_settings_write)
    - [2.14. IC_H2D_PT_SEND - send a message in packet mode](#214-ic_h2d_pt_send)
    - [2.15. IC_D2H_PT_FAILED - message transmission in packet mode failed](#215-ic_d2h_pt_failed)
-   - [2.16. IC_D2H_PT_DLVRD - message in packet mode successfully transmitted](#216-ic_d2h_pt_dlvrd)
+   - [2.16. IC_D2H_PT_DLVRD - message successfully transmitted in packet mode](#216-ic_d2h_pt_dlvrd)
    - [2.17. IC_D2H_PT_RCVD - message received in packet mode](#217-ic_d2h_pt_rcvd)
    - [2.18. IC_H2D_PT_ITG - request to a remote subscriber with logical addressing](#218-ic_h2d_pt_itg)
    - [2.19. IC_D2H_PT_ITG_TMO - response timeout for a request with logical addressing](#219-ic_d2h_pt_itg_tmo)
@@ -79,10 +79,10 @@
 ## 1. Introduction
 ### 1.1. Physical layer protocol
    
-**uWave** underwater acoustic modems support data interfacing using the RS-232 physical layer standard for an
+**uWave** underwater acoustic modems exchange data via the RS-232 physical layer standard for an
 asynchronous interface (UART) with a data line voltage of 3.3 V. The connection uses a four-wire cable
 with the wires Tx (transmitter), Rx (receiver), Vcc (power) and GND (ground). Without additional repeaters or interface
-converters, the maximum data bus length for which correct operation of the interface is guaranteed is no more than 2 m.  
+converters, correct operation of the interface is guaranteed for a data bus length of up to 2 m.  
 
 Default connection port settings<sup>[1](#footnote1)</sup>:  
 > _Baudrate: 9600 bit/s_  
@@ -118,11 +118,11 @@ ________
 <div style="page-break-after: always;"></div>
 
 ## 2. UWV command system for uWave underwater acoustic modems
-The **D2H** prefix in sentence names means that the sentence is transmitted from the device (Device) to the control system (Host).
-The **H2D** prefix in sentence names means that the sentence is transmitted from the control system (Host) to the device (Device).
+The **D2H** prefix in a sentence name means that the sentence is sent from the Device to the Host (control system).
+The **H2D** prefix in a sentence name means that the sentence is sent from the Host (control system) to the Device.
 
 ### 2.1. IC_D2H_ACK
-The IC_D2H_ACK sentence is the device response to a request received from the control system  
+The IC_D2H_ACK sentence is the device's response to a request received from the control system.  
 
 Sentence format: **`$PUWV0,x,x*hh<CR><LF>`**  
 
@@ -151,7 +151,7 @@ Sentence format: **`$PUWV1,x,x,x.x,x,x,x.x*hh<CR><LF>`**
 | rxChID | Receive channel ID |
 | STY | Salinity, PSU |
 | isCmdMode | '0' - command mode is controlled by the service pin, '1' - command mode by default |
-| isACKOnTXFinished | ‘1’ - the modem will send the [IC_D2H_ACK](#21-ic_d2h_ack) sentence with the [LOC_ACK_TX_FINISHED](#41-error-codes) parameter when sending of the message is finished (when the acoustic transmitter buffer has been emptied), ‘0’ - the modem will not report that the transmission is finished |
+| isACKOnTXFinished | ‘1’ - the modem will send the [IC_D2H_ACK](#21-ic_d2h_ack) sentence with the [LOC_ACK_TX_FINISHED](#41-error-codes) parameter when it has finished sending the message (when the acoustic transmitter buffer has been emptied), ‘0’ - the modem will not report that the transmission is finished |
 | gravityAcc | Gravitational acceleration (for more accurate depth determination), in m/s<sup>2</sup>, in the range from 9.77 to 9.84 |
 | * | NMEA checksum delimiter |
 | hh | NMEA checksum |
@@ -168,7 +168,7 @@ Sentence format: **`$PUWV2,x,x,x*hh<CR><LF>`**
 | PUWV | UWV |
 | 2 | Sentence ID | 
 | txChID | Transmit channel ID |
-| rxChID | Receive channel ID (for awaiting the response) |
+| rxChID | Receive channel ID (in which the response is expected) |
 | rcCmdID | Command ID \([see 4.2](#42-remote-commands)\) |
 | * | NMEA checksum delimiter |
 | hh | NMEA checksum |
@@ -369,8 +369,8 @@ Sentence format: **`$PUWVG,x,x,h--h*hh<CR><LF>`**
 | PUWV | UWV |
 | G | Sentence ID |
 | target_ptAddress | Address of the remote modem, 0 .. 254, 255 - broadcast message without receipt notification |
-| maxTries | Maximum number of attempts, 0 .. 255. If the field is empty, the default maximum number of attempts will be used - 255 |
-| dataPacket | An array of bytes in HEX format with the '0x' prefix, for example for the string '123' 0x313233. The maximum packet size is 64 bytes. If the field is empty, the current transmission will be canceled. |
+| maxTries | Maximum number of attempts, 0 .. 255. If the field is empty, the default maximum number of attempts, 255, will be used |
+| dataPacket | An array of bytes in HEX format with the '0x' prefix, for example, 0x313233 for the string '123'. The maximum packet size is 64 bytes. If the field is empty, the current transmission will be canceled. |
 | * | NMEA checksum delimiter |
 | hh | NMEA checksum |
 | \<CR\>\<LF\> | End of sentence |
@@ -387,7 +387,7 @@ Sentence format: **`$PUWVH,x,x,h--h*hh<CR><LF>`**
 | H | Sentence ID |
 | target_ptAddress | Address of the remote modem, 0 .. 254 |
 | maxTries | Number of attempts made |
-| dataPacket | An array of bytes in HEX format with the '0x' prefix, for example for the string '123' 0x313233. The maximum packet size is 64 bytes. |
+| dataPacket | An array of bytes in HEX format with the '0x' prefix, for example, 0x313233 for the string '123'. The maximum packet size is 64 bytes. |
 | * | NMEA checksum delimiter |
 | hh | NMEA checksum |
 | \<CR\>\<LF\> | End of sentence |
@@ -405,7 +405,7 @@ Sentence format: **`$PUWVI,x,x,x.x,h--h*hh<CR><LF>`**
 | target_ptAddress | Address of the remote modem, 0 .. 254 |
 | maxTries | Number of attempts made |
 | azimuth | Horizontal angle of arrival of the signal, only for [uWave USBL](uWAVE_USBL_Modem_Specification_en.md) devices, otherwise the field is empty |
-| dataPacket | An array of bytes in HEX format with the '0x' prefix, for example for the string '123' 0x313233. The maximum packet size is 64 bytes. |
+| dataPacket | An array of bytes in HEX format with the '0x' prefix, for example, 0x313233 for the string '123'. The maximum packet size is 64 bytes. |
 | * | NMEA checksum delimiter |
 | hh | NMEA checksum |
 | \<CR\>\<LF\> | End of sentence |
@@ -422,7 +422,7 @@ Sentence format: **`$PUWVJ,x,x.x,h--h*hh<CR><LF>`**
 | J | Sentence ID |
 | sender_ptAddress | Address of the remote modem (sender), 0 .. 254 |
 | azimuth | Horizontal angle of arrival of the signal, only for [uWave USBL](uWAVE_USBL_Modem_Specification_en.md) devices, otherwise the field is empty |
-| dataPacket | An array of bytes in HEX format with the '0x' prefix, for example for the string '123' 0x313233. The maximum packet size is 64 bytes. |
+| dataPacket | An array of bytes in HEX format with the '0x' prefix, for example, 0x313233 for the string '123'. The maximum packet size is 64 bytes. |
 | * | NMEA checksum delimiter |
 | hh | NMEA checksum |
 | \<CR\>\<LF\> | End of sentence |
@@ -444,7 +444,7 @@ Sentence format: **`$PUWVK,x,x*hh<CR><LF>`**
 | \<CR\>\<LF\> | End of sentence |
 
 ### 2.19. IC_D2H_PT_ITG_TMO 
-Response waiting interval exceeded for a request with logical addressing.
+Response timeout for a request with logical addressing.
 
 Sentence format: **`$PUWVL,x,x*hh<CR><LF>`**
 
@@ -536,7 +536,7 @@ Sentence format: **`$PUWVN,x*hh<CR><LF>`**
 
 ### 2.24. IC_HDH_AQPNG_SETTINGS
 > Supported since version 1.30
-Sentence for setting the AUTO QUERY / PINGER mode settings. The device also uses this same sentence to notify the user that the settings of this mode have been changed successfully.
+Sentence used to configure the AUTO QUERY / PINGER mode. The device also uses this sentence to notify the user that the settings of this mode have been changed successfully.
 
 The period setting applies only to the pinger mode. The receive and transmit code channel IDs are used only if IsPT = 0. PTTargetAddress is used only in master mode and if IsPT = 1.
 
@@ -565,7 +565,7 @@ Sentence format: **`$PUWVO,x,x,x,x,x,x,x,x*hh<CR><LF>`**
 
 ### 3.1. Transparent channel mode
 
-In transparent channel mode, the devices do not analyze the data coming from the control system and transmit it unchanged into the underwater acoustic channel, where it can be received by any other **uWave** modem receiving in the same code channel in which the transmission was made. Provided that the receiving modem does not have the [packet transmission mode](#33-packet-mode) activated.
+In transparent channel mode, the devices do not analyze the data coming from the control system and transmit it unchanged into the underwater acoustic channel, where it can be received by any other **uWave** modem receiving in the same code channel in which the transmission was made, provided that [packet transmission mode](#33-packet-mode) is not activated on the receiving modem.
 
 <div style="page-break-after: always;"></div>
 
@@ -581,7 +581,7 @@ with the parameter **isCmdMode = 1**; in this case, starting from firmware versi
 In command mode, the devices can transmit short code requests to other devices: request the depth, temperature and supply voltage of a remote modem and transmit 8 user commands.
 Code requests have fixed lengths of request and response signals, which allows the requesting system to determine the propagation time (and slant range) to the requested system. The remote modem receives and processes a code request regardless of the mode it is in, which relieves the user system of the need to monitor the state of the remote modem.
 
-> **CAUTION!** The **SVC/CMD** wire is pulled ONLY to 3–5 V or to ground; connecting it to a higher voltage will cause **IRREPARABLE** and **NON-WARRANTY** failure of the device.
+> **CAUTION!** The **SVC/CMD** wire must be pulled ONLY to 3–5 V or to ground; connecting it to a higher voltage will cause **IRREPARABLE** damage to the device that is **NOT COVERED BY THE WARRANTY**.
 
 > **CAUTION!** Before powering on the device, the **SVC/CMD** wire must be pulled to ground, otherwise the device will enter the firmware update mode.
 
@@ -607,7 +607,7 @@ The following functions are available to the user:
 - receiving a notification that the attempt interval has been exceeded in case of a failed transmission  
 - receiving an incoming packet message with the sender's address  
 - requesting the parameters of a remote subscriber (depth, temperature, supply voltage) with propagation time measurement
-- receiving a notification that the response waiting interval has been exceeded
+- receiving a response timeout notification
 - receiving the response of a remote subscriber with the requested parameter and the measured signal propagation time
 
 To interact with the modem in packet mode, use the commands from [2.11. IC_H2D_PT_SETTINGS_READ](#211-ic_h2d_pt_settings_read) to [2.17. IC_D2H_PT_RCVD](#217-ic_d2h_pt_rcvd).
@@ -636,7 +636,7 @@ After data are transmitted in packet mode, the sending modem waits for a short c
 | LOC_ACK_TX_FINISHED | 11 | The acoustic transmitter has finished transmitting the message |
 | LOC_ACK_BEFORE_STANDBY | 12 | The device is entering STAND-BY mode |
 | LOC_ACK_AFTER_WAKEUP | 13 | The device has exited STAND-BY mode |
-| LOC_ERR_SVOLTAGE_TOO_HIGH | 14 | Supply voltage is too high (more than 13 volts) and the power amplifier will not be used to avoid its failure |
+| LOC_ERR_SVOLTAGE_TOO_HIGH | 14 | Supply voltage is too high (more than 13 volts) and the power amplifier will not be used to prevent it from failing |
 
 ### 4.2 Remote commands  
 
@@ -645,7 +645,7 @@ After data are transmitted in packet mode, the sending modem waits for a short c
 | RC_PING | 0 | Ping |
 | RC_PONG | 1 | Pong |
 | RC_DPT_GET | 2 | Request for the depth of the remote subscriber |
-| RC_TMP_GET | 3 | Request for the temperature Value of the remote subscriber |
+| RC_TMP_GET | 3 | Request for the temperature value of the remote subscriber |
 | RC_BAT_V_GET | 4 | Request for the supply voltage of the remote subscriber |
 | RC_ERR_NSUP | 5 | The remote system responded - request not supported |
 | RC_ACK | 6 | The remote system responded - request accepted |
@@ -688,7 +688,7 @@ STRONG = system name
 28 = total number of available code channels  
 0.0 = salinity, PSU  
 1 = the built-in pressure/temperature sensor is present and operational  
-0 = command mode by default is disabled  
+0 = default command mode is disabled  
 
 
 #### 5.1.3. Example 2 - code request to a remote subscriber
@@ -822,13 +822,13 @@ empty field - the device does not support determination of the horizontal angle 
 0x313233 = array of three bytes ('123')  
 
 ### 5.2. Recipes
-It is assumed that the device is connected to a control system and command mode is enabled. The sentences can be copied and sent to the modem after appending the characters <CR><LF> (New line, Hex: 0x0D 0x0A, Dec: 13 10, or \\r\\n).
+It is assumed that the device is connected to a control system and command mode is enabled. The sentences can be copied and sent to the modem after appending the characters \<CR\>\<LF\> (New line, Hex: 0x0D 0x0A, Dec: 13 10, or \\r\\n).
 
 #### Recipe 1
-Setting the default basic settings
+Setting the basic settings to their default values
 - Receive and transmit channel IDs - **0**
-- Command mode by default **disabled**
-- ACK on transmission finish **disabled**
+- Default command mode **disabled**
+- ACK on transmission completion **disabled**
 - Salinity **0.0 PSU**
 - Gravitational acceleration **9.8067 m/s<sup>2</sup>**
 
@@ -851,14 +851,14 @@ $PUWV6,0,1000,1,1,1,1*03
 ```
 
 #### Recipe 4
-Enabling the automatic transmission of all ambient parameters and the supply voltage after any outgoing message from the modem without saving the settings to flash.
+Enabling the automatic transmission of all ambient parameters and the supply voltage after any outgoing sentence from the modem without saving the settings to flash.
 
 ```
 $PUWV6,0,1,1,1,1,1*33
 ```
 
 #### Recipe 5
-Enabling the automatic transmission of only the depth of the local modem after any outgoing message from the modem without saving the settings to flash.
+Enabling the automatic transmission of only the depth of the local modem after any outgoing sentence from the modem without saving the settings to flash.
 
 ```
 $PUWV6,0,1,0,0,1,0*32
