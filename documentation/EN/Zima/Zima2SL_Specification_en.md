@@ -30,9 +30,9 @@
 
 ## DESCRIPTION
 
-**Zima2-SL** is the computing module (solver) of the long baseline navigation system [Zima2 LBL](/documentation/RU/Zima/Zima2_LBL_DataBrief_ru.md).
+**Zima2-SL** is the computing module (solver) of the long baseline navigation system [Zima2 LBL](/documentation/EN/Zima/Zima2_LBL_DataBrief_en.md).
 
-The module receives over UART the measured range data from the [Zima2-LX](/documentation/RU/Zima/Zima2LX_Specification_ru.md) transceiver, stores the coordinates of the [Zima2-R](Zima2R_Specification_en.md) responder-beacons and calculates its own position. The result is output to the data consumer in the form of standard GNSS sentences (**GGA**, **RMC**, **MTW**), which allows **Zima2-SL** to be used as a "transparent" replacement for a GNSS receiver in existing systems.
+The module receives over UART the measured range data from the [Zima2-LX](/documentation/EN/Zima/Zima2LX_Specification_en.md) transceiver, stores the coordinates of the [Zima2-R](Zima2R_Specification_en.md) responder-beacons and calculates its own position. The result is output to the data consumer in the form of standard GNSS sentences (**GGA**, **RMC**, **MTW**), which allows **Zima2-SL** to be used as a "transparent" replacement for a GNSS receiver in existing systems.
 
 The module can be placed either underwater or on the surface, depending on the task to be solved.
 
@@ -58,7 +58,7 @@ ________________
 | NOMINAL POSITIONING ACCURACY (RMS)<sup>[2](#footnote2)</sup> | PENDING |
 
 ________________
-- <a name="footnote1"><sup>1</sup></a> Determined by the speed of sequential interrogation of the beacons by the [Zima2-LX](/documentation/RU/Zima/Zima2LX_Specification_ru.md) transceiver and by the number of beacons in the set.
+- <a name="footnote1"><sup>1</sup></a> Determined by the speed of sequential interrogation of the beacons by the [Zima2-LX](/documentation/EN/Zima/Zima2LX_Specification_en.md) transceiver and by the number of beacons in the set.
 - <a name="footnote2"><sup>2</sup></a> PENDING.
 
 <div style="page-break-after: always;"></div>
