@@ -463,3 +463,19 @@ Section headings follow the standard 16-section layout of GHS/REACH Annex II saf
 | отсутствует | not applicable | Misc/*_MSDS_en.md (3) | Existing is absent |
 | Литий / Фосфат железа | Lithium / Iron phosphate | Misc/*_MSDS_en.md (3) | |
 | Аккумулятор высокотоковый литий-железофосфатный | High-current lithium iron phosphate (LiFePO4) battery | Misc/RedBase_v3_LiFEPO4_msds_en.md | Header cell |
+
+## Added in batch uswitch-1
+
+| RU | EN | Source EN file | Note |
+|---|---|---|---|
+| Наши проекты для образования (breadcrumb) | Educational projects | uSwitch/uSwitch_Specification_en.md | Index page `/educational_projects_en` |
+| Функция включения при контакте с водой | Switch-on function upon contact with water | uSwitch/uSwitch_Specification_en.md | |
+| Функция измерения времени распространения сигнала | Signal propagation time measurement function | uSwitch/uSwitch_Specification_en.md | |
+| сборка печатных плат | printed circuit board assembly | uSwitch/uSwitch_Specification_en.md | |
+| контактные площадки | contact pads | uSwitch/uSwitch_Specification_en.md | |
+| ОБОЗНАЧЕНИЕ / НАИМЕНОВАНИЕ / АКТИВНОЕ СОСТОЯНИЕ / ФУНКЦИЯ (pinout table) | DESIGNATION / NAME / ACTIVE STATE / FUNCTION | uSwitch/uSwitch_Specification_en.md | |
+| Земля/Общий | Ground/Common | uSwitch/uSwitch_Specification_en.md | |
+| +U<sub>пит.</sub> | +U<sub>supply</sub> | uSwitch/uSwitch_Specification_en.md | |
+| детектор воды | water detector | uSwitch/uSwitch_Specification_en.md | |
+| передающий тракт | transmit path | uSwitch/uSwitch_Specification_en.md | |
+| перемычка (резистор 0 Ом типоразмера 1206); запайка | jumper (0 Ω resistor, size 1206); soldering | uSwitch/uSwitch_Specification_en.md | |
