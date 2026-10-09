@@ -13,4 +13,4 @@ github_username:  ucnl
   
 disqus:
 
-exclude: [CLAUDE.md]
+exclude: [CLAUDE.md, AGENTS.md]
