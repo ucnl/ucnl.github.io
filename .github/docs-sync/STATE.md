@@ -57,28 +57,9 @@ Merging notes:
 - Every batch appends its own `## Added in batch <slug>` section to `.github/docs-sync/glossary.md`. Merging one PR makes the others conflict in that file. Resolve the conflict by keeping all sections.
 - #3 also carries the latest `docsync.py` (heading numbers with NBSP, extensionless links to file names with dots).
 
-## F4105 batch completed in this session
+## F4105 batch
 
-`docs-sync/f4105-1` (F4105, 3 documents):
-
-| EN file | State |
-|---|---|
-| `F4105/F4105_DataBrief_en.md` | reviewed and approved |
-| `F4105/F4105_tech_pass_en.md` | executor done, mechanical checks pass; controller reading pass pending |
-| `F4105/F4105_Users_manual_en.md` | executor done, mechanical checks pass; controller reading pass and independent review (51 KB RU) pending |
-
-Still to do in this batch:
-- Align terms across the three files:
-  - `стопорная гайка` → lock nut
-  - `исполнительное устройство` → actuating device
-  - `Стопорный палец` → lock pin (the passport says "Locking pin")
-  - `Модуль программирования и передачи команд` (passport) → programming and command transmission unit
-- Add the glossary rows (`## Added in batch f4105-1`).
-- Open the draft PR.
-
-Facts for the PR description:
-- The F4105-SU panel is engraved in Russian (Антенна, Актуатор, Приемник, Зарядка, Запрос, Состояние, Питание, Вкл., Откл., Код 1, Код 2, Программа). EN translates the labels. List `F4105_SU_panel.png` and `F4105_SU.png` under Needs EN image.
-- The maximum depth differs between documents: 100 m (data brief, BU specification), 200 m (passport) and 300 m (AU specification).
+Draft PR #31, branch docs-sync/f4105-1: three translated EN documents, eight glossary rows. Controller checks pass; the manual also passed independent line-by-line review.
 
 ## Remaining Phase 2 batches (plan in `REPORT.md`)
 
@@ -133,6 +114,6 @@ Items already known for Phase 4:
 ## Session update: 2026-10-09
 
 - Draft PR #30 (docs-sync/agents-md): exact maintainer AGENTS.md, Jekyll exclusion, Codex translator/reviewer definitions.
-- Draft PR #31 (docs-sync/f4105-1): all three documents complete and pushed after review. Numeric/structural checks pass; source questions and Russian-panel images recorded in the PR.
+- Draft PR #31 (docs-sync/f4105-1): all three documents complete and pushed after review. Numeric and structural checks pass.
 - The remaining batches are still misc-1, misc-2, redline-1 and a3s-2. RedPhone-OS MSDS translation is in controller review; other documents have no completed review yet.
 - PRs #3–#27 remain open. No Phase 3 or 4 work started.
