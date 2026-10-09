@@ -94,6 +94,7 @@ Section names and index pages for breadcrumbs (as in `README.md`):
 - US spelling. Sentence case in headings except product names and proper nouns. Imperative mood in procedures ("Connect the cable", "Press **Start**").
 - Units: SI, a space between value and unit (`1000 m`, `24 V`, `12 kHz`), decimal point, ranges with an en dash (`10–20 m`), `±` attached (`±0.5 m`). Values stay exactly as in RU.
 - Dates: `24 September 2021`. `Поставляется с 06.2022 г.` → `Available since June 2022`.
+- Language-specific formatting of dates and numbers is not a discrepancy when the underlying date or numerical value is unchanged (for example, `1,5 kg` → `1.5 kg`, `24.09.2021` → `24 September 2021`). Normalize formatting or verify equivalence during review. Do not change actual values, units, precision, model codes or identifiers, and do not block solely on equivalent formatting.
 - UI labels in bold as in RU; use the real English strings of the software where known (AzimuthSuite, AzimuthConsole, uNav, RedNAV Host).
 - Do not translate product names: Zima, Zima2, uWAVE, uWave Max, RedWAVE, RedPhone, RWLT, WAYU, A3S, F4105, uSwitch, uPress, uSpeak, Bat&Link Box, AzimuthSuite, AzimuthConsole, AzimuthWebSuite, uNav, uTrackDiver, uGPSHub, RedNAV, RedNODE, RedBASE, Aquatab S, RedGTR, RedLINE. Keep model codes verbatim (`RT-1.524525-1`, `Zima2-B35`). Standards: `ГОСТ` → `GOST`, `ТУ` → `TU`, number unchanged.
 - Fix obvious typos in existing EN text whenever a file is edited (`Introducation`, `dowload`, `Wirind`).
@@ -203,7 +204,7 @@ Mechanical, run yourself, do not trust the executor's report:
 - Structure: heading count, heading numbering, table-row count, image count and page-break count equal to RU; printing block present if RU has it; header table and breadcrumb follow section 3.
 - TOC: every `## Contents` entry resolves to a heading slug in the file.
 - Links: every local target exists in the working tree or is a declared deferred RU link; `_ru`/`RU/` paths appear only in declared deferred links.
-- Numbers: extract all numeric tokens (integers, decimals, hex, ranges) from RU and EN; the multisets must match except for the date formats converted per section 5; investigate every difference.
+- Numbers: extract all numeric tokens (integers, decimals, hex, ranges) from RU and EN; compare the underlying values and dates, allowing language-specific formatting per section 5. Investigate every difference; a verified formatting-only difference is not an error, even if a raw-token checker reports it.
 - Marker: present, last line, exact format and values.
 
 Reading pass:
