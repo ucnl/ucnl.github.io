@@ -463,3 +463,33 @@ Section headings follow the standard 16-section layout of GHS/REACH Annex II saf
 | отсутствует | not applicable | Misc/*_MSDS_en.md (3) | Existing is absent |
 | Литий / Фосфат железа | Lithium / Iron phosphate | Misc/*_MSDS_en.md (3) | |
 | Аккумулятор высокотоковый литий-железофосфатный | High-current lithium iron phosphate (LiFePO4) battery | Misc/RedBase_v3_LiFEPO4_msds_en.md | Header cell |
+
+## Added in batch transducers-1
+
+| RU | EN | Source EN file | Note |
+|---|---|---|---|
+| Антенна гидроакустическая приемопередающая (header cell); Приемопередающая антенна (breadcrumb) | Underwater acoustic transducer; Transducer | Transducers/RT_1_332820_1_Specification_en.md (+4) | As in the fixed-term note of `гидроакустическая антенна` |
+| РАЗМЕР (Ф х h) | SIZE (Ø x h) | Transducers/RT_1_332820_1_Specification_en.md (+4) | Old EN: DIMENSIONS (Ф х h) with Cyrillic letters |
+| МАКСИМАЛЬНОЕ ПОДВОДИМОЕ НАПРЯЖЕНИЕ (ПИКОВОЕ) | MAXIMUM INPUT VOLTAGE (PEAK) | Transducers/RT_1_332820_1_Specification_en.md (+4) | Old EN: MAX. INPUT VOLTAGE (peak) |
+| ДИАМЕТР СЕЧЕНИЯ КАБЕЛЯ | CABLE DIAMETER | Transducers/RT_1_524525_1_FF_Specification_en.md (+4) | |
+| ДИАГРАММА НАПРАВЛЕННОСТИ (… кГц) | BEAM PATTERN (… kHz) | Transducers/RT_1_332820_1_Specification_en.md (+3) | |
+| Тор, соосный с цилиндром | Torus coaxial with the cylinder | Transducers/RT_1_332820_1_Specification_en.md (+3) | |
+| УГОЛ РАСТВОРА ДИАГРАММЫ (… кГц) | BEAM ANGLE (… kHz) | Transducers/RT_1_332820_1_Specification_en.md (+3) | |
+| АЧХ 3 дБ; АЧХ < 3 дБ | frequency response 3 dB; frequency response < 3 dB | Transducers/RT_1_332820_2_Specification_en.md (+3) | Literal; RT-1.524525-1 and RT-2.332820-1 EN (not in this batch) have only "(3 dB)" in the beam angle row |
+| РАБОЧАЯ ПОЛОСА (прием) / (излучение) | OPERATING BANDWIDTH (receive) / (transmit) | Transducers/RT_1_332820_2_Specification_en.md (+2) | RU writes `(изучение)`, a typo |
+| НАПРЯЖЕНИЕ ПИТАНИЯ (прием) | SUPPLY VOLTAGE (receive) | Transducers/RT_1_332820_2_Specification_en.md (+1) | |
+| + 5 В питание предусилителя | + 5 V preamplifier power supply | Transducers/RT_1_332820_2_Specification_en.md (+2) | |
+| Встроенный полосовой фильтр | Built-in band-pass filter | Transducers/RT_1_332820_2_Specification_en.md (+2) | |
+| активный полосовой фильтр 4 порядка на приеме и пассивный LC-фильтр второго порядка на излучение | 4th-order active band-pass filter for reception and a second-order passive LC filter for transmission | Transducers/RT_1_332820_2_Specification_en.md (+2) | Digit and word kept as in RU |
+| Необслуживаемая моноблочная конструкция, выполняемая по запатентованной технологии | Maintenance-free monoblock design made using a patented technology | Transducers/RT_1_332820_1_Specification_en.md (+3) | |
+| Полное отсутствие корродирующих элементов | Complete absence of corroding elements | Transducers/RT_1_332820_1_Specification_en.md (+4) | Old EN: corrosive |
+| Высококачественный экранированный кабель в полиуретановой изоляции | High-quality shielded cable with polyurethane insulation | Transducers/RT_1_332820_1_Specification_en.md (+4) | |
+| Миниатюрная и легкая антенна на основе одного цилиндрического пьезоэлемента | Miniature and lightweight transducer based on a single cylindrical piezoelectric element | Transducers/RT_1_332820_1_Specification_en.md (+1) | |
+| Одноэлементная антенна - баланс между чувствительностью в режимах приема и передачи, массой и габаритами | Single-element transducer - a balance between sensitivity in receiving and transmitting modes, weight and dimensions | Transducers/RT_1_524525_1_FF_Specification_en.md (+1) | |
+| Антенна на основе двух цилиндрических элементов, соединенных параллельно | Transducer based on two cylindrical elements connected in parallel | Transducers/RT_2_332820_2_Specification_en.md | |
+| Водозаполняемая центральная часть для компенсации давления | Free-flooded center section for pressure compensation | Transducers/RT_1_524525_1_FF_Specification_en.md | |
+| Паз для крепления | Mounting groove | Transducers/RT_1_332820_1_Specification_en.md (+3) | |
+| 3D-модель антенны (STEP) | 3D model of the transducer (STEP) | Transducers/RT_1_524525_1_FF_Specification_en.md | |
+| № / Цвет / Назначение (cable table) | No. / Color / Function | Transducers/RT_1_332820_1_Specification_en.md (+4) | |
+| Оплетка / Экран | Braid / Shield | Transducers/RT_1_332820_2_Specification_en.md (+2) | |
+| Общий (выход) / Сигнал (вход) / Сигнал (выход) | Common (output) / Signal (input) / Signal (output) | Transducers/RT_1_332820_2_Specification_en.md (+2) | |
