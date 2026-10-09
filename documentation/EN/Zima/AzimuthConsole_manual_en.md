@@ -115,7 +115,7 @@ The application is designed to work with [Zima2](/documentation/EN/Zima/Zima2_Da
 - processing the information received from them and transmitting the results via
   - a serial connection
   - a UDP connection
-  - the Web interface
+  - the web interface
 
 ### 1.1. Supported platforms
 
@@ -133,7 +133,7 @@ For convenience, the application supports the following hotkeys for the most fre
 | Key combination | Action |
 | :--- | :--- |
 | F1  | Display the supported commands |
-| F12 | Switch the data output modes to the terminal window: Error messages only, output disabled, output enabled |
+| F12 | Cycle through the terminal output modes: Error messages only, output disabled, output enabled |
 | Ctrl+N | **N**etwork: Open the connection (OCON) |
 | Ctrl+Shift+N | **N**etwork: Close the connection (CCON) |
 | Ctrl+I | **I**nterrogation: Resume interrogation of the responder-beacons |
@@ -163,9 +163,9 @@ For convenience, the application supports the following hotkeys for the most fre
 
 The application does not use any encryption, obfuscation, or hidden storage or transmission of information.
 The application keeps a log of the information exchange over all communication channels, which means that location information may be contained in these logs in clear text.
-By default, logging of the exchange with the Web interface is disabled to save space; the command `weblog,on=TRUE|FALSE` is used to enable/disable logging of the information exchange with the Web interface.
+By default, logging of the exchange with the web interface is disabled to save space; the command `weblog,on=TRUE|FALSE` is used to enable/disable logging of the information exchange with the web interface.
 At startup, the application calculates the disk space occupied by all log files, and if it exceeds 100 MB, the logs are deleted, starting from the oldest ones, until the occupied space falls below the specified limit.
-A new log is created automatically at application startup, according to the current system date and time: `appPath\log\YYYY-MM-DD\hh-mm-ss.log`.
+A new log is created automatically at application startup, named after the current system date and time: `appPath\log\YYYY-MM-DD\hh-mm-ss.log`.
 
 
 ## 2. AzimuthConsole command system
@@ -319,7 +319,7 @@ The address mask will be: 2 + 64 + 256 = 322
 | Command | Channels | Parameters | Response | Description |
 | :--- | :--- | :--- | :--- | :--- |
 | DELGS | T,R,W | - | DELGS,OK | Delete all log files and folders except the current one |
-| WEBLOG | T,R,W | on=TRUE/FALSE | WEBLOG,OK | Control logging of the exchange with the Web interface (OFF by default) |
+| WEBLOG | T,R,W | on=TRUE/FALSE | WEBLOG,OK | Control logging of the exchange with the web interface (OFF by default) |
 
 #### 2.3.9. Output data configuration
 
@@ -355,7 +355,7 @@ The `beacon_referenced` mode makes it possible to determine the vessel's coordin
 - Each response received from a reference beacon gives a **separate estimate** of the vessel's coordinates
 - The estimates are filtered by the DH filter and accumulated in a buffer
 - The final vessel position is calculated as the **median** of the valid measurements with spread control
-- The coordinates of the sought (non-reference) beacons are calculated relative to the current vessel position
+- The coordinates of the target (non-reference) beacons are calculated relative to the current vessel position
 
 **System operating modes** (the `AMODE` command):
 
@@ -402,7 +402,7 @@ The IP address can be found with the command:
 
 If the application is running on the same computer from which the browser is opened, use `http://localhost:8080`.
 
-If you have problems accessing it from the local network, on a Windows machine it may be necessary to open the port in the firewall (see the section [Configuring access from the local network](#61-configuring-access-from-the-local-network)).
+If the web interface cannot be accessed from the local network, you may need to open the port in the firewall of the Windows machine (see the section [Configuring access from the local network](#61-configuring-access-from-the-local-network)).
 
 ### 3.2. Main interface elements
 
@@ -438,7 +438,7 @@ The map displays:
 
 #### 3.2.2. Command line
 
-Located above the map, in the center. It allows sending any commands of the AzimuthConsole protocol directly.
+Located above the map, in the center. It lets you send any AzimuthConsole protocol command directly.
 
 - **Input field** — supports autocompletion of commands and parameters based on the schema received from the server
 - **Command history** — stored in the browser's local storage (up to 100 commands). Navigation: arrow keys ↑↓
@@ -494,7 +494,7 @@ On mobile devices the panel is collapsed; when tapped, it expands with detailed 
 - **ORIENTATION** — course (`course`, green), heading (`heading`, red), speed, roll (`pitch`), pitch (`roll`)
 - **ENVIRONMENT** — water temperature, external pressure, antenna immersion depth
 
-**Port status panel** — displays the state of all configured ports (AZM, AUX1, AUX2, RDT) with the indication:
+**Port status panel** — displays the state of all configured ports (AZM, AUX1, AUX2, RDT) with the following indicators:
 - ✓ — the port is detected (Detected)
 - ↻ — the port is active (Active)
 - ○ — the port is inactive
@@ -545,7 +545,7 @@ Service buttons:
 
 ### 3.4. Mobile version
 
-The web interface is adapted for mobile devices. When the screen width is less than 768px:
+The web interface is adapted for mobile devices. When the screen width is less than 768 px:
 
 - The map and the side panel are arranged vertically
 - The panel divider is hidden
@@ -564,7 +564,7 @@ The interface supports Russian and English. The language is determined automatic
 ## 4. Output data
 
 ### 4.1. AZMLOC - local parameters
-The message is transmitted about 1 time per second when a connection to the direction-finding antenna or an LBL transceiver is open.
+The message is transmitted about once per second (1 Hz) when a connection to the direction-finding antenna or an LBL transceiver is open.
 
 Message format:
 ```
@@ -573,7 +573,7 @@ Message format:
 
 | No. | Parameter name | Type | Units | Value range | Description | Source |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| 1 | stPressure_mBar | f32 | mBar | 0 .. 30 | External pressure | Built-in sensor |
+| 1 | stPressure_mBar | f32 | mbar | 0 .. 30 | External pressure | Built-in sensor |
 | 2 | stDepth_m | f32 | m | 0 .. 300 | Immersion depth of the device | Built-in sensor |
 | 3 | waterTemp_C | f32 | °C | -4 .. 40 | Ambient temperature | Built-in sensor |
 | 4 | stPitch_deg | f32 | ° | -180 .. 180 | Roll | Built-in sensor |
@@ -581,20 +581,20 @@ Message format:
 | 6 | age | f32 | s | 0 .. | Age of the previous values | System clock |
 | 7 | lat_deg | f32 | ° | -90 .. 90 | Geographic latitude | External source **AUX1** or the value set by the LHOV command |
 | 8 | lon_deg | f32 | ° | -180 .. 180 | Geographic longitude | External source **AUX1** or the value set by the LHOV command |
-| 9 | course_deg | f32 | ° | 0 .. 360 | Course of movement | External source **AUX1** |
-| 10 | speed_mps | f32 | m/s | 0 .. | Speed of movement | External source **AUX1** |
+| 9 | course_deg | f32 | ° | 0 .. 360 | Course (direction of motion) | External source **AUX1** |
+| 10 | speed_mps | f32 | m/s | 0 .. | Speed | External source **AUX1** |
 | 11 | age | f32 | s | 0 ..  | Age of the previous values | System clock |
 | 12 | heading_deg | f32 | ° | 0 .. 360 | Azimuth angle | External source **AUX1** or **AUX2** or the value set by the LHOV command |
 | 13 | age | f32 | s | 0 .. | Age of the previous value | System clock |
 | 14 | x_m | f32 | m | | Calculated position: X coordinate (LBL mode) | Calculated value |
 | 15 | y_m | f32 | m | | Calculated position: Y coordinate (LBL mode) | Calculated value |
-| 16 | z_m | f32 | m | 0 .. 300 | Immersion depth of the device (the value is the same as the value of field No. 2) | Built-in sensor |
-| 17 | rerr_m | f32 | m | | Radial position determination error (LBL mode) | Calculated value |
+| 16 | z_m | f32 | m | 0 .. 300 | Immersion depth of the device (same value as field No. 2) | Built-in sensor |
+| 17 | rerr_m | f32 | m | | Radial position error (LBL mode) | Calculated value |
 | 18 | age | f32 | s | 0 .. | Age of the previous values | System clock |
 
 > **Important regarding the `age` fields:**
 > 
-> The `age` field applies to **all preceding fields**, starting from the last `age` field (or from the beginning of the message). This makes it possible not to duplicate the age for a group of fields that are updated simultaneously.
+> The `age` field applies to **all preceding fields**, starting from the last `age` field (or from the beginning of the message). This avoids duplicating the age for a group of fields that are updated simultaneously.
 > 
 > Example for `@AZMLOC`: `age` field No. 6 applies **both to `stPitch_deg` (4) and to `stRoll_deg` (5)** — both of these sensors are updated simultaneously.
 > 
@@ -615,7 +615,7 @@ Message format:
 | 2 | SRange_m | f32 | m | 0 .. | Slant range between the antenna and the beacon. Negative values are allowed | Measurement |
 | 3 | Azimuth_deg | f32 | ° | 0 .. 360 | Horizontal angle of arrival of the responder-beacon signal relative to the zero direction of the antenna | Measurement |
 | 4 | PTime_s | f32 | s | 0 .. | Signal propagation time from the beacon to the antenna. Negative values are allowed | Measurement |
-| 5 | MSR_dB | f32 | dB | 14 ..  | Quality of reception of the responder-beacon signal. Values of less than 20 dB mean poor conditions | Measurement |
+| 5 | MSR_dB | f32 | dB | 14 ..  | Quality of reception of the responder-beacon signal. Values below 20 dB indicate poor conditions | Measurement |
 | 6 | age | f32 | s | 0 .. | Age of the previous values | System clock |
 | 7 | Depth_m | f32 | m | 0 .. 300/350/500/1000 | Depth of the responder-beacon | Built-in sensor of the responder-beacon |
 | 8 | age | f32 | s | 0 .. | Age of the previous value | System clock |
@@ -650,7 +650,7 @@ Message format:
 > Examples for `@AZMREM`:
 > 
 > - `age` field No. 6 applies to `MSR_dB` (5) — one sensor, one age.
-> - The `Lat_deg` (21) and `Lon_deg` (22) fields have a **common** `age` — field No. 23. This is logical: the beacon coordinates are calculated simultaneously, and they have a single age.
+> - The `Lat_deg` (21) and `Lon_deg` (22) fields have a **common** `age` — field No. 23. This makes sense: the beacon coordinates are calculated simultaneously, and they have a single age.
 > - `age` field No. 27 (after `Message`) applies only to `Message` (26).
 > 
 > **IgnoreAge fields in `@AZMREM`** (`SRange_m`, `Azimuth_deg`, `PTime_s`, `Lat_deg`, `Lon_deg`, `X_m`, `Y_m`, `Z_m`) **do not have** their own `age` — their age is determined by the nearest following `age` field in the message.
@@ -662,7 +662,7 @@ Message format:
 ## 5. Auxiliary utilities
 
 ### 5.1. AzimuthUDPRemote - UDP terminal
-This demo utility is intended for a quick introduction to the capabilities of remote control of the AzimuthConsole application over the UDP protocol, if this option is enabled.
+This demo utility provides a quick way to try out remote control of AzimuthConsole over UDP, if this option is enabled.
 After the application starts, the user can enter commands that will be passed to AzimuthConsole; the results of execution will be displayed in the application window.
 
 By default, the application listens on port 28129 and transmits data to the address 255.255.255.255:28127. To use other values, they must be specified as command line parameters. The command line format is as follows:
@@ -677,7 +677,7 @@ Since all user commands are transmitted over UDP, two additional commands are pr
 - xexit - exit the application
 
 ### 5.2. AzimuthUDPListener - UDP receiver
-This demo utility is intended for a quick introduction to the output data transmission function (see [3. Output data](#4-output-data)) over the UDP protocol.
+This demo utility provides a quick way to try out the transmission of output data (see [4. Output data](#4-output-data)) over UDP.
 
 By default, the application listens on port 28128 and outputs the received data to the console window.
 To specify a different port for receiving data from AzimuthConsole, specify the port number as a command line parameter when starting the application. Command line format:
@@ -699,7 +699,7 @@ To close the application, press the **Enter** key.
 - Check the availability of the machine: `ping <ip-address>`
 - Open `http://<ip-address>:8080` in a browser
 
-If the application is running on a Win machine and the server is not accessible in the local network, do the following:
+If the application is running on a Windows machine and the server cannot be accessed from the local network, do the following:
 - Run a terminal as administrator and execute:
    `New-NetFirewallRule -DisplayName "WebServer 8080" -Direction Inbound -LocalPort 8080 -Protocol TCP -Action Allow`
 
@@ -719,7 +719,7 @@ If the application is running on a Win machine and the server is not accessible 
 
 1. Download **Raspberry Pi Imager** from the [official website](https://www.raspberrypi.com/software/)
 2. Select: **Raspberry Pi OS Lite** — without a desktop, lighter and faster
-3. In the settings (the gear icon) you can immediately set:
+3. In the settings (the gear icon) you can set the following right away:
    - Hostname: `myapp-server`
    - Enable SSH
    - Login/password
@@ -740,7 +740,7 @@ sudo raspi-config
 - `Localisation Options` → `Timezone` — set the time zone
 - `Interface Options` → `SSH` — enable if not enabled
 
-After exiting — reboot.
+After exiting, reboot the system.
 
 #### 7.2.3 Updating packages
 
@@ -863,7 +863,7 @@ sudo systemctl start ac.service
 sudo systemctl status ac.service
 ```
 
-It should be: `Active: active (running)`
+Expected status: `Active: active (running)`
 
 #### 7.6.2. Viewing logs
 
@@ -944,7 +944,7 @@ htop  # if installed, otherwise top
 | Problem | Solution |
 |----------|---------|
 | The service crashes with `exited` | Check the logs: `journalctl -u ac.service -n 50` |
-| `failed to determine user credentials` | Fix `User=root` in `/etc/systemd/system/ac.service` |
+| `failed to determine user credentials` | Set `User=root` in `/etc/systemd/system/ac.service` |
 | The application does not start manually | Check the permissions: `chmod +x /opt/ac/AzimuthConsole` |
 | Wrong architecture | Build for `linux-arm`: `dotnet publish -r linux-arm` |
 
@@ -973,12 +973,12 @@ Additional information:
     *Important:* The space after `=` in the `binPath=` and `start=` parameters is mandatory.
 
 3.  **Configure the service**:
-    So that it restarts on failures (like `Restart=on-failure` in a systemd unit):
+    To make the service restart after failures (like `Restart=on-failure` in a systemd unit):
     ```cmd
     sc failure "AzimuthConsoleService" reset= 86400 actions= restart/60000/restart/60000/restart/60000
     ```
-    *   `reset= 86400` — reset of the failure counter after one day.
-    *   `actions= restart/60000` — restart 60 seconds after a crash (and so on up to three times).
+    *   `reset= 86400` — resets the failure counter after one day.
+    *   `actions= restart/60000` — restarts the service 60 seconds after a crash (and so on, up to three times).
 
 4.  **Start the service**:
     ```cmd
@@ -1016,12 +1016,12 @@ Essentially, scripts are files in which each line represents one control command
 
 At startup, the application tries to execute an initialization script with the fixed name `init.cmd`.
 If there is no such file, the default settings are used. 
-The `RESETINIT` command is used to delete the initialization script. And to save the current settings to the initialization script, the `SAVEINIT` command can be used.
+The `RESETINIT` command deletes the initialization script, and the `SAVEINIT` command saves the current settings to it.
 
 An arbitrary script is executed with the `SCRIPT,file=path` command. 
 Thus, to set all the settings there is no need to specify them on the command line; it is enough to specify a single `SCRIPT` command with the corresponding file as the `file` parameter.
 
-This is convenient, for example, when different scenarios involving different system configurations need to be run - with and without external providers of navigation data, with the antenna position and its orientation relative to north set manually or without it, for operation in USBL or LBL mode, for different sets of responder-beacons, etc.
+This is convenient, for example, when you need to run different scenarios with different system configurations - with or without external navigation data providers, with or without a manually set antenna position and orientation relative to north, for operation in USBL or LBL mode, for different sets of responder-beacons, etc.
 
 A script can contain comments - lines starting with the `#` character - and empty lines; both are ignored during execution.
 
@@ -1035,7 +1035,7 @@ The command supports specifying the maximum waiting interval - a timeout, after 
 
 The full description of the command format is given in the table [2.3.7. Service](#237-service).
 
-Another important command for automating work is the `SAVE,file=path` command - this command allows saving the current application settings as a script, which can then be used to start the application with the specified settings. The `SAVEINIT` command is equivalent to the `SAVE,file=init.cmd` command.
+Another important command for automation is `SAVE,file=path` - it saves the current application settings as a script, which can then be used to start the application with these settings. The `SAVEINIT` command is equivalent to `SAVE,file=init.cmd`.
 
 ### 9.1. Script examples
 
@@ -1161,7 +1161,7 @@ SAVE,file=calibration.cmd
 
 - **The order of commands matters.** First the ports are configured (`AZM`, `AUX1`, `AUX2`), then the transceiver parameters (`MSK`, `SLN`, `MDST`, `SOS`), then the mode (`AMODE`), and at the end `OCON` and `RITG`.
 - **Use `WAIT` for synchronization.** If the next command depends on the result of the previous one (for example, `RBADD` after `AMODE`), add `WAIT`.
-- **Comments.** Lines starting with `#` are ignored. Empty lines are too.
+- **Comments.** Lines starting with `#` are ignored. So are empty lines.
 - **`SAVEINIT` vs `SAVE`.** `SAVEINIT` saves to `init.cmd` — this script is executed automatically at application startup. `SAVE,file=path` saves to an arbitrary file, which can then be executed with the `SCRIPT,file=path` command.
 - **Check after startup.** After the script has been executed, it is useful to run `STAT` — it will show the current state of the system.
 
