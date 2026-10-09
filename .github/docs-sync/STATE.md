@@ -52,11 +52,11 @@ All batch PRs below are drafts targeting master. Each document passed the contro
 
 ## Repository instructions
 
-Draft PR #30 (`docs-sync/agents-md`) adds the maintainer-supplied AGENTS.md, the corresponding Jekyll exclusion, and Codex translator/reviewer definitions.
+Draft PR #30 (`docs-sync/agents-md`) adds AGENTS.md, the corresponding Jekyll exclusion, Codex translator/reviewer definitions, and the approved date/number localization rule in AGENTS.md and CLAUDE.md.
 
 ## Remaining Phase 2 work
 
-All 30 translation batches are complete.
+All 30 translation batches are complete. Progress PR #28 is closed; this branch remains available as a state record.
 
 ## Resuming
 
