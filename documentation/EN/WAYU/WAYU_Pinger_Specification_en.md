@@ -19,7 +19,7 @@ The **WAYU Pinger** navigation pinger beacon of the **[WAYU](WAYU_DataBrief_en.m
 The device can be powered by the carrier or equipped with an autonomous power source.
 
 _________
-<a name="footnote_a1"><sup>\*</sup></a> *Patents RU2659299C1, US11257472B2*.  
+<a name="footnote_a1"><sup>\*</sup></a> *Patent RU2659299C1*.  
 
 <div style="page-break-after: always;"></div>
 
