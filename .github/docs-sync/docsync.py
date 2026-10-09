@@ -556,7 +556,7 @@ def render(repo, rows, orphans, coverage, dups, decisions, proposals, old_decisi
     for c in coverage:
         w("| `%s` | %s | %d | %d | %d | %d |" % (c["ru"], fmt_file(c["en"]), c["ru_links"], len(c["missing"]), sum(1 for m in c["missing"] if m[2]), len(c["en_broken"])))
     for c in coverage:
-        if not c["missing"] and not c["en_broken"] and not c["ru_broken"]:
+        if not c["missing"] and not c["en_broken"]:
             continue
         w("")
         w("<details><summary><code>%s</code> → <code>%s</code></summary>" % (c["ru"], c["en"] or "—"))
@@ -569,9 +569,6 @@ def render(repo, rows, orphans, coverage, dups, decisions, proposals, old_decisi
             w("")
         if c["en_broken"]:
             w("Broken or case-mismatched links in the EN page: " + ", ".join("`%s` (%s)" % (md_cell(t), s) for t, s in c["en_broken"]))
-            w("")
-        if c["ru_broken"]:
-            w("Broken or case-mismatched links in the RU page (report only, RU is never edited): " + ", ".join("`%s` (%s)" % (md_cell(t), s) for t, s in c["ru_broken"]))
             w("")
         w("</details>")
     exact_case, upper_suffix, variants, mismatched, sims = dups
