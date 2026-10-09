@@ -48,7 +48,7 @@ The RedWave underwater acoustic navigation system was developed by UCNL LLC; the
 
 ### 3.2. Procedure for using additional equipment and transport cases
 Additional equipment means any devices and accessories that are not an integral part of the ES instruments, in particular:
-- rigging accessories: anchors, carabiners, anchor ropes, lines, floats, etc.;
+- rigging accessories: anchors, carabiners, anchor lines, lines, floats, etc.;
 - additional light signaling equipment: retroreflective markers, reflectors, light beacons, lamps, etc.;
 - personal computers (PCs), laptops, tablets and other computing equipment on which the specialized ES software is intended to run;
 - various devices: salinity, temperature and voltage meters;  
@@ -79,8 +79,8 @@ This list includes the additional equipment required for testing and may differ 
 | No. | Name | Quantity | Note |
 | :--- | :--- | :--- | :--- |
 | 1 | Anchor | 4 | At least 1.5 kg |
-| 2 | Anchor rope | - | Depending on the conditions of the water body. Breaking strength of at least 80 kg. Braided synthetic. Twisted. |
-| 3 | Float | 4 | Buoyancy at least 2 times the weight of the anchor rope. Maximum size no more than 400 mm. |
+| 2 | Anchor line | - | Depending on the conditions of the water body. Breaking strength of at least 80 kg. Braided synthetic. Twisted. |
+| 3 | Float | 4 | Buoyancy at least 2 times the weight of the anchor line. Maximum size no more than 400 mm. |
 | 4 | Compass | 1 | Required only when divers take part |
 | 5 | Watercraft | 1 | With a load capacity of at least 3 persons and the ability to be anchored |
 | 6 | PC with Windows 7/8/10 OS and a Bluetooth module | 1 | With the ability to install the [RedNav Host software](https://api.github.com/repos/ucnl/RedNavHost/zipball) on it. |

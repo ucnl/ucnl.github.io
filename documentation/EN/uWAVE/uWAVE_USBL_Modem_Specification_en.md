@@ -49,7 +49,7 @@ Using **uWave USBL Modem** modems, the user can:
 [uWave family](uWAVE_Family_en.md) devices use a simple [NMEA-like protocol](uWAVE_Protocol_Specification_en.md) for configuration, and the supplied open-source libraries [**uWaveLib**](https://github.com/ucnl/uWAVELib) (.NET) and [**uWave ALibs**](https://github.com/ucnl/UCNL_ALibs) (Arduino) make the integration of the modems into custom solutions as simple and fast as possible.
 
 _________
-<a name="footnote_a1"><sup>\*</sup></a> Patents RU2659299C1, US11257472B2.  
+<a name="footnote_a1"><sup>\*</sup></a> Patent RU2659299C1.  
 
 <div style="page-break-after: always;"></div>
 

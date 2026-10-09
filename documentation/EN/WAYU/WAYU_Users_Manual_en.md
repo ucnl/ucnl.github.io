@@ -135,7 +135,7 @@ When charging is complete, disconnect the charger from the mains and disconnect 
 The buoys are placed on the water surface in the operating area and held in position by anchors.
 
 > Keep in mind that although the buoys have a small positive buoyancy, they are not designed to be attached directly
-> to the anchor rope. To relieve the buoy of the weight of the anchor rope, fenders (or floats) matched to the weight of the rope must be used.
+> to the anchor line. To relieve the buoy of the weight of the anchor line, fenders (or floats) matched to the weight of the line must be used.
 
 The figure below<sup>[1](#footnote1)</sup> shows the recommended layout for installing a buoy on a body of water.
 
@@ -143,7 +143,7 @@ The figure below<sup>[1](#footnote1)</sup> shows the recommended layout for inst
 | :---: |
 | ![deployment scheme](/documentation/def_redbase_dep_scheme.png)|
 | Recommended buoy installation layout |
-| _1 - navigation sonobuoy, 2 - additional weight<sup>[2](#footnote2)</sup>, 3 - float, 4 - anchor rope, 5 - anchor_ |
+| _1 - navigation sonobuoy, 2 - additional weight<sup>[2](#footnote2)</sup>, 3 - float, 4 - anchor line, 5 - anchor_ |
 
 __________
 <a name="footnote1"><sup>1</sup></a> Images may differ from the supplied products,
@@ -162,7 +162,7 @@ The buoys should be positioned in a convex quadrilateral that covers the entire 
 > _**CAUTION!**_  
 > The buoys are not underwater devices and are designed to operate on the water surface. Although the protection class implies that the device may be briefly covered by a wave, keep in mind that the built-in radio equipment (the GNSS module and the radio modem) cannot operate in such conditions! 
 
-It is not recommended to throw the buoys overboard. Lower them carefully onto the water surface, making sure at the same time that the length of the anchor rope is sufficient, that its weight is carried by the relief fender, and that the buoy floats vertically on the water surface and is not subjected to any additional loads.
+It is not recommended to throw the buoys overboard. Lower them carefully onto the water surface, making sure at the same time that the length of the anchor line is sufficient, that its weight is carried by the relief fender, and that the buoy floats vertically on the water surface and is not subjected to any additional loads.
 
 #### 2.1.4. Preparing the underwater equipment
 
@@ -214,7 +214,7 @@ The **navigation buoys** must be:
 
 The following is not allowed:
 - Storage without rinsing in fresh water;
-- Storage of the buoys together with wet anchor ropes and other wet objects;
+- Storage of the buoys together with wet anchor lines and other wet objects;
 
 The **pinger beacon** must be:
 - removed from the carrier;
