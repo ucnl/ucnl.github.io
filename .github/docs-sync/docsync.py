@@ -763,8 +763,8 @@ def cmd_check(repo, ru, en):
     for k in ("headings", "rows", "images", "pagebreaks"):
         if mr[k] != me[k]:
             problems.append("%s RU=%d EN=%d" % (k, mr[k], me[k]))
-    rn = [h[1].split(" ")[0] for h in mr["heads"] if re.match(r"^\d+(\.\d+)*\.?\s", h[1])]
-    en_n = [h[1].split(" ")[0] for h in me["heads"] if re.match(r"^\d+(\.\d+)*\.?\s", h[1])]
+    rn = [h[1].split()[0] for h in mr["heads"] if re.match(r"^\d+(\.\d+)*\.?\s", h[1])]
+    en_n = [h[1].split()[0] for h in me["heads"] if re.match(r"^\d+(\.\d+)*\.?\s", h[1])]
     if rn != en_n:
         problems.append("heading numbering differs: RU=%s EN=%s" % (rn, en_n))
     if mr["printing"] != me["printing"]:
