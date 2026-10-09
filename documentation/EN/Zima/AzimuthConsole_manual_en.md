@@ -32,7 +32,7 @@
 
 - [1. Introduction](#1-introduction)
   - [1.1. Supported platforms](#11-supported-platforms)
-  - [1.2. Hotkeys](#12-hotkeys)
+  - [1.2. Keyboard shortcuts](#12-keyboard-shortcuts)
   - [1.3. Supported devices](#13-supported-devices)
   - [1.4. Recording and storing information](#14-recording-and-storing-information)
 - [2. AzimuthConsole command system](#2-azimuthconsole-command-system)
@@ -127,8 +127,8 @@ The application is designed to work with [Zima2](/documentation/EN/Zima/Zima2_Da
 [Repository](https://github.com/ucnl/AzimuthConsole)  
 [Full list of releases](https://github.com/ucnl/AzimuthConsole/releases).
 
-### 1.2. Hotkeys
-For convenience, the application supports the following hotkeys for the most frequently used commands:
+### 1.2. Keyboard shortcuts
+For convenience, the application supports the following keyboard shortcuts for the most frequently used commands:
 
 | Key combination | Action |
 | :--- | :--- |
@@ -304,7 +304,7 @@ The address mask will be: 2 + 64 + 256 = 322
 | EXIT | T,R,W | - | EXIT,OK | Terminate the application |
 | EXPCR | T,R,W | file=path | EXPCR,OK | Export the description of the application commands in Markdown format |
 | HELP | T,R,W | cmd=? | HELP,OK,commands=... | Show help for all commands or for the specified command |
-| HKEYS | T,R,W | - | HKEYS,OK,hotkeys=... | Get the hotkeys hint |
+| HKEYS | T,R,W | - | HKEYS,OK,hotkeys=... | Get help on keyboard shortcuts |
 | PLAY | T,R,W | speed=0\|1,file=path | PLAY,OK | Play back a log file (speed=0 — instantly, speed=1 — real time (default), without `file` — stop) |
 | RESETINIT | T,R,W | - | RESETINIT,OK | Delete init.cmd - reset the settings to default |
 | SAVE | T,R,W | file=path | SAVE,OK | Save the current settings to a script |
@@ -444,7 +444,7 @@ Located above the map, in the center. It lets you send any AzimuthConsole protoc
 - **Command history** — stored in the browser's local storage (up to 100 commands). Navigation: arrow keys ↑↓
 - **Send** button — sends the command
 
-Command line hotkeys:
+Command line keyboard shortcuts:
 - **Enter** — send the command
 - **↑/↓** — navigate through the history
 - **Tab** — accept the active autocompletion suggestion
