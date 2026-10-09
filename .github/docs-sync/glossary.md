@@ -463,3 +463,8 @@ Section headings follow the standard 16-section layout of GHS/REACH Annex II saf
 | отсутствует | not applicable | Misc/*_MSDS_en.md (3) | Existing is absent |
 | Литий / Фосфат железа | Lithium / Iron phosphate | Misc/*_MSDS_en.md (3) | |
 | Аккумулятор высокотоковый литий-железофосфатный | High-current lithium iron phosphate (LiFePO4) battery | Misc/RedBase_v3_LiFEPO4_msds_en.md | Header cell |
+
+## Added in batch misc-2
+
+No new terms. This batch reuses the approved MSDS and navigation buoy terminology.
+
