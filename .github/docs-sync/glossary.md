@@ -803,3 +803,27 @@ Section headings follow the standard 16-section layout of GHS/REACH Annex II saf
 | при отсутствии прямой видимости | without a direct line of sight | RedPhone/media.md | |
 | Фиксация (кабеля антенны) при помощи карабина | Securing the transducer with a carabiner | RedPhone/media.md | US spelling `carabiner` |
 | Проверка исправности | Checking the serviceability | RedPhone/media.md | |
+
+## Added in batch redphone-3
+
+| RU | EN | Source EN file | Note |
+|---|---|---|---|
+| Программа и методики испытаний | Test program and procedures | RedPhone/RedPhone_PM_en.md | |
+| Объект испытаний / Цель испытаний | Test object / Test objective | RedPhone/RedPhone_PM_en.md | |
+| Комплект оборудования (КО) | equipment set (ES) | RedPhone/RedPhone_PM_en.md | Distinct from `Комплект поставки` = delivery set |
+| Комплект ЗИП | Spare parts and tools kit | RedPhone/RedPhone_PM_en.md, RedPhone/RedPhone_Users_Manual_en.md | |
+| Приборный состав | Instrument composition | RedPhone/RedPhone_PM_en.md | |
+| Частота проведения испытаний | Frequency of testing | RedPhone/RedPhone_PM_en.md | |
+| полигон (испытательный) | test site | RedPhone/RedPhone_PM_en.md | |
+| натурные испытания | full-scale tests | RedPhone/RedPhone_PM_en.md | |
+| сдаточные испытания / приемочные испытания | delivery tests / acceptance tests | RedPhone/RedPhone_PM_en.md | |
+| волнение (моря) … баллов | sea state … | RedPhone/RedPhone_PM_en.md | Bare code number, no "points" |
+| разборчивость; процент разборчивости | intelligibility; intelligibility percentage | RedPhone/RedPhone_PM_en.md | |
+| артикуляционные списки | articulation lists | RedPhone/RedPhone_PM_en.md | The Russian word lists themselves are kept in Cyrillic (phonetically balanced test material) |
+| Испытание на автономность | battery life test | RedPhone/RedPhone_PM_en.md | |
+| надводный пост | surface post | RedPhone/RedPhone_PM_en.md | |
+| станция связи (надводная / водолазная) | (surface / diver) communication station | RedPhone/RedPhone_PM_en.md | |
+| Кранец (буек) | Fender (small buoy) | RedPhone/RedPhone_PM_en.md | |
+| Как меня поняли? Прием | How do you read me? Over | RedPhone/RedPhone_PM_en.md | Radio check; `Слышу вас на X баллов из 10` → `I hear you X out of 10` |
+| по телефонной связи (повторить слово) | over the underwater telephone link | RedPhone/RedPhone_PM_en.md | |
+| Н/п | N/A | RedPhone/RedPhone_PM_en.md | |
