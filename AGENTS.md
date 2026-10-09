@@ -15,5 +15,6 @@ This repository is the source of https://docs.unavlab.com. Its documentation is 
    - never write uWAVE, RedWAVE, RedBASE, RedNODE, RedNAV, RedLINE, ZIMA;
    - acronyms (RWLT, WAYU, A3S, F4105, RedGTR, GIB), file names, link targets, URLs, image paths, code and identifiers are unchanged;
    - RU is the source of truth; EN-only content is removed and listed in the PR description.
+   - language-specific formatting of dates and numbers is not a discrepancy if the underlying date or numerical value is unchanged; use normal English formatting, normalize or verify equivalent forms during review, and preserve actual values, units, precision, model codes and identifiers.
 5. Never modify files under `documentation/RU/`, binary assets, or the other out-of-scope paths listed in `CLAUDE.md` section 1. Never commit to `master`, never force-push or rewrite history.
 6. Communicate with the maintainer in Russian.
