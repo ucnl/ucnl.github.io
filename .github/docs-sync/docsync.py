@@ -143,7 +143,7 @@ def resolve(repo, page, target):
     base, ext = posixpath.splitext(p)
     if ext.lower() == ".html":
         cands.append(base + ".md")
-    if ext == "":
+    if ext.lower() not in (".md", ".html"):
         cands += [p + ".md", p + "/README.md", p + "/index.md"]
     for c in cands:
         if c in repo.fileset:
