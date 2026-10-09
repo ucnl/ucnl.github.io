@@ -780,6 +780,10 @@ def cmd_check(repo, ru, en):
         anchors.add(a)
     for a in re.findall(r"<div\s+id\s*=\s*\"([^\"]+)\"", text, re.I):
         anchors.add(a)
+    switch = set()
+    for line in text.splitlines():
+        if "[EN](" in line and "[RU](" in line:
+            switch.update(x.strip() for x in re.findall(r"\[RU\]\(([^)\s]+)\)", line))
     for t in extract_links(text):
         tt = t.strip()
         if tt.startswith("#"):
@@ -792,7 +796,7 @@ def cmd_check(repo, ru, en):
             continue
         if st != "ok":
             problems.append("local link %s: %s" % (st, tt))
-        if re.search(r"(_ru(\.md|\.html)?$|/RU/)", r, re.I):
+        if re.search(r"(_ru(\.md|\.html)?$|/RU/)", r, re.I) and tt not in switch:
             problems.append("RU link, must be a declared deferred link: %s" % tt)
     lines = text.rstrip("\n").splitlines()
     exp = "<!-- docs-sync: source=%s commit=%s date=%s -->" % ((ru,) + repo.last(ru))
