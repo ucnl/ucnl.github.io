@@ -587,3 +587,27 @@ Section headings follow the standard 16-section layout of GHS/REACH Annex II saf
 | мБар | mbar | Zima/AzimuthConsole_manual_en.md | Unit column; identifiers such as `stPressure_mBar` unchanged |
 | Запуск от имени администратора | Run as administrator | Zima/AzimuthConsole_manual_en.md | Real Windows UI string |
 | UI labels of AzimuthConsole | as in `src/wwwroot/i18n.js` (`en:` block) | Zima/AzimuthConsole_manual_en.md | e.g. Zoom In, Auto Scale, Interrogate/Pause, Apply & Restart, Save as default settings |
+
+## Added in batch zima-5
+
+| RU | EN | Source EN file | Note |
+|---|---|---|---|
+| коммутационный хаб | switching hub | Zima/Bat_n_link_box_Specification_en.md (+1) | Bat&Link Box |
+| Выключатель питания | Power switch | Zima/Bat_n_link_box_Users_manual_en.md | Front panel legend |
+| Индикатор заряда / Индикатор питания | Charge indicator / Power indicator | Zima/Bat_n_link_box_Users_manual_en.md | |
+| сетевой адаптер (зарядное устройство) | mains adapter (charger) | Zima/Bat_n_link_box_Users_manual_en.md | |
+| горит постоянно / мигает | on continuously / blinking | Zima/Bat_n_link_box_Users_manual_en.md | Indicator states |
+| Ударопрочное исполнение | Impact-resistant design | Zima/Bat_n_link_box_Specification_en.md | Also "ударопрочный кейс" = impact-resistant case |
+| РАЗЪЕМЫ И ИНТЕРФЕЙСЫ | CONNECTORS AND INTERFACES | Zima/Bat_n_link_box_Specification_en.md | |
+| РАЗЪЕМ ЗАРЯДКИ | CHARGING CONNECTOR | Zima/Bat_n_link_box_Specification_en.md | |
+| MSDS ВСТРОЕННОГО ИСТОЧНИКА ПИТАНИЯ | MSDS OF THE BUILT-IN POWER SUPPLY | Zima/Bat_n_link_box_Specification_en.md | |
+| ЭЛЕКТРОННАЯ ВЕРСИЯ ЭТОГО ДОКУМЕНТА | ELECTRONIC VERSION OF THIS DOCUMENT | Zima/Bat_n_link_box_Specification_en.md | Also in RedBASE, RWLT GIB, WAYU GIB |
+| технология одновременной навигации | simultaneous navigation technology | Zima/Zima_B_Specification_en.md (+2) | Patent RU156897U1 |
+| информационно сопрягается (маяк с носителем) | data-interfaced (beacon with the carrier) | Zima/Zima_DataBrief_en.md | "энергетически и информационно" = for both power and data |
+| НОМИНАЛЬНАЯ ТОЧНОСТЬ ОПРЕДЕЛЕНИЯ ГОРИЗОНТАЛЬНОГО УГЛА | NOMINAL HORIZONTAL ANGLE DETERMINATION ACCURACY | Zima/Zima_R_Specification_en.md (+1) | Without "ПРИХОДА СИГНАЛА" |
+| НОМИНАЛЬНАЯ ТОЧНОСТЬ ОПРЕДЕЛЕНИЯ ДИСТАНЦИИ | NOMINAL DISTANCE DETERMINATION ACCURACY | Zima/Zima_R_Specification_en.md (+1) | |
+| ИСПОЛНЕНИЕ ДО 350 М | VERSION UP TO 350 m | Zima/Zima2-35_technical_passport_en.md | Passport title |
+| специализированное ПО | specialized software | Zima/Zima_GNSS_requirements_en.md | |
+| стороны света | cardinal directions | Zima/Zima_GNSS_requirements_en.md | |
+| частота обновления | update rate | Zima/Zima_GNSS_requirements_en.md | |
+| Требования по совместимости для систем определения курса и положения | Compatibility requirements for heading and position determination systems | Zima/Zima_GNSS_requirements_en.md (+1) | Breadcrumb: "Compatibility information sheet for positioning and heading systems" |
