@@ -64,7 +64,7 @@ Keep verbatim, including letter case as written in the RU sentence at hand (the 
 
 **UI strings that are already English in RU:** tab and button names such as `❗ CONNECTION`, `🛸 EXTRA`, `🧪 PHYSICS`, menu labels in the original software language. When RU quotes a Russian UI label of software that has an English UI (AzimuthSuite, AzimuthConsole, uNav, RedNAV Host, ZHost), use the real English UI string; if it is unknown, translate literally in bold and record a question.
 
-**Organization:** UC&NL, Underwater Communication & Navigation Laboratory (`Лаборатория подводной связи и навигации`). Legal form `ООО` / `Общество с ограниченной ответственностью` → `LLC` / `Limited Liability Company` (confirm the official English legal name with the maintainer, see Open questions in the passports batch).
+**Organization:** the brand is UC&NL, Underwater Communication & Navigation Laboratory (`Лаборатория подводной связи и навигации` in running text). The official English legal name is **UCNL LLC**: `ООО "Лаборатория подводной связи и навигации"`, `OOO "Лаборатория подводной связи и навигации"` (the RU sources also spell `ООО` with Latin `O`) and `ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ "ЛАБОРАТОРИЯ ПОДВОДНОЙ СВЯЗИ И НАВИГАЦИИ"` all become `UCNL LLC`.
 
 **Personal names** are transliterated as in the authors' own English publications: Дикарев → Dikarev, Дмитриев → Dmitriev, Кубкин → Kubkin, Василенко → Vasilenko, Абеленцев → Abelentsev; initials keep their order (`А. В. Дикарев` → `A. V. Dikarev`).
 
@@ -376,9 +376,10 @@ Keep verbatim, including letter case as written in the RU sentence at hand (the 
 
 | RU | EN | Source EN file | Note |
 |---|---|---|---|
+| ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ "ЛАБОРАТОРИЯ ПОДВОДНОЙ СВЯЗИ И НАВИГАЦИИ"; ООО "Лаборатория подводной связи и навигации" | UCNL LLC | — | Official English legal name; passport title block, approval block, MSDS supplier details |
 | УТВЕРЖДАЮ | APPROVED | — | Approval block of the passport form |
-| Руководитель R&D | Head of R&D | — | |
-| Главный инженер | Chief Engineer | — | |
+| Руководитель R&D OOO "Лаборатория подводной связи и навигации" | Head of R&D, UCNL LLC | — | |
+| Главный инженер OOO "Лаборатория подводной связи и навигации" | Chief Engineer, UCNL LLC | — | |
 | `"____" ______________ 20 ___ г.` | `"____" ______________ 20 ___` | — | Keep the blank form exactly; drop only the Russian `г.` |
 | ОСНОВНЫЕ СВЕДЕНИЯ ОБ ИЗДЕЛИИ | GENERAL INFORMATION ABOUT THE PRODUCT | — | |
 | Технические характеристики и документация | Specifications and documentation | — | |
