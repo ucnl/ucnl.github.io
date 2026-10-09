@@ -889,3 +889,22 @@ Section headings follow the standard 16-section layout of GHS/REACH Annex II saf
 | Управление выдачей сообщений | Sentence output control | RedWAVE/RedWAVE_Protocol_Specification_en.md | |
 | Превышен интервал ожидания | Waiting interval exceeded | RedWAVE/RedWAVE_Protocol_Specification_en.md | |
 | Ускорение свободного падения | Gravitational acceleration | RedWAVE/RedWAVE_Protocol_Specification_en.md | As in the uWave protocol |
+
+## Added in batch a3s-1
+
+| RU | EN | Source EN file | Note |
+|---|---|---|---|
+| Стандартные комплекты и что с ними можно сделать | Standard kits and what you can do with them | A3S/A3S_packages_en.md | Breadcrumb and title |
+| КОМПЛЕКТ №N | KIT No. N | A3S/A3S_packages_en.md | |
+| гидроакустическая приемопередающая антенна | underwater acoustic transceiving transducer | A3S/A3S_packages_en.md (+2) | |
+| модуль одночастотного приемника / импульсного одночастотного передатчика | single-frequency receiver module / single-frequency pulse transmitter module | A3S/A3S_packages_en.md | |
+| приемная решетка (N-элементная) | (N-element) receiving array | A3S/A3S_packages_en.md | |
+| разностно-дальномерная система | range-difference system | A3S/A3S_packages_en.md | |
+| донная дальномерная база | seabed ranging base | A3S/A3S_packages_en.md | |
+| метод "запрос-ответ"; по предварительной синхронизации | "request-response" method; by prior synchronization | A3S/A3S_packages_en.md | |
+| режим ответчика | responder mode | A3S/A3R_Datasheet_en.md | Old EN "Transponder mode" |
+| Вход / Выход антенны | Transducer input / output | A3S/A3R_Datasheet_en.md, A3S/A3T_Datasheet_en.md | |
+| Строб (приемника); Общий строб приемников | (receiver) strobe; common receiver strobe | A3S/A3R_Datasheet_en.md | |
+| Инициация передачи импульса | Pulse transmission trigger | A3S/A3T_Datasheet_en.md, A3S/A3R_Datasheet_en.md | |
+| Адрес на шине; перемычка; объединяются в стек | bus address; jumper; stackable | A3S/A3R_Datasheet_en.md | |
+| МИНИМАЛЬНАЯ ПАУЗА МЕЖДУ ИМПУЛЬСАМИ | MINIMUM PAUSE BETWEEN PULSES | A3S/A3T_Datasheet_en.md | |
