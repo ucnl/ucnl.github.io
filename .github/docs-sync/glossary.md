@@ -463,3 +463,18 @@ Section headings follow the standard 16-section layout of GHS/REACH Annex II saf
 | отсутствует | not applicable | Misc/*_MSDS_en.md (3) | Existing is absent |
 | Литий / Фосфат железа | Lithium / Iron phosphate | Misc/*_MSDS_en.md (3) | |
 | Аккумулятор высокотоковый литий-железофосфатный | High-current lithium iron phosphate (LiFePO4) battery | Misc/RedBase_v3_LiFEPO4_msds_en.md | Header cell |
+
+## Added in batch redphone-4
+
+| RU | EN | Source EN file | Note |
+|---|---|---|---|
+| Комплект ЗИП | Spare parts kit | RedPhone/RedPhone_Users_Manual_en.md | Old EN "SPTA kit" |
+| кредл; зарядный кредл (шасси) | cradle; charging cradle (chassis) | RedPhone/RedPhone_Users_Manual_en.md | |
+| наживить (гайки, винты) | hand-thread | RedPhone/RedPhone_Users_Manual_en.md | Not "tighten" |
+| Выбор канала связи - бит N | Communication channel selection - bit N | RedPhone/RedPhone_Users_Manual_en.md | DIP-switch table |
+| Станция RedPhone с креплением на ремень | RedPhone station with a strap mount | RedPhone/RedPhone_Users_Manual_en.md | |
+| ПРИМЕНЯЕМЫЕ ИСТОЧНИКИ ПИТАНИЯ | POWER SOURCES USED | RedPhone/RedPhone_Users_Manual_en.md, RedPhone/RedPhone_DX_Specification_en.md | |
+| Испытания в мелководном водоеме | Tests in a shallow body of water | RedPhone/media.md | |
+| при отсутствии прямой видимости | without a direct line of sight | RedPhone/media.md | |
+| Фиксация (кабеля антенны) при помощи карабина | Securing the transducer with a carabiner | RedPhone/media.md | US spelling `carabiner` |
+| Проверка исправности | Checking the serviceability | RedPhone/media.md | |
