@@ -50,7 +50,7 @@
    - [3.1. Device types](#31-device-types)
    - [3.2. Error codes](#32-error-codes)
    - [3.3. Local data identifiers](#33-local-data-identifiers)
-   - [3.4. Operation identifiers](#34-operation-identifiers)
+   - [3.4. Service action identifiers](#34-service-action-identifiers)
    - [3.5. Remote command identifiers](#35-remote-command-identifiers)
 
 
@@ -59,12 +59,12 @@
 ## 1. Introduction
 ### 1.1. Physical layer protocol
 
-The devices of the [Zima USBL](Zima_DataBrief_en.md) system support data interfacing via the RS-232 physical layer standard
-for an asynchronous interface (UART) with a data line voltage of 3.3 V. The connection is made with a four-wire cable with the wires Tx
+Devices of the [Zima USBL](Zima_DataBrief_en.md) system exchange data via the RS-232 physical layer standard
+for an asynchronous interface (UART) with a data line voltage of 3.3 V. The connection uses a four-wire cable with the wires Tx
 (transmitter), Rx (receiver), Vcc (power) and GND (ground). Without additional repeaters or interface converters,
-the maximum length of the data bus for which correct operation of the interface is guaranteed is no more than 2 meters.
+correct operation of the interface is guaranteed for a data bus length of up to 2 m.
 
-Default port settings<sup>[1](#footnote1)</sup>:  
+Default connection port settings<sup>[1](#footnote1)</sup>:  
 > _Baudrate: 9600 bit/s_  
 > _Data bits: 8_  
 > _Stop bits: 1_  
@@ -86,7 +86,7 @@ The main elements of an NMEA0183 sentence:
 * '0' - sentence ID
 * ',' - comma (parameter delimiter)  
 * '*' - checksum delimiter
-* 'hh' - checksum in hexadecimal format (for example FF, 01). Calculated as the bitwise XOR of all bytes between '$' and '*'.
+* 'hh' - checksum in hexadecimal format (e.g. FF, 01). Calculated as the bitwise XOR of all bytes between '$' and '*'.
 * \<CR\>\<LF\> - end of sentence (line break)
 ________
 <a name="footnote1"><sup>1</sup> The specified parameters can be changed on request</a>
@@ -114,8 +114,8 @@ Sentence format: **`$PZMA0,xx*hh<CR><LF>`**
 
 
 ### 2.2. IC_H2D_FLD_GET
-Reads the value of the field. In response to this command, the device sends the sentence [IC_D2H_FLD_VAL](#24-ic_d2h_fld_val) containing the value of the requested field
-in case of successful assignment and the sentence [IC_D2H_ACK](#21-ic_d2h_ack) with an error code in case of an error.  
+Reads the value of a field. In response to this command, the device sends the sentence [IC_D2H_FLD_VAL](#24-ic_d2h_fld_val) containing the value of the requested field
+if the assignment is successful, or the sentence [IC_D2H_ACK](#21-ic_d2h_ack) with an error code if an error occurs.  
 
 Sentence format: **`$PZMA1,xx,00*hh <CR><LF>`**
 
@@ -132,8 +132,8 @@ Sentence format: **`$PZMA1,xx,00*hh <CR><LF>`**
 
 
 ### 2.3 IC_H2D_FLD_SET
-Sets the value of the field. In response to this command, the device sends the sentence [IC_D2H_FLD_VAL](#24-ic_d2h_fld_val) containing the value of the requested field in
-case of successful assignment and the sentence [IC_D2H_ACK](#21-ic_d2h_ack) with an error code in case of an error.  
+Sets the value of a field. In response to this command, the device sends the sentence [IC_D2H_FLD_VAL](#24-ic_d2h_fld_val) containing the value of the requested field
+if the assignment is successful, or the sentence [IC_D2H_ACK](#21-ic_d2h_ack) with an error code if an error occurs.  
 
 Sentence format: **`$PZMA2,x,x*hh<CR><LF>`**
 
@@ -226,7 +226,7 @@ Sentence format: **`$PZMA7,xx,xx*hh <CR><LF>`**
 | $ | Sentence start '$' |
 | PZMA | ZMA command system |
 | 7 | Sentence ID |
-| ActionID | Operation identifier \([see 3.4.](#34-operation-identifiers)\) |
+| ActionID | Action identifier \([see 3.4.](#34-service-action-identifiers)\) |
 | ActionParam | Parameter |
 | * | NMEA checksum delimiter |
 | hh | NMEA checksum |
@@ -337,7 +337,7 @@ Sentence format: **`$PZMAF, x.x,x.x,x.x*hh <CR><LF>`**
 | PZMA | ZMA command system |
 | F | Sentence ID |
 | Temperature | Water temperature, °C |
-| Depth | Depth of the base station from the surface, m |
+| Depth | Depth of the base station below the surface, m |
 | isAHRSEnabled | AHRS state |
 | TRX_State | Transceiver state |
 | * | NMEA checksum delimiter |
@@ -354,7 +354,7 @@ Sentence format: **`$PZMAG, x.x,x.x*hh <CR><LF>`**
 | $ | Sentence start '$' |
 | PZMA | ZMA command system |
 | G | Sentence ID |
-| Roll | Roll, °. 0 - vertical position, 0..+90 - rotation to starboard, 0..-90 - rotation to port |
+| Roll | Roll, °. 0 - vertical position, 0..+90 - tilt to starboard, 0..-90 - tilt to port |
 | Pitch | Pitch, °. 0 - vertical position, 0..+90 - tilt toward the bow, 0..-90 - tilt toward the stern |
 | * | NMEA checksum delimiter |
 | hh | NMEA checksum |
@@ -375,7 +375,7 @@ Sentence format: **`$PZMAH,x,x,x*hh <CR><LF>`**
 | H | Sentence ID |
 | TargetAddress | Address of the requested responder-beacon |
 | RequestID | Command (must always be CDS_DPT_GET, \([see 3.5.](#35-remote-command-identifiers)\) |
-| ReverseAzimuthToTheBase | Reverse azimuth[ The value of the reverse azimuth from the responder-beacon to the base station must be calculated in advance. When the ZLibrary library and the ZHost application are used, this happens automatically, provided that a system for determining the heading and position of the Zima-Base antenna is connected.] from the responder-beacon to the base station
+| ReverseAzimuthToTheBase | Reverse azimuth[ The value of the reverse azimuth from the responder-beacon to the base station must be calculated in advance. When ZLibrary and the ZHost application are used, this is done automatically, provided that a system for determining the heading and position of the Zima-Base antenna is connected.] from the responder-beacon to the base station
 | * | NMEA checksum delimiter |
 | hh | NMEA checksum |
 | \<CR\>\<LF\> | End of sentence |
@@ -419,15 +419,15 @@ Sentence format: **`$PZMA!, c--c,x,c--c,x,x,c--c*hh <CR><LF>`**
 | :---: | :---: | :--- |
 | '0' | NO_ERROR | Request accepted | 
 | '1' | INVALID_SYNTAX | Syntax error | 
-| '2' | UNSUPPORTED | Command is not supported | 
+| '2' | UNSUPPORTED | Command not supported | 
 | '3' | TRANSMITTER_BUSY | Transmitter is busy | 
-| '4' | ARGUMENT_OUT_OF_RANGE | Argument/parameter is out of the range of valid values | 
+| '4' | ARGUMENT_OUT_OF_RANGE | Argument/parameter is outside the range of valid values | 
 | '5' | INVALID_OPERATION | The operation cannot be performed at the moment | 
 | '6' | UNKNOWN_FIELD_ID | Unknown/unsupported field | 
 | '7' | VALUE_UNAVAILIBLE | The requested value is not available | 
 | '8' | RECEIVER_BUSY | Receiver is busy | 
 | '9' | WAKE_UP | Power-saving mode control. The responder-beacon sends an error message with this parameter immediately after waking up | 
-| '10' | STAND_BY | Power-saving mode control. The responder-beacon sends an error message with this parameter before going to sleep mode | 
+| '10' | STAND_BY | Power-saving mode control. The responder-beacon sends an error message with this parameter before entering sleep mode | 
 
 ### 3.3 Local data identifiers
 
@@ -438,7 +438,7 @@ Sentence format: **`$PZMA!, c--c,x,c--c,x,x,c--c*hh <CR><LF>`**
 | '2' | LOC_DATA_MAX_SUBSCRIBERS | Maximum number of responder-beacons |
 | '3' | LOC_DATA_PTS_PRESSURE | Built-in pressure sensor readings, mbar |
 | '4' | LOC_DATA_PTS_TEMPERATURE | Built-in temperature sensor readings, °C |
-| '5' | LOC_DATA_PTS_DEPTH | Depth of the antenna from the surface |
+| '5' | LOC_DATA_PTS_DEPTH | Depth of the antenna below the surface |
 | '6' | LOC_DATA_CORE_TEMPERATURE | Processor core temperature, °C |
 | '7' | LOC_DATA_BAT_CHARGE | Battery charge |
 | '8' | LOC_DATA_PRESSURE_RATING | Maximum external pressure, bar |
@@ -448,7 +448,7 @@ Sentence format: **`$PZMA!, c--c,x,c--c,x,x,c--c*hh <CR><LF>`**
 | '12' | LOC_DATA_SOUNDSPEED | Speed of sound, m/s |
 | '13' | LOC_DATA_GRAVITY_ACC | Acceleration due to gravity, m/s<sup>2</sup> |
 
-### 3.4 Operation identifiers
+### 3.4 Service action identifiers
 
 | Value | Name | Description |
 | :---: | :---: | :--- |
@@ -464,7 +464,7 @@ Sentence format: **`$PZMA!, c--c,x,c--c,x,x,c--c*hh <CR><LF>`**
 | :---: | :---: | :--- |
 | CDS_PING | 361 | Ping request |
 | CDS_DPT_GET | 362 | Depth of the remote responder-beacon |
-| CDS_STY_SET_0 | 363 | Set salinity 0 PSU |
+| CDS_STY_SET_0 | 363 | Set salinity to 0 PSU |
 | CDS_STY_SET_1 | 364 | ... |
 | CDS_STY_SET_2 | 365 | ... |
 | CDS_STY_SET_3 | 366 | ... |
@@ -504,7 +504,7 @@ Sentence format: **`$PZMA!, c--c,x,c--c,x,x,c--c*hh <CR><LF>`**
 | CDS_STY_SET_37 | 400 | ... |
 | CDS_STY_SET_38 | 401 | ... |
 | CDS_STY_SET_39 | 402 | ... |
-| CDS_STY_SET_40 | 403 | Set salinity 40 PSU |
+| CDS_STY_SET_40 | 403 | Set salinity to 40 PSU |
 | CDS_SLP_SET_59_60 | 404 | Set sleep mode: 59 out of 60 seconds |
 | CDS_SLP_SET_58_60 | 405 | Set sleep mode: 58 out of 60 seconds |
 | CDS_SLP_SET_56_60 | 406 | Set sleep mode: 56 out of 60 seconds |
@@ -514,7 +514,7 @@ Sentence format: **`$PZMA!, c--c,x,c--c,x,x,c--c*hh <CR><LF>`**
 | CDS_SLP_SET_30_60 | 410 | Set sleep mode: 30 out of 60 seconds |
 | CDS_SLP_SET_20_60 | 411 | Set sleep mode: 20 out of 60 seconds |
 | CDS_SLP_SET_10_60 | 412 | Set sleep mode: 10 out of 60 seconds |
-| CDS_SLP_SET_NEVER | 413 | Set sleep mode - always on |
+| CDS_SLP_SET_NEVER | 413 | Set sleep mode: always on |
 | CDS_BAT_CHG_GET | 414 | Battery charge |
 | CDS_PTS_TMP_GET | 415 | Temperature |
 | CDS_PTS_PRS_GET | 416 | Pressure |
