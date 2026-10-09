@@ -708,3 +708,32 @@ Section headings follow the standard 16-section layout of GHS/REACH Annex II saf
 | Рецепт N | Recipe N | uWAVE/uWAVE_Protocol_Specification_en.md | |
 | через толщу воды | through the water column | uWAVE/uWave_technical_passport_en.md | |
 | встроенная схема измерения напряжения питания | built-in supply voltage measurement circuit | uWAVE/uWave_technical_passport_en.md | |
+
+## Added in batch redphone-1
+
+| RU | EN | Source EN file | Note |
+|---|---|---|---|
+| тангента | PTT button; PTT handset | RedPhone/RedPhone_OS_Users_manual_en.md, RedPhone/Phone_T_package_tech_passport_en.md | `Микрофон с тангентой` → `Microphone with PTT button`; a separate surface-station handset → `PTT handset`. Never "tangent" |
+| п. N.N (ссылка на раздел) | section N.N | RedPhone/RedPhone_OS_Users_manual_en.md | Not `p.` (reads as "page") |
+| Прием! (конец голосового сообщения) | Over! | RedPhone/RedPhone_OS_Users_manual_en.md | Radio procedure word; maintainer question open for all three RedPhone manuals |
+| полудуплексная схема связи | half-duplex | RedPhone/RedPhone_OS_Users_manual_en.md | `Связь работает по полудуплексной схеме` → `communication is half-duplex` |
+| Верхняя / Нижняя (боковая полоса) | Upper / Lower | RedPhone/RedPhone_OS_Specification_en.md (+3) | Old EN `High` / `Low` |
+| Хорошее / Удовлетворительное / Отличное (соответствие тракту) | Good / Satisfactory / Excellent | RedPhone/RedPhone_OS_Users_manual_en.md | Table 1 column `Match with the characteristics of the transceiver path` |
+| однополосная амплитудная модуляция | single-sideband amplitude modulation (SSB) | RedPhone/RedPhone_OS_Users_manual_en.md | |
+| детектор речи; автоматический сквелч | voice activity detector; automatic squelch | RedPhone/RedPhone_DX_Specification_en.md (+1) | |
+| неразборный и необслуживаемый (корпус, конструкция) | one-piece, maintenance-free | RedPhone/RedPhone_DX_Specification_en.md (+1) | `моноблочная неразборная конструкция` → `one-piece monoblock design` |
+| приборная панель | front panel; control panel | RedPhone/RedPhone_OS_Users_manual_en.md, RedPhone/RedPhone_OS_Specification_en.md | |
+| надводный пункт контроля за (водолазными) спусками | surface dive control point; surface dive monitoring point | RedPhone/RedPhone_OS_Users_manual_en.md, RedPhone/Phone_T_package_tech_passport_en.md | |
+| головной телефон (наушники); головные телефоны | headphones | RedPhone/RedPhone_OS_Users_manual_en.md (+1) | Do not add "(earphones)" |
+| гермомешок; транспортировочный мешок | waterproof bag; transport bag | RedPhone/RedPhone_OS_Users_manual_en.md | |
+| громкоговоритель; динамик | speaker | RedPhone/RedPhone_OS_Users_manual_en.md | Matches the panel label **"Speaker"** |
+| грузонесущая проушина | load-bearing eye | RedPhone/RedPhone_OS_Users_manual_en.md | `фиксация кабеля за грузонесущую проушину` → `secured by its load-bearing eye` |
+| ЗАПРЕЩАЕТСЯ | PROHIBITED | RedPhone/RedPhone_OS_Users_manual_en.md | |
+| зарядное шасси | charging chassis | RedPhone/Phone_T_package_tech_passport_en.md | Literal; the delivery-set table says `Зарядное устройство` = charger |
+| герморазъем | watertight connector | RedPhone/Phone_T_package_tech_passport_en.md | |
+| баллон | tank | RedPhone/Phone_T_package_tech_passport_en.md | As `Кронштейн на баллон` → `Tank bracket` |
+| спортивный дайвинг | recreational diving | RedPhone/Phone_T_package_tech_passport_en.md | |
+| Приемник телеметрии RWLT RF Dongle | RWLT RF Dongle telemetry receiver | RedPhone/Phone_T_package_tech_passport_en.md | |
+| Система команд RPH | RPH command system | RedPhone/RedPhone-DX_protocol_specification_en.md | |
+| Протокол диалогового уровня | dialog layer protocol | RedPhone/RedPhone-DX_protocol_specification_en.md | Same as the Zima2 and uWave protocols |
+| Поле/Параметр / Описание | Field/Parameter / Description | RedPhone/RedPhone-DX_protocol_specification_en.md | |
