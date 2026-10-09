@@ -1,27 +1,21 @@
 # docs-sync: current state
 
-State on 2026-10-09. `master` HEAD: `9e88c28a` (Phase 1 merged: `CLAUDE.md`, `REPORT.md`, `glossary.md`, `docsync.py`, agent definition).
+State on 2026-10-09. Master HEAD: `9e88c28a` (Phase 1 merged, PR #2).
 
-This branch (`docs-sync/state`) is a status record for resuming the sync. It is not meant to be merged.
+This branch (`docs-sync/state`) is a progress record and is not intended for merge.
 
 ## Phases
 
 | Phase | Status |
 |---|---|
-| 1. Inventory and plan | done, merged (#2) |
-| 2. Translation batches | 26 of 30 batches pushed; 99 EN documents written; 4 batches (8 documents) remain |
-| 3. Index pages, README, deferred links | not started (starts after all batch PRs are merged) |
-| 4. Final QA | not started |
+| 1. Inventory and plan | Completed and merged (#2) |
+| 2. Translation batches | 27 of 30 batches completed; 102 EN documents in completed batches |
+| 3. Index pages, README and deferred links | Starts after all batch PRs are merged |
+| 4. Final QA | Follows Phase 3 |
 
-Maintainer decisions in force:
-- All 52 DECIDE recommendations are accepted (`REPORT.md` → Decisions).
-- The English legal name is `UCNL LLC`.
-- `Zima2_fast_start` is translated.
-- Product names are always mixed case in EN text: uWave, RedWave, RedBase, RedNode, RedNav, RedNav Host, RedLine, Zima. Acronyms stay: RWLT, WAYU, A3S, F4105, RedGTR, GIB. File names, link targets, code and identifiers are unchanged.
+## Batch pull requests
 
-## Batch pull requests (all drafts, base `master`)
-
-Every PR description follows `CLAUDE.md` section 11 and lists the open questions for the maintainer.
+All batch PRs below are drafts targeting master. Each document passed the controller review and current mechanical checks. RU sources larger than 30 KB also received an independent line-by-line review.
 
 | PR | Branch | Docs | EN files |
 |---|---|---|---|
@@ -50,70 +44,23 @@ Every PR description follows `CLAUDE.md` section 11 and lists the open questions
 | #23 | `docs-sync/transducers-1` | 5 | RT-1.332820-1, RT-1.524525-1-FF, RT-1.332820-2, RT-2.332820-2, RT-1.524525-2 specifications |
 | #26 | `docs-sync/uswitch-1` | 1 | uSwitch_Specification |
 | #27 | `docs-sync/accessories-1` | 7 | uPress, uSpeak, uClamp-S (Flange_rod_mound), Sub_batteries, Batpacks, Crimea-300, Crimea-300 OS |
+| #31 | `docs-sync/f4105-1` | 3 | F4105_DataBrief, F4105_tech_pass, F4105_Users_manual |
+| #32 | `docs-sync/redline-1` | 3 | RedLine_Specification, RedLINE_Protocol_Specifications, RedLINE_wiring_diagram |
 
-All these PRs passed the controller review of `CLAUDE.md` 8.3. Documents larger than 30 KB of RU source also passed an independent review. CI status is shown on each PR.
+## Repository instructions
 
-Merging notes:
-- Every batch appends its own `## Added in batch <slug>` section to `.github/docs-sync/glossary.md`. Merging one PR makes the others conflict in that file. Resolve the conflict by keeping all sections.
-- #3 also carries the latest `docsync.py` (heading numbers with NBSP, extensionless links to file names with dots).
+Draft PR #30 (`docs-sync/agents-md`) adds the maintainer-supplied AGENTS.md, the corresponding Jekyll exclusion, and Codex translator/reviewer definitions.
 
-## F4105 batch
+## Remaining Phase 2 work
 
-Draft PR #31, branch docs-sync/f4105-1: three translated EN documents, eight glossary rows. Controller checks pass; the manual also passed independent line-by-line review.
-
-## Remaining Phase 2 batches (plan in `REPORT.md`)
-
-| Batch | Documents | Prepared |
-|---|---|---|
-| `misc-1` | RedPhone_OS_MSDS, RedPhone_DX_MSDS (STALE) | briefs generated, not started |
-| `misc-2` | WAYU_GIB_MSDS (MISSING), RedBase_v3_LiFEPO4_msds (STALE) | briefs generated, not started |
-| `redline-1` | RedLine_Specification, RedLINE_Protocol_Specifications, RedLINE_wiring_diagram (all STALE) | briefs generated, not started |
-| `a3s-2` | A3S_Users_Manual (MISSING, 146 KB) | not started; translate in parts, independent review |
-
-Approach for the MSDS batches:
-- The four RU MSDS files are one template, 95–97 % identical.
-- Fully re-translate `RedPhone_OS_MSDS` first. Use the canonical GHS/REACH 16-section headings from the glossary. The existing EN files are weak machine translations: old legal name, "Fax machine", "is absent", Cyrillic left in.
-- Derive the other three files from the approved OS file plus the RU differences.
-- The supplier block uses `UCNL LLC`.
-- The RedLine documents use the product name `RedLine`. The wiring diagram has an EN image variant (`RedLINE_wiring_diagram_en.png`).
+Batches: `misc-1`, `misc-2`, `a3s-2`.
 
 ## Resuming
 
-1. Read `CLAUDE.md`, `REPORT.md`, this file, and the descriptions of the open PRs.
-2. Recreate the working files in a scratchpad `$S`:
-   - `.github/docs-sync/executor_rules.md` (this branch) → `$S/common_rules.md`. Adjust the scratchpad path in its first lines.
-   - `.github/docs-sync/glossary_all_batches.md` (this branch) → `$S/ref/glossary_current.md`. It is the union of `glossary.md` and all `## Added in batch …` sections of the open PRs.
-   - `.github/docs-sync/docsync.py` from `origin/docs-sync/zima-1` → `$S/docsync.py`.
-   - Approved sibling EN files for reuse: `git show origin/docs-sync/<batch>:documentation/EN/<Family>/<file>` → `$S/ref/`.
-3. One git worktree per batch, created from `origin/master` (`git worktree add -b docs-sync/<slug> $S/wt-<slug> origin/master`).
-4. Per document:
-   - `python3 $S/docsync.py brief <RU path> <all RU paths of the batch>` gives the facts block (links, image variants, counts, marker).
-   - Write a prompt `$S/<batch>/p_<doc>.md` with the worktree, RU/EN paths, status, breadcrumb, reference files and the facts block.
-   - Spawn `docs-translator` (up to 4 in parallel) with "read the brief file and follow it".
-5. Review each result:
-   - Run `python3 $S/docsync.py check <RU> <EN>`.
-   - Read RU and EN side by side, line by line.
-   - Fix small issues directly.
-   - Commit one document per commit (`docs-sync: add|update <EN path>`) and push after each document.
-6. Close each batch:
-   - Append the glossary rows, both to `glossary.md` in the branch and to `$S/ref/glossary_current.md`.
-   - Open a draft PR with the section 11 template.
-7. After all batch PRs are merged: Phase 3, then Phase 4 (`CLAUDE.md` sections 9–10).
+1. Read CLAUDE.md, the approved executor rules, the full glossary and the maintainer's latest instructions.
+2. Fetch origin and inspect the current PR and branch state.
+3. Continue the remaining batch work, if any, with one document per commit and push after each reviewed document.
+4. Keep all `Added in batch` glossary sections when merging master into batch branches; do not rebase or rewrite history.
+5. Start Phase 3 only after all batch PRs are merged. Then update indexes, README and deferred links, and perform Phase 4 QA.
 
-Items already known for Phase 3:
-- Deferred RU links, e.g. RedWave user's manual Figure 9 → RedBASE_old.
-- The `RWLT_RF_Dongle` link name.
-- The F4105 index entries ("awakening" → wake-up).
-- The Batpacks index title.
-
-Items already known for Phase 4:
-- Glossary `CONFLICT` rows, e.g. anchor rope / anchor line.
-- Beam-angle `(3 dB)` wording in the transducer specifications that were not in a batch.
-- Cyrillic residue in the existing EN MSDS files.
-
-## Session update: 2026-10-09
-
-- Draft PR #30 (docs-sync/agents-md): exact maintainer AGENTS.md, Jekyll exclusion, Codex translator/reviewer definitions.
-- Draft PR #31 (docs-sync/f4105-1): all three documents complete and pushed after review. Numeric and structural checks pass.
-- The remaining batches are still misc-1, misc-2, redline-1 and a3s-2. RedPhone-OS MSDS translation is in controller review; other documents have no completed review yet.
-- PRs #3–#27 remain open. No Phase 3 or 4 work started.
+The complete glossary through the completed batches is stored in `glossary_all_batches.md`. The latest checker and executor rules are on `docs-sync/zima-1` until that PR is merged.
