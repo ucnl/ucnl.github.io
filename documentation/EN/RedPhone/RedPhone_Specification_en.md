@@ -16,7 +16,7 @@
 ## DESCRIPTION
 
 The **RedPhone-D** wireless diver telephone communication station provides voice messaging between divers and/or from a diver to a surface station. The device supports standard frequency bands and is compatible with most similar systems. The built-in pinger function of the **RWLT** navigation system allows recording the geographic position of the diver upon completion of a voice transmission. 
-[RedButton](https://docs.unavlab.com/documentation/EN/Accessories/RedButton_Specification_en.html), which contains no corroding elements, is used as a push-to-talk (PTT) button.
+[RedButton](https://docs.unavlab.com/documentation/EN/Accessories/uPress_Specification_en.html), which contains no corroding elements, is used as a push-to-talk (PTT) button.
 
 <div style="page-break-after: always;"></div>
 
