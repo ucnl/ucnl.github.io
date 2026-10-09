@@ -463,3 +463,16 @@ Section headings follow the standard 16-section layout of GHS/REACH Annex II saf
 | отсутствует | not applicable | Misc/*_MSDS_en.md (3) | Existing is absent |
 | Литий / Фосфат железа | Lithium / Iron phosphate | Misc/*_MSDS_en.md (3) | |
 | Аккумулятор высокотоковый литий-железофосфатный | High-current lithium iron phosphate (LiFePO4) battery | Misc/RedBase_v3_LiFEPO4_msds_en.md | Header cell |
+
+## Added in batch f4105-1
+
+| RU | EN | Source EN file | Note |
+|---|---|---|---|
+| стопорная гайка | lock nut | F4105/F4105_DataBrief_en.md (+2) | Maintainer decision |
+| исполнительное устройство | actuating device | F4105/F4105_DataBrief_en.md (+2) | Maintainer decision |
+| стопорный палец | lock pin | F4105/F4105_Users_manual_en.md (+1) | Maintainer decision; `палец стопорной гайки` is `lock nut pin` |
+| Модуль программирования и передачи команд | programming and command transmission unit | F4105/F4105_tech_pass_en.md | Distinct from `Модуль программирования и управления`: programming and control unit |
+| задающее устройство | setting device | F4105/F4105_DataBrief_en.md (+1) | F4105-SU role |
+| поплавок-катушка; поплавок-стабилизатор | float-reel; stabilizer float | F4105/F4105_Users_manual_en.md | |
+| мотор-редуктор; стопорный узел | geared motor; stopper knot | F4105/F4105_Users_manual_en.md | |
+| фал; грузонесущая проушина | line; load-bearing eye | F4105/F4105_Users_manual_en.md (+2) | |
