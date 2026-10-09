@@ -56,22 +56,22 @@
 
 # 1. Introduction
 ## 1.1. Purpose
-The underwater acoustic navigation system **Zima2** is designed to determine, in real time, the location of underwater objects equipped with [Zima2-R](Zima2R_Specification_en.md) responder-beacons.
+The **Zima2** underwater acoustic navigation system is designed to determine, in real time, the location of underwater objects equipped with [Zima2-R](Zima2R_Specification_en.md) responder-beacons.
  
 The responder-beacons (hereinafter, beacons) can be installed on:
 - remotely operated underwater vehicles (ROVs)
-- manned underwater vehicles
+- human-occupied vehicles (HOVs)
 - autonomous unmanned underwater vehicles (AUVs)
-- divers and technical divers (when the standalone version of the beacon is used).
+- recreational and technical divers (when the standalone version of the beacon is used).
 
 The system makes it possible to determine:
 - the relative location of underwater objects (azimuth angle, range, depth) 
 - the absolute location of underwater objects (latitude, longitude, depth) when external sources of navigation data (a GNSS receiver and a compass) are used.
 
 ## 1.2. Features
-The navigation system **Zima2** is an ultra-short baseline (USBL) navigation system, whose principle of operation is based 
+The **Zima2** navigation system is an ultra-short baseline (USBL) navigation system whose principle of operation is based 
 on the use of a phased antenna array to determine the horizontal angle of arrival of the signal and on determining the distance to the beacon by the "request-response" method. 
-The **Zima2** system uses a modern technology of digital wideband noise-immune underwater acoustic communication, and the signal it uses is specially
+The **Zima2** system uses modern digital wideband, noise-resistant underwater acoustic communication technology, and its signal is specifically
 designed for difficult hydrological conditions, including those typical of shallow bodies of water. 
 
 <div style="page-break-after: always;"></div>
@@ -109,7 +109,7 @@ The system includes:
 
 The system is available in different versions for different depth ranges. When this document refers to the base version of a device, for example Zima2-B, it should be understood as applying to all versions of the device, unless additional clarifications are given.
 
-> CAUTION! Devices of different versions are not compatible with each other, and using them together in one system will result in the user obtaining knowingly incorrect navigation data.
+> CAUTION! Devices of different versions are not compatible with each other, and using them together in one system will inevitably result in incorrect navigation data.
 
 ### 1.4.1. Standard version 
 
@@ -131,7 +131,7 @@ In this version, the system can work with responder-beacons located at depths of
 
 ### 1.4.3. Version K
 
-In this version, the system can work with responder-beacons located at depths of up to 1000 m. The responder-beacon is supplied in a metal normobaric housing with a transducer on a cable. Only the carrier-powered option is available.
+In this version, the system can work with responder-beacons located at depths of up to 1000 m. The responder-beacon is supplied in a metal one-atmosphere (normobaric) housing with a transducer on a cable. Only the carrier-powered option is available.
 
 | Device | Technical specification |
 | :--- | :--- |
@@ -174,8 +174,8 @@ The zero direction of the antenna coincides with the molding seam on the side wh
 
 The antenna must be mounted with the supplied bracket [uClamp-S](/documentation/EN/Accessories/Flange_rod_mound_Specification_en.html). The upper part of the bracket has a cutout that marks the zero of the antenna.
 
-The antenna determines the horizontal angle of arrival of the signal relative to its zero direction; the following requirements must be observed when mounting the antenna:
-- The antenna must be placed on a deployment pole that ensures its stable position no closer than 2 meters to the water surface and no higher than 1.5 from the lowest point of the vessel's keel
+Because the antenna determines the horizontal angle of arrival of the signal relative to its zero direction, observe the following requirements when mounting it:
+- The antenna must be placed on a deployment pole that holds it in a stable position no closer than 2 m to the water surface and no higher than 1.5 from the lowest point of the vessel's keel
 - The antenna must be secured with a clamp in such a way that its position does not change during operation (the antenna must not rotate inside the clamp)
 - The antenna must not be squeezed too tightly by the mount
 - The mount and its parts must not protrude below the mounting groove and thereby cover the working surfaces of the antenna
@@ -195,7 +195,7 @@ Before submerging the antenna, make sure that:
 > CAUTION!  
 > Water ingress into any connector is absolutely unacceptable and will result in damage not covered by the warranty!
 
-The extension cable must not have large free sags along the length that is immersed in water. It is recommended to secure the cable to the pole with rope or nylon cable ties.
+The extension cable must not have large slack along its submerged length. It is recommended to secure the cable to the pole with rope or nylon cable ties.
 
 > CAUTION!  
 > Before connecting the antenna to the power supply and switching unit via the extension cable, make sure that the power supply and switching unit is switched off!
@@ -214,20 +214,20 @@ For the version of the power supply and switching unit with two channels (for co
 - connect the GNSS compass to the supplied cable
 - connect the GNSS compass cable to the power supply and switching unit
 
-**Switching on the power supply** and switching unit must be performed **after launching the specialized software** on the host PC. Operation of the software and its setup are described below.
+**Switch on the power supply and switching unit** only **after launching the specialized software** on the host PC. Operation of the software and its setup are described below.
 
 To find out the names of the connectors on the panel of the power supply and switching unit, refer to the [user's manual of the Bat&Link Box power supply and switching unit](Bat_n_link_box_Users_manual_en.md).
 
 ### 2.1.2. Mounting the responder-beacon on the carrier
 
-The responder-beacon must be fastened only by the special groove, with a soft clamp, in such a way as to exclude any uneven loading of the beacon housing, excessive squeezing, and shading/shielding of the beacon housing. The figure below shows the basic requirements for mounting the acoustic part of the responder-beacon on the carrier:
+The responder-beacon must be fastened only by its mounting groove, using a soft clamp, so as to avoid any uneven loading of the beacon housing, excessive squeezing, and shading/shielding of the beacon housing. The figure below shows the basic requirements for mounting the acoustic part of the responder-beacon on the carrier:
 
 | ![0](/documentation/uWave_mounting_en.png)|
 | :---: |
 | Requirements for mounting the acoustic part of the responder-beacon on the carrier |
 | *Shielding of the spatial hemisphere or of the parts of the transducer located above the mounting groove is not allowed; the pressure in the area under the mount must be balanced with the external pressure* |
 
-The responder-beacon should not be positioned near propulsor jets or directly in their path. The system requires a direct line of sight (through the water column) between the direction-finding antenna and the responder-beacon, so the beacon must be installed at the top point of the carrier.
+The responder-beacon should not be positioned near thruster or propeller wash or directly in its path. The system requires a direct line of sight (through the water column) between the direction-finding antenna and the responder-beacon, so the beacon must be installed at the highest point of the carrier.
 
 **For a responder-beacon in the standalone version:**
 A responder-beacon in the standalone version switches on automatically when it enters the water. Keep in mind that, immediately after switching on, the responder-beacon determines the atmospheric pressure for **5** seconds for a more accurate depth measurement. Therefore, it is recommended to first immerse the battery pack in the water and wait 5 seconds before immersing the responder-beacon itself. 
@@ -246,7 +246,7 @@ The operability of the responder-beacon is easy to check by switching it on: 2 s
 
 The zero direction of the direction-finding antenna and the zero direction of the compass (GNSS compass or magnetic) may not coincide — for example, because of inaccurate installation of the antenna in the bracket. This leads to a systematic error in determining the azimuth to the responder-beacon. An angular calibration procedure is performed to eliminate it.
 
-**Calibration principle:** during the procedure, the antenna and the responder-beacon must move relative to each other so that the **geographic azimuth to the beacon** changes over a wide range of angles. The system performs a series of **N measurements** at different azimuths to the beacon and then iterates over possible values of the angular correction within a specified range. For each candidate correction, the beacon coordinates are recalculated and the scatter of the resulting points is evaluated (DRMS — circular probable deviation). The optimal correction is the one that gives the **minimum DRMS** — that is, the "most tightly clustered" cloud of points.
+**Calibration principle:** during the procedure, the antenna and the responder-beacon must move relative to each other so that the **geographic azimuth to the beacon** changes over a wide range of angles. The system performs a series of **N measurements** at different azimuths to the beacon and then iterates over possible values of the angular correction within a specified range. For each candidate correction, the beacon coordinates are recalculated and the scatter of the resulting points is evaluated (DRMS — circular error probable). The optimal correction is the one that gives the **minimum DRMS** — that is, the "most tightly clustered" cloud of points.
 
 When the specified number of measurements is reached, the procedure finishes automatically. The computed correction is applied and displayed in the web interface ("Angular Calibration" panel) and in the application log.
 
@@ -265,7 +265,7 @@ In both cases the physical principle is the same: measurements must be obtained 
 
 **Procedure (antenna on a vessel):**
 
-1. Place the responder-beacon at a distance of 20–50 meters from the vessel. Make sure there is a direct acoustic line of sight between the antenna and the beacon.
+1. Place the responder-beacon at a distance of 20–50 m from the vessel. Make sure there is a direct acoustic line of sight between the antenna and the beacon.
 2. Launch the **AzimuthConsole** application, make sure that the system is configured to work only with the single beacon selected for calibration, and establish a connection with the system (the `OCON` command).
 3. Make sure the compass (external GNSS compass or magnetic) is connected and is transmitting current data.
 4. Start moving the vessel slowly **around the beacon** in a circle, keeping the speed and the distance as constant as possible. The beacon must remain at the center of the circle being described.
@@ -278,7 +278,7 @@ In both cases the physical principle is the same: measurements must be obtained 
 1. Install the direction-finding antenna on a pier, quay or ice. Fix its position — the antenna must remain stationary throughout the whole procedure.
 2. Launch the **AzimuthConsole** application, make sure that the system is configured to work only with the single beacon selected for calibration, and establish a connection with the system (the `OCON` command).
 3. Make sure the compass is connected, fixed coaxially with the antenna and transmitting current data. If the compass is not installed coaxially, first measure the offset and enter it with the `OFS` command.
-4. Place the responder-beacon on a mobile carrier (diver, ROV) at a distance of at least 50 meters from the antenna. The initial direction to the beacon does not matter.
+4. Place the responder-beacon on a mobile carrier (diver, ROV) at a distance of at least 50 m from the antenna. The initial direction to the beacon does not matter.
 5. Start **moving the beacon slowly and steadily around the antenna** in a circle. Recommendations:
 - Move in such a way that the beacon describes a full circle (or at least 180°) around the antenna
 - Keep the distance to the antenna as constant as possible (variations within ±20% are acceptable)
@@ -293,10 +293,10 @@ In both cases the physical principle is the same: measurements must be obtained 
 
 | Parameter | Description | Recommendation |
 | :--- | :--- | :--- |
-| `start` | Start of the range of corrections to iterate over, ° | 0 (if there are no assumptions about the offset) |
-| `end` | End of the range of corrections to iterate over, ° | 360 |
-| `step` | Step of iteration over corrections, ° | 0.5 (a step in the range from 0.1° to 1° is acceptable) |
-| `n` | Total number of measurements | 200–500 (more is more accurate, but takes longer) |
+| `start` | Start of the correction search range, ° | 0 (if the offset is unknown) |
+| `end` | End of the correction search range, ° | 360 |
+| `step` | Correction search step, ° | 0.5 (a step in the range from 0.1° to 1° is acceptable) |
+| `n` | Total number of measurements | 200–500 (more measurements give higher accuracy but take longer) |
 | `addr` | Responder-beacon address (1–16) | Specify explicitly if several beacons are within range |
 
 **General recommendations:**
@@ -310,7 +310,7 @@ In both cases the physical principle is the same: measurements must be obtained 
 
 > **ℹ Note**
 > 
-> The procedure is supported only in **AzimuthConsole**. If you are using the obsolete AzimuthSuite application, the angular correction must be measured manually and entered in the settings (the **Angular correction** field).
+> The procedure is supported only in **AzimuthConsole**. If you are using the obsolete AzimuthSuite application, the angular correction must be measured manually and entered in the settings (the "Angular correction" field).
 
 <div style="page-break-after: always;"></div>
 
@@ -351,7 +351,7 @@ During operation, the host application writes log files, which can then be playe
 At this stage it is assumed that:
 
 - The antenna's underwater connector has been checked and mated (the extension cable is connected to the direction-finding antenna)
-- The antenna is properly secured to the pole, and the extension cable has no free sags
+- The antenna is properly secured to the pole, and the extension cable has no slack
 - The topside connector of the extension cable is connected to the power supply and switching unit, and the unit itself is switched off
 - The power supply and switching unit is connected to the PC with a USB-B cable
 - If a two-channel power supply and switching unit is used:
@@ -365,7 +365,7 @@ At this stage it is assumed that:
 - If responder-beacons in the integrated version are used, the cable connections to the carrier have been checked for watertightness (according to the connection type)
 - The specialized software (AzimuthConsole or AzimuthSuite) is running
 
-It is recommended to switch the beacons on at the surface: in this case, atmospheric pressure calibration takes place within five seconds after power is applied, which allows depth to be measured with greater absolute accuracy.
+It is recommended to switch the beacons on at the surface: in this case, atmospheric pressure calibration takes place during the first five seconds after power is applied, which allows depth to be measured with greater absolute accuracy.
 
 Since standalone beacons switch on when the battery pack is immersed in water, it is recommended to immerse the battery pack in the water first, and the responder-beacon itself only after five seconds have passed.
 
@@ -389,7 +389,7 @@ Keep in mind the factors that reduce the efficiency of the system, in particular
 - high noise level (both electromagnetic interference, for example in the vessel's power supply network, and acoustic noise - the running engine of the vessel or carrier, surf, other underwater acoustic systems, for example - sonars, etc.)
 - shallow water depth, and small bodies of water in general, create difficult hydrological conditions for the operation of underwater acoustic navigation and communication systems
 - shielding of the direction-finding antenna and of the transducers of the responder-beacons
-- exposure of the antennas to turbulent jets from propulsors and/or to the wake
+- exposure of the antennas to turbulent thruster/propeller wash and/or to the wake
 - water density stratification (thermocline, etc.)
 
 ### 2.4.2. Manual setting of coordinates and direction
@@ -412,7 +412,7 @@ For details, see the manuals of the corresponding applications.
 - If there is any contamination, or after work in salt water, rinse all submersible parts of the equipment in fresh water
 - Remove the direction-finding antenna from the pole
 - For long-term storage (more than a week) or for transportation, unmate the underwater connector
-- Before placing the equipment in the shipping container, all moisture must be removed by natural drying without exposure to direct sunlight
+- Before packing the equipment in its transport case, remove all moisture by natural drying, out of direct sunlight
 - For responder-beacons in the integrated version, if they cannot be removed from the carrier, rinsing in fresh water and removal of any contamination is mandatory
 
 <div style="page-break-after: always;"></div>
@@ -427,7 +427,7 @@ Grounds for refusing free warranty service, free repair and replacement include:
 - any **mechanical damage** to the equipment from the delivery set, including damage to the insulation of wires and cables;
 - any **damage caused by exposure to moisture and contamination** as a result of improper operation of the equipment from the delivery set;
 - any **electrical damage** caused by the **use of accessories not included in the delivery set** (chargers); accessories supplied by the manufacturer or its representative to replace faulty or lost ones are not considered to be outside the delivery set;
-- any **traces of independent repair and/or opening** of the equipment from the delivery set.
+- any **signs of unauthorized repair and/or opening** of the equipment from the delivery set.
 
 <div style="page-break-after: always;"></div>
 
@@ -437,10 +437,10 @@ _____________
 
 _**ANY OF THE PARTS OF THE DELIVERY SET, INDIVIDUALLY AND AS PART OF THE SYSTEM, HEREINAFTER REFERRED TO AS THE "SUPPLIED EQUIPMENT":**_
 
-* _**WAS NOT DEVELOPED AS RESCUE EQUIPMENT**_
+* _**WAS NOT DESIGNED AS RESCUE EQUIPMENT**_
 * _**WAS NOT TESTED AS RESCUE EQUIPMENT**_
 * _**IS NOT RESCUE EQUIPMENT**_
-* _**THE MANUFACTURER DECLARES THAT THE SUPPLIED EQUIPMENT IS SAFE WHEN OPERATED IN ACCORDANCE WITH THESE INSTRUCTIONS AND IS NOT RESPONSIBLE FOR ANY CONSEQUENCES OF THE USE OF THE SUPPLIED EQUIPMENT**_
+* _**THE MANUFACTURER DECLARES THAT THE SUPPLIED EQUIPMENT IS SAFE WHEN OPERATED IN ACCORDANCE WITH THESE INSTRUCTIONS, AND THE MANUFACTURER IS NOT RESPONSIBLE FOR ANY CONSEQUENCES OF THE USE OF THE SUPPLIED EQUIPMENT**_
 
 ______________
 
