@@ -12,12 +12,13 @@
 
 ## 0. Versions
 
-| Current firmware version | **uWave [JULY] 1.34** dated 22-NOV-2023 |
+| Current firmware version | **uWave [JULY] 2.51** dated 22-SEP-2026 |
 | :--- | :--- |
 | | |
 
 | Date | Firmware version | Description |
 | :--- | :--- | :--- |
+| 22-SEP-2026 | System: (all) <br/> Core: uWAVE [JULY] v2.51 | Technical changes. Extensive refactoring and revision. Support for the variant designed for depths of up to 1000 m. |
 | 22-NOV-2023 | System: (all) <br/> Core: uWave [JULY] v1.34 | - BUG FIX: incorrect depth sensor data after prolonged operation in some cases |
 | 12-JUN-2023 | System: (all) <br/> Core: uWave [JULY] v1.33 | + 634 bit/s data rate mode <br/> - BUG FIX: fixed a bug in packet processing and the absence of a failed transmission notification in some cases |
 | 18-OCT-2022 | System: (all) <br/> Core: uWave [JULY] v1.32 | - BUG FIX: fixed a bug that prevented the device from accepting packets larger than 54 bytes for transmission |
