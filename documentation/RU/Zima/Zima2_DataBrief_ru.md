@@ -1,4 +1,4 @@
-[Главная](/README_RU) ❯ [Гидроакустические навигационные и трекинговые системы](/navigation_and_tracking_systems_ru) ❯ **Zima 2 USBL: Краткое опсиание**
+[Главная](/README_RU) ❯ [Гидроакустические навигационные и трекинговые системы](/navigation_and_tracking_systems_ru) ❯ **Zima 2 USBL: Краткое описание**
 
 <details>
   <summary><b>ℹ Рекомендации для печати/сохранения в PDF</b></summary>
